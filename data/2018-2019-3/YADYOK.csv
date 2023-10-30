@@ -1,0 +1,60 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AE  111.01,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,MELİS GÜNEKAN,TTWWFF,232323,,JF 334 | JF 334 | KP 03 | KP 03 | M 1200 | M 1200,07.08.2019,4,,"                          "
+AE  111.02,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,MELİS GÜNEKAN,TTWWFF,676767,,M 2200 | M 2200 | M 2170 | M 2170 | M 1200 | M 1200,07.08.2019,4,,"                          "
+AE  112.01,Desc.,CRITICAL SKILLS IN ENGLISH II,3,4,SELVİN YALTIR,TTWWFF,454545,Online,KP 07 | KP 07 | EF 104 | EF 104 | EF 204 | EF 204,09.08.2019,2,,"                          "
+AE  221.01,Desc.,CRITICAL READING,3,4,SELVİN YALTIR,TTWWFF,676767,Online,KP 07 | KP 07 | EF 104 | EF 104 | EF 204 | EF 204,08.08.2019,4,,"                          "
+FR  101.01,Desc.,ELEMENTARY FRENCH I,3,7,OJENİ MAZALTO,MMTTWWThThFF,1212121212,,KYD 01 | KYD 01 | KYD 02 | KYD 02 | KYD 01 | KYD 01 | KYD 117 | KYD 117 | KYD 02 | KYD 02,07.08.2019,4,,"                          "
+FR  101.02,Desc.,ELEMENTARY FRENCH I,3,7,SENİHA SIRMA FURTUN,MMTTWWThThFF,1212121212,,KP 08 | KP 08 | JF 102 | JF 102 | KP 08 | KP 08 | KP 08 | KP 08 | JF 108 | JF 108,07.08.2019,4,,"                          "
+FR  101.04,Desc.,ELEMENTARY FRENCH I,3,7,ASLI TARKAN KALAYCIOĞLU,MMTTWWThThFF,3412123412,,KP 06 | KP 06 | EF 102 | EF 102 | JF 334 | JF 334 | KP 02 | KP 02 | JF 101 | JF 101,07.08.2019,4,,"                          "
+FR  102.01,Desc.,ELEMENTARY FRENCH II,3,7,ULAŞ AKARSU,MMTTWWThThFF,7878787878,,KYD 01 | KYD 01 | KYD 110 | KYD 110 | KYD 111 | KYD 111 | KYD 112 | KYD 112 | KYD 111 | KYD 111,09.08.2019,4,,"                          "
+FR  102.02,Desc.,ELEMENTARY FRENCH II,3,7,ULAŞ AKARSU,MMTTWWThThFF,910910910910910,,KYD 01 | KYD 01 | KYD 110 | KYD 110 | KYD 111 | KYD 111 | KYD 112 | KYD 112 | KYD 111 | KYD 111,09.08.2019,4,,"                          "
+FR  201.01,Desc.,INTERMEDIATE FRENCH I,3,7,SENİHA SIRMA FURTUN,MMTTWWThThFF,3434343434,,KP 08 | KP 08 | JF 102 | JF 102 | KP 08 | KP 08 | KP 08 | KP 08 | JF 108 | JF 108,09.08.2019,3,,"                          "
+FR  202.01,Desc.,INTERMEDIATE FRENCH II,3,7,ASLI TARKAN KALAYCIOĞLU,MMTTWWThThFF,5634345634,,KP 07 | KP 07 | EF 102 | EF 102 | JF 334 | JF 334 | KP 02 | KP 02 | JF 101 | JF 101,09.08.2019,1,,"                          "
+FR  202.02,Desc.,INTERMEDIATE FRENCH II,3,7,ASLI TARKAN KALAYCIOĞLU,MMTTWWThThFF,7878787878,,KP 07 | KP 07 | EF 102 | EF 102 | JF 334 | JF 334 | KP 02 | KP 02 | JF 101 | JF 101,09.08.2019,1,,"                          "
+FR  302.01,Desc.,ADVANCED FRENCH II,3,7,SİNEM ÇAKMAK,MMTTWWThThFF,3434343434,,M 2170 | M 2170 | N/A | N/A | N/A | N/A | N/A | N/A | JF 102 | JF 102,09.08.2019,1,,"                          "
+GER 101.01,Desc.,ELEMENTARY GERMAN I,3,7,NEŞE SAĞIR,MMTTWWThThFF,7878787878,,KYD 111 | KYD 111 | KYD 112 | KYD 112 | KYD 110 | KYD 110 | KYD 01 | KYD 01 | KYD 02 | KYD 02,09.08.2019,4,,"                          "
+GER 101.02,Desc.,ELEMENTARY GERMAN I,3,7,NEŞE SAĞIR,MMTTWWThThFF,910910910910910,,KYD 111 | KYD 111 | KYD 112 | KYD 112 | KYD 110 | KYD 110 | KYD 01 | KYD 01 | KYD 02 | KYD 02,09.08.2019,4,,"                          "
+GER 102.01,Desc.,ELEMENTARY GERMAN II,3,7,NESLİHAN AKYOL ÇUBUKÇU,MMTTWWThThFF,3434343434,,KP 04 | KP 04 | KP 06 | KP 06 | KP 09 | KP 09 | KP 03 | KP 03 | KP 03 | KP 03,08.08.2019,2,,"                          "
+GER 201.01,Desc.,PRE-INTERMEDIATE GERMAN I,3,7, HİKMET AYŞE CÖNBEZ,MMTTWWThThFF,2323232323,,KYD 112 | KYD 112 | KYD 117 | KYD 117 | KYD 118 | KYD 118 | KYD 111 | KYD 111 | KYD 117 | KYD 117,08.08.2019,1,,"                          "
+GER 202.01,Desc.,PRE-INTERMEDIATE GERMAN II,3,7, HİKMET AYŞE CÖNBEZ,MMTTWWThThFF,4545454545,,KYD 112 | KYD 112 | KYD 117 | KYD 117 | KYD 118 | KYD 118 | KYD 111 | KYD 111 | KYD 117 | KYD 117,07.08.2019,1,,"                          "
+GER 301.01,Desc.,INTERMEDIATE GERMAN I,3,7,NESLİHAN AKYOL ÇUBUKÇU,MMTTWWThThFF,5656565656,,KP 04 | KP 04 | KP 06 | KP 06 | KP 09 | KP 09 | KP 03 | KP 03 | KP 03 | KP 03,07.08.2019,3,,"                          "
+RUS 101.01,Desc.,ELEMENTARY RUSSIAN I,3,7,NATALIA DEMİRKAPILI,MMTTWWThThFF,1212121212,,KP 05 | KP 05 | KP 05 | KP 05 | EF 101 | EF 101 | EF 101 | EF 101 | EF 101 | EF 101,07.08.2019,1,,"                          "
+SFL 13A.01,Desc.,PROGRAM 1 SUMMER A,,,S.MERVE AKBAŞ,,,,,,,,"                          "
+SFL 13A.02,Desc.,PROGRAM 1 SUMMER A,,,FEYZA ÇELİKTAŞ,,,,,,,,"                          "
+SFL 13A.03,Desc.,PROGRAM 1 SUMMER A,,,AYSUN BALKAN,,,,,,,,"                          "
+SFL 13A.04,Desc.,PROGRAM 1 SUMMER A,,,SEÇİL BARAN,,,,,,,,"                          "
+SFL 13A.05,Desc.,PROGRAM 1 SUMMER A,,,MUSTAFA GÖNENÇ,,,,,,,,"                          "
+SFL 13A.06,Desc.,PROGRAM 1 SUMMER A,,,HÜLYA ERSOY,,,,,,,,"                          "
+SFL 13A.07,Desc.,PROGRAM 1 SUMMER A,,,GÖNÜL TUĞBA AKDAĞ,,,,,,,,"                          "
+SFL 13A.08,Desc.,PROGRAM 1 SUMMER A,,,SERAP ERDAL BULUT,,,,,,,,"                          "
+SFL 13A.09,Desc.,PROGRAM 1 SUMMER A,,,AHMET BÜLBÜL,,,,,,,,"                          "
+SFL 13A.10,Desc.,PROGRAM 1 SUMMER A,,,HÜRMÜZ TELÇEKER,,,,,,,,"                          "
+SFL 13A.11,Desc.,PROGRAM 1 SUMMER A,,,SEMA ÖZÇALLI,,,,,,,,"                          "
+SFL 13B.01,Desc.,PROGRAM 1 SUMMER B,,,EMEL TOZLU,,,,,,,,"                          "
+SFL 13B.02,Desc.,PROGRAM 1 SUMMER B,,,EMEL TOZLU,,,,,,,,"                          "
+SFL 13B.03,Desc.,PROGRAM 1 SUMMER B,,,SEÇİL BARAN,,,,,,,,"                          "
+SFL 13B.04,Desc.,PROGRAM 1 SUMMER B,,,AYSUN BALKAN,,,,,,,,"                          "
+SFL 13B.05,Desc.,PROGRAM 1 SUMMER B,,,HÜLYA ERSOY,,,,,,,,"                          "
+SFL 13B.06,Desc.,PROGRAM 1 SUMMER B,,,MUSTAFA GÖNENÇ,,,,,,,,"                          "
+SFL 13B.07,Desc.,PROGRAM 1 SUMMER B,,,MELİKE YILMAZ BAŞTUĞ,,,,,,,,"                          "
+SFL 13B.08,Desc.,PROGRAM 1 SUMMER B,,,HÜRMÜZ TELÇEKER,,,,,,,,"                          "
+SFL 13B.09,Desc.,PROGRAM 1 SUMMER B,,,OYA ÖZAĞAÇ,,,,,,,,"                          "
+SFL 13B.10,Desc.,PROGRAM 1 SUMMER B,,,DENİZ SAVAŞAL ATLI,,,,,,,,"                          "
+SFL 13B.11,Desc.,PROGRAM 1 SUMMER B,,,DENİZ SAVAŞAL ATLI,,,,,,,,"                          "
+SFL RL1.01,Desc.,REMEDIAL LISTENING,,,BÜŞRA AYÇA KARAMAN,,,,,,,,"                          "
+SFL RL1.02,Desc.,REMEDIAL LISTENING,,,AYŞE SARI,,,,,,,,"                          "
+SFL RL1.03,Desc.,REMEDIAL LISTENING,,,ÇİĞDEM TABAN,,,,,,,,"                          "
+SFL RR1.01,Desc.,REMEDIAL READING,,,BÜŞRA AYÇA KARAMAN,,,,,,,,"                          "
+SFL RR1.02,Desc.,REMEDIAL READING,,,ÇİĞDEM TABAN,,,,,,,,"                          "
+SFL RR1.03,Desc.,REMEDIAL READING,,,SELMA AYTEN ÜSTÜNDAĞ,,,,,,,,"                          "
+SFL RW1.01,Desc.,REMEDIAL WRITING,,,AYŞE SARI,,,,,,,,"                          "
+SFL RW1.02,Desc.,REMEDIAL WRITING,,,BÜŞRA AYÇA KARAMAN,,,,,,,,"                          "
+SFL RW1.03,Desc.,REMEDIAL WRITING,,,AYŞEGÜL KORKMAZ,,,,,,,,"                          "
+SFL RW1.04,Desc.,REMEDIAL WRITING,,,PINAR PEKEL,,,,,,,,"                          "
+SFL RW1.05,Desc.,REMEDIAL WRITING,,,ÇİĞDEM TABAN,,,,,,,,"                          "
+SFL RW1.06,Desc.,REMEDIAL WRITING,,,SELMA AYTEN ÜSTÜNDAĞ,,,,,,,,"                          "
+SFL RW1.07,Desc.,REMEDIAL WRITING,,,İPEK SEYALIOĞLU,,,,,,,,"                          "
+SFL RW1.08,Desc.,REMEDIAL WRITING,,,EMİNE FÜSUN SAVCI,,,,,,,,"                          "
+SFL RW1.09,Desc.,REMEDIAL WRITING,,,SOSİ ZOVİKOĞLU,,,,,,,,"                          "
+SFL RW1.10,Desc.,REMEDIAL WRITING,,,ESRA BENER,,,,,,,,"                          "
+SPA 101.01,Desc.,ELEMENTARY SPANISH I,3,7,NATALIA DEMİRKAPILI,MMTTWWThThFF,3434343434,,KP 05 | KP 05 | KP 05 | KP 05 | EF 101 | EF 101 | EF 101 | EF 101 | EF 101 | EF 101,07.08.2019,2,,"                          "

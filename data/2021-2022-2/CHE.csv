@@ -1,0 +1,49 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHE 202.01,Desc.,PHYSICOCHEMICAL SYSTEMS II,3,4,DAMLA EROĞLU PALA,TTThTh,7878,Classroom,KP 01 | KP 01 | NH 301 | NH 301,09.06.2022,2,,"                          "
+CHE 203.01,Desc.,PHYSICOCHEMICAL SYSTEMS LABORATORY,1,2,DAMLA EROĞLU PALA,TT,12,Classroom,,11.06.2022,3,,"                          "
+CHE 222.01,Desc.,INTRODUCTION TO BIOSYSTEMS,3,4,BETÜL URALCAN,MTT,556,Online/Classroom,ONLINE | NH 101 | NH 101,07.06.2022,2,,"                          "
+CHE 232.01,Desc.,FLUID MECHANICS,3,5,A.KEREM UĞUZ,MMThTh,3456,Online/Classroom,ONLINE | ONLINE | NH 301 | NH 301,10.06.2022,1,,"                          "
+CHE 302.01,Desc.,CHEMICAL ENGINEERING LABORATORY,3,5,BURAK ALAKENT,ThThThFF,45656,Online/Classroom,KB 433 | KB 433 | KB 433 | ONLINE | ONLINE,01.06.2022,3,,"                          "
+CHE 302.02,Desc.,CHEMICAL ENGINEERING LABORATORY,3,5,BURAK ALAKENT,ThThThFF,78978,Online/Classroom,KB 433 | KB 433 | KB 433 | ONLINE | ONLINE,01.06.2022,3,,"                          "
+CHE 334.01,Desc.,MASS TRANSFER OPERATIONS,4,6,KUTLU ÜLGEN,MMTWW,56334,Online/Classroom,ONLINE | ONLINE | KB 432 | ONLINE | ONLINE,11.06.2022,2,,"                          "
+CHE 342.01,Desc.,REACTION KINETICS&REACTOR DESIGN,4,6,AHMET ERHAN AKSOYLU,MMTWW,34267,Online/Classroom,ONLINE | ONLINE | KB 401 | ONLINE | ONLINE,31.05.2022,3,,"                          "
+CHE 386.01,Desc.,MODELING & OPTIMIZATION,3,5,SEZEN SOYER UZUN,TTThTh,5623,Classroom,KP 01 | KP 01 | KB 401 | KB 401,06.06.2022,1,,"                          "
+CHE 413.01,Desc.,DESIGN&SIMULATION OF MACROMOLECULAR SYS.,3,5,TÜRKAN HALİLOĞLU,MMW,784,Online,ONLINE | ONLINE | ONLINE,09.06.2022,1,,"                          "
+CHE 441.01,Desc.,HYDROGEN TECHNOLOGIES,3,5,ZEYNEP İLSEN ÖNSAN,WWW,789,Online,ONLINE | ONLINE | ONLINE,30.05.2022,1,,"                          "
+CHE 460.01,Desc.,TOTAL QUALITY ENGR. IN CHEMICAL INDUSTRIES,3,5,RAMAZAN YILDIRIM,TTTh,565,Classroom,KB 401 | KB 401 | KB 401,04.06.2022,3,,"                          "
+CHE 462.01,Desc.,CHEMICAL PLANT DESIGN AND ECONOMICS,3,7,AHMET KERİM AVCI,TTThTh,7834,Classroom,KB 401 | KB 401 | KB 432 | KB 432,06.06.2022,2,,"                          "
+CHE 481.01,Desc.,SP.TP.STATISTICAL MECHANICS&CONDENSED MATTER:THEORY&APP.,3,5,BETÜL URALCAN,MFF,289,Online,ONLINE | ONLINE | ONLINE,28.05.2022,2,,"                          "
+CHE 482.01,Desc.,SP.TP.MATERIALS CHARACTERIZATION TECHNIQUES,3,5,SEZEN SOYER UZUN,WWW,235,Online,ONLINE | ONLINE | ONLINE,09.06.2022,2,,"                          "
+CHE 484.01,Desc.,SP.TP.SPECTRAL METHODS WITH APPLICATIONS,3,5,A.KEREM UĞUZ,MThTh,278,Online/Classroom,ONLINE | KB 401 | KB 401,03.06.2022,2,,"                          "
+CHE 487.01,Desc.,SP.TP.PROC.SAFE.MANAG.FOR CHEM.PLANTS,3,5,YILMAZ BAYRAKTAR,MMM,567,Online,ONLINE | ONLINE | ONLINE,08.06.2022,1,,"                          "
+CHE 492.01,Desc.,PROJECT,4,8,BETÜL URALCAN,,,,,,,,"                          "
+CHE 542.01,Desc.,ANALYSIS OF SUSTAINABLE TECHNOLOGIES,3,8,AHMET ERHAN AKSOYLU,,,Classroom,,28.05.2022,3,,"                          "
+CHE 578.01,Desc.,DYNAMIC OPTIMIZATION OF CHEMICAL PROCES.,3,8,UĞUR AKMAN,WWW,8910,Online,ONLINE | ONLINE | ONLINE,06.06.2022,1,,"                          "
+CHE 584.01,Desc.,SP.TP.PHARMACOKINETIC MODELING,3,8,KUTLU ÜLGEN,,,Classroom,,28.05.2022,3,,"                          "
+CHE 589.01,Desc.,SP.TP.PROTEINS IN ACTION MODELING&SIMULATIONS,3,8,TÜRKAN HALİLOĞLU,,,Classroom,,31.05.2022,2,,"                          "
+CHE 622.01,Desc.,STATISTICAL THERMODYNAMICS,3,10,NAZAR İLERİ ERCAN,ThThTh,234,Online,ONLINE | ONLINE | ONLINE,07.06.2022,2,,"                          "
+CHE 642.01,Desc.,CATALYTIC REACTOR ANALYSIS&DESIGN,3,10,ZEYNEP İLSEN ÖNSAN,TTT,234,Online,ONLINE | ONLINE | ONLINE,27.05.2022,3,,"                          "
+CHE 690.01,Desc.,M.S. THESIS,0,60,UĞUR AKMAN,,,,,,,,"                          "
+CHE 690.02,Desc.,M.S. THESIS,0,60,AHMET ERHAN AKSOYLU,,,,,,,,"                          "
+CHE 690.03,Desc.,M.S. THESIS,0,60,BURAK ALAKENT,,,,,,,,"                          "
+CHE 690.04,Desc.,M.S. THESIS,0,60,AHMET KERİM AVCI,,,,,,,,"                          "
+CHE 690.06,Desc.,M.S. THESIS,0,60,NAZAR İLERİ ERCAN,,,,,,,,"                          "
+CHE 690.07,Desc.,M.S. THESIS,0,60,TÜRKAN HALİLOĞLU,,,,,,,,"                          "
+CHE 690.09,Desc.,M.S. THESIS,0,60,SEZEN SOYER UZUN,,,,,,,,"                          "
+CHE 690.11,Desc.,M.S. THESIS,0,60,A.KEREM UĞUZ,,,,,,,,"                          "
+CHE 690.12,Desc.,M.S. THESIS,0,60,KUTLU ÜLGEN,,,,,,,,"                          "
+CHE 690.13,Desc.,M.S. THESIS,0,60,RAMAZAN YILDIRIM,,,,,,,,"                          "
+CHE 690.14,Desc.,M.S. THESIS,0,60,DAMLA EROĞLU PALA,,,,,,,,"                          "
+CHE 690.16,Desc.,M.S. THESIS,0,60,BETÜL URALCAN,,,,,,,,"                          "
+CHE 790.01,Desc.,Ph.D. THESIS,0,120,UĞUR AKMAN,,,,,,,,"                          "
+CHE 790.02,Desc.,Ph.D. THESIS,0,120,AHMET ERHAN AKSOYLU,,,,,,,,"                          "
+CHE 790.03,Desc.,Ph.D. THESIS,0,120,BURAK ALAKENT,,,,,,,,"                          "
+CHE 790.04,Desc.,Ph.D. THESIS,0,120,AHMET KERİM AVCI,,,,,,,,"                          "
+CHE 790.06,Desc.,Ph.D. THESIS,0,120,NAZAR İLERİ ERCAN,,,,,,,,"                          "
+CHE 790.07,Desc.,Ph.D. THESIS,0,120,TÜRKAN HALİLOĞLU,,,,,,,,"                          "
+CHE 790.09,Desc.,Ph.D. THESIS,0,120,SEZEN SOYER UZUN,,,,,,,,"                          "
+CHE 790.11,Desc.,Ph.D. THESIS,0,120,A.KEREM UĞUZ,,,,,,,,"                          "
+CHE 790.12,Desc.,Ph.D. THESIS,0,120,KUTLU ÜLGEN,,,,,,,,"                          "
+CHE 790.13,Desc.,Ph.D. THESIS,0,120,RAMAZAN YILDIRIM,,,,,,,,"                          "
+CHE 790.14,Desc.,Ph.D. THESIS,0,120,DAMLA EROĞLU PALA,,,,,,,,"                          "
+CHE 790.16,Desc.,Ph.D. THESIS,0,120,BETÜL URALCAN,,, ,,,,,"                          "

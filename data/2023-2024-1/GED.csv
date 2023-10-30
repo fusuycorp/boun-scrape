@@ -1,0 +1,33 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Quota,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+GED 505.01,Desc.,COORDINATE SYSTEMS,3,10,Info,ONUR YILMAZ,FFF,567, ,,,,,"                          "
+GED 507.01,Desc.,GEODETIC LINEAR ESTIMATION THEORY,3,10,Info,HALUK ÖZENER,WWW,234, ,,,,,"                          "
+GED 511.01,Desc.,FUNDAMENTALS OF SURVEYING & MAPPING,3,7,Info,HALUK ÖZENER,MMM,678, ,,,,,"                          "
+GED 516.01,Desc.,FUNDAMENTALS OF GEODESY,3,7,Info,ASLI GARAGON,WWW,567, ,,,,,"                          "
+GED 517.01,Desc.,EARTHQUAKES AND FAULTS,3,7,Info,FATİH BULUT,ThThTh,234, ,,,,,"                          "
+GED 579.01,Desc.,GRADUATE SEMINAR,0,1,Info,TÜLAY KAYA EKEN,T,5, ,,,,,"                          "
+GED 591.01,Desc.,SEL.TP.SOLID EARTH & PLATE TECTONICS,3,7,Info,TÜLAY KAYA EKEN,MMM,234, ,,,,,"                          "
+GED 593.01,Desc.,SEL.TP.INSAR APPLICATIONS,3,7,Info,SEMİH ERGİNTAV,WWW,123, ,,,,,"                          "
+GED 595.01,Desc.,SEL.TP. GEOSPATIAL TECHNOLOGIES&APPLICATIONS,3,7,Info,MAHYAT SHAFAPOURTEHRANY,TTT,678, ,,,,,"                          "
+GED 599.01,Desc.,SEL.TP.ACTIVE TECTONIC PROBLEMS IN MODERN GEODESY:INTRODUCTION,3,7,Info,SEMİH ERGİNTAV,TTT,123, ,,,,,"                          "
+GED 602.01,Desc.,Ph.D.SEMINAR II,1,10,Info,SEMİH ERGİNTAV,T,5, ,,,,,"                          "
+GED 632.01,Desc.,GEODETIC DATA BASE,3,8,Info,MAHYAT SHAFAPOURTEHRANY,WWW,678, ,,,,,"                          "
+GED 690.01,Desc.,M.S. THESIS,0,60,Info,HALUK ÖZENER,MMMM,1234, ,,,,,"                          "
+GED 690.02,Desc.,M.S. THESIS,0,60,Info,ASLI GARAGON,W,2, ,,,,,"                          "
+GED 690.03,Desc.,M.S. THESIS,0,60,Info,ONUR YILMAZ,ThTh,67, ,,,,,"                          "
+GED 690.04,Desc.,M.S. THESIS,0,60,Info,SEMİH ERGİNTAV,WWW,567, ,,,,,"                          "
+GED 690.05,Desc.,M.S. THESIS,0,60,Info,FATİH BULUT,W,8, ,,,,,"                          "
+GED 690.06,Desc.,M.S. THESIS,0,60,Info,TÜLAY KAYA EKEN,WWWW,5678, ,,,,,"                          "
+GED 690.07,Desc.,M.S. THESIS,0,60,Info,MAHYAT SHAFAPOURTEHRANY,M,5, ,,,,,"                          "
+GED 692.01,Desc.,SP.TP.PHYSICS OF THE EARTH'S CRUST&DEFORMATION,3,9,Info,TÜLAY KAYA EKEN,TTT,234, ,,,,,"                          "
+GED 695.01,Desc.,SP.TP.ACTIVE TECT.PROBLEMS IN MODERN GED:KINEMATIC MODELLING&DEFORMATION ANALYSIS,3,9,Info,SEMİH ERGİNTAV,TTT,678, ,,,,,"                          "
+GED 696.01,Desc.,SP.TP.PHYSICAL GEODESY,3,9,Info,ONUR YILMAZ,TTT,567, ,,,,,"                          "
+GED 698.01,Desc.,SP.TP.EARTHQUAKE GENERATION PROCESSES,3,9,Info,FATİH BULUT,WWW,567, ,,,,,"                          "
+GED 699.01,Desc.,SP.TP.EARTH OBSERVATION&GEOSPATIAL TECHNOLOGIES,3,9,Info,ASLI GARAGON,ThThTh,123, ,,,,,"                          "
+GED 700.01,Desc.,GRADUATE SEMINAR,0,2,Info,HALUK ÖZENER,Th,6, ,,,,,"                          "
+GED 790.01,Desc.,Ph.D. THESIS,0,120,Info,HALUK ÖZENER,ThTh,78, ,,,,,"                          "
+GED 790.02,Desc.,Ph.D. THESIS,0,120,Info,ASLI GARAGON,W,3, ,,,,,"                          "
+GED 790.03,Desc.,Ph.D. THESIS,0,120,Info,ONUR YILMAZ,Th,8, ,,,,,"                          "
+GED 790.04,Desc.,Ph.D. THESIS,0,120,Info,SEMİH ERGİNTAV,W,8, ,,,,,"                          "
+GED 790.05,Desc.,Ph.D. THESIS,0,120,Info,FATİH BULUT,Th,8, ,,,,,"                          "
+GED 790.06,Desc.,Ph.D. THESIS,0,120,Info,TÜLAY KAYA EKEN,M,7, ,,,,,"                          "
+GED 790.07,Desc.,Ph.D. THESIS,0,120,Info,MAHYAT SHAFAPOURTEHRANY,F,5, ,,,,,"                          "

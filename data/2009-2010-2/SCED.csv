@@ -1,0 +1,16 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+SCED340.01,Desc.,"SCIENCE,TECHNOLOGY & SOCIETY",3,5,SEVİL AKAYGÜN,TThTh,512,,YD 02 | YD 204 | YD 204,,,,"                          "
+SCED360.01,Desc.,SECONDARY SCHOOL SCIENCE LABORATORY APP,3,6,EMİNE ADADAN,MMThThTh,78678,,YD 104 | YD 104 | YD 02 | YD 02 | YD 02,,,,"                          "
+SCED408.01,Desc.,TEXT ANALYSIS IN SCIENCE & MATHEMATICS E,3,4,FATİH ÇAĞLAYAN MERCAN,MMTh,783,,YD 102 | YD 102 | YD 03,,,,"                          "
+SCED408.02,Desc.,TEXT ANALYSIS IN SCIENCE & MATHEMATICS E,3,4,SEVİL AKAYGÜN,TTTh,125,,YD 106 | YD 106 | YD 06,,,,"                          "
+SCED414.01,Desc.,SEMINAR ON PRACTICE TEACHING IN CHEMISTR,4,7,BUKET YAKMACI GÜZEL,WW,56,,,,,,"                          "
+SCED416.01,Desc.,SEMINAR ON PRACTICE TEACHING IN MATHEMAT,4,7,GÜLSEREN KARAGÖZ AKAR,TT,78,,YD 102 | YD 102,,,,"                          "
+SCED418.01,Desc.,SEMINAR ON PRACTICE TEACHING IN PHYSICS,4,7,FATİH ÇAĞLAYAN MERCAN,WW,78,,YD 101 | YD 101,,,,"                          "
+SCED422.01,Desc.,PRACTICE TEACHING IN CHEMISTRY,4,8,EMİNE ADADAN,MM,56,,YD 104 | YD 104,,,,"                          "
+SCED432.01,Desc.,PRACTICE TEACHING IN MATHEMATICS,4,8,GÜLSEREN KARAGÖZ AKAR,ThTh,56,,YD 103 | YD 103,,,,"                          "
+SCED442.01,Desc.,PRACTICE TEACHING IN PHYSICS,4,8,FATİH ÇAĞLAYAN MERCAN,ThTh,78,,YD 103 | YD 103,,,,"                          "
+SCED450.01,Desc.,SCHOOL EXPERIENCE IN TEAC.MATH.&SC.I,3,6,SEVİL AKAYGÜN,ThTh,78,,YD 104 | YD 104,,,,"        PRSC                  "
+SCED450.02,Desc.,SCHOOL EXPERIENCE IN TEAC.MATH.&SC.I,3,6,EMİNE ADADAN,WW,56,,YD 102 | YD 102,,,,"        PRSC                  "
+SCED450.03,Desc.,SCHOOL EXPERIENCE IN TEAC.MATH.&SC.I,3,6,BUKET YAKMACI GÜZEL,ThTh,34,,,,,,"        PRSC                  "
+SCED498.01,Desc.,SP.TOP.:INNOVATIVE TEACHING IN SCI.&MATH.,3,7,HAYAL KÖKSAL,WWW,567,,YD 05 | YD 05 | YD 05,,,,"                          "
+SCED49C.01,Desc.,SP.STUD.RESEARCH APPLICATIONS,3,6,FATİH ÇAĞLAYAN MERCAN,FFF,678,,YD 101 | YD 101 | YD 101,,,,"                          "

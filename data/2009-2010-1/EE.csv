@@ -1,0 +1,89 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EE  101.01,Desc.,ORIENTATION TO ELECTRICAL ENGINEERING,3,6,MURAT SARAÇLAR,MM,34,,KBPCLAB | KBPCLAB,18.01.2010,1,,"                          "
+EE  142.01,Desc.,DIGITAL SYSTEMS,2,3,HAKAN DELİÇ,FF,23,,KBPCLAB | KBPCLAB,18.01.2010,2,,"                          "
+EE  201.01,Desc.,ELECTRICAL CIRCUITS I,4,5,YAĞMUR DENİZHAN,MMWW,3434,,NH 202 | NH 202 | KBPCLAB | KBPCLAB,07.01.2010,3,,"                          "
+EE  202.01,Desc.,ELECTRICAL CIRCUITS II,4,8,ARDA YALÇINKAYA,TTThTh,7878,,TELRA | TELRA | KB 230 | KB 230,08.01.2010,1,,"                          "
+EE  210.02,Desc.,INTRODUCTION TO ELECTRICAL ENGINEERING,3,6,İSMAİL FAİK BAŞKAYA,MMW,566,,KBPCLAB | KBPCLAB | KBZ 01,13.01.2010,2,ME,"                          "
+EE  241.01,Desc.,COMPUTER TOOLS FOR ELECTRICAL ENGINEERS,2,4,GÜNHAN DÜNDAR,TT,12,,NH 202 | NH 202,14.01.2010,2,,"                          "
+EE  313.01,Desc.,PROBABILITY FOR ELECTRICAL ENGINEERS,4,7,AYŞIN ERTÜZÜN,TTThTh,2323,,KBPCLAB | KBPCLAB | KBPCLAB | KBPCLAB,16.01.2010,2,,"                          "
+EE  333.01,Desc.,ELECTRONICS I,3,4,ARDA YALÇINKAYA,MMW,233,,KB 125 | KB 125 | KB 125,11.01.2010,2,,"                          "
+EE  363.01,Desc.,ELECTROMAGNETIC FIELD THEORY,4,4,SELİM ŞEKER,MMWW,5612,,KB 125 | KB 125 | NH 202 | NH 202,07.01.2010,2,,"                          "
+EE  373.01,Desc.,SIGNALS & SYSTEMS,4,5,BURAK ACAR,TTThTh,5656,,KBPCLAB | KBPCLAB | KBPCLAB | KBPCLAB,13.01.2010,2,,"                          "
+EE  433.01,Desc.,COMMUNICATION ELECTRONICS,3,6,AVNİ MORGÜL,MMM,678,,YENİ SI | YENİ SI | YENİ SI,06.01.2010,3,,"                          "
+EE  437.01,Desc.,OP. AMPS & APPLICATIONS,3,6,YASEMİN KAHYA,MWW,567,, | YENİ SI | YENİ SI,13.01.2010,2,,"                          "
+EE  439.01,Desc.,ADVANCED ELECTRONICS LAB,1,6,ÖMER CERİD,FF,78,,TELRA | TELRA,11.01.2010,1,,"                          "
+EE  443.01,Desc.,MICROPROCESSORS,4,6,ŞENOL MUTLU,TFF,434,,KB 230 | KB 230 | KB 230,12.01.2010,1,,"                          "
+EE  450.01,Desc.,CONTROL TECHNOLOGY & DESIGN,4,6,KEMAL CILIZ,MMW,561,,TELRA | TELRA | TELRA,19.01.2010,3,,"                          "
+EE  451.01,Desc.,INTRODUCTION TO ROBOT CONTROL,3,6,MEHMET AKAR,TTW,232,,KB 230 | KB 230,18.01.2010,1,,"                          "
+EE  453.01,Desc.,LINEAR SYSTEM THEORY,4,6,MEHMET AKAR,MMWW,3478,,KB 230 | KB 230 | KBPCLAB | KBPCLAB,06.01.2010,3,,"                          "
+EE  457.01,Desc.,INTRODUCTION TO OPTIMIZATION THEORY,3,6,M. OKYAY KAYNAK,WWTh,565,,TELRA | TELRA | KB 230,18.01.2010,3,,"                          "
+EE  473.01,Desc.,INTRODUCTION TO DIGITAL SIGNAL PROCESSIN,3,6,LEVENT ARSLAN,TThTh,834,,KB 230 | KB 230 | KB 230,15.01.2010,3,,"                          "
+EE  475.01,Desc.,INTRODUCTION TO IMAGE PROCESSING,3,6,BÜLENT SANKUR,TTTh,125,,TELRA | TELRA | YENİ SI,13.01.2010,3,,"                          "
+EE  477.01,Desc.,INTRODUCTION TO DIGITAL COMMUNICATIONS,4,6,MUTLU KOCA,WWFF,6756,,KB 230 | KB 230 | KB 230 | KB 230,18.01.2010,1,,"                          "
+EE  479.01,Desc.,COMMUNICATION LABORATORY,1,2,ALİ EMRE PUSANE,TT,67,,,12.01.2010,1,,"                          "
+EE  479.02,Desc.,COMMUNICATION LABORATORY,1,2,ALİ EMRE PUSANE,ThTh,67,,,12.01.2010,1,,"                          "
+EE  484.01,Desc.,SP.TOP.:MANAGEMENT FOR ENGINEERS,3,4,BARHAN ÖZCE,MMThTh,7889,,TELRA | TELRA | TELRA | TELRA,14.01.2010,1,,"                          "
+EE  491.01,Desc.,SPECIAL PROJECT,3,6,ŞENOL MUTLU,TBA,,,,12.01.2010,3,,"                          "
+EE  492.01,Desc.,PROJECT,4,6,ŞENOL MUTLU,TBA,,,,09.01.2010,1,,"                          "
+EE  497.01,Desc.,SP.TOP.(JAVA PROGRAMMING),3,6,IŞIL BOZMA,MMW,124,,TELRA | TELRA | TELRA,09.01.2010,2,,"                          "
+EE  537.01,Desc.,INTRODUCTION TO VLSI DESIGN,3,7,GÜNHAN DÜNDAR,TThTh,356,,TELRA | TELRA | TELRA,08.01.2010,3,,"                          "
+EE  541.01,Desc.,COMPUTER COMMUNICATION NETWORKS I,3,7,BÜLENT SANKUR,TThTh,512,,YENİ SI | YENİ SI | YENİ SI,15.01.2010,1,,"                          "
+EE  545.01,Desc.,WIRELESS NETWORKS & MOBILE SYSTEMS I,3,7,EMİN ANARIM,MMM,569,,KB 230 | KB 230 | KB 230,08.01.2010,3,,"                          "
+EE  573.01,Desc.,PATTERN RECOGNITION,3,6,IŞIL BOZMA,MWW,523,,YENİ SI | TELRA | TELRA,19.01.2010,2,,"                          "
+EE  579.01,Desc.,GRADUATE SEMINAR,0,6,STAFF STAFF,F,7,,KB 230,,0,,"                          "
+EE  596.01,Desc.,SEL.TOP.:INTRODUCTION TO MICRO ELECTRO M,3,7,ŞENOL MUTLU,TWW,112,,KB 230 | YENİ SI | YENİ SI,18.01.2010,3,,"                          "
+EE  59J.01,Desc.,SP.TOP.RADIO PROPAGATION FOR WIRELESS C.,3,7,SELİM ŞEKER,MMW,124,,KB 230 | KB 230 | YENİ SI,08.01.2010,1,,"                          "
+EE  631.01,Desc.,ADVANCED ELECTRONIC CIRCUITS,3,6,ÖMER CERİD,MMF,345,,YENİ SI | YENİ SI | TELRA,13.01.2010,3,,"                          "
+EE  633.01,Desc.,COMPUTATIONAL ASPECTS OF VLSI,3,6,İSMAİL FAİK BAŞKAYA,WWF,784,,TELRA | TELRA | TELRA,13.01.2010,1,,"                          "
+EE  639.01,Desc.,SEL.TOP.(CURRENT-MODE ANALOG CIRCUITS),3,6,OĞUZHAN ÇİÇEKOĞLU,FFF,123,,TELRA | TELRA | TELRA,16.01.2010,1,,"                          "
+EE  643.01,Desc.,DIGITAL COMMUNICATION,3,6,HAKAN DELİÇ,WWF,235,,KB 230 | KB 230 | YENİ SI,07.01.2010,3,,"                          "
+EE  652.01,Desc.,ADAPTIVE CONTROL,3,6,KEMAL CILIZ,TBA,,,,07.01.2010,1,,"                          "
+EE  681.01,Desc.,SP.TOP.:PROCESS ARCHIT.& DEVICE DESING ,3,6,VICTOR ZEKERİYA,TBA,,,,08.01.2010,3,,"                          "
+EE  683.01,Desc.,SP.TOP:ADVANCED TOP.IN SPEECH PROC.,3,6,MURAT SARAÇLAR,TBA,,,,09.01.2010,1,,"                          "
+EE  690.01,Desc.,M.S.THESIS,0,60,BURAK ACAR,TBA,,,,,0,,"                          "
+EE  690.02,Desc.,M.S.THESIS,0,60,MEHMET AKAR,TBA,,,,,0,,"                          "
+EE  690.03,Desc.,M.S.THESIS,0,60,EMİN ANARIM,TBA,,,,,0,,"                          "
+EE  690.04,Desc.,M.S.THESIS,0,60,LEVENT ARSLAN,TBA,,,,,0,,"                          "
+EE  690.05,Desc.,M.S.THESIS,0,60,IŞIL BOZMA,TBA,,,,,0,,"                          "
+EE  690.06,Desc.,M.S.THESIS,0,60,ÖMER CERİD,TBA,,,,,0,,"                          "
+EE  690.07,Desc.,M.S.THESIS,0,60,KEMAL CILIZ,TBA,,,,,0,,"                          "
+EE  690.08,Desc.,M.S.THESIS,0,60,OĞUZHAN ÇİÇEKOĞLU,TBA,,,,,0,,"                          "
+EE  690.09,Desc.,M.S.THESIS,0,60,HAKAN DELİÇ,TBA,,,,,0,,"                          "
+EE  690.10,Desc.,M.S.THESIS,0,60,YAĞMUR DENİZHAN,TBA,,,,,0,,"                          "
+EE  690.11,Desc.,M.S.THESIS,0,60,GÜNHAN DÜNDAR,TBA,,,,,0,,"                          "
+EE  690.12,Desc.,M.S.THESIS,0,60,AYŞIN ERTÜZÜN,TBA,,,,,0,,"                          "
+EE  690.14,Desc.,M.S.THESIS,0,60,YASEMİN KAHYA,TBA,,,,,0,,"                          "
+EE  690.15,Desc.,M.S.THESIS,0,60,M. OKYAY KAYNAK,TBA,,,,,0,,"                          "
+EE  690.16,Desc.,M.S.THESIS,0,60,MUTLU KOCA,TBA,,,,,0,,"                          "
+EE  690.18,Desc.,M.S.THESIS,0,60,AVNİ MORGÜL,TBA,,,,,0,,"                          "
+EE  690.19,Desc.,M.S.THESIS,0,60,ŞENOL MUTLU,TBA,,,,,0,,"                          "
+EE  690.20,Desc.,M.S.THESIS,0,60,KADRİ ÖZÇALDIRAN,TBA,,,,,0,,"                          "
+EE  690.21,Desc.,M.S.THESIS,0,60,BÜLENT SANKUR,TBA,,,,,0,,"                          "
+EE  690.22,Desc.,M.S.THESIS,0,60,MURAT SARAÇLAR,TBA,,,,,0,,"                          "
+EE  690.23,Desc.,M.S.THESIS,0,60,SELİM ŞEKER,TBA,,,,,0,,"                          "
+EE  690.24,Desc.,M.S.THESIS,0,60,ARDA YALÇINKAYA,TBA,,,,,0,,"                          "
+EE  690.25,Desc.,M.S.THESIS,0,60,HEBA MOHAMED YÜKSEL,TBA,,,,,0,,"                          "
+EE  699.01,Desc.,GUIDED RESEARCH,4,8,BÜLENT SANKUR,TBA,,,,,0,,"                          "
+EE  790.01,Desc.,Ph.D.THESIS,0,120,BURAK ACAR,TBA,,,,,0,,"                          "
+EE  790.02,Desc.,Ph.D.THESIS,0,120,MEHMET AKAR,TBA,,,,,0,,"                          "
+EE  790.03,Desc.,Ph.D.THESIS,0,120,EMİN ANARIM,TBA,,,,,0,,"                          "
+EE  790.04,Desc.,Ph.D.THESIS,0,120,LEVENT ARSLAN,TBA,,,,,0,,"                          "
+EE  790.05,Desc.,Ph.D.THESIS,0,120,IŞIL BOZMA,TBA,,,,,0,,"                          "
+EE  790.06,Desc.,Ph.D.THESIS,0,120,ÖMER CERİD,TBA,,,,,0,,"                          "
+EE  790.07,Desc.,Ph.D.THESIS,0,120,KEMAL CILIZ,TBA,,,,,0,,"                          "
+EE  790.08,Desc.,Ph.D.THESIS,0,120,OĞUZHAN ÇİÇEKOĞLU,TBA,,,,,0,,"                          "
+EE  790.09,Desc.,Ph.D.THESIS,0,120,HAKAN DELİÇ,TBA,,,,,0,,"                          "
+EE  790.10,Desc.,Ph.D.THESIS,0,120,GÜNHAN DÜNDAR,TBA,,,,,0,,"                          "
+EE  790.11,Desc.,Ph.D.THESIS,0,120,YAĞMUR DENİZHAN,TBA,,,,,0,,"                          "
+EE  790.12,Desc.,Ph.D.THESIS,0,120,AYŞIN ERTÜZÜN,TBA,,,,,0,,"                          "
+EE  790.14,Desc.,Ph.D.THESIS,0,120,YASEMİN KAHYA,TBA,,,,,0,,"                          "
+EE  790.15,Desc.,Ph.D.THESIS,0,120,M. OKYAY KAYNAK,TBA,,,,,0,,"                          "
+EE  790.16,Desc.,Ph.D.THESIS,0,120,MUTLU KOCA,TBA,,,,,0,,"                          "
+EE  790.18,Desc.,Ph.D.THESIS,0,120,AVNİ MORGÜL,TBA,,,,,0,,"                          "
+EE  790.19,Desc.,Ph.D.THESIS,0,120,ŞENOL MUTLU,TBA,,,,,0,,"                          "
+EE  790.20,Desc.,Ph.D.THESIS,0,120,KADRİ ÖZÇALDIRAN,TBA,,,,,0,,"                          "
+EE  790.21,Desc.,Ph.D.THESIS,0,120,BÜLENT SANKUR,TBA,,,,,0,,"                          "
+EE  790.22,Desc.,Ph.D.THESIS,0,120,MURAT SARAÇLAR,TBA,,,,,0,,"                          "
+EE  790.23,Desc.,Ph.D.THESIS,0,120,SELİM ŞEKER,TBA,,,,,0,,"                          "
+EE  790.24,Desc.,Ph.D.THESIS,0,120,ARDA YALÇINKAYA,TBA,,,,,0,,"                          "
+EE  790.25,Desc.,Ph.D.THESIS,0,120,HEBA MOHAMED YÜKSEL,TBA,,,,,0,,"                          "

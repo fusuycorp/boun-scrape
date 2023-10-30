@@ -1,0 +1,143 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AD  102.01,Desc.,INTRODUCTION TO MANAGEMENT,3,5,STAFF STAFF,MMM,8910,Online,,,,,"                          "
+AD  131.01,Desc.,INTRO. TO LAW I,3,4,YASİN BECENİ,FFF,678,Online,,,,,"                          "
+AD  204.01,Desc.,BUSINESS COMMUNICATIONS,3,5,SEDA GÜCÜYENER,MMM,345,Online,,,,,"                          "
+AD  204.02,Desc.,BUSINESS COMMUNICATIONS,3,5,SEDA GÜCÜYENER,WWW,567,Online,,,,,"                          "
+AD  204.03,Desc.,BUSINESS COMMUNICATIONS,3,5,SEDA GÜCÜYENER,ThThTh,234,Online,,,,,"                          "
+AD  211.01,Desc.,FINANCIAL ACCOUNTING FOR ECONOMISTS,3,4,UĞUR AKDOĞAN,FFF,678,Online,,,,,"                          "
+AD  214.01,Desc.,MANAGERIAL ACCOUNTING,3,5,ALİ COŞKUN,TTTh,565,Online,,,,,"                          "
+AD  214.02,Desc.,MANAGERIAL ACCOUNTING,3,5,ALİ COŞKUN,TThTh,367,Online,,,,,"                          "
+AD  220.01,Desc.,MANAGEMENT OF ORGANIZATIONS,3,5,ÖZGÜN BURCU RODOPMAN,WWW,234,Online,,,,,"                          "
+AD  231.01,Desc.,BUSINESS LAW,3,4,ERDEM BÜYÜKSAGİS,FFF,234,Online,,,,,"                          "
+AD  242.01,Desc.,STRATEGIC MARKETING MANAGEMENT,3,5,ESER BORAK,MTT,223,Online,,,,,"                          "
+AD  242.02,Desc.,STRATEGIC MARKETING MANAGEMENT,3,5,BELGİN ARISAN,TThTh,7910,Online,,,,,"                          "
+AD  242.03,Desc.,STRATEGIC MARKETING MANAGEMENT,3,5,BELGİN ARISAN,TTTh,898,Online,,,,,"                          "
+AD  252.01,Desc.,MANAGERIAL STATISTICS II,3,5,ULAŞ AKKÜÇÜK,WWW,789,Online,,,,,"                          "
+AD  252.02,Desc.,MANAGERIAL STATISTICS II,3,5,NESRİN OKAY AKMAN,MMM,678,Online,,,,,"                          "
+AD  302.01,Desc.,RESEARCH METHODS,3,6,ÖZLEM HESAPÇI KARACA,TTT,678,Online,,,,,"                          "
+AD  302.02,Desc.,RESEARCH METHODS,3,6,ÖZLEM HESAPÇI KARACA,WWW,678,Online,,,,,"                          "
+AD  311.01,Desc.,FINANCIAL MANAGEMENT,3,6,VEDAT AKGİRAY,TTT,234,Online,,,,,"                          "
+AD  311.02,Desc.,FINANCIAL MANAGEMENT,3,6,NESLİHAN N.YILMAZ,TTT,234,Online,,,,,"                          "
+AD  312.01,Desc.,MONEY & BANKING,3,5,METİN ERCAN,FFF,678,Online,,,,,"                          "
+AD  314.01,Desc.,INTERMEDIATE FINANCIAL ACCOUNTING,3,5,FATİH F.YILMAZ,MMM,123,Online,,,,,"                          "
+AD  351.01,Desc.,OPERATIONS MANAGEMENT,3,5,ŞEVKET GÜNTER,ThThTh,567,Online,,,,,"                          "
+AD  351.02,Desc.,OPERATIONS MANAGEMENT,3,5,YAVUZ ACAR,WWW,678,Online,,,,,"                          "
+AD  353.01,Desc.,MANAGEMENT SCIENCE,3,5,MUSTAFA HAYRİ TONGARLAK,WWW,234,Online,,,,,"                          "
+AD  401.01,Desc.,GLOBALIZATION&INTERNATIONAL MANAGEMENT,3,6,İZZET SIDKI DARENDELİ,TTW,455,Online,,,,,"                          "
+AD  408.01,Desc.,STRATEGIC MANAGEMENT,3,6,OKTAY ÖZİNCİ,WWTh,232,Online,,,,,"                          "
+AD  408.02,Desc.,STRATEGIC MANAGEMENT,3,6,OKTAY ÖZİNCİ,WThTh,434,Online,,,,,"                          "
+AD  409.01,Desc.,BUSINESS ETHICS,3,6,ESER BORAK,MMM,345,Online,,,,,"                          "
+AD  410.01,Desc.,ADVANCED MANAGERIAL ACCOUNTING,3,6,İREM NUHOĞLU,TTT,678,Online,,,,,"                          "
+AD  411.01,Desc.,FINANCE FOR CREATIVE INDUSTRIES,3,6,CENK CEVAT KARAHAN,TTT,678,Online,,,,,"                          "
+AD  418.01,Desc.,INTERNATIONAL FINANCE,3,6,NESLİHAN N.YILMAZ,ThThTh,345,Online,,,,,"                          "
+AD  422.01,Desc.,PSYCHOLOGY IN MANAGEMENT,3,6,ÖZGÜN BURCU RODOPMAN,WWW,678,Online,,,,,"                          "
+AD  424.01,Desc.,HUMAN BEHAVIOR IN ORGANIZATIONS,3,6,HAYAT KABASAKAL,ThThTh,678,Online,,,,,"                          "
+AD  430.01,Desc.,TURKISH BUSINESS ENVIRONMENT,3,6,İDİL TÜRKMENOĞLU,WWW,91011,Online,,,,,"                          "
+AD  433.01,Desc.,MANAGEMENT SIMULATION,3,6,ALİ COŞKUN,MMM,91011,Online,,,,,"                          "
+AD  452.01,Desc.,INFORMATION SYSTEMS MANAGEMENT,3,6,YAVUZ ACAR,ThThTh,101112,Online,,,,,"                          "
+AD  454.01,Desc.,PREDICTIVE ANALYTICS,3,6,MUSTAFA HAYRİ TONGARLAK,WWF,674,Online,,,,,"                          "
+AD  458.01,Desc.,FORECASTING,3,6,ŞEVKET GÜNTER,TTT,678,Online,,,,,"                          "
+AD  469.01,Desc.,VALUATION,3,6,ATİLLA ODABAŞI,WWW,678,Online,,,,,"                          "
+AD  472.01,Desc.,FINANCIAL MARKETS&INSTITUTIONS,3,6,CENK CEVAT KARAHAN,WWW,91011,Online,,,,,"                          "
+AD  477.01,Desc.,BANK MANAGEMENT,3,6,VECİHE ENGİN ÖLÇER,TTT,123,Online,,,,,"                          "
+AD  48B.01,Desc.,SP.TP.IN PORTFOLIO MANAGEMENT,3,6,OSMAN YILMAZ,FFF,101112,Online,,,,,"                          "
+AD  48C.01,Desc.,SP.TP.IN SUSTAINABILITY LEADERSHIP,3,6,BEHİCE ERTENÜ,ThThTh,678,Online,,,,,"                          "
+AD  496.01,Desc.,SP.TOP. IN FINANCE,3,6,SELİM SEVAL,MMM,789,Online,,,,,"                          "
+AD  497.01,Desc.,BACHELOR OF ARTS DEGREE PROJECT,3,6,GÜVEN ALPAY,FFF,123,Online,,,,,"                          "
+AD  509.01,Desc.,GLOBAL CONTEXT OF BUSINESS,3,6,DENİZ ERDEN,TTT,234,Online,,,,,"                          "
+AD  510.01,Desc.,MANAGEMENT OF ETHICAL ISSUES&SUSTAINABIL,3,6,ESER BORAK,TTT,567,Online,,,,,"                          "
+AD  516.01,Desc.,FINANCIAL DERIVATIVES,3,7.50,VEDAT AKGİRAY,TTT,111213,Online,,,,,"                          "
+AD  517.01,Desc.,INVESTMENT ANALYSIS & PORTFOLIO MGMT.,3,7.50,ATİLLA ODABAŞI,ThThTh,678,Online,,,,,"                          "
+AD  581.01,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,VEDAT AKGİRAY,,,Online,,,,,"                          "
+AD  581.02,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,ULAŞ AKKÜÇÜK,,,Online,,,,,"                          "
+AD  581.03,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,BELGİN ARISAN,,,Online,,,,,"                          "
+AD  581.04,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,GÜLDEN ASUGMAN,,,Online,,,,,"                          "
+AD  581.05,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,ASUNUR CEZAR,,,Online,,,,,"                          "
+AD  581.06,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,ALİ COŞKUN,,,Online,,,,,"                          "
+AD  581.07,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,METİN ERCAN,,,Online,,,,,"                          "
+AD  581.08,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,ÖZLEM HESAPÇI KARACA,,,Online,,,,,"                          "
+AD  581.09,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,HAYAT KABASAKAL,,,Online,,,,,"                          "
+AD  581.10,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,HÜSEYİN KARACA,,,Online,,,,,"                          "
+AD  581.11,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,CENK CEVAT KARAHAN,,,Online,,,,,"                          "
+AD  581.12,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,NESLİHAN N.YILMAZ,,,Online,,,,,"                          "
+AD  581.13,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,İREM NUHOĞLU,,,Online,,,,,"                          "
+AD  581.14,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,ATİLLA ODABAŞI,,,Online,,,,,"                          "
+AD  581.15,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,NESRİN OKAY AKMAN,,,Online,,,,,"                          "
+AD  581.16,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,ÖZLEM ÖZ,,,Online,,,,,"                          "
+AD  581.17,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,ÖZGÜN BURCU RODOPMAN,,,Online,,,,,"                          "
+AD  581.18,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,AYŞEGÜL TOKER,,,Online,,,,,"                          "
+AD  581.19,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,MUSTAFA HAYRİ TONGARLAK,,,Online,,,,,"                          "
+AD  581.20,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,MİNE UĞURLU,,,Online,,,,,"                          "
+AD  585.01,Desc.,SP.TP.MARKETING RESEARCH CRM&DATA MINING,3,7.50,ULAŞ AKKÜÇÜK,MMM,234,Online,,,,,"                          "
+AD  58A.01,Desc.,SP.TP.IN SUPPLY CHAIN MANAGEMENT,3,7.50,YAVUZ ACAR,ThThTh,678,Online,,,,,"                          "
+AD  595.01,Desc.,SP. TOP. IN FINANCE & ACCOUNTING,3,7.50,NESRİN OKAY AKMAN,TTT,8910,Online,,,,,"                          "
+AD  601.01,Desc.,MULTIVARIATE DATA ANALYSIS,4,10,HÜSEYİN KARACA,MMM,123,Online,,,,,"                          "
+AD  612.01,Desc.,THEORY OF FINANCE,4,10,MİNE UĞURLU,FFF,567,Online,,,,,"                          "
+AD  614.01,Desc.,CORPORATE FINANCE,4,10,MİNE UĞURLU,TTT,678,Online,,,,,"                          "
+AD  626.01,Desc.,ORGANIZATIONAL BEHAVIOR:LIFE&EXPERIENCES,4,10,HAYAT KABASAKAL,WWW,234,Online,,,,,"                          "
+AD  628.01,Desc.,CONTEMPORARY ORGANIZATIONAL ANALYSIS:ACT,4,20,YASİN ROFCANIN,WWW,678,Online,,,,,"                          "
+AD  644.01,Desc.,STRATEGY&MANAGEMENT IN MARKETING SCIENCE,4,10,GÜLDEN ASUGMAN,TTT,345,Online,,,,,"                          "
+AD  675.01,Desc.,DIRECTED READINGS IN OIM,4,30,ULAŞ AKKÜÇÜK,,,Online,,,,,"                          "
+AD  676.01,Desc.,DIRECTED READINGS IN OIM,4,30,ASUNUR CEZAR,,,Online,,,,,"                          "
+AD  677.01,Desc.,DIRECTED READINGS IN OIM,4,30,ŞEVKET GÜNTER,,,Online,,,,,"                          "
+AD  678.01,Desc.,DIRECTED READINGS IN OIM,4,30,AYŞEGÜL TOKER,,,Online,,,,,"                          "
+AD  679.01,Desc.,DIRECTED READINGS IN OIM,4,30,MUSTAFA HAYRİ TONGARLAK,,,Online,,,,,"                          "
+AD  680.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,VEDAT AKGİRAY,,,Online,,,,,"                          "
+AD  680.02,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,ALİ COŞKUN,,,Online,,,,,"                          "
+AD  680.03,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,METİN ERCAN,,,Online,,,,,"                          "
+AD  680.04,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,CENK CEVAT KARAHAN,,,Online,,,,,"                          "
+AD  680.05,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,NESLİHAN N.YILMAZ,,,Online,,,,,"                          "
+AD  681.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,İREM NUHOĞLU,,,Online,,,,,"                          "
+AD  682.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,ATİLLA ODABAŞI,,,Online,,,,,"                          "
+AD  683.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,NESRİN OKAY AKMAN,,,Online,,,,,"                          "
+AD  684.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,MİNE UĞURLU,,,Online,,,,,"                          "
+AD  685.01,Desc.,DIRECTED READ.IN MGMT.&ORGANIZ.THEORY,4,30,HAYAT KABASAKAL,,,Online,,,,,"                          "
+AD  686.01,Desc.,DIRECTED READ.IN MGMT.&ORGANIZ.THEORY,4,30,ÖZLEM ÖZ,,,Online,,,,,"                          "
+AD  687.01,Desc.,DIRECTED READ.IN MGMT.&ORGANIZ. THEORY,4,30,ÖZGÜN BURCU RODOPMAN,,,Online,,,,,"                          "
+AD  690.01,Desc.,MASTER THESIS,0,60,VEDAT AKGİRAY,,,Online,,,,,"                          "
+AD  690.02,Desc.,MASTER THESIS,0,60,ULAŞ AKKÜÇÜK,,,Online,,,,,"                          "
+AD  690.03,Desc.,MASTER THESIS,0,60,BELGİN ARISAN,,,Online,,,,,"                          "
+AD  690.04,Desc.,MASTER THESIS,0,60,GÜLDEN ASUGMAN,,,Online,,,,,"                          "
+AD  690.05,Desc.,MASTER THESIS,0,60,ASUNUR CEZAR,,,Online,,,,,"                          "
+AD  690.06,Desc.,MASTER THESIS,0,60,ALİ COŞKUN,,,Online,,,,,"                          "
+AD  690.07,Desc.,MASTER THESIS,0,60,METİN ERCAN,,,Online,,,,,"                          "
+AD  690.08,Desc.,MASTER THESIS,0,60,ŞEVKET GÜNTER,,,Online,,,,,"                          "
+AD  690.09,Desc.,MASTER THESIS,0,60,ÖZLEM HESAPÇI KARACA,,,Online,,,,,"                          "
+AD  690.10,Desc.,MASTER THESIS,0,60,HAYAT KABASAKAL,,,Online,,,,,"                          "
+AD  690.11,Desc.,MASTER THESIS,0,60,HÜSEYİN KARACA,,,Online,,,,,"                          "
+AD  690.12,Desc.,MASTER THESIS,0,60,CENK CEVAT KARAHAN,,,Online,,,,,"                          "
+AD  690.13,Desc.,MASTER THESIS,0,60,NESLİHAN N.YILMAZ,,,Online,,,,,"                          "
+AD  690.14,Desc.,MASTER THESIS,0,60,İREM NUHOĞLU,,,Online,,,,,"                          "
+AD  690.15,Desc.,MASTER THESIS,0,60,ATİLLA ODABAŞI,,,Online,,,,,"                          "
+AD  690.16,Desc.,MASTER THESIS,0,60,NESRİN OKAY AKMAN,,,Online,,,,,"                          "
+AD  690.17,Desc.,MASTER THESIS,0,60,ÖZLEM ÖZ,,,Online,,,,,"                          "
+AD  690.18,Desc.,MASTER THESIS,0,60,ÖZGÜN BURCU RODOPMAN,,,Online,,,,,"                          "
+AD  690.19,Desc.,MASTER THESIS,0,60,AYŞEGÜL TOKER,,,Online,,,,,"                          "
+AD  690.20,Desc.,MASTER THESIS,0,60,MUSTAFA HAYRİ TONGARLAK,,,Online,,,,,"                          "
+AD  690.21,Desc.,MASTER THESIS,0,60,MİNE UĞURLU,,,Online,,,,,"                          "
+AD  691.01,Desc.,DIRECTED READINGS IN MARKETING THEORY,4,30,BELGİN ARISAN,,,Online,,,,,"                          "
+AD  692.01,Desc.,DIRECTED READINGS IN MARKETING THEORY,4,30,GÜLDEN ASUGMAN,,,Online,,,,,"                          "
+AD  693.01,Desc.,DIRECTED READINGS IN MARKETING THEORY,4,30,ÖZLEM HESAPÇI KARACA,,,Online,,,,,"                          "
+AD  694.01,Desc.,DIRECTED READINGS IN MARKETING THEORY,4,30,HÜSEYİN KARACA,,,Online,,,,,"                          "
+AD  699.01,Desc.,RESEARCH SEMINAR IV,0,3,MUSTAFA HAYRİ TONGARLAK,MMM,91011,Online,,,,,"                          "
+AD  700.01,Desc.,GRADUATE SEMINAR,0,,MUSTAFA HAYRİ TONGARLAK,TTT,91011,Online,,,,,"                          "
+AD  790.01,Desc.,Ph.D DISSERTATION,0,120,VEDAT AKGİRAY,,,Online,,,,,"                          "
+AD  790.02,Desc.,Ph.D DISSERTATION,0,120,ULAŞ AKKÜÇÜK,,,Online,,,,,"                          "
+AD  790.03,Desc.,Ph.D DISSERTATION,0,120,BELGİN ARISAN,,,Online,,,,,"                          "
+AD  790.04,Desc.,Ph.D DISSERTATION,0,120,GÜLDEN ASUGMAN,,,Online,,,,,"                          "
+AD  790.05,Desc.,Ph.D DISSERTATION,0,120,ASUNUR CEZAR,,,Online,,,,,"                          "
+AD  790.06,Desc.,Ph.D DISSERTATION,0,120,ALİ COŞKUN,,,Online,,,,,"                          "
+AD  790.07,Desc.,Ph.D DISSERTATION,0,120,METİN ERCAN,,,Online,,,,,"                          "
+AD  790.08,Desc.,Ph.D DISSERTATION,0,120,ÖZLEM HESAPÇI KARACA,,,Online,,,,,"                          "
+AD  790.09,Desc.,Ph.D DISSERTATION,0,120,HAYAT KABASAKAL,,,Online,,,,,"                          "
+AD  790.10,Desc.,Ph.D DISSERTATION,0,120,HÜSEYİN KARACA,,,Online,,,,,"                          "
+AD  790.11,Desc.,Ph.D DISSERTATION,0,120,CENK CEVAT KARAHAN,,,Online,,,,,"                          "
+AD  790.12,Desc.,Ph.D DISSERTATION,0,120,NESLİHAN N.YILMAZ,,,Online,,,,,"                          "
+AD  790.13,Desc.,Ph.D DISSERTATION,0,120,İREM NUHOĞLU,,,Online,,,,,"                          "
+AD  790.14,Desc.,Ph.D DISSERTATION,0,120,ATİLLA ODABAŞI,,,Online,,,,,"                          "
+AD  790.15,Desc.,Ph.D DISSERTATION,0,120,NESRİN OKAY AKMAN,,,Online,,,,,"                          "
+AD  790.16,Desc.,Ph.D DISSERTATION,0,120,ÖZLEM ÖZ,,,Online,,,,,"                          "
+AD  790.17,Desc.,Ph.D DISSERTATION,0,120,ÖZGÜN BURCU RODOPMAN,,,Online,,,,,"                          "
+AD  790.18,Desc.,Ph.D DISSERTATION,0,120,AYŞEGÜL TOKER,,,Online,,,,,"                          "
+AD  790.19,Desc.,Ph.D DISSERTATION,0,120,MUSTAFA HAYRİ TONGARLAK,,,Online,,,,,"                          "
+AD  790.20,Desc.,Ph.D DISSERTATION,0,120,MİNE UĞURLU,,,Online,,,,,"                          "

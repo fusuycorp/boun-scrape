@@ -1,0 +1,53 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+INT 313.01,Desc.,COMMUNITY INTERPRETING,3,4,JONATHAN MAURICE ROSS,FFF,678,,M 2231 | M 2231 | M 2231,,,,"                          "
+INT 313.02,Desc.,COMMUNITY INTERPRETING,3,4,ALEV BULUT,FFF,123,,M 1171 | M 1171 | M 1171,,,,"                          "
+INT 412.01,Desc.,SIMULTANEOUS INTERPRETING PRACTICE IN CO,3,4,RANA BERİ ,TBA,,,,,,,"                          "
+INT 418.01,Desc.,THEORETICAL APPROACHES TO INTERPRETING P,3,4,EBRU DİRİKER,MMM,123,,,,,,"                          "
+INT 420.02,Desc.,PROJECT IN INTERPRETING,4,5,EBRU DİRİKER,TBA,,,,,,,"                          "
+INT 480.01,Desc.,SP.TOP.FOR INTERPRETERS,3,4,SELİN ÜLKEROĞLU,TTT,234,,,,,,"                          "
+TR  102.01,Desc.,ENGLISH LEXIS,3,4,OĞUZ BAYKARA,ThThTh,478,,M 1171 | YD 204 | YD 204,,,,"                          "
+TR  104.01,Desc.,PUBLIC SPEAKING,3,4,NİLGÜN FIRAT,TTF,346,,NH 201 | NH 201 | NH 202,,,,"                          "
+TR  104.02,Desc.,PUBLIC SPEAKING,3,4,NİLGÜN FIRAT,TFF,545,,NH 201 | NH 202 | NH 202,,,,"                          "
+TR  116.01,Desc.,TECHNICAL TRANSLATION I,3,4,OĞUZ BAYKARA,MMT,788,,M 2170 | M 2170 | KPARK2,,,,"                          "
+TR  116.02,Desc.,TECHNICAL TRANSLATION I,3,4,NURHAYAT DALGIÇ,MMM,678,,GÜNEY4L | GÜNEY4L | GÜNEY4L,,,,"                          "
+TR  116.03,Desc.,TECHNICAL TRANSLATION I,3,4,AYŞENAZ CENGİZ,MMT,788,,KPARK2 | KPARK2 | NBZ 11,,,,"                          "
+TR  122.01,Desc.,TURKISH WRITING SKILLS I,3,4,SADİ BÜLENT AKSOY,TTW,676,,GYD 404 | GYD 404 | NH 402,,,,"                          "
+TR  122.02,Desc.,TURKISH WRITING SKILLS I,3,4,SADİ BÜLENT AKSOY,TWW,845,,GYD 404 | NH 402 | NH 402,,,,"                          "
+TR  122.03,Desc.,TURKISH WRITING SKILLS I,3,4,BÜLENT USTA,MMM,456,,YD 206 | YD 206 | YD 206,,,,"                          "
+TR  202.01,Desc.,ETYMOLOGY II,3,3,SADİ BÜLENT AKSOY,MTW,333,,NH 404 | NH 404 | NH 402,,,,"                          "
+TR  214.01,Desc.,TRANSLATING FOR RADIO & TELEVISION,3,3,EBRU DİRİKER,MWW,845,,GYD 405 | GYD 405 | GYD 405,,,,"                          "
+TR  214.02,Desc.,TRANSLATING FOR RADIO & TELEVISION,3,3,ŞEHNAZ TAHİR GÜRÇAĞLAR,MMW,676,,GYD 405 | GYD 405 | GYD 405,,,,"                          "
+TR  216.01,Desc.,NOTE-TAKING FROM SPEECH,3,4,MARTİN CYR HICKS,FFF,123,,M 1200 | M 1200 | M 1200,,,,"                          "
+TR  216.02,Desc.,NOTE-TAKING FROM SPEECH,3,4,JONATHAN MAURICE ROSS,WThTh,856,,GYD 401 | NH 104 | NH 104,,,,"                          "
+TR  314.01,Desc.,LITERARY TRANSLATION ,3,4,NİLGÜN FIRAT,TThTh,756,,NH 104 | NH 201 | NH 201,,,,"                          "
+TR  314.02,Desc.,LITERARY TRANSLATION ,3,4,OĞUZ BAYKARA,TThTh,756,,KPARK2 | YD 204 | YD 204,,,,"                          "
+TR  364.01,Desc.,POLITICAL DISCOURSE OF INTERNATIONAL ORG,3,4,İSMAİL KAPLAN,MWW,867,,NBZ 13 | NH 104 | NH 104,,,,"                          "
+TR  364.02,Desc.,POLITICAL DISCOURSE OF INTERNATIONAL ORG,3,4,İSMAİL KAPLAN,MMW,678,,NBZ 13 | NBZ 13 | NH 104,,,,"                          "
+TR  412.01,Desc.,INTERCULTURAL COMMUNICATION STUDIES,3,4,MARTİN CYR HICKS,ThThTh,789,,YD 05 | YD 05 | YD 05,,,,"                          "
+TR  416.01,Desc.,TRANSLATION CRITICISM,3,4,AYŞENAZ CENGİZ,ThThTh,456,,NH 404 | NH 404 | NH 404,,,,"                          "
+TR  416.02,Desc.,TRANSLATION CRITICISM,3,4,ÖZLEM BERK ALBACHTEN,ThThTh,456,,M 1181 | M 1181 | M 1181,,,,"                          "
+TR  420.01,Desc.,TRANSLATION PROJECT,4,5,İSMAİL KAPLAN,TBA,,,,,,,"                          "
+TR  420.02,Desc.,TRANSLATION PROJECT,4,5,SADİ BÜLENT AKSOY,TBA,,,,,,,"                          "
+TR  420.03,Desc.,TRANSLATION PROJECT,4,5,JONATHAN MAURICE ROSS,TBA,,,,,,,"                          "
+TR  420.04,Desc.,TRANSLATION PROJECT,4,5,NİLGÜN FIRAT,TBA,,,,,,,"                          "
+TR  420.05,Desc.,TRANSLATION PROJECT,4,5,OĞUZ BAYKARA,TBA,,,,,,,"                          "
+TR  420.06,Desc.,TRANSLATION PROJECT,4,5,ŞEHNAZ TAHİR GÜRÇAĞLAR,TBA,,,,,,,"                          "
+TR  420.07,Desc.,TRANSLATION PROJECT,4,5,ARZU EKER,TBA,,,,,,,"                          "
+TR  420.08,Desc.,TRANSLATION PROJECT,4,5,AYŞENAZ CENGİZ,TBA,,,,,,,"                          "
+TR  420.09,Desc.,TRANSLATION PROJECT,4,5,NURHAYAT DALGIÇ,TBA,,,,,,,"                          "
+TR  420.11,Desc.,TRANSLATION PROJECT,4,5,BAHAR ÇOTUR,TBA,,,,,,,"                          "
+TR  420.13,Desc.,TRANSLATION PROJECT,4,5,ÖZLEM BERK ALBACHTEN,TBA,,,,,,,"                          "
+TR  480.01,Desc.,SP.TOP:LIT. RESEARCH PAPER WRITING,3,4,MARTİN CYR HICKS,FFF,567,,GYD 409 | GYD 409 | GYD 409,,,,"                          "
+TR  484.01,Desc.,SP.TOP.TRANSL.OF SOCIAL SCIENCE TEXTS,3,4,AYŞENAZ CENGİZ,TTTh,563,,GYD 401 | GYD 401 | NH 404,,,,"                          "
+TR  488.01,Desc.,"SP.TOP:EU POLICIES,INST.TR.OF KEY DOCUME",3,4,EBRU DİRİKER,TTT,234,,GYD 405 | GYD 405 | GYD 405,,,,"                          "
+TR  48F.01,Desc.,SP.TOP.IN TRANS:TRANSLATION TECHNOLOGIES,3,4,ORHAN BİLGİN,FFF,567, ,GYD 405 | GYD 405 | GYD 405,,,,"                          "
+TR  48F.02,Desc.,SP.TOP.IN TRANS:TRANSLATION TECHNOLOGIES,3,4,ORHAN BİLGİN,FFF,123, ,GYD 405 | GYD 405 | GYD 405,,,,"                          "
+TR  496.01,Desc.,SP.TOP.:TRANSLATION HISTORY,3,4,ÖZLEM BERK ALBACHTEN,WWW,678,,M 2170 | M 2170 | M 2170,,,,"                          "
+TR  790.01,Desc.,DOCTORAL DISSERTATION,0,120,SALİHA PAKER,TBA,,,,,,,"                          "
+TR  790.02,Desc.,DOCTORAL DISSERTATION,0,120,SALİHA PAKER,TBA,,,,,,,"                          "
+TR  790.03,Desc.,DOCTORAL DISSERTATION,0,120,ŞEHNAZ TAHİR GÜRÇAĞLAR,TBA,,,,,,,"                          "
+TR  790.04,Desc.,DOCTORAL DISSERTATION,0,120,ŞEHNAZ TAHİR GÜRÇAĞLAR,TBA,,,,,,,"                          "
+TR  790.05,Desc.,DOCTORAL DISSERTATION,0,120,EBRU DİRİKER,TBA,,,,,,,"                          "
+TR  790.06,Desc.,DOCTORAL DISSERTATION,0,120,EBRU DİRİKER,TBA,,,,,,,"                          "
+TR  790.07,Desc.,DOCTORAL DISSERTATION,0,120,ŞEHNAZ TAHİR GÜRÇAĞLAR,TBA,,,,,,,"                          "
+TR  790.08,Desc.,DOCTORAL DISSERTATION,0,120,ŞEHNAZ TAHİR GÜRÇAĞLAR,TBA,,,,,,,"                          "

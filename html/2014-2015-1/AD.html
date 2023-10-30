@@ -1,0 +1,5978 @@
+
+
+<html>
+<HEAD>
+<title>Schedule</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso8859-9" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../inc/regstyle.css" />
+<script src="/BUIS/js/jquery-1.10.2.min.js"></script>
+<script src="/BUIS/js/jquery-ui-1.10.3.min.js"></script>
+
+<script type="text/javascript">
+    function OpenMap(tdBbj) {
+        var text = $(tdBbj).text();
+        if (text.replace(/^\s+|\s+$/gm, '') != "") {
+            var scrollTop = $(document).scrollTop() + 100;
+            var building = text.split(" ")[0];
+            $("#gMapFrame").attr("src", "sch_map.asp?BN=" + building);
+            $("#gMap").dialog({ modal: true, minWidth: 630, minHeight: 510, height: "auto", width: "auto", overflow: "hidden" });
+            $('.ui-dialog').css('top', scrollTop + 'px');
+            window.scrollTo(0, scrollTop - 100);
+        }
+    }
+
+</script>
+
+	<script Lang="JScript">
+		function showQuota(ab,co,se,te) {
+			window.open('quotasearch.asp?abbr='+ab+'&code='+co+'&section='+se+'&donem='+te, 'myWin', 'resizable,scrollbars,width=500, height=400');
+		}
+
+
+
+	</script>
+
+<style>
+    .schtd2.labps {
+        background-color: #c7d2c8;
+        color:#8e5353;
+        ;
+    }
+     .schtd.labps {
+        background-color: #fffff6;
+        color:#8e5353;
+        ;
+    }
+
+</style>
+</HEAD>
+<body bgcolor="#FFFFFF" bgproperties="fixed">
+<font class='bodytextdark'><font size='+1'>Course Schedule</font>
+<br>
+<IMG  src='/images/pro_nav_btmline.gif' width='430' height='1'>
+<br>
+
+
+    
+<table width="250px">
+ <tr>
+    <td witdh=50% Class="bodytextdark">Semester   :</td>
+    <td witdh=50% Class="bodytextdark">2014/2015-1</td>
+ </tr>
+ <tr>
+    <td witdh=50% Class="bodytextdark">
+    Department :
+    </td>
+    <td witdh=50% Class="bodytextdark">AD</td>
+ </tr>
+</table>
+    <p style="font-size:10pt; color:black; font-weight:normal;">Click on to the classroom to view it on the campus map. <br /></p>
+<hr>
+
+    
+
+    <table style="margin:20px 0">
+        <tr>		 
+            <td colspan=10 class="bodygray" style="font-family:Verdana, Arial, Helvetica; font-weight:bold">
+                The <u>course</u> slots are as follows :
+            </td>
+        </tr>
+        <tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 1</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 09:00 - 09:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 2</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 10:00 - 10:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 3</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 11:00 - 11:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 4</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 12:00 - 12:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 5</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 13:00 - 13:50</td>
+  
+                </tr><tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 6</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 14:00 - 14:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 7</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 15:00 - 15:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 8</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 16:00 - 16:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 9</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 17:00 - 17:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 10</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 18:00 - 18:50</td>
+  
+                </tr><tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 11</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 19:00 - 19:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 12</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 20:00 - 20:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 13</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 21:00 - 21:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 14</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 22:00 - 22:50</td>
+
+        </tr>
+    </table>
+
+<table border="1" cellpadding="3" width="1300px" style="border-collapse: collapse" bordercolor="#111111" cellspacing="0">
+ <tr class="schtitle">
+    <td width=5% align=left>Code.Sec</td>
+    <td width=5%>Desc.</td>
+    <td width=12% align=left>Name</td>
+    <td width=2% align=left>Cr.</td>
+    <td width=2% align=left>Ects</td>
+
+    <td width=5% align=left>Instr.</td>
+    <td width=5% align=left>Days</td>
+    <td width=4% align=left>Hours</td>
+                <!-- FinalExamLocation -->
+     <td width=5% align=left>Course Delivery Method</td>
+<!--    <td width=5% align=left>Final Exam Location</td>-->
+
+    <td width=11% align=left>Rooms</td>
+    <td width=7% align=left>Exam</td>
+    <td width=4% align=left>Sl.</td>
+    <td width=7% align=left><a class="title" href="#reqdept">Required for Dept.(*)</a></td>
+    <td width=5% align=left>Departments</td>
+
+
+     <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+    
+    </tr>
+
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  102.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  102&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTRODUCTION TO MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ÖZGÜN BURCU RODOPMAN&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  150.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  150&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTRO. TO DATA PROCESSING&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>MURAT ERHAN ALTUNEL&nbsp;</td>
+		<td>MMW&nbsp;</td>
+		<td>564&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">GÜNEY2L</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">GÜNEY2L</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">GÜNEY2L</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  150.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  150&section=02&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTRO. TO DATA PROCESSING&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>UĞUR DİRİL&nbsp;</td>
+		<td>FFF&nbsp;</td>
+		<td>123&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">GÜNEY2L</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">GÜNEY2L</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">GÜNEY2L</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  150.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  150&section=03&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTRO. TO DATA PROCESSING&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>CAN MALTA&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>567&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">GÜNEY4L</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">GÜNEY4L</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">GÜNEY4L</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  150.04</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  150&section=04&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTRO. TO DATA PROCESSING&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>GÖKÇEN IŞIK AKÇOR&nbsp;</td>
+		<td>FFF&nbsp;</td>
+		<td>567&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">GÜNEY2L</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">GÜNEY2L</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">GÜNEY2L</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  204.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  204&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>BUSINESS COMMUNICATIONS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>SEDA GÜCÜYENER&nbsp;</td>
+		<td>MFF&nbsp;</td>
+		<td>456&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 304</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span>&nbsp;</td>
+        
+			<td>10.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  204.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  204&section=02&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>BUSINESS COMMUNICATIONS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>SEDA GÜCÜYENER&nbsp;</td>
+		<td>MFF&nbsp;</td>
+		<td>378&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 304</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span>&nbsp;</td>
+        
+			<td>10.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  211.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  211&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>FINANCIAL ACCOUNTING FOR ECONOMISTS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>4&nbsp;</td>
+
+		<td>FATİH F.YILMAZ&nbsp;</td>
+		<td>MMM&nbsp;</td>
+		<td>345&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span>&nbsp;</td>
+        
+			<td>05.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>EC&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  213.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  213&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>FINANCIAL ACCOUNTING&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ALİ COŞKUN&nbsp;</td>
+		<td>TThTh&nbsp;</td>
+		<td>578&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 304</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 304</span>&nbsp;</td>
+        
+			<td>06.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  213.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  213&section=02&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>FINANCIAL ACCOUNTING&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ALİ COŞKUN&nbsp;</td>
+		<td>TTTh&nbsp;</td>
+		<td>784&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 104</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 104</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 304</span>&nbsp;</td>
+        
+			<td>06.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  216.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  216&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>FINANCIAL & COST ACCOUNTING&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ALİ ERSİN GÜREDİN&nbsp;</td>
+		<td>MMWW&nbsp;</td>
+		<td>3434&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span>&nbsp;</td>
+        
+			<td>03.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>IE&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  220.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  220&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MANAGEMENT OF ORGANIZATIONS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>BEHİCE ERTENÜ&nbsp;</td>
+		<td>TTW&nbsp;</td>
+		<td>233&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span>&nbsp;</td>
+        
+			<td>05.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  220.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  220&section=02&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MANAGEMENT OF ORGANIZATIONS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>AYHAN TON&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span>&nbsp;</td>
+        
+			<td>05.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  220.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  220&section=03&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MANAGEMENT OF ORGANIZATIONS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ECMEL AHMET AYRAL&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>567&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span>&nbsp;</td>
+        
+			<td>05.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  231.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  231&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>BUSINESS LAW&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>4&nbsp;</td>
+
+		<td>DENİZ ALTINAY&nbsp;</td>
+		<td>FFF&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 105</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 105</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 105</span>&nbsp;</td>
+        
+			<td>03.01.2015&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  251.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  251&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MANAGERIAL STATISTICS I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ULAŞ AKKÜÇÜK&nbsp;</td>
+		<td>MTT&nbsp;</td>
+		<td>578&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span>&nbsp;</td>
+        
+			<td>03.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  251.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  251&section=02&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MANAGERIAL STATISTICS I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ULAŞ AKKÜÇÜK&nbsp;</td>
+		<td>MMT&nbsp;</td>
+		<td>124&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span>&nbsp;</td>
+        
+			<td>03.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  251.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  251&section=03&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MANAGERIAL STATISTICS I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>NESRİN OKAY AKMAN&nbsp;</td>
+		<td>TTTh&nbsp;</td>
+		<td>453&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span>&nbsp;</td>
+        
+			<td>03.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  311.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  311&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>FINANCIAL MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>VEDAT AKGİRAY&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>567&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span>&nbsp;</td>
+        
+			<td>06.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  311.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  311&section=02&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>FINANCIAL MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>NESLİHAN N.YILMAZ&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>123&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span>&nbsp;</td>
+        
+			<td>06.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  311.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  311&section=03&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>FINANCIAL MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ATİLLA ODABAŞI&nbsp;</td>
+		<td>TTW&nbsp;</td>
+		<td>675&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 404</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 404</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span>&nbsp;</td>
+        
+			<td>06.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  320.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  320&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>HUMAN RESOURCES MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>UĞUR TANDOĞAN&nbsp;</td>
+		<td>MMM&nbsp;</td>
+		<td>123&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span>&nbsp;</td>
+        
+			<td>05.01.2015&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  320.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  320&section=02&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>HUMAN RESOURCES MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ÖZGÜN BURCU RODOPMAN&nbsp;</td>
+		<td>WWTh&nbsp;</td>
+		<td>784&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  351.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  351&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>OPERATIONS MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ŞEVKET GÜNTER&nbsp;</td>
+		<td>TTTh&nbsp;</td>
+		<td>347&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">M 2152</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  351.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  351&section=02&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>OPERATIONS MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ŞEVKET GÜNTER&nbsp;</td>
+		<td>TThTh&nbsp;</td>
+		<td>845&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  353.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  353&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MANAGEMENT SCIENCE&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>CEYHAN KOÇAK&nbsp;</td>
+		<td>MWW&nbsp;</td>
+		<td>434&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span>&nbsp;</td>
+        
+			<td>08.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  353.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  353&section=02&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MANAGEMENT SCIENCE&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>MUSTAFA HAYRİ TONGARLAK&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>567&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  401.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  401&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>GLOBALIZATION&INTERNATIONAL MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ÖZLEM ÖZ&nbsp;</td>
+		<td>TWW&nbsp;</td>
+		<td>545&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  403.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  403&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MANAGERIAL ECONOMICS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>METİN BERK&nbsp;</td>
+		<td>MMM&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span>&nbsp;</td>
+        
+			<td>03.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  408.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  408&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>STRATEGIC MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>SİBEL TANBERK&nbsp;</td>
+		<td>TTTh&nbsp;</td>
+		<td>121&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  408.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  408&section=02&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>STRATEGIC MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>OKTAY ÖZİNCİ&nbsp;</td>
+		<td>TTTh&nbsp;</td>
+		<td>122&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  419.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  419&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTERNATIONAL FINANCE MAN.&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>VECİHE ENGİN ÖLÇER&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>345&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span>&nbsp;</td>
+        
+			<td>30.12.2014&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  424.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  424&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>HUMAN BEHAVIOR IN ORGANIZATIONS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>HAYAT KABASAKAL&nbsp;</td>
+		<td>MMM&nbsp;</td>
+		<td>456&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span>&nbsp;</td>
+        
+			<td>10.01.2015&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  428.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  428&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>NGO MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>GÜVEN ALPAY&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span>&nbsp;</td>
+        
+			<td>08.01.2015&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  440.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  440&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIGITAL MARKETING&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>AYŞEGÜL TOKER&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span>&nbsp;</td>
+        
+			<td>08.01.2015&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  441.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  441&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>CONSUMER BEHAVIOR&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ESER BORAK&nbsp;</td>
+		<td>MTT&nbsp;</td>
+		<td>534&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span>&nbsp;</td>
+        
+			<td>07.01.2015&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  452.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  452&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INFORMATION SYSTEMS MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>STEFAN KOCH&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>123&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 201</span>&nbsp;</td>
+        
+			<td>27.12.2014&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  452.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  452&section=02&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INFORMATION SYSTEMS MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>YAVUZ ACAR&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>123&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  467.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  467&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>CORPORATE GOVERNANCE&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>VEDAT AKGİRAY&nbsp;</td>
+		<td>FFF&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span>&nbsp;</td>
+        
+			<td>29.12.2014&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  468.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  468&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>FINANCIAL RISK MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>CENK CEVAT KARAHAN&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 312</span>&nbsp;</td>
+        
+			<td>06.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  470.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  470&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INVESTMENT MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ATİLLA ODABAŞI&nbsp;</td>
+		<td>TWW&nbsp;</td>
+		<td>478&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">M 1181</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">M 1170</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">M 1170</span>&nbsp;</td>
+        
+			<td>10.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  472.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  472&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>FINANCIAL INSTITUTIONS & MARKETS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>CENK CEVAT KARAHAN&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>91011&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 211</span>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  477.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  477&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>BANK MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>BÜLENT ŞENVER&nbsp;</td>
+		<td>MMM&nbsp;</td>
+		<td>567&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">M 2152</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">M 2152</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">M 2152</span>&nbsp;</td>
+        
+			<td>05.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  480.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  480&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SPECIAL TOPICS IN MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>BEHİCE ERTENÜ&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  496.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  496&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TOP. IN FINANCE&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>MİNE UĞURLU&nbsp;</td>
+		<td>MMM&nbsp;</td>
+		<td>789&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 301</span>&nbsp;</td>
+        
+			<td>09.01.2015&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  497.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  497&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>BACHELOR OF ARTS DEGREE PROJECT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>GÜVEN ALPAY&nbsp;</td>
+		<td>FFF&nbsp;</td>
+		<td>123&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  501.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  501&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>TOPICS IN BUSINESS ECONOMICS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>METİN ERCAN&nbsp;</td>
+		<td>FFF&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>27.12.2014&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  504.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  504&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>RESEARCH METHODOLOGY&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>HÜSEYİN KARACA&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  510.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  510&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MANAGEMENT OF ETHICAL ISSUES&SUSTAINABIL&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ESER BORAK&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>30.12.2014&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  520.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  520&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>CORPORATE STRATEGY/MANAGEMENT SIMULATION&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>METİN ERCAN&nbsp;</td>
+		<td>FFF&nbsp;</td>
+		<td>567&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>08.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  527.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  527&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ORGANIZATIONAL BEHAVIOR&DESIGN&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>HAYAT KABASAKAL&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>10.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  527.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  527&section=02&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ORGANIZATIONAL BEHAVIOR&DESIGN&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ARZU İŞERİ SAY&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>10.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  540.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  540&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>STRATEGIC MARKETING MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ÖZLEM HESAPÇI KARACA&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  545.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  545&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>THEORY QUEST IN MARKETING&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>GÜLDEN ASUGMAN&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>345&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  550.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  550&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>OPERATIONS MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ŞEVKET GÜNTER&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>03.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  551.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  551&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTRODUCTION OF THEORIES OF OPERATIONS M&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>YAVUZ ACAR&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  568.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  568&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ACCOUNTING,INFORMATION&CONTROL SYSTEMS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ALİ COŞKUN&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  570.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  570&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ACCOUNTING FOR MANAGERS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>İREM NUHOĞLU&nbsp;</td>
+		<td>MMM&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>29.12.2014&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  573.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  573&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>FINANCIAL ECONOMETRICS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7.50&nbsp;</td>
+
+		<td>NESRİN OKAY AKMAN&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>101112&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  576.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  576&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>CONTEMPORARY FINANCIAL MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>NESLİHAN N.YILMAZ&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>03.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  577.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  577&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>FINANCIAL THEORY&CORPORATE POLICY&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>MİNE UĞURLU&nbsp;</td>
+		<td>MMM&nbsp;</td>
+		<td>456&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>27.12.2014&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  579.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  579&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>GRADUATE SEMINAR&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>2&nbsp;</td>
+
+		<td>İREM NUHOĞLU&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  593.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  593&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT I&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>3&nbsp;</td>
+
+		<td>ÖZLEM HESAPÇI KARACA&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>27.12.2014&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  593.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  593&section=02&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT I&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>3&nbsp;</td>
+
+		<td>MUSTAFA HAYRİ TONGARLAK&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>27.12.2014&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  593.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  593&section=03&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT I&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>3&nbsp;</td>
+
+		<td>ATİLLA ODABAŞI&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>27.12.2014&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  593.04</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  593&section=04&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT I&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>3&nbsp;</td>
+
+		<td>HÜSEYİN KARACA&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>27.12.2014&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  594.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>YAVUZ ACAR&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  594.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=02&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>VEDAT AKGİRAY&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  594.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=03&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ULAŞ AKKÜÇÜK&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  594.04</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=04&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>GÜLDEN ASUGMAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  594.05</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=05&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ALİ COŞKUN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  594.06</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=06&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ŞEVKET GÜNTER&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  594.07</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=07&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ÖZLEM HESAPÇI KARACA&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  594.08</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=08&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>HAYAT KABASAKAL&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  594.09</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=09&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>HÜSEYİN KARACA&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  594.10</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=10&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>CENK CEVAT KARAHAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  594.11</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=11&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>STEFAN KOCH&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  594.12</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=12&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>İREM NUHOĞLU&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  594.13</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=13&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ATİLLA ODABAŞI&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  594.14</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=14&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>NESRİN OKAY AKMAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  594.15</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=15&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ÖZLEM ÖZ&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  594.16</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=16&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ÖZGÜN BURCU RODOPMAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  594.17</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=17&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ARZU İŞERİ SAY&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  594.18</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=18&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>AYŞEGÜL TOKER&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  594.19</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=19&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>MUSTAFA HAYRİ TONGARLAK&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  594.20</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=20&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>MİNE UĞURLU&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  594.21</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  594&section=21&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INDUSTRY PROJECT II&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>NESLİHAN N.YILMAZ&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  595.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  595&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP. TOP. IN FINANCE & ACCOUNTING&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7.50&nbsp;</td>
+
+		<td>NESRİN OKAY AKMAN&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>101112&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">YKB LAB</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">YKB LAB</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">YKB LAB</span>&nbsp;</td>
+        
+			<td>29.12.2014&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  600.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  600&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>RESEARCH METHODS I&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>10&nbsp;</td>
+
+		<td>HÜSEYİN KARACA&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>08.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  613.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  613&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>THEORY OF FINANCIAL MARKETS&INSTRUMENTS&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>10&nbsp;</td>
+
+		<td>CENK CEVAT KARAHAN&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>345&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  615.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  615&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>APPLIED RESEARCH IN FINANCIAL MANAGEMENT&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>20&nbsp;</td>
+
+		<td>MİNE UĞURLU&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  627.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  627&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ORGANIZATION THEORY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>20&nbsp;</td>
+
+		<td>GÜVEN ALPAY&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>06.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  640.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  640&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MARKETING THEORY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>10&nbsp;</td>
+
+		<td>GÜLDEN ASUGMAN&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>345&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  643.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  643&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>THEORY OF CONSUMER BEHAVIOR&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>20&nbsp;</td>
+
+		<td>ÖZLEM HESAPÇI KARACA&nbsp;</td>
+		<td>MMM&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  665.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  665&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>CONTEMPORARY ISSUES IN OIM&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>10&nbsp;</td>
+
+		<td>STEFAN KOCH&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>123&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  675.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  675&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN OIM&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>YAVUZ ACAR&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>08.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  676.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  676&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN OIM&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>ULAŞ AKKÜÇÜK&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>27.12.2014&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  677.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  677&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN OIM&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>STEFAN KOCH&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>10.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  678.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  678&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN OIM&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>AYŞEGÜL TOKER&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>27.12.2014&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  679.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  679&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN OIM&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>ŞEVKET GÜNTER&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>09.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  680.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  680&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN FINANCE THEORY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>NESRİN OKAY AKMAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  681.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  681&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN FINANCE THEORY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>CENK CEVAT KARAHAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>09.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  682.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  682&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN FINANCE THEORY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>ATİLLA ODABAŞI&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>27.12.2014&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  683.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  683&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN FINANCE THEORY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>MİNE UĞURLU&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>10.01.2015&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  684.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  684&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN FINANCE THEORY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>NESLİHAN N.YILMAZ&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  685.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  685&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READ.IN MGMT.&ORGANIZ.THEORY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>HAYAT KABASAKAL&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>02.01.2015&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  686.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  686&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READ.IN MGMT.&ORGANIZ.THEORY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>ARZU İŞERİ SAY&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.01.2015&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  687.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  687&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READ.IN MGMT.&ORGANIZ. THEORY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>ÖZLEM ÖZ&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>29.12.2014&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  688.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  688&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READ.IN MGMT.&ORGANIZ.THEORY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>ÖZGÜN BURCU RODOPMAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>27.12.2014&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  690.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>YAVUZ ACAR&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  690.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=02&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>VEDAT AKGİRAY&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  690.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=03&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>ULAŞ AKKÜÇÜK&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  690.04</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=04&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>GÜLDEN ASUGMAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  690.05</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=05&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>ALİ COŞKUN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  690.06</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=06&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>METİN ERCAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  690.07</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=07&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>ŞEVKET GÜNTER&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  690.08</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=08&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>ÖZLEM HESAPÇI KARACA&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  690.09</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=09&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>HAYAT KABASAKAL&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  690.10</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=10&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>HÜSEYİN KARACA&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  690.11</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=11&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>CENK CEVAT KARAHAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  690.12</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=12&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>STEFAN KOCH&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  690.13</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=13&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>İREM NUHOĞLU&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  690.14</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=14&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>ATİLLA ODABAŞI&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  690.15</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=15&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>NESRİN OKAY AKMAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  690.16</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=16&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>ÖZLEM ÖZ&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  690.17</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=17&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>ÖZGÜN BURCU RODOPMAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  690.18</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=18&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>ARZU İŞERİ SAY&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  690.19</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=19&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>AYŞEGÜL TOKER&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  690.20</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=20&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>MUSTAFA HAYRİ TONGARLAK&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  690.21</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=21&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>MİNE UĞURLU&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  690.22</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  690&section=22&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>NESLİHAN N.YILMAZ&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  691.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  691&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN MARKETING THEORY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>GÜLDEN ASUGMAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>30.12.2014&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  692.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  692&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN MARKETING THEORY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>ÖZLEM HESAPÇI KARACA&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>05.01.2015&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  693.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  693&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN MARKETING THEORY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>HÜSEYİN KARACA&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>06.01.2015&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  698.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  698&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>RESEARCH SEMINAR III&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>3&nbsp;</td>
+
+		<td>MUSTAFA HAYRİ TONGARLAK&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>05.01.2015&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  790.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=01&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>YAVUZ ACAR&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  790.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=02&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>VEDAT AKGİRAY&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  790.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=03&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>ULAŞ AKKÜÇÜK&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  790.04</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=04&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>GÜLDEN ASUGMAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  790.05</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=05&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>ALİ COŞKUN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  790.06</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=06&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>METİN ERCAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  790.07</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=07&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>ŞEVKET GÜNTER&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  790.08</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=08&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>ÖZLEM HESAPÇI KARACA&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  790.09</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=09&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>HAYAT KABASAKAL&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  790.10</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=10&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>HÜSEYİN KARACA&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  790.11</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=11&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>CENK CEVAT KARAHAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  790.12</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=12&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>STEFAN KOCH&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  790.13</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=13&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>İREM NUHOĞLU&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  790.14</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=14&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>ATİLLA ODABAŞI&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  790.15</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=15&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>NESRİN OKAY AKMAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  790.16</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=16&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>ÖZLEM ÖZ&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  790.17</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=17&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>ÖZGÜN BURCU RODOPMAN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  790.18</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=18&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>ARZU İŞERİ SAY&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  790.19</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=19&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>AYŞEGÜL TOKER&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  790.20</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=20&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>MUSTAFA HAYRİ TONGARLAK&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AD  790.21</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=21&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>MİNE UĞURLU&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AD  790.22</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AD  790&section=22&term=2014/2015-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>Ph.D DISSERTATION&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>NESLİHAN N.YILMAZ&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+</table>
+<br>
+<a name="reqdept"><font size=2><b>(*) : </b>Departments that should choose this section for <u>mass courses</u></font></a>
+<br><br>
+<b><a href="javascript:window.history.go(-1)"> << Back</a></b>
+ <div id="gMap" style="width:600px;height:480px; display:none;">
+     <iframe id="gMapFrame" src="" width="590" height="460" scrolling="no" style="border:none;">
+</iframe>
+ </div>
+</body>
+</html>

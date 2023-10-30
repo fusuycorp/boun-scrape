@@ -1,0 +1,9 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY ,3,7,SUN DEMİRLİ,MMThThFF,787834,,YD 102 | YD 102 | NBZ 12 | NBZ 12 | YD 201 | YD 201,,,,"        PSY; LING; GUID; LAW                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,5,CHRISTOPHER COLVIN,MMTTThTh,343434,,NBZ 12 | NBZ 12 | NH 102 | NH 102 | NH 302 | NH 302,,,,"        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,3,10,BERNA KILINÇ,TTWWFF,565656,,YD 202 | YD 202 | YD 04 | YD 04 | YD 104 | YD 104,,,,"                          "
+PHIL131.02,Desc.,LOGIC I,3,10,SUN DEMİRLİ,MMWWThTh,343434,,YD 104 | YD 104 | YD 05 | YD 05 | YD 202 | YD 202,,,,"                          "
+PHIL132.01,Desc.,LOGIC II,3,6,BERNA KILINÇ,TTWWFF,787878,,YD 116 | YD 116 | YD 04 | YD 04 | YD 104 | YD 104,,,,"                          "
+PHIL213.01,Desc.,HISTORY OF PHILOSOPHY I,3,6,MEHMET ERGİNEL,TTWWThTh,343434,,NH 304 | NH 304 | NH 202 | NH 202 | YD 03 | YD 03,,,,"        PHIL                  "
+PHIL493.01,Desc.,SP.TP.PHIL.OF ART,3,6,DOUGLAS S. ORO,WWThThFF,787878,,NH 303 | NH 303 | NH 303 | NH 303 | NH 303 | NH 303,,,,"                          "
+PHIL494.01,Desc.,"SP.TP.FROM MORALITY TO ANT.KANT,SCHOP.M.",3,6,IVAN SOLL,MMTTWW,565656,,TB 415 | TB 415 | YD 205 | YD 205 | YD 101 | YD 101,,,,"                          "

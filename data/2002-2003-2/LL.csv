@@ -1,0 +1,50 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CL  402.01,Desc.,LITERARY CRITICISM II,3,7,ÖZLEM ÖĞÜT,TTTh,121,,,,,,"                          "
+CL  452.01,Desc.,ANALYSIS OF POETRY,4,7,ÖZLEM GÖREY,TTTh,675,,,,,,"                          "
+DRA 204.01,Desc.,MODERN DRAMA,3,6,ASLI TEKİNAY,TTTh,566,,,,,,"                          "
+DRA 204.02,Desc.,MODERN DRAMA,3,6,OYA BAŞAK,TTTh,566,,,,,,"                          "
+EL  102.01,Desc.,SURVEY OF ENGLISH LITERATURE II,3,7,CEVZA SEVGEN,TTThF,4844,,,,,,"                          "
+EL  102.02,Desc.,SURVEY OF ENGLISH LITERATURE II,3,7,ÖZLEM ÖĞÜT,TTThF,4844,,,,,,"                          "
+EL  102.03,Desc.,SURVEY OF ENGLISH LITERATURE II,3,7,ÖZLEM GÖREY,TTThF,4844,,,,,,"                          "
+EL  112.01,Desc.,CULTURAL HISTORY OF ENGLAND,3,7,SOSİ ANTİKACIOĞLU,TThF,755,,,,,,"                          "
+EL  202.01,Desc.,THE SIXTEENTH CENTURY,3,6,LAMİA GÜLÇUR,TThF,755,,,,,,"                          "
+EL  302.02,Desc.,THE AUGUSTAN AGE,3,6,CEVZA SEVGEN,TThF,566,,,,,,"                          "
+EL  310.01,Desc.,CHAUCER,3,5,LAMİA GÜLÇUR,TThF,334,,,,,,"                          "
+EL  408.01,Desc.,MODERN ENGLISH POETRY,3,6,KIM FORTUNY,MWW,334,,,,,,"                          "
+EL  408.02,Desc.,MODERN ENGLISH POETRY,3,6,SOSİ ANTİKACIOĞLU,TThF,447,,,,,,"                          "
+EL  412.01,Desc.,RESEARCH AND WRITING,3,6,CEVZA SEVGEN,TBA,,,,,,,"                          "
+EL  412.02,Desc.,RESEARCH AND WRITING,3,6,SUMRU ÖZSOY,TBA,,,,,,,"                          "
+EL  412.03,Desc.,RESEARCH AND WRITING,3,6,LAMİA GÜLÇUR,TBA,,,,,,,"                          "
+EL  412.04,Desc.,RESEARCH AND WRITING,3,6,SOSİ ANTİKACIOĞLU,TBA,,,,,,,"                          "
+EL  412.05,Desc.,RESEARCH AND WRITING,3,6,ÖZLEM ÖĞÜT,TBA,,,,,,,"                          "
+EL  412.06,Desc.,RESEARCH AND WRITING,3,6,ÖZLEM GÖREY,TBA,,,,,,,"                          "
+EL  412.07,Desc.,RESEARCH AND WRITING,3,6,ASLI TEKİNAY,TBA,,,,,,,"                          "
+EL  412.09,Desc.,RESEARCH AND WRITING,3,6,SUNA ERTUĞRUL,TBA,,,,,,,"                          "
+EL  412.11,Desc.,RESEARCH AND WRITING,3,6,KIM FORTUNY,TBA,,,,,,,"                          "
+EL  579.01,Desc.,GRADUATE SEMINAR,0,5,STAFF STAFF,TBA,,,,,,,"                          "
+EL  680.01,Desc.,SP.STUDIES IN ENGLISH LIT.:HEIDEGGER:THE,4,10,SUNA ERTUĞRUL,TTT,8910,,,,,,"                          "
+EL  684.01,Desc.,SP.TOP:AMERICAN POETRY,4,10,KIM FORTUNY,TBA,,,,,,,"                          "
+EL  690.01,Desc.,MASTER THESIS,0,60,STAFF STAFF,TBA,,,,,,,"                          "
+ENGL102.01,Desc.,INTRODUCTION TO LITERARY SCHOLARSHIP II,3,6,IŞIL BAŞ,TThTh,323,,,,,,"                          "
+ENGL102.02,Desc.,INTRODUCTION TO LITERARY SCHOLARSHIP II,3,6,ASLI TEKİNAY,TThTh,323,,,,,,"                          "
+ENGL112.01,Desc.,EXPOSITORY WRITING II,3,5,MÜFİDE PEKİN,MWTh,111,,,,,,"                          "
+ENGL112.02,Desc.,EXPOSITORY WRITING II,3,5,MÜFİDE PEKİN,MWTh,226,,,,,,"                          "
+ENGL112.03,Desc.,EXPOSITORY WRITING II,3,5,MÜFİDE PEKİN,MWTh,457,,,,,,"                          "
+ENGL112.04,Desc.,EXPOSITORY WRITING II,3,5,SEVDA AKYÜZ,WWW,567,,,,,,"                          "
+FA  202.01,Desc.,ANATOLIAN ART & CULTURES FROM PREHIST...,3,5,BEHİN AKSOY,ThThTh,678,,,,,,"                          "
+FA  326.01,Desc.,VOCAL MUSIC APPRECIATION II,3,5,EMİNE SERDAROĞLU,ThThTh,678,,,,,,"                          "
+FA  347.01,Desc.,A THEMATIC APP.TO WORLD CINEMA,3,5,MİTHAT ALAM,MMMTTT,678678,,,,,,"                          "
+GR  101.01,Desc.,MODERN GREEK FOR BEGINNERS I,3,5,CHRYSSI SIDIROPOULOU,MMT,675,,,,,,"                          "
+GR  112.01,Desc.,ANCIENT GREEK II,3,5,CHRYSSI SIDIROPOULOU,MTT,567,,,,,,"                          "
+LING111.01,Desc.,INTRO. TO LANGUAGE & LINGUISTICS I,3,6,MİNE NAKİPOĞLU,MWTh,444,,,,,,"                          "
+LING302.01,Desc.,MORPHOLOGY & SYNTAX,3,5,SUMRU ÖZSOY,WW,910,,,,,,"                          "
+LING490.01,Desc.,SP.TOP.LANGUAGE & GENDER,3,5,DİDAR AKAR,MMW,787,,,,,,"                          "
+LING584.01,Desc.,TOPICS IN LINGUISTIC THEORY,4,10,DİDAR AKAR,WW,45,,,,,,"                          "
+LIT 212.01,Desc.,STUDIES IN LITERATURE II,3,8,SUNA ERTUĞRUL,TThTh,656,,,,,,"                          "
+RUS 102.01,Desc.,BEGINNER'S RUSSIAN II,3,5,OLGA ZVERKOVA,MMWWF,12122,,,,,,"                          "
+RUS 202.01,Desc.,INTERMEDIATE RUSSIAN II,3,5,OLGA ZVERKOVA,MMWWF,34451,,,,,,"                          "
+RUS 302.01,Desc.,ADVANCED RUSSIAN II,3,5,OLGA ZVERKOVA,FF,78,,,,,,"                          "
+STS 230.01,Desc.,THEORY OF MUSICAL SOUND,3,6,ALPAR  SEVGEN,FFF,678,,,,,,"                          "
+TK  204.01,Desc.,STRUCTURE OF MODERN TURKISH,3,5,ESER TAYLAN,MWTh,222,,,,,,"                          "
+TK  204.02,Desc.,STRUCTURE OF MODERN TURKISH,3,5,ASLI GÖKSEL,MWTh,222,,,,,,"                          "
+TK  204.03,Desc.,STRUCTURE OF MODERN TURKISH,3,5,MİNE NAKİPOĞLU,MWTh,223,,,,,,"                          "

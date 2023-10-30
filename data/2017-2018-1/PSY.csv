@@ -1,0 +1,52 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PSY 101.01,Desc.,INTRODUCTION TO PSYCHOLOGY,3,5,BİLGE ATACA,MWF,333,,AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK,19.12.2017,3,,"                          "
+PSY 101.02,Desc.,INTRODUCTION TO PSYCHOLOGY,3,5,BİLGE ATACA,MWF,222,,AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK,19.12.2017,3,,"                          "
+PSY 111.01,Desc.,FUNDAMENTALS OF PSYCHOLOGY I,3,7,ESRA MUNGAN,TTW,566,,EF 106 | EF 106 | NH 001,,0,,"                          "
+PSY 201.01,Desc.,INTRO. TO STATISTICS FOR PSYCHOLOGY I,4,8,ALİ TEKCAN,TTThTh,5623,,NH 202 | NH 202 | M 1170 | M 1170,21.12.2017,1,,"                          "
+,,P.S.,,,ALİ TEKCAN,ThTh,78,,GÜNEY2LAB,,0,,"                          "
+PSY 228.01,Desc.,COGNITIVE PSYCHOLOGY,3,6,AYŞECAN BODUROĞLU,TTTh,786,,NH 201 | NH 201 | NH 301,26.12.2017,1,,"                          "
+PSY 233.01,Desc.,LIFE SPAN DEVELOP.PSY.I:BIO.&COGNITIVE..,3,6,GAYE SOLEY,TTF,342,,NH 402 | NH 402 | NB Z11,28.12.2017,2,,"                          "
+PSY 241.01,Desc.,SOCIAL PSYCHOLOGY,3,5,ADİL SARIBAY,MWW,234,,NH 105 | NH 105 | NH 105,20.12.2017,1,,"                          "
+PSY 251.01,Desc.,PSYCHOLOGY OF PERSONALITY,3,6,SERRA MÜDERRİSOĞLU,WThTh,245,,TB 310 | NH 404 | NH 404,27.12.2017,1,,"                          "
+PSY 301.01,Desc.,RESEARCH METHODS IN PSYCHOLOGY I,4,6,DENİZ TAHİROĞLU,WWFF,6745,,EF 106 | EF 106 | M 1171 | M 1171,20.12.2017,3,,"                          "
+PSY 304.01,Desc.,EXPERIMENTAL PSYCHOLOGY,4,7,GÜNEŞ ÜNAL,TTTThTh,12323,,EF 102 | EF 102 | EF 102 | NB Z12 | NB Z12,,0,,"                          "
+PSY 327.01,Desc.,SENSATION & PERCEPTION  ,3,6,İNCİ AYHAN,WFF,867,,NH 403 | M 1171 | M 1171,29.12.2017,3,,"                          "
+PSY 364.01,Desc.,CHILD PSYCHOPATHOLOGY,3,6,FEYZA ÇORAPÇI,MMW,675,,KP 04 | KP 04 | KP 04,21.12.2017,2,,"                          "
+PSY 464.01,Desc.,CLINICAL PSYCHOLOGY,3,6,NUR YENİÇERİ,TTF,563,,EF 04 | EF 04 | NB Z11,23.12.2017,3,,"                          "
+PSY 48A.01,Desc.,SEL.TP.IN PSY THEORY OF MIND,3,6,DENİZ TAHİROĞLU,ThThTh,234,,,19.12.2017,1,,"                          "
+PSY 48B.01,Desc.,SEL.TP.PSYCHOBIOLOGY,3,5,GÜNEŞ ÜNAL,TTT,8910,,,03.01.2018,1,,"                          "
+PSY 48M.01,Desc.,SEL.TOP.:QUALITATIVE ANALYSIS,3,6,SERRA MÜDERRİSOĞLU,TTT,234, ,EF 04 | EF 04 | EF 04,,0,,"                          "
+PSY 48R.01,Desc.,SEL.TOP.:MUSIC COGNITION I,3,6,ESRA MUNGAN,MMM,789,,,,0,,"                          "
+PSY 49F.01,Desc.,READING&RESEARCH IN WORKING MEMORY,3,6,AYŞECAN BODUROĞLU,TBA,,,,,0,,"                          "
+PSY 49H.01,Desc.,R&R EVALUATION OF CHILDREN,3,6,FEYZA ÇORAPÇI,TBA,,,,,0,,"                          "
+PSY 49L.01,Desc.,R&R IN PSY:COLLECTIVE MEMORY,3,6,ALİ TEKCAN,TBA,,,,,0,,"                          "
+PSY 49T.01,Desc.,R&R:SOCIAL COGNITIVE DEVELOPMENT 1,3,6,GAYE SOLEY,,, ,,,0,,"                          "
+PSY 501.01,Desc.,ADVANCED RESEARCH METHODS I,4,8,ADİL SARIBAY,ThThThTh,2345,,,,0,,"                          "
+PSY 504.01,Desc.,RESEARCH PROJECT IN PSYCHOLOGY I,4,8,AYŞECAN BODUROĞLU,TBA,,,,,0,,"                          "
+PSY 504.02,Desc.,RESEARCH PROJECT IN PSYCHOLOGY I,4,8,FEYZA ÇORAPÇI,TBA,,,,,0,,"                          "
+PSY 504.03,Desc.,RESEARCH PROJECT IN PSYCHOLOGY I,4,8,ESRA MUNGAN,TBA,,,,,0,,"                          "
+PSY 504.04,Desc.,RESEARCH PROJECT IN PSYCHOLOGY I,4,8,GAYE SOLEY,TBA,,,,,0,,"                          "
+PSY 504.05,Desc.,RESEARCH PROJECT IN PSYCHOLOGY I,4,8,ALİ TEKCAN,TBA,,,,,0,,"                          "
+PSY 504.06,Desc.,RESEARCH PROJECT IN PSYCHOLOGY I,4,8,ELİF AYSİMİ DUMAN,TBA,,,,,0,,"                          "
+PSY 504.07,Desc.,RESEARCH PROJECT IN PSYCHOLOGY I,4,8,İNCİ AYHAN,TBA,,,,,0,,"                          "
+PSY 521.01,Desc.,ADVANCED COGNITIVE PSYCHOLOGY,4,8,İNCİ AYHAN,WWWW,2345,,,,0,,"                          "
+PSY 532.01,Desc.,COGNITIVE DEVELOPMENT,4,8,GAYE SOLEY,TTT,678,,,,0,,"                          "
+PSY 565.01,Desc.,CLINICAL ASSESSMENT,4,8,NUR YENİÇERİ,WWWW,6789,,,,0,,"                          "
+PSY 567.01,Desc.,ADVANCED CLINICAL PSYCHOLOGY,4,8,GÜLER OKMAN FİŞEK,MMMM,5678,,,,0,,"                          "
+PSY 569.01,Desc.,CHILD PSYCHOPATHOLOGY & THERAPHY,4,8,FEYZA ÇORAPÇI,TTTT,2345,,,,0,,"                          "
+PSY 690.02,Desc.,MASTER THESIS,0,60,BİLGE ATACA,TBA,,,,,0,,"                          "
+PSY 690.04,Desc.,MASTER THESIS,0,60,AYŞECAN BODUROĞLU,TBA,,,,,0,,"                          "
+PSY 690.05,Desc.,MASTER THESIS,0,60,FEYZA ÇORAPÇI,TBA,,,,,0,,"                          "
+PSY 690.06,Desc.,MASTER THESIS,0,60,ELİF AYSİMİ DUMAN,TBA,,,,,0,,"                          "
+PSY 690.08,Desc.,MASTER THESIS,0,60,ESRA MUNGAN,TBA,,,,,0,,"                          "
+PSY 690.09,Desc.,MASTER THESIS,0,60,SERRA MÜDERRİSOĞLU,TBA,,,,,0,,"                          "
+PSY 690.10,Desc.,MASTER THESIS,0,60,ADİL SARIBAY,TBA,,,,,0,,"                          "
+PSY 690.11,Desc.,MASTER THESIS,0,60,GAYE SOLEY,TBA,,,,,0,,"                          "
+PSY 690.12,Desc.,MASTER THESIS,0,60,ALİ TEKCAN,TBA,,,,,0,,"                          "
+PSY 69I.01,Desc.,LAB/FIELD WORK IN DEV.PSYCHOLOGY 1-4,2,10,FEYZA ÇORAPÇI,TBA,,,,29.12.2017,2,,"                          "
+PSY 69I.02,Desc.,LAB/FIELD WORK IN DEV.PSYCHOLOGY 1-4,2,10,GAYE SOLEY,TBA,,,,29.12.2017,2,,"                          "
+PSY 790.01,Desc.,DOCTORAL DISSERTATION,0,120,AYŞECAN BODUROĞLU,TBA,,,,,0,,"                          "
+PSY 790.02,Desc.,DOCTORAL DISSERTATION,0,120,ALİ TEKCAN,TBA,,,,,0,,"                          "
+PSY 790.03,Desc.,DOCTORAL DISSERTATION,0,120,FEYZA ÇORAPÇI,TBA,,,,,0,,"                          "
+PSY 790.04,Desc.,DOCTORAL DISSERTATION,0,120,SERRA MÜDERRİSOĞLU,TBA,,,,,0,,"                          "
+PSY 790.05,Desc.,DOCTORAL DISSERTATION,0,120,ESRA MUNGAN,TBA,,,,,0,,"                          "

@@ -1,0 +1,158 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AD  102.01,Desc.,INTRODUCTION TO MANAGEMENT,3,5,ÖZGÜN BURCU RODOPMAN,ThThTh,678,,İB 102 | İB 102 | İB 102,,0,,"                          "
+AD  150.01,Desc.,INTRO. TO DATA PROCESSING,3,5,MURAT ERHAN ALTUNEL,MMW,564,,GÜNEY2L | GÜNEY2L | GÜNEY2L,,0,,"                          "
+AD  150.02,Desc.,INTRO. TO DATA PROCESSING,3,5,UĞUR DİRİL,FFF,123,,GÜNEY2L | GÜNEY2L | GÜNEY2L,,0,,"                          "
+AD  150.03,Desc.,INTRO. TO DATA PROCESSING,3,5,CAN MALTA,WWW,567,,GÜNEY4L | GÜNEY4L | GÜNEY4L,,0,,"                          "
+AD  150.04,Desc.,INTRO. TO DATA PROCESSING,3,5,GÖKÇEN IŞIK AKÇOR,FFF,567,,GÜNEY2L | GÜNEY2L | GÜNEY2L,,0,,"                          "
+AD  204.01,Desc.,BUSINESS COMMUNICATIONS,3,5,SEDA GÜCÜYENER,MFF,456,,NH 304 | İB 201 | İB 201,10.01.2015,3,,"                          "
+AD  204.02,Desc.,BUSINESS COMMUNICATIONS,3,5,SEDA GÜCÜYENER,MFF,378,,NH 304 | İB 201 | İB 201,10.01.2015,3,,"                          "
+AD  211.01,Desc.,FINANCIAL ACCOUNTING FOR ECONOMISTS,3,4,FATİH F.YILMAZ,MMM,345,,İB 102 | İB 102 | İB 102,05.01.2015,2,EC,"                          "
+AD  213.01,Desc.,FINANCIAL ACCOUNTING,3,5,ALİ COŞKUN,TThTh,578,,İB 102 | NH 304 | NH 304,06.01.2015,2,,"                          "
+AD  213.02,Desc.,FINANCIAL ACCOUNTING,3,5,ALİ COŞKUN,TTTh,784,,NH 104 | NH 104 | NH 304,06.01.2015,2,,"                          "
+AD  216.01,Desc.,FINANCIAL & COST ACCOUNTING,4,6,ALİ ERSİN GÜREDİN,MMWW,3434,,İB 312 | İB 312 | İB 102 | İB 102,03.01.2015,2,IE,"                          "
+AD  220.01,Desc.,MANAGEMENT OF ORGANIZATIONS,3,5,BEHİCE ERTENÜ,TTW,233,,İB 301 | İB 301 | İB 301,05.01.2015,3,,"                          "
+AD  220.02,Desc.,MANAGEMENT OF ORGANIZATIONS,3,5,AYHAN TON,WWW,678,,İB 201 | İB 201 | İB 201,05.01.2015,3,,"                          "
+AD  220.03,Desc.,MANAGEMENT OF ORGANIZATIONS,3,5,ECMEL AHMET AYRAL,WWW,567,,İB 211 | İB 211 | İB 211,05.01.2015,3,,"                          "
+AD  231.01,Desc.,BUSINESS LAW,3,4,DENİZ ALTINAY,FFF,234,,NH 105 | NH 105 | NH 105,03.01.2015,1,,"                          "
+AD  251.01,Desc.,MANAGERIAL STATISTICS I,3,5,ULAŞ AKKÜÇÜK,MTT,578,,İB 312 | İB 211 | İB 211,03.01.2015,3,,"                          "
+AD  251.02,Desc.,MANAGERIAL STATISTICS I,3,5,ULAŞ AKKÜÇÜK,MMT,124,,İB 312 | İB 312 | İB 201,03.01.2015,3,,"                          "
+AD  251.03,Desc.,MANAGERIAL STATISTICS I,3,5,NESRİN OKAY AKMAN,TTTh,453,,İB 301 | İB 301,03.01.2015,3,,"                          "
+AD  311.01,Desc.,FINANCIAL MANAGEMENT,3,6,VEDAT AKGİRAY,TTT,567,,İB 201 | İB 201 | İB 201,06.01.2015,3,,"                          "
+AD  311.02,Desc.,FINANCIAL MANAGEMENT,3,6,NESLİHAN N.YILMAZ,ThThTh,123,,İB 301 | İB 301 | İB 301,06.01.2015,3,,"                          "
+AD  311.03,Desc.,FINANCIAL MANAGEMENT,3,6,ATİLLA ODABAŞI,TTW,675,,NH 404 | NH 404 | İB 312,06.01.2015,3,,"                          "
+AD  320.01,Desc.,HUMAN RESOURCES MANAGEMENT,3,5,UĞUR TANDOĞAN,MMM,123,,İB 211 | İB 211 | İB 211,05.01.2015,1,,"                          "
+AD  320.02,Desc.,HUMAN RESOURCES MANAGEMENT,3,5,ÖZGÜN BURCU RODOPMAN,WWTh,784,,İB 102 | İB 102 | İB 301,,0,,"                          "
+AD  351.01,Desc.,OPERATIONS MANAGEMENT,3,5,ŞEVKET GÜNTER,TTTh,347,,İB 312 | İB 312 | M 2152,,0,,"                          "
+AD  351.02,Desc.,OPERATIONS MANAGEMENT,3,5,ŞEVKET GÜNTER,TThTh,845,,İB 102 | İB 211 | İB 211,,0,,"                          "
+AD  353.01,Desc.,MANAGEMENT SCIENCE,3,5,CEYHAN KOÇAK,MWW,434,,İB 211 | İB 211 | İB 211,08.01.2015,3,,"                          "
+AD  353.02,Desc.,MANAGEMENT SCIENCE,3,5,MUSTAFA HAYRİ TONGARLAK,ThThTh,567,,İB 301 | İB 301 | İB 301,,0,,"                          "
+AD  401.01,Desc.,GLOBALIZATION&INTERNATIONAL MANAGEMENT,3,6,ÖZLEM ÖZ,TWW,545,,İB 211 | İB 201 | İB 201,,0,,"                          "
+AD  403.01,Desc.,MANAGERIAL ECONOMICS,3,6,METİN BERK,MMM,234,,İB 201 | İB 201 | İB 201,03.01.2015,2,,"                          "
+AD  408.01,Desc.,STRATEGIC MANAGEMENT,3,6,SİBEL TANBERK,TTTh,121,,İB 312 | İB 312 | İB 312,,0,,"                          "
+AD  408.02,Desc.,STRATEGIC MANAGEMENT,3,6,OKTAY ÖZİNCİ,TTTh,122,,İB 211 | İB 211 | İB 312,,0,,"                          "
+AD  419.01,Desc.,INTERNATIONAL FINANCE MAN.,3,6,VECİHE ENGİN ÖLÇER,ThThTh,345,,İB 312 | İB 312 | İB 312,30.12.2014,3,,"                          "
+AD  424.01,Desc.,HUMAN BEHAVIOR IN ORGANIZATIONS,3,6,HAYAT KABASAKAL,MMM,456,,İB 301 | İB 301 | İB 301,10.01.2015,1,,"                          "
+AD  428.01,Desc.,NGO MANAGEMENT,3,6,GÜVEN ALPAY,ThThTh,678,,İB 312 | İB 312 | İB 312,08.01.2015,1,,"                          "
+AD  440.01,Desc.,DIGITAL MARKETING,3,6,AYŞEGÜL TOKER,ThThTh,678,,İB 211 | İB 211 | İB 211,08.01.2015,1,,"                          "
+AD  441.01,Desc.,CONSUMER BEHAVIOR,3,6,ESER BORAK,MTT,534,,İB 211 | İB 211 | İB 211,07.01.2015,1,,"                          "
+AD  452.01,Desc.,INFORMATION SYSTEMS MANAGEMENT,3,6,STEFAN KOCH,WWW,123,,İB 201 | İB 201 | İB 201,27.12.2014,3,,"                          "
+AD  452.02,Desc.,INFORMATION SYSTEMS MANAGEMENT,3,6,YAVUZ ACAR,ThThTh,123,,İB 211 | İB 211 | İB 211,,0,,"                          "
+AD  467.01,Desc.,CORPORATE GOVERNANCE,3,6,VEDAT AKGİRAY,FFF,678,,İB 301 | İB 301 | İB 301,29.12.2014,3,,"                          "
+AD  468.01,Desc.,FINANCIAL RISK MANAGEMENT,3,6,CENK CEVAT KARAHAN,TTT,678,,İB 312 | İB 312 | İB 312,06.01.2015,2,,"                          "
+AD  470.01,Desc.,INVESTMENT MANAGEMENT,3,6,ATİLLA ODABAŞI,TWW,478,,M 1181 | M 1170 | M 1170,10.01.2015,3,,"                          "
+AD  472.01,Desc.,FINANCIAL INSTITUTIONS & MARKETS,3,6,CENK CEVAT KARAHAN,ThThTh,91011,,İB 211 | İB 211 | İB 211,02.01.2015,2,,"                          "
+AD  477.01,Desc.,BANK MANAGEMENT,3,6,BÜLENT ŞENVER,MMM,567,,M 2152 | M 2152 | M 2152,05.01.2015,3,,"                          "
+AD  480.01,Desc.,SPECIAL TOPICS IN MANAGEMENT,3,6,BEHİCE ERTENÜ,TTT,678,,İB 301 | İB 301 | İB 301,,0,,"                          "
+AD  496.01,Desc.,SP.TOP. IN FINANCE,3,6,MİNE UĞURLU,MMM,789,,İB 301 | İB 301 | İB 301,09.01.2015,1,,"                          "
+AD  497.01,Desc.,BACHELOR OF ARTS DEGREE PROJECT,3,6,GÜVEN ALPAY,FFF,123,,İB 102 | İB 102 | İB 102,,0,,"                          "
+AD  501.01,Desc.,TOPICS IN BUSINESS ECONOMICS,3,6,METİN ERCAN,FFF,234,,,27.12.2014,2,,"                          "
+AD  504.01,Desc.,RESEARCH METHODOLOGY,3,6,HÜSEYİN KARACA,TTT,234,,,,0,,"                          "
+AD  510.01,Desc.,MANAGEMENT OF ETHICAL ISSUES&SUSTAINABIL,3,6,ESER BORAK,TBA,,,,30.12.2014,3,,"                          "
+AD  520.01,Desc.,CORPORATE STRATEGY/MANAGEMENT SIMULATION,3,6,METİN ERCAN,FFF,567,,,08.01.2015,2,,"                          "
+AD  527.01,Desc.,ORGANIZATIONAL BEHAVIOR&DESIGN,3,6,HAYAT KABASAKAL,ThThTh,234,,,10.01.2015,2,,"                          "
+AD  527.02,Desc.,ORGANIZATIONAL BEHAVIOR&DESIGN,3,6,ARZU İŞERİ SAY,ThThTh,234,,,10.01.2015,2,,"                          "
+AD  540.01,Desc.,STRATEGIC MARKETING MANAGEMENT,3,6,ÖZLEM HESAPÇI KARACA,WWW,234,,,,0,,"                          "
+AD  545.01,Desc.,THEORY QUEST IN MARKETING,3,6,GÜLDEN ASUGMAN,WWW,345,,,,0,,"                          "
+AD  550.01,Desc.,OPERATIONS MANAGEMENT,3,6,ŞEVKET GÜNTER,WWW,678,,,03.01.2015,2,,"                          "
+AD  551.01,Desc.,INTRODUCTION OF THEORIES OF OPERATIONS M,3,6,YAVUZ ACAR,ThThTh,678,,,,0,,"                          "
+AD  568.01,Desc.,"ACCOUNTING,INFORMATION&CONTROL SYSTEMS",3,6,ALİ COŞKUN,WWW,678,,,,0,,"                          "
+AD  570.01,Desc.,ACCOUNTING FOR MANAGERS,3,6,İREM NUHOĞLU,MMM,234,,,29.12.2014,3,,"                          "
+AD  573.01,Desc.,FINANCIAL ECONOMETRICS,3,7.50,NESRİN OKAY AKMAN,TTT,101112,,,02.01.2015,2,,"                          "
+AD  576.01,Desc.,CONTEMPORARY FINANCIAL MANAGEMENT,3,6,NESLİHAN N.YILMAZ,ThThTh,678,,,03.01.2015,3,,"                          "
+AD  577.01,Desc.,FINANCIAL THEORY&CORPORATE POLICY,3,6,MİNE UĞURLU,MMM,456,,,27.12.2014,1,,"                          "
+AD  579.01,Desc.,GRADUATE SEMINAR,0,2,İREM NUHOĞLU,TBA,,,,,0,,"                          "
+AD  593.01,Desc.,INDUSTRY PROJECT I,0,3,ÖZLEM HESAPÇI KARACA,TBA,,,,27.12.2014,1,,"                          "
+AD  593.02,Desc.,INDUSTRY PROJECT I,0,3,MUSTAFA HAYRİ TONGARLAK,TBA,,,,27.12.2014,1,,"                          "
+AD  593.03,Desc.,INDUSTRY PROJECT I,0,3,ATİLLA ODABAŞI,TBA,,,,27.12.2014,1,,"                          "
+AD  593.04,Desc.,INDUSTRY PROJECT I,0,3,HÜSEYİN KARACA,TBA,,,,27.12.2014,1,,"                          "
+AD  594.01,Desc.,INDUSTRY PROJECT II,0,5,YAVUZ ACAR,TBA,,,,02.01.2015,3,,"                          "
+AD  594.02,Desc.,INDUSTRY PROJECT II,0,5,VEDAT AKGİRAY,TBA,,,,02.01.2015,3,,"                          "
+AD  594.03,Desc.,INDUSTRY PROJECT II,0,5,ULAŞ AKKÜÇÜK,TBA,,,,02.01.2015,3,,"                          "
+AD  594.04,Desc.,INDUSTRY PROJECT II,0,5,GÜLDEN ASUGMAN,TBA,,,,02.01.2015,3,,"                          "
+AD  594.05,Desc.,INDUSTRY PROJECT II,0,5,ALİ COŞKUN,TBA,,,,02.01.2015,3,,"                          "
+AD  594.06,Desc.,INDUSTRY PROJECT II,0,5,ŞEVKET GÜNTER,TBA,,,,02.01.2015,3,,"                          "
+AD  594.07,Desc.,INDUSTRY PROJECT II,0,5,ÖZLEM HESAPÇI KARACA,TBA,,,,02.01.2015,3,,"                          "
+AD  594.08,Desc.,INDUSTRY PROJECT II,0,5,HAYAT KABASAKAL,TBA,,,,02.01.2015,3,,"                          "
+AD  594.09,Desc.,INDUSTRY PROJECT II,0,5,HÜSEYİN KARACA,TBA,,,,02.01.2015,3,,"                          "
+AD  594.10,Desc.,INDUSTRY PROJECT II,0,5,CENK CEVAT KARAHAN,TBA,,,,02.01.2015,3,,"                          "
+AD  594.11,Desc.,INDUSTRY PROJECT II,0,5,STEFAN KOCH,TBA,,,,02.01.2015,3,,"                          "
+AD  594.12,Desc.,INDUSTRY PROJECT II,0,5,İREM NUHOĞLU,TBA,,,,02.01.2015,3,,"                          "
+AD  594.13,Desc.,INDUSTRY PROJECT II,0,5,ATİLLA ODABAŞI,TBA,,,,02.01.2015,3,,"                          "
+AD  594.14,Desc.,INDUSTRY PROJECT II,0,5,NESRİN OKAY AKMAN,TBA,,,,02.01.2015,3,,"                          "
+AD  594.15,Desc.,INDUSTRY PROJECT II,0,5,ÖZLEM ÖZ,TBA,,,,02.01.2015,3,,"                          "
+AD  594.16,Desc.,INDUSTRY PROJECT II,0,5,ÖZGÜN BURCU RODOPMAN,TBA,,,,02.01.2015,3,,"                          "
+AD  594.17,Desc.,INDUSTRY PROJECT II,0,5,ARZU İŞERİ SAY,TBA,,,,02.01.2015,3,,"                          "
+AD  594.18,Desc.,INDUSTRY PROJECT II,0,5,AYŞEGÜL TOKER,TBA,,,,02.01.2015,3,,"                          "
+AD  594.19,Desc.,INDUSTRY PROJECT II,0,5,MUSTAFA HAYRİ TONGARLAK,TBA,,,,02.01.2015,3,,"                          "
+AD  594.20,Desc.,INDUSTRY PROJECT II,0,5,MİNE UĞURLU,TBA,,,,02.01.2015,3,,"                          "
+AD  594.21,Desc.,INDUSTRY PROJECT II,0,5,NESLİHAN N.YILMAZ,TBA,,,,02.01.2015,3,,"                          "
+AD  595.01,Desc.,SP. TOP. IN FINANCE & ACCOUNTING,3,7.50,NESRİN OKAY AKMAN,TTT,101112,,YKB LAB | YKB LAB | YKB LAB,29.12.2014,3,,"                          "
+AD  600.01,Desc.,RESEARCH METHODS I,4,10,HÜSEYİN KARACA,WWW,234,,,08.01.2015,2,,"                          "
+AD  613.01,Desc.,THEORY OF FINANCIAL MARKETS&INSTRUMENTS,4,10,CENK CEVAT KARAHAN,ThThTh,345,,,07.01.2015,3,,"                          "
+AD  615.01,Desc.,APPLIED RESEARCH IN FINANCIAL MANAGEMENT,4,20,MİNE UĞURLU,TTT,678,,,,0,,"                          "
+AD  627.01,Desc.,ORGANIZATION THEORY,4,20,GÜVEN ALPAY,TBA,,,,06.01.2015,2,,"                          "
+AD  640.01,Desc.,MARKETING THEORY,4,10,GÜLDEN ASUGMAN,TTT,345,,,,0,,"                          "
+AD  643.01,Desc.,THEORY OF CONSUMER BEHAVIOR,4,20,ÖZLEM HESAPÇI KARACA,MMM,234,,,,0,,"                          "
+AD  665.01,Desc.,CONTEMPORARY ISSUES IN OIM,3,10,STEFAN KOCH,ThThTh,123,,,,0,,"                          "
+AD  675.01,Desc.,DIRECTED READINGS IN OIM,4,30,YAVUZ ACAR,TBA,,,,08.01.2015,2,,"                          "
+AD  676.01,Desc.,DIRECTED READINGS IN OIM,4,30,ULAŞ AKKÜÇÜK,TBA,,,,27.12.2014,1,,"                          "
+AD  677.01,Desc.,DIRECTED READINGS IN OIM,4,30,STEFAN KOCH,TBA,,,,10.01.2015,2,,"                          "
+AD  678.01,Desc.,DIRECTED READINGS IN OIM,4,30,AYŞEGÜL TOKER,TBA,,,,27.12.2014,2,,"                          "
+AD  679.01,Desc.,DIRECTED READINGS IN OIM,4,30,ŞEVKET GÜNTER,TBA,,,,09.01.2015,2,,"                          "
+AD  680.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,NESRİN OKAY AKMAN,TBA,,,,07.01.2015,2,,"                          "
+AD  681.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,CENK CEVAT KARAHAN,TBA,,,,09.01.2015,2,,"                          "
+AD  682.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,ATİLLA ODABAŞI,TBA,,,,27.12.2014,2,,"                          "
+AD  683.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,MİNE UĞURLU,TBA,,,,10.01.2015,3,,"                          "
+AD  684.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,NESLİHAN N.YILMAZ,TBA,,,,07.01.2015,2,,"                          "
+AD  685.01,Desc.,DIRECTED READ.IN MGMT.&ORGANIZ.THEORY,4,30,HAYAT KABASAKAL,TBA,,,,02.01.2015,2,,"                          "
+AD  686.01,Desc.,DIRECTED READ.IN MGMT.&ORGANIZ.THEORY,4,30,ARZU İŞERİ SAY,TBA,,,,07.01.2015,1,,"                          "
+AD  687.01,Desc.,DIRECTED READ.IN MGMT.&ORGANIZ. THEORY,4,30,ÖZLEM ÖZ,TBA,,,,29.12.2014,2,,"                          "
+AD  688.01,Desc.,DIRECTED READ.IN MGMT.&ORGANIZ.THEORY,4,30,ÖZGÜN BURCU RODOPMAN,TBA,,,,27.12.2014,3,,"                          "
+AD  690.01,Desc.,MASTER THESIS,0,60,YAVUZ ACAR,TBA,,,,,0,,"                          "
+AD  690.02,Desc.,MASTER THESIS,0,60,VEDAT AKGİRAY,TBA,,,,,0,,"                          "
+AD  690.03,Desc.,MASTER THESIS,0,60,ULAŞ AKKÜÇÜK,TBA,,,,,0,,"                          "
+AD  690.04,Desc.,MASTER THESIS,0,60,GÜLDEN ASUGMAN,TBA,,,,,0,,"                          "
+AD  690.05,Desc.,MASTER THESIS,0,60,ALİ COŞKUN,TBA,,,,,0,,"                          "
+AD  690.06,Desc.,MASTER THESIS,0,60,METİN ERCAN,TBA,,,,,0,,"                          "
+AD  690.07,Desc.,MASTER THESIS,0,60,ŞEVKET GÜNTER,TBA,,,,,0,,"                          "
+AD  690.08,Desc.,MASTER THESIS,0,60,ÖZLEM HESAPÇI KARACA,TBA,,,,,0,,"                          "
+AD  690.09,Desc.,MASTER THESIS,0,60,HAYAT KABASAKAL,TBA,,,,,0,,"                          "
+AD  690.10,Desc.,MASTER THESIS,0,60,HÜSEYİN KARACA,TBA,,,,,0,,"                          "
+AD  690.11,Desc.,MASTER THESIS,0,60,CENK CEVAT KARAHAN,TBA,,,,,0,,"                          "
+AD  690.12,Desc.,MASTER THESIS,0,60,STEFAN KOCH,TBA,,,,,0,,"                          "
+AD  690.13,Desc.,MASTER THESIS,0,60,İREM NUHOĞLU,TBA,,,,,0,,"                          "
+AD  690.14,Desc.,MASTER THESIS,0,60,ATİLLA ODABAŞI,TBA,,,,,0,,"                          "
+AD  690.15,Desc.,MASTER THESIS,0,60,NESRİN OKAY AKMAN,TBA,,,,,0,,"                          "
+AD  690.16,Desc.,MASTER THESIS,0,60,ÖZLEM ÖZ,TBA,,,,,0,,"                          "
+AD  690.17,Desc.,MASTER THESIS,0,60,ÖZGÜN BURCU RODOPMAN,TBA,,,,,0,,"                          "
+AD  690.18,Desc.,MASTER THESIS,0,60,ARZU İŞERİ SAY,TBA,,,,,0,,"                          "
+AD  690.19,Desc.,MASTER THESIS,0,60,AYŞEGÜL TOKER,TBA,,,,,0,,"                          "
+AD  690.20,Desc.,MASTER THESIS,0,60,MUSTAFA HAYRİ TONGARLAK,TBA,,,,,0,,"                          "
+AD  690.21,Desc.,MASTER THESIS,0,60,MİNE UĞURLU,TBA,,,,,0,,"                          "
+AD  690.22,Desc.,MASTER THESIS,0,60,NESLİHAN N.YILMAZ,TBA,,,,,0,,"                          "
+AD  691.01,Desc.,DIRECTED READINGS IN MARKETING THEORY,4,30,GÜLDEN ASUGMAN,TBA,,,,30.12.2014,3,,"                          "
+AD  692.01,Desc.,DIRECTED READINGS IN MARKETING THEORY,4,30,ÖZLEM HESAPÇI KARACA,TBA,,,,05.01.2015,1,,"                          "
+AD  693.01,Desc.,DIRECTED READINGS IN MARKETING THEORY,4,30,HÜSEYİN KARACA,TBA,,,,06.01.2015,1,,"                          "
+AD  698.01,Desc.,RESEARCH SEMINAR III,0,3,MUSTAFA HAYRİ TONGARLAK,TBA,,,,05.01.2015,1,,"                          "
+AD  790.01,Desc.,Ph.D DISSERTATION,0,120,YAVUZ ACAR,TBA,,,,,0,,"                          "
+AD  790.02,Desc.,Ph.D DISSERTATION,0,120,VEDAT AKGİRAY,TBA,,,,,0,,"                          "
+AD  790.03,Desc.,Ph.D DISSERTATION,0,120,ULAŞ AKKÜÇÜK,TBA,,,,,0,,"                          "
+AD  790.04,Desc.,Ph.D DISSERTATION,0,120,GÜLDEN ASUGMAN,TBA,,,,,0,,"                          "
+AD  790.05,Desc.,Ph.D DISSERTATION,0,120,ALİ COŞKUN,TBA,,,,,0,,"                          "
+AD  790.06,Desc.,Ph.D DISSERTATION,0,120,METİN ERCAN,TBA,,,,,0,,"                          "
+AD  790.07,Desc.,Ph.D DISSERTATION,0,120,ŞEVKET GÜNTER,TBA,,,,,0,,"                          "
+AD  790.08,Desc.,Ph.D DISSERTATION,0,120,ÖZLEM HESAPÇI KARACA,TBA,,,,,0,,"                          "
+AD  790.09,Desc.,Ph.D DISSERTATION,0,120,HAYAT KABASAKAL,TBA,,,,,0,,"                          "
+AD  790.10,Desc.,Ph.D DISSERTATION,0,120,HÜSEYİN KARACA,TBA,,,,,0,,"                          "
+AD  790.11,Desc.,Ph.D DISSERTATION,0,120,CENK CEVAT KARAHAN,TBA,,,,,0,,"                          "
+AD  790.12,Desc.,Ph.D DISSERTATION,0,120,STEFAN KOCH,TBA,,,,,0,,"                          "
+AD  790.13,Desc.,Ph.D DISSERTATION,0,120,İREM NUHOĞLU,TBA,,,,,0,,"                          "
+AD  790.14,Desc.,Ph.D DISSERTATION,0,120,ATİLLA ODABAŞI,TBA,,,,,0,,"                          "
+AD  790.15,Desc.,Ph.D DISSERTATION,0,120,NESRİN OKAY AKMAN,TBA,,,,,0,,"                          "
+AD  790.16,Desc.,Ph.D DISSERTATION,0,120,ÖZLEM ÖZ,TBA,,,,,0,,"                          "
+AD  790.17,Desc.,Ph.D DISSERTATION,0,120,ÖZGÜN BURCU RODOPMAN,TBA,,,,,0,,"                          "
+AD  790.18,Desc.,Ph.D DISSERTATION,0,120,ARZU İŞERİ SAY,TBA,,,,,0,,"                          "
+AD  790.19,Desc.,Ph.D DISSERTATION,0,120,AYŞEGÜL TOKER,TBA,,,,,0,,"                          "
+AD  790.20,Desc.,Ph.D DISSERTATION,0,120,MUSTAFA HAYRİ TONGARLAK,TBA,,,,,0,,"                          "
+AD  790.21,Desc.,Ph.D DISSERTATION,0,120,MİNE UĞURLU,TBA,,,,,0,,"                          "
+AD  790.22,Desc.,Ph.D DISSERTATION,0,120,NESLİHAN N.YILMAZ,TBA,,,,,0,,"                          "

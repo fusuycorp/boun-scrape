@@ -1,0 +1,28 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.01,Desc.,CALCULUS I,4,6,GÜLNİHAL YÜCEL,TTThTh,1212,,,,,"AD,CMPE,EE","                          "
+MATH101.02,Desc.,CALCULUS I,4,6,GÜLNİHAL YÜCEL,TTThTh,3434,,,,,"CEDU,CHE,MEDU,PHYS,PREDMATH","                          "
+MATH102.01,Desc.,CALCULUS II,4,6,N.SADIK DEĞER,TTThTh,1212,,,,,,"                          "
+MATH102.02,Desc.,CALCULUS II,4,6,N.SADIK DEĞER,TTThTh,3434,,,,,,"                          "
+MATH111.01,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,NİLGÜN IŞIK,TTThTh,1212,,,,,"MEDU,PREDMATH","        MATH; MEDU; TMAT; PRMA                  "
+MATH111.02,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,NİLGÜN IŞIK,TTThTh,5656,,,,,MATH,"        MATH; MEDU; TMAT; PRMA                  "
+MATH131.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS I,4,6,TALİN BUDAK,TTThTh,1212,,,,,,"        MATH                  "
+MATH132.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS II,4,8,TALİN BUDAK,TTThTh,3434,,,,,,"        MATH                  "
+MATH201.01,Desc.,MATRIX THEORY,4,5,FERİT ÖZTÜRK,MMWW,1212,,,,,"CHEM,IE,MATH,ME,MEDU,PEDU","                          "
+MATH201.02,Desc.,MATRIX THEORY,4,5,FERİT ÖZTÜRK,MMWW,3434,,,,,"CHE,CMPE,EE,PREDSCI","                          "
+MATH201.03,Desc.,MATRIX THEORY,4,5,BURAK GÜREL,MMWW,3434,,,,,"BIO,CE,CEDU,PHYS,PREDMATH","                          "
+MATH331.01,Desc.,REAL ANALYSIS I,4,8,BETÜL TANBAY,TTThTh,3434,,,,,,"        MATH                  "
+MATH331.02,Desc.,REAL ANALYSIS I,4,8,BETÜL TANBAY,TTThTh,5656,,,,,,"                          "
+MATH343.01,Desc.,PROBABILITY,4,6,ALP EDEN,MMWW,1212,,,,,"CMPE,MATH","                          "
+MATH411.01,Desc.,MATHEMATICAL LOGIC,3,6,ALİ KARATAY,TFF,745,,,,,,"                          "
+MATH421.01,Desc.,ALGEBRA III,3,7,CEM YALÇIN YILDIRIM,TTTh,788,,,,,,"                          "
+MATH455.01,Desc.,CALCULUS OF VARIATIONS,3,6,BURAK GÜREL,MMW,565,,,,,,"                          "
+MATH471.01,Desc.,TOPOLOGY,4,8,AHMET KAMİL FEYZİOĞLU,TTThTh,1212,,,,,,"                          "
+MATH480.01,Desc.,SEMINAR,2,4,NİLGÜN IŞIK,TBA,,,,,,,"                          "
+MATH488.01,Desc.,SP.TOP.IN CALCULUS ON MANIFOLDS,3,6,FERİT ÖZTÜRK,MMWW,910910,,,,,,"                          "
+MATH533.01,Desc.,COMPLEX ANALYSIS I,4,10,CEM YALÇIN YILDIRIM,TTThTh,910910,,,,,,"                          "
+MATH541.01,Desc.,PROBABILITY THEORY,4,10,ALP EDEN,MMThTh,3434,,,,,,"                          "
+MATH571.01,Desc.,TOPOLOGY,4,10,AHMET KAMİL FEYZİOĞLU,TTThTh,1212,,,,,,"                          "
+MATH579.01,Desc.,GRADUATE SEMINAR,0,1,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "
+MATH590.01,Desc.,READINGS IN MATHEMATICS,1,3,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "
+MATH682.01,Desc.,SEMINAR IN APPLIED MATHEMATICS I,4,10,ALP EDEN,TBA,,,,,,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "

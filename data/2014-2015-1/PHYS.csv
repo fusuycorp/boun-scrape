@@ -1,0 +1,103 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHYS101.01,Desc.,PHYSICS I,4,8,ÖZHAN ÖZATAY,MWF,111,,YD 206 | YD 206 | YD 206,05.01.2015,3,,"                          "
+PHYS101.02,Desc.,PHYSICS I,4,8,DIETER VAN DEN BLEEKEN,MWF,111,,YD 106 | YD 106 | YD 106,05.01.2015,3,,"                          "
+PHYS101.03,Desc.,PHYSICS I,4,8,ÖZHAN ÖZATAY,MWF,222,,YD 206 | YD 206 | YD 206,05.01.2015,3,,"                          "
+PHYS101.04,Desc.,PHYSICS I,4,8,AYŞE FAHRÜNİSA NEYZİ,MWF,222,,YD 106 | YD 106 | YD 106,05.01.2015,3,,"                          "
+PHYS101.05,Desc.,PHYSICS I,4,8,AYŞE FAHRÜNİSA NEYZİ,MWF,333,,YD 106 | YD 106 | YD 106,05.01.2015,3,,"                          "
+PHYS101.06,Desc.,PHYSICS I,4,8,NACİ İNCİ,MWF,333,,NH 203 | NH 203 | NH 203,05.01.2015,3,,"                          "
+PHYS102.01,Desc.,PHYSICS II,4,8,EVREN ÖZARSLAN,MWF,222,,NH 305 | NH 305 | NH 305,03.01.2015,2,,"                          "
+PHYS121.01,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,VEYSİ ERKCAN ÖZCAN,MWF,222,,NH 304 | NH 304 | NH 404,29.12.2014,2,IE,"                          "
+PHYS121.02,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,METİN ARIK,MWF,333,,YD 206 | YD 206 | YD 206,29.12.2014,2,CMPE,"                          "
+PHYS125.01,Desc.,CALCULATION METHODS IN PHYSICS,1,2,HALUK BEKER,ThTh,12,,KBZ 01 | KBZ 01,29.12.2014,3,,"                          "
+PHYS130.01,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,MUHİTTİN MUNGAN,MWF,222,,KBZ 01 | KBZ 01 | KBZ 01,03.01.2015,3,,"                          "
+PHYS130.02,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,MIKAEL SHEFTEL,MWF,333,,KBZ 01 | KBZ 01 | KBZ 01,03.01.2015,3,,"                          "
+PHYS150.01,Desc.,INFORMATION & ENTROPY,3,5,YAŞAR SAFKAN,TTThTh,1212,,KBZ 01 | KBZ 01 | YD 116 | YD 116,05.01.2015,2,,"                          "
+PHYS177.01,Desc.,COMPUTATIONAL INT.TO DYNAMICAL SYS.&PROB,3,5,MUHİTTİN MUNGAN,MTT,5910,,YD 04 | YD 103 | YD 103,03.01.2015,1,,"                          "
+PHYS201.01,Desc.,PHYSICS III,4,6,ÖMER Ö.OĞUZ,TTThTh,1212,,YD 106 | YD 106 | YD 106 | YD 106,03.01.2015,1,,"                          "
+PHYS201.02,Desc.,PHYSICS III,4,6,İBRAHİM SEMİZ,TTThTh,1212,,YD 206 | YD 206 | YD 206 | YD 206,03.01.2015,1,,"                          "
+PHYS201.03,Desc.,PHYSICS III,4,6,İBRAHİM SEMİZ,TTThTh,3434,,YD 206 | YD 206 | YD 206 | YD 206,03.01.2015,1,,"                          "
+PHYS201.04,Desc.,PHYSICS III,4,6,AŞKIN ANKAY,TTThTh,3434,,YD 06 | YD 06 | YD 106 | YD 106,03.01.2015,1,,"                          "
+PHYS201.05,Desc.,PHYSICS III,4,6,AŞKIN ANKAY,TTThTh,5656,,YD 06 | YD 06 | YD 106 | YD 106,03.01.2015,1,,"                          "
+PHYS202.01,Desc.,PHYSICS IV,4,6,ALİ KAYA,TTThTh,3434,,KPARK1 | KPARK1 | KPARK1 | KPARK1,09.01.2015,2,,"                          "
+PHYS202.02,Desc.,PHYSICS IV,4,6,HALUK BEKER,TTThTh,5656,,KPARK1 | KPARK1 | KPARK1 | KPARK1,09.01.2015,2,,"                          "
+PHYS205.01,Desc.,EXPLORING THE COSMOS I,3,5,LEVENT KURNAZ,MMThTh,7878,,NH 404 | NH 404 | NH 404 | NH 404,31.12.2014,1,,"                          "
+PHYS221.01,Desc.,THERMAL PROPERTIES OF MATTER,3,5,ERHAN GÜLMEZ,MMThTh,5656,,KBZ 01 | KBZ 01 | NH 402 | NH 402,31.12.2014,1,"PHYS,PEDU","        PHYS                  "
+PHYS221.02,Desc.,THERMAL PROPERTIES OF MATTER,3,5,ERHAN GÜLMEZ,MMThTh,7878,,KBZ 01 | KBZ 01 | NH 402 | NH 402,31.12.2014,1,"PHYS,PEDU","                          "
+PHYS290.01,Desc.,INTRO.TO COMPUTER USAGE IN PHYSICS,3,6,SERDAR NERGİZ,MMWW,5656,,,,0,,"                          "
+PHYS301.01,Desc.,CLASSICAL MECHANICS I,3,6,SERDAR NERGİZ,MMWW,3434,,NH 404 | NH 404 | NH 302 | NH 302,03.01.2015,3,"PHYS,PEDU","        PHYS                  "
+PHYS302.01,Desc.,CLASSICAL MECHANICS II,3,3,AVADİS SİMON HACINLIYAN,MMWW,8989,,YD 02 | YD 02 | YD 03 | YD 03,03.01.2015,1,"PHYS,PEDU","                          "
+PHYS311.01,Desc.,MODERN PHYSICS I,3,7,MEHMET BURÇİN ÜNLÜ,MMWW,5656,,NH 302 | NH 302 | YD 203 | YD 203,09.01.2015,2,,"        PHYS                  "
+PHYS325.01,Desc.,MATHEMATICAL METHODS OF PHYSICS I,3,5,ERSAN DEMİRALP,TTThTh,3434,,KBZ 01 | KBZ 01 | NH 203 | NH 203,27.12.2014,3,"PHYS,PEDU","        PHYS                  "
+PHYS331.01,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,TTFFF,34123,,,27.12.2014,1,,"        PHYS                  "
+PHYS331.02,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,ThThFFF,34456,,,27.12.2014,1,,"        PHYS                  "
+PHYS331.03,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,TTFFF,34789,,,27.12.2014,1,,"        PHYS                  "
+PHYS331.04,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,TTThThTh,34678,,,27.12.2014,1,,"        PHYS                  "
+PHYS337.01,Desc.,INTRO.TO PHYSICAL METH.IN MEDICAL DIAG.,3,6,MEHMET BURÇİN ÜNLÜ,WFF,378,,YD 203 | KBZ 01 | KBZ 01,29.12.2014,2,,"                          "
+PHYS345.01,Desc.,CLASSICAL ASTRONOMY,3,6,ENİSE NİHAL ERCAN,TThTh,434,,KB 125 | YD 04 | YD 04,27.12.2014,1,,"                          "
+PHYS391.01,Desc.,PHYSICAL ELECTRONICS I,3,6,B.GÜLEN AKTAŞ,TBA,,,,07.01.2015,1,,"                          "
+PHYS401.01,Desc.,ELECTROMAGNETISM I,3,4,TAYLAN AKDOĞAN,TTThTh,3434,,KB 316 | KB 316 | KB 316 | KB 316,07.01.2015,3,,"        PHYS                  "
+PHYS407.01,Desc.,ADVANCED QUANTUM PHYSICS I,3,7,LEVENT AKANT,MMWW,5656,,NH 303 | NH 303 | NH 304 | NH 304,02.01.2015,2,"PHYS,PEDU","        PHYS                  "
+PHYS411.01,Desc.,QUANTUM MECHANICS I,3,6,TONGUÇ RADOR,MMWW,5656,,NH 304 | NH 304 | NH 303 | NH 303,06.01.2015,2,,"        PHYS                  "
+PHYS421.01,Desc.,STATISTICAL MECHANICS,3,6,OSMAN TEOMAN TURGUT,TTThTh,5656,,NH 302 | NH 302 | NH 304 | NH 304,10.01.2015,3,,"        PHYS                  "
+PHYS443.01,Desc.,EXPERIMENTAL PHYSICS II,4,8,VEYSİ ERKCAN ÖZCAN,WWFFFF,345678,,NH 304 | NH 304 | NH 402 | NH 402 | NH 402 | NH 402,,0,,"                          "
+PHYS481.01,Desc.,SEL.TP.IN PHYS.:PHYS.OF COMM.(ON-LINE),3,6,NURİ DAĞDEVİREN,TBA,,,,,0,,"                          "
+PHYS488.01,Desc.,SEL.TOP.IN PHYS.:PROG. WITH C (ONLINE),3,6,YÜKSEL GÜNAL,TBA,,,,,0,,"                          "
+PHYS48L.01,Desc.,SEL.TOP.:CLIMATE CHANGE&ENERGY EFFC.,3,6,LEVENT KURNAZ,MMTh,125,,NH 104 | NH 104 | YD 104,09.01.2015,1,,"                          "
+PHYS48R.01,Desc.,SEL.TP.IN PHYS:INTR.TO RELATIVITY THEORY,3,6,TONGUÇ RADOR,,, ,,,0,,"                          "
+PHYS48Y.01,Desc.,SL.TP.IN PHYS:PROGRAMMING WITH PYTHON,3,6,TAYLAN AKDOĞAN,TBA,,,,,0,,"                          "
+PHYS490.01,Desc.,SEL.TP.SYNCHROTRON RADIATION&ITS(ONLINE),3,6,MEHMET ALPER ŞAHİNER,,, ,,,0,,"                          "
+PHYS491.01,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,LEVENT KURNAZ,TBA,,,,,0,,"                          "
+PHYS491.02,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,ÖZHAN ÖZATAY,TBA,,,,,0,,"                          "
+PHYS491.03,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,METİN ARIK,TBA,,,,,0,,"                          "
+PHYS491.04,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,ENİSE NİHAL ERCAN,TBA,,,,,0,,"                          "
+PHYS491.06,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,VEYSİ ERKCAN ÖZCAN,TBA,,,,,0,,"                          "
+PHYS491.07,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,MEHMET BURÇİN ÜNLÜ,TBA,,,,,0,,"                          "
+PHYS491.08,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,TAYLAN AKDOĞAN,TBA,,,,,0,,"                          "
+PHYS492.01,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,TAYLAN AKDOĞAN,,, ,,03.01.2015,1,,"                          "
+PHYS500.01,Desc.,READING IN PHYSICS,1,10,JOHN FREELY,TBA,,,,,0,,"                          "
+PHYS501.01,Desc.,CLASSICAL DYNAMICS,4,10,DIETER VAN DEN BLEEKEN,MMWW,2323,,,02.01.2015,3,,"                          "
+PHYS511.01,Desc.,ELECTROMAGNETIC THEORY,4,10,METİN ARIK,MMWW,5656,,,10.01.2015,1,,"                          "
+PHYS531.01,Desc.,QUANTUM MECHANICS I,4,10,ALİ KAYA,TTThTh,1212,,,03.01.2015,3,,"                          "
+PHYS561.01,Desc.,MANY-BODY THEORY I,4,10,OSMAN TEOMAN TURGUT,TBA,,,,30.12.2014,3,,"                          "
+PHYS571.01,Desc.,X-RAY ASTRONOMY,4,10,ENİSE NİHAL ERCAN,TBA,,,,27.12.2014,1,,"                          "
+PHYS579.01,Desc.,GRADUATE SEMINAR,0,10,OSMAN TEOMAN TURGUT,TBA,,,,,0,,"                          "
+PHYS580.01,Desc.,SP.TP.GASEOUS RADIATION DETECTORS,4,10,VEYSİ ERKCAN ÖZCAN,TBA,,,,09.01.2015,1,,"                          "
+PHYS588.01,Desc.,SP.TP.PARTICAL LIKE SOLUTIONS OF FIELD,4,10,MIKAEL SHEFTEL,MMFF,7856,,,10.01.2015,2,,"                          "
+PHYS58Q.01,Desc.,SL.TOP.:PATH INTEGRAL METHODS IN QUANTUM,4,10,LEVENT AKANT,MMThTh,7856,,,06.01.2015,1,,"                          "
+PHYS58R.01,Desc.,SP.TP.IN PHYS:SUPERC.SUP.AND CONDENSATES,4,10,ERSAN DEMİRALP,TTThTh,7878,,,05.01.2015,2,,"                          "
+PHYS58T.01,Desc.,SP.TP.IN PHYSICS: PHYSICS AT SURFACES,4,10,MEHMET ERBUDAK,TBA,,,,10.01.2015,3,,"                          "
+PHYS665.01,Desc.,FIELD THEORY I,4,10,TONGUÇ RADOR,TBA,,,,29.12.2014,1,,"                          "
+PHYS681.01,Desc.,GRADUATE SEMINAR IN PHYSICS I,3,10,ÖZHAN ÖZATAY,TBA,,,,09.01.2015,2,,"                          "
+PHYS689.01,Desc.,SP.TOP.IN PHYS.:ADVANCED TOP.IN PHYSICAL,4,1,B.GÜLEN AKTAŞ,TBA,,,,30.12.2014,1,,"                          "
+PHYS68G.01,Desc.,SP.TOP. IN PHYSICS:PHOTONICS,4,10,NACİ İNCİ,TBA,,,,29.12.2014,2,,"                          "
+PHYS68S.01,Desc.,SP.TP.:QUANTUM GRAVITY,4,10,METİN ARIK,TBA,,,,09.01.2015,3,,"                          "
+PHYS68V.01,Desc.,SP.TP.QUANTUM FIELD THEO.IN CURVED SPA.T,4,10,ALİ KAYA,TBA,,,,29.12.2014,2,,"                          "
+PHYS690.01,Desc.,M.S. THESIS,0,60,DIETER VAN DEN BLEEKEN,TBA,,,,,0,,"                          "
+PHYS690.02,Desc.,M.S. THESIS,0,60,LEVENT AKANT,TBA,,,,,0,,"                          "
+PHYS690.03,Desc.,M.S. THESIS,0,60,ALİ KAYA,TBA,,,,,0,,"                          "
+PHYS690.04,Desc.,M.S. THESIS,0,60,MEHMET BURÇİN ÜNLÜ,TBA,,,,,0,,"                          "
+PHYS690.05,Desc.,M.S. THESIS,0,60,OSMAN TEOMAN TURGUT,TBA,,,,,0,,"                          "
+PHYS690.06,Desc.,M.S. THESIS,0,60,METİN ARIK,TBA,,,,,0,,"                          "
+PHYS690.07,Desc.,M.S. THESIS,0,60,ERHAN GÜLMEZ,TBA,,,,,0,,"                          "
+PHYS690.08,Desc.,M.S. THESIS,0,60,VEYSİ ERKCAN ÖZCAN,TBA,,,,,0,,"                          "
+PHYS690.09,Desc.,M.S. THESIS,0,60,ENİSE NİHAL ERCAN,TBA,,,,,0,,"                          "
+PHYS690.10,Desc.,M.S. THESIS,0,60,İBRAHİM SEMİZ,TBA,,,,,0,,"                          "
+PHYS690.11,Desc.,M.S. THESIS,0,60,ÖZHAN ÖZATAY,TBA,,,,,0,,"                          "
+PHYS690.12,Desc.,M.S. THESIS,0,60,EVREN ÖZARSLAN,TBA,,,,,0,,"                          "
+PHYS690.13,Desc.,M.S. THESIS,0,60,NACİ İNCİ,TBA,,,,,0,,"                          "
+PHYS690.14,Desc.,M.S. THESIS,0,60,MUHİTTİN MUNGAN,TBA,,,,,0,,"                          "
+PHYS690.15,Desc.,M.S. THESIS,0,60,LEVENT KURNAZ,TBA,,,,,0,,"                          "
+PHYS694.01,Desc.,SP.TOP.IN PHYS.SEL.TOP.IN MATHEMATICAL P,4,10,OSMAN TEOMAN TURGUT,TBA,,,,03.01.2015,1,,"                          "
+PHYS790.01,Desc.,Ph.D.THESIS,0,120,ALİ KAYA,TBA,,,,,0,,"                          "
+PHYS790.02,Desc.,Ph.D.THESIS,0,120,İBRAHİM SEMİZ,TBA,,,,,0,,"                          "
+PHYS790.03,Desc.,Ph.D.THESIS,0,120,LEVENT KURNAZ,TBA,,,,,0,,"                          "
+PHYS790.04,Desc.,Ph.D.THESIS,0,120,METİN ARIK,TBA,,,,,0,,"                          "
+PHYS790.05,Desc.,Ph.D.THESIS,0,120,MEHMET BURÇİN ÜNLÜ,TBA,,,,,0,,"                          "
+PHYS790.06,Desc.,Ph.D.THESIS,0,120,NACİ İNCİ,TBA,,,,,0,,"                          "
+PHYS790.07,Desc.,Ph.D.THESIS,0,120,VEYSİ ERKCAN ÖZCAN,TBA,,,,,0,,"                          "
+PHYS790.08,Desc.,Ph.D.THESIS,0,120,ENİSE NİHAL ERCAN,TBA,,,,,0,,"                          "
+PHYS790.09,Desc.,Ph.D.THESIS,0,120,LEVENT AKANT,TBA,,,,,0,,"                          "
+SCI 101.01,Desc.,SCIENCE I,3,6,ALPAR  SEVGEN,MTTh,777,,NH 101 | NH 101 | NH 101,03.01.2015,3,,"                          "
+STS 230.01,Desc.,THEORY OF MUSICAL SOUND,3,6,ALPAR  SEVGEN,FFF,678,,TB 415 | TB 415 | TB 415,31.12.2014,1,,"                          "
+STS 322.01,Desc.,HISTORY OF CLASSICAL PHYSICS,3,6,ÖMÜR AKYÜZ,TTTh,121,,,08.01.2015,3,,"                          "
+STS 401.01,Desc.,HISTORY OF SCIENCE,3,6,LEVENT KURNAZ,MMTh,566,,NH 404 | NH 404 | NH 404,05.01.2015,2,,"                          "

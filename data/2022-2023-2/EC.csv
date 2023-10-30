@@ -1,0 +1,63 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EC  102.01,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,BURÇAY ERUS,TTTh,565, ,NH 101 | NH 101 | NH 101,25.05.2023,2,"AD, EC, POLS","                          "
+EC  102.02,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,MELTEM POYRAZ,TTTh,565, ,NH 405 | NH 405 | NH 105,25.05.2023,2,"AD, EC, POLS","                          "
+EC  102.03,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,TOLGA UMUT KUZUBAŞ,TTTh,565, ,EF 106 | EF 106 | NH 301,25.05.2023,2,"AD, EC, POLS","                          "
+EC  102.04,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,MUSTAFA METİN BAŞBAY,TTTh,565, ,M 1100 | M 1100 | M 1100,25.05.2023,2,"IE,LAW","                          "
+EC  102.05,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,KIVANÇ KARAMAN,TTTh,565, ,AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK,25.05.2023,2,"CMPE EE,ME,PHYS","                          "
+EC  102.06,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,BURÇAY ERUS,TTTh,787, ,NH 101 | NH 101 | NH 405,25.05.2023,2,CHE,"                          "
+EC  102.07,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,MELTEM POYRAZ,TTTh,787, ,NH 405 | NH 405 | EF 106,25.05.2023,2,SOC,"                          "
+EC  102.08,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,LEVENT YILDIRAN,MMW,565, ,NH 405 | NH 405 | NH 301,25.05.2023,2,CE,"                          "
+EC  102.09,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,BEGÜM ÖZKAYNAK,WFF,623, ,NH 301 | NH 101 | NH 101,25.05.2023,2,HIST,"                          "
+EC  104.01,Desc.,ORIENTATION TO ECONOMICS II,1,1,ORHAN AYGÜN,W,8, ,NH 101,03.06.2023,3,,"                          "
+EC  205.01,Desc.,MACROECONOMICS I,3,6,EMEKCAN YÜCEL,TTTh,565, ,NH 105 | NH 105 | İB 102,31.05.2023,3,AD,"                          "
+EC  205.02,Desc.,MACROECONOMICS I,3,6,EMEKCAN YÜCEL,TTTh,787, ,NH 105 | NH 105 | NH 305,31.05.2023,3,AD,"                          "
+EC  206.01,Desc.,MICROECONOMICS II,3,6,AYŞE MUMCU,TTTh,568, ,NB 119 | NB 119 | NB 119,07.06.2023,2,,"                          "
+EC  206.02,Desc.,MICROECONOMICS II,3,6,AYŞE MUMCU,TTTh,787, ,NB 119 | NB 119 | NB 119,07.06.2023,2,,"                          "
+EC  208.01,Desc.,MACROECONOMICS II,3,6,MURAT KOYUNCU,MWW,523, ,NB 119 | NB 119 | NB 119,03.06.2023,1,,"                          "
+EC  208.02,Desc.,MACROECONOMICS II,3,6,MURAT KOYUNCU,MWW,656, ,NB 119 | NH 105 | NH 105,03.06.2023,1,,"                          "
+EC  223.01,Desc.,MATHEMATICS FOR ECONOMISTS,3,6,E. ÜNAL ZENGİNOBUZ,TTTh,232, ,NB 119 | NB 119 | NH 305,01.06.2023,2,,"                          "
+EC  234.01,Desc.,MATHEMATICAL STATISTICS II,3,6,GÜZİN GÜLSÜN AKIN,TThTh,434, ,NH 203 | NB 119 | NB 119,06.06.2023,3,,"                          "
+EC  234.02,Desc.,MATHEMATICAL STATISTICS II,3,6,GÜZİN GÜLSÜN AKIN,TTTh,565, ,NH 203 | NH 203 | NB 119,06.06.2023,3,,"                          "
+EC  301.01,Desc.,ECONOMICS OF INDUSTRIAL ORGANIZATION,3,6,MURAT YILMAZ,MMW,232, ,NB 119 | NB 119 | NH 201,31.05.2023,1,,"                          "
+EC  306.01,Desc.,ADVANCED MICROECONOMICS,3,6,MEHMET YİĞİT GÜRDAL,MMW,568, ,NH 303 | NH 303 | NB 119,04.06.2023,1,,"                          "
+EC  332.01,Desc.,ADVANCED ECONOMETRICS,3,6,SELCEN ÇAKIR,TTTh,344, ,NH 302 | NH 302 | NH 102,07.06.2023,1,,"                          "
+EC  358.01,Desc.,WORLD ECONOMIC HISTORY,3,6,FİKRET ADAMAN,TTTh,786, ,NH 201 | NH 201 | NB 119,04.06.2023,2,,"                          "
+EC  361.01,Desc.,INTERNATIONAL ECONOMICS,3,6,TOLGA UMUT KUZUBAŞ,TTTh,787, ,EF 106 | EF 106 | NH 301,31.05.2023,3,,"                          "
+EC  406.01,Desc.,AGRICULTURAL ECONOMICS,3,6,GÖKHAN ÖZERTAN,WWF,561, ,M 2170 | M 2170 | NB 119,02.06.2023,1,,"                          "
+EC  407.01,Desc.,LABOR ECONOMICS,3,6,SELCEN ÇAKIR,TThTh,223, ,NH 302 | NH 102 | NH 102,06.06.2023,1,,"                          "
+EC  412.01,Desc.,TOPICS IN HIST. OF ECO. THOUGHT,3,6,FİKRET ADAMAN,TTTh,344, ,NH 303 | NH 303 | NH 202,05.06.2023,2,,"                          "
+EC  449.01,Desc.,TOPICS IN BANKING AND FINANCE,3,6,LEVENT YILDIRAN,MWW,434, ,NH 402 | NH 104 | NH 104,30.05.2023,2,,"                          "
+EC  454.01,Desc.,TURKISH TAX SYTEMS,3,6,STAFF STAFF,WWW,678, ,M 2152 | M 2152 | M 2152,,,,"                          "
+EC  470.01,Desc.,TURKISH ECONOMY,3,6,CEYHUN ELGİN,TFF,123, ,NH 401 | NB 119 | NB 119,31.05.2023,2,,"                          "
+EC  474.01,Desc.,TOPICS IN INTERNATIONAL DEVELOPMENT,3,6,BEGÜM ÖZKAYNAK,WWF,346, ,NH 202 | NH 202 | NB 119,02.06.2023,3,,"                          "
+EC  480.01,Desc.,SP.TP.TURKISH BANKING SECTOR,3,6,AHMET BURAK EMEL,FFF,8910, ,NB 119,07.06.2023,3,,"                          "
+EC  483.01,Desc.,SP.TP.IN ECONOMICS OF DISTRIBUTION,3,6,ORHAN TORUL,TTTh,565, ,NH 102 | NH 102 | İB 211,24.05.2023,2,,"                          "
+EC  488.01,Desc.,SPECIAL TOPICS IN ECONOMICS AND PHILOSOPHY,3,6,FİKRET ADAMAN,,, ,,07.06.2023,1,,"                          "
+EC  48E.01,Desc.,SP.TP.IN FINAN.ECON.&MACHINE LEARN.,3,6,BURAK SALTOĞLU,WWF,564, ,NH 202 | NH 202 | NB Z10,01.06.2023,1,,"                          "
+EC  48I.01,Desc.,SP.TP.IN EC AND FINANCIAL INSTITUTIONS,3,6,AHMET İRFAN SÖYLEMEZOĞLU,MMM,456, ,İB 312 | İB 312 | İB 312,25.05.2023,1,,"                          "
+EC  48K.01,Desc.,SP.TP.ADVANCED RESEARCH METHODS IN APPLIED ECONOMICS,3,6,CEYHUN ELGİN,TFF,245, ,NH 402 | NB Z11 | NB Z11,30.05.2023,1,,"                          "
+EC  48N.01,Desc.,SP.TP.IN APPLIED MICROECONOMETRICS,3,6,STAFF STAFF,TTTh,565, ,NH 304 | NH 304 | İB 312,,,,"                          "
+EC  48T.01,Desc.,SP.TP.FINANCIAL MODELLING&ITS APP.USING R,3,6,MUSTAFA CAN ÖZER,ThThTh,789, ,NB Z13 | NB Z13 | NB Z13,04.06.2023,3,,"                          "
+EC  48Z.01,Desc.,SP.TP.IN MATCHING THEORY,3,6,ORHAN AYGÜN,MMW,232, ,NB Z12 | NB Z12 | İB 201,26.05.2023,3,,"                          "
+EC  501.01,Desc.,MICRO-ECONOMICS I,4,8,E. ÜNAL ZENGİNOBUZ,TTThTh,6767, ,NB Z10 | NB Z10 | NB Z12 | NB Z12,30.05.2023,2,,"                          "
+EC  502.01,Desc.,MICRO-ECONOMICS II,4,10,ORHAN AYGÜN,MMWW,5656, ,İB 211 | İB 211 | NB B10 | NB B10,24.05.2023,3,,"                          "
+EC  504.01,Desc.,MACRO-ECONOMICS II,4,10,ORHAN TORUL,TTThTh,2323, ,NB Z10 | NB Z10 | NB Z13 | NB Z13,04.06.2023,2,,"                          "
+EC  532.01,Desc.,ECONOMETRICS II,4,10,GÖKHAN ÖZERTAN,WWFF,2323, ,NB Z12 | NB Z12 | NB Z10 | NB Z10,02.06.2023,3,,"                          "
+EC  579.01,Desc.,GRADUATE SEMINAR,0,5,MURAT KOYUNCU,FF,78, ,NB Z10 | NB Z10,,,,"                          "
+EC  581.01,Desc.,SP.TP.ALGORITMIC TRADING&QUANTITATIVE,3,7,AYHAN YÜKSEL,MMM,789, ,NB Z12 | NB Z12 | NB Z12,03.06.2023,1,,"                          "
+EC  596.01,Desc.,SP. TP.APPLIED ECONOMETRICS,3,7,MURAT KIRDAR,TTTh,455, ,NB Z10 | NB Z10 | NB Z10,01.06.2023,2,,"                          "
+EC  599.01,Desc.,TERM PROJECT,0,13,MURAT KOYUNCU,,, ,,,,,"                          "
+EC  604.01,Desc.,ADVANCED MACROECONOMICS II,4,11,TOLGA UMUT KUZUBAŞ,ThThTh,123, ,NB Z12 | NB Z12 | NB Z12,30.05.2023,1,,"                          "
+EC  690.04,Desc.,MASTER THESIS,0,60,SELCEN ÇAKIR,,, ,,,,,"                          "
+EC  690.05,Desc.,MASTER THESIS,0,60,CEYHUN ELGİN,,, ,,,,,"                          "
+EC  690.06,Desc.,MASTER THESIS,0,60,BURÇAY ERUS,,, ,,,,,"                          "
+EC  690.07,Desc.,MASTER THESIS,0,60,MEHMET YİĞİT GÜRDAL,,, ,,,,,"                          "
+EC  690.09,Desc.,MASTER THESIS,0,60,MURAT KIRDAR,,, ,,,,,"                          "
+EC  690.10,Desc.,MASTER THESIS,0,60,MURAT KOYUNCU,,, ,,,,,"                          "
+EC  690.11,Desc.,MASTER THESIS,0,60,TOLGA UMUT KUZUBAŞ,,, ,,,,,"                          "
+EC  690.13,Desc.,MASTER THESIS,0,60,GÖKHAN ÖZERTAN,,, ,,,,,"                          "
+EC  690.14,Desc.,MASTER THESIS,0,60,BEGÜM ÖZKAYNAK,,, ,,,,,"                          "
+EC  690.16,Desc.,MASTER THESIS,0,60,BURAK SALTOĞLU,,, ,,,,,"                          "
+EC  690.19,Desc.,MASTER THESIS,0,60,MURAT YILMAZ,,, ,,,,,"                          "
+EC  790.01,Desc.,Ph.D THESIS,0,120,MURAT KOYUNCU,,, ,,,,,"                          "
+EC  790.02,Desc.,Ph.D THESIS,0,120,MURAT KIRDAR,,, ,,,,,"                          "

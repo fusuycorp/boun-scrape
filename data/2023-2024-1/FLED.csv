@@ -1,0 +1,80 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Quota,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+FLED103.01,Desc.,ACADEMIC WRITING,3,7,Info,JUDY MONTHIE DOYUM,TTW,672, ,EF 205 | EF 205 | EF 07,,,,"                          "
+FLED103.02,Desc.,ACADEMIC WRITING,3,7,Info,JUDY MONTHIE DOYUM,TThTh,367, ,EF 206 | EF 03 | EF 03,,,,"                          "
+FLED103.03,Desc.,ACADEMIC WRITING,3,7,Info,JUDY MONTHIE DOYUM,WThTh,412, ,EF 201 | EF 106 | EF 106,,,,"                          "
+FLED103.04,Desc.,ACADEMIC WRITING,3,7,Info,FETİYE ERBİL,MMM,789, ,ET 02 | ET 02 | ET 02,,,,"                          "
+FLED126.01,Desc.,COMMUNITY SERVICE PRACTICES IN EFL,3,6,Info,SUMRU AKCAN,FFF,678, ,EF 203 | EF 203 | EF 203,,,,"                          "
+FLED126.02,Desc.,COMMUNITY SERVICE PRACTICES IN EFL,3,6,Info,YASSER TEIMOURI,FFF,678, ,EF 201 | EF 201 | EF 201,,,,"                          "
+FLED126.03,Desc.,COMMUNITY SERVICE PRACTICES IN EFL,3,6,Info,LEYLA MESUDE MARTI,TWW,989, ,EF 205 | EF 202 | EF 202,,,,"                          "
+FLED126.04,Desc.,COMMUNITY SERVICE PRACTICES IN EFL,3,6,Info,YASEMİN BAYYURT,WWW,789, ,,,,,"                          "
+FLED201.01,Desc.,SURVEY OF APPLIED LINGUISTICS,3,6,Info,AYŞE GÜREL,TThTh,556, ,EF 106 | EF 106 | EF 106,,,,"                          "
+FLED211.01,Desc.,ENGLISH LANGUAGE AWARENESS,3,7,Info,NAZİK DİNÇTOPAL DENİZ,TTW,344, ,EF 202 | EF 202 | EF 204,,,,"                          "
+FLED306.01,Desc.,CHILDHOOD BILINGUALISM&BILINGUAL EDUC.,3,4,Info,BELMA HAZNEDAR,TTT,123, ,EF 203 | EF 203 | EF 203,,,,"                          "
+FLED315.01,Desc.,SOCIOLINGUISTICS&ENGLISH LANGUAGE EDUC.,4,6,Info,IŞIL ERDUYAN,TTTTh,6781, ,NH 404 | NH 404 | NH 404 | EF 204,,,,"                          "
+FLED317.01,Desc.,THEORETICAL FOUNDATIONS OF LANGUAGE SKIL,3,4,Info,GÜLCAN ERÇETİN,WWTh,565, ,EF 04 | EF 04 | EF 202,,,,"                          "
+FLED317.02,Desc.,THEORETICAL FOUNDATIONS OF LANGUAGE SKIL,3,4,Info,SİBEL TATAR,WWTh,565, ,EF 204 | EF 204 | EF 103,,,,"                          "
+FLED323.01,Desc.,TEACHING SECOND LANGUAGE GRAMMAR,3,4,Info,ŞEBNEM YALÇIN,MMW,342, ,EF 204 | EF 204 | EF 102,,,,"                          "
+FLED323.02,Desc.,TEACHING SECOND LANGUAGE GRAMMAR,3,4,Info,ŞEBNEM YALÇIN,MMTh,782, ,EF 204 | EF 204 | EF 204,,,,"                          "
+FLED324.01,Desc.,LITERATURE IN ENGLISH LANGUAGE EDUCATION,3,6,Info,DİLEK İNAL,TTT,678, ,EF 302 | EF 302 | EF 302,,,,"                          "
+FLED401.01,Desc.,THE USE OF LITERARY TEXTS IN TEFL,4,6,Info,JUDY MONTHIE DOYUM,TWW,567, ,EF 205 | EF 205 | EF 205,,,,"                          "
+FLED403.01,Desc.,PRACTICE TEACHING IN ENGLISH AS A FOREIGN LANGUAGE I,4,9,Info,SUMRU AKCAN,ThTh,78, ,,,,,"                          "
+,,LAB,,,,SUMRU AKCAN,MMMThTh,34512,,,,,,"                          "
+FLED403.02,Desc.,PRACTICE TEACHING IN ENGLISH AS A FOREIGN LANGUAGE I,4,9,Info,GÜLCAN ERÇETİN,ThTh,78, ,,,,,"                          "
+,,LAB,,,,GÜLCAN ERÇETİN,ThThFFF,12345,,,,,,"                          "
+FLED403.03,Desc.,PRACTICE TEACHING IN ENGLISH AS A FOREIGN LANGUAGE I,4,9,Info,AYŞE GÜREL,ThTh,78, ,,,,,"                          "
+,,LAB,,,,AYŞE GÜREL,ThThThFF,12912,,,,,,"                          "
+FLED403.04,Desc.,PRACTICE TEACHING IN ENGLISH AS A FOREIGN LANGUAGE I,4,9,Info,BELMA HAZNEDAR,ThTh,78, ,,,,,"                          "
+,,LAB,,,,BELMA HAZNEDAR,WWWThTh,67812,,,,,,"                          "
+FLED403.05,Desc.,PRACTICE TEACHING IN ENGLISH AS A FOREIGN LANGUAGE I,4,9,Info,LEYLA MESUDE MARTI,ThTh,78, ,,,,,"                          "
+,,LAB,,,,LEYLA MESUDE MARTI,TTWWW,34234,,,,,,"                          "
+FLED403.06,Desc.,PRACTICE TEACHING IN ENGLISH AS A FOREIGN LANGUAGE I,4,9,Info,SİBEL TATAR,ThTh,78, ,,,,,"                          "
+,,LAB,,,,SİBEL TATAR,ThThFFF,12123,,,,,,"                          "
+FLED403.07,Desc.,PRACTICE TEACHING IN ENGLISH AS A FOREIGN LANGUAGE I,4,9,Info,SENEM YILDIZ ERSOY,ThTh,78, ,,,,,"                          "
+,,LAB,,,,SENEM YILDIZ ERSOY,MMThThTh,34234,,,,,,"                          "
+FLED403.08,Desc.,PRACTICE TEACHING IN ENGLISH AS A FOREIGN LANGUAGE I,4,9,Info,IŞIL ERDUYAN,ThTh,78, ,,,,,"                          "
+,,LAB,,,,IŞIL ERDUYAN,ThThFFF,29234,,,,,,"                          "
+FLED403.09,Desc.,PRACTICE TEACHING IN ENGLISH AS A FOREIGN LANGUAGE I,4,9,Info,NAZİK DİNÇTOPAL DENİZ,ThTh,78, ,,,,,"                          "
+,,LAB,,,,NAZİK DİNÇTOPAL DENİZ,MMFFF,34345,,,,,,"                          "
+FLED403.10,Desc.,PRACTICE TEACHING IN ENGLISH AS A FOREIGN LANGUAGE I,4,9,Info,YASSER TEIMOURI,ThTh,78, ,,,,,"                          "
+,,LAB,,,,YASSER TEIMOURI,WWWFF,12323,,,,,,"                          "
+FLED403.11,Desc.,PRACTICE TEACHING IN ENGLISH AS A FOREIGN LANGUAGE I,4,9,Info,ŞEBNEM YALÇIN,ThTh,78, ,,,,,"                          "
+,,LAB,,,,ŞEBNEM YALÇIN,MMWWW,12234,,,,,,"                          "
+FLED411.01,Desc.,TECHNOLOGY - ENHANCED LANGUAGE TEACHING,4,7,Info,SENEM YILDIZ ERSOY,TTThTh,5645, ,EF 201 | EF 201 | EF 302 | EF 302,,,,"                          "
+FLED411.02,Desc.,TECHNOLOGY - ENHANCED LANGUAGE TEACHING,4,7,Info,MUSTAFA POLAT,TTTT,3467, ,ET 02 | ET 02 | EF 203 | EF 203,,,,"                          "
+FLED413.01,Desc.,LANGUAGE ASSESSMENT,4,7,Info,NESRİN KUTLAY,MMWW,6767, ,NH 303 | NH 303 | EF 06 | EF 06,,,,"                          "
+FLED501.01,Desc.,RESEARCH METHODS,3,8,Info,YASSER TEIMOURI,TTT,234, ,,,,,"                          "
+FLED506.01,Desc.,USE OF CORPORA IN LANGUAGE LEARNING,3,8,Info,LEYLA MESUDE MARTI,MMM,678, ,,,,,"                          "
+FLED509.01,Desc.,FUNDAMENTALS OF PSYCHOLINGUISTICS,3,8,Info,NAZİK DİNÇTOPAL DENİZ,WWW,678, ,,,,,"                          "
+FLED511.01,Desc.,THEORIES OF SECOND LANGUAGE ACQUISITION,3,8,Info,BELMA HAZNEDAR,TTT,678, ,,,,,"                          "
+FLED524.01,Desc.,APPROACHES TO TEACHING LANGUAGE SKILLS,3,8,Info,GÜLCAN ERÇETİN,WWW,234, ,,,,,"                          "
+FLED579.01,Desc.,GRADUATE SEMINAR,0,2,Info,YASEMİN BAYYURT,Th,9, ,,,,,"                          "
+FLED605.01,Desc.,WORLD ENGLISHES,4,9,Info,YASEMİN BAYYURT,ThThThTh,5678, ,,,,,"                          "
+FLED611.01,Desc.,BILINGUALISM,4,9,Info,AYŞE GÜREL,TTTT,6789, ,,,,,"                          "
+FLED687.01,Desc.,SP.TOP.IN APPLIED LINGUISTICS,4,9,Info,SUMRU AKCAN,MMMM,6789, ,,,,,"                          "
+FLED690.01,Desc.,MASTER THESIS,0,60,Info,BELMA HAZNEDAR,,, ,,,,,"                          "
+FLED690.02,Desc.,MASTER THESIS,0,60,Info,LEYLA MESUDE MARTI,,, ,,,,,"                          "
+FLED690.03,Desc.,MASTER THESIS,0,60,Info,SUMRU AKCAN,,, ,,,,,"                          "
+FLED690.04,Desc.,MASTER THESIS,0,60,Info,NUR YİĞİTOĞLU,,, ,,,,,"                          "
+FLED690.05,Desc.,MASTER THESIS,0,60,Info,SENEM YILDIZ ERSOY,,, ,,,,,"                          "
+FLED690.06,Desc.,MASTER THESIS,0,60,Info,ŞEBNEM YALÇIN,,, ,,,,,"                          "
+FLED690.07,Desc.,MASTER THESIS,0,60,Info,GÜLCAN ERÇETİN,,, ,,,,,"                          "
+FLED690.08,Desc.,MASTER THESIS,0,60,Info,SİBEL TATAR,,, ,,,,,"                          "
+FLED690.09,Desc.,MASTER THESIS,0,60,Info,YASEMİN BAYYURT,,, ,,,,,"                          "
+FLED690.10,Desc.,MASTER THESIS,0,60,Info,AYŞE GÜREL,,, ,,,,,"                          "
+FLED690.11,Desc.,MASTER THESIS,0,60,Info,NAZİK DİNÇTOPAL DENİZ,,, ,,,,,"                          "
+FLED690.12,Desc.,MASTER THESIS,0,60,Info,IŞIL ERDUYAN,,, ,,,,,"                          "
+FLED690.13,Desc.,MASTER THESIS,0,60,Info,YASSER TEIMOURI,,, ,,,,,"                          "
+FLED696.01,Desc.,SP.TP.THE SOCIAL TURN IN BILINGUALISM&MULTILINGUALISM STUDIES,4,9,Info,IŞIL ERDUYAN,WWWW,5678, ,,,,,"                          "
+FLED700.01,Desc.,GRADUATE SEMINAR,0,2,Info,SUMRU AKCAN,W,9, ,,,,,"                          "
+FLED790.01,Desc.,Ph.D THESIS,0,120,Info,BELMA HAZNEDAR,,, ,,,,,"                          "
+FLED790.02,Desc.,Ph.D THESIS,0,120,Info,YASEMİN BAYYURT,,, ,,,,,"                          "
+FLED790.03,Desc.,Ph.D THESIS,0,120,Info,AYŞE GÜREL,,, ,,,,,"                          "
+FLED790.04,Desc.,Ph.D THESIS,0,120,Info,SİBEL TATAR,,, ,,,,,"                          "
+FLED790.05,Desc.,Ph.D THESIS,0,120,Info,LEYLA MESUDE MARTI,,, ,,,,,"                          "
+FLED790.06,Desc.,Ph.D THESIS,0,120,Info,GÜLCAN ERÇETİN,,, ,,,,,"                          "
+FLED790.07,Desc.,Ph.D THESIS,0,120,Info,ŞEBNEM YALÇIN,,, ,,,,,"                          "
+FLED790.08,Desc.,Ph.D THESIS,0,120,Info,SUMRU AKCAN,,, ,,,,,"                          "
+FLED790.09,Desc.,Ph.D THESIS,0,120,Info,SENEM YILDIZ ERSOY,,, ,,,,,"                          "
+FLED790.10,Desc.,Ph.D THESIS,0,120,Info,IŞIL ERDUYAN,,, ,,,,,"                          "
+FLED790.11,Desc.,Ph.D THESIS,0,120,Info,NAZİK DİNÇTOPAL DENİZ,,, ,,,,,"                          "
+FLED790.12,Desc.,Ph.D THESIS,0,120,Info,NUR YİĞİTOĞLU,,, ,,,,,"                          "

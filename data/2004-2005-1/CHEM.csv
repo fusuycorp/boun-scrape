@@ -1,0 +1,66 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHEM103.01,Desc.,GENERAL CHEMISTRY I,3,7,BELKIS HALFON,MWF,111,,,,,CHEM,"        BIO; CEDU; CHE; PEDU; PRSC                  "
+CHEM103.02,Desc.,GENERAL CHEMISTRY I,3,7,AMITAV SANYAL,MWF,111,,,,,"BIO,CET,CHE,PREDMATH","                          "
+CHEM103.03,Desc.,GENERAL CHEMISTRY I,3,7,ALİ ERSİN ACAR,MWF,222,,,,,"CEDU,PEDU,PREDSCI","                          "
+CHEM103.04,Desc.,GENERAL CHEMISTRY I,3,7,AMITAV SANYAL,MWF,333,,,,,,"                          "
+CHEM104.01,Desc.,GENERAL CHEMISTRY II,3,6,AYŞE NEREN ÖKTE,MMW,121,,,,,,"        BIO; CHE; CEDU; PRSC                  "
+CHEM104.02,Desc.,GENERAL CHEMISTRY II,3,6,ZEYNEP ATAY GÖK,MMW,676,,,,,,"                          "
+CHEM105.01,Desc.,FUNDAMENTALS OF CHEMISTRY,4,6,TURGUT NUGAY,MWF,111,,,,,"EE,ME","        ME; CMPE; EE; PHYS                  "
+CHEM105.02,Desc.,FUNDAMENTALS OF CHEMISTRY,4,6,NİHAN NUGAY,MWF,222,,,,,"IE,PHYS","                          "
+CHEM107.01,Desc.,INTRODUCTION TO PRACTICAL CHEMISTRY,3,4,ELİZA KALVO,MM,45,,,,,"CEDU,CHEM","                          "
+CHEM109.01,Desc.,GENERAL CHEMISTRY LABORATORY,1,2,REYHAN İŞERİ,TTT,678,,,,,BIO,"                          "
+CHEM109.02,Desc.,GENERAL CHEMISTRY LABORATORY,1,2,REYHAN İŞERİ,WWW,678,,,,,PREDMATH,"                          "
+CHEM109.03,Desc.,GENERAL CHEMISTRY LABORATORY,1,2,REYHAN İŞERİ,FFF,678,,,,,"CHE,PREDSCI","                          "
+CHEM111.01,Desc.,SURVEY OF CHEMISTRY I,3,4,TEREZA VARNALI,TThTh,723,,,,,,"                          "
+CHEM201.01,Desc.,ORGANIC CHEMISTRY I,4,5,İLKNUR DOĞAN,MWWF,1121,,,,,"BIO,CEDU","                          "
+CHEM203.01,Desc.,ORGANIC CHEMISTRY LABORATORY I,1,3,EDİZ TAYLAN,MMM,567,,,,,CEDU,"                          "
+CHEM203.02,Desc.,ORGANIC CHEMISTRY LABORATORY I,1,3,EDİZ TAYLAN,WWW,567,,,,,CHEM,"                          "
+CHEM203.03,Desc.,ORGANIC CHEMISTRY LABORATORY I,1,3,EDİZ TAYLAN,FFF,567,,,,,BIO,"                          "
+CHEM241.01,Desc.,ORGANIC CHEMISTRY FOR ENGINEERS,4,6,DUYGU AVCI SEMİZ,WWFF,1212,,,,,CHE,"                          "
+CHEM245.01,Desc.,INORGANIC CHEMISTRY,3,5,ZEYNEP ATAY GÖK,TTThTh,3434,,,,,"CEDU,CHEM","                          "
+CHEM247.01,Desc.,INORGANIC CHEMISTRY LABORATORY,2,3,ZEYNEP ATAY GÖK,TTT,678,,,,,"CEDU,CHEM","                          "
+CHEM247.02,Desc.,INORGANIC CHEMISTRY LABORATORY,2,3,ZEYNEP ATAY GÖK,ThThTh,789,,,,,"CEDU,CHEM","                          "
+CHEM305.01,Desc.,INSTRUMENTAL ANALYSIS I,3,5,NEYLAN DİRİLGEN,MMWW,1212,,,,,,"                          "
+CHEM307.01,Desc.,INSTRUMENTAL ANALYSIS LABORATORY,2,3,ÖZGE AKDENİZ,MMMMM,56789,,,,,,"                          "
+CHEM307.02,Desc.,INSTRUMENTAL ANALYSIS LABORATORY,2,3,ÖZGE AKDENİZ,WWWWW,56789,,,,,,"                          "
+CHEM307.03,Desc.,INSTRUMENTAL ANALYSIS LABORATORY,2,3,ÖZGE AKDENİZ,FFFFF,56789,,,,,,"                          "
+CHEM311.01,Desc.,CHEMICAL LITERATURE,1,2,REYHAN İŞERİ,T,5,,,,,,"                          "
+CHEM351.01,Desc.,PHYSICAL CHEMISTRY I,4,4,AYŞE NEREN ÖKTE,TTThTh,1212,,,,,"CEDU,CHEM","                          "
+CHEM361.01,Desc.,COMPUTER APPLICATIONS IN CHEMISTRY,3,2,VIKTORYA AVIYENTE,MMM,456,,,,,,"                          "
+CHEM361.02,Desc.,COMPUTER APPLICATIONS IN CHEMISTRY,3,2,VIKTORYA AVIYENTE,MMM,789,,,,,,"                          "
+CHEM415.01,Desc.,GENERAL BIOCHEMISTRY,4,6,DİLEK ÇALGAN,TThTh,334,,,,,,"                          "
+CHEM421.01,Desc.,COMPUTATIONAL CHEMISTRY,3,4,TEREZA VARNALI,WWW,234,,,,,,"                          "
+CHEM435.01,Desc.,INTRO.TO POLYMER SCIENCE & TECHNOLOGY,3,4,TURGUT NUGAY,WFF,467,,,,,,"                          "
+CHEM451.01,Desc.,ADVANCED PHYSICAL CHEMISTRY,3,6,VIKTORYA AVIYENTE,TTThTh,1212,,,,,,"                          "
+CHEM481.01,Desc.,RESEARCH TECHNIQUES IN CHEM. I,3,4,ZEYNEP ATAY GÖK,TBA,,,,,,,"                          "
+CHEM481.02,Desc.,RESEARCH TECHNIQUES IN CHEM. I,3,4,DUYGU AVCI SEMİZ,TBA,,,,,,,"                          "
+CHEM481.03,Desc.,RESEARCH TECHNIQUES IN CHEM. I,3,4,VIKTORYA AVIYENTE,TBA,,,,,,,"                          "
+CHEM481.04,Desc.,RESEARCH TECHNIQUES IN CHEM. I,3,4,ALİ ERSİN ACAR,TBA,,,,,,,"                          "
+CHEM481.06,Desc.,RESEARCH TECHNIQUES IN CHEM. I,3,4,DİLEK ÇALGAN,TBA,,,,,,,"                          "
+CHEM481.07,Desc.,RESEARCH TECHNIQUES IN CHEM. I,3,4,NEYLAN DİRİLGEN,TBA,,,,,,,"                          "
+CHEM481.08,Desc.,RESEARCH TECHNIQUES IN CHEM. I,3,4,İLKNUR DOĞAN,TBA,,,,,,,"                          "
+CHEM481.09,Desc.,RESEARCH TECHNIQUES IN CHEM. I,3,4,BELKIS HALFON,TBA,,,,,,,"                          "
+CHEM481.11,Desc.,RESEARCH TECHNIQUES IN CHEM. I,3,4,SELİM KÜSEFOĞLU,TBA,,,,,,,"                          "
+CHEM481.12,Desc.,RESEARCH TECHNIQUES IN CHEM. I,3,4,NİHAN NUGAY,TBA,,,,,,,"                          "
+CHEM481.13,Desc.,RESEARCH TECHNIQUES IN CHEM. I,3,4,TURGUT NUGAY,TBA,,,,,,,"                          "
+CHEM481.14,Desc.,RESEARCH TECHNIQUES IN CHEM. I,3,4,AYŞE NEREN ÖKTE,TBA,,,,,,,"                          "
+CHEM481.15,Desc.,RESEARCH TECHNIQUES IN CHEM. I,3,4,HADİ ÖZBAL,TBA,,,,,,,"                          "
+CHEM481.16,Desc.,RESEARCH TECHNIQUES IN CHEM. I,3,4,TEREZA VARNALI,TBA,,,,,,,"                          "
+CHEM481.17,Desc.,RESEARCH TECHNIQUES IN CHEM. I,3,4,AMITAV SANYAL,TBA,,,,,,,"                          "
+CHEM495.01,Desc.,S.TP.''TEXTILE DYING AND FINISHING'',3,3,ŞÜKRİYE İNCİ GÖL,TWW,778,,,,,,"                          "
+CHEM511.01,Desc.,ADVANCED ORGANIC CHEMISTRY,3,8,ALİ ERSİN ACAR,TTW,121,,,,,,"                          "
+CHEM535.01,Desc.,POLYMER CHEMISTRY,3,8,SELİM KÜSEFOĞLU,TBA,,,,,,,"                          "
+CHEM537.01,Desc.,POLYMER CHARACTERIZATION,3,8,NİHAN NUGAY,TBA,,,,,,,"                          "
+CHEM538.01,Desc.,POLYMER APPLICATIONS,3,8,DUYGU AVCI SEMİZ,TBA,,,,,,,"                          "
+CHEM545.01,Desc.,NATURAL PRODUCTS,3,8,BELKIS HALFON,TBA,,,,,,,"                          "
+CHEM547.01,Desc.,CHEMISTRY OF HETEROCYCLIC COMPOUNDS,3,8,İLKNUR DOĞAN,TBA,,,,,,,"                          "
+CHEM579.01,Desc.,GRADUATE SEMINAR,0,1,SELİM KÜSEFOĞLU,TBA,,,,,,,"                          "
+CHEM582.01,Desc.,SP.TOP.ADV.STUDIES IN NMR,3,8,HADİ ÖZBAL,TBA,,,,,,,"                          "
+CHEM591.01,Desc.,RESEARCH SEMINAR I,1,2,SELİM KÜSEFOĞLU,TBA,,,,,,,"                          "
+CHEM592.01,Desc.,RESEARCH SEMINAR II,1,2,SELİM KÜSEFOĞLU,TBA,,,,,,,"                          "
+CHEM598.01,Desc.,SP.TOP:IN CHEM.ASYMMETRIC ORGANIC SYNTHE,3,8,AMITAV SANYAL,TBA,,,,,,,"                          "
+CHEM601.01,Desc.,Ph.D.SEMINAR I,1,2,SELİM KÜSEFOĞLU,TBA,,,,,,,"                          "
+CHEM602.01,Desc.,Ph.D.SEMINAR II,1,2,SELİM KÜSEFOĞLU,TBA,,,,,,,"                          "
+CHEM690.01,Desc.,M.S. THESIS,0,60,SELİM KÜSEFOĞLU,TBA,,,,,,,"                          "
+CHEM790.01,Desc.,Ph.D.THESIS,0,120,SELİM KÜSEFOĞLU,TBA,,,,,,,"                          "
+STS 301.01,Desc.,ARCHEOMETRY I,3,6,HADİ ÖZBAL,TTTh,899,,,,,,"                          "

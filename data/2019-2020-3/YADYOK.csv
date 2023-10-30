@@ -1,0 +1,35 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AE  112.01,Desc.,CRITICAL SKILLS IN ENGLISH II,3,4,SELVİN YALTIR,MMWWThTh,232323,Online,,,,,"                          "
+AE  221.01,Desc.,CRITICAL READING,3,4,SELVİN YALTIR,MMWWThTh,565656,Online,,,,,"                          "
+FR  101.01,Desc.,ELEMENTARY FRENCH I,3,7,OJENİ MAZALTO,MMTTTWWWThTh,1212312312,,,,,,"                          "
+FR  201.01,Desc.,INTERMEDIATE FRENCH I,3,7,ULAŞ AKARSU,MMTTTWWThThThFF,787897878978,,,,,,"                          "
+FR  202.01,Desc.,INTERMEDIATE FRENCH II,3,7,PINAR PEKTAŞ,MMTTWWWWThThFF,565634565656,,,,,,"                          "
+FR  302.01,Desc.,ADVANCED FRENCH II,3,7,PINAR PEKTAŞ,MMTTWWThThThThFF,787878347878,,,,,,"                          "
+GER 102.01,Desc.,ELEMENTARY GERMAN II,3,7,HÜLYA ARIÇ EROL,MMTTTTWWThThFF,785678787878,,,,,,"                          "
+GER 201.01,Desc.,PRE-INTERMEDIATE GERMAN I,3,7,AYŞE ŞAZİYE GÜVENİR,MMTTTTWWThThFF,121278121212,,,,,,"                          "
+GER 202.01,Desc.,PRE-INTERMEDIATE GERMAN II,3,7,AYŞE ŞAZİYE GÜVENİR,MMTTWWThThThThFF,343434347834,,,,,,"                          "
+GER 301.01,Desc.,INTERMEDIATE GERMAN I,3,7,HÜLYA ARIÇ EROL,MMTTWWWWThThFF,91091056910910910,,,,,,"                          "
+RUS 101.01,Desc.,ELEMENTARY RUSSIAN I,3,7,NATALIA DEMİRKAPILI,MMMTTWWWThThFF,123561235612,,,,,,"                          "
+SFL 13A.01,Desc.,PROGRAM 1 SUMMER A,,,S.MERVE AKBAŞ,,,,,,,,"                          "
+SFL 13A.02,Desc.,PROGRAM 1 SUMMER A,,,NİL KURTULAN DEMİREL,,,,,,,,"                          "
+SFL 13A.03,Desc.,PROGRAM 1 SUMMER A,,,NESRİN KUTLAY,,,,,,,,"                          "
+SFL 13A.04,Desc.,PROGRAM 1 SUMMER A,,,EMRE KUTLAY,,,,,,,,"                          "
+SFL 13A.05,Desc.,PROGRAM 1 SUMMER A,,,ALAZ PESEN,,,,,,,,"                          "
+SFL 13A.06,Desc.,PROGRAM 1 SUMMER A,,,GÖNÜL TUĞBA AKDAĞ,,,,,,,,"                          "
+SFL 13A.07,Desc.,PROGRAM 1 SUMMER A,,,HANİFE EMEL YÜKSEL AYTAR,,,,,,,,"                          "
+SFL 13A.08,Desc.,PROGRAM 1 SUMMER A,,,AYSUN BALKAN,,,,,,,,"                          "
+SFL 13A.09,Desc.,PROGRAM 1 SUMMER A,,,GÜLÜZAR ÖZTÜRK,,,,,,,,"                          "
+SFL 13A.10,Desc.,PROGRAM 1 SUMMER A,,,ÇİĞDEM TABAN,,,,,,,,"                          "
+SFL 13B.01,Desc.,PROGRAM 1 SUMMER B,,,MÜJDE GÜL,,,,,,,,"                          "
+SFL 13B.02,Desc.,PROGRAM 1 SUMMER B,,,HATİCE EBRU ATAÇ,,,,,,,,"                          "
+SFL 13B.03,Desc.,PROGRAM 1 SUMMER B,,,ÖZLEM  TUNA,,,,,,,,"                          "
+SFL 13B.04,Desc.,PROGRAM 1 SUMMER B,,,HANİFE EMEL YÜKSEL AYTAR,,,,,,,,"                          "
+SFL 13B.05,Desc.,PROGRAM 1 SUMMER B,,,GÖNÜL TUĞBA AKDAĞ,,,,,,,,"                          "
+SFL 13B.06,Desc.,PROGRAM 1 SUMMER B,,,NESRİN KUTLAY,,,,,,,,"                          "
+SFL 13B.07,Desc.,PROGRAM 1 SUMMER B,,,EMRE KUTLAY,,,,,,,,"                          "
+SFL 13B.08,Desc.,PROGRAM 1 SUMMER B,,,NİL KURTULAN DEMİREL,,,,,,,,"                          "
+SFL 13B.09,Desc.,PROGRAM 1 SUMMER B,,,AYSUN BALKAN,,,,,,,,"                          "
+SFL 13B.10,Desc.,PROGRAM 1 SUMMER B,,,S.MERVE AKBAŞ,,,,,,,,"                          "
+SPA 101.01,Desc.,ELEMENTARY SPANISH I,3,7,NATALIA DEMİRKAPILI,MMMTTWWWThThFF,456784567834,,,,,,"                          "
+SPA 102.01,Desc.,ELEMENTARY SPANISH II,3,7,SUSANA  FERNANDEZ MULAS,MMTTTWWThThThFF,565675656756,,,,,,"                          "
+SPA 202.01,Desc.,PRE-INTERMEDIATE SPANISH II,3,7,MERYEM ARIKAN,MMTTTWWThThThFF,565675656756,,,,,,"                          "

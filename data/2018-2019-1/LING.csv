@@ -1,0 +1,54 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CAU 101.01,Desc.,ELEMENTARY LAZ I,3,5,İSMAİL AVCI,WWW,678,,TB 490 | TB 490 | TB 490,04.01.2019,3,,"                          "
+CAU 111.01,Desc.,ELEMENTARY KABARDIAN I,3,5,FATİMA JILETEJEVA,TTTh,565,,JF 331 | JF 331 | KP 04,28.12.2018,2,,"                          "
+CAU 121.01,Desc.,ELEMENTARY ABKHAZ I,3,5,GUNDA ANKVAB,WWW,678,,JF 108 | JF 108 | JF 108,27.12.2018,3,,"                          "
+CAU 122.01,Desc.,ELEMENTARY ABKHAZ II,3,5,GUNDA ANKVAB,TTT,567,,,29.12.2018,3,,"                          "
+CAU 222.01,Desc.,INTERMADIATE ABKHAZ II,3,5,GUNDA ANKVAB,TTT,8910,,JF 334 | JF 334 | JF 334,28.12.2018,2,,"                          "
+LING101.01,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS I,3,7,MİNE NAKİPOĞLU,MMWW,5656,,NH 105 | NH 105 | NH 405 | NH 405,27.12.2018,1,FLED,"                          "
+LING101.02,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS I,3,7,KADİR GÖKGÖZ,MMWW,5656,,NH 303 | NH 303 | NH 402 | NH 402,27.12.2018,1,TKL,"                          "
+LING201.01,Desc.,PHONOLOGY,3,6,STEFANO CANALIS,MWTh,461,,JF 108 | JF 101 | M 2200,07.01.2019,2,,"                          "
+LING203.01,Desc.,SYNTAX,3,6,SUMRU ÖZSOY,MWTh,335,,TB 490 | JF 333 | TB 310,02.01.2019,1,,"                          "
+LING305.01,Desc.,SEMANTICS,3,6,ELENA GUERZONI,TTTh,566,,EF 06 | EF 06 | M 1171,04.01.2019,1,,"                          "
+LING313.01,Desc.,PHONOLOGY&MORPHOLOGY OF MODERN TURKISH,3,7,KADİR GÖKGÖZ,MWTh,414,,NH 303 | NH 303 | NH 001,29.12.2018,2,FLED,"                          "
+LING341.01,Desc.,SOCIOLINGUISTICS,3,6,DİDAR AKAR,MWTh,335,,JF 332 | TB 415 | M 1171,03.01.2019,2,,"                          "
+LING350.01,Desc.,STRUCTURE OF TURKISH SIGN LANGUAGE,3,6,SUMRU ÖZSOY,MWTh,553,,JF 108 | TB 415 | TB 415,05.01.2019,2,,"                          "
+LING408.01,Desc.,LANGUAGE & GENDER,3,6,DİDAR AKAR,MMTh,563,,TB 490 | TB 490 | JF 332,05.01.2019,3,,"                          "
+LING411.01,Desc.,LINGUISTIC METHODOLOGY,4,8,PAVEL LOGAÇEV,MMTT,7878,,EF 201 | EF 201 | NH 104 | NH 104,,,,"                          "
+LING420.01,Desc.,ADVANCED PHONOLOGY,3,6,STEFANO CANALIS,WWTh,785,,M 2200 | M 2200 | KP 03,03.01.2019,3,,"                          "
+LING482.01,Desc.,SPECIAL TOPICS IN LINGUISTICS,3,6,PAVEL LOGAÇEV,TTW,346,,JF 102 | JF 102 | M 2230,07.01.2019,1,,"                          "
+LING48K.01,Desc.,SP.TP.GEORGIAN-I,3,6,MANANA GURGENIDZE,MMM,678,,KP 04 | KP 04 | KP 04,07.01.2019,2,,"                          "
+LING504.01,Desc.,SEMANTICS,4,10,ELENA GUERZONI,WWThTh,3423,,,,,,"                          "
+LING512.01,Desc.,MORPHOLOGICAL ANALYSIS,4,10,ASLI GÖKSEL,MMWW,7812,,,,,,"                          "
+LING541.01,Desc.,SYNTACTIC THEORY,4,10,BALKIZ ÖZTÜRK,MMThTh,5656,,,,,,"                          "
+LING571.01,Desc.,READINGS IN LINGUISTICS I,1,5,SUMRU ÖZSOY,,,,,28.12.2018,2,,"                          "
+LING571.02,Desc.,READINGS IN LINGUISTICS I,1,5,SUMRU ÖZSOY,,,,,28.12.2018,2,,"                          "
+LING572.01,Desc.,READINGS IN LINGUISTICS II,1,5,MİNE NAKİPOĞLU,,,,,,,,"                          "
+LING572.02,Desc.,READINGS IN LINGUISTICS II,1,5,BALKIZ ÖZTÜRK,,,,,,,,"                          "
+LING572.03,Desc.,READINGS IN LINGUISTICS II,1,5,ELENA GUERZONI,,,,,,,,"                          "
+LING572.04,Desc.,READINGS IN LINGUISTICS II,1,5,PAVEL LOGAÇEV,,,,,,,,"                          "
+LING572.05,Desc.,READINGS IN LINGUISTICS II,1,5,KADİR GÖKGÖZ,,,,,,,,"                          "
+LING572.06,Desc.,READINGS IN LINGUISTICS II,1,5,DİDAR AKAR,,,,,,,,"                          "
+LING572.07,Desc.,READINGS IN LINGUISTICS II,1,5,SUMRU ÖZSOY,,,,,,,,"                          "
+LING572.08,Desc.,READINGS IN LINGUISTICS II,1,5,STEFANO CANALIS,,,,,,,,"                          "
+LING572.09,Desc.,READINGS IN LINGUISTICS II,1,5,MİNE NAKİPOĞLU,,,,,,,,"                          "
+LING572.10,Desc.,READINGS IN LINGUISTICS II,1,5,BALKIZ ÖZTÜRK,,,,,,,,"                          "
+LING572.11,Desc.,READINGS IN LINGUISTICS II,1,5,ELENA GUERZONI,,,,,,,,"                          "
+LING572.12,Desc.,READINGS IN LINGUISTICS II,1,5,PAVEL LOGAÇEV,,,,,,,,"                          "
+LING572.13,Desc.,READINGS IN LINGUISTICS II,1,5,KADİR GÖKGÖZ,,,,,,,,"                          "
+LING572.14,Desc.,READINGS IN LINGUISTICS II,1,5,DİDAR AKAR,,,,,,,,"                          "
+LING572.15,Desc.,READINGS IN LINGUISTICS II,1,5,STEFANO CANALIS,,,,,,,,"                          "
+LING572.16,Desc.,READINGS IN LINGUISTICS II,1,5,ELENA GUERZONI,,,,,,,,"                          "
+LING579.01,Desc.,GRADUATE SEMINAR,0,5,ELENA GUERZONI,,,,,,,,"                          "
+LING690.01,Desc.,MASTER THESIS,0,60,DİDAR AKAR,,,,,,,,"                          "
+LING690.02,Desc.,MASTER THESIS,0,60,ASLI GÖKSEL,,,,,,,,"                          "
+LING690.03,Desc.,MASTER THESIS,0,60,MELTEM KELEPİR,,,,,,,,"                          "
+LING690.04,Desc.,MASTER THESIS,0,60,MİNE NAKİPOĞLU,,,,,,,,"                          "
+LING690.05,Desc.,MASTER THESIS,0,60,BALKIZ ÖZTÜRK,,,,,,,,"                          "
+LING690.06,Desc.,MASTER THESIS,0,60,ELENA GUERZONI,,,,,,,,"                          "
+LING690.07,Desc.,MASTER THESIS,0,60,PAVEL LOGAÇEV,,,,,,,,"                          "
+LING690.08,Desc.,MASTER THESIS,0,60,KADİR GÖKGÖZ,,,,,,,,"                          "
+LING690.09,Desc.,MASTER THESIS,0,60,STEFANO CANALIS,,,,,,,,"                          "
+LING790.01,Desc.,Ph.D THESIS,0,120,MELTEM KELEPİR,,,,,,,,"                          "
+LING790.02,Desc.,Ph.D THESIS,0,120,BALKIZ ÖZTÜRK,,,,,,,,"                          "
+TID 101.01,Desc.,ELEMENTARY TURKISH SIGN LANGUAGE I,3,5,FERİDE KORKMAZ,WWW,345,,JF 101 | JF 101 | JF 101,20.12.2018,2,,"                          "
+TID 101.02,Desc.,ELEMENTARY TURKISH SIGN LANGUAGE I,3,5,FERİDE KORKMAZ,WWW,789,,JF 101 | JF 101 | JF 101,20.12.2018,2,,"                          "

@@ -1,0 +1,36 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EE  204.01,Desc.,ELECTROMECHANICAL ENERGY CONVERSION,3,6,M. OKYAY KAYNAK,WWF,122,,,,,,"                          "
+EE  206.01,Desc.,ELECTROTECHNOLOGY,4,4,AVNİ MORGÜL,MM,12,,,,,,"                          "
+EE  210.01,Desc.,INTRODUCTION TO ELECTRICAL ENGINEERING,3,6,YAĞMUR DENİZHAN,TTTh,787,,,,,,"                          "
+EE  210.02,Desc.,INTRODUCTION TO ELECTRICAL ENGINEERING,3,6,SELİM ŞEKER,MMW,125,,,,,,"                          "
+EE  212.01,Desc.,INTRODUCTION TO ELECTRONIC ENGINEERING,3,4,OĞUZHAN ÇİÇEKOĞLU,MMW,565,,,,,,"                          "
+EE  334.01,Desc.,ELECTRONICS II,4,6,GÜNHAN DÜNDAR,TTThTh,1212,,,,,,"                          "
+EE  338.01,Desc.,ELECTRONICS LABORATORY I,2,3,OĞUZHAN ÇİÇEKOĞLU,T,5,,,,,,"                          "
+EE  342.01,Desc.,NUMERICAL METHODS FOR EE,3,5,IŞIL BOZMA,MMW,232,,,,,,"                          "
+EE  352.01,Desc.,SYSTEM DYNAMICS & CONTROL,3,5,KADRİ ÖZÇALDIRAN,MWW,434,,,,,,"                          "
+EE  364.01,Desc.,APPLICATIONS OF ELECTROMAGNETIC WAVES,2,3,SELİM ŞEKER,M,6,,,,,,"                          "
+EE  374.01,Desc.,COMMUNICATION ENGINEERING,4,5,AYŞIN ERTÜZÜN,TTThTh,3434,,,,,,"                          "
+EE  432.01,Desc.,DIGITAL ELECTRONICS,3,6,YASEMİN KAHYA,TTTh,232,,,,,,"                          "
+EE  438.01,Desc.,DESIGN WITH INTEGRATED CIRCUITS,3,6,YASEMİN KAHYA,TThTh,545,,,,,,"                          "
+EE  454.01,Desc.,LINEAR MULTIVARIABLE SYSTEMS,3,5,KADRİ ÖZÇALDIRAN,MMW,237,,,,,,"                          "
+EE  470.01,Desc.,MOBILE COMMUNICATION,3,6,EMİN ANARIM,TTF,565,,,,,,"                          "
+EE  492.01,Desc.,PROJECT,4,6,KADRİ ÖZÇALDIRAN,TBA,,,,,,,"                          "
+EE  512.01,Desc.,SOLID STATE D.C. DRIVES,3,7,M. OKYAY KAYNAK,WWF,565,,,,,,"                          "
+EE  550.01,Desc.,ARTIFICIAL NEURAL NETWORKS,3,7,KEMAL CILIZ,MMW,561,,,,,,"                          "
+EE  562.01,Desc.,MICROWAVES,3,6,AVNİ MORGÜL,TFF,412,,,,,,"                          "
+EE  570.01,Desc.,DIGITAL SIGNAL PROCESSING,3,7,AYŞIN ERTÜZÜN,MMTh,237,,,,,,"                          "
+EE  578.01,Desc.,SPEECH PROCESSING,3,7,LEVENT ARSLAN,TTTh,236,,,,,,"                          "
+EE  581.01,Desc.,SP. TOP. : TELECOMMUNICATIONS NETWORK,3,7,KEMAL CILIZ,TBA,,,,,,,"                          "
+EE  584.01,Desc.,SP.TOP.:PHYCHOACOUSTICS,3,7,LEVENT ARSLAN,MThTh,634,,,,,,"                          "
+EE  586.01,Desc.,SP.TOP.: COMP.COMMUNICATION NETWORK II,3,7,BÜLENT SANKUR,MWW,412,,,,,,"                          "
+EE  588.01,Desc.,SP.TOP:NETWORK SECURITY,3,7,EMİN ANARIM,TTTh,785,,,,,,"                          "
+EE  597.01,Desc.,SEL. TOP.ELECTROMAGNETIC COMPABILITY&INT,3,7,SELİM ŞEKER,WWF,346,,,,,,"                          "
+EE  599.01,Desc.,SEL.TOP.CURRENT-MODE ANALOG CIRCUITS,3,6,OĞUZHAN ÇİÇEKOĞLU,WFF,734,,,,,,"                          "
+EE  632.01,Desc.,SYSTEM DESIGN WITH MICROELEC. DEVICES,3,6,ÖMER CERİD,TBA,,,,,,,"                          "
+EE  638.01,Desc.,ADVANCED VLSI DESIGN,3,6,GÜNHAN DÜNDAR,TBA,,,,,,,"                          "
+EE  640.01,Desc.,MICROPROCESSOR SYSTEM DESIGN,3,6,ÖMER CERİD,TBA,,,,,,,"                          "
+EE  653.01,Desc.,OPTIMAL CONTROL THEORY,3,6,IŞIL BOZMA,TBA,,,,,,,"                          "
+EE  690.01,Desc.,M.S.THESIS,0,60,KADRİ ÖZÇALDIRAN,TBA,,,,,,,"                          "
+EE  696.01,Desc.,SEL.TOP.NONLINEAR CONTROL,3,6,YAĞMUR DENİZHAN,TBA,,,,,,,"                          "
+EE  699.01,Desc.,GUIDED RESEARCH,4,8,KADRİ ÖZÇALDIRAN,TBA,,,,,,,"                          "
+EE  790.01,Desc.,Ph.D.THESIS,0,120,KADRİ ÖZÇALDIRAN,TBA,,,,,,,"                          "

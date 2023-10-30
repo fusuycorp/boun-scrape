@@ -1,0 +1,64 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+INT 202.01,Desc.,INTRODUCTION TO INTERPRETING,3,5,SEHA KARADENİZ,MMM,123,,ETA 3 | ETA 3 | ETA 3,29.05.2013,2,,"                          "
+INT 202.02,Desc.,INTRODUCTION TO INTERPRETING,3,5,SEHA KARADENİZ,MMM,456,,ETA 3 | ETA 3 | ETA 3,29.05.2013,2,,"                          "
+INT 313.01,Desc.,COMMUNITY INTERPRETING,3,4,JONATHAN MAURICE ROSS,TWW,334,,YD 203 | YD 101 | YD 101,01.06.2013,1,,"                          "
+INT 313.02,Desc.,COMMUNITY INTERPRETING,3,4,ESER BAŞARAN,ThThTh,123,,YD 101 | YD 101 | YD 101,01.06.2013,1,,"                          "
+INT 318.01,Desc.,INTRO.TO SIMULTANEOUS INTERPRETING,3,4,ZEYNEP KIRÇAL,FFF,678,,,06.06.2013,3,,"                          "
+INT 411.02,Desc.,INTERPRETING FOR THE ELECTRONIC MEDIA,3,5,RANA BERİ ,TBA,,,,01.06.2013,2,,"                          "
+INT 416.03,Desc.,SIMULTANEOUS INTERPRETING II,3,5,NİGAR ALEMDAR,TBA,,,,,0,,"                          "
+INT 418.01,Desc.,THEORETICAL APPROACHES TO INTERPRETING P,3,5,EBRU DİRİKER,TBA,,,,04.06.2013,1,,"                          "
+INT 420.01,Desc.,PROJECT IN INTERPRETING,3,5,SELİN ÜLKEROĞLU,TBA,,,,,0,,"                          "
+INT 420.02,Desc.,PROJECT IN INTERPRETING,3,5,RANA BERİ ,TBA,,,,,0,,"                          "
+INT 480.01,Desc.,SP.TOP.FOR INTERPRETERS,3,5,SELİN ÜLKEROĞLU,TBA,,,,03.06.2013,2,,"                          "
+INT 480.02,Desc.,SP.TOP.FOR INTERPRETERS,3,5,AHU LATİFOĞLU DOĞAN,TBA,,,,03.06.2013,2,,"                          "
+INT 480.05,Desc.,SP.TOP.FOR INTERPRETERS,3,5,EBRU DİRİKER,TBA,,,,03.06.2013,2,,"                          "
+TR  106.01,Desc.,RESEARCH PAPER WRITING IN TRANS.STUDIES,3,5,JONATHAN MAURICE ROSS,TWW,767,,YD 203 | YD 201 | YD 201,,0,,"                          "
+TR  106.02,Desc.,RESEARCH PAPER WRITING IN TRANS.STUDIES,3,5,JONATHAN MAURICE ROSS,TTW,565,,YD 203 | YD 203 | YD 201,,0,,"                          "
+TR  106.03,Desc.,RESEARCH PAPER WRITING IN TRANS.STUDIES,3,5,MARTİN CYR HICKS,WWTh,675,,ETA 2 | ETA 2 | KPARK7,,0,,"                          "
+TR  108.01,Desc.,TURKISH FOR TRANSLATORS,3,4,SADİ BÜLENT AKSOY,MMT,674,,NH 202 | NH 202 | KPARK8,,0,,"                          "
+TR  108.02,Desc.,TURKISH FOR TRANSLATORS,3,4,BÜLENT USTA,FFF,123,,M 1152 | M 1152 | M 1152,,0,,"                          "
+TR  108.03,Desc.,TURKISH FOR TRANSLATORS,3,4,BÜLENT USTA,FFF,567,,M 1152 | M 1152 | M 1152,,0,,"                          "
+TR  110.01,Desc.,INTRODUCTION TO TRANS.&TRANS.STUDIES II,3,6,ARZU AKBATUR,ThThTh,678,,TB 240 | TB 240 | TB 240,31.05.2013,3,,"                          "
+TR  110.02,Desc.,INTRODUCTION TO TRANS.&TRANS.STUDIES II,3,6,AYŞENAZ CENGİZ,TTW,787,,ETA 1 | ETA 1 | M 2171,31.05.2013,3,,"                          "
+TR  110.03,Desc.,INTRODUCTION TO TRANS.&TRANS.STUDIES II,3,6,OĞUZ BAYKARA,MMW,678,,M 1200 | M 1100 | M 1200,31.05.2013,3,,"                          "
+TR  122.01,Desc.,TURKISH WRITING SKILLS I,3,4,ÖZLEM BERK ALBACHTEN,TBA,,,,04.06.2013,2,,"                          "
+TR  202.01,Desc.,ETYMOLOGY II,3,4,SADİ BÜLENT AKSOY,MTT,856,,NH 202 | KPARK8 | KPARK8,27.05.2013,3,,"                          "
+TR  208.01,Desc.,LOCALIZATION,3,4,TOLGA SEÇİLMİŞ,FFF,456,,GYD 405 | GYD 405 | GYD 405,04.06.2013,1,,"                          "
+TR  216.01,Desc.,NOTE-TAKING FROM SPEECH,3,4,MARTİN CYR HICKS,WWTh,675,,,06.06.2013,1,,"                          "
+TR  314.01,Desc.,LITERARY TRANSLATION,3,5,ARZU AKBATUR,ThThTh,234,,KPARK6 | KPARK6 | KPARK6,,0,,"                          "
+TR  314.02,Desc.,LITERARY TRANSLATION,3,5,ŞEHNAZ TAHİR GÜRÇAĞLAR,MMT,674,,KPARK7 | KPARK7 | NBZ 11,30.05.2013,2,,"                          "
+TR  314.03,Desc.,LITERARY TRANSLATION,3,5,OĞUZ BAYKARA,MWW,867,,M 1100 | M 1200 | M 1200,30.05.2013,2,,"                          "
+TR  364.01,Desc.,POLITICAL DISCOURSE OF INTERNATIONAL ORG,3,4,İSMAİL KAPLAN,TTTh,678,,KPARK5 | KPARK5 | GYD 403,08.06.2013,3,,"                          "
+TR  364.02,Desc.,POLITICAL DISCOURSE OF INTERNATIONAL ORG,3,4,İSMAİL KAPLAN,TThTh,867,,KPARK5 | GYD 403 | GYD 403,08.06.2013,3,,"                          "
+TR  412.01,Desc.,INTERCULTURAL COMMUNICATION STUDIES,3,4,MARTİN CYR HICKS,WThTh,534,,ETA 2 | KPARK7 | KPARK7,01.06.2013,3,,"                          "
+TR  414.01,Desc.,SEMIOTICS,3,4,MEHMET RIFAT GÜZELŞEN,WWW,678,,GYD 403 | GYD 403 | GYD 403,27.05.2013,1,,"                          "
+TR  416.01,Desc.,TRANSLATION CRITICISM,3,4,AYŞENAZ CENGİZ,TTW,234,,ETA 3 | ETA 3 | M 2231,07.06.2013,2,,"                          "
+TR  416.02,Desc.,TRANSLATION CRITICISM,3,4,ÖZLEM BERK ALBACHTEN,TTTh,232,,M 2180 | M 2180 | TB 415,07.06.2013,2,,"                          "
+TR  420.01,Desc.,TRANSLATION PROJECT,4,5,İSMAİL KAPLAN,TBA,,,,,0,,"                          "
+TR  420.02,Desc.,TRANSLATION PROJECT,4,5,JONATHAN MAURICE ROSS,TBA,,,,,0,,"                          "
+TR  420.03,Desc.,TRANSLATION PROJECT,4,5,OĞUZ BAYKARA,TBA,,,,,0,,"                          "
+TR  420.04,Desc.,TRANSLATION PROJECT,4,5,ŞEHNAZ TAHİR GÜRÇAĞLAR,TBA,,,,,0,,"                          "
+TR  420.06,Desc.,TRANSLATION PROJECT,4,5,ÖZLEM BERK ALBACHTEN,TBA,,,,,0,,"                          "
+TR  420.07,Desc.,TRANSLATION PROJECT,4,5,MARTİN CYR HICKS,TBA,,,,,0,,"                          "
+TR  420.08,Desc.,TRANSLATION PROJECT,4,5,AHU SILA BAYER,TBA,,,,,0,,"                          "
+TR  420.09,Desc.,TRANSLATION PROJECT,4,5,AYŞENAZ CENGİZ,TBA,,,,,0,,"                          "
+TR  420.11,Desc.,TRANSLATION PROJECT,4,5,SUAT KARANTAY,TBA,,,,,0,,"                          "
+TR  420.12,Desc.,TRANSLATION PROJECT,4,5,SADİ BÜLENT AKSOY,TBA,,,,,0,,"                          "
+TR  420.13,Desc.,TRANSLATION PROJECT,4,5,NURHAYAT DALGIÇ,TBA,,,,,0,,"                          "
+TR  420.14,Desc.,TRANSLATION PROJECT,4,5,TOLGA SEÇİLMİŞ,TBA,,,,,0,,"                          "
+TR  484.01,Desc.,SP.TOP.TRANSL.OF SOCIAL SCIENCE TEXTS,3,5,AYŞENAZ CENGİZ,TWW,456,,ETA 3 | M 2231 | M 2231,04.06.2013,1,,"                          "
+TR  488.01,Desc.,"SP.TOP:EU POLICIES,INST.TR.OF KEY DOCUME",3,5,EBRU DİRİKER,MMM,567,,YD 203 | YD 203 | YD 203,08.06.2013,1,,"                          "
+TR  48C.01,Desc.,SP.TOP.IN TRANSLATION OF ARCHEOLOGIC,3,5,AYŞE ÇALIK ROSS,FFF,234,,NH 303 | NH 303 | NH 303,06.06.2013,3,,"                          "
+TR  48N.01,Desc.,SP.TP.REWRITING&ADAPTATION IN DRAMA,3,5,AHU SILA BAYER,MMM,456,,KPARK9 | KPARK9 | KPARK9,29.05.2013,2,,"                          "
+TR  496.01,Desc.,SP.TOP.IN TRANSLATION,3,5,ÖZLEM BERK ALBACHTEN,TThTh,478,,M 2180 | TB 415 | TB 415,31.05.2013,2,,"                          "
+TR  621.01,Desc.,HIST. OF TRANSLATION IN OTT./TURKISH SOC,3,7,SALİHA PAKER,TBA,,,,,0,,"                          "
+TR  790.01,Desc.,DOCTORAL DISSERTATION,0,120,ŞEHNAZ TAHİR GÜRÇAĞLAR,TBA,,,,,0,,"                          "
+TR  790.02,Desc.,DOCTORAL DISSERTATION,0,120,EBRU DİRİKER,TBA,,,,,0,,"                          "
+TR  790.03,Desc.,DOCTORAL DISSERTATION,0,120,EBRU DİRİKER,TBA,,,,,0,,"                          "
+TR  790.04,Desc.,DOCTORAL DISSERTATION,0,120,ÖZLEM BERK ALBACHTEN,TBA,,,,,0,,"                          "
+TR  790.05,Desc.,DOCTORAL DISSERTATION,0,120,JONATHAN MAURICE ROSS,TBA,,,,,0,,"                          "
+TR  790.06,Desc.,DOCTORAL DISSERTATION,0,120,EBRU DİRİKER,TBA,,,,,0,,"                          "
+TR  790.07,Desc.,DOCTORAL DISSERTATION,0,120,JONATHAN MAURICE ROSS,TBA,,,,,0,,"                          "
+TR  790.08,Desc.,DOCTORAL DISSERTATION,0,120,ŞEHNAZ TAHİR GÜRÇAĞLAR,TBA,,,,,0,,"                          "
+TR  790.09,Desc.,DOCTORAL DISSERTATION,0,120,ÖZLEM BERK ALBACHTEN,TBA,,,,,0,,"                          "
+TR  790.10,Desc.,DOCTORAL DISSERTATION,0,120,ŞEHNAZ TAHİR GÜRÇAĞLAR,TBA,,,,,0,,"                          "

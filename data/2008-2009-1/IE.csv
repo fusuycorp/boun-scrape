@@ -1,0 +1,59 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+IE  120.01,Desc.,INDUSTRIAL ENG.:OVERVIEW&ORIENTAT,1,2,TANER BİLGİÇ,FF,78,,M 3120 | M 3120,,,,"                          "
+IE  201.01,Desc.,INTERMEDIATE PROGRAMMING,3,6,ALİ TAMER ÜNAL,ThThFF,5634,,M 2180 | M 2180 | M 2230 | M 2230,,,,"                          "
+IE  202.01,Desc.,OPERATIONS RESEARCH I:LINEAR MODELS,4,6,İLHAN OR,WWThTh,8978,,M 2230 | M 2230 | M 2180 | M 2180,,,,"                          "
+IE  255.01,Desc.,PROBABILITY FOR INDUSTRIAL ENGINEERS,3,6,REFİK GÜLLÜ,TTThTh,1212,,M 2230 | M 2230 | M 2230 | M 2230,,,,"                          "
+IE  255.02,Desc.,PROBABILITY FOR INDUSTRIAL ENGINEERS,3,6,AYBEK KORUGAN,TTThTh,1212,,NH 203 | NH 203 | NH 203 | NH 203,,,,"                          "
+IE  303.01,Desc.,OP. RESEARCH II:NONLINEAR & NETWORK MOD.,4,6,KUBAN ALTINEL,MWWFF,21212,,M 3100 | M 3100 | M 3100 | M 3120 | M 3120,,,,"                          "
+IE  306.01,Desc.,SYSTEMS SIMULATION,4,6,YAMAN BARLAS,MMMWW,56756,,M 2230 | M 2230 | M 2230 | M 2230 | M 2230,,,,"                          "
+IE  310.01,Desc.,OPERATIONS RESEARCH,4,5,MAHMUT EKŞİOĞLU,TTWThTh,67434,,M 2170 | M 2170 | M 2230 | M 2230 | M 2230,,,CMPE,"                          "
+IE  341.01,Desc.,ENGINEERING ECONOMICS,4,5,GÜRKAN KUMBAROĞLU,TTWFF,56756,,M 2200 | M 2200 | M 2230 | M 3120 | M 3120,,,,"                          "
+IE  413.01,Desc.,SUPPLY CHAIN MAN.,4,7,TANER BİLGİÇ,MWWFF,33434,,M 3120 | M 3120 | M 3120 | M 3120 | M 3120,,,,"                          "
+IE  423.01,Desc.,QUALITY ENGINEERING,3,5,ALİ RIZA KAYLAN,TTThTh,7812,,M 3120 | M 3120 | M 3120 | M 3120,,,,"                          "
+IE  430.01,Desc.,ERGONOMICS&HUMAN FACTORS ENGINEERING,3,6,MAHMUT EKŞİOĞLU,TTTh,348,,M 3100 | M 3100 | M 2230,,,,"                          "
+IE  441.01,Desc.,PLANNING FOR ENGINEERS,3,6,GÜLAY BARBAROSOĞLU,ThThFF,6778,,M 2200 | M 2200 | M 3100 | M 3100,,,,"                          "
+IE  484.01,Desc.,SP.TOP.:SIMULATION GAMING&DECISION EXPER,3,6,ALİ KEREM SAYSEL,MMTh,899,,M 3100 | M 3100 | M 3100,,,,"                          "
+IE  486.01,Desc.,SP.TOP.:FLEXIBLE MANUFACTURING,3,6,ÜMİT BİLGE,WWFF,5656,,M 2200 | M 2200 | M 3100 | M 3100,,,,"                          "
+IE  491.01,Desc.,SPECIAL PROJECTS,3,6,ALİ TAMER ÜNAL,TBA,,,,,,,"                          "
+IE  492.01,Desc.,PROJECT,4,8,MAHMUT EKŞİOĞLU,TBA,,,,,,,"                          "
+IE  493.01,Desc.,SPEC.TOPICS:TECHNOLOGY MANAGEMENT,3,6,RAMAZAN YILDIRIM,MMT,675,,M 3100 | M 3100 | M 3120,,,,"                          "
+IE  496.01,Desc.,SP.TOP.:ROBUST DESIGN AND ENGINEERING,3,6,SUAT GENÇ,WWW,789,,M 2231 | M 2231 | M 2231,,,,"                          "
+IE  501.01,Desc.,OPTIMIZATION TECHNIQUES I,3,7,KUBAN ALTINEL,MMTT,4512,,M 2171 | M 2171 | M 2170 | M 2170,,,,"                          "
+IE  504.01,Desc.,PROBABLILITY THEORY&STATISTICS FOR IE,3,7,MUSTAFA NECATİ ARAS,ThThF,567,,NH 304 | NH 304 | NH 304,,,,"                          "
+IE  505.01,Desc.,STOCHASTIC PROCESSES & APPLICATIONS,3,7,REFİK GÜLLÜ,WWTh,565,,M 1200 | M 1200 | M 2171,,,,"                          "
+IE  517.01,Desc.,HEURISTIC METHODS IN OPTIMIZATION,3,7,MUSTAFA NECATİ ARAS,WFF,212,,M 2200 | M 2200 | M 2200,,,,"                          "
+IE  520.01,Desc.,QUALITY MANAGEMENT,3,7,ALİ RIZA KAYLAN,TFF,656,,M 2180 | M 2200 | M 2200,,,,"                          "
+IE  523.01,Desc.,DESIGN OF PRODUCTION SYSTEMS,3,7,ÜMİT BİLGE,TTT,345,,M 2152 | M 2152 | M 2231,,,,"                          "
+IE  578.01,Desc.,GRADUATE SEMINAR,0,2,GÜLAY BARBAROSOĞLU,MMM,789,,M 2231 | M 2231 | M 2231,,,,"                          "
+IE  586.01,Desc.,SP.TOP.:QUANTITATIVE FINANCE,3,7,WOLFGANG HOERMANN,MMW,121,,M 2170 | M 2170 | M 2231,,,,"                          "
+IE  598.01,Desc.,SP.TOP.IN ADVANCED GRAPH THEORY,3,7,TINAZ  EKİM AŞICI,WThTh,734,,M 2171 | M 2171 | M 2171,,,,"                          "
+IE  690.01,Desc.,M.S. THESIS,0,60,KUBAN ALTINEL,TBA,,,,,,,"                          "
+IE  690.02,Desc.,M.S. THESIS,0,60,MUSTAFA NECATİ ARAS,TBA,,,,,,,"                          "
+IE  690.03,Desc.,M.S. THESIS,0,60,GÜLAY BARBAROSOĞLU,TBA,,,,,,,"                          "
+IE  690.04,Desc.,M.S. THESIS,0,60,YAMAN BARLAS,TBA,,,,,,,"                          "
+IE  690.05,Desc.,M.S. THESIS,0,60,ÜMİT BİLGE,TBA,,,,,,,"                          "
+IE  690.06,Desc.,M.S. THESIS,0,60,TANER BİLGİÇ,TBA,,,,,,,"                          "
+IE  690.07,Desc.,M.S. THESIS,0,60,MAHMUT EKŞİOĞLU,TBA,,,,,,,"                          "
+IE  690.08,Desc.,M.S. THESIS,0,60,REFİK GÜLLÜ,TBA,,,,,,,"                          "
+IE  690.09,Desc.,M.S. THESIS,0,60,WOLFGANG HOERMANN,TBA,,,,,,,"                          "
+IE  690.10,Desc.,M.S. THESIS,0,60,ALİ RIZA KAYLAN,TBA,,,,,,,"                          "
+IE  690.11,Desc.,M.S. THESIS,0,60,AYBEK KORUGAN,TBA,,,,,,,"                          "
+IE  690.12,Desc.,M.S. THESIS,0,60,GÜRKAN KUMBAROĞLU,TBA,,,,,,,"                          "
+IE  690.13,Desc.,M.S. THESIS,0,60,İLHAN OR,TBA,,,,,,,"                          "
+IE  690.15,Desc.,M.S. THESIS,0,60,ALİ TAMER ÜNAL,TBA,,,,,,,"                          "
+IE  690.16,Desc.,M.S. THESIS,0,60,TINAZ  EKİM AŞICI,TBA,,,,,,,"                          "
+IE  790.01,Desc.,Ph.D. THESIS,0,120,KUBAN ALTINEL,TBA,,,,,,,"                          "
+IE  790.02,Desc.,Ph.D. THESIS,0,120,MUSTAFA NECATİ ARAS,TBA,,,,,,,"                          "
+IE  790.03,Desc.,Ph.D. THESIS,0,120,GÜLAY BARBAROSOĞLU,TBA,,,,,,,"                          "
+IE  790.04,Desc.,Ph.D. THESIS,0,120,YAMAN BARLAS,TBA,,,,,,,"                          "
+IE  790.05,Desc.,Ph.D. THESIS,0,120,ÜMİT BİLGE,TBA,,,,,,,"                          "
+IE  790.06,Desc.,Ph.D. THESIS,0,120,TANER BİLGİÇ,TBA,,,,,,,"                          "
+IE  790.07,Desc.,Ph.D. THESIS,0,120,MAHMUT EKŞİOĞLU,TBA,,,,,,,"                          "
+IE  790.08,Desc.,Ph.D. THESIS,0,120,REFİK GÜLLÜ,TBA,,,,,,,"                          "
+IE  790.09,Desc.,Ph.D. THESIS,0,120,WOLFGANG HOERMANN,TBA,,,,,,,"                          "
+IE  790.10,Desc.,Ph.D. THESIS,0,120,ALİ RIZA KAYLAN,TBA,,,,,,,"                          "
+IE  790.11,Desc.,Ph.D. THESIS,0,120,AYBEK KORUGAN,TBA,,,,,,,"                          "
+IE  790.12,Desc.,Ph.D. THESIS,0,120,GÜRKAN KUMBAROĞLU,TBA,,,,,,,"                          "
+IE  790.13,Desc.,Ph.D. THESIS,0,120,İLHAN OR,TBA,,,,,,,"                          "
+IE  790.15,Desc.,Ph.D. THESIS,0,120,ALİ TAMER ÜNAL,TBA,,,,,,,"                          "
+IE  790.16,Desc.,Ph.D. THESIS,0,120,TINAZ  EKİM AŞICI,TBA,,,,,,,"                          "

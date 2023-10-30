@@ -1,0 +1,59 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ME  120.01,Desc.,INTRODUCTION TO MECHANICAL ENGINEERING ,3,8,GÜNAY ANLAŞ,TTTh,343,,M 3100 | M 3100 | M 3120,,,,"                          "
+ME  120.02,Desc.,INTRODUCTION TO MECHANICAL ENGINEERING ,3,8,NURİ BÜLENT ERSOY,TThTh,545,,M 2200 | M 3100 | M 3100,,,,"                          "
+ME  210.01,Desc.,MATERIALS SCIENCE,3,5,ERCAN BALIKÇI,TTTh,121,,M 2200 | M 2200 | M 3120,,,,"                          "
+ME  212.01,Desc.,MATERIALS SCIENCE,4,5,ERCAN BALIKÇI,TThTh,334,,M 3120 | M 2152 | M 2152,,,,"                          "
+ME  242.01,Desc.,DYNAMICS,3,5,HALUK ÖRS,MMW,342,,M 3120 | M 3120 | M 2181,,,,"                          "
+ME  242.02,Desc.,DYNAMICS,3,5,ŞEBNEM ÖZÜPEK,WWF,561,,M 2230 | M 2230 | M 2200,,,,"                          "
+ME  263.01,Desc.,THERMODYNAMICS I,4,5,ALİ ECDER,TTThTh,1212,,M 2230 | M 2230 | M 2230 | M 2230,,,,"                          "
+ME  318.01,Desc.,MANUFACTURING TECHNIQUES,4,6,SABRİ ALTINTAŞ,TTTh,788,,M 3100 | M 3100 | M 2200,,,,"                          "
+ME  324.01,Desc.,MACHINE DESIGN I,4,6,EMRE AKSAN,TTThTh,3434,,M 2200 | M 2200 | M 2181 | M 2181,,,,"                          "
+ME  335.01,Desc.,MODELING & CONTROL OF DYNAMIC SYSTEMS,4,5,EMRE KÖSE,MMThTh,7867,,M 3120 | M 3120 | M 2200 | M 2200,,,,"                          "
+ME  345.01,Desc.,MECHANICS OF MATERIALS I,4,6,FAZIL ÖNDER SÖNMEZ,MMWW,3434,,M 3100 | M 3100 | M 3100 | M 3100,,,,"                          "
+ME  411.01,Desc.,MATERIALS ENGINEERING,3,5,MAHMUT A. SAVAŞ,TTTh,563,,M 2181 | M 2181 | M 3100,,,,"                          "
+ME  425.01,Desc.,MECHANICAL VIBRATIONS,3,5,EŞREF EŞKİNAT,MMTh,565,,M 3100 | M 3100 | M 3120,,,,"                          "
+ME  429.01,Desc.,MECHANICAL &THERMAL DESIGN,4,7,EMRE AKSAN,T,2,,M 2170,,,,"                          "
+ME  455.01,Desc.,FLUID MECHANICS II,3,5,KUNT ATALIK,MThTh,256,,M 2181 | M 2200 | M 3120,,,,"                          "
+ME  474.01,Desc.,HEAT ENGINES,3,5,HASAN BEDİR,TTTh,344,,M 2231 | M 2231 | M 3120,,,,"                          "
+ME  486.01,Desc.,SP.TOP.:SUPPLY CHAIN IN AUTOMOTIVE ENG.,3,5,BÜLENT ÜNER,TThTh,878,,M 2171 | M 2152 | M 2152,,,,"                          "
+ME  492.01,Desc.,PROJECT,4,8,EMRE AKSAN,Th,2,,M 2171,,,,"                          "
+ME  502.01,Desc.,ADVANCED ENGINEERING MATHEMATICS II,3,8,HALUK ÖRS,MWW,656,,,,,,"                          "
+ME  512.01,Desc.,PRINCIPLES OF MANUFACTURING PROCESSES,3,8,MAHMUT A. SAVAŞ,TTTh,125,,,,,,"                          "
+ME  521.01,Desc.,ENGINEERING DESIGN,3,8,FAZIL ÖNDER SÖNMEZ,MWW,812,,,,,,"                          "
+ME  530.01,Desc.,ADVANCED DYNAMICS,3,8,EŞREF EŞKİNAT,MTT,978,,,,,,"                          "
+ME  561.01,Desc.,CONDUCTION HEAT TRANSFER,3,8,KUNT ATALIK,MWW,778,,,,,,"                          "
+ME  579.01,Desc.,GRADUATE SEMINAR,0,2,ALİ ECDER,W,4,,,,,,"                          "
+ME  58A.01,Desc.,SP.TOP.: FINITE ELEMENTS,3,8,ŞEBNEM ÖZÜPEK,WFF,334,,,,,,"                          "
+ME  614.01,Desc.,MATERIALS PROCESSING,3,8,SABRİ ALTINTAŞ,TThTh,323,,,,,,"                          "
+ME  626.01,Desc.,MECHANICS OF COMPOSITE MATERIALS,3,8,NURİ BÜLENT ERSOY,MMTh,231,,,,,,"                          "
+ME  632.01,Desc.,APPROXIMATE SOLUTION TECHNIQUES,3,8,AKIN TEZEL,TTTh,454,,,,,,"                          "
+ME  690.01,Desc.,M.S.THESIS,0,60,ALİ ECDER,TBA,,,,,,,"                          "
+ME  690.02,Desc.,M.S.THESIS,0,60,EMRE AKSAN,TBA,,,,,,,"                          "
+ME  690.03,Desc.,M.S.THESIS,0,60,SABRİ ALTINTAŞ,TBA,,,,,,,"                          "
+ME  690.04,Desc.,M.S.THESIS,0,60,GÜNAY ANLAŞ,TBA,,,,,,,"                          "
+ME  690.05,Desc.,M.S.THESIS,0,60,KUNT ATALIK,TBA,,,,,,,"                          "
+ME  690.06,Desc.,M.S.THESIS,0,60,ERCAN BALIKÇI,TBA,,,,,,,"                          "
+ME  690.07,Desc.,M.S.THESIS,0,60,HASAN BEDİR,TBA,,,,,,,"                          "
+ME  690.08,Desc.,M.S.THESIS,0,60,EŞREF EŞKİNAT,TBA,,,,,,,"                          "
+ME  690.09,Desc.,M.S.THESIS,0,60,NURİ BÜLENT ERSOY,TBA,,,,,,,"                          "
+ME  690.11,Desc.,M.S.THESIS,0,60,EMRE KÖSE,TBA,,,,,,,"                          "
+ME  690.12,Desc.,M.S.THESIS,0,60,HALUK ÖRS,TBA,,,,,,,"                          "
+ME  690.13,Desc.,M.S.THESIS,0,60,ŞEBNEM ÖZÜPEK,TBA,,,,,,,"                          "
+ME  690.14,Desc.,M.S.THESIS,0,60,MAHMUT A. SAVAŞ,TBA,,,,,,,"                          "
+ME  690.15,Desc.,M.S.THESIS,0,60,FAZIL ÖNDER SÖNMEZ,TBA,,,,,,,"                          "
+ME  699.01,Desc.,GUIDED RESEARCH,4,8,GÜNAY ANLAŞ,TBA,,,,,,,"                          "
+ME  699.02,Desc.,GUIDED RESEARCH,4,8,EMRE KÖSE,TBA,,,,,,,"                          "
+ME  790.01,Desc.,Ph.D. THESIS,0,120,ALİ ECDER,TBA,,,,,,,"                          "
+ME  790.02,Desc.,Ph.D. THESIS,0,120,EMRE AKSAN,TBA,,,,,,,"                          "
+ME  790.03,Desc.,Ph.D. THESIS,0,120,SABRİ ALTINTAŞ,TBA,,,,,,,"                          "
+ME  790.04,Desc.,Ph.D. THESIS,0,120,GÜNAY ANLAŞ,TBA,,,,,,,"                          "
+ME  790.05,Desc.,Ph.D. THESIS,0,120,KUNT ATALIK,TBA,,,,,,,"                          "
+ME  790.06,Desc.,Ph.D. THESIS,0,120,ERCAN BALIKÇI,TBA,,,,,,,"                          "
+ME  790.07,Desc.,Ph.D. THESIS,0,120,HASAN BEDİR,TBA,,,,,,,"                          "
+ME  790.08,Desc.,Ph.D. THESIS,0,120,EŞREF EŞKİNAT,TBA,,,,,,,"                          "
+ME  790.09,Desc.,Ph.D. THESIS,0,120,NURİ BÜLENT ERSOY,TBA,,,,,,,"                          "
+ME  790.11,Desc.,Ph.D. THESIS,0,120,EMRE KÖSE,TBA,,,,,,,"                          "
+ME  790.12,Desc.,Ph.D. THESIS,0,120,HALUK ÖRS,TBA,,,,,,,"                          "
+ME  790.13,Desc.,Ph.D. THESIS,0,120,ŞEBNEM ÖZÜPEK,TBA,,,,,,,"                          "
+ME  790.14,Desc.,Ph.D. THESIS,0,120,MAHMUT A. SAVAŞ,TBA,,,,,,,"                          "
+ME  790.15,Desc.,Ph.D. THESIS,0,120,FAZIL ÖNDER SÖNMEZ,TBA,,,,,,,"                          "

@@ -1,0 +1,96 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHIN101.01,Desc.,BEGINNERS CHINESE I,3,5,GUIYUAN YANG,MMWWW,12123,,Konf.En | Konf.En | Konf.En | Konf.En | Konf.En,28.12.2015,2,,"                          "
+CHIN101.02,Desc.,BEGINNERS CHINESE I,3,5,GUANG XU,TTThThTh,12123,,Konf.En | Konf.En | Konf.En | Konf.En | Konf.En,28.12.2015,2,,"                          "
+CHIN101.03,Desc.,BEGINNERS CHINESE I,3,5,GUANG XU,TTThThTh,78789,,Konf.En | Konf.En | Konf.En | Konf.En | Konf.En,28.12.2015,2,,"                          "
+CHIN102.01,Desc.,BEGINNERS CHINESE II,3,5,JIANG YU,MMWWW,12123,,Konf.En | Konf.En | Konf.En | Konf.En | Konf.En,28.12.2015,2,,"                          "
+CHIN201.01,Desc.,INTERMEDIATE CHINESE I,3,5,GUIYUAN YANG,MMWWW,78789,,Konf.En | Konf.En | Konf.En | Konf.En | Konf.En,28.12.2015,2,,"                          "
+CHIN201.02,Desc.,INTERMEDIATE CHINESE I,3,5,JIANG YU,TTFFF,56123,,Konf.En | Konf.En | Konf.En | Konf.En | Konf.En,28.12.2015,2,,"                          "
+CHIN301.01,Desc.,ADVANCED CHINESE I,3,5,JIANG YU,TTT,789,,Konf.En | Konf.En | Konf.En,28.12.2015,2,,"                          "
+CHIN401.01,Desc.,READINGS IN CHINESE CULTURE I,3,5,YI LIU,ThThTh,789,,Konf.En | Konf.En | Konf.En,28.12.2015,2,,"                          "
+HIST101.01,Desc.,HISTORICAL METHOD & THOUGHT I,3,5,AHMET ERSOY,WWTh,125,,M 1100 | M 1100 | NH 103,29.12.2015,1,,"                          "
+HIST105.01,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,LALE BABAOĞLU,MWF,444,,AYHAN Ş | AYHAN Ş | AYHAN Ş,05.01.2016,3,,"                          "
+HIST205.01,Desc.,INTR. TO THE HIST.OF ART& VISUAL CULTURE,3,5,LALE BABAOĞLU,TTTh,123,,NH 103 | NH 103 | M 2170,,0,,"                          "
+HIST209.01,Desc.,INTRO.TO STATISTICS FOR SOC. SCIENCES II,4,5,ELİF ÜNLÜ,TTThTh,8934,,GÜNEY2L | GÜNEY2L | GÜNEY2L | GÜNEY2L,31.12.2015,1,,"                          "
+HIST209.02,Desc.,INTRO.TO STATISTICS FOR SOC. SCIENCES II,4,5,ŞEVKİ KORAY DURAK,TTThTh,8934,,TB 490 | TB 490 | TB 490 | TB 490,31.12.2015,1,,"                          "
+HIST221.01,Desc.,EARLY&MEDIEVAL TURKIC HISTORY,3,5,OYA PANCAROĞLU,TWW,456,,NH 201 | NH 301 | NH 301,02.01.2016,2,,"                          "
+HIST233.01,Desc.,HISTORY OF THE BALKANS I,3,5,AYDIN BABUNA,MTT,434,,TB 490 | M 2152 | M 2152,04.01.2016,2,,"                          "
+HIST235.01,Desc.,OTTOMAN CULTURAL HISTORY,3,5,EDHEM ELDEM,WWTh,782,,NH 403 | NH 403 | NH 202,04.01.2016,1,TKL,"        TKL                  "
+HIST241.01,Desc.,"INTR.WESTERN EUROPEAN,MEDITERRANEAN&ISLA",3,5,PETER ROBERT CAMPBELL,MMT,237,,NH 302 | NH 302 | KPARK1,04.01.2016,1,,"                          "
+HIST321.01,Desc.,LATE OTTOMAN HISTORY,3,5,NOEMİ LEVY AKSU,WWTh,342,,NH 304 | NH 304 | NH 305,30.12.2015,2,,"                          "
+HIST333.01,Desc.,HITTITE HISTORY & ARCHAEOLOGY ,3,5,ASLI ÖZYAR,MMW,783,,TB 310 | TB 310 | TB 490,08.01.2016,3,,"                          "
+HIST335.01,Desc.,HISTORY OF THE BYZANTINE EMPIRE I,3,5,ŞEVKİ KORAY DURAK,TTTh,235,,NH 201 | NH 201 | TB 490,02.01.2016,1,,"                          "
+HIST337.01,Desc.,BYZANTIEN ART & ARCHITECTURE I,3,5,ANESTIS VASILAKERIS,TTW,343,,M 2170 | M 2170 | YD 104,,0,,"                          "
+HIST341.01,Desc.,AEGEAN HISTORY & ARCHAEOLOGY I,3,5,ELİF ÜNLÜ,TTTh,342,,YD 201 | YD 201 | M 1152,29.12.2015,3,,"                          "
+HIST401.01,Desc.,HISTORIOGRAPHY I,3,7,YÜCEL TERZİBAŞOĞLU,TWW,756,,TB 310 | NH 304 | NH 304,06.01.2016,1,,"                          "
+HIST433.01,Desc.,JAPANESE HIST.:FROM FEUDAL TO MOD. JAP.I,3,5,SELÇUK ESENBEL,WWW,678,,TB 490 | TB 490 | TB 490,29.12.2015,1,,"                          "
+HIST437.01,Desc.,KOREAN HISTORY I,3,5,HYUN WOONG HONG,TTTh,787,,KPARK9 | KPARK9 | M 2181,11.01.2016,1,,"                          "
+HIST443.01,Desc.,SEMINAR IN BYZANTINE HISTORY,3,5,NEVRA NECİPOĞLU,TTT,678,,,06.01.2016,3,,"                          "
+HIST48G.01,Desc.,SP.TP.OTTOMAN LEGACY I (1299-1839),3,6,YAVUZ SELİM KARAKIŞLA,FFF,678,,TB 310 | TB 310 | TB 310,09.01.2016,2,,"                          "
+HIST48L.01,Desc.,SP.TP.IN THE EUROPEAN ENLIGHTEN MENT,3,6,PETER ROBERT CAMPBELL,TTT,234,,YD 203 | YD 203 | YD 203,,0,,"                          "
+HIST48N.01,Desc.,SP.TP.OTTOMAN&SAFAVID MINIATURES: A COMP,3,6,LALE ULUÇ,FFF,678,,TB 490 | TB 490 | TB 490,,0,,"                          "
+HIST48U.01,Desc.,SP.TP.INTRO.TO HIST.OF ANCIENT GREECE,3,5,JULIA SHEAR,MMW,672,,TB 490 | TB 490 | TB 490,08.01.2016,2,,"                          "
+HIST48Y.01,Desc.,SP.TP.IN SILK ROAD&CHINESE HISTORY,3,5,İSENBİKE TOGAN,WWW,91011,,TB 415 | TB 415 | TB 415,02.01.2016,1,,"                          "
+HIST495.01,Desc.,THESIS I,3,7,EDHEM ELDEM,,, ,,,0,,"                          "
+HIST495.02,Desc.,THESIS I,3,7,NEVRA NECİPOĞLU,,, ,,,0,,"                          "
+HIST495.03,Desc.,THESIS I,3,7,SELÇUK ESENBEL,,, ,,,0,,"                          "
+HIST496.01,Desc.,THESIS II,3,7,EDHEM ELDEM,,, ,,,0,,"                          "
+HIST496.02,Desc.,THESIS II,3,7,NEVRA NECİPOĞLU,,, ,,,0,,"                          "
+HIST496.03,Desc.,THESIS II,3,7,SELÇUK ESENBEL,,, ,,,0,,"                          "
+HIST49X.01,Desc.,SP.TP.MAKING OF SACR.IN MESOP.ANAT.&AEGE,3,5,ASLI ÖZYAR,WWW,678,,YD 104 | YD 104 | YD 104,29.12.2015,3,,"                          "
+HIST501.01,Desc.,HISTORIOGRAPHY,3,9,SELÇUK ESENBEL,TTT,678,,,,0,,"                          "
+HIST551.01,Desc.,"METH.&THEORY İN THE HIST.OF ART,ARC& VIS",3,9,AHMET ERSOY,ThThTh,234,,,,0,,"                          "
+HIST552.01,Desc.,OTTOMAN ART & ARCHITECTURE,3,7,ÇİĞDEM KAFESCİOĞLU,TTT,234,,,11.01.2016,3,,"                          "
+HIST559.01,Desc.,RESEARCH IN THE HIST. OF PERFORMING ARTS,3,7,ARZU ÖZTÜRKMEN,WWW,678,,,,0,,"                          "
+HIST572.01,Desc.,SEMINAR ON JAPAN SINCE 1868,3,7,SELÇUK ESENBEL,TBA,,,,12.01.2016,1,,"                          "
+HIST573.01,Desc.,SEMINAR ON CHINA&CENTRAL ASIA,3,7,İSENBİKE TOGAN,TBA,,,,30.12.2015,2,,"                          "
+HIST582.01,Desc.,SEL.READINGS IN CLASSICAL OTT. HISTORY I,3,7,ANTONY GREENWOOD,TBA,,,,11.01.2016,2,,"                          "
+HIST58A.01,Desc.,SP.TP.HISTOR OF POLITICAL ECONOMY I,3,6,YÜCEL TERZİBAŞOĞLU,TTT,234,,,,0,,"                          "
+HIST58E.01,Desc.,"SP.TP.LAW,CONS.&JUS.IN THE LATE OTTO.EMP",3,6,NOEMİ LEVY AKSU,MMM,234,,,,0,,"                          "
+HIST58K.01,Desc.,SP.TP.READINGS IN MEDIEVAL ANATOLIAN ARC,3,6,OYA PANCAROĞLU,ThThTh,234,,,,0,,"                          "
+HIST58M.01,Desc.,SP.TOP.IN ATHENS AFTER ALEXANDER,3,6,JULIA SHEAR,TTT,234,,,,0,,"                          "
+HIST58P.01,Desc.,SP.TP.OTT.INTELL.HIST.IN THE EARLY MOD.,3,6,DERİN TERZİOĞLU,MMM,678,,,05.01.2016,1,,"                          "
+HIST58Y.01,Desc.,SP.TP.IN KOREAN HISTORY AND POLITICS,3,6,HYUN WOONG HONG,TBA,,,,,0,,"                          "
+HIST595.01,Desc.,"SP.TP.BYZANT.CONSTANTINOPLE:SOC.,EC.,IN.",3,6,NEVRA NECİPOĞLU,WWW,678,,,02.01.2016,3,,"                          "
+HIST596.01,Desc.,SP.TP.READINGS IN HOMERIC POETRY,3,7,KYRIAKI KONSTANTINIDOU,MWW,523,,,29.12.2015,3,,"                          "
+HIST601.01,Desc.,HISTORY SEMINAR,3,7,ARZU ÖZTÜRKMEN,WWW,234,,,,0,,"                          "
+HIST603.01,Desc.,SEMINAR IN CONTEMPORARY METHODS IN HIST.,3,7,ARZU ÖZTÜRKMEN,TBA,,,,09.01.2016,3,,"                          "
+HIST681.01,Desc.,SEL.TP.IN SOURCES FOR ASIAN HISTORY I,3,7,HYUN WOONG HONG,TBA,,,,02.01.2016,1,,"                          "
+HIST687.01,Desc.,SEMİNER IN EAST.MEDITERRANEAN INTERCONNE,3,7,ÇİĞDEM KAFESCİOĞLU,FFF,234,,,12.01.2016,1,,"                          "
+HIST68F.01,Desc.,SP.TP.IN BYZANTINE ART HISTORY,3,7,ANESTIS VASILAKERIS,TBA,,,,,0,,"                          "
+HIST68G.01,Desc.,SP.TP.THE 31 MART(1909)UPRISING IN OTTO.,3,7,YAVUZ SELİM KARAKIŞLA,MMM,91011,,,,0,,"                          "
+HIST68V.01,Desc.,SP.TP.CONFESSIONALIZATION IN EARLY MOD.E,3,7,DERİN TERZİOĞLU,TTT,234, ,,08.01.2016,3,,"                          "
+HIST68Y.01,Desc.,SP.TP.LATIN SOURCES FOR ANC.&MEDEVIAL H.,3,7,NOEMİ LEVY AKSU,WWW,678, ,,12.01.2016,3,,"                          "
+HIST690.01,Desc.,MASTER THESIS,0,60,EDHEM ELDEM,TBA,,,,,0,,"                          "
+HIST690.02,Desc.,MASTER THESIS,0,60,YAVUZ SELİM KARAKIŞLA,TBA,,,,,0,,"                          "
+HIST690.04,Desc.,MASTER THESIS,0,60,ÇİĞDEM KAFESCİOĞLU,TBA,,,,,0,,"                          "
+HIST690.05,Desc.,MASTER THESIS,0,60,NEVRA NECİPOĞLU,TBA,,,,,0,,"                          "
+HIST690.06,Desc.,MASTER THESIS,0,60,ARZU ÖZTÜRKMEN,TBA,,,,,0,,"                          "
+HIST690.07,Desc.,MASTER THESIS,0,60,ASLI ÖZYAR,TBA,,,,,0,,"                          "
+HIST690.08,Desc.,MASTER THESIS,0,60,OYA PANCAROĞLU,TBA,,,,,0,,"                          "
+HIST690.09,Desc.,MASTER THESIS,0,60,YÜCEL TERZİBAŞOĞLU,TBA,,,,,0,,"                          "
+HIST690.10,Desc.,MASTER THESIS,0,60,DERİN TERZİOĞLU,TBA,,,,,0,,"                          "
+HIST690.11,Desc.,MASTER THESIS,0,60,MELTEM TOKSÖZ,TBA,,,,,0,,"                          "
+HIST690.12,Desc.,MASTER THESIS,0,60,PAOLO GIRARDELLI,TBA,,,,,0,,"                          "
+HIST690.13,Desc.,MASTER THESIS,0,60,AHMET ERSOY,TBA,,,,,0,,"                          "
+HIST691.01,Desc.,SEMI. IN OT. ART VISUAL CUL.&URBAN ENV.I,3,7,ÇİĞDEM KAFESCİOĞLU,MMM,678,,,08.01.2016,3,,"                          "
+HIST790.01,Desc.,PH.D.THESIS,0,30,EDHEM ELDEM,TBA,,,,,0,,"                          "
+HIST790.02,Desc.,PH.D.THESIS,0,30,YAVUZ SELİM KARAKIŞLA,TBA,,,,,0,,"                          "
+HIST790.04,Desc.,PH.D.THESIS,0,30,ÇİĞDEM KAFESCİOĞLU,TBA,,,,,0,,"                          "
+HIST790.05,Desc.,PH.D.THESIS,0,30,NEVRA NECİPOĞLU,TBA,,,,,0,,"                          "
+HIST790.06,Desc.,PH.D.THESIS,0,30,ARZU ÖZTÜRKMEN,TBA,,,,,0,,"                          "
+HIST790.07,Desc.,PH.D.THESIS,0,30,OYA PANCAROĞLU,TBA,,,,,0,,"                          "
+HIST790.08,Desc.,PH.D.THESIS,0,30,YÜCEL TERZİBAŞOĞLU,TBA,,,,,0,,"                          "
+HIST790.09,Desc.,PH.D.THESIS,0,30,DERİN TERZİOĞLU,TBA,,,,,0,,"                          "
+HIST790.10,Desc.,PH.D.THESIS,0,30,MELTEM TOKSÖZ,TBA,,,,,0,,"                          "
+HIST790.11,Desc.,PH.D.THESIS,0,30,PAOLO GIRARDELLI,TBA,,,,,0,,"                          "
+HIST790.12,Desc.,PH.D.THESIS,0,30,AHMET ERSOY,TBA,,,,,0,,"                          "
+JP  101.01,Desc.,BEGINNERS JAPANESE I,3,5,MARİKO ERDOĞAN,TThThFF,15612,,NBZ 12 | NB 118 | NB 118 | NB 118 | NB 118,28.12.2015,1,,"                          "
+JP  101.02,Desc.,BEGINNERS JAPANESE I,3,5,MARİKO ERDOĞAN,TTWWTh,23122,,,28.12.2015,1,,"                          "
+JP  201.01,Desc.,INTERMEDIATE JAPANESE I,3,5,MARİKO ERDOĞAN,TThThFF,58945,,NB 118 | NB 118 | NB 118 | NB 118 | NB 118,26.12.2015,3,,"                          "
+JP  201.02,Desc.,INTERMEDIATE JAPANESE I,3,5,MARİKO ERDOĞAN,TTWWW,89789,,,26.12.2015,3,,"                          "
+JP  301.01,Desc.,UPPER INTERMEDIATE JAPANESE I,3,5,YUIKO GOYA,TBA,,,,26.12.2015,3,,"                          "
+JP  301.02,Desc.,UPPER INTERMEDIATE JAPANESE I,3,5,YUIKO GOYA,TBA,,,,26.12.2015,3,,"                          "
+JP  401.01,Desc.,ADVANCED JAPANESE I,3,5,YUIKO GOYA,TBA,,,,26.12.2015,1,,"                          "
+JP  401.02,Desc.,ADVANCED JAPANESE I,3,5,STAFF STAFF,TBA,,,,26.12.2015,1,,"                          "
+JP  403.01,Desc.,JAPANESE-TURKISH TRANSLATION I,3,5,OĞUZ BAYKARA,MMM,789,,YD 04 | YD 04 | YD 04,26.12.2015,2,,"                          "
+JP  501.01,Desc.,TRANS.OF MOD.&CLAS.TURKISH TEXTS INTO JP,3,5,MARİKO ERDOĞAN,TBA,,,,,0,,"                          "

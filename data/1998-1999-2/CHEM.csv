@@ -1,0 +1,37 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHEM101.01,Desc.,GENERAL CHEMISTRY I,4,9,BELKIS HALFON,MWF,111,,,,,,"        BIO; CHE; CEDU; TCHE; PEDU; TPHY; CET; PRSC                  "
+CHEM102.02,Desc.,GENERAL CHEMISTRY II,4,7,İLKNUR DOĞAN,MWF,222,,,,,,"                          "
+CHEM102.03,Desc.,GENERAL CHEMISTRY II,4,7,NİHAN NUGAY,MWF,333,,,,,,"                          "
+CHEM105.01,Desc.,FUNDAMENTALS OF CHEMISTRY,4,6,TURGUT NUGAY,MWF,222,,,,,,"        ME; CMPE; EE; PHYS                  "
+CHEM112.01,Desc.,SURVEY OF CHEMISTRY II,3,4,TEREZA VARNALI,WWTh,232,,,,,,"                          "
+CHEM122.01,Desc.,CHEMICAL ORIENTATION II,1,1,HADİ ÖZBAL,M,5,,,,,,"                          "
+CHEM202.01,Desc.,ORGANIC CHEMISTRY II,4,5,HADİ ÖZBAL,MWWF,1121,,,,,,"                          "
+CHEM241.01,Desc.,ORGANIC CHEMISTRY FOR ENGINEERS,4,6,SELİM KÜSEFOĞLU,WWF,121,,,,,,"                          "
+CHEM302.01,Desc.,ANALYTICAL CHEMISTRY II,3,4,NEYLAN DİRİLGEN,MMWW,1212,,,,,,"                          "
+CHEM304.01,Desc.,ANALYTICAL CHEMISTRY LABORATORY II,2,3,NEYLAN DİRİLGEN,MMMMMM,456789,,,,,,"                          "
+CHEM304.02,Desc.,ANALYTICAL CHEMISTRY LABORATORY II,2,3,NEYLAN DİRİLGEN,WWWWWW,456789,,,,,,"                          "
+CHEM304.03,Desc.,ANALYTICAL CHEMISTRY LABORATORY II,2,3,NEYLAN DİRİLGEN,FFFFFF,456789,,,,,,"                          "
+CHEM352.01,Desc.,PHYSICAL CHEMISTRY II,4,6,ZEYNEP ATAY GÖK,TTThTh,1212,,,,,,"                          "
+CHEM354.01,Desc.,PHYSICAL CHEMISTRY LABORATORY II,1,3,ZEYNEP ATAY GÖK,TTT,567,,,,,,"                          "
+CHEM354.02,Desc.,PHYSICAL CHEMISTRY LABORATORY II,1,3,ZEYNEP ATAY GÖK,ThThTh,567,,,,,,"                          "
+CHEM361.01,Desc.,COMPUTER APPLICATIONS IN CHEMISTRY,3,2,VIKTORYA AVIYENTE,MMM,678,,,,,,"                          "
+CHEM363.01,Desc.,ORGANIC CHEMISTRY III,3,6,BELKIS HALFON,MWF,333,,,,,,"                          "
+CHEM402.01,Desc.,CHEMISTRY SEMINAR II,1,2,NİHAN NUGAY,TT,45,,,,,,"                          "
+CHEM411.01,Desc.,FOOD CHEMISTRY,4,4,SELİM KÜSEFOĞLU,WWF,454,,,,,,"                          "
+CHEM432.01,Desc.,ADVANCED INORGANIC CHEMISTRY,3,6,ECE BULAK,MMW,456,,,,,,"                          "
+CHEM442.01,Desc.,QUALITATIVE ORGANIC ANALYSIS,4,6,DUYGU AVCI SEMİZ,TTh,11,,,,,,"                          "
+CHEM482.01,Desc.,RESEARCH TECHNIQUES IN CHEM. II,3,4,TURGUT NUGAY,S,0,,,,,,"                          "
+CHEM484.01,Desc.,SP.TOP:CHEMISTRY OF LEATHER TECH.,3,6,TEREZA VARNALI,MWW,678,,,,,,"                          "
+CHEM501.01,Desc.,M.S. SEMINAR I,1,2,BELKIS HALFON,S,0,,,,,,"                          "
+CHEM502.01,Desc.,M.S. SEMINAR II,1,2,BELKIS HALFON,S,0,,,,,,"                          "
+CHEM512.01,Desc.,ADVANCED PHYSICAL CHEMISTRY,3,8,VIKTORYA AVIYENTE,TTWW,1223,,,,,,"                          "
+CHEM515.01,Desc.,ADVANCED BIOCHEMISTRY,4,8,DİLEK ÇALGAN,WWTh,453,,,,,,"                          "
+CHEM531.01,Desc.,MECHANICAL PROPERTIES OF POLYMERS,3,8,NİHAN NUGAY,S,0,,,,,,"                          "
+CHEM536.01,Desc.,STRUCTURAL POLYMER CHEMISTRY,3,8,TURGUT NUGAY,S,0,,,,,,"                          "
+CHEM538.01,Desc.,POLYMER APPLICATIONS,3,8,DUYGU AVCI SEMİZ,MMW,121,,,,,,"                          "
+CHEM547.01,Desc.,CHEMISTRY OF HETEROCYCLIC COMPOUNDS,3,8,İLKNUR DOĞAN,MThTh,323,,,,,,"                          "
+CHEM601.01,Desc.,Ph.D.SEMINAR I,1,2,SELİM KÜSEFOĞLU,S,0,,,,,,"                          "
+CHEM602.01,Desc.,Ph.D.SEMINAR II,1,2,SELİM KÜSEFOĞLU,S,0,,,,,,"                          "
+CHEM690.01,Desc.,M.S. THESIS,0,60,SELİM KÜSEFOĞLU,S,0,,,,,,"                          "
+CHEM699.01,Desc.,GUIDED RESEARCH,4,8,SELİM KÜSEFOĞLU,S,0,,,,,,"                          "
+CHEM790.01,Desc.,Ph.D.THESIS,0,120,İLKNUR DOĞAN,S,0,,,,,,"                          "

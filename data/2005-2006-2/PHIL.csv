@@ -1,0 +1,30 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL106.01,Desc.,PHILOSOPHICAL TEXTS,3,7,MURAT BAÇ,MThTh,456,,M 1170 | M 1170 | NB 119,,,,"                          "
+PHIL112.01,Desc.,INTRODUCTION TO MODERN PHILOSOPHY,3,5,ZEYNEP DAVRAN,TTTh,343,,PARK1 | PARK1 | PARK1,,,,"                          "
+PHIL132.01,Desc.,LOGIC II,3,6,BERNA KILINÇ,TTF,785,,TB 310 | TB 310 | TB 310,,,,"                          "
+PHIL214.01,Desc.,HISTORY OF PHILOSOPHY II,3,6,CHRYSSI SIDIROPOULOU,TWW,523,,M 2181 | KPARK2 | KPARK2,,,,"                          "
+PHIL222.01,Desc.,PHILOSOPHY OF SCIENCE,3,6,GÜROL IRZIK,MWW,867,,TB 260 | TB 260 | TB 260,,,,"                          "
+PHIL301.01,Desc.,PROBLEMS OF CONTEMPORARY PHILOSOPHY,3,6,MURAT BAÇ,TTW,784,,NBB 10 | NBB 10 | M 2231,,,,"                          "
+PHIL314.01,Desc.,HISTORY OF PHILOSOPHY IV,3,6,YILDIZ SİLİER,MThTh,734,,TB 260 | M 2180 | M 2180,,,,"                          "
+PHIL341.01,Desc.,ETHICS,3,6,KARANFİL SOYHUN,MMTh,567,,M 2170 | M 2170 | M 2170,,,,"        PHIL                  "
+PHIL382.01,Desc.,ONTOLOGY,3,7,SUN DEMİRLİ,TFF,634,,M 2230 | M 1170 | M 1170,,,,"                          "
+PHIL401.01,Desc.,THE SOUL,3,7,STEPHEN VOSS,WWF,232,,NBZ 13 | NBZ 13 | M 1152,,,,"                          "
+PHIL461.01,Desc.,AESTHETICS,3,6,YILDIZ SİLİER,MMTh,346,,M 1181 | M 1181 | IB 101,,,,"                          "
+PHIL473.01,Desc.,PHILOSOPHY AS A WAY OF LIFE,3,7,STEPHEN VOSS,WFF,556,,M 2171 | M 2171 | M 2171,,,,"                          "
+PHIL48D.01,Desc.,SP.TOP.:ANCIENT GREEK PHILOSOPHICAL TEXT,3,5,CHRYSSI SIDIROPOULOU,TTW,344,,M 2203 | M 2203 | KPARK2,,,,"                          "
+PHIL48E.01,Desc.,SP.TOP.KANT,3,6,BERNA KILINÇ,ThThTh,789,,M 1181 | M 1181 | M 1181,,,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,GÜVEN GÜZELDERE,,, ,,,,,"                          "
+PHIL501.01,Desc.,METAPHYSICS,4,10,SUN DEMİRLİ,WWW,234,,,,,,"                          "
+PHIL538.01,Desc.,SP.TOP.IN POLITICAL PHILOSOPHY,4,10,ZEYNEP DAVRAN,WWW,567,,,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,BERNA KILINÇ,TBA,,,,,,,"                          "
+PHIL586.01,Desc.,SP.TOP.THE METAPHYSICS OF MIND,4,10,GÜVEN GÜZELDERE,WWW,789,,,,,,"                          "
+PHIL587.01,Desc.,SP.TOP.RATIONALITY,4,10,KARANFİL SOYHUN,ThThTh,345,,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,2,BERNA KILINÇ,TBA,,,,,,,"                          "
+PHIL58A.01,Desc.,SP.TOP.:CURIOSITY ,4,10,İLHAN İNAN,FFF,345,,,,,,"                          "
+PHIL58B.01,Desc.,SP.TOP.:TRACTATUS,4,5,ALİ KARATAY,MMM,789,,,,,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,BERNA KILINÇ,TBA,,,,,,,"                          "
+PHIL593.01,Desc.,SP.TOP.POST HEGELIANS,4,10,PINAR CANEVİ,ThThTh,678,,,,,,"                          "
+PHIL595.01,Desc.,SP.TOP.:SOCIAL&POLITICAL STUDIES OF SCI,4,10,GÜROL IRZIK,MMM,234,,,,,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,BERNA KILINÇ,TBA,,,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,BERNA KILINÇ,TBA,,,,,,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,BERNA KILINÇ,TBA,,,,,,,"                          "

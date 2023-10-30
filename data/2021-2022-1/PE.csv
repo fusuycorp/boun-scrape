@@ -1,0 +1,81 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PE  101.01,Desc.,STEP I,1,2,VİLDAN ZAN KİPRİ,T,2,Classroom,,,,,"                          "
+PE  101.02,Desc.,STEP I,1,2,VİLDAN ZAN KİPRİ,T,3,Classroom,,,,,"                          "
+PE  103.01,Desc.,FITNESS I,1,2,MUSTAFA EROL,T,4,Classroom,,,,,"                          "
+PE  103.02,Desc.,FITNESS I,1,2,MUSTAFA EROL,T,5,Classroom,,,,,"                          "
+PE  103.03,Desc.,FITNESS I,1,2,MUSTAFA EROL,T,6,Classroom,,,,,"                          "
+PE  103.04,Desc.,FITNESS I,1,2,MUSTAFA EROL,T,7,Classroom,,,,,"                          "
+PE  103.05,Desc.,FITNESS I,1,2,MUSTAFA EROL,T,8,Classroom,,,,,"                          "
+PE  103.06,Desc.,FITNESS I,1,2,MUSTAFA EROL,W,4,Classroom,,,,,"                          "
+PE  103.07,Desc.,FITNESS I,1,2,MUSTAFA EROL,W,5,Classroom,,,,,"                          "
+PE  103.08,Desc.,FITNESS I,1,2,MUSTAFA EROL,W,6,Classroom,,,,,"                          "
+PE  103.09,Desc.,FITNESS I,1,2,MUSTAFA EROL,W,7,Classroom,,,,,"                          "
+PE  103.10,Desc.,FITNESS I,1,2,MUSTAFA EROL,W,8,Classroom,,,,,"                          "
+PE  107.01,Desc.,YOGA & RELAXATION TECHNIQUES I,1,2,İREN ALGÜL,M,6,Classroom,,,,,"                          "
+PE  107.02,Desc.,YOGA & RELAXATION TECHNIQUES I,1,2,İREN ALGÜL,M,7,Classroom,,,,,"                          "
+PE  107.03,Desc.,YOGA & RELAXATION TECHNIQUES I,1,2,İREN ALGÜL,M,8,Classroom,,,,,"                          "
+PE  107.04,Desc.,YOGA & RELAXATION TECHNIQUES I,1,2,İREN ALGÜL,M,9,Classroom,,,,,"                          "
+PE  107.05,Desc.,YOGA & RELAXATION TECHNIQUES I,1,2,İREN ALGÜL,F,6,Classroom,,,,,"                          "
+PE  107.06,Desc.,YOGA & RELAXATION TECHNIQUES I,1,2,İREN ALGÜL,F,7,Classroom,,,,,"                          "
+PE  107.07,Desc.,YOGA & RELAXATION TECHNIQUES I,1,2,İREN ALGÜL,F,8,Classroom,,,,,"                          "
+PE  107.08,Desc.,YOGA & RELAXATION TECHNIQUES I,1,2,İREN ALGÜL,F,9,Classroom,,,,,"                          "
+PE  117.01,Desc.,BADMINTON I,1,2,MEHMET OKTAR,M,5,Classroom,,,,,"                          "
+PE  117.02,Desc.,BADMINTON I,1,2,MEHMET OKTAR,M,6,Classroom,,,,,"                          "
+PE  117.03,Desc.,BADMINTON I,1,2,MEHMET OKTAR,W,5,Classroom,,,,,"                          "
+PE  117.04,Desc.,BADMINTON I,1,2,MEHMET OKTAR,W,6,Classroom,,,,,"                          "
+PE  117.05,Desc.,BADMINTON I,1,2,MEHMET OKTAR,Th,5,Classroom,,,,,"                          "
+PE  117.06,Desc.,BADMINTON I,1,2,MEHMET OKTAR,Th,6,Classroom,,,,,"                          "
+PE  119.01,Desc.,BASKETBALL I,1,2,BURAK Ş. ACARTÜRK,Th,4,Classroom,,,,,"                          "
+PE  119.02,Desc.,BASKETBALL I,1,2,BURAK Ş. ACARTÜRK,Th,5,Classroom,,,,,"                          "
+PE  123.01,Desc.,TENNIS I,1,2,ENİS GÜLLER,M,2,Classroom,,,,,"                          "
+PE  123.02,Desc.,TENNIS I,1,2,ENİS GÜLLER,M,3,Classroom,,,,,"                          "
+PE  123.03,Desc.,TENNIS I,1,2,ENİS GÜLLER,M,4,Classroom,,,,,"                          "
+PE  123.04,Desc.,TENNIS I,1,2,ENİS GÜLLER,M,5,Classroom,,,,,"                          "
+PE  123.05,Desc.,TENNIS I,1,2,ENİS GÜLLER,T,1,Classroom,,,,,"                          "
+PE  123.06,Desc.,TENNIS I,1,2,ENİS GÜLLER,T,2,Classroom,,,,,"                          "
+PE  123.07,Desc.,TENNIS I,1,2,ENİS GÜLLER,T,3,Classroom,,,,,"                          "
+PE  123.08,Desc.,TENNIS I,1,2,ENİS GÜLLER,T,4,Classroom,,,,,"                          "
+PE  123.09,Desc.,TENNIS I,1,2,ENİS GÜLLER,W,2,Classroom,,,,,"                          "
+PE  123.10,Desc.,TENNIS I,1,2,ENİS GÜLLER,W,3,Classroom,,,,,"                          "
+PE  123.11,Desc.,TENNIS I,1,2,ENİS GÜLLER,W,4,Classroom,,,,,"                          "
+PE  123.12,Desc.,TENNIS I,1,2,ENİS GÜLLER,W,5,Classroom,,,,,"                          "
+PE  123.13,Desc.,TENNIS I,1,2,ENİS GÜLLER,Th,1,Classroom,,,,,"                          "
+PE  123.14,Desc.,TENNIS I,1,2,ENİS GÜLLER,Th,2,Classroom,,,,,"                          "
+PE  123.15,Desc.,TENNIS I,1,2,ENİS GÜLLER,Th,3,Classroom,,,,,"                          "
+PE  123.16,Desc.,TENNIS I,1,2,ENİS GÜLLER,Th,4,Classroom,,,,,"                          "
+PE  123.17,Desc.,TENNIS I,1,2,ENİS GÜLLER,Th,5,Classroom,,,,,"                          "
+PE  123.18,Desc.,TENNIS I,1,2,ENİS GÜLLER,Th,6,Classroom,,,,,"                          "
+PE  125.01,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,T,7,Classroom,,,,,"                          "
+PE  125.02,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,T,8,Classroom,,,,,"                          "
+PE  125.03,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,W,7,Classroom,,,,,"                          "
+PE  125.04,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,W,8,Classroom,,,,,"                          "
+PE  125.05,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,Th,7,Classroom,,,,,"                          "
+PE  125.06,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,Th,8,Classroom,,,,,"                          "
+PE  129.01,Desc.,SELF DEFENCE SPORTS I,1,2,IGOR KRYVORUCHKO,T,10,Classroom,,,,,"                          "
+PE  129.02,Desc.,SELF DEFENCE SPORTS I,1,2,IGOR KRYVORUCHKO,Th,10,Classroom,,,,,"                          "
+PE  135.01,Desc.,ROWING I,1,2,RECEP AKICI,T,6,Classroom,,,,,"                          "
+PE  135.02,Desc.,ROWING I,1,2,RECEP AKICI,W,6,Classroom,,,,,"                          "
+PE  137.01,Desc.,LATIN-AERO DANCE I,1,2,SEZGİ ÇOPUR,W,6,Classroom,,,,,"                          "
+PE  137.02,Desc.,LATIN-AERO DANCE I,1,2,SEZGİ ÇOPUR,W,7,Classroom,,,,,"                          "
+PE  137.03,Desc.,LATIN-AERO DANCE I,1,2,SEZGİ ÇOPUR,W,8,Classroom,,,,,"                          "
+PE  137.04,Desc.,LATIN-AERO DANCE I,1,2,SEZGİ ÇOPUR,W,9,Classroom,,,,,"                          "
+PE  137.05,Desc.,LATIN-AERO DANCE I,1,2,SEZGİ ÇOPUR,F,6,Classroom,,,,,"                          "
+PE  137.06,Desc.,LATIN-AERO DANCE I,1,2,SEZGİ ÇOPUR,F,7,Classroom,,,,,"                          "
+PE  137.07,Desc.,LATIN-AERO DANCE I,1,2,SEZGİ ÇOPUR,F,8,Classroom,,,,,"                          "
+PE  137.08,Desc.,LATIN-AERO DANCE I,1,2,SEZGİ ÇOPUR,F,9,Classroom,,,,,"                          "
+PE  151.01,Desc.,PILATES I,1,2,VİLDAN ZAN KİPRİ,M,3,Classroom,,,,,"                          "
+PE  151.02,Desc.,PILATES I,1,2,VİLDAN ZAN KİPRİ,M,4,Classroom,,,,,"                          "
+PE  151.03,Desc.,PILATES I,1,2,VİLDAN ZAN KİPRİ,M,5,Classroom,,,,,"                          "
+PE  153.01,Desc.,CIRCUIT TRAINING I,1,2,MEHMET OKTAR,M,3,Classroom,,,,,"                          "
+PE  153.02,Desc.,CIRCUIT TRAINING I,1,2,MEHMET OKTAR,M,4,Classroom,,,,,"                          "
+PE  153.03,Desc.,CIRCUIT TRAINING I,1,2,MEHMET OKTAR,W,3,Classroom,,,,,"                          "
+PE  153.04,Desc.,CIRCUIT TRAINING I,1,2,MEHMET OKTAR,W,4,Classroom,,,,,"                          "
+PE  153.05,Desc.,CIRCUIT TRAINING I,1,2,MEHMET OKTAR,F,3,Classroom,,,,,"                          "
+PE  153.06,Desc.,CIRCUIT TRAINING I,1,2,MEHMET OKTAR,F,4,Classroom,,,,,"                          "
+PE  155.01,Desc.,TOTAL-BODY SHAPING I,1,2,ORHAN YALINTAŞ,T,4,Classroom,,,,,"                          "
+PE  155.02,Desc.,TOTAL-BODY SHAPING I,1,2,ORHAN YALINTAŞ,T,5,Classroom,,,,,"                          "
+PE  155.03,Desc.,TOTAL-BODY SHAPING I,1,2,VİLDAN ZAN KİPRİ,W,3,Classroom,,,,,"                          "
+PE  155.04,Desc.,TOTAL-BODY SHAPING I,1,2,VİLDAN ZAN KİPRİ,W,4,Classroom,,,,,"                          "
+PE  155.05,Desc.,TOTAL-BODY SHAPING I,1,2,VİLDAN ZAN KİPRİ,W,5,Classroom,,,,,"                          "
+PE  155.06,Desc.,TOTAL-BODY SHAPING I,1,2,ORHAN YALINTAŞ,Th,4,Classroom,,,,,"                          "
+PE  155.07,Desc.,TOTAL-BODY SHAPING I,1,2,ORHAN YALINTAŞ,Th,5,Classroom,,,,,"                          "

@@ -1,0 +1,57 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHE 201.01,Desc.,PHYSICOCHEMICAL SYSTEMS I,4,5,MAHİR ARIKOL,MMW,783,,KB 433 | KB 433 | KB 401,18.01.2010,3,,"                          "
+CHE 211.01,Desc.,CHEMICAL ENGINEERING CALCULATIONS,4,5,ÖNER HORTAÇSU,MMTW,1254,,KB 401 | KB 401 | KB 401 | KB 401,18.01.2010,1,,"                          "
+CHE 321.01,Desc.,CHEM. ENGINEERING THERMODYNAMICS,4,7,TÜRKAN HALİLOĞLU,MMWWTh,45565,,KB 401 | KB 401 | KB 401 | KB 401 | KB 433,18.01.2010,3,,"                          "
+CHE 333.01,Desc.,CHEMICAL ENGINEERING II: HEAT TRANSFER,3,5,ELİF ÖZKIRIMLI ÖLMEZ,MTWTh,3524,,KB 401 | KB 433 | KB 401 | KB 401,18.01.2010,1,,"                          "
+CHE 353.01,Desc.,CHEMICAL PROCESSES,3,5,MURAT DERVİŞOĞLU,WWTh,783,,KB 401 | KB 401 | KB 401,13.01.2010,2,,"                          "
+CHE 383.01,Desc.,PROBABILITY&STATISTICS IN CHEM.ENGR.APPL,3,5,MEHMET CİHAN ÇAMURDAN,MTTTh,6346,,KB 401 | KB 433 | KB 433 | KB 433,08.01.2010,2,,"                          "
+CHE 401.01,Desc.,CHEMICAL ENGINEERING LAB. II,3,6,ZEYNEP İLSEN ÖNSAN,Th,7,,KB 433,16.01.2010,2,,"                          "
+CHE 401.02,Desc.,CHEMICAL ENGINEERING LAB. II,3,6,ZEYNEP İLSEN ÖNSAN,Th,8,,KB 433,16.01.2010,2,,"                          "
+CHE 413.01,Desc.,DESIGN&SIMULATION OF MACROMOLECULAR SYS.,3,5,TÜRKAN HALİLOĞLU,TThTh,678,,KB 433 | KB 428 | KB 428,07.01.2010,3,,"                          "
+CHE 421.01,Desc.,GENETIC ENGINEERING APPLICATIONS IN BIOTECHNOLOGY,3,5,BETÜL KIRDAR,ThThTh,456,,KB 428 | KB 428 | KB 428,06.01.2010,2,,"                          "
+CHE 427.01,Desc.,BIOCHEMICAL ENGINEERING I,3,5,ZEYNEP İLSEN ÖNSAN,MWW,456,,KB 433 | KB 428 | KB 428,12.01.2010,2,,"                          "
+CHE 433.01,Desc.,DESIGN OF CHEMICAL PROCESSING UNITS,3,8,AHMET KERİM AVCI,TTThTh,7834,,KB 433 | KB 433 | KB 433 | KB 433,14.01.2010,2,,"                          "
+CHE 440.01,Desc.,HETEROGENEOUS CATALYSIS,3,5,AHMET ERHAN AKSOYLU,MMT,786,,KB 401 | KB 401 | KB 401,09.01.2010,1,,"                          "
+CHE 465.01,Desc.,OPERATIONAL&ENVIRONMENTAL SAFETY OF CHE.,3,5,ÖNER HORTAÇSU,TThTh,412,,KB 428 | KB 428 | KB 428,07.01.2010,1,,"                          "
+CHE 475.01,Desc.,PROCESS DYNAMICS & CONTROL,3,6,MEHMET CİHAN ÇAMURDAN,MMWW,2334,,KB 433 | KB 433 | KB 433 | KB 433,11.01.2010,3,,"                          "
+CHE 477.01,Desc.,PROCESS OPTIMIZATION,3,5,UĞUR AKMAN,TWW,378,,KB 401 | KB 433 | KB 433,15.01.2010,3,,"                          "
+CHE 484.01,Desc.,SP.TP.SPECTRAL METHODS WITH APPLICATIONS,3,5,A.KEREM UĞUZ,,, ,,15.01.2010,1,,"                          "
+CHE 486.01,Desc.,SP.TOP.PROTEINS INTERACT.:MOL.TO NETWORK,3,5,ELİF ÖZKIRIMLI ÖLMEZ,TBA,,,,12.01.2010,3,,"                          "
+CHE 487.01,Desc.,SP.TOP.:SUSTAINABLE ENERGY TECHNOLOGIES,3,5,RAMAZAN YILDIRIM,MMTh,562,,KB 433 | KB 433 | KB 433,19.01.2010,1,,"                          "
+CHE 492.01,Desc.,PROJECT,4,7,AHMET KERİM AVCI,TBA,,,,18.01.2010,3,,"                          "
+CHE 529.01,Desc.,METABOLIC ENGINEERING,3,6,AMABLE HORTAÇSU,TBA,,,,14.01.2010,1,,"                          "
+CHE 543.01,Desc.,CATALYSIS FOR GREEN TECHNOLOGIES,3,7.50,AHMET ERHAN AKSOYLU,TBA,,,,19.01.2010,2,,"                          "
+CHE 555.01,Desc.,MODELING&ANALYSIS OF CHEMICAL ENGR.SYS.I,3,8,UĞUR AKMAN,MMTT,3478,,KB 428 | KB 428 | KB 428 | KB 428,16.01.2010,1,,"                          "
+CHE 586.01,Desc.,SP.TOP.IN CHEM.TEC.RECENT ADV.CATALYTIC ,3,5,AHMET KERİM AVCI,MWW,578,,KB 428 | KB 428 | KB 428,13.01.2010,1,,"                          "
+CHE 631.01,Desc.,TRANSPORT PHENOMENA I,3,8,A.KEREM UĞUZ,MTT,223,,KB 428 | KB 428 | KB 428,09.01.2010,3,,"                          "
+CHE 680.01,Desc.,S.TOP.IN ADV.CHEM.ENG.CURRENT TP.IN BIO ,3,6,KUTLU ÜLGEN,TBA,,,,11.01.2010,2,,"                          "
+CHE 681.01,Desc.,SP.ST.IN ADV.CHEM.ENG.:GENOME-SCALE MET,3,6,KUTLU ÜLGEN,TBA,,,,12.01.2010,1,,"                          "
+CHE 683.01,Desc.,SP.STUD.IN ADV.CHEM.ENG.:SYSTEMS BIOLOGY,3,6,BETÜL KIRDAR,TBA,,,,14.01.2010,2,,"                          "
+CHE 688.01,Desc.,"SP.TOP.:FOLDING,BINDING&ALLOSTERY IN BIO",3,6,TÜRKAN HALİLOĞLU,TBA,,,,09.01.2010,3,,"                          "
+CHE 689.01,Desc.,SP.TP.:KINETIC STUD.IN HETEROGENEOUS CAT,3,6,RAMAZAN YILDIRIM,TBA,,,,18.01.2010,2,,"                          "
+CHE 690.01,Desc.,M.S. THESIS,0,60,UĞUR AKMAN,TBA,,,,,0,,"                          "
+CHE 690.02,Desc.,M.S. THESIS,0,60,AHMET ERHAN AKSOYLU,TBA,,,,,0,,"                          "
+CHE 690.03,Desc.,M.S. THESIS,0,60,AHMET KERİM AVCI,TBA,,,,,0,,"                          "
+CHE 690.04,Desc.,M.S. THESIS,0,60,MEHMET CİHAN ÇAMURDAN,TBA,,,,,0,,"                          "
+CHE 690.05,Desc.,M.S. THESIS,0,60,MURAT DERVİŞOĞLU,TBA,,,,,0,,"                          "
+CHE 690.06,Desc.,M.S. THESIS,0,60,TÜRKAN HALİLOĞLU,TBA,,,,,0,,"                          "
+CHE 690.07,Desc.,M.S. THESIS,0,60,BETÜL KIRDAR,TBA,,,,,0,,"                          "
+CHE 690.08,Desc.,M.S. THESIS,0,60,ELİF ÖZKIRIMLI ÖLMEZ,TBA,,,,,0,,"                          "
+CHE 690.09,Desc.,M.S. THESIS,0,60,ZEYNEP İLSEN ÖNSAN,TBA,,,,,0,,"                          "
+CHE 690.10,Desc.,M.S. THESIS,0,60,PEMRA DORUKER TURGUT,TBA,,,,,0,,"                          "
+CHE 690.11,Desc.,M.S. THESIS,0,60,A.KEREM UĞUZ,TBA,,,,,0,,"                          "
+CHE 690.12,Desc.,M.S. THESIS,0,60,KUTLU ÜLGEN,TBA,,,,,0,,"                          "
+CHE 690.13,Desc.,M.S. THESIS,0,60,RAMAZAN YILDIRIM,TBA,,,,,0,,"                          "
+CHE 790.01,Desc.,Ph.D. THESIS,0,120,UĞUR AKMAN,TBA,,,,,0,,"                          "
+CHE 790.02,Desc.,Ph.D. THESIS,0,120,AHMET ERHAN AKSOYLU,TBA,,,,,0,,"                          "
+CHE 790.03,Desc.,Ph.D. THESIS,0,120,AHMET KERİM AVCI,TBA,,,,,0,,"                          "
+CHE 790.04,Desc.,Ph.D. THESIS,0,120,MEHMET CİHAN ÇAMURDAN,TBA,,,,,0,,"                          "
+CHE 790.05,Desc.,Ph.D. THESIS,0,120,MURAT DERVİŞOĞLU,TBA,,,,,0,,"                          "
+CHE 790.06,Desc.,Ph.D. THESIS,0,120,TÜRKAN HALİLOĞLU,TBA,,,,,0,,"                          "
+CHE 790.07,Desc.,Ph.D. THESIS,0,120,BETÜL KIRDAR,TBA,,,,,0,,"                          "
+CHE 790.08,Desc.,Ph.D. THESIS,0,120,ELİF ÖZKIRIMLI ÖLMEZ,TBA,,,,,0,,"                          "
+CHE 790.09,Desc.,Ph.D. THESIS,0,120,ZEYNEP İLSEN ÖNSAN,TBA,,,,,0,,"                          "
+CHE 790.10,Desc.,Ph.D. THESIS,0,120,PEMRA DORUKER TURGUT,TBA,,,,,0,,"                          "
+CHE 790.11,Desc.,Ph.D. THESIS,0,120,A.KEREM UĞUZ,TBA,,,,,0,,"                          "
+CHE 790.12,Desc.,Ph.D. THESIS,0,120,KUTLU ÜLGEN,TBA,,,,,0,,"                          "
+CHE 790.13,Desc.,Ph.D. THESIS,0,120,RAMAZAN YILDIRIM,TBA,,,,,0,,"                          "

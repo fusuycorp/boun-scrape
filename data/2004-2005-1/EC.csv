@@ -1,0 +1,34 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EC  101.01,Desc.,PRINCIPLES OF MICROECONOMICS ,3,5,CEM BEHAR,TTTh,565,,,,,"AD,EC,POLS","                          "
+EC  101.03,Desc.,PRINCIPLES OF MICROECONOMICS ,3,5,CEVAT KARATAŞ,TTTh,565,,,,,"AD,EC,POLS","                          "
+EC  101.06,Desc.,PRINCIPLES OF MICROECONOMICS ,3,5,AYŞE MUMCU,MMW,785,,,,,"PHYS2, PSY2","                          "
+EC  101.08,Desc.,PRINCIPLES OF MICROECONOMICS ,3,5,ŞEMSA ÖZAR,TThTh,678,,,,,"HIST1, SOC 1","        TRM; INTT; MIS                  "
+EC  203.01,Desc.,MICROECONOMICS I,3,5,FİKRET ADAMAN,TTTh,565,,,,,"AD, EC","                          "
+EC  203.02,Desc.,MICROECONOMICS I,3,5,LEVENT YILDIRAN,TTTh,565,,,,,"AD,EC","                          "
+EC  223.01,Desc.,MATHEMATICS FOR ECONOMISTS,3,5,OZAN HATİPOĞLU,,,Online,,,,,"                          "
+EC  231.01,Desc.,STATISTICS I,4,5,NESRİN OKAY AKMAN,MWW,867,,,,,AD,"                          "
+EC  231.02,Desc.,STATISTICS I,4,5,NESRİN OKAY AKMAN,MMW,678,,,,,AD,"                          "
+EC  233.01,Desc.,MATHEMATICAL STATISTICS I,3,5,PINAR  ARDIÇ,TTTh,786,,,,,,"                          "
+EC  233.02,Desc.,MATHEMATICAL STATISTICS I,3,5,OZAN HATİPOĞLU,TTTh,786,,,,,,"                          "
+EC  317.01,Desc.,GENDER & THE ECONOMY,3,6,ŞEMSA ÖZAR,TWTh,444,,,,,,"                          "
+EC  331.01,Desc.,ECONOMETRICS ,3,6,GÖKHAN ÖZERTAN,MMW,122,,,,,,"                          "
+EC  331.02,Desc.,ECONOMETRICS ,3,6,GÖKHAN ÖZERTAN,MMW,561,,,,,,"                          "
+EC  350.01,Desc.,GOVERNMENT CONTROL,3,6,İZZETTİN ÖNDER,TTTh,561,,,,,,"                          "
+EC  351.01,Desc.,PUBLIC FINANCE,3,6,CEVAT KARATAŞ,WThTh,534,,,,,AD,"                          "
+EC  351.02,Desc.,PUBLIC FINANCE,3,6,FİKRET ADAMAN,TThTh,878,,,,,EC,"                          "
+EC  351.03,Desc.,PUBLIC FINANCE,3,6,LEVENT YILDIRAN,TThTh,878,,,,,EC,"                          "
+EC  361.02,Desc.,INTERNATIONAL ECONOMICS ,3,6,PINAR  ARDIÇ,TThTh,312,,,,,,"                          "
+EC  471.01,Desc.,GROWTH AND DEVELOPMENT,3,6,AYŞE BUĞRA,TTW,344,,,,,,"                          "
+EC  501.01,Desc.,MICRO-ECONOMICS I,4,8,AYŞE MUMCU,TTThTh,5656,,,,,,"                          "
+EC  516.01,Desc.,ECONOMIC HISTORY OF TURKEY,3,7,ŞEVKET OSMAN PAMUK,TTT,123,,,,,,"                          "
+EC  552.01,Desc.,TAXATION & WELFARE,3,7,İZZETTİN ÖNDER,TTTh,342,,,,,,"                          "
+EC  584.01,Desc.,SP.TOP:GLOBALIZATION AND SOCIAL POLICY,3,7,AYŞE BUĞRA,MMM,678,,,,,,"                          "
+EC  599.01,Desc.,TERM PROJECT,0,13,FİKRET ADAMAN,TBA,,,,,,,"                          "
+EC  599.03,Desc.,TERM PROJECT,0,13,OZAN HATİPOĞLU,TBA,,,,,,,"                          "
+EC  599.04,Desc.,TERM PROJECT,0,13,CEM BEHAR,TBA,,,,,,,"                          "
+EC  599.06,Desc.,TERM PROJECT,0,13,AYŞE MUMCU,TBA,,,,,,,"                          "
+EC  690.01,Desc.,MASTER THESIS,0,60,PINAR  ARDIÇ,TBA,,,,,,,"                          "
+EC  690.02,Desc.,MASTER THESIS,0,60,AYŞE BUĞRA,TBA,,,,,,,"                          "
+EC  690.03,Desc.,MASTER THESIS,0,60,GÖKHAN ÖZERTAN,TBA,,,,,,,"                          "
+EC  690.05,Desc.,MASTER THESIS,0,60,LEVENT YILDIRAN,TBA,,,,,,,"                          "
+EC  694.01,Desc.,ADVANCED SEMINAR IN ECONOMICS,3,7,AYŞE MUMCU,ThThTh,789,,,,,,"                          "

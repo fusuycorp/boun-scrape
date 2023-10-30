@@ -1,0 +1,35 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AL  201.01,Desc.,SURVEY OF AMERICAN LITERATURE,3,6,SOSİ ANTİKACIOĞLU,TWThF,8475,,,,,,"                          "
+AL  201.02,Desc.,SURVEY OF AMERICAN LITERATURE,3,6,LAMİA GÜLÇUR,TWThF,8475,,,,,,"                          "
+CL  103.01,Desc.,CLASSICAL LITERATURE,3,6,LAMİA GÜLÇUR,TThF,666,,,,,,"                          "
+CL  311.01,Desc.,MYTHOLOGY,3,6,IŞIL BAŞ,TThTh,445,,,,,,"                          "
+CL  311.02,Desc.,MYTHOLOGY,3,6,DİLEK DOLTAŞ,TThTh,445,,,,,,"                          "
+CL  401.02,Desc.,LITERARY CRITICISM I,3,7,ÖZLEM ÖĞÜT,TThF,265,,,,,,"                          "
+CL  484.01,Desc.,SP.TOP.:THE SONNET THROUGH THE AGES,3,6,SOSİ ANTİKACIOĞLU,TFF,578,,,,,,"                          "
+DRA 401.01,Desc.,AMERICAN DRAMA,3,6,ASLI TEKİNAY,TThTh,323,,,,,,"                          "
+EL  101.01,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,CEVZA SEVGEN,TThThF,4484,,,,,,"                          "
+EL  101.02,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,ÖZLEM GÖREY,TThThF,4484,,,,,,"                          "
+EL  101.03,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,ÖZLEM ÖĞÜT,TThThF,4484,,,,,,"                          "
+EL  412.01,Desc.,RESEARCH AND WRITING,3,6,ASLI TEKİNAY,TBA,,,,,,,"                          "
+EL  690.01,Desc.,MASTER THESIS,0,60,CEVZA SEVGEN,TBA,,,,,,,"                          "
+ENGL101.01,Desc.,INTRODUCTION TO LITERARY SCHOLARSHIP I,3,6,OYA BAŞAK,TTTh,233,,,,,,"                          "
+ENGL111.01,Desc.,EXPOSITORY WRITING I,3,5,MÜFİDE PEKİN,MWTh,221,,,,,,"                          "
+ENGL111.02,Desc.,EXPOSITORY WRITING I,3,5,MÜFİDE PEKİN,MWTh,332,,,,,,"                          "
+ENGL111.03,Desc.,EXPOSITORY WRITING I,3,5,MÜFİDE PEKİN,MWTh,667,,,,,,"                          "
+ENGL111.04,Desc.,EXPOSITORY WRITING I,3,5,SEVDA AKYÜZ,TTW,786,,,,,,"                          "
+ENGL311.01,Desc.,HISTORY OF THE ENGLISH LANGUAGE I,3,5,CEVZA SEVGEN,TThF,666,,,,,,"                          "
+FA  201.01,Desc.,ANATOLIAN ART & CULTURES FROM PREHIST...,3,5,BEHİN AKSOY,ThThTh,678,,,,,,"                          "
+FA  327.01,Desc.,MUSIC:THEORY & APPRECIATION,3,5,EMİNE SERDAROĞLU,TTT,678,,,,,,"                          "
+FA  345.01,Desc.,AUTEUR DIRECTORS I,3,5,MİTHAT ALAM,MMMTTT,678678,,,,,,"                          "
+GR  101.01,Desc.,MODERN GREEK FOR BEGINNERS I,3,5,CHRYSSI SIDIROPOULOU,MMT,786,,,,,,"                          "
+LING111.01,Desc.,INTRO. TO LANGUAGE & LINGUISTICS I,3,6,SUMRU ÖZSOY,MWTh,445,,,,,,"                          "
+LING111.02,Desc.,INTRO. TO LANGUAGE & LINGUISTICS I,3,6,MİNE NAKİPOĞLU,MWTh,445,,,,,,"                          "
+LING111.03,Desc.,INTRO. TO LANGUAGE & LINGUISTICS I,3,6,DİDAR AKAR,MWTh,556,,,,,,"                          "
+LING321.01,Desc.,ENGLISH TURKISH CONTRASTIVE ANALYSIS,3,4,DİDAR AKAR,MWTh,443,,,,,,"                          "
+LING403.01,Desc.,TRANSLATION I,3,6,ÖZLEM GÖREY,WWF,563,,,,,,"                          "
+LING483.01,Desc.,SP.TOP.:TEXT ANALYSIS IN TURKISH,3,5,MİNE NAKİPOĞLU,TBA,,,,,,,"                          "
+LING683.01,Desc.,SP.TOP.ASPELT,3,10,ESER TAYLAN,TBA,,,,,,,"                          "
+LIT 211.01,Desc.,STUDIES IN LITERATURE I,3,10,IŞIL BAŞ,TTTh,676,,,,,,"                          "
+RUS 101.01,Desc.,BEGINNERS RUSSIAN I,3,5,OLGA ZVERKOVA,TTThThF,12121,,,,,,"                          "
+RUS 201.01,Desc.,INTERMEDIATE RUSSIAN I,3,5,OLGA ZVERKOVA,MMWWF,12122,,,,,,"                          "
+RUS 301.01,Desc.,ADVANCED RUSSIAN I,3,5,OLGA ZVERKOVA,TBA,,,,,,,"                          "

@@ -1,0 +1,113 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Quota,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+GR  111.01,Desc.,ANCIENT GREEK I,3,5,Info,PAOLO MARANZANA,MMFF,5678, ,TB 240 | TB 240 | JF 331 | JF 331,,,,"                          "
+GR  211.01,Desc.,ANCIENT GREEK III,3,5,Info,ASLIHAN AKIŞIK KARAKULLUKÇU,MWThF,6669, ,EF 03 | JF 331 | M 1152 | EF 101,,,,"                          "
+HIST101.01,Desc.,HISTORICAL METHOD & THOUGHT I,3,5,Info,ASLI ÖZYAR,TTW,122, ,EF 206 | EF 206 | EF 206,,,,"                          "
+HIST103.01,Desc.,EXPOSITORY WRITING IN HISTORY,3,5,Info,ELİF ÜNLÜ,TTThTh,91056, ,TB 490 | TB 490 | NH 404 | NH 404,,,,"                          "
+HIST103.02,Desc.,EXPOSITORY WRITING IN HISTORY,3,5,Info,AHMET ERSOY,TTThTh,91056, ,JF 334 | JF 334 | EF 204 | EF 204,,,,"                          "
+HIST105.01,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4414, ,AYHAN ŞAHENK | AYHAN ŞAHENK | KP 02 | AYHAN ŞAHENK,,,,"                          "
+HIST105.02,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4414, ,AYHAN ŞAHENK | AYHAN ŞAHENK | KP 03 | AYHAN ŞAHENK,,,,"                          "
+HIST105.03,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4414, ,AYHAN ŞAHENK | AYHAN ŞAHENK | KP 04 | AYHAN ŞAHENK,,,,"                          "
+HIST105.04,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4414, ,AYHAN ŞAHENK | AYHAN ŞAHENK | KP 05 | AYHAN ŞAHENK,,,,"                          "
+HIST105.05,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4414, ,AYHAN ŞAHENK | AYHAN ŞAHENK | KP 06 | AYHAN ŞAHENK,,,,"                          "
+HIST105.06,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4424, ,AYHAN ŞAHENK | AYHAN ŞAHENK | KP 02 | AYHAN ŞAHENK,,,,"                          "
+HIST105.07,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4424, ,AYHAN ŞAHENK | AYHAN ŞAHENK | KP 03 | AYHAN ŞAHENK,,,,"                          "
+HIST105.08,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4424, ,AYHAN ŞAHENK | AYHAN ŞAHENK | KP 04 | AYHAN ŞAHENK,,,,"                          "
+HIST105.09,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4424, ,AYHAN ŞAHENK | AYHAN ŞAHENK | KP 05 | AYHAN ŞAHENK,,,,"                          "
+HIST105.10,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4424, ,AYHAN ŞAHENK | AYHAN ŞAHENK | KP 06 | AYHAN ŞAHENK,,,,"                          "
+HIST105.11,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4434, ,AYHAN ŞAHENK | AYHAN ŞAHENK | KP 02 | AYHAN ŞAHENK,,,,"                          "
+HIST105.12,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4434, ,AYHAN ŞAHENK | AYHAN ŞAHENK | KP 05 | AYHAN ŞAHENK,,,,"                          "
+HIST105.13,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4434, ,AYHAN ŞAHENK | AYHAN ŞAHENK | KP 06 | AYHAN ŞAHENK,,,,"                          "
+HIST105.14,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4434, ,AYHAN ŞAHENK | AYHAN ŞAHENK | KP 09 | AYHAN ŞAHENK,,,,"                          "
+HIST105.15,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4445, ,AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK | KP 02,,,,"                          "
+HIST105.16,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4445, ,AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK | KP 03,,,,"                          "
+HIST105.17,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4445, ,AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK | KP 05,,,,"                          "
+HIST105.18,Desc.,THE MAKING OF THE MODERN WORLD I,3,5,Info,PAOLO MARANZANA,MWFF,4445, ,AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK | KP 06,,,,"                          "
+HIST209.01,Desc.,RESEARCH METHODS IN HISTORY I,4,5,Info,ARZU ÖZTÜRKMEN,TTWW,910910, ,TB 240 | TB 240 | TB 415 | TB 415,,,,"                          "
+HIST209.02,Desc.,RESEARCH METHODS IN HISTORY I,4,5,Info,PAOLO GIRARDELLI,TTWW,910910, ,JF 332 | JF 332 | TB 240 | TB 240,,,,"                          "
+HIST221.01,Desc.,HIST.OF MEDIEVAL TURCO-PERSIAN SOCIETIES,3,5,Info,OYA PANCAROĞLU,ThThF,344, ,NH 402 | NH 402 | TB 310,,,,"                          "
+HIST235.01,Desc.,OTTOMAN CULTURAL HISTORY,3,5,Info,AKİF ERCİHAN YERLİOĞLU,WWW,678, ,JF 333 | JF 333 | JF 333,,,,"        TKL                  "
+HIST241.01,Desc.,"WESTERN EUROPEAN SOCIETIES,POLITICS&CULTURES 1450-1750",3,5,Info,PETER ROBERT CAMPBELL,WWTh,451, ,NH 304 | NH 304 | NH 103,,,,"                          "
+HIST320.01,Desc.,"OTTOMAN HISTORY, 1590-1790",3,5,Info,DERİN TERZİOĞLU,MMTh,344, ,NH 202 | NH 202 | TB 415,,,,"                          "
+HIST321.01,Desc.,"OTTOMAN HISTORY, 1790-1908",3,5,Info,YAŞAR TOLGA CORA,TWW,623, ,TB 310 | NH 304 | NH 304,,,,"                          "
+HIST335.01,Desc.,"HIST.OF THE BYZANTINE EMPIRE,4-9 CENTURI",3,5,Info,ŞEVKİ KORAY DURAK,TTW,898, ,TB 310 | TB 310 | TB 310,,,,"                          "
+HIST341.01,Desc.,AEGEAN HISTORY & ARCHAEOLOGY I,3,5,Info,ELİF ÜNLÜ,TTTh,343, ,JF 101 | JF 101 | EF 101,,,,"                          "
+HIST401.01,Desc.,HISTORIOGRAPHY I,3,7,Info,YÜCEL TERZİBAŞOĞLU,TWW,756, ,NH 402 | NH 103 | NH 103,,,,"                          "
+HIST408.01,Desc.,HISTORY & URBANISM,3,5,Info,OYA PANCAROĞLU,WWW,234, ,M 1152 | M 1152 | M 1152,,,,"                          "
+HIST431.01,Desc.,CHINESE HIST.:FROM IMP.TO MOD.CHINA I,3,5,Info,ZEYNEP HALE EROĞLU SAGER,MMM,567, ,M 2181 | M 2181 | M 2181,,,,"                          "
+HIST433.01,Desc.,JAPANESE HIST.:FROM FEUDAL TO MOD. JAP.I,3,5,Info,SELÇUK ESENBEL,WWW,345, ,TB 415 | TB 415 | TB 415,,,,"                          "
+HIST437.01,Desc.,KOREAN HISTORY I,3,5,Info,HYUN WOONG HONG,TTTh,787, ,NH 304 | NH 304 | M 2200,,,,"                          "
+HIST443.01,Desc.,SEMINAR IN BYZANTINE HISTORY,3,5,Info,NEVRA NECİPOĞLU,TTT,8910, ,TB 415 | TB 415 | TB 415,,,,"                          "
+HIST48B.01,Desc.,"SP.TP.OTOMAN IST.:ARCH,URBAN.REPRESEN.",3,5,Info,ÇİĞDEM KAFESCİOĞLU,MMT,457, ,TB 415 | TB 415 | TB 415,,,,"        EC; TR; SOC; TKL; LL; POLS; PHIL; PSY                  "
+HIST48E.01,Desc.,SP.TP.THE CULTURAL LANDSCAPE OF PHRYGIA&LYDIA,3,5,Info,ASLI ÖZYAR,MMM,678, ,M 1181 | M 1181 | M 1181,,,,"                          "
+HIST48O.01,Desc.,SP.TP. FRANCE 1661-1789,3,6,Info,PETER ROBERT CAMPBELL,ThThTh,234, ,JF 102 | JF 102 | JF 102,,,,"                          "
+HIST490.01,Desc.,SP.TP. MAJOR THEMES IN GLOBAL HISTORY,3,5,Info,CENGİZ KIRLI,MMM,345, ,NH 303 | NH 303 | NH 303,,,,"                          "
+HIST495.01,Desc.,THESIS I,3,7,Info,EDHEM ELDEM,,, ,,,,,"                          "
+HIST495.02,Desc.,THESIS I,3,7,Info,NEVRA NECİPOĞLU,,, ,,,,,"                          "
+HIST495.03,Desc.,THESIS I,3,7,Info,PAOLO MARANZANA,,, ,,,,,"                          "
+HIST495.04,Desc.,THESIS I,3,7,Info,SELÇUK ESENBEL,,, ,,,,,"                          "
+HIST495.05,Desc.,THESIS I,3,7,Info,AHMET ERSOY,,, ,,,,,"                          "
+HIST495.06,Desc.,THESIS I,3,7,Info,AKİF ERCİHAN YERLİOĞLU,,, ,,,,,"                          "
+HIST495.07,Desc.,THESIS I,3,7,Info,YAŞAR TOLGA CORA,,, ,,,,,"                          "
+HIST496.01,Desc.,THESIS II,3,7,Info,EDHEM ELDEM,,, ,,,,,"                          "
+HIST496.02,Desc.,THESIS II,3,7,Info,NEVRA NECİPOĞLU,,, ,,,,,"                          "
+HIST496.03,Desc.,THESIS II,3,7,Info,ZEYNEP HALE EROĞLU SAGER,,, ,,,,,"                          "
+HIST496.05,Desc.,THESIS II,3,7,Info,AHMET ERSOY,,, ,,,,,"                          "
+HIST496.06,Desc.,THESIS II,3,7,Info,AKİF ERCİHAN YERLİOĞLU,,, ,,,,,"                          "
+HIST49W.01,Desc.,SP.TP.: A GLOBAL HISTORY OF CAPITALISM,3,5,Info,HURİCİHAN İSLAMOĞLU,ThThTh,678, ,NH 302 | NH 302 | NH 302,,,,"                          "
+HIST501.01,Desc.,HISTORIOGRAPHY,3,9,Info,SELÇUK ESENBEL,TTT,678, ,,,,,"                          "
+HIST559.01,Desc.,RESEARCH IN THE HIST. OF PERFORMING ARTS,3,7,Info,ARZU ÖZTÜRKMEN,,, ,,,,,"                          "
+HIST572.01,Desc.,SEMINAR ON JAPAN SINCE 1868,3,7,Info,SELÇUK ESENBEL,TTT,789, ,,,,,"                          "
+HIST574.01,Desc.,SEMINAR IN CHINESE HISTORY,3,7,Info,ZEYNEP HALE EROĞLU SAGER,WWW,101112, ,,,,,"                          "
+HIST579.01,Desc.,GRADUATE SEMINAR,0,2,Info,ÇİĞDEM KAFESCİOĞLU,,, ,,,,,"                          "
+HIST582.01,Desc.,SEL.READINGS IN CLASSICAL OTT. HISTORY I,3,7,Info,DERİN TERZİOĞLU,WWW,678, ,,,,,"                          "
+HIST583.01,Desc.,SP.TP.TANZİMAT AND OTTOMAN MODERNITIY,3,7,Info,CENGİZ KIRLI,WWW,234, ,TB 490 | TB 490 | TB 490,,,,"                          "
+HIST584.01,Desc.,SEL.READINGS IN LATE OTTOMAN HISTORY I,3,7,Info,EDHEM ELDEM,MMM,678, ,,,,,"        HIST; ATA; TKL                  "
+HIST589.01,Desc.,SP.TP.ARCHAELOGY,3,6,Info,PAOLO MARANZANA,WWW,678, ,,,,,"                          "
+HIST58A.01,Desc.,SP.TP.HISTOR OF POLITICAL ECONOMY I,3,6,Info,YÜCEL TERZİBAŞOĞLU,TTT,234, ,,,,,"                          "
+HIST58L.01,Desc.,SP.TP.RESEARCH METHODS IN BYZANTINE HIST,3,6,Info,ŞEVKİ KORAY DURAK,ThThTh,456, ,,,,,"                          "
+HIST593.01,Desc.,"SP.TP.ARCHIT.&SOC.IN GALATA,PERA,BEYOĞLU",3,6,Info,PAOLO GIRARDELLI,WWW,234, ,,,,,"                          "
+HIST59D.01,Desc.,SP.TP.IN OTTOMAN SCIENCE,3,6,Info,HASAN UMUT,WWW,234, ,,,,,"                          "
+HIST59F.01,Desc.,"SP.TP.BUILDING,WRITING,PICTURING THE CIT",3,6,Info,ÇİĞDEM KAFESCİOĞLU,TTT,234, ,,,,,"                          "
+HIST59G.01,Desc.,SP.TP. IN THE HISTORY OF SCIENCE AND MEDICINE,3,6,Info,AKİF ERCİHAN YERLİOĞLU,FFF,678, ,,,,,"                          "
+HIST59R.01,Desc.,SP.TP.INTRO.TO MIDDLE EGYP.&EGYP.HIEROGLYPHS,3,7,Info,HASAN PEKER,MMM,789, ,JF 108 | JF 108 | JF 108,,,,"                          "
+HIST59S.01,Desc.,SP.TP.OTT.ARMENIANS:FROM EMPIRE TO  REPUBLIC,3,7,Info,YAŞAR TOLGA CORA,TTT,789, ,,,,,"                          "
+HIST601.01,Desc.,HISTORY SEMINAR,3,7,Info,EDHEM ELDEM,,, ,,,,,"                          "
+HIST601.02,Desc.,HISTORY SEMINAR,3,7,Info,NEVRA NECİPOĞLU,,, ,,,,,"                          "
+HIST601.09,Desc.,HISTORY SEMINAR,3,7,Info,YÜCEL TERZİBAŞOĞLU,,, ,,,,,"                          "
+HIST601.13,Desc.,HISTORY SEMINAR,3,7,Info,AHMET ERSOY,,, ,,,,,"                          "
+HIST601.14,Desc.,HISTORY SEMINAR,3,7,Info,ŞEVKİ KORAY DURAK,,, ,,,,,"                          "
+HIST636.01,Desc.,SEM.IN BYZANTINE & EARLY OTTOMAN HISTORY,3,7,Info,NEVRA NECİPOĞLU,WWW,678, ,,,,,"                          "
+HIST690.01,Desc.,MASTER THESIS,0,60,Info,EDHEM ELDEM,,, ,,,,,"                          "
+HIST690.02,Desc.,MASTER THESIS,0,60,Info,STAFF STAFF,,, ,,,,,"                          "
+HIST690.04,Desc.,MASTER THESIS,0,60,Info,ÇİĞDEM KAFESCİOĞLU,,, ,,,,,"                          "
+HIST690.05,Desc.,MASTER THESIS,0,60,Info,NEVRA NECİPOĞLU,,, ,,,,,"                          "
+HIST690.06,Desc.,MASTER THESIS,0,60,Info,ARZU ÖZTÜRKMEN,,, ,,,,,"                          "
+HIST690.07,Desc.,MASTER THESIS,0,60,Info,ASLI ÖZYAR,,, ,,,,,"                          "
+HIST690.08,Desc.,MASTER THESIS,0,60,Info,OYA PANCAROĞLU,,, ,,,,,"                          "
+HIST690.09,Desc.,MASTER THESIS,0,60,Info,YÜCEL TERZİBAŞOĞLU,,, ,,,,,"                          "
+HIST690.10,Desc.,MASTER THESIS,0,60,Info,DERİN TERZİOĞLU,,, ,,,,,"                          "
+HIST690.12,Desc.,MASTER THESIS,0,60,Info,PAOLO GIRARDELLI,,, ,,,,,"                          "
+HIST690.13,Desc.,MASTER THESIS,0,60,Info,AHMET ERSOY,,, ,,,,,"                          "
+HIST690.14,Desc.,MASTER THESIS,0,60,Info,ŞEVKİ KORAY DURAK,,, ,,,,,"                          "
+HIST690.15,Desc.,MASTER THESIS,0,60,Info,PAOLO MARANZANA,,, ,,,,,"                          "
+HIST690.16,Desc.,MASTER THESIS,0,60,Info,ELİF ÜNLÜ,,, ,,,,,"                          "
+HIST690.17,Desc.,MASTER THESIS,0,60,Info,PETER ROBERT CAMPBELL,,, ,,,,,"                          "
+HIST690.19,Desc.,MASTER THESIS,0,60,Info,YAŞAR TOLGA CORA,,, ,,,,,"                          "
+HIST690.20,Desc.,MASTER THESIS,0,60,Info,ZEYNEP HALE EROĞLU SAGER,,, ,,,,,"                          "
+HIST690.21,Desc.,MASTER THESIS,0,60,Info,AKİF ERCİHAN YERLİOĞLU,,, ,,,,,"                          "
+HIST700.01,Desc.,GRADUATE SEMINAR,0,,Info,PETER ROBERT CAMPBELL,,, ,,,,,"                          "
+HIST790.01,Desc.,PH.D.THESIS,0,30,Info,EDHEM ELDEM,,, ,,,,,"                          "
+HIST790.04,Desc.,PH.D.THESIS,0,30,Info,ÇİĞDEM KAFESCİOĞLU,,, ,,,,,"                          "
+HIST790.05,Desc.,PH.D.THESIS,0,30,Info,NEVRA NECİPOĞLU,,, ,,,,,"                          "
+HIST790.06,Desc.,PH.D.THESIS,0,30,Info,ARZU ÖZTÜRKMEN,,, ,,,,,"                          "
+HIST790.07,Desc.,PH.D.THESIS,0,30,Info,OYA PANCAROĞLU,,, ,,,,,"                          "
+HIST790.08,Desc.,PH.D.THESIS,0,30,Info,YÜCEL TERZİBAŞOĞLU,,, ,,,,,"                          "
+HIST790.09,Desc.,PH.D.THESIS,0,30,Info,DERİN TERZİOĞLU,,, ,,,,,"                          "
+HIST790.11,Desc.,PH.D.THESIS,0,30,Info,PAOLO GIRARDELLI,,, ,,,,,"                          "
+HIST790.12,Desc.,PH.D.THESIS,0,30,Info,AHMET ERSOY,,, ,,,,,"                          "
+HIST790.13,Desc.,PH.D.THESIS,0,30,Info,ASLI ÖZYAR,,, ,,,,,"                          "
+HIST790.14,Desc.,PH.D.THESIS,0,30,Info,ŞEVKİ KORAY DURAK,,, ,,,,,"                          "
+HIST790.15,Desc.,PH.D.THESIS,0,30,Info,YAŞAR TOLGA CORA,,, ,,,,,"                          "
+JP  501.01,Desc.,TRANS.OF MOD.&CLAS.TURKISH TEXTS INTO JP,3,5,Info,ERDAL KÜÇÜKYALÇIN,,, ,,,,,"                          "
+LAT 111.01,Desc.,ELEMANTARY LATIN I,3,5,Info,CEYLAN TÖZEREN,TTTT,1234, ,TB 415 | TB 415 | TB 415 | TB 415,,,,"                          "
+LAT 211.01,Desc.,INTERMEDIATE LATIN I,3,5,Info,CEYLAN TÖZEREN,ThThThTh,1234, ,JF 101 | JF 101 | JF 101 | JF 101,,,,"                          "

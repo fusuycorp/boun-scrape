@@ -1,0 +1,24 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.03,Desc.,CALCULUS I,4,6,NİLGÜN IŞIK,TTThTh,5656,,,,,,"                          "
+MATH102.01,Desc.,CALCULUS II,4,6,AHMET KAMİL FEYZİOĞLU,TTThTh,1212,,,,,,"                          "
+MATH102.02,Desc.,CALCULUS II,4,6,AHMET KAMİL FEYZİOĞLU,TTThTh,3434,,,,,,"                          "
+MATH106.01,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,GÜLNİHAL YÜCEL,TTThTh,1212,,,,,,"                          "
+MATH106.02,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,GÜLNİHAL YÜCEL,TTThTh,3434,,,,,,"                          "
+MATH131.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS I,4,6,CEM YALÇIN YILDIRIM,TTThTh,5656,,,,,,"        MATH                  "
+MATH132.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS II,4,8,NİLGÜN IŞIK,TTThTh,1212,,,,,,"        MATH                  "
+MATH202.03,Desc.,DIFFERENTIAL EQUATIONS,4,7,BURAK GÜREL,MMWW,3434,,,,,,"                          "
+MATH232.01,Desc.,INTRODUCTION TO COMPLEX ANALYSIS,3,6,TALİN BUDAK,TTTh,123,,,,,,"                          "
+MATH232.02,Desc.,INTRODUCTION TO COMPLEX ANALYSIS,3,6,TALİN BUDAK,TTTh,344,,,,,,"                          "
+MATH332.01,Desc.,REAL ANALYSIS II,4,8,ALP EDEN,TTThTh,1212,,,,,,"                          "
+MATH342.01,Desc.,LIFE INSURANCE MATHEMATICS,4,6,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "
+MATH352.01,Desc.,PARTIAL DIFFERENTIAL EQUATIONS,3,6,BURAK GÜREL,MThTh,756,,,,,,"                          "
+MATH412.01,Desc.,INTRODUCTION TO SET THEORY,3,6,ALİ KARATAY,TFF,745,,,,,,"                          "
+MATH436.01,Desc.,FUNCTIONAL ANALYSIS,3,7,BETÜL TANBAY,TThTh,334,,,,,,"                          "
+MATH442.01,Desc.,RISK ANALYSIS,3,6,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "
+MATH480.01,Desc.,SEMINAR,2,4,BETÜL TANBAY,WW,67,,,,,,"                          "
+MATH522.01,Desc.,ALGEBRA II,4,10,AYŞE SOYSAL,TTThTh,1212,,,,,,"                          "
+MATH528.01,Desc.,ANALYTIC NUMBER THEORY,4,10,CEM YALÇIN YILDIRIM,TTThTh,7878,,,,,,"                          "
+MATH579.01,Desc.,GRADUATE SEMINAR,0,1,BETÜL TANBAY,TBA,,,,,,,"                          "
+MATH585.01,Desc.,SEL. TOP. IN PROBABILITY & STATISTICS,3,7,ALP EDEN,TBA,,,,,,,"                          "
+MATH590.01,Desc.,READINGS IN MATHEMATICS,1,3,BETÜL TANBAY,TBA,,,,,,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,BETÜL TANBAY,TBA,,,,,,,"                          "

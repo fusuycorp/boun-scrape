@@ -1,0 +1,23 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.01,Desc.,CALCULUS I,4,6,GÜLNİHAL YÜCEL,TTThTh,1212,,,,,,"                          "
+MATH101.02,Desc.,CALCULUS I,4,6,GÜLNİHAL YÜCEL,TTThTh,3434,,,,,,"                          "
+MATH102.01,Desc.,CALCULUS II,4,6,BETÜL TANBAY,TTThTh,1212,,,,,,"                          "
+MATH102.02,Desc.,CALCULUS II,4,6,BETÜL TANBAY,TTThTh,3434,,,,,,"                          "
+MATH131.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS I,4,6,NİLGÜN IŞIK,TTThTh,4545,,,,,,"        MATH                  "
+MATH132.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS II,4,8,TALİN BUDAK,TTThTh,2323,,,,,,"        MATH                  "
+MATH224.01,Desc.,LINEAR ALGEBRA I,3,6,AYŞE SOYSAL,MMF,121,,,,,,"                          "
+MATH322.01,Desc.,ALGEBRA II,4,8,AHMET KAMİL FEYZİOĞLU,TTThTh,3434,,,,,,"                          "
+MATH332.01,Desc.,REAL ANALYSIS II,4,8,NİLGÜN IŞIK,TTThTh,1212,,,,,,"                          "
+MATH336.01,Desc.,NUMERICAL ANALYSIS,4,6,ALP EDEN,TTWW,5612,,,,,,"                          "
+MATH344.01,Desc.,STATISTICS,3,5,İRİNİ DİMİTRİYADİS,MMW,125,,,,,,"                          "
+MATH436.01,Desc.,FUNCTIONAL ANALYSIS,3,7,TALİN BUDAK,TTTh,565,,,,,,"                          "
+MATH442.01,Desc.,RISK ANALYSIS,3,6,İRİNİ DİMİTRİYADİS,WWTh,236,,,,,,"                          "
+MATH480.01,Desc.,SEMINAR,2,4,ALP EDEN,TBA,,,,,,,"                          "
+MATH497.01,Desc.,SEL.TOP.IN MATH.,1,6,ALP EDEN,TBA,,,,,,,"                          "
+MATH498.01,Desc.,SEL.TOP.IN MATH.,1,6,ALP EDEN,TBA,,,,,,,"                          "
+MATH502.01,Desc.,ALGEBRA II,4,8,AHMET KAMİL FEYZİOĞLU,TTThTh,1212,,,,,,"                          "
+MATH579.01,Desc.,GRADUATE SEMINAR,0,1,ALP EDEN,TBA,,,,,,,"                          "
+MATH580.01,Desc.,READINGS IN MATHEMATICS,1,3,ALP EDEN,TBA,,,,,,,"                          "
+MATH581.01,Desc.,SELECTED TOPICS IN ANALYSIS I,4,7,ALP EDEN,TBA,,,,,,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,ALP EDEN,TBA,,,,,,,"                          "
+MATH790.01,Desc.,Ph.D.THESIS,0,120,ALP EDEN,TBA,,,,,,,"                          "

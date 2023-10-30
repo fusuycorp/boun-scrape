@@ -1,0 +1,62 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Quota,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AL  311.01,Desc.,SURVEY OF AMERICAN LIT. FROM 17-19 CENTU,3,6,Info,KIM FORTUNY,MMTh,565, ,JF 334 | JF 334 | TB 415,,,,"                          "
+AL  311.02,Desc.,SURVEY OF AMERICAN LIT. FROM 17-19 CENTU,3,6,Info,N.CİHAN YURDAÜN,WFF,434, ,M 2152 | TB 490 | TB 490,,,,"                          "
+AS  412.01,Desc.,RESEARCH & WRITING IN AMERICAN STUDIES,3,6,Info,ASLI TEKİNAY,,, ,,,,,"                          "
+CL  103.01,Desc.,CLASSICAL LITERATURE,3,6,Info,MATTHEW GUMPERT,TThTh,723, ,NB 119 | EF 06 | EF 06,,,,"                          "
+CL  207.01,Desc.,LITERARY THEORY AND CRITICISM II,3,6,Info,BAŞAK DEMİRHAN,WWF,347, ,EF 04 | EF 04 | TB 310,,,,"                          "
+CL  207.02,Desc.,LITERARY THEORY AND CRITICISM II,3,6,Info,HANDE TEKDEMİR,WWF,346, ,,,,,"                          "
+CL  307.01,Desc.,LITERARY THEORY&CRITICISM III,3,6,Info,AYLİN ALKAÇ,WFF,556, ,NH 104 | M 2171 | M 2171,,,,"                          "
+CL  480.01,Desc.,SP.TP.CONTEM.ADAPTA&APP.OF SHAKES.TRAGED,3,6,Info,İNCİ BİLGİN TEKİN,MMTh,236, ,TB 490 | TB 490 | TB 415,,,,"                          "
+,,P.S.,,,,İNCİ BİLGİN TEKİN,M,4,,TB 490,,,,"                          "
+CL  486.01,Desc.,SP.TP.POSTCOLONIAL ECOLOGIES,3,6,Info,DENİZ GÜNDOĞAN İBRİŞİM,MThTh,467, ,JF 334 | JF 334 | JF 334,,,,"                          "
+,,P.S.,,,,DENİZ GÜNDOĞAN İBRİŞİM,Th,8,,JF 334,,,,"                          "
+CL  489.01,Desc.,SP.TP.FEMINISM&POETRY,3,6,Info,ÖZLEM GÖREY,TTTh,121, ,TB 240 | TB 240 | TB 240,,,,"                          "
+CL  48A.01,Desc.,SP.TP. AESTHETIC ENCOUNTERS,3,6,Info,MELİH LEVI,WFF,334, ,M 2171 | M 1170 | M 1170,,,,"                          "
+CL  494.01,Desc.,SP.TP.CONTEMPORARY DYSTOPIAN FICTION,3,6,Info,BURCU KAYIŞÇI AKKOYUN,TTTh,782, ,TB 490 | TB 490 | TB 240,,,,"                          "
+DRA 403.01,Desc.,MODERN DRAMA,3,6,Info,ASLI TEKİNAY,TTTh,564, ,TB 490 | TB 490 | TB 490,,,,"                          "
+EL  101.01,Desc.,SURVEY OF ENG.LIT.FROM OLD ENG.PERIOD TO,3,6,Info,ÖZLEM GÖREY,TThTh,445, ,NH 403 | NH 001 | NH 001,,,"LL,TENG,TR","                          "
+,,P.S.,,,,ÖZLEM GÖREY,T,5,,NH 403,,,"LL,TENG,TR","                          "
+EL  101.02,Desc.,SURVEY OF ENG.LIT.FROM OLD ENG.PERIOD TO,3,6,Info,BURCU KAYIŞÇI AKKOYUN,TThTh,445, ,KP 01 | NH 201 | NH 201,,,"LL,TENG,TR","                          "
+,,P.S.,,,,BURCU KAYIŞÇI AKKOYUN,T,5,,KP 01,,,"LL,TENG,TR","                          "
+EL  201.01,Desc.,MEDIEVAL ENGLISH LITERATURE,3,6,Info,JAMESON J.KISMET BELL,TFF,234, ,M 2171 | NH 402 | NH 402,,,,"                          "
+EL  303.01,Desc.,RESTORATION AND AUGUSTAN LITERATURE,3,6,Info,BAŞAK DEMİRHAN,TTF,342, ,M 1171 | M 1171 | TB 490,,,,"                          "
+EL  303.02,Desc.,RESTORATION AND AUGUSTAN LITERATURE,3,6,Info,JAMESON J.KISMET BELL,TTF,342, ,M 2171 | M 2171 | NH 402,,,,"                          "
+EL  405.01,Desc.,VICTORIAN POETRY & PROSE,3,6,Info,MELİH LEVI,WFF,778, ,M 2180 | M 1200 | M 1200,,,,"                          "
+EL  405.02,Desc.,VICTORIAN POETRY & PROSE,3,6,Info,HANDE TEKDEMİR,WFF,778, ,TB 310 | NH 102 | NH 102,,,,"                          "
+EL  412.01,Desc.,SENIOR THESIS,3,6,Info,AYLİN ALKAÇ,,, ,,,,,"                          "
+EL  412.03,Desc.,SENIOR THESIS,3,6,Info,BAŞAK DEMİRHAN,,, ,,,,,"                          "
+EL  412.04,Desc.,SENIOR THESIS,3,6,Info,MELİH LEVI,,, ,,,,,"                          "
+EL  412.06,Desc.,SENIOR THESIS,3,6,Info,KIM FORTUNY,,, ,,,,,"                          "
+EL  412.07,Desc.,SENIOR THESIS,3,6,Info,MATTHEW GUMPERT,,, ,,,,,"                          "
+EL  412.08,Desc.,SENIOR THESIS,3,6,Info,JAMESON J.KISMET BELL,,, ,,,,,"                          "
+EL  412.09,Desc.,SENIOR THESIS,3,6,Info,BURCU KAYIŞÇI AKKOYUN,,, ,,,,,"                          "
+EL  412.11,Desc.,SENIOR THESIS,3,6,Info,ÖZLEM ÖĞÜT,,, ,,,,,"                          "
+EL  412.12,Desc.,SENIOR THESIS,3,6,Info,HANDE TEKDEMİR,,, ,,,,,"                          "
+EL  412.13,Desc.,SENIOR THESIS,3,6,Info,ASLI TEKİNAY,,, ,,,,,"                          "
+EL  412.14,Desc.,SENIOR THESIS,3,6,Info,N.CİHAN YURDAÜN,,, ,,,,,"                          "
+EL  412.15,Desc.,SENIOR THESIS,3,6,Info,ÖZLEM GÖREY,,, ,,,,,"                          "
+EL  588.01,Desc.,SPC.STUD.STUDIES IN MOD.ENGL.POETRY,4,6,Info,KIM FORTUNY,WWW,678, ,,,,,"                          "
+EL  591.01,Desc.,SPC.STUD.:LITERARY THEORY I,4,6,Info,MATTHEW GUMPERT,TTT,234, ,TB 480 | TB 480 | TB 480,,,,"                          "
+EL  593.01,Desc.,SPC.STUD.:ENGLISH NOVEL,4,10,Info,ÖZLEM ÖĞÜT,FFF,345, ,,,,,"                          "
+EL  690.01,Desc.,MASTER THESIS,0,60,Info,MATTHEW GUMPERT,,, ,,,,,"                          "
+EL  690.04,Desc.,MASTER THESIS,0,60,Info,BURCU KAYIŞÇI AKKOYUN,,, ,,,,,"                          "
+EL  690.05,Desc.,MASTER THESIS,0,60,Info,ÖZLEM GÖREY,,, ,,,,,"                          "
+EL  690.06,Desc.,MASTER THESIS,0,60,Info,HANDE TEKDEMİR,,, ,,,,,"                          "
+EL  690.07,Desc.,MASTER THESIS,0,60,Info,ÖZLEM ÖĞÜT,,, ,,,,,"                          "
+EL  690.08,Desc.,MASTER THESIS,0,60,Info,ASLI TEKİNAY,,, ,,,,,"                          "
+ENGL105.01,Desc.,INTRODUCTION TO LITERARY FORMS I,3,6,Info,AYLİN ALKAÇ,WWF,788, ,NH 302 | NH 302 | NH 203,,,,"                          "
+ENGL105.02,Desc.,INTRODUCTION TO LITERARY FORMS I,3,6,Info,ÖZLEM ÖĞÜT,WWF,788, ,TB 490 | TB 490 | TB 310,,,,"                          "
+ENGL105.03,Desc.,INTRODUCTION TO LITERARY FORMS I,3,6,Info,N.CİHAN YURDAÜN,WWF,788, ,NH 104 | NH 104 | NH 103,,,,"                          "
+FA  348.01,Desc.,INTRODUCTION TO FILM ANALYSIS,3,5,Info,CİHAT ARINÇ,MMMFF,67867, ,MİTHAT ALAM | MİTHAT ALAM | MİTHAT ALAM | MİTHAT ALAM | MİTHAT ALAM,,,,"                          "
+FA  349.01,Desc.,FILM THEORY,3,5,Info,TUBA AY,FFFFF,56789, ,JF 108 | JF 108 | JF 108 | JF 108 | JF 108,,,,"                          "
+FA  488.01,Desc.,SP.TP.:SURVEY OF 19TH CENTURY MUSIC,3,5,Info,EMİNE SERDAROĞLU,ThThTh,234, ,JF 108 | JF 108 | JF 108,,,,"                          "
+FA  489.01,Desc.,SP.TOP.:GRAPHIC NOVEL,3,5,Info,MEHMET EMİN ADANALI,WWW,345, ,JF 108 | JF 108 | JF 108,,,,"                          "
+FA  48J.01,Desc.,SP.TP.MYTHIC STRUC.&STORYTELLING IN CIN.,3,5,Info,SALİH MEHMET İNAN,MMM,345, ,SINEBU | SINEBU | SINEBU,,,,"                          "
+FA  490.01,Desc.,SP.TP.ADV.GRAPHIC NOVEL&COMICS,3,5,Info,MEHMET EMİN ADANALI,,, ,,,,,"                          "
+FA  49F.01,Desc.,SP.TP.MAKING OF A FILM,3,5,Info,MUHAMMET YUSUF EMİRDAR,MMM,123, ,NB Z13 | NB Z13 | NB Z13,,,,"                          "
+FA  49K.01,Desc.,SP.TP.FILM NOIR ,3,5,Info,TUBA AY,ThThTh,567, ,JF 108 | JF 108 | JF 108,,,,"                          "
+FA  49O.01,Desc.,SP.TP.ORIENTALISM IN MUSIC,3,5,Info,RANA İREN,WWW,123, ,JF 102 | JF 102 | JF 102,,,,"                          "
+FA  49P.01,Desc.,SP. TP.: COMPREHENSIVE FILM APPRECIATION I,3,5,Info,ŞAHAN YATARKALKMAZ,MMM,678, ,NB B10 | NB B10 | NB B10,,,,"                          "
+,,P.S.,,,,ŞAHAN YATARKALKMAZ,MM,1011,,JF 331 | JF 331,,,,"                          "
+LIT 311.01,Desc.,COPYWRITING FOR MARKETING&ADVERTISING,3,6,Info,SAMİ BASUT,WWW,678, ,TB 240 | TB 240 | TB 240,,,,"                          "
+LIT 411.01,Desc.,COPYWRITING I,3,6,Info,NEŞET DERELİ,WWW,91011, ,TB 490 | TB 490 | TB 490,,,,"                          "

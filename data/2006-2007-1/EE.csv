@@ -1,0 +1,43 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EE  100.01,Desc.,ORIENTATION FOR ELECTRICAL ENGINEERING,1,3,GÜNHAN DÜNDAR,M,2,,KBPCLAB,,,,"                          "
+EE  140.01,Desc.,DIGITAL SYSTEMS,4,5,IŞIL BOZMA,MWW,112,,KBPCLAB | KB 125 | KB 125,,,,"                          "
+EE  202.01,Desc.,ELECTRICAL CIRCUITS II,4,8,BURAK ACAR,TTThTh,7834,,KBPCLAB | KBPCLAB | KBPCLAB | KBPCLAB,,,,"                          "
+EE  210.01,Desc.,INTRODUCTION TO ELECTRICAL ENGINEERING,3,6,OĞUZHAN ÇİÇEKOĞLU,TTTh,567,,KB 125 | KB 125 | KBZ 01,,,,"                          "
+EE  210.02,Desc.,INTRODUCTION TO ELECTRICAL ENGINEERING,3,6,ARDA YALÇINKAYA,MMW,567,,KBZ 01 | KBZ 01 | KBZ 01,,,,"                          "
+EE  303.01,Desc.,MATHEMATICAL METHODS IN ELECTRICAL ENGR.,3,4,BURAK ACAR,WWF,787,,KBPCLAB | KBPCLAB | KBPCLAB,,,,"                          "
+EE  313.01,Desc.,PROBABILITY FOR ELECTRICAL ENGINEERS,4,7,YAĞMUR DENİZHAN,TTFF,2356,,KBPCLAB | KBPCLAB | KBPCLAB | KBPCLAB,,,,"                          "
+EE  333.01,Desc.,ELECTRONICS I,3,4,GÜNHAN DÜNDAR,WWF,342,,KBPCLAB | KBPCLAB | KBPCLAB,,,,"                          "
+EE  363.01,Desc.,ELECTROMAGNETIC FIELD THEORY,4,4,HEBA MOHAMED YÜKSEL,MMWW,1212,,KB 125 | KB 125 | KBPCLAB | KBPCLAB,,,,"                          "
+EE  373.01,Desc.,SIGNALS & SYSTEMS,4,5,AYŞIN ERTÜZÜN,TTThTh,5634,,KBZ 01 | KBZ 01 | KB 125 | KB 125,,,,"                          "
+EE  433.01,Desc.,COMMUNICATION ELECTRONICS,3,6,AVNİ MORGÜL,MMTh,344,,,,,,"                          "
+EE  437.01,Desc.,OP. AMPS & APPLICATIONS,3,6,YASEMİN KAHYA,MWW,667,,KB 125,,,,"                          "
+EE  439.01,Desc.,ELECTRONICS LAB. II,1,6,ÖMER CERİD,FF,78,,,,,,"                          "
+EE  443.01,Desc.,MICROPROCESSORS,4,6,ÖMER CERİD,TFF,456,,,,,,"                          "
+EE  450.01,Desc.,CONTROL TECHNOLOGY & DESIGN,4,6,KEMAL CILIZ,TThTh,112,,,,,,"                          "
+EE  451.01,Desc.,INTRODUCTION TO ROBOT CONTROL,3,6,KEMAL CILIZ,MMTh,563,,,,,,"                          "
+EE  453.01,Desc.,LINEAR SYSTEM THEORY,4,6,KADRİ ÖZÇALDIRAN,MMWW,3423,,KBPCLAB | KBPCLAB,,,,"                          "
+EE  457.01,Desc.,INTRODUCTION TO OPTIMIZATION THEORY,3,6,M. OKYAY KAYNAK,TTTh,565,,KBPCLAB | KBPCLAB | KBPCLAB,,,,"                          "
+EE  473.01,Desc.,INTRODUCTION TO DIGITAL SIGNAL PROCESSIN,3,6,LEVENT ARSLAN,TTTh,563,,,,,,"                          "
+EE  475.01,Desc.,INTRODUCTION TO IMAGE PROCESSING,3,6,BÜLENT SANKUR,TTTh,125,,,,,,"                          "
+EE  477.01,Desc.,DIGITAL COMMUNICATION,4,6,MUTLU KOCA,WWFF,6756,,,,,,"                          "
+EE  479.01,Desc.,COMMUNICATION LABORATORY,1,2,AVNİ MORGÜL,TT,78,,,,,,"                          "
+EE  479.02,Desc.,COMMUNICATION LABORATORY,1,2,HAKAN DELİÇ,ThTh,67,,,,,,"                          "
+EE  484.01,Desc.,SP.TOP.:MANAGEMENT FOR ENGINEERS,3,4,BARHAN ÖZCE,FFF,123,,,,,,"                          "
+EE  491.01,Desc.,SPECIAL PROJECT,4,6,ŞENOL MUTLU,TBA,,,,,,,"                          "
+EE  492.01,Desc.,PROJECT,4,6,ŞENOL MUTLU,TBA,,,,,,,"                          "
+EE  497.01,Desc.,SP.TOP.(JAVA PROGRAMMING),3,6,IŞIL BOZMA,MWW,245,,,,,,"                          "
+EE  531.01,Desc.,TV  ENGINEERING,3,7,AVNİ MORGÜL,TTTh,563,,,,,,"                          "
+EE  537.01,Desc.,INTRODUCTION TO VLSI DESIGN,3,7,GÜNHAN DÜNDAR,TTTh,235,,,,,,"                          "
+EE  541.01,Desc.,COMPUTER COMMUNICATION NETWORKS I,3,7,BÜLENT SANKUR,TThTh,412,,,,,,"                          "
+EE  579.01,Desc.,GRADUATE SEMINAR,0,6,YASEMİN KAHYA,F,7,,,,,,"                          "
+EE  589.01,Desc.,SP.TOP.:MOBILE NETWORKS,3,7,EMİN ANARIM,MTT,567,,,,,,"                          "
+EE  592.01,Desc.,SEL.TOP.:(COMPUTATIONAL INTELLIGENCE),3,7,M. OKYAY KAYNAK,TTTh,234,,,,,,"                          "
+EE  596.01,Desc.,SEL.TOP.:INTRODUCTION TO MICRO ELECTRO M,3,7,ŞENOL MUTLU,TThTh,112,,KBPCLAB,,,,"                          "
+EE  599.01,Desc.,SEL.TOP.CURRENT-MODE ANALOG CIRCUITS,3,6,OĞUZHAN ÇİÇEKOĞLU,TTTh,786,, | N/A | KBPCLAB,,,,"                          "
+EE  631.01,Desc.,ADVANCED ELECTRONIC CIRCUITS,3,6,ÖMER CERİD,MMF,343,,,,,,"                          "
+EE  643.01,Desc.,DIGITAL MODULATION,3,6,MUTLU KOCA,WWF,233,,,,,,"                          "
+EE  677.01,Desc.,DETECTION ESTIMATION THEORY,3,6,HAKAN DELİÇ,TThTh,834,,,,,,"                          "
+EE  680.01,Desc.,SP.TOP.(MACHINE LEARNING FOR SIGNAL PROC,3,6,MURAT SARAÇLAR,TBA,,,,,,,"                          "
+EE  690.01,Desc.,M.S.THESIS,0,60,GÜNHAN DÜNDAR,TBA,,,,,,,"                          "
+EE  699.01,Desc.,GUIDED RESEARCH,4,8,GÜNHAN DÜNDAR,TBA,,,,,,,"                          "
+EE  790.01,Desc.,Ph.D.THESIS,0,120,GÜNHAN DÜNDAR,TBA,,,,,,,"                          "

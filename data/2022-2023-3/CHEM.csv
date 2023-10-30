@@ -1,0 +1,4 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHEM103.01,Desc.,GENERAL CHEMISTRY I,3,7,DUYGU  TUNCEL TURAN,TTWWThThThTh,34341234, ,KB 125 | KB 125 | KB 125 | KB 125 | PS | PS | KB 125 | KB 125,15.08.2023,2,,"        BIO; CEDU; CHE; PEDU; PRSC                  "
+CHEM104.01,Desc.,GENERAL CHEMISTRY II,3,6,JESMI ÇAVUŞOĞLU,MMMMTTWW,12341212, ,KB 125 | KB 125 | PS | PS | KB 125 | KB 125 | KB 125 | KB 125,15.08.2023,3,,"        BIO; CHE; CEDU; PRSC                  "
+CHEM105.01,Desc.,FUNDAMENTALS OF CHEMISTRY,4,6,JESMI ÇAVUŞOĞLU,TTTTWWWWThThThThThTh,34563456123456, ,KB Z01 | KB Z01 | LAB | LAB | KB Z01 | KB Z01 | LAB | LAB | PS | PS,12.08.2023,3,,"        ME; CMPE; EE; PHYS                  "

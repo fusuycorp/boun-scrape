@@ -1,0 +1,26 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY ,3,7,MURAT BAÇ,TThF,665,,M 1171 | M 1200 | TB 310,,,,"        PSY; LING; GUID; LAW                  "
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY ,3,7,YILDIZ SİLİER,MMTh,566,,TB 310 | TB 310 | TB 310,,,"GUID,PSY,TR","        PHIL                  "
+PHIL105.01,Desc.,CRITICAL THINKING,3,6,KARANFİL SOYHUN,TTF,122,,M 1100 | M 1100 | M 1100,,,,"        PHIL                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,5,BERNA KILINÇ,WWF,786,,TB 310 | TB 310 | GYM,,,"LL,TKL","        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,3,10,BERNA KILINÇ,ThThF,784,,TB 260 | TB 260 | M 2181,,,,"                          "
+PHIL131.02,Desc.,LOGIC I,3,10,SUN DEMİRLİ,TTTh,344,,KPARK1 | KPARK1 | GYM,,,"MATH,MEDU","                          "
+PHIL213.01,Desc.,HISTORY OF PHILOSOPHY I,3,6,CHRYSSI SIDIROPOULOU,ThThF,346,,KPARK4 | KPARK4 | M 1171,,,,"        PHIL                  "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,MURAT BAÇ,WThF,653,,TB 260 | M 1200 | TB 310,,,,"        PHIL                  "
+PHIL313.01,Desc.,HISTORY OF PHILOSOPHY III,3,6,STEPHEN VOSS,MWW,234,,TB 310 | TB 240 | TB 240,,,,"        PHIL                  "
+PHIL341.01,Desc.,ETHICS,3,6,KARANFİL SOYHUN,TTF,565,,M 2152 | M 2152 | M 1100,,,,"        PHIL                  "
+PHIL354.01,Desc.,SOCIAL & POLITICAL PHILOSOPHY,3,6,GÜROL IRZIK,MMM,367,,TB 260 | TB 260 | TB 260,,,,"                          "
+PHIL461.01,Desc.,AESTHETICS,3,6,YILDIZ SİLİER,MThTh,834,,TB 415 | M 1200 | M 1200,,,,"                          "
+PHIL48S.01,Desc.,SP.TOP.:LATE WITTGENSTEIN,3,6,CHRYSSI SIDIROPOULOU,ThFF,223,,KPARK4 | M 2181 | M 2181,,,,"                          "
+PHIL48V.01,Desc.,SP.TOP.:CURIOSITY CERTAINTY & DOGMATISM,3,6,İLHAN İNAN,TTT,234,,M 1152 | M 1152 | M 1152,,,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,BERNA KILINÇ,,, ,,,,,"                          "
+PHIL519.01,Desc.,HISTORY OF SCIENCE & PHILOSOPHY,4,10,GÜROL IRZIK,WWW,678,,,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL580.01,Desc.,SP.TOP.:METAPHYSICS,4,10,SUN DEMİRLİ,FFF,456,,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL58H.01,Desc.,SP.TOP.:KANT'S THIRD CRITIQUE,4,10,PINAR CANEVİ,ThThTh,678,,,,,,"                          "
+PHIL58J.01,Desc.,SP.TOP.:PHILOSOPHY & LİTERATURE,4,10,ZEYNEP DAVRAN,TTT,567,,,,,,"                          "
+PHIL652.01,Desc.,PHILOSOPHY OF MIND,4,10,STEPHEN VOSS,MMM,678,,,,,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,MURAT BAÇ,TBA,,,,,,,"                          "

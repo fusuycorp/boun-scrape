@@ -1,0 +1,95 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHYL101.01,Desc.,PHYSICS I LAB,0,,ZÜHAL KAPLAN,FF,910,Online,ONLINE | ONLINE,,,,"                          "
+PHYL102.01,Desc.,PHYSICS II LAB,0,,ZÜHAL KAPLAN,WW,910,Online,ONLINE | ONLINE,,,,"                          "
+PHYL201.01,Desc.,PHYSICS III LAB,0,,ZÜHAL KAPLAN,TT,910,Online,ONLINE | ONLINE,,,,"                          "
+PHYL202.01,Desc.,PHYSICS IV LAB,0,,ZÜHAL KAPLAN,MM,910,Online,ONLINE | ONLINE,,,,"                          "
+PHYS101.01,Desc.,PHYSICS I,4,8,ÖZHAN ÖZATAY,MWF,111111,Online,ONLINE | ONLINE | ONLINE,14.01.2022,3,,"                          "
+PHYS101.02,Desc.,PHYSICS I,4,8,HAKAN  ERKOL,MWF,222,Online/Classroom,ONLINE | AYHAN ŞAHENK | ONLINE,14.01.2022,3,,"                          "
+PHYS101.04,Desc.,PHYSICS I,4,8,HAKAN  ERKOL,MWF,333,Online/Classroom,ONLINE | ONLINE | HD 201,14.01.2022,3,,"                          "
+PHYS101.06,Desc.,PHYSICS I,4,8,PARVİZ ELAHİ,MWF,555,Online/Classroom,HD 201 | ONLINE | ONLINE,14.01.2022,3,,"                          "
+PHYS102.01,Desc.,PHYSICS II,4,8,SERDAR NERGİZ,MMWW,3434,Online,ONLINE | ONLINE | ONLINE | ONLINE,20.01.2022,2,,"                          "
+PHYS121.01,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,ERHAN GÜLMEZ,MWF,222,Online,ONLINE | ONLINE | ONLINE,07.01.2022,1,,"                          "
+PHYS121.02,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,ERHAN GÜLMEZ,MWF,333,Online/Classroom,ONLINE | ONLINE | NH 101,07.01.2022,1,,"                          "
+PHYS121.03,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,ERHAN GÜLMEZ,MWF,444,Online,ONLINE | ONLINE | ONLINE,07.01.2022,1,,"                          "
+PHYS130.01,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,ÖZGÜR BURAK ASLAN,MMWW,1212,Online,ONLINE | ONLINE | ONLINE | ONLINE,20.01.2022,3,,"                          "
+PHYS130.02,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,ÖZGÜR BURAK ASLAN,MMWW,3434,Online,ONLINE | ONLINE | ONLINE | ONLINE,20.01.2022,3,,"                          "
+PHYS197.01,Desc.,ANALYTICAL METHODS IN PHYSICS,3,6,CAN KOZÇAZ,MMWW,1212,Online,ONLINE | ONLINE | ONLINE | ONLINE,15.01.2022,2,,"        PHYS                  "
+PHYS201.01,Desc.,PHYSICS III,4,6,MEHMET BURÇİN ÜNLÜ,TTThTh,3434,Online/Classroom,ONLINE | ONLINE | AYHAN ŞAHENK | AYHAN ŞAHENK,21.01.2022,1,,"                          "
+PHYS201.02,Desc.,PHYSICS III,4,6,İBRAHİM SEMİZ,TTThTh,3434,Classroom,NH 405 | NH 405 | NH 405 | NH 405,21.01.2022,1,,"                          "
+PHYS201.03,Desc.,PHYSICS III,4,6,MEHMET BURÇİN ÜNLÜ,TTThTh,5656,Online/Classroom,ONLINE | ONLINE | NH 105 | NH 105,21.01.2022,1,,"                          "
+PHYS201.04,Desc.,PHYSICS III,4,6,LEVENT AKANT,TTThTh,5656,Online,ONLINE | ONLINE | ONLINE | ONLINE,21.01.2022,1,,"                          "
+PHYS201.05,Desc.,PHYSICS III,4,6,İBRAHİM SEMİZ,TTThTh,5656,Classroom,NH 301 | NH 301 | NH 405 | NH 405,21.01.2022,1,,"                          "
+PHYS201.06,Desc.,PHYSICS III,4,6,OSMAN TEOMAN TURGUT,TTThTh,7878,Online,ONLINE | ONLINE | ONLINE | ONLINE,21.01.2022,1,,"                          "
+PHYS202.01,Desc.,PHYSICS IV,4,6,AŞKIN ANKAY,TTThTh,3434,Online,ONLINE | ONLINE | ONLINE | ONLINE,12.01.2022,1,,"                          "
+PHYS202.02,Desc.,PHYSICS IV,4,6,AŞKIN ANKAY,TTThTh,5656,Online/Classroom,ONLINE | ONLINE | NH 305 | NH 305,12.01.2022,1,,"                          "
+PHYS221.01,Desc.,THERMAL PROPERTIES OF MATTER,3,5,TONGUÇ RADOR,TTThTh,1212,Online/Classroom,AYHAN ŞAHENK | AYHAN ŞAHENK | ONLINE | ONLINE,11.01.2022,1,,"        PHYS                  "
+PHYS225.01,Desc.,INTRODUCTION TO EARTH SCIENCE I,3,6,LEVENT KURNAZ,MMTh,565,Online/Classroom,ONLINE | ONLINE | NH 101,17.01.2022,3,,"                          "
+PHYS225.02,Desc.,INTRODUCTION TO EARTH SCIENCE I,3,6,LEVENT KURNAZ,MMTh,786,Online,ONLINE | ONLINE | ONLINE,17.01.2022,3,,"                          "
+PHYS301.01,Desc.,CLASSICAL MECHANICS I,3,6,ILMAR GAHRAMANOV,MMWW,3434,Classroom,NH 305 | NH 305 | KB Z01 | KB Z01,17.01.2022,2,,"        PHYS                  "
+PHYS311.01,Desc.,MODERN PHYSICS I,3,7,LEVENT AKANT,MMWW,5656,Classroom,NH 305 | NH 305 | KB Z01 | KB Z01,12.01.2022,1,,"        PHYS                  "
+PHYS325.01,Desc.,MATHEMATICAL METHODS OF PHYSICS I,3,5,ARKADAŞ İNAN ÖZAKIN,TTThTh,5656,Classroom,NH 202 | NH 202 | NH 202 | NH 202,15.01.2022,3,,"        PHYS                  "
+PHYS331.01,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,TTFFF,56123,Online/Classroom,ONLINE | ONLINE | CLASSROOM | CLASSROOM | CLASSROOM,08.01.2022,3,,"        PHYS                  "
+PHYS331.02,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,TTFFF,56456,Online/Classroom,ONLINE | ONLINE | CLASSROOM | CLASSROOM | CLASSROOM,08.01.2022,3,,"        PHYS                  "
+PHYS331.03,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,TTFFF,56789,Online/Classroom,ONLINE | ONLINE | CLASSROOM | CLASSROOM | CLASSROOM,08.01.2022,3,,"        PHYS                  "
+PHYS331.04,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,TTThThTh,78456,Online,ONLINE | ONLINE | ONLINE | ONLINE | ONLINE,08.01.2022,3,,"        PHYS                  "
+PHYS331.05,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,TTThThTh,78789,Online,ONLINE | ONLINE | ONLINE | ONLINE | ONLINE,08.01.2022,3,,"        PHYS                  "
+PHYS332.01,Desc.,ELECTRONICS FOR PHYSICISTS II,3,6,YANI SKARLATOS,,,Online,,10.01.2022,3,,"                          "
+PHYS345.01,Desc.,CLASSICAL ASTRONOMY,3,6,ENİSE NİHAL ERCAN,TTTh,232,Online,ONLINE | ONLINE | ONLINE,11.01.2022,3,,"                          "
+PHYS346.01,Desc.,INTRODUCTION TO ASTROPHYSICS,3,6,ENİSE NİHAL ERCAN,TThTh,434,Online,ONLINE | ONLINE | ONLINE,07.01.2022,3,,"                          "
+PHYS401.01,Desc.,ELECTROMAGNETISM I,3,4,OSMAN TEOMAN TURGUT,TTThTh,3434,Online,ONLINE | ONLINE | ONLINE | ONLINE,10.01.2022,1,,"        PHYS                  "
+PHYS407.01,Desc.,ADVANCED QUANTUM PHYSICS I,3,7,ERSAN DEMİRALP,MMWW,5656,Classroom,NH 201 | NH 201 | NH 102 | NH 102,11.01.2022,3,,"        PHYS                  "
+PHYS411.01,Desc.,QUANTUM MECHANICS I,3,6,SERDAR NERGİZ,MMWW,5656,Classroom,EF 206 | EF 206 | NH 301 | NH 301,21.01.2022,3,,"        PHYS                  "
+PHYS421.01,Desc.,STATISTICAL MECHANICS,3,6,ERSAN DEMİRALP,TTThTh,7878,Online,ONLINE | ONLINE | ONLINE | ONLINE,20.01.2022,3,,"        PHYS                  "
+PHYS449.01,Desc.,COSMIC X-RAY ASTRONOMY,3,6,ENİSE NİHAL ERCAN,WWF,343,Online,ONLINE | ONLINE | ONLINE,10.01.2022,3,,"                          "
+PHYS48R.01,Desc.,SEL.TP.IN PHYS:INTR.TO RELATIVITY THEORY,3,6,DIETER VAN DEN BLEEKEN,,,Online,,07.01.2022,1,,"                          "
+PHYS48U.01,Desc.,SEL.TP.:COSMOLOGY,3,6,ALPAR  SEVGEN,,,Online,,13.01.2022,3,,"                          "
+PHYS48Y.01,Desc.,SL.TP.PHYSICS OF SAILING,3,6,TONGUÇ RADOR,,,Online,,12.01.2022,2,,"                          "
+PHYS490.01,Desc.,SEL.TP.SYNCHROTRON RADIATION&ITS(ONLINE),3,6,MEHMET ALPER ŞAHİNER,,,Online,,11.01.2022,1,,"                          "
+PHYS491.02,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,ÖZHAN ÖZATAY,,,Online,,,,,"                          "
+PHYS491.03,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,BORA AKGÜN,,,Online,,,,,"                          "
+PHYS491.04,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,DIETER VAN DEN BLEEKEN,,,Online,,,,,"                          "
+PHYS491.06,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,METİN ARIK,,,Online,,,,,"                          "
+PHYS491.07,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,ARKADAŞ İNAN ÖZAKIN,,,Online,,,,,"                          "
+PHYS491.08,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,HAKAN  ERKOL,,,Online,,,,,"                          "
+PHYS491.09,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,MEHMET BURÇİN ÜNLÜ,,,Online,,,,,"                          "
+PHYS491.11,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,ILMAR GAHRAMANOV,,,Online,,,,,"                          "
+PHYS491.12,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,OSMAN TEOMAN TURGUT,,,Online,,,,,"                          "
+PHYS491.13,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,ÖZGÜR BURAK ASLAN,,,Online,,,,,"                          "
+PHYS495.01,Desc.,SEL.TP.INTEGRABLE SYSTEMS,3,6,ILMAR GAHRAMANOV,,,Online,,19.01.2022,1,,"                          "
+PHYS499.01,Desc.,SP.TP.DATA STRUCTURES&ANALYSIS,3,6,YÜKSEL GÜNAL,,,Online,,18.01.2022,3,,"                          "
+PHYS500.01,Desc.,READING IN PHYSICS,1,3,CAN KOZÇAZ,,,Online,,,,,"                          "
+PHYS501.01,Desc.,CLASSICAL DYNAMICS,4,10,CAN KOZÇAZ,,,Online,,18.01.2022,3,,"                          "
+PHYS511.01,Desc.,ELECTROMAGNETIC THEORY I,4,10,ILMAR GAHRAMANOV,,,Online,,10.01.2022,3,,"                          "
+PHYS531.01,Desc.,QUANTUM MECHANICS I,4,10,PARVİZ ELAHİ,,,Online,,20.01.2022,3,,"                          "
+PHYS571.01,Desc.,X-RAY ASTRONOMY,4,10,ENİSE NİHAL ERCAN,,,Online,,08.01.2022,2,,"                          "
+PHYS587.01,Desc.,SP. TOP. IN PHYS.DATA AN. IN X-RAY ASTRO,4,10,ENİSE NİHAL ERCAN,,,Online,,07.01.2022,2,,"                          "
+PHYS58E.01,Desc.,SP.TP.IN PHYS:SPINTRONICS,4,10,ÖZHAN ÖZATAY,,,Online,,07.01.2022,1,,"                          "
+PHYS590.01,Desc.,SP.TOP.ACCRETION MECHANISMS,4,10,ENİSE NİHAL ERCAN,,,Online,,13.01.2022,1,,"                          "
+PHYS665.01,Desc.,FIELD THEORY I,4,10,DIETER VAN DEN BLEEKEN,MMM,234,Online,ONLINE | ONLINE | ONLINE,08.01.2022,1,,"                          "
+PHYS68L.01,Desc.,SP.TOP.IN PHYS:ATMOSPHERIC&OCEANIC FLUID,4,10,MURAT TÜRKEŞ,,,Online,,10.01.2022,3,,"                          "
+PHYS690.01,Desc.,M.S. THESIS,0,60,ERHAN GÜLMEZ,,,Online,,,,,"                          "
+PHYS690.02,Desc.,M.S. THESIS,0,60,ENİSE NİHAL ERCAN,,,Online,,,,,"                          "
+PHYS690.03,Desc.,M.S. THESIS,0,60,ÖZHAN ÖZATAY,,,Online,,,,,"                          "
+PHYS690.04,Desc.,M.S. THESIS,0,60,VEYSİ ERKCAN ÖZCAN,,,Online,,,,,"                          "
+PHYS690.05,Desc.,M.S. THESIS,0,60,CAN KOZÇAZ,,,Online,,,,,"                          "
+PHYS690.06,Desc.,M.S. THESIS,0,60,DIETER VAN DEN BLEEKEN,,,Online,,,,,"                          "
+PHYS690.07,Desc.,M.S. THESIS,0,60,ÖZGÜR BURAK ASLAN,,,Online,,,,,"                          "
+PHYS690.08,Desc.,M.S. THESIS,0,60,MEHMET BURÇİN ÜNLÜ,,,Online,,,,,"                          "
+PHYS690.09,Desc.,M.S. THESIS,0,60,PARVİZ ELAHİ,,,Online,,,,,"                          "
+PHYS690.10,Desc.,M.S. THESIS,0,60,LEVENT AKANT,,,Online,,,,,"                          "
+PHYS690.11,Desc.,M.S. THESIS,0,60,ILMAR GAHRAMANOV,,,Online,,,,,"                          "
+PHYS700.01,Desc.,GRADUATE SEMINAR,0,6,MEHMET BURÇİN ÜNLÜ,,,Online,,,,,"                          "
+PHYS790.01,Desc.,Ph.D.THESIS,0,120,NACİ İNCİ,,,Online,,,,,"                          "
+PHYS790.02,Desc.,Ph.D.THESIS,0,120,VEYSİ ERKCAN ÖZCAN,,,Online,,,,,"                          "
+PHYS790.03,Desc.,Ph.D.THESIS,0,120,LEVENT AKANT,,,Online,,,,,"                          "
+PHYS790.04,Desc.,Ph.D.THESIS,0,120,CAN KOZÇAZ,,,Online,,,,,"                          "
+PHYS790.05,Desc.,Ph.D.THESIS,0,120,DIETER VAN DEN BLEEKEN,,,Online,,,,,"                          "
+PHYS790.06,Desc.,Ph.D.THESIS,0,120,ENİSE NİHAL ERCAN,,,Online,,,,,"                          "
+PHYS790.07,Desc.,Ph.D.THESIS,0,120,ERHAN GÜLMEZ,,,Online,,,,,"                          "
+PHYS790.08,Desc.,Ph.D.THESIS,0,120,İBRAHİM SEMİZ,,,Online,,,,,"                          "
+PHYS790.09,Desc.,Ph.D.THESIS,0,120,ÖZHAN ÖZATAY,,,Online,,,,,"                          "
+PHYS790.10,Desc.,Ph.D.THESIS,0,120,OSMAN TEOMAN TURGUT,,,Online,,,,,"                          "
+PHYS790.11,Desc.,Ph.D.THESIS,0,120,MEHMET BURÇİN ÜNLÜ,,,Online,,,,,"                          "
+PHYS790.12,Desc.,Ph.D.THESIS,0,120,LEVENT KURNAZ,,,Online,,,,,"                          "
+STS 322.01,Desc.,HISTORY OF CLASSICAL PHYSICS,3,6,ÖMÜR AKYÜZ,TTTh,121,Classroom,KB 125 | KB 125 | KB 125,21.01.2022,3,,"                          "
+STS 488.01,Desc.,SP.TP.THE AGE OF SUSTAINABLE DEVELOPMENT,3,6,LEVENT KURNAZ,TTT,123,Online,ONLINE | ONLINE | ONLINE,10.01.2022,1,,"                          "

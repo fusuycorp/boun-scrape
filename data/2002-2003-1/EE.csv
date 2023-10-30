@@ -1,0 +1,38 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EE  100.01,Desc.,ORIENTATION FOR ELECTRICAL ENGINEERING,1,3,YAĞMUR DENİZHAN,Th,2,,,,,,"                          "
+EE  140.01,Desc.,DIGITAL SYSTEMS,4,5,IŞIL BOZMA,MMW,561,,,,,,"                          "
+EE  210.01,Desc.,INTRODUCTION TO ELECTRICAL ENGINEERING,3,6,KEMAL CILIZ,TTTh,569,,,,,,"                          "
+EE  303.01,Desc.,MATHEMATICAL METHODS IN ELECTRICAL ENGR.,3,4,HAKAN DELİÇ,MWW,556,,,,,,"                          "
+EE  313.01,Desc.,PROBABILITY FOR ELECTRICAL ENGINEERS,4,7,YAĞMUR DENİZHAN,TTFF,3456,,,,,,"                          "
+EE  327.01,Desc.,ELECTRICAL NETWORKS LABORATORY,2,3,OĞUZHAN ÇİÇEKOĞLU,M,3,,,,,,"                          "
+EE  333.01,Desc.,ELECTRONICS I,3,4,OĞUZHAN ÇİÇEKOĞLU,WWF,232,,,,,,"                          "
+EE  363.01,Desc.,ELECTROMAGNETIC FIELD THEORY,3,4,SELİM ŞEKER,MMW,121,,,,,,"                          "
+EE  433.01,Desc.,COMMUNICATION ELECTRONICS,3,6,AVNİ MORGÜL,MMTh,343,,,,,,"                          "
+EE  437.01,Desc.,OP. AMPS & APPLICATIONS,3,6,YASEMİN KAHYA,MWW,667,,,,,,"                          "
+EE  439.01,Desc.,ELECTRONICS LAB. II,1,6,ÖMER CERİD,FF,78,,,,,,"                          "
+EE  443.01,Desc.,MICROPROCESSORS,4,6,ÖMER CERİD,TFF,456,,,,,,"                          "
+EE  450.01,Desc.,CONTROL TECHNOLOGY & DESIGN,4,6,M. OKYAY KAYNAK,MWW,267,,,,,,"                          "
+EE  453.01,Desc.,LINEAR SYSTEM THEORY,4,6,KADRİ ÖZÇALDIRAN,MMWW,3423,,,,,,"                          "
+EE  460.01,Desc.,INTRODUCTION TO REMOTE SENSING,3,6,SELİM ŞEKER,WThTh,412,,,,,,"                          "
+EE  473.01,Desc.,INTRODUCTION TO DIGITAL SIGNAL PROCESSIN,3,6,LEVENT ARSLAN,TTTh,234,,,,,,"                          "
+EE  475.01,Desc.,INTRODUCTION TO IMAGE PROCESSING,3,6,BÜLENT SANKUR,WWF,121,,,,,,"                          "
+EE  477.01,Desc.,DIGITAL COMMUNICATION,4,6,AYŞIN ERTÜZÜN,WWFF,3423,,,,,,"                          "
+EE  479.01,Desc.,COMMUNICATION LABORATORY,1,2,AVNİ MORGÜL,TT,78,,,,,,"                          "
+EE  479.02,Desc.,COMMUNICATION LABORATORY,1,2,AVNİ MORGÜL,ThTh,67,,,,,,"                          "
+EE  492.01,Desc.,PROJECT,4,6,KADRİ ÖZÇALDIRAN,TBA,,,,,,,"                          "
+EE  497.01,Desc.,SP.TOP.(JAVA PROGRAMMING),3,6,IŞIL BOZMA,MMW,125,,,,,,"                          "
+EE  531.01,Desc.,TV  ENGINEERING,3,7,AVNİ MORGÜL,TTTh,562,,,,,,"                          "
+EE  537.01,Desc.,INTRODUCTION TO VLSI DESIGN,3,7,YASEMİN KAHYA,TTTh,235,,,,,,"                          "
+EE  541.01,Desc.,COMPUTER COMMUNICATION NETWORKS I,3,7,KEMAL CILIZ,MMW,561,,,,,,"                          "
+EE  577.01,Desc.,STATISTICAL SIGNAL ANALYSIS,3,7,BÜLENT SANKUR,WWF,565,,,,,,"                          "
+EE  579.01,Desc.,GRADUATE SEMINAR,0,6,KADRİ ÖZÇALDIRAN,F,7,,,,,,"                          "
+EE  587.01,Desc.,SP.TOP.: FUZZY CONTROL,3,6,M. OKYAY KAYNAK,TBA,,,,,,,"                          "
+EE  589.01,Desc.,SP.TOP:(MOBILE NETWORKS),3,7,EMİN ANARIM,TBA,,,,,,,"                          "
+EE  631.01,Desc.,ADVANCED ELECTRONIC CIRCUITS,3,6,ÖMER CERİD,MMF,343,,,,,,"                          "
+EE  633.01,Desc.,COMPUTATIONAL ASPECTS OF VLSI,3,6,ARDA YURDAKUL,MM,34,,,,,,"                          "
+EE  643.01,Desc.,DIGITAL MODULATION,3,6,HAKAN DELİÇ,TBA,,,,,,,"                          "
+EE  677.01,Desc.,DETECTION ESTIMATION THEORY,3,6,EMİN ANARIM,MMT,565,,,,,,"                          "
+EE  683.01,Desc.,SP.TOP:ADVANCED TOP.IN SPEECH PROC.,3,6,LEVENT ARSLAN,TBA,,,,,,,"                          "
+EE  690.01,Desc.,M.S.THESIS,0,60,KADRİ ÖZÇALDIRAN,TBA,,,,,,,"                          "
+EE  699.01,Desc.,GUIDED RESEARCH,4,8,KADRİ ÖZÇALDIRAN,TBA,,,,,,,"                          "
+EE  790.01,Desc.,Ph.D.THESIS,0,120,KADRİ ÖZÇALDIRAN,TBA,,,,,,,"                          "

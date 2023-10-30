@@ -1,0 +1,23 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.01,Desc.,CALCULUS I,4,6,NİLGÜN IŞIK,TTThTh,1212,,,,,,"                          "
+MATH101.02,Desc.,CALCULUS I,4,6,NİLGÜN IŞIK,TTThTh,3434,,,,,,"                          "
+MATH101.03,Desc.,CALCULUS I,4,6,CEM YALÇIN YILDIRIM,TTThTh,3434,,,,,,"                          "
+MATH102.01,Desc.,CALCULUS II,4,6,AYŞE SOYSAL,TTThTh,1212,,,,,,"                          "
+MATH106.01,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,GÜLNİHAL YÜCEL,TTThTh,1212,,,,,,"                          "
+MATH106.02,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,GÜLNİHAL YÜCEL,TTThTh,3434,,,,,,"                          "
+MATH111.01,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,TALİN BUDAK,TTThTh,5656,,,,,,"        MATH; MEDU; TMAT; PRMA                  "
+MATH131.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS I,4,6,TALİN BUDAK,TTThTh,3434,,,,,,"        MATH                  "
+MATH132.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS II,4,8,AHMET KAMİL FEYZİOĞLU,TTThTh,1212,,,,,,"        MATH                  "
+MATH327.01,Desc.,NUMBER THEORY,3,6,CEM YALÇIN YILDIRIM,TThTh,778,,,,,,"                          "
+MATH332.01,Desc.,REAL ANALYSIS II,4,8,ALP EDEN,TTThTh,1212,,,,,,"                          "
+MATH344.01,Desc.,STATISTICS,3,5,İRİNİ DİMİTRİYADİS,TTTh,565,,,,,,"                          "
+MATH436.01,Desc.,FUNCTIONAL ANALYSIS,3,7,BETÜL TANBAY,TTTh,343,,,,,,"                          "
+MATH442.01,Desc.,RISK ANALYSIS,3,6,İRİNİ DİMİTRİYADİS,MMTh,346,,,,,,"                          "
+MATH480.01,Desc.,SEMINAR,2,4,BETÜL TANBAY,TBA,,,,,,,"                          "
+MATH502.01,Desc.,ALGEBRA II,4,8,AHMET KAMİL FEYZİOĞLU,TTThTh,5656,,,,,,"                          "
+MATH512.01,Desc.,MATHEMATICAL METHODS IN PHYSICS&ENGR. II,4,8,HALUK BEKER,MMWW,6767,,,,,,"                          "
+MATH516.01,Desc.,REAL ANALSIS  II,4,8,ALP EDEN,TTThTh,3434,,,,,,"                          "
+MATH579.01,Desc.,GRADUATE SEMINAR,0,1,BETÜL TANBAY,TBA,,,,,,,"                          "
+MATH580.01,Desc.,READINGS IN MATHEMATICS,1,3,BETÜL TANBAY,TBA,,,,,,,"                          "
+MATH596.01,Desc.,SEL. TOP. IN APPLIED MATHEMATICS II,4,10,ALP EDEN,TBA,,,,,,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,BETÜL TANBAY,TBA,,,,,,,"                          "

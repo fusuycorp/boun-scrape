@@ -1,0 +1,46 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+POLS101.01,Desc.,INTRODUCTION TO POLITICAL SCIENCE,3,6,GÜN KUT,TTW,123,,İB 102 | İB 102 | KPARK1,08.01.2015,2,POLS,"                          "
+POLS101.02,Desc.,INTRODUCTION TO POLITICAL SCIENCE,3,6,HAKAN YILMAZ,MMW,565,,NH 305 | NH 305 | NH 301,08.01.2015,2,EC,"                          "
+POLS101.03,Desc.,INTRODUCTION TO POLITICAL SCIENCE,3,6,DİLEK ÇINAR,TTTh,784,,NH 301 | NH 301 | NH 405,08.01.2015,2,AD,"                          "
+POLS101.04,Desc.,INTRODUCTION TO POLITICAL SCIENCE,3,6,VOLKAN ÇIDAM,MFF,812,,NH 305 | NH 405 | NH 405,08.01.2015,2,"HIST,PHIL,SOC,TR","                          "
+POLS201.01,Desc.,HISTORY OF POLITICAL THOUGHT I,3,5,ZEYNEP GAMBETTI,MMW,784,,NH 405 | NH 405 | NH 105,03.01.2015,3,POLS,"                          "
+POLS201.02,Desc.,HISTORY OF POLITICAL THOUGHT I,3,5,İLKAY SUNAR,MMM,678,,İB 312 | İB 312 | İB 312,03.01.2015,3,POLS,"                          "
+POLS203.01,Desc.,SOCIAL STATISTICS,4,6,ZEYNEP KADİRBEYOĞLU,TTThTh,3445,,İB 102 | İB 102 | İB 102 | İB 102,,0,POLS,"                          "
+POLS215.01,Desc.,COMPARATIVE POLITICS,3,6,TOLGA SINMAZDEMİR,TThTh,167,,NH 405 | NH 405 | NH 405,27.12.2014,1,POLS,"                          "
+POLS217.01,Desc.,DIPLOMATIC HISTORY,3,6,MEHMET GÖK,TTW,785,,M 2230 | M 2230 | M 1100,07.01.2015,1,POLS,"                          "
+POLS303.01,Desc.,FUNDAMENTALS OF POLITICAL ECONOMY,3,7,MİNE EDER,TTTh,563,,TB 310 | TB 310 | NH 405,,0,POLS,"                          "
+POLS305.01,Desc.,POLITICS OF NATIONALISM & ETHNICITY,3,5,TOLGA SINMAZDEMİR,TThTh,412,,M 1200 | İB 102 | İB 102,09.01.2015,2,,"                          "
+POLS317.01,Desc.,POLITICS AND SOCIETY IN THE MID.EAST,3,5,KORAY ÇALIŞKAN,WFF,278,,İB 102 | İB 102 | İB 102,08.01.2015,3,,"                          "
+POLS323.01,Desc.,POLITICS OF IDENTITY,3,5,MURAT AKAN,TTTh,235,,İB 201 | İB 201 | İB 201,,0,,"                          "
+POLS324.01,Desc.,INTERNATIONAL LAW,3,5,YANNIS KTISTAKIS,MThTh,512,,YD 206 | İB 201 | İB 201,02.01.2015,3,,"                          "
+POLS329.01,Desc.,ENVIRONMENT AND POLITICS,3,5,ZÜHRE AKSOY,MMT,678,,İB 201 | İB 201 | İB 201,29.12.2014,3,,"                          "
+POLS339.01,Desc.,THE STATE AND THE PUBLIC SPHERE,3,5,VOLKAN ÇIDAM,ThThTh,678,,İB 201 | İB 201 | İB 201,,0,,"                          "
+POLS343.01,Desc.,INTRODUCTION TO EUROPEAN INTEGRATION,3,5,DİLEK ÇINAR,MThTh,578,,M 1171 | M 2180 | M 2180,10.01.2015,1,,"                          "
+POLS373.01,Desc.,POLITICS & CULTURE,3,5,HAKAN YILMAZ,MWW,878,,İB 201 | NH 305 | NH 305,06.01.2015,1,,"                          "
+POLS403.01,Desc.,POLITICAL PHILOSOPHY,3,6,AYŞEN CANDAŞ,TTT,678,,NBZ 10 | NBZ 10 | NBZ 10,,0,,"                          "
+POLS405.01,Desc.,COMMUNICATIONS & POLITICS,3,6,SELCAN KAYNAK,MMT,232,,NH 403 | NH 403 | NB 119,,0,,"                          "
+POLS413.01,Desc.,PARTY SYSTEMS & INTEREST GROUPS   ,3,6,KORAY ÇALIŞKAN,WWF,344,,İB 312 | İB 312 | İB 211,10.01.2015,1,,"                          "
+POLS415.01,Desc.,POLITICAL PSYCHOLOGY,3,6,SELCAN KAYNAK,MMT,455,,NH 403 | NH 403 | NBZ 12,,0,,"                          "
+POLS424.01,Desc.,SOCIAL MOVEMENTS,3,6,ÇAĞLA AYKAÇ,FFF,567,,İB 211 | İB 211 | İB 211,03.01.2015,2,,"                          "
+POLS431.01,Desc.,POLITICS OF POSTMODERNITY & ITS CRITICS,3,6,ZEYNEP GAMBETTI,WWW,678,,İB 312 | İB 312 | İB 312,,0,,"                          "
+POLS435.01,Desc.,ISSUES IN TURKISH FOREIGN POLICY,3,6,GÜN KUT,TWW,512,,NBZ 11 | KPARK1 | KPARK1,,0,,"                          "
+POLS466.01,Desc.,HUMAN RIGHTS:THEORY&PRACTICE,3,6,YANNIS KTISTAKIS,MMTh,673,,YD 206 | YD 206 | İB 201,30.12.2014,3,,"                          "
+POLS480.01,Desc.,FIELD RESEARCH WORKSHOP I,3,6,EMRE ERDOĞAN,FFF,234,,İB 301 | İB 301 | İB 301,,0,,"                          "
+POLS483.01,Desc.,SELECTED TOPICS IN POLITICAL THEORY,3,6,AYŞEN CANDAŞ,WWW,678,,NH 402 | NH 402 | NH 402,,0,,"                          "
+POLS501.01,Desc.,ADVANCED RESEARCH METHODS ,3,8,ZEYNEP KADİRBEYOĞLU,WWW,567,,,,0,,"                          "
+POLS509.01,Desc.,PROB. OF TRANS.TO DEMOC.&DEMOCRATIZATION,3,7,ZEYNEP KADİRBEYOĞLU,TBA,,,,,0,,"                          "
+POLS521.01,Desc.,INTERNATIONAL POLITICS,3,8,ZÜHRE AKSOY,TTT,345,,,,0,,"                          "
+POLS541.01,Desc.,COMPARATIVE POLITICS,3,8,MURAT AKAN,ThThTh,123,,,,0,,"                          "
+POLS585.01,Desc.,RESEARCH & READING IN POLITICAL THEORY I,3,6,AYŞEN CANDAŞ,TBA,,,,,0,,"                          "
+POLS585.02,Desc.,RESEARCH & READING IN POLITICAL THEORY I,3,6,ZEYNEP GAMBETTI,TBA,,,,,0,,"                          "
+POLS585.03,Desc.,RESEARCH & READING IN POLITICAL THEORY I,3,6,VOLKAN ÇIDAM,TBA,,,,,0,,"                          "
+POLS589.01,Desc.,R. & R. IN INTERNATIONAL RELATIONS I,3,6,ZÜHRE AKSOY,TBA,,,,,0,,"                          "
+POLS590.01,Desc.,R&R IN INTERNATIONAL RELATIONS,3,6,GÜN KUT,TBA,,,,,0,,"                          "
+POLS593.01,Desc.,R.&R.IN COMPARATIVE POLITICS I,3,6,SELCAN KAYNAK,TBA,,,,,0,,"                          "
+POLS593.02,Desc.,R.&R.IN COMPARATIVE POLITICS I,3,6,KORAY ÇALIŞKAN,TBA,,,,,0,,"                          "
+POLS593.03,Desc.,R.&R.IN COMPARATIVE POLITICS I,3,6,MİNE EDER,TBA,,,,,0,,"                          "
+POLS593.04,Desc.,R.&R.IN COMPARATIVE POLITICS I,3,6,DİLEK ÇINAR,TBA,,,,,0,,"                          "
+POLS593.05,Desc.,R.&R.IN COMPARATIVE POLITICS I,3,6,MURAT AKAN,TBA,,,,,0,,"                          "
+POLS631.01,Desc.,INTERNATIONAL MIGRATION & REFUGEES,3,9,NERMİN ABADAN UNAT,ThThTh,678,,,,0,,"                          "
+POLS690.01,Desc.,MASTER THESIS,0,60,MİNE EDER,TBA,,,,,0,,"                          "
+POLS790.01,Desc.,Ph.D THESIS,0,120,HAKAN YILMAZ,TBA,,,,,0,,"                          "

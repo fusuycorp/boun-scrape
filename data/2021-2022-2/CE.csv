@@ -1,0 +1,76 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CE  212.01,Desc.,ENGINEERING MATERIALS,3,5,NİLÜFER ÖZYURT,TTThTh,5656,Online,ONLINE | ONLINE | ONLINE | ONLINE,03.06.2022,1,,"                          "
+CE  214.01,Desc.,FLUID MECHANICS,4,6,CEM AVCI,TTThTh,1212,Online,ONLINE | ONLINE | ONLINE | ONLINE,07.06.2022,1,,"                          "
+,,LAB,,,CEM AVCI,,,,,,0,,"                          "
+,,P.S.,,,CEM AVCI,FF,78,,ONLINE | ONLINE,,0,,"                          "
+CE  244.01,Desc.,DYNAMICS,3,5,HİLMİ LUŞ,MMW,343,Classroom,NH 102 | NH 102 | NH 105,11.06.2022,3,,"                          "
+CE  246.01,Desc.,STRENGTH OF MATERIALS,4,7,SAMİ AND KILIÇ,TTThTh,3434,Online,ONLINE | ONLINE | ONLINE | ONLINE,02.06.2022,1,,"                          "
+,,P.S.,,,SAMİ AND KILIÇ,ThTh,78,,ONLINE | ONLINE,,0,,"                          "
+CE  322.01,Desc.,ENVIRONMENTAL ENGINEERING,3,5,ATİLLA AKKOYUNLU,MMW,236,Online/Classroom,M 1171 | M 1171 | ONLINE,30.05.2022,1,,"                          "
+,,P.S.,,,ATİLLA AKKOYUNLU,WW,78,,ONLINE | ONLINE,,0,,"                          "
+CE  336.01,Desc.,FOUNDATION ENGINEERING,4,6,ÖZER ÇİNİCİOĞLU,MMWW,4523,Classroom,M 1171 | M 1171 | VYKM3 | VYKM3,07.06.2022,1,,"                          "
+,,P.S.,,,ÖZER ÇİNİCİOĞLU,T,8,,ONLINE,,0,,"                          "
+CE  354.01,Desc.,REINFORCED CONCRETE I,4,7,KUTAY ORAKÇAL,TTThTh,3434,Online,ONLINE | ONLINE | ONLINE | ONLINE,04.06.2022,3,,"                          "
+,,P.S.,,,KUTAY ORAKÇAL,ThTh,78,,ONLINE | ONLINE,,0,,"                          "
+CE  356.01,Desc.,STEEL STRUCTURES,3,5,SERDAR SELAMET,TTThTh,6767,Online,ONLINE | ONLINE | ONLINE | ONLINE,10.06.2022,2,,"                          "
+CE  402.01,Desc.,CIVIL ENGINEERING SYSTEMS ANALYSIS,3,5,SEMRA ÇOMU,MWW,656,Classroom,NH 405 | NH 301 | NH 301,06.06.2022,3,,"                          "
+CE  480.01,Desc.,SP.STUD.IN CE.:INTRODUCTION TO ARCHITECT,3,6,ERHAN KARAESMEN,FFF,234,Online,ONLINE | ONLINE | ONLINE,07.06.2022,3,,"                          "
+CE  487.01,Desc.,SP.TP.COMPOSITE MATERIALS,3,6,ESAT SELİM KOCAMAN,TTTh,232,Online,ONLINE | ONLINE | ONLINE,08.06.2022,3,,"                          "
+CE  48C.01,Desc.,SP.TP.PLANNING & DESIGN OF ENERGY FACILITIES,3,5,CEM AVCI,TThTh,578,Online,ONLINE | ONLINE | ONLINE,02.06.2022,3,,"                          "
+CE  48T.01,Desc.,SP.TP.ADVANCED CONCRETE,3,6,TURAN ÖZTURAN,TTT,678,Online,ONLINE | ONLINE | ONLINE,31.05.2022,1,,"                          "
+CE  492.01,Desc.,PROJECT,4,8,SERDAR SELAMET,FFF,678,Online,ONLINE | ONLINE | ONLINE,11.06.2022,2,,"                          "
+CE  497.01,Desc.,SP.TOP.IN CE:BRIDGE ENGINEERING,3,6,CEM YALÇIN                   ,MMW,343,Classroom,M 2230 | M 2230 | VYKM2,28.05.2022,1,,"                          "
+CE  49F.01,Desc.,SP.TP.DEV.OF CONS.PRO.&INVESTMENT MAN.,3,6,MEHMET EMRE ÇAMLIBEL,WWW,789,Classroom,M 3100 | M 3100 | M 3100,09.06.2022,1,,"                          "
+CE  505.01,Desc.,APPLIED STOCHASTIC ANALYSIS&MODELING,3,8,EMRE OTAY,ThThTh,567, ,,11.06.2022,3,,"                          "
+CE  530.01,Desc.,ADV. GEOTECHNICAL ENGINEERING LABORATORY,3,8,GÖKHAN BAYKAL,WWW,456,Classroom,,30.05.2022,3,,"                          "
+CE  548.01,Desc.,STRUCTURAL HEALTH MONITORING,3,8,SERDAR SOYÖZ,TTT,234,Online,ONLINE | ONLINE | ONLINE,07.06.2022,3,,"                          "
+CE  551.01,Desc.,NONLINEAR PROBLEMS IN REINFORCED CONCRET,3,8,CENGİZ KARAKOÇ,ThThTh,789, ,,09.06.2022,2,,"                          "
+CE  561.01,Desc.,TRANSPORTATION PLANNING AND MODELING,3,8,EYÜPHAN KOÇ,TTT,567, ,,07.06.2022,2,,"                          "
+CE  564.01,Desc.,ADVANCED TRAFFIC FLOW THEORY&CONTROL,3,8,ILGIN GÖKAŞAR,TTT,123, ,,09.06.2022,2,,"                          "
+CE  572.01,Desc.,PERFORMANCE MANAGEMENT IN CONSTRUCTION,3,8,BELİZ ÖZORHON,ThThTh,234, ,,30.05.2022,1,,"                          "
+CE  579.01,Desc.,GRADUATE SEMINAR,0,1,CEM YALÇIN                   ,W,8, ,,,,,"                          "
+CE  58D.01,Desc.,SP.TP.ADVANCED FOUNDATION ENGINEERING,3,8,İREM ZEYNEP YILDIRIM,TTT,678, ,,06.06.2022,1,,"                          "
+CE  58K.01,Desc.,SP.TOP.PERFORMANCE BASED SEISMIC DESIGN OF TALL BUILDINGS,3,8,KUTAY ORAKÇAL,WWW,234, ,,10.06.2022,1,,"                          "
+CE  58M.01,Desc.,SP.TP.IN CE:SP.TOP.IN STRUCTURAL ENGIN.,3,8,UĞUR ERSOY,MMM,567,Online,ONLINE | ONLINE | ONLINE,11.06.2022,2,,"                          "
+CE  58Y.01,Desc.,SP.TP.FUNDEMANTALS OF PROBABILISTIC EARTHQUAKE ENG.,3,8,SİNAN AKKAR,FFF,123,Online,ONLINE | ONLINE | ONLINE,08.06.2022,1,,"                          "
+CE  596.01,Desc.,SP.TOP.IN CE:RETAINING STRUCTURES,3,8,AYŞE EDİNÇLİLER,FFF,678,Online,,30.05.2022,1,,"                          "
+CE  59B.01,Desc.,SP.TP.MESHLESS METH.FOR NUMERICAL MODEL.,3,8,OSMAN BÖREKÇİ,MTT,767, ,,10.06.2022,1,,"                          "
+CE  651.01,Desc.,NON-LINEAR STRUCTURAL ANALYSIS,3,10,SAMİ AND KILIÇ,WWW,678, ,,11.06.2022,3,,"                          "
+CE  680.01,Desc.,SP.TP.RESEARCH METHODS IN CONSTRUCTION,3,7.50,BELİZ ÖZORHON,MMM,234, ,,07.06.2022,2,,"                          "
+CE  690.01,Desc.,M.S.THESIS,0,60,CEM AVCI,,,,,,,,"                          "
+CE  690.02,Desc.,M.S.THESIS,0,60,ÖZER ÇİNİCİOĞLU,,,,,,,,"                          "
+CE  690.03,Desc.,M.S.THESIS,0,60,SEMRA ÇOMU,,,,,,,,"                          "
+CE  690.04,Desc.,M.S.THESIS,0,60,GÖKHAN BAYKAL,,,,,,,,"                          "
+CE  690.05,Desc.,M.S.THESIS,0,60,ILGIN GÖKAŞAR,,,,,,,,"                          "
+CE  690.06,Desc.,M.S.THESIS,0,60,SAMİ AND KILIÇ,,,,,,,,"                          "
+CE  690.07,Desc.,M.S.THESIS,0,60,HİLMİ LUŞ,,,,,,,,"                          "
+CE  690.08,Desc.,M.S.THESIS,0,60,KUTAY ORAKÇAL,,,,,,,,"                          "
+CE  690.09,Desc.,M.S.THESIS,0,60,EMRE OTAY,,,,,,,,"                          "
+CE  690.10,Desc.,M.S.THESIS,0,60,BELİZ ÖZORHON,,,,,,,,"                          "
+CE  690.11,Desc.,M.S.THESIS,0,60,NİLÜFER ÖZYURT,,,,,,,,"                          "
+CE  690.12,Desc.,M.S.THESIS,0,60,SERDAR SELAMET,,,,,,,,"                          "
+CE  690.13,Desc.,M.S.THESIS,0,60,SERDAR SOYÖZ,,,,,,,,"                          "
+CE  690.14,Desc.,M.S.THESIS,0,60,CEM YALÇIN                   ,,,,,,,,"                          "
+CE  690.15,Desc.,M.S.THESIS,0,60,İREM ZEYNEP YILDIRIM,,,,,,,,"                          "
+CE  700.01,Desc.,GRADUATE SEMINAR,0,1,CEM YALÇIN                   ,W,9, ,,,,,"                          "
+CE  790.01,Desc.,Ph.D. THESIS,0,120,CEM AVCI,,,,,,,,"                          "
+CE  790.02,Desc.,Ph.D. THESIS,0,120,ÖZER ÇİNİCİOĞLU,,,,,,,,"                          "
+CE  790.03,Desc.,Ph.D. THESIS,0,120,SEMRA ÇOMU,,,,,,,,"                          "
+CE  790.04,Desc.,Ph.D. THESIS,0,120,GÖKHAN BAYKAL,,,,,,,,"                          "
+CE  790.05,Desc.,Ph.D. THESIS,0,120,ILGIN GÖKAŞAR,,,,,,,,"                          "
+CE  790.06,Desc.,Ph.D. THESIS,0,120,SAMİ AND KILIÇ,,,,,,,,"                          "
+CE  790.07,Desc.,Ph.D. THESIS,0,120,HİLMİ LUŞ,,,,,,,,"                          "
+CE  790.08,Desc.,Ph.D. THESIS,0,120,KUTAY ORAKÇAL,,,,,,,,"                          "
+CE  790.09,Desc.,Ph.D. THESIS,0,120,EMRE OTAY,,,,,,,,"                          "
+CE  790.10,Desc.,Ph.D. THESIS,0,120,BELİZ ÖZORHON,,,,,,,,"                          "
+CE  790.11,Desc.,Ph.D. THESIS,0,120,NİLÜFER ÖZYURT,,,,,,,,"                          "
+CE  790.12,Desc.,Ph.D. THESIS,0,120,SERDAR SELAMET,,,,,,,,"                          "
+CE  790.13,Desc.,Ph.D. THESIS,0,120,SERDAR SOYÖZ,,,,,,,,"                          "
+CE  790.14,Desc.,Ph.D. THESIS,0,120,CEM YALÇIN                   ,,,,,,,,"                          "
+CE  790.15,Desc.,Ph.D. THESIS,0,120,İREM ZEYNEP YILDIRIM,,,,,,,,"                          "
+ENGG110.01,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,TT,67,Online,ONLINE | ONLINE,06.06.2022,2,,"                          "
+,,LAB,,,FEZA BAYKAL,TT,89,,ONLINE | ONLINE,,0,,"                          "
+ENGG110.02,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,WW,67,Online,ONLINE | ONLINE,06.06.2022,2,,"                          "
+,,LAB,,,FEZA BAYKAL,WW,89,,ONLINE | ONLINE,,0,,"                          "
+ENGG110.03,Desc.,ENGINEERING GRAPHICS,3,5,İLYAS İSTİF,ThTh,67,Online,ONLINE | ONLINE,06.06.2022,2,,"                          "
+,,LAB,,,İLYAS İSTİF,ThTh,89,,ONLINE | ONLINE,,0,,"                          "

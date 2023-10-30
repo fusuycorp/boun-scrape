@@ -1,0 +1,28 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHE 201.01,Desc.,PHYSICOCHEMICAL SYSTEMS I,4,5,MAHİR ARIKOL,MMW,566,,,,,,"                          "
+CHE 211.01,Desc.,CHEMICAL ENGINEERING CALCULATIONS,4,5,PEMRA DORUKER TURGUT,MMTT,7812,,,,,,"                          "
+CHE 321.01,Desc.,CHEM. ENGINEERING THERMODYNAMICS,4,7,TÜRKAN HALİLOĞLU,MMWWW,45234,,,,,,"                          "
+CHE 333.01,Desc.,CHEMICAL ENGINEERING II: HEAT TRANSFER,3,5,ALİ ECDER,MMThTh,8934,,,,,,"                          "
+CHE 353.01,Desc.,CHEMICAL PROCESSES,3,5,MURAT DERVİŞOĞLU,MWW,378,,,,,,"                          "
+CHE 383.01,Desc.,PROBABILITY&STATISTICS IN CHEM.ENGR.APPL,3,5,MEHMET CİHAN ÇAMURDAN,MTTTh,6346,,,,,,"                          "
+CHE 401.01,Desc.,CHEMICAL ENGINEERING LAB. II,3,6,ZEYNEP İLSEN ÖNSAN,Th,7,,,,,,"                          "
+CHE 401.02,Desc.,CHEMICAL ENGINEERING LAB. II,3,6,ZEYNEP İLSEN ÖNSAN,Th,8,,,,,,"                          "
+CHE 413.01,Desc.,DESIGN&SIMULATION OF MACROMOLECULAR SYS.,3,5,TÜRKAN HALİLOĞLU,MWW,156,,,,,,"                          "
+CHE 421.01,Desc.,GENETIC ENGINEERING APPLICATIONS IN BIOTECHNOLOGY,3,5,BETÜL KIRDAR,,,,,,,,"                          "
+CHE 427.01,Desc.,BIOCHEMICAL ENGINEERING I,3,5,ZEYNEP İLSEN ÖNSAN,TTTh,121,,,,,,"                          "
+CHE 433.01,Desc.,DESIGN OF CHEMICAL PROCESSING UNITS,3,8,AHMET KERİM AVCI,TTThTh,7834,,,,,,"                          "
+CHE 440.01,Desc.,HETEROGENEOUS CATALYSIS,3,5,AHMET ERHAN AKSOYLU,MMT,786,,,,,,"                          "
+CHE 475.01,Desc.,PROCESS DYNAMICS & CONTROL,3,6,MEHMET CİHAN ÇAMURDAN,MMWW,2334,,,,,,"                          "
+CHE 477.01,Desc.,PROCESS OPTIMIZATION,3,5,UĞUR AKMAN,TWW,378,,,,,,"                          "
+CHE 485.01,Desc.,SP.TOP.IN CHE:SECOND LAW ANALYSIS OF CHE,3,5,MAHİR ARIKOL,FFF,123,,,,,,"                          "
+CHE 492.01,Desc.,PROJECT,4,7,RAMAZAN YILDIRIM,TBA,,,,,,,"                          "
+CHE 529.01,Desc.,BIOCHEMICAL ENGINEERING II,3,6,STAFF STAFF,TBA,,,,,,,"                          "
+CHE 555.01,Desc.,MODELING&ANALYSIS OF CHEMICAL ENGR.SYS.I,3,8,UĞUR AKMAN,MMTT,3478,,,,,,"                          "
+CHE 580.01,Desc.,SP.TOP.IN COMPUTATIONAL TECHNIQUES IN HE,3,6,RAMAZAN YILDIRIM,TBA,,,,,,,"                          "
+CHE 581.01,Desc.,SP.TOP.IN CHEM.TECH:CATALYSIS FOR SUSTAI,3,6,AHMET ERHAN AKSOYLU,TBA,,,,,,,"                          "
+CHE 631.01,Desc.,TRANSPORT PHENOMENA I,3,8,RAMAZAN YILDIRIM,TWW,323,,,,,,"                          "
+CHE 680.01,Desc.,S.TOP.IN ADV.CHEM.ENG.CURRENT TP.IN BIO ,3,6,KUTLU ÜLGEN,TBA,,,,,,,"                          "
+CHE 681.01,Desc.,SP.TOP.IN ADV.CHEM.ENG.:GENOME-SCALE MET,3,6,KUTLU ÜLGEN,TBA,,,,,,,"                          "
+CHE 690.01,Desc.,M.S. THESIS,0,60,BETÜL KIRDAR,TBA,,,,,,,"                          "
+CHE 790.01,Desc.,Ph.D.THESIS,0,120,BETÜL KIRDAR,TBA,,,,,,,"                          "
+XCHE302.01,Desc.,CHEMICAL ENGINEERING LABORATORY I,3,6,STAFF STAFF,,,,,,,,"                          "

@@ -1,0 +1,129 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AL  201.01,Desc.,SURVEY OF AMERICAN LITERATURE,3,6,AYLİN ALKAÇ,TThF,555,,GYD 304 | GYD 303 | TB 415,29.12.2015,2,,"                          "
+AL  201.02,Desc.,SURVEY OF AMERICAN LITERATURE,3,6,LOUIS MAZZARI,TThF,555,,NH 403 | TB 310 | M 1171,29.12.2015,2,,"                          "
+AL  201.03,Desc.,SURVEY OF AMERICAN LITERATURE,3,6,N.CİHAN YURDAÜN,TThF,555,,M 2152 | İB 102 | TB 490,29.12.2015,2,,"                          "
+AL  201.04,Desc.,SURVEY OF AMERICAN LITERATURE,3,6,MARGARET RUSSETT,TThF,555,,M 1152 | YD 03 | M 1200,29.12.2015,2,,"                          "
+CL  305.01,Desc.,LITERARY THEORY AND CRITICISM I,3,7,IŞIL BAŞ,TThTh,445,,M 1200 | M 1171 | M 1171,12.01.2016,1,,"                          "
+CL  305.02,Desc.,LITERARY THEORY AND CRITICISM I,3,7,ÖZLEM ÖĞÜT,MMW,788,,TB 240 | TB 240 | M 1170,12.01.2016,1,,"                          "
+CL  411.01,Desc.,"MYTH,LITERATURE AND IDEOLOGY",3,6,MATTHEW GUMPERT,TTTh,232,,TB 415 | TB 415 | TB 415,07.01.2016,3,,"                          "
+CL  411.02,Desc.,"MYTH,LITERATURE AND IDEOLOGY",3,6,ÖZLEM ÖĞÜT,MWW,345,,TB 240 | YD 203 | YD 203,07.01.2016,3,,"                          "
+EL  101.01,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,CEVZA SEVGEN,TThF,444,,TB 490 | M 2170 | TB 415,31.12.2015,1,"LL,TENG","                          "
+EL  101.02,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,BAŞAK DEMİRHAN,TThF,444,,M 2231 | M 2152 | TB 240,31.12.2015,1,"LL,TENG","                          "
+EL  101.03,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,İPEK KISMET BELL,TThF,444,,NBB 10 | M 2200 | M 1152,31.12.2015,1,"LL,TENG","                          "
+EL  101.04,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,N.CİHAN YURDAÜN,TThF,444,,M 1181 | İB 102 | TB 490,31.12.2015,1,"LL,TENG","                          "
+EL  101.05,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,ETHAN JOHN GUAGLIARDO,TThF,444,,NH 001 | M 2231 | M 1181,31.12.2015,1,"LL,TENG","                          "
+EL  201.01,Desc.,MEDIEVAL ENGLISH LITERATURE,3,6,JAMESON J.KISMET BELL,WWF,347,,YD 06 | YD 06 | M 1181,07.01.2016,2,,"                          "
+EL  201.02,Desc.,MEDIEVAL ENGLISH LITERATURE,3,6,EMİNE FİŞEK,WWF,347,,TB 240 | TB 240 | M 1170,07.01.2016,2,,"                          "
+EL  303.01,Desc.,RESTORATION AND AUGUSTAN LITERATURE,3,6,AYLİN ALKAÇ,TTF,783,,GYD 304 | GYD 304 | TB 415,11.01.2016,2,,"                          "
+EL  303.02,Desc.,RESTORATION AND AUGUSTAN LITERATURE,3,6,NAZ BULAMUR,TTF,783,,TB 240 | TB 240 | TB 240,11.01.2016,2,,"                          "
+EL  401.01,Desc.,STUDIES IN SHAKESPEARE,3,7,CEVZA SEVGEN,TFF,678,,TB 490 | TB 240 | TB 240,02.01.2016,3,,"                          "
+EL  401.02,Desc.,STUDIES IN SHAKESPEARE,3,7,KIM FORTUNY,TFF,678,,NH 402 | M 1152 | M 1152,02.01.2016,3,,"                          "
+EL  405.01,Desc.,VICTORIAN POETRY & PROSE,3,6,HANDE TEKDEMİR,TThTh,445,,NH 404 | GYD 302 | GYD 302,09.01.2016,2,,"                          "
+EL  405.02,Desc.,VICTORIAN POETRY & PROSE,3,6,BAŞAK DEMİRHAN,WFF,223,,NH 104 | YD 04 | YD 04,09.01.2016,2,,"                          "
+EL  412.01,Desc.,SENIOR THESIS,3,6,AYLİN ALKAÇ,TBA,,,,,0,,"                          "
+EL  412.02,Desc.,SENIOR THESIS,3,6,IŞIL BAŞ,TBA,,,,,0,,"                          "
+EL  412.04,Desc.,SENIOR THESIS,3,6,BAŞAK DEMİRHAN,TBA,,,,,0,,"                          "
+EL  412.05,Desc.,SENIOR THESIS,3,6,EMİNE FİŞEK,TBA,,,,,0,,"                          "
+EL  412.06,Desc.,SENIOR THESIS,3,6,KIM FORTUNY,TBA,,,,,0,,"                          "
+EL  412.07,Desc.,SENIOR THESIS,3,6,ÖZLEM GÖREY,TBA,,,,,0,,"                          "
+EL  412.08,Desc.,SENIOR THESIS,3,6,MATTHEW GUMPERT,TBA,,,,,0,,"                          "
+EL  412.12,Desc.,SENIOR THESIS,3,6,ÖZLEM ÖĞÜT,TBA,,,,,0,,"                          "
+EL  412.13,Desc.,SENIOR THESIS,3,6,HANDE TEKDEMİR,TBA,,,,,0,,"                          "
+EL  412.14,Desc.,SENIOR THESIS,3,6,ASLI TEKİNAY,TBA,,,,,0,,"                          "
+EL  412.15,Desc.,SENIOR THESIS,3,6,N.CİHAN YURDAÜN,TBA,,,,,0,,"                          "
+EL  482.01,Desc.,SP.TP.LOVE&WAR IN RENAISSANCE EPIC,3,6,ETHAN JOHN GUAGLIARDO,TFF,556,,NH 001 | M 1181 | M 1181,06.01.2016,1,,"                          "
+EL  485.01,Desc.,"SP.TP.:BLACK ATLANTIC:PERFOR.,POL.,DIAS.",3,6,EMİNE FİŞEK,WFF,645,,M 2170 | M 1170 | M 1170,04.01.2016,3,,"                          "
+EL  487.01,Desc.,TRAUMA AND LITERATURE,3,6,HANDE TEKDEMİR,TFF,556,,YD 203 | TB 240 | TB 240,06.01.2016,3,,"                          "
+EL  489.01,Desc.,SP.TP.:WOMAN&THE GOTHIC,3,6,MARGARET RUSSETT,TThTh,367,,M 1181 | YD 03 | YD 03,30.12.2015,1,,"                          "
+EL  579.01,Desc.,GRADUATE SEMINAR,0,5,BAŞAK DEMİRHAN,TBA,,,,,0,,"                          "
+EL  588.01,Desc.,SPC.STUD.STUDIES IN MOD.ENGL.POETRY,4,6,KIM FORTUNY,MMM,678,,,,0,,"                          "
+EL  590.01,Desc.,SPC.STUD.STUDIES IN MOD.ENGL.DRAMA,4,6,ASLI TEKİNAY,TTT,234,,,,0,,"                          "
+EL  591.01,Desc.,SPC.STUD.:LITERARY THEORY I,4,6,MATTHEW GUMPERT,ThThTh,345,,,,0,,"                          "
+EL  689.01,Desc.,STUDIES IN ENGLISH LITERATURE,1,5,JAMESON J.KISMET BELL,TBA,,,,08.01.2016,1,,"                          "
+EL  68A.01,Desc.,SP.TOP.REQUIRED COURSE:PRO-SEMINAR,4,10,JAMESON J.KISMET BELL,FFF,234,,,,0,,"                          "
+EL  68B.01,Desc.,SP.TOP.POSTMODERN FICTIONS,4,10,NAZ BULAMUR,FFF,678,,,,0,,"                          "
+EL  68C.01,Desc.,SP.TOP.STORYTELLING IN VERSE:NARRATIVE P,4,10,ÖZLEM GÖREY,TTT,234,,,,0,,"                          "
+EL  68D.01,Desc.,"SP.TOP.EVIL,VIOLENCE&TRAUMA IN DRAMATIC ",4,10,ASLI TEKİNAY,ThThTh,234,,,,0,,"                          "
+EL  690.02,Desc.,MASTER THESIS,0,60,ÖZLEM ÖĞÜT,TBA,,,,,0,,"                          "
+EL  690.03,Desc.,MASTER THESIS,0,60,ÖZLEM GÖREY,TBA,,,,,0,,"                          "
+EL  690.04,Desc.,MASTER THESIS,0,60,KIM FORTUNY,TBA,,,,,0,,"                          "
+EL  690.05,Desc.,MASTER THESIS,0,60,MATTHEW GUMPERT,TBA,,,,,0,,"                          "
+EL  690.06,Desc.,MASTER THESIS,0,60,ASLI TEKİNAY,TBA,,,,,0,,"                          "
+EL  790.01,Desc.,DOCTORAL DISSERTATION,0,120,ÖZLEM ÖĞÜT,TBA,,,,,0,,"                          "
+EL  790.02,Desc.,DOCTORAL DISSERTATION,0,120,ASLI TEKİNAY,TBA,,,,,0,,"                          "
+EL  790.03,Desc.,DOCTORAL DISSERTATION,0,120,MATTHEW GUMPERT,TBA,,,,,0,,"                          "
+EL  790.04,Desc.,DOCTORAL DISSERTATION,0,120,EMİNE FİŞEK,TBA,,,,,0,,"                          "
+EL  790.05,Desc.,DOCTORAL DISSERTATION,0,120,HANDE TEKDEMİR,TBA,,,,,0,,"                          "
+ENGL101.01,Desc.,INTRODUCTION TO LITERARY SCHOLARSHIP I,3,6,LAMİA GÜLÇUR,TTTh,673,,NH 304 | NH 304 | TB 415,09.01.2016,3,,"                          "
+ENGL101.02,Desc.,INTRODUCTION TO LITERARY SCHOLARSHIP I,3,6,ÖZLEM GÖREY,TTTh,673,,NH 001 | NH 001 | GYD 302,09.01.2016,3,,"                          "
+ENGL101.03,Desc.,INTRODUCTION TO LITERARY SCHOLARSHIP I,3,6,LOUIS MAZZARI,TTTh,673,,NH 403 | NH 403 | NH 303,09.01.2016,3,,"                          "
+ENGL111.01,Desc.,EXPOSITORY WRITING I,3,5,PINAR PEKEL,MMW,455,,NH 303 | NH 303 | GYD 301,,0,LL,"                          "
+ENGL111.02,Desc.,EXPOSITORY WRITING I,3,5,MARIA ELIADES,MMW,455,,YD 205 | YD 205 | M 1152,,0,LL,"                          "
+ENGL111.03,Desc.,EXPOSITORY WRITING I,3,5,MARIA ELIADES,MMTh,787,,NH 201 | NH 201 | M 1200,,0,HIST,"                          "
+ENGL111.04,Desc.,EXPOSITORY WRITING I,3,5,MARIA ELIADES,WWTh,788,,M 2170 | M 2170 | M 1200,,0,HIST,"                          "
+ENGL201.01,Desc.,STRUCTURE OF MODERN ENGLISH,3,6,BALKIZ ÖZTÜRK,WThTh,334,,GYD 303 | NH 402 | NH 402,04.01.2016,1,TENG,"                          "
+ENGL201.02,Desc.,STRUCTURE OF MODERN ENGLISH,3,6,DİDAR AKAR,WThTh,334,,M 2181 | NH 304 | NH 304,04.01.2016,1,TENG,"                          "
+FA  313.01,Desc.,MUSEUMS & CULTURAL HERITAGE,3,5,SUAY AKSOY,WWW,678,,GYD 303 | GYD 303 | GYD 303,,0,,"                          "
+FA  327.01,Desc.,MUSIC:THEORY & APPRECIATION,3,5,EMİNE SERDAROĞLU,ThThTh,234,,NH 001 | NH 001 | NH 001,,0,,"                          "
+FA  341.01,Desc.,HISTORY OF THE CINEMA,3,5,ŞAHAN YATARKALKMAZ,MMM,456,,NH 302 | NH 302 | NH 302,28.12.2015,2,,"                          "
+FA  348.01,Desc.,INTRODUCTION TO FILM ANALYSIS,3,5,AYŞEGÜL DOĞAN,WWW,234,,MİTHAT | MİTHAT | MİTHAT ,,0,,"                          "
+FA  350.01,Desc.,PROJECT IN FILM ANALYSIS,3,5,CAN CANDAN,MMM,567,,,,0,,"                          "
+FA  484.01,Desc.,SP.TOP.:ENVIRON.CONCERNS&THE BUSIN.WORLD,3,5,GÜNAY KOCASOY,WWW,678,,TB 415 | TB 415 | TB 415,28.12.2015,2,,"                          "
+FA  485.01,Desc.,SP.TP.MYSTERY IN FILM,3,5,AYŞEGÜL DOĞAN,ThThTh,345,,GYD 301 | GYD 301 | GYD 301,,0,,"                          "
+FA  486.01,Desc.,SPECIAL TOPICS.:SCRIPTWRITING,3,5,SALİH MEHMET İNAN,WWW,345, ,NH 001 | NH 001 | NH 001,,0,,"                          "
+FA  487.01,Desc.,SP.TP.CLASSICAL MUSIC IN CINEMA,3,5,MEHMET FEYZİ ERÇİN,MMM,678,,NH 202 | NH 202 | NH 202,,0,,"                          "
+FA  489.01,Desc.,SP.TOP.:GRAPHIC NOVEL,3,5,MEHMET EMİN ADANALI,WWW,345, ,TB 415 | TB 415 | TB 415,26.12.2015,3,,"                          "
+FA  48J.01,Desc.,SP.TP.MYTHIC STRUC.&STORYTELLING IN CIN.,3,5,SALİH MEHMET İNAN,MMM,345, ,MİTHAT | MİTHAT | MİTHAT,,0,,"                          "
+FA  48P.01,Desc.,SP.TOP.DRAMATIC STRUCTURE:FILM&TV,3,5,BEHRE ÖVGÜ ÖZALP,TTT,123,,YD 103 | YD 103 | YD 103,26.12.2015,3,,"                          "
+FA  48Q.01,Desc.,SP.TP.SCENE STUDY&CHARA.DEV.THROUGH LIT.,3,5,ÖZLEM TURHAL DECHIARA,TTT,456,,,26.12.2015,2,,"                          "
+FA  48R.01,Desc.,SP.TOP.CONTEMPORARY ART,3,5,SENA BAŞÖZ,ThThTh,678, ,GYD 301 | GYD 301 | GYD 301,26.12.2015,2,,"                          "
+FA  48T.01,Desc.,SP.TP.: DIEGESIS IN FILM,3,5,ŞAHAN YATARKALKMAZ,MMM,91011,,TB 415 | TB 415 | TB 415,26.12.2015,3,,"                          "
+FA  490.01,Desc.,SP.TP.ADV.GRAPHIC NOVEL&COMICS,3,5,MEHMET EMİN ADANALI,TTT,91011, ,TB 415 | TB 415 | TB 415,28.12.2015,1,,"                          "
+FA  491.01,Desc.,SP.TOP.:ART AND MIND,3,5,SEDEF HATAPKAPULU,ThThTh,91011,,TB 415 | TB 415 | TB 415,26.12.2015,3,,"                          "
+FA  492.01,Desc.,SP.TP:LITERARY CHAR.ANALYS THROUGH ACT.,3,5,ÖZLEM TURHAL DECHIARA,TTT,123,,,26.12.2015,1,,"                          "
+FA  495.01,Desc.,SP.TOP.: JAZZ APPRECIATION I,3,5,SEDA BİNBAŞGİL,TTT,678,,GYD 301 | GYD 301 | GYD 301,28.12.2015,3,,"                          "
+FA  497.01,Desc.,SP.TP.CONTEMPORARY PERFORMANCE PRACTICES,3,5,ONUR KARAOĞLU,MMM,234, ,TB 415 | TB 415 | TB 415,28.12.2015,1,,"                          "
+FA  498.01,Desc.,SP.TOP.DOCUMENTARY CİNEMA,3,5,CAN CANDAN,ThThTh,234,,,,0,,"                          "
+FA  49A.01,Desc.,"SP.TP.CINEMA&AUDIENCE,SOCIOLOGIC. DEBATE",3,5,JAK ŞALOM,TTT,567,,MİTHAT | MİTHAT | MİTHAT ,28.12.2015,3,,"                          "
+FA  49N.01,Desc.,SP.TP.ABOUT LOOKING,3,5,SEDEF HATAPKAPULU,ThThTh,234,,YD 03 | YD 03 | YD 03,28.12.2015,1,,"                          "
+FA  49P.01,Desc.,SP.TP.MALE SUBJ.IN THE CINEMA OF TURKE,3,5,TOLGA YALUR,FFF,678,,M 2171 | M 2171 | M 2171,,0,,"                          "
+FA  49Q.01,Desc.,SP.TP.ROMANTICISM IN EURO.MUSIC&ARTS,3,5,UFUK ÇAKMAK,TTT,789,,GYD 122 | GYD 122 | GYD 122,26.12.2015,3,,"                          "
+FA  49R.01,Desc.,SP.TP.CINEMA AND NATION,3,5,ÖZGÜR ÇİÇEK,MMM,234,,GYD 301 | GYD 301 | GYD 301,,0,,"                          "
+FA  49T.01,Desc.,SP.TP.THE WRITING SELF:EXPERIMENTAL AUTO,3,5,ALEV ERSAN,ThThTh,678,,GYD 303 | GYD 303 | GYD 303,26.12.2015,3,,"                          "
+FA  49W.01,Desc.,SP.TP.THE ART&PROF.OF SCREENW.ON TELEV.,3,5,KEREM DEREN,MMM,123,,M 1152 | M 1152 | M 1152,,0,,"                          "
+FA  49X.01,Desc.,SP.TP.MUSIC AND LITERATURE,3,5,F.ZEYNEP BİLGE,TTT,456,,YD 205 | YD 205 | YD 205,26.12.2015,3,,"                          "
+FA  49Z.01,Desc.,SP.TP.FIN DE SIECLE&EAR.20Th CENT.IN EUR,3,5,UFUK ÇAKMAK,WWW,123,,GYD 301 | GYD 301 | GYD 301,28.12.2015,1,,"                          "
+GR  101.01,Desc.,MODERN GREEK FOR BEGINNERS I,3,5,CHRYSSI SIDIROPOULOU,WWTh,9109,,TB 240 | TB 240 | YD 202,28.12.2015,2,,"                          "
+GR  111.01,Desc.,ANCIENT GREEK I,3,5,KYRIAKI KONSTANTINIDOU,MMWW,4512,,KPARK9 | KPARK9 | KPARK3 | KPARK3,28.12.2015,2,,"                          "
+GR  201.01,Desc.,INTERMEDIATE MODERN GREEK I,3,5,KYRIAKI KONSTANTINIDOU,TBA,,,,26.12.2015,2,,"                          "
+GR  211.01,Desc.,ANCIENT GREEK III,3,5,BRIGITA KUKJALKO,MMWW,3456,,,28.12.2015,2,,"                          "
+HUM 101.01,Desc.,CULTURAL ENCOUNTERS I,4,6,JENNIFER CAROLINE BRITTAN,MMWW,1717,,AYHAN Ş | KPARK3 | AYHAN Ş | KPARK3,08.01.2016,2,,"                          "
+HUM 101.02,Desc.,CULTURAL ENCOUNTERS I,4,6,KERRI HUNT,MMWW,1717,,AYHAN Ş | KPARK7 | AYHAN Ş | KPARK6,08.01.2016,2,,"                          "
+HUM 101.03,Desc.,CULTURAL ENCOUNTERS I,4,6,ZACHARY P. NORWOOD,MMWW,1717,,AYHAN Ş | YD 03 | AYHAN Ş | KPARK7,08.01.2016,2,,"                          "
+HUM 101.04,Desc.,CULTURAL ENCOUNTERS I,4,6,SERHAT UYURKULAK,MMWW,1717,,AYHAN Ş | YD 06 | AYHAN Ş | NH 101,08.01.2016,2,,"                          "
+HUM 101.05,Desc.,CULTURAL ENCOUNTERS I,4,6,AMEETH VIJAY,MMWW,1717,,AYHAN Ş | YD 106 | AYHAN Ş | NH 304,08.01.2016,2,,"                          "
+HUM 101.06,Desc.,CULTURAL ENCOUNTERS I,4,6,JENNIFER CAROLINE BRITTAN,MMWW,1818,,AYHAN Ş | YD 02 | AYHAN Ş | KPARK5,08.01.2016,2,,"                          "
+HUM 101.07,Desc.,CULTURAL ENCOUNTERS I,4,6,KERRI HUNT,MMWW,1818,,AYHAN Ş | KPARK3 | AYHAN Ş | KPARK3,08.01.2016,2,,"                          "
+HUM 101.08,Desc.,CULTURAL ENCOUNTERS I,4,6,ZACHARY P. NORWOOD,MMWW,1818,,AYHAN Ş | KPARK7 | AYHAN Ş | KPARK6,08.01.2016,2,,"                          "
+HUM 101.09,Desc.,CULTURAL ENCOUNTERS I,4,6,SERHAT UYURKULAK,MMWW,1818,,AYHAN Ş | YD 03 | AYHAN Ş | KPARK7,08.01.2016,2,,"                          "
+HUM 101.10,Desc.,CULTURAL ENCOUNTERS I,4,6,AMEETH VIJAY,MMWW,1818,,AYHAN Ş | YD 06 | AYHAN Ş | ETA 1,08.01.2016,2,,"                          "
+HUM 101.11,Desc.,CULTURAL ENCOUNTERS I,4,6,JENNIFER CAROLINE BRITTAN,MTWTh,1717,,AYHAN Ş | HKD301 | AYHAN Ş | M 2171,08.01.2016,2,,"                          "
+HUM 101.12,Desc.,CULTURAL ENCOUNTERS I,4,6,KERRI HUNT,MTWTh,1717,,AYHAN Ş | HKD201 | AYHAN Ş | YD 204,08.01.2016,2,,"                          "
+HUM 101.13,Desc.,CULTURAL ENCOUNTERS I,4,6,ZACHARY P. NORWOOD,MTWTh,1717,,AYHAN Ş | YD 03 | AYHAN Ş | KPARK1,08.01.2016,2,,"                          "
+HUM 101.14,Desc.,CULTURAL ENCOUNTERS I,4,6,SERHAT UYURKULAK,MTWTh,1717,,AYHAN Ş | ETA 3 | AYHAN Ş | ETA 3,08.01.2016,2,,"                          "
+HUM 101.15,Desc.,CULTURAL ENCOUNTERS I,4,6,AMEETH VIJAY,MTWTh,1717,,AYHAN Ş | M 2170 | AYHAN Ş | M 2170,08.01.2016,2,,"                          "
+HUM 101.16,Desc.,CULTURAL ENCOUNTERS I,4,6,JENNIFER CAROLINE BRITTAN,MTWTh,1818,,AYHAN Ş | NH 202 | AYHAN Ş | NH 402,08.01.2016,2,,"                          "
+HUM 101.17,Desc.,CULTURAL ENCOUNTERS I,4,6,KERRI HUNT,MTWTh,1818,,AYHAN Ş | M 2170 | AYHAN Ş | M 2170,08.01.2016,2,,"                          "
+HUM 101.18,Desc.,CULTURAL ENCOUNTERS I,4,6,ZACHARY P. NORWOOD,MTWTh,1818,,AYHAN Ş | NH 103 | AYHAN Ş | NH 103,08.01.2016,2,,"                          "
+HUM 101.19,Desc.,CULTURAL ENCOUNTERS I,4,6,SERHAT UYURKULAK,MTWTh,1818,,AYHAN Ş | YD 03 | AYHAN Ş | KPARK1,08.01.2016,2,,"                          "
+HUM 101.20,Desc.,CULTURAL ENCOUNTERS I,4,6,AMEETH VIJAY,MTWTh,1818,,AYHAN Ş | ETA 2 | AYHAN Ş | YD 03,08.01.2016,2,,"                          "
+HUM 101.21,Desc.,CULTURAL ENCOUNTERS I,4,6,LEYLA KAYHAN ELBİRLİK,MMWW,1717,,AYHAN Ş | YD 204 | AYHAN Ş | YD 205,08.01.2016,2,,"                          "
+HUM 101.22,Desc.,CULTURAL ENCOUNTERS I,4,6,STAFF STAFF,,,,,08.01.2016,2,,"                          "
+HUM 101.23,Desc.,CULTURAL ENCOUNTERS I,4,6,STAFF STAFF,,,,,08.01.2016,2,,"                          "
+HUM 101.24,Desc.,CULTURAL ENCOUNTERS I,4,6,STAFF STAFF,,,,,08.01.2016,2,,"                          "
+LAT 111.01,Desc.,ELEMANTARY LATIN I,3,5,NOEMİ LEVY AKSU,TTFF,1223,,YD 04 | YD 04 | YD 03 | YD 03,26.12.2015,1,,"                          "
+LAT 211.01,Desc.,INTERMEDIATE LATIN I,3,5,NOEMİ LEVY AKSU,TBA,,,,28.12.2015,1,,"                          "
+LIT 211.01,Desc.,STUDIES IN LITERATURE I,3,10,BAŞAK DEMİRHAN,TFF,767,,TB 490 | M 1171 | M 1171,04.01.2016,3,"PHYS,SOC","                          "
+LIT 211.02,Desc.,STUDIES IN LITERATURE I,3,10,N.CİHAN YURDAÜN,TFF,767,,NH 402 | M 1200 | M 1200,04.01.2016,3,"PHYS,SOC","                          "
+LIT 311.01,Desc.,COPYWRITING FOR MARKETING&ADVERTISING,3,6,SAMİ BASUT,ThThTh,678,,TB 240 | TB 240 | TB 240,12.01.2016,3,,"                          "
+LIT 411.01,Desc.,COPYWRITING I,3,6,NEŞET DERELİ,WWW,101112,,TB 490 | TB 490 | TB 490,06.01.2016,3,,"                          "

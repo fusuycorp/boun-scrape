@@ -1,0 +1,71 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+BM  481.01,Desc.,SP.STUD.FUNDAMENTALS OF MEDICAL IMAGING,3,8,MEHMED ÖZKAN,MMW,343,Classroom,,07.01.2022,2,,"                          "
+BM  500.01,Desc.,HOSPITAL CLINICAL ENGINEERING AND MANAGEMENT,3,8,YEKTA ÜLGEN,TTT,8910,Online,ONLINE | ONLINE | ONLINE,13.01.2022,1,,"                          "
+BM  501.01,Desc.,BIOLOGY OF LIVING SYSTEMS,3,8,CENGİZHAN ÖZTÜRK,WWW,123,Classroom,CLASSROOM | CLASSROOM | CLASSROOM,19.01.2022,2,,"                          "
+BM  503.01,Desc.,BASIC MATHEMATICS FOR BIOMEDICAL SCIENCE,3,8,AHMET ADEMOĞLU,WWW,234,Online,ONLINE | ONLINE | ONLINE,19.01.2022,3,,"                          "
+BM  506.01,Desc.,BIOSTATISTICAL METHODS,3,7,ESİN ÖZTÜRK IŞIK,WWW,567,Online,ONLINE | ONLINE | ONLINE,20.01.2022,3,,"                          "
+BM  515.01,Desc.,LASER-TISSUE INTERACTION MECHANISMS,3,8,MURAT GÜLSOY,ThThTh,123,Classroom,CLASSROOM | CLASSROOM | CLASSROOM,08.01.2022,2,,"                          "
+BM  517.01,Desc.,NOVEL APPLICATIONS IN BIOMEDICAL OPTICS,3,8,MURAT GÜLSOY,FFF,123,Online,ONLINE | ONLINE | ONLINE,07.01.2022,1,,"                          "
+BM  522.01,Desc.,SKELETAL MUSCLE MECHANICS,3,8,CAN YÜCESOY,MMM,123,Classroom,CLASSROOM | CLASSROOM | CLASSROOM,07.01.2022,1,,"                          "
+BM  525.01,Desc.,TISSUE BIOMECHANICS,3,8,CAN YÜCESOY,ThThTh,567,Online,ONLINE | ONLINE | ONLINE,10.01.2022,1,,"                          "
+BM  538.01,Desc.,COMPUTATIONAL NEUROSCIENCE,3,8,BURAK GÜÇLÜ,FFF,123,Online,ONLINE | ONLINE | ONLINE,10.01.2022,1,,"                          "
+BM  547.01,Desc.,BIOMEDICAL NANOSTRUCTURES,3,8,BANU İYİSAN,TTT,123,Online,ONLINE | ONLINE | ONLINE,21.01.2022,2,,"                          "
+BM  555.01,Desc.,DESIGN AND EVALUATION OF CLINICAL TRIALS,3,8,EMİN MEHMET YUSUF,TTT,789,Online,ONLINE | ONLINE | ONLINE,08.01.2022,1,,"                          "
+BM  560.01,Desc.,INTRODUCTION TO MEDICAL DEVICE AND IMPLANT DESIGN,3,8,CENGİZHAN ÖZTÜRK,WWTh,565,Online,ONLINE | ONLINE | ONLINE,10.01.2022,3,,"                          "
+BM  564.01,Desc.,BIO. INSTRUMENTATION&MEASUREMENT,4,9,AHMET ADEMOĞLU,MMM,567,Online,ONLINE | ONLINE | ONLINE,07.01.2022,2,,"                          "
+BM  573.01,Desc.,CARDIOVASCULAR IMAGING,3,8,CENGİZHAN ÖZTÜRK,ThThTh,123,Classroom,CLASSROOM | CLASSROOM | CLASSROOM,,,,"                          "
+BM  579.01,Desc.,GRADUATE SEMINAR,0,2,CENGİZHAN ÖZTÜRK,T,5,Online,ONLINE,,,,"                          "
+BM  585.01,Desc.,SP.STUD.CHARACTERIZATION OF NANOSCALE PARTICLES,3,7,BANU İYİSAN,ThThTh,567,Classroom,CLASSROOM | CLASSROOM | CLASSROOM,08.01.2022,2,,"                          "
+BM  586.01,Desc.,SP.STUD.ARTIFICAL INTELL.IN HEALTHCARE,3,8,MEHMET TURAN,ThThTh,678,Online,ONLINE | ONLINE | ONLINE,21.01.2022,2,,"                          "
+BM  587.01,Desc.,SP.STUD.ADVANCED RESEARCH METHODS,3,8,DANIELA SCHULZ,MMM,8910,Online,ONLINE | ONLINE | ONLINE,12.01.2022,3,,"                          "
+BM  590.01,Desc.,SEL.TP.MAGNETIC RESONANCE SPECTR.IMAGING,3,8,ESİN ÖZTÜRK IŞIK,MMM,567,Classroom,CLASSROOM | CLASSROOM | CLASSROOM,08.01.2022,2,,"                          "
+BM  592.01,Desc.,SEL.TP.RATCAP RESEARCH APPLICATIONS & DEVELOPMENT,3,8,DANIELA SCHULZ,WWW,8910,Classroom,CLASSROOM | CLASSROOM | CLASSROOM,07.01.2022,1,,"                          "
+BM  599.01,Desc.,SP.TP.OPTICAL METHODS FOR DETECTION&TREATMENT OF CANCER,3,8,MUSTAFA KEMAL RUHİ,,,Online,,07.01.2022,2,,"                          "
+BM  601.01,Desc.,QUALITY ASSURANCE PRIN.FOR BIOMED.ENGIN.,3,8,ALBERT GÜVENİŞ,FFF,678,Online,ONLINE | ONLINE | ONLINE,07.01.2022,1,,"                          "
+BM  632.01,Desc.,SENSORY SYSTEMS,3,8,BURAK GÜÇLÜ,WWW,123,Classroom,CLASSROOM | CLASSROOM | CLASSROOM,13.01.2022,1,,"                          "
+BM  690.01,Desc.,MASTER'S THESIS IN BIOMEDICAL ENGINEERIN,0,60,AHMET ADEMOĞLU,,,Online,,,,,"                          "
+BM  690.02,Desc.,MASTER'S THESIS IN BIOMEDICAL ENGINEERIN,0,60,ALBERT GÜVENİŞ,,,Online,,,,,"                          "
+BM  690.03,Desc.,MASTER'S THESIS IN BIOMEDICAL ENGINEERIN,0,60,ESİN ÖZTÜRK IŞIK,,,Online,,,,,"                          "
+BM  690.04,Desc.,MASTER'S THESIS IN BIOMEDICAL ENGINEERIN,0,60,BURAK GÜÇLÜ,,,Online,,,,,"                          "
+BM  690.05,Desc.,MASTER'S THESIS IN BIOMEDICAL ENGINEERIN,0,60,CAN YÜCESOY,,,Online,,,,,"                          "
+BM  690.06,Desc.,MASTER'S THESIS IN BIOMEDICAL ENGINEERIN,0,60,CENGİZHAN ÖZTÜRK,,,Online,,,,,"                          "
+BM  690.07,Desc.,MASTER'S THESIS IN BIOMEDICAL ENGINEERIN,0,60,HALE SAYBAŞILI,,,Online,,,,,"                          "
+BM  690.08,Desc.,MASTER'S THESIS IN BIOMEDICAL ENGINEERIN,0,60,BORA GARİPCAN,,,Online,,,,,"                          "
+BM  690.09,Desc.,MASTER'S THESIS IN BIOMEDICAL ENGINEERIN,0,60,MEHMED ÖZKAN,,,Online,,,,,"                          "
+BM  690.10,Desc.,MASTER'S THESIS IN BIOMEDICAL ENGINEERIN,0,60,MURAT GÜLSOY,,,Online,,,,,"                          "
+BM  690.11,Desc.,MASTER'S THESIS IN BIOMEDICAL ENGINEERIN,0,60,DUYGU EGE,,,Online,,,,,"                          "
+BM  690.12,Desc.,MASTER'S THESIS IN BIOMEDICAL ENGINEERIN,0,60,ÖZGÜR KOCATÜRK,,,Online,,,,,"                          "
+BM  690.13,Desc.,MASTER'S THESIS IN BIOMEDICAL ENGINEERIN,0,60,DANIELA SCHULZ,,,Online,,,,,"                          "
+BM  690.14,Desc.,MASTER'S THESIS IN BIOMEDICAL ENGINEERIN,0,60,BANU İYİSAN,,,Online,,,,,"                          "
+BM  690.15,Desc.,MASTER'S THESIS IN BIOMEDICAL ENGINEERIN,0,60,İBRAHİM ALPAY ÖZCAN,,,Online,,,,,"                          "
+BM  699.01,Desc.,GUIDED RESEARCH,4,30,AHMET ADEMOĞLU,,,Online,,,,,"                          "
+BM  699.02,Desc.,GUIDED RESEARCH,4,30,ALBERT GÜVENİŞ,,,Online,,,,,"                          "
+BM  699.03,Desc.,GUIDED RESEARCH,4,30,ESİN ÖZTÜRK IŞIK,,,Online,,,,,"                          "
+BM  699.04,Desc.,GUIDED RESEARCH,4,30,BURAK GÜÇLÜ,,,Online,,,,,"                          "
+BM  699.05,Desc.,GUIDED RESEARCH,4,30,CAN YÜCESOY,,,Online,,,,,"                          "
+BM  699.06,Desc.,GUIDED RESEARCH,4,30,CENGİZHAN ÖZTÜRK,,,Online,,,,,"                          "
+BM  699.07,Desc.,GUIDED RESEARCH,4,30,HALE SAYBAŞILI,,,Online,,,,,"                          "
+BM  699.08,Desc.,GUIDED RESEARCH,4,30,BORA GARİPCAN,,,Online,,,,,"                          "
+BM  699.09,Desc.,GUIDED RESEARCH,4,30,MEHMED ÖZKAN,,,Online,,,,,"                          "
+BM  699.10,Desc.,GUIDED RESEARCH,4,30,MURAT GÜLSOY,,,Online,,,,,"                          "
+BM  699.11,Desc.,GUIDED RESEARCH,4,30,DUYGU EGE,,,Online,,,,,"                          "
+BM  699.12,Desc.,GUIDED RESEARCH,4,30,ÖZGÜR KOCATÜRK,,,Online,,,,,"                          "
+BM  699.13,Desc.,GUIDED RESEARCH,4,30,DANIELA SCHULZ,,,Online,,,,,"                          "
+BM  699.14,Desc.,GUIDED RESEARCH,4,30,BANU İYİSAN,,,Online,,,,,"                          "
+BM  700.01,Desc.,GRADUATE SEMINAR,0,2,CENGİZHAN ÖZTÜRK,,,Online,,,,,"                          "
+BM  790.01,Desc.,DOCTORAL DISSERTATION IN BIOMEDICAL ENG.,0,120,AHMET ADEMOĞLU,,,Online,,,,,"                          "
+BM  790.02,Desc.,DOCTORAL DISSERTATION IN BIOMEDICAL ENG.,0,120,ALBERT GÜVENİŞ,,,Online,,,,,"                          "
+BM  790.03,Desc.,DOCTORAL DISSERTATION IN BIOMEDICAL ENG.,0,120,ESİN ÖZTÜRK IŞIK,,,Online,,,,,"                          "
+BM  790.04,Desc.,DOCTORAL DISSERTATION IN BIOMEDICAL ENG.,0,120,BURAK GÜÇLÜ,,,Online,,,,,"                          "
+BM  790.05,Desc.,DOCTORAL DISSERTATION IN BIOMEDICAL ENG.,0,120,CAN YÜCESOY,,,Online,,,,,"                          "
+BM  790.06,Desc.,DOCTORAL DISSERTATION IN BIOMEDICAL ENG.,0,120,CENGİZHAN ÖZTÜRK,,,Online,,,,,"                          "
+BM  790.07,Desc.,DOCTORAL DISSERTATION IN BIOMEDICAL ENG.,0,120,HALE SAYBAŞILI,,,Online,,,,,"                          "
+BM  790.08,Desc.,DOCTORAL DISSERTATION IN BIOMEDICAL ENG.,0,120,BORA GARİPCAN,,,Online,,,,,"                          "
+BM  790.09,Desc.,DOCTORAL DISSERTATION IN BIOMEDICAL ENG.,0,120,MEHMED ÖZKAN,,,Online,,,,,"                          "
+BM  790.10,Desc.,DOCTORAL DISSERTATION IN BIOMEDICAL ENG.,0,120,MURAT GÜLSOY,,,Online,,,,,"                          "
+BM  790.11,Desc.,DOCTORAL DISSERTATION IN BIOMEDICAL ENG.,0,120,DUYGU EGE,,,Online,,,,,"                          "
+BM  790.12,Desc.,DOCTORAL DISSERTATION IN BIOMEDICAL ENG.,0,120,ÖZGÜR KOCATÜRK,,,Online,,,,,"                          "
+BM  790.13,Desc.,DOCTORAL DISSERTATION IN BIOMEDICAL ENG.,0,120,DANIELA SCHULZ,,,Online,,,,,"                          "
+BM  790.14,Desc.,DOCTORAL DISSERTATION IN BIOMEDICAL ENG.,0,120,BANU İYİSAN,,,Online,,,,,"                          "
+BM  790.15,Desc.,DOCTORAL DISSERTATION IN BIOMEDICAL ENG.,0,120,İBRAHİM ALPAY ÖZCAN,,,Online,,,,,"                          "
+BM  790.16,Desc.,DOCTORAL DISSERTATION IN BIOMEDICAL ENG.,0,120,ARDA YALÇINKAYA,,,Online,,,,,"                          "

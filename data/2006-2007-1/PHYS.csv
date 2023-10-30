@@ -1,0 +1,74 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHYS101.02,Desc.,PHYSICS I,4,8,AYŞE FAHRÜNİSA NEYZİ,MWF,222,,YD 206 | YD 206 | YD 206,,,,"                          "
+PHYS101.03,Desc.,PHYSICS I,4,8,AYŞE FAHRÜNİSA NEYZİ,MWF,333,,YD 206 | YD 206 | YD 206,,,,"                          "
+PHYS102.01,Desc.,PHYSICS II,4,8,LEVENT KURNAZ,MWF,222,,YD 118 | YD 118 | KB 125,,,,"                          "
+PHYS121.01,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,HALUK BEKER,MWF,222,,YD 106 | YD 106 | YD 106,,,,"                          "
+PHYS121.02,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,MIKAEL SHEFTEL,MWF,333,,YD 116 | YD 116 | YD 116,,,,"                          "
+PHYS125.01,Desc.,CALCULATION METHODS IN PHYSICS,1,2,HALUK BEKER,ThTh,12,,YD 117 | YD 117,,,,"                          "
+PHYS130.01,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,AŞKIN ANKAY,MWF,333,,YD 306 | YD 406 | KBZ 01,,,,"                          "
+PHYS130.02,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,ERSAN DEMİRALP,MWF,222,,KBZ 01 | KBZ 01 | KBZ 01,,,,"                          "
+PHYS201.01,Desc.,PHYSICS III,4,6,YANI SKARLATOS,TTThTh,1212,,YD 206 | YD 206 | YD 206 | YD 206,,,,"                          "
+PHYS201.02,Desc.,PHYSICS III,4,6,YANI SKARLATOS,TTThTh,3434,,YD 118 | YD 118 | YD 118 | YD 118,,,,"                          "
+PHYS201.03,Desc.,PHYSICS III,4,6,MEHMET ENİS OĞUZ,TTThTh,3434,,KBZ 01 | KBZ 01 | KBZ 01 | KBZ 01,,,,"                          "
+PHYS201.05,Desc.,PHYSICS III,4,6,METİN ARIK,TTThTh,1212,,KBZ 01 | KBZ 01 | KBZ 01 | KBZ 01,,,,"                          "
+PHYS202.01,Desc.,PHYSICS IV,4,6,MUHİTTİN MUNGAN,TTThTh,1212,,YD 106 | YD 106 | YD 106 | YD 106,,,,"                          "
+PHYS202.02,Desc.,PHYSICS IV,4,6,SERDAR NERGİZ,TTThTh,3434,,YD 106 | YD 106 | YD 106 | YD 106,,,,"                          "
+PHYS205.01,Desc.,EXPLORING THE COSMOS I,3,5,LEVENT KURNAZ,MMThTh,7878,,KBZ 01 | KBZ 01 | KB 125 | KB 125,,,,"                          "
+PHYS221.02,Desc.,THERMAL PROPERTIES OF MATTER,3,5,ALİ KAYA,TTThTh,7878,,KB 125 | KB 125 | YD 102 | YD 102,,,,"                          "
+PHYS290.01,Desc.,INTRO.TO COMPUTER USAGE IN PHYSICS,3,6,SERDAR NERGİZ,WWThTh,5656,,YD 103 | YD 103 | YD 103 | YD 103,,,,"                          "
+PHYS301.01,Desc.,CLASSICAL MECHANICS I,3,6,METİN ARIK,TTThTh,5656,,YD 104 | YD 104 | YD 104 | YD 104,,,,"        PHYS                  "
+PHYS301.02,Desc.,CLASSICAL MECHANICS I,3,6,İBRAHİM SEMİZ,TTThTh,5656,,YD 102 | YD 102 | YD 102 | YD 102,,,,"                          "
+PHYS311.01,Desc.,QUANTUM PHYSICS I,3,7,TAYLAN AKDOĞAN,MMWW,5656,,YD 104 | YD 104 | YD 104 | YD 104,,,,"        PHYS                  "
+PHYS325.01,Desc.,MATHEMATICAL METHODS OF PHYSICS I,3,5,ÖMER Ö.OĞUZ,TTThTh,3434,,M 1100 | M 1100 | M 1100 | M 1100,,,,"        PHYS                  "
+PHYS331.01,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,HESNA SÜLÜN TURGAY,WWWFF,12356,, | N/A | N/A | YD 104 | YD 104,,,,"        PHYS                  "
+PHYS331.02,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,HESNA SÜLÜN TURGAY,ThThThFF,12356,, | N/A | N/A | YD 104 | YD 104,,,,"        PHYS                  "
+PHYS331.03,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,HESNA SÜLÜN TURGAY,FFFFF,12356,, | N/A | N/A | YD 104 | YD 104,,,,"        PHYS                  "
+PHYS337.01,Desc.,INTRO.TO PHYSICAL METH.IN MEDICAL DIAG.,3,6,ERHAN GÜLMEZ,WWFF,3478,,YD 101 | YD 101 | YD 101 | YD 101,,,,"                          "
+PHYS345.01,Desc.,CLASSICAL ASTRONOMY,3,6,AŞKIN ANKAY,TBA,,,,,,,"                          "
+PHYS390.01,Desc.,COMPUTER ASSISTED DATA ANALYSIS IN PHYS.,3,6,AVADİS SİMON HACINLIYAN,MMWW,7878,,,,,,"                          "
+PHYS391.01,Desc.,PHYSICAL ELECTRONICS I,3,6,B.GÜLEN AKTAŞ,MTT,267,,M 2170 | M 2152 | M 1200,,,,"                          "
+PHYS401.01,Desc.,ELECTROMAGNETISM I,3,4,NACİ İNCİ,MMWW,3434,,YD 102 | YD 102 | YD 102 | YD 102,,,,"        PHYS                  "
+PHYS407.01,Desc.,ADVANCED QUANTUM PHYSICS I,3,7,ERSAN DEMİRALP,MMWW,5656,,YD 117 | YD 117 | YD 117 | YD 117,,,,"        PHYS                  "
+PHYS411.01,Desc.,QUANTUM MECHANICS I,3,6,OSMAN TEOMAN TURGUT,MMWW,5656,,,,,,"        PHYS                  "
+PHYS421.01,Desc.,STATISTICAL MECHANICS,3,6,MUHİTTİN MUNGAN,TTThTh,7878,,YD 104 | YD 104 | YD 104 | YD 104,,,,"        PHYS                  "
+PHYS443.01,Desc.,EXPERIMENTAL PHYSICS II,4,8,ERHAN GÜLMEZ,WWFFFF,9101234,,YD 101 | YD 101,,,,"                          "
+PHYS484.01,Desc.,SEL.TP.IN PHYS:OBJECT ORIENTED PROGRAMMİ,3,6,YAŞAR SAFKAN,TTThTh,10111011,,,,,,"                          "
+PHYS488.01,Desc.,SEL.TOP.IN PHYS.: PROGRAMMING WITH C,3,6,MEHMET ENİS OĞUZ,TTThTh,7878,,YD 103 | YD 103 | YD 103 | YD 103,,,,"                          "
+PHYS490.01,Desc.,SEL.TP.SYNCHROTRON RADIATION&ITS(ONLINE),3,6,MEHMET ALPER ŞAHİNER,,, ,,,,,"                          "
+PHYS491.01,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,METİN ARIK,TBA,,,,,,,"                          "
+PHYS491.03,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,YANI SKARLATOS,TBA,,,,,,,"                          "
+PHYS491.04,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,ENİSE NİHAL ERCAN,TBA,,,,,,,"                          "
+PHYS494.01,Desc.,SP.TOP.IN PHYS:APPLIED FOURIER ANALYSIS,3,6,ALPAR  SEVGEN,TBA,,,,,,,"                          "
+PHYS496.01,Desc.,SEL.TOP.IN PHYS:COMPUTATIONAL PHYSICH,3,6,TAYLAN AKDOĞAN,MMWW,3434,,YD 103 | YD 103 | YD 103 | YD 103,,,,"                          "
+PHYS499.01,Desc.,SP.TOP.DATA STRUCTURES&ANALYSIS(ON-LINE),3,6,YÜKSEL GÜNAL,,, ,,,,,"                          "
+PHYS500.01,Desc.,READING IN PHYSICS,1,10,OSMAN TEOMAN TURGUT,TBA,,,,,,,"                          "
+PHYS501.01,Desc.,CLASSICAL DYNAMICS,4,10,ALİ KAYA,TTThTh,1212,,YD 204 | YD 204 | YD 101 | YD 101,,,,"                          "
+PHYS511.01,Desc.,ELECTROMAGNETIC THEORY,4,10,HALUK BEKER,MMWW,5656,,,,,,"                          "
+PHYS531.01,Desc.,QUANTUM MECHANICS I,4,10,TONGUÇ RADOR,MMWW,3434,,KB 125 | KB 125,,,,"                          "
+PHYS579.01,Desc.,GRADUATE SEMINAR,0,10,OSMAN TEOMAN TURGUT,TBA,,,,,,,"                          "
+PHYS587.01,Desc.,SP. TOP. IN PHYS.DATA AN. IN X-RAY ASTRO,4,10,ENİSE NİHAL ERCAN,TBA,,,,,,,"                          "
+PHYS592.01,Desc.,SPECIAL TOP.IN PHYS.OPTOELECTRONICS,4,10,NACİ İNCİ,TBA,,,,,,,"                          "
+PHYS645.01,Desc.,QUANTUM OPTICS & ELECTRONICS I,4,10,YANI SKARLATOS,TBA,,,,,,,"                          "
+PHYS648.01,Desc.,INTEGRATED & FIBER OPTICS,4,10,NACİ İNCİ,TBA,,,,,,,"                          "
+PHYS661.01,Desc.,PARTICLE PHYSICS I,4,10,TONGUÇ RADOR,MMWW,5656,,YD 102 | YD 102 | YD 102 | YD 102,,,,"                          "
+PHYS681.01,Desc.,GRADUATE SEMINAR IN PHYSICS I,3,10,ERHAN GÜLMEZ,TBA,,,,,,,"                          "
+PHYS689.01,Desc.,SP.TOP.IN PHYS.:ADVANCED TOP.IN PHYSICAL,4,1,B.GÜLEN AKTAŞ,TBA,,,,,,,"                          "
+PHYS690.01,Desc.,M.S. THESIS,0,60,OSMAN TEOMAN TURGUT,TBA,,,,,,,"                          "
+PHYS690.02,Desc.,M.S. THESIS,0,60,ENİSE NİHAL ERCAN,TBA,,,,,,,"                          "
+PHYS690.03,Desc.,M.S. THESIS,0,60,LEVENT KURNAZ,TBA,,,,,,,"                          "
+PHYS690.04,Desc.,M.S. THESIS,0,60,MUHİTTİN MUNGAN,TBA,,,,,,,"                          "
+PHYS690.05,Desc.,M.S. THESIS,0,60,METİN ARIK,TBA,,,,,,,"                          "
+PHYS690.06,Desc.,M.S. THESIS,0,60,NACİ İNCİ,TBA,,,,,,,"                          "
+PHYS690.07,Desc.,M.S. THESIS,0,60,ERHAN GÜLMEZ,TBA,,,,,,,"                          "
+PHYS690.08,Desc.,M.S. THESIS,0,60,AŞKIN ANKAY,TBA,,,,,,,"                          "
+PHYS690.09,Desc.,M.S. THESIS,0,60,ALİ KAYA,TBA,,,,,,,"                          "
+PHYS690.10,Desc.,M.S. THESIS,0,60,YANI SKARLATOS,TBA,,,,,,,"                          "
+PHYS698.01,Desc.,SP.TOP.IN PHYSICS:STOCHASTIC METHODS IN ,4,10,OSMAN TEOMAN TURGUT,TBA,,,,,,,"                          "
+PHYS790.01,Desc.,Ph.D.THESIS,0,120,OSMAN TEOMAN TURGUT,TBA,,,,,,,"                          "
+PHYS790.02,Desc.,Ph.D.THESIS,0,120,ERSAN DEMİRALP,TBA,,,,,,,"                          "
+PHYS790.03,Desc.,Ph.D.THESIS,0,120,B.GÜLEN AKTAŞ,TBA,,,,,,,"                          "
+PHYS790.04,Desc.,Ph.D.THESIS,0,120,LEVENT KURNAZ,TBA,,,,,,,"                          "
+PHYS790.05,Desc.,Ph.D.THESIS,0,120,METİN ARIK,TBA,,,,,,,"                          "
+PHYS790.06,Desc.,Ph.D.THESIS,0,120,YANI SKARLATOS,TBA,,,,,,,"                          "
+STS 323.01,Desc.,HISTORY OF MODERN PHYSICS,3,6,ÖMÜR AKYÜZ,TTTh,121,,YD 102 | YD 102 | YD 102,,,,"                          "
+STS 401.01,Desc.,HISTORY OF SCIENCE,3,6,JOHN FREELY,MWF,333,,,,,,"                          "

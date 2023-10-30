@@ -1,0 +1,16 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHYS121.01,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,ERHAN GÜLMEZ,MMMMTTWWWWThTh,123412127812,,,,,,"                          "
+PHYS121.02,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,ERHAN GÜLMEZ,MMTTTTWWThThThTh,563478343478,,,,,,"                          "
+PHYS130.01,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,YANI SKARLATOS,MMMMMMTTWWFF,123478343478,,,,,,"                          "
+PHYS130.02,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,YANI SKARLATOS,MMTTTTWWWWFF,565678567812,,,,,,"                          "
+PHYS201.01,Desc.,PHYSICS III,4,6,HAKAN  ERKOL,TTTTWWWWThThFF,125612561212,,,,,,"                          "
+PHYS201.02,Desc.,PHYSICS III,4,6,HAKAN  ERKOL,MMMMTTWWThThThTh,123434343456,,,,,,"                          "
+PHYS202.01,Desc.,PHYSICS IV,4,6,SERDAR NERGİZ,MMTTWWWWThThFF,343412343412,,,,,,"                          "
+PHYS202.02,Desc.,PHYSICS IV,4,6,SERDAR NERGİZ,MMMMTTTTThThFF,125612565634,,,,,,"                          "
+PHYS205.01,Desc.,EXPLORING THE COSMOS I,3,5,LEVENT KURNAZ,MMMMWWThTh,12781212,,,,,,"                          "
+PHYS221.01,Desc.,THERMAL PROPERTIES OF MATTER,3,5,SERDAR NERGİZ,MMWWThThFFFF,7878785678,,,,,,"        PHYS                  "
+PHYS302.01,Desc.,CLASSICAL MECHANICS II,3,3,CAN KOZÇAZ,MMWWWWThThThTh,1212341234,,,,,,"                          "
+PHYS325.01,Desc.,MATHEMATICAL METHODS OF PHYSICS I,3,5,METİN ARIK,MMTTTTWWThTh,3412343434,,,,,,"        PHYS                  "
+PHYS380.01,Desc.,INTRO.TO ELECTROMAGNETIC RADIATION,3,5,METİN ARIK,MMTTWWThThThTh,5656561256,,,,,,"                          "
+STS 205.01,Desc.,THE CLIMATE,3,6,LEVENT KURNAZ,MMWWThTh,565656,,,,,,"                          "
+STS 401.01,Desc.,HISTORY OF SCIENCE,3,6,LEVENT KURNAZ,MMWWThTh,343434,,,,,,"                          "

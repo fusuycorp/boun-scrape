@@ -1,0 +1,40 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MIS 111.01,Desc.,ECONOMICS I,3,5,ALİ TÜKEL,MMT,674,,HKB105 | HKB105 | HKB105,,,,"                          "
+MIS 113.01,Desc.,MANAGEMENT & ORGANIZATION,3,5,ÖZGÜR DÖĞERLİOĞLU,MMT,343,,HKA301 | HKA301 | HKC107,,,,"                          "
+MIS 125.01,Desc.,INTRODUCTION TO INFORMATION SYS.& TECHNO,4,5,BERTAN YILMAZ BADUR,ThFF,223,,HKA202 | HKA202 | HKA202,,,,"                          "
+MIS 131.01,Desc.,INTRODUCTION TO ALGORITHMS,4,6,ZUHAL TANRIKULU,WWTh,673,,HKA302 | HKA302 | HKA303,,,,"                          "
+MIS 143.01,Desc.,BUSINESS MATHEMATICS I,3,5,AYFER ECEVİT,WWTh,344,,HKA302 | HKA302 | HKB105,,,,"                          "
+MIS 211.01,Desc.,FINANCIAL ACCOUNTING,3,4,İPEK MEREY,TTT,678,,HKB105 | HKB105 | HKB105,,,,"                          "
+MIS 213.01,Desc.,QUANTITATIVE TECHNIQUES,3,4,SONA MARDİKYAN,TTTh,235,,HKA202 | HKA202 | HKB105,,,,"                          "
+MIS 231.01,Desc.,INTRODUCTION TO PROGRAMMING,4,6,BİRGÜL KUTLU,TWW,123,,HKB105 | HKB105 | HKB105,,,,"                          "
+MIS 251.01,Desc.,COMPUTER HARDWARE & SYSTEM SOFTWARE,4,7,BİLGİN METİN,MThTh,534,,HKC107 | HKA202 | HKA202,,,,"                          "
+MIS 313.01,Desc.,QUANTITATIVE ANAL. FOR DECISION MAKING,3,5,SONA MARDİKYAN,MThTh,323,,HKB105 | HKB105 | HKB105,,,,"                          "
+MIS 317.01,Desc.,INTERPERSONAL COMMUNICATION ,3,4,ÖZGÜR DÖĞERLİOĞLU,MTT,545,,HKA301 | HKA202 | HKA202,,,,"                          "
+MIS 415.01,Desc.,HUMAN FACTORS IN COMPUTING,3,6,TANJU AKDENİZ,ThThTh,678,,HKA202 | HKA202 | HKA202,,,,"                          "
+MIS 417.01,Desc.,LEGAL & ETHICAL ISSUES IN COMPUTING,3,6,ASLIHAN NASIR,TTTh,233,,HKB105 | HKB105 | HKC104,,,,"                          "
+MIS 463.01,Desc.,DECISION SUPPORT SYSTEMS FOR BUSINESS,3,6,ASLI SENCER,MMW,456,,HKB105 | HKB105 | HKB105,,,,"                          "
+MIS 469.01,Desc.,APPLIED RESEARCH IN MIS,4,5,ZUHAL TANRIKULU,WWTh,345,,HKB101 | HKB101 | HKB101,,,,"                          "
+MIS 481.01,Desc.,SENIOR SEMINARS IN MIS,1,2,AYFER ECEVİT,W,7,,HKB105,,,,"                          "
+MIS 486.01,Desc.,SP.TOP.İN MIS:ELECT.&MOBILE COM. İN THE,3,5,UĞUR GÖKHAN ÖZDİNÇ,TTT,567,,HKB101 | HKB101 | HKB101,,,,"                          "
+MIS 489.01,Desc.,SP.TOP.IN MIS(INTEGRATED MARKETING COMMU,3,5,HANDE TÜRKER,MMTh,234,,HKB101 | HKB101 | HKB101,,,,"                          "
+MIS 492.01,Desc.,PROJECT,4,8,ÖZGÜR DÖĞERLİOĞLU,TBA,,,,,,,"                          "
+MIS 492.02,Desc.,PROJECT,4,8,SONA MARDİKYAN,TBA,,,,,,,"                          "
+MIS 492.03,Desc.,PROJECT,4,8,BİLGİN METİN,TBA,,,,,,,"                          "
+MIS 492.04,Desc.,PROJECT,4,8,ZUHAL TANRIKULU,TBA,,,,,,,"                          "
+MIS 492.05,Desc.,PROJECT,4,8,BERTAN YILMAZ BADUR,TBA,,,,,,,"                          "
+MIS 511.01,Desc.,DATA RESOURCES MANAGEMENT,3,6,OSMAN NURİ DARCAN,ThThTh,234,,HKB 108 | HKB 108 | HKB 108,,,,"                          "
+MIS 513.01,Desc.,MANAGING COMMUNICATION TECHNOLOGY,3,6,BİLGİN METİN,MMM,678,,HKB 108 | HKB 108 | HKB 108,,,,"                          "
+MIS 515.01,Desc.,"SYSTEMS ANALYSIS, MODELING & DESIGN",3,6,MELTEM ÖZTURAN,TTT,123,,HKB108 | HKB108 | HKB108,,,,"                          "
+MIS 517.01,Desc.,ADVANCED OPERATIONS MANAGEMENT,3,6,ASLI SENCER,WWW,234,,HKB108 | HKB108 | HKB108,,,,"                          "
+MIS 579.01,Desc.,GRADUATE SEMINAR,0,6,ZUHAL TANRIKULU,W,5,,HKB108,,,,"                          "
+MIS 582.01,Desc.,SP.TP.IN MIS:MARKET.OF HIGH TECH PRODUCT,3,6,ASLIHAN NASIR,MMM,234,,HKB108 | HKB108 | HKB108,,,,"                          "
+MIS 690.02,Desc.,MASTER'S THESIS,0,60,BERTAN YILMAZ BADUR,TBA,,,,,,,"                          "
+MIS 690.03,Desc.,MASTER'S THESIS,0,60,ÖZGÜR DÖĞERLİOĞLU,TBA,,,,,,,"                          "
+MIS 690.04,Desc.,MASTER'S THESIS,0,60,BİRGÜL KUTLU,TBA,,,,,,,"                          "
+MIS 690.05,Desc.,MASTER'S THESIS,0,60,ASLI SENCER,TBA,,,,,,,"                          "
+MIS 690.06,Desc.,MASTER'S THESIS,0,60,HANDE TÜRKER,TBA,,,,,,,"                          "
+MIS 690.07,Desc.,MASTER'S THESIS,0,60,SONA MARDİKYAN,TBA,,,,,,,"                          "
+MIS 690.08,Desc.,MASTER'S THESIS,0,60,ASLIHAN NASIR,TBA,,,,,,,"                          "
+MIS 690.09,Desc.,MASTER'S THESIS,0,60,MELTEM ÖZTURAN,TBA,,,,,,,"                          "
+MIS 690.10,Desc.,MASTER'S THESIS,0,60,ZUHAL TANRIKULU,TBA,,,,,,,"                          "
+MIS 690.11,Desc.,MASTER'S THESIS,0,60,ALİ TÜKEL,TBA,,,,,,,"                          "

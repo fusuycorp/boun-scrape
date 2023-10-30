@@ -1,0 +1,25 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+IE  202.01,Desc.,OPERATIONS RESEARCH I:LINEAR MODELS,4,6,İLHAN OR,MMTThTh,78556,,,,,,"                          "
+IE  256.01,Desc.,STATISTICS FOR INDUSTRIAL ENGINEERS,3,5,AYBEK KORUGAN,TTThTh,7878,,,,,,"                          "
+IE  304.01,Desc.,OPERATIONS RESEARCH III:STOCHASTIC MOD.,4,6,MUSTAFA NECATİ ARAS,MMTThTh,12623,,,,,,"                          "
+IE  306.01,Desc.,SYSTEMS SIMULATION,4,6,WOLFGANG HOERMANN,TTThThTh,78789,,,,,,"                          "
+IE  312.01,Desc.,FACILITIES DESIGN & PLANNING,4,6,ÜMİT BİLGE,TTWFF,34456,,,,,,"                          "
+IE  320.01,Desc.,MATERIALS & PROCESSES IN MANUFACTURING,3,5,KEMAL BERKKAN,WWW,123,,,,,,"                          "
+IE  414.01,Desc.,COMPUTER INTEGRATED MANUFACTURING SYSTEM,3,6,ÜMİT BİLGE,WWThTh,6756,,,,,,"                          "
+IE  443.01,Desc.,ENGINEERING INVESTMENT DECISIONS,3,6,DAVİD PİNHAS,MMTh,344,,,,,,"                          "
+IE  480.01,Desc.,SP.TOP.:CASE STUDIES IN IE,3,6,GÜRKAN KUMBAROĞLU,WWW,8910,,,,,,"                          "
+IE  492.01,Desc.,PROJECT,4,8,YAMAN BARLAS,TBA,,,,,,,"                          "
+IE  497.01,Desc.,SP.TOP.:METHODS ANALYSIS&DESIGN,3,6,GÜRKAN KUMBAROĞLU,FFF,123,,,,,,"                          "
+IE  506.01,Desc.,STATISTICAL DATA ANALYSIS,3,7,ALİ RIZA KAYLAN,TTFF,4545,,,,,,"                          "
+IE  542.01,Desc.,MANUFACTURING INFORMATION SYSTEMS,3,7,ALİ TAMER ÜNAL,WThTh,378,,,,,,"                          "
+IE  544.01,Desc.,DECISION ANALYSIS,3,7,TANER BİLGİÇ,WWTh,121,,,,,,"                          "
+IE  579.01,Desc.,GRADUATE SEMINAR,0,2,DAVİD PİNHAS,WWW,789,,,,,,"                          "
+IE  582.01,Desc.,SP.TOP.IN MANUFACTURING SYSTEMS ENG.,3,7,AYBEK KORUGAN,ThThTh,235,,,,,,"                          "
+IE  584.01,Desc.,SP.TOP.IN OBJECT ORIENTED PROG.,3,7,ALİ TAMER ÜNAL,WWTh,459,,,,,,"                          "
+IE  585.01,Desc.,SP.TOP.IN OPTIMIZATION,3,7,KUBAN ALTINEL,FFF,678,,,,,,"                          "
+IE  587.01,Desc.,SP.TOP.IN OPTIMAL CONTROL THEORY,3,7,MUSTAFA AKAN,TTT,789,,,,,,"                          "
+IE  589.01,Desc.,SP.TOP.IN IE: INVENTORY THEORY ,3,7,TANER BİLGİÇ,FFF,123,,,,,,"                          "
+IE  602.01,Desc.,DYNAMIC SYSTEMS MODELING & ANALYSIS,3,7,YAMAN BARLAS,TThTh,656,,,,,,"                          "
+IE  611.01,Desc.,INTEGER PROGRAMMING,3,7,KUBAN ALTINEL,MMTT,1212,,,,,,"                          "
+IE  690.01,Desc.,M.S. THESIS,0,60,KUBAN ALTINEL,TBA,,,,,,,"                          "
+IE  790.01,Desc.,Ph.D. THESIS,0,120,KUBAN ALTINEL,TBA,,,,,,,"                          "

@@ -1,0 +1,28 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY I,3,7,GÜROL IRZIK,MMTh,236,,,,,,"        PSY; LING; GUID; LAW                  "
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY I,3,7,MURAT BAÇ,MThTh,667,,,,,,"        PHIL                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,5,ZEYNEP DAVRAN,MWTh,333,,,,,,"        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,3,10,BERNA KILINÇ,TThTh,778,,,,,,"                          "
+PHIL131.02,Desc.,LOGIC I,3,10,SUN DEMİRLİ,TThTh,334,,,,,,"                          "
+PHIL213.01,Desc.,ANCIENT PHILOSOPHY,3,6,CHRYSSI SIDIROPOULOU,MTW,463,,,,,,"        PHIL                  "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,İLHAN İNAN,TTTh,453,,,,,,"        PHIL                  "
+PHIL301.01,Desc.,PROBLEMS OF CONTEMPORARY PHILOSOPHY,3,6,ALİ KARATAY,TFF,145,,,,,,"                          "
+PHIL313.01,Desc.,HISTORY OF MODERN PHILOSOPHY I,3,6,STEPHEN VOSS,TTTh,232,,,,,,"        PHIL                  "
+PHIL341.01,Desc.,ETHICS,3,6,KARANFİL SOYHUN,ThFF,523,,,,,,"        PHIL                  "
+PHIL354.01,Desc.,SOCIAL & POLITICAL PHILOSOPHY,3,6,ZEYNEP DAVRAN,MMW,456,,,,,,"                          "
+PHIL375.01,Desc.,PHILOSOPHY OF MIND,3,6,STEPHEN VOSS,TThTh,434,,,,,,"                          "
+PHIL400.01,Desc.,CURRENT ISSUES IN PHILOSOPHY,3,6,YILDIZ SİLİER,MMW,781,,,,,,"                          "
+PHIL412.01,Desc.,ADVANCED HISTORY OF PHILOSOPHY,3,6,CHRYSSI SIDIROPOULOU,MWW,645,,,,,,"                          "
+PHIL483.01,Desc.,SP.TOP.:CRITICAL ISSUES IN PHIL.,3,6,MURAT BAÇ,MMF,236,,,,,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,GÜROL IRZIK,,, ,,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL580.01,Desc.,SP.TOP.IN PHILOSOPHY:THEORIES OF PROPERT,4,10,SUN DEMİRLİ,FFF,345,,,,,,"                          "
+PHIL581.01,Desc.,SP.TOP.:QUINE,4,10,ALİ KARATAY,TTT,678,,,,,,"                          "
+PHIL582.01,Desc.,SP.TOP.IN ETHICS:ARISTOTLE'S ETHICS,4,10,PINAR CANEVİ,ThThTh,678,,,,,,"                          "
+PHIL587.01,Desc.,SP.TOP.RATIONALITY,4,10,KARANFİL SOYHUN,TTT,789,,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,2,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL591.01,Desc.,"SP.TOP.IN PHIL.OF SCI.:SCI,TECHNOLOGY &S",4,10,BERNA KILINÇ,WWW,678,,,,,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,İLHAN İNAN,TBA,,,,,,,"                          "

@@ -1,0 +1,61 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY ,3,8,YILDIZ SİLİER,TFF,623,,NH 401 | NH 103 | NH 103,,,PHIL,"        PSY; LING; GUID; LAW                  "
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY ,3,8,NURBAY IRMAK,TThTh,334,,NH 401 | NH 401 | NH 401,,,PSY,"        PHIL                  "
+PHIL105.01,Desc.,INFORMAL LOGIC,4,8,BERNA KILINÇ,WWFF,7856,,NH 202 | NH 202 | TB 310 | TB 310,,,,"        PHIL                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,6,JOHANNES FRITSCHE,TFF,334,,NH 203 | NH 105 | NH 105,,,"LL,TKL","        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,4,8,KARANFİL SOYHUN,MMWW,1212,,EF 106 | EF 106 | EF 106 | EF 106,,,,"                          "
+PHIL131.02,Desc.,LOGIC I,4,8,KARANFİL SOYHUN,MMWW,5656,,EF 106 | EF 106 | NH 202 | NH 202,,,MEDU,"                          "
+PHIL213.01,Desc.,HISTORY OF PHILOSOPHY I,3,6,CHRYSSI SIDIROPOULOU,TTF,784,,EF 116 | EF 116 | NH 103,,,,"        PHIL                  "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,FRANK ZENKER,MMW,564,,NH 103 | NH 103 | M 2200,,,,"        PHIL                  "
+PHIL313.01,Desc.,HISTORY OF PHILOSOPHY III,3,6,LUCAS THORPE,MMW,343,,NH 403 | NH 403 | JF 507,,,,"        PHIL                  "
+PHIL341.01,Desc.,ETHICS,3,6,JOHANNES FRITSCHE,TTF,567,,NH 302 | NH 302 | TB 310,,,,"        PHIL                  "
+PHIL354.01,Desc.,SOCIAL & POLITICAL PHILOSOPHY,3,6,YILDIZ SİLİER,TTF,345,,EF 104 | EF 104 | M 1170,,,,"                          "
+PHIL375.01,Desc.,PHILOSOPHY OF MIND,3,6,STEPHEN VOSS,MMTh,568,,M 1200 | M 1200 | NH 103,,,,"                          "
+PHIL402.01,Desc.,THE SELF,3,7,STEPHEN VOSS,MThTh,856,,M 2180 | EF 104 | EF 104,,,,"                          "
+PHIL493.01,Desc.,SP.TP.GOD IN POLITICAL PHIL.,3,6,AHMED MEGUID,WWF,786,,NH 102 | NH 102 | M 1170,,,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,CHRYSSI SIDIROPOULOU,,, ,,,,,"                          "
+PHIL499.02,Desc.,INDEPENDENT STUDY,3,6,NURBAY IRMAK,,, ,,,,,"                          "
+PHIL499.03,Desc.,INDEPENDENT STUDY,3,6,BERNA KILINÇ,,, ,,,,,"                          "
+PHIL499.04,Desc.,INDEPENDENT STUDY,3,6,YILDIZ SİLİER,,, ,,,,,"                          "
+PHIL499.05,Desc.,INDEPENDENT STUDY,3,6,KARANFİL SOYHUN,,, ,,,,,"                          "
+PHIL499.06,Desc.,INDEPENDENT STUDY,3,6,LUCAS THORPE,,, ,,,,,"                          "
+PHIL499.07,Desc.,INDEPENDENT STUDY,3,6,STEPHEN VOSS,,, ,,,,,"                          "
+PHIL499.08,Desc.,INDEPENDENT STUDY,3,6,JOHANNES FRITSCHE,,, ,,,,,"                          "
+PHIL499.09,Desc.,INDEPENDENT STUDY,3,6,KENNETH ROBERT WESTPHAL,,, ,,,,,"                          "
+PHIL504.01,Desc.,ADVANCED ISSUES IN ONTOLOGY ,3,10,NURBAY IRMAK,TTT,678,,,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL588.01,Desc.,SP.TP.SCIENTIFIC PLURALISM,4,10,BERNA KILINÇ,ThThTh,678,,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL58A.01,Desc.,SP.TP.MODAL METAPHYSICS&EPISTEMOLOGY,4,10,AHMED MEGUID,FFF,8910,,,,,,"                          "
+PHIL58C.01,Desc.,SP.TP.NORMATIVITY IN NATURE,4,10,LUCAS THORPE,WWW,567,,,,,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,3,10,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL590.02,Desc.,DIRECTED STUDY,3,10,NURBAY IRMAK,,,,,,,,"                          "
+PHIL590.03,Desc.,DIRECTED STUDY,3,10,BERNA KILINÇ,,,,,,,,"                          "
+PHIL590.04,Desc.,DIRECTED STUDY,3,10,YILDIZ SİLİER,,,,,,,,"                          "
+PHIL590.05,Desc.,DIRECTED STUDY,3,10,KARANFİL SOYHUN,,,,,,,,"                          "
+PHIL590.06,Desc.,DIRECTED STUDY,3,10,LUCAS THORPE,,,,,,,,"                          "
+PHIL590.07,Desc.,DIRECTED STUDY,3,10,STEPHEN VOSS,,,,,,,,"                          "
+PHIL590.08,Desc.,DIRECTED STUDY,3,10,JOHANNES FRITSCHE,,,,,,,,"                          "
+PHIL590.09,Desc.,DIRECTED STUDY,3,10,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,3,30,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL690.02,Desc.,MASTER THESIS,0,60,NURBAY IRMAK,,,,,,,,"                          "
+PHIL690.03,Desc.,MASTER THESIS,0,60,BERNA KILINÇ,,,,,,,,"                          "
+PHIL690.04,Desc.,MASTER THESIS,0,60,YILDIZ SİLİER,,,,,,,,"                          "
+PHIL690.05,Desc.,MASTER THESIS,0,60,KARANFİL SOYHUN,,,,,,,,"                          "
+PHIL690.06,Desc.,MASTER THESIS,0,60,LUCAS THORPE,,,,,,,,"                          "
+PHIL690.07,Desc.,MASTER THESIS,0,60,STEPHEN VOSS,,,,,,,,"                          "
+PHIL690.08,Desc.,MASTER THESIS,0,60,JOHANNES FRITSCHE,,,,,,,,"                          "
+PHIL690.09,Desc.,MASTER THESIS,0,60,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL690.10,Desc.,MASTER THESIS,0,60,SUN DEMİRLİ,,,,,,,,"                          "
+PHIL700.01,Desc.,GRADUATE SEMINAR,0,2,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL790.02,Desc.,Ph.D THESIS,0,120,NURBAY IRMAK,,,,,,,,"                          "
+PHIL790.03,Desc.,Ph.D THESIS,0,120,BERNA KILINÇ,,,,,,,,"                          "
+PHIL790.04,Desc.,Ph.D THESIS,0,120,YILDIZ SİLİER,,,,,,,,"                          "
+PHIL790.05,Desc.,Ph.D THESIS,0,120,KARANFİL SOYHUN,,,,,,,,"                          "
+PHIL790.06,Desc.,Ph.D THESIS,0,120,LUCAS THORPE,,,,,,,,"                          "
+PHIL790.07,Desc.,Ph.D THESIS,0,120,STEPHEN VOSS,,,,,,,,"                          "
+PHIL790.08,Desc.,Ph.D THESIS,0,120,JOHANNES FRITSCHE,,,,,,,,"                          "
+PHIL790.09,Desc.,Ph.D THESIS,0,120,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL790.10,Desc.,Ph.D THESIS,0,120,SUN DEMİRLİ,,,,,,,,"                          "

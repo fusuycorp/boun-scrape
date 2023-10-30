@@ -1,0 +1,66 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AL  201.01,Desc.,SURVEY OF AMERICAN LITERATURE,3,6,LOUIS MAZZARI,TWF,333,,YD 116 | TB 310 | TB 240,,,,"                          "
+AL  201.02,Desc.,SURVEY OF AMERICAN LITERATURE,3,6,KIM FORTUNY,TWF,333,,NH 203 | M 1171 | M 2152,,,"FLED,LL","                          "
+AL  201.03,Desc.,SURVEY OF AMERICAN LITERATURE,3,6,ÖZLEM ÖĞÜT,TFF,323,,M 1171 | M 2170 | M 2170,,,,"                          "
+CL  311.01,Desc.,MYTHOLOGY,3,6,SUNA ERTUĞRUL,MWW,434,,TB 310 | M 1170 | M 1170,,,,"                          "
+CL  401.01,Desc.,LITERARY CRITICISM I,3,7,OYA BAŞAK,TThTh,323,,M 1170 | YD 102 | YD 102,,,,"                          "
+EL  101.01,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,CEVZA SEVGEN,TThF,444,,M 1171 | M 1171 | M 2152,,,"LL,FLED,TR","                          "
+EL  101.02,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,LOUIS MAZZARI,TThF,444,,YD 116 | NH 202 | TB 240,,,"LL,FLED,TR","                          "
+EL  101.04,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,ÖZLEM GÖREY,TThF,444,,YD 02 | M 2181 | M 2180,,,"LL,FLED,TR","                          "
+EL  101.05,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,AYLİN ALKAÇ,TThF,444,,YD 03 | NH 302 | M 1170,,,"LL,FLED,TR","                          "
+EL  205.01,Desc.,THE ENGLISH NOVEL,3,6,LAMİA GÜLÇUR,MMW,568,,M 1200 | M 1200 | M 1170,,,,"                          "
+EL  304.01,Desc.,THE EARLIER ENGLISH ROMANTICS,3,6,KIM FORTUNY,TFF,467,,NH 203 | M 2181 | M 2181,,,,"                          "
+EL  307.01,Desc.,MODERN ENGLISH NOVEL,3,6,ÖZLEM ÖĞÜT,TFF,267,,M 1171 | M 2170 | M 2170,,,,"                          "
+EL  401.01,Desc.,STUDIES IN SHAKESPEARE,3,7,IŞIL BAŞ,MMW,677,,TB 240 | TB 240 | M 1170,,,,"                          "
+EL  412.01,Desc.,RESEARCH AND WRITING,3,6,CEVZA SEVGEN,TBA,,,,,,,"                          "
+EL  412.02,Desc.,RESEARCH AND WRITING,3,6,IŞIL BAŞ,TBA,,,,,,,"                          "
+EL  412.03,Desc.,RESEARCH AND WRITING,3,6,DİDAR AKAR,TBA,,,,,,,"                          "
+EL  412.04,Desc.,RESEARCH AND WRITING,3,6,SOSİ ANTİKACIOĞLU,TBA,,,,,,,"                          "
+EL  412.05,Desc.,RESEARCH AND WRITING,3,6,LAMİA GÜLÇUR,TBA,,,,,,,"                          "
+EL  412.06,Desc.,RESEARCH AND WRITING,3,6,SUNA ERTUĞRUL,TBA,,,,,,,"                          "
+EL  412.07,Desc.,RESEARCH AND WRITING,3,6,ÖZLEM GÖREY,TBA,,,,,,,"                          "
+EL  412.08,Desc.,RESEARCH AND WRITING,3,6,ÖZLEM ÖĞÜT,TBA,,,,,,,"                          "
+EL  412.09,Desc.,RESEARCH AND WRITING,3,6,KIM FORTUNY,TBA,,,,,,,"                          "
+EL  484.01,Desc.,SP.TOP.:CULT.IDENTITY&POST-COL.NOVELS IN,3,6,LAMİA GÜLÇUR,MWW,856,,M 2152 | M 1170 | M 1170,,,,"                          "
+EL  579.01,Desc.,GRADUATE SEMINAR,0,5,ASLI TEKİNAY,TBA,,,,,,,"                          "
+EL  580.01,Desc.,ADV.TOP:LOVE POETRY FROM CLASSIC.TIMES T,4,10,SOSİ ANTİKACIOĞLU,FFF,456,,,,,,"                          "
+EL  581.01,Desc.,SPECIAL TOPICS BECKETT TRILOGY,4,10,SUNA ERTUĞRUL,TBA,,,,,,,"                          "
+EL  589.01,Desc.,READINGS IN ENGLISH LITERATURE,1,5,ASLI TEKİNAY,TBA,,,,,,,"                          "
+EL  641.01,Desc.,JOYCE AND THE MODERN  ENGLISH NOVEL,4,10,ÖZLEM ÖĞÜT,TTT,678,,TB 415 | TB 415 | TB 415,,,,"                          "
+EL  690.01,Desc.,MASTER THESIS,0,60,IŞIL BAŞ,TBA,,,,,,,"                          "
+EL  690.02,Desc.,MASTER THESIS,0,60,SUNA ERTUĞRUL,TBA,,,,,,,"                          "
+EL  790.01,Desc.,DOCTORAL DISSERTATION,0,120,CEVZA SEVGEN,TBA,,,,,,,"                          "
+EL  790.02,Desc.,DOCTORAL DISSERTATION,0,120,IŞIL BAŞ,TBA,,,,,,,"                          "
+EL  790.03,Desc.,DOCTORAL DISSERTATION,0,120,ÖZLEM ÖĞÜT,TBA,,,,,,,"                          "
+EL  790.04,Desc.,DOCTORAL DISSERTATION,0,120,SUNA ERTUĞRUL,TBA,,,,,,,"                          "
+EL  790.05,Desc.,DOCTORAL DISSERTATION,0,120,KIM FORTUNY,TBA,,,,,,,"                          "
+ENGL101.01,Desc.,INTRODUCTION TO LITERARY SCHOLARSHIP I,3,6,SOSİ ANTİKACIOĞLU,TTF,568,,M 2152 | M 2152 | M 2181,,,,"                          "
+ENGL111.01,Desc.,EXPOSITORY WRITING I,3,5,MÜFİDE PEKİN,MMW,452,,YD 104 | YD 104 | TB 240,,,LL,"                          "
+ENGL111.02,Desc.,EXPOSITORY WRITING I,3,5,AYLİN VARTANYAN,MWW,278,,M 2181 | YD 102 | YD 102,,,HIST,"                          "
+ENGL111.03,Desc.,EXPOSITORY WRITING I,3,5,AYLİN VARTANYAN,MWW,556,,M 1171 | YD 102 | YD 102,,,LL,"                          "
+ENGL111.04,Desc.,EXPOSITORY WRITING I,3,5,AYLİN VARTANYAN,MThTh,656,,M 1171 | YD 102 | YD 102,,,HIST,"                          "
+ENGL201.01,Desc.,STRUCTURE OF MODERN ENGLISH,3,6,SUMRU ÖZSOY,MWTh,555,,NH 203 | TB 310 | NH 202,,,,"                          "
+ENGL311.01,Desc.,HISTORY OF THE ENGLISH LANGUAGE I,3,5,MARKUS POCHTRAGER,MTTh,354,,TB 310 | M 2171 | YD 104,,,,"                          "
+FA  201.01,Desc.,ANATOLIAN ART & CULTURES FROM PREHIST...,3,5,BEHİN AKSOY,ThThTh,678,,TB 475 | TB 475 | TB 475,,,,"                          "
+FA  304.01,Desc.,WESTERN PAINTING IN THE TWENTIETH CENTUR,3,5,SEDEF HATAPKAPULU,MMM,678,,TB 415 | TB 415 | TB 415,,,,"                          "
+FA  326.01,Desc.,VOCAL MUSIC APPRECIATION II,3,5,EMİNE SERDAROĞLU,TTT,234,,TB 415 | TB 415 | TB 415,,,,"                          "
+FA  350.01,Desc.,PROJECT IN FILM ANALYSIS,3,5,CAN CANDAN,MMM,567,,TB 475 | TB 475 | TB 475,,,,"                          "
+FA  48G.01,Desc.,SP.TOP.BODY LANG. IN ANCIENT ART,3,5,AYŞE ÇALIK ROSS,ThThTh,123,,TB 415 | TB 415 | TB 415,,,,"                          "
+FA  495.01,Desc.,SP.TOP.: JAZZ APPRECIATION I,3,5,SEDA BİNBAŞGİL,TTT,678,,TB 490 | TB 490 | TB 490,,,,"                          "
+FA  498.01,Desc.,SP.TOP.DOCUMENTARY CİNEMA,3,5,CAN CANDAN,WWW,456,,TB 415 | TB 415 | TB 415,,,,"                          "
+GR  101.01,Desc.,MODERN GREEK FOR BEGINNERS I,3,5,CHRYSSI SIDIROPOULOU,MMM,678,,KPARK5 | KPARK5 | KPARK5,,,,"                          "
+GR  111.01,Desc.,ANCIENT GREEK I,3,5,ANESTIS VASILAKERIS,MMWW,3412,,YD 04 | YD 04 | M 1152 | M 1152,,,,"                          "
+LAT 211.01,Desc.,INTERMEDIATE LATIN I,3,5,NOEMİ LEVY AKSU,WWW,678,,KPARK11 | KPARK11 | KPARK11,,,,"                          "
+LING111.01,Desc.,INTRO. TO LANGUAGE & LINGUISTICS I,3,6,MİNE NAKİPOĞLU,MWTh,445,,NB 119 | M 1100 | M 2170,,,"FLED,TKL","                          "
+LING111.02,Desc.,INTRO. TO LANGUAGE & LINGUISTICS I,3,6,ESER TAYLAN,MWTh,445,,M 2180 | NH 304 | M 1170,,,"FLED,TKL","                          "
+LING301.01,Desc.,PHONOLOGY,3,5,ESER TAYLAN,TTWW,910910,,TB 415 | TB 415 | TB 475 | TB 475,,,,"                          "
+LING321.01,Desc.,ENGLISH TURKISH CONTRASTIVE ANALYSIS,3,4,MELTEM KELEPİR,MWTh,555,,NH 302 | NH 203 | M 2152,,,PHYS,"                          "
+LING403.01,Desc.,TRANSLATION I,3,6,ÖZLEM GÖREY,TTTh,676,,YD 02 | YD 02 | M 1170,,,,"                          "
+LING497.01,Desc.,SP.TOP.:BRAIN & LANGUAGE,3,5,MİNE NAKİPOĞLU,MWW,223,,TB 240 | TB 415 | TB 415,,,,"                          "
+LIT 211.01,Desc.,STUDIES IN LITERATURE I,3,10,AYLİN ALKAÇ,TFF,767,,YD 03 | M 1200 | M 1200,,,PHYS,"                          "
+LIT 211.02,Desc.,STUDIES IN LITERATURE I,3,10,HANDE TEKDEMİR,TFF,767,,TB 240 | M 1170 | M 1170,,,,"                          "
+LIT 411.01,Desc.,COPYWRITING I,3,6,NEŞET DERELİ,WW,91011,,TB 490 | TB 490,,,,"                          "
+RUS 101.01,Desc.,BEGINNERS RUSSIAN I,3,5,OLGA ZVERKOVA,MTTThTh,21212,,TB 415 | ETA 4 | ETA 4 | NH 403 | NH 403,,,,"                          "
+RUS 201.01,Desc.,INTERMEDIATE RUSSIAN I,3,5,OLGA ZVERKOVA,MTTThTh,13434,,TB 415 | ETA 4 | ETA 4 | NH 403 | NH 403,,,,"                          "
+RUS 301.01,Desc.,ADVANCED RUSSIAN I,3,5,OLGA ZVERKOVA,TBA,,,,,,,"                          "
+STS 230.01,Desc.,THEORY OF MUSICAL SOUND,3,6,ALPAR  SEVGEN,FFF,678,,TB 415 | TB 415 | TB 415,,,,"                          "

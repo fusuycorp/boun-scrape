@@ -1,0 +1,3314 @@
+
+
+<html>
+<HEAD>
+<title>Schedule</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso8859-9" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../inc/regstyle.css" />
+<script src="/BUIS/js/jquery-1.10.2.min.js"></script>
+<script src="/BUIS/js/jquery-ui-1.10.3.min.js"></script>
+
+<script type="text/javascript">
+    function OpenMap(tdBbj) {
+        var text = $(tdBbj).text();
+        if (text.replace(/^\s+|\s+$/gm, '') != "") {
+            var scrollTop = $(document).scrollTop() + 100;
+            var building = text.split(" ")[0];
+            $("#gMapFrame").attr("src", "sch_map.asp?BN=" + building);
+            $("#gMap").dialog({ modal: true, minWidth: 630, minHeight: 510, height: "auto", width: "auto", overflow: "hidden" });
+            $('.ui-dialog').css('top', scrollTop + 'px');
+            window.scrollTo(0, scrollTop - 100);
+        }
+    }
+
+</script>
+
+	<script Lang="JScript">
+		function showQuota(ab,co,se,te) {
+			window.open('quotasearch.asp?abbr='+ab+'&code='+co+'&section='+se+'&donem='+te, 'myWin', 'resizable,scrollbars,width=500, height=400');
+		}
+
+
+
+	</script>
+
+<style>
+    .schtd2.labps {
+        background-color: #c7d2c8;
+        color:#8e5353;
+        ;
+    }
+     .schtd.labps {
+        background-color: #fffff6;
+        color:#8e5353;
+        ;
+    }
+
+</style>
+</HEAD>
+<body bgcolor="#FFFFFF" bgproperties="fixed">
+<font class='bodytextdark'><font size='+1'>Course Schedule</font>
+<br>
+<IMG  src='/images/pro_nav_btmline.gif' width='430' height='1'>
+<br>
+
+
+    
+<table width="250px">
+ <tr>
+    <td witdh=50% Class="bodytextdark">Semester   :</td>
+    <td witdh=50% Class="bodytextdark">2012/2013-2</td>
+ </tr>
+ <tr>
+    <td witdh=50% Class="bodytextdark">
+    Department :
+    </td>
+    <td witdh=50% Class="bodytextdark">HIST</td>
+ </tr>
+</table>
+    <p style="font-size:10pt; color:black; font-weight:normal;">Click on to the classroom to view it on the campus map. <br /></p>
+<hr>
+
+    
+
+    <table style="margin:20px 0">
+        <tr>		 
+            <td colspan=10 class="bodygray" style="font-family:Verdana, Arial, Helvetica; font-weight:bold">
+                The <u>course</u> slots are as follows :
+            </td>
+        </tr>
+        <tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 1</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 09:00 - 09:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 2</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 10:00 - 10:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 3</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 11:00 - 11:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 4</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 12:00 - 12:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 5</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 13:00 - 13:50</td>
+  
+                </tr><tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 6</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 14:00 - 14:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 7</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 15:00 - 15:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 8</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 16:00 - 16:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 9</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 17:00 - 17:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 10</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 18:00 - 18:50</td>
+  
+                </tr><tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 11</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 19:00 - 19:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 12</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 20:00 - 20:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 13</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 21:00 - 21:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 14</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 22:00 - 22:50</td>
+
+        </tr>
+    </table>
+
+<table border="1" cellpadding="3" width="1300px" style="border-collapse: collapse" bordercolor="#111111" cellspacing="0">
+ <tr class="schtitle">
+    <td width=5% align=left>Code.Sec</td>
+    <td width=5%>Desc.</td>
+    <td width=12% align=left>Name</td>
+    <td width=2% align=left>Cr.</td>
+    <td width=2% align=left>Ects</td>
+
+    <td width=5% align=left>Instr.</td>
+    <td width=5% align=left>Days</td>
+    <td width=4% align=left>Hours</td>
+                <!-- FinalExamLocation -->
+     <td width=5% align=left>Course Delivery Method</td>
+<!--    <td width=5% align=left>Final Exam Location</td>-->
+
+    <td width=11% align=left>Rooms</td>
+    <td width=7% align=left>Exam</td>
+    <td width=4% align=left>Sl.</td>
+    <td width=7% align=left><a class="title" href="#reqdept">Required for Dept.(*)</a></td>
+    <td width=5% align=left>Departments</td>
+
+
+     <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+    
+    </tr>
+
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>CHIN102.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=CHIN102&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>BEGINNERS CHINESE II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>GUIYUAN YANG&nbsp;</td>
+		<td>MMMWW&nbsp;</td>
+		<td>12712&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>24.05.2013&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>CHIN102.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=CHIN102&section=02&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>BEGINNERS CHINESE II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>JIANG YU&nbsp;</td>
+		<td>TTTThTh&nbsp;</td>
+		<td>56756&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>24.05.2013&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>CHIN102.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=CHIN102&section=03&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>BEGINNERS CHINESE II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>GUANG XU&nbsp;</td>
+		<td>TTTThTh&nbsp;</td>
+		<td>56756&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>24.05.2013&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>CHIN202.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=CHIN202&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTERMEDIATE CHINESE II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>GUIYUAN YANG&nbsp;</td>
+		<td>MTTThTh&nbsp;</td>
+		<td>591034&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KGYM105</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KGYM105</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KGYM105</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KGYM105</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KGYM105</span>&nbsp;</td>
+        
+			<td>24.05.2013&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST102.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST102&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>HISTORICAL METHOD & THOUGHT II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>EVANGELOS KECHRIOTIS&nbsp;</td>
+		<td>TTTh&nbsp;</td>
+		<td>562&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 203</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 203</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 405</span>&nbsp;</td>
+        
+			<td>30.05.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>HIST&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST106.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST106&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>THE MAKING OF THE MODERN WORLD II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>MWF&nbsp;</td>
+		<td>444&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">AYHAN Ş</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">AYHAN Ş</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">AYHAN Ş</span>&nbsp;</td>
+        
+			<td>28.05.2013&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>1&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">KPARK7</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>1&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">KPARK4</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>1&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">KPARK9</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>2&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">KPARK7</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>2&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 202</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>2&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">KPARK1</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>2&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">KPARK5</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>3&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">KPARK7</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>3&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 202</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>3&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">KPARK5</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>3&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 402</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>5&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">KPARK7</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>5&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">KPARK2</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>5&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">KPARK3</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>5&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">KPARK9</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>2&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 402</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>3&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 403</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>F&nbsp;</td>
+		<td>5&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">KPARK6</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST108.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST108&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTRO. TO STATISTICS FOR SOC. SCIENCES I&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>4&nbsp;</td>
+
+		<td>SABRİ ARHAN ERTAN&nbsp;</td>
+		<td>ThThFF&nbsp;</td>
+		<td>7878&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">M 2180</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">M 2180</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">M 1100</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">M 1100</span>&nbsp;</td>
+        
+			<td>27.05.2013&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>HIST&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST203.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST203&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTRODUCTION TO ARCHAEOLOGY I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ELİF ÜNLÜ&nbsp;</td>
+		<td>TTTh&nbsp;</td>
+		<td>125&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">TB 240</span>&nbsp;</td>
+        
+			<td>04.06.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST210.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST210&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>RESEARCH METHODS IN HISTORY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>4&nbsp;</td>
+
+		<td>ARZU ÖZTÜRKMEN&nbsp;</td>
+		<td>TTThTh&nbsp;</td>
+		<td>7834&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 203</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 203</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 404</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 404</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST210.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST210&section=02&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>RESEARCH METHODS IN HISTORY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>4&nbsp;</td>
+
+		<td>AHMET ERSOY&nbsp;</td>
+		<td>TTThTh&nbsp;</td>
+		<td>7834&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">TB 415</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">TB 415</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 403</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 403</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST212.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST212&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ANCIENT HIST.&ARCH. OF THE NEAR EAST II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ASLI ÖZYAR&nbsp;</td>
+		<td>MMW&nbsp;</td>
+		<td>782&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 402</span>&nbsp;</td>
+        
+			<td>01.06.2013&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST222.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST222&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>OTTOMAN HISTORY:THE CLASSICAL PERIOD&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ÇİĞDEM KAFESCİOĞLU&nbsp;</td>
+		<td>MMW&nbsp;</td>
+		<td>343&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 405</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 405</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span>&nbsp;</td>
+        
+			<td>06.06.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST242.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST242&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>WESTERN SOCIETIES,POLITICS&CULTURES:RENA&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>MELTEM TOKSÖZ&nbsp;</td>
+		<td>WWF&nbsp;</td>
+		<td>565&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">İB 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span>&nbsp;</td>
+        
+			<td>03.06.2013&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST310.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST310&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>HIST.OF THE AMERICAS,1750 TO THE PRESENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>LOUIS MAZZARI&nbsp;</td>
+		<td>TWW&nbsp;</td>
+		<td>178&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 305</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 105</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 105</span>&nbsp;</td>
+        
+			<td>07.06.2013&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST322.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST322&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>HISTORY OF MODERN TURKEY&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>4&nbsp;</td>
+
+		<td>NOEMİ LEVY AKSU&nbsp;</td>
+		<td>MThTh&nbsp;</td>
+		<td>212&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 304</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 104</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 104</span>&nbsp;</td>
+        
+			<td>29.05.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST334.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST334&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ANATOLIAN IRON AGE&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ASLI ÖZYAR&nbsp;</td>
+		<td>MWW&nbsp;</td>
+		<td>356&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 404</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 404</span>&nbsp;</td>
+        
+			<td>04.06.2013&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST342.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST342&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>AEGEAN HISTORY & ARCHAEOLOGY II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ELİF ÜNLÜ&nbsp;</td>
+		<td>TThTh&nbsp;</td>
+		<td>623&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">M 2230</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span>&nbsp;</td>
+        
+			<td>07.06.2013&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST351.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST351&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ART &ARCHITECTURE OF THE ISLAMIC WORLD I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>OYA PANCAROĞLU&nbsp;</td>
+		<td>WThTh&nbsp;</td>
+		<td>245&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">M 2180</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">M 1170</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">M 1170</span>&nbsp;</td>
+        
+			<td>28.05.2013&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST402.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST402&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>HISTORIOGRAPHY II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>YÜCEL TERZİBAŞOĞLU&nbsp;</td>
+		<td>TWW&nbsp;</td>
+		<td>856&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 401</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 401</span>&nbsp;</td>
+        
+			<td>03.06.2013&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST434.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST434&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>JAPANESE HIST.:FROM FEUDAL TO MOD.JAP.II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>SELÇUK ESENBEL&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span>&nbsp;</td>
+        
+			<td>07.06.2013&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST443.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST443&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SEMINAR IN BYZANTINE HISTORY&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ANESTIS VASILAKERIS&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">YD 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">YD 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">YD 201</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST449.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST449&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SEMINAR IN OTTOMAN SOURCES&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>YAVUZ SELİM KARAKIŞLA&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>06.06.2013&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST48F.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST48F&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TOP.IN BYZANTINE ART&ARCHITECTURE II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ANESTIS VASILAKERIS&nbsp;</td>
+		<td>MMM&nbsp;</td>
+		<td>91011&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span>&nbsp;</td>
+        
+			<td>08.06.2013&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST495.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST495&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>THESIS I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>8&nbsp;</td>
+
+		<td>EDHEM ELDEM&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td> &nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST495.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST495&section=02&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>THESIS I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>8&nbsp;</td>
+
+		<td>NEVRA NECİPOĞLU&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td> &nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST495.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST495&section=03&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>THESIS I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>8&nbsp;</td>
+
+		<td>SELÇUK ESENBEL&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td> &nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST496.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST496&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>THESIS II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>8&nbsp;</td>
+
+		<td>EDHEM ELDEM&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td> &nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST496.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST496&section=02&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>THESIS II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>8&nbsp;</td>
+
+		<td>NEVRA NECİPOĞLU&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td> &nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST49H.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST49H&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TP.CHRISTIAN.IN ANCIENT&MEDIEVAL SOC.&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>IGOR DORFMANN LAZAREV&nbsp;</td>
+		<td>FFF&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.06.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST49Q.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST49Q&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TP.READ ON PERSIAN SOURSCE II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>EVANGELOS KECHRIOTIS&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 203</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 203</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 203</span>&nbsp;</td>
+        
+			<td>28.05.2013&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST49U.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST49U&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TOP.HIST.OF EVERYDAY LIFE IN THE OTT.&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>YAVUZ SELİM KARAKIŞLA&nbsp;</td>
+		<td>FFF&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">TB 490</span>&nbsp;</td>
+        
+			<td>04.06.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST49X.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST49X&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TP.MAKING OF SACR.IN MESOP.ANAT.&AEGE&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ASLI ÖZYAR&nbsp;</td>
+		<td>FFF&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">M 1181</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">M 1181</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">M 1181</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST502.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST502&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>HISTORIOGRAPHY&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>9&nbsp;</td>
+
+		<td>SELÇUK ESENBEL&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>06.06.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST503.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST503&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>METHOD & THEORY IN ORAL HISTORY&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ARZU ÖZTÜRKMEN&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>456&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>04.06.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST533.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST533&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SEMINAR IN BYZANTINE HISTORY&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>NEVRA NECİPOĞLU&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>31.05.2013&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST552.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST552&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>OTTOMAN ART & ARCHITECTURE&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ÇİĞDEM KAFESCİOĞLU&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST559.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST559&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>RESEARCH IN THE HIST. OF PERFORMING ARTS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ARZU ÖZTÜRKMEN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.06.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST580.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST580&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TOP.IN RELIGIONS STRUGGLE IN EUROPEAN&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>SURAIYA FAROQHI&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST583.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST583&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SEL.READINGS IN CLASSICAL OTT. HIST.I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ANTONY GREENWOOD&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>03.06.2013&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST585.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST585&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SEL. READINGS IN LATE OTTOMAN HISTORY II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>EDHEM ELDEM&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>01.06.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST587.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST587&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SEL.READ.IN EUROPEAN SOCIAL HISTORY&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>NOEMİ LEVY AKSU&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>03.06.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST58W.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST58W&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TP.CHR.POPULATIONS OF THE OTT.EMP.&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>EVANGELOS KECHRIOTIS&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST58X.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST58X&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TP.ISSUES IN MEDIEVAL ISLAMIC ART&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>OYA PANCAROĞLU&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>08.06.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST592.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST592&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TP.CROSS-CULT.ISSUES IN VIS.ARTS&ARCH&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ÇİĞDEM KAFESCİOĞLU&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>28.05.2013&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST59B.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST59B&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TOP.HIST.&VISUAL CULT.IN THE 19.CENT.&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>AHMET ERSOY&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST59D.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST59D&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TOP.READ.IN OTTOMAN HAGIOPRAPHIES&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>DERİN TERZİOĞLU&nbsp;</td>
+		<td>MMM&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.06.2013&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST59R.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST59R&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TP.OTTOMAN OBSCENE LITERATURE&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>YAVUZ SELİM KARAKIŞLA&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST59V.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST59V&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TP.COMPARAT.THEM.ON RUS&OTTO.AGRARIAN&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>YÜCEL TERZİBAŞOĞLU&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>345&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST601.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST601&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>HISTORY SEMINAR&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>MELTEM TOKSÖZ&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST604.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST604&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SEMINAR IN SOCIAL HISTORY&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>SELÇUK ESENBEL&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>01.06.2013&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST616.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST616&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>THE INTELLECTURAL HIST. OF THE REPUBLIC&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>MELTEM TOKSÖZ&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST688.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST688&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TOP.:HIST.OF OTTOMAN COM.UNION&PROGRE&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>MELTEM TOKSÖZ&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST690.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST690&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>MELTEM TOKSÖZ&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>HIST696.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST696&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TOP.IN SOCIAL AND ECON.HIST.II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>YÜCEL TERZİBAŞOĞLU&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>HIST790.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=HIST790&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PH.D.THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>120&nbsp;</td>
+
+		<td>ARZU ÖZTÜRKMEN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>JP  102.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=JP  102&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>BEGINNERS JAPANESE II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>MARİKO ERDOĞAN&nbsp;</td>
+		<td>TThThFF&nbsp;</td>
+		<td>15612&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">NBZ 10</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NB 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NB 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NB 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NB 118</span>&nbsp;</td>
+        
+			<td>24.05.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>JP  102.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=JP  102&section=02&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>BEGINNERS JAPANESE II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>MARİKO ERDOĞAN&nbsp;</td>
+		<td>TTWWTh&nbsp;</td>
+		<td>23122&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>24.05.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>JP  202.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=JP  202&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTERMEDIATE JAPANESE II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>YOSHIHIRO KANDA&nbsp;</td>
+		<td>TThThFF&nbsp;</td>
+		<td>58945&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">NB 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NB 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NB 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NB 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NB 118</span>&nbsp;</td>
+        
+			<td>24.05.2013&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>JP  202.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=JP  202&section=02&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTERMEDIATE JAPANESE II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>MARİKO ERDOĞAN&nbsp;</td>
+		<td>TTTWW&nbsp;</td>
+		<td>78978&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>24.05.2013&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>JP  302.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=JP  302&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>UPPER INTERMEDIATE JAPANESE II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>SHOKO ADACHI&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>24.05.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>JP  302.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=JP  302&section=02&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>UPPER INTERMEDIATE JAPANESE II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>YOSHIHIRO KANDA&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>24.05.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>JP  402.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=JP  402&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ADVANCED JAPANESE II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>SHOKO ADACHI&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>24.05.2013&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>JP  402.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=JP  402&section=02&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ADVANCED JAPANESE II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>SHOKO ADACHI&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>24.05.2013&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>JP  502.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=JP  502&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>TRANS OF MOD.&CLAS JAPANESE TEXT II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ERDAL KÜÇÜKYALÇIN&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>24.05.2013&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>KR  102.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=KR  102&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>BEGINNERS KOREAN II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>HWA CHEON H.LEE&nbsp;</td>
+		<td>MMThThTh&nbsp;</td>
+		<td>56789&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>25.05.2013&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>KR  202.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=KR  202&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTERMEDIATE KOREAN II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>HWA CHEON H.LEE&nbsp;</td>
+		<td>MMFFF&nbsp;</td>
+		<td>78789&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>25.05.2013&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>KR  302.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=KR  302&section=01&term=2012/2013-2","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ADVANCED KOREAN II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>HWA CHEON H.LEE&nbsp;</td>
+		<td>TBA&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>25.05.2013&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+</table>
+<br>
+<a name="reqdept"><font size=2><b>(*) : </b>Departments that should choose this section for <u>mass courses</u></font></a>
+<br><br>
+<b><a href="javascript:window.history.go(-1)"> << Back</a></b>
+ <div id="gMap" style="width:600px;height:480px; display:none;">
+     <iframe id="gMapFrame" src="" width="590" height="460" scrolling="no" style="border:none;">
+</iframe>
+ </div>
+</body>
+</html>

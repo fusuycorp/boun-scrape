@@ -1,0 +1,36 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY ,3,8,NURBAY IRMAK,MWW,778,,NH 104 | NH 401 | NH 401,06.01.2016,2,,"        PSY; LING; GUID; LAW                  "
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY ,3,8,MURAT BAÇ,ThThF,565,,YD 106 | YD 106 | TB 310,06.01.2016,2,"PSY,TR","        PHIL                  "
+PHIL105.01,Desc.,INFORMAL LOGIC,4,8,BERNA KILINÇ,ThThFF,7856,,YD 106 | YD 106 | NH 103 | NH 103,05.01.2016,3,,"        PHIL                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,6,STEPHEN VOSS,TThTh,334,,HKD201 | TB 310 | TB 310,30.12.2015,1,"LL,TKL","        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,4,8,KARANFİL SOYHUN,MMThTh,2356,,TB 490 | TB 490 | NH 202 | NH 202,30.12.2015,2,PHIL,"                          "
+PHIL131.02,Desc.,LOGIC I,4,8,KARANFİL SOYHUN,MMThTh,5634,,NH 301 | NH 301 | NH 202 | NH 202,30.12.2015,2,"MEDU,MATH","                          "
+PHIL131.03,Desc.,LOGIC I,4,8,SUN DEMİRLİ,WWFF,5656,,TB 310 | TB 310 | NH 305 | NH 305,30.12.2015,2,,"                          "
+PHIL213.01,Desc.,HISTORY OF PHILOSOPHY I,3,6,KENNETH ROBERT WESTPHAL,TThTh,812,,TB 310 | NH 303 | NH 303,07.01.2016,1,,"        PHIL                  "
+PHIL241.01,Desc.,APPLIED ETHICS ,3,6,NURBAY IRMAK,MMW,343,,KPARK3 | KPARK3 | NH 403,,0,,"                          "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,İLHAN İNAN,WWF,564,,YD 116 | YD 116 | TB 310,08.01.2016,1,,"        PHIL                  "
+PHIL284.01,Desc.,FREE WILL AND DETERMINISM,3,6,İREM KURTSAL STEEN,WFF,256,,YD 104 | NH 104 | NH 104,11.01.2016,3,,"                          "
+PHIL313.01,Desc.,HISTORY OF PHILOSOPHY III,3,6,LUCAS THORPE,MTT,534,,TB 490 | KPARK9 | KPARK9,05.01.2016,1,,"        PHIL                  "
+PHIL320.01,Desc.,PHILOSOPHY OF RELIGION,3,6,CHRYSSI SIDIROPOULOU,TTW,564,,NH 202 | NH 202 | YD 102,,0,,"                          "
+PHIL341.01,Desc.,ETHICS,3,6,MARK STEEN,TThTh,278,,YD 116 | YD 116 | YD 116,29.12.2015,3,,"        PHIL                  "
+PHIL48R.01,Desc.,SP.TP.SET THEORY,3,6,ALİ KARATAY,ThThTh,345,,TB 130 | TB 130 | TB 130,09.01.2016,3,,"                          "
+PHIL48S.01,Desc.,SP.TP.PHILOSOPHY OF DEATH,3,6,MURAT BAÇ,WWF,783,,TB 130 | TB 130 | TB 130,,0,,"                          "
+PHIL48V.01,Desc.,SP.TP.:EXTENDED&EMBODIED COGNITION,3,6,LUCAS THORPE,MMT,787,,YD 102 | YD 102 | NH 201,,0,,"                          "
+PHIL48Y.01,Desc.,SP.TOPICS ARISTOTLE,3,6,CHRYSSI SIDIROPOULOU,TWW,756,,NH 202 | YD 102 | YD 102,09.01.2016,3,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,JOHANNES FRITSCHE,,, ,,,0,,"                          "
+PHIL499.02,Desc.,INDEPENDENT STUDY,3,6,YILDIZ SİLİER,,, ,,,0,,"                          "
+PHIL49B.01,Desc.,SP.TP.ISLAMIC PHILOSOPHY,3,6,NAZİF MUHTAROĞLU,FFF,789,,YD 116 | YD 116 | YD 116,12.01.2016,2,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,MURAT BAÇ,TBA,,,,08.01.2016,2,,"                          "
+PHIL58B.01,Desc.,SP.TP.PHILOSOPHY OF NATURE,4,5,PINAR CANEVİ,ThThTh,678,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL58G.01,Desc.,SP.TP.COUNTERFACTUALS/LAWS OF NATURE,4,10,SUN DEMİRLİ,FFF,234,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL58O.01,Desc.,SP.TP.KANT&HEGEL'S MORAL PHILOSOPHY,4,10,KENNETH ROBERT WESTPHAL,TTT,234,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL58R.01,Desc.,SP.TP.VIRTUE ETHICS AND INTUITIONISM,4,10,MARK STEEN,WWW,234,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL58X.01,Desc.,SP.TP.PHILOSOPHY OF SCIENCE,4,10,BERNA KILINÇ,WWW,678,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL58Y.01,Desc.,SP.TP.POLITICAL FREEDOM,4,10,YILDIZ SİLİER,ThThTh,234, ,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,JOHANNES FRITSCHE,TBA,,,,30.12.2015,2,,"                          "
+PHIL590.02,Desc.,DIRECTED STUDY,4,10,İLHAN İNAN,TBA,,,,30.12.2015,2,,"                          "
+PHIL652.01,Desc.,PHILOSOPHY OF MIND,4,10,STEPHEN VOSS,TTT,678,,TB 130 | TB 130 | TB 130,,0,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,02.01.2016,2,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,MURAT BAÇ,TBA,,,,,0,,"                          "

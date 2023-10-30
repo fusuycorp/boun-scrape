@@ -1,0 +1,11 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.01,Desc.,CALCULUS I,4,6,OLCAY COŞKUN,MMTTWWThTh,12121212,,NH 401 | NH 401 | NH 401 | NH 401 | NH 401 | NH 401 | NH 401 | NH 401,,,,"                          "
+MATH101.02,Desc.,CALCULUS I,4,6,OLCAY COŞKUN,MMTTWWThTh,34343434,,NH 401 | NH 401 | NH 401 | NH 401 | NH 401 | NH 401 | NH 401 | NH 401,,,,"                          "
+MATH102.01,Desc.,CALCULUS II,4,6,AYŞE SOYSAL,MMTTWWThTh,12121212,,NH 101 | NH 101 | NH 101 | NH 101 | NH 101 | NH 101 | NH 101 | NH 101,,,,"                          "
+MATH102.02,Desc.,CALCULUS II,4,6,AYŞE SOYSAL,MMTTWWThTh,34343434,,NH 101 | NH 101 | NH 101 | NH 101 | NH 101 | NH 101 | NH 101 | NH 101,,,,"                          "
+MATH201.01,Desc.,MATRIX THEORY,4,5,FATİH ECEVİT,MMTTWWThTh,12121212,,TB 310 | TB 310 | TB 310 | TB 310 | TB 310 | TB 310 | TB 310 | TB 310,,,,"                          "
+MATH201.02,Desc.,MATRIX THEORY,4,5,FATİH ECEVİT,MMTTWWThTh,34343434,,TB 310 | TB 310 | TB 310 | TB 310 | TB 310 | TB 310 | TB 310 | TB 310,,,,"                          "
+MATH202.01,Desc.,DIFFERENTIAL EQUATIONS,4,7,N.SADIK DEĞER,MMTTWWThTh,12121212,,NH 305 | NH 305 | NH 305 | NH 305 | NH 305 | NH 305 | NH 305 | NH 305,,,,"                          "
+MATH202.02,Desc.,DIFFERENTIAL EQUATIONS,4,7,N.SADIK DEĞER,MMTTWWThTh,34343434,,NH 305 | NH 305 | NH 305 | NH 305 | NH 305 | NH 305 | NH 305 | NH 305,,,,"                          "
+MATH344.01,Desc.,STATISTICS,3,5,SERDAR ALTOK,MMMTTT,567567,,NH 401 | NH 401 | NH 401 | NH 401 | NH 401 | NH 401,,,,"                          "
+MATH48A.01,Desc.,SEL.TP.INTRO.TO MULTIVARIATE STAT.ANALY.,3,5,KEMAL GÜRSOY,TTWWThTh,343434,,NBZ 13 | NBZ 13 | NBZ 13 | NBZ 13 | NBZ 13 | NBZ 13,,,,"                          "

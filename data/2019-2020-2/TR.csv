@@ -1,0 +1,52 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+INT 202.01,Desc.,INTRODUCTION TO INTERPRETING,3,5,KATE FERGUSON,ThFF,334,,JF 333 | JF 102 | JF 102,,,,"                          "
+INT 202.02,Desc.,INTRODUCTION TO INTERPRETING,3,5,KATE FERGUSON,ThFF,467,,JF 333 | JF 101 | JF 101,,,,"                          "
+INT 202.03,Desc.,INTRODUCTION TO INTERPRETING,3,5,BİLGE HAS BIYIKLI,MMM,345,,,,,,"                          "
+INT 318.01,Desc.,INTRO.TO SIMULTANEOUS INTERPRETING,3,4,ZEYNEP KIRÇAL,ThThF,788,,,,,,"                          "
+INT 318.02,Desc.,INTRO.TO SIMULTANEOUS INTERPRETING,3,4,NEDİME MERCANGÖZ,MMM,123,,,,,,"                          "
+INT 320.01,Desc.,COMMUNITY INTERPRETING,3,5,JONATHAN MAURICE ROSS,WThTh,634,,NH 303 | EF 201 | EF 201,,,,"                          "
+INT 412.01,Desc.,SIMULTANEOUS INTERPRETING PRACTICE IN CO,3,5,HANDE GÜNER,ThThTh,234,,JF 101 | JF 101 | JF 101,,,,"                          "
+INT 412.02,Desc.,SIMULTANEOUS INTERPRETING PRACTICE IN CO,3,5,KATE FERGUSON,,,,,,,,"                          "
+INT 416.01,Desc.,SIMULTANEOUS INTERPRETING II,3,5,NİGAR ALEMDAR,FFF,234,,,,,,"                          "
+INT 418.01,Desc.,THEORETICAL APPROACHES TO INTERPRETING P,3,5,EBRU DİRİKER,MMT,124,,TB 240 | TB 240 | JF 102,,,,"                          "
+INT 420.01,Desc.,PROJECT IN INTERPRETING,3,5,KATE FERGUSON,,,,,,,,"                          "
+INT 480.03,Desc.,SP.TOP.FOR INTERPRETERS,3,5,EBRU DİRİKER,,,,,,,,"                          "
+TR  106.01,Desc.,RESEARCH PAPER WRITING IN TRANS.STUDIES,3,5,JONATHAN MAURICE ROSS,TWW,478,,EF 02 | NH 303 | NH 303,,,,"                          "
+TR  106.02,Desc.,RESEARCH PAPER WRITING IN TRANS.STUDIES,3,5,ENA HODJIKJ,ThThF,673,,TB 415 | TB 415 | TB 490,,,,"                          "
+TR  106.03,Desc.,RESEARCH PAPER WRITING IN TRANS.STUDIES,3,5,ENA HODJIKJ,ThFF,356,,JF 102 | JF 102 | JF 102,,,,"                          "
+TR  108.01,Desc.,TURKISH FOR TRANSLATORS,3,4,ŞULE DEMİRKOL ERTÜRK,TTW,343,,JF 331 | JF 331 | JF 102,,,,"                          "
+TR  108.02,Desc.,TURKISH FOR TRANSLATORS,3,4,ŞULE DEMİRKOL ERTÜRK,MTT,356,,NH 303 | JF 331 | JF 331,,,,"                          "
+TR  110.01,Desc.,INTRODUCTION TO TRANS.&TRANS.STUDIES II,3,6,AYŞENAZ CENGİZ,TTW,789,,JF 333 | JF 333 | JF 333,,,,"                          "
+TR  110.02,Desc.,INTRODUCTION TO TRANS.&TRANS.STUDIES II,3,6,CEYDA ELGÜL,TTW,564,,JF 101 | JF 101 | EF 203,,,,"                          "
+TR  314.01,Desc.,LITERARY TRANSLATION,3,5,CEYDA ELGÜL,MMW,783,,TB 415 | TB 415 | EF 203,,,,"                          "
+TR  314.02,Desc.,LITERARY TRANSLATION,3,5,CEYDA ELGÜL,TWW,478,,JF 101 | JF 102 | JF 102,,,,"                          "
+TR  315.01,Desc.,MEDICAL TRANSLATION,3,5,MEHMET YILDIRIM,WWW,123,,,,,,"                          "
+TR  316.01,Desc.,TRANSLATION CRITICISM,3,5,AYŞENAZ CENGİZ,TWW,478,,EF 205 | JF 333 | JF 333,,,,"                          "
+TR  316.02,Desc.,TRANSLATION CRITICISM,3,5,AYŞENAZ CENGİZ,TWW,945,,JF 333 | M 1181 | M 1181,,,,"                          "
+TR  318.01,Desc.,SEMINAR,1,3,JONATHAN MAURICE ROSS,TT,56,,EF 02 | EF 02,,,,"                          "
+TR  320.01,Desc.,EU POLICIES&INST.:TRANS.OF KEY DOCUMENTS,3,4,MEHMET ŞAHİN,TWW,667,,EF 204 | KP 08 | KP 08,,,,"                          "
+TR  405.01,Desc.,TRANSLATING TEXTS ON SOCIAL SCIENCES,3,5,ŞULE DEMİRKOL ERTÜRK,MMW,674,,JF 101 | JF 101 | JF 102,,,,"                          "
+TR  427.01,Desc.,TRANSLATION PROJECT DESIGN,1,3,MEHMET ŞAHİN,,,,,,,,"                          "
+TR  427.02,Desc.,TRANSLATION PROJECT DESIGN,1,3,ARZU AKBATUR,,,,,,,,"                          "
+TR  427.03,Desc.,TRANSLATION PROJECT DESIGN,1,3,DEFNE ORHUN SOYDAN,,,,,,,,"                          "
+TR  428.01,Desc.,TRANSLATION PROJECT,3,6,JONATHAN MAURICE ROSS,,,,,,,,"                          "
+TR  428.02,Desc.,TRANSLATION PROJECT,3,6,CEYDA ELGÜL,,,,,,,,"                          "
+TR  428.03,Desc.,TRANSLATION PROJECT,3,6,ŞULE DEMİRKOL ERTÜRK,,,,,,,,"                          "
+TR  428.04,Desc.,TRANSLATION PROJECT,3,6,AYŞENAZ CENGİZ,,,,,,,,"                          "
+TR  428.05,Desc.,TRANSLATION PROJECT,3,6,ENA HODJIKJ,,,,,,,,"                          "
+TR  428.06,Desc.,TRANSLATION PROJECT,3,6,EBRU DİRİKER,,,,,,,,"                          "
+TR  428.07,Desc.,TRANSLATION PROJECT,3,6,ŞEHNAZ TAHİR GÜRÇAĞLAR,,,,,,,,"                          "
+TR  428.08,Desc.,TRANSLATION PROJECT,3,6,ARZU AKBATUR,,,,,,,,"                          "
+TR  428.09,Desc.,TRANSLATION PROJECT,3,6,HÜSEYİN MERGAN,,,,,,,,"                          "
+TR  428.11,Desc.,TRANSLATION PROJECT,3,6,KATE FERGUSON,,,,,,,,"                          "
+TR  487.01,Desc.,SP.TP.LEGAL TRANSLATION II,3,5,DEFNE ORHUN SOYDAN,ThThTh,567, ,TB 490 | TB 490 | TB 490,,,,"                          "
+TR  48F.01,Desc.,SP.TOP.IN TRANS:TRANSLATION TECHNOLOGIES,3,5,MEHMET ŞAHİN,MTT,678, ,M 1152 | EF 204 | EF 204,,,,"                          "
+TR  48M.01,Desc.,SP.TOP.DEBATE,3,5,JONATHAN MAURICE ROSS,WThTh,456,,JF 101 | EF 104 | EF 104,,,,"                          "
+TR  48Y.01,Desc.,SP.TP.TERMINOLOGY & LEXICOLOGY,3,5,MEHMET ŞAHİN,MTT,734, ,M 1170 | ET 01 | ET 01,,,,"                          "
+TR  622.01,Desc.,TRANSLATION THEORIES & CRITICAL PRACTICE,3,8,ÖZLEM BERK ALBACHTEN,MMM,123,,JF 403 | JF 403 | JF 403,,,,"                          "
+TR  630.01,Desc.,RESEARCH METHODS IN TRANSLATION STUDIES,3,9,ENA HODJIKJ,MMM,567,,JF 403 | JF 403 | JF 403,,,,"                          "
+TR  700.01,Desc.,GRADUATE SEMINAR,0,2,ÖZLEM BERK ALBACHTEN,WWW,123,,JF 403 | JF 403 | JF 403,,,,"                          "
+TR  790.01,Desc.,DOCTORAL DISSERTATION,0,120,JONATHAN MAURICE ROSS,,,,,,,,"                          "
+TR  790.02,Desc.,DOCTORAL DISSERTATION,0,120,ÖZLEM BERK ALBACHTEN,,,,,,,,"                          "
+TR  790.03,Desc.,DOCTORAL DISSERTATION,0,120,ŞULE DEMİRKOL ERTÜRK,,,,,,,,"                          "
+TR  790.04,Desc.,DOCTORAL DISSERTATION,0,120,AYŞENAZ CENGİZ,,,,,,,,"                          "

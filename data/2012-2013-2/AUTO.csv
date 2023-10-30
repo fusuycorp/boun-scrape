@@ -1,0 +1,15 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AUTO502.01,Desc.,VEHICLE DYNAMICS,3,8,GÜNAY ANLAŞ,TBA,,,,,0,,"                          "
+AUTO503.01,Desc.,NOISE & VIBRATIONS,3,8,ÇETİN YILMAZ,TBA,,,,,0,,"                          "
+AUTO504.01,Desc.,AUTOMOTIVE CONTROL SYSTEMS,3,8,MEHMET AKAR,TBA,,,,,0,,"                          "
+AUTO511.01,Desc.,VEHICLE AERODYNAMICS,3,8,KUNT ATALIK,TBA,,,,,0,,"                          "
+AUTO522.01,Desc.,COMBUSTION,3,8,HASAN BEDİR,TBA,,,,,0,,"                          "
+AUTO532.01,Desc.,MECHATRONICS IN AE,3,8,EVREN SAMUR,TBA,,,,,0,,"                          "
+AUTO542.01,Desc.,FINITE ELEMENT METHOD,3,8,CAN AYDINER,TBA,,,,,0,,"                          "
+AUTO590.01,Desc.,RESEARCH PROJECT,0,6,HASAN BEDİR,TBA,,,,,0,,"                          "
+AUTO591.01,Desc.,GUIDED RESEARCH,1,4,CAN AYDINER,TBA,,,,,0,,"                          "
+AUTO591.02,Desc.,GUIDED RESEARCH,1,4,ÇETİN YILMAZ,TBA,,,,,0,,"                          "
+AUTO591.03,Desc.,GUIDED RESEARCH,1,4,HASAN BEDİR,TBA,,,,,0,,"                          "
+AUTO591.04,Desc.,GUIDED RESEARCH,1,4,EVREN SAMUR,TBA,,,,,0,,"                          "
+AUTO591.05,Desc.,GUIDED RESEARCH,1,4,KUNT ATALIK,TBA,,,,,0,,"                          "
+AUTO599.01,Desc.,DIRECTED STUDIES,0,4,CAN AYDINER,TBA,,,,,0,,"                          "

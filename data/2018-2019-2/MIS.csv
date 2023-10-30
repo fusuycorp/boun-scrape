@@ -1,0 +1,85 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MIS 112.01,Desc.,ECONOMICS II,3,5,ALİ TÜKEL,MTT,734,,HB 105 | HB 105 | HB 105,28.05.2019,1,,"                          "
+,,P.S.,,,ALİ TÜKEL,M,8,,HB 105,,0,,"                          "
+MIS 116.01,Desc.,PRINCIPLES OF MARKETING,3,5,ASLIHAN NASIR,MMTh,566,,HB 105 | HB 105 | HD 301,27.05.2019,1,,"                          "
+MIS 132.01,Desc.,OBJECT ORIENTED PROGRAMMING,4,6,BERTAN YILMAZ BADUR,TTTh,121,,HA 202 | HA 202 | HA 202,22.05.2019,3,,"                          "
+,,LAB,,,BERTAN YILMAZ BADUR,FF,56,,HB 102 | HB 102,,0,,"                          "
+,,LAB,,,BERTAN YILMAZ BADUR,FF,78,,HB 102 | HB 102,,0,,"                          "
+MIS 134.01,Desc.,INTRODUCTION TO DATABASE,3,5,FİGEN BACIOĞLU,WW,34,,HB 102 | HB 102,23.05.2019,2,,"                          "
+,,LAB,,,FİGEN BACIOĞLU,ThTh,23,,HB 102 | HB 102,,0,,"                          "
+MIS 134.02,Desc.,INTRODUCTION TO DATABASE,3,5,FİGEN BACIOĞLU,WW,56,,HB 102 | HB 102,23.05.2019,2,,"                          "
+,,LAB,,,FİGEN BACIOĞLU,ThTh,45,,HB 102 | HB 102,,0,,"                          "
+MIS 144.01,Desc.,BUSINESS MATHEMATICS II,3,5,AYFER ECEVİT,TTT,678,,HD 301 | HD 301 | HD 301,01.06.2019,1,,"                          "
+,,P.S.,,,AYFER ECEVİT,FF,23,,HB 105 | HB 105,,0,,"                          "
+MIS 212.01,Desc.,MANAGERIAL ACCOUNTING,3,5,ALİ TÜKEL,WWTh,676,,HB 105 | HB 105 | HB 105,29.05.2019,2,,"                          "
+MIS 224.01,Desc.,RESEARCH METHODOLOGY,3,6,HANDE TÜRKER,MMW,235,,HB 105 | HB 105 | HB 105,27.05.2019,3,,"                          "
+,,P.S.,,,HANDE TÜRKER,M,6,,HB 102,,0,,"                          "
+,,P.S.,,,HANDE TÜRKER,M,4,,HB 102,,0,,"                          "
+MIS 228.01,Desc.,MANAGERIAL COMMUNICATION,3,6,ÖZGÜR DÖĞERLİOĞLU,WThTh,245,,HD 201 | HD 201 | HD 201,31.05.2019,1,,"                          "
+MIS 252.01,Desc.,BUSINESS DATA COMMUNICATIONS ,3,6,BİLGİN METİN,TTW,788,,HB 105 | HB 105 | HB 105,24.05.2019,2,,"                          "
+MIS 316.01,Desc.,FINANCE,3,5,CEYLAN ONAY,MMW,673,,HA 301 | HA 301 | HA 301,20.05.2019,3,,"                          "
+MIS 321.01,Desc.,SYSTEM ANALYSIS & DESIGN,3,6,BİRGÜL KUTLU,MMTh,237,,HA 301 | HA 301 | HA 301,30.05.2019,1,,"                          "
+,,P.S.,,,BİRGÜL KUTLU,T,7,,HB 102,,0,,"                          "
+,,P.S.,,,BİRGÜL KUTLU,T,8,,HB 102,,0,,"                          "
+MIS 326.01,Desc.,OBJECT ORIENTED MODELING,3,5,SERKAN TÜRKELİ,WWW,678,,HD 201 | HD 201 | HD 201,22.05.2019,1,,"                          "
+,,P.S.,,,SERKAN TÜRKELİ,TT,12,,HB 104 | HB 104,,0,,"                          "
+,,P.S.,,,SERKAN TÜRKELİ,TT,34,,HB 102 | HB 102,,0,,"                          "
+MIS 336.01,Desc.,BUSINESS APPLICATION DEVELOPMENT,2,5,ALBERT ÖZKOHEN,W,5,,HA 301,30.05.2019,2,,"                          "
+,,LAB,,,ALBERT ÖZKOHEN,ThTh,34,,HB 104 | HB 104,,0,,"                          "
+,,LAB,,,ALBERT ÖZKOHEN,ThTh,12,,HB 104 | HB 104,,0,,"                          "
+MIS 344.01,Desc.,QUANTITATIVE ANALY. FOR DECISION MAKING,3,5,SONA MARDİKYAN,MThTh,456,,HB 105 | HA 301 | HA 301,23.05.2019,3,,"                          "
+,,P.S.,,,SONA MARDİKYAN,T,5,,HA 202,,0,,"                          "
+MIS 346.01,Desc.,ENTERPRISE INFORMATION SYSTEMS,3,6,ZUHAL TANRIKULU,ThTh,78,,HB 105 | HB 105,28.05.2019,3,,"                          "
+,,LAB,,,ZUHAL TANRIKULU,FF,12,,HB 104 | HB 104,,0,,"                          "
+,,LAB,,,ZUHAL TANRIKULU,FF,34,,HB 104 | HB 104,,0,,"                          "
+MIS 422.01,Desc.,E-BUSINESS MANAGEMENT,3,6,HANDE TÜRKER,MWW,523,,HA 301 | HB 105 | HB 105,31.05.2019,3,,"                          "
+MIS 432.01,Desc.,SUPPLY CHAIN MANAGEMENT,3,6,ŞEYDA SERDAR ASAN,TTT,678,,HA 301 | HA 301 | HA 301,28.05.2019,1,,"                          "
+,,P.S.,,,ŞEYDA SERDAR ASAN,Th,7,,HB 102,,0,,"                          "
+,,P.S.,,,ŞEYDA SERDAR ASAN,Th,8,,HB 102,,0,,"                          "
+MIS 459.01,Desc.,HUMAN FACTORS IN COMPUTING,3,6,TANJU AKDENİZ,MMM,678,,HA 303 | HA 303 | HA 303,01.06.2019,3,,"                          "
+MIS 483.01,Desc.,SP.TP.DATA PRIVACY & PERS.DATA PROT.MAN.,3,5,ERCÜMENT ARI,FFF,234, ,HA 302 | HA 302 | HA 302,29.05.2019,1,,"                          "
+MIS 485.01,Desc.,SP.TOP.IN MIS:SMALL BUSINESS MANAGEMENT,3,5,İPEK MEREY,TTT,234,,HA 303 | HA 303 | HA 303,24.05.2019,3,,"                          "
+MIS 487.01,Desc.,SP.TOP.IN MIS:INFO SYSTEMS SECURITY,3,5,BİLGİN METİN,WWTh,561, ,HA 303 | HA 303 | HA 303,23.05.2019,1,,"                          "
+MIS 492.01,Desc.,PROJECT,4,8,BERTAN YILMAZ BADUR,,,,,,,,"                          "
+MIS 492.02,Desc.,PROJECT,4,8,BİRGÜL KUTLU,,,,,,,,"                          "
+MIS 492.04,Desc.,PROJECT,4,8,ÖZGÜR DÖĞERLİOĞLU,,,,,,,,"                          "
+MIS 492.05,Desc.,PROJECT,4,8,AHMET ONUR DURAHİM,,,,,,,,"                          "
+MIS 492.06,Desc.,PROJECT,4,8,HANDE TÜRKER,,,,,,,,"                          "
+MIS 492.07,Desc.,PROJECT,4,8,SONA MARDİKYAN,,,,,,,,"                          "
+MIS 492.08,Desc.,PROJECT,4,8,BİLGİN METİN,,,,,,,,"                          "
+MIS 492.09,Desc.,PROJECT,4,8,ASLIHAN NASIR,,,,,,,,"                          "
+MIS 492.10,Desc.,PROJECT,4,8,CEYLAN ONAY,,,,,,,,"                          "
+MIS 492.11,Desc.,PROJECT,4,8,MELTEM ÖZTURAN,,,,,,,,"                          "
+MIS 492.13,Desc.,PROJECT,4,8,ZUHAL TANRIKULU,,,,,,,,"                          "
+MIS 49A.01,Desc.,SP.TP.INTR.TO WEB DESIGN FOR SOCIAL SCI.,3,5,CEM GÖKNİL,MMM,678, ,HB 104 | HB 104 | HB 104,24.05.2019,3,,"                          "
+MIS 518.01,Desc.,ADVANCED OPERATIONS MANAGEMENT,3,6,SERKAN TÜRKELİ,WWW,234,,HB 109 | HB 109 | HB 109,28.05.2019,2,,"                          "
+MIS 522.01,Desc.,PROJECT & CHANGE MANAGEMENT,3,6,UĞUR GÖKHAN ÖZDİNÇ,TTT,678,,HB 108 | HB 108 | HB 108,30.05.2019,1,,"                          "
+MIS 547.01,Desc.,ORGANIZATIONAL IMP. OF INFORMATION TECH.,3,6,ÖZGÜR DÖĞERLİOĞLU,WWW,678,,HB 108 | HB 108 | HB 108,20.05.2019,2,,"                          "
+MIS 578.09,Desc.,DIRECTED READINGS IN MIS,0,6,ASLIHAN NASIR,,,,,,,,"                          "
+MIS 578.10,Desc.,DIRECTED READINGS IN MIS,0,6,CEYLAN ONAY,,,,,,,,"                          "
+MIS 586.01,Desc.,SP.TOP. IN MIS: DIGITAL MARKETING&SOCIAL MEDIA,3,6,ASLIHAN NASIR,MMM,234,,HB 108 | HB 108 | HB 108,31.05.2019,2,,"                          "
+MIS 594.01,Desc.,SP.TP.IN MIS:FINTECH,3,6,CEYLAN ONAY,ThThTh,567,,HB 108 | HB 108 | HB 108,18.05.2019,1,,"                          "
+MIS 596.01,Desc.,SP.TP.ART.INTEL.FOR GAME PLAY.,3,6,AHMET ONUR DURAHİM,ThThTh,678,,HB 109 | HB 109 | HB 109,20.05.2019,1,,"                          "
+MIS 612.01,Desc.,MULTIVARIATE STATISTICAL METHODS,4,8,SONA MARDİKYAN,TTTT,4678,,HB 109 | HB 109 | HB 109 | HB 109,28.05.2019,3,,"                          "
+MIS 622.01,Desc.,INTEGRATED INFORMATION SYSTEMS,3,6,MELTEM ÖZTURAN,TTT,123,,HB 216 | HB 216 | HB 216,24.05.2019,3,,"                          "
+MIS 641.01,Desc.,SOCIAL&COLLABORATIVE COMPUTING,3,6,BİRGÜL KUTLU,MMM,678,,HB 108 | HB 108 | HB 108,31.05.2019,2,,"                          "
+MIS 678.06,Desc.,DIRECTED READINGS IN MIS,1,4,HANDE TÜRKER,,,,,,,,"                          "
+MIS 678.09,Desc.,DIRECTED READINGS IN MIS,1,4,ASLIHAN NASIR,,,,,,,,"                          "
+MIS 690.01,Desc.,MASTER'S THESIS,0,60,BERTAN YILMAZ BADUR,,,,,,,,"                          "
+MIS 690.02,Desc.,MASTER'S THESIS,0,60,BİRGÜL KUTLU,,,,,,,,"                          "
+MIS 690.04,Desc.,MASTER'S THESIS,0,60,ÖZGÜR DÖĞERLİOĞLU,,,,,,,,"                          "
+MIS 690.05,Desc.,MASTER'S THESIS,0,60,AHMET ONUR DURAHİM,,,,,,,,"                          "
+MIS 690.06,Desc.,MASTER'S THESIS,0,60,HANDE TÜRKER,,,,,,,,"                          "
+MIS 690.07,Desc.,MASTER'S THESIS,0,60,SONA MARDİKYAN,,,,,,,,"                          "
+MIS 690.08,Desc.,MASTER'S THESIS,0,60,BİLGİN METİN,,,,,,,,"                          "
+MIS 690.09,Desc.,MASTER'S THESIS,0,60,ASLIHAN NASIR,,,,,,,,"                          "
+MIS 690.10,Desc.,MASTER'S THESIS,0,60,CEYLAN ONAY,,,,,,,,"                          "
+MIS 690.11,Desc.,MASTER'S THESIS,0,60,MELTEM ÖZTURAN,,,,,,,,"                          "
+MIS 690.13,Desc.,MASTER'S THESIS,0,60,ZUHAL TANRIKULU,,,,,,,,"                          "
+MIS 790.01,Desc.,PH.D THESIS,0,30,BERTAN YILMAZ BADUR,,,,,,,,"                          "
+MIS 790.02,Desc.,PH.D THESIS,0,30,BİRGÜL KUTLU,,,,,,,,"                          "
+MIS 790.08,Desc.,PH.D THESIS,0,30,BİLGİN METİN,,,,,,,,"                          "
+MIS 790.09,Desc.,PH.D THESIS,0,30,ASLIHAN NASIR,,,,,,,,"                          "
+MIS 790.10,Desc.,PH.D THESIS,0,30,CEYLAN ONAY,,,,,,,,"                          "
+MIS 790.11,Desc.,PH.D THESIS,0,30,MELTEM ÖZTURAN,,,,,,,,"                          "
+MIS 790.13,Desc.,PH.D THESIS,0,30,ZUHAL TANRIKULU,,,,,,,,"                          "

@@ -1,0 +1,34 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ED  101.01,Desc.,INTRODUCTION TO EDUCATION,3,5,RIFAT OKÇABOL,MMW,122,,,,,,"        CET; PRSC; PEDU; FLED; GUID; TPHY; CEDU; TCHE; MEDU; TMAT; PRSO; PRED; ED; PRMA                  "
+ED  104.01,Desc.,SOCIAL FOUNDATIONS OF EDUCATION,3,6,AKI VIRTANEN-ERAYDIN,TTW,121,,,,,,"                          "
+ED  104.02,Desc.,SOCIAL FOUNDATIONS OF EDUCATION,3,6,AKI VIRTANEN-ERAYDIN,TTW,566,,,,,,"                          "
+ED  106.01,Desc.,SCHOOL EXPERIENCE I,3,5,RIFAT OKÇABOL,W,7,,,,,,"                          "
+ED  208.01,Desc.,RESEARCH METHODOLOGY,4,6,ZEYNEP HANDE SART,MMMTT,67867,,,,,,"                          "
+ED  213.01,Desc.,DEVELOPMENT AND LEARNING,3,5,ZEYNEP KIZILTEPE,WWTh,344,,,,,,"                          "
+ED  262.01,Desc.,PLANNING & EVALUATION OF INSTRUCTION,4,7,GÜZVER YILDIRAN DE WEERDT,MMTTT,34678,,,,,,"                          "
+ED  262.02,Desc.,PLANNING & EVALUATION OF INSTRUCTION,4,7,GÜZVER YILDIRAN DE WEERDT,TTWWW,34345,,,,,,"                          "
+ED  262.03,Desc.,PLANNING & EVALUATION OF INSTRUCTION,4,7,ÖZLEM ÜNLÜHİSARCIKLI,MMMWW,67867,,,,,,"                          "
+ED  270.01,Desc.,PROGRAM DEVELOPMENT & EVALUATION,4,6,FATOŞ ERKMAN,TTThThTh,45123,,,,,,"                          "
+ED  306.01,Desc.,COMPARATIVE EDUCATION,3,4,AKI VIRTANEN-ERAYDIN,WThTh,434,,,,,,"                          "
+ED  311.01,Desc.,DATA PROCESSING & ANALYSIS,4,5,AYŞESİM DİRİ,TTTTT,23456,,,,,,"                          "
+ED  328.01,Desc.,APPLIED RESEARCH,4,6,ZEYNEP HANDE SART,MMThThTh,34678,,,,,,"                          "
+ED  330.01,Desc.,COUNSELING SKILLS I,4,5,AYŞE GÜR TURABOĞLU,FFFF,2345,,,,,,"        GUID                  "
+ED  340.01,Desc.,CAREER DEVELOPMENT IN COUNSELING,3,5,NEVİN DÖLEK,MMMM,5678,,,,,,"                          "
+ED  382.01,Desc.,CLASSROOM MANAGEMENT ,3,6,AYŞE HAVVA CANER,MMTT,5656,,,,,,"                          "
+ED  382.02,Desc.,CLASSROOM MANAGEMENT ,3,6,AYŞE HAVVA CANER,MMWW,7878,,,,,,"                          "
+ED  382.03,Desc.,CLASSROOM MANAGEMENT ,3,6,AYŞE HAVVA CANER,TTWW,7856,,,,,,"                          "
+ED  382.04,Desc.,CLASSROOM MANAGEMENT ,3,6,AYŞE HAVVA CANER,WWThTh,3456,,,,,,"                          "
+ED  417.01,Desc.,CRISIS INTERVENTION,3,4,NEYLAN ÖZDEMİR,MMM,123,,,,,,"        GUID; PSY; ED                  "
+ED  434.01,Desc.,COUNSELING SKILLS II,4,6,AYDAN GÜLERCE,WWWThTh,56734,,,,,,"        GUID                  "
+ED  442.01,Desc.,ADULT EDUCATION,3,5,ÖZLEM ÜNLÜHİSARCIKLI,MMWW,3434,,,,,,"                          "
+ED  452.01,Desc.,EDUCATIONAL ADMINISTRATION,3,4,FATMA GÖK,TTWW,1212,,,,,,"                          "
+ED  472.02,Desc.,INDIVIDUAL STUDY,3,5,LEYLA NAVARO,TBA,,,,,,,"                          "
+ED  472.06,Desc.,INDIVIDUAL STUDY,3,5,PINAR İLKKARACAN,TBA,,,,,,,"                          "
+ED  474.01,Desc.,SEMINAR IN COUNSELING,3,4,ZEYNEP HANDE SART,TTTh,452,,,,,,"                          "
+ED  478.01,Desc.,FIELD PRACTICE,4,8,DENİZ ALBAYRAK KAYMAK,MMMMTTT,5678567,,,,,,"                          "
+ED  482.01,Desc.,SP.TOP.IN EDUCATION,3,4,BARIŞ KORKMAZ,TBA,,,,,,,"                          "
+ED  483.01,Desc.,SPECIAL TOPICS IN EDUCATION,3,4,FATMA GÖK,TBA,,,,,,,"                          "
+ED  492.01,Desc.,SPECIAL STUDIES IN EDUCATION,3,4,AKI VIRTANEN-ERAYDIN,WThTh,256,,,,,,"                          "
+ED  494.01,Desc.,SP.STUD.IN EDUC.,3,4,ÖZLEM ADA ÜLKE,ThThTh,567,,,,,,"                          "
+ED  496.01,Desc.,SPECIAL STUDIES IN EDUCATION,3,4,AYŞE HAVVA CANER,TBA,,,,,,,"                          "
+ED  498.01,Desc.,SPECIAL STUDIES IN EDUC,3,4,ZEYNEP HANDE SART,TBA,,,,,,,"                          "

@@ -1,0 +1,82 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CAU 101.01,Desc.,ELEMENTARY LAZ I,3,5,İSMAİL AVCI,ThThTh,456,Online,,,,,"                          "
+CAU 102.01,Desc.,ELEMENTARY LAZ II,3,5,İSMAİL AVCI,FFF,567,Online,,,,,"                          "
+CAU 111.01,Desc.,ELEMENTARY KABARDIAN I,3,5,FATIMAT ZHILETEZHEVA,TTT,567,Online,,,,,"                          "
+CAU 121.01,Desc.,ELEMENTARY ABKHAZ I,3,5,GUNDA ANKVAB,TTT,567,Online,,,,,"                          "
+CAU 122.01,Desc.,ELEMENTARY ABKHAZ II,3,5,GUNDA ANKVAB,WWW,567,Online,,,,,"                          "
+CAU 221.01,Desc.,INTERMEDIATE ABKHAZ I,3,5,GUNDA ANKVAB,TWW,489,Online,,,,,"                          "
+CAU 222.01,Desc.,INTERMADIATE ABKHAZ II,3,5,GUNDA ANKVAB,TTW,894,Online,,,,,"                          "
+LING101.01,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS I,3,7,MİNE NAKİPOĞLU,MMWW,7856,Online,,,,,"                          "
+LING101.02,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS I,3,7,ÖMER DEMİROK,MMWW,5656,Online,,,,,"                          "
+LING101.03,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS I,3,7,KADİR GÖKGÖZ,MMWW,5656,Online,,,,,"                          "
+LING201.01,Desc.,PHONOLOGY,3,6,STEFANO CANALIS,TTThTh,1212,Online,,,,,"                          "
+LING203.01,Desc.,SYNTAX,3,6,BALKIZ ÖZTÜRK,MMThTh,3456,Online,,,,,"                          "
+LING305.01,Desc.,SEMANTICS,3,6,ELENA GUERZONI,TTWW,3434,Online,,,,,"                          "
+LING313.01,Desc.,PHONOLOGY&MORPHOLOGY OF MODERN TURKISH,3,7,METİN BAĞRIAÇIK,MMWW,5656,Online,,,,,"                          "
+LING324.01,Desc.,HISTORICAL LINGUISTICS,3,6,STEFANO CANALIS,TWW,612,Online,,,,,"                          "
+LING341.01,Desc.,SOCIOLINGUISTICS,3,6,KONSTANTINOS SAMPANIS,ThThF,783,Online,,,,,"                          "
+LING411.01,Desc.,LINGUISTIC METHODOLOGY,4,8,PAVEL LOGAÇEV,MMTT,7878,Online,,,,,"                          "
+LING412.01,Desc.,RESEARCH & WRITING,4,8,BALKIZ ÖZTÜRK,,,Online,,,,,"                          "
+LING412.02,Desc.,RESEARCH & WRITING,4,8,ELENA GUERZONI,,,Online,,,,,"                          "
+LING412.03,Desc.,RESEARCH & WRITING,4,8,PAVEL LOGAÇEV,,,Online,,,,,"                          "
+LING412.04,Desc.,RESEARCH & WRITING,4,8,KADİR GÖKGÖZ,,,Online,,,,,"                          "
+LING412.05,Desc.,RESEARCH & WRITING,4,8,STEFANO CANALIS,,,Online,,,,,"                          "
+LING412.06,Desc.,RESEARCH & WRITING,4,8,SUMRU ÖZSOY,,,Online,,,,,"                          "
+LING412.07,Desc.,RESEARCH & WRITING,4,8,DİDAR AKAR,,,Online,,,,,"                          "
+LING412.08,Desc.,RESEARCH & WRITING,4,8,MİNE NAKİPOĞLU,,,Online,,,,,"                          "
+LING412.09,Desc.,RESEARCH & WRITING,4,8,ÖMER DEMİROK,,,Online,,,,,"                          "
+LING412.10,Desc.,RESEARCH & WRITING,4,8,METİN BAĞRIAÇIK,,,Online,,,,,"                          "
+LING414.01,Desc.,SIGN LANGUAGE LINGUISTICS,3,6,KADİR GÖKGÖZ,TThTh,534,Online,,,,,"                          "
+LING48N.01,Desc.,SP.TP.LANGUAGE AND COGNITION,3,6,MİNE NAKİPOĞLU,WThTh,356,Online,,,,,"                          "
+LING495.01,Desc.,SP.TP.CONVERSATION ANALYSIS,3,6,DİDAR AKAR,MWW,378,Online,,,,,"                          "
+LING504.01,Desc.,SEMANTICS,4,10,ELENA GUERZONI,MMWW,3412,Online,,,,,"                          "
+LING541.01,Desc.,SYNTACTIC THEORY,4,10,ÖMER DEMİROK,MMWW,1278,Online,,,,,"                          "
+LING552.01,Desc.,SOCIOLINGUISTICS,4,10,DİDAR AKAR,TTThTh,5656,Online,,,,,"                          "
+LING570.01,Desc.,GUIDED STUDIES,3,5,DİDAR AKAR,,,Online,,,,,"                          "
+LING570.02,Desc.,GUIDED STUDIES,3,5,MİNE NAKİPOĞLU,,,Online,,,,,"                          "
+LING570.03,Desc.,GUIDED STUDIES,3,5,BALKIZ ÖZTÜRK,,,Online,,,,,"                          "
+LING570.04,Desc.,GUIDED STUDIES,3,5,ELENA GUERZONI,,,Online,,,,,"                          "
+LING570.05,Desc.,GUIDED STUDIES,3,5,PAVEL LOGAÇEV,,,Online,,,,,"                          "
+LING570.06,Desc.,GUIDED STUDIES,3,5,KADİR GÖKGÖZ,,,Online,,,,,"                          "
+LING570.07,Desc.,GUIDED STUDIES,3,5,STEFANO CANALIS,,,Online,,,,,"                          "
+LING570.08,Desc.,GUIDED STUDIES,3,5,METİN BAĞRIAÇIK,,,Online,,,,,"                          "
+LING570.09,Desc.,GUIDED STUDIES,3,5,ÖMER DEMİROK,,,Online,,,,,"                          "
+LING570.10,Desc.,GUIDED STUDIES,3,5,SUMRU ÖZSOY,,,Online,,,,,"                          "
+LING571.01,Desc.,READINGS IN LINGUISTICS I,1,5,DİDAR AKAR,,,Online,,,,,"                          "
+LING571.02,Desc.,READINGS IN LINGUISTICS I,1,5,MİNE NAKİPOĞLU,,,Online,,,,,"                          "
+LING571.03,Desc.,READINGS IN LINGUISTICS I,1,5,BALKIZ ÖZTÜRK,,,Online,,,,,"                          "
+LING571.04,Desc.,READINGS IN LINGUISTICS I,1,5,ELENA GUERZONI,,,Online,,,,,"                          "
+LING571.05,Desc.,READINGS IN LINGUISTICS I,1,5,PAVEL LOGAÇEV,,,Online,,,,,"                          "
+LING571.06,Desc.,READINGS IN LINGUISTICS I,1,5,KADİR GÖKGÖZ,,,Online,,,,,"                          "
+LING571.07,Desc.,READINGS IN LINGUISTICS I,1,5,STEFANO CANALIS,,,Online,,,,,"                          "
+LING571.08,Desc.,READINGS IN LINGUISTICS I,1,5,METİN BAĞRIAÇIK,,,Online,,,,,"                          "
+LING571.09,Desc.,READINGS IN LINGUISTICS I,1,5,ÖMER DEMİROK,,,Online,,,,,"                          "
+LING571.10,Desc.,READINGS IN LINGUISTICS I,1,5,SUMRU ÖZSOY,,,Online,,,,,"                          "
+LING571.11,Desc.,READINGS IN LINGUISTICS I,1,5,DİDAR AKAR,,,Online,,,,,"                          "
+LING571.12,Desc.,READINGS IN LINGUISTICS I,1,5,MİNE NAKİPOĞLU,,,Online,,,,,"                          "
+LING571.13,Desc.,READINGS IN LINGUISTICS I,1,5,BALKIZ ÖZTÜRK,,,Online,,,,,"                          "
+LING571.14,Desc.,READINGS IN LINGUISTICS I,1,5,ELENA GUERZONI,,,Online,,,,,"                          "
+LING571.15,Desc.,READINGS IN LINGUISTICS I,1,5,PAVEL LOGAÇEV,,,Online,,,,,"                          "
+LING571.16,Desc.,READINGS IN LINGUISTICS I,1,5,KADİR GÖKGÖZ,,,Online,,,,,"                          "
+LING571.17,Desc.,READINGS IN LINGUISTICS I,1,5,STEFANO CANALIS,,,Online,,,,,"                          "
+LING571.18,Desc.,READINGS IN LINGUISTICS I,1,5,METİN BAĞRIAÇIK,,,Online,,,,,"                          "
+LING571.19,Desc.,READINGS IN LINGUISTICS I,1,5,ÖMER DEMİROK,,,Online,,,,,"                          "
+LING571.20,Desc.,READINGS IN LINGUISTICS I,1,5,SUMRU ÖZSOY,,,Online,,,,,"                          "
+LING571.21,Desc.,READINGS IN LINGUISTICS I,1,5,PAVEL LOGAÇEV,,,Online,,,,,"                          "
+LING571.22,Desc.,READINGS IN LINGUISTICS I,1,5,PAVEL LOGAÇEV,,,Online,,,,,"                          "
+LING572.01,Desc.,READINGS IN LINGUISTICS II,1,5,PAVEL LOGAÇEV,,,Online,,,,,"                          "
+LING579.01,Desc.,GRADUATE SEMINAR,0,5,PAVEL LOGAÇEV,,,Online,,,,,"                          "
+LING58U.01,Desc.,SP.TP.LANG.CONT.IN ASIA MINOR,4,10,METİN BAĞRIAÇIK,TTThTh,2323,Online,,,,,"                          "
+LING641.01,Desc.,SYNTAX,4,10,SUMRU ÖZSOY,,,Online,,,,,"                          "
+LING690.01,Desc.,MASTER THESIS,0,60,DİDAR AKAR,,, ,,,,,"                          "
+LING690.02,Desc.,MASTER THESIS,0,60,MİNE NAKİPOĞLU,,, ,,,,,"                          "
+LING690.03,Desc.,MASTER THESIS,0,60,BALKIZ ÖZTÜRK,,, ,,,,,"                          "
+LING690.04,Desc.,MASTER THESIS,0,60,ELENA GUERZONI,,, ,,,,,"                          "
+LING690.05,Desc.,MASTER THESIS,0,60,PAVEL LOGAÇEV,,, ,,,,,"                          "
+LING690.06,Desc.,MASTER THESIS,0,60,KADİR GÖKGÖZ,,, ,,,,,"                          "
+LING690.07,Desc.,MASTER THESIS,0,60,STEFANO CANALIS,,, ,,,,,"                          "
+LING690.08,Desc.,MASTER THESIS,0,60,METİN BAĞRIAÇIK,,, ,,,,,"                          "
+LING690.09,Desc.,MASTER THESIS,0,60,ÖMER DEMİROK,,, ,,,,,"                          "
+LING790.01,Desc.,Ph.D THESIS,0,120,KADİR GÖKGÖZ,,, ,,,,,"                          "
+TID 101.01,Desc.,ELEMENTARY TURKISH SIGN LANGUAGE I,3,5,FERİDE KORKMAZ,WWW,345,Online,,,,,"                          "
+TID 101.02,Desc.,ELEMENTARY TURKISH SIGN LANGUAGE I,3,5,FERİDE KORKMAZ,WWW,789,Online,,,,,"                          "

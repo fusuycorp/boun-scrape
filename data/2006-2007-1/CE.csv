@@ -1,0 +1,41 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CE  101.01,Desc.,INTRODUCTION TO CIVIL ENGINEERING,3,6,SEMİH TEZCAN,FFF,678,,M 1100 | M 1100 | M 1100,,,,"                          "
+CE  222.01,Desc.,INTRO. TO ENV. POLLUTION  CONTROL,3,7,ATİLLA AKKOYUNLU,MMT,678,,M 2171 | M 2171 | M 2180,,,,"                          "
+CE  241.01,Desc.,MECHANICS OF MATERIALS,4,6,ÖZER ÇİNİCİOĞLU,TTThTh,7878,,M 2152 | M 2152 | M 2181 | M 2181,,,,"                          "
+CE  243.01,Desc.,STATICS,3,5,KUTAY ORAKÇAL,TTThTh,3456,,M 2171 | M 2171 | M 3100 | M 3100,,,,"                          "
+CE  245.01,Desc.,MECHANICS,4,6,HİLMİ LUŞ,MMThTh,5667,,M 3100 | M 3100 | M 3120 | M 3120,,,,"                          "
+CE  301.01,Desc.,CIVIL ENGINEERING SYSTEMS ANALYSISS,3,5,GÖKMEN ERGÜN,MMW,783,,M 2200 | M 2200 | M 3100,,,,"                          "
+CE  311.01,Desc.,FLUID MECHANICS,4,6,OSMAN BÖREKÇİ,MMWW,1212,,M 3120 | M 3120 | M 2181 | M 2181,,,,"                          "
+CE  311.02,Desc.,FLUID MECHANICS,4,6,EMRE OTAY,MMWW,1212,,M 2181 | M 2181 | M 3120 | M 3120,,,,"                          "
+CE  331.01,Desc.,EARTH SCIENCES,3,5,GÖKHAN BAYKAL,TT,12,,M 2230 | M 2230,,,,"                          "
+CE  351.01,Desc.,STRUCTURAL ANALYSIS I,4,6,SAMİ AND KILIÇ,WWTh,787,,M 2180 | M 2180 | M 2170,,,,"                          "
+CE  351.02,Desc.,STRUCTURAL ANALYSIS I,4,6,CEM YALÇIN                   ,WWTh,787,,M 2181 | M 2181 | M 1200,,,,"                          "
+CE  371.01,Desc.,NUMERICAL METHODS IN CIVIL ENGINEERING,3,5,CEM AVCI,MMW,564,,M 2200 | M 2200 | M 3100,,,,"                          "
+CE  414.01,Desc.,INTRODUCTION TO COASTAL ENGINEERING,3,5,EMRE OTAY,MTT,656,,M 2181 | M 2200 | M 2200,,,,"                          "
+CE  421.01,Desc.,ENVIRONMENTAL ENGINEERING ,3,6,ATİLLA AKKOYUNLU,MM,34,,M 3100 | M 3100,,,,"                          "
+CE  431.01,Desc.,FOUNDATION ENGINEERING,4,6,TURAN DURGUNOĞLU,FFF,123,,M 3100 | M 3100 | M 3100,,,,"                          "
+CE  431.02,Desc.,FOUNDATION ENGINEERING,4,6,EROL GÜLER,MMW,121,,M 2200 | M 2200 | M 2170,,,,"                          "
+CE  451.01,Desc.,REINFORCED CONCRETE I,4,6,UĞUR ERSOY,WWThTh,3445,,M 3120 | M 3120 | M 2180 | M 2180,,,,"                          "
+CE  451.02,Desc.,REINFORCED CONCRETE I,4,6,CENGİZ KARAKOÇ,WWThTh,3445,,M 2181 | M 2181 | M 3120 | M 3120,,,,"                          "
+CE  454.01,Desc.,STEEL STRUCTURES  ,3,6,GÜLAY ALTAY,ThTh,67,,M 1171 | M 1171,,,,"                          "
+CE  461.01,Desc.,TRANSPORTATION SYSTEMS ENGINEERING,4,6,GÖKMEN ERGÜN,TTTh,348,,M 3100 | M 3100 | M 3120,,,,"                          "
+CE  488.01,Desc.,SP. STUD.IN CE :INT.TO VIBRATING SYSTEMS,3,5,HİLMİ LUŞ,TTF,785,,M 2170 | M 2170 | M 2170,,,,"                          "
+CE  492.01,Desc.,PROJECT,4,8,CEM YALÇIN                   ,FFF,789,,M 2181 | M 2181 | M 2181,,,,"                          "
+CE  501.01,Desc.,THE BOUNDARY ELEMENT METHOD,3,7.50,OSMAN BÖREKÇİ,MThTh,756,,M 2231 | M 1152 | M 1152,,,,"                          "
+CE  530.01,Desc.,ADV. GEOTECHNICAL ENGINEERING LABORATORY,3,7.50,GÖKHAN BAYKAL,WWW,234,,,,,,"                          "
+CE  550.01,Desc.,STRUCTURAL DESIGN,3,7.50,GÜLAY ALTAY,TTT,678,,M 2231 | M 2231 | M 2231,,,,"                          "
+CE  557.01,Desc.,MATRIX METHODS OF STRUCTURAL ANALYSIS,3,7.50,SEMİH TEZCAN,FFF,123,,M 2171 | M 2171 | M 2171,,,,"                          "
+CE  558.01,Desc.,ADVANCED REINFORCED CONCRETE,3,7.50,CENGİZ KARAKOÇ,WFF,878,,M 2170 | M 2203 | M 2203,,,,"                          "
+CE  559.01,Desc.,STRUCTURAL DYNAMICS,3,7.50,VEDAT YERLİCİ,WThTh,878,,M 1200 | M 2231 | M 2231,,,,"                          "
+CE  578.01,Desc.,PLAIN CONCRETE,3,7.50,TURAN ÖZTURAN,ThThTh,123,,M 2231 | M 2231 | M 2231,,,,"                          "
+CE  579.01,Desc.,GRADUATE SEMINAR,0,7.50,ÖZER ÇİNİCİOĞLU,W,7,,M 2231,,,,"                          "
+CE  582.01,Desc.,SP.TOP.IN CE:SLOPE STABILITY & STABILI..,3,6,AYŞE EDİNÇLİLER,WWW,568,,M 2231 | M 2231 | M 2231,,,,"                          "
+CE  587.01,Desc.,SP.TOP.IN CIVIL ENG:INTERMEDIATE FLUID M,3,7.50,CEM AVCI,WWW,789,,M 1181 | M 1181 | M 1181,,,,"                          "
+CE  589.01,Desc.,SP.TOP.IN CE:GEOTECHNICAL MODELLING,3,7.50,ÖZER ÇİNİCİOĞLU,MMM,234,,M 2231 | M 2231 | M 2231,,,,"                          "
+CE  690.01,Desc.,M.S.THESIS,0,60,EROL GÜLER,TBA,,,,,,,"                          "
+CE  790.01,Desc.,Ph.D. THESIS,0,120,EROL GÜLER,TBA,,,,,,,"                          "
+ENGG110.01,Desc.,ENGINEERING GRAPHICS,3,5,İREM EREZ,MMM,678,,M 3160 | M 3160 | M 3160,,,,"                          "
+ENGG110.02,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,TTT,678,,M 3160 | M 3160 | M 3160,,,,"                          "
+ENGG110.03,Desc.,ENGINEERING GRAPHICS,3,5,İREM EREZ,WWW,678,,M 3160 | M 3160 | M 3160,,,,"                          "
+ENGG110.04,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,ThThTh,678,,M 3160 | M 3160 | M 3160,,,,"                          "
+ENGG110.05,Desc.,ENGINEERING GRAPHICS,3,5,İLYAS İSTİF,FFF,678,,M 3160 | M 3160 | M 3160,,,,"                          "

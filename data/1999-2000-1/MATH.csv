@@ -1,0 +1,22 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.01,Desc.,CALCULUS I,4,6,AHMET KAMİL FEYZİOĞLU,TTThTh,1212,,,,,,"                          "
+MATH101.02,Desc.,CALCULUS I,4,6,AHMET KAMİL FEYZİOĞLU,TTThTh,3434,,,,,,"                          "
+MATH101.03,Desc.,CALCULUS I ,4,6,İRİNİ DİMİTRİYADİS,TTThTh,5656,,,,,,"                          "
+MATH105.01,Desc.,INTRODUCTION TO FINITE MATHEMATICS,4,6,GÜLNİHAL YÜCEL,TTThTh,1212,,,,,,"                          "
+MATH105.02,Desc.,INTRODUCTION TO FINITE MATHEMATICS,4,6,GÜLNİHAL YÜCEL,TTThTh,3434,,,,,,"                          "
+MATH111.01,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,NİLGÜN IŞIK,TTThTh,4545,,,,,,"        MATH; MEDU; TMAT; PRMA                  "
+MATH131.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS I(MATH,4,6,NİLGÜN IŞIK,TTThTh,1212,,,,,,"        MATH                  "
+MATH132.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS II,4,8,BETÜL TANBAY,TTThTh,1212,,,,,,"        MATH                  "
+MATH252.01,Desc.,DIFFERENTIAL EQUATIONS,4,7,TALİN BUDAK,MMWW,1212,,,,,,"                          "
+MATH252.02,Desc.,DIFFERENTIAL EQUATIONS,4,7,TALİN BUDAK,MMWW,3434,,,,,,"                          "
+MATH342.01,Desc.,LIFE INSURANCE MATH.,4,6,İRİNİ DİMİTRİYADİS,WWFF,7812,,,,,,"                          "
+MATH343.01,Desc.,PROBABILITY,4,6,ALP EDEN,TTWW,5645,,,,,,"                          "
+MATH497.01,Desc.,SEL.TOP.IN MATH.,1,6,ALP EDEN,TBA, ,,,,,,"                          "
+MATH498.01,Desc.,SEL.TOP.IN MATH.,1,6,ALP EDEN,TBA,,,,,,,"                          "
+MATH501.01,Desc.,ALGEBRA I,4,8,AYŞE SOYSAL,MMThTh,1212,,,,,,"                          "
+MATH515.01,Desc.,REAL ANALYSIS I,4,8,BETÜL TANBAY,TTThTh,3434,,,,,,"                          "
+MATH579.01,Desc.,GRADUATE SEMINAR,0,1,ALP EDEN,TBA, ,,,,,,"                          "
+MATH580.01,Desc.,READINGS IN MATHEMATICS,1,3,ALP EDEN,TBA, ,,,,,,"                          "
+MATH587.01,Desc.,SEL. TOP. IN ALGEBRA & TOPOLOGY III,4,7,STAFF STAFF,FFF,789,,,,,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,ALP EDEN,TBA, ,,,,,,"                          "
+MATH790.01,Desc.,Ph.D.THESIS,0,120,ALP EDEN,TBA, ,,,,,,"                          "

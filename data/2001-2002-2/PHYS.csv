@@ -1,0 +1,54 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHYS101.01,Desc.,PHYSICS I,4,8,HESNA SÜLÜN TURGAY,MWF,222,,,,,,"                          "
+PHYS101.02,Desc.,PHYSICS I,4,8,HESNA SÜLÜN TURGAY,MWF,333,,,,,,"                          "
+PHYS102.01,Desc.,PHYSICS II,4,8,ENİSE NİHAL ERCAN,MWF,333,,,,,,"                          "
+PHYS112.01,Desc.,GENERAL PHYSICS II,3,5,B.GÜLEN AKTAŞ,TTW,236,,,,,,"                          "
+PHYS121.01,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,AYŞE FAHRÜNİSA NEYZİ,MWF,333,,,,,,"                          "
+PHYS130.03,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,HALUK BEKER,MWF,333,,,,,,"                          "
+PHYS130.04,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,HALUK BEKER,MWF,444,,,,,,"                          "
+PHYS130.05,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,MEHMET ENİS OĞUZ,MWF,333,,,,,,"                          "
+PHYS201.01,Desc.,PHYSICS III,4,6,ÖMER Ö.OĞUZ,TTThTh,1212,,,,,,"                          "
+PHYS201.02,Desc.,PHYSICS III,4,6,ÖMER Ö.OĞUZ,TTThTh,3434,,,,,,"                          "
+PHYS201.03,Desc.,PHYSICS III,4,6,YANI SKARLATOS,TTThTh,3434,,,,,,"                          "
+PHYS202.01,Desc.,PHYSICS IV,4,6,YANI SKARLATOS,TTThTh,1212,,,,,,"                          "
+PHYS202.02,Desc.,PHYSICS IV,4,6,SERDAR NERGİZ,TTThTh,3434,,,,,,"                          "
+PHYS206.01,Desc.,EXPLORING THE COSMOS II,3,5,İBRAHİM SEMİZ,TTThTh,7878,,,,,,"                          "
+PHYS290.01,Desc.,INTRO.TO COMPUTER USAGE IN PHYSICS,3,6,LEVENT KURNAZ,TBA,,,,,,,"                          "
+PHYS302.01,Desc.,CLASSICAL MECHANICS II,3,3,LEVENT KURNAZ,MMFF,7878,,,,,,"                          "
+PHYS312.01,Desc.,QUANTUM PHYSICS II,3,5,CİHAN SAÇLIOĞLU,MMWW,5656,,,,,,"                          "
+PHYS326.01,Desc.,MATHEMATICAL METHODS OF PHYSICS II,3,6,METİN ARIK,MMWW,3434,,,,,,"                          "
+PHYS345.01,Desc.,CLASSICAL ASTRONOMY,3,6,JOHN FREELY,MWF,444,,,,,,"                          "
+PHYS346.01,Desc.,INTRODUCTION TO ASTROPHYSICS,3,6,ENİSE NİHAL ERCAN,MMM,256,,,,,,"                          "
+PHYS380.01,Desc.,INTRO.TO ELECTROMAGNETIC RADIATION,3,5,ÖMÜR AKYÜZ,TTThTh,1212,,,,,,"                          "
+PHYS392.01,Desc.,PHYSICAL ELECTRONICS II,3,4,B.GÜLEN AKTAŞ,MTT,389,,,,,,"                          "
+PHYS402.01,Desc.,ELECTROMAGNETISM II,3,6,SERDAR NERGİZ,TTThTh,5656,,,,,,"                          "
+PHYS408.01,Desc.,ADVANCED QUANTUM PHYSICS II,3,6,ERSAN DEMİRALP,MMWW,3434,,,,,,"                          "
+PHYS412.01,Desc.,QUANTUM MECHANICS II,3,6,AYŞE FAHRÜNİSA NEYZİ,MMWW,5656,,,,,,"                          "
+PHYS442.01,Desc.,EXPERIMENTAL PHYSICS I,4,7,ERHAN GÜLMEZ,WWWWWW,567891,,,,,,"                          "
+PHYS442.02,Desc.,EXPERIMENTAL PHYSICS I,4,7,ERHAN GÜLMEZ,WWFFFF,910123,,,,,,"                          "
+PHYS462.01,Desc.,SOLID STATE PHYSICS,3,6,ERSAN DEMİRALP,MMThTh,7834,,,,,,"                          "
+PHYS481.01,Desc.,SEL.TOP.IN PHYS:PHYS.OF COMM.,3,6,NURİ DAĞDEVİREN,TBA,,,,,,,"                          "
+PHYS482.01,Desc.,SELECTED TOPICS IN PHYSICS II,3,6,MEHMET ENİS OĞUZ,MMWW,6767,,,,,,"                          "
+PHYS489.01,Desc.,SEL.TOP.IN PHYS.:COMPUT.DATA ANAL.&STAT.,3,6,AVADİS SİMON HACINLIYAN,MMWW,7878,,,,,,"                          "
+PHYS492.01,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,ENİSE NİHAL ERCAN,,, ,,,,,"                          "
+PHYS492.02,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,LEVENT KURNAZ,,, ,,,,,"                          "
+PHYS492.03,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,METİN ARIK,,, ,,,,,"                          "
+PHYS492.04,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,İBRAHİM SEMİZ,,, ,,,,,"                          "
+PHYS492.05,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,ERSAN DEMİRALP,,, ,,,,,"                          "
+PHYS493.01,Desc.,SEL.TOP.IN PHYS.:VBA&MACRO PROGRAMMING,3,6,ALPAR  SEVGEN,TTTThThTh,678678,,,,,,"                          "
+PHYS496.01,Desc.,SELECTED TOPICS IN PHYSICS,3,6,YAŞAR SAFKAN,TBA,,,,,,,"                          "
+PHYS500.01,Desc.,READING IN PHYSICS,1,10,CİHAN SAÇLIOĞLU,TBA,,,,,,,"                          "
+PHYS525.01,Desc.,INTRODUCTION TO GENERAL RELATIVITY,4,10,İBRAHİM SEMİZ,TTThTh,1212,,,,,,"                          "
+PHYS532.01,Desc.,QUANTUM MECHANICS II,4,10,ALPAR  SEVGEN,TTThTh,3434,,,,,,"                          "
+PHYS579.01,Desc.,GRADUATE SEMINAR,0,10,CİHAN SAÇLIOĞLU,TBA,,,,,,,"                          "
+PHYS585.01,Desc.,SP. TOP.: INTRODUCTION TO NONLINEAR PHYS,4,10,ÖMER Ö.OĞUZ,TBA,,,,,,,"                          "
+PHYS590.01,Desc.,SP.TOP.ACCRETION MECHANISMS,4,10,STAFF STAFF,TBA,,,,,,,"                          "
+PHYS592.01,Desc.,SP.TOP.IN PHYS: TOP.&GEOMET.METHODS,4,10,CİHAN SAÇLIOĞLU,MMWW,1212,,,,,,"                          "
+PHYS646.01,Desc.,QUANTUM OPTICS & ELECTRONICS II,4,10,YANI SKARLATOS,TBA,,,,,,,"                          "
+PHYS682.01,Desc.,GRAUATE SEMINAR IN PHYSICS II,3,10,B.GÜLEN AKTAŞ,TBA,,,,,,,"                          "
+PHYS690.01,Desc.,M.S. THESIS,0,60,CİHAN SAÇLIOĞLU,TBA,,,,,,,"                          "
+PHYS790.01,Desc.,Ph.D.THESIS,0,120,CİHAN SAÇLIOĞLU,TBA,,,,,,,"                          "
+STS 230.01,Desc.,THEORY OF MUSICAL SOUND,3,6,ALPAR  SEVGEN,FFF,678,,,,,,"                          "
+STS 302.01,Desc.,ARCHEOMETRY II,3,6,HADİ ÖZBAL,TThTh,878,,,,,,"                          "
+STS 410.01,Desc.,HIST. OF SCIENCE (FROM THE 18TH ....),3,6,JOHN FREELY,MWF,333,,,,,,"                          "
+STS 483.01,Desc.,SPECIAL TOP.IN THE HIST OF SCIENCE,3,6,ÖMÜR AKYÜZ,TTWW,8989,,,,,,"                          "

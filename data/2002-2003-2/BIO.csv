@@ -1,0 +1,37 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+BIO 101.01,Desc.,GENERAL BIOLOGY I,3,6,NECLA BİRGÜL İYİSON,WThTh,434,,,,,,"                          "
+BIO 104.01,Desc.,GENERAL BIOLOGY II,3,5,HANDE ÇAĞLAYAN,MMW,785,,,,,,"                          "
+BIO 106.01,Desc.,GENERAL BIOLOGY LAB.,1,4,NECLA BİRGÜL İYİSON,TT,12,,,,,,"                          "
+BIO 106.02,Desc.,GENERAL BIOLOGY LAB.,1,4,NECLA BİRGÜL İYİSON,TT,78,,,,,,"                          "
+BIO 106.03,Desc.,GENERAL BIOLOGY LAB.,1,4,NECLA BİRGÜL İYİSON,ThTh,34,,,,,,"                          "
+BIO 106.04,Desc.,GENERAL BIOLOGY LAB.,1,4,NECLA BİRGÜL İYİSON,ThTh,78,,,,,,"                          "
+BIO 122.01,Desc.,PRELUDE TO MOLECULAR BIOLOGY,1,1,MÜGE TÜRET,Th,7,,,,,,"                          "
+BIO 152.01,Desc.,INTRO. TO MODERN BIOLOGY,3,5,MÜGE TÜRET,MMW,675,,,,,,"                          "
+BIO 165.01,Desc.,INTRODUCTION TO COMPUTER USAGE,3,4,JAN WOLANCYK,FF,78,,,,,,"                          "
+BIO 241.01,Desc.,CELL BIOLOGY,4,4,AHMET KOMAN,MThTh,478,,,,,,"                          "
+BIO 252.01,Desc.,GENETICS,4,6,ESRA BATTALOĞLU,TTW,124,,,,,,"                          "
+BIO 302.01,Desc.,BIOCHEMISTRY II,3,8,NEŞE BİLGİN,MMTT,7856,,,,,,"                          "
+BIO 306.01,Desc.,PRAC.  APPL. IN BIOCHEM.TECH.,2,3,AYŞE NAZLI BAŞAK,W,1,,,,,,"                          "
+BIO 332.01,Desc.,TECH. IN BIOLOGICAL RESEARCH,3,5,JAN WOLANCYK,ThThF,125,,,,,,"                          "
+BIO 402.01,Desc.,MOLECULAR BIOLOGY II,4,6,KUYAŞ BUĞRA,TTThTh,1245,,,,,,"                          "
+BIO 407.01,Desc.,SEMINAR,1,2,ASLIHAN TOLUN,T,7,,,,,,"                          "
+BIO 475.01,Desc.,PLANT MOLECULAR BIOLOGY & GENETICS,3,6,MÜGE TÜRET,MWW,878,,,,,,"                          "
+BIO 486.01,Desc.,SP.TOP.IN MO.BIO.&GEN.CONT. OF GENE EXP.,3,4,NEŞE BİLGİN,MThTh,512,,,,,,"                          "
+BIO 492.01,Desc.,SP.PROJECT II,3,8,AYŞE NAZLI BAŞAK,,, ,,,,,"                          "
+BIO 492.02,Desc.,SP.PROJECT II,3,8,ESRA BATTALOĞLU,,, ,,,,,"                          "
+BIO 492.03,Desc.,SP.PROJECT II,3,8,NEŞE BİLGİN,,, ,,,,,"                          "
+BIO 492.04,Desc.,SP.PROJECT II,3,8,KUYAŞ BUĞRA,,, ,,,,,"                          "
+BIO 492.05,Desc.,SP.PROJECT II,3,8,HANDE ÇAĞLAYAN,,, ,,,,,"                          "
+BIO 492.06,Desc.,SP.PROJECT II,3,8,AHMET KOMAN,TBA,,,,,,,"                          "
+BIO 492.07,Desc.,SP.PROJECT II,3,8,MÜGE TÜRET,,, ,,,,,"                          "
+BIO 492.08,Desc.,SP.PROJECT II,3,8,ASLIHAN TOLUN,,, ,,,,,"                          "
+BIO 492.09,Desc.,SP.PROJECT II,3,8,JAN WOLANCYK,,, ,,,,,"                          "
+BIO 492.10,Desc.,SP.PROJECT II,3,8,NECLA BİRGÜL İYİSON,,, ,,,,,"                          "
+BIO 501.01,Desc.,ADVANCED MOLECULAR BIOLOGY,3,7,ESRA BATTALOĞLU,TBA,,,,,,,"                          "
+BIO 511.01,Desc.,ADVANCED GENETICS,3,7,HANDE ÇAĞLAYAN,TBA,,,,,,,"                          "
+BIO 520.01,Desc.,LAB. PROJECTS IN BIOLOGY,3,15,AYŞE NAZLI BAŞAK,TBA,,,,,,,"                          "
+BIO 602.01,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,15,ESRA BATTALOĞLU,TBA,,,,,,,"                          "
+BIO 606.01,Desc.,BIOLOGICAL SIGNAL TRANSDUCTION,3,7,KUYAŞ BUĞRA,TBA,,,,,,,"                          "
+BIO 690.01,Desc.,M.S.THESIS,0,60,KUYAŞ BUĞRA,TBA,,,,,,,"                          "
+BIO 692.01,Desc.,ADVANCED TOP. IN MOLECULAR BIO.&GENETICS,3,7,ASLIHAN TOLUN,TBA,,,,,,,"                          "
+BIO 790.01,Desc.,Ph.D.THESIS,0,120,KUYAŞ BUĞRA,TBA,,,,,,,"                          "

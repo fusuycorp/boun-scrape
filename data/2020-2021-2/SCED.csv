@@ -1,0 +1,76 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+SCED120.01,Desc.,ACADEMIC ORIENTATION IN MATHEMATICS AND SCIENCE EDUCATION,3,6,EMİNE ERKTİN,MM,67,Online,,,,,"        PRSC                  "
+SCED240.01,Desc.,"SCIENCE,TECHNOLOGY AND SOCIETY",3,5,FATİH ÇAĞLAYAN MERCAN,MMT,562,Online,,,,,"        PEDU; CEDU; MEDU                  "
+SCED240.02,Desc.,"SCIENCE,TECHNOLOGY AND SOCIETY",3,5,ÖZDEN ŞENGÜL,MMT,453,Online,,,,,"        PEDU; CEDU; MEDU                  "
+SCED282.01,Desc.,SCIENCE EDUCATION IN FORMAL AND INFORMAL CONTEXTS,3,8,ÖZDEN ŞENGÜL,MMT,781,Online,,,,,"        PRSC; PEDU; CEDU; PRMA; MEDU                  "
+SCED282.02,Desc.,SCIENCE EDUCATION IN FORMAL AND INFORMAL CONTEXTS,3,8,ÖZDEN ŞENGÜL,TTW,788,Online,,,,,"        PRSC; PEDU; PRMA; CEDU; MEDU                  "
+SCED282.03,Desc.,SCIENCE EDUCATION IN FORMAL AND INFORMAL CONTEXTS,3,8,GAYE DEFNE CEYHAN,TTW,787,Online,,,,,"                          "
+SCED282.04,Desc.,SCIENCE EDUCATION IN FORMAL AND INFORMAL CONTEXTS,3,8,SEVİL AKAYGÜN,MMT,346,Online,,,,,"                          "
+SCED282.05,Desc.,SCIENCE EDUCATION IN FORMAL AND INFORMAL CONTEXTS,3,8,DENİZ SARIBAŞ,ThThTh,234,Online,,,,,"                          "
+SCED320.01,Desc.,TEACHING METHODS IN SCI.&MATHEMATICS,3,5,EBRU ZEYNEP MUĞALOĞLU,MMWW,3434,Online,,,,,"        PRSC                  "
+SCED320.02,Desc.,TEACHING METHODS IN SCI.&MATHEMATICS,3,5,GAYE DEFNE CEYHAN,MMWW,5656,Online,,,,,"        PRSC; PEDU; CEDU                  "
+SCED320.03,Desc.,TEACHING METHODS IN SCI.&MATHEMATICS,3,5,YEŞİM İMAMOĞLU,MMTT,7878,Online,,,,,"        PRSC; PEDU; CEDU                  "
+SCED348.01,Desc.,COMMUNITY SERVICE ,2,4,NİLGÜN PEKER,FF,23,Online,,,,,"                          "
+SCED348.02,Desc.,COMMUNITY SERVICE ,2,4,NİLGÜN PEKER,FF,34,Online,,,,,"                          "
+SCED352.01,Desc.,TEACHING ALGEBRA&PRE-CALCULUS FOR S.,4,6,YEŞİM İMAMOĞLU,MMTT,5612,Online,,,,,"        MEDU                  "
+SCED354.01,Desc.,TEACHING PROBABILITY AND STATISTICS ,3,8,KEMAL AKOĞLU,TTTh,342,Classroom,,,,,"                          "
+SCED354.02,Desc.,TEACHING PROBABILITY AND STATISTICS ,3,8,KEMAL AKOĞLU,TTTh,563,Classroom,,,,,"                          "
+SCED370.01,Desc.,ASSESSMENT&EVALUATION OF LEARNING IN SCI,3,6,SEVDA YERDELEN DAMAR,TTTh,566,Online,,,,,"        PRSC; PEDU; CEDU; PRMA; MEDU; CET                  "
+SCED370.02,Desc.,ASSESSMENT&EVALUATION OF LEARNING IN SCI,3,6,SEVDA YERDELEN DAMAR,TTTh,787,Online,,,,,"        CET; PRSC; PEDU; PRMA; CEDU; MEDU                  "
+SCED370.03,Desc.,ASSESSMENT&EVALUATION OF LEARNING IN SCI,3,6,OLGA GIOKA,MMT,563,Online,,,,,"        CET; PRSC; PEDU; PRMA; CEDU; MEDU                  "
+SCED370.04,Desc.,ASSESSMENT&EVALUATION OF LEARNING IN SCI,3,6,OLGA GIOKA,MMT,784,Online,,,,,"        CET; PRSC; PEDU; PRMA; CEDU; MEDU                  "
+SCED372.01,Desc.,TEACHING MATHEMATICS IN PRIMARY EDUCATIO,3,8,ENGİN ADER,TTFF,1278,Online,,,,,"                          "
+SCED404.01,Desc.,RESEARCH METHODS IN SCIENCE&MATH.EDUCA.,4,6,OSMAN AKŞİT,ThThFF,91023,Online,,,,,"        PRSC; PRMA; MEDU; PEDU; CEDU                  "
+SCED414.01,Desc.,SEMINAR ON PRACTICE TEACHING IN CHEMISTR,4,7,EMİNE ADADAN,TT,56,Classroom,,,,,"                          "
+SCED416.01,Desc.,SEMINAR ON PRACTICE TEACHING IN MATHEMATICS,4,7,FATMA ASLAN TUTAK,ThTh,34,Online,,,,,"                          "
+SCED416.02,Desc.,SEMINAR ON PRACTICE TEACHING IN MATHEMATICS,4,7,SERKAN ARIKAN,ThTh,78,Online,,,,,"                          "
+SCED416.03,Desc.,SEMINAR ON PRACTICE TEACHING IN MATHEMATICS,4,7,ENGİN ADER,MM,78,Online,,,,,"                          "
+SCED418.01,Desc.,SEMINAR ON PRACTICE TEACHING IN PHYSICS,4,7,FATİH ÇAĞLAYAN MERCAN,TT,78,Online,,,,,"                          "
+SCED422.01,Desc.,PRACTICE TEACHING IN CHEMISTRY,4,7,EMİNE ADADAN,TT,12,Classroom,,,,,"                          "
+SCED422.02,Desc.,PRACTICE TEACHING IN CHEMISTRY,4,7,SEVİL AKAYGÜN,TT,34,Online,,,,,"                          "
+SCED432.01,Desc.,PRACTICE TEACHING IN MATHEMATICS,4,7,YEŞİM İMAMOĞLU,ThTh,56,Online,,,,,"                          "
+SCED432.02,Desc.,PRACTICE TEACHING IN MATHEMATICS,4,7,FATMA ASLAN TUTAK,ThTh,78,Online,,,,,"                          "
+SCED432.03,Desc.,PRACTICE TEACHING IN MATHEMATICS,4,7,GÜLSEREN KARAGÖZ AKAR,ThTh,78,Online,,,,,"                          "
+SCED432.04,Desc.,PRACTICE TEACHING IN MATHEMATICS,4,7,KEMAL AKOĞLU,ThTh,56,Online,,,,,"                          "
+SCED432.05,Desc.,PRACTICE TEACHING IN MATHEMATICS,4,7,ENGİN ADER,ThTh,56,Online,,,,,"                          "
+SCED432.06,Desc.,PRACTICE TEACHING IN MATHEMATICS,4,7,SERKAN ARIKAN,ThTh,56,Online,,,,,"                          "
+SCED432.07,Desc.,PRACTICE TEACHING IN MATHEMATICS,4,7,EMİNE ERKTİN,ThTh,56,Online,,,,,"                          "
+SCED432.08,Desc.,PRACTICE TEACHING IN MATHEMATICS,4,7,TELİ KARAMAN,ThTh,910,Online,,,,,"                          "
+SCED442.01,Desc.,PRACTICE TEACHING IN PHYSICS,4,7,FATİH ÇAĞLAYAN MERCAN,MM,78,Online,,,,,"                          "
+SCED442.02,Desc.,PRACTICE TEACHING IN PHYSICS,4,7,SEVDA YERDELEN DAMAR,WW,78,Online,,,,,"                          "
+SCED444.01,Desc.,APPLIED RESEARCH IN MATH AND SCIENCE EDU,4,8,MUSTAFA SAMİ TOPÇU,FFFF,1234,Online,,,,,"                          "
+SCED444.02,Desc.,APPLIED RESEARCH IN MATH AND SCIENCE EDU,4,8,MUSTAFA SAMİ TOPÇU,FFFF,5678,Online,,,,,"                          "
+SCED444.03,Desc.,APPLIED RESEARCH IN MATH AND SCIENCE EDU,4,8,KEMAL AKOĞLU,MMWW,5634,Online,,,,,"                          "
+SCED461.01,Desc.,TEACHING METHODS IN SCIENCE ,3,8,EBRU KAYA,TTWW,5612,Online,,,,,"                          "
+SCED462.01,Desc.,PRACTICE TEACHING IN SCIENCE,4,8,DEVRİM GÜVEN,WW,12,Online,,,,,"                          "
+SCED462.02,Desc.,PRACTICE TEACHING IN SCIENCE,4,8,GAYE DEFNE CEYHAN,MM,78,Online,,,,,"                          "
+SCED462.03,Desc.,PRACTICE TEACHING IN SCIENCE,4,8,EBRU ZEYNEP MUĞALOĞLU,WW,56,Online,,,,,"                          "
+SCED462.04,Desc.,PRACTICE TEACHING IN SCIENCE,4,8,EBRU KAYA,TT,12,Online,,,,,"                          "
+SCED462.05,Desc.,PRACTICE TEACHING IN SCIENCE,4,8,DENİZ SARIBAŞ,ThTh,78,Online,,,,,"                          "
+SCED462.06,Desc.,PRACTICE TEACHING IN SCIENCE,4,8,SEVİL AKAYGÜN,TT,34,Online,,,,,"                          "
+SCED462.07,Desc.,PRACTICE TEACHING IN SCIENCE,4,8,OSMAN AKŞİT,FF,56,Online,,,,,"                          "
+SCED464.01,Desc.,SEMINAR ON PRACTICE TEACHING IN SCIENCE ,4,7,EBRU KAYA,TT,34,Online,,,,,"                          "
+SCED464.02,Desc.,SEMINAR ON PRACTICE TEACHING IN SCIENCE ,4,7,DEVRİM GÜVEN,WW,34,Online,,,,,"                          "
+SCED48R.01,Desc.,SP.TP.IN TEACHING MECHANICS IN K-12 SCI.EDU.,3,6,ÖZDEN ŞENGÜL,MMT,125,Online,,,,,"                          "
+SCED544.01,Desc.,SCIENCE/MATHEMATICS CURRICULUM DEVELOPMENT STUDY,3,8,OLGA GIOKA,TTT,789,Online,,,,,"                          "
+SCED579.01,Desc.,GRADUATE SEMINAR,0,3,GAYE DEFNE CEYHAN,T,10,Online,,,,,"                          "
+SCED612.01,Desc.,QUALITATIVE RESEARCH IN SCIENCE AND MATHEMATICS EDUCATION I,4,10,GÜLSEREN KARAGÖZ AKAR,TTT,123,Online,,,,,"                          "
+SCED68C.01,Desc.,SP.TP.SOCIOSCIENTIFIC ISSUES IN SCIENCE,4,10,DEVRİM GÜVEN,WWW,678,Online,,,,,"                          "
+SCED690.01,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,GÜLSEREN KARAGÖZ AKAR,,,Online,,,,,"                          "
+SCED690.02,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,EMİNE ERKTİN,,,Online,,,,,"                          "
+SCED690.03,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,EMİNE ADADAN,,,Online,,,,,"                          "
+SCED690.04,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,FATİH ÇAĞLAYAN MERCAN,,,Online,,,,,"                          "
+SCED690.05,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,SERKAN ARIKAN,,,Online,,,,,"                          "
+SCED690.06,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,EBRU ZEYNEP MUĞALOĞLU,,,Online,,,,,"                          "
+SCED690.07,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,FATMA ASLAN TUTAK,,,Online,,,,,"                          "
+SCED690.08,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,OLGA GIOKA,,,Online,,,,,"                          "
+SCED690.09,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,KEMAL AKOĞLU,,,Online,,,,,"                          "
+SCED690.10,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,YEŞİM İMAMOĞLU,,,Online,,,,,"                          "
+SCED690.11,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,EBRU KAYA,,,Online,,,,,"                          "
+SCED690.12,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,DEVRİM GÜVEN,,,Online,,,,,"                          "
+SCED690.13,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,ENGİN ADER,,,Online,,,,,"                          "
+SCED690.14,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,ÖZDEN ŞENGÜL,,,Online,,,,,"                          "
+SCED690.15,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,SEVİL AKAYGÜN,,,Online,,,,,"                          "
+SCED690.16,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,SEVDA YERDELEN DAMAR,,,Online,,,,,"                          "
+SCED690.17,Desc.,MASTER'S THESIS IN SCIENCE EDUCATION,0,60,GAYE DEFNE CEYHAN,,,Online,,,,,"                          "
+SCED700.01,Desc.,GRADUATE SEMINAR,0,3,YEŞİM İMAMOĞLU,T,10,Online,,,,,"                          "

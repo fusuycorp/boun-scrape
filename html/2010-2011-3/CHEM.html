@@ -1,0 +1,465 @@
+
+
+<html>
+<HEAD>
+<title>Schedule</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso8859-9" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../inc/regstyle.css" />
+<script src="/BUIS/js/jquery-1.10.2.min.js"></script>
+<script src="/BUIS/js/jquery-ui-1.10.3.min.js"></script>
+
+<script type="text/javascript">
+    function OpenMap(tdBbj) {
+        var text = $(tdBbj).text();
+        if (text.replace(/^\s+|\s+$/gm, '') != "") {
+            var scrollTop = $(document).scrollTop() + 100;
+            var building = text.split(" ")[0];
+            $("#gMapFrame").attr("src", "sch_map.asp?BN=" + building);
+            $("#gMap").dialog({ modal: true, minWidth: 630, minHeight: 510, height: "auto", width: "auto", overflow: "hidden" });
+            $('.ui-dialog').css('top', scrollTop + 'px');
+            window.scrollTo(0, scrollTop - 100);
+        }
+    }
+
+</script>
+
+	<script Lang="JScript">
+		function showQuota(ab,co,se,te) {
+			window.open('quotasearch.asp?abbr='+ab+'&code='+co+'&section='+se+'&donem='+te, 'myWin', 'resizable,scrollbars,width=500, height=400');
+		}
+
+
+
+	</script>
+
+<style>
+    .schtd2.labps {
+        background-color: #c7d2c8;
+        color:#8e5353;
+        ;
+    }
+     .schtd.labps {
+        background-color: #fffff6;
+        color:#8e5353;
+        ;
+    }
+
+</style>
+</HEAD>
+<body bgcolor="#FFFFFF" bgproperties="fixed">
+<font class='bodytextdark'><font size='+1'>Course Schedule</font>
+<br>
+<IMG  src='/images/pro_nav_btmline.gif' width='430' height='1'>
+<br>
+
+
+    
+<table width="250px">
+ <tr>
+    <td witdh=50% Class="bodytextdark">Semester   :</td>
+    <td witdh=50% Class="bodytextdark">2010/2011-3</td>
+ </tr>
+ <tr>
+    <td witdh=50% Class="bodytextdark">
+    Department :
+    </td>
+    <td witdh=50% Class="bodytextdark">CHEM</td>
+ </tr>
+</table>
+    <p style="font-size:10pt; color:black; font-weight:normal;">Click on to the classroom to view it on the campus map. <br /></p>
+<hr>
+
+    
+
+    <table style="margin:20px 0">
+        <tr>		 
+            <td colspan=10 class="bodygray" style="font-family:Verdana, Arial, Helvetica; font-weight:bold">
+                The <u>course</u> slots are as follows :
+            </td>
+        </tr>
+        <tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 1</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 09:00 - 09:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 2</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 10:00 - 10:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 3</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 11:00 - 11:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 4</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 12:00 - 12:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 5</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 13:00 - 13:50</td>
+  
+                </tr><tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 6</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 14:00 - 14:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 7</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 15:00 - 15:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 8</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 16:00 - 16:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 9</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 17:00 - 17:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 10</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 18:00 - 18:50</td>
+  
+                </tr><tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 11</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 19:00 - 19:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 12</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 20:00 - 20:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 13</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 21:00 - 21:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 14</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 22:00 - 22:50</td>
+
+        </tr>
+    </table>
+
+<table border="1" cellpadding="3" width="1300px" style="border-collapse: collapse" bordercolor="#111111" cellspacing="0">
+ <tr class="schtitle">
+    <td width=5% align=left>Code.Sec</td>
+    <td width=5%>Desc.</td>
+    <td width=12% align=left>Name</td>
+    <td width=2% align=left>Cr.</td>
+    <td width=2% align=left>Ects</td>
+
+    <td width=5% align=left>Instr.</td>
+    <td width=5% align=left>Days</td>
+    <td width=4% align=left>Hours</td>
+                <!-- FinalExamLocation -->
+     <td width=5% align=left>Course Delivery Method</td>
+<!--    <td width=5% align=left>Final Exam Location</td>-->
+
+    <td width=11% align=left>Rooms</td>
+    <td width=7% align=left>Exam</td>
+    <td width=4% align=left>Sl.</td>
+    <td width=7% align=left><a class="title" href="#reqdept">Required for Dept.(*)</a></td>
+    <td width=5% align=left>Departments</td>
+
+
+     <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+    
+    </tr>
+
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>CHEM103.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=CHEM103&section=01&term=2010/2011-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>GENERAL CHEMISTRY I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>OKTAY DEMİRCAN&nbsp;</td>
+		<td>TTWWThTh&nbsp;</td>
+		<td>343434&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KBZ 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KBZ 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">YD 06</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">YD 06</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">YD 06</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">YD 06</span>&nbsp;</td>
+        
+			<td>05.08.2011&nbsp;</td>
+			<td>4&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        BIO; CEDU; CHE; PEDU; PRSC
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>CHEM104.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=CHEM104&section=01&term=2010/2011-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>GENERAL CHEMISTRY II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>DİLEK ÇALGAN&nbsp;</td>
+		<td>TTWWThTh&nbsp;</td>
+		<td>343434&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KB 126</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KB 126</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KB 126</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KB 126</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KB 126</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KB 126</span>&nbsp;</td>
+        
+			<td>05.08.2011&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        BIO; CHE; CEDU; PRSC
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>CHEM104.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=CHEM104&section=02&term=2010/2011-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>GENERAL CHEMISTRY II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>DİLEK ÇALGAN&nbsp;</td>
+		<td>TTWWThTh&nbsp;</td>
+		<td>787878&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">GYD 316</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">GYD 316</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">GYD 316</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">GYD 316</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">GYD 316</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">GYD 316</span>&nbsp;</td>
+        
+			<td>05.08.2011&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>CHEM105.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=CHEM105&section=01&term=2010/2011-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>FUNDAMENTALS OF CHEMISTRY&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>EDİZ TAYLAN&nbsp;</td>
+		<td>MMTTWW&nbsp;</td>
+		<td>343434&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 403</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 403</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 403</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 403</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 403</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 403</span>&nbsp;</td>
+        
+			<td>06.08.2011&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        ME; CMPE; EE; PHYS
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>CHEM201.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=CHEM201&section=01&term=2010/2011-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ORGANIC CHEMISTRY I&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>İLKNUR DOĞAN&nbsp;</td>
+		<td>MMTTWWThTh&nbsp;</td>
+		<td>78787878&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KB 126</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KB 126</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KB 126</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KB 126</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KB 126</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KB 126</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KB 126</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KB 126</span>&nbsp;</td>
+        
+			<td>08.08.2011&nbsp;</td>
+			<td>4&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>CHEM202.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=CHEM202&section=01&term=2010/2011-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ORGANIC CHEMISTRY II&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>İLKNUR DOĞAN&nbsp;</td>
+		<td>MMTTWWThTh&nbsp;</td>
+		<td>12121212&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">YD 206</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">YD 206</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">YD 206</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">YD 206</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">YD 206</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">YD 206</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">YD 206</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">YD 206</span>&nbsp;</td>
+        
+			<td>05.08.2011&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>İLKNUR DOĞAN&nbsp;</td>
+		<td>ThTh&nbsp;</td>
+		<td>34&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">YD 206</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">YD 206</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>CHEM204.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=CHEM204&section=01&term=2010/2011-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ORGANIC CHEMISTRY LABORATORY II&nbsp;</td>
+		<td>1&nbsp;</td>
+		<td>3&nbsp;</td>
+
+		<td>ÖZGE AKDENİZ&nbsp;</td>
+		<td>TTTTThThThTh&nbsp;</td>
+		<td>56785678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">NH 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">N/A</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">N/A</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">N/A</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">N/A</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">N/A</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 301</span>&nbsp;</td>
+        
+			<td>05.08.2011&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+</table>
+<br>
+<a name="reqdept"><font size=2><b>(*) : </b>Departments that should choose this section for <u>mass courses</u></font></a>
+<br><br>
+<b><a href="javascript:window.history.go(-1)"> << Back</a></b>
+ <div id="gMap" style="width:600px;height:480px; display:none;">
+     <iframe id="gMapFrame" src="" width="590" height="460" scrolling="no" style="border:none;">
+</iframe>
+ </div>
+</body>
+</html>

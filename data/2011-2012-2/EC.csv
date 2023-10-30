@@ -1,0 +1,63 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EC  102.01,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,REFİK ERZAN,TTTh,565,,NB 119 | NB 119 | NB 119,29.05.2012,2,"AD,EC,POLS","                          "
+EC  102.02,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,CEM BEHAR,TTTh,565,,NH 401 | NH 401 | NH 105,29.05.2012,2,"AD,EC,POLS","                          "
+EC  102.03,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,YAHYA MADRA,TTTh,565,,NH 301 | NH 301 | NH 101,29.05.2012,2,"AD,EC,POLS","                          "
+EC  102.04,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,ŞEMSA ÖZAR,TWTh,775,,NB 119 | NB 119 | M 1100,29.05.2012,2,"CHE,PHYS","                          "
+EC  102.05,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,BURCU YAKUT ÇAKAR,MMW,121,,NB 119 | NB 119 | KPARK1,29.05.2012,2,"SOC,TR","                          "
+EC  102.06,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,KIVANÇ KARAMAN,MMW,121,,NH 105 | NH 105 | NH 105,29.05.2012,2,"CE,CMPE,EE","                          "
+EC  102.07,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,KIVANÇ KARAMAN,MWW,323,,NH 405 | NH 105 | NH 105,29.05.2012,2,"HIST,IE,ME","                          "
+EC  102.08,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,BURCU YAKUT ÇAKAR,MWW,323,,M 2152 | KPARK1 | KPARK1,29.05.2012,2,,"                          "
+EC  205.01,Desc.,MACROECONOMICS I,3,5,MURAT KOYUNCU,MWW,534,,NH 405 | NB 119 | NB 119,29.05.2012,1,AD,"                          "
+EC  205.02,Desc.,MACROECONOMICS I,3,5,MURAT KOYUNCU,MWW,678,,NH 405 | İB 102 | İB 102,29.05.2012,1,AD,"                          "
+EC  206.01,Desc.,MICROECONOMICS II,3,5,MURAT YILMAZ,TThTh,445,,NB 119 | İB 102 | İB 102,04.06.2012,3,,"                          "
+EC  206.02,Desc.,MICROECONOMICS II,3,5,MURAT YILMAZ,TThTh,223,,NH 403 | İB 102 | İB 102,04.06.2012,3,,"                          "
+EC  208.01,Desc.,MACROECONOMICS II,3,5,TOLGA UMUT KUZUBAŞ,TThTh,223,,NB 119 | KPARK1 | KPARK1,01.06.2012,2,,"                          "
+EC  208.02,Desc.,MACROECONOMICS II,3,5,TOLGA UMUT KUZUBAŞ,TThTh,145,,NB 119 | KPARK1 | KPARK1,01.06.2012,2,,"                          "
+EC  234.01,Desc.,MATHEMATICAL STATISTICS II,3,5,GÜZİN GÜLSÜN AKIN,WFF,523,,M 1100 | NB 119 | NB 119,06.06.2012,2,,"                          "
+EC  234.02,Desc.,MATHEMATICAL STATISTICS II,3,5,GÜZİN GÜLSÜN AKIN,WFF,656,,M 1100 | NB 119 | NB 119,06.06.2012,2,,"                          "
+EC  306.01,Desc.,ADVANCED MICROECONOMICS,3,6,DENİZ SELMAN,TTTh,566,,NBZ 13 | NBZ 13 | NBB 10,31.05.2012,1,,"                          "
+EC  308.01,Desc.,ADVANCED MACROECONOMICS,3,6,MURAT KOYUNCU,MThTh,445,,NH 405 | NH 104 | NH 104,30.05.2012,1,,"                          "
+EC  332.01,Desc.,ADVANCED ECONOMETRICS,3,6,BURAK SALTOĞLU,TFF,745,,NBZ 13 | NBZ 12 | NBZ 12,04.06.2012,2,,"                          "
+EC  344.01,Desc.,"MONEY, BANKING & FINANCIAL INSTITUTIONS",3,6,LEVENT YILDIRAN,TFF,223,,İB 102 | NH 404 | NH 404,02.06.2012,3,,"                          "
+EC  344.02,Desc.,"MONEY, BANKING & FINANCIAL INSTITUTIONS",3,6,LEVENT YILDIRAN,TFF,356,,İB 102 | NH 403 | NH 403,02.06.2012,3,,"                          "
+EC  352.01,Desc.,TOPICS IN PUBLIC FINANCE,3,6,E. ÜNAL ZENGİNOBUZ,MMW,566,,NB 119 | NB 119 | NB 119,09.06.2012,3,,"                          "
+EC  403.01,Desc.,ECONOMIC POLICY,3,6,CEYHUN ELGİN,MMW,121,,NBZ 12 | NBZ 12 | NBZ 13,07.06.2012,3,,"                          "
+EC  412.01,Desc.,TOPICS IN HIST. OF ECO. THOUGHT,3,6,CEM BEHAR,TThTh,323,,NH 402 | NH 104 | NH 104,31.05.2012,3,,"                          "
+EC  433.01,Desc.,PROJECT EVALUATION,3,6,CEVAT KARATAŞ,MMM,567,,NBZ 06 | NBZ 06 | NBZ 06,29.05.2012,1,,"                          "
+EC  454.01,Desc.,TURKISH TAX SYTEMS,3,6,İZZETTİN ÖNDER,TTTh,121,,NBZ 13 | NBZ 13 | NBZ 13,29.05.2012,1,,"                          "
+EC  470.01,Desc.,TURKISH ECONOMY,3,6,REFİK ERZAN,TThTh,878,,NB 119 | NB 119 | NB 119,02.06.2012,1,,"                          "
+EC  474.01,Desc.,TOPICS IN INTERNATIONAL DEVELOPMENT,3,6,ŞEMSA ÖZAR,TTTh,456,,NH 304 | NH 304 | M 1100,07.06.2012,3,,"                          "
+EC  482.01,Desc.,"SP.TOP.:INSTITUTIONS,DEVELOPMENT&HISTORY",3,6,KIVANÇ KARAMAN,MWW,478, ,NBZ 12 | NBB 10 | NBB 10,28.05.2012,1,,"                          "
+EC  485.01,Desc.,SP.TOP.:ECONOMICS OF CORPORATE FINANCE,3,6,E. ÜNAL ZENGİNOBUZ,MWW,334,,NBZ 12 | NBZ 10 | NBZ 10,05.06.2012,2,,"                          "
+EC  487.01,Desc.,READING ON INSTITUTIONAL ECONOMICS,3,6,NURİ EMRAH AYDINONAT,FFF,567,,NBZ 13 | NBZ 13 | NBZ 13,09.06.2012,2,,"                          "
+EC  48E.01,Desc.,SP.TP.FUNDAMENTALS OF GLOBAL POL.ECONOMY,3,6,BURCU YAKUT ÇAKAR,MMM,567,,İB 312 | İB 312 | İB 312,05.06.2012,3,,"                          "
+EC  48G.01,Desc.,SP.TP.ENVIRONMENTAL&ECOLOGIC ECONOMICS,3,6,BEGÜM ÖZKAYNAK,MWW,556,,M 2181 | NBZ 10 | NBZ 10,06.06.2012,2,,"                          "
+EC  48P.01,Desc.,SP.TP.STRATEGIC THINKING,3,6,AYŞE MUMCU,TThTh,334,,NB 119 | NB 119 | NB 119,01.06.2012,2,,"                          "
+EC  502.01,Desc.,MICRO-ECONOMICS II,4,8,DENİZ SELMAN,TTThTh,7878,,NBZ 10 | NBZ 10 | M 1171 | M 1171,04.06.2012,1,,"                          "
+EC  504.01,Desc.,MACRO-ECONOMICS II,4,8,CEYHUN ELGİN,MMWW,5623,,NBZ 12 | NBZ 12 | NBZ 13 | NBZ 13,01.06.2012,1,,"                          "
+EC  509.01,Desc.,ENVIRONMENTAL ECONOMICS,3,7,GÖKHAN ÖZERTAN,MWW,523,,M 1152 | NBB 10 | NBB 10,01.06.2012,3,,"                          "
+EC  516.01,Desc.,ECONOMIC HISTORY OF TURKEY,3,7,ŞEVKET OSMAN PAMUK,ThThTh,678,,NBZ 12 | NBZ 12 | NBZ 12,29.05.2012,2,,"                          "
+EC  526.01,Desc.,INDUSTRIAL ORGANIZATION I,3,7,AYŞE MUMCU,TTT,567,,NBB 10 | NBB 10 | NBB 10,02.06.2012,3,,"                          "
+EC  532.01,Desc.,ECONOMETRICS II,4,8,GÖKHAN ÖZERTAN,MMWW,2356,,M 1152 | M 1152 | NBB 10 | NBB 10,31.05.2012,2,,"                          "
+EC  579.01,Desc.,GRADUATE SEMINAR,0,5,MURAT KOYUNCU,FFF,789,,İB 201 | İB 201 | İB 201,,0,,"                          "
+EC  587.01,Desc.,SELECTED TOPICS IN COMPARATIVE POLITICAL,3,7,YAHYA MADRA,WWW,678,,NBZ 13 | NBZ 13 | NBZ 13,06.06.2012,2,,"                          "
+EC  58E.01,Desc.,SP.TP.IN ECONOMIC THEORY,3,7,AYŞE MUMCU,TBA,,,,01.06.2012,1,,"                          "
+EC  58H.01,Desc.,SP.TOP. IN ECONOMICS,3,7,MURAT KOYUNCU,FFF,456,,NBB 10 | NBB 10 | NBB 10,09.06.2012,2,,"                          "
+EC  599.01,Desc.,TERM PROJECT,0,13,AHMET FARUK AYSAN,TBA,,,,07.06.2012,2,,"                          "
+EC  599.02,Desc.,TERM PROJECT,0,13,TOLGA UMUT KUZUBAŞ,TBA,,,,07.06.2012,2,,"                          "
+EC  599.03,Desc.,TERM PROJECT,0,13,FİKRET ADAMAN,TBA,,,,07.06.2012,2,,"                          "
+EC  599.04,Desc.,TERM PROJECT,0,13,GÖKHAN ÖZERTAN,TBA,,,,07.06.2012,2,,"                          "
+EC  686.01,Desc.,SP.TP.IN FINANCE,3,7,BURAK SALTOĞLU,TBA,,,,07.06.2012,3,,"                          "
+EC  690.01,Desc.,MASTER THESIS,0,60,CEYHUN ELGİN,TBA,,,,,0,,"                          "
+EC  690.02,Desc.,MASTER THESIS,0,60,MURAT YILMAZ,TBA,,,,,0,,"                          "
+EC  690.03,Desc.,MASTER THESIS,0,60,MURAT KOYUNCU,TBA,,,,,0,,"                          "
+EC  690.04,Desc.,MASTER THESIS,0,60,TOLGA UMUT KUZUBAŞ,TBA,,,,,0,,"                          "
+EC  690.06,Desc.,MASTER THESIS,0,60,BURAK SALTOĞLU,TBA,,,,,0,,"                          "
+EC  690.07,Desc.,MASTER THESIS,0,60,DENİZ SELMAN,TBA,,,,,0,,"                          "
+EC  690.08,Desc.,MASTER THESIS,0,60,LEVENT YILDIRAN,TBA,,,,,0,,"                          "
+EC  690.09,Desc.,MASTER THESIS,0,60,E. ÜNAL ZENGİNOBUZ,TBA,,,,,0,,"                          "
+EC  690.10,Desc.,MASTER THESIS,0,60,FİKRET ADAMAN,TBA,,,,,0,,"                          "
+EC  690.11,Desc.,MASTER THESIS,0,60,BURÇAY ERUS,TBA,,,,,0,,"                          "
+EC  690.13,Desc.,MASTER THESIS,0,60,ŞEMSA ÖZAR,TBA,,,,,0,,"                          "
+EC  690.14,Desc.,MASTER THESIS,0,60,KIVANÇ KARAMAN,TBA,,,,,0,,"                          "
+EC  692.01,Desc.,DIRECTED READINGS I,3,7,BEGÜM ÖZKAYNAK,TBA,,,,09.06.2012,3,,"                          "

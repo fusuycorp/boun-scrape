@@ -1,0 +1,63 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Quota,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+INT 301.01,Desc.,INTRODUCTION TO CONSECUTIVE INTERPRETING,3,5,Info,EBRU DİRİKER,MMM,678, ,JF 102 | JF 102 | JF 102,,,,"                          "
+INT 301.02,Desc.,INTRODUCTION TO CONSECUTIVE INTERPRETING,3,5,Info,BİLGE HAS BIYIKLI,MMM,124, ,JF 108 | JF 108 | JF 101,,,,"                          "
+INT 301.06,Desc.,INTRODUCTION TO CONSECUTIVE INTERPRETING,3,5,Info,EBRU DİRİKER,MMM,123, ,JF 334 | JF 334 | JF 334,,,,"                          "
+INT 301.07,Desc.,INTRODUCTION TO CONSECUTIVE INTERPRETING,3,5,Info,NEDİME MERCANGÖZ,MMM,91011, ,JF 333 | JF 333 | JF 333,,,,"                          "
+INT 318.02,Desc.,INTRO.TO SIMULTANEOUS INTERPRETING,3,4,Info,EZGİ ÜNLÜER BAGLIETO,MMM,567, ,,,,,"                          "
+INT 320.01,Desc.,COMMUNITY INTERPRETING,3,5,Info,JONATHAN MAURICE ROSS,WWW,345, ,JF 332 | JF 332 | JF 332,,,,"                          "
+INT 415.01,Desc.,SIMULTANEOUS INTERPRETING I,3,5,Info,HANDE GÜNER,TTT,123, ,JF 401 | JF 401 | JF 401,,,,"                          "
+INT 417.01,Desc.,CONSECUTIVE INTERPRETING,3,4,Info,AHU LATİFOĞLU DOĞAN,WWW,567, ,M 1152 | M 1152 | M 1152,,,,"                          "
+INT 417.02,Desc.,CONSECUTIVE INTERPRETING,3,4,Info,EBRU DİRİKER,TTT,678, ,,,,,"                          "
+INT 419.01,Desc.,INTERPRETING PROJECT DESIGN,1,3,Info,ENA HODJIKJ,,, ,,,,,"                          "
+INT 419.02,Desc.,INTERPRETING PROJECT DESIGN,1,3,Info,JONATHAN MAURICE ROSS,,, ,,,,,"                          "
+INT 481.01,Desc.,SP.TOP.FOR INTERPRETERS,3,5,Info,EBRU DİRİKER,FFF,678, ,TB 240 | TB 240 | TB 240,,,,"                          "
+INT 491.01,Desc.,SP.TOP.FOR INTERPRETERS: INTRODUCTION TO RESEARCH ON INTERPRETING,3,5,Info,JONATHAN MAURICE ROSS,WWW,678, ,JF 332 | JF 332 | JF 332,,,,"                          "
+TR  109.01,Desc.,INTRODUCTION TO TRANSLA.&TRANS.STUDIES I,3,6,Info,AYŞENAZ CENGİZ,MWW,745, ,TB 415 | M 2180 | M 2180,,,,"                          "
+TR  109.02,Desc.,INTRODUCTION TO TRANSLA.&TRANS.STUDIES I,3,6,Info,CEYDA ELGÜL,MTT,534, ,JF 101 | TB 490 | TB 490,,,,"                          "
+TR  109.03,Desc.,INTRODUCTION TO TRANSLA.&TRANS.STUDIES I,3,6,Info,CEYDA ELGÜL,MTT,656, ,JF 101 | TB 415 | TB 415,,,,"                          "
+TR  111.01,Desc.,RHETORIC&COMPOSITION FOR TRANSLATORS,4,7,Info,JONATHAN MAURICE ROSS,MMTT,7878, ,M 1152 | M 1152 | NH 001 | NH 001,,,,"                          "
+TR  111.02,Desc.,RHETORIC&COMPOSITION FOR TRANSLATORS,4,7,Info,ENA HODJIKJ,ThThFF,4534, ,EF 205 | EF 205 | TB 240 | TB 240,,,,"                          "
+TR  111.03,Desc.,RHETORIC&COMPOSITION FOR TRANSLATORS,4,7,Info,JAN BUTS,ThThFF,7878, ,EF 204 | EF 204 | TB 490 | TB 490,,,,"                          "
+TR  111.04,Desc.,RHETORIC&COMPOSITION FOR TRANSLATORS,4,7,Info,JAN BUTS,ThThFF,4534, ,M 2170 | M 2170 | M 2170 | M 2170,,,,"                          "
+TR  203.01,Desc.,INFOR.TECHNOLOGIES(IT)FOR TRANSLATORS,3,4,Info,MEHMET ŞAHİN,TTW,783, ,JF 332 | JF 332 | EF 203,,,,"                          "
+TR  203.02,Desc.,INFOR.TECHNOLOGIES(IT)FOR TRANSLATORS,3,4,Info,MEHMET ŞAHİN,TTW,566, ,M 2152 | M 2152 | M 1181,,,,"                          "
+TR  203.03,Desc.,INFOR.TECHNOLOGIES(IT)FOR TRANSLATORS,3,4,Info,HÜSEYİN MERGAN,TTT,91011, ,JF 101 | JF 101 | JF 101,,,,"                          "
+TR  215.01,Desc.,TECHNICAL TRANSLATION,3,4,Info,FAZİLET AKDOĞAN ÖZDEMİR,MFF,656, ,İB 201 | JF 101 | JF 101,,,,"                          "
+TR  215.02,Desc.,TECHNICAL TRANSLATION,3,4,Info,FAZİLET AKDOĞAN ÖZDEMİR,MMF,787, ,İB 201 | İB 201 | JF 101,,,,"                          "
+TR  215.03,Desc.,TECHNICAL TRANSLATION,3,4,Info,ŞULE DEMİRKOL ERTÜRK,MMT,676, ,M 2231 | M 2231 | NH 303,,,,"                          "
+TR  301.01,Desc.,THEORIES OF TRANSLATION,3,6,Info,AYŞENAZ CENGİZ,MTT,656, ,TB 415 | M 2181 | M 2181,,,,"                          "
+TR  301.02,Desc.,THEORIES OF TRANSLATION,3,6,Info,FAZİLET AKDOĞAN ÖZDEMİR,MFF,223, ,M 2230 | M 2152 | M 2152,,,,"                          "
+TR  315.01,Desc.,MEDICAL TRANSLATION,3,5,Info,MELİS YAVUZ,FFF,789, ,TB 415 | TB 415 | TB 415,,,,"                          "
+TR  401.01,Desc.,CONTEMPORARY ISSUES IN TRANS.&TRANS.STUD,1,4,Info,ŞULE DEMİRKOL ERTÜRK,TT,78, ,NH 303 | NH 303,,,,"                          "
+TR  403.01,Desc.,POLITICAL DISCOURSE OF INTER. ORGANIZATI,3,5,Info,BAHAR ÇOTUR,WWW,123, ,,,,,"                          "
+TR  405.01,Desc.,TRANSLATING TEXTS ON SOCIAL SCIENCES,3,5,Info,ŞULE DEMİRKOL ERTÜRK,MTT,334, ,JF 101 | JF 412 | JF 412,,,,"                          "
+TR  405.02,Desc.,TRANSLATING TEXTS ON SOCIAL SCIENCES,3,5,Info,AYŞENAZ CENGİZ,MMW,346, ,TB 240 | TB 240 | M 2180,,,,"                          "
+TR  427.01,Desc.,TRANSLATION PROJECT DESIGN,1,3,Info,JONATHAN MAURICE ROSS,,, ,,,,,"                          "
+TR  427.02,Desc.,TRANSLATION PROJECT DESIGN,1,3,Info,CEYDA ELGÜL,,, ,,,,,"                          "
+TR  427.03,Desc.,TRANSLATION PROJECT DESIGN,1,3,Info,ŞULE DEMİRKOL ERTÜRK,,, ,,,,,"                          "
+TR  427.04,Desc.,TRANSLATION PROJECT DESIGN,1,3,Info,AYŞENAZ CENGİZ,,, ,,,,,"                          "
+TR  427.05,Desc.,TRANSLATION PROJECT DESIGN,1,3,Info,ENA HODJIKJ,,, ,,,,,"                          "
+TR  427.07,Desc.,TRANSLATION PROJECT DESIGN,1,3,Info,MEHMET ŞAHİN,,, ,,,,,"                          "
+TR  427.08,Desc.,TRANSLATION PROJECT DESIGN,1,3,Info,FAZİLET AKDOĞAN ÖZDEMİR,,, ,,,,,"                          "
+TR  428.01,Desc.,TRANSLATION PROJECT,3,6,Info,CEYDA ELGÜL,,, ,,,,,"                          "
+TR  428.02,Desc.,TRANSLATION PROJECT,3,6,Info,JONATHAN MAURICE ROSS,,, ,,,,,"                          "
+TR  428.03,Desc.,TRANSLATION PROJECT,3,6,Info,AYŞENAZ CENGİZ,,, ,,,,,"                          "
+TR  428.04,Desc.,TRANSLATION PROJECT,3,6,Info,EBRU DİRİKER,,, ,,,,,"                          "
+TR  428.05,Desc.,TRANSLATION PROJECT,3,6,Info,MEHMET ŞAHİN,,, ,,,,,"                          "
+TR  428.06,Desc.,TRANSLATION PROJECT,3,6,Info,FAZİLET AKDOĞAN ÖZDEMİR,,, ,,,,,"                          "
+TR  485.01,Desc.,SP.TOP.TRANSLATING THE CITY,3,4,Info,SUAT KARANTAY,TTT,234, ,JF 108 | JF 108 | JF 108,,,,"                          "
+TR  48L.01,Desc.,SP. TP. IN TRANS: APPLIED LING. FOR TRA.,3,5,Info,ENA HODJIKJ,TTTh,566, ,KP 02 | KP 02 | EF 205,,,,"                          "
+TR  48R.01,Desc.,SP.TP.AUDIOVISUAL TRANSLATION,3,5,Info,ASLI SÜREYYA SAYMAN,FFF,678, ,JF 412 | JF 412 | JF 412,,,,"                          "
+TR  48Y.01,Desc.,SP.TP.TERMINOLOGY & LEXICOLOGY,3,5,Info,ENA HODJIKJ,ThFF,212, ,M 1181 | TB 240 | TB 240,,,,"                          "
+TR  494.01,Desc.,SP.TP.TRANSLATION AND FICTION,3,5,Info,CEYDA ELGÜL,MMT,898, ,TB 415 | TB 415 | JF 334,,,,"                          "
+TR  497.01,Desc.,SP.TP.IN TRANSLATION:COURT INTERPRETING,3,5,Info,BİHTER ESİN YÜCEL,FFF,678, ,JF 102 | JF 102 | JF 102,,,,"                          "
+TR  601.01,Desc.,HISTORY OF TRANSLATION THEORY,3,7,Info,ŞEHNAZ TAHİR GÜRÇAĞLAR,,, ,,,,,"                          "
+TR  611.01,Desc.,SEMINAR IN CONTEMPORARY TRANSLATION THEO,3,9,Info,JAN BUTS,,, ,,,,,"                          "
+TR  680.01,Desc.,SP.TOP.IN TRANSLATION STUDIES,3,7,Info,JONATHAN MAURICE ROSS,,, ,,,,,"                          "
+TR  680.02,Desc.,SP.TOP.IN TRANSLATION STUDIES,3,7,Info,MEHMET ŞAHİN,,, ,,,,,"                          "
+TR  790.01,Desc.,DOCTORAL DISSERTATION,0,120,Info,JONATHAN MAURICE ROSS,,, ,,,,,"                          "
+TR  790.02,Desc.,DOCTORAL DISSERTATION,0,120,Info,ŞULE DEMİRKOL ERTÜRK,,, ,,,,,"                          "
+TR  790.03,Desc.,DOCTORAL DISSERTATION,0,120,Info,AYŞENAZ CENGİZ,,, ,,,,,"                          "
+TR  790.04,Desc.,DOCTORAL DISSERTATION,0,120,Info,EBRU DİRİKER,,, ,,,,,"                          "
+TR  790.05,Desc.,DOCTORAL DISSERTATION,0,120,Info,MEHMET ŞAHİN,,, ,,,,,"                          "
+TR  790.06,Desc.,DOCTORAL DISSERTATION,0,120,Info,FAZİLET AKDOĞAN ÖZDEMİR,,, ,,,,,"                          "

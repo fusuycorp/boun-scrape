@@ -1,0 +1,48 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EC  102.01,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,REFİK ERZAN,TTTh,565,,İBRAHİM | İBRAHİM | İBRAHİM,,,"AD,EC,POLS","                          "
+EC  102.03,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,CEM BEHAR,TTTh,565,,NH 102 | NH 102 | GYM,,,"AD,EC,POLS","                          "
+EC  102.04,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,BURÇAY ERUS,MWW,656,,NH 301 | NH 101 | NH 101,,,"EE,IE,ME","                          "
+EC  102.05,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,BURÇİN ÜNEL,TThTh,667,,NH 301 | NH 301 | NH 301,,,"CE,CHE,SOC","                          "
+EC  102.06,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,KIVANÇ KARAMAN,MMTh,122,,NH 301 | NH 301 | GYM,,,"CMPE,HIST,GUID","                          "
+EC  102.07,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,KIVANÇ KARAMAN,MMTh,341,,NH 301 | NH 301 | GYM,,,"PHYS,TR","                          "
+EC  205.01,Desc.,MACROECONOMICS I,3,5,AHMET FARUK AYSAN,MMF,566,,NB 119 | NB 119 | NB 119,,,,"                          "
+EC  206.01,Desc.,MICROECONOMICS II,3,5,GÜZİN GÜLSÜN AKIN,MWW,634,,ÖZGER A | NB 119 | NB 119,,,,"                          "
+EC  206.02,Desc.,MICROECONOMICS II,3,5,BURÇİN ÜNEL,TThTh,423,,NH 104 | NH 305 | NH 305,,,,"                          "
+EC  208.01,Desc.,MACROECONOMICS II,3,5,OZAN HATİPOĞLU,TWW,878,,GYM | NB 119 | NB 119,,,,"                          "
+EC  232.01,Desc.,STATISTICS II,4,6,ULAŞ AKKÜÇÜK,TTW,782,,IB 102 | IB 102 | IB 312,,,,"                          "
+EC  232.02,Desc.,STATISTICS II,4,6,NESRİN OKAY AKMAN,TThTh,678,,ÖZGER A | IB 102 | IB 102,,,,"                          "
+EC  234.01,Desc.,MATHEMATICAL STATISTICS II,3,5,GÜZİN GÜLSÜN AKIN,MMW,346,,NB 119 | NB 119 | TB 310,,,,"                          "
+EC  302.01,Desc.,NATURAL RESOURCES & ENVIRONMENTAL ECON.I,3,6,BEGÜM ÖZKAYNAK,TWW,378,,NBZ 11 | IB 210 | IB 210,,,,"                          "
+EC  306.01,Desc.,ADVANCED MICROECONOMICS,3,6,AYŞE MUMCU,TThTh,556,,NH 103 | NH 305 | NH 305,,,,"                          "
+EC  308.01,Desc.,ADVANCED MACROECONOMICS,3,6,OZAN HATİPOĞLU,TWW,112,,NB 119 | IB 102 | IB 102,,,,"                          "
+EC  332.01,Desc.,ADVANCED ECONOMETRICS,3,6,GÖKHAN ÖZERTAN,MWW,656,,NBZ 12 | NBZ 13 | NBZ 13,,,,"                          "
+EC  344.01,Desc.,"MONEY, BANKING & FINANCIAL INSTITUTIONS",3,6,BURAK SALTOĞLU,TFF,623,,TB 310 | NB 119 | NB 119,,,,"                          "
+EC  344.02,Desc.,"MONEY, BANKING & FINANCIAL INSTITUTIONS",3,6,LEVENT YILDIRAN,ThFF,723,,IB 210 | NBZ 11 | NBZ 11,,,,"                          "
+EC  350.01,Desc.,GOVERNMENT CONTROL,3,6,İZZETTİN ÖNDER,ThThTh,123,,NH 104 | NH 104 | NH 104,,,,"                          "
+EC  352.01,Desc.,TOPICS IN PUBLIC FINANCE,3,6,FİKRET ADAMAN,TTTh,344,,NB 119 | NB 119 | NB 119,,,,"                          "
+EC  412.01,Desc.,TOPICS IN HIST. OF ECO. THOUGHT,3,6,FİKRET ADAMAN,TWW,778,,NB 119 | NH 101 | NH 101,,,,"                          "
+EC  433.01,Desc.,PROJECT EVALUATION,3,6,CEVAT KARATAŞ,MMM,678,,NBZ 11 | NBZ 11 | NBZ 11,,,,"                          "
+EC  454.01,Desc.,TURKISH TAX SYTEMS,3,6,İZZETTİN ÖNDER,MMM,123,,NH 403 | NH 403 | NH 403,,,,"                          "
+EC  470.01,Desc.,TURKISH ECONOMY,3,6,REFİK ERZAN,TThTh,878,,NB 119 | NB 119 | NB 119,,,,"                          "
+EC  474.01,Desc.,TOPICS IN INTERNATIONAL DEVELOPMENT,3,6,BEGÜM ÖZKAYNAK,TTW,564,,NBZ 11 | NBZ 11 | NBZ 11,,,,"                          "
+EC  488.01,Desc.,SPECIAL TOPICS IN HEALTH ECONOMICS,3,6,BURÇAY ERUS,MMW,343,,NH 302 | NH 302 | NBZ 11,,,,"                          "
+EC  502.01,Desc.,MICRO-ECONOMICS II,4,8,GÖKHAN ÖZERTAN,MMWW,1212,,NBZ 12 | NBZ 12 | NBZ 11 | NBZ 11,,,,"                          "
+EC  504.01,Desc.,MACRO-ECONOMICS II,4,8,OZAN HATİPOĞLU,TTWW,2345,,NBB 10 | NBB 10 | NBZ 12 | NBZ 12,,,,"                          "
+EC  532.01,Desc.,ECONOMETRICS II,4,8,BURAK SALTOĞLU,TTFF,4556,,NBB 10 | NBB 10 | NBZ 11 | NBZ 11,,,,"                          "
+EC  558.01,Desc.,PUBLIC ECONOMICS I,3,7,E. ÜNAL ZENGİNOBUZ,TThTh,778,,NBZ 10 | NBZ 10 | NBZ 10,,,,"                          "
+EC  579.01,Desc.,GRADUATE SEMINAR,0,5,BURAK SALTOĞLU,TBA,,,,,,,"                          "
+EC  583.01,Desc.,SEL.TOP.IN FINANCIAL MARKETS& REGULATION,3,7,AHMET FARUK AYSAN,ThThTh,101112,,IB 312,,,,"                          "
+EC  584.01,Desc.,SP.TOP.IN BANKING & CORPORATE FİNANCE ,3,7,LEVENT YILDIRAN,ThThTh,123,,,,,,"                          "
+EC  588.01,Desc.,SP.TOP.IN MATCHING THEORY,3,7,AYŞE MUMCU,TTT,123,,IB 312 | IB 312 | IB 312,,,,"                          "
+EC  599.01,Desc.,TERM PROJECT,0,13,BURAK SALTOĞLU,TBA,,,,,,,"                          "
+EC  599.02,Desc.,TERM PROJECT,0,13,GÖKHAN ÖZERTAN,TBA,,,,,,,"                          "
+EC  599.03,Desc.,TERM PROJECT,0,13,GÜZİN GÜLSÜN AKIN,TBA,,,,,,,"                          "
+EC  599.04,Desc.,TERM PROJECT,0,13,REFİK ERZAN,TBA,,,,,,,"                          "
+EC  690.01,Desc.,MASTER THESIS,0,60,BEGÜM ÖZKAYNAK,TBA,,,,,,,"                          "
+EC  690.02,Desc.,MASTER THESIS,0,60,AYŞE MUMCU,TBA,,,,,,,"                          "
+EC  690.03,Desc.,MASTER THESIS,0,60,AHMET FARUK AYSAN,TBA,,,,,,,"                          "
+EC  690.04,Desc.,MASTER THESIS,0,60,OZAN HATİPOĞLU,TBA,,,,,,,"                          "
+EC  690.05,Desc.,MASTER THESIS,0,60,GÖKHAN ÖZERTAN,TBA,,,,,,,"                          "
+EC  690.06,Desc.,MASTER THESIS,0,60,E. ÜNAL ZENGİNOBUZ,TBA,,,,,,,"                          "
+EC  690.07,Desc.,MASTER THESIS,0,60,BURÇAY ERUS,TBA,,,,,,,"                          "
+EC  690.08,Desc.,MASTER THESIS,0,60,LEVENT YILDIRAN,TBA,,,,,,,"                          "

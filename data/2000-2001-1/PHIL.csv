@@ -1,0 +1,21 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY I,3,7,İLHAN İNAN,MWF,222,,,,,,"        PSY; LING; GUID; LAW                  "
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY I,3,7,CHRYSSI SIDIROPOULOU,TTF,782,,,,,,"        PHIL                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,5,ZEYNEP DAVRAN,MWTh,333,,,,,,"        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,3,10,KARANFİL SOYHUN,TThTh,212,,,,,,"                          "
+PHIL131.02,Desc.,LOGIC I,3,10,BERNA KILINÇ,TTTh,787,,,,,,"                          "
+PHIL213.01,Desc.,ANCIENT PHILOSOPHY,3,6,CHRYSSI SIDIROPOULOU,WFF,534,,,,,,"        PHIL                  "
+PHIL251.01,Desc.,SP.TOP. IN LOGIC,3,5,ALİ KARATAY,TTF,895,,,,,,"                          "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,KARANFİL SOYHUN,TThTh,656,,,,,,"        PHIL                  "
+PHIL301.01,Desc.,PROBLEMS OF CONTEMPORARY PHILOSOPHY,3,6,ALİ KARATAY,TFF,734,,,,,,"                          "
+PHIL313.01,Desc.,HISTORY OF MODERN PHILOSOPHY I,3,6,STEPHEN VOSS,MWW,223,,,,,,"        PHIL                  "
+PHIL341.01,Desc.,ETHICS,3,6,ZEYNEP DAVRAN,MWTh,444,,,,,,"        PHIL                  "
+PHIL357.01,Desc.,PHILOSOPHY OF SOCIAL SCIENCES,3,6,GÜROL IRZIK,TTTh,232,,,,,,"                          "
+PHIL515.01,Desc.,TOP. IN HIST. OF PHILOSOPHY,4,10,STEPHEN VOSS,MMM,678,,,,,,"                          "
+PHIL519.01,Desc.,HISTORY OF SCIENCE& PHILOSOPHY,4,10,BERNA KILINÇ,WWW,789,,,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,GÜROL IRZIK,TBA,,,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,2,GÜROL IRZIK,TBA,,,,,,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,GÜROL IRZIK,TBA,,,,,,,"                          "
+PHIL682.01,Desc.,FREEDOM & DETERMINISM,4,10,İLHAN İNAN,FFF,567,,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,GÜROL IRZIK,TBA,,,,,,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,GÜROL IRZIK,TBA,,,,,,,"                          "

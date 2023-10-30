@@ -1,0 +1,43 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AL  201.01,Desc.,SURVEY OF AMERICAN LITERATURE,3,6,MARGARET RUSSETT,MMW,785,,,,,,"                          "
+CL  402.01,Desc.,LITERARY CRITICISM II,3,7,OYA BAŞAK,TTTh,562,,,,,,"                          "
+CL  402.02,Desc.,LITERARY CRITICISM II,3,7,ÖZLEM ÖĞÜT,TThF,626,,,,,,"                          "
+DRA 204.01,Desc.,MODERN DRAMA,3,6,ASLI TEKİNAY,TTF,562,,,,,,"                          "
+DRA 204.02,Desc.,MODERN DRAMA,3,6,OYA BAŞAK,TTTh,562,,,,,,"                          "
+EL  102.01,Desc.,SURVEY OF ENGLISH LITERATURE II,3,7,CEVZA SEVGEN,TThF,444,,,,,,"                          "
+EL  102.02,Desc.,SURVEY OF ENGLISH LITERATURE II,3,7,ÖZLEM GÖREY,TThF,444,,,,,,"                          "
+EL  102.03,Desc.,SURVEY OF ENGLISH LITERATURE II,3,7,ÖZLEM ÖĞÜT,TThF,444,,,,,,"                          "
+EL  112.01,Desc.,CULTURAL HISTORY OF ENGLAND,3,7,SOSİ ANTİKACIOĞLU,TWThF,5737,,,,,,"                          "
+EL  202.01,Desc.,THE SIXTEENTH CENTURY,3,6,LAMİA GÜLÇUR,MMTh,565,,,,,,"                          "
+EL  304.01,Desc.,THE EARLIER ENGLISH ROMANTICS,3,6,MARGARET RUSSETT,WFF,678,,,,,,"                          "
+EL  310.01,Desc.,CHAUCER,3,5,ASLI TEKİNAY,TThFF,4734,,,,,,"                          "
+EL  310.02,Desc.,CHAUCER,3,5,LAMİA GÜLÇUR,MTThTh,3567,,,,,,"                          "
+EL  408.01,Desc.,MODERN ENGLISH POETRY,3,6,SOSİ ANTİKACIOĞLU,TThF,755,,,,,,"                          "
+EL  408.02,Desc.,MODERN ENGLISH POETRY,3,6,CEVZA SEVGEN,TThF,755,,,,,,"                          "
+EL  412.02,Desc.,RESEARCH AND WRITING,3,6,SOSİ ANTİKACIOĞLU,TBA,,,,,,,"                          "
+EL  412.04,Desc.,RESEARCH AND WRITING,3,6,IŞIL BAŞ,TBA,,,,,,,"                          "
+EL  412.06,Desc.,RESEARCH AND WRITING,3,6,ÖZLEM GÖREY,TBA,,,,,,,"                          "
+EL  412.07,Desc.,RESEARCH AND WRITING,3,6,LAMİA GÜLÇUR,TBA,,,,,,,"                          "
+EL  412.09,Desc.,RESEARCH AND WRITING,3,6,ÖZLEM ÖĞÜT,TBA,,,,,,,"                          "
+EL  412.10,Desc.,RESEARCH AND WRITING,3,6,MARGARET RUSSETT,TBA,,,,,,,"                          "
+EL  412.11,Desc.,RESEARCH AND WRITING,3,6,CEVZA SEVGEN,TBA,,,,,,,"                          "
+EL  412.12,Desc.,RESEARCH AND WRITING,3,6,ASLI TEKİNAY,TBA,,,,,,,"                          "
+EL  690.01,Desc.,MASTER THESIS,0,60,CEVZA SEVGEN,TBA,,,,,,,"                          "
+EL  790.01,Desc.,DOCTORAL DISSERTATION,0,120,CEVZA SEVGEN,TBA,,,,,,,"                          "
+ENGL102.01,Desc.,INTRODUCTION TO LITERARY SCHOLARSHIP II,3,6,IŞIL BAŞ,TThTh,767,,,,,,"                          "
+ENGL112.01,Desc.,EXPOSITORY WRITING II,3,5,MÜFİDE PEKİN,MWF,125,,,,,,"                          "
+ENGL112.02,Desc.,EXPOSITORY WRITING II,3,5,MÜFİDE PEKİN,MWF,212,,,,,,"                          "
+ENGL112.03,Desc.,EXPOSITORY WRITING II,3,5,MÜFİDE PEKİN,MWF,441,,,,,,"                          "
+ENGL112.04,Desc.,EXPOSITORY WRITING II,3,5,SEVDA AKYÜZ,WWW,567,,,,,,"                          "
+FA  202.01,Desc.,ANATOLIAN ART & CULTURES FROM PREHIST...,3,5,BEHİN AKSOY,ThThTh,678,,,,,,"                          "
+FA  327.01,Desc.,MUSIC:THEORY & APPRECIATION,3,5,EMİNE SERDAROĞLU,TTT,678,,,,,,"                          "
+FA  346.01,Desc.,AUTEUR DIRECTORS II,3,5,MİTHAT ALAM,MMMTTT,678678,,,,,,"                          "
+GR  102.01,Desc.,MODERN GREEK FOR BEGINNERS II,3,5,CHRYSSI SIDIROPOULOU,MMT,786,,,,,,"                          "
+LING111.01,Desc.,INTRO. TO LANGUAGE & LINGUISTICS I,3,6,MİNE NAKİPOĞLU,MWTh,445,,,,,,"                          "
+LING302.01,Desc.,MORPHOLOGY & SYNTAX,3,5,SUMRU ÖZSOY,TBA,,,,,,,"                          "
+LING486.01,Desc.,SP.TOP.:ORAL AND WR.EXP.IN TUR.,3,5,MİNE NAKİPOĞLU,TBA,,,,,,,"                          "
+LING490.01,Desc.,SP.TOP.LANGUAGE & GENDER,3,5,DİDAR AKAR,MMW,787,,,,,,"                          "
+LIT 212.01,Desc.,STUDIES IN LITERATURE II,3,8,ÖZLEM GÖREY,TTTh,676,,,,,,"                          "
+RUS 102.01,Desc.,BEGINNER'S RUSSIAN II,3,5,OLGA ZVERKOVA,MMWWF,12122,,,,,,"                          "
+RUS 202.01,Desc.,INTERMEDIATE RUSSIAN II,3,5,OLGA ZVERKOVA,MMWWF,34343,,,,,,"                          "
+RUS 302.01,Desc.,ADVANCED RUSSIAN II,3,5,OLGA ZVERKOVA,TBA,,,,,,,"                          "

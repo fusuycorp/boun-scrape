@@ -1,0 +1,52 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+BIO 101.01,Desc.,GENERAL BIOLOGY I,3,6,ŞAHRU YÜKSEL,TThTh,556,,KPARK8 | KPARK8 | KPARK8,,,BIO,"                          "
+BIO 101.02,Desc.,GENERAL BIOLOGY I,3,6,NECLA BİRGÜL İYİSON,TThTh,556,,KPARK1 | KPARK1 | KPARK1,,,"CEDU,PRED MATH,PRED SCI","                          "
+BIO 103.01,Desc.,GENERAL BIOLOGY LABORATORY,1,4,KUYAŞ BUĞRA,MM,78,,,,,,"                          "
+BIO 103.02,Desc.,GENERAL BIOLOGY LABORATORY,1,4,ESRA BATTALOĞLU,ThTh,78,,,,,,"                          "
+BIO 103.03,Desc.,GENERAL BIOLOGY LABORATORY,1,4,KUYAŞ BUĞRA,TT,34,,,,,PRED SCI,"                          "
+BIO 103.04,Desc.,GENERAL BIOLOGY LABORATORY,1,4,ESRA BATTALOĞLU,WW,34,,,,,PRED MATH,"                          "
+BIO 104.01,Desc.,GENERAL BIOLOGY II,3,5,NECLA BİRGÜL İYİSON,MWW,656,,KPARK8 | KPARK8 | KPARK8,,,,"                          "
+BIO 121.01,Desc.,INTRO.TO CELL BIOLOGY,3,5,MÜGE TÜRET,MWW,567,,KPARK9 | KPARK9 | KPARK9,,,"LL2,PHIL2","                          "
+BIO 241.01,Desc.,CELL BIOLOGY,4,4,NESRİN ÖZÖREN,TThTh,612,,KPARK8 | KPARK8 | KPARK8,,,,"                          "
+BIO 301.01,Desc.,BIOCHEMISTRY I,4,8,AYŞE NAZLI BAŞAK,MMWW,7878,,KPARK8 | KPARK8 | KPARK8 | KPARK8,,,,"                          "
+BIO 305.01,Desc.,PRAC.  APPL. IN BIOCHEM. & GENETICS,2,3,AYŞE NAZLI BAŞAK,T,4,,KPARK8,,,,"                          "
+BIO 351.01,Desc.,MICROBIOLOGY,4,4,ŞAHRU YÜKSEL,TWW,134,,KPARK8 | KPARK8 | KPARK8,,,,"                          "
+BIO 353.01,Desc.,MOLECULAR GENETICS,4,8,ESRA BATTALOĞLU,TTThTh,2334,,KPARK8 | KPARK8 | KPARK8 | KPARK8,,,,"                          "
+BIO 401.01,Desc.,MOLECULAR BIOLOGY I,4,6,STEFAN FUSS,WWFF,1212,,KPARK8 | KPARK8 | KPARK8 | KPARK8,,,,"                          "
+BIO 407.01,Desc.,SEMINAR,1,2,ASLIHAN TOLUN,T,3,,KPARK9,,,,"                          "
+BIO 407.02,Desc.,SEMINAR,1,2,ASLIHAN TOLUN,T,4,,KPARK9,,,,"                          "
+BIO 409.01,Desc.,MOLECULAR BIOLOGY LAB. I,3,7,KUYAŞ BUĞRA,W,4,,KPARK9,,,,"                          "
+BIO 443.01,Desc.,PHYSIOLOGY II,3,5,STEFAN FUSS,TTF,783,,KPARK8 | KPARK8 | KPARK8,,,,"                          "
+BIO 491.01,Desc.,SPECIAL PROJECTS I,3,8,AYŞE NAZLI BAŞAK,TBA,,,,,,,"                          "
+BIO 491.02,Desc.,SPECIAL PROJECTS I,3,8,AYŞE NAZLI BAŞAK,TBA,,,,,,,"                          "
+BIO 491.03,Desc.,SPECIAL PROJECTS I,3,8,NEŞE BİLGİN,TBA,,,,,,,"                          "
+BIO 491.04,Desc.,SPECIAL PROJECTS I,3,8,NECLA BİRGÜL İYİSON,TBA,,,,,,,"                          "
+BIO 491.05,Desc.,SPECIAL PROJECTS I,3,8,KUYAŞ BUĞRA,TBA,,,,,,,"                          "
+BIO 491.06,Desc.,SPECIAL PROJECTS I,3,8,HANDE ÇAĞLAYAN,TBA,,,,,,,"                          "
+BIO 491.07,Desc.,SPECIAL PROJECTS I,3,8,AHMET KOMAN,TBA,,,,,,,"                          "
+BIO 491.08,Desc.,SPECIAL PROJECTS I,3,8,ASLIHAN TOLUN,TBA,,,,,,,"                          "
+BIO 491.09,Desc.,SPECIAL PROJECTS I,3,8,ŞAHRU YÜKSEL,TBA,,,,,,,"                          "
+BIO 491.10,Desc.,SPECIAL PROJECTS I,3,8,MÜGE TÜRET,TBA,,,,,,,"                          "
+BIO 491.11,Desc.,SPECIAL PROJECTS I,3,8,ARZU ÇELİK,TBA,,,,,,,"                          "
+BIO 491.12,Desc.,SPECIAL PROJECTS I,3,8,STEFAN FUSS,TBA,,,,,,,"                          "
+BIO 500.01,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,10,NECLA BİRGÜL İYİSON,TBA,,,,,,,"                          "
+BIO 501.01,Desc.,ADVANCED MOLECULAR BIOLOGY,3,7,MÜGE TÜRET,TBA,,,,,,,"                          "
+BIO 511.01,Desc.,ADVANCED GENETICS,3,7,HANDE ÇAĞLAYAN,TBA,,,,,,,"                          "
+BIO 579.01,Desc.,GRADUATE SEMINAR,0,2,MÜGE TÜRET,TBA,,,,,,,"                          "
+BIO 583.01,Desc.,SP.TOP.:JON CHANNELS&EPILEPSY,3,7,HANDE ÇAĞLAYAN,TBA,,,,,,,"                          "
+BIO 586.01,Desc.,SP.TOP.:CELL CYCLE AND APOPTOSIS,3,7,NESRİN ÖZÖREN,TBA,,,,,,,"                          "
+BIO 601.01,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,10,NECLA BİRGÜL İYİSON,TBA,,,,,,,"                          "
+BIO 690.01,Desc.,M.S.THESIS,0,60,NEŞE BİLGİN,TBA,,,,,,,"                          "
+BIO 690.02,Desc.,M.S.THESIS,0,60,KUYAŞ BUĞRA,TBA,,,,,,,"                          "
+BIO 690.03,Desc.,M.S.THESIS,0,60,AHMET KOMAN,TBA,,,,,,,"                          "
+BIO 690.04,Desc.,M.S.THESIS,0,60,ASLIHAN TOLUN,TBA,,,,,,,"                          "
+BIO 690.05,Desc.,M.S.THESIS,0,60,NESRİN ÖZÖREN,TBA,,,,,,,"                          "
+BIO 690.06,Desc.,M.S.THESIS,0,60,AYŞE NAZLI BAŞAK,TBA,,,,,,,"                          "
+BIO 690.07,Desc.,M.S.THESIS,0,60,ESRA BATTALOĞLU,TBA,,,,,,,"                          "
+BIO 690.08,Desc.,M.S.THESIS,0,60,HANDE ÇAĞLAYAN,TBA,,,,,,,"                          "
+BIO 790.01,Desc.,Ph.D.THESIS,0,120,AYŞE NAZLI BAŞAK,TBA,,,,,,,"                          "
+BIO 790.02,Desc.,Ph.D.THESIS,0,120,ESRA BATTALOĞLU,TBA,,,,,,,"                          "
+BIO 790.03,Desc.,Ph.D.THESIS,0,120,NEŞE BİLGİN,TBA,,,,,,,"                          "
+BIO 790.04,Desc.,Ph.D.THESIS,0,120,HANDE ÇAĞLAYAN,TBA,,,,,,,"                          "
+BIO 790.05,Desc.,Ph.D.THESIS,0,120,ASLIHAN TOLUN,TBA,,,,,,,"                          "
+BIO 790.06,Desc.,Ph.D.THESIS,0,120,AHMET KOMAN,TBA,,,,,,,"                          "

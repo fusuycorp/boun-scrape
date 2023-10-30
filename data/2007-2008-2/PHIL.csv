@@ -1,0 +1,26 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL106.01,Desc.,PHILOSOPHICAL TEXTS,3,7,MURAT BAÇ,ThThF,564,,M 1100 | M 1100 | M 2200,,,,"                          "
+PHIL112.01,Desc.,INTRODUCTION TO MODERN PHILOSOPHY,3,5,STEPHEN VOSS,TTTh,341,,NH 301 | NH 301 | NH 301,,,"ED,LL,TKL,TR","                          "
+PHIL132.01,Desc.,LOGIC II,3,6,SUN DEMİRLİ,TTTh,343,,TB 310 | TB 310 | M 1100,,,,"                          "
+PHIL214.01,Desc.,HISTORY OF PHILOSOPHY II,3,6,CHRYSSI SIDIROPOULOU,WWTh,782,,NH 201 | NH 201 | NH 304,,,,"                          "
+PHIL222.01,Desc.,PHILOSOPHY OF SCIENCE,3,6,GÜROL IRZIK,MWW,323,,M 2152 | M 2181 | M 2181,,,,"                          "
+PHIL241.01,Desc.,APPLIED ETHICS ,3,6,KARANFİL SOYHUN,ThThTh,678,,M 1200 | M 1200 | M 1200,,,,"                          "
+PHIL314.01,Desc.,HISTORY OF PHILOSOPHY IV,3,6,YILDIZ SİLİER,MFF,823,,M 2230 | M 1170 | M 1170,,,,"                          "
+PHIL382.01,Desc.,ONTOLOGY,3,7,SUN DEMİRLİ,WWTh,564,,TB 240 | TB 240 | TB 260,,,,"                          "
+PHIL412.01,Desc.,ADVANCED HISTORY OF PHILOSOPHY,3,6,STEPHEN VOSS,TBA,,,,,,,"                          "
+PHIL420.01,Desc.,ADVANCED PHILOSOPHY OF SCIENCE,3,6,GÜROL IRZIK,MMM,567,,M 1170 | M 1170 | M 1170,,,,"                          "
+PHIL431.01,Desc.,INDUCTIVE LOGIC,3,6,BERNA KILINÇ,FFF,456,,M 2152 | M 2152 | M 2152,,,,"                          "
+PHIL48Y.01,Desc.,SP.TOPICS ARISTOTLE,3,6,CHRYSSI SIDIROPOULOU,WWTh,343,,KPARK5 | KPARK5 | NH 304,,,,"                          "
+PHIL498.01,Desc.,SEL.TOP: PHIL.IN CINEMA,3,6,YILDIZ SİLİER,MMM,234,,MİTHAT | MİTHAT | MİTHAT ,,,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,GÜVEN GÜZELDERE,,, ,,,,,"                          "
+PHIL501.01,Desc.,METAPHYSICS,4,10,PINAR CANEVİ,TTT,234,,,,,,"                          "
+PHIL515.01,Desc.,TOP. IN HIST. OF PHILOSOPHY,4,10,STEPHEN VOSS,TBA,,,,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL58L.01,Desc.,SP.TOPICS EVIDENCE,4,10,BERNA KILINÇ,WWW,678,,,,,,"                          "
+PHIL58M.01,Desc.,SP.TOPICS FALLIBILISM,4,10,İLHAN İNAN,MMM,678,,,,,,"                          "
+PHIL58Z.01,Desc.,SP. TOP.:MORAL REALISM,4,10,ZEYNEP DAVRAN,ThThTh,567,,,,,,"                          "
+PHIL637.01,Desc.,CONTEMPORARY PHILOSOPHY,4,10,MURAT BAÇ,WWW,345,,,,,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,MURAT BAÇ,TBA,,,,,,,"                          "

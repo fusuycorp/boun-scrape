@@ -1,0 +1,1020 @@
+
+
+<html>
+<HEAD>
+<title>Schedule</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso8859-9" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../inc/regstyle.css" />
+<script src="/BUIS/js/jquery-1.10.2.min.js"></script>
+<script src="/BUIS/js/jquery-ui-1.10.3.min.js"></script>
+
+<script type="text/javascript">
+    function OpenMap(tdBbj) {
+        var text = $(tdBbj).text();
+        if (text.replace(/^\s+|\s+$/gm, '') != "") {
+            var scrollTop = $(document).scrollTop() + 100;
+            var building = text.split(" ")[0];
+            $("#gMapFrame").attr("src", "sch_map.asp?BN=" + building);
+            $("#gMap").dialog({ modal: true, minWidth: 630, minHeight: 510, height: "auto", width: "auto", overflow: "hidden" });
+            $('.ui-dialog').css('top', scrollTop + 'px');
+            window.scrollTo(0, scrollTop - 100);
+        }
+    }
+
+</script>
+
+	<script Lang="JScript">
+		function showQuota(ab,co,se,te) {
+			window.open('quotasearch.asp?abbr='+ab+'&code='+co+'&section='+se+'&donem='+te, 'myWin', 'resizable,scrollbars,width=500, height=400');
+		}
+
+
+
+	</script>
+
+<style>
+    .schtd2.labps {
+        background-color: #c7d2c8;
+        color:#8e5353;
+        ;
+    }
+     .schtd.labps {
+        background-color: #fffff6;
+        color:#8e5353;
+        ;
+    }
+
+</style>
+</HEAD>
+<body bgcolor="#FFFFFF" bgproperties="fixed">
+<font class='bodytextdark'><font size='+1'>Course Schedule</font>
+<br>
+<IMG  src='/images/pro_nav_btmline.gif' width='430' height='1'>
+<br>
+
+
+    
+<table width="250px">
+ <tr>
+    <td witdh=50% Class="bodytextdark">Semester   :</td>
+    <td witdh=50% Class="bodytextdark">2020/2021-1</td>
+ </tr>
+ <tr>
+    <td witdh=50% Class="bodytextdark">
+    Program :
+    </td>
+    <td witdh=50% Class="bodytextdark">PRSO</td>
+ </tr>
+</table>
+    <p style="font-size:10pt; color:black; font-weight:normal;">Click on to the classroom to view it on the campus map. <br /></p>
+<hr>
+
+    
+
+    <table style="margin:20px 0">
+        <tr>		 
+            <td colspan=10 class="bodygray" style="font-family:Verdana, Arial, Helvetica; font-weight:bold">
+                The <u>course</u> slots are as follows :
+            </td>
+        </tr>
+        <tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 1</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 09:00 - 09:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 2</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 10:00 - 10:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 3</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 11:00 - 11:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 4</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 12:00 - 12:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 5</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 13:00 - 13:50</td>
+  
+                </tr><tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 6</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 14:00 - 14:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 7</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 15:00 - 15:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 8</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 16:00 - 16:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 9</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 17:00 - 17:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 10</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 18:00 - 18:50</td>
+  
+                </tr><tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 11</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 19:00 - 19:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 12</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 20:00 - 20:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 13</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 21:00 - 21:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 14</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 22:00 - 22:50</td>
+
+        </tr>
+    </table>
+
+<table border="1" cellpadding="3" width="1300px" style="border-collapse: collapse" bordercolor="#111111" cellspacing="0">
+ <tr class="schtitle">
+    <td width=5% align=left>Code.Sec</td>
+    <td width=5%>Desc.</td>
+    <td width=12% align=left>Name</td>
+    <td width=2% align=left>Cr.</td>
+    <td width=2% align=left>Ects</td>
+
+    <td width=5% align=left>Instr.</td>
+    <td width=5% align=left>Days</td>
+    <td width=4% align=left>Hours</td>
+                <!-- FinalExamLocation -->
+     <td width=5% align=left>Course Delivery Method</td>
+<!--    <td width=5% align=left>Final Exam Location</td>-->
+
+    <td width=11% align=left>Rooms</td>
+    <td width=7% align=left>Exam</td>
+    <td width=4% align=left>Sl.</td>
+    <td width=7% align=left><a class="title" href="#reqdept">Required for Dept.(*)</a></td>
+    <td width=5% align=left>Departments</td>
+
+
+     <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+    
+    </tr>
+
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>PRED101.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED101&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>HIST.,PHIL.& PRINCIPLES OF PERSCHOOL EDUCATION I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>8&nbsp;</td>
+
+		<td>ERSOY ERDEMİR&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>567&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>PRED103.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED103&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>THEORIES OF CHILD DEVELOPMENT I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>AYŞEGÜL METİNDOĞAN &nbsp;</td>
+		<td>WWTh&nbsp;</td>
+		<td>345&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>PRED107.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED107&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>CHILDREN'S HEALTH&HUMAN PHYSIOLOGY I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>4&nbsp;</td>
+
+		<td>BAHAR KURAL&nbsp;</td>
+		<td>MMM&nbsp;</td>
+		<td>123&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>PRED120.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED120&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ACADEMIC ORIENTATION IN PRIMARY EDUC.&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>DİLAN BAYINDIR&nbsp;</td>
+		<td>FFFF&nbsp;</td>
+		<td>1234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>PRED210.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED210&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MUSIC & MOVEMENT IN EARLY CHILDHOOD&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>IŞIK SABIRLI&nbsp;</td>
+		<td>ThThThTh&nbsp;</td>
+		<td>1234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>PRED210.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED210&section=02&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MUSIC & MOVEMENT IN EARLY CHILDHOOD&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>AYÇA TEKİN KELEŞOĞLU&nbsp;</td>
+		<td>FFFF&nbsp;</td>
+		<td>5678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>PRED211.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED211&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>CURRICULUM DEVELOPMENT I&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>MİNE GÖL GÜVEN&nbsp;</td>
+		<td>MMFFF&nbsp;</td>
+		<td>67678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>PRED214.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED214&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>LANGUAGE DEVELOPMENT&LITERACY IN EARLY &nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>BURCU ÜNLÜTABAK&nbsp;</td>
+		<td>TWW&nbsp;</td>
+		<td>612&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>PRED310.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED310&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SPECIAL EDUCATION IN EARLY AND PRIMARY Y&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>FATMA NALAN BABÜR&nbsp;</td>
+		<td>TTW&nbsp;</td>
+		<td>785&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>PRED313.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED313&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>EARLY INTERVENTION:THEORY AND PRACTICE&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ZEYNEP BERNA ERDİLLER YATMAZ&nbsp;</td>
+		<td>WThTh&nbsp;</td>
+		<td>723&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>PRED325.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED325&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DEVELOPMENTAL EXPERIENCES IN MATH.&SCIEN&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>4&nbsp;</td>
+
+		<td>EBRU ZEYNEP MUĞALOĞLU&nbsp;</td>
+		<td>MMT&nbsp;</td>
+		<td>343&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>PRED380.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED380&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>UNDERSTANDİNG&GUIDING CHILDREN'S BEHAVIO&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>4&nbsp;</td>
+
+		<td>MİNE GÖL GÜVEN&nbsp;</td>
+		<td>FFFF&nbsp;</td>
+		<td>2345&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>PRED411.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED411&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>APP. RESEARCH IN CHILD DEVELOPMENT & FAM&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>8&nbsp;</td>
+
+		<td>FATMA NALAN BABÜR&nbsp;</td>
+		<td>WWThTh&nbsp;</td>
+		<td>7867&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>PRED411.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED411&section=02&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>APP. RESEARCH IN CHILD DEVELOPMENT & FAM&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>8&nbsp;</td>
+
+		<td>AYŞEGÜL METİNDOĞAN &nbsp;</td>
+		<td>WWThTh&nbsp;</td>
+		<td>6767&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>PRED413.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED413&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PRACTICE TEAC. IN PRESCHOOL EDUCATION I&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ERSOY ERDEMİR&nbsp;</td>
+		<td>MMMMMMMMTT&nbsp;</td>
+		<td>1234567867&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td> &nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">N/A</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">N/A</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">N/A</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ET B413</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ET B413</span>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>PRED413.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED413&section=02&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PRACTICE TEAC. IN PRESCHOOL EDUCATION I&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>MİNE GÖL GÜVEN&nbsp;</td>
+		<td>ThThFFFFFFFF&nbsp;</td>
+		<td>2312345678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td> &nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>PRED413.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED413&section=03&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PRACTICE TEAC. IN PRESCHOOL EDUCATION I&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ZEYNEP BERNA ERDİLLER YATMAZ&nbsp;</td>
+		<td>WWFFFFFFFF&nbsp;</td>
+		<td>4512345678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td> &nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>PRED414.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED414&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PRACTICE TEAC.IN PRESCHOOL EDUCATION II&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ZEYNEP BERNA ERDİLLER YATMAZ&nbsp;</td>
+		<td>WWFFFFFFFF&nbsp;</td>
+		<td>4512345678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>PRED416.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED416&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>FAMILY ISSUES IN PRESCHOOL EDUCATION&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ERSOY ERDEMİR&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>PRED420.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED420&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>CREATIVE DRAMA ACTIVITIES&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>4&nbsp;</td>
+
+		<td>BÜLENT SEZGİN&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>91011&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>PRED423.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED423&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DATA PROCESSING&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>AYŞESİM DİRİ&nbsp;</td>
+		<td>WWThTh&nbsp;</td>
+		<td>2367&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>PRED423.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED423&section=02&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DATA PROCESSING&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>AYŞESİM DİRİ&nbsp;</td>
+		<td>WWThTh&nbsp;</td>
+		<td>2345&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>PRED48A.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=PRED48A&section=01&term=2020/2021-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TP.IN PRIMARY EDUCATION:ONLINE CHILDHOODS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>4&nbsp;</td>
+
+		<td>SERAN DEMİRAL&nbsp;</td>
+		<td>FFF&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+</table>
+<br>
+<a name="reqdept"><font size=2><b>(*) : </b>Departments that should choose this section for <u>mass courses</u></font></a>
+<br><br>
+<b><a href="javascript:window.history.go(-1)"> << Back</a></b>
+ <div id="gMap" style="width:600px;height:480px; display:none;">
+     <iframe id="gMapFrame" src="" width="590" height="460" scrolling="no" style="border:none;">
+</iframe>
+ </div>
+</body>
+</html>

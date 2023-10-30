@@ -1,0 +1,65 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EC  102.01,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,TOLGA UMUT KUZUBAŞ,TTTh,565,Classroom,HD 301 | HD 301 | HD 201,30.05.2022,2,"AD,EC,POLS","                          "
+EC  102.02,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,LEVENT YILDIRAN,TTTh,565,Classroom,HD 101 | HD 101 | HD 301,30.05.2022,2,"AD,EC,POLS","                          "
+EC  102.03,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,BURÇAY ERUS,TTTh,565,Classroom,BTS | BTS | BTS,30.05.2022,2,"AD,EC,POLS","                          "
+EC  102.04,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,KIVANÇ KARAMAN,TTTh,565,Classroom,AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK,30.05.2022,2,"IE,ME","                          "
+EC  102.05,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,LEVENT YILDIRAN,TTTh,787,Classroom,BTS | BTS | BTS,30.05.2022,2,"HIST,SOC","                          "
+EC  102.06,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,BEGÜM ÖZKAYNAK,TTTh,788,Classroom,NH 305 | NH 305 | NH 305,30.05.2022,2,"CMPE,PHYS","                          "
+EC  102.07,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,MEHMET İNHAN,WWW,789,Classroom,AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK,30.05.2022,2,EE,"                          "
+EC  102.08,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,RIFAT BARIŞ TEKİN,FFF,234,Online,ONLINE | ONLINE | ONLINE,30.05.2022,2,"CE,CHE","                          "
+EC  104.01,Desc.,ORIENTATION TO ECONOMICS II,1,1,ORHAN AYGÜN,M,6,Online,ONLINE,06.06.2022,2,,"                          "
+EC  205.01,Desc.,MACROECONOMICS I,3,6,MELTEM POYRAZ,TTTh,565,Classroom,NH 105 | NH 105 | NH 305,04.06.2022,3,AD,"                          "
+EC  205.02,Desc.,MACROECONOMICS I,3,6,MELTEM POYRAZ,TTTh,787,Classroom,NH 105 | NH 105 | NH 305,04.06.2022,3,AD,"                          "
+EC  206.01,Desc.,MICROECONOMICS II,3,6,AYŞE MUMCU,TTTh,568,Classroom,NH 405 | NH 405 | NH 105,02.06.2022,2,,"                          "
+EC  206.02,Desc.,MICROECONOMICS II,3,6,AYŞE MUMCU,TTTh,787,Classroom,NH 405 | NH 405 | NH 105,02.06.2022,2,,"                          "
+EC  208.01,Desc.,MACROECONOMICS II,3,6,MURAT KOYUNCU,WWTh,238,Online/Classroom,ONLINE | ONLINE | NH 405,02.06.2022,3,,"                          "
+EC  208.02,Desc.,MACROECONOMICS II,3,6,MURAT KOYUNCU,WWTh,567,Online/Classroom,ONLINE | ONLINE | NH 405,02.06.2022,3,,"                          "
+EC  223.01,Desc.,MATHEMATICS FOR ECONOMISTS,3,6,E. ÜNAL ZENGİNOBUZ,TThTh,323,Classroom,NH 203 | NB 119 | NB 119,11.06.2022,2,,"                          "
+EC  223.02,Desc.,MATHEMATICS FOR ECONOMISTS,3,6,E. ÜNAL ZENGİNOBUZ,TThTh,256,Classroom,NH 203 | NB 119 | NB 119,11.06.2022,2,,"                          "
+EC  234.01,Desc.,MATHEMATICAL STATISTICS II,3,6,OZAN HATİPOĞLU,TThTh,323,Classroom,NH 301 | NH 402 | NH 402,01.06.2022,1,,"                          "
+EC  234.02,Desc.,MATHEMATICAL STATISTICS II,3,6,GÜZİN GÜLSÜN AKIN,TThTh,256,Classroom,NH 405 | NH 102 | NH 102,01.06.2022,1,,"                          "
+EC  301.01,Desc.,ECONOMICS OF INDUSTRIAL ORGANIZATION,3,6,MURAT YILMAZ,MMW,232,Classroom,NB 119 | NB 119 | NB 119,06.06.2022,1,,"                          "
+EC  305.01,Desc.,URBAN ECONOMICS,3,6,GÜZİN GÜLSÜN AKIN,TTTh,344,Online,ONLINE | ONLINE | ONLINE,03.06.2022,3,,"                          "
+EC  306.01,Desc.,ADVANCED MICROECONOMICS,3,6,MEHMET YİĞİT GÜRDAL,MWW,567,Classroom,NB 119 | NH 202 | NH 202,01.06.2022,3,,"                          "
+EC  332.01,Desc.,ADVANCED ECONOMETRICS,3,6,SELCEN ÇAKIR,MWW,434,Classroom,NH 202 | NH 203 | NH 203,08.06.2022,2,,"                          "
+EC  352.01,Desc.,TOPICS IN PUBLIC FINANCE,3,6,AYŞE YELİZ KAÇAMAK,TThTh,767,Classroom,M 1152 | M 1170 | M 1170,08.06.2022,1,,"                          "
+EC  358.01,Desc.,WORLD ECONOMIC HISTORY,3,6,FİKRET ADAMAN,TTTh,344,Online,ONLINE | ONLINE | ONLINE,07.06.2022,1,,"                          "
+EC  407.01,Desc.,LABOR ECONOMICS,3,6,SELCEN ÇAKIR,MMW,232,Classroom,NH 202 | NH 202 | NH 203,07.06.2022,3,,"                          "
+EC  412.01,Desc.,TOPICS IN HIST. OF ECO. THOUGHT,3,6,FİKRET ADAMAN,TThTh,223,Online,ONLINE | ONLINE | ONLINE,08.06.2022,3,,"                          "
+EC  438.01,Desc.,EXPERIMENTAL ECONOMICS,3,6,MEHMET YİĞİT GÜRDAL,MWW,434,Classroom,NB 119 | NB 119 | NB 119,31.05.2022,3,,"                          "
+EC  442.01,Desc.,GAME THEORETICAL MODELS OF POLITICAL EC.,3,6,EMEKCAN YÜCEL,TTTh,788,Classroom,M 1171 | M 1171 | M 1171,09.06.2022,1,,"                          "
+EC  454.01,Desc.,TURKISH TAX SYTEMS,3,6,İZZETTİN ÖNDER,WWW,678,Classroom,NB Z10 | NB Z10 | NB Z10,01.06.2022,3,,"                          "
+EC  470.01,Desc.,TURKISH ECONOMY,3,6,CEYHUN ELGİN,MMW,675,Classroom,BTS | BTS | NH 101,04.06.2022,1,,"                          "
+EC  474.01,Desc.,TOPICS IN INTERNATIONAL DEVELOPMENT,3,6,BEGÜM ÖZKAYNAK,TTTh,565,Online,ONLINE | ONLINE | ONLINE,04.06.2022,3,,"                          "
+EC  482.01,Desc.,"SP.TOP.:INSTITUTIONS,DEVELOPMENT&HISTORY",3,6,KIVANÇ KARAMAN,TThTh,767,Online,ONLINE | ONLINE | ONLINE,11.06.2022,3,,"                          "
+EC  486.01,Desc.,SP.TP. IN TAXATION,3,6,AYŞE YELİZ KAÇAMAK,TTTh,344,Classroom,M  1181 | M 1181 | M 1152,06.06.2022,2,,"                          "
+EC  48I.01,Desc.,SP.TP.IN EC AND FINANCIAL INSTITUTIONS,3,6,AHMET İRFAN SÖYLEMEZOĞLU,MMM,678,Classroom,M 1171 | M 1171 | M 1171,10.06.2022,3,,"                          "
+EC  48K.01,Desc.,SP.TP.ADVANCED RESEARCH METHODS IN APPLIED ECONOMICS,3,6,CEYHUN ELGİN,MWW,567,Classroom,NB Z11 | NH 203 | NH 203,30.05.2022,1,,"                          "
+EC  48N.01,Desc.,SP.TP.IN APPLIED MICROECONOMETRICS,3,6,İNSAN TUNALI,TTTh,565,Classroom,M 2200 | M 2200 | M 2200,28.05.2022,1,,"                          "
+EC  48T.01,Desc.,SP.TP.FINANCIAL MODELLING&ITS APP.USING R,3,6,MUSTAFA CAN ÖZER,ThThTh,789,Online,ONLINE | ONLINE | ONLINE,30.05.2022,1,,"                          "
+EC  48Z.01,Desc.,SP.TP.IN MATCHING THEORY,3,6,ORHAN AYGÜN,TThTh,223,Online,ONLINE | ONLINE | ONLINE,06.06.2022,3,,"                          "
+EC  502.01,Desc.,MICRO-ECONOMICS II,4,10,ORHAN AYGÜN,TTThTh,4556,Classroom,İB 201 | İB 201 | İB 211 | İB 211,08.06.2022,2,,"                          "
+EC  504.01,Desc.,MACRO-ECONOMICS II,4,10,MURAT KOYUNCU,MMThTh,2323,Classroom,İB 201 | İB 201 | İB 201 | İB 201,01.06.2022,1,,"                          "
+EC  532.01,Desc.,ECONOMETRICS II,4,10,BURÇAY ERUS,TTThTh,2378,Classroom,İB 312 | İB 312 | İB 211 | İB 211,03.06.2022,3,,"                          "
+EC  581.01,Desc.,SP.TP.ALGORITMIC TRADING&QUANTITATIVE,3,7,AYHAN YÜKSEL,MMM,789,Classroom,İB 301 | İB 301 | İB 301,09.06.2022,3,,"                          "
+EC  584.01,Desc.,SP.TP.POLITICAL EC.OF INEQUALITY THEORY,3,7,FİKRET ADAMAN,TTT,789,Classroom,NB Z10 | NB Z10 | NB Z10,28.05.2022,3,,"                          "
+EC  58L.01,Desc.,SP.TP.MACRO ECONOMETRICS,3,7,OZAN HATİPOĞLU,TTTh,121,Classroom,NB Z11 | NB Z11 | İB 201,03.06.2022,1,,"                          "
+EC  602.01,Desc.,ADVANCED MICROECONOMICS II,3,11,EMEKCAN YÜCEL,ThThTh,567,Classroom,İB 301 | İB 301 | İB 301,09.06.2022,2,,"                          "
+EC  604.01,Desc.,ADVANCED MACROECONOMICS II,4,11,TOLGA UMUT KUZUBAŞ,ThThTh,234,Classroom,İB 211 | İB 211 | İB 211,31.05.2022,3,,"                          "
+EC  690.04,Desc.,MASTER THESIS,0,60,SELCEN ÇAKIR,,,Classroom,,,,,"                          "
+EC  690.05,Desc.,MASTER THESIS,0,60,CEYHUN ELGİN,,,Classroom,,,,,"                          "
+EC  690.06,Desc.,MASTER THESIS,0,60,BURÇAY ERUS,,,Classroom,,,,,"                          "
+EC  690.07,Desc.,MASTER THESIS,0,60,MEHMET YİĞİT GÜRDAL,,,Classroom,,,,,"                          "
+EC  690.08,Desc.,MASTER THESIS,0,60,OZAN HATİPOĞLU,,,Classroom,,,,,"                          "
+EC  690.11,Desc.,MASTER THESIS,0,60,MURAT KOYUNCU,,,Classroom,,,,,"                          "
+EC  690.12,Desc.,MASTER THESIS,0,60,TOLGA UMUT KUZUBAŞ,,,Classroom,,,,,"                          "
+EC  690.13,Desc.,MASTER THESIS,0,60,AYŞE MUMCU,,,Classroom,,,,,"                          "
+EC  690.14,Desc.,MASTER THESIS,0,60,BEGÜM ÖZKAYNAK,,,Classroom,,,,,"                          "
+EC  690.15,Desc.,MASTER THESIS,0,60,MELTEM POYRAZ,,,Classroom,,,,,"                          "
+EC  690.17,Desc.,MASTER THESIS,0,60,MURAT YILMAZ,,,Classroom,,,,,"                          "
+EC  690.18,Desc.,MASTER THESIS,0,60,EMEKCAN YÜCEL,,,Classroom,,,,,"                          "
+EC  700.01,Desc.,GRADUATE SEMINAR,0,5,MURAT KOYUNCU,FF,78,Classroom,,,,,"                          "
+EC  790.01,Desc.,Ph.D THESIS,0,120,BURÇAY ERUS,,,Classroom,,,,,"                          "
+EC  790.02,Desc.,Ph.D THESIS,0,120,MURAT KOYUNCU,,,Classroom,,,,,"                          "
+EC  790.03,Desc.,Ph.D THESIS,0,120,OZAN HATİPOĞLU,,,Classroom,,,,,"                          "
+EC  790.04,Desc.,Ph.D THESIS,0,120,E. ÜNAL ZENGİNOBUZ,,,Classroom,,,,,"                          "

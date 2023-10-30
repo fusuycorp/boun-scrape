@@ -1,0 +1,30 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY ,3,8,STEPHEN VOSS,TTTh,232,,YD 02 | YD 02 | NH 401,07.06.2014,3,GUID,"        PSY; LING; GUID; LAW                  "
+PHIL105.01,Desc.,INFORMAL LOGIC,3,8,KARANFİL SOYHUN,TThTh,534,,M 2170 | NH 202 | NH 202,30.05.2014,2,,"        PHIL                  "
+PHIL106.01,Desc.,PHILOSOPHICAL TEXTS,3,6,MURAT BAÇ,MFF,445,,M 2170 | TB 310 | TB 310,28.05.2014,1,,"                          "
+PHIL112.01,Desc.,INTRODUCTION TO MODERN PHILOSOPHY,3,6,LUCAS THORPE,TTW,565,,TB 310 | TB 310 | NH 105,31.05.2014,3,"GUID,LL,TKL,TR","                          "
+PHIL132.01,Desc.,LOGIC II,3,8,İREM KURTSAL STEEN,TTTh,121,,NH 202 | NH 202 | NH 401,03.06.2014,3,,"                          "
+PHIL214.01,Desc.,HISTORY OF PHILOSOPHY II,3,6,MARK STEEN,MWW,656,,NH 105 | YD 206 | YD 206,05.06.2014,3,,"                          "
+PHIL222.01,Desc.,PHILOSOPHY OF SCIENCE,3,6,BERNA KILINÇ,TTF,566,,TB 130 | TB 130 | NB 119,29.05.2014,1,,"                          "
+PHIL314.01,Desc.,HISTORY OF PHILOSOPHY IV,3,6,JOHANNES FRITSCHE,TThTh,745,,NH 302 | M 1100 | M 1100,02.06.2014,1,,"                          "
+PHIL354.01,Desc.,SOCIAL & POLITICAL PHILOSOPHY,3,6,YILDIZ SİLİER,TTF,235,,NH 404 | NH 404 | TB 490,07.06.2014,1,,"                          "
+PHIL382.01,Desc.,ONTOLOGY,3,6,MARK STEEN,MMW,232,,M 2170 | M 2170 | NH 302,31.05.2014,2,,"                          "
+PHIL402.01,Desc.,THE SELF,3,7,STEPHEN VOSS,TThTh,667,,NH 403 | NH 102 | NH 102,29.05.2014,3,,"                          "
+PHIL488.01,Desc.,SP.TP.PHILOSOPHICAL TEXTS IN TURKISH,3,6,İLHAN İNAN,WWW,345,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL489.01,Desc.,"SP.TP.REPUBLICANISM,FREEDOM,DEMOCRACY",3,6,LUCAS THORPE,TWW,878,,YD 102 | NBZ 13 | NBZ 13,,0,,"                          "
+PHIL48G.01,Desc.,SP.TP.:HEGELIAN TURN IN ANALYTICAL PHIL.,3,6,ALPER TÜRKEN,FFF,678,,NBZ 11 | NBZ 11 | NBZ 11,,0,,"                          "
+PHIL498.01,Desc.,SEL.TOP: PHIL.IN CINEMA,3,6,YILDIZ SİLİER,TFF,523,,YD 202 | TB 490 | TB 490,,0,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,CHRYSSI SIDIROPOULOU,,, ,,03.06.2014,1,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL584.01,Desc.,SP.TP.REALITY AND REALISM,4,10,MURAT BAÇ,MMM,678,,TB 130 | TB 130 | TB 130,,0,,"                          "
+PHIL586.01,Desc.,SP.TP.RATIONALITIES,4,10,BERNA KILINÇ,ThThTh,678,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL587.01,Desc.,SP.TP.:ONTOLOGY OF TRUTH,4,10,PINAR CANEVİ,TBA,,,,06.06.2014,3,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,MURAT BAÇ,TBA,,,,26.05.2014,3,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,CHRYSSI SIDIROPOULOU,TBA,,,,28.05.2014,2,,"                          "
+PHIL591.01,Desc.,SP.TP.HEIDEGGER,4,10,JOHANNES FRITSCHE,TTTh,342,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL594.01,Desc.,SP.TP.PROBLEMS OF PHILOSOPHY,4,10,İLHAN İNAN,MMM,345,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL595.01,Desc.,SP.TP.METAETHICS,4,10,İREM KURTSAL STEEN,ThThTh,345,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL597.01,Desc.,SP.TP.AMERICAN PRAGMATISM,4,10,PINAR CANEVİ,WWW,678,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,07.06.2014,3,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,MURAT BAÇ,TBA,,,,,0,,"                          "

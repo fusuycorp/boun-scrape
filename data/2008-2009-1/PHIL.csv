@@ -1,0 +1,28 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY ,3,7,MURAT BAÇ,MTW,666,,M 2181 | M 2181 | NH 203,,,,"        PSY; LING; GUID; LAW                  "
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY ,3,7,YILDIZ SİLİER,MMTh,566,,NH 401 | NH 401 | NH 301,,,"ED,PSY,TR","        PHIL                  "
+PHIL105.01,Desc.,CRITICAL THINKING,3,6,BERNA KILINÇ,TThTh,878,,M 2152 | TB 310 | TB 310,,,,"        PHIL                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,5,BERNA KILINÇ,TTTh,565,,TB 310 | TB 310 | NH 301,,,"LL,TKL","        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,3,10,SUN DEMİRLİ,TThTh,534,,M 2181 | NH 203 | NH 203,,,,"                          "
+PHIL131.02,Desc.,LOGIC I,3,10,ALİ KARATAY,MMW,563,,M 1100 | M 1100 | M 2230,,,MEDU,"                          "
+PHIL213.01,Desc.,HISTORY OF PHILOSOPHY I,3,6,CHRYSSI SIDIROPOULOU,WThTh,556,,YD 06 | M 1200 | M 1200,,,,"        PHIL                  "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,MURAT BAÇ,MTW,444,,M 2181 | M 2170 | NH 201,,,,"        PHIL                  "
+PHIL313.01,Desc.,HISTORY OF PHILOSOPHY III,3,6,JOHANNES FRITSCHE,MTT,578,,M 2181 | M 2180 | M 2180,,,,"        PHIL                  "
+PHIL341.01,Desc.,ETHICS,3,6,KARANFİL SOYHUN,WWF,233,,M 2152 | M 2152 | M 2200,,,,"        PHIL                  "
+PHIL402.01,Desc.,THE SELF,3,7,STEPHEN VOSS,TThTh,256,,M 2181 | NBZ 10 | NBZ 10,,,,"                          "
+PHIL453.01,Desc.,FREEDOM ,3,6,YILDIZ SİLİER,TThTh,434,,NH 104 | TB 475 | TB 475,,,,"                          "
+PHIL48U.01,Desc.,SP.TOP.:PHILOSOPHY IN THE ISLAMIC WORLD,3,6,CHRYSSI SIDIROPOULOU,MMTh,342,,KPARK5 | KPARK5 | M 1152,,,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,GÜROL IRZIK,,, ,,,,,"                          "
+PHIL49A.01,Desc.,SELECTED TOPICS DISPOSITIONS,3,6,SUN DEMİRLİ,WFF,445,,TB 475 | TB 475 | TB 475,,,,"                          "
+PHIL522.01,Desc.,MATHEMATICAL LOGIC,4,10,ALİ KARATAY,TBA,,,,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL581.01,Desc.,SP.TP:WWW PHILOSOPHY SEARCH,4,10,PINAR CANEVİ,WWW,678,,,,,,"                          "
+PHIL582.01,Desc.,"SP.TP:PLATO,ARISTOTLE&BEGINNING METAPHYS",4,10,JOHANNES FRITSCHE,ThThTh,678,,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL58N.01,Desc.,SP.TOP.:MORALITY&POLITICAL PHILOSOPHY,4,10,ZEYNEP DAVRAN,TTT,678,,,,,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL595.01,Desc.,SP.TOP.:SOCIAL&POLITICAL STUDIES OF SCI,4,10,GÜROL IRZIK,MMM,678,,,,,,"                          "
+PHIL652.01,Desc.,PHILOSOPHY OF MIND,4,10,STEPHEN VOSS,FFF,234,,,,,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,MURAT BAÇ,TBA,,,,,,,"                          "

@@ -1,0 +1,40 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CE  200.01,Desc.,SUMMER TRAINING,3,5,STAFF STAFF,S,0,,,,,,"                          "
+CE  222.01,Desc.,INTRO. TO ENV. POLLUTION  CONTROL,3,7,ATİLLA AKKOYUNLU,MTT,878,,,,,,"                          "
+CE  241.01,Desc.,STATICS,4,6,SAMİ AND KILIÇ,TTTh,788,,,,,,"                          "
+CE  241.02,Desc.,STATICS,4,6,TURAN ÖZTURAN,MMTh,677,,,,,,"                          "
+CE  243.01,Desc.,PRINCIPLES OF MECHANICS,4,5,ALİ RANA ATILGAN,MTT,456,,,,,,"                          "
+CE  301.01,Desc.,DESIGN & PLANNING OF CV.E. SYSTEMS,3,5,GÖKMEN ERGÜN,WFF,212,,,,,,"                          "
+CE  311.01,Desc.,FLUID MECHANICS,4,6,CEM AVCI,MMT,123,,,,,,"                          "
+CE  311.02,Desc.,FLUID MECHANICS,4,6,OSMAN BÖREKÇİ,MMT,123,,,,,,"                          "
+CE  331.01,Desc.,EARTH SCIENCE,4,5,GÖKHAN BAYKAL,TTTh,121,,,,,,"                          "
+CE  343.01,Desc.,STRENGTH OF MATERIALS II,3,6,ALİ RANA ATILGAN,FF,56,,,,,,"                          "
+CE  351.01,Desc.,STRUCTURES I,4,6,CENGİZ KARAKOÇ,TThTh,578,,,,,,"                          "
+CE  412.01,Desc.,HYDRAULIC ENGINEERING II,3,5,CEM AVCI,MMT,122,,,,,,"                          "
+CE  421.01,Desc.,ENVIRONMENTAL ENGINEERING,4,6,ATİLLA AKKOYUNLU,MMT,343,,,,,,"                          "
+CE  431.01,Desc.,FOUNDATION ENGINEERING,4,6,TURAN DURGUNOĞLU,MMF,561,,,,,,"                          "
+CE  431.02,Desc.,FOUNDATION ENGINEERING,4,6,EROL GÜLER,MMF,561,,,,,,"                          "
+CE  451.01,Desc.,REINFORCED CONCRETE I,4,6,VEDAT YERLİCİ,WWThTh,3445,,,,,,"                          "
+CE  451.02,Desc.,REINFORCED CONCRETE I,4,6,CENGİZ KARAKOÇ,WWThTh,3445,,,,,,"                          "
+CE  453.01,Desc.,ASEISMIC DESIGN OF STRUCTURES,3,5,SEMİH TEZCAN,FFF,678,,,,,,"                          "
+CE  454.01,Desc.,STRUCTURAL DESIGN I,3,6,GÜLAY ALTAY,ThTh,23,,,,,,"                          "
+CE  492.01,Desc.,PROJECT,4,8,GÖKMEN ERGÜN,S,0,,,,,,"                          "
+CE  495.01,Desc.,SP.TOP.IN CE:COASTAL ENGINEERING,3,5,EMRE OTAY,MMTh,788,,,,,,"                          "
+CE  505.01,Desc.,APPLIED STOCHASTIC ANALYSIS&MODELING,3,6,EMRE OTAY,TTTh,787,,,,,,"                          "
+CE  535.01,Desc.,ENVIRONMENTAL GEOTECHNICS,3,6,GÖKHAN BAYKAL,WWW,123,,,,,,"                          "
+CE  557.01,Desc.,MATRIX METHODS OF STRUCTURAL ANALYSIS,3,7.50,SEMİH TEZCAN,FFF,123,,,,,,"                          "
+CE  559.01,Desc.,STRUCTURAL DYNAMICS,3,7.50,VEDAT YERLİCİ,WWW,678,,,,,,"                          "
+CE  579.01,Desc.,GRADUATE SEMINAR,0,7.50,EMRE OTAY,S,0,,,,,,"                          "
+CE  580.01,Desc.,SP.TOP.IN CE NONLINEAR BEHAV.OF CON.STR.,3,7.50,CENGİZ KARAKOÇ, , ,,,,,,"                          "
+CE  588.01,Desc.,SP.TOP.IN CE:ADVANCED TRAFFIC ENGR.,3,7.50,GÖKMEN ERGÜN,S,0,,,,,,"                          "
+CE  596.01,Desc.,SP.STUD.IN CE(NONLIN.STR.ANALYSIS),3,6,SAMİ AND KILIÇ,FFF,568,,,,,,"                          "
+CE  599.01,Desc.,SP. TOP.IN CE: ENV.ASS.&MAN.OF ENV.PROB.,3,6,AYŞE EDİNÇLİLER,S,0,,,,,,"                          "
+CE  610.01,Desc.,HYDROMECHANICS,3,7.50,OSMAN BÖREKÇİ,S,0,,,,,,"                          "
+CE  690.01,Desc.,M.S.THESIS,0,60,OSMAN BÖREKÇİ,S,0,,,,,,"                          "
+CE  694.01,Desc.,SP.STUD.(NEW DEVELOP.GEOTECHNICAL ENG.),3,7.50,TURAN DURGUNOĞLU,ThThTh,678,,,,,,"                          "
+CE  790.01,Desc.,Ph.D. THESIS,0,120,OSMAN BÖREKÇİ,S,0,,,,,,"                          "
+ENGG110.01,Desc.,ENGINEERING GRAPHICS,3,5,İREM EREZ,ThThTh,678,,,,,,"                          "
+ENGG110.02,Desc.,ENGINEERING GRAPHICS,3,5,İREM EREZ,WWW,678,,,,,,"                          "
+ENGG110.03,Desc.,ENGINEERING GRAPHICS,3,5,EROL İNELMEN,TTT,678,,,,,,"                          "
+ENGG110.04,Desc.,ENGINEERING GRAPHICS,3,5,EROL İNELMEN,MMM,678,,,,,,"                          "
+ENGG110.05,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,FFF,678,,,,,,"                          "

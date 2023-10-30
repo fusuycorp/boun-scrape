@@ -1,0 +1,47 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AD  150.03,Desc.,INTRODUCTION TO DATA PROCESSING,3,5,UĞUR DİRİL,WWW,234,,,,,,"                          "
+AD  150.04,Desc.,INTRODUCTION TO DATA PROCESSING,3,5,CAN MALTA,TTT,789,,,,,,"                          "
+AD  213.01,Desc.,PRINCIPLES OF ACCOUNTING,3,4,İREM NUHOĞLU,ThWW,567,,,,,,"                          "
+AD  213.02,Desc.,PRINCIPLES OF ACCOUNTING,3,4,İREM NUHOĞLU,ThThW,234,,,,,,"                          "
+AD  220.01,Desc.,INTRODUCTION TO MANAGEMENT,3,5,HAYAT KABASAKAL,MMT,344,,,,,,"                          "
+AD  220.02,Desc.,INTRODUCTION TO MANAGEMENT,3,5,ARZU İŞERİ SAY,MMT,343,,,,,,"                          "
+AD  311.01,Desc.,BUSINESS FINANCE,3,4,MİNE UĞURLU,MMT,343,,,,,,"                          "
+AD  311.02,Desc.,BUSINESS FINANCE,3,4,ATİLLA ODABAŞI,TTW,676,,,,,,"                          "
+AD  311.03,Desc.,BUSINESS FINANCE,3,4,METİN ERCAN,TWW,734,,,,,,"                          "
+AD  341.01,Desc.,INTRODUCTION TO MARKETING,3,4,ESER BORAK,MMT,122,,,,,,"                          "
+AD  341.02,Desc.,INTRODUCTION TO MARKETING,3,4,GÜLDEN ASUGMAN,WThTh,245,,,,,,"                          "
+AD  350.01,Desc.,MANAGEMENT INFORMATION SYSTEMS,3,4,AYŞEGÜL TOKER,WTT,645,,,,,,"                          "
+AD  351.01,Desc.,PRODUCTION MANAGEMENT,3,4,SEYHAN TUĞCU,MWW,634,,,,,,"                          "
+AD  351.02,Desc.,PRODUCTION MANAGEMENT,3,4,SEYHAN TUĞCU,MMW,455,,,,,,"                          "
+AD  353.01,Desc.,OPERATIONS RESEARCH,3,4,CEYHAN KOÇAK,MWW,434,,,,,,"                          "
+AD  408.01,Desc.,BUSINESS POLICY,3,6,SİBEL TANBERK,TTTh,122,,,,,,"                          "
+AD  408.02,Desc.,BUSINESS POLICY,3,6,SİBEL TANBERK,WWW,123,,,,,,"                          "
+AD  413.01,Desc.,AUDITING,3,6,BALAMİR YENİ,ThThTh,789,,,,,,"                          "
+AD  414.01,Desc.,FINANCIAL MANAGEMENT,3,6,MİNE UĞURLU,MTT,556,,,,,,"                          "
+AD  415.01,Desc.,CORPORATE FINANCE,3,6,ATİLLA ODABAŞI,TWW,412,,,,,,"                          "
+AD  426.01,Desc.,MGMT. OF MULTIORGANIZATIONAL SYSTEMS,3,6,GÜVEN ALPAY,TThTh,334,,,,,,"                          "
+AD  441.01,Desc.,CONSUMER BEHAVIOR,3,6,ESER BORAK,MTT,545,,,,,,"                          "
+AD  446.01,Desc.,MARKETING RESEARCH,3,6,GÜLDEN ASUGMAN,FFF,234,,,,,,"                          "
+AD  457.01,Desc.,BUSINESS LOGISTICS,3,6,AYŞEGÜL TOKER,WWTh,456,,,,,,"                          "
+AD  470.01,Desc.,INVESTMENT MANAGEMENT,3,6,VEDAT AKGİRAY,MTT,612,,,,,,"                          "
+AD  477.01,Desc.,BANK MANAGEMENT,3,6,BÜLENT ŞENVER,MMM,234,,,,,,"                          "
+AD  484.01,Desc.,SP. TOP. IN MARKETING,3,6,MUSTAFA DİLBER,S,0,,,,,,"                          "
+AD  492.01,Desc.,SP.TOP. IN MANAGEMENT SCIENCE,3,6,CEYHAN KOÇAK,MMT,233,,,,,,"                          "
+AD  501.01,Desc.,TOPICS IN BUSINESS ECONOMICS,3,7.50,DENİZ GÖKÇE,FFF,123,,,,,,"                          "
+AD  503.01,Desc.,BUSINESS STATISTICS&FORECASTING METHODS,3,7.50,NESRİN OKAY AKMAN,ThThTh,123,,,,,,"                          "
+AD  507.01,Desc.,STRATEGY,3,7.50,ÖZER ERTUNA,MMM,123,,,,,,"                          "
+AD  521.01,Desc.,ORGANIZATIONAL BEHAVIOR I,3,7.50,HAYAT KABASAKAL,TTT,789,,,,,,"                          "
+AD  524.01,Desc.,HUMAN RESOURCE DEVELOPMENT,3,7.50,UĞUR TANDOĞAN,WWW,567,,,,,,"                          "
+AD  570.01,Desc.,FINANCIAL MAN.AND ACC.,3,7.50,ÖZER ERTUNA,TTT,123,,,,,,"                          "
+AD  579.01,Desc.,GRADUATE SEMINAR,0,2,MUZAFFER BODUR,S,0,,,,,,"                          "
+AD  584.01,Desc.,SP. TOP. IN MARKETING,3,7.50,MUZAFFER BODUR,ThThTh,456,,,,,,"                          "
+AD  595.01,Desc.,SP. TOP. IN FINANCE & ACCOUNTING,3,7.50,METİN ERCAN,S,0,,,,,,"                          "
+AD  599.01,Desc.,TERM PROJECT,0,3.50,MUZAFFER BODUR,S,0,,,,,,"                          "
+AD  600.01,Desc.,RESEARCH METHODS I,4,10,MUZAFFER BODUR,WWW,345,,,,,,"                          "
+AD  613.01,Desc.,THEORY OF FINANCIAL MARKETS&INSTRUMENTS,4,10,VEDAT AKGİRAY,S,0,,,,,,"                          "
+AD  615.01,Desc.,APPLIED RESEARCH IN FINANCIAL MANAGEMENT,4,20,VEDAT AKGİRAY,S,0,,,,,,"                          "
+AD  620.01,Desc.,HISTORY OF MANAGEMENT THOUGHT,4,10,MUSTAFA DİLBER,S,0,,,,,,"                          "
+AD  627.01,Desc.,ORGANIZATION THEORY,4,20,GÜVEN ALPAY,S,0,,,,,,"                          "
+AD  680.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,ÖZER ERTUNA,S,0,,,,,,"                          "
+AD  690.01,Desc.,MASTER THESIS,0,60,MUZAFFER BODUR,S,0,,,,,,"                          "
+AD  790.01,Desc.,Ph.D DISSERTATION,0,120,MUZAFFER BODUR,S,0,,,,,,"                          "

@@ -1,0 +1,60 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ME  209.01,Desc.,FUNDAMENTALS OF OBJECT ORIENTED PROGR.,4,5,EMRE AKSAN,FFF,567,, | N/A | M 3100,,,ME ,"                          "
+ME  210.01,Desc.,MATERIALS SCIENCE,3,5,ERCAN BALIKÇI,TTTh,121,,M 3100 | M 3100 | M 3100,,,EE,"                          "
+ME  210.02,Desc.,MATERIALS SCIENCE,3,5,MAHMUT A. SAVAŞ,TTTh,343,,M 3100 | M 3100 | M 3100,,,IE,"                          "
+ME  212.01,Desc.,MATERIALS SCIENCE,4,5,MAHMUT A. SAVAŞ,TThTh,545,,M 2180 | M 2152 | M 2152,,,CE,"                          "
+ME  303.01,Desc.,COMPUTER APPLICATIONS IN MECHANICAL ENG,3,5,ŞEBNEM ÖZÜPEK,TWW,256,,M 2180 | M 3100 | M 3100,,,,"                          "
+ME  303.02,Desc.,COMPUTER APPLICATIONS IN MECHANICAL ENG,3,5,ALİ ECDER,TWW,256,,M 2181,,,,"                          "
+ME  345.01,Desc.,MECHANICS OF MATERIALS I,4,6,NURİ BÜLENT ERSOY,TTThTh,3423,,M 3120 | M 3120 | M 2152 | M 2152,,,,"                          "
+ME  353.01,Desc.,FLUID MECHANICS I,4,6,KUNT ATALIK,TTThTh,5656,,M 2200 | M 2200 | M 2200 | M 2200,,,,"                          "
+ME  424.01,Desc.,MACHINE DESIGN II,4,8,ÇETİN YILMAZ,TTThTh,3434,,M 2181 | M 2181 | M 3120 | M 3120,,,,"                          "
+ME  429.01,Desc.,MECHANICAL &THERMAL DESIGN,4,7,ÇETİN YILMAZ,ThThTh,567,,M 3120 | M 3120 | M 3120,,,,"                          "
+ME  429.02,Desc.,MECHANICAL &THERMAL DESIGN,4,7,HAKAN ERTÜRK,ThThTh,567,,,,,,"                          "
+ME  435.01,Desc.,MECHATRONICS,3,5,EMRE KÖSE,TTTh,788,,M 3120 | M 3120 | M 2170,,,,"                          "
+ME  446.01,Desc.,APPLIED SOLID MECHANICS,3,5,FAZIL ÖNDER SÖNMEZ,MMTh,232,,M 2180 | M 2180 | M 3100,,,,"                          "
+ME  466.01,Desc.,THERMODYNAMICS II,3,5,HAKAN ERTÜRK,TWW,234,,M 2200 | M 2231 | M 2231,,,,"                          "
+ME  478.01,Desc.,DESIGN OF THERMAL SYSTEMS,3,5,HASAN BEDİR,MMW,455,,M 2180 | M 2180 | M 3120,,,,"                          "
+ME  482.01,Desc.,SP.TOP.IN ME.(APPLICATIONS OF THE FINITE,3,5,ŞEBNEM ÖZÜPEK,TTW,562, ,M 2231 | M 2231 | M 2200,,,,"                          "
+ME  483.01,Desc.,SP. TOP. IN MECHANICAL ENGINEERING,3,5,SABRİ ALTINTAŞ,MWW,667,,M 2230 | M 3120 | M 3120,,,,"                          "
+ME  492.01,Desc.,PROJECT,4,8,EMRE AKSAN,TBA,,,,,,,"                          "
+ME  501.01,Desc.,ADVANCED ENGINEERING MATHEMATICS I,3,8,EMRE AKSAN,TThTh,434,,M 1181 | M 2171 | M 2171,,,,"                          "
+ME  503.01,Desc.,MECHANICS OF CONTINUA I,4,8,AKIN TEZEL,TTThTh,5656,,M 1152 | M 1152 | MKM7 | MKM7,,,,"                          "
+ME  511.01,Desc.,PRINCIPLES OF MATH.SCIENCE&ENG.,3,8,SABRİ ALTINTAŞ,MMW,788,,MKM7 | MKM7 | MKM7,,,,"                          "
+ME  523.01,Desc.,ELASTICITY ,3,8,GÜNAY ANLAŞ,MMW,345,,M 2231 | M 2231 | MKM7,,,,"                          "
+ME  537.01,Desc.,STATE SPACE CONTROL THEORY,3,8,EMRE KÖSE,TTTh,237,,M 1181 | M 1181 | M 2231,,,,"                          "
+ME  551.01,Desc.,ADVANCED FLUID MECHANICS,3,8,HALUK ÖRS,MWW,634,,MKM7 | M 1181 | M 1181,,,,"                          "
+ME  579.01,Desc.,GRADUATE SEMINAR,0,2,ALİ ECDER,W,2,,M 1152,,,,"                          "
+ME  583.01,Desc.,SP.TOP.:HIGH TEMPERATURE MATERIALS,3,8,ERCAN BALIKÇI,TTTh,782,,M 1181 | M 1181 | M 2200,,,,"                          "
+ME  584.01,Desc.,SP.TP.(OPTİMUM STRUCTURE DESİGN),3,8,FAZIL ÖNDER SÖNMEZ,MWW,556,,MKM7 | M 2180 | M 2180,,,,"                          "
+ME  618.01,Desc.,MECHANICAL BEHAVIOUR OF MATERIALS,3,8,NURİ BÜLENT ERSOY,TTTh,566,,M 1181 | M 1181 | M 2231,,,,"                          "
+ME  634.01,Desc.,ROBOTICS,3,8,EŞREF EŞKİNAT,MWW,567,,M 2181 | M 2181 | M 2181,,,,"                          "
+ME  662.01,Desc.,CONVECTIVE HEAT TRANSFER,3,8,KUNT ATALIK,TTTh,788,,M 2231 | M 2231 | M 2231,,,,"                          "
+ME  663.01,Desc.,RADIATION HEAT TRANSFER,3,8,HASAN BEDİR,MWW,267,,M 1181 | MKM7 | MKM7,,,,"                          "
+ME  690.01,Desc.,M.S.THESIS,0,60,ALİ ECDER,TBA,,,,,,,"                          "
+ME  690.02,Desc.,M.S.THESIS,0,60,EMRE AKSAN,TBA,,,,,,,"                          "
+ME  690.03,Desc.,M.S.THESIS,0,60,SABRİ ALTINTAŞ,TBA,,,,,,,"                          "
+ME  690.04,Desc.,M.S.THESIS,0,60,GÜNAY ANLAŞ,TBA,,,,,,,"                          "
+ME  690.05,Desc.,M.S.THESIS,0,60,KUNT ATALIK,TBA,,,,,,,"                          "
+ME  690.06,Desc.,M.S.THESIS,0,60,ERCAN BALIKÇI,TBA,,,,,,,"                          "
+ME  690.07,Desc.,M.S.THESIS,0,60,HASAN BEDİR,TBA,,,,,,,"                          "
+ME  690.08,Desc.,M.S.THESIS,0,60,EŞREF EŞKİNAT,TBA,,,,,,,"                          "
+ME  690.09,Desc.,M.S.THESIS,0,60,NURİ BÜLENT ERSOY,TBA,,,,,,,"                          "
+ME  690.11,Desc.,M.S.THESIS,0,60,EMRE KÖSE,TBA,,,,,,,"                          "
+ME  690.12,Desc.,M.S.THESIS,0,60,HALUK ÖRS,TBA,,,,,,,"                          "
+ME  690.13,Desc.,M.S.THESIS,0,60,ŞEBNEM ÖZÜPEK,TBA,,,,,,,"                          "
+ME  690.14,Desc.,M.S.THESIS,0,60,MAHMUT A. SAVAŞ,TBA,,,,,,,"                          "
+ME  690.15,Desc.,M.S.THESIS,0,60,FAZIL ÖNDER SÖNMEZ,TBA,,,,,,,"                          "
+ME  790.01,Desc.,Ph.D. THESIS,0,120,ALİ ECDER,TBA,,,,,,,"                          "
+ME  790.02,Desc.,Ph.D. THESIS,0,120,EMRE AKSAN,TBA,,,,,,,"                          "
+ME  790.03,Desc.,Ph.D. THESIS,0,120,SABRİ ALTINTAŞ,TBA,,,,,,,"                          "
+ME  790.04,Desc.,Ph.D. THESIS,0,120,GÜNAY ANLAŞ,TBA,,,,,,,"                          "
+ME  790.05,Desc.,Ph.D. THESIS,0,120,KUNT ATALIK,TBA,,,,,,,"                          "
+ME  790.06,Desc.,Ph.D. THESIS,0,120,ERCAN BALIKÇI,TBA,,,,,,,"                          "
+ME  790.07,Desc.,Ph.D. THESIS,0,120,HASAN BEDİR,TBA,,,,,,,"                          "
+ME  790.08,Desc.,Ph.D. THESIS,0,120,EŞREF EŞKİNAT,TBA,,,,,,,"                          "
+ME  790.09,Desc.,Ph.D. THESIS,0,120,NURİ BÜLENT ERSOY,TBA,,,,,,,"                          "
+ME  790.11,Desc.,Ph.D. THESIS,0,120,EMRE KÖSE,TBA,,,,,,,"                          "
+ME  790.12,Desc.,Ph.D. THESIS,0,120,HALUK ÖRS,TBA,,,,,,,"                          "
+ME  790.13,Desc.,Ph.D. THESIS,0,120,ŞEBNEM ÖZÜPEK,TBA,,,,,,,"                          "
+ME  790.14,Desc.,Ph.D. THESIS,0,120,MAHMUT A. SAVAŞ,TBA,,,,,,,"                          "
+ME  790.15,Desc.,Ph.D. THESIS,0,120,FAZIL ÖNDER SÖNMEZ,TBA,,,,,,,"                          "

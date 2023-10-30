@@ -1,0 +1,112 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EE  101.01,Desc.,ORIENTATION TO ELECTRICAL ENGINEERING,3,6,SEMA DUMANLI OKTAR,WW,78,Online,,,,,"                          "
+,,LAB,,,SEMA DUMANLI OKTAR,ThTh,67,,,,,,"                          "
+,,LAB,,,SEMA DUMANLI OKTAR,ThTh,89,,,,,,"                          "
+,,LAB,,,SEMA DUMANLI OKTAR,FFFF,6789,,,,,,"                          "
+EE  142.01,Desc.,DIGITAL SYSTEMS,2,3,BURAK ACAR,TT,34,Online,,,,,"                          "
+,,P.S.,,,BURAK ACAR,M,7,,,,,,"                          "
+EE  201.01,Desc.,ELECTRICAL CIRCUITS I,4,7,HEBA MOHAMED YÜKSEL,MMThTh,5656,Online,,,,,"                          "
+,,P.S.,,,HEBA MOHAMED YÜKSEL,F,2,,,,,,"                          "
+EE  202.01,Desc.,ELECTRICAL CIRCUITS II,4,6,KADRİ ÖZÇALDIRAN,MMWW,5678,Online,,,,,"                          "
+,,P.S.,,,KADRİ ÖZÇALDIRAN,F,1,,,,,,"                          "
+EE  210.01,Desc.,INTRODUCTION TO ELECTRICAL ENGINEERING,3,6,AHMET ÖNCÜ,MMW,565,Online,,,,PHYS,"                          "
+EE  212.01,Desc.,INTRODUCTION TO ELECTRONIC ENGINEERING,3,4,OĞUZHAN ÇİÇEKOĞLU,MWW,656,Online,,,,CMPE,"                          "
+EE  240.01,Desc.,DIGITAL SYSTEM DESIGN,3,4,ŞENOL MUTLU,ThTh,78,Online,,,,,"                          "
+,,LAB,,,ŞENOL MUTLU,WW,56,,,,,,"                          "
+,,LAB,,,ŞENOL MUTLU,FF,23,,,,,,"                          "
+,,LAB,,,ŞENOL MUTLU,FF,56,,,,,,"                          "
+,,LAB,,,ŞENOL MUTLU,FF,78,,,,,,"                          "
+EE  242.01,Desc.,NUMERICAL METHODS FOR ELECTRICAL ENGIN.,3,4,LEVENT ARSLAN,TT,12,Online,,,,,"                          "
+,,LAB,,,LEVENT ARSLAN,MM,12,,,,,,"                          "
+EE  242.02,Desc.,NUMERICAL METHODS FOR ELECTRICAL ENGIN.,3,4,LEVENT ARSLAN,ThTh,12,Online,,,,,"                          "
+,,LAB,,,LEVENT ARSLAN,WW,12,,,,,,"                          "
+,,LAB,,,LEVENT ARSLAN,WW,56,,,,,,"                          "
+,,LAB,,,LEVENT ARSLAN,FF,23,,,,,,"                          "
+,,LAB,,,LEVENT ARSLAN,FF,56,,,,,,"                          "
+,,LAB,,,LEVENT ARSLAN,FF,78,,,,,,"                          "
+EE  304.01,Desc.,ENERGY CONVERSION,3,6,İBRAHİM ALPAY ÖZCAN,WFF,478,Online,,,,,"                          "
+EE  334.01,Desc.,ELECTRONICS II,4,7,GÜNHAN DÜNDAR,MMWW,3478,Online,,,,,"                          "
+,,P.S.,,,GÜNHAN DÜNDAR,Th,4,,,,,,"                          "
+EE  336.01,Desc.,ELECTRONICS LABORATORY II,1,2,ARDA YALÇINKAYA,M,1,Online,,,,,"                          "
+,,LAB,,,ARDA YALÇINKAYA,MMM,567,,,,,,"                          "
+,,LAB,,,ARDA YALÇINKAYA,WWW,123,,,,,,"                          "
+,,LAB,,,ARDA YALÇINKAYA,FFF,123,,,,,,"                          "
+,,LAB,,,ARDA YALÇINKAYA,FFF,456,,,,,,"                          "
+EE  352.01,Desc.,SYSTEM DYNAMICS & CONTROL,3,6,YAĞMUR DENİZHAN,TTTh,347,Online,,,,,"                          "
+,,P.S.,,,YAĞMUR DENİZHAN,W,1,,,,,,"                          "
+EE  363.01,Desc.,ELECTROMAGNETIC FIELD THEORY,4,6,SEMA DUMANLI OKTAR,TTThTh,5656,Online,,,,,"                          "
+EE  374.01,Desc.,COMMUNICATION ENGINEERING,4,6,BÜLENT SANKUR,TTThTh,1212,Online,,,,,"                          "
+EE  432.01,Desc.,DIGITAL ELECTRONICS,3,6,YASEMİN KAHYA,TThTh,223,Online,,,,,"                          "
+EE  438.01,Desc.,DESIGN WITH INTEGRATED CIRCUITS,3,6,YASEMİN KAHYA,TTTh,455,Online,,,,,"                          "
+EE  457.01,Desc.,INTRODUCTION TO OPTIMIZATION THEORY,3,6,MEHMET AKAR,ThThF,896,Online,,,,,"                          "
+EE  460.01,Desc.,INTRODUCTION TO REMOTE SENSING,3,6,SELİM ŞEKER,MMM,123,Online,,,,,"                          "
+EE  470.01,Desc.,MOBILE COMMUNICATION,3,6,HAKAN DELİÇ,TTTh,564,Online,,,,,"                          "
+EE  491.01,Desc.,SPECIAL PROJECT,3,6,ŞENOL MUTLU,,,Online,,,,,"                          "
+EE  492.01,Desc.,PROJECT,4,8,ŞENOL MUTLU,,,Online,,,,,"                          "
+EE  531.01,Desc.,DIGITAL TELEVISION AND MULTIMEDIA ENGINEERIG,3,8,AVNİ MORGÜL,MMM,678,Online,,,,,"                          "
+EE  536.01,Desc.,APPLICATIONS OF MICROELECTROMECHANICAL SYSTEMS,3,8,ARDA YALÇINKAYA,TWW,356,Online,,,,,"                          "
+EE  540.01,Desc.,ADVANCED DIGITAL DESIGN,3,8,İSMAİL FAİK BAŞKAYA,MMW,344,Online,,,,,"                          "
+EE  544.01,Desc.,DIGITAL WIRELESS COMMUNICATION,3,8,MUTLU KOCA,ThThTh,678,Online,,,,,"                          "
+EE  550.01,Desc.,ARTIFICIAL NEURAL NETWORKS,3,8,KEMAL CILIZ,MMW,561,Online,,,,,"                          "
+EE  553.01,Desc.,INTRODUCTION TO NONLINEAR CONTROL,3,8,YAĞMUR DENİZHAN,MWW,489,Online,,,,,"                          "
+EE  571.01,Desc.,BAYESIAN SIGNAL PROCESSING,3,8,AYŞIN ERTÜZÜN,MMW,566,Online,,,,,"                          "
+EE  572.01,Desc.,MATHEMATICAL METHODS FOR SIGNAL PROCESSING,3,8,MUTLU KOCA,TThTh,223,Online,,,,,"                          "
+,,P.S.,,,MUTLU KOCA,T,3,,,,,,"                          "
+EE  575.01,Desc.,NETWORK SECURITY AND CRYPTOGRAPHY,3,8,EMİN ANARIM,TTT,578,Online,,,,,"                          "
+EE  576.01,Desc.,MACHINE VISION,3,8,IŞIL BOZMA,MWW,312,Online,,,,,"                          "
+EE  578.01,Desc.,SPEECH PROCESSING,3,8,MURAT SARAÇLAR,MMW,123,Online,,,,,"                          "
+EE  580.01,Desc.,SP.TP.FUNDAMENTALS OF COMPUTATIONAL NEUROSCIENCE,3,8,BURAK GÜÇLÜ,MMM,789,Online,,,,,"                          "
+EE  58A.01,Desc.,SP.TP.MACHINE LEARNING,3,8,BURAK ACAR,TWW,645,Online,,,,,"                          "
+EE  58J.01,Desc.,SP.TP.DATA MINING FOR VISUAL MEDIA,3,8,CEYHUN BURAK AKGÜL,FFF,456,Online,,,,,"                          "
+EE  58Y.01,Desc.,SP.TP.OPTOELECTRONICS&PHOTONICS,3,8,HEBA MOHAMED YÜKSEL,MThTh,423,Online,,,,,"                          "
+EE  59P.01,Desc.,SP.TP.FINANCIAL APP.OF CONTROL ENGR.,3,8,SELİM SEDAT HACISALİHZADE,FFF,234,Online,,,,,"                          "
+EE  628.01,Desc.,GAME THEORY,3,8,UFUK TÜRELİ,ThThTh,123,Online,,,,,"                          "
+EE  632.01,Desc.,SYSTEM DESIGN WITH MICROELECTRONIC DEVICES,3,8,GÜNHAN DÜNDAR,TTW,783,Online,,,,,"                          "
+EE  633.01,Desc.,COMPUTATIONAL ASPECTS OF VLSI,3,8,İSMAİL FAİK BAŞKAYA,FFF,123,Online,,,,,"                          "
+EE  638.01,Desc.,ADVANCED VLSI DESIGN,3,8,İSMAİL FAİK BAŞKAYA,MWW,278,Online,,,,,"                          "
+EE  685.01,Desc.,SP.TP.RF IC DESIGN,3,8,AHMET ÖNCÜ,MWW,912,Online,,,,,"                          "
+EE  690.01,Desc.,M.S.THESIS,0,60,BURAK ACAR,,, ,,,,,"                          "
+EE  690.02,Desc.,M.S.THESIS,0,60,MEHMET AKAR,,, ,,,,,"                          "
+EE  690.03,Desc.,M.S.THESIS,0,60,EMİN ANARIM,,, ,,,,,"                          "
+EE  690.04,Desc.,M.S.THESIS,0,60,LEVENT ARSLAN,,, ,,,,,"                          "
+EE  690.05,Desc.,M.S.THESIS,0,60,İSMAİL FAİK BAŞKAYA,,, ,,,,,"                          "
+EE  690.06,Desc.,M.S.THESIS,0,60,IŞIL BOZMA,,, ,,,,,"                          "
+EE  690.07,Desc.,M.S.THESIS,0,60,KEMAL CILIZ,,, ,,,,,"                          "
+EE  690.08,Desc.,M.S.THESIS,0,60,OĞUZHAN ÇİÇEKOĞLU,,, ,,,,,"                          "
+EE  690.09,Desc.,M.S.THESIS,0,60,HAKAN DELİÇ,,, ,,,,,"                          "
+EE  690.10,Desc.,M.S.THESIS,0,60,YAĞMUR DENİZHAN,,, ,,,,,"                          "
+EE  690.11,Desc.,M.S.THESIS,0,60,GÜNHAN DÜNDAR,,, ,,,,,"                          "
+EE  690.12,Desc.,M.S.THESIS,0,60,AYŞIN ERTÜZÜN,,, ,,,,,"                          "
+EE  690.13,Desc.,M.S.THESIS,0,60,YASEMİN KAHYA,,, ,,,,,"                          "
+EE  690.14,Desc.,M.S.THESIS,0,60,MUTLU KOCA,,, ,,,,,"                          "
+EE  690.15,Desc.,M.S.THESIS,0,60,ŞENOL MUTLU,,, ,,,,,"                          "
+EE  690.16,Desc.,M.S.THESIS,0,60,SEMA DUMANLI OKTAR,,, ,,,,,"                          "
+EE  690.17,Desc.,M.S.THESIS,0,60,AHMET ÖNCÜ,,, ,,,,,"                          "
+EE  690.18,Desc.,M.S.THESIS,0,60,KADRİ ÖZÇALDIRAN,,, ,,,,,"                          "
+EE  690.19,Desc.,M.S.THESIS,0,60,ALİ EMRE PUSANE,,, ,,,,,"                          "
+EE  690.20,Desc.,M.S.THESIS,0,60,MURAT SARAÇLAR,,, ,,,,,"                          "
+EE  690.21,Desc.,M.S.THESIS,0,60,ARDA YALÇINKAYA,,, ,,,,,"                          "
+EE  690.22,Desc.,M.S.THESIS,0,60,HEBA MOHAMED YÜKSEL,,, ,,,,,"                          "
+EE  699.01,Desc.,GUIDED RESEARCH,4,10,İSMAİL FAİK BAŞKAYA,,,Online,,,,,"                          "
+EE  790.01,Desc.,Ph.D.THESIS,0,120,BURAK ACAR,,,Online,,,,,"                          "
+EE  790.02,Desc.,Ph.D.THESIS,0,120,MEHMET AKAR,,,Online,,,,,"                          "
+EE  790.03,Desc.,Ph.D.THESIS,0,120,EMİN ANARIM,,,Online,,,,,"                          "
+EE  790.04,Desc.,Ph.D.THESIS,0,120,LEVENT ARSLAN,,,Online,,,,,"                          "
+EE  790.05,Desc.,Ph.D.THESIS,0,120,İSMAİL FAİK BAŞKAYA,,,Online,,,,,"                          "
+EE  790.06,Desc.,Ph.D.THESIS,0,120,IŞIL BOZMA,,,Online,,,,,"                          "
+EE  790.07,Desc.,Ph.D.THESIS,0,120,KEMAL CILIZ,,,Online,,,,,"                          "
+EE  790.08,Desc.,Ph.D.THESIS,0,120,OĞUZHAN ÇİÇEKOĞLU,,,Online,,,,,"                          "
+EE  790.09,Desc.,Ph.D.THESIS,0,120,HAKAN DELİÇ,,,Online,,,,,"                          "
+EE  790.10,Desc.,Ph.D.THESIS,0,120,YAĞMUR DENİZHAN,,,Online,,,,,"                          "
+EE  790.11,Desc.,Ph.D.THESIS,0,120,GÜNHAN DÜNDAR,,,Online,,,,,"                          "
+EE  790.12,Desc.,Ph.D.THESIS,0,120,AYŞIN ERTÜZÜN,,,Online,,,,,"                          "
+EE  790.13,Desc.,Ph.D.THESIS,0,120,YASEMİN KAHYA,,,Online,,,,,"                          "
+EE  790.14,Desc.,Ph.D.THESIS,0,120,MUTLU KOCA,,,Online,,,,,"                          "
+EE  790.15,Desc.,Ph.D.THESIS,0,120,ŞENOL MUTLU,,,Online,,,,,"                          "
+EE  790.16,Desc.,Ph.D.THESIS,0,120,SEMA DUMANLI OKTAR,,,Online,,,,,"                          "
+EE  790.17,Desc.,Ph.D.THESIS,0,120,AHMET ÖNCÜ,,,Online,,,,,"                          "
+EE  790.18,Desc.,Ph.D.THESIS,0,120,KADRİ ÖZÇALDIRAN,,,Online,,,,,"                          "
+EE  790.19,Desc.,Ph.D.THESIS,0,120,ALİ EMRE PUSANE,,,Online,,,,,"                          "
+EE  790.20,Desc.,Ph.D.THESIS,0,120,MURAT SARAÇLAR,,,Online,,,,,"                          "
+EE  790.21,Desc.,Ph.D.THESIS,0,120,ARDA YALÇINKAYA,,,Online,,,,,"                          "
+EE  790.22,Desc.,Ph.D.THESIS,0,120,HEBA MOHAMED YÜKSEL,,,Online,,,,,"                          "

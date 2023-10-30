@@ -1,0 +1,26 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EQE 400.01,Desc.,INTRODUCTION TO EARTHQAKE ENGINEERING ,3,5,KARİN ŞEŞETYAN,FFF,234,,M 2230 | M 2230 | M 2230,,,,"                          "
+EQE 520.01,Desc.,STRONG GROUND MOTION,4,10,GÜLÜM TANIRCAN,WWWW,5678,,,,,,"                          "
+EQE 530.01,Desc.,EARTHQUAKE RESPONSE ANAL.OF STRUCTURES I,3,8,SİNAN AKKAR,WWW,123,,,,,,"                          "
+EQE 540.01,Desc.,GEOTECHNICAL EARTHQUAKE ENGINEERING,3,8,AYŞE EDİNÇLİLER,ThThTh,678,,,,,,"                          "
+EQE 545.01,Desc.,MATHEMATICAL METHODS IN EARTHQUAKE ENG.,3,8,UFUK HANCILAR,TTT,123,,,,,,"                          "
+EQE 677.01,Desc.,SIMULATION OF STRONG GROUND MOTION,3,7,ESER ÇAKTI,MMM,678,,,,,,"                          "
+EQE 682.01,Desc.,SP.TP.DSGN OF STR.WITH PASSIVE&CONT.SYS.,3,7,MUSTAFA ÖZDER ERDİK,MMM,234,,,,,,"                          "
+EQE 683.01,Desc.,SP.TOP.RANDOM VIB.WITH APP.IN WIND&EARTH,3,7,ERDAL ŞAFAK,ThThTh,234,,,,,,"                          "
+EQE 684.01,Desc.,SP.TP.APPLIED SEISMOLOGY,3,7,ALİ PINAR,FFF,678,,,,,,"                          "
+EQE 686.01,Desc.,SP.TP.DEFORMAT.BASED SEISM. ASSESS.&DES.,3,6,MEHMET NURAY AYDINOĞLU,TTT,678,,,,,,"                          "
+EQE 690.03,Desc.,M.S.THESIS,0,60,ALİ PINAR,,,,,,,,"                          "
+EQE 690.04,Desc.,M.S.THESIS,0,60,SİNAN AKKAR,,,,,,,,"                          "
+EQE 690.05,Desc.,M.S.THESIS,0,60,ESER ÇAKTI,,,,,,,,"                          "
+EQE 690.06,Desc.,M.S.THESIS,0,60,AYŞE EDİNÇLİLER,,,,,,,,"                          "
+EQE 690.08,Desc.,M.S.THESIS,0,60,GÜLÜM TANIRCAN,,,,,,,,"                          "
+EQE 690.09,Desc.,M.S.THESIS,0,60,UFUK HANCILAR,,,,,,,,"                          "
+EQE 690.10,Desc.,M.S.THESIS,0,60,KARİN ŞEŞETYAN,,,,,,,,"                          "
+EQE 695.01,Desc.,SL.TOP.IN EART ENG.:SEIS.RESPONSE OF BAS,3,7,EREN UÇKAN,FFF,123,,,,,,"                          "
+EQE 790.01,Desc.,Ph.D. THESIS,0,120,ERDAL ŞAFAK,,,,,,,,"                          "
+EQE 790.03,Desc.,Ph.D. THESIS,0,120,ALİ PINAR,,,,,,,,"                          "
+EQE 790.04,Desc.,Ph.D. THESIS,0,120,SİNAN AKKAR,,,,,,,,"                          "
+EQE 790.05,Desc.,Ph.D. THESIS,0,120,ESER ÇAKTI,,,,,,,,"                          "
+EQE 790.06,Desc.,Ph.D. THESIS,0,120,AYŞE EDİNÇLİLER,,,,,,,,"                          "
+EQE 790.07,Desc.,Ph.D. THESIS,0,120,EREN UÇKAN,,,,,,,,"                          "
+EQE 790.09,Desc.,Ph.D. THESIS,0,120,UFUK HANCILAR,,,,,,,,"                          "

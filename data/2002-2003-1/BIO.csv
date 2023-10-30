@@ -1,0 +1,32 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+BIO 101.01,Desc.,GENERAL BIOLOGY I,3,6,MÜGE TÜRET,TFF,534,,,,,,"                          "
+BIO 101.02,Desc.,GENERAL BIOLOGY I,3,6,NECLA BİRGÜL İYİSON,TThTh,556,,,,,,"                          "
+BIO 104.01,Desc.,GENERAL BIOLOGY II,3,5,NECLA BİRGÜL İYİSON,TTW,128,,,,,,"                          "
+BIO 121.01,Desc.,INTRO.TO CELL BIOLOGY,3,5,MÜGE TÜRET,MWW,567,,,,,,"                          "
+BIO 165.01,Desc.,INTRODUCTION TO COMPUTER USAGE,3,4,JAN WOLANCYK,FF,78,,,,,,"                          "
+BIO 241.01,Desc.,CELL BIOLOGY,4,4,AHMET KOMAN,TTTh,787,,,,,,"                          "
+BIO 301.01,Desc.,BIOCHEMISTRY I,4,8,NEŞE BİLGİN,TTThTh,3434,,,,,,"                          "
+BIO 305.01,Desc.,PRAC.  APPL. IN BIOCHEM. & GENETICS,2,3,AYŞE NAZLI BAŞAK,T,5,,,,,,"                          "
+BIO 305.02,Desc.,PRAC.  APPL. IN BIOCHEM. & GENETICS,2,3,AYŞE NAZLI BAŞAK,W,1,,,,,,"                          "
+BIO 353.01,Desc.,MOLECULAR GENETICS,4,8,ASLIHAN TOLUN,TTThTh,1212,,,,,,"                          "
+BIO 401.01,Desc.,MOLECULAR BIOLOGY I,4,6,HANDE ÇAĞLAYAN,WWFF,3434,,,,,,"                          "
+BIO 409.01,Desc.,MOLECULAR BIOLOGY LAB. I,3,7,KUYAŞ BUĞRA,M,1,,,,,,"                          "
+BIO 487.01,Desc.,SPEC.TOP.:HUM.MOL. GEN.,3,4,AYŞE NAZLI BAŞAK,TTTh,345,,,,,,"                          "
+BIO 489.01,Desc.,SP.TOP:BIOINFORMATICS,3,4,JAN WOLANCYK,WFF,512,,,,,,"                          "
+BIO 491.01,Desc.,SPECIAL PROJECTS I,3,8,AYŞE NAZLI BAŞAK,TBA,,,,,,,"                          "
+BIO 491.02,Desc.,SPECIAL PROJECTS I,3,8,NEŞE BİLGİN,TBA,,,,,,,"                          "
+BIO 491.03,Desc.,SPECIAL PROJECTS I,3,8,ESRA BATTALOĞLU,TBA,,,,,,,"                          "
+BIO 491.04,Desc.,SPECIAL PROJECTS I,3,8,KUYAŞ BUĞRA,TBA,,,,,,,"                          "
+BIO 491.05,Desc.,SPECIAL PROJECTS I,3,8,HANDE ÇAĞLAYAN,TBA,,,,,,,"                          "
+BIO 491.06,Desc.,SPECIAL PROJECTS I,3,8,AHMET KOMAN,TBA,,,,,,,"                          "
+BIO 491.07,Desc.,SPECIAL PROJECTS I,3,8,MÜGE TÜRET,TBA,,,,,,,"                          "
+BIO 491.08,Desc.,SPECIAL PROJECTS I,3,8,ASLIHAN TOLUN,TBA,,,,,,,"                          "
+BIO 500.01,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,10,KUYAŞ BUĞRA,TBA,,,,,,,"                          "
+BIO 501.01,Desc.,ADVANCED MOLECULAR BIOLOGY,3,7,ESRA BATTALOĞLU,TBA,,,,,,,"                          "
+BIO 511.01,Desc.,ADVANCED GENETICS,3,7,HANDE ÇAĞLAYAN,TBA,,,,,,,"                          "
+BIO 579.01,Desc.,GRADUATE SEMINAR,0,2,KUYAŞ BUĞRA,TBA,,,,,,,"                          "
+BIO 601.01,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,10,ESRA BATTALOĞLU,TBA,,,,,,,"                          "
+BIO 681.01,Desc.,AD.TP.:PROTEIN-NUCLEIC ACID INTERACTIONS,3,7,NEŞE BİLGİN,TBA,,,,,,,"                          "
+BIO 689.01,Desc.,SP.TP.:CONTROL OF GENE TRANS.IN HUMAN DI,3,7,AHMET KOMAN,TBA,,,,,,,"                          "
+BIO 690.01,Desc.,M.S.THESIS,0,60,KUYAŞ BUĞRA,TBA,,,,,,,"                          "
+BIO 790.01,Desc.,Ph.D.THESIS,0,120,KUYAŞ BUĞRA,TBA,,,,,,,"                          "

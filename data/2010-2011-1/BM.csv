@@ -1,0 +1,54 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+BM  501.01,Desc.,BIOLOGY OF LIVING SYSTEMS,3,7,CENGİZHAN ÖZTÜRK,TTTh,565,,AZ 19 | AZ 19 | AZ 19,07.01.2011,3,,"                          "
+BM  507.01,Desc.,BIOMEDICAL INSTRUMENTATION LABORATORY,2,6,BURAK GÜÇLÜ,TT,78,,,18.01.2011,1,,"                          "
+BM  508.01,Desc.,BIOMEDICAL TESTING & MEASUREMENT LAB.,2,6,YEKTA ÜLGEN,ThTh,78,,,15.01.2011,1,,"                          "
+BM  516.01,Desc.,BIOPHOTONICS,3,7,MURAT GÜLSOY,WWW,678,,AZ 19 | AZ 19 | AZ 19,18.01.2011,3,,"                          "
+BM  519.01,Desc.,BIOSENSORS,3,7,BORA GARİPCAN,TTF,122,,AZ 18 | AZ 18 | AZ 18,06.01.2011,3,,"                          "
+BM  525.01,Desc.,TISSUE BIOMECHANICS,3,7,CAN YÜCESOY,WFF,256,,AZ 19 | AZ 19 | AZ 19,08.01.2011,3,,"                          "
+BM  532.01,Desc.,BIOLOGICAL TIME SERIES ANALYSIS,3,7,AHMET ADEMOĞLU,WWW,678,,AZ 18 | AZ 18 | AZ 18,05.01.2011,2,,"                          "
+BM  555.01,Desc.,DESIGN & EVALUATION OF CLINICAL TRIALS,3,7,EMİN MEHMET YUSUF,MMM,678,,AZ 18 | AZ 18 | AZ 18,11.01.2011,1,,"                          "
+BM  563.01,Desc.,MEDICAL IMAGING,3,7,YEKTA ÜLGEN,TTTh,236,,AZ 19 | AZ 19 | AZ 19,11.01.2011,3,,"                          "
+BM  573.01,Desc.,CARDIOVASCULAR IMAGING,3,7,CENGİZHAN ÖZTÜRK,TFF,123,,AZ 19 | AZ 19 | AZ 19,18.01.2011,3,,"                          "
+BM  579.01,Desc.,GRADUATE SEMINAR,0,1,CENGİZHAN ÖZTÜRK,F,7,,,,0,,"                          "
+BM  586.01,Desc.,SP.STUD.:SKELETAL MUSCLE MECHANICS,3,7,CAN YÜCESOY,WWF,344,,AZ 19 | AZ 19 | AZ 19,12.01.2011,3,,"                          "
+BM  587.01,Desc.,SP.STUD.DESIGN OF BIOMECHANICAL DEVICES,3,7,SABRİ ALTINTAŞ,ThThTh,678,,YD 206 | YD 206 | YD 206,13.01.2011,3,,"                          "
+BM  590.01,Desc.,SEL.TOP.:COMPUTATIONAL NEUROSCIENCE,3,7,BURAK GÜÇLÜ,MThTh,323,,AZ 19 | AZ 19 | AZ 19,14.01.2011,2,,"                          "
+BM  595.01,Desc.,SP.STUD.:INTRODUCTION TO NEUROCHEMISTRY,3,7,HALE SAYBAŞILI,TTTh,787,,AZ 18 | AZ 18 | AZ 18,05.01.2011,1,,"                          "
+BM  598.01,Desc.,SEL.TOP.WAVELETS AND ITS APP.IN BIOM.SI,3,7,YASEMİN KAHYA,TBA,,,,07.01.2011,1,,"                          "
+BM  599.01,Desc.,SP.TP.:INTRODUCTION TO BIOSTATISTICS,3,7,ESİN ÖZTÜRK IŞIK,TTT,789,,AZ 19 | AZ 19 | AZ 19,17.01.2011,1,,"                          "
+BM  611.01,Desc.,NUCLEAR BIOMEDICAL INSTRUMENTATION,3,7,ALBERT GÜVENİŞ,MFF,556,,AZ 18 | AZ 18 | AZ 18,08.01.2011,3,,"                          "
+BM  641.01,Desc.,MAGNETIC RESONANCE IMAGING PRINCIPLES,3,7,MEHMED ÖZKAN,MMW,565,,AZ 19 | AZ 19 | AZ 19,06.01.2011,1,,"                          "
+BM  672.01,Desc.,PICTURE ARCHIVING&COMMUN.SYS.IN BIO.IMAG,3,7,ALBERT GÜVENİŞ,MMF,121,,AZ 19 | AZ 19 | AZ 19,15.01.2011,1,,"                          "
+BM  690.01,Desc.,MASTER'S THESIS,0,60,AHMET ADEMOĞLU,TBA,,,,,0,,"                          "
+BM  690.02,Desc.,MASTER'S THESIS,0,60,ALBERT GÜVENİŞ,TBA,,,,,0,,"                          "
+BM  690.04,Desc.,MASTER'S THESIS,0,60,BURAK GÜÇLÜ,TBA,,,,,0,,"                          "
+BM  690.05,Desc.,MASTER'S THESIS,0,60,CAN YÜCESOY,TBA,,,,,0,,"                          "
+BM  690.06,Desc.,MASTER'S THESIS,0,60,CENGİZHAN ÖZTÜRK,TBA,,,,,0,,"                          "
+BM  690.07,Desc.,MASTER'S THESIS,0,60,HALE SAYBAŞILI,TBA,,,,,0,,"                          "
+BM  690.09,Desc.,MASTER'S THESIS,0,60,MEHMED ÖZKAN,TBA,,,,,0,,"                          "
+BM  690.10,Desc.,MASTER'S THESIS,0,60,MURAT GÜLSOY,TBA,,,,,0,,"                          "
+BM  690.12,Desc.,MASTER'S THESIS,0,60,SABRİ ALTINTAŞ,TBA,,,,,0,,"                          "
+BM  690.13,Desc.,MASTER'S THESIS,0,60,YEKTA ÜLGEN,TBA,,,,,0,,"                          "
+BM  690.14,Desc.,MASTER'S THESIS,0,60,STAFF STAFF,TBA,,,,,0,,"                          "
+BM  699.01,Desc.,GUIDED RESEARCH,4,7,AHMET ADEMOĞLU,TBA,,,,,0,,"                          "
+BM  699.02,Desc.,GUIDED RESEARCH,4,7,ALBERT GÜVENİŞ,TBA,,,,,0,,"                          "
+BM  699.04,Desc.,GUIDED RESEARCH,4,7,BURAK GÜÇLÜ,TBA,,,,,0,,"                          "
+BM  699.05,Desc.,GUIDED RESEARCH,4,7,CAN YÜCESOY,TBA,,,,,0,,"                          "
+BM  699.06,Desc.,GUIDED RESEARCH,4,7,CENGİZHAN ÖZTÜRK,TBA,,,,,0,,"                          "
+BM  699.07,Desc.,GUIDED RESEARCH,4,7,HALE SAYBAŞILI,TBA,,,,,0,,"                          "
+BM  699.09,Desc.,GUIDED RESEARCH,4,7,MEHMED ÖZKAN,TBA,,,,,0,,"                          "
+BM  699.10,Desc.,GUIDED RESEARCH,4,7,MURAT GÜLSOY,TBA,,,,,0,,"                          "
+BM  699.12,Desc.,GUIDED RESEARCH,4,7,SABRİ ALTINTAŞ,TBA,,,,,0,,"                          "
+BM  699.13,Desc.,GUIDED RESEARCH,4,7,YEKTA ÜLGEN,TBA,,,,,0,,"                          "
+BM  699.14,Desc.,GUIDED RESEARCH,4,7,STAFF STAFF,TBA,,,,,0,,"                          "
+BM  790.01,Desc.,Ph.D.THESIS,0,120,AHMET ADEMOĞLU,TBA,,,,,0,,"                          "
+BM  790.02,Desc.,Ph.D.THESIS,0,120,ALBERT GÜVENİŞ,TBA,,,,,0,,"                          "
+BM  790.04,Desc.,Ph.D.THESIS,0,120,BURAK GÜÇLÜ,TBA,,,,,0,,"                          "
+BM  790.05,Desc.,Ph.D.THESIS,0,120,CAN YÜCESOY,TBA,,,,,0,,"                          "
+BM  790.06,Desc.,Ph.D.THESIS,0,120,CENGİZHAN ÖZTÜRK,TBA,,,,,0,,"                          "
+BM  790.07,Desc.,Ph.D.THESIS,0,120,HALE SAYBAŞILI,TBA,,,,,0,,"                          "
+BM  790.09,Desc.,Ph.D.THESIS,0,120,MEHMED ÖZKAN,TBA,,,,,0,,"                          "
+BM  790.10,Desc.,Ph.D.THESIS,0,120,MURAT GÜLSOY,TBA,,,,,0,,"                          "
+BM  790.12,Desc.,Ph.D.THESIS,0,120,SABRİ ALTINTAŞ,TBA,,,,,0,,"                          "
+BM  790.13,Desc.,Ph.D.THESIS,0,120,YEKTA ÜLGEN,TBA,,,,,0,,"                          "
+BM  790.14,Desc.,Ph.D.THESIS,0,120,LEVENT KURNAZ,TBA,,,,,0,,"                          "

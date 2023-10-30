@@ -1,0 +1,79 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CE  101.01,Desc.,INTRODUCTION TO CIVIL ENGINEERING,3,5,EMRE OTAY,MWW,556,Online/Classroom,ONLINE | NH 105 | NH 105,07.01.2022,1,,"                          "
+CE  211.01,Desc.,MATERIALS SCIENCE,4,6,NİLÜFER ÖZYURT,TTTh,121,Online,ONLINE | ONLINE | ONLINE,19.01.2022,3,,"                          "
+,,LAB,,,NİLÜFER ÖZYURT,,,,,,0,,"                          "
+CE  231.01,Desc.,EARTH SCIENCES,3,5,İREM ZEYNEP YILDIRIM,ThTh,23,Online/Classroom,M 1100 | M 1100,15.01.2022,3,,"                          "
+,,LAB,,,İREM ZEYNEP YILDIRIM,FFF,123,,ONLINE | ONLINE | ONLINE,,0,,"                          "
+CE  243.01,Desc.,STATICS,3,5,SAMİ AND KILIÇ,WWTh,344,Online,ONLINE | ONLINE | ONLINE,17.01.2022,1,,"                          "
+,,P.S.,,,SAMİ AND KILIÇ,Th,7,,ONLINE,,0,,"                          "
+CE  303.01,Desc.,INTRODUCTION TO PROBABILITY AND STATISTICS FOR CIVIL ENGINEERING,3,5,ILGIN GÖKAŞAR,MTT,112,Online,ONLINE | ONLINE | ONLINE,18.01.2022,1,,"                          "
+CE  315.01,Desc.,HYDRAULIC ENGINEERING I,4,6,EMRE OTAY,MMWW,2323,Online/Classroom,ONLINE | ONLINE | M 1100 | M 1100,12.01.2022,1,,"                          "
+,,LAB,,,EMRE OTAY,TWTh,999,,ONLINE | ONLINE | ONLINE,,0,,"                          "
+,,P.S.,,,EMRE OTAY,F,9,,ONLINE,,0,,"                          "
+CE  335.01,Desc.,SOIL MECHANICS,4,6,ÖZER ÇİNİCİOĞLU,TTTh,672,Online/Classroom,ONLINE | ONLINE | NH 301,10.01.2022,2,,"                          "
+,,LAB,,,ÖZER ÇİNİCİOĞLU,ThThThTh,5678,,ONLINE | ONLINE | ONLINE | ONLINE,,0,,"                          "
+CE  355.01,Desc.,STRUCTURAL ANALYSIS,4,6,SERDAR SOYÖZ,TTThTh,3434,Online/Classroom,ONLINE | ONLINE | NH 301 | NH 301,17.01.2022,3,,"                          "
+,,P.S.,,,SERDAR SOYÖZ,WW,78,,ONLINE | ONLINE,,0,,"                          "
+CE  371.01,Desc.,NUMERICAL METHODS IN CIVIL ENGINEERING,3,5,CEM AVCI,MWW,556,Online/Classroom,ONLINE | M 1100 | M 1100,08.01.2022,1,,"                          "
+CE  401.01,Desc.,CONSTRUCTION ENGINEERING & MANAGEMENT,3,5,BELİZ ÖZORHON,WThTh,456,Classroom,M 1100 | M 1100 | M 1100,15.01.2022,1,,"                          "
+CE  412.01,Desc.,HYDRAULIC ENGINEERING II,3,5,CEM AVCI,MMT,343,Online,ONLINE | ONLINE | ONLINE,10.01.2022,3,,"                          "
+CE  414.01,Desc.,COASTAL ENGINEERING,3,5,OSMAN BÖREKÇİ,MMT,675,Online,ONLINE | ONLINE | ONLINE,07.01.2022,3,,"                          "
+CE  422.01,Desc.,ENVIRONMENTAL ENGINEERING DESIGN,3,5,ATİLLA AKKOYUNLU,TFF,234,Online,ONLINE | ONLINE | ONLINE,18.01.2022,2,,"                          "
+CE  461.01,Desc.,TRANSPORTATION SYSTEMS ENGINEERING,4,7,ILGIN GÖKAŞAR,TTW,341,Online/Classroom,ONLINE | ONLINE | M 1100,21.01.2022,2,,"                          "
+,,P.S.,,,ILGIN GÖKAŞAR,ThThThTh,1234,,ONLINE | ONLINE | ONLINE | ONLINE,,0,,"                          "
+CE  492.01,Desc.,PROJECT,4,8,CEM YALÇIN                   ,FFF,678,Online,ONLINE | ONLINE | ONLINE,11.01.2022,2,,"                          "
+CE  495.01,Desc.,SP.TOP.INTRO.TO BUILDING INFORMATION MODELING,3,6,SEMRA ÇOMU,MTT,756,Online,ONLINE | ONLINE | ONLINE,19.01.2022,3,,"                          "
+CE  49B.01,Desc.,SP.TP.GREEN BUILDING,3,6,MEHMET EMRE ÇAMLIBEL,WWW,789,Classroom,M 2200 | M 2200 | M 2200,08.01.2022,2,,"                          "
+CE  49S.01,Desc.,SP.TP.FIRE ENG DESIGN,3,6,SERDAR SELAMET,MMThTh,1212,Online,ONLINE | ONLINE | M 3100 | M 3100,12.01.2022,1,,"                          "
+CE  49T.01,Desc.,SP.TP.QUALITY MANAG.IN CONS.ENG,3,5,TURAN ÖZTURAN,TTT,789,Online,ONLINE | ONLINE | ONLINE,20.01.2022,1,,"                          "
+CE  502.01,Desc.,INTRODUCTION TO FINITE ELEMENTS,3,8,SERDAR SELAMET,TTT,567,Classroom,M 2230 | M 2230 | M 2230,08.01.2022,1,,"                          "
+CE  503.01,Desc.,MATHEMATICAL METHODS IN ENGINEERING,4,10,CİHAN BAYINDIR,ThThFF,1212,Online,ONLINE | ONLINE | ONLINE | ONLINE,15.01.2022,2,,"                          "
+CE  531.01,Desc.,ADVANCED SOIL MECHANICS,3,8,ÖZER ÇİNİCİOĞLU,TTT,123,Classroom,M 3120 | M 3120 | M 3120,07.01.2022,1,,"                          "
+CE  536.01,Desc.,SOIL IMPROVEMENT TECHNIQUES,3,8,GÖKHAN BAYKAL,,,Online,,19.01.2022,1,,"                          "
+CE  544.01,Desc.,ADVANCED MATERIAL SCIENCE,3,8,NİLÜFER ÖZYURT,WWW,234,Online,ONLINE | ONLINE | ONLINE,07.01.2022,1,,"                          "
+CE  552.01,Desc.,PRESTRESSED & PREFABRICATED SYSTEMS,3,8,CEM YALÇIN                   ,ThThTh,678,Online,ONLINE | ONLINE | ONLINE,08.01.2022,2,,"                          "
+CE  554.01,Desc.,THEORY&DESIGN FOR MEASURE.IN STRUC.ENGR.,3,8,TURAN ÖZTURAN,ThThTh,567,Online,ONLINE | ONLINE | ONLINE,08.01.2022,1,,"                          "
+CE  555.01,Desc.,BEHAVIOR&DESIGN OF REINFORCED CONCRETE,3,8,KUTAY ORAKÇAL,WWW,234,Online,ONLINE | ONLINE | ONLINE,13.01.2022,1,,"                          "
+CE  558.01,Desc.,ADVANCED REINFORCED CONCRETE,3,8,CENGİZ KARAKOÇ,ThThTh,789,Online,ONLINE | ONLINE | ONLINE,07.01.2022,2,,"                          "
+CE  559.01,Desc.,STRUCTURAL DYNAMICS,3,8,SERDAR SOYÖZ,MMM,234,Classroom,M 2231 | M 2231 | M 2231,07.01.2022,3,,"                          "
+CE  571.01,Desc.,RISK MANAGEMENT&DECISION ANALYSIS,3,8,SEMRA ÇOMU,WWW,567,Online,ONLINE | ONLINE | ONLINE,10.01.2022,3,,"                          "
+CE  573.01,Desc.,INNOVATION MANAGEMENT IN CONSTRUCTION,3,8,BELİZ ÖZORHON,TTT,567,Classroom,M 1152 | M 1152 | M 1152,08.01.2022,3,,"                          "
+CE  582.01,Desc.,SP.TOP.IN CE:SLOPE STAB.&STAB.METHODS,3,8,AYŞE EDİNÇLİLER,MMM,567,Classroom,M 2231 | M 2231 | M 2231,07.01.2022,3,,"                          "
+CE  58N.01,Desc.,SP.TP.DESIGN OF EARTH STRUCTURES,3,8,İREM ZEYNEP YILDIRIM,ThThTh,789,Online,ONLINE | ONLINE | ONLINE,10.01.2022,3,,"                          "
+CE  690.01,Desc.,M.S.THESIS,0,60,CEM AVCI,,,Online,,,,,"                          "
+CE  690.02,Desc.,M.S.THESIS,0,60,GÖKHAN BAYKAL,,,Online,,,,,"                          "
+CE  690.03,Desc.,M.S.THESIS,0,60,ÖZER ÇİNİCİOĞLU,,,Online,,,,,"                          "
+CE  690.04,Desc.,M.S.THESIS,0,60,SEMRA ÇOMU,,,Online,,,,,"                          "
+CE  690.05,Desc.,M.S.THESIS,0,60,ILGIN GÖKAŞAR,,,Online,,,,,"                          "
+CE  690.06,Desc.,M.S.THESIS,0,60,SAMİ AND KILIÇ,,,Online,,,,,"                          "
+CE  690.07,Desc.,M.S.THESIS,0,60,HİLMİ LUŞ,,,Online,,,,,"                          "
+CE  690.08,Desc.,M.S.THESIS,0,60,KUTAY ORAKÇAL,,,Online,,,,,"                          "
+CE  690.09,Desc.,M.S.THESIS,0,60,EMRE OTAY,,,Online,,,,,"                          "
+CE  690.10,Desc.,M.S.THESIS,0,60,BELİZ ÖZORHON,,,Online,,,,,"                          "
+CE  690.11,Desc.,M.S.THESIS,0,60,NİLÜFER ÖZYURT,,,Online,,,,,"                          "
+CE  690.12,Desc.,M.S.THESIS,0,60,SERDAR SELAMET,,,Online,,,,,"                          "
+CE  690.13,Desc.,M.S.THESIS,0,60,SERDAR SOYÖZ,,,Online,,,,,"                          "
+CE  690.14,Desc.,M.S.THESIS,0,60,CEM YALÇIN                   ,,,Online,,,,,"                          "
+CE  690.15,Desc.,M.S.THESIS,0,60,İREM ZEYNEP YILDIRIM,,,Online,,,,,"                          "
+CE  790.01,Desc.,Ph.D. THESIS,0,120,CEM AVCI,,,Online,,,,,"                          "
+CE  790.02,Desc.,Ph.D. THESIS,0,120,GÖKHAN BAYKAL,,,Online,,,,,"                          "
+CE  790.03,Desc.,Ph.D. THESIS,0,120,ÖZER ÇİNİCİOĞLU,,,Online,,,,,"                          "
+CE  790.04,Desc.,Ph.D. THESIS,0,120,SEMRA ÇOMU,,,Online,,,,,"                          "
+CE  790.05,Desc.,Ph.D. THESIS,0,120,ILGIN GÖKAŞAR,,,Online,,,,,"                          "
+CE  790.06,Desc.,Ph.D. THESIS,0,120,SAMİ AND KILIÇ,,,Online,,,,,"                          "
+CE  790.07,Desc.,Ph.D. THESIS,0,120,HİLMİ LUŞ,,,Online,,,,,"                          "
+CE  790.08,Desc.,Ph.D. THESIS,0,120,KUTAY ORAKÇAL,,,Online,,,,,"                          "
+CE  790.09,Desc.,Ph.D. THESIS,0,120,EMRE OTAY,,,Online,,,,,"                          "
+CE  790.10,Desc.,Ph.D. THESIS,0,120,BELİZ ÖZORHON,,,Online,,,,,"                          "
+CE  790.11,Desc.,Ph.D. THESIS,0,120,NİLÜFER ÖZYURT,,,Online,,,,,"                          "
+CE  790.12,Desc.,Ph.D. THESIS,0,120,SERDAR SELAMET,,,Online,,,,,"                          "
+CE  790.13,Desc.,Ph.D. THESIS,0,120,SERDAR SOYÖZ,,,Online,,,,,"                          "
+CE  790.14,Desc.,Ph.D. THESIS,0,120,CEM YALÇIN                   ,,,Online,,,,,"                          "
+CE  790.15,Desc.,Ph.D. THESIS,0,120,İREM ZEYNEP YILDIRIM,,,Online,,,,,"                          "
+ENGG110.01,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,TT,67,Classroom,M 3160 | M 3160,18.01.2022,1,,"                          "
+,,LAB,,,FEZA BAYKAL,TT,89,,M 3160 | M 3160,,0,,"                          "
+ENGG110.02,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,FF,67,Classroom,M 3160 | M 3160,18.01.2022,1,,"                          "
+,,LAB,,,FEZA BAYKAL,FF,89,,M 3160 | M 3160,,0,,"                          "
+ENGG110.03,Desc.,ENGINEERING GRAPHICS,3,5,İLYAS İSTİF,ThTh,45,Online,ONLINE | ONLINE,18.01.2022,1,,"                          "
+,,LAB,,,İLYAS İSTİF,WW,12,,ONLINE | ONLINE,,0,,"                          "
+,,LAB,,,İLYAS İSTİF,WW,12,,ONLINE | ONLINE,,0,,"                          "

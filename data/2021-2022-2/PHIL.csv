@@ -1,0 +1,59 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL106.01,Desc.,PHILOSOPHICAL TEXTS,3,8,YILDIZ SİLİER,ThFF,656,Online/Classroom,ONLINE | NH 305 | NH 305,04.06.2022,1,,"                          "
+PHIL112.01,Desc.,INTRODUCTION TO MODERN PHILOSOPHY,3,6,SUN DEMİRLİ,MWW,556,Online,ONLINE | ONLINE | ONLINE,30.05.2022,3,"GUID,LL,TKL","                          "
+PHIL132.01,Desc.,LOGIC II,4,8,KARANFİL SOYHUN,MMWW,7856,Classroom,NH 301 | NH 301 | TB 310 | TB 310,09.06.2022,3,,"                          "
+PHIL214.01,Desc.,HISTORY OF PHILOSOPHY II,3,6,CHRYSSI SIDIROPOULOU,TTTh,344,Online,ONLINE | ONLINE | ONLINE,11.06.2022,3,,"                          "
+PHIL222.01,Desc.,PHILOSOPHY OF SCIENCE,3,6,FRANK ZENKER,TTTh,787,Online,ONLINE | ONLINE | ONLINE,08.06.2022,1,,"                          "
+PHIL314.01,Desc.,HISTORY OF PHILOSOPHY IV,3,6,LUCAS THORPE,TTW,567,Online/Classroom,ONLINE | ONLINE | TB 310,07.06.2022,3,,"                          "
+PHIL331.01,Desc.,ADVANCED LOGIC I,3,6,BERNA KILINÇ,ThThF,786,Online/Classroom,ONLINE | ONLINE | TB 240,10.06.2022,3,,"                          "
+PHIL354.01,Desc.,SOCIAL & POLITICAL PHILOSOPHY,3,6,ZÜBEYDE KARADAĞ THORPE,TTT,91011,Online,ONLINE | ONLINE | ONLINE,04.06.2022,3,,"                          "
+PHIL382.01,Desc.,ONTOLOGY,3,7,NURBAY IRMAK,MMW,569,Classroom,TB 310 | TB 310 | TB 310,10.06.2022,2,,"                          "
+PHIL480.01,Desc.,SP.TP.PHILOSOPHY OF COGNITIVE SCIENCE,3,6,LUCAS THORPE,TWW,834,Online/Classroom,ONLINE | NH 304 | NH 304,,,,"                          "
+PHIL485.01,Desc.,SP.TP.CONSPIRACY THEORIES & RATIONALITY,3,6,KARANFİL SOYHUN,MMW,348,Classroom,M 1200 | M 1200 | NH 202,,,,"                          "
+PHIL487.01,Desc.,SP.TP.HEIDEGGER BETWEEN PRESENCE&TIME,3,6,MAYA MANDALİNCİ,MMM,789,Classroom,M 1170 | M 1170 | M 1170,30.05.2022,1,,"                          "
+PHIL48B.01,Desc.,SP.TP.MIND DYNAMICS,3,5,HAYDAR OĞUZ ERDİN,WFF,578,Classroom,TB 415 | TB 240 | TB 240,,,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,CHRYSSI SIDIROPOULOU,,,Classroom,,,,,"                          "
+PHIL499.02,Desc.,INDEPENDENT STUDY,3,6,KARANFİL SOYHUN,,,Classroom,,,,,"                          "
+PHIL499.03,Desc.,INDEPENDENT STUDY,3,6,YILDIZ SİLİER,,,Classroom,,,,,"                          "
+PHIL499.04,Desc.,INDEPENDENT STUDY,3,6,LUCAS THORPE,,,Classroom,,,,,"                          "
+PHIL499.05,Desc.,INDEPENDENT STUDY,3,6,FRANK ZENKER,,,Classroom,,,,,"                          "
+PHIL499.06,Desc.,INDEPENDENT STUDY,3,6,NURBAY IRMAK,,,Classroom,,,,,"                          "
+PHIL499.07,Desc.,INDEPENDENT STUDY,3,6,SUN DEMİRLİ,,,Classroom,,,,,"                          "
+PHIL499.08,Desc.,INDEPENDENT STUDY,3,6,BERNA KILINÇ,,,Classroom,,,,,"                          "
+PHIL499.09,Desc.,INDEPENDENT STUDY,3,6,STEPHEN VOSS,,,Classroom,,,,,"                          "
+PHIL501.01,Desc.,METAPHYSICS,4,10,SUN DEMİRLİ,FFF,456,Classroom,,,,,"                          "
+PHIL524.01,Desc.,PHILOSOPHY OF SCIENCE ,3,10,FRANK ZENKER,WWW,678,Classroom,,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,CHRYSSI SIDIROPOULOU,,,Classroom,,,,,"                          "
+PHIL584.01,Desc.,SP.TP.CLASSICAL ISLAMIC PHILOSOPHY,4,10,CHRYSSI SIDIROPOULOU,ThThTh,678,Online,ONLINE | ONLINE | ONLINE,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,CHRYSSI SIDIROPOULOU,,,Classroom,,,,,"                          "
+PHIL58D.01,Desc.,SP.TP.SCIENTIFIC UNDERSTANDING,3,10,BERNA KILINÇ,TTT,678,Online,,03.06.2022,3,,"                          "
+PHIL58Y.01,Desc.,SP.TP.POLITICAL FREEDOM,4,10,YILDIZ SİLİER,ThThTh,234,Classroom,JF 507 | JF 507 | JF 507,02.06.2022,1,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,CHRYSSI SIDIROPOULOU,,,Classroom,,08.06.2022,3,,"                          "
+PHIL590.02,Desc.,DIRECTED STUDY,4,10,KARANFİL SOYHUN,,,Classroom,,08.06.2022,3,,"                          "
+PHIL590.03,Desc.,DIRECTED STUDY,4,10,YILDIZ SİLİER,,,Classroom,,08.06.2022,3,,"                          "
+PHIL590.04,Desc.,DIRECTED STUDY,4,10,LUCAS THORPE,,,Classroom,,08.06.2022,3,,"                          "
+PHIL590.05,Desc.,DIRECTED STUDY,4,10,FRANK ZENKER,,,Classroom,,08.06.2022,3,,"                          "
+PHIL590.06,Desc.,DIRECTED STUDY,4,10,NURBAY IRMAK,,,Classroom,,08.06.2022,3,,"                          "
+PHIL590.07,Desc.,DIRECTED STUDY,4,10,SUN DEMİRLİ,,,Classroom,,08.06.2022,3,,"                          "
+PHIL590.08,Desc.,DIRECTED STUDY,4,10,BERNA KILINÇ,,,,,08.06.2022,3,,"                          "
+PHIL590.09,Desc.,DIRECTED STUDY,4,10,STEPHEN VOSS,,,Classroom,,08.06.2022,3,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,3,30,CHRYSSI SIDIROPOULOU,,,Classroom,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL690.02,Desc.,MASTER THESIS,0,60,KARANFİL SOYHUN,,,,,,,,"                          "
+PHIL690.03,Desc.,MASTER THESIS,0,60,YILDIZ SİLİER,,,,,,,,"                          "
+PHIL690.04,Desc.,MASTER THESIS,0,60,LUCAS THORPE,,,,,,,,"                          "
+PHIL690.05,Desc.,MASTER THESIS,0,60,FRANK ZENKER,,,,,,,,"                          "
+PHIL690.06,Desc.,MASTER THESIS,0,60,NURBAY IRMAK,,,,,,,,"                          "
+PHIL690.07,Desc.,MASTER THESIS,0,60,SUN DEMİRLİ,,,,,,,,"                          "
+PHIL690.08,Desc.,MASTER THESIS,0,60,BERNA KILINÇ,,,,,,,,"                          "
+PHIL690.09,Desc.,MASTER THESIS,0,60,STEPHEN VOSS,,, ,,,,,"                          "
+PHIL700.01,Desc.,GRADUATE SEMINAR,0,2,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL790.01,Desc.,DOCTORAL DISSERTATION,0,120,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL790.02,Desc.,DOCTORAL DISSERTATION,0,120,KARANFİL SOYHUN,,,,,,,,"                          "
+PHIL790.03,Desc.,DOCTORAL DISSERTATION,0,120,YILDIZ SİLİER,,,,,,,,"                          "
+PHIL790.04,Desc.,DOCTORAL DISSERTATION,0,120,LUCAS THORPE,,,,,,,,"                          "
+PHIL790.05,Desc.,DOCTORAL DISSERTATION,0,120,FRANK ZENKER,,,,,,,,"                          "
+PHIL790.06,Desc.,DOCTORAL DISSERTATION,0,120,NURBAY IRMAK,,,,,,,,"                          "
+PHIL790.07,Desc.,DOCTORAL DISSERTATION,0,120,SUN DEMİRLİ,,,,,,,,"                          "
+PHIL790.08,Desc.,DOCTORAL DISSERTATION,0,120,BERNA KILINÇ,,,,,,,,"                          "
+PHIL790.09,Desc.,DOCTORAL DISSERTATION,0,120,STEPHEN VOSS,,, ,,,,,"                          "

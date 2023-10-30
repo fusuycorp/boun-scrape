@@ -1,0 +1,33 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CE  202.01,Desc.,INTRO. TO PROBABILITY & STATISTICS,3,6,EMRE OTAY,MMT,788,,,,,,"                          "
+CE  202.02,Desc.,INTRO. TO PROBABILITY & STATISTICS,3,6,HİLMİ LUŞ,MMT,788,,,,,,"                          "
+CE  212.01,Desc.,ENGINEERING MATERIALS,3,5,TURAN ÖZTURAN,MMThTh,5656,,,,,,"                          "
+CE  222.01,Desc.,INTRO. TO ENV. POLLUTION  CONTROL,3,7,ATİLLA AKKOYUNLU,MMT,678,,,,,,"                          "
+CE  241.01,Desc.,MECHANICS OF MATERIALS,4,6,ALİ RANA ATILGAN,TTWWF,12785,,,,,,"                          "
+CE  312.01,Desc.,HYDRAULIC ENGINEERING I,4,6,OSMAN BÖREKÇİ,MMMTT,12534,,,,,,"                          "
+CE  312.02,Desc.,HYDRAULIC ENGINEERING I,4,6,CEM AVCI,MMMTT,12534,,,,,,"                          "
+CE  332.01,Desc.,SOIL MECHANICS I,3,5,TURAN DURGUNOĞLU,TTTh,122,,,,,,"                          "
+CE  332.02,Desc.,SOIL MECHANICS I,3,5,EROL GÜLER,TTTh,122,,,,,,"                          "
+CE  334.01,Desc.,SOIL MECHANICS LABORATORY,1,4,GÖKHAN BAYKAL,ThThThTh,1678,,,,,,"                          "
+CE  352.01,Desc.,STRUCTURAL ANALYSIS II,4,7,GÜLAY ALTAY,WWThThTh,34345,,,,,,"                          "
+CE  352.02,Desc.,STRUCTURAL ANALYSIS II,4,7,VEDAT YERLİCİ,WWThThTh,34345,,,,,,"                          "
+CE  412.01,Desc.,HYDRAULIC ENGINEERING II,3,5,CEM AVCI,MMT,346,,,,,,"                          "
+CE  414.01,Desc.,INTRODUCTION TO COASTAL ENGINEERING,3,5,OSMAN BÖREKÇİ,MWW,678,,,,,,"                          "
+CE  452.01,Desc.,REINFORCED CONCRETE II,4,5,CENGİZ KARAKOÇ,WThTh,278,,,,,,"                          "
+CE  484.01,Desc.,SP.STUD.IN CE:RISK ASSESSMENT AND MAN.,3,5,ALİ RANA ATILGAN,TTW,342,,,,,,"                          "
+CE  487.01,Desc.,SP.TOP.IN CE :WAVE TRANSFORMATIONS,3,5,OSMAN BÖREKÇİ,TBA,,,,,,,"                          "
+CE  505.01,Desc.,APPLIED STOCHASTIC ANALYSIS&MODELING,3,6,EMRE OTAY,MMWW,4534,,,,,,"                          "
+CE  530.01,Desc.,ADV. GEOTECHNICAL ENGINEERING LABORATORY,3,7.50,GÖKHAN BAYKAL,WWW,123,,,,,,"                          "
+CE  533.01,Desc.,GEOTECHNICS IN PRACTICE,3,7.50,TURAN DURGUNOĞLU,TTT,789,,,,,,"                          "
+CE  534.01,Desc.,DESIGNING WITH GEOSYNTHETICS,3,6,EROL GÜLER,MMM,789,,,,,,"                          "
+CE  579.01,Desc.,GRADUATE SEMINAR,0,7.50,CENGİZ KARAKOÇ,W,7,,,,,,"                          "
+CE  583.01,Desc.,SP.TOP.:STRUCTURAL STELL DESIGN,3,6,GÜLAY ALTAY,WWW,8910,,,,,,"                          "
+CE  591.01,Desc.,SP.TOP.ST IN CE MODELING AND IDENTAFICAT,3,6,HİLMİ LUŞ,ThThTh,123,,,,,,"                          "
+CE  593.01,Desc.,SP.STUD.IN CE :WATER POL. CONROL&TREATM.,3,6,ATİLLA AKKOYUNLU,TTT,456,,,,,,"                          "
+CE  594.01,Desc.,SP. STUD. IN CE:PLASTICITY AND NONLINEAR,3,7.50,CENGİZ KARAKOÇ,TBA,,,,,,,"                          "
+CE  599.01,Desc.,SP.TOP.IN CE:ENG.ASS & MAN.OR.ENV.PROB.,3,6,AYŞE EDİNÇLİLER,WWW,568,,,,,,"                          "
+CE  601.01,Desc.,FINITE ELEMENTS I,3,7.50,SEMİH TEZCAN,FFF,123,,,,,,"                          "
+CE  690.01,Desc.,M.S.THESIS,0,60,TURAN ÖZTURAN,TBA,,,,,,,"                          "
+CE  790.01,Desc.,Ph.D. THESIS,0,120,TURAN ÖZTURAN,TBA,,,,,,,"                          "
+ENGG110.02,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,TTT,678,,,,,,"                          "
+ENGG110.03,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,WWW,678,,,,,,"                          "

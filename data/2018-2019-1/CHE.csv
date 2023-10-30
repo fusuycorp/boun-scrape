@@ -1,0 +1,57 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHE 110.01,Desc.,INTRODUCTION TO CHEMICAL&BIOSYSTEMS ENG.,3,5,SEZEN SOYER UZUN,WWTh,128,,KB 401 | KB 401 | KB 432,03.01.2019,3,,"                          "
+CHE 201.01,Desc.,PHYSICOCHEMICAL SYSTEMS I,3,5,DAMLA EROĞLU PALA,MMTFF,78367,,KB 432 | KB 432 | KB 432 | KB 432 | KB 432,05.01.2019,1,,"                          "
+CHE 203.01,Desc.,PHYSICOCHEMICAL SYSTEMS LABORATORY,1,2,DAMLA EROĞLU PALA,WW,78,,,28.12.2018,2,,"                          "
+CHE 203.02,Desc.,PHYSICOCHEMICAL SYSTEMS LABORATORY,1,2,DAMLA EROĞLU PALA,ThTh,78,,,28.12.2018,2,,"                          "
+CHE 211.01,Desc.,MASS & ENERGY BALANCES,4,5,MAHİR ARIKOL,MMWW,5656,,KB 432 | KB 432 | KB 432 | KB 432,04.01.2019,2,,"                          "
+,,LAB,,,MAHİR ARIKOL,ThTh,56,,KB 432 | KB 432,,0,,"                          "
+CHE 211.02,Desc.,MASS & ENERGY BALANCES,4,5,NAZAR İLERİ ERCAN,MMWW,5656,,KB 401 | KB 401 | KB 401 | KB 401,04.01.2019,2,,"                          "
+,,LAB,,,NAZAR İLERİ ERCAN,ThTh,56,,KB 428 | KB 428,,0,,"                          "
+CHE 321.01,Desc.,CHEM. ENGINEERING THERMODYNAMICS,4,7,TÜRKAN HALİLOĞLU,MMWWTh,78345,,KB 401 | KB 401 | KB 401 | KB 401 | KB 401,04.01.2019,3,,"                          "
+CHE 333.01,Desc.,HEAT TRANSFER,3,5,RAMAZAN YILDIRIM,MMTTh,2334,,KB 401 | KB 401 | KB 401 | KB 401,26.12.2018,2,,"                          "
+CHE 353.01,Desc.,CHEMICAL & BIOCHEMICAL PROCESSES,3,5,NAZAR İLERİ ERCAN,FFF,567,,KB 401 | KB 401 | KB 401,27.12.2018,2,,"                          "
+CHE 383.01,Desc.,PROBABILITY&STATISTICS IN CHEM.ENGR.APPL,3,5,BURAK ALAKENT,TTWTh,4526,,KB 432 | KB 432 | KB 432 | KB 401,03.01.2019,3,,"                          "
+CHE 401.01,Desc.,CHE.ENGINEERING&BIOTECHNOLOGY LABORATORY,3,6,BURAK ALAKENT,Th,8,,KB 401,,,,"                          "
+,,LAB,,,BURAK ALAKENT,FFFF,1234,,,,0,,"                          "
+CHE 417.01,Desc.,MICROFLUIDICS AND ITS APPLICATIONS,3,5,A.KEREM UĞUZ,MThTh,412,,KB 432 | KB 432 | KB 432,29.12.2018,1,,"                          "
+CHE 427.01,Desc.,BIOREACTION ENGINEERING,3,5,ZEYNEP İLSEN ÖNSAN,MMM,678,,KB 428 | KB 428 | KB 428,07.01.2019,3,,"                          "
+CHE 433.01,Desc.,DESIGN OF CHEMICAL PROCESSING UNITS,3,8,AHMET KERİM AVCI,TTThTh,7834,,KB 432 | KB 432 | KB 432 | KB 432,26.12.2018,1,,"                          "
+CHE 440.01,Desc.,HETEROGENEOUS CATALYSIS,3,5,AHMET ERHAN AKSOYLU,MMT,455,,KB 428 | KB 428 | KB 428,04.01.2019,1,,"                          "
+CHE 444.01,Desc.,FUEL CELLS & CATALYSIS,3,5,DAMLA EROĞLU PALA,MMT,232,,KB 432 | KB 432 | KB 432,07.01.2019,1,,"                          "
+CHE 463.01,Desc.,BIOPROCESS DESIGN,3,5,KUTLU ÜLGEN,TTW,345,,KB 428 | KB 428 | KB 428,25.12.2018,2,,"                          "
+CHE 465.01,Desc.,OPERATIONAL&ENVIRONMENTAL SAFETY OF CHEMICAL PLANTS,3,5,ÖNER HORTAÇSU,TTWW,3434,,KB 401 | KB 401 | KB 432 | KB 432,04.01.2019,1,,"                          "
+CHE 477.01,Desc.,PROCESS OPTIMIZATION,3,5,UĞUR AKMAN,MWW,178,,KB 401 | KB 401 | KB 401,31.12.2018,1,,"                          "
+CHE 492.01,Desc.,PROJECT,4,8,DAMLA EROĞLU PALA,,,,,,,,"                          "
+CHE 529.01,Desc.,METABOLIC ENGINEERING,3,7,KUTLU ÜLGEN,TThTh,634,,,04.01.2019,1,,"                          "
+CHE 543.01,Desc.,CATALYSIS FOR GREEN TECHNOLOGIES,3,7,AHMET ERHAN AKSOYLU,,,,,28.12.2018,2,,"                          "
+CHE 555.01,Desc.,APPLIED MATH.&MODELING FOR CHE.ENG.I,3,8,UĞUR AKMAN,TTWW,7834,,KB 428 | KB 428 | KB 428 | KB 428,27.12.2018,3,,"                          "
+CHE 590.01,Desc.,SP.TP.LINEAR STATIS. MODELS IN CHEM.ENG.,3,7,BURAK ALAKENT,,,,,05.01.2019,1,,"                          "
+CHE 631.01,Desc.,ADVANCED FLUID MECHANICS,3,8,A.KEREM UĞUZ,MTT,212,,KB 428 | KB 428 | KB 428,24.12.2018,3,,"                          "
+CHE 690.01,Desc.,M.S. THESIS,0,60,UĞUR AKMAN,,,,,,,,"                          "
+CHE 690.02,Desc.,M.S. THESIS,0,60,AHMET ERHAN AKSOYLU,,,,,,,,"                          "
+CHE 690.03,Desc.,M.S. THESIS,0,60,BURAK ALAKENT,,,,,,,,"                          "
+CHE 690.04,Desc.,M.S. THESIS,0,60,AHMET KERİM AVCI,,,,,,,,"                          "
+CHE 690.05,Desc.,M.S. THESIS,0,60,MEHMET CİHAN ÇAMURDAN,,,,,,,,"                          "
+CHE 690.06,Desc.,M.S. THESIS,0,60,NAZAR İLERİ ERCAN,,,,,,,,"                          "
+CHE 690.07,Desc.,M.S. THESIS,0,60,TÜRKAN HALİLOĞLU,,,,,,,,"                          "
+CHE 690.08,Desc.,M.S. THESIS,0,60,ELİF ÖZKIRIMLI ÖLMEZ,,,,,,,,"                          "
+CHE 690.09,Desc.,M.S. THESIS,0,60,SEZEN SOYER UZUN,,,,,,,,"                          "
+CHE 690.10,Desc.,M.S. THESIS,0,60,PEMRA DORUKER TURGUT,,,,,,,,"                          "
+CHE 690.11,Desc.,M.S. THESIS,0,60,A.KEREM UĞUZ,,,,,,,,"                          "
+CHE 690.12,Desc.,M.S. THESIS,0,60,KUTLU ÜLGEN,,,,,,,,"                          "
+CHE 690.13,Desc.,M.S. THESIS,0,60,RAMAZAN YILDIRIM,,,,,,,,"                          "
+CHE 690.14,Desc.,M.S. THESIS,0,60,DAMLA EROĞLU PALA,,,,,,,,"                          "
+CHE 790.01,Desc.,Ph.D. THESIS,0,120,UĞUR AKMAN,,,,,,,,"                          "
+CHE 790.02,Desc.,Ph.D. THESIS,0,120,AHMET ERHAN AKSOYLU,,,,,,,,"                          "
+CHE 790.03,Desc.,Ph.D. THESIS,0,120,BURAK ALAKENT,,,,,,,,"                          "
+CHE 790.04,Desc.,Ph.D. THESIS,0,120,AHMET KERİM AVCI,,,,,,,,"                          "
+CHE 790.05,Desc.,Ph.D. THESIS,0,120,MEHMET CİHAN ÇAMURDAN,,,,,,,,"                          "
+CHE 790.06,Desc.,Ph.D. THESIS,0,120,NAZAR İLERİ ERCAN,,,,,,,,"                          "
+CHE 790.07,Desc.,Ph.D. THESIS,0,120,TÜRKAN HALİLOĞLU,,,,,,,,"                          "
+CHE 790.08,Desc.,Ph.D. THESIS,0,120,ELİF ÖZKIRIMLI ÖLMEZ,,,,,,,,"                          "
+CHE 790.09,Desc.,Ph.D. THESIS,0,120,SEZEN SOYER UZUN,,,,,,,,"                          "
+CHE 790.10,Desc.,Ph.D. THESIS,0,120,PEMRA DORUKER TURGUT,,,,,,,,"                          "
+CHE 790.11,Desc.,Ph.D. THESIS,0,120,A.KEREM UĞUZ,,,,,,,,"                          "
+CHE 790.12,Desc.,Ph.D. THESIS,0,120,KUTLU ÜLGEN,,,,,,,,"                          "
+CHE 790.13,Desc.,Ph.D. THESIS,0,120,RAMAZAN YILDIRIM,,,,,,,,"                          "
+CHE 790.14,Desc.,Ph.D. THESIS,0,120,DAMLA EROĞLU PALA,,,,,,,,"                          "

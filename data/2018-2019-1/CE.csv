@@ -1,0 +1,88 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CE  101.01,Desc.,INTRODUCTION TO CIVIL ENGINEERING,3,5,CEM YALÇIN                   ,WFF,267,,NH 103 | M 1100 | M 1100,28.12.2018,2,,"                          "
+CE  211.01,Desc.,MATERIALS SCIENCE,4,6,TURAN ÖZTURAN,TTTh,121,,M 2181 | M 2181 | M 2181,31.12.2018,1,,"                          "
+,,LAB,,,STAFF STAFF,,,,,,0,,"                          "
+CE  211.02,Desc.,MATERIALS SCIENCE,4,6,NİLÜFER ÖZYURT,TTTh,121,,M 2171 | M 2171 | M 1170,31.12.2018,1,,"                          "
+,,LAB,,,STAFF STAFF,,,,,,0,,"                          "
+CE  231.01,Desc.,EARTH SCIENCES,3,5,GÖKHAN BAYKAL,FF,23,,NH 101 | NH 101,02.01.2019,3,,"                          "
+,,LAB,,,STAFF STAFF,ThThFF,7867,,NH 405 | NH 405,,0,,"                          "
+CE  243.01,Desc.,STATICS,3,5,SAMİ AND KILIÇ,TTW,563,,M 2230 | M 2230 | NH 203,04.01.2019,1,,"                          "
+,,P.S.,,,STAFF STAFF,W,4,,NH 203,,0,,"                          "
+CE  245.01,Desc.,MECHANICS,4,7,SAMİ AND KILIÇ,TTThTh,7856,,M 2230 | M 2230 | M 2200 | M 2200,03.01.2019,3,,"                          "
+,,P.S.,,,STAFF STAFF,T,9,,M 2230,,0,,"                          "
+CE  311.01,Desc.,FLUID MECHANICS,4,7,OSMAN BÖREKÇİ,MMWW,1212,,M 2180 | M 2180 | M 2170 | M 2170,25.12.2018,2,,"                          "
+,,P.S.,,,OSMAN BÖREKÇİ,F,1,,M 3120,,0,,"                          "
+CE  311.02,Desc.,FLUID MECHANICS,4,7,EMRE OTAY,MMWW,1212,,M 3120 | M 3120 | M 2181 | M 2181,25.12.2018,2,,"                          "
+,,P.S.,,,STAFF STAFF,F,2,,M 3120,,0,,"                          "
+CE  331.01,Desc.,EARTH SCIENCES,3,5,GÖKHAN BAYKAL,ThTh,56,,NH 203 | NH 203,07.01.2019,2,,"                          "
+,,LAB,,,STAFF STAFF,ThThFF,7823,,,,0,,"                          "
+CE  353.01,Desc.,STEEL STRUCTURES  ,3,5,SERDAR SELAMET,MMThTh,6734,,M 1171 | M 1171 | M 2171 | M 2171,02.01.2019,2,,"                          "
+CE  355.01,Desc.,STRUCTURAL ANALYSIS,4,6,SERDAR SOYÖZ,MMWW,3434,,M 2200 | M 2200 | M 2180 | M 2180,03.01.2019,2,,"                          "
+CE  371.01,Desc.,NUMERICAL METHODS IN CIVIL ENGINEERING,3,5,CEM AVCI,MWW,589,,M 2200 | M 2171 | M 2171,26.12.2018,2,,"                          "
+CE  401.01,Desc.,CONSTRUCTION ENGINEERING & MANAGEMENT,3,5,BELİZ ÖZORHON,WThTh,456,,M 1171 | M 2181 | M 2181,03.01.2019,1,,"                          "
+CE  414.01,Desc.,INTRODUCTION TO COASTAL ENGINEERING,3,5,OSMAN BÖREKÇİ,TTTh,563,,M 1171 | M 1171 | M 3120,27.12.2018,3,,"                          "
+CE  421.01,Desc.,ENVIRONMENTAL ENGINEERING ,3,6,ATİLLA AKKOYUNLU,MMT,345,,M 2181 | M 2181 | M 2181,25.12.2018,1,,"                          "
+,,P.S.,,,STAFF STAFF,TT,67,,M 2181 | M 2181,,0,,"                          "
+CE  431.01,Desc.,FOUNDATION ENGINEERING,4,7,ÖZER ÇİNİCİOĞLU,TTW,122,,M 2170 | M 2170 | M 2171,07.01.2019,1,,"                          "
+,,P.S.,,,STAFF STAFF,ThTh,78,,M 3100 | M 3100,,0,,"                          "
+CE  461.01,Desc.,TRANSPORTATION SYSTEMS ENGINEERING,4,7,ILGIN GÖKAŞAR,TTW,343,,M 3100 | M 3100 | M 1100,04.01.2019,3,,"                          "
+,,P.S.,,,ILGIN GÖKAŞAR,ThThThTh,1234,,M 3100 | M 3100 | M 3100 | M 3100,,0,,"                          "
+CE  48C.01,Desc.,SP.TP.PLANNING & DESIGN OF ENERGY FACILITIES,3,5,CEM AVCI,FFF,678, ,M 2200 | M 2200 | M 2200,28.12.2018,3,,"                          "
+CE  48T.01,Desc.,SP.TP.ADVANCED CONCRETE,3,6,TURAN ÖZTURAN,TThTh,534, ,M 2152 | M 1171 | M 1171,05.01.2019,1,,"                          "
+CE  492.01,Desc.,PROJECT,4,8,EMRE OTAY,FFF,123,,M 2152 | M 2152,29.12.2018,3,,"                          "
+CE  49G.01,Desc.,SP.TP. STUCTURAL TIMBER DESIGN,3,6,ARIO CECCOTTI,WWW,789,,M 1170 | M 1170 | M 1170,31.12.2018,1,,"                          "
+CE  502.01,Desc.,INTRODUCTION TO FINITE ELEMENTS,3,8,SERDAR SELAMET,MMM,91011,,M 1170 | M 1170 | M 1170,24.12.2018,3,,"                          "
+CE  503.01,Desc.,MATHEMATICAL METHODS IN ENGINEERING,4,10,CİHAN BAYINDIR,MMThTh,1212,,M 2152 | M 2152 | M 2180 | M 2180,26.12.2018,3,,"                          "
+CE  534.01,Desc.,DESIGNING WITH GEOSYNTHETICS,3,8,EROL GÜLER,MMM,789,,M 2200 | M 2200 | M 2200,07.01.2019,3,,"                          "
+CE  536.01,Desc.,SOIL IMPROVEMENT TECHNIQUES,3,8,GÖKHAN BAYKAL,WWW,8910,,M 1152 | M 1152 | M 1152,05.01.2019,2,,"                          "
+CE  544.01,Desc.,ADVANCED MATERIAL SCIENCE,3,8,NİLÜFER ÖZYURT,WWW,234,,M 1181 | M 1181 | M 1181,28.12.2018,3,,"                          "
+CE  555.01,Desc.,BEHAVIOR&DESIGN OF REINFORCED CONCRETE,3,8,KUTAY ORAKÇAL,WWW,234,,M 2231 | M 2231 | M 2231,05.01.2019,3,,"                          "
+CE  558.01,Desc.,ADVANCED REINFORCED CONCRETE,3,8,CENGİZ KARAKOÇ,ThThTh,789,,M 2170 | M 2170 | M 2170,07.01.2019,3,,"                          "
+CE  559.01,Desc.,STRUCTURAL DYNAMICS,3,8,HİLMİ LUŞ,TTT,123,,M 1170 | M 1170,28.12.2018,2,,"                          "
+CE  564.01,Desc.,ADVANCED TRAFFIC FLOW THEORY&CONTROL,3,8,ILGIN GÖKAŞAR,TTW,122,,M 3100 | M 3100 | M 3100,07.01.2019,2,,"                          "
+CE  573.01,Desc.,INNOVATION MANAGEMENT IN CONSTRUCTION,3,8,BELİZ ÖZORHON,TTT,567,,M 1152 | M 1152 | M 1152,27.12.2018,3,,"                          "
+CE  582.01,Desc.,SP.TOP.IN CE:SLOPE STAB.&STAB.METHODS,3,8,AYŞE EDİNÇLİLER,WWW,567,,M 1181 | M 1181 | M 1181,24.12.2018,3,,"                          "
+CE  587.01,Desc.,SP.TOP.IN CIVIL ENG:INTERMEDIATE FLUID M,3,8,CEM AVCI,MMW,783,,M 1152 | M 1152 | M 1170,03.01.2019,3,,"                          "
+CE  690.01,Desc.,M.S.THESIS,0,60,ATİLLA AKKOYUNLU,,,,,,,,"                          "
+CE  690.02,Desc.,M.S.THESIS,0,60,CEM AVCI,,,,,,,,"                          "
+CE  690.03,Desc.,M.S.THESIS,0,60,GÖKHAN BAYKAL,,,,,,,,"                          "
+CE  690.04,Desc.,M.S.THESIS,0,60,OSMAN BÖREKÇİ,,,,,,,,"                          "
+CE  690.05,Desc.,M.S.THESIS,0,60,ÖZER ÇİNİCİOĞLU,,,,,,,,"                          "
+CE  690.06,Desc.,M.S.THESIS,0,60,SEMRA ÇOMU,,,,,,,,"                          "
+CE  690.07,Desc.,M.S.THESIS,0,60,ILGIN GÖKAŞAR,,,,,,,,"                          "
+CE  690.08,Desc.,M.S.THESIS,0,60,EROL GÜLER,,,,,,,,"                          "
+CE  690.09,Desc.,M.S.THESIS,0,60,SAMİ AND KILIÇ,,,,,,,,"                          "
+CE  690.10,Desc.,M.S.THESIS,0,60,HİLMİ LUŞ,,,,,,,,"                          "
+CE  690.11,Desc.,M.S.THESIS,0,60,KUTAY ORAKÇAL,,,,,,,,"                          "
+CE  690.12,Desc.,M.S.THESIS,0,60,EMRE OTAY,,,,,,,,"                          "
+CE  690.13,Desc.,M.S.THESIS,0,60,BELİZ ÖZORHON,,,,,,,,"                          "
+CE  690.14,Desc.,M.S.THESIS,0,60,TURAN ÖZTURAN,,,,,,,,"                          "
+CE  690.15,Desc.,M.S.THESIS,0,60,NİLÜFER ÖZYURT,,,,,,,,"                          "
+CE  690.16,Desc.,M.S.THESIS,0,60,SERDAR SELAMET,,,,,,,,"                          "
+CE  690.17,Desc.,M.S.THESIS,0,60,SERDAR SOYÖZ,,,,,,,,"                          "
+CE  690.18,Desc.,M.S.THESIS,0,60,CEM YALÇIN                   ,,,,,,,,"                          "
+CE  699.01,Desc.,GUIDED RESEARCH,4,10,NİLÜFER ÖZYURT,,,,,,,,"                          "
+CE  790.01,Desc.,Ph.D. THESIS,0,120,ATİLLA AKKOYUNLU,,,,,,,,"                          "
+CE  790.02,Desc.,Ph.D. THESIS,0,120,CEM AVCI,,,,,,,,"                          "
+CE  790.03,Desc.,Ph.D. THESIS,0,120,GÖKHAN BAYKAL,,,,,,,,"                          "
+CE  790.04,Desc.,Ph.D. THESIS,0,120,OSMAN BÖREKÇİ,,,,,,,,"                          "
+CE  790.05,Desc.,Ph.D. THESIS,0,120,ÖZER ÇİNİCİOĞLU,,,,,,,,"                          "
+CE  790.06,Desc.,Ph.D. THESIS,0,120,SEMRA ÇOMU,,,,,,,,"                          "
+CE  790.07,Desc.,Ph.D. THESIS,0,120,ILGIN GÖKAŞAR,,,,,,,,"                          "
+CE  790.08,Desc.,Ph.D. THESIS,0,120,EROL GÜLER,,,,,,,,"                          "
+CE  790.09,Desc.,Ph.D. THESIS,0,120,SAMİ AND KILIÇ,,,,,,,,"                          "
+CE  790.10,Desc.,Ph.D. THESIS,0,120,HİLMİ LUŞ,,,,,,,,"                          "
+CE  790.11,Desc.,Ph.D. THESIS,0,120,KUTAY ORAKÇAL,,,,,,,,"                          "
+CE  790.12,Desc.,Ph.D. THESIS,0,120,EMRE OTAY,,,,,,,,"                          "
+CE  790.13,Desc.,Ph.D. THESIS,0,120,BELİZ ÖZORHON,,,,,,,,"                          "
+CE  790.14,Desc.,Ph.D. THESIS,0,120,TURAN ÖZTURAN,,,,,,,,"                          "
+CE  790.15,Desc.,Ph.D. THESIS,0,120,NİLÜFER ÖZYURT,,,,,,,,"                          "
+CE  790.16,Desc.,Ph.D. THESIS,0,120,SERDAR SELAMET,,,,,,,,"                          "
+CE  790.17,Desc.,Ph.D. THESIS,0,120,SERDAR SOYÖZ,,,,,,,,"                          "
+CE  790.18,Desc.,Ph.D. THESIS,0,120,CEM YALÇIN                   ,,,,,,,,"                          "
+ENGG110.01,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,WW,56,,M 3160 | M 3160,31.12.2018,1,,"                          "
+,,LAB,,,STAFF STAFF,WW,78,,,,0,,"                          "
+ENGG110.02,Desc.,ENGINEERING GRAPHICS,3,5,İLYAS İSTİF,FF,67,,M 3160 | M 3160,31.12.2018,1,,"                          "
+,,LAB,,,STAFF STAFF,FF,89,,,,0,,"                          "
+ENGG110.03,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,MM,45,,M 3160 | M 3160,31.12.2018,1,,"                          "
+,,LAB,,,STAFF STAFF,MM,67,,,,0,,"                          "

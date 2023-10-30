@@ -1,0 +1,85 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CE  101.01,Desc.,INTRODUCTION TO CIVIL ENGINEERING,3,6,SEMİH TEZCAN,FFF,678,,M 1100 | M 1100 | M 1100,07.01.2015,1,,"                          "
+CE  211.01,Desc.,MATERIALS SCIENCE,4,7,TURAN ÖZTURAN,TTTh,121,,M 2181 | M 2181 | M 2181,29.12.2014,2,,"                          "
+CE  211.02,Desc.,MATERIALS SCIENCE,4,7,NİLÜFER ÖZYURT,TTTh,121,,M 2171 | M 2171 | M 2200,29.12.2014,2,,"                          "
+CE  222.01,Desc.,INTRO. TO ENV. POLLUTION  CONTROL,3,7,ATİLLA AKKOYUNLU,MMM,678,,M 2170 | M 2170 | M 2170,25.12.2014,2,,"                          "
+CE  245.01,Desc.,MECHANICS,4,7,SAMİ AND KILIÇ,TTThTh,5656,,M 2171 | M 2171 | M 2200 | M 2200,10.01.2015,1,,"                          "
+CE  245.02,Desc.,MECHANICS,4,7,KUTAY ORAKÇAL,TTThTh,5656,,M 2200 | M 2200 | M 3120 | M 3120,10.01.2015,1,,"                          "
+CE  311.01,Desc.,FLUID MECHANICS,4,7,CEM AVCI,MMWW,1212,,M 2181 | M 2181 | M 2181 | M 2181,25.12.2014,3,,"                          "
+CE  311.02,Desc.,FLUID MECHANICS,4,7,EMRE OTAY,MMWW,1212,,M 3120 | M 3120 | M 1200 | M 1200,25.12.2014,3,,"                          "
+CE  331.01,Desc.,EARTH SCIENCES,3,5,GÖKHAN BAYKAL,ThTh,23,,M 2170 | M 2170,07.01.2015,2,,"                          "
+CE  331.02,Desc.,EARTH SCIENCES,3,5,GÖKHAN BAYKAL,ThTh,78,,,07.01.2015,2,,"                          "
+CE  353.01,Desc.,STEEL STRUCTURES  ,3,5,GÜLAY ALTAY,MMFF,6734,,M 2181 | M 2181 | M 2200 | M 2200,08.01.2015,3,,"                          "
+CE  353.02,Desc.,STEEL STRUCTURES  ,3,5,SERDAR SELAMET,MMFF,6734,,M 2230 | M 2230 | NH 404 | NH 404,08.01.2015,3,,"                          "
+CE  355.01,Desc.,STRUCTURAL ANALYSIS,4,6,SERDAR SOYÖZ,MMWW,3434,,M 2200 | M 2200 | M 3120 | M 3120,05.01.2015,1,,"                          "
+CE  355.02,Desc.,STRUCTURAL ANALYSIS,4,6,CEM YALÇIN                   ,MMWW,3434,,M 2171 | M 2171 | M 2180 | M 2180,05.01.2015,1,,"                          "
+CE  371.01,Desc.,NUMERICAL METHODS IN CIVIL ENGINEERING,3,5,CEM AVCI,MWW,589,,M 2181 | M 2200 | M 2200,,0,,"                          "
+CE  401.01,Desc.,CONSTRUCTION ENGINEERING & MANAGEMENT,3,5,BELİZ ÖZORHON,WThTh,456,,M 3100 | M 2170 | M 2170,,0,,"                          "
+CE  414.01,Desc.,INTRODUCTION TO COASTAL ENGINEERING,3,5,OSMAN BÖREKÇİ,TWW,667,,M 2181 | M 2200 | M 2200,,0,,"                          "
+CE  421.01,Desc.,ENVIRONMENTAL ENGINEERING ,3,6,ATİLLA AKKOYUNLU,MM,34,,M 2170 | M 2170,26.12.2014,1,,"                          "
+CE  431.01,Desc.,FOUNDATION ENGINEERING,4,7,EROL GÜLER,TTW,122,,M 1170 | M 1170 | M 2180,10.01.2015,2,,"                          "
+CE  461.01,Desc.,TRANSPORTATION SYSTEMS ENGINEERING,4,7,ILGIN GÖKAŞAR,TTW,343,,M 3100 | M 3100 | M 3100,27.12.2014,1,,"                          "
+CE  48G.01,Desc.,SP.TP.FINANCING CONSTRUCTION PROJECTS,3,5,SEMRA ÇOMU,MMW,898,,M 3120 | M 3120 | M 2152,03.01.2015,1,,"                          "
+CE  48H.01,Desc.,SP.TP.FUNDAMENTAL OF EQ ENG.,3,6,HİLMİ LUŞ,MMT,565,,M 2171 | M 2171 | M 2181,31.12.2014,1,,"                          "
+CE  492.01,Desc.,PROJECT,4,8,ERHAN KARAESMEN,FFF,678,,M 3120 | M 3120 | M 3120,,0,,"                          "
+CE  49F.01,Desc.,SP.TP.DEV.OF CONS.PRO.&INVESTMENT MAN.,3,5,MEHMET EMRE ÇAMLIBEL,FFF,123, ,M 3100 | M 3100 | M 3100,09.01.2015,2,,"                          "
+CE  503.01,Desc.,MATHEMATICAL METHODS IN ENGINEERING,4,10,ÜMİT DİKMEN,MMThTh,1212,,M 1100 | M 1100 | M 3100 | M 3100,30.12.2014,1,,"                          "
+CE  505.01,Desc.,APPLIED STOCHASTIC ANALYSIS&MODELING,3,8,EMRE OTAY,MMM,678,,M 2231 | M 2231 | M 2231,,0,,"                          "
+CE  531.01,Desc.,SOIL MECHANICS II,3,8,ÖZER ÇİNİCİOĞLU,TTT,123,,M 1181 | M 1181 | M 1181,10.01.2015,2,,"                          "
+CE  544.01,Desc.,ADVANCED MATERIAL SCIENCE,3,8,NİLÜFER ÖZYURT,WWW,234,,M 1152 | M 1152 | M 1152,05.01.2015,1,,"                          "
+CE  558.01,Desc.,ADVANCED REINFORCED CONCRETE,3,8,CENGİZ KARAKOÇ,ThThTh,789,,M 3100 | M 3100 | M 3100,09.01.2015,1,,"                          "
+CE  559.01,Desc.,STRUCTURAL DYNAMICS,3,8,HİLMİ LUŞ,TTT,123,,M 1200 | M 1200 | M 1200,29.12.2014,1,,"                          "
+CE  561.01,Desc.,TRANSPORTATION PLANNING AND MODELING,3,8,GÖKMEN ERGÜN,TTT,678,,M 1170 | M 1170 | M 1170,07.01.2015,1,,"                          "
+CE  564.01,Desc.,ADVANCED TRAFFIC FLOW THEORY&CONTROL,3,8,ILGIN GÖKAŞAR,TTW,122,,M 3100 | M 3100 | M 3100,27.12.2014,2,,"                          "
+CE  578.01,Desc.,PLAIN CONCRETE,3,8,TURAN ÖZTURAN,MMM,678,,M 1170 | M 1170 | M 1170,27.12.2014,1,,"                          "
+CE  582.01,Desc.,SP.TOP.IN CE:SLOPE STAB.&STAB.METHODS,3,8,AYŞE EDİNÇLİLER,WWW,567,,M 1152 | M 1152 | M 1152,07.01.2015,3,,"                          "
+CE  58A.01,Desc.,SP.TOP.IN CE:BEH.&DES. OF REINFORC.CONC.,3,8,KUTAY ORAKÇAL,WWW,234,,M 2231 | M 2231 | M 2231,27.12.2014,1,,"                          "
+CE  58C.01,Desc.,SP.TOP.IN CE:CONSTRUCTION PLAN.&SCHEDUL.,3,8,MEHMET SAİT CÜLFİK,StStSt,789,,,,0,,"                          "
+CE  58E.01,Desc.,SP.TOP.IN CE:STRUCTURAL RELIABILITY,3,8,SERDAR SOYÖZ,TTT,567,,M 1152 | M 1152 | M 1152,10.01.2015,1,,"                          "
+CE  58F.01,Desc.,SP.TP.:RISK MANAG.&DECISION ANALYSIS,3,8,SEMRA ÇOMU,TTT,8910,,M 2231 | M 2231 | M 2231,06.01.2015,1,,"                          "
+CE  58P.01,Desc.,SP.TP.STRUCTURAL FIRE SAFETY:THEORY&APP.,3,8,SERDAR SELAMET,MMM,91011,,M 2181 | M 2181 | M 2181,03.01.2015,1,,"                          "
+CE  59C.01,Desc.,SP.TP.IN CE BRIDGE ENGINEERING,3,8,CEM YALÇIN                   ,MMM,678,,M 1181 | M 1181 | M 1181,03.01.2015,1,,"                          "
+CE  59D.01,Desc.,SP.STUD.:ADV. METH.IN MESHLESS MODELLING,3,8,OSMAN BÖREKÇİ,TBA,,,,27.12.2014,3,,"                          "
+CE  690.01,Desc.,M.S.THESIS,0,60,ATİLLA AKKOYUNLU,TBA,,,,,0,,"                          "
+CE  690.02,Desc.,M.S.THESIS,0,60,GÜLAY ALTAY,TBA,,,,,0,,"                          "
+CE  690.03,Desc.,M.S.THESIS,0,60,CEM AVCI,TBA,,,,,0,,"                          "
+CE  690.04,Desc.,M.S.THESIS,0,60,GÖKHAN BAYKAL,TBA,,,,,0,,"                          "
+CE  690.05,Desc.,M.S.THESIS,0,60,OSMAN BÖREKÇİ,TBA,,,,,0,,"                          "
+CE  690.06,Desc.,M.S.THESIS,0,60,ÖZER ÇİNİCİOĞLU,TBA,,,,,0,,"                          "
+CE  690.07,Desc.,M.S.THESIS,0,60,ILGIN GÖKAŞAR,TBA,,,,,0,,"                          "
+CE  690.08,Desc.,M.S.THESIS,0,60,EROL GÜLER,TBA,,,,,0,,"                          "
+CE  690.09,Desc.,M.S.THESIS,0,60,SAMİ AND KILIÇ,TBA,,,,,0,,"                          "
+CE  690.10,Desc.,M.S.THESIS,0,60,HİLMİ LUŞ,TBA,,,,,0,,"                          "
+CE  690.11,Desc.,M.S.THESIS,0,60,KUTAY ORAKÇAL,TBA,,,,,0,,"                          "
+CE  690.12,Desc.,M.S.THESIS,0,60,EMRE OTAY,TBA,,,,,0,,"                          "
+CE  690.13,Desc.,M.S.THESIS,0,60,BELİZ ÖZORHON,TBA,,,,,0,,"                          "
+CE  690.14,Desc.,M.S.THESIS,0,60,TURAN ÖZTURAN,TBA,,,,,0,,"                          "
+CE  690.15,Desc.,M.S.THESIS,0,60,NİLÜFER ÖZYURT,TBA,,,,,0,,"                          "
+CE  690.16,Desc.,M.S.THESIS,0,60,SERDAR SELAMET,TBA,,,,,0,,"                          "
+CE  690.17,Desc.,M.S.THESIS,0,60,SERDAR SOYÖZ,TBA,,,,,0,,"                          "
+CE  690.18,Desc.,M.S.THESIS,0,60,CEM YALÇIN                   ,TBA,,,,,0,,"                          "
+CE  690.19,Desc.,M.S.THESIS,0,60,AYŞE EDİNÇLİLER,TBA,,,,,0,,"                          "
+CE  690.20,Desc.,M.S.THESIS,0,60,SEMRA ÇOMU,TBA,,,,,0,,"                          "
+CE  790.01,Desc.,Ph.D. THESIS,0,120,ATİLLA AKKOYUNLU,TBA,,,,,0,,"                          "
+CE  790.02,Desc.,Ph.D. THESIS,0,120,GÜLAY ALTAY,TBA,,,,,0,,"                          "
+CE  790.03,Desc.,Ph.D. THESIS,0,120,CEM AVCI,TBA,,,,,0,,"                          "
+CE  790.04,Desc.,Ph.D. THESIS,0,120,GÖKHAN BAYKAL,TBA,,,,,0,,"                          "
+CE  790.05,Desc.,Ph.D. THESIS,0,120,OSMAN BÖREKÇİ,TBA,,,,,0,,"                          "
+CE  790.06,Desc.,Ph.D. THESIS,0,120,ÖZER ÇİNİCİOĞLU,TBA,,,,,0,,"                          "
+CE  790.07,Desc.,Ph.D. THESIS,0,120,ILGIN GÖKAŞAR,TBA,,,,,0,,"                          "
+CE  790.08,Desc.,Ph.D. THESIS,0,120,EROL GÜLER,TBA,,,,,0,,"                          "
+CE  790.09,Desc.,Ph.D. THESIS,0,120,SAMİ AND KILIÇ,TBA,,,,,0,,"                          "
+CE  790.10,Desc.,Ph.D. THESIS,0,120,HİLMİ LUŞ,TBA,,,,,0,,"                          "
+CE  790.11,Desc.,Ph.D. THESIS,0,120,KUTAY ORAKÇAL,TBA,,,,,0,,"                          "
+CE  790.12,Desc.,Ph.D. THESIS,0,120,EMRE OTAY,TBA,,,,,0,,"                          "
+CE  790.13,Desc.,Ph.D. THESIS,0,120,BELİZ ÖZORHON,TBA,,,,,0,,"                          "
+CE  790.14,Desc.,Ph.D. THESIS,0,120,TURAN ÖZTURAN,TBA,,,,,0,,"                          "
+CE  790.15,Desc.,Ph.D. THESIS,0,120,NİLÜFER ÖZYURT,TBA,,,,,0,,"                          "
+CE  790.16,Desc.,Ph.D. THESIS,0,120,SERDAR SELAMET,TBA,,,,,0,,"                          "
+CE  790.17,Desc.,Ph.D. THESIS,0,120,SERDAR SOYÖZ,TBA,,,,,0,,"                          "
+CE  790.18,Desc.,Ph.D. THESIS,0,120,CEM YALÇIN                   ,TBA,,,,,0,,"                          "
+CE  790.19,Desc.,Ph.D. THESIS,0,120,AYŞE EDİNÇLİLER,TBA,,,,,0,,"                          "
+CE  790.20,Desc.,Ph.D. THESIS,0,120,SEMRA ÇOMU,TBA,,,,,0,,"                          "
+ENGG110.01,Desc.,ENGINEERING GRAPHICS,3,5,İREM EREZ,WWW,678,,M 3160 | M 3160 | M 3160,29.12.2014,3,CE,"                          "
+ENGG110.02,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,TTT,678,,M 3160 | M 3160 | M 3160,29.12.2014,3,CHE,"                          "
+ENGG110.03,Desc.,ENGINEERING GRAPHICS,3,5,İLYAS İSTİF,FFF,678,,M 3160 | M 3160 | M 3160,29.12.2014,3,,"                          "

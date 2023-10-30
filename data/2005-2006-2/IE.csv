@@ -1,0 +1,29 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+IE  202.01,Desc.,OPERATIONS RESEARCH I:LINEAR MODELS,4,6,İLHAN OR,TWWFF,57867,,M 2230 | M 2230 | M 2230 | M 2230 | M 2230,,,,"                          "
+IE  256.01,Desc.,STATISTICS FOR INDUSTRIAL ENGINEERS,3,5,MUSTAFA NECATİ ARAS,MTThTh,5212,,M 2180 | M 2230 | M 2230 | M 2230,,,,"                          "
+IE  304.01,Desc.,OPERATIONS RESEARCH III:STOCHASTIC MOD.,4,6,AYBEK KORUGAN,MTTThTh,16778,,M 2230 | M 3100 | M 3100 | M 2230 | M 2230,,,,"                          "
+IE  306.01,Desc.,SYSTEMS SIMULATION,4,6,WOLFGANG HOERMANN,TTWFF,78123,,M 2230 | M 2230 | M 2230 | M 2230 | M 2230,,,,"                          "
+IE  312.01,Desc.,FACILITIES DESIGN & PLANNING,4,6,ÜMİT BİLGE,TTWThTh,34634,,M 3120 | M 3120 | M 2230 | M 2230 | M 2230,,,,"                          "
+IE  320.01,Desc.,MATERIALS & PROCESSES IN MANUFACTURING,3,5,KEMAL BERKKAN,MMM,789,,M 2230 | M 2230 | M 2230,,,,"                          "
+IE  341.01,Desc.,ENGINEERING ECONOMICS,4,5,DAVİD PİNHAS,WThThFF,25645,,M 2230 | M 2181 | M 2181 | M 2230 | M 2230,,,,"                          "
+IE  414.01,Desc.,COMPUTER INTEGRATED MANUFACTURING SYSTEM,3,6,ÜMİT BİLGE,MMWW,3434,,M 2180 | M 2180 | M 3120 | M 3120,,,,"                          "
+IE  443.01,Desc.,ENGINEERING INVESTMENT DECISIONS,3,6,DAVİD PİNHAS,WWF,347,,M 2181 | M 2181,,,,"                          "
+IE  461.01,Desc.,ENERGY POLICY & PLANNING,3,6,GÜRKAN KUMBAROĞLU,FFF,123,,M 2181 | M 2181 | M 2181,,,,"                          "
+IE  480.01,Desc.,SP.TOP.:CASE STUDIES IN IE,3,6,GÜRKAN KUMBAROĞLU,TTT,8910,,,,,,"                          "
+IE  487.01,Desc.,SP.TOP.:WORK METHODS ANALYSIS,3,6,MAHMUT EKŞİOĞLU,FFF,456,,M 3120 | M 3120 | M 3120,,,,"                          "
+IE  488.01,Desc.,SP.TOP.:FORECASTING,3,6,REFİK GÜLLÜ,TFF,223,,M 2171 | M 2171 | M 2171,,,,"                          "
+IE  48A.01,Desc.,SP.TOP.:STRATEGIC MANAGEMENT,3,6,LÜTFİ ENSARİ,WWW,789,,M 3100 | M 3100 | M 3100,,,,"                          "
+IE  492.01,Desc.,PROJECT,4,8,REFİK GÜLLÜ,TBA,,,,,,,"                          "
+IE  506.01,Desc.,STATISTICAL DATA ANALYSIS,3,7,ALİ RIZA KAYLAN,MMThTh,3434,,M 3120 | M 3120 | M 3120 | M 3120,,,,"                          "
+IE  516.01,Desc.,COMBINATORIAL OPTIMIZATION,3,7,KUBAN ALTINEL,MMTT,1212,,M 2203 | M 2203 | M 2203 | M 2203,,,,"                          "
+IE  542.01,Desc.,MANUFACTURING INFORMATION SYSTEMS,3,7,ALİ TAMER ÜNAL,ThThTh,8910,,M 2200 | M 2200 | M 2200,,,,"                          "
+IE  544.01,Desc.,DECISION ANALYSIS,3,7,TANER BİLGİÇ,MThTh,512,,M 3120 | M 2200 | M 2200,,,,"                          "
+IE  579.01,Desc.,GRADUATE SEMINAR,0,2,MUSTAFA NECATİ ARAS,WWW,789,,,,,,"                          "
+IE  582.01,Desc.,SP.TOP.IN MANUFACTURING SYSTEMS ENG.,3,7,AYBEK KORUGAN,MWW,656,,M 2203 | M 2231 | M 2231,,,,"                          "
+IE  585.01,Desc.,SP.TOP.IN OPTIMIZATION,3,7,KUBAN ALTINEL,TBA,,,,,,,"                          "
+IE  587.01,Desc.,SP.TOP.IN OPTIMAL CONTROL THEORY,3,7,MUSTAFA AKAN,FFF,789,,M 2203 | M 2203 | M 2203,,,,"                          "
+IE  589.01,Desc.,SP.TOP.IN IE: INVENTORY THEORY ,3,7,TANER BİLGİÇ,TTT,456,,M 2231 | M 2231 | M 2231,,,,"                          "
+IE  602.01,Desc.,DYNAMIC SYSTEMS MODELING & ANALYSIS,3,7,YAMAN BARLAS,TThTh,356,, | M 1181 | M 1181,,,,"                          "
+IE  624.01,Desc.,SCHEDULING & SEQUENCING,3,7,ALİ TAMER ÜNAL,TTT,789,,M 2231 | M 2231 | M 2231,,,,"                          "
+IE  690.01,Desc.,M.S. THESIS,0,60,KUBAN ALTINEL,TBA,,,,,,,"                          "
+IE  790.01,Desc.,Ph.D. THESIS,0,120,KUBAN ALTINEL,TBA,,,,,,,"                          "

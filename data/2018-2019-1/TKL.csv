@@ -1,0 +1,53 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PER 201.01,Desc.,PERSIAN I,3,5,ÜMRAN AY,ThThTh,123,,NB Z10 | NB Z10 | NB Z10,27.12.2018,1,,"                          "
+TKF 111.01,Desc.,ELEMENTARY TURKISH FOR  FOREIGNERS I,4,6,N. ELİF ULUĞ,MTTW,3343,,NB Z13 | NB B10 | NB B10 | NB B10,20.12.2018,1,,"                          "
+TKF 112.01,Desc.,ELEMENTARY TURKISH FOR FOREIGNERS II,4,6,AYDIN SÖYLEMEZ,MMFF,7878,,NB Z10 | NB Z10 | NB Z11 | NB Z11,20.12.2018,2,,"                          "
+TKF 211.01,Desc.,INTERMEDIATE TURKISH FOR FOREIGNERS I,4,6,Z.CEYDA ARSLAN,MMWTh,5654,,NB Z10 | NB Z10 | NB Z12 | NB Z13,20.12.2018,1,,"                          "
+TKF 212.01,Desc.,INTERMEDIATE TURKISH FOR FOREIGNERS II,4,6,Z.CEYDA ARSLAN,MWThTh,4656,,NB Z10 | NB Z12 | NB Z13 | NB Z13,21.12.2018,2,,"                          "
+TKF 217.01,Desc.,INTERMEDIATE READING IN TURKISH I,3,6,N. ELİF ULUĞ,TTW,674,,NB Z12 | NB Z12 | NB B10,21.12.2018,1,,"                          "
+TKF 315.01,Desc.,ADVANCED TURKISH GRAM. FOR FOREIGNERS I,3,5,N. ELİF ULUĞ,MWW,578,,NB Z13 | NB B10 | NB B10,20.12.2018,1,,"                          "
+TKF 317.01,Desc.,ADV. READING IN TURKISH FOR FOREIGNERS I,3,6,N. ELİF ULUĞ,MWW,456,,NB Z13 | NB B10 | NB B10,20.12.2018,2,,"                          "
+TKL 101.01,Desc.,OTTOMAN TURKISH I,4,6,NAZLI İPEK HÜNER,TTThTh,3456,,NB 119 | NB 119 | M 1100 | M 1100,03.01.2019,3,HIST,"                          "
+TKL 101.02,Desc.,OTTOMAN TURKISH I,4,6,NAZLI İPEK HÜNER,TTThTh,7889,,NH 203 | NH 203 | M 1170 | M 1170,03.01.2019,3,,"                          "
+TKL 102.01,Desc.,OTTOMAN TURKISH II,4,6,ZEYNEP OKTAY,MMWW,3434,,M 1100 | M 1100 | M 3100 | M 3100,03.01.2019,3,,"                          "
+TKL 103.01,Desc.,TURKISH LANGUAGE & GRAMMAR I,3,5,Z.CEYDA ARSLAN,MWTh,222,,NB Z10 | NB Z13 | NB Z13,28.12.2018,3,,"                          "
+TKL 103.02,Desc.,TURKISH LANGUAGE & GRAMMAR I,3,5,Z.CEYDA ARSLAN,MWTh,333,,NB Z10 | NB Z13 | NB Z13,28.12.2018,3,,"                          "
+TKL 107.01,Desc.,INTRODUCTION TO TEXTUAL ANALYSIS,3,5,HALİM KARA,TTTh,564,,NB Z11 | NB Z11 | NB Z11,04.01.2019,2,,"                          "
+TKL 201.01,Desc.,RESEARCH METHODS IN TURKISH LITERATURE,3,4,VEYSEL ÖZTÜRK,MTT,678,,M 1170 | NB 119 | NB 119,24.12.2018,2,,"                          "
+TKL 204.01,Desc.,GENRES IN DIVAN LITERATURE,3,6,FATMA BÜYÜKKARCI YILMAZ,TFF,234,,NB 119 | NB Z13 | NB Z13,02.01.2019,2,,"                          "
+TKL 211.01,Desc.,MODERNIZATION IN TURKISH LITERATURE I,3,6,VEYSEL ÖZTÜRK,TThTh,556,,M 1170 | M 2170 | M 2170,27.12.2018,3,,"                          "
+TKL 213.01,Desc.,TURKIC LANGUAGES & DIALECTS I,3,5,MEHMET ÖLMEZ,MMM,789,,EF 104 | EF 104 | EF 104,03.01.2019,1,,"                          "
+TKL 215.01,Desc.,OTTOMAN PALEOGRAPHY I,3,5,HASAN KARATAŞ,FFF,234,,NB 119 | NB 119 | NB 119,04.01.2019,1,HIST,"                          "
+TKL 301.01,Desc.,LITERARY THEORY & PRACTICAL CRITICISM I,3,5,HALİM KARA,TWW,234,,NB Z11 | NB Z12 | NB Z12,29.12.2018,1,,"                          "
+TKL 309.01,Desc.,TURKISH POETRY IN THE REPUBLICAN PERIOD,3,4,VEYSEL ÖZTÜRK,MMTh,348,,M 1170 | M 1170 | NB Z11,31.12.2018,1,,"                          "
+TKL 311.01,Desc.,TURKISH FOLK LITERATURE I,3,4,FETHİYE MELTEM TÜRKÖZ,ThThTh,567,,NB Z11 | NB Z11 | NB Z11,25.12.2018,3,,"                          "
+TKL 313.01,Desc.,DIVAN LITERATURE I,3,6,TÜLAY GENÇTÜRK DEMİRCİOĞLU,MThTh,634,,NB Z11 | NB Z12 | NB Z12,04.01.2019,2,,"                          "
+TKL 409.01,Desc.,PROSE IN OLD TURKISH LITERATURE,3,5,TÜLAY GENÇTÜRK DEMİRCİOĞLU,WWTh,786,,NB 119 | NB 119 | NB Z12,22.12.2018,1,,"                          "
+TKL 414.01,Desc.,TANZİMAT NOVEL,3,5,EROL KÖROĞLU,MWW,556,,NB 119 | NB Z13 | NB Z13,05.01.2019,1,,"                          "
+TKL 433.01,Desc.,SHORT STORY IN MODERN TURKISH LITERATURE,3,5,ZEYNEP UYSAL,TTW,343,,NB Z11 | NB Z11 | NB Z10,26.12.2018,2,,"                          "
+TKL 477.01,Desc.,GEN&SEX. IN ORIENTALIST OCCIDENTAL.TEXTS,3,6,EROL KÖROĞLU,TTW,782,,NB Z13 | NB Z13 | NB Z12,07.01.2019,1,,"                          "
+TKL 501.01,Desc.,CLASSICS OF DIVAN LITERATURE,3,10,ZEHRA TOSKA,,,,,03.01.2019,2,,"                          "
+TKL 501.02,Desc.,CLASSICS OF DIVAN LITERATURE,3,10,FATMA BÜYÜKKARCI YILMAZ,,,,,03.01.2019,2,,"                          "
+TKL 503.01,Desc.,OTTOMAN TURKISH READING SKILLS I,3,8,FATMA BÜYÜKKARCI YILMAZ,,,,,28.12.2018,2,,"                          "
+TKL 506.01,Desc.,CHAGATAY LITERATURE,3,8,TÜLAY GENÇTÜRK DEMİRCİOĞLU,,,,,05.01.2019,2,,"                          "
+TKL 530.01,Desc.,DISCIPLINARY FEATURES OF TURKISH LIT.,3,10,EROL KÖROĞLU,,,,,27.12.2018,3,,"                          "
+TKL 579.01,Desc.,GRADUATE SEMINAR,0,6,EROL KÖROĞLU,,,,,,,,"                          "
+TKL 688.01,Desc.,SP.TP.LITER.HIST.IN TURKISH LITERATURE,4,10,HALİM KARA,ThThThTh,6789,,,03.01.2019,3,,"                          "
+TKL 690.01,Desc.,MASTER THESIS,0,60,NUR  GÜRANİ ARSLAN,,,,,,,,"                          "
+TKL 690.02,Desc.,MASTER THESIS,0,60,ZEYNEP SABUNCU,,,,,,,,"                          "
+TKL 690.03,Desc.,MASTER THESIS,0,60,FATMA BÜYÜKKARCI YILMAZ,,,,,,,,"                          "
+TKL 690.04,Desc.,MASTER THESIS,0,60,HALİM KARA,,,,,,,,"                          "
+TKL 690.05,Desc.,MASTER THESIS,0,60,ZEYNEP UYSAL,,,,,,,,"                          "
+TKL 690.06,Desc.,MASTER THESIS,0,60,TÜLAY GENÇTÜRK DEMİRCİOĞLU,,,,,,,,"                          "
+TKL 690.07,Desc.,MASTER THESIS,0,60,EROL KÖROĞLU,,,,,,,,"                          "
+TKL 690.08,Desc.,MASTER THESIS,0,60,OLCAY AKYILDIZ,,,,,,,,"                          "
+TKL 690.09,Desc.,MASTER THESIS,0,60,VEYSEL ÖZTÜRK,,,,,,,,"                          "
+TKL 790.01,Desc.,DISSERTATION,0,120,NUR  GÜRANİ ARSLAN,,,,,,,,"                          "
+TKL 790.02,Desc.,DISSERTATION,0,120,ZEYNEP SABUNCU,,,,,,,,"                          "
+TKL 790.03,Desc.,DISSERTATION,0,120,FATMA BÜYÜKKARCI YILMAZ,,,,,,,,"                          "
+TKL 790.04,Desc.,DISSERTATION,0,120,HALİM KARA,,,,,,,,"                          "
+TKL 790.05,Desc.,DISSERTATION,0,120,ZEYNEP UYSAL,,,,,,,,"                          "
+TKL 790.06,Desc.,DISSERTATION,0,120,TÜLAY GENÇTÜRK DEMİRCİOĞLU,,,,,,,,"                          "
+TKL 790.07,Desc.,DISSERTATION,0,120,EROL KÖROĞLU,,,,,,,,"                          "
+TKL 790.08,Desc.,DISSERTATION,0,120,OLCAY AKYILDIZ,,,,,,,,"                          "
+TKL 790.09,Desc.,DISSERTATION,0,120,VEYSEL ÖZTÜRK,,,,,,,,"                          "

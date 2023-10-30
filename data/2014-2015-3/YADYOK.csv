@@ -1,0 +1,51 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+FR  101.01,Desc.,ELEMENTARY FRENCH I,3,7,ULAŞ AKARSU,MMTTWWThThFF,3434343434,,KPARK7 | KPARK7 | NH 104 | NH 104 | YD 03 | YD 03 | M 1181 | M 1181 | NH 201 | NH 201,07.08.2015,2,,"                          "
+FR  101.02,Desc.,ELEMENTARY FRENCH I,3,7,ERHAN KAYAALP,MMTTWWThThFF,5656565656,,M 1100 | M 1100 | NH 203 | NH 203 | ETA 1 | ETA 1 | NH 203 | NH 203 | M 2181 | M 2181,07.08.2015,2,,"                          "
+FR  101.03,Desc.,ELEMENTARY FRENCH I,3,7,ERHAN KAYAALP,MMTTWWThThFF,7878787878,,M 1100 | M 1100 | NH 203 | NH 203 | ETA 1 | ETA 1 | NH 203 | NH 203 | M 2181 | M 2181,07.08.2015,2,,"                          "
+FR  102.01,Desc.,ELEMENTARY FRENCH II,3,7,ASLI TARKAN KALAYCIOĞLU,MMTTWWThThFF,3434343434,,KPARK3 | KPARK3 | KPARK7 | KPARK7 | N/A | N/A | KPARK7 | KPARK7 | KPARK7 | KPARK7,07.08.2015,1,,"                          "
+FR  102.02,Desc.,ELEMENTARY FRENCH II,3,7,ASLI TARKAN KALAYCIOĞLU,MMTTWWThThFF,1212121212,,KPARK3 | KPARK3 | KPARK7 | KPARK7 | N/A | N/A | KPARK7 | KPARK7 | KPARK7 | KPARK7,07.08.2015,1,,"                          "
+FR  201.01,Desc.,INTERMEDIATE FRENCH I,3,7,SİNEM ÇAKMAK,MMTTWWThThFF,3434343434,,KPARK9 | KPARK9 | ETA 1 | ETA 1 | KYD 117 | KYD 117 | KPARK5 | KPARK5 | NH 202 | NH 202,07.08.2015,2,,"                          "
+FR  202.01,Desc.,INTERMEDIATE FRENCH II,3,7,ULAŞ AKARSU,MMTTWWThThFF,1212121212,,KPARK7 | KPARK7 | NH 104 | NH 104 | YD 03 | YD 03 | M 1181 | M 1181 | NH 201 | NH 201,07.08.2015,1,,"                          "
+GER 101.01,Desc.,ELEMENTARY GERMAN I,3,7,ŞEHNAZ KARAATLI,MMTTWWThThFF,1212121212,,KPARK5 | KPARK5 | KYD 117 | KYD 117 | KYD 117 | KYD 117 | KPARK6 | KPARK6 | KYD 117 | KYD 117,08.08.2015,1,,"                          "
+GER 101.02,Desc.,ELEMENTARY GERMAN I,3,7,AYLİN IŞIL BÖLKÜR,MMTTWWThThFF,5656565656,,KYD 110 | KYD 110 | KYD 110 | KYD 110 | KYD 111 | KYD 111 | KYD 110 | KYD 110 | NH 402 | NH 402,08.08.2015,1,,"                          "
+GER 101.03,Desc.,ELEMENTARY GERMAN I,3,7,ŞEHNAZ KARAATLI,MMTTWWThThFF,3434343434,,KPARK5 | KPARK5 | KYD 117 | KYD 117 | KYD 117 | KYD 117 | KPARK6 | KPARK6 | KYD 117 | KYD 117,08.08.2015,1,,"                          "
+GER 102.01,Desc.,ELEMENTARY GERMAN II,3,7,MÜJGAN ŞAHİNOĞLU,MMTTWWThThFF,3434343434,,KPARK6 | KPARK6 | ETA 2 | ETA 2 | KYD 118 | KYD 118 | KPARK8 | KPARK8 | NH 102 | NH 102,08.08.2015,3,,"                          "
+GER 102.02,Desc.,ELEMENTARY GERMAN II,3,7,MÜJGAN ŞAHİNOĞLU,MMTTWWThThFF,5656565656,,KPARK6 | KPARK6 | ETA 2 | ETA 2 | KYD 118 | KYD 118 | KPARK8 | KPARK8 | NH 102 | NH 102,08.08.2015,3,,"                          "
+GER 201.01,Desc.,PRE-INTERMEDIATE GERMAN I,3,7,AYLİN IŞIL BÖLKÜR,MMTTWWThThFF,1212121212,,KYD 110 | KYD 110 | KYD 110 | KYD 110 | KYD 111 | KYD 111 | KYD 110 | KYD 110 | NH 402 | NH 402,07.08.2015,2,,"                          "
+GER 201.02,Desc.,PRE-INTERMEDIATE GERMAN I,3,7,AYLİN IŞIL BÖLKÜR,MMTTWWThThFF,3434343434,,KYD 110 | KYD 110 | KYD 110 | KYD 110 | KYD 111 | KYD 111 | KYD 110 | KYD 110 | NH 402 | NH 402,07.08.2015,2,,"                          "
+GER 202.01,Desc.,PRE-INTERMEDIATE GERMAN II,3,7,BİGE KOLUKISA İNELMEN,MMTTWWThThFF,1212121212,,KYD 111 | KYD 111 | KYD 111 | KYD 111 | KYD 121 | KYD 121 | KYD 111 | KYD 111 | KYD 111 | KYD 111,06.08.2015,4,,"                          "
+GER 301.01,Desc.,INTERMEDIATE GERMAN I,3,7,BİGE KOLUKISA İNELMEN,MMTTWWThThFF,3434343434,,KYD 111 | KYD 111 | KYD 111 | KYD 111 | KYD 121 | KYD 121 | KYD 111 | KYD 111 | KYD 111 | KYD 111,08.08.2015,4,,"                          "
+GER 302.01,Desc.,INTERMEDIATE GERMAN II,3,7,ŞEHNAZ KARAATLI,MMTTWWThThFF,5656565656,,KPARK5 | KPARK5 | KYD 117 | KYD 117 | KYD 117 | KYD 117 | KPARK6 | KPARK6 | KYD 117 | KYD 117,06.08.2015,1,,"                          "
+SFL 13A.01,Desc.,PROGRAM 1 SUMMER A,,,PINAR DEMİRCİ,,,,,,0,,"                          "
+SFL 13A.02,Desc.,PROGRAM 1 SUMMER A,,,ZAFER YAVAŞ,,,,,,0,,"                          "
+SFL 13A.03,Desc.,PROGRAM 1 SUMMER A,,,HÜLYA ERSOY,,,,,,0,,"                          "
+SFL 13A.04,Desc.,PROGRAM 1 SUMMER A,,,ELİF TÜRKOĞLU,,,,,,0,,"                          "
+SFL 13A.05,Desc.,PROGRAM 1 SUMMER A,,,FATMA BAYRAM,,,,,,0,,"                          "
+SFL 13A.06,Desc.,PROGRAM 1 SUMMER A,,,FUAT ÖZKUL,,,,,,0,,"                          "
+SFL 13A.07,Desc.,PROGRAM 1 SUMMER A,,,HATİCE EBRU ATAÇ,,,,,,0,,"                          "
+SFL 13A.08,Desc.,PROGRAM 1 SUMMER A,,,AYŞE GİZEM BAYDAROL (DORA),,,,,,0,,"                          "
+SFL 13A.09,Desc.,PROGRAM 1 SUMMER A,,,NİL KURTULAN DEMİREL,,,,,,0,,"                          "
+SFL 13A.10,Desc.,PROGRAM 1 SUMMER A,,,BÜŞRA AYÇA KARAMAN,,,,,,0,,"                          "
+SFL 13A.11,Desc.,PROGRAM 1 SUMMER A,,,ESER GÜLABİ,,,,,,0,,"                          "
+SFL 13B.01,Desc.,PROGRAM 1 SUMMER B,,,SAMİ BATOK,,,,,,0,,"                          "
+SFL 13B.02,Desc.,PROGRAM 1 SUMMER B,,,SAMİ BATOK,,,,,,0,,"                          "
+SFL 13B.03,Desc.,PROGRAM 1 SUMMER B,,,VASFİYE GEÇKİN,,,,,,0,,"                          "
+SFL 13B.04,Desc.,PROGRAM 1 SUMMER B,,,ELİF TÜRKOĞLU,,,,,,0,,"                          "
+SFL 13B.05,Desc.,PROGRAM 1 SUMMER B,,,VASFİYE GEÇKİN,,,,,,0,,"                          "
+SFL 13B.06,Desc.,PROGRAM 1 SUMMER B,,,FUAT ÖZKUL,,,,,,0,,"                          "
+SFL 13B.07,Desc.,PROGRAM 1 SUMMER B,,,HATİCE EBRU ATAÇ,,,,,,0,,"                          "
+SFL 13B.08,Desc.,PROGRAM 1 SUMMER B,,,DENİZ SAVAŞAL ATLI,,,,,,0,,"                          "
+SFL 13B.09,Desc.,PROGRAM 1 SUMMER B,,,DENİZ SAVAŞAL ATLI,,,,,,0,,"                          "
+SFL 13B.10,Desc.,PROGRAM 1 SUMMER B,,,HÜRMÜZ TELÇEKER,,,,,,0,,"                          "
+SFL 13B.11,Desc.,PROGRAM 1 SUMMER B,,,HÜRMÜZ TELÇEKER,,,,,,0,,"                          "
+SFL 23A.01,Desc.,PROGRAM 2 SUMMER A,,,İNCİ KARTAL,,,,,,0,,"                          "
+SFL 23A.02,Desc.,PROGRAM 2 SUMMER A,,,GÜLAY TAŞSEVEN,,,,,,0,,"                          "
+SFL 23A.03,Desc.,PROGRAM 2 SUMMER A,,,İNAYET DENİZ ÖZGÖRGÜLÜ,,,,,,0,,"                          "
+SFL 23A.04,Desc.,PROGRAM 2 SUMMER A,,,SEÇİL BARAN,,,,,,0,,"                          "
+SFL 23B.01,Desc.,PROGRAM 2 SUMMER B,,,ZEYNEP AKBAŞ,,,,,,0,,"                          "
+SFL 23B.02,Desc.,PROGRAM 2 SUMMER B,,,ZEYNEP AKBAŞ,,,,,,0,,"                          "
+SFL 23B.03,Desc.,PROGRAM 2 SUMMER B,,,NİL KURTULAN DEMİREL,,,,,,0,,"                          "
+SFL 23B.04,Desc.,PROGRAM 2 SUMMER B,,,BÜŞRA AYÇA KARAMAN,,,,,,0,,"                          "
+SPA 101.01,Desc.,ELEMENTARY SPANISH I,3,7,MERYEM ARIKAN,MMTTWWThThFF,3434343434,,KPARK4 | KPARK4 | NH 404 | NH 404 | KYD 210 | KYD 210 | KPARK4 | KPARK4 | KYD 117 | KYD 117,06.08.2015,1,,"                          "
+SPA 101.02,Desc.,ELEMENTARY SPANISH I,3,7,MERYEM ARIKAN,MMTTWWThThFF,5656565656,,KPARK4 | KPARK4 | NH 404 | NH 404 | KYD 210 | KYD 210 | KPARK4 | KPARK4 | KYD 117 | KYD 117,06.08.2015,1,,"                          "
+SPA 102.01,Desc.,ELEMENTARY SPANISH II,3,7,MERYEM ARIKAN,MMTTWWThThFF,7878787878,,KPARK4 | KPARK4 | NH 404 | NH 404 | KYD 210 | KYD 210 | KPARK4 | KPARK4 | KYD 117 | KYD 117,08.08.2015,4,,"                          "

@@ -1,0 +1,66 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+TK  121.01,Desc.,TURKISH,2,3,N. ELİF ULUĞ,TT,23,,,,,,"                          "
+TK  121.02,Desc.,TURKISH,2,3,N. ELİF ULUĞ,TT,45,,,,,,"                          "
+TK  121.03,Desc.,TURKISH,2,3,N. ELİF ULUĞ,TT,67,,,,,,"                          "
+TK  121.04,Desc.,TURKISH,2,3,BİLGE BAYDAN,FF,23,,,,,,"                          "
+TK  121.05,Desc.,TURKISH,2,3,BİLGE BAYDAN,FF,45,,,,,,"                          "
+TK  121.06,Desc.,TURKISH,2,3,BİLGE BAYDAN,FF,67,,,,,,"                          "
+TK  221.01,Desc.,TURKISH I,2,3,SEVİNÇ ERGİYDİREN,,, ,,,,,"                          "
+TK  221.02,Desc.,TURKISH I,2,3,SEVİNÇ ERGİYDİREN,,, ,,,,,"                          "
+TK  221.03,Desc.,TURKISH I,2,3,SEVİNÇ ERGİYDİREN,,, ,,,,,"                          "
+TK  221.04,Desc.,TURKISH I,2,3,N. ELİF ULUĞ,,, ,,,,,"                          "
+TK  221.05,Desc.,TURKISH I,2,3,N. ELİF ULUĞ,,, ,,,,,"                          "
+TK  221.06,Desc.,TURKISH I,2,3,N. ELİF ULUĞ,,, ,,,,,"                          "
+TK  221.07,Desc.,TURKISH I,2,3,ASUMAN YILGÖR,,, ,,,,,"                          "
+TK  221.08,Desc.,TURKISH I,2,3,ASUMAN YILGÖR,,, ,,,,,"                          "
+TK  221.09,Desc.,TURKISH I,2,3,ASUMAN YILGÖR,,, ,,,,,"                          "
+TK  221.10,Desc.,TURKISH I,2,3,FADİME ÖZDEN,,, ,,,,,"                          "
+TK  221.11,Desc.,TURKISH I,2,3,FADİME ÖZDEN,,, ,,,,,"                          "
+TK  221.12,Desc.,TURKISH I,2,3,FADİME ÖZDEN,,, ,,,,,"                          "
+TK  221.13,Desc.,TURKISH I,2,3,SEVİNÇ ERGİYDİREN,,, ,,,,,"                          "
+TK  221.14,Desc.,TURKISH I,2,3,SEVİNÇ ERGİYDİREN,,, ,,,,,"                          "
+TK  221.15,Desc.,TURKISH I,2,3,SEVİNÇ ERGİYDİREN,,, ,,,,,"                          "
+TK  221.16,Desc.,TURKISH I,2,3,BEDRİ SELİMHOCAOĞLU,,, ,,,,,"                          "
+TK  221.17,Desc.,TURKISH I,2,3,BEDRİ SELİMHOCAOĞLU,,, ,,,,,"                          "
+TK  221.18,Desc.,TURKISH I,2,3,BEDRİ SELİMHOCAOĞLU,,, ,,,,,"                          "
+TK  221.19,Desc.,TURKISH I,2,3,SEVİM YILMAZ ÖNDER,,, ,,,,,"                          "
+TK  221.20,Desc.,TURKISH I,2,3,SEVİM YILMAZ ÖNDER,,, ,,,,,"                          "
+TK  221.21,Desc.,TURKISH I,2,3,SEVİM YILMAZ ÖNDER,,, ,,,,,"                          "
+TK  221.22,Desc.,TURKISH I,2,3,FADİME ÖZDEN,,, ,,,,,"                          "
+TK  221.23,Desc.,TURKISH I,2,3,BEDRİ SELİMHOCAOĞLU,,, ,,,,,"                          "
+TK  221.24,Desc.,TURKISH I,2,3,FADİME ÖZDEN,,, ,,,,,"                          "
+TK  221.25,Desc.,TURKISH I,2,3,BEDRİ SELİMHOCAOĞLU,,, ,,,,,"                          "
+TK  221.26,Desc.,TURKISH I,2,3,FADİME ÖZDEN,,, ,,,,,"                          "
+TK  221.27,Desc.,TURKISH I,2,3,BEDRİ SELİMHOCAOĞLU,,, ,,,,,"                          "
+TK  221.28,Desc.,TURKISH I,2,3,SEVİM YILMAZ ÖNDER,,, ,,,,,"                          "
+TK  221.29,Desc.,TURKISH I,2,3,SEVİM YILMAZ ÖNDER,,, ,,,,,"                          "
+TK  221.30,Desc.,TURKISH I,2,3,SEVİM YILMAZ ÖNDER,,, ,,,,,"                          "
+TK  221.31,Desc.,TURKISH I,2,3,CEMİL ÖZTÜRK,,, ,,,,,"                          "
+TK  221.32,Desc.,TURKISH I,2,3,BİLGE BAYDAN,,, ,,,,,"                          "
+TK  221.33,Desc.,TURKISH I,2,3,CEMİL ÖZTÜRK,,, ,,,,,"                          "
+TK  221.34,Desc.,TURKISH I,2,3,BİLGE BAYDAN,,, ,,,,,"                          "
+TK  221.35,Desc.,TURKISH I,2,3,CEMİL ÖZTÜRK,,, ,,,,,"                          "
+TK  221.36,Desc.,TURKISH I,2,3,BİLGE BAYDAN,,, ,,,,,"                          "
+TK  221.37,Desc.,TURKISH I,2,3,ASUMAN YILGÖR,,, ,,,,,"                          "
+TK  221.38,Desc.,TURKISH I,2,3,ASUMAN YILGÖR,,, ,,,,,"                          "
+TK  221.39,Desc.,TURKISH I,2,3,ASUMAN YILGÖR,,, ,,,,,"                          "
+TK  221.40,Desc.,TURKISH I,2,3,CEMİL ÖZTÜRK,,, ,,,,,"                          "
+TK  221.41,Desc.,TURKISH I,2,3,CEMİL ÖZTÜRK,,, ,,,,,"                          "
+TK  221.42,Desc.,TURKISH I,2,3,CEMİL ÖZTÜRK,,, ,,,,,"                          "
+TKL 101.01,Desc.,OTTOMAN TURKISH I,4,6,KÖKSAL SEYHAN,TTWW,1212,,,,,,"                          "
+TKL 101.02,Desc.,OTTOMAN TURKISH I,4,6,KÖKSAL SEYHAN,TTWW,3434,,,,,,"                          "
+TKL 102.01,Desc.,OTTOMAN TURKISH II,4,6,NEZİHE SEYHAN,TTThTh,3434,,,,,,"                          "
+TKL 105.01,Desc.,SURVEY OF TURKISH LITERATURE I,3,5,ZEYNEP SABUNCU,MMTh,678,,,,,,"                          "
+TKL 211.01,Desc.,MODERNIZATION IN TURKISH LITERATURE I,3,6,NUR  GÜRANİ ARSLAN,WFF,434,,,,,,"                          "
+TKL 215.01,Desc.,OTTOMAN PALEOGRAPHY I,3,5,GÜNAY KUT,TTTh,343,,,,,,"                          "
+TKL 309.01,Desc.,TURKISH POETRY IN THE REPUB. PERIOD,3,4,NUR  GÜRANİ ARSLAN,WWF,675,,,,,,"                          "
+TKL 313.01,Desc.,DIVAN LITERATURE I,3,6,ZEHRA TOSKA,TTTh,567,,,,,,"                          "
+TKL 403.01,Desc.,WOMEN WRITERS IN THE LATE OTTOMAN PERIOD,3,5,ZEHRA TOSKA,TTTh,343,,,,,,"                          "
+TKL 409.01,Desc.,PROSE IN OLD TURKISH LITERATURE,3,5,ZEYNEP SABUNCU,WWF,344,,,,,,"                          "
+TKL 414.01,Desc.,TANZIMAT NOVEL,3,5,NÜKET ESEN,MMTh,454,,,,,,"                          "
+TKL 419.01,Desc.,TURKISH ART OF BOOK MAKING,3,4,TAHSİN ÖMER TAHAOĞLU,MMTh,678,,,,,,"                          "
+TKL 421.01,Desc.,LITERARY THEORY&PRACTICAL CRITICISM I,3,4,NÜKET ESEN,MThTh,356,,,,,,"                          "
+TKL 501.01,Desc.,THE CLASSIC OF DIVAN LITERATURE,3,10,GÜNAY KUT,S,0,,,,,,"                          "
+TKL 532.01,Desc.,THEORIES OF LITERATURE,3,10,NÜKET ESEN,S,0,,,,,,"                          "
+TKL 534.01,Desc.,PROSE IN TURKISH LITERATURE,3,8,ZEYNEP SABUNCU,S,0,,,,,,"                          "
+TKL 690.01,Desc.,MASTER THESIS,0,60,NÜKET ESEN,S,0,,,,,,"                          "

@@ -1,0 +1,49 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.01,Desc.,CALCULUS I,4,6,OLCAY COŞKUN,TTThTh,1212,,NH 101 | NH 101 | NH 101 | NH 101,10.01.2012,3,,"                          "
+MATH101.02,Desc.,CALCULUS I,4,6,OLCAY COŞKUN,TTThTh,3434,,NH 101 | NH 101 | NH 101 | NH 101,10.01.2012,3,,"                          "
+MATH101.03,Desc.,CALCULUS I,4,6,MÜGE TAŞKIN AYDIN,TTThTh,1212,,NH 105 | NH 105 | NH 105 | NH 105,10.01.2012,3,,"                          "
+MATH101.04,Desc.,CALCULUS I,4,6,FATİH ECEVİT,TTThTh,3434,,NH 105 | NH 105 | NH 105 | NH 105,10.01.2012,3,,"                          "
+MATH102.01,Desc.,CALCULUS II,4,6,ARZU BOYSAL,TTThTh,1212,,KPARK1 | KPARK1 | KPARK1 | KPARK1,06.01.2012,1,,"                          "
+MATH102.02,Desc.,CALCULUS II,4,6,ARZU BOYSAL,TTThTh,3434,,KPARK1 | KPARK1 | KPARK1 | KPARK1,06.01.2012,1,,"                          "
+MATH105.01,Desc.,INTRODUCTION TO FINITE MATHEMATICS,4,6,GÜLNİHAL YÜCEL,TTThTh,1212,,NH 301 | NH 301 | NH 301 | NH 301,06.01.2012,2,,"                          "
+MATH105.02,Desc.,INTRODUCTION TO FINITE MATHEMATICS,4,6,GÜLNİHAL YÜCEL,TTThTh,3434,,NH 301 | NH 301 | NH 301 | NH 301,06.01.2012,2,,"                          "
+MATH111.01,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,NİLGÜN IŞIK,TTThTh,1212,,NH 405 | NH 405 | NH 405 | NH 405,09.01.2012,2,,"        MATH; MEDU; TMAT; PRMA                  "
+MATH111.02,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,NİLGÜN IŞIK,TTThTh,5656,,NH 305 | NH 305 | NH 305 | NH 305,09.01.2012,2,,"        MATH; MEDU; TMAT; PRMA                  "
+MATH131.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS I,4,6,TALİN BUDAK,TTThTh,1212,,M 1200 | M 1200 | M 2152 | M 2152,05.01.2012,1,,"        MATH                  "
+MATH132.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS II,4,8,TALİN BUDAK,TTThTh,3434,,M 1200 | M 1200 | M 2152 | M 2152,04.01.2012,1,,"        MATH                  "
+MATH201.01,Desc.,MATRIX THEORY,4,5,FERİT ÖZTÜRK,MMWW,1212,,NH 401 | NH 401 | NH 401 | NH 401,05.01.2012,3,,"                          "
+MATH201.02,Desc.,MATRIX THEORY,4,5,ÖZLEM BEYARSLAN,MMWW,1212,,NH 101 | NH 101 | NH 101 | NH 101,05.01.2012,3,,"                          "
+MATH201.03,Desc.,MATRIX THEORY,4,5,ÖZLEM BEYARSLAN,MMWW,3434,,NH 101 | NH 101 | NH 101 | NH 101,05.01.2012,3,,"                          "
+MATH202.01,Desc.,DIFFERENTIAL EQUATIONS,4,7,AYŞE SOYSAL,MMWW,1212,,NH 301 | NH 301 | NH 301 | NH 301,06.01.2012,3,,"                          "
+MATH202.02,Desc.,DIFFERENTIAL EQUATIONS,4,7,AYŞE SOYSAL,MMWW,3434,,NH 301 | NH 301 | NH 301 | NH 301,06.01.2012,3,,"                          "
+MATH231.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS III,4,4,CEM YALÇIN YILDIRIM,TTThTh,5656,,M 2170 | M 2170 | M 2170 | M 2170,11.01.2012,3,,"        MEDU; MATH                  "
+MATH327.01,Desc.,NUMBER THEORY,3,6,CEM YALÇIN YILDIRIM,TWW,8910,,TB 240 | TB 240 | TB 240,06.01.2012,3,,"                          "
+MATH331.01,Desc.,REAL ANALYSIS I,4,8,BETÜL TANBAY,TTThTh,1212,,M 1171 | M 1171 | TB 310 | TB 310,06.01.2012,1,,"        MATH                  "
+MATH331.02,Desc.,REAL ANALYSIS I,4,8,BETÜL TANBAY,TTThTh,3434,,M 1171 | M 1171 | TB 310 | TB 310,06.01.2012,1,,"                          "
+MATH342.01,Desc.,LIFE INSURANCE MATHEMATICS,4,6,İRİNİ DİMİTRİYADİS,FFFF,3467,,NH 104 | NH 104 | NH 104 | NH 104,11.01.2012,1,,"                          "
+MATH343.01,Desc.,PROBABILITY,4,6,ATİLLA YILMAZ,MMWW,3434,,M 1170 | M 1170 | NH 303 | NH 303,05.01.2012,1,,"                          "
+MATH352.01,Desc.,PARTIAL DIFFERENTIAL EQUATIONS,3,6,FATİH ECEVİT,TTTh,122,,NH 303 | NH 303 | NH 304,17.01.2012,2,,"                          "
+MATH363.01,Desc.,GRAPH THEORY,3,6,SERDAR ALTOK,FFF,346,,M 2152 | M 2152 | M 2152,14.01.2012,2,,"                          "
+MATH411.01,Desc.,MATHEMATICAL LOGIC,3,6,ALİ KARATAY,TFF,689,,M 1100 | M 2200 | M 2200,09.01.2012,3,,"                          "
+MATH431.01,Desc.,COMPLEX ANALYSIS I,4,8,AHMET KAMİL FEYZİOĞLU,MMWW,1212,,M 1171 | M 1171 | M 1171 | M 1171,16.01.2012,3,,"                          "
+MATH471.01,Desc.,TOPOLOGY,4,8,FERİT ÖZTÜRK,MMFF,7812,,NH 102 | NH 102 | TB 240 | TB 240,07.01.2012,1,,"                          "
+MATH480.01,Desc.,SEMINAR,2,4,SERDAR ALTOK,TBA,,,,09.01.2012,1,,"                          "
+MATH48V.01,Desc.,BINARY QUADRATIC FORMS,3,6,AHMET KAMİL FEYZİOĞLU,MMW,343,,M 1171 | M 1171 | M 1171,10.01.2012,2,,"                          "
+MATH48W.01,Desc.,LEBESGUE INTEGRAL,3,6,BURAK GÜREL,MMW,565,,YD 202 | YD 202 | M 1170,09.01.2012,3,,"                          "
+MATH521.01,Desc.,ALGEBRA I,4,10,MÜGE TAŞKIN AYDIN,TTThTh,7878,,,07.01.2012,3,,"                          "
+MATH531.01,Desc.,REAL ANALYSIS I,4,10,ALP EDEN,TTThTh,1212,,,05.01.2012,2,,"                          "
+MATH541.01,Desc.,PROBABILITY THEORY,4,10,SERDAR ALTOK,TTThTh,3434,,YD 203 | YD 203 | YD 201 | YD 201,14.01.2012,3,,"                          "
+MATH551.01,Desc.,PARTIAL DIFFERENTIAL EQUATIONS I,4,10,BURAK GÜREL,MMWW,7834,,YD 202 | YD 202 | M 1152 | M 1152,04.01.2012,3,,"                          "
+MATH571.01,Desc.,TOPOLOGY,4,10,FERİT ÖZTÜRK,,,,,11.01.2012,1,,"                          "
+MATH576.01,Desc.,RIEMANNIAN GEOMETRY,3,7,N.SADIK DEĞER,MMM,123,,,17.01.2012,1,,"                          "
+MATH579.01,Desc.,GRADUATE SEMINAR,0,1,N.SADIK DEĞER,TBA,,,,,0,,"                          "
+MATH581.01,Desc.,SELECTED TOPİCS IN ANALYSIS I,3,7,ALP EDEN,ThThTh,567,,,10.01.2012,2,,"                          "
+MATH590.01,Desc.,READINGS IN MATHEMATICS,1,3,N.SADIK DEĞER,TBA,,,,13.01.2012,3,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,ALP EDEN,TBA,,,,,0,,"                          "
+MATH690.05,Desc.,M.S. THESIS,0,60,ÖZLEM BEYARSLAN,TBA,,,,,0,,"                          "
+MATH690.06,Desc.,M.S. THESIS,0,60,FATİH ECEVİT,TBA,,,,,0,,"                          "
+MATH690.07,Desc.,M.S. THESIS,0,60,ARZU BOYSAL,TBA,,,,,0,,"                          "
+MATH690.08,Desc.,M.S. THESIS,0,60,SERDAR ALTOK,TBA,,,,,0,,"                          "
+MATH690.09,Desc.,M.S. THESIS,0,60,N.SADIK DEĞER,TBA,,,,,0,,"                          "
+MATH690.10,Desc.,M.S. THESIS,0,60,BURAK GÜREL,TBA,,,,,0,,"                          "
+MATH790.01,Desc.,Ph.D.THESIS,0,120,CEM YALÇIN YILDIRIM,TBA,,,,,0,,"                          "

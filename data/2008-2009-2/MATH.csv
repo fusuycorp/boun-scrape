@@ -1,0 +1,38 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.03,Desc.,CALCULUS I,4,6,ÖZLEM BEYARSLAN,TTThTh,5656,,NH 405 | NH 405 | NH 405 | NH 405,27.05.2009,3,,"                          "
+MATH102.01,Desc.,CALCULUS II,4,6,AYŞE SOYSAL,TTThTh,1212,,NH 105 | NH 105 | NH 105 | NH 105,28.05.2009,3,ME-CE-CHE-PHYS-CET,"                          "
+MATH102.02,Desc.,CALCULUS II,4,6,AYŞE SOYSAL,TTThTh,3434,,NH 105 | NH 105 | NH 105 | NH 105,28.05.2009,3,IE-CHEM-CEDU-PRED MATH-PRED SCI,"                          "
+MATH102.03,Desc.,CALCULUS II,4,6,OLCAY COŞKUN,TTThTh,3434,,NH 405 | NH 405 | NH 405 | NH 405,28.05.2009,3,AD-EC-EE,"                          "
+MATH106.01,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,GÜLNİHAL YÜCEL,TTThTh,1212,,KPARK1 | KPARK1 | KPARK1 | KPARK1,01.06.2009,2,PHIL-POLS,"                          "
+MATH106.02,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,GÜLNİHAL YÜCEL,TTThTh,3434,,KPARK1 | KPARK1 | KPARK1 | KPARK1,01.06.2009,2,SOC-PSY,"                          "
+MATH111.01,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,FERİT ÖZTÜRK,TTThTh,5656,,M 1100 | M 1100 | M 1100 | M 1100,26.05.2009,2,,"        MATH; MEDU; TMAT; PRMA                  "
+MATH132.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS II,4,8,TALİN BUDAK,TTThTh,3434,,M 1100 | M 1100 | TB 310 | TB 310,26.05.2009,1,,"        MATH                  "
+MATH202.01,Desc.,DIFFERENTIAL EQUATIONS,4,7,NİLGÜN IŞIK,MMWW,1212,,NH 401 | NH 401 | NH 401 | NH 401,26.05.2009,3,EE-CMPE,"                          "
+MATH202.02,Desc.,DIFFERENTIAL EQUATIONS,4,7,ARZU BOYSAL,MMWW,3434,,NH 401 | NH 401 | NH 401 | NH 401,26.05.2009,3,ME-MATH-MEDU-PEDU-PRED SCI-PHYS-,"                          "
+MATH202.03,Desc.,DIFFERENTIAL EQUATIONS,4,7,NİLGÜN IŞIK,MMWW,5656,,NH 401 | NH 401 | NH 401 | NH 401,26.05.2009,3,CHE-IE-PRED MATH-CEDU,"                          "
+MATH224.01,Desc.,LINEAR ALGEBRA I,3,6,FATİH ECEVİT,MMW,565,,YD 206 | YD 206 | YD 206,28.05.2009,3,MATH-MEDU,"                          "
+MATH232.01,Desc.,INTRODUCTION TO COMPLEX ANALYSIS,3,6,AHMET KAMİL FEYZİOĞLU,TTTh,342,,TB 310 | TB 310 | TB 310,27.05.2009,2,MATH-MEDU,"                          "
+MATH322.01,Desc.,ALGEBRA II,4,8,FERİT ÖZTÜRK,TTThTh,7878,,M 1100 | M 1100 | M 1100 | M 1100,08.06.2009,1,,"                          "
+MATH332.01,Desc.,REAL ANALYSIS II,4,8,ALP EDEN,TTThTh,1212,,M 2181 | M 2181 | M 2171 | M 2171,28.05.2009,2,,"                          "
+MATH336.01,Desc.,NUMERICAL ANALYSIS,4,6,FATİH ECEVİT,MMWW,3434,,YD 206 | YD 206 | YD 206 | YD 206,02.06.2009,1,,"                          "
+MATH343.01,Desc.,PROBABILITY,4,6,SERDAR ALTOK,MMThTh,7856,,NH 402 | NH 402 | NH 402 | NH 402,05.06.2009,1,,"                          "
+MATH344.01,Desc.,STATISTICS,3,5,SERDAR ALTOK,TTTh,344,,NH 404 | NH 404 | NH 404,01.06.2009,2,BIO,"                          "
+MATH352.01,Desc.,PARTIAL DIFFERENTIAL EQUATIONS,3,6,BURAK GÜREL,FFF,234,,M 1171 | M 1171 | M 1171,01.06.2009,1,,"                          "
+MATH436.01,Desc.,FUNCTIONAL ANALYSIS,3,7,BETÜL TANBAY,TTTh,565,,TB 240 | TB 240 | TB 240,27.05.2009,3,,"                          "
+MATH480.01,Desc.,SEMINAR,2,4,ÖZLEM BEYARSLAN,TBA,,,,06.06.2009,3,,"                          "
+MATH48M.01,Desc.,SEL.TOP.:INTRODUCTION TO K-THEORY,3,6,ARZU BOYSAL,MMW,122,,NH 402 | NH 402 | NH 103,05.06.2009,2,,"                          "
+MATH522.01,Desc.,ALGEBRA II,4,10,ÖZLEM BEYARSLAN,TTThTh,7878,, | N/A | M 1152 | M 1152,08.06.2009,3,,"                          "
+MATH532.01,Desc.,REAL ANALYSIS II,4,10,BETÜL TANBAY,TTThTh,3434,,,27.05.2009,1,,"                          "
+MATH545.01,Desc.,MATHEMATICS OF FINANCE,4,10,ALP EDEN,TTThTh,5656,,,26.05.2009,3,,"                          "
+MATH552.01,Desc.,PARTIAL DIFFERENTIAL EQUATIONS II,4,10,BURAK GÜREL,WWFF,3467,,,01.06.2009,3,,"                          "
+MATH579.01,Desc.,GRADUATE SEMINAR,0,1,TALİN BUDAK,TBA,,,,,0,,"                          "
+MATH584.01,Desc.,SELECTED TOPICS IN ALGEBRA&TOPOLOGY,3,7,AHMET KAMİL FEYZİOĞLU,TTTh,121,,,03.06.2009,1,,"                          "
+MATH58M.01,Desc.,SP.TOP.TOPOLOGICAL ALGEBRA,3,7,AHMET KAMİL FEYZİOĞLU,TTTh,121,,,01.06.2009,2,,"                          "
+MATH590.01,Desc.,READINGS IN MATHEMATICS,1,3,TALİN BUDAK,TBA,,,,29.05.2009,2,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,AHMET KAMİL FEYZİOĞLU,TBA,,,,,0,,"                          "
+MATH690.02,Desc.,M.S. THESIS,0,60,BURAK GÜREL,TBA,,,,,0,,"                          "
+MATH690.04,Desc.,M.S. THESIS,0,60,TALİN BUDAK,TBA,,,,,0,,"                          "
+MATH690.05,Desc.,M.S. THESIS,0,60,NİLGÜN IŞIK,TBA,,,,,0,,"                          "
+MATH690.07,Desc.,M.S. THESIS,0,60,ALP EDEN,TBA,,,,,0,,"                          "
+MATH690.09,Desc.,M.S. THESIS,0,60,BETÜL TANBAY,TBA,,,,,0,,"                          "
+MATH690.10,Desc.,M.S. THESIS,0,60,CEM YALÇIN YILDIRIM,TBA,,,,,0,,"                          "

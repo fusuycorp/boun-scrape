@@ -1,0 +1,3351 @@
+
+
+<html>
+<HEAD>
+<title>Schedule</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso8859-9" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../inc/regstyle.css" />
+<script src="/BUIS/js/jquery-1.10.2.min.js"></script>
+<script src="/BUIS/js/jquery-ui-1.10.3.min.js"></script>
+
+<script type="text/javascript">
+    function OpenMap(tdBbj) {
+        var text = $(tdBbj).text();
+        if (text.replace(/^\s+|\s+$/gm, '') != "") {
+            var scrollTop = $(document).scrollTop() + 100;
+            var building = text.split(" ")[0];
+            $("#gMapFrame").attr("src", "sch_map.asp?BN=" + building);
+            $("#gMap").dialog({ modal: true, minWidth: 630, minHeight: 510, height: "auto", width: "auto", overflow: "hidden" });
+            $('.ui-dialog').css('top', scrollTop + 'px');
+            window.scrollTo(0, scrollTop - 100);
+        }
+    }
+
+</script>
+
+	<script Lang="JScript">
+		function showQuota(ab,co,se,te) {
+			window.open('quotasearch.asp?abbr='+ab+'&code='+co+'&section='+se+'&donem='+te, 'myWin', 'resizable,scrollbars,width=500, height=400');
+		}
+
+
+
+	</script>
+
+<style>
+    .schtd2.labps {
+        background-color: #c7d2c8;
+        color:#8e5353;
+        ;
+    }
+     .schtd.labps {
+        background-color: #fffff6;
+        color:#8e5353;
+        ;
+    }
+
+</style>
+</HEAD>
+<body bgcolor="#FFFFFF" bgproperties="fixed">
+<font class='bodytextdark'><font size='+1'>Course Schedule</font>
+<br>
+<IMG  src='/images/pro_nav_btmline.gif' width='430' height='1'>
+<br>
+
+
+    
+<table width="250px">
+ <tr>
+    <td witdh=50% Class="bodytextdark">Semester   :</td>
+    <td witdh=50% Class="bodytextdark">2021/2022-1</td>
+ </tr>
+ <tr>
+    <td witdh=50% Class="bodytextdark">
+    Department :
+    </td>
+    <td witdh=50% Class="bodytextdark">MIS</td>
+ </tr>
+</table>
+    <p style="font-size:10pt; color:black; font-weight:normal;">Click on to the classroom to view it on the campus map. <br /></p>
+<hr>
+
+    
+
+    <table style="margin:20px 0">
+        <tr>		 
+            <td colspan=10 class="bodygray" style="font-family:Verdana, Arial, Helvetica; font-weight:bold">
+                The <u>course</u> slots are as follows :
+            </td>
+        </tr>
+        <tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 1</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 09:00 - 09:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 2</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 10:00 - 10:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 3</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 11:00 - 11:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 4</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 12:00 - 12:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 5</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 13:00 - 13:50</td>
+  
+                </tr><tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 6</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 14:00 - 14:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 7</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 15:00 - 15:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 8</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 16:00 - 16:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 9</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 17:00 - 17:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 10</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 18:00 - 18:50</td>
+  
+                </tr><tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 11</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 19:00 - 19:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 12</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 20:00 - 20:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 13</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 21:00 - 21:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 14</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 22:00 - 22:50</td>
+
+        </tr>
+    </table>
+
+<table border="1" cellpadding="3" width="1300px" style="border-collapse: collapse" bordercolor="#111111" cellspacing="0">
+ <tr class="schtitle">
+    <td width=5% align=left>Code.Sec</td>
+    <td width=5%>Desc.</td>
+    <td width=12% align=left>Name</td>
+    <td width=2% align=left>Cr.</td>
+    <td width=2% align=left>Ects</td>
+
+    <td width=5% align=left>Instr.</td>
+    <td width=5% align=left>Days</td>
+    <td width=4% align=left>Hours</td>
+                <!-- FinalExamLocation -->
+     <td width=5% align=left>Course Delivery Method</td>
+<!--    <td width=5% align=left>Final Exam Location</td>-->
+
+    <td width=11% align=left>Rooms</td>
+    <td width=7% align=left>Exam</td>
+    <td width=4% align=left>Sl.</td>
+    <td width=7% align=left><a class="title" href="#reqdept">Required for Dept.(*)</a></td>
+    <td width=5% align=left>Departments</td>
+
+
+     <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+    
+    </tr>
+
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 111.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 111&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ECONOMICS I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ALİ TÜKEL&nbsp;</td>
+		<td>MMW&nbsp;</td>
+		<td>677&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online/Classroom&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">HD 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HD 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>21.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2 labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>ALİ TÜKEL&nbsp;</td>
+		<td>W&nbsp;</td>
+		<td>8&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 113.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 113&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MANAGEMENT & ORGANIZATION&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ÖZGÜR DÖĞERLİOĞLU&nbsp;</td>
+		<td>WWWF&nbsp;</td>
+		<td>2388&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>18.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 125.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 125&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTRODUCTION TO INFORMATION SYS.& TECHNO&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>FURKAN GÜRSOY&nbsp;</td>
+		<td>TFF&nbsp;</td>
+		<td>9910&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>10.01.2022&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2 labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>LAB&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>FİGEN BACIOĞLU&nbsp;</td>
+		<td>WW&nbsp;</td>
+		<td>34&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 131.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 131&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTRODUCTION TO ALGORITHMS&PROGRAMMING&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>NAZIM TAŞKIN&nbsp;</td>
+		<td>TThTh&nbsp;</td>
+		<td>112&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online/Classroom&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HD 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HD 201</span>&nbsp;</td>
+        
+			<td>11.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>LAB&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>NAZIM TAŞKIN&nbsp;</td>
+		<td>TT&nbsp;</td>
+		<td>23&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 143.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 143&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>BUSINESS MATHEMATICS I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>PINAR ADANALI&nbsp;</td>
+		<td>MThTh&nbsp;</td>
+		<td>445&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">HD 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HD 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HD 301</span>&nbsp;</td>
+        
+			<td>19.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2 labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>PINAR ADANALI&nbsp;</td>
+		<td>M&nbsp;</td>
+		<td>3&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">HD 301</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 211.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 211&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>FINANCIAL ACCOUNTING&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>CEYLAN ONAY&nbsp;</td>
+		<td>MMT&nbsp;</td>
+		<td>233&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online/Classroom&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HD 301</span>&nbsp;</td>
+        
+			<td>17.01.2022&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 213.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 213&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>STATISTICS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>SONA MARDİKYAN&nbsp;</td>
+		<td>MWW&nbsp;</td>
+		<td>723&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>15.01.2022&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2 labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>SONA MARDİKYAN&nbsp;</td>
+		<td>FF&nbsp;</td>
+		<td>12&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 233.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 233&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>WEB BASED APPLICATION PROGRAMMING&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>MUSTAFA COŞKUN&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>18.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>LAB&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>MUSTAFA COŞKUN&nbsp;</td>
+		<td>FF&nbsp;</td>
+		<td>34&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 251.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 251&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INFORMATION TECHNOLOGY INFRASTRUCTURES&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>BİLGİN METİN&nbsp;</td>
+		<td>TTTh&nbsp;</td>
+		<td>126&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">HD 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HD 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HD 301</span>&nbsp;</td>
+        
+			<td>14.01.2022&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2 labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>LAB&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>BİLGİN METİN&nbsp;</td>
+		<td>Th&nbsp;</td>
+		<td>7&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">HB 102</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 321.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 321&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SYSTEM ANALYSIS & DESIGN&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>BİRGÜL KUTLU&nbsp;</td>
+		<td>MTT&nbsp;</td>
+		<td>556&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>10.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>BİRGÜL KUTLU&nbsp;</td>
+		<td>M&nbsp;</td>
+		<td>6&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 331.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 331&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DATA MINING&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>BERTAN YILMAZ BADUR&nbsp;</td>
+		<td>TTTh&nbsp;</td>
+		<td>126&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>15.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2 labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>LAB&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>BERTAN YILMAZ BADUR&nbsp;</td>
+		<td>TT&nbsp;</td>
+		<td>89&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 335.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 335&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DATABASE SYSTEMS&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>AHMET ONUR DURAHİM&nbsp;</td>
+		<td>MMTh&nbsp;</td>
+		<td>231&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>12.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>LAB&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>AHMET ONUR DURAHİM&nbsp;</td>
+		<td>ThTh&nbsp;</td>
+		<td>45&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 346.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 346&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ENTERPRISE INFORMATION SYSTEMS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ZUHAL TANRIKULU&nbsp;</td>
+		<td>MM&nbsp;</td>
+		<td>78&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>19.01.2022&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2 labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>LAB&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>ZUHAL TANRIKULU&nbsp;</td>
+		<td>ThTh&nbsp;</td>
+		<td>78&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 353.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 353&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>CYBER LAW&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>GÜRYAY BİNGÖL&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>789&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">HD 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HD 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HD 301</span>&nbsp;</td>
+        
+			<td>21.01.2022&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 433.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 433&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INFORMATION SYSTEM PROJECT MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>MELTEM ÖZTURAN&nbsp;</td>
+		<td>WWTh&nbsp;</td>
+		<td>127&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>08.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2 labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>MELTEM ÖZTURAN&nbsp;</td>
+		<td>W&nbsp;</td>
+		<td>3&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 441.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 441&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>CUSTOMER RELATIONSHIP MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ASLIHAN NASIR&nbsp;</td>
+		<td>MMTh&nbsp;</td>
+		<td>565&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>10.01.2022&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>ASLIHAN NASIR&nbsp;</td>
+		<td>Th&nbsp;</td>
+		<td>6&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 458.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 458&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>STRATEGIC MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>ÖZGÜR DÖĞERLİOĞLU&nbsp;</td>
+		<td>MMM&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>13.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 463.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 463&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DECISION SUPPORT SYSTEMS FOR BUSINESS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ASLI SENCER&nbsp;</td>
+		<td>MMW&nbsp;</td>
+		<td>786&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>21.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>ASLI SENCER&nbsp;</td>
+		<td>ThTh&nbsp;</td>
+		<td>23&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+            <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 477.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 477&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>LEADERSHIP & MOTIVATION &nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>TANJU AKDENİZ&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>789&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span>&nbsp;</td>
+        
+			<td>17.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 481.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 481&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SENIOR SEMINARS IN MIS&nbsp;</td>
+		<td>1&nbsp;</td>
+		<td>2&nbsp;</td>
+
+		<td>FİGEN BACIOĞLU&nbsp;</td>
+		<td>W&nbsp;</td>
+		<td>4&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>20.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 484.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 484&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TP.BUILDING A DIGITAL START-UP&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>VOLKAN BİÇER&nbsp;</td>
+		<td>FFF&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">HD 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HD 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HD 201</span>&nbsp;</td>
+        
+			<td>11.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 492.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 492&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROJECT&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>8&nbsp;</td>
+
+		<td>BERTAN YILMAZ BADUR&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 492.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 492&section=03&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROJECT&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>8&nbsp;</td>
+
+		<td>NAZIM TAŞKIN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 492.04</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 492&section=04&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROJECT&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>8&nbsp;</td>
+
+		<td>ÖZGÜR DÖĞERLİOĞLU&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 492.07</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 492&section=07&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROJECT&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>8&nbsp;</td>
+
+		<td>SONA MARDİKYAN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 492.08</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 492&section=08&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROJECT&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>8&nbsp;</td>
+
+		<td>BİLGİN METİN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 492.09</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 492&section=09&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROJECT&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>8&nbsp;</td>
+
+		<td>ASLIHAN NASIR&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 492.13</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 492&section=13&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROJECT&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>8&nbsp;</td>
+
+		<td>ZUHAL TANRIKULU&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 493.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 493&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP TP.BLOCKHAIN DEVELOPMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>CEMİL TÜRÜN&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>123&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span>&nbsp;</td>
+        
+			<td>18.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 49A.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 49A&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TP.INTR.TO WEB DESIGN FOR SOCIAL SCI.&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>CEM GÖKNİL&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">ONLINE</span>&nbsp;</td>
+        
+			<td>12.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 49L.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 49L&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TP.IT GOVERNANCE&IT STANDARDS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>5&nbsp;</td>
+
+		<td>KAYA KAZMİRCİ&nbsp;</td>
+		<td>FFF&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span>&nbsp;</td>
+        
+			<td>14.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 511.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 511&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DATA RESOURCES MANAGEMENT&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>AHMET ONUR DURAHİM&nbsp;</td>
+		<td>ThThTh&nbsp;</td>
+		<td>567&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span>&nbsp;</td>
+        
+			<td>21.01.2022&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 513.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 513&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INFORMATION COMMUNICATION TECHNOLOGY GOVERNANCE&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>BİLGİN METİN&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>18.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 515.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 515&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SYSTEMS ANALYSIS, MODELING & DESIGN&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>MELTEM ÖZTURAN&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>123&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>15.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 519.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 519&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>RESEARCH METHODOLOGY&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>HANDE TÜRKER&nbsp;</td>
+		<td>MMM&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span>&nbsp;</td>
+        
+			<td>10.01.2022&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 542.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 542&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DATA MINING CONCEPTS & TECHNIQUES&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>SONA MARDİKYAN&nbsp;</td>
+		<td>MMM&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">HA 301</span>&nbsp;</td>
+        
+			<td>20.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd labps">
+
+		<td>&nbsp;&nbsp;</td>
+
+			<td>&nbsp;</td>
+
+        <td>P.S.&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+
+		<td>SONA MARDİKYAN&nbsp;</td>
+		<td>W&nbsp;</td>
+		<td>4&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+            <td>&nbsp;</td>
+        
+			<td>&nbsp;&nbsp;</td>
+			<td>0&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 577.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 577&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>BERTAN YILMAZ BADUR&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>08.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 577.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 577&section=03&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>NAZIM TAŞKIN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>08.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 577.04</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 577&section=04&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ÖZGÜR DÖĞERLİOĞLU&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>08.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 577.05</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 577&section=05&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>AHMET ONUR DURAHİM&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>08.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 577.07</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 577&section=07&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>SONA MARDİKYAN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>08.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 577.08</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 577&section=08&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>BİLGİN METİN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>08.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 577.09</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 577&section=09&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ASLIHAN NASIR&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>08.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 577.11</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 577&section=11&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>MELTEM ÖZTURAN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>08.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 577.12</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 577&section=12&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ASLI SENCER&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>08.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 577.13</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 577&section=13&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ZUHAL TANRIKULU&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>08.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 580.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 580&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TP.BUSINESS PERSPECTIVES ON GLOBAL IS SUCCESS&FAILURE&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ZUHAL TANRIKULU&nbsp;</td>
+		<td>WWW&nbsp;</td>
+		<td>123&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.01.2022&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 58A.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 58A&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TP.MATHEMATICAL FOUNDATIONS OF MACHINE LEARNING&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>BERTAN YILMAZ BADUR&nbsp;</td>
+		<td>FFF&nbsp;</td>
+		<td>123&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.01.2022&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 611.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 611&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>RESEARCH DESIGN,DATA COLLECTION&ANALYSIS&nbsp;</td>
+		<td>4&nbsp;</td>
+		<td>8&nbsp;</td>
+
+		<td>HANDE TÜRKER&nbsp;</td>
+		<td>WWWW&nbsp;</td>
+		<td>5678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>07.01.2022&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 621.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 621&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DATA ANALYTICS&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>AHMET ONUR DURAHİM&nbsp;</td>
+		<td>FFF&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>19.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 653.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 653&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MARKETING STRATEGIES IN THE DIGITAL ECO.&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ASLIHAN NASIR&nbsp;</td>
+		<td>MMM&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 678.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 678&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>BERTAN YILMAZ BADUR&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>10.01.2022&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 683.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 683&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TOP.DX OF SUPPLY CHAIN&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ASLI SENCER&nbsp;</td>
+		<td>TTT&nbsp;</td>
+		<td>678&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 684.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 684&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>SP.TOP.THEORY-DRIVEN&DATA-DRIVEN ANALYTIC IN RESEARCH&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>NAZIM TAŞKIN&nbsp;</td>
+		<td>FFF&nbsp;</td>
+		<td>234&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>20.01.2022&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 690.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 690&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER'S THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>BERTAN YILMAZ BADUR&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 690.04</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 690&section=04&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER'S THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>ÖZGÜR DÖĞERLİOĞLU&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 690.06</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 690&section=06&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER'S THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>HANDE TÜRKER&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 690.07</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 690&section=07&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER'S THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>SONA MARDİKYAN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 690.08</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 690&section=08&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER'S THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>BİLGİN METİN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 690.09</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 690&section=09&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER'S THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>ASLIHAN NASIR&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 690.10</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 690&section=10&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER'S THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>CEYLAN ONAY&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 690.11</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 690&section=11&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER'S THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>MELTEM ÖZTURAN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 690.13</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 690&section=13&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>MASTER'S THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>60&nbsp;</td>
+
+		<td>ZUHAL TANRIKULU&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 700.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 700&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>GRADUATE SEMINAR&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>6&nbsp;</td>
+
+		<td>ZUHAL TANRIKULU&nbsp;</td>
+		<td>T&nbsp;</td>
+		<td>4&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Online&nbsp;</td>
+<!--        <td>Online&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 790.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 790&section=01&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PH.D THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>BERTAN YILMAZ BADUR&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 790.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 790&section=03&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PH.D THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>NAZIM TAŞKIN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 790.06</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 790&section=06&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PH.D THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>HANDE TÜRKER&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 790.08</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 790&section=08&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PH.D THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>BİLGİN METİN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 790.09</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 790&section=09&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PH.D THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>ASLIHAN NASIR&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>MIS 790.10</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 790&section=10&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PH.D THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>CEYLAN ONAY&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>MIS 790.12</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=MIS 790&section=12&term=2021/2022-1","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PH.D THESIS&nbsp;</td>
+		<td>0&nbsp;</td>
+		<td>30&nbsp;</td>
+
+		<td>ASLI SENCER&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>Classroom&nbsp;</td>
+<!--        <td>Not Applicable&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+</table>
+<br>
+<a name="reqdept"><font size=2><b>(*) : </b>Departments that should choose this section for <u>mass courses</u></font></a>
+<br><br>
+<b><a href="javascript:window.history.go(-1)"> << Back</a></b>
+ <div id="gMap" style="width:600px;height:480px; display:none;">
+     <iframe id="gMapFrame" src="" width="590" height="460" scrolling="no" style="border:none;">
+</iframe>
+ </div>
+</body>
+</html>

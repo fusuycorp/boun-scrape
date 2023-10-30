@@ -1,0 +1,22 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY I,3,7,CHRYSSI SIDIROPOULOU,TWW,456,,,,,,"        PHIL                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,5,ZEYNEP DAVRAN,MWTh,333,,,,,,"        LL; TKL                  "
+PHIL111.02,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,5,STEPHEN VOSS,TThTh,445,,,,,,"                          "
+PHIL131.01,Desc.,LOGIC I,3,10,ALİ KARATAY,TFF,223,,,,,,"                          "
+PHIL131.02,Desc.,LOGIC I,3,10,BERNA KILINÇ,TTF,785,,,,,,"                          "
+PHIL213.01,Desc.,ANCIENT PHILOSOPHY,3,6,CHRYSSI SIDIROPOULOU,TWW,534,,,,,,"        PHIL                  "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,İLHAN İNAN,TTTh,673,,,,,,"        PHIL                  "
+PHIL313.01,Desc.,HISTORY OF MODERN PHILOSOPHY I,3,6,SUN DEMİRLİ,TThTh,345,,,,,,"        PHIL                  "
+PHIL341.01,Desc.,ETHICS,3,6,KARANFİL SOYHUN,WFF,523,,,,,,"        PHIL                  "
+PHIL420.01,Desc.,ADVANCED PHILOSOPHY OF SCIENCE,3,6,GÜROL IRZIK,MMTh,232,,,,,,"                          "
+PHIL489.01,Desc.,SEL.TOP.: EMPIRICISTS,3,6,SUN DEMİRLİ,WFF,556,,,,,,"                          "
+PHIL496.01,Desc.,SELECTED TOP:ESSENTIALISM,3,6,ALİ KARATAY,TTF,454,,,,,,"                          "
+PHIL515.01,Desc.,TOP. IN HIST. OF PHILOSOPHY,4,10,STEPHEN VOSS,TTT,678,,,,,,"                          "
+PHIL536.01,Desc.,ETHICS,4,10,ZEYNEP DAVRAN,MMM,567,,,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,GÜROL IRZIK,TBA,,,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,2,GÜROL IRZIK,TBA,,,,,,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,GÜROL IRZIK,TBA,,,,,,,"                          "
+PHIL598.01,Desc.,SP.TOP.SEMANTICS OF BELIEF REPORTS,4,10,KARANFİL SOYHUN,WWF,235,,,,,,"                          "
+PHIL599.01,Desc.,SP.TOP.CHANCE AND DETERMINISM,4,10,BERNA KILINÇ,TBA,,,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,GÜROL IRZIK,TBA,,,,,,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,GÜROL IRZIK,TBA,,,,,,,"                          "

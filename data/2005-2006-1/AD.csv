@@ -1,0 +1,85 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AD  104.01,Desc.,BUSINESS COMMUNICATIONS ,3,5,MEHMET ARTEMEL,FFF,678,,,,,,"                          "
+AD  104.02,Desc.,BUSINESS COMMUNICATIONS ,3,5,MEHMET ARTEMEL,ThThTh,678,,,,,,"                          "
+AD  150.02,Desc.,INTRO. TO DATA PROCESSING,3,5,MURAT ERHAN ALTUNEL,MMT,678,,,,,,"                          "
+AD  150.03,Desc.,INTRO. TO DATA PROCESSING,3,5,UĞUR DİRİL,FFF,123,,,,,,"                          "
+AD  150.04,Desc.,INTRO. TO DATA PROCESSING,3,5,CAN MALTA,WWW,789,,,,,,"                          "
+AD  150.05,Desc.,INTRO. TO DATA PROCESSING,3,5,MURAT ERHAN ALTUNEL,MTT,834,,,,,,"                          "
+AD  211.02,Desc.,FINANCIAL ACCOUNTING I ,3,4,FATİH F.YILMAZ,ThThTh,678,,,,,,"                          "
+AD  213.01,Desc.,PRINCIPLES OF ACCOUNTING I ,3,4,İREM NUHOĞLU,WThTh,323,,,,,,"                          "
+AD  213.02,Desc.,PRINCIPLES OF ACCOUNTING I ,3,4,İREM NUHOĞLU,WWTh,454,,,,,,"                          "
+AD  220.02,Desc.,INTRO. TO MANAGEMENT ,3,5,HAYAT KABASAKAL,MTT,334,,,,,,"                          "
+AD  220.03,Desc.,INTRO. TO MANAGEMENT ,3,5,UĞUR TANDOĞAN,MMT,345,,,,,,"                          "
+AD  311.01,Desc.,BUSINESS FINANCE ,3,4,MİNE UĞURLU,MTT,534,,,,,,"                          "
+AD  311.02,Desc.,BUSINESS FINANCE ,3,4,ATİLLA ODABAŞI,WThTh,256,,,,,,"                          "
+AD  314.01,Desc.,INTERMEDIATE FINANCIAL ACCOUNTING,3,5,ALİ ERSİN GÜREDİN,ThThTh,123,,,,,,"                          "
+AD  316.01,Desc.,COST ACCOUNTING ,3,4,ALİ ERSİN GÜREDİN,ThThTh,789,,,,,,"                          "
+AD  341.01,Desc.,INTRO. TO MARKETING,3,4,ESER BORAK,MMT,235,,,,,,"                          "
+AD  351.01,Desc.,PRODUCTION MANAGEMENT ,3,4,ŞEVKET GÜNTER,ThThF,788,,,,,,"                          "
+AD  351.02,Desc.,PRODUCTION MANAGEMENT ,3,4,ŞEVKET GÜNTER,ThFF,456,,,,,,"                          "
+AD  353.01,Desc.,OPERATIONS RESEARCH ,3,4,CEYHAN KOÇAK,WThTh,534,,,,,,"                          "
+AD  401.01,Desc.,MANAGING THE GLOBAL SYS.,3,6,ÖZLEM ÖZ,TTTh,125,,,,,,"                          "
+AD  403.01,Desc.,MANAGERIAL ECONOMICS ,3,6,DENİZ GÖKÇE,MMM,123,,,,,,"                          "
+AD  403.02,Desc.,MANAGERIAL ECONOMICS ,3,6,METİN BERK,FFF,234,,,,,,"                          "
+AD  408.01,Desc.,BUSINESS POLICY ,3,6,SİBEL TANBERK,TTTh,121,,,,,,"                          "
+AD  408.02,Desc.,BUSINESS POLICY ,3,6,SİBEL TANBERK,TTTh,121,,,,,,"                          "
+AD  413.01,Desc.,AUDITING,3,6,İREM NUHOĞLU,ThThTh,678,,,,,,"                          "
+AD  426.01,Desc.,MGMT. OF MULTIORGANIZATIONAL SYS.,3,6,GÜVEN ALPAY,MThTh,578,,,,,,"                          "
+AD  428.01,Desc.,NGO MANAGEMENT,3,6,ATİLLA ÖNER,MMM,678,,,,,,"                          "
+AD  441.01,Desc.,CONSUMER BEHAVIOR,3,6,ESER BORAK,MTT,534,,,,,,"                          "
+AD  447.01,Desc.,SERVICES MARKETING,3,6,GÜLDEN ASUGMAN,TWW,734,,,,,,"                          "
+AD  451.01,Desc.,THEORY OF CONSTRAINTS,3,6,SEYHAN TUĞCU,WWTh,786,,,,,,"                          "
+AD  451.02,Desc.,THEORY OF CONSTRAINTS,3,6,SEYHAN TUĞCU,WThTh,678,,,,,,"                          "
+AD  452.01,Desc.,MANAGEMENT INFORMATION SYSTEMS ,3,6,AYŞEGÜL TOKER,TWW,534,,,,,,"                          "
+AD  452.02,Desc.,MANAGEMENT INFORMATION SYSTEMS,3,6,AYŞEGÜL TOKER,ThThTh,234,,,,,,"                          "
+AD  470.01,Desc.,INVESTMENT MANAGEMENT,3,6,VECİHE ENGİN ÖLÇER,WWTh,786,,,,,,"                          "
+AD  476.01,Desc.,FINANCIAL SIMULATION,3,6,MÜFİT R.BODUR,FFF,678,,,,,,"                          "
+AD  477.01,Desc.,BANK MANAGEMENT,3,6,BÜLENT ŞENVER,MMM,567,,,,,,"                          "
+AD  501.01,Desc.,TOPICS IN BUSINESS ECONOMICS,3,7.50,DENİZ GÖKÇE,MMM,789,,,,,,"                          "
+AD  503.01,Desc.,BUSINESS STATISTICS&FORECASTING METHODS,3,7.50,NESRİN OKAY AKMAN,ThThTh,345,,,,,,"                          "
+AD  504.01,Desc.,RESEARCH METHODOLOGY,3,7.50,MUZAFFER BODUR,ThThTh,345,,,,,,"                          "
+AD  507.01,Desc.,STRATEGY,3,7.50,ÖZER ERTUNA,MMM,123,,,,,,"                          "
+AD  514.01,Desc.,ADVANCED FINANCIAL MANAGEMENT,3,7.50,ATİLLA ODABAŞI,WWW,678,,,,,,"                          "
+AD  516.01,Desc.,DERIVATIVE SECURITIES & MARKETS,3,7.50,METİN ERCAN,FFF,456,,,,,,"                          "
+AD  520.01,Desc.,CORPORATE STRATEGY/GAME,3,7.50,SİBEL TANBERK,TBA,,,,,,,"                          "
+AD  521.01,Desc.,ORGANIZATIONAL BEHAVIOR I,3,7.50,HAYAT KABASAKAL,MMM,456,,,,,,"                          "
+AD  524.01,Desc.,HUMAN RESOURCE DEVELOPMENT,3,7.50,UĞUR TANDOĞAN,MTT,534,,,,,,"                          "
+AD  526.01,Desc.,BUSINESS & SOCIETY,3,7.50,DENİZ ERDEN,TTT,345,,,,,,"                          "
+AD  534.01,Desc.,MANAGEMENT & ORGANIZATIONS,3,7.50,ÖZLEM ÖZ,TTT,678,,,,,,"                          "
+AD  570.01,Desc.,FINANCIAL MAN.AND ACC.,3,7.50,ÖZER ERTUNA,TTT,123,,,,,,"                          "
+AD  573.01,Desc.,FINANCIAL ECONOMETRICS,3,7.50,NESRİN OKAY AKMAN,TBA,,,,,,,"                          "
+AD  597.01,Desc.,TERM PROJECT I,0,2,VEDAT AKGİRAY,TBA,,,,,,,"                          "
+AD  597.02,Desc.,TERM PROJECT I,0,2,GÜVEN ALPAY,TBA,,,,,,,"                          "
+AD  597.03,Desc.,TERM PROJECT I,0,2,GÜLDEN ASUGMAN,TBA,,,,,,,"                          "
+AD  597.04,Desc.,TERM PROJECT I,0,2,ULAŞ AKKÜÇÜK,TBA,,,,,,,"                          "
+AD  597.05,Desc.,TERM PROJECT I,0,2,METİN BERK,TBA,,,,,,,"                          "
+AD  597.06,Desc.,TERM PROJECT I,0,2,MUZAFFER BODUR,TBA,,,,,,,"                          "
+AD  597.07,Desc.,TERM PROJECT I,0,2,ESER BORAK,TBA,,,,,,,"                          "
+AD  597.08,Desc.,TERM PROJECT I,0,2,METİN ERCAN,TBA,,,,,,,"                          "
+AD  597.09,Desc.,TERM PROJECT I,0,2,DENİZ ERDEN,TBA,,,,,,,"                          "
+AD  597.10,Desc.,TERM PROJECT I,0,2,ÖZER ERTUNA,TBA,,,,,,,"                          "
+AD  597.12,Desc.,TERM PROJECT I,0,2,DENİZ GÖKÇE,TBA,,,,,,,"                          "
+AD  597.13,Desc.,TERM PROJECT I,0,2,HAYAT KABASAKAL,TBA,,,,,,,"                          "
+AD  597.14,Desc.,TERM PROJECT I,0,2,CEYHAN KOÇAK,TBA,,,,,,,"                          "
+AD  597.15,Desc.,TERM PROJECT I,0,2,İREM NUHOĞLU,TBA,,,,,,,"                          "
+AD  597.16,Desc.,TERM PROJECT I,0,2,ATİLLA ODABAŞI,TBA,,,,,,,"                          "
+AD  597.17,Desc.,TERM PROJECT I,0,2,NESRİN OKAY AKMAN,TBA,,,,,,,"                          "
+AD  597.18,Desc.,TERM PROJECT I,0,2,ARZU İŞERİ SAY,TBA,,,,,,,"                          "
+AD  597.19,Desc.,TERM PROJECT I,0,2,AYŞEGÜL TOKER,TBA,,,,,,,"                          "
+AD  597.20,Desc.,TERM PROJECT I,0,2,SEYHAN TUĞCU,TBA,,,,,,,"                          "
+AD  597.21,Desc.,TERM PROJECT I,0,2,MİNE UĞURLU,TBA,,,,,,,"                          "
+AD  597.23,Desc.,TERM PROJECT I,0,2,MUSTAFA DİLBER,TBA,,,,,,,"                          "
+AD  597.25,Desc.,TERM PROJECT I,0,2,ŞEVKET GÜNTER,TBA,,,,,,,"                          "
+AD  597.26,Desc.,TERM PROJECT I,0,2,ÖZLEM ÖZ,TBA,,,,,,,"                          "
+AD  599.01,Desc.,TERM PROJECT II,0,3.50,DENİZ GÖKÇE,TBA,,,,,,,"                          "
+AD  599.02,Desc.,TERM PROJECT II,0,3.50,HAYAT KABASAKAL,TBA,,,,,,,"                          "
+AD  599.03,Desc.,TERM PROJECT II,0,3.50,METİN ERCAN,TBA,,,,,,,"                          "
+AD  600.01,Desc.,RESEARCH METHODS I,4,10,MUZAFFER BODUR,WWW,345,,,,,,"                          "
+AD  620.01,Desc.,HISTORY OF MANAGEMENT THOUGHT,4,10,MUSTAFA DİLBER,TBA,,,,,,,"                          "
+AD  627.01,Desc.,ORGANIZATION THEORY,4,20,GÜVEN ALPAY,TBA,,,,,,,"                          "
+AD  640.01,Desc.,MARKETING THEORY,4,10,GÜLDEN ASUGMAN,TTT,234,,,,,,"                          "
+AD  681.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,METİN ERCAN,TBA,,,,,,,"                          "
+AD  685.01,Desc.,DIRECTED READ.IN MGMT.&ORGANIZ.THEORY,4,30,DENİZ ERDEN,TBA,,,,,,,"                          "
+AD  685.02,Desc.,DIRECTED READ.IN MGMT.&ORGANIZ.THEORY,4,30,GÜVEN ALPAY,TBA,,,,,,,"                          "
+AD  691.01,Desc.,DIRECTED READINGS IN MARKETING THEORY,4,30,STAFF STAFF,TBA,,,,,,,"                          "
+AD  790.01,Desc.,Ph.D DISSERTATION,0,120,MİNE UĞURLU,TBA,,,,,,,"                          "

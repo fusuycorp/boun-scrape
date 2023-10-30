@@ -1,0 +1,230 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AE  111.01,Desc.,ADVANCED ENGLISH I,3,3,YAĞIZ TANLI,MTW,543,,M 1170 | ETA 2 | M 2152,03.06.2014,1,,"                          "
+AE  111.02,Desc.,ADVANCED ENGLISH I,3,3,EDWARD MITCHELL,MWTh,445,,M 2180 | M 1171 | M 1152,03.06.2014,1,,"                          "
+AE  112.01,Desc.,ADVANCED ENGLISH II,3,4,DENİZ ILGAZ,TTTh,123,,HKD301 | HKD301 | HKD301,27.05.2014,1,,"                          "
+AE  112.02,Desc.,ADVANCED ENGLISH II,3,4,DENİZ ILGAZ,TWW,312,,HKD301 | HKD301 | HKD301,27.05.2014,1,,"                          "
+AE  112.03,Desc.,ADVANCED ENGLISH II,3,4,DENİZ ILGAZ,WThTh,312,,HKD301 | HKD301 | HKD301,27.05.2014,1,,"                          "
+AE  112.04,Desc.,ADVANCED ENGLISH II,3,4,DENİZ ILGAZ,WWTh,454,,HKD301 | HKD301 | HKD301,27.05.2014,1,,"                          "
+AE  112.05,Desc.,ADVANCED ENGLISH II,3,4,MELTEM GÜRLE,WThTh,656,,NH 303 | M 2170 | M 2170,27.05.2014,1,,"                          "
+AE  112.06,Desc.,ADVANCED ENGLISH II,3,4,MELTEM GÜRLE,WThTh,578,,NH 303 | M 2170 | M 2170,27.05.2014,1,,"                          "
+AE  112.07,Desc.,ADVANCED ENGLISH II,3,4,MELTEM GÜRLE,WFF,234,,NBZ 10 | M 1100 | M 1100,27.05.2014,1,,"                          "
+AE  112.08,Desc.,ADVANCED ENGLISH II,3,4,AYLİN VARTANYAN,TWW,712,,M 2152 | M 1171 | M 1171,27.05.2014,1,,"                          "
+AE  112.09,Desc.,ADVANCED ENGLISH II,3,4,AYLİN VARTANYAN,TWW,856,,M 2152 | M 2200 | M 2200,27.05.2014,1,,"                          "
+AE  112.10,Desc.,ADVANCED ENGLISH II,3,4,NİLGÜN FIRAT,MMW,341,,NH 104 | NH 104 | YD 102,27.05.2014,1,,"                          "
+AE  112.11,Desc.,ADVANCED ENGLISH II,3,4,NİLGÜN FIRAT,MMTh,677,,NH 104 | NH 104 | NH 201,27.05.2014,1,,"                          "
+AE  112.12,Desc.,ADVANCED ENGLISH II,3,4,ASUDE KÜÇÜK,ThFF,723,,NH 403 | M 1171 | M 1171,27.05.2014,1,,"                          "
+AE  112.13,Desc.,ADVANCED ENGLISH II,3,4,ASUDE KÜÇÜK,TTTh,788,,KPARK4 | KPARK4 | NH 403,27.05.2014,1,,"                          "
+AE  112.14,Desc.,ADVANCED ENGLISH II,3,4,FATMA ANG TAŞKENT,MMW,121,,M 2152 | M 2152 | NH 103,27.05.2014,1,,"                          "
+AE  112.15,Desc.,ADVANCED ENGLISH II,3,4,FATMA ANG TAŞKENT,MMW,452,,M 2230 | M 2230 | NH 103,27.05.2014,1,,"                          "
+AE  204.01,Desc.,ENGLISH THROUGH PUBLIC SPEAKING&DRAMA I,3,4,YAĞIZ TANLI,MTW,154,,M 1171 | ETA 2 | M 2152,06.06.2014,1,,"                          "
+AE  204.02,Desc.,ENGLISH THROUGH PUBLIC SPEAKING&DRAMA I,3,4,YAĞIZ TANLI,MTW,412,,M 1170 | ETA 2 | M 2152,06.06.2014,1,,"                          "
+AE  221.01,Desc.,CRITICAL READING,3,4,ÜLKER BİLGİN,TThTh,334,,ETA 2 | NH 302 | NH 302,,0,,"                          "
+AE  221.02,Desc.,CRITICAL READING,3,4,ASUDE KÜÇÜK,ThFF,545,,NH 403 | M 1171 | M 1171,,0,,"                          "
+AE  221.03,Desc.,CRITICAL READING,3,4,FATMA ANG TAŞKENT,WFF,323,,NH 103 | M 2171 | M 2171,,0,,"                          "
+AE  221.04,Desc.,CRITICAL READING,3,4,FATMA ANG TAŞKENT,WFF,456,,NH 103 | M 2171 | M 2171,,0,,"                          "
+AE  222.01,Desc.,CRITICAL READING II,3,4,AYLİN VARTANYAN,TThTh,434,,M 1171 | ETA 2 | ETA 2,,0,,"                          "
+AE  222.02,Desc.,CRITICAL READING II,3,4,AYLİN VARTANYAN,TThTh,567,,M 1171 | ETA 2 | ETA 2,,0,,"                          "
+AE  222.03,Desc.,CRITICAL READING II,3,4,NİLGÜN FIRAT,WWTh,344,,YD 104 | YD 104 | NH 402,,0,,"                          "
+AE  222.04,Desc.,CRITICAL READING II,3,4,NİLGÜN FIRAT,WThTh,523,,YD 104 | NH 402 | NH 402,,0,,"                          "
+AE  222.05,Desc.,CRITICAL READING II,3,4,ASUDE KÜÇÜK,TTTh,566,,KPARK4 | KPARK4 | NH 403,,0,,"                          "
+AE  232.01,Desc.,ENGLISH FOR EUROPEAN POLITICAL INTEG.,3,4,DENİZ ILGAZ,TTTh,455,,HKD301 | HKD301 | HKD301,,0,,"                          "
+AE  300.01,Desc.,ENGLISH THROUGH DRAMATIC TEXT I,3,4,YAĞIZ TANLI,MTW,221,,M 1171 | ETA 2 | M 2152,05.06.2014,3,,"                          "
+ARM 102.01,Desc.,ARMENIAN FOR BEGINNERS II,3,5,MARAL AKTOKMAKYAN,MMM,456,,YD 205 | YD 205 | YD 205,23.05.2014,3,,"                          "
+FR  101.01,Desc.,ELEMENTARY FRENCH I,3,7,MERAL DEMİREL,MMWWFF,343434,,KPARK4 | KPARK4 | KPARK4 | KPARK4 | KPARK4 | KPARK4,23.05.2014,3,,"                          "
+FR  101.02,Desc.,ELEMENTARY FRENCH I,3,7,ASLI TARKAN KALAYCIOĞLU,MMTTWW,121212,,KPARK7 | KPARK7 | YD 205 | YD 205 | GYD 409 | GYD 409,23.05.2014,3,,"                          "
+FR  101.03,Desc.,ELEMENTARY FRENCH I,3,7,CAROLINE BEGIN,MMWWThTh,787878,,YD 202 | YD 202 | KPARK9 | KPARK9 | GYD 409 | GYD 409,23.05.2014,3,,"                          "
+FR  101.04,Desc.,ELEMENTARY FRENCH I,3,7,ŞELA ZONANA BEHAR,WWThThFF,121212,,NH 102 | NH 102 | GYD 409 | GYD 409 | YD 205 | YD 205,23.05.2014,3,,"                          "
+FR  102.01,Desc.,ELEMENTARY FRENCH II,3,7,ERHAN KAYAALP,MMWWThTh,787878,,GYD 401 | GYD 401 | NH 203 | NH 203 | KPARK2 | KPARK2,23.05.2014,2,"HIST,TRM","                          "
+FR  102.02,Desc.,ELEMENTARY FRENCH II,3,7,ULAŞ AKARSU,MMTTWW,565656,,GYD 402 | GYD 402 | YD 02 | YD 02 | GYD 404 | GYD 404,23.05.2014,2,INTT,"                          "
+FR  102.03,Desc.,ELEMENTARY FRENCH II,3,7,PINAR MAYTALMAN,TTThThFF,121212,,KPARK6 | KPARK6 | GYD 402 | GYD 402 | GYD 409 | GYD 409,23.05.2014,2,"TR,PHYS","                          "
+FR  102.04,Desc.,ELEMENTARY FRENCH II,3,7,PINAR MAYTALMAN,TTThThFF,343434,,KPARK6 | KPARK6 | GYD 402 | GYD 402 | GYD 409 | GYD 409,23.05.2014,2,,"                          "
+FR  102.05,Desc.,ELEMENTARY FRENCH II,3,7,TANİZ ORALBİ,TTThThFF,121212,,NH 302 | NH 302 | NH 001 | NH 001 | GYD 401 | GYD 401,23.05.2014,2,LL,"                          "
+FR  201.01,Desc.,INTERMEDIATE FRENCH I,3,7,ASLI TARKAN KALAYCIOĞLU,MMTTWW,343434,,KPARK7 | KPARK7 | YD 205 | YD 205 | GYD 409 | GYD 409,23.05.2014,2,,"                          "
+FR  201.02,Desc.,INTERMEDIATE FRENCH I,3,7,PINAR PEKTAŞ,TTWWThTh,565656,,GYD 401 | GYD 401 | GYD 402 | GYD 402 | KPARK3 | KPARK3,23.05.2014,2,,"                          "
+FR  201.03,Desc.,INTERMEDIATE FRENCH I,3,7,PINAR PEKTAŞ,TTWWThTh,787878,,GYD 401 | GYD 401 | GYD 402 | GYD 402 | KPARK3 | KPARK3,23.05.2014,2,,"                          "
+FR  201.04,Desc.,INTERMEDIATE FRENCH I,3,7,DAVID BAGLIETO,MMWWThTh,343434,,GYD 409 | GYD 409 | KYD 111 | KYD 111 | YD 04 | YD 04,23.05.2014,2,,"                          "
+FR  202.01,Desc.,INTERMEDIATE FRENCH II,3,7,SENİHA SIRMA FURTUN,TTWWThTh,121212,,GYD 402 | GYD 402 | GYD 401 | GYD 401 | KPARK3 | KPARK3,23.05.2014,1,"TR,PHYS","                          "
+FR  202.02,Desc.,INTERMEDIATE FRENCH II,3,7,ULAŞ AKARSU,MMTTWW,787878,,GYD 402 | GYD 402 | YD 02 | YD 02 | KPARK2 | KPARK2,23.05.2014,1,"HIST,TRM","                          "
+FR  202.03,Desc.,INTERMEDIATE FRENCH II,3,7,CAROLINE BEGIN,MMWWThTh,565656,,YD 202 | YD 202 | KPARK9 | KPARK9 | GYD 409 | GYD 409,23.05.2014,1,INTT,"                          "
+FR  202.04,Desc.,INTERMEDIATE FRENCH II,3,7,DAVID BAGLIETO,MMWWThTh,121212,,GYD 409 | GYD 409 | KYD 111 | KYD 111 | YD 04 | YD 04,23.05.2014,1,LL,"                          "
+FR  301.01,Desc.,ADVANCED FRENCH I,3,7,JOSELINE OJALVO,MMTTWW,343434,,KPARK3 | KPARK3 | KYD 112 | KYD 112 | KPARK2 | KPARK2,23.05.2014,2,,"                          "
+FR  301.02,Desc.,ADVANCED FRENCH I,3,7,SENİHA SIRMA FURTUN,TTWWThTh,343434,,GYD 402 | GYD 402 | GYD 401 | GYD 401 | KPARK3 | KPARK3,23.05.2014,2,,"                          "
+FR  302.01,Desc.,ADVANCED FRENCH II,3,7,ERHAN KAYAALP,MMWWThTh,565656,,GYD 401 | GYD 401 | NH 203 | NH 203 | KPARK2 | KPARK2,23.05.2014,3,"INTT,TRM","                          "
+FR  302.02,Desc.,ADVANCED FRENCH II,3,7,JOSELINE OJALVO,MMTTWW,121212,,KPARK3 | KPARK3 | KYD 112 | KYD 112 | KPARK2 | KPARK2,23.05.2014,3,TR,"                          "
+FR  404.01,Desc.,FRENCH FOR SOCIAL SCIENCES,3,5,MERAL DEMİREL,FFF,678,,KPARK4 | KPARK4 | KPARK4,23.05.2014,2,,"                          "
+FR  412.01,Desc.,FRENCH-TURKISH/TURKISH-FRENCH TRANS. II,3,5,ULAŞ AKARSU,WWW,123,,,23.05.2014,1,TR,"                          "
+FR  422.01,Desc.,FRENCH CULTURE II,3,5,SİNEM ÇAKMAK,FFF,234,,M 2230 | M 2230 | M 2230,,0,,"                          "
+FR  441.01,Desc.,ADVANCED FRENCH LANGUAGE SKILLS,3,5,TANİZ ORALBİ,TTT,567,,KPARK2 | KPARK2 | KPARK2,,0,,"                          "
+GER 101.01,Desc.,ELEMENTARY GERMAN I,3,7,ZUHAL ÇETİN,MMTTWW,121212,,YD 202 | YD 202 | KYD 110 | KYD 110 | YD 03 | YD 03,24.05.2014,1,,"                          "
+GER 101.02,Desc.,ELEMENTARY GERMAN I,3,7,ZUHAL ÇETİN,MMTTWW,343434,,YD 202 | YD 202 | KYD 110 | KYD 110 | YD 03 | YD 03,24.05.2014,1,,"                          "
+GER 101.03,Desc.,ELEMENTARY GERMAN I,3,7,SOPHIE STETTNER,WWWThThTh,456567,,NH 403 | NH 403 | NH 403 | NH 404 | NH 404 | NH 404,24.05.2014,1,,"                          "
+GER 102.01,Desc.,ELEMENTARY GERMAN II,3,7,ŞEHNAZ KARAATLI,TTThThFF,121212,,GYD 401 | GYD 401 | NH 303 | NH 303 | GYD 402 | GYD 402,24.05.2014,2,TR,"                          "
+GER 102.02,Desc.,ELEMENTARY GERMAN II,3,7,BİGE KOLUKISA İNELMEN,MMThThFF,565656,,GYD 409 | GYD 409 | GYD 402 | GYD 402 | GYD 402 | GYD 402,24.05.2014,2,INTT,"                          "
+GER 102.03,Desc.,ELEMENTARY GERMAN II,3,7,BİGE KOLUKISA İNELMEN,MMThThFF,787878,,GYD 409 | GYD 409 | GYD 402 | GYD 402 | GYD 402 | GYD 402,24.05.2014,2,TRM,"                          "
+GER 102.04,Desc.,ELEMENTARY GERMAN II,3,7,ELİF DÖNMEZ,MMTTWW,121212,,GYD 401 | GYD 401 | KYD 111 | KYD 111 | KYD 110 | KYD 110,24.05.2014,2,"LL,PHYS","                          "
+GER 102.05,Desc.,ELEMENTARY GERMAN II,3,7,ELİF DÖNMEZ,MMTTWW,343434,,GYD 401 | GYD 401 | KYD 111 | KYD 111 | KYD 110 | KYD 110,24.05.2014,2,,"                          "
+GER 102.06,Desc.,ELEMENTARY GERMAN II,3,7,BENOIT ELLERBACH,TTWWThTh,785678,,GYD 404 | GYD 404 | GYD 401 | GYD 401 | GYD 401 | GYD 401,24.05.2014,2,,"                          "
+GER 102.07,Desc.,ELEMENTARY GERMAN II,3,7,ERCÜMENT İDİK,MMThThFF,343434,,GYD 402 | GYD 402 | KPARK2 | KPARK2 | YD 102 | YD 102,24.05.2014,2,,"                          "
+GER 201.01,Desc.,PRE-INTERMEDIATE GERMAN I,3,7,AYLİN IŞIL BÖLKÜR,TTWWThTh,121212,,YD 101 | YD 101 | GYD 402 | GYD 402 | ETA 1 | ETA 1,24.05.2014,1,,"                          "
+GER 201.02,Desc.,PRE-INTERMEDIATE GERMAN I,3,7,AYLİN IŞIL BÖLKÜR,TTWWThTh,343434,,YD 101 | YD 101 | GYD 402 | GYD 402 | ETA 1 | ETA 1,24.05.2014,1,,"                          "
+GER 202.01,Desc.,PRE-INTERMEDIATE GERMAN II,3,7,ERCÜMENT İDİK,MMThThFF,121212,,GYD 402 | GYD 402 | KPARK2 | KPARK2 | YD 102 | YD 102,24.05.2014,3,"TR,LL,PHYS","                          "
+GER 202.03,Desc.,PRE-INTERMEDIATE GERMAN II,3,7,MÜJGAN ŞAHİNOĞLU,TTWWThTh,787878,,GYD 402 | GYD 402 | YD 03 | YD 03 | ETAB413 | ETAB413,24.05.2014,3,TRM,"                          "
+GER 202.04,Desc.,PRE-INTERMEDIATE GERMAN II,3,7,FAHRİYE FEVZİOĞLU,MMWWThTh,343434,,YD 05 | YD 05 | YD 202 | YD 202 | GYD 401 | GYD 401,24.05.2014,3,,"                          "
+GER 202.05,Desc.,PRE-INTERMEDIATE GERMAN II,3,7,MÜJGAN ŞAHİNOĞLU,TTWWThTh,565656,,GYD 402 | GYD 402 | YD 03 | YD 03 | ETA 1 | ETA 1,24.05.2014,3,,"                          "
+GER 301.01,Desc.,INTERMEDIATE GERMAN I,3,7,NİLÜFER ANDİÇ ,TTWWThTh,121212,,GYD 409 | GYD 409 | YD 02 | YD 02 | KPARK7 | KPARK7,24.05.2014,1,,"                          "
+GER 301.02,Desc.,INTERMEDIATE GERMAN I,3,7,NİLÜFER ANDİÇ ,TTWWThTh,343434,,GYD 409 | GYD 409 | YD 02 | YD 02 | KPARK7 | KPARK7,24.05.2014,1,,"                          "
+GER 302.01,Desc.,INTERMEDIATE GERMAN II,3,7,SİBYLLE ÇİZENEL,MMWWThTh,121212,,KYD 111 | KYD 111 | NH 304 | NH 304 | YD 06 | YD 06,,0,TR,"                          "
+GER 302.02,Desc.,INTERMEDIATE GERMAN II,3,7,FAHRİYE FEVZİOĞLU,MMWWThTh,565656,,YD 05 | YD 05 | YD 202 | YD 202 | GYD 401 | GYD 401,24.05.2014,2,INTT,"                          "
+GER 302.03,Desc.,INTERMEDIATE GERMAN II,3,7,ŞEHNAZ KARAATLI,TTThThFF,343434,,GYD 401 | GYD 401 | NH 303 | NH 303 | GYD 402 | GYD 402,24.05.2014,2,,"                          "
+GER 303.01,Desc.,INTERMEDIATE GERMAN III,3,7,SİBYLLE ÇİZENEL,MMWWThTh,787878,,M 1171 | M 1171 | GYD 401 | GYD 401,,0,,"                          "
+GER 322.01,Desc.,GERMAN CIVILIZATION II,3,5,BENOIT ELLERBACH,TTThTh,910910,,GYD 401 | GYD 401 | GYD 401 | GYD 401,,0,,"                          "
+GER 412.01,Desc.,TRANSLATION II,3,5,GÜVEN SAVAŞ KIZILTAN,MTT,456,,NBZ 12 | KYD 110 | KYD 110,,0,,"                          "
+GER 412.02,Desc.,TRANSLATION II,3,5,GÜVEN SAVAŞ KIZILTAN,TTT,789,,KYD 110 | KYD 110 | KYD 110,,0,,"                          "
+GER 412.03,Desc.,TRANSLATION II,3,5,GÜVEN SAVAŞ KIZILTAN,MMM,789,,GYD 404 | GYD 404 | GYD 404,,0,,"                          "
+GER 422.01,Desc.,MODERN GERMAN LITERATURE II,3,5,BENOIT ELLERBACH,WWW,789,,GYD 404 | GYD 404 | GYD 404,,0,,"                          "
+RUS 102.01,Desc.,BEGINNER'S RUSSIAN II,3,5,OLGA ZVERKOVA,MMTTThTh,341212,,NB 118 | NB 118 | NB 118 | NB 118 | NB 118 | NB 118,24.05.2014,3,,"                          "
+RUS 202.01,Desc.,INTERMEDIATE RUSSIAN II,3,5,OLGA ZVERKOVA,MMTTThTh,563434,,NB 118 | NB 118 | N/A | N/A | YD 205 | YD 205,24.05.2014,3,,"                          "
+SFL A02.01,Desc.,ENGLISH - ADVANCED LEVEL A2,,,EMİNE FÜSUN SAVCI,,,,,,0,,"                          "
+SFL A02.03,Desc.,ENGLISH - ADVANCED LEVEL A2,,,MERVE YIĞIN,,,,,,0,,"                          "
+SFL A02.04,Desc.,ENGLISH - ADVANCED LEVEL A2,,,NAYAT BASMA,,,,,,0,,"                          "
+SFL A02.06,Desc.,ENGLISH - ADVANCED LEVEL A2,,,JILL MARIE PETERSON,,,,,,0,,"                          "
+SFL A02.07,Desc.,ENGLISH - ADVANCED LEVEL A2,,,SHAYN McCALLUM,,,,,,0,,"                          "
+SFL A02.08,Desc.,ENGLISH - ADVANCED LEVEL A2,,,SELVİN YALTIR,,,,,,0,,"                          "
+SFL A02.09,Desc.,ENGLISH - ADVANCED LEVEL A2,,,VALERİE ANNE NEEDHAM,,,,,,0,,"                          "
+SFL A02.10,Desc.,ENGLISH - ADVANCED LEVEL A2,,,ELIZABETH K. RITCHIE,,,,,,0,,"                          "
+SFL A02.11,Desc.,ENGLISH - ADVANCED LEVEL A2,,,DAVID O'CONNOR,,,,,,0,,"                          "
+SFL A02.12,Desc.,ENGLISH - ADVANCED LEVEL A2,,,JAMES BARRON,,,,,,0,,"                          "
+SFL A02.13,Desc.,ENGLISH - ADVANCED LEVEL A2,,,NEIL B. WARRINGTON,,,,,,0,,"                          "
+SFL A02.14,Desc.,ENGLISH - ADVANCED LEVEL A2,,,NICHOLAS G. O'GARA,,,,,,0,,"                          "
+SFL A02.15,Desc.,ENGLISH - ADVANCED LEVEL A2,,,GÖKÇE KURUÇAY,,,,,,0,,"                          "
+SFL A04.03,Desc.,ENGLISH - ADVANCED LEVEL B2,,,JOICY KOOTHUR,,,,,,0,,"                          "
+SFL B02.01,Desc.,ENGLISH - BEGINNER LEVEL A2,,,M.FATİH ELAZİZ,,,,,,0,,"                          "
+SFL B02.02,Desc.,ENGLISH - BEGINNER LEVEL A2,,,MELİKE YILMAZ BAŞTUĞ,,,,,,0,,"                          "
+SFL B02.03,Desc.,ENGLISH - BEGINNER LEVEL A2,,,FATMA DİLEK YÜCEL,,,,,,0,,"                          "
+SFL B02.04,Desc.,ENGLISH - BEGINNER LEVEL A2,,,HANDE KARAKOÇ,,,,,,0,,"                          "
+SFL B02.05,Desc.,ENGLISH - BEGINNER LEVEL A2,,,AYŞE GİZEM BAYDAROL (DORA),,,,,,0,,"                          "
+SFL B02.06,Desc.,ENGLISH - BEGINNER LEVEL A2,,,YILDIZ YILDIRIM,,,,,,0,,"                          "
+SFL B02.07,Desc.,ENGLISH - BEGINNER LEVEL A2,,,FATMA BAYRAM,,,,,,0,,"                          "
+SFL B02.08,Desc.,ENGLISH - BEGINNER LEVEL A2,,,NİL KURTULAN DEMİREL,,,,,,0,,"                          "
+SFL B02.10,Desc.,ENGLISH - BEGINNER LEVEL A2,,,S.MERVE AKBAŞ,,,,,,0,,"                          "
+SFL B02.11,Desc.,ENGLISH - BEGINNER LEVEL A2,,,AHMET BÜLBÜL,,,,,,0,,"                          "
+SFL B02.12,Desc.,ENGLISH - BEGINNER LEVEL A2,,,ZEHRA BAHADIR,,,,,,0,,"                          "
+SFL B02.13,Desc.,ENGLISH - BEGINNER LEVEL A2,,,SEMİH TÜRKOĞLU,,,,,,0,,"                          "
+SFL B02.14,Desc.,ENGLISH - BEGINNER LEVEL A2,,,TUBA YILMAZ,,,,,,0,,"                          "
+SFL B02.15,Desc.,ENGLISH - BEGINNER LEVEL A2,,,EMEK AYŞE YILDIZ,,,,,,0,,"                          "
+SFL B02.16,Desc.,ENGLISH - BEGINNER LEVEL A2,,,JÜLİDE BANU ÖZTÜRK İNEGÖLLÜOĞLU,,,,,,0,,"                          "
+SFL B02.17,Desc.,ENGLISH - BEGINNER LEVEL A2,,,HÜLYA ERSOY,,,,,,0,,"                          "
+SFL B02.18,Desc.,ENGLISH - BEGINNER LEVEL A2,,,NESRİN KUTLAY,,,,,,0,,"                          "
+SFL B04.01,Desc.,ENGLISH - BEGINNER LEVEL B2,,,ERGÜN ÜZÜMOĞLU,,,,,,0,,"                          "
+SFL B04.02,Desc.,ENGLISH - BEGINNER LEVEL B2,,,ERGÜN ÜZÜMOĞLU,,,,,,0,,"                          "
+SFL B04.03,Desc.,ENGLISH - BEGINNER LEVEL B2,,,DENİZ SAVAŞAL ATLI,,,,,,0,,"                          "
+SFL B04.04,Desc.,ENGLISH - BEGINNER LEVEL B2,,,DENİZ SAVAŞAL ATLI,,,,,,0,,"                          "
+SFL B04.05,Desc.,ENGLISH - BEGINNER LEVEL B2,,,ÇAĞDAŞ KALAFAT,,,,,,0,,"                          "
+SFL B04.06,Desc.,ENGLISH - BEGINNER LEVEL B2,,,ÇAĞDAŞ KALAFAT,,,,,,0,,"                          "
+SFL B04.07,Desc.,ENGLISH - BEGINNER LEVEL B2,,,AYŞEGÜL KORKMAZ,,,,,,0,,"                          "
+SFL B04.08,Desc.,ENGLISH - BEGINNER LEVEL B2,,,AYŞEGÜL KORKMAZ,,,,,,0,,"                          "
+SFL B04.10,Desc.,ENGLISH - BEGINNER LEVEL B2,,,YASEMİN ÖZSOY,,,,,,0,,"                          "
+SFL B04.11,Desc.,ENGLISH - BEGINNER LEVEL B2,,,ALİN ARSLAN,,,,,,0,,"                          "
+SFL B04.12,Desc.,ENGLISH - BEGINNER LEVEL B2,,,GÜLSÜN AYDINLAR,,,,,,0,,"                          "
+SFL B04.13,Desc.,ENGLISH - BEGINNER LEVEL B2,,,BERAT BAŞER,,,,,,0,,"                          "
+SFL B04.14,Desc.,ENGLISH - BEGINNER LEVEL B2,,,BERAT BAŞER,,,,,,0,,"                          "
+SFL B04.15,Desc.,ENGLISH - BEGINNER LEVEL B2,,,HÜRMÜZ TELÇEKER,,,,,,0,,"                          "
+SFL B04.16,Desc.,ENGLISH - BEGINNER LEVEL B2,,,HÜRMÜZ TELÇEKER,,,,,,0,,"                          "
+SFL B04.17,Desc.,ENGLISH - BEGINNER LEVEL B2,,,GÖNÜL TUĞBA AKDAĞ,,,,,,0,,"                          "
+SFL B04.18,Desc.,ENGLISH - BEGINNER LEVEL B2,,,GÖNÜL TUĞBA AKDAĞ,,,,,,0,,"                          "
+SFL I02.01,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,ÜLFET ÖĞÜT,,,,,,0,,"                          "
+SFL I02.02,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,OYA ÖZAĞAÇ,,,,,,0,,"                          "
+SFL I02.03,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,GÜL AKKOÇ,,,,,,0,,"                          "
+SFL I02.04,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,JESSICA ERI MOTAI,,,,,,0,,"                          "
+SFL I02.05,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,ALAZ PESEN,,,,,,0,,"                          "
+SFL I02.06,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,ZEYNEP ABANOZ ÇELİK,,,,,,0,,"                          "
+SFL I02.07,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,ASLI KUTAL ÇULHA,,,,,,0,,"                          "
+SFL I02.08,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,SEÇİL BARAN,,,,,,0,,"                          "
+SFL I02.09,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,ÇİĞDEM DALAY,,,,,,0,,"                          "
+SFL I02.10,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,H.MÜGE SATAR,,,,,,0,,"                          "
+SFL I02.11,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,ELİF KEMALOĞLU,,,,,,0,,"                          "
+SFL I02.12,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,AYŞE SARI,,,,,,0,,"                          "
+SFL I02.13,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,STAFF STAFF,,,,,,0,,"                          "
+SFL I02.14,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,SEMA ÖZÇALLI,,,,,,0,,"                          "
+SFL I02.15,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,HATİCE EBRU ATAÇ,,,,,,0,,"                          "
+SFL I02.16,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,LEILA BRAVERMAN,,,,,,0,,"                          "
+SFL I02.18,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,ASLI SÜREYYA SAYMAN,,,,,,0,,"                          "
+SFL I02.19,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,SAMİ BATOK,,,,,,0,,"                          "
+SFL I02.20,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,IRINA OANA POPA,,,,,,0,,"                          "
+SFL I02.21,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,SEHER DEMİR AYTAŞKIN,,,,,,0,,"                          "
+SFL I02.22,Desc.,ENGLISH - INTERMEDIATE LEVEL - A2,,,GÜLAY TAŞSEVEN,,,,,,0,,"                          "
+SFL I04.01,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,ŞEBNEM YAŞAROL,,,,,,0,,"                          "
+SFL I04.02,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,NİSSO MEŞULAM,,,,,,0,,"                          "
+SFL I04.03,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,ZELİHA GÜLÇAT,,,,,,0,,"                          "
+SFL I04.04,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,BANU İLAL,,,,,,0,,"                          "
+SFL I04.05,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,SEVDA AKYÜZ,,,,,,0,,"                          "
+SFL I04.06,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,SEVDA AKYÜZ,,,,,,0,,"                          "
+SFL I04.07,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,ZEYNEP AKBAŞ,,,,,,0,,"                          "
+SFL I04.08,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,İNCİ KARTAL,,,,,,0,,"                          "
+SFL I04.09,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,NİSSO MEŞULAM,,,,,,0,,"                          "
+SFL I04.10,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,ZELİHA GÜLÇAT,,,,,,0,,"                          "
+SFL I04.11,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,NİSSO MEŞULAM,,,,,,0,,"                          "
+SFL I04.12,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,İNCİ KARTAL,,,,,,0,,"                          "
+SFL I04.13,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,ZEYNEP AKBAŞ,,,,,,0,,"                          "
+SFL I04.14,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,MİNE BALTUTAN BARAN,,,,,,0,,"                          "
+SFL I04.15,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,MUSTAFA GÖNENÇ,,,,,,0,,"                          "
+SFL I04.16,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,MUSTAFA GÖNENÇ,,,,,,0,,"                          "
+SFL I04.18,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,MUSTAFA GÖNENÇ,,,,,,0,,"                          "
+SFL I04.19,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,SEVİL KAZAK,,,,,,0,,"                          "
+SFL I04.20,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,SEVİL KAZAK,,,,,,0,,"                          "
+SFL I04.21,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,SEVİL KAZAK,,,,,,0,,"                          "
+SFL I04.22,Desc.,ENGLISH - INTERMEDIATE LEVEL - B2,,,SEVİL KAZAK,,,,,,0,,"                          "
+SFL P02.01,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,BÜŞRA AYÇA KARAMAN,,,,,,0,,"                          "
+SFL P02.02,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,MÜJDE GÜL,,,,,,0,,"                          "
+SFL P02.03,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,FUAT ÖZKUL,,,,,,0,,"                          "
+SFL P02.04,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,CLAUDIA TUNCEL,,,,,,0,,"                          "
+SFL P02.05,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,LARA KASAR,,,,,,0,,"                          "
+SFL P02.06,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,SERHAT ÇELİKEL,,,,,,0,,"                          "
+SFL P02.07,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,İNCİ AYTAÇOĞLU,,,,,,0,,"                          "
+SFL P02.08,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,YASEMİN TAŞAN,,,,,,0,,"                          "
+SFL P02.09,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,DUYGU UMUTLU,,,,,,0,,"                          "
+SFL P02.10,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,ÖZGE DİŞLİ,,,,,,0,,"                          "
+SFL P02.11,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,KERBAN HANÖZ,,,,,,0,,"                          "
+SFL P02.12,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,ZAFER YAVAŞ,,,,,,0,,"                          "
+SFL P02.13,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,İPEK SEYALIOĞLU,,,,,,0,,"                          "
+SFL P02.14,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,PINAR DEMİRCİ,,,,,,0,,"                          "
+SFL P02.15,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,JENALINE PYLE,,,,,,0,,"                          "
+SFL P02.16,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,NURAY AKÇA,,,,,,0,,"                          "
+SFL P02.17,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - A2,,,ÇİĞDEM TABAN,,,,,,0,,"                          "
+SFL P04.01,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,ZEYNEP ZARAKOL,,,,,,0,,"                          "
+SFL P04.02,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,AYŞE NUR SANKUR,,,,,,0,,"                          "
+SFL P04.03,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,AYŞE NUR SANKUR,,,,,,0,,"                          "
+SFL P04.04,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,HARİKA SAĞLICAK ALTUĞ,,,,,,0,,"                          "
+SFL P04.05,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,SOSİ ZOVİKOĞLU,,,,,,0,,"                          "
+SFL P04.06,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,SOSİ ZOVİKOĞLU,,,,,,0,,"                          "
+SFL P04.07,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,MÜGE EKİNCİOĞLU,,,,,,0,,"                          "
+SFL P04.08,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,HARİKA SAĞLICAK ALTUĞ,,,,,,0,,"                          "
+SFL P04.09,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,CAROL JARDINE,,,,,,0,,"                          "
+SFL P04.10,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,CAROL JARDINE,,,,,,0,,"                          "
+SFL P04.11,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,BEGÜM ECE YILDIZ,,,,,,0,,"                          "
+SFL P04.12,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,BEGÜM ECE YILDIZ,,,,,,0,,"                          "
+SFL P04.13,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,ILGIN BÜYÜKKURT,,,,,,0,,"                          "
+SFL P04.14,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,ILGIN BÜYÜKKURT,,,,,,0,,"                          "
+SFL P04.15,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,SİNEM YILMAZ,,,,,,0,,"                          "
+SFL P04.16,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,ELİFCAN ATA KIL,,,,,,0,,"                          "
+SFL P04.17,Desc.,ENGLISH - PRE-INTERMEDIATE LEVEL - B2,,,ELİFCAN ATA KIL,,,,,,0,,"                          "
+SPA 101.01,Desc.,ELEMENTARY SPANISH I,3,7,NICOLAS MENDEZ,TTWWThTh,343434,,GARANTİ | GARANTİ | YD 205 | YD 205 | YD 03 | YD 03,23.05.2014,2,,"                          "
+SPA 101.02,Desc.,ELEMENTARY SPANISH I,3,7,NICOLAS MENDEZ,TTWWThTh,565656,,GARANTİ | GARANTİ | YD 205 | YD 205 | YD 03 | YD 03,23.05.2014,2,,"                          "
+SPA 101.03,Desc.,ELEMENTARY SPANISH I,3,7,MARIA JOSE GONZALEZ,TTWWThTh,561256,,KYD 111 | KYD 111 | HKC218 | HKC218 | YD 104 | YD 104,23.05.2014,2,,"                          "
+SPA 101.04,Desc.,ELEMENTARY SPANISH I,3,7,MARIA JOSE GONZALEZ,TTWWThTh,783478,,KYD 111 | KYD 111 | HKC218 | HKC218 | YD 104 | YD 104,23.05.2014,2,,"                          "
+SPA 101.05,Desc.,ELEMENTARY SPANISH I,3,7,ALICIA  DE LA ANTONIA,MMThThFF,121212,,KPARK9 | KPARK9 | M 2231 | M 2231 | YD 101 | YD 101,23.05.2014,2,,"                          "
+SPA 101.06,Desc.,ELEMENTARY SPANISH I,3,7,ALICIA  DE LA ANTONIA,MMThThFF,343434,,KPARK9 | KPARK9 | M 2231 | M 2231 | YD 203 | YD 203,23.05.2014,2,,"                          "
+SPA 101.07,Desc.,ELEMENTARY SPANISH I,3,7,ANGELA PLATA ALONSO,MMThThFF,561212,,KPARK9 | KPARK9 | YD 102 | YD 102 | YD 203 | YD 203,23.05.2014,2,,"                          "
+SPA 101.08,Desc.,ELEMENTARY SPANISH I,3,7,AINHOA SALAZAR,MMWWThTh,121212,,YD 04 | YD 04 | GARANTİ | GARANTİ | YD 203 | YD 203,23.05.2014,2,,"                          "
+SPA 101.09,Desc.,ELEMENTARY SPANISH I,3,7,AINHOA SALAZAR,MMWWThTh,343434,,YD 04 | YD 04 | GARANTİ | GARANTİ | YD 203 | YD 203,23.05.2014,2,,"                          "
+SPA 102.01,Desc.,ELEMENTARY SPANISH II,3,7,CLAUDIA ZAMARRIPA KURAL,MMTTWW,565656,,KPARK2 | KPARK2 | HKA202 | HKA202 | KPARK4 | KPARK4,23.05.2014,1,INTT,"                          "
+SPA 102.02,Desc.,ELEMENTARY SPANISH II,3,7,CLAUDIA ZAMARRIPA KURAL,MMTTWW,787878,,KPARK2 | KPARK2 | KYD 112 | KYD 112 | HKC104 | HKC104,23.05.2014,1,TRM,"                          "
+SPA 102.03,Desc.,ELEMENTARY SPANISH II,3,7,RAUL MOLINA,TTWWThTh,121212,,YD 03 | YD 03 | KYD 113 | KYD 113 | YD 201 | YD 201,23.05.2014,1,TR,"                          "
+SPA 102.04,Desc.,ELEMENTARY SPANISH II,3,7,RAUL MOLINA,TTWWThTh,343434,,YD 203 | YD 203 | KYD 113 | KYD 113 | YD 201 | YD 201,23.05.2014,1,,"                          "
+SPA 201.01,Desc.,INTERMEDIATE SPANISH I,3,7,MARIA FERNANDA GOMEZ RIVERA,MMTTWW,121212,,KPARK2 | KPARK2 | NH 104 | NH 104 | NH 402 | NH 402,23.05.2014,3,,"                          "
+SPA 201.02,Desc.,INTERMEDIATE SPANISH I,3,7,MARIA FERNANDA GOMEZ RIVERA,MMTTWW,343434,,KPARK2 | KPARK2 | KYD 113 | KYD 113 | HKD201 | HKD201,23.05.2014,3,,"                          "
+SPA 201.03,Desc.,INTERMEDIATE SPANISH I,3,7,ANGELA PLATA ALONSO,MMThThFF,783434,,KPARK6 | KPARK6 | GYD 409 | GYD 409 | YD 101 | YD 101,23.05.2014,3,,"                          "
+SPA 202.01,Desc.,INTERMEDIATE SPANISH II,3,7,MONTSERRAT MUNOZ,TTWWThTh,121212,,GARANTİ | GARANTİ | KYD 112 | KYD 112 | ETA 3 | ETA 3,23.05.2014,2,TR,"                          "
+SPA 202.02,Desc.,INTERMEDIATE SPANISH II,3,7,MONTSERRAT MUNOZ,TTWWThTh,343434,,GARANTİ | GARANTİ | KYD 112 | KYD 112 | ETA 3 | ETA 3,23.05.2014,2,,"                          "
+SPA 301.01,Desc.,ADVANCED SPANISH I,3,7,MERYEM ARIKAN,TTThThFF,565656,,GYD 409 | GYD 409 | KPARK7 | KPARK7 | GYD 401 | GYD 401,23.05.2014,1,,"                          "
+SPA 302.01,Desc.,ADVANCED SPANISH II,3,7,MERYEM ARIKAN,TTThThFF,787878,,GYD 409 | GYD 409 | KPARK7 | KPARK7 | GYD 401 | GYD 401,23.05.2014,3,,"                          "

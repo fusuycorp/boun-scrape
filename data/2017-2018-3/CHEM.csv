@@ -1,0 +1,14 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHEM103.01,Desc.,GENERAL CHEMISTRY I,3,7,ŞULE EROL GÜNAL,TTWWThTh,343434,,NH 103 | NH 103 | NH 201 | NH 201 | KB Z01 | KB Z01,08.08.2018,4,,"        BIO; CEDU; CHE; PEDU; PRSC                  "
+,,P.S.,,,ŞULE EROL GÜNAL,T,5,,NH 103,,0,,"        BIO; CEDU; CHE; PEDU; PRSC                  "
+CHEM104.01,Desc.,GENERAL CHEMISTRY II,3,6,JESMI ÇAVUŞOĞLU,MMTTWW,121212,,NH 202 | KB 125 | KB 125 | KB 125 | KB 125,09.08.2018,3,,"        BIO; CHE; CEDU; PRSC                  "
+,,P.S.,,,JESMI ÇAVUŞOĞLU,MM,56,,KB 125 | KB 125,,0,,"        BIO; CHE; CEDU; PRSC                  "
+CHEM105.01,Desc.,FUNDAMENTALS OF CHEMISTRY,4,6,SESİL ÇINAR,TTWWThTh,565656,,NH 104 | NH 104 | EF 202 | EF 202 | KB 125 | KB 125,09.08.2018,3,,"        ME; CMPE; EE; PHYS                  "
+,,LAB,,,ÖZGE AKDENİZ,TTThTh,78910,,,,0,,"        ME; CMPE; EE; PHYS                  "
+,,P.S.,,,SESİL ÇINAR,W,7,,,,0,,"        ME; CMPE; EE; PHYS                  "
+,,LAB,,,ÖZGE AKDENİZ,MMWW,5678,,,,0,,"                          "
+CHEM201.01,Desc.,ORGANIC CHEMISTRY I,4,5,İLKNUR DOĞAN,MMTTWWThTh,78787878,,KB 126 | KB 126 | KB 126 | KB 126 | KB 126 | KB 126 | KB 126 | KB 126,08.08.2018,4,,"                          "
+,,P.S.,,,İLKNUR DOĞAN,WW,56,,KB 125 | KB 125,,0,,"                          "
+CHEM202.01,Desc.,ORGANIC CHEMISTRY II,4,5,İLKNUR DOĞAN,MMTTWWThTh,34343434,,KB 125 | KB 125 | KB 125 | KB 125 | KB 125 | KB 125 | KB 125 | KB 125,10.08.2018,2,,"                          "
+CHEM204.01,Desc.,ORGANIC CHEMISTRY LABORATORY II,2,4,EDİZ TAYLAN,TTTWWW,567678,,KB 125 | KB 125 | KB 125 | NH 201 | NH 201 | NH 201,08.08.2018,2,,"                          "
+CHEM485.01,Desc.,SP.TP.:CHEMISTRY OF OLIVES,3,4,ZEYNEP DELEN,TTTWWW,567567,,NH 102 | NH 102 | NH 102 | NH 103 | NH 103 | NH 103,08.08.2018,2,,"                          "

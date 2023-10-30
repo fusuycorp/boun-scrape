@@ -1,0 +1,69 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CL  402.01,Desc.,LITERARY CRITICISM II,3,7,KIM FORTUNY,TWF,752,,TB 240 | TB 310 | M 1100,,,,"                          "
+CL  484.01,Desc.,SP.TOP.:THE SONNET THROUGH THE AGES,3,6,SOSİ ANTİKACIOĞLU,WWF,344,,M 1200 | M 1200 | M 1170,,,,"                          "
+CL  494.01,Desc.,SP.TOP.EVIL IN SHORT FICTION,3,6,LAMİA GÜLÇUR,TThF,536,,TB 490 | NH 201 | M 1170,,,,"                          "
+DRA 204.01,Desc.,MODERN DRAMA,3,6,ASLI TEKİNAY,WWF,456,,NH 104 | NH 104 | TB 490,,,,"                          "
+DRA 401.01,Desc.,AMERICAN DRAMA,3,6,ASLI TEKİNAY,WWF,234,,NH 104 | NH 104 | M 1200,,,,"                          "
+EL  102.01,Desc.,SURVEY OF ENGLISH LITERATURE II,3,7,ÖZLEM GÖREY,TThF,444,,NH 201 | M 2230 | TB 310,,,"LL,FLED,TR","                          "
+EL  102.02,Desc.,SURVEY OF ENGLISH LITERATURE II,3,7,LAMİA GÜLÇUR,TThF,444,,TB 490 | NH 201 | TB 490,,,"LL,FLED,TR","                          "
+EL  102.03,Desc.,SURVEY OF ENGLISH LITERATURE II,3,7,AYLİN ALKAÇ,TThF,444,,TB 260 | M 1100 | NBZ 11,,,"LL,FLED,TR","                          "
+EL  102.04,Desc.,SURVEY OF ENGLISH LITERATURE II,3,7,SUNA ERTUĞRUL,TThF,444,,NH 304 | NH 104 | TB 475,,,"LL,FLED,TR","                          "
+EL  112.01,Desc.,CULTURAL HISTORY OF ENGLAND,3,7,LOUIS MAZZARI,MFF,612,,NH 305 | NH 305 | NH 305,,,,"                          "
+EL  202.01,Desc.,THE SIXTEENTH CENTURY,3,6,KIM FORTUNY,TWF,575,,TB 310 | TB 310 | TB 310,,,,"                          "
+EL  302.01,Desc.,THE AUGUSTAN AGE,3,6,ÖZLEM GÖREY,TThF,657,,NH 103 | M 2230 | M 2170,,,,"                          "
+EL  310.01,Desc.,CHAUCER,3,5,IŞIL BAŞ,MMW,788,,M 1200 | M 1200 | TB 310,,,,"                          "
+EL  408.01,Desc.,MODERN ENGLISH POETRY,3,6,CEVZA SEVGEN,TThFF,8678,,TB 260 | TB 490 | M 2152 | M 2152,,,,"                          "
+EL  412.01,Desc.,RESEARCH AND WRITING,3,6,SOSİ ANTİKACIOĞLU,TBA,,,,,,,"                          "
+EL  412.02,Desc.,RESEARCH AND WRITING,3,6,KIM FORTUNY,TBA,,,,,,,"                          "
+EL  412.03,Desc.,RESEARCH AND WRITING,3,6,LAMİA GÜLÇUR,TBA,,,,,,,"                          "
+EL  412.04,Desc.,RESEARCH AND WRITING,3,6,ÖZLEM ÖĞÜT,TBA,,,,,,,"                          "
+EL  412.05,Desc.,RESEARCH AND WRITING,3,6,SUNA ERTUĞRUL,TBA,,,,,,,"                          "
+EL  412.06,Desc.,RESEARCH AND WRITING,3,6,ASLI TEKİNAY,TBA,,,,,,,"                          "
+EL  412.07,Desc.,RESEARCH AND WRITING,3,6,CEVZA SEVGEN,TBA,,,,,,,"                          "
+EL  412.08,Desc.,RESEARCH AND WRITING,3,6,IŞIL BAŞ,TBA,,,,,,,"                          "
+EL  412.09,Desc.,RESEARCH AND WRITING,3,6,LOUIS MAZZARI,TBA,,,,,,,"                          "
+EL  412.10,Desc.,RESEARCH AND WRITING,3,6,ÖZLEM GÖREY,TBA,,,,,,,"                          "
+EL  584.01,Desc.,ADV.TOP.:BLANCHOT,4,10,SUNA ERTUĞRUL,TTT,91011,,TB 415 | TB 415,,,,"                          "
+EL  676.01,Desc.,SEMINAR IN POST MODERN ENGLISH LIT.,4,,IŞIL BAŞ,WWW,456,,,,,,"                          "
+EL  677.01,Desc.,SEMINAR IN CONTEMPORARY LITERARY THEORY,4,,DİLEK DOLTAŞ,TTT,678,,,,,,"                          "
+EL  689.01,Desc.,STUDIES IN ENGLISH LITERATURE,1,5,CEVZA SEVGEN,TBA,,,,,,,"                          "
+EL  690.01,Desc.,MASTER THESIS,0,60,IŞIL BAŞ,TBA,,,,,,,"                          "
+EL  690.02,Desc.,MASTER THESIS,0,60,SUNA ERTUĞRUL,TBA,,,,,,,"                          "
+EL  693.01,Desc.,SPC.STUD:A COMP. APPR.TO MINORITY LIT.,4,10,ÖZLEM ÖĞÜT,ThThTh,345,, | TB 415 | TB 415,,,,"                          "
+EL  790.01,Desc.,DOCTORAL DISSERTATION,0,120,CEVZA SEVGEN,TBA,,,,,,,"                          "
+EL  790.02,Desc.,DOCTORAL DISSERTATION,0,120,IŞIL BAŞ,TBA,,,,,,,"                          "
+EL  790.03,Desc.,DOCTORAL DISSERTATION,0,120,ASLI TEKİNAY,TBA,,,,,,,"                          "
+EL  790.04,Desc.,DOCTORAL DISSERTATION,0,120,ÖZLEM ÖĞÜT,TBA,,,,,,,"                          "
+EL  790.05,Desc.,DOCTORAL DISSERTATION,0,120,KIM FORTUNY,TBA,,,,,,,"                          "
+ENGL102.01,Desc.,INTRODUCTION TO LITERARY SCHOLARSHIP II,3,6,OYA BAŞAK,TTTh,562,,TB 475 | TB 475 | TB 490,,,,"                          "
+ENGL102.02,Desc.,INTRODUCTION TO LITERARY SCHOLARSHIP II,3,6,SOSİ ANTİKACIOĞLU,WFF,878,,M 2180 | TB 475 | TB 475,,,,"                          "
+ENGL112.01,Desc.,EXPOSITORY WRITING II,3,5,MÜFİDE PEKİN,MWW,112,,TB 490 | TB 490 | TB 490,,,LL,"                          "
+ENGL112.02,Desc.,EXPOSITORY WRITING II,3,5,AYLİN VARTANYAN,MWW,212,,TB 490 | TB 260 | TB 260,,,LL,"                          "
+ENGL112.03,Desc.,EXPOSITORY WRITING II,3,5,AYLİN VARTANYAN,MWW,556,,M 1200 | M 1171 | M 1171,,,HIST,"                          "
+ENGL112.04,Desc.,EXPOSITORY WRITING II,3,5,AYLİN VARTANYAN,MFF,656,,M 1200 | M 2170 | M 2170,,,HIST,"                          "
+FA  202.01,Desc.,ANATOLIAN ART & CULTURES FROM PREHIST...,3,5,BEHİN AKSOY,ThThTh,678,,TB 475 | TB 475 | TB 475,,,,"                          "
+FA  304.01,Desc.,WESTERN PAINTING IN THE TWENTIETH CENTUR,3,5,SEDEF HATAPKAPULU,ThThTh,678,,TB 415 | TB 415 | TB 415,,,,"                          "
+FA  327.01,Desc.,MUSIC:THEORY & APPRECIATION,3,5,EMİNE SERDAROĞLU,TTT,123,,TB 490 | TB 490 | TB 490,,,,"                          "
+FA  345.01,Desc.,AUTEUR DIRECTORS I,3,5,MİTHAT ALAM,ThThThFFF,678678,, | N/A | N/A | TB 475 | M 1170 | M 1170,,,,"                          "
+FA  350.01,Desc.,PROJECT IN FILM ANALYSIS,3,5,CAN CANDAN,MMM,678,,TB 415 | TB 415 | TB 415,,,,"                          "
+FA  48G.01,Desc.,SP.TOP.BODY LANG. IN ANCIENT ART,3,5,AYŞE ÇALIK ROSS,ThThTh,123,,TB 415 | TB 415 | TB 415,,,,"                          "
+FA  48I.01,Desc.,SP.TOP.:DOCUMENTARY IN TURKEY,3,5,CAN CANDAN,WWW,234,,TB 415 | TB 415 | TB 415,,,,"                          "
+FA  492.01,Desc.,SP.TOP.:GENRE IN SCRIPTWRITING,3,5,AYLİN DOĞAN,MMM,345,,TB 475 | TB 475 | TB 475,,,,"                          "
+FA  496.01,Desc.,SP.TOP.: JAZZ APPRECIATION II,3,5,SEDA BİNBAŞGİL,TTT,678,,TB 490 | TB 490 | TB 490,,,,"                          "
+GR  102.01,Desc.,MODERN GREEK FOR BEGINNERS II,3,5,CHRYSSI SIDIROPOULOU,TTT,678,,KPARK5 | KPARK5 | KPARK5,,,,"                          "
+GR  201.01,Desc.,INTERMEDIATE MODERN GREEK I,3,5,CHRYSSI SIDIROPOULOU,TBA,,,,,,,"                          "
+LAT 212.01,Desc.,INTERMEDIATE LATIN II,3,5,NOEMİ LEVY AKSU,WWW,678,,,,,,"                          "
+LING111.01,Desc.,INTRO. TO LANGUAGE & LINGUISTICS I,3,6,DİDAR AKAR,MWTh,555,,M 2230 | M 2152 | NH 104,,,"LL,TR,ALL","                          "
+LING111.02,Desc.,INTRO. TO LANGUAGE & LINGUISTICS I,3,6,MARKUS POCHTRAGER,MWTh,555,,TB 310 | M 2171 | NH 201,,,"LL,TR,ALL","                          "
+LING112.01,Desc.,INTRO. TO LANGUAGE & LINGUISTICS II,3,5,BALKIZ ÖZTÜRK,TTTh,343,,TB 475 | TB 475 | M 2170,,,,"                          "
+LING302.01,Desc.,MORPHOLOGY & SYNTAX,3,5,SUMRU ÖZSOY,MWTh,555,,TB 490 | M 2170 | M 1152,,,,"                          "
+LING496.01,Desc.,SP.TOP.:LANG. & IDENTITY,3,5,DİDAR AKAR,MMW,676,,M 2170 | M 2170 | M 2152,,,,"                          "
+LING592.01,Desc.,SPECIAL TOPICS:ISSUES IN PHONOLOGY,4,10,MARKUS POCHTRAGER,MMWW,2323,,,,,,"                          "
+LIT 212.01,Desc.,STUDIES IN LITERATURE II,3,8,AYLİN ALKAÇ,TTTh,786,,TB 310 | TB 310 | M 2230,,,PHYS,"                          "
+LIT 412.01,Desc.,COPYWRITING II,3,6,NEŞET DERELİ,WWW,91011,,TB 475 | TB 475,,,,"                          "
+RUS 102.01,Desc.,BEGINNER'S RUSSIAN II,3,5,OLGA ZVERKOVA,MTTThTh,11212,,NB 118 | NB 118 | NB 118 | NB 118 | NB 118,,,,"                          "
+RUS 202.01,Desc.,INTERMEDIATE RUSSIAN II,3,5,OLGA ZVERKOVA,MTTThTh,23434,,NB 118 | NB 118 | NB 118 | NB 118 | NB 118,,,,"                          "
+RUS 302.01,Desc.,ADVANCED RUSSIAN II,3,5,OLGA ZVERKOVA,TBA,,,,,,,"                          "
+STS 230.01,Desc.,THEORY OF MUSICAL SOUND,3,6,ALPAR  SEVGEN,FFF,678,,TB 415 | TB 415 | TB 415,,,,"                          "
+TK  204.01,Desc.,STRUCTURE OF MODERN TURKISH,3,5,ESER TAYLAN,MWTh,222,,M 1100 | TB 310 | NH 102,,,"FLED,TKL","                          "
+TK  204.02,Desc.,STRUCTURE OF MODERN TURKISH,3,5,ASLI GÖKSEL,MWTh,222,,GYM | M 1100 | ÖZGER A,,,"FLED,TKL","                          "

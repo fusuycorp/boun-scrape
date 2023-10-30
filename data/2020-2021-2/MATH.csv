@@ -1,0 +1,74 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.01,Desc.,CALCULUS I,4,6,FATİH ECEVİT,TTThTh,1212,Online,,,,,"                          "
+MATH101.02,Desc.,CALCULUS I,4,6,ÖZLEM BEYARSLAN,TTThTh,3434,Online,,,,,"                          "
+MATH102.01,Desc.,CALCULUS II,4,6,ÇAĞRI KARAKURT,TTThTh,1212,Online,,,,,"                          "
+MATH102.02,Desc.,CALCULUS II,4,6,ÇAĞRI KARAKURT,TTThTh,3434,Online,,,,,"                          "
+MATH102.03,Desc.,CALCULUS II,4,6,ALP BASSA,TTThTh,1212,Online,,,,,"                          "
+MATH102.04,Desc.,CALCULUS II,4,6,CRAIG CHARLES  VAN COEVERING,TTThTh,3434,Online,,,,,"                          "
+MATH106.01,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,SİNAN S.IŞIK,TTThTh,1212,Online,,,,POLS,"                          "
+MATH106.02,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,SİNAN S.IŞIK,TTThTh,3434,Online,,,,PSY,"                          "
+MATH111.01,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,OLCAY COŞKUN,MMThTh,1212,Online,,,,,"        MATH; MEDU; TMAT; PRMA                  "
+MATH111.02,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,YASEMİN KARA,MMWW,3434,Online,,,,,"        MATH; MEDU; TMAT; PRMA                  "
+MATH131.01,Desc.,CALCULUS OF A SINGLE VARIABLE,4,8,EKİN ÖZMAN KARAKURT,MMWW,1212,Online,,,,,"        MATH                  "
+MATH132.01,Desc.,CALCULUS OF SEVERAL VARIABLES,4,8,ARZU BOYSAL,TTThTh,3434,Online,,,,,"        MATH                  "
+MATH162.01,Desc.,DISCRETE MATHEMATICS,4,8,ÜMİT IŞLAK,MMWW,7878,Online,,,,MEDU,"                          "
+MATH162.02,Desc.,DISCRETE MATHEMATICS,4,8,ÖZLEM BEYARSLAN,TTThTh,5656,Online,,,,MEDU,"                          "
+MATH201.01,Desc.,MATRIX THEORY,4,5,KAZIM İLHAN İKEDA,MMWW,1212,Online,,,,,"                          "
+MATH201.02,Desc.,MATRIX THEORY,4,5,MÜGE TAŞKIN AYDIN,MMWW,3434,Online,,,,,"                          "
+MATH202.01,Desc.,DIFFERENTIAL EQUATIONS,4,7,N.SADIK DEĞER,MMWW,1212,Online,,,,,"                          "
+MATH202.02,Desc.,DIFFERENTIAL EQUATIONS,4,7,BURAK GÜREL,MMWW,3434,Online,,,,,"                          "
+MATH202.03,Desc.,DIFFERENTIAL EQUATIONS,4,7,YASEMİN KARA,MMWW,1212,Online,,,,,"                          "
+MATH221.01,Desc.,LINEAR ALGEBRA,4,8,TALİN BUDAK,TTThTh,1212,Online,,,,,"        MATH                  "
+MATH222.01,Desc.,GROUP THEORY,4,8,AHMET KAMİL FEYZİOĞLU,MMWW,1212,Online,,,,MEDU,"        MATH; MEDU                  "
+MATH222.02,Desc.,GROUP THEORY,4,8,AHMET KAMİL FEYZİOĞLU,MMWW,3434,Online,,,,MEDU,"                          "
+MATH231.01,Desc.,ADVANCED CALCULUS I,4,8,MOHAN RAVICHANDRAN,TTThTh,5656,Online,,,,,"        MEDU; MATH                  "
+MATH234.01,Desc.,ADVANCED CALCULUS II,4,8,FERİT ÖZTÜRK,TTThTh,3434,Online,,,,,"                          "
+MATH323.01,Desc.,"RINGS,FIELDS&GALOIS THEORY",4,8,EKİN ÖZMAN KARAKURT,MMWW,3434,Online,,,,,"        MATH                  "
+MATH324.01,Desc.,REPRESENTATION THEORY OF FINITE GROUPS,3,6,OLCAY COŞKUN,MMW,343,Online,,,,,"                          "
+MATH336.01,Desc.,NUMERICAL ANALYSIS,3,6,FATİH ECEVİT,TTTh,343,Online,,,,,"                          "
+MATH338.01,Desc.,COMPLEX ANALYSIS I,4,8,AYHAN GÜNAYDIN,TTThTh,1212,Online,,,,,"                          "
+MATH344.01,Desc.,INTRODUCTION TO PROBABILITY&STATISTICS,3,6,MOHAN RAVICHANDRAN,TTTh,787,Online,,,,,"                          "
+MATH413.01,Desc.,MODEL THEORY,3,6,AYHAN GÜNAYDIN,TTTh,343,Online,,,,,"                          "
+MATH427.01,Desc.,ELEMENTARY NUMBER THEORY II,3,6,CEM YALÇIN YILDIRIM,TThTh,778,Online,,,,,"                          "
+MATH436.01,Desc.,FUNCTIONAL ANALYSIS,3,7,BETÜL TANBAY,TTTh,122,Online,,,,,"                          "
+MATH476.01,Desc.,DIFFERENTIAL TOPOLOGY,3,6,CRAIG CHARLES  VAN COEVERING,TThTh,856,Online,,,,,"                          "
+MATH48A.01,Desc.,SEL.TP.ELLIPTIC CURVES,3,5,ALP BASSA,TTTh,564,Online,,,,,"                          "
+MATH48B.01,Desc.,SEL.TOP.SYMPLECTIC GEOMETRY&ITS APPLICATIONS TO INVERSE PROBLEMS,3,6,ÇAĞRI DİNER,WWW,678,Online,,,,,"                          "
+MATH490.01,Desc.,PROJECT,3,6,ALP BASSA,,,Online,,,,,"                          "
+MATH490.03,Desc.,PROJECT,3,6,ÜMİT IŞLAK,,,Online,,,,,"                          "
+MATH490.06,Desc.,PROJECT,3,6,YASEMİN KARA,,,Online,,,,,"                          "
+MATH490.07,Desc.,PROJECT,3,6,OLCAY COŞKUN,,,Online,,,,,"                          "
+MATH490.08,Desc.,PROJECT,3,6,FERİT ÖZTÜRK,,,Online,,,,,"                          "
+MATH499.01,Desc.,SEL.TP.INTRODUCTION TO ANALYTIC NUMBER THEORY,3,6,CEM YALÇIN YILDIRIM,TTTh,9109,Online,,,,,"                          "
+MATH522.01,Desc.,ALGEBRA II,4,10,ARZU BOYSAL,TTThTh,7878,Online,,,,,"                          "
+MATH527.01,Desc.,NUMBER THEORY,4,10,KAZIM İLHAN İKEDA,MMWW,5645,Online,,,,,"                          "
+MATH532.01,Desc.,REAL ANALYSIS II,4,10,ÜMİT IŞLAK,MMWW,910910,Online,,,,,"                          "
+MATH572.01,Desc.,ALGEBRAIC TOPOLOGY,4,10,FERİT ÖZTÜRK,TTThTh,5656,Online,,,,,"                          "
+MATH579.01,Desc.,GRADUATE SEMINAR,0,1,BURAK GÜREL,,,Online,,,,,"                          "
+MATH585.01,Desc.,SEL. TOP. IN PROBABILITY & STATISTICS,3,7,ÜMİT IŞLAK,MMTh,9109, ,,,,,"                          "
+MATH589.01,Desc.,SEL.TOP. IN COMBINATORICS,3,7,MÜGE TAŞKIN AYDIN,MMW,787,Online,,,,,"                          "
+MATH58A.01,Desc.,SP.TP.IN OPERATOR ALGEBRAS,3,7,BETÜL TANBAY,TTTh,343,Online,,,,,"                          "
+MATH58S.01,Desc.,SP.TP.INTR.TO SUPERSYMMETRY&SUPERGRAV. ,3,7,N.SADIK DEĞER,MMW,343,Online,,,,,"                          "
+MATH58X.01,Desc.,SP.TP.IN ALGEBRAIC NUMBER THEORY,3,7,KAZIM İLHAN İKEDA,TTF,121,Online,,,,,"                          "
+MATH590.01,Desc.,READINGS IN MATHEMATICS,1,3,BURAK GÜREL,,,Online,,,,,"                          "
+MATH680.01,Desc.,SEMINAR IN PURE MATHEMATICS I,4,10,OLCAY COŞKUN,WWThTh,1234,Online,,,,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,MOHAN RAVICHANDRAN,,,Online,,,,,"                          "
+MATH690.02,Desc.,M.S. THESIS,0,60,ALP BASSA,,,Online,,,,,"                          "
+MATH690.03,Desc.,M.S. THESIS,0,60,OLCAY COŞKUN,,,Online,,,,,"                          "
+MATH690.04,Desc.,M.S. THESIS,0,60,ÜMİT IŞLAK,,,Online,,,,,"                          "
+MATH690.05,Desc.,M.S. THESIS,0,60,ÖZLEM BEYARSLAN,,,Online,,,,,"                          "
+MATH690.06,Desc.,M.S. THESIS,0,60,MÜGE TAŞKIN AYDIN,,,Online,,,,,"                          "
+MATH690.07,Desc.,M.S. THESIS,0,60,FERİT ÖZTÜRK,,,Online,,,,,"                          "
+MATH690.08,Desc.,M.S. THESIS,0,60,N.SADIK DEĞER,,,Online,,,,,"                          "
+MATH690.09,Desc.,M.S. THESIS,0,60,KAZIM İLHAN İKEDA,,,Online,,,,,"                          "
+MATH690.10,Desc.,M.S. THESIS,0,60,EKİN ÖZMAN KARAKURT,,,Online,,,,,"                          "
+MATH690.11,Desc.,M.S. THESIS,0,60,BURAK GÜREL,,,Online,,,,,"                          "
+MATH690.12,Desc.,M.S. THESIS,0,60,BETÜL TANBAY,,,Online,,,,,"                          "
+MATH690.13,Desc.,M.S. THESIS,0,60,CRAIG CHARLES  VAN COEVERING,,,Online,,,,,"                          "
+MATH690.14,Desc.,M.S. THESIS,0,60,ÇAĞRI KARAKURT,,, ,,,,,"                          "
+MATH700.01,Desc.,GRADUATE SEMINAR,0,1,BURAK GÜREL,,,Online,,,,,"                          "
+MATH790.01,Desc.,Ph.D.THESIS,0,120,ALP BASSA,,,Online,,,,,"                          "
+MATH790.02,Desc.,Ph.D.THESIS,0,120,BURAK GÜREL,,,Online,,,,,"                          "
+MATH790.03,Desc.,Ph.D.THESIS,0,120,AYHAN GÜNAYDIN,,,Online,,,,,"                          "
+MATH790.04,Desc.,Ph.D.THESIS,0,120,OLCAY COŞKUN,,,Online,,,,,"                          "
+MATH790.06,Desc.,Ph.D.THESIS,0,120,ÇAĞRI KARAKURT,,, ,,,,,"                          "

@@ -1,0 +1,83 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EC  102.01,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,ŞEMSA ÖZAR,TTTh,565,,NB 119 | NB 119 | NB 119,15.05.2018,3,"AD,EC,POLS","                          "
+EC  102.02,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,BURÇAY ERUS,TTTh,565,,NH 105 | NH 105 | NH 305,15.05.2018,3,"AD,EC,POLS","                          "
+EC  102.03,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,TOLGA UMUT KUZUBAŞ,TTTh,565,,NH 401 | NH 401 | NH 105,15.05.2018,3,"AD,EC,POLS","                          "
+EC  102.04,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,LEVENT YILDIRAN,TTTh,565,,NH 301 | NH 301 | NH 101,15.05.2018,3,"IE,ME","                          "
+EC  102.05,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,KIVANÇ KARAMAN,TTTh,787,,AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK,15.05.2018,3,"PHYS,CMPE,HIST,SOC","                          "
+EC  102.07,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,AYŞEGÜL KAYAOĞLU YILMAZ,WWW,678,,NB 119 | NB 119 | NB 119,15.05.2018,3,EE,"                          "
+EC  102.08,Desc.,PRINCIPLES OF MACROECONOMICS,3,6,RIFAT BARIŞ TEKİN,FFF,234,,NH 101 | NH 101 | NH 101,15.05.2018,3,"CE,CHE","                          "
+EC  205.01,Desc.,MACROECONOMICS I,3,6,MALİK ÇÜRÜK,TTTh,783,,NH 301 | NH 301 | NB 119,21.05.2018,2,AD,"                          "
+EC  205.02,Desc.,MACROECONOMICS I,3,6,ORHAN TORUL,TTTh,788,,NB 119 | NB 119 | NH 101,21.05.2018,2,AD,"                          "
+EC  206.01,Desc.,MICROECONOMICS II,3,6,AYŞE MUMCU,MMW,121,,NH 401 | NH 401 | NH 401,26.05.2018,3,,"                          "
+EC  206.02,Desc.,MICROECONOMICS II,3,6,ORHAN AYGÜN,MMW,342,,NH 405 | NH 405 | NH 405,26.05.2018,3,,"                          "
+EC  208.01,Desc.,MACROECONOMICS II,3,6,OZAN HATİPOĞLU,MMW,121,,NB 119 | NB 119 | NH 305,16.05.2018,3,,"                          "
+EC  208.02,Desc.,MACROECONOMICS II,3,6,OZAN HATİPOĞLU,MMW,342,,NB 119 | NB 119 | NH 305,16.05.2018,3,,"                          "
+EC  213.01,Desc.,EVOLUTION OF ECONOMIES&ECONOMICS,3,6,FİKRET ADAMAN,TWW,256,,EF 206 | NH 401 | NH 401,23.05.2018,3,,"                          "
+EC  213.02,Desc.,EVOLUTION OF ECONOMIES&ECONOMICS,3,6,KIVANÇ KARAMAN,TWW,378,,NH 202 | NH 401 | NH 401,23.05.2018,3,,"                          "
+EC  234.01,Desc.,MATHEMATICAL STATISTICS II,3,6,GÜZİN GÜLSÜN AKIN,MWTh,563,,NB 119 | NH 203 | EF 116,29.05.2018,2,,"                          "
+EC  234.02,Desc.,MATHEMATICAL STATISTICS II,3,6,GÜZİN GÜLSÜN AKIN,MWTh,674,,NB 119 | NH 203 | EF 116,29.05.2018,2,,"                          "
+EC  305.01,Desc.,URBAN ECONOMICS,3,6,GÜZİN GÜLSÜN AKIN,ThFF,656,,NH 302 | İB 211 | İB 211,26.05.2018,2,,"                          "
+EC  306.01,Desc.,ADVANCED MICROECONOMICS,3,6,MEHMET YİĞİT GÜRDAL,MWW,445,,İB 102 | EF 116 | EF 116,16.05.2018,1,,"                          "
+EC  308.01,Desc.,ADVANCED MACROECONOMICS,3,6,MALİK ÇÜRÜK,TTTh,564,,NH 405 | NH 405 | NB 119,26.05.2018,2,,"                          "
+EC  317.01,Desc.,GENDER & THE ECONOMY,3,6,ŞEMSA ÖZAR,TThTh,878,,İB 301 | İB 312 | İB 312,,,,"                          "
+EC  332.01,Desc.,ADVANCED ECONOMETRICS,3,6,GÖKHAN ÖZERTAN,MWW,278,,NH 103 | NH 305 | NH 305,28.05.2018,2,,"                          "
+EC  362.01,Desc.,TOPICS IN INTERNATIONAL ECONOMICS,3,6,MURAT ŞEKER,ThThTh,123,,NH 304 | NH 304 | NH 304,25.05.2018,1,,"                          "
+EC  412.01,Desc.,TOPICS IN HIST. OF ECO. THOUGHT,3,6,FİKRET ADAMAN,MMW,561,,NH 303 | NH 303 | NH 103,24.05.2018,3,,"                          "
+EC  436.01,Desc.,QUANTITATIVE METH.FOR PUBLIC POLICY EVAL,3,6,BURÇAY ERUS,TThTh,123,,NB Z10 | NB Z13 | NB Z13,28.05.2018,3,,"                          "
+EC  438.01,Desc.,EXPERIMENTAL ECONOMICS,3,6,MEHMET YİĞİT GÜRDAL,MMW,566,, | N/A | KP 08,22.05.2018,1,,"                          "
+EC  442.01,Desc.,GAME THEORETICAL MODELS OF POLITICAL EC.,3,6,EMEKCAN YÜCEL,MWW,323,,M 2152 | NB Z12 | NB Z12,23.05.2018,2,,"                          "
+EC  449.01,Desc.,TOPICS IN BANKING AND FINANCE,3,6,LEVENT YILDIRAN,TThTh,878,,NH 104 | NH 104 | NH 104,15.05.2018,2,,"                          "
+EC  454.01,Desc.,TURKISH TAX SYTEMS,3,6,İZZETTİN ÖNDER,WWW,678,,NH 402 | NH 402 | NH 402,28.05.2018,1,,"                          "
+EC  470.01,Desc.,TURKISH ECONOMY,3,6,CEYHUN ELGİN,TTTh,345,,NH 405 | NH 405 | NH 401,29.05.2018,3,,"                          "
+EC  481.01,Desc.,"SP.TP.CLIMATE CHANGE,ECONOMICS&POLICY",3,6,BARIŞ KARAPINAR,FFF,234,,M 2170 | M 2170 | M 2170,22.05.2018,3,,"                          "
+EC  484.01,Desc.,SP.TP.IN APPL.MACRO.&FINANC.INDIC.ANALY.,3,6,KUBİLAY ÖZTÜRK,MMM,789,,M 2152 | M 2152 | M 2152,23.05.2018,1,,"                          "
+EC  48A.01,Desc.,SP.TP.IN ECONOMIC ANALYSIS,3,6,CEYHUN ELGİN,TThTh,112,,NB Z11 | NB Z10 | NB Z10,,,,"                          "
+EC  502.01,Desc.,MICRO-ECONOMICS II,4,10,ORHAN AYGÜN,MMWW,5656,,NH 404 | NH 404 | NB Z13 | NB Z13,26.05.2018,2,,"                          "
+EC  504.01,Desc.,MACRO-ECONOMICS II,4,10,ORHAN TORUL,TTThTh,5656,,NB B10 | NB B10 | NB Z12 | NB Z12,28.05.2018,3,,"                          "
+EC  526.01,Desc.,INDUSTRIAL ORGANIZATION I,3,7,AYŞE MUMCU,MMW,567,,İB 301 | İB 301 | NB Z12,18.05.2018,2,,"                          "
+EC  532.01,Desc.,ECONOMETRICS II,4,10,BURAK SALTOĞLU,TTThTh,1212,,NB Z12 | NB Z12 | NB Z12 | NB Z12,29.05.2018,1,,"                          "
+EC  579.01,Desc.,GRADUATE SEMINAR,0,5,ORHAN AYGÜN,FF,78,,,,,,"                          "
+EC  581.01,Desc.,SP.TP.ALGORITMIC TRADING&QUANTITATIVE,3,7,AYHAN YÜKSEL,MMM,234, ,NB Z10 | NB Z10 | NB Z10,16.05.2018,3,,"                          "
+EC  58D.01,Desc.,SP.TOP.IN FINANCIAL ECONOMETRIC,3,7,BURAK SALTOĞLU,TFF,345,,NB Z12 | NB Z10 | NB Z10,26.05.2018,1,,"                          "
+EC  599.01,Desc.,TERM PROJECT,0,13,FİKRET ADAMAN,,,,,,,,"                          "
+EC  599.02,Desc.,TERM PROJECT,0,13,GÜZİN GÜLSÜN AKIN,,,,,,,,"                          "
+EC  599.03,Desc.,TERM PROJECT,0,13,ORHAN AYGÜN,,,,,,,,"                          "
+EC  599.04,Desc.,TERM PROJECT,0,13,MALİK ÇÜRÜK,,,,,,,,"                          "
+EC  599.05,Desc.,TERM PROJECT,0,13,CEYHUN ELGİN,,,,,,,,"                          "
+EC  599.06,Desc.,TERM PROJECT,0,13,BURÇAY ERUS,,,,,,,,"                          "
+EC  599.07,Desc.,TERM PROJECT,0,13,MEHMET YİĞİT GÜRDAL,,,,,,,,"                          "
+EC  599.08,Desc.,TERM PROJECT,0,13,OZAN HATİPOĞLU,,,,,,,,"                          "
+EC  599.09,Desc.,TERM PROJECT,0,13,KIVANÇ KARAMAN,,,,,,,,"                          "
+EC  599.10,Desc.,TERM PROJECT,0,13,MURAT KIRDAR,,,,,,,,"                          "
+EC  599.11,Desc.,TERM PROJECT,0,13,TOLGA UMUT KUZUBAŞ,,,,,,,,"                          "
+EC  599.12,Desc.,TERM PROJECT,0,13,AYŞE MUMCU,,,,,,,,"                          "
+EC  599.13,Desc.,TERM PROJECT,0,13,ŞEMSA ÖZAR,,,,,,,,"                          "
+EC  599.14,Desc.,TERM PROJECT,0,13,GÖKHAN ÖZERTAN,,,,,,,,"                          "
+EC  599.15,Desc.,TERM PROJECT,0,13,BEGÜM ÖZKAYNAK,,,,,,,,"                          "
+EC  599.16,Desc.,TERM PROJECT,0,13,BURAK SALTOĞLU,,,,,,,,"                          "
+EC  599.17,Desc.,TERM PROJECT,0,13,ORHAN TORUL,,,,,,,,"                          "
+EC  599.18,Desc.,TERM PROJECT,0,13,LEVENT YILDIRAN,,,,,,,,"                          "
+EC  599.19,Desc.,TERM PROJECT,0,13,E. ÜNAL ZENGİNOBUZ,,,,,,,,"                          "
+EC  602.01,Desc.,ADVANCED MICROECONOMICS II,3,11,EMEKCAN YÜCEL,WWW,567,,NB Z12 | NB Z12 | NB Z12,25.05.2018,2,,"                          "
+EC  604.01,Desc.,ADVANCED MACROECONOMICS II,4,11,TOLGA UMUT KUZUBAŞ,ThThTh,678,,,25.05.2018,2,,"                          "
+EC  690.01,Desc.,MASTER THESIS,0,60,FİKRET ADAMAN,,,,,,,,"                          "
+EC  690.02,Desc.,MASTER THESIS,0,60,GÜZİN GÜLSÜN AKIN,,,,,,,,"                          "
+EC  690.03,Desc.,MASTER THESIS,0,60,ORHAN AYGÜN,,,,,,,,"                          "
+EC  690.04,Desc.,MASTER THESIS,0,60,MALİK ÇÜRÜK,,,,,,,,"                          "
+EC  690.05,Desc.,MASTER THESIS,0,60,CEYHUN ELGİN,,,,,,,,"                          "
+EC  690.06,Desc.,MASTER THESIS,0,60,BURÇAY ERUS,,,,,,,,"                          "
+EC  690.07,Desc.,MASTER THESIS,0,60,MEHMET YİĞİT GÜRDAL,,,,,,,,"                          "
+EC  690.08,Desc.,MASTER THESIS,0,60,OZAN HATİPOĞLU,,,,,,,,"                          "
+EC  690.09,Desc.,MASTER THESIS,0,60,KIVANÇ KARAMAN,,,,,,,,"                          "
+EC  690.10,Desc.,MASTER THESIS,0,60,MURAT KIRDAR,,,,,,,,"                          "
+EC  690.11,Desc.,MASTER THESIS,0,60,TOLGA UMUT KUZUBAŞ,,,,,,,,"                          "
+EC  690.12,Desc.,MASTER THESIS,0,60,AYŞE MUMCU,,,,,,,,"                          "
+EC  690.13,Desc.,MASTER THESIS,0,60,ŞEMSA ÖZAR,,,,,,,,"                          "
+EC  690.14,Desc.,MASTER THESIS,0,60,GÖKHAN ÖZERTAN,,,,,,,,"                          "
+EC  690.15,Desc.,MASTER THESIS,0,60,BEGÜM ÖZKAYNAK,,,,,,,,"                          "
+EC  690.16,Desc.,MASTER THESIS,0,60,BURAK SALTOĞLU,,,,,,,,"                          "
+EC  690.17,Desc.,MASTER THESIS,0,60,ORHAN TORUL,,,,,,,,"                          "
+EC  690.18,Desc.,MASTER THESIS,0,60,LEVENT YILDIRAN,,,,,,,,"                          "
+EC  690.19,Desc.,MASTER THESIS,0,60,E. ÜNAL ZENGİNOBUZ,,,,,,,,"                          "
+EC  790.01,Desc.,Ph.D THESIS,0,120,FİKRET ADAMAN,,,,,,,,"                          "
+EC  790.02,Desc.,Ph.D THESIS,0,120,BURÇAY ERUS,,,,,,,,"                          "

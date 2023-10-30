@@ -1,0 +1,30 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ED  104.01,Desc.,SOCIAL FOUNDATIONS OF EDUCATION,3,5,RAHŞAN NAZLI SOMEL,TTTh,784,Classroom,EF 106 | EF 106 | EF 206,01.06.2022,3,,"                          "
+ED  132.01,Desc.,ETHICAL ISSUES IN COUNSELING,2,5,ZEYNEP HANDE SART,MM,78,Classroom,EF 106 | EF 106,07.06.2022,1,,"                          "
+ED  200.01,Desc.,LIVING WITH DISABILITIES,3,5,ENGİN YILMAZ,WWTh,564,Classroom,EF 106 | EF 106 | NH 305,28.05.2022,3,,"                          "
+ED  203.01,Desc.,HISTORY OF TURKISH EDUCATION ,3,5,RAHŞAN NAZLI SOMEL,TTTh,455,Classroom,EF 106 | EF 106 | EF 206,01.06.2022,1,,"                          "
+ED  208.01,Desc.,RESEARCH METHODOLOGY,4,6,BENGÜ BÖRKAN,WWThFF,78767,Classroom,EF 106 | EF 106 | EF 106 | EF 106 | EF 106,11.06.2022,1,,"                          "
+ED  221.01,Desc.,FUNDAMENTALS OF GUIDANCE & COUNSELING,3,5,DENİZ ALBAYRAK KAYMAK,MFF,289,Online,ONLINE | ONLINE | ONLINE,02.06.2022,1,,"        CET; PRPRSC; PEDU; TPHY; PRMA; FLCEDU; TCHE; MEDU; TMAT; PRSO; GUID; PRSC; FLED                  "
+ED  252.01,Desc.,EDUCATIONAL ADMINISTRATION,3,5,AYŞE HAVVA CANER,TTTh,679,Classroom,EF 206 | EF 206 | EF 106,09.06.2022,2,,"                          "
+ED  300.01,Desc.,COMMUNITY INVOLVEMENT,3,5,AYŞE HAVVA CANER,MWWThTh,76767,Classroom,EF 116 | EF 203 | EF 203 | EF 101 | EF 101,09.06.2022,3,,"        GUID                  "
+ED  306.01,Desc.,COMPARATIVE EDUCATION,3,5,ZEYNEP KIZILTEPE,MMM,456,Classroom,NH 103 | NH 103 | NH 103,08.06.2022,2,,"                          "
+ED  330.01,Desc.,BASIC COUNSELING SKILLS,3,6,AYŞE GÜR TURABOĞLU,TTT,234,Classroom,EF 116 | EF 116 | EF 116,04.06.2022,2,,"        GUID                  "
+ED  330.02,Desc.,BASIC COUNSELING SKILLS,3,6,AYŞE GÜR TURABOĞLU,TTT,567,Classroom,EF 116 | EF 116 | EF 116,04.06.2022,2,,"        GUID                  "
+ED  378.01,Desc.,INTRODUCTION TO ASSESSMENT IN COUNSELING,3,6,ZEYNEP HANDE SART,MMTh,235,Classroom,NH 201 | NH 201 | EF 106,06.06.2022,3,,"                          "
+ED  411.01,Desc.,UNDERSTANDING DRUG ABUSE IN ADDICTION,3,5,CEREN KOÇ,WWW,234,Classroom,ET 02 | ET 02 | ET 02,28.05.2022,3,,"                          "
+ED  431.01,Desc.,FAMILY COUNSELING,3,5,NEYLAN ÖZDEMİR,WWW,123,Classroom,NH 302 | NH 302 | NH 302,02.06.2022,2,,"                          "
+ED  434.01,Desc.,ADVANCED COUNSELING SKILLS,3,6,AYDAN GÜLERCE,MMMM,5678,Classroom,EF 101 | EF 101 | EF 101 | EF 101,07.06.2022,1,,"        GUID                  "
+ED  434.02,Desc.,ADVANCED COUNSELING SKILLS,3,6,GİZEM AKSOY TOSKA,MMMM,5678,Classroom,EF 103 | EF 103 | EF 103 | EF 103,07.06.2022,1,,"        GUID                  "
+ED  434.03,Desc.,ADVANCED COUNSELING SKILLS,3,6,SEVİLAY SİTRAVA,MMMM,5678,Classroom,EF 201 | EF 201 | EF 201 | EF 201,07.06.2022,1,,"                          "
+ED  436.01,Desc.,EDUCATIONAL NEUROLOGY,3,5,BARIŞ KORKMAZ,ThThTh,789,Classroom,NH 001 | NH 001 | NH 001,03.06.2022,3,,"                          "
+ED  444.01,Desc.,PSYCHOEDUCATIONAL CONSULTATION,3,6,YELİZ ŞIK,ThThTh,567,Classroom,EF 116 | EF 116 | EF 116,31.05.2022,2,,"                          "
+ED  460.01,Desc.,CAREER DEVELOPMENT,3,6,ÖZLEM ADA ÜLKE,ThThTh,8910,Classroom,EF 116 | EF 116 | EF 116,01.06.2022,2,,"                          "
+ED  475.01,Desc.,SUPPORTIVE SERVICES IN HIGHER EDUCATION,3,5,DENİZ ALBAYRAK KAYMAK,,,Classroom,,10.06.2022,3,,"                          "
+ED  475.02,Desc.,SUPPORTIVE SERVICES IN HIGHER EDUCATION,3,5,GİZEM AKSOY TOSKA,,,Classroom,,10.06.2022,3,,"                          "
+ED  475.03,Desc.,SUPPORTIVE SERVICES IN HIGHER EDUCATION,3,5,GÜLBİN ÖZTÜRK TÜTER,,,Classroom,,10.06.2022,3,,"                          "
+ED  478.01,Desc.,SCHOOL COUNSELING PRACTICUM II,4,8,DENİZ ALBAYRAK KAYMAK,ThThThTh,1234,Classroom,EF 203 | EF 203 | EF 203 | EF 203,03.06.2022,1,,"                          "
+ED  478.02,Desc.,SCHOOL COUNSELING PRACTICUM II,4,8,ZEYNEP HANDE SART,ThThThTh,1234,Classroom,EF 103 | EF 103 | EF 103 | EF 103,03.06.2022,1,,"                          "
+ED  478.03,Desc.,SCHOOL COUNSELING PRACTICUM II,4,8,ÖZLEM ÜNLÜHİSARCIKLI,ThThThTh,1234,Classroom,EF 101 | EF 101 | EF 101 | EF 101,03.06.2022,1,,"                          "
+ED  478.04,Desc.,SCHOOL COUNSELING PRACTICUM II,4,8,GİZEM AKSOY TOSKA,ThThThTh,1234,Classroom,KP 03 | KP 03 | KP 03 | KP 03,03.06.2022,1,,"                          "
+ED  478.05,Desc.,SCHOOL COUNSELING PRACTICUM II,4,8,NİHAL YENİAD MALKAMAK,ThThThTh,1234,Classroom,EF 201 | EF 201 | EF 201 | EF 201,03.06.2022,1,,"                          "
+ED  49D.01,Desc.,SP.STUD.APPLICATIONS OF CBT AT SCHOOLS,3,5,ASLIHAN DÖNMEZ,MMM,123,Online,,11.06.2022,2,,"                          "

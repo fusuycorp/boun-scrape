@@ -1,0 +1,64 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+IE  120.01,Desc.,INDUSTRIAL ENGINEERING: OVERVIEW AND ORIENTATION,3,5,TANER BİLGİÇ,MFF,612,Online,ONLINE | ONLINE | ONLINE,10.06.2022,1,,"                          "
+IE  201.01,Desc.,INTERMEDIATE PROGRAMMING,3,6,ALİ TAMER ÜNAL,MMWW,5634,Online,ONLINE | ONLINE | ONLINE | ONLINE,01.06.2022,1,,"                          "
+IE  202.01,Desc.,OPERATIONS RESEARCH I,4,7,İLHAN OR,TTWThTh,34667,Online/Classroom,M 2200 | M 2200 | ONLINE | M 3100 | M 3100,02.06.2022,2,,"                          "
+IE  203.01,Desc.,OPERATIONS RESEARCH II,4,7,ZEKİ CANER TAŞKIN,MMWFF,34567,Online,ONLINE | ONLINE | ONLINE | ONLINE | ONLINE,09.06.2022,3,,"                          "
+IE  220.01,Desc.,MATERIALS AND PROCESSES IN MANUFACTURING,3,5,OSMAN GÖKHAN ERSOY,TFFF,8123,Online/Classroom,VYKM1 | ONLINE | ONLINE | ONLINE,08.06.2022,3,,"                          "
+IE  256.01,Desc.,STATISTICS FOR INDUSTRIAL ENGINEERS,3,6,REFİK GÜLLÜ,TTThTh,1212,Classroom,NH 401 | NH 401 | NH 401 | NH 401,06.06.2022,1,,"                          "
+IE  306.01,Desc.,SYSTEMS SIMULATION,4,7,ALİ RIZA KAYLAN,TTThThF,12783,Online,ONLINE | ONLINE | ONLINE | ONLINE | ONLINE,30.05.2022,2,,"                          "
+IE  306.02,Desc.,SYSTEMS SIMULATION,4,7,AYBEK KORUGAN,TTThThF,12783,Online,ONLINE | ONLINE | ONLINE | ONLINE | ONLINE,30.05.2022,2,CMPE,"                          "
+IE  310.01,Desc.,OPERATIONS RESEARCH,4,5,KÖNÜL BAYRAMOĞLU KAVLAK,TTWThTh,56656,Online/Classroom,ONLINE | ONLINE | M 2200 | ONLINE | ONLINE,04.06.2022,3,,"                          "
+IE  312.01,Desc.,FACILITIES DESIGN & PLANNING,4,7,ÜMİT BİLGE,MTTThTh,67834,Online/Classroom,M 3100 | ONLINE | ONLINE | ONLINE | ONLINE,04.06.2022,1,,"                          "
+IE  313.01,Desc.,SUPPLY CHAIN MANAGEMENT,4,7,GÖNENÇ YÜCEL,MTTThTh,67834,Online/Classroom,M 1100 | ONLINE | ONLINE | ONLINE | ONLINE,04.06.2022,1,,"                          "
+IE  350.01,Desc.,SYSTEMS SCIENCE AND ENGINEERING,3,6,HAKAN YAŞARCAN,MMWW,3434,Classroom,VYKM2 | VYKM2 | M 2230 | M 2230,11.06.2022,1,,"                          "
+IE  360.01,Desc.,STATISTICAL FORECASTING AND TIME SERIES,3,6,MUSTAFA GÖKÇE BAYDOĞAN,MMWW,1212,Classroom,VYKM1 | VYKM1 | M 1100 | M 1100,01.06.2022,3,,"                          "
+IE  414.01,Desc.,SMART MANUFACTURING SYSTEMS,3,6,ÜMİT BİLGE,TTThTh,3478,Classroom,VYKM2 | VYKM2 | VYKM2 | VYKM2,03.06.2022,2,,"                          "
+IE  425.01,Desc.,DATA MINING,3,6,MUSTAFA NECATİ ARAS,WThTh,656,Classroom,NH 401 | NH 401 | NH 401,03.06.2022,3,,"                          "
+IE  456.01,Desc.,GRAPH ALGORITHMS & APPLICATIONS,3,6,TINAZ  EKİM AŞICI,WWTh,782,Classroom,M 1200 | M 1200 | M 1200,30.05.2022,1,,"                          "
+IE  48G.01,Desc.,SP.TP.TECHNOLOGY DEVELOPMENT ENGINEERING,3,6,SUAT GENÇ,FFF,789,Online,ONLINE | ONLINE | ONLINE,31.05.2022,2,,"                          "
+IE  48L.01,Desc.,SP.TP.IN HUMAN-COMPUTER INTERACTION DESIGN,3,6,MAHMUT EKŞİOĞLU,WFF,512,Online/Classroom,M 2200 | ONLINE | ONLINE,06.06.2022,1,,"                          "
+IE  492.01,Desc.,PROJECT,4,8,MUSTAFA GÖKÇE BAYDOĞAN,MM,78,Online,ONLINE | ONLINE,07.06.2022,1,,"                          "
+IE  506.01,Desc.,DESIGN AND ANALYSIS OF EXPERIMENTS,3,8,ALİ RIZA KAYLAN,TFF,756,Classroom,M 3100 | M 2200 | M 2200,04.06.2022,3,,"                          "
+IE  508.01,Desc.,STATISTICAL INFERENCE,3,8,WOLFGANG HOERMANN,MMTT,5634,Online/Classroom,ONLINE | ONLINE | NH 304 | NH 304,28.05.2022,2,,"                          "
+IE  516.01,Desc.,COMBINATORIAL OPTIMIZATION,3,8,KUBAN ALTINEL,MMTT,1212,Classroom,VYKM2 | VYKM2 | VYKM2 | VYKM2,28.05.2022,3,,"                          "
+IE  517.01,Desc.,HEURISTIC METHODS IN OPTIMIZATION,3,8,MUSTAFA NECATİ ARAS,ThFF,834,Online/Classroom,ONLINE | VYKM2 | VYKM2,07.06.2022,3,,"                          "
+IE  533.01,Desc.,SYSTEMS THEORY,3,8,GÖNENÇ YÜCEL,MWW,345,Online,ONLINE | ONLINE | ONLINE,01.06.2022,1,,"                          "
+IE  544.01,Desc.,DECISION ANALYSIS,3,8,TANER BİLGİÇ,MThTh,467,Online,ONLINE | ONLINE | ONLINE,08.06.2022,1,,"                          "
+IE  550.01,Desc.,DYNAMICS OF SOCIO-ECONOMIC SYSTEMS,3,8,YAMAN BARLAS,TTFF,5612,Classroom,VYKM2 | VYKM2 | VYKM2 | VYKM2,01.06.2022,1,,"                          "
+IE  565.01,Desc.,WORK PERFORMANCE ENGINEERING,3,8,MAHMUT EKŞİOĞLU,ThThTh,345,Online,ONLINE | ONLINE | ONLINE,10.06.2022,3,,"                          "
+IE  583.01,Desc.,SP.TP.IN SYSTEM RELIABILITY THEORY,3,8,KÖNÜL BAYRAMOĞLU KAVLAK,WThTh,312,Online,ONLINE | ONLINE | ONLINE,02.06.2022,1,,"                          "
+IE  584.01,Desc.,SP.TP.IN QUEUING SYSTEMS ANAL.&CONTROL,3,8,AYBEK KORUGAN,WWW,678,Online,ONLINE | ONLINE | ONLINE,10.06.2022,1,,"                          "
+IE  587.01,Desc.,SP.TOP.OPTIMAL CONTROL THEORY,3,8,MUSTAFA AKAN,WWW,123,Online,ONLINE | ONLINE | ONLINE,09.06.2022,2,,"                          "
+IE  58D.01,Desc.,SP.TP.EFFICIENT MONTE CARLO SIMULATION,3,8,WOLFGANG HOERMANN,MMM,789,Online,ONLINE | ONLINE | ONLINE,03.06.2022,1,,"                          "
+IE  690.01,Desc.,M.S. THESIS,0,60,KUBAN ALTINEL,,,Online,,,,,"                          "
+IE  690.02,Desc.,M.S. THESIS,0,60,MUSTAFA NECATİ ARAS,,,Online,,,,,"                          "
+IE  690.05,Desc.,M.S. THESIS,0,60,ÜMİT BİLGE,,,Online,,,,,"                          "
+IE  690.06,Desc.,M.S. THESIS,0,60,TANER BİLGİÇ,,,Online,,,,,"                          "
+IE  690.07,Desc.,M.S. THESIS,0,60,MAHMUT EKŞİOĞLU,,,Online,,,,,"                          "
+IE  690.08,Desc.,M.S. THESIS,0,60,REFİK GÜLLÜ,,,Online,,,,,"                          "
+IE  690.09,Desc.,M.S. THESIS,0,60,WOLFGANG HOERMANN,,,Online,,,,,"                          "
+IE  690.11,Desc.,M.S. THESIS,0,60,AYBEK KORUGAN,,,Online,,,,,"                          "
+IE  690.12,Desc.,M.S. THESIS,0,60,GÜRKAN KUMBAROĞLU,,,Online,,,,,"                          "
+IE  690.14,Desc.,M.S. THESIS,0,60,ALİ TAMER ÜNAL,,,Online,,,,,"                          "
+IE  690.15,Desc.,M.S. THESIS,0,60,TINAZ  EKİM AŞICI,,,Online,,,,,"                          "
+IE  690.16,Desc.,M.S. THESIS,0,60,HAKAN YAŞARCAN,,,Online,,,,,"                          "
+IE  690.17,Desc.,M.S. THESIS,0,60,ZEKİ CANER TAŞKIN,,,Online,,,,,"                          "
+IE  690.18,Desc.,M.S. THESIS,0,60,GÖNENÇ YÜCEL,,,Online,,,,,"                          "
+IE  690.19,Desc.,M.S. THESIS,0,60,MUSTAFA GÖKÇE BAYDOĞAN,,,Online,,,,,"                          "
+IE  690.20,Desc.,M.S. THESIS,0,60,KÖNÜL BAYRAMOĞLU KAVLAK,,,Online,,,,,"                          "
+IE  700.01,Desc.,GRADUATE SEMINAR,0,1,REFİK GÜLLÜ,FF,78,Classroom,VYKM2 | VYKM2,,,,"                          "
+IE  790.01,Desc.,Ph.D. THESIS,0,120,KUBAN ALTINEL,,,Online,,,,,"                          "
+IE  790.02,Desc.,Ph.D. THESIS,0,120,MUSTAFA NECATİ ARAS,,,Online,,,,,"                          "
+IE  790.05,Desc.,Ph.D. THESIS,0,120,ÜMİT BİLGE,,,Online,,,,,"                          "
+IE  790.06,Desc.,Ph.D. THESIS,0,120,TANER BİLGİÇ,,,Online,,,,,"                          "
+IE  790.07,Desc.,Ph.D. THESIS,0,120,MAHMUT EKŞİOĞLU,,,Online,,,,,"                          "
+IE  790.08,Desc.,Ph.D. THESIS,0,120,REFİK GÜLLÜ,,,Online,,,,,"                          "
+IE  790.09,Desc.,Ph.D. THESIS,0,120,WOLFGANG HOERMANN,,,Online,,,,,"                          "
+IE  790.11,Desc.,Ph.D. THESIS,0,120,AYBEK KORUGAN,,,Online,,,,,"                          "
+IE  790.12,Desc.,Ph.D. THESIS,0,120,GÜRKAN KUMBAROĞLU,,,Online,,,,,"                          "
+IE  790.14,Desc.,Ph.D. THESIS,0,120,ALİ TAMER ÜNAL,,,Online,,,,,"                          "
+IE  790.15,Desc.,Ph.D. THESIS,0,120,TINAZ  EKİM AŞICI,,,Online,,,,,"                          "
+IE  790.16,Desc.,Ph.D. THESIS,0,120,HAKAN YAŞARCAN,,,Online,,,,,"                          "
+IE  790.17,Desc.,Ph.D. THESIS,0,120,ZEKİ CANER TAŞKIN,,,Online,,,,,"                          "
+IE  790.18,Desc.,Ph.D. THESIS,0,120,GÖNENÇ YÜCEL,,,Online,,,,,"                          "
+IE  790.19,Desc.,Ph.D. THESIS,0,120,MUSTAFA GÖKÇE BAYDOĞAN,,,Online,,,,,"                          "

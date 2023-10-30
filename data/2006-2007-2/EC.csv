@@ -1,0 +1,42 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EC  102.01,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,CEM BEHAR,TTTh,565,,TB 310 | TB 310 | TB 310,,,,"                          "
+EC  102.02,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,REFİK ERZAN,TTTh,565,,NB 119 | NB 119 | NB 119,,,,"                          "
+EC  102.04,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,KIVANÇ KARAMAN,MMW,568,,NB 119 | NB 119 | NB 119,,,,"                          "
+EC  102.05,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,KIVANÇ KARAMAN,MMW,787,,NB 119 | NB 119 | NB 119,,,,"                          "
+EC  102.06,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,ŞEMSA ÖZAR,TThTh,678,,İBRAHİM | NB 119 | NB 119,,,,"                          "
+EC  102.07,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,BEGÜM ÖZKAYNAK,MMW,565,,İBRAHİM | İBRAHİM | NB 119,,,,"                          "
+EC  102.08,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,BEGÜM ÖZKAYNAK,MWW,434,,NB 119 | NB 119 | NB 119,,,,"                          "
+EC  206.01,Desc.,MICROECONOMICS II,3,5,BURÇAY ERUS,TThTh,534,,İBRAHİM | İBRAHİM | İBRAHİM,,,,"                          "
+EC  206.02,Desc.,MICROECONOMICS II,3,5,GÜZİN GÜLSÜN AKIN,TWW,323,,NB 119 | İBRAHİM | İBRAHİM,,,,"                          "
+EC  208.01,Desc.,MACROECONOMICS II,3,5,AHMET FARUK AYSAN,TThTh,756,,İBRAHİM | M 1100 | M 1100,,,,"                          "
+EC  232.01,Desc.,STATISTICS II ,4,6,ULAŞ AKKÜÇÜK,TThTh,678,,M 2200 | IB 201 | IB 201,,,,"                          "
+EC  232.02,Desc.,STATISTICS II ,4,6,NESRİN OKAY AKMAN,TTTh,785,,IB 102 | IB 102 | IB 201,,,,"                          "
+EC  234.01,Desc.,MATHEMATICAL STATISTICS II,3,5,GÜZİN GÜLSÜN AKIN,TTW,121,,NB 119 | NB 119 | İBRAHİM,,,,"                          "
+EC  234.02,Desc.,MATHEMATICAL STATISTICS II,3,5,OZAN HATİPOĞLU,TTW,344,,İBRAHİM | İBRAHİM | İBRAHİM,,,,"                          "
+EC  306.01,Desc.,ADVANCED MICROECONOMICS,3,6,KIVANÇ KARAMAN,TWW,812,,İBRAHİM | M 1100 | M 1100,,,,"                          "
+EC  308.01,Desc.,ADVANCED MACROECONOMICS,3,6,PINAR  ARDIÇ,MWW,378,,İBRAHİM | İBRAHİM | İBRAHİM,,,,"                          "
+EC  315.01,Desc.,ECONOMIC HISTORY OF TURKEY,3,6,ŞEVKET OSMAN PAMUK,TWW,756,,NB 119 | M 2152 | M 2152,,,,"                          "
+EC  332.01,Desc.,ADVANCED ECONOMETRICS,3,6,GÖKHAN ÖZERTAN,MMTh,567,,M 2181 | M 2181 | PARK2,,,,"                          "
+EC  344.01,Desc.,"MONEY, BANKING & FINANCIAL INST.",3,6,LEVENT YILDIRAN,TTTh,568,,PARK1 | PARK1 | M 1100,,,,"                          "
+EC  344.02,Desc.,"MONEY, BANKING & FINANCIAL INST.",3,6,BURAK SALTOĞLU,TTTh,568,,GYM | GYM | NBZ 13,,,,"                          "
+EC  350.01,Desc.,GOVERNMENT CONTROL,3,6,İZZETTİN ÖNDER,ThThTh,123,,NBZ 12 | NBZ 12 | NBZ 12,,,,"                          "
+EC  352.01,Desc.,TOPICS IN PUBLIC FINANCE,3,6,LEVENT YILDIRAN,TThTh,356,,M 1100 | İBRAHİM | İBRAHİM,,,,"                          "
+EC  412.01,Desc.,TOPICS IN HIST. OF ECO. THOUGHT,3,6,FİKRET ADAMAN,WWW,456,,T.NOYAN | T.NOYAN | T.NOYAN,,,,"                          "
+EC  433.01,Desc.,PROJECT EVALUATION,3,6,CEVAT KARATAŞ,MMM,567,,M 1170 | M 1170 | M 1170,,,,"                          "
+EC  454.01,Desc.,TURKISH TAX SYTEMS,3,6,İZZETTİN ÖNDER,TTT,123,,NBZ 11 | NBZ 11 | NBZ 11,,,,"                          "
+EC  470.01,Desc.,TURKISH ECONOMY,3,6,REFİK ERZAN,TThTh,878,,NB 119 | İBRAHİM | İBRAHİM,,,,"                          "
+EC  474.01,Desc.,TOPICS IN INTERNATIONAL DEVELOP.,3,6,ŞEMSA ÖZAR,TWTh,433,,NB 119 | M 1171 | M 1100,,,,"                          "
+EC  502.01,Desc.,MICRO-ECONOMICS II,4,8,GÖKHAN ÖZERTAN,MMThTh,1212,,KGYM106 | KGYM106 | M 2203 | M 2203,,,,"                          "
+EC  504.01,Desc.,MACRO-ECONOMICS II,4,8,OZAN HATİPOĞLU,TTWW,1212,,M 2152 | M 2152 | M 2152 | M 2152,,,,"                          "
+EC  532.01,Desc.,ECONOMETRICS II,4,8,PINAR  ARDIÇ,MMWW,5656,,KGYM106 | KGYM106 | KGYM106 | KGYM106,,,,"                          "
+EC  579.01,Desc.,GRADUATE SEMINAR,0,5,AHMET FARUK AYSAN,TBA,,,,,,,"                          "
+EC  583.01,Desc.,SEL.TOP.IN FINANCIAL MARKETS& REGULATION,3,7,AHMET FARUK AYSAN,FFF,123,,IB 312 | IB 312 | IB 312,,,,"                          "
+EC  599.01,Desc.,TERM PROJECT,0,13,GÖKHAN ÖZERTAN,TBA,,,,,,,"                          "
+EC  599.02,Desc.,TERM PROJECT,0,13,GÜZİN GÜLSÜN AKIN,TBA,,,,,,,"                          "
+EC  599.03,Desc.,TERM PROJECT,0,13,AHMET FARUK AYSAN,TBA,,,,,,,"                          "
+EC  599.05,Desc.,TERM PROJECT,0,13,PINAR  ARDIÇ,TBA,,,,,,,"                          "
+EC  599.06,Desc.,TERM PROJECT,0,13,REFİK ERZAN,TBA,,,,,,,"                          "
+EC  690.02,Desc.,MASTER THESIS,0,60,AHMET FARUK AYSAN,TBA,,,,,,,"                          "
+EC  690.03,Desc.,MASTER THESIS,0,60,GÖKHAN ÖZERTAN,TBA,,,,,,,"                          "
+EC  690.04,Desc.,MASTER THESIS,0,60,BURÇAY ERUS,TBA,,,,,,,"                          "
+EC  790.01,Desc.,Ph.D THESIS,0,120,GÖKHAN ÖZERTAN,TBA,,,,,,,"                          "

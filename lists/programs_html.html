@@ -1,0 +1,971 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en-us" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="no-js ie8"> <![endif]-->
+<!--[if IE 9]>    <html lang="en-us" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-us" class="no-js">
+<!--<![endif]-->
+
+<head><meta http-equiv="cache-control" content="max-age=0" /><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="expires" content="1" /><meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" /><meta http-equiv="pragma" content="no-cache" /><meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- CSS Files -->
+    <link href="/BUIS/App_Themes/bsboun/css/adminica/reset.css" rel="stylesheet" /><link href="/BUIS/App_Themes/bsboun/css/adminica/main.css?doRefresh=3" rel="stylesheet" /><link href="/BUIS/App_Themes/bsboun/css/adminica/mobile.css?doRefresh=1" rel="stylesheet" /><link href="/BUIS/App_Themes/bsboun/css/plugins/bootstrap/bootstrap-2.3.1.css?doRefresh=1" rel="stylesheet" /><link media="screen" href="/BUIS/App_Themes/bsboun/css/themes/skin_light.css?doRefresh=1" rel="stylesheet" /><link media="screen" href="/BUIS/App_Themes/bsboun/css/themes/theme_blue.css" rel="stylesheet" /><link href="/BUIS/App_Themes/bsboun/css/themes/bg_white_wood.css" rel="stylesheet" /><link href="/BUIS/App_Themes/bsboun/css/adminica/colours.css?doRefresh=2" rel="stylesheet" /><link href="/BUIS/App_Themes/bsboun/css/adminica/grid.css" rel="stylesheet" /><link href="/BUIS/App_Themes/bsboun/plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" /><link href="/BUIS/App_Themes/bsboun/css/fontawsome/css/all.min.css" rel="stylesheet" />
+
+    <!-- End of CSS Files-->
+
+    <!-- Plugin CSS Files-->
+
+    <!-- Plugin CSS Files-->
+
+    <!-- JS Files -->
+    <script src="/BUIS/App_Themes/bsboun/js/jquery/jquery-min.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/prefixfree/prefixfree.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/adminica/adminica_ui.js?doRefresh=2"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/adminica/adminica_mobile.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/adminica/adminica_load.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/plugins-min.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/bootstrap/bootstrap.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/bootbox.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/ModalMessage.js?doRefresh=2"></script>
+    <script src="/BUIS/App_Themes/bsboun/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.tr.min.js"></script>
+    <script src="/BUIS/js/jquery.maskedinput.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/Validation.js"></script>
+
+    <script type="text/javascript">
+
+   
+
+        $(document).ready(function () {
+
+            var isInIFrame = false;
+
+            // BUIS Deki Generic IFrmeise
+            try {
+                if (parent.location.pathname != location.pathname && parent.location.pathname.toLowerCase() == "/buis/manage/ObikasASPFrame.aspx".toLowerCase()) {
+                    isInIFrame = true;
+                }
+            } catch (e) {
+
+            }
+
+            // OBIKAS daki Frame içinde ise
+            try {
+                if (parent.rmain !== undefined) {
+                    $(parent.rmain.document).length;
+                    isInIFrame = true;
+                }
+            }
+            catch (e) {
+
+            }
+
+            if (isInIFrame) {
+                $('#sidebar').hide();
+                $('.navbar-fixed-top').hide();
+                $('#wrapper').css('padding-top', '3px');
+                $('div.main_container').css('margin', '10px 0px 10px 0px');
+            }
+
+            
+
+
+        });
+
+         
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-65314-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        
+
+    </script>
+    <!-- End of JS Files-->
+
+    <title>
+	BOĞAZİÇİ UNIVERSITY | STUDENT INFORMATION REGISTRATION SYSTEM (OBIKAS)
+</title>
+    <style type="text/css">
+        #buttonBar div {
+            display: -webkit-inline-box !important;
+        }
+
+        div#wrapper {
+            padding: 0 !important;
+        }
+    </style>
+
+    </head>
+<body>
+    <form method="post" action="./schedule.aspx?p=semester" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4BE93B14" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+</div>
+        <div id="wrapper" data-adminica-nav-top="3" data-adminica-nav-inner="4" data-adminica-side-top="3" data-adminica-side-inner="4" class="has_fixed_bar">
+
+            
+    <div class="box">
+        <div class="block">
+            <div class="section">
+                
+                <div id="buttonBar" class="button_bar clearfix">
+                    <div id="ctl00_cphMainContent_divSemester">
+                        <div>
+                            <label class="control-label">Semester:</label>
+                        </div>
+                        <div>
+                            <select name="ctl00$cphMainContent$ddlSemester" id="ctl00_cphMainContent_ddlSemester" class="span2">
+	<option selected="selected" value="2023/2024-1">2023/2024-1</option>
+	<option value="2022/2023-3">2022/2023-3</option>
+	<option value="2022/2023-2">2022/2023-2</option>
+	<option value="2022/2023-1">2022/2023-1</option>
+	<option value="2021/2022-3">2021/2022-3</option>
+	<option value="2021/2022-2">2021/2022-2</option>
+	<option value="2021/2022-1">2021/2022-1</option>
+	<option value="2020/2021-3">2020/2021-3</option>
+	<option value="2020/2021-2">2020/2021-2</option>
+	<option value="2020/2021-1">2020/2021-1</option>
+	<option value="2019/2020-3">2019/2020-3</option>
+	<option value="2019/2020-2">2019/2020-2</option>
+	<option value="2019/2020-1">2019/2020-1</option>
+	<option value="2018/2019-3">2018/2019-3</option>
+	<option value="2018/2019-2">2018/2019-2</option>
+	<option value="2018/2019-1">2018/2019-1</option>
+	<option value="2017/2018-3">2017/2018-3</option>
+	<option value="2017/2018-2">2017/2018-2</option>
+	<option value="2017/2018-1">2017/2018-1</option>
+	<option value="2016/2017-3">2016/2017-3</option>
+	<option value="2016/2017-2">2016/2017-2</option>
+	<option value="2016/2017-1">2016/2017-1</option>
+	<option value="2015/2016-3">2015/2016-3</option>
+	<option value="2015/2016-2">2015/2016-2</option>
+	<option value="2015/2016-1">2015/2016-1</option>
+	<option value="2014/2015-3">2014/2015-3</option>
+	<option value="2014/2015-2">2014/2015-2</option>
+	<option value="2014/2015-1">2014/2015-1</option>
+	<option value="2013/2014-3">2013/2014-3</option>
+	<option value="2013/2014-2">2013/2014-2</option>
+	<option value="2013/2014-1">2013/2014-1</option>
+	<option value="2012/2013-3">2012/2013-3</option>
+	<option value="2012/2013-2">2012/2013-2</option>
+	<option value="2012/2013-1">2012/2013-1</option>
+	<option value="2011/2012-3">2011/2012-3</option>
+	<option value="2011/2012-2">2011/2012-2</option>
+	<option value="2011/2012-1">2011/2012-1</option>
+	<option value="2010/2011-3">2010/2011-3</option>
+	<option value="2010/2011-2">2010/2011-2</option>
+	<option value="2010/2011-1">2010/2011-1</option>
+	<option value="2009/2010-3">2009/2010-3</option>
+	<option value="2009/2010-2">2009/2010-2</option>
+	<option value="2009/2010-1">2009/2010-1</option>
+	<option value="2008/2009-3">2008/2009-3</option>
+	<option value="2008/2009-2">2008/2009-2</option>
+	<option value="2008/2009-1">2008/2009-1</option>
+	<option value="2007/2008-3">2007/2008-3</option>
+	<option value="2007/2008-2">2007/2008-2</option>
+	<option value="2007/2008-1">2007/2008-1</option>
+	<option value="2006/2007-3">2006/2007-3</option>
+	<option value="2006/2007-2">2006/2007-2</option>
+	<option value="2006/2007-1">2006/2007-1</option>
+	<option value="2005/2006-3">2005/2006-3</option>
+	<option value="2005/2006-2">2005/2006-2</option>
+	<option value="2005/2006-1">2005/2006-1</option>
+	<option value="2004/2005-3">2004/2005-3</option>
+	<option value="2004/2005-2">2004/2005-2</option>
+	<option value="2004/2005-1">2004/2005-1</option>
+	<option value="2003/2004-3">2003/2004-3</option>
+	<option value="2003/2004-2">2003/2004-2</option>
+	<option value="2003/2004-1">2003/2004-1</option>
+	<option value="2002/2003-3">2002/2003-3</option>
+	<option value="2002/2003-2">2002/2003-2</option>
+	<option value="2002/2003-1">2002/2003-1</option>
+	<option value="2001/2002-3">2001/2002-3</option>
+	<option value="2001/2002-2">2001/2002-2</option>
+	<option value="2001/2002-1">2001/2002-1</option>
+	<option value="2000/2001-3">2000/2001-3</option>
+	<option value="2000/2001-2">2000/2001-2</option>
+	<option value="2000/2001-1">2000/2001-1</option>
+	<option value="1999/2000-3">1999/2000-3</option>
+	<option value="1999/2000-2">1999/2000-2</option>
+	<option value="1999/2000-1">1999/2000-1</option>
+	<option value="1998/1999-3">1998/1999-3</option>
+	<option value="1998/1999-2">1998/1999-2</option>
+	<option value="1998/1999-1">1998/1999-1</option>
+	<option value="1997/1998-3">1997/1998-3</option>
+	<option value="1997/1998-2">1997/1998-2</option>
+	<option value="1997/1998-1">1997/1998-1</option>
+	<option value="1996/1997-3">1996/1997-3</option>
+	<option value="1996/1997-2">1996/1997-2</option>
+	<option value="1996/1997-1">1996/1997-1</option>
+	<option value="1995/1996-3">1995/1996-3</option>
+	<option value="1995/1996-2">1995/1996-2</option>
+	<option value="1995/1996-1">1995/1996-1</option>
+	<option value="1994/1995-3">1994/1995-3</option>
+	<option value="1994/1995-2">1994/1995-2</option>
+	<option value="1994/1995-1">1994/1995-1</option>
+	<option value="1993/1994-3">1993/1994-3</option>
+	<option value="1993/1994-2">1993/1994-2</option>
+	<option value="1993/1994-1">1993/1994-1</option>
+	<option value="1992/1993-2">1992/1993-2</option>
+	<option value="1992/1993-1">1992/1993-1</option>
+	<option value="1991/1992-2">1991/1992-2</option>
+	<option value="1991/1992-1">1991/1992-1</option>
+	<option value="1990/1991-2">1990/1991-2</option>
+	<option value="1990/1991-1">1990/1991-1</option>
+	<option value="1989/1990-2">1989/1990-2</option>
+	<option value="1989/1990-1">1989/1990-1</option>
+	<option value="1988/1989-2">1988/1989-2</option>
+	<option value="1988/1989-1">1988/1989-1</option>
+	<option value="1987/1988-2">1987/1988-2</option>
+	<option value="1987/1988-1">1987/1988-1</option>
+	<option value="1986/1987-2">1986/1987-2</option>
+	<option value="1986/1987-1">1986/1987-1</option>
+	<option value="1985/1986-2">1985/1986-2</option>
+	<option value="1985/1986-1">1985/1986-1</option>
+	<option value="1984/1985-2">1984/1985-2</option>
+	<option value="1984/1985-1">1984/1985-1</option>
+	<option value="1983/1984-2">1983/1984-2</option>
+	<option value="1983/1984-1">1983/1984-1</option>
+	<option value="1982/1983-2">1982/1983-2</option>
+	<option value="1982/1983-1">1982/1983-1</option>
+	<option value="1981/1982-2">1981/1982-2</option>
+	<option value="1981/1982-1">1981/1982-1</option>
+	<option value="1980/1981-2">1980/1981-2</option>
+	<option value="1980/1981-1">1980/1981-1</option>
+	<option value="1979/1980-2">1979/1980-2</option>
+	<option value="1979/1980-1">1979/1980-1</option>
+	<option value="1978/1979-2">1978/1979-2</option>
+	<option value="1978/1979-1">1978/1979-1</option>
+	<option value="1977/1978-2">1977/1978-2</option>
+	<option value="1977/1978-1">1977/1978-1</option>
+	<option value="1976/1977-2">1976/1977-2</option>
+	<option value="1976/1977-1">1976/1977-1</option>
+	<option value="1975/1976-2">1975/1976-2</option>
+	<option value="1975/1976-1">1975/1976-1</option>
+	<option value="1974/1975-2">1974/1975-2</option>
+	<option value="1974/1975-1">1974/1975-1</option>
+	<option value="1973/1974-2">1973/1974-2</option>
+	<option value="1973/1974-1">1973/1974-1</option>
+	<option value="1972/1973-2">1972/1973-2</option>
+	<option value="1972/1973-1">1972/1973-1</option>
+	<option value="1971/1972-2">1971/1972-2</option>
+	<option value="1971/1972-1">1971/1972-1</option>
+	<option value="1970/1971-2">1970/1971-2</option>
+	<option value="1970/1971-1">1970/1971-1</option>
+
+</select>
+                        </div>
+                    </div>
+
+                    
+
+                    <div>
+                        <input type="submit" name="ctl00$cphMainContent$btnSearch" value="Go" id="ctl00_cphMainContent_btnSearch" class="btn btn-primary" />
+                        <input type="hidden" name="ctl00$cphMainContent$gRecResp" id="gRecResp" value="03AFcWeA68mFRcO1eD3pkOIIjjIy7SECO7LhLbP999nOGs2TfBqPVoAr38IcZIwGYe6_Fct2Oi8mvt8IVECFahK0YEi3S4NVV3PUoFNkcw9CkTfEDG-vVsHaGRIB6KMNlcSDnG1MkvSoZc7hheXnCF0Ijspbzs3BUcI_CQ9kJJxA5ml8FRIOxWGNZ9hYfWGtcZlPI3lyQ4touSKnD-K4DrNfwbQ3bXqVPEkry2mC0mriR5raBQMtSebP8f8RJy-SFozB9jZMxCDIS7Sa3LfK-vLAlyRnm01hEaCwLkvEkNqD__Wu7mAAbFdmdMgN6xB0AoEpCanqSGLu9crn4aTtHEuQuJF9dJKsaXHDgbk2SBw5pqvkYizWXAbFeqB0oXsYzHqAZdEqOYiCvAHSBfpCATa7n90_CF7A_DMdiHXa86hILOby1QU3xOgHNAeTKevj4AqFVEj-i1tS9AA6Q8-hdgwLDzlJdPI-aGcE146h2VbGA2js5oWiGMg9Oty1XSN9OK-zYz-YqVz-moEEqcoGlcE-9Y6uAqNndLLtin-8FMFm6rgLAXQX5yQal_mXcWODGGkU3Hz3FvQcyL" />
+                    </div>
+                </div>
+                <div id="ctl00_cphMainContent_pnlCourseList" class="box">
+	
+                    
+                            <table class="table table-bordered">
+                                <thead>
+                                    <th>Departments / Programs / Instructor(s):</th>
+                                </thead>
+                                <tbody>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=ASIA&bolum=ASIAN+STUDIES">
+                                    
+                                    
+                                    ASIAN STUDIES
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=ASIA&bolum=ASIAN+STUDIES+WITH+THESIS">
+                                    
+                                    
+                                    ASIAN STUDIES WITH THESIS
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=ATA&bolum=ATATURK+INSTITUTE+FOR+MODERN+TURKISH+HISTORY">
+                                    
+                                    
+                                    ATATURK INSTITUTE FOR MODERN TURKISH HISTORY
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=AUTO&bolum=AUTOMOTIVE+ENGINEERING">
+                                    
+                                    
+                                    AUTOMOTIVE ENGINEERING
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=BM&bolum=BIOMEDICAL+ENGINEERING">
+                                    
+                                    
+                                    BIOMEDICAL ENGINEERING
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=BIS&bolum=BUSINESS+INFORMATION+SYSTEMS">
+                                    
+                                    
+                                    BUSINESS INFORMATION SYSTEMS
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=BIS&bolum=BUSINESS+INFORMATION+SYSTEMS+(WITH+THESIS)">
+                                    
+                                    
+                                    BUSINESS INFORMATION SYSTEMS (WITH THESIS)
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=CHE&bolum=CHEMICAL+ENGINEERING">
+                                    
+                                    
+                                    CHEMICAL ENGINEERING
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=CHEM&bolum=CHEMISTRY">
+                                    
+                                    
+                                    CHEMISTRY
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=CE&bolum=CIVIL+ENGINEERING">
+                                    
+                                    
+                                    CIVIL ENGINEERING
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=COGS&bolum=COGNITIVE+SCIENCE">
+                                    
+                                    
+                                    COGNITIVE SCIENCE
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=CSE&bolum=COMPUTATIONAL+SCIENCE+%26+ENGINEERING">
+                                    
+                                    
+                                    COMPUTATIONAL SCIENCE & ENGINEERING
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=CET&bolum=COMPUTER+EDUCATION+%26+EDUCATIONAL+TECHNOLOGY">
+                                    
+                                    
+                                    COMPUTER EDUCATION & EDUCATIONAL TECHNOLOGY
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=CMPE&bolum=COMPUTER+ENGINEERING">
+                                    
+                                    
+                                    COMPUTER ENGINEERING
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=CEM&bolum=CONSTRUCTION+ENGINEERING+AND+MANAGEMENT">
+                                    
+                                    
+                                    CONSTRUCTION ENGINEERING AND MANAGEMENT
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=CCS&bolum=CRITICAL+AND+CULTURAL+STUDIES">
+                                    
+                                    
+                                    CRITICAL AND CULTURAL STUDIES
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=DSAI&bolum=DATA+SCIENCE+AND+ARTIFICIAL+INTELLIGENCE">
+                                    
+                                    
+                                    DATA SCIENCE AND ARTIFICIAL INTELLIGENCE
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=PRED&bolum=EARLY+CHILDHOOD+EDUCATION">
+                                    
+                                    
+                                    EARLY CHILDHOOD EDUCATION
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=EQE&bolum=EARTHQUAKE+ENGINEERING">
+                                    
+                                    
+                                    EARTHQUAKE ENGINEERING
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=EC&bolum=ECONOMICS">
+                                    
+                                    
+                                    ECONOMICS
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=EF&bolum=ECONOMICS+AND+FINANCE">
+                                    
+                                    
+                                    ECONOMICS AND FINANCE
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=ED&bolum=EDUCATIONAL+SCIENCES">
+                                    
+                                    
+                                    EDUCATIONAL SCIENCES
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=CET&bolum=EDUCATIONAL+TECHNOLOGY">
+                                    
+                                    
+                                    EDUCATIONAL TECHNOLOGY
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=EE&bolum=ELECTRICAL+%26+ELECTRONICS+ENGINEERING">
+                                    
+                                    
+                                    ELECTRICAL & ELECTRONICS ENGINEERING
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=ETM&bolum=ENGINEERING+AND+TECHNOLOGY+MANAGEMENT">
+                                    
+                                    
+                                    ENGINEERING AND TECHNOLOGY MANAGEMENT
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=LL&bolum=ENGLISH+LITERATURE">
+                                    
+                                    
+                                    ENGLISH LITERATURE
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=ENV&bolum=ENVIRONMENTAL+SCIENCES">
+                                    
+                                    
+                                    ENVIRONMENTAL SCIENCES
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=ENVT&bolum=ENVIRONMENTAL+TECHNOLOGY">
+                                    
+                                    
+                                    ENVIRONMENTAL TECHNOLOGY
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=XMBA&bolum=EXECUTIVE+MBA">
+                                    
+                                    
+                                    EXECUTIVE MBA
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=FE&bolum=FINANCIAL+ENGINEERING">
+                                    
+                                    
+                                    FINANCIAL ENGINEERING
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=PA&bolum=FINE+ARTS">
+                                    
+                                    
+                                    FINE ARTS
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=FLED&bolum=FOREIGN+LANGUAGE+EDUCATION">
+                                    
+                                    
+                                    FOREIGN LANGUAGE EDUCATION
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=GED&bolum=GEODESY">
+                                    
+                                    
+                                    GEODESY
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=GPH&bolum=GEOPHYSICS">
+                                    
+                                    
+                                    GEOPHYSICS
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=GUID&bolum=GUIDANCE+%26+PSYCHOLOGICAL+COUNSELING">
+                                    
+                                    
+                                    GUIDANCE & PSYCHOLOGICAL COUNSELING
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=HIST&bolum=HISTORY">
+                                    
+                                    
+                                    HISTORY
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=HUM&bolum=HUMANITIES+COURSES+COORDINATOR">
+                                    
+                                    
+                                    HUMANITIES COURSES COORDINATOR
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=IE&bolum=INDUSTRIAL+ENGINEERING">
+                                    
+                                    
+                                    INDUSTRIAL ENGINEERING
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=INCT&bolum=INTERNATIONAL+COMPETITION+AND+TRADE">
+                                    
+                                    
+                                    INTERNATIONAL COMPETITION AND TRADE
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=MIR&bolum=INTERNATIONAL+RELATIONS%3aTURKEY%2cEUROPE+AND+THE+MIDDLE+EAST">
+                                    
+                                    
+                                    INTERNATIONAL RELATIONS:TURKEY,EUROPE AND THE MIDDLE EAST
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=MIR&bolum=INTERNATIONAL+RELATIONS%3aTURKEY%2cEUROPE+AND+THE+MIDDLE+EAST+WITH+THESIS">
+                                    
+                                    
+                                    INTERNATIONAL RELATIONS:TURKEY,EUROPE AND THE MIDDLE EAST WITH THESIS
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=INTT&bolum=INTERNATIONAL+TRADE">
+                                    
+                                    
+                                    INTERNATIONAL TRADE
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=INTT&bolum=INTERNATIONAL+TRADE+MANAGEMENT">
+                                    
+                                    
+                                    INTERNATIONAL TRADE MANAGEMENT
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=LAW&bolum=LAW+PR.">
+                                    
+                                    
+                                    LAW PR.
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=LS&bolum=LEARNING+SCIENCES">
+                                    
+                                    
+                                    LEARNING SCIENCES
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=LING&bolum=LINGUISTICS">
+                                    
+                                    
+                                    LINGUISTICS
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=AD&bolum=MANAGEMENT">
+                                    
+                                    
+                                    MANAGEMENT
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=MIS&bolum=MANAGEMENT+INFORMATION+SYSTEMS">
+                                    
+                                    
+                                    MANAGEMENT INFORMATION SYSTEMS
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=MATH&bolum=MATHEMATICS">
+                                    
+                                    
+                                    MATHEMATICS
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=SCED&bolum=MATHEMATICS+AND+SCIENCE+EDUCATION">
+                                    
+                                    
+                                    MATHEMATICS AND SCIENCE EDUCATION
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=ME&bolum=MECHANICAL+ENGINEERING">
+                                    
+                                    
+                                    MECHANICAL ENGINEERING
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=MECA&bolum=MECHATRONICS+ENGINEERING+(WITH+THESIS)">
+                                    
+                                    
+                                    MECHATRONICS ENGINEERING (WITH THESIS)
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=MECA&bolum=MECHATRONICS+ENGINEERING+(WITHOUT+THESIS)">
+                                    
+                                    
+                                    MECHATRONICS ENGINEERING (WITHOUT THESIS)
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=BIO&bolum=MOLECULAR+BIOLOGY+%26+GENETICS">
+                                    
+                                    
+                                    MOLECULAR BIOLOGY & GENETICS
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=PF&bolum=PEDAGOGICAL+FORMATION+CERTIFICATE+PROGRAM">
+                                    
+                                    
+                                    PEDAGOGICAL FORMATION CERTIFICATE PROGRAM
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=PHIL&bolum=PHILOSOPHY">
+                                    
+                                    
+                                    PHILOSOPHY
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=PE&bolum=PHYSICAL+EDUCATION">
+                                    
+                                    
+                                    PHYSICAL EDUCATION
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=PHYS&bolum=PHYSICS">
+                                    
+                                    
+                                    PHYSICS
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=POLS&bolum=POLITICAL+SCIENCE%26INTERNATIONAL+RELATIONS">
+                                    
+                                    
+                                    POLITICAL SCIENCE&INTERNATIONAL RELATIONS
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=PSY&bolum=PSYCHOLOGY">
+                                    
+                                    
+                                    PSYCHOLOGY
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=YADYOK&bolum=SCHOOL+OF+FOREIGN+LANGUAGES">
+                                    
+                                    
+                                    SCHOOL OF FOREIGN LANGUAGES
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=SPL&bolum=SOCIAL+POLICY+WITH+THESIS">
+                                    
+                                    
+                                    SOCIAL POLICY WITH THESIS
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=SOC&bolum=SOCIOLOGY">
+                                    
+                                    
+                                    SOCIOLOGY
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=SWE&bolum=SOFTWARE+ENGINEERING">
+                                    
+                                    
+                                    SOFTWARE ENGINEERING
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=SWE&bolum=SOFTWARE+ENGINEERING+WITH+THESIS">
+                                    
+                                    
+                                    SOFTWARE ENGINEERING WITH THESIS
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=TRM&bolum=SUSTAINABLE+TOURISM+MANAGEMENT">
+                                    
+                                    
+                                    SUSTAINABLE TOURISM MANAGEMENT
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=SCO&bolum=SYSTEMS+%26+CONTROL+ENGINEERING">
+                                    
+                                    
+                                    SYSTEMS & CONTROL ENGINEERING
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=TRM&bolum=TOURISM+ADMINISTRATION">
+                                    
+                                    
+                                    TOURISM ADMINISTRATION
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=WTR&bolum=TRANSLATION">
+                                    
+                                    
+                                    TRANSLATION
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=TR&bolum=TRANSLATION+AND+INTERPRETING+STUDIES">
+                                    
+                                    
+                                    TRANSLATION AND INTERPRETING STUDIES
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=TK&bolum=TURKISH+COURSES+COORDINATOR">
+                                    
+                                    
+                                    TURKISH COURSES COORDINATOR
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=TKL&bolum=TURKISH+LANGUAGE+%26+LITERATURE">
+                                    
+                                    
+                                    TURKISH LANGUAGE & LITERATURE
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=PRSO&bolum=UNDERGRADUATE+PROGRAM+IN+PRESCHOOL+EDUCATION">
+                                    
+                                    
+                                    UNDERGRADUATE PROGRAM IN PRESCHOOL EDUCATION
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=2023/2024-1&kisaadi=LL&bolum=WESTERN+LANGUAGES+%26+LITERATURES">
+                                    
+                                    
+                                    WESTERN LANGUAGES & LITERATURES
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            </tbody>
+                        </table>
+                        
+                
+</div>
+            </div>
+        </div>
+    </div>
+
+            
+
+        </div>
+    </form>
+</body>
+</html>

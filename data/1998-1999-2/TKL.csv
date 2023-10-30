@@ -1,0 +1,75 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+TK  122.01,Desc.,TURKISH,2,3,CEMİL ÖZTÜRK,MM,12,,,,,,"                          "
+TK  122.02,Desc.,TURKISH,2,3,CEMİL ÖZTÜRK,MM,34,,,,,,"                          "
+TK  122.03,Desc.,TURKISH,2,3,CEMİL ÖZTÜRK,MM,56,,,,,,"                          "
+TK  122.04,Desc.,TURKISH,2,3,FADİME ÖZDEN,FF,12,,,,,,"                          "
+TK  122.05,Desc.,TURKISH,2,3,FADİME ÖZDEN,FF,34,,,,,,"                          "
+TK  122.06,Desc.,TURKISH,2,3,FADİME ÖZDEN,FF,56,,,,,,"                          "
+TK  204.01,Desc.,STRUCTURE OF MODERN TURKISH,3,5,ESER TAYLAN,MTTh,474,,,,,,"                          "
+TK  204.02,Desc.,STRUCTURE OF MODERN TURKISH,3,5,ASLI GÖKSEL,MWThTh,4434,,,,,,"                          "
+TK  204.03,Desc.,STRUCTURE OF MODERN TURKISH,3,5,DİDAR AKAR,MWTh,444,,,,,,"                          "
+TK  222.01,Desc.,TURKISH II,2,3,N. ELİF ULUĞ,,, ,,,,,"                          "
+TK  222.02,Desc.,TURKISH II,2,3,N. ELİF ULUĞ,,, ,,,,,"                          "
+TK  222.03,Desc.,TURKISH II,2,3,N. ELİF ULUĞ,,, ,,,,,"                          "
+TK  222.04,Desc.,TURKISH II,2,3,ASUMAN YILGÖR,,, ,,,,,"                          "
+TK  222.05,Desc.,TURKISH II,2,3,ASUMAN YILGÖR,,, ,,,,,"                          "
+TK  222.06,Desc.,TURKISH II,2,3,ASUMAN YILGÖR,,, ,,,,,"                          "
+TK  222.07,Desc.,TURKISH II,2,3,BİLGE BAYDAN,,, ,,,,,"                          "
+TK  222.08,Desc.,TURKISH II,2,3,BİLGE BAYDAN,,, ,,,,,"                          "
+TK  222.09,Desc.,TURKISH II,2,3,BİLGE BAYDAN,,, ,,,,,"                          "
+TK  222.10,Desc.,TURKISH II,2,3,CEMİL ÖZTÜRK,,, ,,,,,"                          "
+TK  222.11,Desc.,TURKISH II,2,3,CEMİL ÖZTÜRK,,, ,,,,,"                          "
+TK  222.12,Desc.,TURKISH II,2,3,CEMİL ÖZTÜRK,,, ,,,,,"                          "
+TK  222.13,Desc.,TURKISH II,2,3,N. ELİF ULUĞ,,, ,,,,,"                          "
+TK  222.14,Desc.,TURKISH II,2,3,N. ELİF ULUĞ,,, ,,,,,"                          "
+TK  222.15,Desc.,TURKISH II,2,3,N. ELİF ULUĞ,,, ,,,,,"                          "
+TK  222.16,Desc.,TURKISH II,2,3,BİLGE BAYDAN,,, ,,,,,"                          "
+TK  222.17,Desc.,TURKISH II,2,3,BİLGE BAYDAN,,, ,,,,,"                          "
+TK  222.18,Desc.,TURKISH II,2,3,BİLGE BAYDAN,,, ,,,,,"                          "
+TK  222.19,Desc.,TURKISH II,2,3,FADİME ÖZDEN,,, ,,,,,"                          "
+TK  222.20,Desc.,TURKISH II,2,3,FADİME ÖZDEN,,, ,,,,,"                          "
+TK  222.21,Desc.,TURKISH II,2,3,FADİME ÖZDEN,,, ,,,,,"                          "
+TK  222.22,Desc.,TURKISH II,2,3,SEVİM YILMAZ ÖNDER,,, ,,,,,"                          "
+TK  222.23,Desc.,TURKISH II,2,3,SEVİM YILMAZ ÖNDER,,, ,,,,,"                          "
+TK  222.24,Desc.,TURKISH II,2,3,SEVİM YILMAZ ÖNDER,,, ,,,,,"                          "
+TK  222.25,Desc.,TURKISH II,2,3,SEVİNÇ ERGİYDİREN,,, ,,,,,"                          "
+TK  222.26,Desc.,TURKISH II,2,3,SEVİNÇ ERGİYDİREN,,, ,,,,,"                          "
+TK  222.27,Desc.,TURKISH II,2,3,SEVİNÇ ERGİYDİREN,,, ,,,,,"                          "
+TK  222.28,Desc.,TURKISH II,2,3,BEDRİ SELİMHOCAOĞLU,,, ,,,,,"                          "
+TK  222.29,Desc.,TURKISH II,2,3,BEDRİ SELİMHOCAOĞLU,,, ,,,,,"                          "
+TK  222.30,Desc.,TURKISH II,2,3,BEDRİ SELİMHOCAOĞLU,,, ,,,,,"                          "
+TK  222.31,Desc.,TURKISH II,2,3,BEDRİ SELİMHOCAOĞLU,,, ,,,,,"                          "
+TK  222.32,Desc.,TURKISH II,2,3,BEDRİ SELİMHOCAOĞLU,,, ,,,,,"                          "
+TK  222.33,Desc.,TURKISH II,2,3,BEDRİ SELİMHOCAOĞLU,,, ,,,,,"                          "
+TK  222.34,Desc.,TURKISH II,2,3,ASUMAN YILGÖR,,, ,,,,,"                          "
+TK  222.35,Desc.,TURKISH II,2,3,ASUMAN YILGÖR,,, ,,,,,"                          "
+TK  222.36,Desc.,TURKISH II,2,3,ASUMAN YILGÖR,,, ,,,,,"                          "
+TK  222.37,Desc.,TURKISH II,2,3,SEVİM YILMAZ ÖNDER,,, ,,,,,"                          "
+TK  222.38,Desc.,TURKISH II,2,3,SEVİM YILMAZ ÖNDER,,, ,,,,,"                          "
+TK  222.39,Desc.,TURKISH II,2,3,SEVİM YILMAZ ÖNDER,,, ,,,,,"                          "
+TK  222.40,Desc.,TURKISH II,2,3,BEDRİ SELİMHOCAOĞLU,,, ,,,,,"                          "
+TK  222.41,Desc.,TURKISH II,2,3,BEDRİ SELİMHOCAOĞLU,,, ,,,,,"                          "
+TK  222.42,Desc.,TURKISH II,2,3,BEDRİ SELİMHOCAOĞLU,,, ,,,,,"                          "
+TK  222.43,Desc.,TURKISH II,2,3,SEVİNÇ ERGİYDİREN,,, ,,,,,"                          "
+TK  222.44,Desc.,TURKISH II,2,3,SEVİNÇ ERGİYDİREN,,, ,,,,,"                          "
+TK  222.45,Desc.,TURKISH II,2,3,SEVİNÇ ERGİYDİREN,,, ,,,,,"                          "
+TKL 101.01,Desc.,OTTOMAN TURKISH I,4,6,KÖKSAL SEYHAN,TTThTh,1212,,,,,,"                          "
+TKL 102.01,Desc.,OTTOMAN TURKISH II,4,6,NEZİHE SEYHAN,TTWW,1212,,,,,,"                          "
+TKL 106.01,Desc.,SURVEY OF TURKISH LITERATURE II,3,6,ZEYNEP SABUNCU,WWF,343,,,,,,"                          "
+TKL 204.01,Desc.,GENRES IN TURKISH LITERATURE,3,6,ZEHRA TOSKA,TTTh,565,,,,,,"                          "
+TKL 212.01,Desc.,MODERNIZATION IN TURKISH LITERATURE II,3,5,NUR  GÜRANİ ARSLAN,WWF,563,,,,,,"                          "
+TKL 216.01,Desc.,OTTOMAN PALEOGRAPHY II,3,6,GÜNAY KUT,TTTh,233,,,,,,"                          "
+TKL 304.01,Desc.,CLASSICS OF EASTERN & WESTERN LITERATURE,3,4,ZEHRA TOSKA,TWW,256,,,,,,"                          "
+TKL 308.01,Desc.,FOLK LITERATURE,3,4,KÖKSAL SEYHAN,TTTh,677,,,,,,"                          "
+TKL 314.01,Desc.,DIVAN LITERATUREII,3,6,ZEHRA TOSKA,TThTh,312,,,,,,"                          "
+TKL 402.01,Desc.,TURKISH THEATRE,3,4,NUR  GÜRANİ ARSLAN,MFF,256,,,,,,"                          "
+TKL 405.01,Desc.,MYSTICISM IN TURKISH LITERATURE,3,4,ZEYNEP SABUNCU,MMF,672,,,,,,"                          "
+TKL 408.01,Desc.,THE NOVEL STORY IN MODERN TURKISH LIT.,3,6,NÜKET ESEN,MThTh,345,,,,,,"                          "
+TKL 416.01,Desc.,RESEARCH & WRITING,3,7,GÜNAY KUT,S,0,,,,,,"                          "
+TKL 419.01,Desc.,TURKISH ART OF BOOK MAKING,3,4,TAHSİN ÖMER TAHAOĞLU,TTTh,786,,,,,,"                          "
+TKL 422.01,Desc.,LITERARY THEORY&PRACTICAL CRITICISM II,3,5,NÜKET ESEN,MMTh,453,,,,,,"                          "
+TKL 521.01,Desc.,THE TURKISH NOVEL AFTER 1970,3,8,NUR  GÜRANİ ARSLAN,S,0,,,,,,"                          "
+TKL 533.01,Desc.,RESEARCH METHODOLOGY,3,8,GÜNAY KUT,S,0,,,,,,"                          "
+TKL 579.01,Desc.,GRADUATE SEMINAR,0,8,ZEYNEP UYSAL,S,0,,,,,,"                          "
+TKL 582.01,Desc.,SP.TOP.IN OLD TURK.LIT.:ALLEGORY IN TUR.,3,8,ZEYNEP SABUNCU,S,0,,,,,,"                          "
+TKL 690.01,Desc.,MASTER THESIS,0,60,GÜNAY KUT,S,0,,,,,,"                          "

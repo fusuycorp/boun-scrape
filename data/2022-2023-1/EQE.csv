@@ -1,0 +1,21 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EQE 400.01,Desc.,INTRODUCTION TO EARTHQAKE ENGINEERING ,3,5,KARİN ŞEŞETYAN,FFF,234, ,M 2171 | M 2171 | M 2171,09.01.2023,1,,"                          "
+EQE 520.01,Desc.,STRONG GROUND MOTION,4,10,GÜLÜM TANIRCAN,WWWW,5678, ,,12.01.2023,2,,"                          "
+EQE 530.01,Desc.,EARTHQUAKE RESPONSE ANAL.OF STRUCTURES I,3,8,KARİN ŞEŞETYAN,WWW,234, ,,11.01.2023,1,,"                          "
+EQE 540.01,Desc.,GEOTECHNICAL EARTHQUAKE ENGINEERING,3,8,AYŞE EDİNÇLİLER,ThThTh,678, ,,04.01.2023,2,,"                          "
+EQE 545.01,Desc.,MATHEMATICAL METHODS IN EARTHQUAKE ENG.,3,8,UFUK HANCILAR,TTT,123, ,,03.01.2023,1,,"                          "
+EQE 677.01,Desc.,SIMULATION OF STRONG GROUND MOTION,3,7,ESER ÇAKTI,MMM,678, ,,,,,"                          "
+EQE 681.01,Desc.,SP.TP.EARTHQUAKE RISK ASSESSMENT,3,7,UFUK HANCILAR,ThThTh,123, ,,03.01.2023,3,,"                          "
+EQE 682.01,Desc.,SP.TP.DSGN OF STR.WITH PASSIVE&CONT.SYS.,3,7,MUSTAFA ÖZDER ERDİK,MMM,234, ,,02.01.2023,3,,"                          "
+EQE 684.01,Desc.,SP.TP.APPLIED SEISMOLOGY,3,7,ALİ PINAR,FFF,678, ,,,,,"                          "
+EQE 690.03,Desc.,M.S.THESIS,0,60,ALİ PINAR,,, ,,,,,"                          "
+EQE 690.05,Desc.,M.S.THESIS,0,60,ESER ÇAKTI,,, ,,,,,"                          "
+EQE 690.06,Desc.,M.S.THESIS,0,60,AYŞE EDİNÇLİLER,,, ,,,,,"                          "
+EQE 690.08,Desc.,M.S.THESIS,0,60,GÜLÜM TANIRCAN,,, ,,,,,"                          "
+EQE 690.09,Desc.,M.S.THESIS,0,60,UFUK HANCILAR,,, ,,,,,"                          "
+EQE 690.10,Desc.,M.S.THESIS,0,60,KARİN ŞEŞETYAN,,, ,,,,,"                          "
+EQE 790.05,Desc.,Ph.D. THESIS,0,120,ESER ÇAKTI,,, ,,,,,"                          "
+EQE 790.06,Desc.,Ph.D. THESIS,0,120,AYŞE EDİNÇLİLER,,, ,,,,,"                          "
+EQE 790.08,Desc.,Ph.D. THESIS,0,120,GÜLÜM TANIRCAN,,, ,,,,,"                          "
+EQE 790.09,Desc.,Ph.D. THESIS,0,120,UFUK HANCILAR,,, ,,,,,"                          "
+EQE 790.10,Desc.,Ph.D. THESIS,0,120,KARİN ŞEŞETYAN,,, ,,,,,"                          "

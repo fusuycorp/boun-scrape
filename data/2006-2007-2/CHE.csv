@@ -1,0 +1,49 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHE 110.01,Desc.,INTRODUCTION TO CHEMICAL ENGINEERING,4,6,UĞUR AKMAN,WWWFFF,456678,,KB 401 | KB 401 | KB 401 | KB 433 | KB 433 | KB 433,,,,"                          "
+CHE 202.01,Desc.,PHYSICOCHEMICAL SYSTEMS II,4,5,RAMAZAN YILDIRIM,MMTT,7834,,KB 401 | KB 401 | KB 401 | KB 401,,,,"                          "
+CHE 232.01,Desc.,CHEMICAL ENGINEERING I: FLUID MECHANICS,3,5,MURAT DERVİŞOĞLU,MMWW,1212,,KB 401 | KB 401 | KB 401 | KB 401,,,,"                          "
+CHE 302.01,Desc.,CHEMICAL ENGINEERING LABORATORY I,3,6,PEMRA DORUKER TURGUT,WTh,15,,KB 433 | KB 433,,,,"                          "
+CHE 302.02,Desc.,CHEMICAL ENGINEERING LABORATORY I,3,6,PEMRA DORUKER TURGUT,MT,54,,KB 433 | KB 433,,,,"                          "
+CHE 334.01,Desc.,CHEM. ENGR.III: MASS TRANSFER OPERATIONS,4,6,KUTLU ÜLGEN,TTWWW,56234,,KB 433 | KB 433 | KB 433 | KB 433 | KB 433,,,,"                          "
+CHE 342.01,Desc.,CHEMICAL REACTION KINETICS&REACTOR DESI.,4,6,AHMET ERHAN AKSOYLU,MMMWW,23467,,KB 433 | KB 433 | KB 433 | KB 433 | KB 433,,,,"                          "
+CHE 386.01,Desc.,MATHEMATICAL MODELLING,3,5,AMABLE HORTAÇSU,TThTh,334,,KB 433 | KB 401 | KB 401,,,,"                          "
+CHE 430.01,Desc.,SEPARATION PROCESSES,3,5,MAHİR ARIKOL,MMW,674,,KB 433 | KB 433 | KB 428,,,,"                          "
+CHE 460.01,Desc.,TOTAL QUALITY ENGR. IN CHEMICAL INDUSTRIES,3,5,RAMAZAN YILDIRIM,MMT,345,,KB 401 | KB 401 | KB 401,,,,"                          "
+CHE 462.01,Desc.,CHEMICAL PLANT DESIGN & ECONOMICS,3,8,ÖNER HORTAÇSU,TTThTh,7834,,KB 433 | KB 433 | KB 433 | KB 433,,,,"                          "
+CHE 492.01,Desc.,PROJECT,4,7,RAMAZAN YILDIRIM,F,8,,KB 428,,,,"                          "
+CHE 526.01,Desc.,TECHNOLOGY FOOD PRESERVATION,3,5,MURAT DERVİŞOĞLU,TThTh,112,,KB 401 | KB 433 | KB 433,,,,"                          "
+CHE 566.01,Desc.,PROCESS ENGINEERING STRATEGY,3,6,ÖNER HORTAÇSU,TThTh,667,,KB 401 | KB 433 | KB 433,,,,"                          "
+CHE 579.01,Desc.,GRADUATE SEMINAR,0,2,RAMAZAN YILDIRIM,FF,67,,KB 428 | KB 428,,,,"                          "
+CHE 584.01,Desc.,SP.TOP.IN CHEM.TECH.APPLICABILITY ANALYS,3,6,AHMET ERHAN AKSOYLU,MTT,678,,KB 401 | KB 428 | KB 428,,,,"                          "
+CHE 594.01,Desc.,SP.TOP.IN CHE:MOLECULAR BIOTECHOLOGY,3,5,BETÜL KIRDAR,WWW,678,,KB 428 | KB 428 | KB 428,,,,"                          "
+CHE 598.01,Desc.,SP. TOP.:PROBABILITIC MODELS OF PR,3,5,TÜRKAN HALİLOĞLU,WThTh,512,,KB 428 | KB 401 | KB 401,,,,"                          "
+CHE 632.01,Desc.,TRANSPORT PHENOMENA II,3,8,AMABLE HORTAÇSU,TTW,783,,KB 401 | KB 401 | KB 428,,,,"                          "
+CHE 642.01,Desc.,MULTIPHASE REACTOR ANALYSIS & DESIGN,3,8,ZEYNEP İLSEN ÖNSAN,TTT,234,,KB 428 | KB 428 | KB 428,,,,"                          "
+CHE 682.01,Desc.,"SP.STUDIES IN AD.CHEM.ENG:GENOME SCALE, ",3,6,BETÜL KIRDAR,ThThTh,678,,KB 428 | KB 428 | KB 428,,,,"                          "
+CHE 690.01,Desc.,M.S. THESIS,0,60,UĞUR AKMAN,TBA,,,,,,,"                          "
+CHE 690.02,Desc.,M.S. THESIS,0,60,AHMET ERHAN AKSOYLU,TBA,,,,,,,"                          "
+CHE 690.03,Desc.,M.S. THESIS,0,60,AHMET KERİM AVCI,TBA,,,,,,,"                          "
+CHE 690.04,Desc.,M.S. THESIS,0,60,MEHMET CİHAN ÇAMURDAN,TBA,,,,,,,"                          "
+CHE 690.05,Desc.,M.S. THESIS,0,60,MURAT DERVİŞOĞLU,TBA,,,,,,,"                          "
+CHE 690.06,Desc.,M.S. THESIS,0,60,TÜRKAN HALİLOĞLU,TBA,,,,,,,"                          "
+CHE 690.07,Desc.,M.S. THESIS,0,60,ÖNER HORTAÇSU,TBA,,,,,,,"                          "
+CHE 690.08,Desc.,M.S. THESIS,0,60,AMABLE HORTAÇSU,TBA,,,,,,,"                          "
+CHE 690.09,Desc.,M.S. THESIS,0,60,BETÜL KIRDAR,TBA,,,,,,,"                          "
+CHE 690.10,Desc.,M.S. THESIS,0,60,ZEYNEP İLSEN ÖNSAN,TBA,,,,,,,"                          "
+CHE 690.11,Desc.,M.S. THESIS,0,60,PEMRA DORUKER TURGUT,TBA,,,,,,,"                          "
+CHE 690.12,Desc.,M.S. THESIS,0,60,KUTLU ÜLGEN,TBA,,,,,,,"                          "
+CHE 690.13,Desc.,M.S. THESIS,0,60,RAMAZAN YILDIRIM,TBA,,,,,,,"                          "
+CHE 695.01,Desc.,SP.STUD.:ADVANCED PROCESS CONTROL,3,6,MEHMET CİHAN ÇAMURDAN,TTT,156,,KB 433 | KB 428 | KB 428,,,,"                          "
+CHE 790.01,Desc.,Ph.D. THESIS,0,120,UĞUR AKMAN,TBA,,,,,,,"                          "
+CHE 790.02,Desc.,Ph.D. THESIS,0,120,AHMET ERHAN AKSOYLU,TBA,,,,,,,"                          "
+CHE 790.03,Desc.,Ph.D. THESIS,0,120,AHMET KERİM AVCI,TBA,,,,,,,"                          "
+CHE 790.04,Desc.,Ph.D. THESIS,0,120,MEHMET CİHAN ÇAMURDAN,TBA,,,,,,,"                          "
+CHE 790.05,Desc.,Ph.D. THESIS,0,120,MURAT DERVİŞOĞLU,TBA,,,,,,,"                          "
+CHE 790.06,Desc.,Ph.D. THESIS,0,120,TÜRKAN HALİLOĞLU,TBA,,,,,,,"                          "
+CHE 790.07,Desc.,Ph.D. THESIS,0,120,ÖNER HORTAÇSU,TBA,,,,,,,"                          "
+CHE 790.08,Desc.,Ph.D. THESIS,0,120,AMABLE HORTAÇSU,TBA,,,,,,,"                          "
+CHE 790.09,Desc.,Ph.D. THESIS,0,120,BETÜL KIRDAR,TBA,,,,,,,"                          "
+CHE 790.10,Desc.,Ph.D. THESIS,0,120,ZEYNEP İLSEN ÖNSAN,TBA,,,,,,,"                          "
+CHE 790.11,Desc.,Ph.D. THESIS,0,120,PEMRA DORUKER TURGUT,TBA,,,,,,,"                          "
+CHE 790.12,Desc.,Ph.D. THESIS,0,120,KUTLU ÜLGEN,TBA,,,,,,,"                          "
+CHE 790.13,Desc.,Ph.D. THESIS,0,120,RAMAZAN YILDIRIM,TBA,,,,,,,"                          "

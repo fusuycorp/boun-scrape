@@ -1,0 +1,372 @@
+{
+    "ASIAN STUDIES": {
+        "donem": "2023/2024-1",
+        "kisaadi": "ASIA",
+        "bolum": "ASIAN STUDIES"
+    },
+    "ASIAN STUDIES WITH THESIS": {
+        "donem": "2023/2024-1",
+        "kisaadi": "ASIA",
+        "bolum": "ASIAN STUDIES WITH THESIS"
+    },
+    "ATATURK INSTITUTE FOR MODERN TURKISH HISTORY": {
+        "donem": "2023/2024-1",
+        "kisaadi": "ATA",
+        "bolum": "ATATURK INSTITUTE FOR MODERN TURKISH HISTORY"
+    },
+    "AUTOMOTIVE ENGINEERING": {
+        "donem": "2023/2024-1",
+        "kisaadi": "AUTO",
+        "bolum": "AUTOMOTIVE ENGINEERING"
+    },
+    "BIOMEDICAL ENGINEERING": {
+        "donem": "2023/2024-1",
+        "kisaadi": "BM",
+        "bolum": "BIOMEDICAL ENGINEERING"
+    },
+    "BUSINESS INFORMATION SYSTEMS": {
+        "donem": "2023/2024-1",
+        "kisaadi": "BIS",
+        "bolum": "BUSINESS INFORMATION SYSTEMS"
+    },
+    "BUSINESS INFORMATION SYSTEMS (WITH THESIS)": {
+        "donem": "2023/2024-1",
+        "kisaadi": "BIS",
+        "bolum": "BUSINESS INFORMATION SYSTEMS (WITH THESIS)"
+    },
+    "CHEMICAL ENGINEERING": {
+        "donem": "2023/2024-1",
+        "kisaadi": "CHE",
+        "bolum": "CHEMICAL ENGINEERING"
+    },
+    "CHEMISTRY": {
+        "donem": "2023/2024-1",
+        "kisaadi": "CHEM",
+        "bolum": "CHEMISTRY"
+    },
+    "CIVIL ENGINEERING": {
+        "donem": "2023/2024-1",
+        "kisaadi": "CE",
+        "bolum": "CIVIL ENGINEERING"
+    },
+    "COGNITIVE SCIENCE": {
+        "donem": "2023/2024-1",
+        "kisaadi": "COGS",
+        "bolum": "COGNITIVE SCIENCE"
+    },
+    "COMPUTATIONAL SCIENCE & ENGINEERING": {
+        "donem": "2023/2024-1",
+        "kisaadi": "CSE",
+        "bolum": "COMPUTATIONAL SCIENCE & ENGINEERING"
+    },
+    "COMPUTER EDUCATION & EDUCATIONAL TECHNOLOGY": {
+        "donem": "2023/2024-1",
+        "kisaadi": "CET",
+        "bolum": "COMPUTER EDUCATION & EDUCATIONAL TECHNOLOGY"
+    },
+    "COMPUTER ENGINEERING": {
+        "donem": "2023/2024-1",
+        "kisaadi": "CMPE",
+        "bolum": "COMPUTER ENGINEERING"
+    },
+    "CONSTRUCTION ENGINEERING AND MANAGEMENT": {
+        "donem": "2023/2024-1",
+        "kisaadi": "CEM",
+        "bolum": "CONSTRUCTION ENGINEERING AND MANAGEMENT"
+    },
+    "CRITICAL AND CULTURAL STUDIES": {
+        "donem": "2023/2024-1",
+        "kisaadi": "CCS",
+        "bolum": "CRITICAL AND CULTURAL STUDIES"
+    },
+    "DATA SCIENCE AND ARTIFICIAL INTELLIGENCE": {
+        "donem": "2023/2024-1",
+        "kisaadi": "DSAI",
+        "bolum": "DATA SCIENCE AND ARTIFICIAL INTELLIGENCE"
+    },
+    "EARLY CHILDHOOD EDUCATION": {
+        "donem": "2023/2024-1",
+        "kisaadi": "PRED",
+        "bolum": "EARLY CHILDHOOD EDUCATION"
+    },
+    "EARTHQUAKE ENGINEERING": {
+        "donem": "2023/2024-1",
+        "kisaadi": "EQE",
+        "bolum": "EARTHQUAKE ENGINEERING"
+    },
+    "ECONOMICS": {
+        "donem": "2023/2024-1",
+        "kisaadi": "EC",
+        "bolum": "ECONOMICS"
+    },
+    "ECONOMICS AND FINANCE": {
+        "donem": "2023/2024-1",
+        "kisaadi": "EF",
+        "bolum": "ECONOMICS AND FINANCE"
+    },
+    "EDUCATIONAL SCIENCES": {
+        "donem": "2023/2024-1",
+        "kisaadi": "ED",
+        "bolum": "EDUCATIONAL SCIENCES"
+    },
+    "EDUCATIONAL TECHNOLOGY": {
+        "donem": "2023/2024-1",
+        "kisaadi": "CET",
+        "bolum": "EDUCATIONAL TECHNOLOGY"
+    },
+    "ELECTRICAL & ELECTRONICS ENGINEERING": {
+        "donem": "2023/2024-1",
+        "kisaadi": "EE",
+        "bolum": "ELECTRICAL & ELECTRONICS ENGINEERING"
+    },
+    "ENGINEERING AND TECHNOLOGY MANAGEMENT": {
+        "donem": "2023/2024-1",
+        "kisaadi": "ETM",
+        "bolum": "ENGINEERING AND TECHNOLOGY MANAGEMENT"
+    },
+    "ENGLISH LITERATURE": {
+        "donem": "2023/2024-1",
+        "kisaadi": "LL",
+        "bolum": "ENGLISH LITERATURE"
+    },
+    "ENVIRONMENTAL SCIENCES": {
+        "donem": "2023/2024-1",
+        "kisaadi": "ENV",
+        "bolum": "ENVIRONMENTAL SCIENCES"
+    },
+    "ENVIRONMENTAL TECHNOLOGY": {
+        "donem": "2023/2024-1",
+        "kisaadi": "ENVT",
+        "bolum": "ENVIRONMENTAL TECHNOLOGY"
+    },
+    "EXECUTIVE MBA": {
+        "donem": "2023/2024-1",
+        "kisaadi": "XMBA",
+        "bolum": "EXECUTIVE MBA"
+    },
+    "FINANCIAL ENGINEERING": {
+        "donem": "2023/2024-1",
+        "kisaadi": "FE",
+        "bolum": "FINANCIAL ENGINEERING"
+    },
+    "FINE ARTS": {
+        "donem": "2023/2024-1",
+        "kisaadi": "PA",
+        "bolum": "FINE ARTS"
+    },
+    "FOREIGN LANGUAGE EDUCATION": {
+        "donem": "2023/2024-1",
+        "kisaadi": "FLED",
+        "bolum": "FOREIGN LANGUAGE EDUCATION"
+    },
+    "GEODESY": {
+        "donem": "2023/2024-1",
+        "kisaadi": "GED",
+        "bolum": "GEODESY"
+    },
+    "GEOPHYSICS": {
+        "donem": "2023/2024-1",
+        "kisaadi": "GPH",
+        "bolum": "GEOPHYSICS"
+    },
+    "GUIDANCE & PSYCHOLOGICAL COUNSELING": {
+        "donem": "2023/2024-1",
+        "kisaadi": "GUID",
+        "bolum": "GUIDANCE & PSYCHOLOGICAL COUNSELING"
+    },
+    "HISTORY": {
+        "donem": "2023/2024-1",
+        "kisaadi": "HIST",
+        "bolum": "HISTORY"
+    },
+    "HUMANITIES COURSES COORDINATOR": {
+        "donem": "2023/2024-1",
+        "kisaadi": "HUM",
+        "bolum": "HUMANITIES COURSES COORDINATOR"
+    },
+    "INDUSTRIAL ENGINEERING": {
+        "donem": "2023/2024-1",
+        "kisaadi": "IE",
+        "bolum": "INDUSTRIAL ENGINEERING"
+    },
+    "INTERNATIONAL COMPETITION AND TRADE": {
+        "donem": "2023/2024-1",
+        "kisaadi": "INCT",
+        "bolum": "INTERNATIONAL COMPETITION AND TRADE"
+    },
+    "INTERNATIONAL RELATIONS:TURKEY,EUROPE AND THE MIDDLE EAST": {
+        "donem": "2023/2024-1",
+        "kisaadi": "MIR",
+        "bolum": "INTERNATIONAL RELATIONS:TURKEY,EUROPE AND THE MIDDLE EAST"
+    },
+    "INTERNATIONAL RELATIONS:TURKEY,EUROPE AND THE MIDDLE EAST WITH THESIS": {
+        "donem": "2023/2024-1",
+        "kisaadi": "MIR",
+        "bolum": "INTERNATIONAL RELATIONS:TURKEY,EUROPE AND THE MIDDLE EAST WITH THESIS"
+    },
+    "INTERNATIONAL TRADE": {
+        "donem": "2023/2024-1",
+        "kisaadi": "INTT",
+        "bolum": "INTERNATIONAL TRADE"
+    },
+    "INTERNATIONAL TRADE MANAGEMENT": {
+        "donem": "2023/2024-1",
+        "kisaadi": "INTT",
+        "bolum": "INTERNATIONAL TRADE MANAGEMENT"
+    },
+    "LAW PR.": {
+        "donem": "2023/2024-1",
+        "kisaadi": "LAW",
+        "bolum": "LAW PR."
+    },
+    "LEARNING SCIENCES": {
+        "donem": "2023/2024-1",
+        "kisaadi": "LS",
+        "bolum": "LEARNING SCIENCES"
+    },
+    "LINGUISTICS": {
+        "donem": "2023/2024-1",
+        "kisaadi": "LING",
+        "bolum": "LINGUISTICS"
+    },
+    "MANAGEMENT": {
+        "donem": "2023/2024-1",
+        "kisaadi": "AD",
+        "bolum": "MANAGEMENT"
+    },
+    "MANAGEMENT INFORMATION SYSTEMS": {
+        "donem": "2023/2024-1",
+        "kisaadi": "MIS",
+        "bolum": "MANAGEMENT INFORMATION SYSTEMS"
+    },
+    "MATHEMATICS": {
+        "donem": "2023/2024-1",
+        "kisaadi": "MATH",
+        "bolum": "MATHEMATICS"
+    },
+    "MATHEMATICS AND SCIENCE EDUCATION": {
+        "donem": "2023/2024-1",
+        "kisaadi": "SCED",
+        "bolum": "MATHEMATICS AND SCIENCE EDUCATION"
+    },
+    "MECHANICAL ENGINEERING": {
+        "donem": "2023/2024-1",
+        "kisaadi": "ME",
+        "bolum": "MECHANICAL ENGINEERING"
+    },
+    "MECHATRONICS ENGINEERING (WITH THESIS)": {
+        "donem": "2023/2024-1",
+        "kisaadi": "MECA",
+        "bolum": "MECHATRONICS ENGINEERING (WITH THESIS)"
+    },
+    "MECHATRONICS ENGINEERING (WITHOUT THESIS)": {
+        "donem": "2023/2024-1",
+        "kisaadi": "MECA",
+        "bolum": "MECHATRONICS ENGINEERING (WITHOUT THESIS)"
+    },
+    "MOLECULAR BIOLOGY & GENETICS": {
+        "donem": "2023/2024-1",
+        "kisaadi": "BIO",
+        "bolum": "MOLECULAR BIOLOGY & GENETICS"
+    },
+    "PEDAGOGICAL FORMATION CERTIFICATE PROGRAM": {
+        "donem": "2023/2024-1",
+        "kisaadi": "PF",
+        "bolum": "PEDAGOGICAL FORMATION CERTIFICATE PROGRAM"
+    },
+    "PHILOSOPHY": {
+        "donem": "2023/2024-1",
+        "kisaadi": "PHIL",
+        "bolum": "PHILOSOPHY"
+    },
+    "PHYSICAL EDUCATION": {
+        "donem": "2023/2024-1",
+        "kisaadi": "PE",
+        "bolum": "PHYSICAL EDUCATION"
+    },
+    "PHYSICS": {
+        "donem": "2023/2024-1",
+        "kisaadi": "PHYS",
+        "bolum": "PHYSICS"
+    },
+    "POLITICAL SCIENCE&INTERNATIONAL RELATIONS": {
+        "donem": "2023/2024-1",
+        "kisaadi": "POLS",
+        "bolum": "POLITICAL SCIENCE&INTERNATIONAL RELATIONS"
+    },
+    "PSYCHOLOGY": {
+        "donem": "2023/2024-1",
+        "kisaadi": "PSY",
+        "bolum": "PSYCHOLOGY"
+    },
+    "SCHOOL OF FOREIGN LANGUAGES": {
+        "donem": "2023/2024-1",
+        "kisaadi": "YADYOK",
+        "bolum": "SCHOOL OF FOREIGN LANGUAGES"
+    },
+    "SOCIAL POLICY WITH THESIS": {
+        "donem": "2023/2024-1",
+        "kisaadi": "SPL",
+        "bolum": "SOCIAL POLICY WITH THESIS"
+    },
+    "SOCIOLOGY": {
+        "donem": "2023/2024-1",
+        "kisaadi": "SOC",
+        "bolum": "SOCIOLOGY"
+    },
+    "SOFTWARE ENGINEERING": {
+        "donem": "2023/2024-1",
+        "kisaadi": "SWE",
+        "bolum": "SOFTWARE ENGINEERING"
+    },
+    "SOFTWARE ENGINEERING WITH THESIS": {
+        "donem": "2023/2024-1",
+        "kisaadi": "SWE",
+        "bolum": "SOFTWARE ENGINEERING WITH THESIS"
+    },
+    "SUSTAINABLE TOURISM MANAGEMENT": {
+        "donem": "2023/2024-1",
+        "kisaadi": "TRM",
+        "bolum": "SUSTAINABLE TOURISM MANAGEMENT"
+    },
+    "SYSTEMS & CONTROL ENGINEERING": {
+        "donem": "2023/2024-1",
+        "kisaadi": "SCO",
+        "bolum": "SYSTEMS & CONTROL ENGINEERING"
+    },
+    "TOURISM ADMINISTRATION": {
+        "donem": "2023/2024-1",
+        "kisaadi": "TRM",
+        "bolum": "TOURISM ADMINISTRATION"
+    },
+    "TRANSLATION": {
+        "donem": "2023/2024-1",
+        "kisaadi": "WTR",
+        "bolum": "TRANSLATION"
+    },
+    "TRANSLATION AND INTERPRETING STUDIES": {
+        "donem": "2023/2024-1",
+        "kisaadi": "TR",
+        "bolum": "TRANSLATION AND INTERPRETING STUDIES"
+    },
+    "TURKISH COURSES COORDINATOR": {
+        "donem": "2023/2024-1",
+        "kisaadi": "TK",
+        "bolum": "TURKISH COURSES COORDINATOR"
+    },
+    "TURKISH LANGUAGE & LITERATURE": {
+        "donem": "2023/2024-1",
+        "kisaadi": "TKL",
+        "bolum": "TURKISH LANGUAGE & LITERATURE"
+    },
+    "UNDERGRADUATE PROGRAM IN PRESCHOOL EDUCATION": {
+        "donem": "2023/2024-1",
+        "kisaadi": "PRSO",
+        "bolum": "UNDERGRADUATE PROGRAM IN PRESCHOOL EDUCATION"
+    },
+    "WESTERN LANGUAGES & LITERATURES": {
+        "donem": "2023/2024-1",
+        "kisaadi": "LL",
+        "bolum": "WESTERN LANGUAGES & LITERATURES"
+    }
+}

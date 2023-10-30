@@ -1,0 +1,99 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MIS 111.01,Desc.,ECONOMICS I,3,5,ALİ TÜKEL,TTW,787,,HB 105 | HB 105 | HB 105,03.01.2018,3,,"                          "
+,,P.S.,,,ALİ TÜKEL,W,8,,HB 105,,0,,"                          "
+MIS 113.01,Desc.,MANAGEMENT & ORGANIZATION,3,5,ÖZGÜR DÖĞERLİOĞLU,TThTh,667,,HD 301 | HD 301 | HD 301,28.12.2017,3,,"                          "
+MIS 125.01,Desc.,INTRODUCTION TO INFORMATION SYS.& TECHNO,4,5,BİRGÜL KUTLU,TTTh,235,,HD 301 | HD 301 | HD 301,26.12.2017,1,,"                          "
+,,LAB,,,BİRGÜL KUTLU,ThTh,12,,HB 102 | HB 102,,0,,"                          "
+,,LAB,,,BİRGÜL KUTLU,ThTh,34,,HB 102 | HB 102,,0,,"                          "
+MIS 131.01,Desc.,INTRODUCTION TO ALGORITHMS&PROGRAMMING,4,6,BERTAN YILMAZ BADUR,MMW,121,,HA 202 | HA 202 | HA 202,19.12.2017,1,,"                          "
+,,LAB,,,BERTAN YILMAZ BADUR,FF,56,,HB 102 | HB 102,,0,,"                          "
+,,LAB,,,BERTAN YILMAZ BADUR,FF,78,,HB 102 | HB 102,,0,,"                          "
+MIS 143.01,Desc.,BUSINESS MATHEMATICS I,3,5,AYFER ECEVİT,MMT,344,,HD 301 | HD 301 | HD 301,22.12.2017,3,,"                          "
+,,P.S.,,,AYFER ECEVİT,WW,34,,HB 105 | HB 105,,0,,"                          "
+MIS 211.01,Desc.,FINANCIAL ACCOUNTING,3,5,CEYLAN ONAY,MMW,565,,HB 105 | HB 105 | HD 101,27.12.2017,1,,"                          "
+MIS 213.01,Desc.,STATISTICS,3,6,SONA MARDİKYAN,TTTh,345,,HB 105 | HB 105 | HB 105,21.12.2017,3,,"                          "
+,,P.S.,,,SONA MARDİKYAN,FF,56,,HB 104 | HB 104,,0,,"                          "
+MIS 233.01,Desc.,WEB BASED APPLICATION PROGRAMMING,4,6,ALBERT ÖZKOHEN,MMW,786,,HB 105 | HB 105 | HD 201,02.01.2018,3,,"                          "
+,,LAB,,,ALBERT ÖZKOHEN,FF,34,,HB 102 | HB 102,,0,,"                          "
+,,LAB,,,ALBERT ÖZKOHEN,FF,78,,HB 104 | HB 104,,0,,"                          "
+MIS 251.01,Desc.,COMPUTER HARDWARE&SYSTEM SOFTWARE,3,6,BİLGİN METİN,WWTh,121,,HB 105 | HB 105 | HB 105,03.01.2018,1,,"                          "
+,,P.S.,,,BİLGİN METİN,W,7,,HB 104,,0,,"                          "
+,,P.S.,,,BİLGİN METİN,W,8,,HB 104,,0,,"                          "
+MIS 321.01,Desc.,SYSTEM ANALYSIS & DESIGN,3,6,BİRGÜL KUTLU,TThTh,667,,HB 105 | HB 105 | HB 105,22.12.2017,1,,"                          "
+,,P.S.,,,BİRGÜL KUTLU,M,4,,HB 102,,0,,"                          "
+,,P.S.,,,BİRGÜL KUTLU,M,6,,HB 102,,0,,"                          "
+MIS 331.01,Desc.,DATA MINING,3,5,BERTAN YILMAZ BADUR,TTTh,121,,HA 202 | HA 202 | HA 202,29.12.2017,1,,"                          "
+,,P.S.,,,BERTAN YILMAZ BADUR,FF,12,,HB 109 | HB 109,,0,,"                          "
+,,P.S.,,,BERTAN YILMAZ BADUR,FF,34,,HB 109 | HB 109,,0,,"                          "
+MIS 335.01,Desc.,DATABASE SYSTEMS,4,6,AHMET ONUR DURAHİM,MMT,234,,HB 105 | HB 105 | HA 302,28.12.2017,1,,"                          "
+,,LAB,,,AHMET ONUR DURAHİM,FF,56,,HB 109 | HB 109,,0,,"                          "
+,,LAB,,,AHMET ONUR DURAHİM,FF,78,,HB 109 | HB 109,,0,,"                          "
+MIS 346.01,Desc.,ENTERPRISE INFORMATION SYSTEMS,3,6,ZUHAL TANRIKULU,WW,67,,HA 301 | HA 301,23.12.2017,3,,"                          "
+,,LAB,,,ZUHAL TANRIKULU,FF,12,,HB 104 | HB 104,,0,,"                          "
+,,LAB,,,ZUHAL TANRIKULU,FF,34,,HB 104 | HB 104,,0,,"                          "
+MIS 353.01,Desc.,CYBER LAW,3,5,BURÇAK ÜNSAL,WWW,234,,HA 302 | HA 302 | HA 302,25.12.2017,3,,"                          "
+MIS 433.01,Desc.,INFORMATION SYSTEM PROJECT MANAGEMENT,3,6,UĞUR GÖKHAN ÖZDİNÇ,TTT,678,,HA 202 | HA 202 | HA 202,22.12.2017,1,,"                          "
+,,P.S.,,,UĞUR GÖKHAN ÖZDİNÇ,M,2,,HA 301,,0,,"                          "
+MIS 441.01,Desc.,CUSTOMER RELATIONSHIP MANAGEMENT,3,6,ASLIHAN NASIR,MThTh,356,,HA 301 | HA 301 | HA 301,03.01.2018,3,,"                          "
+,,P.S.,,,ASLIHAN NASIR,M,4,,HB 104,,0,,"                          "
+,,P.S.,,,ASLIHAN NASIR,M,5,,HB 104,,0,,"                          "
+MIS 458.01,Desc.,STRATEGIC MANAGEMENT,3,5,ÖZGÜR DÖĞERLİOĞLU,WWW,567,,HA 303 | HA 303 | HA 303,20.12.2017,1,,"                          "
+MIS 463.01,Desc.,DECISION SUPPORT SYSTEMS FOR BUSINESS,3,6,ASLI SENCER,TThTh,278,,HB 105 | HA 301 | HA 301,27.12.2017,2,,"                          "
+,,P.S.,,,ASLI SENCER,TT,34,,HB 104 | HB 104,,0,,"                          "
+,,P.S.,,,ASLI SENCER,ThTh,34,,HB 104 | HB 104,,0,,"                          "
+MIS 470.01,Desc.,KNOWLEDGE MANAGEMENT,4,5,ALİ ÖZKAYA,FFFF,1234,,HB 101 | HB 101 | HB 101 | HB 101,19.12.2017,3,,"                          "
+MIS 477.01,Desc.,LEADERSHIP & MOTIVATION ,3,5,TANJU AKDENİZ,MMM,678,,HA 301 | HA 301 | HA 301,28.12.2017,2,,"                          "
+MIS 481.01,Desc.,SENIOR SEMINARS IN MIS,1,2,AYFER ECEVİT,T,5,,HB 105,25.12.2017,2,,"                          "
+MIS 492.04,Desc.,PROJECT,4,8,ÖZGÜR DÖĞERLİOĞLU,TBA,,,,,0,,"                          "
+MIS 492.06,Desc.,PROJECT,4,8,HANDE TÜRKER,TBA,,,,,0,,"                          "
+MIS 492.07,Desc.,PROJECT,4,8,SONA MARDİKYAN,TBA,,,,,0,,"                          "
+MIS 492.08,Desc.,PROJECT,4,8,BİLGİN METİN,TBA,,,,,0,,"                          "
+MIS 492.11,Desc.,PROJECT,4,8,MELTEM ÖZTURAN,TBA,,,,,0,,"                          "
+MIS 492.13,Desc.,PROJECT,4,8,ZUHAL TANRIKULU,TBA,,,,,0,,"                          "
+MIS 494.01,Desc.,SP.TOP.IN MIS:INFORMATION SYSTEM AUDIT,3,5,GAMZE YURTTUTAN,WWW,123,,HB 101 | HB 101 | HB 101,23.12.2017,1,,"                          "
+MIS 49A.01,Desc.,SP.TP.INTR.TO WEB DESIGN FOR SOCIAL SCI.,3,5,CEM GÖKNİL,MMM,678, ,HB 104 | HB 104 | HB 104,22.12.2017,3,,"                          "
+MIS 49L.01,Desc.,SP.TP.IT GOVERNANCE&IT STANDARDS,3,5,KAYA KAZMİRCİ,FFF,678,,HA 202 | HA 202 | HA 202,26.12.2017,3,,"                          "
+MIS 49M.01,Desc.,SP.TP.IN MIS:MOBILE APP.DEVELOPMENT,3,5,ÜMİT TOPACAN,ThThTh,123, ,HB 109 | HB 109 | HB 109,21.12.2017,3,,"                          "
+MIS 511.01,Desc.,DATA RESOURCES MANAGEMENT,3,6,AHMET ONUR DURAHİM,ThThTh,567,,HB 107 | HB 107 | HB 107,19.12.2017,3,,"                          "
+MIS 513.01,Desc.,MANAGING COMMUNICATION TECHNOLOGY,3,6,BİLGİN METİN,MMM,234,,HB 108 | HB 108 | HB 108,20.12.2017,1,,"                          "
+MIS 515.01,Desc.,"SYSTEMS ANALYSIS, MODELING & DESIGN",3,6,MELTEM ÖZTURAN,TTT,123,,HB 108 | HB 108 | HB 108,02.01.2018,1,,"                          "
+MIS 519.01,Desc.,RESEARCH METHODOLOGY,3,6,HANDE TÜRKER,MMM,678,,HB 108 | HB 108 | HB 108,03.01.2018,1,,"                          "
+MIS 542.01,Desc.,DATA MINING CONCEPTS & TECHNIQUES,3,6,SONA MARDİKYAN,WWW,234,,HB 107 | HB 107 | HB 107,26.12.2017,2,,"                          "
+MIS 578.01,Desc.,DIRECTED READINGS IN MIS,0,6,BERTAN YILMAZ BADUR,TBA,,,,,0,,"                          "
+MIS 578.05,Desc.,DIRECTED READINGS IN MIS,0,6,AHMET ONUR DURAHİM,TBA,,,,,0,,"                          "
+MIS 578.07,Desc.,DIRECTED READINGS IN MIS,0,6,SONA MARDİKYAN,TBA,,,,,0,,"                          "
+MIS 578.08,Desc.,DIRECTED READINGS IN MIS,0,6,BİLGİN METİN,TBA,,,,,0,,"                          "
+MIS 578.09,Desc.,DIRECTED READINGS IN MIS,0,6,ASLIHAN NASIR,TBA,,,,,0,,"                          "
+MIS 578.10,Desc.,DIRECTED READINGS IN MIS,0,6,CEYLAN ONAY,TBA,,,,,0,,"                          "
+MIS 578.11,Desc.,DIRECTED READINGS IN MIS,0,6,MELTEM ÖZTURAN,TBA,,,,,0,,"                          "
+MIS 578.12,Desc.,DIRECTED READINGS IN MIS,0,6,ASLI SENCER,TBA,,,,,0,,"                          "
+MIS 579.01,Desc.,GRADUATE SEMINAR,0,6,ZUHAL TANRIKULU,W,5,,HB 108,,0,,"                          "
+MIS 590.01,Desc.,SP.TP.BUSINESS PROCESS MANAGEMENT,3,6,ASLI SENCER,TTT,678,,HB 108 | HB 108 | HB 108,19.12.2017,3,,"                          "
+MIS 611.01,Desc.,"RESEARCH DESIGN,DATA COLLECTION&ANALYSIS",4,8,HANDE TÜRKER,MWWW,4234,,HB 107 | HB 108 | HB 108 | HB 108,02.01.2018,3,,"                          "
+MIS 621.01,Desc.,DATA&PROCESS MODELING,3,6,AHMET ONUR DURAHİM,TTT,123,,HB 107 | HB 107 | HB 107,,0,,"                          "
+MIS 643.01,Desc.,AGENT-BASED MODELING&SIMULATION,3,6,BERTAN YILMAZ BADUR,TBA,,,,22.12.2017,2,,"                          "
+MIS 650.01,Desc.,ELECTRONIC FINANCE STRATEGIES,3,6,CEYLAN ONAY,WWW,678,,HB 107 | HB 107 | HB 107,29.12.2017,2,,"                          "
+MIS 653.01,Desc.,MARKETING STRATEGIES IN THE DIGITAL ECO.,3,6,ASLIHAN NASIR,MMM,678,,HB 107 | HB 107 | HB 107,,0,,"                          "
+MIS 677.01,Desc.,SEM. ON COMTEMPORARY TP.OF MAN.INFOR.SYS,1,4,ZUHAL TANRIKULU,T,4,,HB 107,19.12.2017,3,,"                          "
+MIS 678.02,Desc.,DIRECTED READINGS IN MIS,1,4,BİRGÜL KUTLU,TBA,,,,,0,,"                          "
+MIS 678.08,Desc.,DIRECTED READINGS IN MIS,1,4,BİLGİN METİN,TBA,,,,,0,,"                          "
+MIS 681.01,Desc.,SP.TP.CYBER SECURITY,3,6,BİLGİN METİN,ThThTh,678,,HB 108 | HB 108 | HB 108,29.12.2017,2,,"                          "
+MIS 690.01,Desc.,MASTER'S THESIS,0,60,BERTAN YILMAZ BADUR,TBA,,,,,0,,"                          "
+MIS 690.02,Desc.,MASTER'S THESIS,0,60,BİRGÜL KUTLU,TBA,,,,,0,,"                          "
+MIS 690.04,Desc.,MASTER'S THESIS,0,60,ÖZGÜR DÖĞERLİOĞLU,TBA,,,,,0,,"                          "
+MIS 690.05,Desc.,MASTER'S THESIS,0,60,AHMET ONUR DURAHİM,TBA,,,,,0,,"                          "
+MIS 690.06,Desc.,MASTER'S THESIS,0,60,HANDE TÜRKER,TBA,,,,,0,,"                          "
+MIS 690.07,Desc.,MASTER'S THESIS,0,60,SONA MARDİKYAN,TBA,,,,,0,,"                          "
+MIS 690.08,Desc.,MASTER'S THESIS,0,60,BİLGİN METİN,TBA,,,,,0,,"                          "
+MIS 690.09,Desc.,MASTER'S THESIS,0,60,ASLIHAN NASIR,TBA,,,,,0,,"                          "
+MIS 690.10,Desc.,MASTER'S THESIS,0,60,CEYLAN ONAY,TBA,,,,,0,,"                          "
+MIS 690.11,Desc.,MASTER'S THESIS,0,60,MELTEM ÖZTURAN,TBA,,,,,0,,"                          "
+MIS 690.12,Desc.,MASTER'S THESIS,0,60,ASLI SENCER,TBA,,,,,0,,"                          "
+MIS 690.13,Desc.,MASTER'S THESIS,0,60,ZUHAL TANRIKULU,TBA,,,,,0,,"                          "
+MIS 790.01,Desc.,PH.D THESIS,0,30,BERTAN YILMAZ BADUR,TBA,,,,,0,,"                          "
+MIS 790.02,Desc.,PH.D THESIS,0,30,BİRGÜL KUTLU,TBA,,,,,0,,"                          "
+MIS 790.07,Desc.,PH.D THESIS,0,30,SONA MARDİKYAN,TBA,,,,,0,,"                          "
+MIS 790.09,Desc.,PH.D THESIS,0,30,ASLIHAN NASIR,TBA,,,,,0,,"                          "
+MIS 790.10,Desc.,PH.D THESIS,0,30,CEYLAN ONAY,TBA,,,,,0,,"                          "
+MIS 790.11,Desc.,PH.D THESIS,0,30,MELTEM ÖZTURAN,TBA,,,,,0,,"                          "
+MIS 790.13,Desc.,PH.D THESIS,0,30,ZUHAL TANRIKULU,TBA,,,,,0,,"                          "

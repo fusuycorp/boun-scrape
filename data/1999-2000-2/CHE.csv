@@ -1,0 +1,25 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHE 110.01,Desc.,INTRODUCTION TO CHEMICAL ENGINEERING,3,6,UĞUR AKMAN,ThThFFF,78678,,,,,,"                          "
+CHE 232.01,Desc.,CHEMICAL ENGINEERING I: FLUID MECHANICS,3,5,ALİ ECDER,TTThTh,2312,,,,,,"                          "
+CHE 302.01,Desc.,CHEMICAL ENGINEERING LABORATORY I,3,6,PEMRA DORUKER TURGUT,WTh,75,,,,,,"                          "
+CHE 334.01,Desc.,CHEM. ENGR.III: MASS TRANSFER OPERATIONS,4,6,KUTLU ÜLGEN,TTWWF,34346,,,,,,"                          "
+CHE 342.01,Desc.,CHEMICAL REACTION KINETICS&REACTOR DESI.,4,6,ZEYNEP İLSEN ÖNSAN,MMMWW,23412,,,,,,"                          "
+CHE 386.01,Desc.,MATHEMATICAL MODELLING,3,5,AMABLE HORTAÇSU,TThTh,234,,,,,,"                          "
+CHE 413.01,Desc.,DESIGN&SIMULATION OF MACROMOLECULAR SYS.,3,5,TÜRKAN HALİLOĞLU,TTTh,562,,,,,,"                          "
+CHE 421.01,Desc.,GENETIC ENGINEERING APPLICATIONS IN BIOTECHNOLOGY,3,5,BETÜL KIRDAR,,,,,,,,"                          "
+CHE 430.01,Desc.,SEPARATION PROCESSES,3,5,MAHİR ARIKOL,TThTh,578,,,,,,"                          "
+CHE 440.01,Desc.,HETEROGENEOUS CATALYSIS,3,5,AHMET ERHAN AKSOYLU,TWTh,546,,,,,,"                          "
+CHE 450.01,Desc.,FUEL TECHNOLOGY,3,5,MAHİR ARIKOL,TTTh,785,,,,,,"                          "
+CHE 460.01,Desc.,TOTAL QUALITY ENGR. IN CHEMICAL INDUSTRIES,3,5,RAMAZAN YILDIRIM,MMM,234,,,,,,"                          "
+CHE 462.01,Desc.,CHEMICAL PLANT DESIGN & ECONOMICS,3,8,ÖNER HORTAÇSU,TTTThTh,78934,,,,,,"                          "
+CHE 492.01,Desc.,PROJECT,4,7,UĞUR AKMAN,TBA, ,,,,,,"                          "
+CHE 498.01,Desc.,SP.TOP.:TECH.MNGMT.&TRANSFER IN TUR.CHEM,3,5,ATİLLA ÖNER,WWW,678,,,,,,"                          "
+CHE 511.01,Desc.,POLYMER PROCESSING PRINCIPLES&MODELING,3,6,PEMRA DORUKER TURGUT,MWW,234,,,,,,"                          "
+CHE 520.01,Desc.,DOWNSTREAM PROCESSING IN BIOCHEMICAL ENG,3,6,KUTLU ÜLGEN,ThThTh,234,,,,,,"                          "
+CHE 566.01,Desc.,PROCESS ENGINEERING STRATEGY,3,6,ÖNER HORTAÇSU,MMWW,7867,,,,,,"                          "
+CHE 579.01,Desc.,GRADUATE SEMINAR,0,2,MEHMET CİHAN ÇAMURDAN,W,8,,,,,,"                          "
+CHE 593.01,Desc.,SP.TOP.IN CHEMICAL TECHNOLOGY STATISTICA,3,6,MEHMET CİHAN ÇAMURDAN,MMT,566,,,,,,"                          "
+CHE 632.01,Desc.,TRANSPORT PHENOMENA II,3,8,AMABLE HORTAÇSU,MMT,345,,,,,,"                          "
+CHE 642.01,Desc.,MULTIPHASE REACTOR ANALYSIS & DESIGN,3,8,ZEYNEP İLSEN ÖNSAN,TTT,123,,,,,,"                          "
+CHE 690.01,Desc.,M.S. THESIS,0,60,ZEYNEP İLSEN ÖNSAN,TBA, ,,,,,,"                          "
+CHE 790.01,Desc.,Ph.D.THESIS,0,120,ZEYNEP İLSEN ÖNSAN,TBA, ,,,,,,"                          "

@@ -1,0 +1,40 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+INT 311.01,Desc.,ONSIGHT INTERPRETING,3,4,SEHA KARADENİZ,FFF,345,,NBZ 12 | NBZ 12 | NBZ 12,,,,"                          "
+INT 311.02,Desc.,ONSIGHT INTERPRETING,3,4,SEHA KARADENİZ,FFF,678,,NBZ 12 | NBZ 12 | NBZ 12,,,,"                          "
+INT 316.01,Desc.,CONSECUTIVE INTERPRETING I,3,4,BAHAR ÇOTUR,WWW,678,,KPARK10 | KPARK10 | KPARK10,,,,"                          "
+INT 413.01,Desc.,SURVEY OF INTERNATIONAL INSTITUTIONS FOR,3,5,AHU LATİFOĞLU DOĞAN,MMM,567,,YD 04 | YD 04 | YD 04,,,,"                          "
+INT 415.01,Desc.,SIMULTANEOUS INTERPRETING I,3,5,NİGAR ALEMDAR,FFF,123,,,,,,"                          "
+TR  101.01,Desc.,TURKISH FOR TRANSLATORS,3,4,TUNÇ ÖZBEN,TTT,345,,KPARK11 | KPARK11 | KPARK11,,,,"                          "
+TR  101.02,Desc.,TURKISH FOR TRANSLATORS,3,4,TUNÇ ÖZBEN,TTT,678,,KPARK11 | KPARK11 | KPARK11,,,,"                          "
+TR  103.01,Desc.,PUBLIC SPEAKING,3,4,NİLGÜN FIRAT,WWTh,673,,NH 104 | NH 104 | NH 202,,,,"                          "
+TR  103.02,Desc.,PUBLIC SPEAKING,3,4,NİLGÜN FIRAT,TTW,455,,YD 04 | YD 04 | NH 104,,,,"                          "
+TR  105.01,Desc.,ENGLISH WRITING SKILLS,3,4,JONATHAN MAURICE ROSS,MMTh,785,,M 1152 | M 1152 | NH 402,,,,"                          "
+TR  105.02,Desc.,ENGLISH WRITING SKILLS,3,4,JAMES BARRON,MMTh,785,,YD  203 | YD  203 | YD 04,,,,"                          "
+TR  107.01,Desc.,INTRODUCTION TO TRANSLATION,3,5,ARZU EKER,WFF,845,,GYD 404 | NBZ 10 | NBZ 10,,,,"                          "
+TR  107.02,Desc.,INTRODUCTION TO TRANSLATION,3,5,ARZU EKER,WWF,676,,GYD 404 | GYD 404 | GYD 404,,,,"                          "
+TR  201.01,Desc.,ETYMOLOGY I,3,3,SADİ BÜLENT AKSOY,MTW,333,,M 2200 | YD 05 | ETA 4,,,,"                          "
+TR  213.01,Desc.,LANGUAGE OF JOURNALISM,3,3,OĞUZ BAYKARA,TThTh,756,,KPARK10 | YD 104 | YD 104,,,,"                          "
+TR  213.02,Desc.,LANGUAGE OF JOURNALISM,3,3,TUNÇ ÖZBEN,MMM,678,,KPARK6 | KPARK6 | KPARK6,,,,"                          "
+TR  215.01,Desc.,TECHNICAL TRANSLATION II,3,3,OĞUZ BAYKARA,MThTh,778,,M 1200 | YD 04 | YD 04,,,,"                          "
+TR  215.02,Desc.,TECHNICAL TRANSLATION II,3,3,NİLGÜN FIRAT,TThTh,678,,YD 04 | YD 02 | YD 02,,,,"                          "
+TR  221.01,Desc.,TURKISH WRITING SKILLS II,3,3,OĞUZ BAYKARA,TWW,667,,KPARK10 | ETA 3 | ETA 3,,,,"                          "
+TR  221.02,Desc.,TURKISH WRITING SKILLS II,3,3,OĞUZ BAYKARA,TWW,545,,KPARK10 | ETA 3 | ETA 3,,,,"                          "
+TR  317.01,Desc.,TRANSLATING TEXTS ON ECONOMICS & BUSINES,3,3,NURHAYAT DALGIÇ,MMM,678,,GYD 404 | GYD 404 | GYD 404,,,,"                          "
+TR  317.02,Desc.,TRANSLATING TEXTS ON ECONOMICS & BUSINES,3,3,SADİ BÜLENT AKSOY,MMT,785,,M 2181 | M 2181 | YD 05,,,,"                          "
+TR  415.01,Desc.,TRANSLATING TEXTS ON POLITICAL SCIENCE &,3,5,İSMAİL KAPLAN,TThTh,134,,KPARK11 | YD 101 | YD 101,,,,"                          "
+TR  415.02,Desc.,TRANSLATING TEXTS ON POLITICAL SCIENCE &,3,5,İSMAİL KAPLAN,TThTh,278,,KPARK11 | YD 05 | YD 05,,,,"                          "
+TR  417.01,Desc.,TURKISH ENGLISH LITERARY TRANSLATION,3,5,JONATHAN MAURICE ROSS,TTTh,786,,GYD 404 | GYD 404 | NH 402,,,,"                          "
+TR  419.01,Desc.,THEORIES OF TRANSLATION,3,5,JONATHAN MAURICE ROSS,MThTh,378,,YD 203 | NH 402 | NH 402,,,,"                          "
+TR  419.02,Desc.,THEORIES OF TRANSLATION,3,5,ARZU EKER,ThThF,343,,ETA 4 | ETA 4 | NBZ 10,,,,"                          "
+TR  48C.01,Desc.,SP.TOP.TR.OF ARCHAEOLOGICAL TEXTS,3,4,JONATHAN MAURICE ROSS,FFF,123,,M 2180 | M 2180 | M 2180,,,,"                          "
+TR  48D.01,Desc.,SP.TOP.:TR.OF NON-LIT.TEXTS IN GER&ENG,3,4,NİLGÜN FIRAT,ThFF,212,,YD 103 | M 2181 | M 2181,,,,"                          "
+TR  48E.01,Desc.,SP.TOP.IN TRANS:DRAMA TRANSLATION,3,4,AHU SILA BAYER,FFF,678,,M 1152 | M 1152 | M 1152,,,,"                          "
+TR  490.01,Desc.,SP.TOP.IN TRANSLATION POETRY TRANSLATION,3,4,OĞUZ BAYKARA,MWW,823,,M 1200 | ETA 3 | ETA 3,,,,"                          "
+TR  498.01,Desc.,SP.TOP.IN TRANSLATION :FICTION,3,4,SADİ BÜLENT AKSOY,TWW,645,,YD 05 | ETA 4 | ETA 4,,,,"                          "
+TR  681.01,Desc.,SP.TOP.IN TRANSLATION STUDIES,3,7,SUAT KARANTAY,MMM,678,,,,,,"                          "
+TR  790.01,Desc.,DOCTORAL DISSERTATION,0,120,EBRU DİRİKER,TBA,,,,,,,"                          "
+TR  790.02,Desc.,DOCTORAL DISSERTATION,0,120,SALİHA PAKER,TBA,,,,,,,"                          "
+TR  790.03,Desc.,DOCTORAL DISSERTATION,0,120,ŞEHNAZ TAHİR GÜRÇAĞLAR,TBA,,,,,,,"                          "
+TR  790.04,Desc.,DOCTORAL DISSERTATION,0,120,ŞEHNAZ TAHİR GÜRÇAĞLAR,TBA,,,,,,,"                          "
+TR  790.06,Desc.,DOCTORAL DISSERTATION,0,120,ŞEHNAZ TAHİR GÜRÇAĞLAR,TBA,,,,,,,"                          "
+TR  790.07,Desc.,DOCTORAL DISSERTATION,0,120,SALİHA PAKER,TBA,,,,,,,"                          "

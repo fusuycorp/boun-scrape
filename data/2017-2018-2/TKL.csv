@@ -1,0 +1,57 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AR  204.01,Desc.,ARABIC IV,3,5,BARRY WOOD,MMT,124,,NB Z13 | NB Z13 | NB Z10,12.05.2018,2,,"                          "
+PER 202.01,Desc.,PERSIAN II,3,5,BARRY WOOD,TTW,126,,NB B10 | NB B10 | NB B10,12.05.2018,3,,"                          "
+PER 204.01,Desc.,PERSIAN IV,3,5,BARRY WOOD,MWW,512,,NB Z10 | NB Z10 | NB Z10,12.05.2018,1,,"                          "
+TKF 111.01,Desc.,ELEMENTARY TURKISH FOR  FOREIGNERS I,4,6,N. ELİF ULUĞ,MTTW,3343,,NB B10 | NB Z11 | NB Z11 | NB Z10,12.05.2018,1,,"                          "
+TKF 112.01,Desc.,ELEMENTARY TURKISH FOR FOREIGNERS II,4,6,AYDIN SÖYLEMEZ,MMFF,7878,,NB Z11 | NB Z11 | NB Z11 | NB Z11,12.05.2018,1,,"                          "
+TKF 212.01,Desc.,INTERMEDIATE TURKISH FOR FOREIGNERS II,4,6,Z.CEYDA ARSLAN,MMThTh,5634,,NB Z13 | NB Z13 | NB Z10 | NB Z10,12.05.2018,3,,"                          "
+TKF 218.01,Desc.,INTERMEDIATE READING IN TURKISH II,3,6,N. ELİF ULUĞ,TTW,564,,NB Z13 | NB Z13 | NB Z10,12.05.2018,2,,"                          "
+TKF 316.01,Desc.,ADVANCED TURKISH GRAM.FOR FOREIGNERS II,3,5,N. ELİF ULUĞ,MWW,456,,NB B10 | NB Z10 | NB Z10,12.05.2018,3,,"                          "
+TKF 318.01,Desc.,ADV.READING IN TURKISH FOR FOREIGNERS II,3,6,N. ELİF ULUĞ,MWW,578,Online,NB B10 | NB Z10 | NB Z10,14.05.2018,2,,"                          "
+TKL 101.01,Desc.,OTTOMAN TURKISH I,4,6,ARZU ÖZTÜRK,MMWW,5656,,NB Z11 | NB Z11 | EF 106 | EF 106,22.05.2018,2,,"                          "
+TKL 102.01,Desc.,OTTOMAN TURKISH II,4,6,TÜLAY GENÇTÜRK DEMİRCİOĞLU,MMWW,3434,,NB Z11 | NB Z11 | NB 119 | NB 119,28.05.2018,3,HIST,"                          "
+TKL 102.02,Desc.,OTTOMAN TURKISH II,4,6,ZEYNEP OKTAY,MMWW,1212,,NB Z11 | NB Z11 | NB 119 | NB 119,28.05.2018,3,TKL,"                          "
+TKL 104.01,Desc.,TURKISH LANGUAGE & GRAMMAR II,3,5,Z.CEYDA ARSLAN,MMTh,342,,NB Z13 | NB Z13 | NB Z11,29.05.2018,3,,"                          "
+TKL 104.02,Desc.,TURKISH LANGUAGE & GRAMMAR II,3,5,Z.CEYDA ARSLAN,WWTh,566,,EF 07 | EF 07 | NB B10,29.05.2018,3,,"                          "
+TKL 108.01,Desc.,TURKISH WRITING TECHNIQUES,3,6,EROL KÖROĞLU,TTTh,785,,NB Z13 | NB Z13 | NB Z10,,,,"                          "
+TKL 108.02,Desc.,TURKISH WRITING TECHNIQUES,3,6,VEYSEL ÖZTÜRK,TTTh,785,,NB B10 | NB B10 | NB Z13,,,,"                          "
+TKL 205.01,Desc.,METHODS OF ANALYSING DIVAN POETRY,3,6,ARZU ATİK,TTT,678,,NB Z12 | NB Z12 | NB Z12,28.05.2018,2,,"                          "
+TKL 212.01,Desc.,MODERNIZATION IN TURKISH LITERATURE II,3,5,VEYSEL ÖZTÜRK,TThTh,578,Online,NB Z11 | NB 119 | NB 119,18.05.2018,3,,"                          "
+TKL 214.01,Desc.,TURKIC LANGUAGES & DIALECTS II,3,5,MEHMET ÖLMEZ,MMM,678,,NB Z10 | NB Z10 | NB Z10,24.05.2018,1,,"                          "
+TKL 216.01,Desc.,OTTOMAN PALEOGRAPHY II,3,6,HASAN KARATAŞ,ThThTh,91011,,NB Z11 | NB Z11 | NB Z11,22.05.2018,2,HIST,"                          "
+TKL 217.01,Desc.,OLD ANATOLIAN TURKISH,3,5,ARZU ÇİFTOĞLU,FFF,123,,NB Z11 | NB Z11 | NB Z11,26.05.2018,3,,"                          "
+TKL 302.01,Desc.,LITERARY THEORY & PRACTICAL CRITICISM II,3,5,OLCAY AKYILDIZ,TWW,212,,NB Z11 | NB Z11 | NB Z11,29.05.2018,3,,"                          "
+TKL 312.01,Desc.,TURKISH FOLK LITERATURE II,3,5,ZEYNEP OKTAY,TTW,677,,NB Z11 | NB Z11 | NB Z11,25.05.2018,3,,"                          "
+TKL 314.01,Desc.,DIVAN LITERATURE II,3,6,TÜLAY GENÇTÜRK DEMİRCİOĞLU,WFF,667,,NB Z11 | NB Z12 | NB Z12,23.05.2018,3,,"                          "
+TKL 390.01,Desc.,STUDIES IN TURKISH FICTION:A.H.TANPINAR,3,5,HALİM KARA,MWW,278,,NB Z12 | NB B10 | NB B10,15.05.2018,3,,"                          "
+TKL 402.01,Desc.,TURKISH THEATRE ,3,4,ESRA DİCLE ,FFF,123,,M 2171 | M 2171 | M 2171,16.05.2018,1,,"                          "
+TKL 405.01,Desc.,MYSTICISM IN TURKISH LITERATURE,3,4,ZEYNEP SABUNCU,MWW,645,,NB Z12 | NH 203 | NH 203,24.05.2018,3,,"                          "
+TKL 434.01,Desc.,NOVEL IN MODERN TURKISH LITERATURE,3,6,HALİM KARA,MMW,346,,NB Z12 | NB Z12 | M 1170,18.05.2018,3,,"                          "
+TKL 48A.01,Desc.,SP.TP.SURVEY OF THE TURKISH LANG.,3,6,Z.CEYDA ARSLAN,WWW,123,,EF 103 | EF 103 | EF 103,17.05.2018,1,,"                          "
+TKL 48B.01,Desc.,SP.TP.EDITING,3,6,SEVENGÜL SÖNMEZ,WWW,678,,EF 04 | EF 04 | EF 04,15.05.2018,3,,"                          "
+TKL 504.01,Desc.,OTTOMAN TURKISH READING SKILLS II,3,8,EDHEM ELDEM,WWW,234,,,18.05.2018,2,,"                          "
+TKL 524.01,Desc.,COMTEMPORARY LITERARY ISSUES&APPROACHES,3,8,OLCAY AKYILDIZ,TTT,678,,,22.05.2018,1,,"                          "
+TKL 525.01,Desc.,LITERARY GENRE THEORIE&TURKISH LITERATUR,3,8,EROL KÖROĞLU,ThThTh,678,,,15.05.2018,2,,"                          "
+TKL 533.01,Desc.,RESEARCH METHODOLOGY,3,8,FATMA BÜYÜKKARCI YILMAZ,ThThTh,345,,,18.05.2018,2,,"                          "
+TKL 588.01,Desc.,SP.TP.REWRITING&EX.IN OLD TURK.LIT.,3,8,NUR  GÜRANİ ARSLAN,MMM,456,,,25.05.2018,2,,"                          "
+TKL 687.01,Desc.,SP.TP.MYTH.THE.&THE REW.IN MOD.TURK.LIT,4,8,NUR  GÜRANİ ARSLAN,WWWW,6789,,,23.05.2018,3,,"                          "
+TKL 689.01,Desc.,SP.TP.SERVET-I FUNUN AS A LITERATURE OF FIN DE SIECLE,4,10,ZEYNEP UYSAL,TTTT,2345, ,,28.05.2018,2,,"                          "
+TKL 690.01,Desc.,MASTER THESIS,0,60,NUR  GÜRANİ ARSLAN,,,,,,,,"                          "
+TKL 690.02,Desc.,MASTER THESIS,0,60,ZEYNEP SABUNCU,,,,,,,,"                          "
+TKL 690.03,Desc.,MASTER THESIS,0,60,FATMA BÜYÜKKARCI YILMAZ,,,,,,,,"                          "
+TKL 690.04,Desc.,MASTER THESIS,0,60,HALİM KARA,,,,,,,,"                          "
+TKL 690.05,Desc.,MASTER THESIS,0,60,ZEYNEP UYSAL,,,,,,,,"                          "
+TKL 690.06,Desc.,MASTER THESIS,0,60,TÜLAY GENÇTÜRK DEMİRCİOĞLU,,,,,,,,"                          "
+TKL 690.07,Desc.,MASTER THESIS,0,60,EROL KÖROĞLU,,,,,,,,"                          "
+TKL 690.08,Desc.,MASTER THESIS,0,60,VEYSEL ÖZTÜRK,,,,,,,,"                          "
+TKL 690.09,Desc.,MASTER THESIS,0,60,OLCAY AKYILDIZ,,,,,,,,"                          "
+TKL 790.01,Desc.,DISSERTATION,0,120,ZEHRA TOSKA,,,,,,,,"                          "
+TKL 790.02,Desc.,DISSERTATION,0,120,NUR  GÜRANİ ARSLAN,,,,,,,,"                          "
+TKL 790.03,Desc.,DISSERTATION,0,120,ZEYNEP SABUNCU,,,,,,,,"                          "
+TKL 790.04,Desc.,DISSERTATION,0,120,FATMA BÜYÜKKARCI YILMAZ,,,,,,,,"                          "
+TKL 790.05,Desc.,DISSERTATION,0,120,HALİM KARA,,,,,,,,"                          "
+TKL 790.06,Desc.,DISSERTATION,0,120,ZEYNEP UYSAL,,,,,,,,"                          "
+TKL 790.07,Desc.,DISSERTATION,0,120,TÜLAY GENÇTÜRK DEMİRCİOĞLU,,,,,,,,"                          "
+TKL 790.08,Desc.,DISSERTATION,0,120,EROL KÖROĞLU,,,,,,,,"                          "
+TKL 790.09,Desc.,DISSERTATION,0,120,VEYSEL ÖZTÜRK,,,,,,,,"                          "
+TKL 790.10,Desc.,DISSERTATION,0,120,OLCAY AKYILDIZ,,,,,,,,"                          "

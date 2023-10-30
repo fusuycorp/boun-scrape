@@ -1,0 +1,8 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CMPE150.01,Desc.,INTRODUCTION TO COMPUTING,3,5,ETHEM ALPAYDIN,,,,,,,,"                          "
+CMPE150.02,Desc.,INTRODUCTION TO COMPUTING,3,5,VURAL ALTIN,,,,,,,,"        CMPE                  "
+CMPE150.03,Desc.,INTRODUCTION TO COMPUTING,3,5,ETHEM ALPAYDIN,,,,,,,,"        CMPE                  "
+CMPE230.01,Desc.,SYSTEMS PROGRAMMING,4,6,CAN ÖZTURAN,,,,,,,,"                          "
+CMPE250.01,Desc.,DATA STRUCTURES & ALGORITHMS,4,6,SADIK FİKRET GÜRGEN,,,,,,,,"                          "
+CMPE321.01,Desc.,INTRODUCTION TO DATABASE SYSTEMS,4,6,TAFLAN GÜNDEM,,,,,,,,"                          "
+CMPE493.01,Desc.,SP.TOP.IN CMPE.NATURAL LANGUAGE PROCESS.,3,6,ETHEM ALPAYDIN,,,,,,,,"                          "

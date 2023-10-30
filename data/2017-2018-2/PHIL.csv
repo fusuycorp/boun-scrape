@@ -1,0 +1,56 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL106.01,Desc.,PHILOSOPHICAL TEXTS,3,8,KENNETH ROBERT WESTPHAL,WWF,343,,TB 490 | TB 490 | TB 310,,,,"                          "
+PHIL112.01,Desc.,INTRODUCTION TO MODERN PHILOSOPHY,3,6,SUN DEMİRLİ,TThTh,334,,KP 01 | AYHAN ŞAHENK | AYHAN ŞAHENK,16.05.2018,3,"GUID,LL,TKL","                          "
+PHIL132.01,Desc.,LOGIC II,4,8,KARANFİL SOYHUN,TTThTh,1212,,NH 202 | NH 202 | EF 206 | EF 206,29.05.2018,3,,"                          "
+PHIL214.01,Desc.,HISTORY OF PHILOSOPHY II,3,6,JOHANNES FRITSCHE,MMW,562,,EF 06 | EF 06 | EF 06,23.05.2018,2,,"                          "
+PHIL222.01,Desc.,PHILOSOPHY OF SCIENCE,3,6,BERNA KILINÇ,ThThF,564,,NH 201 | NH 201 | M 1200,24.05.2018,1,,"                          "
+PHIL314.01,Desc.,HISTORY OF PHILOSOPHY IV,3,6,KENNETH ROBERT WESTPHAL,WWF,562,,TB 490 | TB 490 | TB 310,28.05.2018,3,,"                          "
+PHIL382.01,Desc.,ONTOLOGY,3,7,NURBAY IRMAK,MWW,478,,M 2152 | TB 310 | TB 310,16.05.2018,3,,"                          "
+PHIL485.01,Desc.,SP.TP.ANIMAL ETHICS,3,6,BERİL İDEMEN SÖZMEN,ThThF,343,,EF 205 | EF 205 | TB 490,18.05.2018,2,,"                          "
+PHIL488.01,Desc.,SP.TP.DESCARTES THEN AND NOW,3,6,STEPHEN VOSS,TTTh,122,,JF 108 | JF 108 | M 2171,,,,"                          "
+PHIL489.01,Desc.,SP.TP.IN METAPHYSICS,3,6,SUN DEMİRLİ,WWF,344,,JF 334 | JF 334 | TB 490,,,,"                          "
+PHIL48H.01,Desc.,SP.TP.:NON -CLASSICAL LOGICS II,3,6,BERNA KILINÇ,TTF,786,,NH 302 | NH 302 | TB 490,,,,"                          "
+PHIL497.01,Desc.,SEL.TP.ISSUES IN THE PHIL.OF LEVINAS,3,6,TERENCE HOLDEN,FFF,678,,,17.05.2018,1,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,CHRYSSI SIDIROPOULOU,,, ,,,,,"                          "
+PHIL499.03,Desc.,INDEPENDENT STUDY,3,6,LUCAS THORPE,,, ,,,,,"                          "
+PHIL499.04,Desc.,INDEPENDENT STUDY,3,6,NURBAY IRMAK,,, ,,,,,"                          "
+PHIL517.01,Desc.,TOPICS IN CONTEMPORARY PHILOSOPHY,4,10,STEPHEN VOSS,,,,,15.05.2018,1,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL587.01,Desc.,SP.TP.NASTIKA SCHOOLS IN INDIAN PHIL.,4,10,BERİL İDEMEN SÖZMEN,TTT,345,,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,KENNETH ROBERT WESTPHAL,,,,,29.05.2018,2,,"                          "
+PHIL58E.01,Desc.,SP.TP.NATURALISM IN ETHICS,4,10,KARANFİL SOYHUN,WWTh,565,,,,,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,KENNETH ROBERT WESTPHAL,,,,,25.05.2018,2,,"                          "
+PHIL590.05,Desc.,DIRECTED STUDY,4,10,KARANFİL SOYHUN,,,,,25.05.2018,2,,"                          "
+PHIL590.06,Desc.,DIRECTED STUDY,4,10,CHRYSSI SIDIROPOULOU,,,,,25.05.2018,2,,"                          "
+PHIL590.07,Desc.,DIRECTED STUDY,4,10,NURBAY IRMAK,,,,,25.05.2018,2,,"                          "
+PHIL590.09,Desc.,DIRECTED STUDY,4,10,BERİL İDEMEN SÖZMEN,,,,,25.05.2018,2,,"                          "
+PHIL590.10,Desc.,DIRECTED STUDY,4,10,JOHANNES FRITSCHE,,,,,25.05.2018,2,,"                          "
+PHIL590.11,Desc.,DIRECTED STUDY,4,10,BERNA KILINÇ,,,,,25.05.2018,2,,"                          "
+PHIL590.12,Desc.,DIRECTED STUDY,4,10,SUN DEMİRLİ,,,,,25.05.2018,2,,"                          "
+PHIL590.13,Desc.,DIRECTED STUDY,4,10,LUCAS THORPE,,,,,25.05.2018,2,,"                          "
+PHIL590.14,Desc.,DIRECTED STUDY,4,10,STEPHEN VOSS,,,,,25.05.2018,2,,"                          "
+PHIL591.01,Desc.,SP.TP.HEIDEGGER,4,10,JOHANNES FRITSCHE,MMW,562,,,,,,"                          "
+PHIL594.01,Desc.,SP.TP.PROBLEMS OF PHILOSOPHY,4,10,NURBAY IRMAK,MMM,678,,,,,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,3,30,KENNETH ROBERT WESTPHAL,,,,,26.05.2018,3,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL690.05,Desc.,MASTER THESIS,0,60,KARANFİL SOYHUN,,,,,,,,"                          "
+PHIL690.06,Desc.,MASTER THESIS,0,60,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL690.07,Desc.,MASTER THESIS,0,60,NURBAY IRMAK,,,,,,,,"                          "
+PHIL690.08,Desc.,MASTER THESIS,0,60,YILDIZ SİLİER,,,,,,,,"                          "
+PHIL690.09,Desc.,MASTER THESIS,0,60,BERİL İDEMEN SÖZMEN,,,,,,,,"                          "
+PHIL690.10,Desc.,MASTER THESIS,0,60,JOHANNES FRITSCHE,,,,,,,,"                          "
+PHIL690.11,Desc.,MASTER THESIS,0,60,BERNA KILINÇ,,,,,,,,"                          "
+PHIL690.12,Desc.,MASTER THESIS,0,60,SUN DEMİRLİ,,,,,,,,"                          "
+PHIL690.13,Desc.,MASTER THESIS,0,60,LUCAS THORPE,,,,,,,,"                          "
+PHIL690.14,Desc.,MASTER THESIS,0,60,STEPHEN VOSS,,,,,,,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL790.05,Desc.,Ph.D THESIS,0,120,KARANFİL SOYHUN,,,,,,,,"                          "
+PHIL790.06,Desc.,Ph.D THESIS,0,120,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL790.07,Desc.,Ph.D THESIS,0,120,NURBAY IRMAK,,,,,,,,"                          "
+PHIL790.08,Desc.,Ph.D THESIS,0,120,YILDIZ SİLİER,,,,,,,,"                          "
+PHIL790.09,Desc.,Ph.D THESIS,0,120,BERİL İDEMEN SÖZMEN,,,,,,,,"                          "
+PHIL790.10,Desc.,Ph.D THESIS,0,120,JOHANNES FRITSCHE,,,,,,,,"                          "
+PHIL790.11,Desc.,Ph.D THESIS,0,120,BERNA KILINÇ,,,,,,,,"                          "
+PHIL790.12,Desc.,Ph.D THESIS,0,120,SUN DEMİRLİ,,,,,,,,"                          "
+PHIL790.13,Desc.,Ph.D THESIS,0,120,LUCAS THORPE,,,,,,,,"                          "
+PHIL790.14,Desc.,Ph.D THESIS,0,120,STEPHEN VOSS,,,,,,,,"                          "

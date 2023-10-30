@@ -1,0 +1,43 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MIS 112.01,Desc.,ECONOMICS II,3,5,BERTAN YILMAZ BADUR,MFF,523,,HKA301 | HKA301 | HKA301,,,,"                          "
+MIS 116.01,Desc.,PRINCIPLES OF MARKETING,3,5,HANDE TÜRKER,MMTh,343,,HKA301 | HKA301 | HKA301,,,,"                          "
+MIS 116.02,Desc.,PRINCIPLES OF MARKETING,3,5,ASLIHAN NASIR,MMTh,343,,HKB105 | HKB105 | HKA303,,,,"                          "
+MIS 134.01,Desc.,INTRODUCTION TO DATABASE,3,5,SONA MARDİKYAN,TT,34,,,,,,"                          "
+MIS 134.02,Desc.,INTRODUCTION TO DATABASE,3,5,SONA MARDİKYAN,TT,56,,,,,,"                          "
+MIS 144.01,Desc.,BUSINESS MATHEMATICS II,3,5,AYFER ECEVİT,TThTh,212,,HKB105 | HKB105 | HKB105,,,,"                          "
+MIS 212.01,Desc.,MANAGERIAL ACCOUNTING,3,5,ALİ TÜKEL,MWW,656,,HKB105 | HKB105 | HKB105,,,,"                          "
+MIS 224.01,Desc.,RESEARCH METHODOLOGY,3,6,HANDE TÜRKER,TTTh,342,,HKA202 | HKA202 | HKA301,,,,"                          "
+MIS 236.01,Desc.,INTERMEDIATE PROGRAMMING,4,7,UĞUR GÖKHAN ÖZDİNÇ,TTT,567,,HKA301 | HKA301 | HKA301,,,,"                          "
+MIS 316.01,Desc.,FINANCE,3,5,ALİ TÜKEL,MMW,782,,HKC107 | HKC107 | HKA302,,,,"                          "
+MIS 316.02,Desc.,FINANCE,3,5,CEYLAN ONAY,MMW,782,,HKB105 | HKB105 | HKB105,,,,"                          "
+MIS 326.01,Desc.,OBJECT ORIENTED MODELING ,3,5,OSMAN NURİ DARCAN,WThTh,334,,HKB105 | HKB105 | HKB105,,,,"                          "
+MIS 374.01,Desc.,INTERNET INFORMATION SERVICES,3,5,BİRGÜL KUTLU,MM,12,,HKB105 | HKB105,,,,"                          "
+MIS 424.01,Desc.,INFORMATION SYSTEMS MANAGEMENT,3,6,ZUHAL TANRIKULU,WWTh,451,,HKA302 | HKA302 | HKA202,,,,"                          "
+MIS 458.01,Desc.,STRATEGIC MANAGEMENT,3,5,ÖZGÜR DÖĞERLİOĞLU,WThTh,345,,HKB101 | HKB101 | HKB101,,,,"                          "
+MIS 469.01,Desc.,APPLIED RESEARCH IN MIS,3,5,ZUHAL TANRIKULU,WThTh,623,,HKB101 | HKB107 | HKB107,,,,"                          "
+MIS 474.01,Desc.,PROJECT MANAGEMENT,3,5,MELTEM ÖZTURAN,TTT,123,,HKB101 | HKB101 | HKB101,,,,"                          "
+MIS 485.01,Desc.,SP.TOP.IN MIS:(SMALL BUSINESS MANAGEMENT,3,5,İPEK MEREY,WWW,678,,HKA202 | HKA202 | HKA202,,,,"                          "
+MIS 492.02,Desc.,PROJECT,4,8,OSMAN NURİ DARCAN,MMTTWWFF,78121267,,HKB 206 | HKB 206 | HKB 206 | HKB 206 | HKB 206 | HKB 206 | HKB 206 | HKB 206,,,,"                          "
+MIS 492.03,Desc.,PROJECT,4,8,ÖZGÜR DÖĞERLİOĞLU,TTWWThThFF,78456712,,HKB 225 | HKB 225 | HKB 225 | HKB 225 | HKB 225 | HKB 225 | HKB 225 | HKB 225,,,,"                          "
+MIS 492.04,Desc.,PROJECT,4,8,BİRGÜL KUTLU,MMWWThThFF,45232323,,HKB204 | HKB204 | HKB204 | HKB204 | HKB204 | HKB204 | HKB204 | HKB204,,,,"                          "
+MIS 492.05,Desc.,PROJECT,4,8,EROL İNELMEN,MMTTWWFF,45234567,,HKB216 | HKB216 | HKB216 | HKB216 | HKB216 | HKB216 | HKB216 | HKB216,,,,"                          "
+MIS 492.06,Desc.,PROJECT,4,8,HANDE TÜRKER,MMWWThThFF,78456745,,HKB227 | HKB227 | HKB227 | HKB227 | HKB227 | HKB 227 | HKB227 | HKB 227,,,,"                          "
+MIS 492.07,Desc.,PROJECT,4,8,SONA MARDİKYAN,TTWWThThFF,12346756,,HKB210 | HKB210 | HKB210 | HKB210 | HKB210 | HKB210 | HKB210 | HKB210,,,,"                          "
+MIS 492.08,Desc.,PROJECT,4,8,ASLIHAN NASIR,MMTTWWThTh,56564567,,HKB224 | HKB224 | HKB224 | HKB224 | HKB224 | HKB224 | HKB224 | HKB224,,,,"                          "
+MIS 492.09,Desc.,PROJECT,4,8,CEYLAN ONAY,MMTTWWFF,56453434,,HKB219 | HKB219 | HKB219 | HKB219 | HKB219 | HKB219 | HKB219 | HKB219,,,,"                          "
+MIS 492.11,Desc.,PROJECT,4,8,ASLI SENCER,MMTTWWFF,34783467,,HKB208 | HKB208 | HKB208 | HKB208 | HKB208 | HKB208 | HKB208 | HKB208,,,,"                          "
+MIS 492.12,Desc.,PROJECT,4,8,ZUHAL TANRIKULU,TTWWThThFF,78236767,,HKB205 | HKB205 | HKB205 | HKB205 | HKB205 | HKB205 | HKB205 | HKB205,,,,"                          "
+MIS 492.13,Desc.,PROJECT,4,8,BERTAN YILMAZ BADUR,MMTTThThFF,12676745,,HKB 226 | HKB 226 | HKB 226 | HKB 226 | HKB 226 | HKB 226 | HKB 226 | HKB 226,,,,"                          "
+MIS 492.14,Desc.,PROJECT,4,8,ALİ TÜKEL,MMTTThThFF,45676767,,HKB218 | HKB218 | HKB218 | HKB218 | HKB218 | HKB218 | HKB218 | HKB218,,,,"                          "
+MIS 542.01,Desc.,DATA MINING CONCEPTS & TECHNIQUES,3,6,BERTAN YILMAZ BADUR,MMM,678,,HKB 108 | HKB 108 | HKB 108,,,,"                          "
+MIS 543.01,Desc.,SIMULATION MODELS & SYSTEMS,3,6,OSMAN NURİ DARCAN,WWW,678,,HKB 108 | HKB 108 | HKB 108,,,,"                          "
+MIS 547.01,Desc.,ORGANIZATIONAL IMP. OF INFORMATION TECH.,3,6,ÖZGÜR DÖĞERLİOĞLU,MMM,234,,HKB 108 | HKB 108 | HKB 108,,,,"                          "
+MIS 690.02,Desc.,MASTER'S THESIS,0,60,BERTAN YILMAZ BADUR,TBA,,,,,,,"                          "
+MIS 690.03,Desc.,MASTER'S THESIS,0,60,ÖZGÜR DÖĞERLİOĞLU,TBA,,,,,,,"                          "
+MIS 690.04,Desc.,MASTER'S THESIS,0,60,BİRGÜL KUTLU,TBA,,,,,,,"                          "
+MIS 690.05,Desc.,MASTER'S THESIS,0,60,ASLI SENCER,TBA,,,,,,,"                          "
+MIS 690.06,Desc.,MASTER'S THESIS,0,60,HANDE TÜRKER,TBA,,,,,,,"                          "
+MIS 690.07,Desc.,MASTER'S THESIS,0,60,ASLIHAN NASIR,TBA,,,,,,,"                          "
+MIS 690.08,Desc.,MASTER'S THESIS,0,60,CEYLAN ONAY,TBA,,,,,,,"                          "
+MIS 690.09,Desc.,MASTER'S THESIS,0,60,MELTEM ÖZTURAN,TBA,,,,,,,"                          "
+MIS 690.10,Desc.,MASTER'S THESIS,0,60,ZUHAL TANRIKULU,TBA,,,,,,,"                          "

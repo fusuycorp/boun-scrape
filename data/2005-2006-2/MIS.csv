@@ -1,0 +1,33 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MIS 112.01,Desc.,ECONOMICS II,3,5,BERTAN YILMAZ BADUR,MMT,121,,HKA302 | HKA302 | HKA301,,,,"                          "
+MIS 116.01,Desc.,PRINCIPLES OF MARKETING,3,5,HANDE TÜRKER,MMTh,344,,HKA302 | HKA302 | HKA202,,,,"                          "
+MIS 116.02,Desc.,PRINCIPLES OF MARKETING,3,5,ASLIHAN NASIR,MMTh,344,,,,,,"                          "
+MIS 134.01,Desc.,INTRODUCTION TO DATABASE,3,5,SONA MARDİKYAN,TT,34,,HKB102 | HKB102,,,,"                          "
+MIS 134.02,Desc.,INTRODUCTION TO DATABASE,3,5,SONA MARDİKYAN,TT,56,,HKB102 | HKB102,,,,"                          "
+MIS 144.01,Desc.,BUSINESS MATHEMATICS II,3,5,AYFER ECEVİT,TThTh,223,,HKB105 | HKB105 | HKB105,,,,"                          "
+MIS 212.01,Desc.,ACCOUNTING II,3,5,ALİ TÜKEL,MWW,556,,HKB105 | HKB105 | HKB105,,,,"                          "
+MIS 224.01,Desc.,RESEARCH METHODOLOGY,3,6,HANDE TÜRKER,TTTh,345,,HKA301 | HKA301 | HKA301,,,,"                          "
+MIS 316.01,Desc.,FINANCE,3,5,ALİ TÜKEL,MMW,782,,HKC104 | HKC104 | HKA202,,,,"                          "
+MIS 316.02,Desc.,FINANCE,3,5,CEYLAN ONAY,MMW,782,,HKA310 | HKA310 | HKA310,,,,"                          "
+MIS 326.01,Desc.,OBJECT ORIENTED MODELING ,3,5,OSMAN NURİ DARCAN,TTTh,343,,HKB105 | HKB105 | HKC107,,,,"                          "
+MIS 374.01,Desc.,INTERNET INFORMATION SERVICES,3,5,BİRGÜL KUTLU,MM,34,,HKB105 | HKB105,,,,"                          "
+MIS 424.01,Desc.,INFORMATION SYSTEMS MANAGEMENT,3,6,ZUHAL TANRIKULU,TThTh,245,,HKA301 | HKB105 | HKB105,,,,"                          "
+MIS 458.01,Desc.,STRATEGIC MANAGEMENT,3,5,ÖZGÜR DÖĞERLİOĞLU,MMW,342,,HKB101 | HKB101 | HKB101,,,,"                          "
+MIS 469.01,Desc.,APPLIED RESEARCH IN MIS,3,5,ZUHAL TANRIKULU,TTW,345,,HKB101 | HKB101 | HKB101,,,,"                          "
+MIS 477.01,Desc.,LEADERSHIP & MOTIVATION ,3,5,TANJU AKDENİZ,ThThTh,678,,HKC107 | HKC107 | HKC107,,,,"                          "
+MIS 484.01,Desc.,SP.TOP.IN MIS:CREATIVITY IN ORGANIZATION,3,5,TUNÇ EVCİMEN,TTT,789,,HKB105 | HKB105 | HKB105,,,,"                          "
+MIS 485.01,Desc.,SP.TOP.IN MIS:(SMALL BUSINESS MANAGEMENT,3,5,İPEK MEREY,WWW,678,,HKA202 | HKA202 | HKA202,,,,"                          "
+MIS 492.01,Desc.,PROJECT,4,8,BERTAN YILMAZ BADUR,TT,89,,HKB 226 | HKB 226,,,,"                          "
+MIS 492.03,Desc.,PROJECT,4,8,OSMAN NURİ DARCAN,TT,89,,HKB 206 | HKB206,,,,"                          "
+MIS 492.04,Desc.,PROJECT,4,8,ÖZGÜR DÖĞERLİOĞLU,TT,89,,HKB 225 | HKB 225,,,,"                          "
+MIS 492.05,Desc.,PROJECT,4,8,HANDE TÜRKER,TT,89,,HKB 227 | HKB 227,,,,"                          "
+MIS 492.06,Desc.,PROJECT,4,8,SONA MARDİKYAN,TT,89,,HKB210 | HKB210,,,,"                          "
+MIS 492.07,Desc.,PROJECT,4,8,CEYLAN ONAY,TT,89,,HKB 219 | HKB 219,,,,"                          "
+MIS 492.08,Desc.,PROJECT,4,8,ALİ TÜKEL,TT,89,,HKB218 | HKB218,,,,"                          "
+MIS 492.09,Desc.,PROJECT,4,8,ZUHAL TANRIKULU,TT,89,,HKB205 | HKB205,,,,"                          "
+MIS 542.01,Desc.,DATA WAREHOUSING & DATA MINING,3,6,BERTAN YILMAZ BADUR,MMM,678,,,,,,"                          "
+MIS 543.01,Desc.,SIMULATION MODELS & SYSTEMS,3,6,ASLI SENCER,MMM,234,,,,,,"                          "
+MIS 547.01,Desc.,ORGANIZATIONAL IMP. OF INFORMATION TECH.,3,6,ÖZGÜR DÖĞERLİOĞLU,ThThTh,234,,,,,,"                          "
+MIS 580.01,Desc.,SP.TOP IN MIS:OBJECT ORIEN.MOD.WITH UML ,3,6,OSMAN NURİ DARCAN,WWW,678,,,,,,"                          "
+MIS 581.01,Desc.,SP.TOP.: IN  MIS:ADV.TOP.IN DATA MINING ,3,6,BERTAN YILMAZ BADUR,FFF,8910,,,,,,"                          "
+MIS 584.01,Desc.,SP.TOP.IN MIS:SUPPLY CHAIN MANAGEMENT,3,6,ASLI SENCER,WWW,234,,,,,,"                          "

@@ -1,0 +1,44 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PSY 100.01,Desc.,ORIENTATION TO PSYCHOLOGY,1,1,NUR SOYLU,T,6, ,NH 301,,,,"                          "
+PSY 101.01,Desc.,INTRODUCTION TO PSYCHOLOGY,3,5,SAFA KEMAL KAPTAN,MMW,233, ,AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK,25.05.2023,1,,"                          "
+PSY 112.01,Desc.,FUNDAMENTALS OF PSYCHOLOGY II,3,8,DENİZ TAHİROĞLU,WWTh,122, ,NH 102 | NH 102 | EF 202,,,,"                          "
+PSY 112.02,Desc.,FUNDAMENTALS OF PSYCHOLOGY II,3,8,GAYE SOLEY,TTTh,786, ,KP 01 | KP 01 | M 1171,,,,"                          "
+PSY 112.03,Desc.,FUNDAMENTALS OF PSYCHOLOGY II,3,8,GAYE SOLEY,WWTh,125, ,NH 202 | NH 202 | M 2200,,,,"                          "
+PSY 202.01,Desc.,INTRO. TO STATISTICS FOR PSYCHOLOGY II,4,8,GÜNEŞ ÜNAL,TTThTh,5656, ,EF 206 | EF 206 | EF 106 | EF 106,03.06.2023,1,,"                          "
+,,P.S.,,,GÜNEŞ ÜNAL,ThTh,78,,,,0,,"                          "
+PSY 222.01,Desc.,LEARNING,3,6,GÜNEŞ ÜNAL,TTTh,784, ,EF 206 | EF 206 | EF 106,05.06.2023,3,,"                          "
+PSY 234.01,Desc.,LIFE SPAN DEVELOP.PSY.II:PERSONALITY&SOC,3,6,DENİZ TAHİROĞLU,WWTh,453, ,EF 116 | EF 116 | EF 106,25.05.2023,3,,"                          "
+PSY 251.01,Desc.,PSYCHOLOGY OF PERSONALITY,3,6,FEYZA ÇORAPÇI,WWTh,122, ,EF 106 | EF 106 | EF 106,26.05.2023,2,,"                          "
+PSY 304.01,Desc.,EXPERIMENTAL PSYCHOLOGY,4,7,İNCİ AYHAN,MMWWW,12789, ,NB Z13 | NB Z13 | TB 415 | TB 415 | TB 415,,,,"                          "
+PSY 304.02,Desc.,EXPERIMENTAL PSYCHOLOGY,4,7,ELİF AYSİMİ DUMAN,MMWWW,78789, ,NB Z13 | NB Z13 | M 1152 | M 1152 | M 1152,,,,"                          "
+PSY 362.01,Desc.,MEASUREMENT IN PSYCHOLOGY,3,6,YASEMİN SOHTORİK İLKMEN,TTTh,345, ,EF 204 | EF 204 | TB 310,,,,"                          "
+PSY 411.01,Desc.,THEORIES IN PSYCHOLOGY,3,7,SAFA KEMAL KAPTAN,TTTh,561, ,KP 01 | KP 01 | NB 119,02.06.2023,3,,"                          "
+PSY 464.01,Desc.,CLINICAL PSYCHOLOGY,3,6,YASEMİN SOHTORİK İLKMEN,TWTh,242, ,NH 103 | NH 302 | EF 206,06.06.2023,3,,"                          "
+PSY 466.01,Desc.,INDUSTRIAL&ORGANIZATIONAL PSYCHOLOGY,3,6,SİBEL ÇALIŞKAN,ThThTh,678, ,NH 303 | NH 303 | NH 303,26.05.2023,1,,"                          "
+PSY 48D.01,Desc.,SEL.TP.IN AUTOBIOGRAPHICAL MEMORY,3,6,ALİ TEKCAN,WFF,323, ,NH 201 | EF 206 | EF 206,01.06.2023,3,,"                          "
+PSY 492.01,Desc.,R&R IN PROGRAMMING FOR PSYCHOLOGISTS,3,5,İNCİ AYHAN,,, ,,03.06.2023,2,,"                          "
+PSY 493.01,Desc.,R&R IN NEUROSCIENCE,3,6,GÜNEŞ ÜNAL,,, ,,,,,"                          "
+PSY 497.01,Desc.,R&R DEVELOPMENT OF SOCIAL ATTITUDES,3,5,GAYE SOLEY,,, ,,,,,"                          "
+PSY 49E.01,Desc.,R&R IN CHILD AND ADOLESCENT DEVELOPMENT,3,6,DENİZ TAHİROĞLU,WWWW,78910, ,SEMİNER ODASI | SEMİNER ODASI | SEMİNER ODASI | SEMİNER ODASI,,,,"                          "
+PSY 49H.01,Desc.,R&R EVALUATION OF CHILDREN,3,6,FEYZA ÇORAPÇI,,, ,,,,,"                          "
+PSY 49O.01,Desc.,R&R.IN SOCIAL PSYCHOLOGY,3,6,NUR SOYLU,,, ,,,,,"                          "
+PSY 49Z.01,Desc.,R&R IN AUTOBIOGRAPHICAL MEMORY,3,6,ALİ TEKCAN,,, ,,,,,"                          "
+PSY 502.01,Desc.,ADVANCED RESEARCH METHODS II,4,8,NUR SOYLU,MMMM,5678, ,,06.06.2023,1,,"                          "
+PSY 505.01,Desc.,RESEARCH PROJECT IN PSYCHOLOGY II,4,8,İNCİ AYHAN,,, ,,,,,"                          "
+PSY 505.04,Desc.,RESEARCH PROJECT IN PSYCHOLOGY II,4,8,GAYE SOLEY,,, ,,,,,"                          "
+PSY 505.08,Desc.,RESEARCH PROJECT IN PSYCHOLOGY II,4,8,DENİZ TAHİROĞLU,,, ,,,,,"                          "
+PSY 505.09,Desc.,RESEARCH PROJECT IN PSYCHOLOGY II,4,8,ALİ TEKCAN,,, ,,,,,"                          "
+PSY 505.12,Desc.,RESEARCH PROJECT IN PSYCHOLOGY II,4,8,FEYZA ÇORAPÇI,,, ,,,,,"                          "
+PSY 521.01,Desc.,ADVANCED COGNITIVE PSYCHOLOGY,4,8,İNCİ AYHAN,WWWW,1234, ,,,,,"                          "
+PSY 579.01,Desc.,GRADUATE SEMINAR,0,4,NUR SOYLU,W,6, ,,,,,"                          "
+PSY 68C.01,Desc.,CRITICAL ISSUES IN PSYCHOLOGY,4,10,FEYZA ÇORAPÇI,ThThThTh,3456, ,,,,,"                          "
+PSY 690.02,Desc.,MASTER THESIS,0,60,FEYZA ÇORAPÇI,,, ,,,,,"                          "
+PSY 690.03,Desc.,MASTER THESIS,0,60,GAYE SOLEY,,, ,,,,,"                          "
+PSY 690.09,Desc.,MASTER THESIS,0,60,ALİ TEKCAN,,, ,,,,,"                          "
+PSY 690.10,Desc.,MASTER THESIS,0,60,GÜNEŞ ÜNAL,,, ,,,,,"                          "
+PSY 690.11,Desc.,MASTER THESIS,0,60,DENİZ TAHİROĞLU,,, ,,,,,"                          "
+PSY 690.12,Desc.,MASTER THESIS,0,60,NUR SOYLU,,, ,,,,,"                          "
+PSY 690.13,Desc.,MASTER THESIS,0,60,İNCİ AYHAN,,, ,,,,,"                          "
+PSY 69B.01,Desc.,GUIDED RESEARCH IN PSYCHOLOGY,4,10,NUR SOYLU,,, ,,,,,"                          "
+PSY 790.01,Desc.,DOCTORAL DISSERTATION,0,120,FEYZA ÇORAPÇI,,, ,,,,,"                          "
+PSY 790.03,Desc.,DOCTORAL DISSERTATION,0,120,ALİ TEKCAN,,, ,,,,,"                          "

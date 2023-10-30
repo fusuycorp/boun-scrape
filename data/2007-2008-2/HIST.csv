@@ -1,0 +1,53 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHIN102.01,Desc.,BEGINNERS CHINESE II,3,5,GUIYUAN YANG,TTWWTh,23233,,,,,,"                          "
+CHIN202.01,Desc.,INTERMEDIATE CHINESE II,3,5,GUIYUAN YANG,MMTTTh,23565,,,,,,"                          "
+CHIN302.01,Desc.,ADVANCED CHINESE II,3,5,GUIYUAN YANG,ThThTh,126,,,,,,"                          "
+HIST102.01,Desc.,HISTORICAL METHOD & THOUGHT II,3,6,EDHEM ELDEM,TTTh,565,,M 1100 | M 1100 | M 1200,,,,"                          "
+HIST106.01,Desc.,THE MAKING OF THE MODERN WORLD II,4,6,ÇİĞDEM KAFESCİOĞLU,MWF,444,,AYHAN Ş | AYHAN Ş | AYHAN Ş,,,EC,"                          "
+HIST212.01,Desc.,HISTORY OF THE ANCIENT NEAR EAST II,3,5,ASLI ÖZYAR,WFF,423,,TB 475 | TB 475 | TB 475,,,,"                          "
+HIST222.01,Desc.,OTTOMAN HISTORY:THE CLASSICAL PERIOD,3,5,DERİN TERZİOĞLU,TThTh,234,,M 1100 | TB 490 | TB 490,,,,"                          "
+HIST231.01,Desc.,ISLAMIC HISTORY & CIVILIZATION I,3,5,OYA PANCAROĞLU,WWTh,121,,M 2230 | M 2230 | TB 260,,,,"                          "
+HIST242.01,Desc.,"WESTERN SOCIETIES,POLITICS&CULTURES:RENA",3,6,SELİM DERİNGİL,MMTh,232,,TB 310 | TB 310 | M 1100,,,,"                          "
+HIST310.01,Desc.,"HIST.OF THE AMERICAS,1750 TO THE PRESENT",3,5,LOUIS MAZZARI,MWW,878,,M 2170 | TB 260 | TB 260,,,,"                          "
+HIST322.01,Desc.,HISTORY OF MODERN TURKEY,3,4,MELTEM TOKSÖZ,WThTh,512,,M 2230 | M 2230 | M 2230,,,,"                          "
+HIST333.01,Desc.,HITTITE HISTORY & ARCHAEOLOGY ,3,6,ASLI ÖZYAR,MMM,678,,TB 475 | TB 475 | TB 475,,,,"                          "
+HIST336.01,Desc.,HISTORY OF THE BYZANTINE EMPIRE II,3,5,NEVRA NECİPOĞLU,TTTh,785,,TB 475 | TB 475 | TB 490,,,,"                          "
+HIST351.01,Desc.,ART &ARCHITECTURE OF THE ISLAMIC WORLD I,3,5,OYA PANCAROĞLU,FFF,678,,M 2180 | M 2180 | M 2180,,,,"                          "
+HIST353.01,Desc.,THE ART &ARCHITECTURE OF THE MIDDLE AGES,3,5,LALE BABAOĞLU,MMTh,345,,TB 490 | TB 490 | M 2171,,,,"                          "
+HIST355.01,Desc.,HISTORY OF MODERN ART & ARCHITECTURE,3,5,PAOLO GIRARDELLI,WWF,344,,M 2230 | M 2230 | M 2230,,,,"                          "
+HIST402.01,Desc.,HISTORIOGRAPHY II,3,6,AHMET ERSOY,WThTh,234,,TB 475 | M 1200 | M 1200,,,,"                          "
+HIST424.01,Desc.,SOCIAL &ECONOMIC HIST.OF REPUB.TURKEY II,3,6,YAVUZ SELİM KARAKIŞLA,FFF,234,,,,,,"                          "
+HIST426.01,Desc.,HIST.OF THE MIDDLE EAST IN THE TWENTIETH CENTURY,3,5,YÜCEL TERZİBAŞOĞLU,WThTh,734, ,M 1170 | M 1170 | M 1170,,,,"                          "
+HIST434.01,Desc.,JAPANESE HIST.:FROM FEUDAL TO MOD.JAP.II,3,5,SELÇUK ESENBEL,WWW,789,,TB 490 | TB 490 | TB 490,,,,"                          "
+HIST443.01,Desc.,SEMINAR IN BYZANTINE HISTORY,3,5,NEVRA NECİPOĞLU,TBA,,,,,,,"                          "
+HIST448.01,Desc.,SEMINAR IN MODERN EUROPEAN HISTORY II,3,6,YÜCEL TERZİBAŞOĞLU,TTW,343,,TB 415 | TB 415 | TB 490,,,,"                          "
+HIST449.01,Desc.,SEMINAR IN OTTOMAN SOURCES,3,5,YAVUZ SELİM KARAKIŞLA,FFF,678,,M 1181 | M 1181 | M 1181,,,,"                          "
+HIST453.01,Desc.,SEMİNAR IN THE HISTORY OF ART AND ARCHIT,3,5,LALE ULUÇ,FFF,678,,M 1152 | M 1152 | M 1152,,,,"                          "
+HIST48B.01,Desc.,"SP.TOP.OTOMAN IST.:ARCH,URBAN.REPRESEN.",3,6,ÇİĞDEM KAFESCİOĞLU,WWW,678,,TB 475 | TB 475 | TB 475,,,,"        EC; TR; SOC; TKL; LL; POLS; PHIL; PSY                  "
+HIST48F.01,Desc.,SP.TOP.IN BYZANTINE ART&ARCHITECTURE II,3,6,ANESTIS VASILAKERIS,MMM,91011,,TB 490 | TB 490,,,,"                          "
+HIST490.01,Desc.,SP.TOP.:NATIONALISM IN THE BALKANS II,3,6,EVANGELOS KECHRIOTIS,MMM,234,,,,,,"                          "
+HIST495.01,Desc.,THESIS I,3,6,ZAFER TOPRAK,,, ,,,,,"                          "
+HIST496.01,Desc.,THESIS II,3,6,ZAFER TOPRAK,,, ,,,,,"                          "
+HIST496.02,Desc.,THESIS II,3,6,NEVRA NECİPOĞLU,,, ,,,,,"                          "
+HIST49E.01,Desc.,SP.TOP:AESTHETICS IN THE MEDERN WORLD,3,6,LALE BABAOĞLU,TTT,234,,M 1200 | M 1200 | M 1200,,,,"                          "
+HIST502.01,Desc.,OTTOMAN HISTORIOGRAPHY,3,7,SELÇUK ESENBEL,TTT,678,,,,,,"                          "
+HIST522.01,Desc.,OTTOMAN INTELLECTUAL HISTORY II,3,7,SELİM DERİNGİL,MMM,678,,,,,,"                          "
+HIST533.01,Desc.,SEMINAR IN BYZANTINE HISTORY,3,7,NEVRA NECİPOĞLU,TBA,,,,,,,"                          "
+HIST557.01,Desc.,SOURCES FOR THE STUDY OF OT.ART&ARC.,3,7,AHMET ERSOY,TTT,234, ,,,,,"                          "
+HIST558.01,Desc.,METHOD&THEORY IN CONSERVATION&RESTORATIO,3,7,GÜNHAN DANIŞMAN,TBA,,,,,,,"                          "
+HIST573.01,Desc.,SEMINAR ON CHINA&CENTRAL ASIA,3,7,SELÇUK ESENBEL,TBA,,,,,,,"                          "
+HIST580.01,Desc.,SP.TOP.IN RELIGIONS STRUGGLE IN EUROPEAN,3,6,SURAIYA FAROQHI,TBA,,,,,,,"                          "
+HIST582.01,Desc.,SEL.READINGS IN CLASSICAL OTT. HISTORY I,3,7,DERİN TERZİOĞLU,WWW,234,,,,,,"                          "
+HIST585.01,Desc.,SEL. READINGS IN LATE OTTOMAN HISTORY II,3,7,ANTONY GREENWOOD,TBA,,,,,,,"                          "
+HIST58A.01,Desc.,SP.TOP.MEA. THE OTTO. CITY IN THE 19TH C,3,6,YÜCEL TERZİBAŞOĞLU,TBA,,,,,,,"                          "
+HIST58C.01,Desc.,SP.TP.:SECULAR MONUMENTS OF BYZAN.CONSTA,3,6,ANESTIS VASILAKERIS,TBA,,,,,,,"                          "
+HIST58D.01,Desc.,SP.TOP.ARCH.&IDENTITY IN 19TH CENTURY,3,6,PAOLO GIRARDELLI,ThThTh,234,,,,,,"                          "
+HIST58K.01,Desc.,SP.TOP.:TRANSNATIONALIZATION IN AGRICUL.,3,6,HURİCİHAN İSLAMOĞLU,WWW,91011,,,,,,"                          "
+HIST601.01,Desc.,HISTORY SEMINAR,3,7,MELTEM TOKSÖZ,TBA,,,,,,,"                          "
+HIST611.01,Desc.,SEMINAR IN LATE OTTOMAN HISTORY,3,7,EVANGELOS KECHRIOTIS,TBA,,,,,,,"                          "
+HIST690.01,Desc.,MASTER THESIS,0,60,DERİN TERZİOĞLU,TBA,,,,,,,"                          "
+HIST69A.01,Desc.,SP.TOP.:HIST OF ISTANBUL UNDER OCCUPAT.,3,7,YAVUZ SELİM KARAKIŞLA,TBA,,,,,,,"                          "
+HIST69M.01,Desc.,SP.TOP.IN CHINESE&SOUTH ASIAN HISTORIOGR,3,6,MELTEM TOKSÖZ,TBA,,,,,,,"                          "
+HIST790.01,Desc.,PH.D.THESIS,0,120,AHMET ERSOY,TBA,,,,,,,"                          "
+JP  102.01,Desc.,JAPANESE FOR BEGINNERS II,3,5,MARİKO ERDOĞAN,TThThFF,15612,,TB 260 | NB 118 | NB 118 | NB 118 | NB 118,,,,"                          "
+JP  202.01,Desc.,INTERMEDIATE JAPANESE II,3,5,MARİKO ERDOĞAN,TThThFF,57834,,KGYM106 | NB 118 | NB 118 | NB 118 | NB 118,,,,"                          "

@@ -1,0 +1,47 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+BIO 101.01,Desc.,GENERAL BIOLOGY I,3,6,ŞAHRU YÜKSEL,MMW,567,,KPARK8 | KPARK8 | KPARK8,,,,"                          "
+BIO 103.01,Desc.,GENERAL BIOLOGY LABORATORY,1,4,ESRA BATTALOĞLU,TT,78,,LAB | LAB,,,,"                          "
+BIO 104.01,Desc.,GENERAL BIOLOGY II,3,5,ARZU ÇELİK,TThTh,556,,KPARK8,,,,"                          "
+BIO 104.02,Desc.,GENERAL BIOLOGY II,3,5,NECLA BİRGÜL İYİSON,TThTh,878,,KPARK8 | KPARK8 | KPARK8,,,,"                          "
+BIO 122.01,Desc.,PRELUDE TO MOLECULAR BIOLOGY,1,1,NECLA BİRGÜL İYİSON,W,8,,KPARK8,,,,"                          "
+BIO 152.01,Desc.,INTRO. TO MODERN BIOLOGY,3,5,HANDE ÇAĞLAYAN,MMW,786,,KPARK1 | KPARK1 | KPARK1,,,,"                          "
+BIO 241.01,Desc.,CELL BIOLOGY,4,4,NESRİN ÖZÖREN,TWW,456,,KPARK8,,,,"                          "
+BIO 252.01,Desc.,GENETICS,4,6,ASLIHAN TOLUN,TThTh,356,,KPARK8 | KPARK8 | KPARK8,,,,"                          "
+BIO 302.01,Desc.,BIOCHEMISTRY II,3,8,NEŞE BİLGİN,MMWW,7834,,KPARK8 | KPARK8 | KPARK8 | KPARK8,,,,"                          "
+BIO 306.01,Desc.,PRAC.  APPL. IN BIOCHEM.TECH.,2,3,AYŞE NAZLI BAŞAK,T,5,,,,,,"                          "
+BIO 332.01,Desc.,TECH. IN BIOLOGICAL RESEARCH,3,5,ŞAHRU YÜKSEL,WWTh,123,,KPARK8 | KPARK8 | KPARK8,,,,"                          "
+BIO 342.01,Desc.,PHYSIOLOGY I,4,3,STEFAN FUSS,MFF,512,, | KPARK8 | KPARK8,,,,"                          "
+BIO 353.01,Desc.,MOLECULAR GENETICS,4,8,ESRA BATTALOĞLU,TTThTh,1212,,KPARK8 | KPARK8 | KPARK8 | KPARK8,,,,"                          "
+BIO 402.01,Desc.,MOLECULAR BIOLOGY II,4,6,KUYAŞ BUĞRA,WWFF,7834,, | N/A | KPARK8 | KPARK8,,,,"                          "
+BIO 407.01,Desc.,SEMINAR,1,2,ASLIHAN TOLUN,T,6,,KPARK8,,,,"                          "
+BIO 407.02,Desc.,SEMINAR,1,2,ASLIHAN TOLUN,W,6,,KPARK8,,,,"                          "
+BIO 475.01,Desc.,PLANT MOLECULAR BIOLOGY & GENETICS,3,6,MÜGE TÜRET,TTW,785,, | N/A | KPARK8,,,,"                          "
+BIO 486.01,Desc.,SP.TOP.IN MO.BIO.&GEN.CONT. OF GENE EXP.,3,4,NEŞE BİLGİN,MTT,634,,,,,,"                          "
+BIO 492.01,Desc.,SP.PROJECT II,3,8,AYŞE NAZLI BAŞAK,,, ,,,,,"                          "
+BIO 492.02,Desc.,SP.PROJECT II,3,8,ESRA BATTALOĞLU,,, ,,,,,"                          "
+BIO 492.03,Desc.,SP.PROJECT II,3,8,NEŞE BİLGİN,,, ,,,,,"                          "
+BIO 492.04,Desc.,SP.PROJECT II,3,8,KUYAŞ BUĞRA,,, ,,,,,"                          "
+BIO 492.05,Desc.,SP.PROJECT II,3,8,HANDE ÇAĞLAYAN,,, ,,,,,"                          "
+BIO 492.06,Desc.,SP.PROJECT II,3,8,AHMET KOMAN,,, ,,,,,"                          "
+BIO 492.07,Desc.,SP.PROJECT II,3,8,ASLIHAN TOLUN,,, ,,,,,"                          "
+BIO 492.08,Desc.,SP.PROJECT II,3,8,NECLA BİRGÜL İYİSON,,, ,,,,,"                          "
+BIO 492.09,Desc.,SP.PROJECT II,3,8,ŞAHRU YÜKSEL,,, ,,,,,"                          "
+BIO 492.10,Desc.,SP.PROJECT II,3,8,MÜGE TÜRET,,, ,,,,,"                          "
+BIO 500.01,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,10,AHMET KOMAN,TBA,,,,,,,"                          "
+BIO 501.01,Desc.,ADVANCED MOLECULAR BIOLOGY,3,7,MÜGE TÜRET,ThThF,676,,,,,,"                          "
+BIO 520.01,Desc.,LAB. PROJECTS IN BIOLOGY,3,15,AHMET KOMAN,TBA,,,,,,,"                          "
+BIO 584.01,Desc.,SP.TOP: GENETICS OF BRAIN CANCER,3,7,NECLA BİRGÜL İYİSON,TBA,,,,,,,"                          "
+BIO 602.01,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,15,AHMET KOMAN,TBA,,,,,,,"                          "
+BIO 682.01,Desc.,SP.TOP.:CONT.OF GENE TRANS.IN HUM.DISEAS,3,7,AHMET KOMAN,TBA,,,,,,,"                          "
+BIO 683.01,Desc.,SP.TOP.:NEURONAL CHANELLOPATHIES,3,7,HANDE ÇAĞLAYAN,TBA,,,,,,,"                          "
+BIO 690.01,Desc.,M.S.THESIS,0,60,NEŞE BİLGİN,TBA,,,,,,,"                          "
+BIO 690.02,Desc.,M.S.THESIS,0,60,KUYAŞ BUĞRA,TBA,,,,,,,"                          "
+BIO 690.03,Desc.,M.S.THESIS,0,60,AHMET KOMAN,TBA,,,,,,,"                          "
+BIO 690.04,Desc.,M.S.THESIS,0,60,ASLIHAN TOLUN,TBA,,,,,,,"                          "
+BIO 696.01,Desc.,ADV.TOP:SIGNAL TRANSDUCTION&HUMAN DISEAS,3,7,KUYAŞ BUĞRA,TBA,,,,,,,"                          "
+BIO 790.01,Desc.,Ph.D.THESIS,0,120,AYŞE NAZLI BAŞAK,TBA,,,,,,,"                          "
+BIO 790.02,Desc.,Ph.D.THESIS,0,120,ESRA BATTALOĞLU,TBA,,,,,,,"                          "
+BIO 790.03,Desc.,Ph.D.THESIS,0,120,NEŞE BİLGİN,TBA,,,,,,,"                          "
+BIO 790.04,Desc.,Ph.D.THESIS,0,120,HANDE ÇAĞLAYAN,TBA,,,,,,,"                          "
+BIO 790.05,Desc.,Ph.D.THESIS,0,120,ASLIHAN TOLUN,TBA,,,,,,,"                          "
+BIO 790.06,Desc.,Ph.D.THESIS,0,120,AHMET KOMAN,TBA,,,,,,,"                          "

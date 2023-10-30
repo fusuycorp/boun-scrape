@@ -1,0 +1,33 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EE  206.01,Desc.,ELECTROTECHNOLOGY,4,4,AVNİ MORGÜL,ThTh,12,,,,,,"                          "
+EE  210.01,Desc.,INTRODUCTION TO ELECTRICAL ENGINEERING(I,3,6,LEVENT ARSLAN,TTTh,565,,,,,,"                          "
+EE  210.02,Desc.,INTRODUCTION TO ELECTRICAL ENGINEERING(P,3,6,AYŞIN ERTÜZÜN,TTTh,565,,,,,,"                          "
+EE  212.01,Desc.,INTRODUCTION TO ELECTRONIC ENGINEERING(C,3,4,GÜNHAN DÜNDAR,MMW,565,,,,,,"                          "
+EE  334.01,Desc.,ELECTRONICS II,4,6,GÜNHAN DÜNDAR,TTThTh,1212,,,,,,"                          "
+EE  338.01,Desc.,ELECTRONICS LABORATORY I,2,3,GÜNHAN DÜNDAR,T,5,,,,,,"                          "
+EE  352.01,Desc.,SYSTEM DYNAMICS & CONTROL,3,5,KADRİ ÖZÇALDIRAN,MWWTh,4345,,,,,,"                          "
+EE  364.01,Desc.,APPLICATIONS OF ELECTROMAGNETIC WAVES,2,3,SELİM ŞEKER,M,6,,,,,,"                          "
+EE  374.01,Desc.,COMMUNICATION ENGINEERING,4,5,EMİN ANARIM,TTFF,3445,,,,,,"                          "
+EE  432.01,Desc.,DIGITAL ELECTRONICS,3,6,YASEMİN KAHYA,TTTh,121,,,,,,"                          "
+EE  438.01,Desc.,DESIGN WITH INTEGRATED CIRCUITS,3,6,YASEMİN KAHYA,TThTh,434,,,,,,"                          "
+EE  470.01,Desc.,MOBILE COMMUNICATION,3,6,HAKAN DELİÇ,WWF,563,,,,,,"                          "
+EE  478.01,Desc.,INTRODUCTION TO INFORMATION THEORY,3,5,AYŞIN ERTÜZÜN,MMTh,562,,,,,,"                          "
+EE  492.01,Desc.,PROJECT,4,6,M. OKYAY KAYNAK,TBA, ,,,,,,"                          "
+EE  497.01,Desc.,SP.TOP.(JAVA PROGRAMMING),3,6,IŞIL BOZMA,TThTh,578,,,,,,"                          "
+EE  544.01,Desc.,DATA COMPRESSION,3,6,EMİN ANARIM,TFF,612,,,,,,"                          "
+EE  550.01,Desc.,ARTIFICIAL NEURAL NETWORKS,3,7,KEMAL CILIZ,MMW,566,,,,,,"                          "
+EE  562.01,Desc.,MICROWAVES,3,6,AVNİ MORGÜL,MMF,234,,,,,,"                          "
+EE  576.01,Desc.,MACHINE VISION,3,6,IŞIL BOZMA,TTTh,785,,,,,,"                          "
+EE  578.01,Desc.,SPEECH PROCESSING,3,7,LEVENT ARSLAN,TFF,356,,,,,,"                          "
+EE  579.01,Desc.,GRADUATE SEMINAR,0,6,M. OKYAY KAYNAK,TBA, ,,,,,,"                          "
+EE  580.01,Desc.,SP.TOP.:INFORMATION ENG.,3,7,KEMAL CILIZ,MWW,434,,,,,,"                          "
+EE  585.01,Desc.,SP.TOP.ELECTROMAGNETIC COMPABILITY,3,6,SELİM ŞEKER,WWTh,124,,,,,,"                          "
+EE  592.01,Desc.,SEL.TOP.(COMPUTATIONAL INTELLIGENCE),3,7,M. OKYAY KAYNAK,WWTh,896,,,,,,"                          "
+EE  632.01,Desc.,SYSTEM DESIGN WITH MICROELEC. DEVICES,3,6,ÖMER CERİD,TBA, ,,,,,,"                          "
+EE  638.01,Desc.,ADVANCED VLSI DESIGN,3,6,GÜNHAN DÜNDAR,TBA, ,,,,,,"                          "
+EE  640.01,Desc.,MICROPROCESSOR SYSTEM DESIGN,3,6,ÖMER CERİD,TBA, ,,,,,,"                          "
+EE  643.01,Desc.,DIGITAL MODULATION,3,6,HAKAN DELİÇ,TBA, ,,,,,,"                          "
+EE  656.01,Desc.,ANALYSIS OF NONLINEAR CONTROL SYSTEMS,3,6,YAĞMUR DENİZHAN,TBA, ,,,,,,"                          "
+EE  690.01,Desc.,M.S.THESIS,0,60,M. OKYAY KAYNAK,TBA, ,,,,,,"                          "
+EE  699.01,Desc.,GUIDED RESEARCH,4,8,M. OKYAY KAYNAK,TBA, ,,,,,,"                          "
+EE  790.01,Desc.,Ph.D.THESIS,0,120,M. OKYAY KAYNAK,TBA, ,,,,,,"                          "

@@ -1,0 +1,108 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CMPE150.01,Desc.,INTRODUCTION TO COMPUTING,3,5,PINAR YOLUM BİRBİL,M,2,,NH 405,15.01.2010,3,CMPE,"                          "
+CMPE150.02,Desc.,INTRODUCTION TO COMPUTING,3,5,PINAR YOLUM BİRBİL,M,2,,NH 405,15.01.2010,3,CMPE,"        CMPE                  "
+CMPE150.03,Desc.,INTRODUCTION TO COMPUTING,3,5,TUNA TUĞCU,M,2,,NH 105,15.01.2010,3,ME,"        CMPE                  "
+CMPE150.04,Desc.,INTRODUCTION TO COMPUTING,3,5,TUNA TUĞCU,M,2,,NH 105,15.01.2010,3,ME,"                          "
+CMPE150.05,Desc.,INTRODUCTION TO COMPUTING,3,5,TUNA TUĞCU,M,2,,NH 105,15.01.2010,3,,"                          "
+CMPE150.06,Desc.,INTRODUCTION TO COMPUTING,3,5,SUZAN ÜSKÜDARLI,T,8,,NH 101,15.01.2010,3,,"                          "
+CMPE150.07,Desc.,INTRODUCTION TO COMPUTING,3,5,SUZAN ÜSKÜDARLI,T,8,,NH 101,15.01.2010,3,,"                          "
+CMPE150.08,Desc.,INTRODUCTION TO COMPUTING,3,5,SUZAN ÜSKÜDARLI,T,8,,NH 101,15.01.2010,3,CHE,"                          "
+CMPE150.09,Desc.,INTRODUCTION TO COMPUTING,3,5,SUZAN ÜSKÜDARLI,T,8,,NH 101,15.01.2010,3,CHE,"                          "
+CMPE150.10,Desc.,INTRODUCTION TO COMPUTING,3,5,SUZAN ÜSKÜDARLI,T,8,,NH 101,15.01.2010,3,,"                          "
+CMPE160.01,Desc.,INTRODUCTION TO OBJECT ORIENTED PROG.,4,9,ALİ VAHİT ŞAHİNER,TWW,767,,ETA A2 | ETA A2 | ETA A2,18.01.2010,3,,"                          "
+CMPE210.01,Desc.,FUNDAMENTALS OF OBJECT ORIENTED PROG.,4,5,ALİ VAHİT ŞAHİNER,TWW,767,,ETA A2 | ETA A2 | ETA A2,19.01.2010,3,CET-COGS,"                          "
+CMPE220.01,Desc.,DISCRETE COMPUTATIONAL STRUCTURES,3,4,HALUK BİNGÖL,MTT,256,,ETA A2 | ETA A2 | ETA A2,14.01.2010,3,,"                          "
+CMPE230.01,Desc.,SYSTEMS PROGRAMMING,4,6,CAN ÖZTURAN,TTW,121,,ETA A5 | ETA A5 | ETA A5,16.01.2010,3,,"                          "
+CMPE250.01,Desc.,DATA STRUCTURES & ALGORITHMS,4,6,FATİH ALAGÖZ,TTW,782,,NH 102 | NH 102 | NH 102,18.01.2010,2,,"                          "
+CMPE300.01,Desc.,ANALYSIS OF ALGORITHMS,3,5,TUNGA GÜNGÖR,TWW,567,,ETA A3 | ETA A3 | ETA A3,15.01.2010,1,,"                          "
+CMPE322.01,Desc.,OPERATING SYSTEMS,4,5,M. UFUK ÇAĞLAYAN,WThTh,178,,ETA A2 | ETA A2 | ETA A2,07.01.2010,2,,"                          "
+CMPE343.01,Desc.,INTRO.TO PROBA.&STATIS.FOR COM.ENGINEERS,3,6,ETHEM ALPAYDIN,MMF,456,,ETA A2 | ETA A2 | ETA A2,19.01.2010,1,,"                          "
+CMPE344.01,Desc.,COMPUTER ORGANIZATION,4,5,OĞUZ TOSUN,MMTh,236,,KPARK1 | KPARK1 | ETA A2,13.01.2010,2,,"                          "
+CMPE415.01,Desc.,THEORY OF COMPUTATION,3,6,CEM SAY,WWF,455,,ETA A2 | ETA A2 | ETA A5,06.01.2010,1,,"                          "
+CMPE422.01,Desc.,DATABASE SYSTEMS,3,6,TAFLAN GÜNDEM,MFF,678,,ETA A2 | ETA A2 | ETA A2,19.01.2010,3,,"                          "
+CMPE443.01,Desc.,PRINCIPLES OF EMBEDDED SYSTEMS DESIGN,4,6,ARDA YURDAKUL,ThThTh,456,,ETA B5 | ETA A5 | ETA A5,06.01.2010,1,,"        CMPE                  "
+CMPE450.01,Desc.,SOFTWARE ENGINEERING,4,7,AYŞE BAŞAR,TThTh,323,,ETA A2 | ETA A2 | ETA A2,12.01.2010,2,,"                          "
+CMPE460.01,Desc.,INTRODUCTION TO COMPUTER GRAPHICS,3,6,ALİ VAHİT ŞAHİNER,TTW,453,,ETA B5 | ETA B5 | ETA A2,09.01.2010,1,,"                          "
+CMPE464.01,Desc.,IMAGE PROCESSING FOR COMPUTER GRAPHICS,3,6,LALE AKARUN,MMT,121,,ETA A6 | ETA A6 | ETA A6,07.01.2010,2,,"                          "
+CMPE470.01,Desc.,COMPUTER PERFORMANCE EVALUATION,3,6,CEM ERSOY,MTT,678,,ETA A5 | ETA A5 | ETA A5,18.01.2010,2,,"                          "
+CMPE475.01,Desc.,COMPUTER NETWORKS,3,6,M. UFUK ÇAĞLAYAN,ThThTh,145,,ETA A2 | ETA A2 | ETA A2,06.01.2010,3,,"                          "
+CMPE491.01,Desc.,SPEC. PROJECT IN COMPUTER ENGINEERING,3,6,ALİ VAHİT ŞAHİNER,TBA,,,,19.01.2010,1,,"                          "
+CMPE492.01,Desc.,PROJECT,4,7,ALİ VAHİT ŞAHİNER,TBA,,,,06.01.2010,3,,"                          "
+CMPE496.01,Desc.,SP.TOP.IN CMPE:HUMAN COMPUTER INTERACTIO,3,6,SADIK FİKRET GÜRGEN,MWW,445, ,ETA B5 | ETA B5 | ETA B5,16.01.2010,3,,"                          "
+CMPE49A.01,Desc.,SP.TOP.IN CMPE:INTRODUCTION TO ROBOTICS,3,6,H. LEVENT AKIN,MMM,345,,ETA B3 | ETA B3 | ETA B3,14.01.2010,2,,"                          "
+CMPE49E.01,Desc.,SP.TOP.IN CMPE:CONCURRENT&DISTRIBUTED SY,3,6,MEHMET ALPER ŞEN,TTW,672,,ETA A3 | ETA A3 | ETA A2,15.01.2010,2,,"                          "
+CMPE511.01,Desc.,COMPUTER ARCHITECTURE,3,8,OĞUZ TOSUN,ThThTh,234,,ETA A3 | ETA A3 | ETA A3,09.01.2010,3,,"                          "
+CMPE521.01,Desc.,PRINCIPLES OF DATABASE SYSTEMS,3,8,TAFLAN GÜNDEM,WWW,678,,ETA A6 | ETA A6 | ETA A6,19.01.2010,2,,"                          "
+CMPE524.01,Desc.,COMPUTER NETWORK DESIGN,3,8,CEM ERSOY,TTT,123,,ETA B5 | ETA B5 | ETA B5,15.01.2010,3,,"                          "
+CMPE537.01,Desc.,COMPUTER VISION,3,8,LALE AKARUN,ThThTh,678,,ETA A6 | ETA A6 | ETA A6,06.01.2010,1,,"                          "
+CMPE540.01,Desc.,PRINCIPLES OF ARTIFICIAL INTELLIGENCE,3,8,PINAR YOLUM BİRBİL,ThThTh,567,,ETA B5 | ETA B5 | ETA B5,13.01.2010,1,,"                          "
+CMPE542.01,Desc.,AUTOMATED THEOREM PROVING,3,8,TUNGA GÜNGÖR,WWW,234,,ETA A3 | ETA A3 | ETA A3,06.01.2010,3,,"                          "
+CMPE544.01,Desc.,PATTERN RECOGNITION,3,8,ETHEM ALPAYDIN,FFF,234,,ETA B5 | ETA B5 | ETA B5,11.01.2010,2,,"                          "
+CMPE550.01,Desc.,ADVANCED TOPICS IN SOFTWARE ENGINEERING,3,8,AYŞE BAŞAR,WWW,123,,ETA A6 | ETA A6 | ETA A6,08.01.2010,2,,"                          "
+CMPE579.01,Desc.,GRADUATE SEMINAR,0,8,HALUK BİNGÖL,T,4,,,,0,,"                          "
+CMPE581.01,Desc.,SP.TOP:COM.ENG.FOR MOB./WIRELESS NETWORK,3,8,FATİH ALAGÖZ,WWW,678,,ETA B5 | ETA B5 | ETA B5,13.01.2010,2,,"                          "
+CMPE584.01,Desc.,SP.TOP.IN CMPE:RECONFIGURABLE COMPUTING,3,8,ARDA YURDAKUL,TTT,678, ,ETA B3 | ETA B3 | ETA B3,15.01.2010,3,,"                          "
+CMPE585.01,Desc.,SP.TOP.IN CMPE:THEORY OF SEQUENTIAL MACH,3,8,CEM SAY,MMM,456,,ETA A6 | ETA A6 | ETA A6,12.01.2010,2,,"                          "
+CMPE58A.01,Desc.,SP.TP.IN CMPE:COOPERAT.STUD.IN THE CONTE,3,8,SUZAN ÜSKÜDARLI,TTT,567, ,ETA A6 | ETA A6 | ETA A6,12.01.2010,1,,"                          "
+CMPE58B.01,Desc.,SP.TOP.IN CMPE:COMPLEX SYSTEMS,3,8,HALUK BİNGÖL,TTT,234,,ETA A6 | ETA A6 | ETA A6,16.01.2010,1,,"                          "
+CMPE58C.01,Desc.,SP.TOP. IN CMPE: WIRELESS SENSOR NETWORKS,3,8,TUNA TUĞCU,TTT,678,,ETA B5 | ETA B5 | ETA B5,09.01.2010,1,,"                          "
+CMPE58K.01,Desc.,SP.TOP.IN CMPE:BAYESIAN STA.&MACH.LEARN.,3,8,ALİ TAYLAN CEMGİL,ThThTh,234,,ETA A5 | ETA A5 | ETA A5,18.01.2010,1,,"                          "
+CMPE58N.01,Desc.,SP.TOP.MONTE C.METH.FOR DATA A.&SCI.COMP,3,8,ALİ TAYLAN CEMGİL,MMM,123,,ETA B5 | ETA B5 | ETA B5,11.01.2010,2,,"                          "
+CMPE58S.01,Desc.,SP.TP.COMPUTER AIDED VERIFICATION,3,8,MEHMET ALPER ŞEN,MMM,456,,ETA A3 | ETA A3 | ETA A3,16.01.2010,2,,"                          "
+CMPE58U.01,Desc.,SP.TOP.IN CMPE:MULTI-ROBOT SYSTEMS,3,8,H. LEVENT AKIN,ThThTh,678,,ETA A3 | ETA A3 | ETA A3,18.01.2010,3,,"                          "
+CMPE58V.01,Desc.,SP.TOP.IN CMPE.:SOFTWARE MEASURES,3,8,JEAN MARC DESHARNAIS,FFF,678,,ETA A3 | ETA A3 | ETA A3,06.01.2010,1,,"                          "
+CMPE58W.01,Desc.,SP.TOP.IN CMPE:CLOUD COMPUTING,3,8,EREK GÖKTÜRK,ThThTh,8910,,ETA B5 | ETA B5 | ETA B5,18.01.2010,1,,"                          "
+CMPE597.01,Desc.,SP.TOP.IN CMPE:GRAPH ALGORITHMS,3,8,CAN ÖZTURAN,WWW,234,,ETA A5 | ETA A5 | ETA A5,12.01.2010,3,,"                          "
+CMPE660.01,Desc.,ADVANCED TOPICS IN BROADBAND NETWORKS,3,,TUNA TUĞCU,,, ,,15.01.2010,1,,"                          "
+CMPE690.01,Desc.,M.S.THESIS,0,60,OĞUZ TOSUN,TBA,,,,,0,,"                          "
+CMPE690.02,Desc.,M.S.THESIS,0,60,TAFLAN GÜNDEM,TBA,,,,,0,,"                          "
+CMPE690.03,Desc.,M.S.THESIS,0,60,CEM ERSOY,TBA,,,,,0,,"                          "
+CMPE690.04,Desc.,M.S.THESIS,0,60,LALE AKARUN,TBA,,,,,0,,"                          "
+CMPE690.05,Desc.,M.S.THESIS,0,60,PINAR YOLUM BİRBİL,TBA,,,,,0,,"                          "
+CMPE690.06,Desc.,M.S.THESIS,0,60,TUNGA GÜNGÖR,TBA,,,,,0,,"                          "
+CMPE690.07,Desc.,M.S.THESIS,0,60,ETHEM ALPAYDIN,TBA,,,,,0,,"                          "
+CMPE690.08,Desc.,M.S.THESIS,0,60,AYŞE BAŞAR,TBA,,,,,0,,"                          "
+CMPE690.09,Desc.,M.S.THESIS,0,60,HALUK BİNGÖL,TBA,,,,,0,,"                          "
+CMPE690.10,Desc.,M.S.THESIS,0,60,ARDA YURDAKUL,TBA,,,,,0,,"                          "
+CMPE690.11,Desc.,M.S.THESIS,0,60,CEM SAY,TBA,,,,,0,,"                          "
+CMPE690.12,Desc.,M.S.THESIS,0,60,SUZAN ÜSKÜDARLI,TBA,,,,,0,,"                          "
+CMPE690.13,Desc.,M.S.THESIS,0,60,FATİH ALAGÖZ,TBA,,,,,0,,"                          "
+CMPE690.14,Desc.,M.S.THESIS,0,60,ALİ TAYLAN CEMGİL,TBA,,,,,0,,"                          "
+CMPE690.15,Desc.,M.S.THESIS,0,60,ALİ VAHİT ŞAHİNER,TBA,,,,,0,,"                          "
+CMPE690.16,Desc.,M.S.THESIS,0,60,TUNA TUĞCU,TBA,,,,,0,,"                          "
+CMPE690.17,Desc.,M.S.THESIS,0,60,MEHMET ALPER ŞEN,TBA,,,,,0,,"                          "
+CMPE690.18,Desc.,M.S.THESIS,0,60,CAN ÖZTURAN,TBA,,,,,0,,"                          "
+CMPE690.19,Desc.,M.S.THESIS,0,60,H. LEVENT AKIN,TBA,,,,,0,,"                          "
+CMPE690.20,Desc.,M.S.THESIS,0,60,M. UFUK ÇAĞLAYAN,TBA,,,,,0,,"                          "
+CMPE690.21,Desc.,M.S.THESIS,0,60,SADIK FİKRET GÜRGEN,TBA,,,,,0,,"                          "
+CMPE690.22,Desc.,M.S.THESIS,0,60,FATİH ALAGÖZ,TBA,,,,,0,,"                          "
+CMPE691.02,Desc.,SPECIAL STUDIES IN COMPUTER ENGINEERING,3,8,AYŞE BAŞAR,TBA,,,,09.01.2010,2,,"                          "
+CMPE699.01,Desc.,GUIDED RESEARCH IN PhD-I,4,8,OĞUZ TOSUN,TBA,,,,,0,,"                          "
+CMPE699.02,Desc.,GUIDED RESEARCH IN PhD-I,4,8,SADIK FİKRET GÜRGEN,TBA,,,,,0,,"                          "
+CMPE699.03,Desc.,GUIDED RESEARCH IN PhD-I,4,8,FATİH ALAGÖZ,TBA,,,,,0,,"                          "
+CMPE699.04,Desc.,GUIDED RESEARCH IN PhD-I,4,8,TUNA TUĞCU,TBA,,,,,0,,"                          "
+CMPE699.05,Desc.,GUIDED RESEARCH IN PhD-I,4,8,ETHEM ALPAYDIN,TBA,,,,,0,,"                          "
+CMPE699.06,Desc.,GUIDED RESEARCH IN PhD-I,4,8,AYŞE BAŞAR,TBA,,,,,0,,"                          "
+CMPE699.07,Desc.,GUIDED RESEARCH IN PhD-I,4,8,LALE AKARUN,TBA,,,,,0,,"                          "
+CMPE69A.01,Desc.,GUIDED RESEARCH IN PHD II,0,8,SADIK FİKRET GÜRGEN,TBA,,,,07.01.2010,3,,"                          "
+CMPE790.01,Desc.,Ph.D.THESIS,0,120,OĞUZ TOSUN,TBA,,,,,0,,"                          "
+CMPE790.02,Desc.,Ph.D.THESIS,0,120,TAFLAN GÜNDEM,TBA,,,,,0,,"                          "
+CMPE790.03,Desc.,Ph.D.THESIS,0,120,CEM ERSOY,TBA,,,,,0,,"                          "
+CMPE790.04,Desc.,Ph.D.THESIS,0,120,LALE AKARUN,TBA,,,,,0,,"                          "
+CMPE790.05,Desc.,Ph.D.THESIS,0,120,PINAR YOLUM BİRBİL,TBA,,,,,0,,"                          "
+CMPE790.06,Desc.,Ph.D.THESIS,0,120,TUNGA GÜNGÖR,TBA,,,,,0,,"                          "
+CMPE790.07,Desc.,Ph.D.THESIS,0,120,ETHEM ALPAYDIN,TBA,,,,,0,,"                          "
+CMPE790.08,Desc.,Ph.D.THESIS,0,120,AYŞE BAŞAR,TBA,,,,,0,,"                          "
+CMPE790.09,Desc.,Ph.D.THESIS,0,120,HALUK BİNGÖL,TBA,,,,,0,,"                          "
+CMPE790.10,Desc.,Ph.D.THESIS,0,120,ARDA YURDAKUL,TBA,,,,,0,,"                          "
+CMPE790.11,Desc.,Ph.D.THESIS,0,120,CEM SAY,TBA,,,,,0,,"                          "
+CMPE790.12,Desc.,Ph.D.THESIS,0,120,FATİH ALAGÖZ,TBA,,,,,0,,"                          "
+CMPE790.13,Desc.,Ph.D.THESIS,0,120,HALUK BİNGÖL,TBA,,,,,0,,"                          "
+CMPE790.14,Desc.,Ph.D.THESIS,0,120,ALİ TAYLAN CEMGİL,TBA,,,,,0,,"                          "
+CMPE790.15,Desc.,Ph.D.THESIS,0,120,ALİ VAHİT ŞAHİNER,TBA,,,,,0,,"                          "
+CMPE790.16,Desc.,Ph.D.THESIS,0,120,TUNA TUĞCU,TBA,,,,,0,,"                          "
+CMPE790.17,Desc.,Ph.D.THESIS,0,120,MEHMET ALPER ŞEN,TBA,,,,,0,,"                          "
+CMPE790.18,Desc.,Ph.D.THESIS,0,120,CAN ÖZTURAN,TBA,,,,,0,,"                          "
+CMPE790.19,Desc.,Ph.D.THESIS,0,120,H. LEVENT AKIN,TBA,,,,,0,,"                          "
+CMPE790.20,Desc.,Ph.D.THESIS,0,120,M. UFUK ÇAĞLAYAN,TBA,,,,,0,,"                          "
+CMPE790.21,Desc.,Ph.D.THESIS,0,120,SADIK FİKRET GÜRGEN,TBA,,,,,0,,"                          "

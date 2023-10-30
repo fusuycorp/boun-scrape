@@ -1,0 +1,14 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.01,Desc.,CALCULUS I,4,6,MEHMET ARSLAN,MMMMTTTTWWThTh,125612561212,,,,,,"                          "
+MATH101.02,Desc.,CALCULUS I,4,6,MEHMET ARSLAN,MMMMTTTTWWThTh,347834783434,,,,,,"                          "
+MATH102.01,Desc.,CALCULUS II,4,6,SEFA FEZA ARSLAN,MMMMTTWWWWThTh,123434123434,,,,,,"                          "
+MATH102.02,Desc.,CALCULUS II,4,6,SEFA FEZA ARSLAN,MMTTTTWWThThFF,676789676789,,,,,,"                          "
+MATH102.03,Desc.,CALCULUS II,4,6,ÇAĞRI KARAKURT,MMMMTTTTWWThTh,125612561212,,,,,,"                          "
+MATH102.04,Desc.,CALCULUS II,4,6,ÇAĞRI KARAKURT,MMMMTTTTWWThTh,347834783434,,,,,,"                          "
+MATH111.01,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,TALİN BUDAK,TTTTTWWWWThThTh,123781278123,,,,,,"        MATH; MEDU; TMAT; PRMA                  "
+MATH201.01,Desc.,MATRIX THEORY,4,5,OLCAY COŞKUN,MMMMTTTTWWThTh,125612561212,,,,,,"                          "
+MATH201.02,Desc.,MATRIX THEORY,4,5,OLCAY COŞKUN,MMMMTTTTWWThTh,347834783434,,,,,,"                          "
+MATH202.01,Desc.,DIFFERENTIAL EQUATIONS,4,7,ŞEFİKA KUZGUN YENİSEY,MMTTWWWWThThFF,787812787812,,,,,,"                          "
+MATH361.01,Desc.,COMBINATORICS,3,6,ÜMİT IŞLAK,MMTTWWThThFF,7812781278,,,,,,"                          "
+MATH48M.01,Desc.,SEL.TP.IN GROUP THEORY,3,6,OLCAY COŞKUN,WThThFFF,767123,,,,,,"                          "
+MATH48X.01,Desc.,SEL.TP.PROBABLITY THEORY:INTRO.TO PROBABILISTIC NUMBER THEORY,3,6,ÜMİT IŞLAK,MMWWFF,565656,,,,,,"                          "

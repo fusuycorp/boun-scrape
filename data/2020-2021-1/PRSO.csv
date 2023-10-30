@@ -1,0 +1,24 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PRED101.01,Desc.,"HIST.,PHIL.& PRINCIPLES OF PERSCHOOL EDUCATION I",3,8,ERSOY ERDEMİR,ThThTh,567,Online,,,,,"                          "
+PRED103.01,Desc.,THEORIES OF CHILD DEVELOPMENT I,3,7,AYŞEGÜL METİNDOĞAN ,WWTh,345,Online,,,,,"                          "
+PRED107.01,Desc.,CHILDREN'S HEALTH&HUMAN PHYSIOLOGY I,3,4,BAHAR KURAL,MMM,123,Online,,,,,"                          "
+PRED120.01,Desc.,ACADEMIC ORIENTATION IN PRIMARY EDUC.,3,6,DİLAN BAYINDIR,FFFF,1234,Online,,,,,"                          "
+PRED210.01,Desc.,MUSIC & MOVEMENT IN EARLY CHILDHOOD,3,6,IŞIK SABIRLI,ThThThTh,1234,Online,,,,,"                          "
+PRED210.02,Desc.,MUSIC & MOVEMENT IN EARLY CHILDHOOD,3,6,AYÇA TEKİN KELEŞOĞLU,FFFF,5678,Online,,,,,"                          "
+PRED211.01,Desc.,CURRICULUM DEVELOPMENT I,4,7,MİNE GÖL GÜVEN,MMFFF,67678,Online,,,,,"                          "
+PRED214.01,Desc.,LANGUAGE DEVELOPMENT&LITERACY IN EARLY ,3,5,BURCU ÜNLÜTABAK,TWW,612,Online,,,,,"                          "
+PRED310.01,Desc.,SPECIAL EDUCATION IN EARLY AND PRIMARY Y,3,7,FATMA NALAN BABÜR,TTW,785,Online,,,,,"                          "
+PRED313.01,Desc.,EARLY INTERVENTION:THEORY AND PRACTICE,3,7,ZEYNEP BERNA ERDİLLER YATMAZ,WThTh,723,Online,,,,,"                          "
+PRED325.01,Desc.,DEVELOPMENTAL EXPERIENCES IN MATH.&SCIEN,3,4,EBRU ZEYNEP MUĞALOĞLU,MMT,343,Online,,,,,"                          "
+PRED380.01,Desc.,UNDERSTANDİNG&GUIDING CHILDREN'S BEHAVIO,3,4,MİNE GÖL GÜVEN,FFFF,2345,Online,,,,,"                          "
+PRED411.01,Desc.,APP. RESEARCH IN CHILD DEVELOPMENT & FAM,4,8,FATMA NALAN BABÜR,WWThTh,7867,Online,,,,,"                          "
+PRED411.02,Desc.,APP. RESEARCH IN CHILD DEVELOPMENT & FAM,4,8,AYŞEGÜL METİNDOĞAN ,WWThTh,6767,Online,,,,,"                          "
+PRED413.01,Desc.,PRACTICE TEAC. IN PRESCHOOL EDUCATION I,4,7,ERSOY ERDEMİR,MMMMMMMMTT,1234567867, , | N/A | N/A | N/A | ET B413 | ET B413,,,,"                          "
+PRED413.02,Desc.,PRACTICE TEAC. IN PRESCHOOL EDUCATION I,4,7,MİNE GÖL GÜVEN,ThThFFFFFFFF,2312345678, ,,,,,"                          "
+PRED413.03,Desc.,PRACTICE TEAC. IN PRESCHOOL EDUCATION I,4,7,ZEYNEP BERNA ERDİLLER YATMAZ,WWFFFFFFFF,4512345678, ,,,,,"                          "
+PRED414.01,Desc.,PRACTICE TEAC.IN PRESCHOOL EDUCATION II,4,7,ZEYNEP BERNA ERDİLLER YATMAZ,WWFFFFFFFF,4512345678,Online,,,,,"                          "
+PRED416.01,Desc.,FAMILY ISSUES IN PRESCHOOL EDUCATION,3,7,ERSOY ERDEMİR,TTT,234,Online,,,,,"                          "
+PRED420.01,Desc.,CREATIVE DRAMA ACTIVITIES,3,4,BÜLENT SEZGİN,TTT,91011,Online,,,,,"                          "
+PRED423.01,Desc.,DATA PROCESSING,4,7,AYŞESİM DİRİ,WWThTh,2367,Online,,,,,"                          "
+PRED423.02,Desc.,DATA PROCESSING,4,7,AYŞESİM DİRİ,WWThTh,2345,Online,,,,,"                          "
+PRED48A.01,Desc.,SP.TP.IN PRIMARY EDUCATION:ONLINE CHILDHOODS,3,4,SERAN DEMİRAL,FFF,234,Online,,,,,"                          "

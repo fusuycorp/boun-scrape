@@ -1,0 +1,35 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ME  120.01,Desc.,INTRODUCTION TO MECHANICAL ENGINEERING ,3,8,NURİ BÜLENT ERSOY,TWW,556,,M 3100 | M 3100 | M 3100,,,,"                          "
+ME  210.01,Desc.,MATERIALS SCIENCE,3,5,ERCAN BALIKÇI,TTTh,342,,M 2230 | M 2230 | M 3100,,,,"                          "
+ME  212.01,Desc.,MATERIALS SCIENCE,4,5,ERCAN BALIKÇI,TTTh,121,,M 3100 | M 3100 | M 3100,,,,"                          "
+ME  242.01,Desc.,DYNAMICS,3,5,KUNT ATALIK,MMW,343,,M 2170 | M 2170 | M 2230,,,,"                          "
+ME  242.02,Desc.,DYNAMICS,3,5,ŞEBNEM ÖZÜPEK,TTTh,566,,M 3120 | M 3120 | M 3120,,,,"                          "
+ME  263.01,Desc.,THERMODYNAMICS I,4,5,HASAN BEDİR,MMWW,5656,,M 2181 | M 2181 | M 2181 | M 2181,,,,"                          "
+ME  303.01,Desc.,COMPUTER APPLICATIONS IN MECHANICAL ENG,3,5,HALUK ÖRS,MMW,787,,M 2181 | M 2181 | M 1200,,,,"                          "
+ME  318.01,Desc.,MANUFACTURING TECHNIQUES,4,6,SABRİ ALTINTAŞ,MMTh,345,,M 3100 | M 3100 | M 3100,,,,"                          "
+ME  324.01,Desc.,MACHINE DESIGN I,4,6,EMRE AKSAN,TTThTh,3434,,M 2181 | M 2181 | M 2181 | M 2181,,,,"                          "
+ME  335.01,Desc.,MODELING & CONTROL OF DYNAMIC SYSTEMS,4,5,EŞREF EŞKİNAT,WWFF,1212,,M 3120 | M 3120 | M 2200 | M 2200,,,,"                          "
+ME  345.01,Desc.,MECHANICS OF MATERIALS I,4,6,NURİ BÜLENT ERSOY,TTThTh,3434,,M 2152 | M 2152 | M 2231 | M 2231,,,,"                          "
+ME  353.01,Desc.,FLUID MECHANICS I,4,6,HALUK ÖRS,MMWW,1234,,M 3100 | M 3100 | M 2171 | M 2171,,,,"                          "
+ME  411.01,Desc.,MATERIALS ENGINEERING,3,5,MAHMUT A. SAVAŞ,MMTh,345,,M 2181 | M 2181 | M 3120,,,,"                          "
+ME  425.01,Desc.,MECHANICAL VIBRATIONS,3,5,EMRE KÖSE,MMTh,564,,M 3100 | M 3100 | M 3100,,,,"                          "
+ME  429.01,Desc.,MECHANICAL &THERMAL DESIGN,4,7,EMRE AKSAN,T,5,,M 1181,,,,"                          "
+ME  430.01,Desc.,AUTOMOTIVE ENGINEERING,3,5,GÜNAY ANLAŞ,TTTh,343,,M 3100 | M 3100 | M 3100,,,,"                          "
+ME  453.01,Desc.,GAS DYNAMICS,3,5,ALİ ECDER,TThTh,112,,M 2231 | M 2231 | M 2231,,,,"                          "
+ME  474.01,Desc.,HEAT ENGINES,3,5,HASAN BEDİR,MWW,223,,M 2231 | M 2231 | M 2231,,,,"                          "
+ME  492.01,Desc.,PROJECT,4,8,EMRE AKSAN,TTT,678,,M 2180 | M 2180 | M 2180,,,,"                          "
+ME  502.01,Desc.,ADVANCED ENGINEERING MATHEMATICS II,3,8,ALİ ECDER,MWW,112,,M 2171 | M 2181 | M 2181,,,,"                          "
+ME  512.01,Desc.,PRINCIPLES OF MANUFACTURING PROCESSES,3,8,MAHMUT A. SAVAŞ,MThTh,623,,M 2231 | M 1152 | M 1152,,,,"                          "
+ME  521.01,Desc.,ENGINEERING DESIGN,3,8,FAZIL ÖNDER SÖNMEZ,WWTh,348,,M 2203 | M 2203 | M 3100,,,,"                          "
+ME  530.01,Desc.,ADVANCED DYNAMICS,3,8,EŞREF EŞKİNAT,MWW,556,,M 2203 | M 1181 | M 1181,,,,"                          "
+ME  561.01,Desc.,CONDUCTION HEAT TRANSFER,3,8,KUNT ATALIK,MWW,878,,M 2170 | M 2181 | M 2181,,,,"                          "
+ME  579.01,Desc.,GRADUATE SEMINAR,0,2,ALİ ECDER,M,2,,M 1152,,,,"                          "
+ME  610.01,Desc.,FINITE ELEMENTS,3,8,ŞEBNEM ÖZÜPEK,MMTh,344,,M 2203 | M 2203 | M 1152,,,,"                          "
+ME  613.01,Desc.,DEFORMATION OF ENGINEERING MATERIALS,3,8,SABRİ ALTINTAŞ,MThTh,767,,M 2170 | M 2200 | M 2200,,,,"                          "
+ME  632.01,Desc.,APPROXIMATE SOLUTION TECHNIQUES,3,8,AKIN TEZEL,TThTh,656,,M 1181 | M 2231 | M 2231,,,,"                          "
+ME  687.01,Desc.,SP.TOP.:ROBUST CONTROL,3,8,EMRE KÖSE,MThTh,367,,M 2231 | M 3100 | M 3100,,,,"                          "
+ME  690.01,Desc.,M.S.THESIS,0,60,ALİ ECDER,TBA,,,,,,,"                          "
+ME  699.01,Desc.,GUIDED RESEARCH,4,8,GÜNAY ANLAŞ,TBA,,,,,,,"                          "
+ME  699.02,Desc.,GUIDED RESEARCH,4,8,EMRE KÖSE,TBA,,,,,,,"                          "
+ME  699.03,Desc.,GUIDED RESEARCH,4,8,EŞREF EŞKİNAT,TBA,,,,,,,"                          "
+ME  790.01,Desc.,Ph.D. THESIS,0,120,ALİ ECDER,TBA,,,,,,,"                          "

@@ -1,0 +1,48 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ATA 425.01,Desc.,CULTURE&SOCIETY IN MODERN TURKEY,3,6,ASIM KARAÖMERLİOĞLU,ThThTh,234,,,,,,"                          "
+ATA 507.01,Desc.,HISTORIOGRAPHY,3,6,CENGİZ KIRLI,ThThTh,678,,,,,,"                          "
+ATA 522.01,Desc.,POL.MOD.IN TUR. THE REPUBLIC ERA,3,6,ZAFER TOPRAK,ThThTh,234,,,,,,"                          "
+ATA 531.01,Desc.,ECONOMIC&SOCIAL HISTORY OF TURKEY,3,6,ŞEVKET OSMAN PAMUK,TTT,234,,,,,,"                          "
+ATA 542.01,Desc.,SOC.HIST OF ART&LIT.IN THE REPUBLIC. ERA,3,6,DUYGU KÖKSAL,MMM,678,,,,,,"                          "
+ATA 581.01,Desc.,SEL.TOP.:POWER AND RULE IN MODERN SOCIET,3,6,NADİR ÖZBEK,MMM,234,,,,,,"                          "
+ATA 590.01,Desc.,SEL.TOP IN ECONOMY AND SOCIETY IN TURKEY,3,6,AYŞE BUĞRA,TTT,678,,,,,,"                          "
+ATA 592.01,Desc.,SP.TOP: IN HISTORY OF THE MODERN WORLD,3,6,DUYGU KÖKSAL,WWW,234,,,,,,"                          "
+ATA 598.01,Desc.,TOPICS IN MODERN EUROPEAN HISTORY,3,6,CENGİZ KIRLI,TTT,234,,,,,,"                          "
+ATA 651.01,Desc.,TOPICS IN TURKISH FOREIGN POLICY,3,6,AYDIN BABUNA,MMM,678,,,,,,"                          "
+ATA 690.01,Desc.,MASTER THESIS,0,60,ŞEVKET OSMAN PAMUK,TBA,,,,,,,"                          "
+ATA 691.01,Desc.,SP.TOP.IN MODERN TURKISH HISTORY,3,6,ŞEVKET OSMAN PAMUK,TBA,,,,,,,"                          "
+ATA 691.02,Desc.,SP.TOP.IN MODERN TURKISH HISTORY,3,6,ZAFER TOPRAK,TBA,,,,,,,"                          "
+ATA 691.03,Desc.,SP.TOP.IN MODERN TURKISH HISTORY,3,6,ASIM KARAÖMERLİOĞLU,TBA,,,,,,,"                          "
+ATA 691.04,Desc.,SP.TOP.IN MODERN TURKISH HISTORY,3,6,NADİR ÖZBEK,TBA,,,,,,,"                          "
+ATA 691.05,Desc.,SP.TOP.IN MODERN TURKISH HISTORY,3,6,DUYGU KÖKSAL,TBA,,,,,,,"                          "
+ATA 691.06,Desc.,SP.TOP.IN MODERN TURKISH HISTORY,3,6,AYDIN BABUNA,TBA,,,,,,,"                          "
+ATA 691.07,Desc.,SP.TOP.IN MODERN TURKISH HISTORY,3,6,CENGİZ KIRLI,TBA,,,,,,,"                          "
+ATA 691.08,Desc.,SP.TOP.IN MODERN TURKISH HISTORY,3,6,AYŞE BUĞRA,TBA,,,,,,,"                          "
+ATA 695.01,Desc.,SP.TOP IN MODERN TURKISH HISTORY,3,6,ASIM KARAÖMERLİOĞLU,TBA,,,,,,,"                          "
+ATA 697.01,Desc.,SP.TOP.IN MODERN TURKISH HISTORY,3,6,ŞEVKET OSMAN PAMUK,FFF,234,,,,,,"                          "
+ATA 790.01,Desc.,PH.D THESIS,0,120,ŞEVKET OSMAN PAMUK,TBA,,,,,,,"                          "
+HTR 311.02,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,RIDVAN AKIN,MM,23,,,,,,"                          "
+HTR 311.04,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,AYŞE GÜN SOYSAL,MM,34,,,,,,"                          "
+HTR 311.05,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,EMİNE TİRALİ,MM,45,,,,,,"                          "
+HTR 311.06,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,RIDVAN AKIN,MM,45,,,,,,"                          "
+HTR 311.07,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,AYŞE GÜN SOYSAL,MM,56,,,,,,"                          "
+HTR 311.08,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,EMİNE TİRALİ,MM,67,,,,,,"                          "
+HTR 311.09,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,RABİA TAYLAN YARARCAN,TT,12,,,,,,"                          "
+HTR 311.12,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,AYŞE GÜN SOYSAL,TT,34,,,,,,"                          "
+HTR 311.13,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,RABİA TAYLAN YARARCAN,TT,45,,,,,,"                          "
+HTR 311.16,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,EMİNE TİRALİ,TT,45,,,,,,"                          "
+HTR 311.17,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,AYŞE GÜN SOYSAL,TT,56,,,,,,"                          "
+HTR 311.18,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,SEVTAP DEMİRCİ,TT,56,,,,,,"                          "
+HTR 311.19,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,EMİNE TİRALİ,TT,67,,,,,,"                          "
+HTR 311.20,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,RABİA TAYLAN YARARCAN,WW,12,,,,,,"                          "
+HTR 311.22,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,RABİA TAYLAN YARARCAN,WW,45,,,,,,"                          "
+HTR 311.24,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,UĞUR SİPAHİOĞLU,WW,56,,,,,,"                          "
+HTR 311.25,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,UĞUR SİPAHİOĞLU,WW,78,,,,,,"                          "
+HTR 311.27,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,UĞUR SİPAHİOĞLU,ThTh,34,,,,,,"                          "
+HTR 311.29,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,SEVTAP DEMİRCİ,ThTh,56,,,,,,"                          "
+HTR 311.30,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,UĞUR SİPAHİOĞLU,ThTh,67,,,,,,"                          "
+HTR 311.32,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,RIDVAN AKIN,FF,23,,,,,,"                          "
+HTR 311.34,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,RIDVAN AKIN,FF,45,,,,,,"                          "
+HTR 405.01,Desc.,HIST.OF THE TURKISH REPUBLIC FOR F.S.I,2,3,SEVTAP DEMİRCİ,TT,78,,,,,,"                          "
+HTR 405.02,Desc.,HIST.OF THE TURKISH REPUBLIC FOR F.S.I,2,3,TRACY LORD,TBA,,,,,,,"                          "
+HTR 405.03,Desc.,HIST.OF THE TURKISH REPUBLIC FOR F.S.I,2,3,TRACY LORD,TBA,,,,,,,"                          "

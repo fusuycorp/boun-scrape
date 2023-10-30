@@ -1,0 +1,32 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CMPE150.01,Desc.,INTRODUCTION TO COMPUTING,3,5,H. LEVENT AKIN,M,4,,,,,,"                          "
+CMPE150.02,Desc.,INTRODUCTION TO COMPUTING(FORTRAN),3,5,VURAL ALTIN,M,6,,,,,,"        CMPE                  "
+CMPE150.03,Desc.,INTRODUCTION TO COMPUTING(FORTRAN,3,5,VURAL ALTIN,T,6,,,,,,"        CMPE                  "
+CMPE160.01,Desc.,INTERMEDIATE PROGRAMMING,4,9,H. LEVENT AKIN,MWW,334,,,,,,"                          "
+CMPE240.01,Desc.,DIGITAL SYSTEMS,4,6,LALE AKARUN,TThTh,378,,,,,,"                          "
+CMPE250.01,Desc.,DATA STRUCTURES & ALGORITHMS,4,6,SADIK FİKRET GÜRGEN,MWW,212,,,,,,"                          "
+CMPE321.01,Desc.,INTRODUCTION TO DATABASE SYSTEMS,4,6,TAFLAN GÜNDEM,FFF,678,,,,,,"                          "
+CMPE350.01,Desc.,FORMAL LANGUAGES & AUTOMATA THEORY,3,5,CEM SAY,TThTh,467,,,,,,"                          "
+CMPE360.01,Desc.,NUMERICAL METHODS,3,5,CAN ÖZTURAN,WThTh,423,,,,,,"                          "
+CMPE446.01,Desc.,COMPUTER ARCHITECTURE,3,6,OĞUZ TOSUN,TThTh,245,,,,,,"                          "
+CMPE470.01,Desc.,COMPUTER PERFORMANCE EVALUATION,3,6,CEM ERSOY,MMT,568,,,,,,"                          "
+CMPE476.01,Desc.,PARALLEL & DISTRIBUTED SYSTEMS,3,6,M. UFUK ÇAĞLAYAN,WWTh,671,,,,,,"                          "
+CMPE478.01,Desc.,PARALLEL PROCESSING,3,6,CAN ÖZTURAN,MTW,455,,,,,,"                          "
+CMPE492.01,Desc.,PROJECT,4,7,M. UFUK ÇAĞLAYAN,TBA, ,,,,,,"                          "
+CMPE494.01,Desc.,SP.TOP.IN COE.II:IMAGE PROCES.&COMP.VIS.,3,6,LALE AKARUN,TTTh,676,,,,,,"                          "
+CMPE498.01,Desc.,SP. TOP. IN COE.VI:MACHINE LEARNING,3,6,ETHEM ALPAYDIN,MMM,123,,,,,,"                          "
+CMPE499.01,Desc.,SP.TOP.IN CMPE:ALGORITHMS IN VLSI DESIGN,3,,ARDA YURDAKUL,ThThTh,678,,,,,,"                          "
+CMPE545.01,Desc.,ARTIFICIAL NEURAL NETWORKS,3,8,ETHEM ALPAYDIN,FFF,123,,,,,,"                          "
+CMPE560.01,Desc.,QUALITATIVE REASONING,3,8,CEM SAY,FFF,678,,,,,,"                          "
+CMPE579.01,Desc.,GRADUATE SEMINAR,0,8,SADIK FİKRET GÜRGEN,T,4,,,,,,"                          "
+CMPE582.01,Desc.,COMPUTER NETWORKS II,3,8,CEM ERSOY,TTT,123,,,,,,"                          "
+CMPE583.01,Desc.,SP.TOP.:OPERATING SYSTEM&NETWORK SECURIT,3,8,M. UFUK ÇAĞLAYAN,WWW,123,,,,,,"                          "
+CMPE595.01,Desc.,SP.TOP.:WIRELESS COMMUNICATIONS ,3,8,METE KABATEPE,MMM,8910,,,,,,"                          "
+CMPE599.01,Desc.,RESEARCH METHODS IN CMPE,3,8,CEM ERSOY,TBA, ,,,,,,"                          "
+CMPE599.02,Desc.,RESEARCH METHODS IN CMPE,3,8,LALE AKARUN,TBA, ,,,,,,"                          "
+CMPE602.01,Desc.,GRADUATE SEMINAR IN CMPE II,1,3,SADIK FİKRET GÜRGEN,T,4,,,,,,"                          "
+CMPE623.01,Desc.,SPEECH PROCESSING,3,8,SADIK FİKRET GÜRGEN,WWW,567,,,,,,"                          "
+CMPE628.01,Desc.,CONCURRENCY CONTROL & RECOVERY IN DATA.,3,8,TAFLAN GÜNDEM,WWW,678,,,,,,"                          "
+CMPE685.01,Desc.,SP.TOP.IN CMPE:WIRELESS COMMUNICATIONS,3,,METE KABATEPE,TBA, ,,,,,,"                          "
+ENG 101.01,Desc.,INTRODUCTION TO COMPUTERS,3,7,EROL İNELMEN,TBA, ,,,,,,"                          "
+ENG 101.03,Desc.,INTRODUCTION TO COMPUTERS,3,7,MELTEM ÖZTURAN,TBA, ,,,,,,"                          "

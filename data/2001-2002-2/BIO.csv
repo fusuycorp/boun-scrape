@@ -1,0 +1,32 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+BIO 101.01,Desc.,GENERAL BIOLOGY I,3,6,ESRA BATTALOĞLU,MMTh,675,,,,,,"                          "
+BIO 104.01,Desc.,GENERAL BIOLOGY II,3,5,MÜGE TÜRET,TWW,245,,,,,,"                          "
+BIO 104.02,Desc.,GENERAL BIOLOGY II,3,5,NECLA BİRGÜL İYİSON,MWW,856,,,,,,"                          "
+BIO 122.01,Desc.,PRELUDE TO MOLECULAR BIOLOGY,1,1,AYŞE NAZLI BAŞAK,T,5,,,,,,"                          "
+BIO 241.01,Desc.,CELL BIOLOGY,4,4,AHMET KOMAN,TTW,346,,,,,,"                          "
+BIO 252.01,Desc.,GENETICS,4,6,HANDE ÇAĞLAYAN,MThTh,834,,,,,,"                          "
+BIO 302.01,Desc.,BIOCHEMISTRY II,3,8,NEŞE BİLGİN,MMWW,3434,,,,,,"                          "
+BIO 306.01,Desc.,PRAC.  APPL. IN BIOCHEM.TECH.,2,3,AYŞE NAZLI BAŞAK,T,1,,,,,,"                          "
+BIO 306.02,Desc.,PRAC.  APPL. IN BIOCHEM.TECH.,2,3,AYŞE NAZLI BAŞAK,Th,1,,,,,,"                          "
+BIO 402.01,Desc.,MOLECULAR BIOLOGY II,4,6,KUYAŞ BUĞRA,TTFF,7845,,,,,,"                          "
+BIO 407.01,Desc.,SEMINAR,1,2,NECLA BİRGÜL İYİSON,T,2,,,,,,"                          "
+BIO 407.02,Desc.,SEMINAR,1,2,NECLA BİRGÜL İYİSON,Th,2,,,,,,"                          "
+BIO 486.01,Desc.,SP.TOP.:(CONTROL OF GENE EXP.),3,4,NEŞE BİLGİN,MM,78,,,,,,"                          "
+BIO 492.01,Desc.,SP.PROJECT II,3,8,AYŞE NAZLI BAŞAK,,, ,,,,,"                          "
+BIO 492.02,Desc.,SP.PROJECT II,3,8,ESRA BATTALOĞLU,,, ,,,,,"                          "
+BIO 492.03,Desc.,SP.PROJECT II,3,8,KUYAŞ BUĞRA,,, ,,,,,"                          "
+BIO 492.04,Desc.,SP.PROJECT II,3,8,HANDE ÇAĞLAYAN,,, ,,,,,"                          "
+BIO 492.05,Desc.,SP.PROJECT II,3,8,AHMET KOMAN,,, ,,,,,"                          "
+BIO 492.06,Desc.,SP.PROJECT II,3,8,MÜGE TÜRET,,, ,,,,,"                          "
+BIO 492.07,Desc.,SP.PROJECT II,3,8,ASLIHAN TOLUN,,, ,,,,,"                          "
+BIO 492.08,Desc.,SP.PROJECT II,3,8,NEŞE BİLGİN,,, ,,,,,"                          "
+BIO 494.01,Desc.,SP.TOP.APP.BIOTECH.İN PLANTS,3,4,MÜGE TÜRET,MThTh,578,,,,,,"                          "
+BIO 520.01,Desc.,LAB. PROJECTS IN BIOLOGY,3,15,HANDE ÇAĞLAYAN,TBA,,,,,,,"                          "
+BIO 582.01,Desc.,ST:GENETICS OF CANCER,3,7,HANDE ÇAĞLAYAN,TBA,,,,,,,"                          "
+BIO 584.01,Desc.,ADV.TOP.IN MOL.BIO.&GEN.MO.BAS.OF NEUROD,3,7,AYŞE NAZLI BAŞAK,TBA,,,,,,,"                          "
+BIO 586.01,Desc.,ST:CONCEPTS IN MOL.BIO AND GENETIC,3,7,KUYAŞ BUĞRA,TBA,,,,,,,"                          "
+BIO 602.01,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,15,ESRA BATTALOĞLU,TBA,,,,,,,"                          "
+BIO 686.01,Desc.,ST:RECENT DEVELOPMENTS IN GENE EXPRESSI ,3,7,AHMET KOMAN,TBA,,,,,,,"                          "
+BIO 688.01,Desc.,ST:MECHANISMS OF INHERITED DISEASES,3,7,ESRA BATTALOĞLU,TBA,,,,,,,"                          "
+BIO 690.01,Desc.,M.S.THESIS,0,60,ASLIHAN TOLUN,TBA,,,,,,,"                          "
+BIO 790.01,Desc.,Ph.D.THESIS,0,120,ASLIHAN TOLUN,TBA,,,,,,,"                          "

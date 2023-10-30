@@ -1,0 +1,73 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CAU 101.01,Desc.,ELEMENTARY LAZ I,3,5,İSMAİL AVCI,ThThTh,678, ,M 1181 | M 1181 | M 1181,07.06.2023,2,,"                          "
+CAU 111.01,Desc.,ELEMENTARY KABARDIAN I,3,5,İLHAN AYDEMİR,TTTh,787, ,M 2152 | M 2152 | TB 240,07.06.2023,1,,"                          "
+CAU 112.01,Desc.,ELEMENTARY KABARDIAN II,3,5,İLHAN AYDEMİR,TThTh,989, ,M 1152 | TB 240 | TB 240,07.06.2023,2,,"                          "
+CAU 121.01,Desc.,ELEMENTARY ABKHAZ I,3,5,GUNDA ANKVAB,TTT,456, ,TB 240 | TB 240 | TB 240,31.05.2023,1,,"                          "
+CAU 122.01,Desc.,ELEMENTARY ABKHAZ II,3,5,GUNDA ANKVAB,TTT,789, ,JF 331 | JF 331 | JF 331,01.06.2023,3,,"                          "
+LING101.01,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS I,3,7,ELENA GUERZONI,MMWW,5656, ,NH 103 | NH 103 | NH 103 | NH 103,07.06.2023,3,,"                          "
+LING101.02,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS I,3,7,KADİR GÖKGÖZ,MMWW,5656, ,TB 310 | TB 310 | NH 203 | NH 203,07.06.2023,3,,"                          "
+LING102.01,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS II,3,7,DİDAR AKAR,MTT,756, ,TB 310 | TB 490 | TB 490,03.06.2023,3,,"                          "
+LING104.01,Desc.,PHONETICS,3,6,STEFANO CANALIS,MMT,234, ,EF 104 | EF 104 | İB 312,02.06.2023,3,,"                          "
+LING202.01,Desc.,MORPHOLOGY,3,6,MİNE NAKİPOĞLU,MMThTh,5656, ,NH 202 | NH 202 | NH 202 | NH 202,02.06.2023,2,,"                          "
+LING206.01,Desc.,LANGUAGE TYPOLOGY,3,6,METİN BAĞRIAÇIK,TTF,782, ,M 2170 | M 2170 | M 1171,04.06.2023,1,,"                          "
+LING314.01,Desc.,SYNTAX&SEMANTICS OF MODERN TURKISH,3,7,BALKIZ ÖZTÜRK,MMWTh,2333, ,TB 490 | TB 490 | NH 302 | M 1171,31.05.2023,3,TKL,"                          "
+LING314.02,Desc.,SYNTAX&SEMANTICS OF MODERN TURKISH,3,7,ÜMİT ATLAMAZ,TTWW,2312, ,NH 403 | NH 403 | NH 103 | NH 103,31.05.2023,3,,"                          "
+LING330.01,Desc.,ADVANCED MORPHOLOGY,3,6,ÖMER DEMİROK,MMW,454, ,TB 415 | TB 415 | TB 415,07.06.2023,3,,"                          "
+LING360.01,Desc.,COMPUTATIONAL METHODS IN LINGUISTICS,3,6,ÜMİT ATLAMAZ,TTWW,5678, ,NH 403 | NH 403 | İB 301 | İB 301,24.05.2023,2,,"                          "
+LING409.01,Desc.,FIELD METHODS,3,6,METİN BAĞRIAÇIK,MMF,784, ,JF 331 | JF 331 | JF 331,07.06.2023,1,,"                          "
+LING412.01,Desc.,RESEARCH & WRITING,4,8,DİDAR AKAR,,, ,,,,,"                          "
+LING412.02,Desc.,RESEARCH & WRITING,4,8,BALKIZ ÖZTÜRK,,, ,,,,,"                          "
+LING412.03,Desc.,RESEARCH & WRITING,4,8,MİNE NAKİPOĞLU,,, ,,,,,"                          "
+LING412.04,Desc.,RESEARCH & WRITING,4,8,ÜMİT ATLAMAZ,,, ,,,,,"                          "
+LING412.05,Desc.,RESEARCH & WRITING,4,8,ÖMER DEMİROK,,, ,,,,,"                          "
+LING412.06,Desc.,RESEARCH & WRITING,4,8,ELENA GUERZONI,,, ,,,,,"                          "
+LING412.07,Desc.,RESEARCH & WRITING,4,8,KADİR GÖKGÖZ,,, ,,,,,"                          "
+LING412.08,Desc.,RESEARCH & WRITING,4,8,STEFANO CANALIS,,, ,,,,,"                          "
+LING412.09,Desc.,RESEARCH & WRITING,4,8,METİN BAĞRIAÇIK,,, ,,,,,"                          "
+LING412.10,Desc.,RESEARCH & WRITING,4,8,DİDAR AKAR,,, ,,,,,"                          "
+LING412.11,Desc.,RESEARCH & WRITING,4,8,KADİR GÖKGÖZ,,, ,,,,,"                          "
+LING412.12,Desc.,RESEARCH & WRITING,4,8,METİN BAĞRIAÇIK,,, ,,,,,"                          "
+LING48K.01,Desc.,SP.TP.GEORGIAN-I,3,6,EKATERINE  ZASESHVILI,ThThTh,456, ,TB 415 | TB 415 | TB 415,25.05.2023,3,,"                          "
+LING48N.01,Desc.,SP.TP.LANGUAGE AND COGNITION,3,6,MİNE NAKİPOĞLU,TTTh,674, ,M 2171 | M 2171 | M 2171,04.06.2023,1,,"                          "
+LING48U.01,Desc.,SP.TP.HISTORICAL TURKIC LINGUISTICS,3,6,MEHMET ÖLMEZ,FFF,678, ,JF 333 | JF 333 | JF 333,03.06.2023,1,,"                          "
+LING501.01,Desc.,ASPECTS OF PHONOLOGY,4,10,STEFANO CANALIS,MMWW,5612, ,,,,,"                          "
+LING512.01,Desc.,MORPHOLOGICAL ANALYSIS,4,10,ÖMER DEMİROK,MMWW,7856, ,,,,,"                          "
+LING553.01,Desc.,DISCOURSE ANALYSIS,4,10,DİDAR AKAR,MMWW,2334, ,,02.06.2023,3,,"                          "
+LING570.01,Desc.,GUIDED STUDIES,3,5,MİNE NAKİPOĞLU,,, ,,,,,"                          "
+LING570.02,Desc.,GUIDED STUDIES,3,5,BALKIZ ÖZTÜRK,,, ,,,,,"                          "
+LING570.03,Desc.,GUIDED STUDIES,3,5,ELENA GUERZONI,,, ,,,,,"                          "
+LING570.04,Desc.,GUIDED STUDIES,3,5,KADİR GÖKGÖZ,,, ,,,,,"                          "
+LING570.05,Desc.,GUIDED STUDIES,3,5,STEFANO CANALIS,,, ,,,,,"                          "
+LING570.06,Desc.,GUIDED STUDIES,3,5,ÖMER DEMİROK,,, ,,,,,"                          "
+LING570.07,Desc.,GUIDED STUDIES,3,5,DİDAR AKAR,,, ,,,,,"                          "
+LING570.08,Desc.,GUIDED STUDIES,3,5,METİN BAĞRIAÇIK,,, ,,,,,"                          "
+LING570.09,Desc.,GUIDED STUDIES,3,5,ÜMİT ATLAMAZ,,, ,,,,,"                          "
+LING572.01,Desc.,READINGS IN LINGUISTICS II,1,5,MİNE NAKİPOĞLU,,, ,,,,,"                          "
+LING572.02,Desc.,READINGS IN LINGUISTICS II,1,5,BALKIZ ÖZTÜRK,,, ,,,,,"                          "
+LING572.03,Desc.,READINGS IN LINGUISTICS II,1,5,ELENA GUERZONI,,, ,,,,,"                          "
+LING572.04,Desc.,READINGS IN LINGUISTICS II,1,5,KADİR GÖKGÖZ,,, ,,,,,"                          "
+LING572.05,Desc.,READINGS IN LINGUISTICS II,1,5,STEFANO CANALIS,,, ,,,,,"                          "
+LING572.06,Desc.,READINGS IN LINGUISTICS II,1,5,ÖMER DEMİROK,,, ,,,,,"                          "
+LING572.07,Desc.,READINGS IN LINGUISTICS II,1,5,DİDAR AKAR,,, ,,,,,"                          "
+LING572.08,Desc.,READINGS IN LINGUISTICS II,1,5,METİN BAĞRIAÇIK,,, ,,,,,"                          "
+LING572.09,Desc.,READINGS IN LINGUISTICS II,1,5,ÜMİT ATLAMAZ,,, ,,,,,"                          "
+LING579.01,Desc.,GRADUATE SEMINAR,0,5,METİN BAĞRIAÇIK,,, ,,,,,"                          "
+LING582.01,Desc.,SP.TP.ISSUES IN SIGN LANGUAGE MORPHO-SYNTAX,4,10,KADİR GÖKGÖZ,TTThTh,7834, ,,,,,"                          "
+LING58C.01,Desc.,SP.TP.IN LINGS ADVANCED TP.IN SEMANTICS,4,10,ELENA GUERZONI,TTThTh,7856, ,,,,,"                          "
+LING58E.01,Desc.,SP.TP.HISTORY OF LINGUISTICS,4,10,STAFF STAFF,,, ,,,,,"                          "
+LING612.01,Desc.,MORPHOLOGICAL THEORY,4,10,ÖMER DEMİROK,TTThTh,3434, ,,01.06.2023,1,,"                          "
+LING690.01,Desc.,MASTER THESIS,0,60,MİNE NAKİPOĞLU,,, ,,,,,"                          "
+LING690.02,Desc.,MASTER THESIS,0,60,BALKIZ ÖZTÜRK,,, ,,,,,"                          "
+LING690.03,Desc.,MASTER THESIS,0,60,ELENA GUERZONI,,, ,,,,,"                          "
+LING690.04,Desc.,MASTER THESIS,0,60,KADİR GÖKGÖZ,,, ,,,,,"                          "
+LING690.05,Desc.,MASTER THESIS,0,60,STEFANO CANALIS,,, ,,,,,"                          "
+LING690.06,Desc.,MASTER THESIS,0,60,ÖMER DEMİROK,,, ,,,,,"                          "
+LING690.07,Desc.,MASTER THESIS,0,60,DİDAR AKAR,,, ,,,,,"                          "
+LING690.08,Desc.,MASTER THESIS,0,60,METİN BAĞRIAÇIK,,, ,,,,,"                          "
+LING690.09,Desc.,MASTER THESIS,0,60,ÜMİT ATLAMAZ,,, ,,,,,"                          "
+LING700.01,Desc.,GRADUATE SEMINAR,0,5,KADİR GÖKGÖZ,,, ,,,,,"                          "
+LING790.01,Desc.,Ph.D THESIS,0,120,ÖMER DEMİROK,,, ,,,,,"                          "
+LING790.02,Desc.,Ph.D THESIS,0,120,BALKIZ ÖZTÜRK,,, ,,,,,"                          "
+LING790.03,Desc.,Ph.D THESIS,0,120,METİN BAĞRIAÇIK,,, ,,,,,"                          "
+TID 101.01,Desc.,ELEMENTARY TURKISH SIGN LANGUAGE I,3,5,FERİDE KORKMAZ,WWW,345, ,JF 331 | JF 331 | JF 331,23.05.2023,1,,"                          "
+TID 102.01,Desc.,ELEMENTARY TURKISH SIGN LANGUAGE II,3,5,FERİDE KORKMAZ,WWW,789, ,JF 331 | JF 331 | JF 331,23.05.2023,3,,"                          "

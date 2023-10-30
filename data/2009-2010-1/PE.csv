@@ -1,0 +1,49 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PE  101.01,Desc.,STEP I,1,2,VİLDAN ZAN KİPRİ,TT,56,,,,0,,"                          "
+PE  101.02,Desc.,STEP I,1,2,VİLDAN ZAN KİPRİ,WW,34,,,,0,,"                          "
+PE  101.03,Desc.,STEP I,1,2,VİLDAN ZAN KİPRİ,WW,56,,,,0,,"                          "
+PE  101.04,Desc.,STEP I,1,2,VİLDAN ZAN KİPRİ,ThTh,78,,,,0,,"                          "
+PE  103.01,Desc.,FITNESS I,1,2,MEHMET OKTAR,M,7,,,,0,,"                          "
+PE  103.02,Desc.,FITNESS I,1,2,MEHMET OKTAR,M,8,,,,0,,"                          "
+PE  103.03,Desc.,FITNESS I,1,2,MEHMET OKTAR,W,6,,,,0,,"                          "
+PE  103.04,Desc.,FITNESS I,1,2,MEHMET OKTAR,W,7,,,,0,,"                          "
+PE  103.05,Desc.,FITNESS I,1,2,MEHMET OKTAR,Th,7,,,,0,,"                          "
+PE  103.06,Desc.,FITNESS I,1,2,MEHMET OKTAR,Th,8,,,,0,,"                          "
+PE  103.07,Desc.,FITNESS I,1,2,MEHMET OKTAR,F,5,,,,0,,"                          "
+PE  103.08,Desc.,FITNESS I,1,2,MEHMET OKTAR,F,6,,,,0,,"                          "
+PE  103.09,Desc.,FITNESS I,1,2,ALTİMUR TÜLMEN,M,5,,,,0,,"                          "
+PE  103.10,Desc.,FITNESS I,1,2,ALTİMUR TÜLMEN,M,6,,,,0,,"                          "
+PE  103.11,Desc.,FITNESS I,1,2,ALTİMUR TÜLMEN,T,5,,,,0,,"                          "
+PE  103.12,Desc.,FITNESS I,1,2,ALTİMUR TÜLMEN,T,6,,,,0,,"                          "
+PE  103.13,Desc.,FITNESS I,1,2,ALTİMUR TÜLMEN,Th,5,,,,0,,"                          "
+PE  103.14,Desc.,FITNESS I,1,2,ALTİMUR TÜLMEN,Th,6,,,,0,,"                          "
+PE  113.01,Desc.,AEROBIC DANCE I,1,2,VİLDAN ZAN KİPRİ,TT,78,,,,0,,"                          "
+PE  113.02,Desc.,AEROBIC DANCE I,1,2,VİLDAN ZAN KİPRİ,ThTh,56,,,,0,,"                          "
+PE  117.01,Desc.,BADMINTON I,1,2,MEHMET OKTAR,TT,78,,,,0,,"                          "
+PE  117.02,Desc.,BADMINTON I,1,2,MEHMET OKTAR,FF,78,,,,0,,"                          "
+PE  119.01,Desc.,BASKETBALL I,1,2,ALTİMUR TÜLMEN,MM,78,,,,0,,"                          "
+PE  119.02,Desc.,BASKETBALL I,1,2,ALTİMUR TÜLMEN,WW,56,,,,0,,"                          "
+PE  119.03,Desc.,BASKETBALL I,1,2,ALTİMUR TÜLMEN,ThTh,78,,,,0,,"                          "
+PE  121.01,Desc.,SOCCER I,1,2,ORHAN YALINTAŞ,MM,56,,,,0,,"                          "
+PE  121.02,Desc.,SOCCER I,1,2,ORHAN YALINTAŞ,WW,56,,,,0,,"                          "
+PE  121.03,Desc.,SOCCER I,1,2,ORHAN YALINTAŞ,FF,56,,,,0,,"                          "
+PE  121.04,Desc.,SOCCER I,1,2,ORHAN YALINTAŞ,FF,78,,,,0,,"                          "
+PE  123.01,Desc.,TENNIS I,1,2,ENİS GÜLLER,MM,56,,,,0,,"                          "
+PE  123.02,Desc.,TENNIS I,1,2,ENİS GÜLLER,MM,78,,,,0,,"                          "
+PE  123.03,Desc.,TENNIS I,1,2,ALPER DURU,TT,34,,,,0,,"                          "
+PE  123.04,Desc.,TENNIS I,1,2,ALPER DURU,TT,56,,,,0,,"                          "
+PE  123.05,Desc.,TENNIS I,1,2,ENİS GÜLLER,WW,34,,,,0,,"                          "
+PE  123.06,Desc.,TENNIS I,1,2,ENİS GÜLLER,WW,56,,,,0,,"                          "
+PE  123.07,Desc.,TENNIS I,1,2,ALPER DURU,ThTh,34,,,,0,,"                          "
+PE  123.08,Desc.,TENNIS I,1,2,ALPER DURU,ThTh,56,,,,0,,"                          "
+PE  123.09,Desc.,TENNIS I,1,2,ENİS GÜLLER,FF,12,,,,0,,"                          "
+PE  123.10,Desc.,TENNIS I,1,2,ENİS GÜLLER,FF,34,,,,0,,"                          "
+PE  125.01,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,TT,78,,,,0,,"                          "
+PE  125.02,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,WW,78,,,,0,,"                          "
+PE  125.03,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,ThTh,78,,,,0,,"                          "
+PE  129.01,Desc.,SELF DEFENCE SPORTS I,1,2,DİLEK EMÇİOĞLU,MM,910,,,,0,,"                          "
+PE  129.02,Desc.,SELF DEFENCE SPORTS I,1,2,DİLEK EMÇİOĞLU,WW,910,,,,0,,"                          "
+PE  129.04,Desc.,SELF DEFENCE SPORTS I,1,2,DİLEK EMÇİOĞLU,FF,910,,,,0,,"                          "
+PE  145.01,Desc.,FUTSAL I,1,2,MUSTAFA EROL,MM,56,,,,0,,"                          "
+PE  145.02,Desc.,FUTSAL I,1,2,MUSTAFA EROL,WW,78,,,,0,,"                          "
+PE  145.03,Desc.,FUTSAL I,1,2,MUSTAFA EROL,FF,56,,,,0,,"                          "

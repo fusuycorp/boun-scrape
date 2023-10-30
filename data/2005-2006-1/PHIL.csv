@@ -1,0 +1,28 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY I,3,7,YILDIZ SİLİER,TTTh,236,,,,,,"        PSY; LING; GUID; LAW                  "
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY I,3,7,GÜROL IRZIK,MThTh,234,,,,,,"        PHIL                  "
+PHIL104.01,Desc.,CRITICAL THINKING,3,6,KARANFİL SOYHUN,TThTh,534,,,,,,"                          "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,5,ZEYNEP DAVRAN,TTTh,343,,,,,,"        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,3,10,BERNA KILINÇ,TFF,856,,,,,,"                          "
+PHIL131.02,Desc.,LOGIC I,3,10,SUN DEMİRLİ,TTTh,454,,,,,,"                          "
+PHIL213.01,Desc.,ANCIENT PHILOSOPHY,3,6,CHRYSSI SIDIROPOULOU,MTT,434,,,,,,"        PHIL                  "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,MURAT BAÇ,WThTh,878,,,,,,"        PHIL                  "
+PHIL313.01,Desc.,HISTORY OF MODERN PHILOSOPHY I,3,6,SUN DEMİRLİ,WFF,534,,,,,,"        PHIL                  "
+PHIL341.01,Desc.,ETHICS,3,6,KARANFİL SOYHUN,TTTh,785,,,,,,"        PHIL                  "
+PHIL354.01,Desc.,SOCIAL & POLITICAL PHILOSOPHY,3,6,YILDIZ SİLİER,TThTh,634,,,,,,"                          "
+PHIL375.01,Desc.,PHILOSOPHY OF MIND,3,6,STEPHEN VOSS,TTTh,122,,,,,,"                          "
+PHIL485.01,Desc.,ADVANCED STUDY OF PHILOSOPHICAL TEXTS,3,6,CHRYSSI SIDIROPOULOU,TWW,534,,,,,,"                          "
+PHIL48A.01,Desc.,SP.TOP.:TRANSLATION OF PHILOSOPHICAL TEX,3,5,İLHAN İNAN,WWW,678,,,,,,"                          "
+PHIL48B.01,Desc.,"SP.TOP.:SCIENCE,SOCIETY AND POLITICS",3,5,GÜROL IRZIK,MMM,678,,,,,,"                          "
+PHIL48C.01,Desc.,SP.TOP.:SELLARS ON EMPIRCISM,3,5,ALİ KARATAY,MFF,534,,,,,,"                          "
+PHIL517.01,Desc.,TOPICS IN CONTEMPORARY PHILOSOPHY,4,10,MURAT BAÇ,MMM,345,,,,,,"                          "
+PHIL534.01,Desc.,AESTHETICS,4,10,ZEYNEP DAVRAN,WWW,567,,,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,BERNA KILINÇ,TBA,,,,,,,"                          "
+PHIL583.01,Desc.,SPECIAL TOPICS:REALITY,4,10,STEPHEN VOSS,WWW,234,,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,2,BERNA KILINÇ,TBA,,,,,,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL599.01,Desc.,SP.TOP.CHANCE AND DETERMINISM,4,10,BERNA KILINÇ,TThTh,956,,,,,,"                          "
+PHIL601.01,Desc.,PLATO,4,10,PINAR CANEVİ,ThThTh,789,,,,,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,BERNA KILINÇ,TBA,,,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,BERNA KILINÇ,TBA,,,,,,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,BERNA KILINÇ,TBA,,,,,,,"                          "

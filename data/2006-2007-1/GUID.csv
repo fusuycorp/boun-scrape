@@ -1,0 +1,30 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ED  101.01,Desc.,INTRODUCTION TO EDUCATION,3,5,RIFAT OKÇABOL,MMW,122,,YD 202 | YD 202 | YD 204,,,,"        CET; PRSC; PEDU; FLED; GUID; TPHY; CEDU; TCHE; MEDU; TMAT; PRSO; PRED; ED; PRMA                  "
+ED  101.03,Desc.,INTRODUCTION TO EDUCATION,3,5,AYŞE HAVVA CANER,MMT,567,,ETB509 | ETB509 | YD 206,,,,"                          "
+ED  101.04,Desc.,INTRODUCTION TO EDUCATION,3,5,HAYAL KÖKSAL,MMM,678,,YD 306 | YD 306 | YD 306,,,,"                          "
+ED  104.01,Desc.,SOCIAL FOUNDATIONS OF EDUCATION,3,6,AKI VIRTANEN-ERAYDIN,TTTh,122,,YD 118 | YD 118 | YD 118,,,,"                          "
+ED  104.02,Desc.,SOCIAL FOUNDATIONS OF EDUCATION,3,6,AKI VIRTANEN-ERAYDIN,TTW,673,,YD 202 | YD 202 | YD 104,,,,"                          "
+ED  121.01,Desc.,ORIENTATION TO GUID & COUN.,1,2,DENİZ ALBAYRAK KAYMAK,T,5,,YD 406,,,,"        GUID                  "
+ED  213.01,Desc.,DEVELOPMENT AND LEARNING,3,5,ÖZLEM ÜNLÜHİSARCIKLI,TTTh,343,,YD 006 | YD 006 | YD 406,,,,"                          "
+ED  213.02,Desc.,DEVELOPMENT AND LEARNING,3,5,ZEYNEP HANDE SART,TWW,212,,YD 117 | ETB509 | ETB509,,,,"                          "
+ED  221.01,Desc.,FUNDAMENTALS OF GUIDANCE &COUNSELING,3,4,DENİZ ALBAYRAK KAYMAK,MWW,334,,YD 202 | YD 202 | YD 202,,,,"        CET; PRPRSC; PEDU; TPHY; PRMA; FLCEDU; TCHE; MEDU; TMAT; PRSO; GUID; PRSC; FLED                  "
+ED  221.02,Desc.,FUNDAMENTALS OF GUIDANCE &COUNSELING,3,4,SİBEL AKMEHMET ŞEKERLER,TThTh,212,,YD 306 | YD 306 | YD 306,,,,"                          "
+ED  221.05,Desc.,FUNDAMENTALS OF GUIDANCE &COUNSELING,3,4,SİBEL AKMEHMET ŞEKERLER,TFF,367,,ETB509 | ETB509 | ETB509,,,,"                          "
+ED  262.01,Desc.,PLANNING & EVALUATION OF INSTRUCTION,4,7,ÖZLEM ÜNLÜHİSARCIKLI,TTThThTh,78678,,YD 106 | YD 106 | YD 118 | YD 118 | YD 118,,,,"                          "
+ED  306.01,Desc.,COMPARATIVE EDUCATION,3,4,AKI VIRTANEN-ERAYDIN,WWTh,123,,YD 116 | YD 116 | YD 416,,,,"                          "
+ED  311.01,Desc.,DATA PROCESSING & ANALYSIS,4,5,AYŞESİM DİRİ,WWWWW,56789,,,,,,"                          "
+ED  325.01,Desc.,THEORIES OF  PERSONALITY IN COUN.,3,4,SİBEL AKMEHMET ŞEKERLER,MThTh,556,,YD 406 | YD 202 | YD 202,,,,"                          "
+ED  373.01,Desc.,MEASUREMENT & EVALUATION,3,4,GÜZVER YILDIRAN DE WEERDT,MMW,343,,YD 104 | YD 104 | YD 204,,,,"                          "
+ED  382.01,Desc.,CLASSROOM MANAGEMENT ,3,6,AYŞE HAVVA CANER,MMTT,7856,,YD 204 | YD 204 | YD 204 | YD 204,,,,"                          "
+ED  405.01,Desc.,SCHOOL EXPERIENCE II,3,8,DENİZ ALBAYRAK KAYMAK,T,6,,YD 402,,,,"                          "
+ED  415.01,Desc.,CHILDREN WITH SPECIAL NEEDS,3,5,ZEYNEP HANDE SART,TTThTh,7823,,ETB509 | ETB509 | YD 201 | YD 201,,,,"                          "
+ED  421.01,Desc.,ASSESSMENT IN GUID.& COUN.,3,7,AYDAN GÜLERCE,TTTW,1235,,YD 202 | YD 202 | YD 202 | YD 202,,,,"                          "
+ED  425.01,Desc.,GROUP DYNAMICS & COUNSELING,3,5,NEYLAN ÖZDEMİR,MMMM,1234,,YD 204 | YD 204 | YD 204 | YD 204,,,,"        GUID                  "
+ED  469.01,Desc.,PSYCHOLOGY OF ADOLESCENCE,3,4,NEVİN DÖLEK,MMM,567,,YD 101 | YD 101 | YD 101,,,,"                          "
+ED  472.01,Desc.,INDIVIDUAL STUDY,3,5,LEYLA NAVARO,TBA,,,,,,,"                          "
+ED  472.03,Desc.,INDIVIDUAL STUDY,3,5,GÜLBİN ÖZTÜRK TÜTER,TBA,,,,,,,"                          "
+ED  480.01,Desc.,SP.TOP.IN EDUCATION,3,4,AYŞE HAVVA CANER,TBA,,,,,,,"                          "
+ED  482.01,Desc.,SP.TOP.IN EDUCATION,3,4,AKI VIRTANEN-ERAYDIN,WThTh,445,,YD 201 | YD 201 | YD 201,,,,"                          "
+ED  489.01,Desc.,SPECIAL TOPICS IN EDUCATION,3,5,SİBEL AKMEHMET ŞEKERLER,MMT,785,,YD 201 | YD 201,,,,"                          "
+ED  492.01,Desc.,SPECIAL STUDIES IN EDUCATION,3,4,BARIŞ KORKMAZ,WWW,678,,YD 101 | YD 101 | YD 101,,,,"                          "
+ED  496.01,Desc.,SPECIAL STUDIES IN EDUCATION,3,4,MIRYAM ANJEL,ThThTh,678,,YD 201 | YD 201 | YD 201,,,,"                          "

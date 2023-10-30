@@ -1,0 +1,50 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+INT 301.01,Desc.,INTRODUCTION TO CONSECUTIVE INTERPRETING,3,5,KATE FERGUSON,WWTh,676,,JF 108 | JF 108 | JF 101,,,,"                          "
+INT 301.02,Desc.,INTRODUCTION TO CONSECUTIVE INTERPRETING,3,5,KATE FERGUSON,WThTh,845,,JF 108 | JF 101 | JF 101,,,,"                          "
+INT 301.03,Desc.,INTRODUCTION TO CONSECUTIVE INTERPRETING,3,5,NEDİME MERCANGÖZ,MMM,123,,EF 07 | EF 07 | EF 07,,,,"                          "
+INT 320.01,Desc.,COMMUNITY INTERPRETING,3,4,JONATHAN MAURICE ROSS,WWTh,346,,JF 102 | JF 102 | M 1181,,,,"                          "
+INT 415.01,Desc.,SIMULTANEOUS INTERPRETING I,3,5,NİGAR ALEMDAR,FFF,234,,,,,,"                          "
+INT 417.01,Desc.,CONSECUTIVE INTERPRETING,3,4,ZEYNEP KIRÇAL,WWW,456,,JF 333 | JF 333 | JF 333,,,,"                          "
+INT 419.01,Desc.,INTERPRETING PROJECT DESIGN,1,3,EBRU DİRİKER,,,,,,,,"                          "
+INT 419.02,Desc.,INTERPRETING PROJECT DESIGN,1,3,KATE FERGUSON,,,,,,,,"                          "
+INT 481.01,Desc.,SP.TOP.FOR INTERPRETERS,3,5,SELİN ÜLKEROĞLU,TTT,123,,JF 101 | JF 101 | JF 101,,,,"                          "
+TR  109.01,Desc.,INTRODUCTION TO TRANSLA.&TRANS.STUDIES I,3,6,AYŞENAZ CENGİZ,TTW,567,,NH 202 | NH 202 | JF 332,,,,"                          "
+TR  109.02,Desc.,INTRODUCTION TO TRANSLA.&TRANS.STUDIES I,3,6,CEYDA ELGÜL,TWW,578,,EF 205 | NH 304 | NH 304,,,,"                          "
+TR  109.03,Desc.,INTRODUCTION TO TRANSLA.&TRANS.STUDIES I,3,6,CEYDA ELGÜL,MMT,786,,JF 333 | JF 333 | EF 205,,,,"                          "
+TR  111.01,Desc.,RHETORIC&COMPOSITION FOR TRANSLATORS,4,7,JONATHAN MAURICE ROSS,TTW,785,,JF 332 | JF 332 | JF 102,,,,"                          "
+TR  111.02,Desc.,RHETORIC&COMPOSITION FOR TRANSLATORS,4,7,JONATHAN MAURICE ROSS,WThTh,678,,JF 102 | M 1181 | M 1181,,,,"                          "
+TR  111.03,Desc.,RHETORIC&COMPOSITION FOR TRANSLATORS,4,7,ENA HODJIKJ,WThTh,556,,JF 101 | M 1152 | M 1152,,,,"                          "
+TR  201.01,Desc.,ETYMOLOGY I,3,5,SADİ BÜLENT AKSOY,,,,,,,,"                          "
+TR  203.01,Desc.,INFOR.TECHNOLOGIES(IT)FOR TRANSLATORS,3,4,MEHMET ŞAHİN,MTT,678,,JF 101 | KP 04 | KP 04,,,,"                          "
+TR  203.02,Desc.,INFOR.TECHNOLOGIES(IT)FOR TRANSLATORS,3,4,MEHMET ŞAHİN,MTT,734,,JF 101 | KP 05 | KP 05,,,,"                          "
+TR  203.03,Desc.,INFOR.TECHNOLOGIES(IT)FOR TRANSLATORS,3,4,HÜSEYİN MERGAN,ThThTh,789,,JF 102 | JF 102 | JF 102,,,,"                          "
+TR  215.01,Desc.,TECHNICAL TRANSLATION,3,4,ŞULE DEMİRKOL ERTÜRK,TThTh,456,,KP 09 | NH 404 | NH 404,,,,"                          "
+TR  215.02,Desc.,TECHNICAL TRANSLATION,3,4,ŞULE DEMİRKOL ERTÜRK,TTTh,567,,KP 09 | KP 09 | NH 404,,,,"                          "
+TR  301.01,Desc.,THEORIES OF TRANSLATION,3,6,CEYDA ELGÜL,MWW,956,,TB 240 | NH 304 | NH 304,,,,"                          "
+TR  301.02,Desc.,THEORIES OF TRANSLATION,3,6,AYŞENAZ CENGİZ,TWW,834,,JF 102 | JF 332 | JF 332,,,,"                          "
+TR  317.01,Desc.,TRANSLATING TEXTS ON ECONOMICS&BUSINESS,3,5,NURHAYAT DALGIÇ,MMM,678,,TB 415 | TB 415 | TB 415,,,,"                          "
+TR  401.01,Desc.,CONTEMPORARY ISSUES IN TRANS.&TRANS.STUD,1,4,AYŞENAZ CENGİZ,WW,56,,JF 332 | JF 332,,,,"                          "
+TR  403.01,Desc.,POLITICAL DISCOURSE OF INTER. ORGANIZATI,3,5,MEHMET ŞAHİN,MMW,122,,TB 490 | TB 490 | JF 331,,,,"                          "
+TR  427.01,Desc.,TRANSLATION PROJECT DESIGN,1,3,JONATHAN MAURICE ROSS,,,,,,,,"                          "
+TR  427.02,Desc.,TRANSLATION PROJECT DESIGN,1,3,CEYDA ELGÜL,,,,,,,,"                          "
+TR  427.03,Desc.,TRANSLATION PROJECT DESIGN,1,3,ŞULE DEMİRKOL ERTÜRK,,,,,,,,"                          "
+TR  427.04,Desc.,TRANSLATION PROJECT DESIGN,1,3,AYŞENAZ CENGİZ,,,,,,,,"                          "
+TR  427.05,Desc.,TRANSLATION PROJECT DESIGN,1,3,ENA HODJIKJ,,,,,,,,"                          "
+TR  427.06,Desc.,TRANSLATION PROJECT DESIGN,1,3,EBRU DİRİKER,,,,,,,,"                          "
+TR  427.07,Desc.,TRANSLATION PROJECT DESIGN,1,3,ARZU AKBATUR,,,,,,,,"                          "
+TR  427.08,Desc.,TRANSLATION PROJECT DESIGN,1,3,ŞEHNAZ TAHİR GÜRÇAĞLAR,,,,,,,,"                          "
+TR  427.09,Desc.,TRANSLATION PROJECT DESIGN,1,3,HÜSEYİN MERGAN,,,,,,,,"                          "
+TR  427.10,Desc.,TRANSLATION PROJECT DESIGN,1,3,MEHMET ŞAHİN,,,,,,,,"                          "
+TR  427.11,Desc.,TRANSLATION PROJECT DESIGN,1,3,KATE FERGUSON,,,,,,,,"                          "
+TR  428.01,Desc.,TRANSLATION PROJECT,3,6,CEYDA ELGÜL,,,,,,,,"                          "
+TR  428.02,Desc.,TRANSLATION PROJECT,3,6,HÜSEYİN MERGAN,,,,,,,,"                          "
+TR  428.03,Desc.,TRANSLATION PROJECT,3,6,ARZU AKBATUR,,,,,,,,"                          "
+TR  483.01,Desc.,SP.TOP.IN TRANSLATION,3,5,DEFNE ORHUN SOYDAN,ThThTh,567,,M 2171 | M 2171 | M 2171,,,,"                          "
+TR  48L.01,Desc.,SP. TP. IN TRANS: APPLIED LING. FOR TRA.,3,5,ENA HODJIKJ,TWW,134,,JF 333 | JF 101 | JF 101,,,,"                          "
+TR  48R.01,Desc.,SP.TP.AUDIOVISUAL TRANSLATION,3,5,ASLI SÜREYYA SAYMAN,WWW,789,,JF 102 | JF 102 | JF 102,,,,"                          "
+TR  601.01,Desc.,HISTORY OF TRANSLATION THEORY,3,7,ŞEHNAZ TAHİR GÜRÇAĞLAR,TTT,234,,,,,,"                          "
+TR  611.01,Desc.,SEMINAR IN CONTEMPORARY TRANSLATION THEO,3,9,ÖZLEM BERK ALBACHTEN,MMM,123,,,,,,"                          "
+TR  621.01,Desc.,HIST. OF TRANSLATION IN OTT./TURKISH SOC,3,7,SALİHA PAKER,TTT,678,,,,,,"                          "
+TR  680.02,Desc.,SP.TOP.IN TRANSLATION STUDIES,3,7,EBRU DİRİKER,MMM,567,,,,,,"                          "
+TR  790.01,Desc.,DOCTORAL DISSERTATION,0,120,JONATHAN MAURICE ROSS,,,,,,,,"                          "
+TR  790.02,Desc.,DOCTORAL DISSERTATION,0,120,ÖZLEM BERK ALBACHTEN,,,,,,,,"                          "

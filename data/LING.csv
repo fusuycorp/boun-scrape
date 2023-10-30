@@ -1,0 +1,87 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Quota,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CAU 101.01,Desc.,ELEMENTARY LAZ I,3,5,Info,İSMAİL AVCI,ThThTh,678, ,TB 490 | TB 490 | TB 490,,,,"                          "
+CAU 111.01,Desc.,ELEMENTARY KABARDIAN I,3,5,Info,İLHAN AYDEMİR,TTT,789, ,JF 108 | JF 108 | JF 108,,,,"                          "
+CAU 112.01,Desc.,ELEMENTARY KABARDIAN II,3,5,Info,İLHAN AYDEMİR,ThThTh,789, ,JF 331 | JF 331 | JF 331,,,,"                          "
+CAU 121.01,Desc.,ELEMENTARY ABKHAZ I,3,5,Info,GUNDA ANKVAB,TTT,456, ,JF 102 | JF 102 | JF 102,,,,"                          "
+CAU 122.01,Desc.,ELEMENTARY ABKHAZ II,3,5,Info,GUNDA ANKVAB,TTT,789, ,EF 201 | EF 201 | EF 201,,,,"                          "
+CAU 211.01,Desc.,INTERMEDIATE KABARDIAN I,3,5,Info,İLHAN AYDEMİR,MMM,789, ,,,,,"                          "
+LING101.01,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS I,3,7,Info,ELENA GUERZONI,MMWW,5656, ,NH 304 | NH 304 | KP 01 | KP 01,,,,"                          "
+LING101.02,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS I,3,7,Info,ÖMER DEMİROK,MMWW,5656, ,EF 106 | EF 106 | NH 105 | NH 105,,,TKL,"                          "
+LING101.03,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS I,3,7,Info,KADİR GÖKGÖZ,MMWW,5656, ,EF 206 | EF 206 | NH 401 | NH 401,,,TENG,"                          "
+LING201.01,Desc.,PHONOLOGY,3,6,Info,STEFANO CANALIS,TTThTh,1212, ,EF 116 | EF 116 | NH 201 | NH 201,,,,"                          "
+LING203.01,Desc.,SYNTAX,3,6,Info,BALKIZ ÖZTÜRK,TTThTh,5634, ,M 2230 | M 2230 | NH 202 | NH 202,,,,"                          "
+LING305.01,Desc.,SEMANTICS,3,6,Info,ÖMER DEMİROK,MMWW,2334, ,NH 404 | NH 404 | NH 403 | NH 403,,,,"                          "
+LING313.01,Desc.,PHONOLOGY&MORPHOLOGY OF MODERN TURKISH,3,7,Info,METİN BAĞRIAÇIK,TTWW,3478, ,NH 303 | NH 303 | NH 301 | NH 301,,,,"                          "
+LING320.01,Desc.,ADVANCED PHONOLOGY,3,6,Info,STEFANO CANALIS,TWW,512, ,TB 240 | JF 108 | JF 108,,,,"                          "
+LING325.01,Desc.,LANGUAGE CONTACT,3,6,Info,METİN BAĞRIAÇIK,TThTh,656, ,M 1170 | M 2230 | M 2230,,,,"                          "
+LING411.01,Desc.,LINGUISTIC METHODOLOGY,4,8,Info,ÜMİT ATLAMAZ,TTFF,7867, ,M 1171 | M 1171 | M 1171 | M 1171,,,,"                          "
+LING412.01,Desc.,RESEARCH & WRITING,4,8,Info,DİDAR AKAR,,, ,,,,,"                          "
+LING412.02,Desc.,RESEARCH & WRITING,4,8,Info,ÜMİT ATLAMAZ,,, ,,,,,"                          "
+LING412.03,Desc.,RESEARCH & WRITING,4,8,Info,METİN BAĞRIAÇIK,,, ,,,,,"                          "
+LING412.04,Desc.,RESEARCH & WRITING,4,8,Info,STEFANO CANALIS,,, ,,,,,"                          "
+LING412.05,Desc.,RESEARCH & WRITING,4,8,Info,ÖMER DEMİROK,,, ,,,,,"                          "
+LING412.06,Desc.,RESEARCH & WRITING,4,8,Info,KADİR GÖKGÖZ,,, ,,,,,"                          "
+LING412.07,Desc.,RESEARCH & WRITING,4,8,Info,ELENA GUERZONI,,, ,,,,,"                          "
+LING412.08,Desc.,RESEARCH & WRITING,4,8,Info,MİNE NAKİPOĞLU,,, ,,,,,"                          "
+LING412.09,Desc.,RESEARCH & WRITING,4,8,Info,BALKIZ ÖZTÜRK,,, ,,,,,"                          "
+LING413.01,Desc.,COMPARATIVE ANALYSIS OF TURKIC LANGUAGES,3,6,Info,MEHMET ÖLMEZ,FFF,234, ,TB 415 | TB 415 | TB 415,,,,"                          "
+LING48N.01,Desc.,SP.TP.LANGUAGE AND COGNITION,3,6,Info,MİNE NAKİPOĞLU,TWW,478, ,TB 240 | M 2152 | M 2152,,,,"                          "
+LING495.01,Desc.,SP.TP.CONVERSATION ANALYSIS,3,6,Info,DİDAR AKAR,WFF,234, ,TB 415 | JF 334 | JF 334,,,,"                          "
+LING504.01,Desc.,SEMANTICS,4,10,Info,ELENA GUERZONI,TTThTh,2334, ,,,,,"                          "
+LING541.01,Desc.,SYNTACTIC THEORY,4,10,Info,ÜMİT ATLAMAZ,TTThTh,5612, ,,,,,"                          "
+LING552.01,Desc.,SOCIOLINGUISTICS,4,10,Info,DİDAR AKAR,MMWW,7856, ,,,,,"                          "
+LING570.01,Desc.,GUIDED STUDIES,3,5,Info,DİDAR AKAR,,, ,,,,,"                          "
+LING570.02,Desc.,GUIDED STUDIES,3,5,Info,METİN BAĞRIAÇIK,,, ,,,,,"                          "
+LING570.03,Desc.,GUIDED STUDIES,3,5,Info,STEFANO CANALIS,,, ,,,,,"                          "
+LING570.04,Desc.,GUIDED STUDIES,3,5,Info,ÖMER DEMİROK,,, ,,,,,"                          "
+LING570.05,Desc.,GUIDED STUDIES,3,5,Info,KADİR GÖKGÖZ,,, ,,,,,"                          "
+LING570.06,Desc.,GUIDED STUDIES,3,5,Info,ÜMİT ATLAMAZ,,, ,,,,,"                          "
+LING570.07,Desc.,GUIDED STUDIES,3,5,Info,ELENA GUERZONI,,, ,,,,,"                          "
+LING570.08,Desc.,GUIDED STUDIES,3,5,Info,MİNE NAKİPOĞLU,,, ,,,,,"                          "
+LING570.09,Desc.,GUIDED STUDIES,3,5,Info,BALKIZ ÖZTÜRK,,, ,,,,,"                          "
+LING571.01,Desc.,READINGS IN LINGUISTICS I,1,5,Info,DİDAR AKAR,,, ,,,,,"                          "
+LING571.02,Desc.,READINGS IN LINGUISTICS I,1,5,Info,METİN BAĞRIAÇIK,,, ,,,,,"                          "
+LING571.03,Desc.,READINGS IN LINGUISTICS I,1,5,Info,STEFANO CANALIS,,, ,,,,,"                          "
+LING571.04,Desc.,READINGS IN LINGUISTICS I,1,5,Info,ÖMER DEMİROK,,, ,,,,,"                          "
+LING571.05,Desc.,READINGS IN LINGUISTICS I,1,5,Info,KADİR GÖKGÖZ,,, ,,,,,"                          "
+LING571.06,Desc.,READINGS IN LINGUISTICS I,1,5,Info,ÜMİT ATLAMAZ,,, ,,,,,"                          "
+LING571.07,Desc.,READINGS IN LINGUISTICS I,1,5,Info,ELENA GUERZONI,,, ,,,,,"                          "
+LING571.08,Desc.,READINGS IN LINGUISTICS I,1,5,Info,MİNE NAKİPOĞLU,,, ,,,,,"                          "
+LING571.09,Desc.,READINGS IN LINGUISTICS I,1,5,Info,BALKIZ ÖZTÜRK,,, ,,,,,"                          "
+LING579.01,Desc.,GRADUATE SEMINAR,0,5,Info,METİN BAĞRIAÇIK,,, ,,,,,"                          "
+LING58D.01,Desc.,SP.TP.ACQUISTION OF SYNTAX,4,10,Info,KADİR GÖKGÖZ,MMWW,3434, ,,,,,"                          "
+LING598.01,Desc.,SP.TP.IN LING.LANG.&COGNITION,4,10,Info,MİNE NAKİPOĞLU,MMTT,5678, ,,,,,"                          "
+LING600.01,Desc.,LINGUISTICS; THEORY AND METHOD,3,10,Info,BALKIZ ÖZTÜRK,,, ,,,,,"                          "
+LING623.01,Desc.,LANGUAGE AND COGNITION,3,10,Info,MİNE NAKİPOĞLU,,, ,,,,,"                          "
+LING647.01,Desc.,SELECTED TOPICS IN SOCIOLINGUISTICS,3,10,Info,DİDAR AKAR,,, ,,,,,"                          "
+LING648.01,Desc.,SELECTED TOPICS IN LANGUAGE ACQUISITION,3,10,Info,KADİR GÖKGÖZ,,, ,,,,,"                          "
+LING671.01,Desc.,READINGS IN LINGUISTICS I,4,10,Info,DİDAR AKAR,,, ,,,,,"                          "
+LING671.02,Desc.,READINGS IN LINGUISTICS I,4,10,Info,METİN BAĞRIAÇIK,,, ,,,,,"                          "
+LING671.03,Desc.,READINGS IN LINGUISTICS I,4,10,Info,STEFANO CANALIS,,, ,,,,,"                          "
+LING671.04,Desc.,READINGS IN LINGUISTICS I,4,10,Info,ÖMER DEMİROK,,, ,,,,,"                          "
+LING671.05,Desc.,READINGS IN LINGUISTICS I,4,10,Info,KADİR GÖKGÖZ,,, ,,,,,"                          "
+LING671.06,Desc.,READINGS IN LINGUISTICS I,4,10,Info,ÜMİT ATLAMAZ,,, ,,,,,"                          "
+LING671.07,Desc.,READINGS IN LINGUISTICS I,4,10,Info,ELENA GUERZONI,,, ,,,,,"                          "
+LING671.08,Desc.,READINGS IN LINGUISTICS I,4,10,Info,MİNE NAKİPOĞLU,,, ,,,,,"                          "
+LING671.09,Desc.,READINGS IN LINGUISTICS I,4,10,Info,BALKIZ ÖZTÜRK,,, ,,,,,"                          "
+LING690.01,Desc.,MASTER THESIS,0,60,Info,DİDAR AKAR,,, ,,,,,"                          "
+LING690.02,Desc.,MASTER THESIS,0,60,Info,METİN BAĞRIAÇIK,,, ,,,,,"                          "
+LING690.03,Desc.,MASTER THESIS,0,60,Info,STEFANO CANALIS,,, ,,,,,"                          "
+LING690.04,Desc.,MASTER THESIS,0,60,Info,ÖMER DEMİROK,,, ,,,,,"                          "
+LING690.05,Desc.,MASTER THESIS,0,60,Info,KADİR GÖKGÖZ,,, ,,,,,"                          "
+LING690.06,Desc.,MASTER THESIS,0,60,Info,ÜMİT ATLAMAZ,,, ,,,,,"                          "
+LING690.07,Desc.,MASTER THESIS,0,60,Info,MİNE NAKİPOĞLU,,, ,,,,,"                          "
+LING690.08,Desc.,MASTER THESIS,0,60,Info,BALKIZ ÖZTÜRK,,, ,,,,,"                          "
+LING690.09,Desc.,MASTER THESIS,0,60,Info,ELENA GUERZONI,,, ,,,,,"                          "
+LING700.01,Desc.,GRADUATE SEMINAR,0,5,Info,METİN BAĞRIAÇIK,,, ,,,,,"                          "
+LING790.01,Desc.,Ph.D THESIS,0,120,Info,DİDAR AKAR,,, ,,,,,"                          "
+LING790.02,Desc.,Ph.D THESIS,0,120,Info,METİN BAĞRIAÇIK,,, ,,,,,"                          "
+LING790.03,Desc.,Ph.D THESIS,0,120,Info,STEFANO CANALIS,,, ,,,,,"                          "
+LING790.04,Desc.,Ph.D THESIS,0,120,Info,ÖMER DEMİROK,,, ,,,,,"                          "
+LING790.05,Desc.,Ph.D THESIS,0,120,Info,KADİR GÖKGÖZ,,, ,,,,,"                          "
+LING790.06,Desc.,Ph.D THESIS,0,120,Info,ÜMİT ATLAMAZ,,, ,,,,,"                          "
+LING790.07,Desc.,Ph.D THESIS,0,120,Info,MİNE NAKİPOĞLU,,, ,,,,,"                          "
+LING790.08,Desc.,Ph.D THESIS,0,120,Info,BALKIZ ÖZTÜRK,,, ,,,,,"                          "
+LING790.09,Desc.,Ph.D THESIS,0,120,Info,ELENA GUERZONI,,, ,,,,,"                          "
+TID 101.01,Desc.,ELEMENTARY TURKISH SIGN LANGUAGE I,3,5,Info,FERİDE KORKMAZ,WWW,345, ,JF 331 | JF 331 | JF 331,,,,"                          "
+TID 101.02,Desc.,ELEMENTARY TURKISH SIGN LANGUAGE I,3,5,Info,FERİDE KORKMAZ,WWW,789, ,JF 331 | JF 331 | JF 331,,,,"                          "

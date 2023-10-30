@@ -1,0 +1,11 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MECA502.01,Desc.,INDUSTRIAL CONTROL&INSTRUMENTATION,3,8,YANI SKARLATOS,StStSt,678,Online,,,,,"                          "
+MECA513.01,Desc.,ROBOTICS&ROBOT CONTROL,3,7,EVREN SAMUR,WWW,111213,Online,,,,,"                          "
+MECA524.01,Desc.,CONTROL SYSTEM DESIGN,3,7,MEHMET AKAR,TTT,111213,Online,,,,,"                          "
+MECA527.01,Desc.,INTRO.TO MICROELECTROMECHANICAL SYSTEMS,3,7,ŞENOL MUTLU,StStSt,234,Online,,,,,"                          "
+MECA532.01,Desc.,SOFT COMPUTING&INTELLIGENT CONTROL,3,7,EMRE UĞUR,FFF,111213,Online,,,,,"                          "
+MECA582.01,Desc.,SP.TP.PRODUCT DESIGN&DEVELOPMENT,3,7,SABRİ ALTINTAŞ,ThThTh,111213,Online,,,,,"                          "
+MECA590.01,Desc.,PROJECT,0,16,MEHMET AKAR,StSt,67,Online,,,,,"                          "
+MECA590.02,Desc.,PROJECT,0,16,EVREN SAMUR,StSt,67,Online,,,,,"                          "
+MECA591.01,Desc.,GUIDED RESEARCH,1,4,MEHMET AKAR,StSt,910,Online,,,,,"                          "
+MECA591.02,Desc.,GUIDED RESEARCH,1,4,EMRE UĞUR,StSt,89,Online,,,,,"                          "

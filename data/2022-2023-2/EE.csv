@@ -1,0 +1,102 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EE  101.01,Desc.,ORIENTATION TO ELECTRICAL ENGINEERING,3,6,SEMA DUMANLI OKTAR,WW,56, ,KB KIRCHHOFF | KB KIRCHHOFF,05.06.2023,3,,"                          "
+,,LAB,,,SEMA DUMANLI OKTAR,TT,45,,,,0,,"                          "
+,,LAB,,,SEMA DUMANLI OKTAR,WW,12,,,,0,,"                          "
+,,LAB,,,SEMA DUMANLI OKTAR,FFFF,6789,,,,0,,"                          "
+EE  210.01,Desc.,INTRODUCTION TO ELECTRICAL ENGINEERING,3,6,HEBA MOHAMED YÜKSEL,MMW,565, ,NH 101 | NH 101 | NH 402,02.06.2023,1,PHYS,"                          "
+EE  212.01,Desc.,INTRODUCTION TO ELECTRONIC ENGINEERING,3,4,OĞUZHAN ÇİÇEKOĞLU,MWW,656, ,NH 104 | NH 104 | NH 104,06.06.2023,1,CMPE,"                          "
+EE  214.01,Desc.,PROBABILITY FOR EE,3,6,AYŞIN ERTÜZÜN,TTTh,673, ,KB KIRCHHOFF | KB KIRCHHOFF | KB KIRCHHOFF,02.06.2023,1,,"                          "
+EE  232.01,Desc.,SEMICONDUCTORS AND ELECTRONIC DEVICES,3,6,ŞENOL MUTLU,WWTh,784, ,KB TESLA | KB TESLA | KB KIRCHHOFF,04.06.2023,3,,"                          "
+EE  244.01,Desc.,DIGITAL SYSTEM DESIGN,3,4,ŞENOL MUTLU,ThTh,78, ,KB TESLA | KB TESLA,,,,"                          "
+,,LAB,,,ŞENOL MUTLU,MM,34,,,,0,,"                          "
+,,LAB,,,ŞENOL MUTLU,WW,56,,,,0,,"                          "
+,,LAB,,,ŞENOL MUTLU,FFFF,2345,,,,0,,"                          "
+EE  272.01,Desc.,SIGNALS AND SYSTEMS-II,3,6,BURAK ACAR,TTW,341, ,KB KIRCHHOFF | KB KIRCHHOFF | KB TESLA,30.05.2023,1,,"                          "
+EE  304.01,Desc.,ENERGY CONVERSION,3,6,İBRAHİM ALPAY ÖZCAN,TThTh,256, ,KB KIRCHHOFF,06.06.2023,2,,"                          "
+EE  330.01,Desc.,SOLID STATE ELECTRONICS,3,6,ARDA YALÇINKAYA,TThTh,678, ,,26.05.2023,2,,"                          "
+EE  334.01,Desc.,ELECTRONICS II,3,6,GÜNHAN DÜNDAR,MWW,278, ,KB KIRCHHOFF | KB KIRCHHOFF | KB KIRCHHOFF,03.06.2023,1,,"                          "
+,,P.S.,,,GÜNHAN DÜNDAR,Th,1,,KB KIRCHHOFF,,0,,"                          "
+EE  336.01,Desc.,ELECTRONICS LABORATORY II,1,2,KEMAL OZANOĞLU,M,1, ,KB KIRCHHOFF,,,,"                          "
+,,LAB,,,KEMAL OZANOĞLU,MMM,789,,,,0,,"                          "
+,,LAB,,,KEMAL OZANOĞLU,WWW,123,,,,0,,"                          "
+,,LAB,,,KEMAL OZANOĞLU,FFF,123,,,,0,,"                          "
+,,LAB,,,KEMAL OZANOĞLU,FFF,678,,,,0,,"                          "
+EE  342.01,Desc.,NUMERICAL METHODS FOR ELECTRICAL ENGINEERING,3,6,LEVENT ARSLAN,WW,12, ,KB KIRCHHOFF | KB KIRCHHOFF,30.05.2023,3,,"                          "
+EE  364.01,Desc.,APPLICATIONS OF ELECTROMAGNETIC FIELD THEORY,3,6,SEMA DUMANLI OKTAR,TTW,783, ,KB NEW CLASSROOM | KB NEW CLASSROOM | KB NEW CLASSROOM,02.06.2023,2,,"                          "
+EE  372.01,Desc.,RANDOM SIGNALS,3,6,ALİ EMRE PUSANE,MWW,656, ,KB TESLA | KB TESLA | KB TESLA,25.05.2023,3,,"                          "
+EE  400.01,Desc.,ENGINEERING INTERNSHIP,0,10,OĞUZHAN ÇİÇEKOĞLU,,, ,,24.05.2023,3,,"                          "
+EE  432.01,Desc.,DIGITAL ELECTRONICS,3,6,YASEMİN KAHYA,TTTh,455, ,KB NEW CLASSROOM | KB NEW CLASSROOM | KB NEW CLASSROOM,07.06.2023,2,,"                          "
+EE  438.01,Desc.,DESIGN WITH INTEGRATED CIRCUITS,3,6,YASEMİN KAHYA,TThTh,223, ,KB NEW CLASSROOM | KB NEW CLASSROOM | KB NEW CLASSROOM,30.05.2023,3,,"                          "
+EE  450.01,Desc.,CONTROL TECHNOLOGY & DESIGN,4,6,KEMAL CILIZ,MMW,454, ,KB FOURIER | KB FOURIER | KB FOURIER,26.05.2023,1,,"                          "
+EE  457.01,Desc.,INTRODUCTION TO OPTIMIZATION THEORY,3,6,MEHMET AKAR,ThThF,786, ,KB KIRCHHOFF | KB KIRCHHOFF | KB KIRCHHOFF,06.06.2023,1,,"                          "
+EE  460.01,Desc.,INTRODUCTION TO REMOTE SENSING,3,6,SELİM ŞEKER,MMM,123, ,KB DAĞÖZAY | KB DAĞÖZAY | KB DAĞÖZAY,25.05.2023,1,,"                          "
+EE  475.01,Desc.,INTRODUCTION TO IMAGE PROCESSING,3,6,BÜLENT SANKUR,TTTh,121, ,KB FOURIER | KB FOURIER | KB FOURIER,26.05.2023,3,,"                          "
+EE  491.01,Desc.,SPECIAL PROJECT,3,6,ŞENOL MUTLU,,, ,,,,,"                          "
+EE  492.01,Desc.,PROJECT,4,8,ŞENOL MUTLU,,, ,,,,,"                          "
+EE  536.01,Desc.,APPLICATIONS OF MICROELECTROMECHANICAL SYSTEMS,3,8,ARDA YALÇINKAYA,TWW,356, ,KB NEW CLASSROOM | KB MAXWELL | KB MAXWELL,,,,"                          "
+EE  544.01,Desc.,DIGITAL WIRELESS COMMUNICATION,3,8,MUTLU KOCA,ThThTh,678, ,KB NEW CLASSROOM | KB NEW CLASSROOM | KB NEW CLASSROOM,30.05.2023,2,,"                          "
+EE  553.01,Desc.,INTRODUCTION TO NONLINEAR CONTROL,3,8,YAĞMUR DENİZHAN,TThTh,423, ,KB FOURIER | KB FOURIER | KB FOURIER,07.06.2023,2,,"                          "
+EE  562.01,Desc.,MICROWAVES,3,8,AVNİ MORGÜL,MMM,678, ,KB DAĞÖZAY | KB DAĞÖZAY | KB DAĞÖZAY,30.05.2023,3,,"                          "
+EE  564.01,Desc.,OPTOELECTRONICS AND PHOTONICS,3,6,HEBA MOHAMED YÜKSEL,MWW,434, ,KB DAĞÖZAY | KB DAĞÖZAY | KB DAĞÖZAY,04.06.2023,1,,"                          "
+EE  570.01,Desc.,SUBSPACE METHOHDS IN SIGNAL ANALYSIS,3,8,AYŞIN ERTÜZÜN,MMTh,564, ,KB NEW CLASSROOM | KB NEW CLASSROOM | KB NEW CLASSROOM,25.05.2023,3,,"                          "
+EE  572.01,Desc.,MATHEMATICAL METHODS FOR SIGNAL PROCESSING,3,8,BÜLENT SANKUR,TThTh,323, ,KB SHANNON | KB MAXWELL | KB MAXWELL,07.06.2023,1,,"                          "
+,,P.S.,,,STAFF STAFF,T,4,,KB SHANNON,,0,,"                          "
+EE  575.01,Desc.,NETWORK SECURITY AND CRYPTOGRAPHY,3,8,EMİN ANARIM,TTT,578, ,KB DAĞÖZAY | KB DAĞÖZAY | KB DAĞÖZAY,07.06.2023,1,,"                          "
+EE  576.01,Desc.,MACHINE VISION,3,8,IŞIL BOZMA,MWW,312, ,KB FOURIER | KB SHANNON | KB SHANNON,01.06.2023,3,,"                          "
+EE  578.01,Desc.,SPEECH PROCESSING,3,8,MURAT SARAÇLAR,MMW,123, ,KB MAXWELL | KB MAXWELL | KB MAXWELL,,,,"                          "
+EE  580.01,Desc.,SP.TP.FUNDAMENTALS OF COMPUTATIONAL NEUROSCIENCE,3,8,BURAK GÜÇLÜ,MMM,789, ,KB MAXWELL | KB MAXWELL | KB MAXWELL,02.06.2023,3,,"                          "
+EE  58A.01,Desc.,SP.TP.MACHINE LEARNING,3,8,BURAK ACAR,TWW,645, ,KB DAĞÖZAY | KB NEW CLASSROOM | KB NEW CLASSROOM,,,,"                          "
+EE  58J.01,Desc.,SP.TP.DATA MINING FOR VISUAL MEDIA,3,8,CEYHUN BURAK AKGÜL,FFF,567, ,KB SHANNON | KB SHANNON | KB SHANNON,31.05.2023,1,,"                          "
+EE  628.01,Desc.,GAME THEORY,3,8,UFUK TÜRELİ,ThThTh,234, ,KB SHANNON | KB SHANNON | KB SHANNON,06.06.2023,3,,"                          "
+EE  632.01,Desc.,SYSTEM DESIGN WITH MICROELECTRONIC DEVICES,3,8,GÜNHAN DÜNDAR,MMW,563, ,KB MAXWELL | KB MAXWELL | KB FOURIER,,,,"                          "
+EE  638.01,Desc.,ADVANCED VLSI DESIGN,3,8,İSMAİL FAİK BAŞKAYA,MWW,378, ,KB SHANNON | KB SHANNON | KB SHANNON,,,,"                          "
+EE  653.01,Desc.,OPTIMAL CONTROL THEORY,3,8,IŞIL BOZMA,MMW,563, ,KB SHANNON | KB SHANNON | KB SHANNON,31.05.2023,3,,"                          "
+EE  680.01,Desc.,SP.TP.POWER MANAGEMENT INTEGRATED CIRCUIT DESIGN,3,8,KEMAL OZANOĞLU,MMW,782, ,KB FOURIER | KB FOURIER | KB FOURIER,26.05.2023,1,,"                          "
+EE  685.01,Desc.,SP.TP.RF IC DESIGN,3,8,AHMET ÖNCÜ,MMW,121, ,KB NEW CLASSROOM | KB NEW CLASSROOM | KB MAXWELL,26.05.2023,3,,"                          "
+EE  690.01,Desc.,M.S.THESIS,0,60,BURAK ACAR,,, ,,,,,"                          "
+EE  690.02,Desc.,M.S.THESIS,0,60,MEHMET AKAR,,, ,,,,,"                          "
+EE  690.03,Desc.,M.S.THESIS,0,60,EMİN ANARIM,,, ,,,,,"                          "
+EE  690.04,Desc.,M.S.THESIS,0,60,LEVENT ARSLAN,,, ,,,,,"                          "
+EE  690.05,Desc.,M.S.THESIS,0,60,İSMAİL FAİK BAŞKAYA,,, ,,,,,"                          "
+EE  690.06,Desc.,M.S.THESIS,0,60,IŞIL BOZMA,,, ,,,,,"                          "
+EE  690.07,Desc.,M.S.THESIS,0,60,KEMAL CILIZ,,, ,,,,,"                          "
+EE  690.08,Desc.,M.S.THESIS,0,60,OĞUZHAN ÇİÇEKOĞLU,,, ,,,,,"                          "
+EE  690.09,Desc.,M.S.THESIS,0,60,HAKAN DELİÇ,,, ,,,,,"                          "
+EE  690.10,Desc.,M.S.THESIS,0,60,YAĞMUR DENİZHAN,,, ,,,,,"                          "
+EE  690.11,Desc.,M.S.THESIS,0,60,GÜNHAN DÜNDAR,,, ,,,,,"                          "
+EE  690.12,Desc.,M.S.THESIS,0,60,AYŞIN ERTÜZÜN,,, ,,,,,"                          "
+EE  690.13,Desc.,M.S.THESIS,0,60,YASEMİN KAHYA,,, ,,,,,"                          "
+EE  690.14,Desc.,M.S.THESIS,0,60,MUTLU KOCA,,, ,,,,,"                          "
+EE  690.15,Desc.,M.S.THESIS,0,60,ŞENOL MUTLU,,, ,,,,,"                          "
+EE  690.16,Desc.,M.S.THESIS,0,60,SEMA DUMANLI OKTAR,,, ,,,,,"                          "
+EE  690.17,Desc.,M.S.THESIS,0,60,AHMET ÖNCÜ,,, ,,,,,"                          "
+EE  690.18,Desc.,M.S.THESIS,0,60,KADRİ ÖZÇALDIRAN,,, ,,,,,"                          "
+EE  690.19,Desc.,M.S.THESIS,0,60,ALİ EMRE PUSANE,,, ,,,,,"                          "
+EE  690.20,Desc.,M.S.THESIS,0,60,MURAT SARAÇLAR,,, ,,,,,"                          "
+EE  690.21,Desc.,M.S.THESIS,0,60,ARDA YALÇINKAYA,,, ,,,,,"                          "
+EE  690.22,Desc.,M.S.THESIS,0,60,HEBA MOHAMED YÜKSEL,,, ,,,,,"                          "
+EE  690.23,Desc.,M.S.THESIS,0,60,İBRAHİM ALPAY ÖZCAN,,, ,,,,,"                          "
+EE  699.01,Desc.,GUIDED RESEARCH,4,10,İSMAİL FAİK BAŞKAYA,,, ,,,,,"                          "
+EE  790.01,Desc.,Ph.D.THESIS,0,120,BURAK ACAR,,, ,,,,,"                          "
+EE  790.02,Desc.,Ph.D.THESIS,0,120,MEHMET AKAR,,, ,,,,,"                          "
+EE  790.03,Desc.,Ph.D.THESIS,0,120,EMİN ANARIM,,, ,,,,,"                          "
+EE  790.04,Desc.,Ph.D.THESIS,0,120,LEVENT ARSLAN,,, ,,,,,"                          "
+EE  790.05,Desc.,Ph.D.THESIS,0,120,İSMAİL FAİK BAŞKAYA,,, ,,,,,"                          "
+EE  790.06,Desc.,Ph.D.THESIS,0,120,IŞIL BOZMA,,, ,,,,,"                          "
+EE  790.07,Desc.,Ph.D.THESIS,0,120,KEMAL CILIZ,,, ,,,,,"                          "
+EE  790.08,Desc.,Ph.D.THESIS,0,120,OĞUZHAN ÇİÇEKOĞLU,,, ,,,,,"                          "
+EE  790.09,Desc.,Ph.D.THESIS,0,120,HAKAN DELİÇ,,, ,,,,,"                          "
+EE  790.10,Desc.,Ph.D.THESIS,0,120,YAĞMUR DENİZHAN,,, ,,,,,"                          "
+EE  790.11,Desc.,Ph.D.THESIS,0,120,GÜNHAN DÜNDAR,,, ,,,,,"                          "
+EE  790.12,Desc.,Ph.D.THESIS,0,120,AYŞIN ERTÜZÜN,,, ,,,,,"                          "
+EE  790.13,Desc.,Ph.D.THESIS,0,120,YASEMİN KAHYA,,, ,,,,,"                          "
+EE  790.14,Desc.,Ph.D.THESIS,0,120,MUTLU KOCA,,, ,,,,,"                          "
+EE  790.15,Desc.,Ph.D.THESIS,0,120,ŞENOL MUTLU,,, ,,,,,"                          "
+EE  790.16,Desc.,Ph.D.THESIS,0,120,SEMA DUMANLI OKTAR,,, ,,,,,"                          "
+EE  790.17,Desc.,Ph.D.THESIS,0,120,AHMET ÖNCÜ,,, ,,,,,"                          "
+EE  790.18,Desc.,Ph.D.THESIS,0,120,KADRİ ÖZÇALDIRAN,,, ,,,,,"                          "
+EE  790.19,Desc.,Ph.D.THESIS,0,120,ALİ EMRE PUSANE,,, ,,,,,"                          "
+EE  790.20,Desc.,Ph.D.THESIS,0,120,MURAT SARAÇLAR,,, ,,,,,"                          "
+EE  790.21,Desc.,Ph.D.THESIS,0,120,ARDA YALÇINKAYA,,, ,,,,,"                          "
+EE  790.22,Desc.,Ph.D.THESIS,0,120,HEBA MOHAMED YÜKSEL,,, ,,,,,"                          "
+EE  790.23,Desc.,Ph.D.THESIS,0,120,İBRAHİM ALPAY ÖZCAN,,, ,,,,,"                          "

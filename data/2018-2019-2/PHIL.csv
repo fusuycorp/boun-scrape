@@ -1,0 +1,47 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL106.01,Desc.,PHILOSOPHICAL TEXTS,3,8,BERİL İDEMEN SÖZMEN,TTF,564,,KP 01 | KP 01 | NH 301,28.05.2019,1,,"                          "
+PHIL112.01,Desc.,INTRODUCTION TO MODERN PHILOSOPHY,3,6,SUN DEMİRLİ,MWW,334,,NH 305 | KP 01 | KP 01,20.05.2019,3,"GUID,LL,TKL","                          "
+PHIL132.01,Desc.,LOGIC II,4,8,KARANFİL SOYHUN,TTFF,1212,,TB 310 | TB 310 | NH 405 | NH 405,21.05.2019,3,,"                          "
+PHIL214.01,Desc.,HISTORY OF PHILOSOPHY II,3,6,CHRYSSI SIDIROPOULOU,WWF,565,,EF 106 | EF 106 | TB 310,31.05.2019,1,,"                          "
+PHIL222.01,Desc.,PHILOSOPHY OF SCIENCE,3,6,KENNETH ROBERT WESTPHAL,WWF,786,,NH 102 | NH 102 | TB 310,20.05.2019,3,,"                          "
+PHIL314.01,Desc.,HISTORY OF PHILOSOPHY IV,3,6,STEPHEN VOSS,MMW,343,,NH 203 | NH 203 | JF 333,27.05.2019,1,,"                          "
+PHIL382.01,Desc.,ONTOLOGY,3,7,NURBAY IRMAK,TThTh,834,,TB 310 | NH 404 | NH 404,22.05.2019,2,,"                          "
+PHIL412.01,Desc.,ADVANCED HISTORY OF PHILOSOPHY,3,6,KENNETH ROBERT WESTPHAL,WWF,343,,TB 490 | TB 490 | TB 310,01.06.2019,2,,"                          "
+PHIL421.01,Desc.,THEORIES OF RATIONALITY,3,6,BERNA KILINÇ,ThThF,895,,TB 490 | TB 490 | M 1171,28.05.2019,2,,"                          "
+PHIL453.01,Desc.,FREEDOM ,3,6,YILDIZ SİLİER,TTF,346,,JF 507 | JF 507 | M 1171,25.05.2019,1,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,NURBAY IRMAK,,, ,,,,,"                          "
+PHIL499.05,Desc.,INDEPENDENT STUDY,3,6,YILDIZ SİLİER,,, ,,,,,"                          "
+PHIL499.07,Desc.,INDEPENDENT STUDY,3,6,STEPHEN VOSS,,, ,,,,,"                          "
+PHIL499.08,Desc.,INDEPENDENT STUDY,3,6,KENNETH ROBERT WESTPHAL,,, ,,,,,"                          "
+PHIL499.10,Desc.,INDEPENDENT STUDY,3,6,LUCAS THORPE,,, ,,,,,"                          "
+PHIL49N.01,Desc.,SP.TP.ONTOLOGY OF ART OBJECT,3,6,NURBAY IRMAK,TTTh,566,,JF 507 | JF 507 | JF 507,23.05.2019,1,,"                          "
+PHIL49O.01,Desc.,SP.TP.ISSUES IN PHENOMENOLOGY,3,6,TERENCE HOLDEN,MMF,787,,,29.05.2019,1,,"                          "
+PHIL49P.01,Desc.,SP.TP.ETHICS POL.&SUBJECT.IN HEGEL,3,6,JOHANNES FRITSCHE,WWF,674,,KYD 209 | KYD 209 | NB Z10,28.05.2019,3,,"                          "
+PHIL515.01,Desc.,TOP. IN HIST. OF PHILOSOPHY,4,10,JOHANNES FRITSCHE,MMM,678,,,,,,"                          "
+PHIL525.01,Desc.,PHILOSOPHY OF LANGUAGE,3,10,KARANFİL SOYHUN,ThThTh,234,,,,,,"                          "
+PHIL543.01,Desc.,PHILOSOPHICAL APPROACHES TO ISSUES IN FE,3,10,YILDIZ SİLİER,FFF,234,,,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL590.06,Desc.,DIRECTED STUDY,3,10,BERNA KILINÇ,,,,,,,,"                          "
+PHIL59H.01,Desc.,APPLIED ETHICS,3,10,BERİL İDEMEN SÖZMEN,MMM,345,,,,,,"                          "
+PHIL59I.01,Desc.,SP.TP.:METAPHYSICS,3,10,SUN DEMİRLİ,TTT,234,,,,,,"                          "
+PHIL59J.01,Desc.,SP.TP.ERRORS OF REASONING,3,10,BERNA KILINÇ,WWW,678,,,,,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,3,30,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,NURBAY IRMAK,,,,,,,,"                          "
+PHIL690.02,Desc.,MASTER THESIS,0,60,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL690.03,Desc.,MASTER THESIS,0,60,SUN DEMİRLİ,,,,,,,,"                          "
+PHIL690.05,Desc.,MASTER THESIS,0,60,YILDIZ SİLİER,,,,,,,,"                          "
+PHIL690.06,Desc.,MASTER THESIS,0,60,BERNA KILINÇ,,,,,,,,"                          "
+PHIL690.07,Desc.,MASTER THESIS,0,60,JOHANNES FRITSCHE,,,,,,,,"                          "
+PHIL690.08,Desc.,MASTER THESIS,0,60,STEPHEN VOSS,,,,,,,,"                          "
+PHIL690.09,Desc.,MASTER THESIS,0,60,BERİL İDEMEN SÖZMEN,,,,,,,,"                          "
+PHIL690.10,Desc.,MASTER THESIS,0,60,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL690.11,Desc.,MASTER THESIS,0,60,LUCAS THORPE,,,,,,,,"                          "
+PHIL700.01,Desc.,GRADUATE SEMINAR,0,2,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL790.02,Desc.,Ph.D THESIS,0,120,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL790.03,Desc.,Ph.D THESIS,0,120,SUN DEMİRLİ,,,,,,,,"                          "
+PHIL790.04,Desc.,Ph.D THESIS,0,120,KARANFİL SOYHUN,,,,,,,,"                          "
+PHIL790.07,Desc.,Ph.D THESIS,0,120,JOHANNES FRITSCHE,,,,,,,,"                          "
+PHIL790.08,Desc.,Ph.D THESIS,0,120,STEPHEN VOSS,,,,,,,,"                          "
+PHIL790.10,Desc.,Ph.D THESIS,0,120,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL790.11,Desc.,Ph.D THESIS,0,120,LUCAS THORPE,,,,,,,,"                          "

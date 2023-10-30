@@ -1,0 +1,54 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CMPE150.01,Desc.,INTRODUCTION TO COMPUTING,3,5,PINAR YOLUM BİRBİL,M,3,,,,,,"                          "
+CMPE150.02,Desc.,INTRODUCTION TO COMPUTING,3,5,PINAR YOLUM BİRBİL,M,3,,,,,ME,"        CMPE                  "
+CMPE150.03,Desc.,INTRODUCTION TO COMPUTING,3,5,PINAR YOLUM BİRBİL,M,3,,,,,ME,"        CMPE                  "
+CMPE150.04,Desc.,INTRODUCTION TO COMPUTING,3,5,AYŞE BAŞAR,M,4,,,,,CHE,"                          "
+CMPE150.05,Desc.,INTRODUCTION TO COMPUTING,3,5,AYŞE BAŞAR,M,4,,,,,CHE,"                          "
+CMPE150.06,Desc.,INTRODUCTION TO COMPUTING,3,5,TUNA TUĞCU,M,5,,,,,,"                          "
+CMPE150.07,Desc.,INTRODUCTION TO COMPUTING,3,5,TUNA TUĞCU,M,5,,,,,,"                          "
+CMPE150.08,Desc.,INTRODUCTION TO COMPUTING,3,5,TUNA TUĞCU,M,5,,,,,CET,"                          "
+CMPE160.01,Desc.,INTRODUCTION TO OBJECT ORIENTED PROG.,4,9,H. LEVENT AKIN,MThTh,478,,,,,,"                          "
+CMPE210.01,Desc.,FUNDAMENTALS OF OBJECT ORIENTED PROG.,4,5,ALİ VAHİT ŞAHİNER,TTTh,784,,,,,,"                          "
+CMPE220.01,Desc.,DISCRETE COMPUTATIONAL STRUCTURES,3,4,ETHEM ALPAYDIN,MMF,566,,,,,,"                          "
+CMPE230.01,Desc.,SYSTEMS PROGRAMMING,4,6,CAN ÖZTURAN,TWW,256,,,,,,"                          "
+CMPE235.01,Desc.,OPERATING SYSTEMS AND THEIR USE       ,3,7,TUNA TUĞCU,WWW,567,,,,,CET,"                          "
+CMPE250.01,Desc.,DATA STRUCTURES & ALGORITHMS,4,6,FATİH ALAGÖZ,TWW,578,,,,,,"                          "
+CMPE300.01,Desc.,ANALYSIS OF ALGORITHMS,3,5,TUNGA GÜNGÖR,TWW,534,,,,,,"                          "
+CMPE322.01,Desc.,OPERATING SYSTEMS,4,5,M. UFUK ÇAĞLAYAN,WWTh,785,,,,,,"                          "
+CMPE344.01,Desc.,COMPUTER ORGANIZATION,4,5,OĞUZ TOSUN,MMTh,346,,,,,,"                          "
+CMPE422.01,Desc.,DATABASE SYSTEMS,3,6,TAFLAN GÜNDEM,FFF,578,,,,,,"                          "
+CMPE443.01,Desc.,PRINCIPLES OF EMBEDDEDSYSTEMS DESIGN,4,6,ARDA YURDAKUL,MMW,343,,,,,,"        CMPE                  "
+CMPE450.01,Desc.,SOFTWARE ENGINEERING,4,7,HALUK BİNGÖL,WFF,623,,,,,,"                          "
+CMPE460.01,Desc.,INTRODUCTION TO COMPUTER GRAPHICS,3,6,ALİ VAHİT ŞAHİNER,TThTh,467,,,,,,"                          "
+CMPE464.01,Desc.,IMAGE PROCESSING FOR COMPUTER GRAPHICS,3,6,LALE AKARUN,MTT,267,,,,,,"                          "
+CMPE468.01,Desc.,MULTIMEDIA COMPUTING,3,6,SADIK FİKRET GÜRGEN,TThTh,434,,,,,,"                          "
+CMPE475.01,Desc.,COMPUTER NETWORKS,3,6,M. UFUK ÇAĞLAYAN,WThTh,512,,,,,,"                          "
+CMPE480.01,Desc.,INTRODUCTION TO ARTIFICIAL INTELLIGENCE,3,6,CEM SAY,WWTh,784,,,,,,"                          "
+CMPE491.01,Desc.,SPEC. PROJECT IN COMPUTER ENGINEERING,3,6,AYŞE BAŞAR,TBA,,,,,,,"                          "
+CMPE492.01,Desc.,PROJECT,4,7,AYŞE BAŞAR,TBA,,,,,,,"                          "
+CMPE494.01,Desc.,SP.TOP:SERVICE ORIENTDE ARCHIT.AND WEBSE,3,6,AYŞE BAŞAR,ThThTh,345,,,,,,"                          "
+CMPE511.01,Desc.,COMPUTER ARCHITECTURE,3,8,OĞUZ TOSUN,ThThTh,234,,,,,,"                          "
+CMPE521.01,Desc.,PRINCIPLES OF DATABASE SYSTEMS,3,8,TAFLAN GÜNDEM,WWW,678,,,,,,"                          "
+CMPE523.01,Desc.,PERFORMANCE EVALUATION OF COMPUTER NETWO,3,8,CEM ERSOY,TTT,123,,,,,,"                          "
+CMPE530.01,Desc.,MATH. FUNDS. OF ARTIFICAL INTELLIGENCE,3,8,SADIK FİKRET GÜRGEN,MMM,234,,,,,,"                          "
+CMPE537.01,Desc.,COMPUTER VISION,3,8,LALE AKARUN,ThThTh,567,,,,,,"                          "
+CMPE540.01,Desc.,PRINCIPLES OF ARTIFICIAL INTELLIGENCE,3,8,H. LEVENT AKIN,WWW,234,,,,,,"                          "
+CMPE542.01,Desc.,AUTOMATED THEOREM PROVING,3,8,TUNGA GÜNGÖR,TTT,678,,,,,,"                          "
+CMPE544.01,Desc.,PATTERN RECOGNITION,3,8,ETHEM ALPAYDIN,FFF,234,,,,,,"                          "
+CMPE579.01,Desc.,GRADUATE SEMINAR,0,8,ALİ VAHİT ŞAHİNER,TBA,,,,,,,"                          "
+CMPE581.01,Desc.,SP.TOP:COM.ENG.FOR MOB./WIRELESS NETWORK,3,8,FATİH ALAGÖZ,TTT,678,,,,,,"                          "
+CMPE584.01,Desc.,SP.TOP.IN CMPE:RECONFIGURABLE COMPUTING,3,8,ARDA YURDAKUL,,, ,,,,,"                          "
+CMPE588.01,Desc.,SP.TOP.IN CMPE:MODELING OF INTERNET,3,8,HALUK BİNGÖL,FFF,567,,,,,,"                          "
+CMPE595.01,Desc.,SP.TOP.IN CMPE:COMPLEXITY THEORY,3,8,CEM SAY,FFF,678,,,,,,"                          "
+CMPE597.01,Desc.,SP.TOP.IN CMPE:GRAPH ALGORITHMS,3,8,CAN ÖZTURAN,ThThTh,678,,,,,,"                          "
+CMPE690.01,Desc.,M.S.THESIS,0,60,H. LEVENT AKIN,TBA,,,,,,,"                          "
+CMPE699.01,Desc., GUIDED RESEARCH ,4,8,H. LEVENT AKIN,TBA,,,,,,,"                          "
+CMPE699.02,Desc., GUIDED RESEARCH ,4,8,LALE AKARUN,TBA,,,,,,,"                          "
+CMPE699.03,Desc., GUIDED RESEARCH ,4,8,TUNGA GÜNGÖR,TBA,,,,,,,"                          "
+CMPE699.04,Desc., GUIDED RESEARCH ,4,8,CAN ÖZTURAN,TBA,,,,,,,"                          "
+CMPE790.01,Desc.,Ph.D.THESIS,0,120,M. UFUK ÇAĞLAYAN,TBA,,,,,,,"                          "
+ENG 101.01,Desc.,INTRODUCTION TO COMPUTERS,3,7,LALE AKARUN,MM,34,,,,,PEDU 2,"                          "
+ENG 101.02,Desc.,INTRODUCTION TO COMPUTERS,3,7,ETHEM ALPAYDIN,MM,34,,,,,FLED,"                          "
+ENG 101.03,Desc.,INTRODUCTION TO COMPUTERS,3,7,M. UFUK ÇAĞLAYAN,MM,34,,,,,PRED,"                          "
+ENG 101.04,Desc.,INTRODUCTION TO COMPUTERS,3,7,CEM ERSOY,MM,34,,,,,"PRED,FLED 2","                          "
+ENG 101.05,Desc.,INTRODUCTION TO COMPUTERS,3,7,TAFLAN GÜNDEM,MM,34,,,,,BIO,"                          "

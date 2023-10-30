@@ -1,0 +1,86 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+BIO 101.01,Desc.,CELLULAR AND MOLECULAR BIOLOGY I,3,5,ŞÜKRÜ ANIL DOĞAN,MMTh,565, ,KP 01 | KP 01 | KP 01,13.01.2023,3,BIO,"                          "
+BIO 101.02,Desc.,CELLULAR AND MOLECULAR BIOLOGY I,3,5,FATİH YANAR,MMTh,565, ,KP 315 | KP 315 | KP 315,13.01.2023,3,"CEDU,P_SCI","                          "
+BIO 102.01,Desc.,CELLULAR AND MOLECULAR BIOLOGY II,3,5,NECLA BİRGÜL İYİSON,TThTh,334, ,KP 04 | KP 09 | KP 09,05.01.2023,1,,"                          "
+BIO 106.01,Desc.,CELL BIOLOGY LABORATORY,2,3,NECLA BİRGÜL İYİSON,M,8, ,KP 09,03.01.2023,1,,"                          "
+,,LAB,,,NECLA BİRGÜL İYİSON,FFF,678,,KP 214 | KP 214 | KP 214,,0,,"                          "
+BIO 111.01,Desc.,PRELUDE TO MOLECULAR BIOLOGY,1,1,ŞÜKRÜ ANIL DOĞAN,Th,8, ,KP 315,,,,"                          "
+BIO 121.01,Desc.,INTRO.TO CELL BIOLOGY,3,5,NESRİN ÖZÖREN,WWF,344, ,KP 09 | KP 09 | NH 101,04.01.2023,2,,"                          "
+BIO 201.01,Desc.,EVOLUTION AND BIODIVERSITY,3,3,STEVEN FOOTITT,TWW,678, ,KP 01 | KP 01 | KP 01,02.01.2023,1,"BIO,P_SCI","                          "
+BIO 203.01,Desc.,BIOSTATISTICS,3,5,STEFAN FUSS,TTF,783, ,KP 01 | KP 01 | NH 304,13.01.2023,1,,"                          "
+BIO 301.01,Desc.,BIOCHEMISTRY I,4,6,İBRAHİM YAMAN,MMWW,3434, ,KP 315 | KP 315 | KP 315 | KP 315,04.01.2023,1,,"                          "
+BIO 308.02,Desc.,SEMINAR I,1,2,NECLA BİRGÜL İYİSON,ThTh,12, ,KP 08 | KP 08,,,,"                          "
+BIO 331.01,Desc.,TECHNIQUES IN BIOLOGICAL RESEARCH,3,6,ALİ RIZA UMUT ŞAHİN,WWF,123, ,KP 315 | KP 315 | KP 01,30.12.2022,2,,"                          "
+BIO 333.01,Desc.,BIOCHEMISTRY LABORATORY,3,6,ALİ RIZA UMUT ŞAHİN,T,4, ,NH 303,07.01.2023,3,,"                          "
+,,LAB,,,ALİ RIZA UMUT ŞAHİN,WWWW,5678,,KP 215 | KP 215 | KP 215 | KP 215,,0,,"                          "
+,,LAB,,,ALİ RIZA UMUT ŞAHİN,ThThThTh,5678,,KP 214 | KP 214 | KP 214 | KP 214,,0,,"                          "
+,,LAB,,,ALİ RIZA UMUT ŞAHİN,ThThThTh,5678,,KP 215 | KP 215 | KP 215 | KP 215,,0,,"                          "
+BIO 353.01,Desc.,MOLECULAR GENETICS,4,5,STEFAN FUSS,MMThTh,5634, ,NH 101 | NH 101 | KP 01 | KP 01,05.01.2023,1,,"                          "
+BIO 355.01,Desc.,MOLECULAR BIOLOGY LABORATORY,3,4,ARZU ÇELİK,F,4, ,NH 103,11.01.2023,3,,"                          "
+,,LAB,,,ARZU ÇELİK,TTTT,5678,,KP 214 | KP 214 | KP 214 | KP 214,,0,,"                          "
+,,LAB,,,ARZU ÇELİK,TTTT,5678,,KP 215 | KP 215 | KP 215 | KP 215,,0,,"                          "
+,,LAB,,,ARZU ÇELİK,FFFF,5678,,KP 215 | KP 215 | KP 215 | KP 215,,0,,"                          "
+BIO 403.01,Desc.,SCIENTIFIC CONDUCT,1,2,NESRİN ÖZÖREN,W,3, ,EF 06,09.01.2023,1,,"                          "
+BIO 407.01,Desc.,SEMINAR II,2,3,İBRAHİM YAMAN,TT,34, ,KP 09 | KP 09,,,,"                          "
+BIO 407.02,Desc.,SEMINAR II,2,3,ŞÜKRÜ ANIL DOĞAN,MM,12, ,KP 08 | KP 08,,,,"                          "
+BIO 407.03,Desc.,SEMINAR II,2,3,BATU ERMAN,TT,34, ,KP 08 | KP 08,,,,"                          "
+BIO 407.04,Desc.,SEMINAR II,2,3,NESRİN ÖZÖREN,FF,78, ,KP 08 | KP 08,,,,"                          "
+BIO 407.05,Desc.,SEMINAR II,2,3,STEVEN FOOTITT,FF,34, ,KP 08 | KP 08,,,,"                          "
+BIO 420.01,Desc.,IMMUNOLOGY,3,6,BATU ERMAN,MMTh,783, ,KP 08 | KP 08 | KP 08,10.01.2023,2,,"                          "
+BIO 460.01,Desc.,DEVELOPMENTAL BIOLOGY,3,6,ARZU ÇELİK,TTTh,124, ,KP 09 | KP 09 | KP 09,05.01.2023,2,,"                          "
+BIO 483.01,Desc.,SP.TP.MECHANISM IN GENE REGULATION,3,6,N.C.TOLGA EMRE,MThTh,212, ,KP 03 | KP 01 | KP 01,06.01.2023,2,,"                          "
+BIO 48B.01,Desc.,SP.TP. BIOINFORMATICS,3,6,FATİH YANAR,MMTh,787, ,KUZEY8LAB | KUZEY8LAB | KUZEY8LAB,30.12.2022,3,,"                          "
+BIO 48K.01,Desc.,SP.TP.PLANT GROWTH & DEVELOPMENT,3,6,STEVEN FOOTITT,MWW,412, ,KP 03 | KP 04 | KP 04,04.01.2023,3,,"                          "
+BIO 491.01,Desc.,SPECIAL PROJECTS I,3,6,NECLA BİRGÜL İYİSON,,, ,,,,,"                          "
+BIO 491.02,Desc.,SPECIAL PROJECTS I,3,6,ŞÜKRÜ ANIL DOĞAN,,, ,,,,,"                          "
+BIO 491.03,Desc.,SPECIAL PROJECTS I,3,6,N.C.TOLGA EMRE,,, ,,,,,"                          "
+BIO 491.04,Desc.,SPECIAL PROJECTS I,3,6,BATU ERMAN,,, ,,,,,"                          "
+BIO 491.05,Desc.,SPECIAL PROJECTS I,3,6,STEVEN FOOTITT,,, ,,,,,"                          "
+BIO 491.06,Desc.,SPECIAL PROJECTS I,3,6,ARZU ÇELİK,,, ,,,,,"                          "
+BIO 491.07,Desc.,SPECIAL PROJECTS I,3,6,STEFAN FUSS,,, ,,,,,"                          "
+BIO 491.08,Desc.,SPECIAL PROJECTS I,3,6,NESRİN ÖZÖREN,,, ,,,,,"                          "
+BIO 491.09,Desc.,SPECIAL PROJECTS I,3,6,STAFF STAFF,,, ,,,,,"                          "
+BIO 491.10,Desc.,SPECIAL PROJECTS I,3,6,ALİ RIZA UMUT ŞAHİN,,, ,,,,,"                          "
+BIO 491.11,Desc.,SPECIAL PROJECTS I,3,6,İBRAHİM YAMAN,,, ,,,,,"                          "
+BIO 500.01,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,NECLA BİRGÜL İYİSON,,, ,,,,,"                          "
+BIO 500.02,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,ŞÜKRÜ ANIL DOĞAN,,, ,,,,,"                          "
+BIO 500.03,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,N.C.TOLGA EMRE,,, ,,,,,"                          "
+BIO 500.04,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,BATU ERMAN,,, ,,,,,"                          "
+BIO 500.05,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,STEVEN FOOTITT,,, ,,,,,"                          "
+BIO 500.06,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,ARZU ÇELİK,,, ,,,,,"                          "
+BIO 500.07,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,STEFAN FUSS,,, ,,,,,"                          "
+BIO 500.08,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,NESRİN ÖZÖREN,,, ,,,,,"                          "
+BIO 500.09,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,STAFF STAFF,,, ,,,,,"                          "
+BIO 500.10,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,ALİ RIZA UMUT ŞAHİN,,, ,,,,,"                          "
+BIO 500.11,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,İBRAHİM YAMAN,,, ,,,,,"                          "
+BIO 501.01,Desc.,ADVANCED MOLECULAR BIOLOGY,3,7,N.C.TOLGA EMRE,MMW,566, ,KP 315 | KP 315 | KP 315,30.12.2022,2,,"                          "
+BIO 511.01,Desc.,ADVANCED GENETICS,3,7,BATU ERMAN,MMW,347, ,KP 08 | KP 08 | KP 315,11.01.2023,1,,"                          "
+BIO 579.01,Desc.,GRADUATE SEMINAR,0,2,BATU ERMAN,F,6, ,KP 315,,,,"                          "
+BIO 58F.01,Desc.,SP.TP.KEY PATHWAYS IN CANCER,3,7,NECLA BİRGÜL İYİSON,,, ,,13.01.2023,3,,"                          "
+BIO 601.01,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,NECLA BİRGÜL İYİSON,,, ,,,,,"                          "
+BIO 601.02,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,N.C.TOLGA EMRE,,, ,,,,,"                          "
+BIO 601.03,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,BATU ERMAN,,, ,,,,,"                          "
+BIO 601.04,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,STEVEN FOOTITT,,, ,,,,,"                          "
+BIO 601.05,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,ARZU ÇELİK,,, ,,,,,"                          "
+BIO 601.06,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,STEFAN FUSS,,, ,,,,,"                          "
+BIO 601.07,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,NESRİN ÖZÖREN,,, ,,,,,"                          "
+BIO 601.08,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,BATU ERMAN,,, ,,,,,"                          "
+BIO 601.09,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,ALİ RIZA UMUT ŞAHİN,,, ,,,,,"                          "
+BIO 601.10,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,İBRAHİM YAMAN,,, ,,,,,"                          "
+BIO 601.11,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,ŞÜKRÜ ANIL DOĞAN,,, ,,,,,"                          "
+BIO 690.01,Desc.,M.S.THESIS,0,60,NECLA BİRGÜL İYİSON,,, ,,,,,"                          "
+BIO 690.02,Desc.,M.S.THESIS,0,60,ŞÜKRÜ ANIL DOĞAN,,, ,,,,,"                          "
+BIO 690.03,Desc.,M.S.THESIS,0,60,BATU ERMAN,,, ,,,,,"                          "
+BIO 690.04,Desc.,M.S.THESIS,0,60,STEVEN FOOTITT,,, ,,,,,"                          "
+BIO 690.05,Desc.,M.S.THESIS,0,60,ARZU ÇELİK,,, ,,,,,"                          "
+BIO 690.06,Desc.,M.S.THESIS,0,60,STEFAN FUSS,,, ,,,,,"                          "
+BIO 690.07,Desc.,M.S.THESIS,0,60,NESRİN ÖZÖREN,,, ,,,,,"                          "
+BIO 690.08,Desc.,M.S.THESIS,0,60,STAFF STAFF,,, ,,,,,"                          "
+BIO 690.09,Desc.,M.S.THESIS,0,60,ALİ RIZA UMUT ŞAHİN,,, ,,,,,"                          "
+BIO 690.10,Desc.,M.S.THESIS,0,60,İBRAHİM YAMAN,,, ,,,,,"                          "
+BIO 790.01,Desc.,Ph.D.THESIS,0,120,NECLA BİRGÜL İYİSON,,, ,,,,,"                          "
+BIO 790.02,Desc.,Ph.D.THESIS,0,120,N.C.TOLGA EMRE,,, ,,,,,"                          "
+BIO 790.03,Desc.,Ph.D.THESIS,0,120,NESRİN ÖZÖREN,,, ,,,,,"                          "
+BIO 790.05,Desc.,Ph.D.THESIS,0,120,ALİ RIZA UMUT ŞAHİN,,, ,,,,,"                          "
+BIO 790.06,Desc.,Ph.D.THESIS,0,120,İBRAHİM YAMAN,,, ,,,,,"                          "
+BIO 790.07,Desc.,Ph.D.THESIS,0,120,BATU ERMAN,M,6, ,,,,,"                          "

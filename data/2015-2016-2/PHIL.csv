@@ -1,0 +1,36 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY ,3,8,NURBAY IRMAK,TTTh,346,,NH 001 | NH 001 | NH 401,31.05.2016,3,,"        PSY; LING; GUID; LAW                  "
+PHIL105.01,Desc.,INFORMAL LOGIC,4,8,KARANFİL SOYHUN,MMFF,3434,,TB 490 | TB 490 | TB 490 | TB 490,24.05.2016,2,,"        PHIL                  "
+PHIL106.01,Desc.,PHILOSOPHICAL TEXTS,3,8,KENNETH ROBERT WESTPHAL,TTTh,567,,NH 401 | NH 401 | NH 404,30.05.2016,2,,"                          "
+PHIL112.01,Desc.,INTRODUCTION TO MODERN PHILOSOPHY,3,6,İREM KURTSAL STEEN,WWF,565,,NH 301 | NH 301 | NH 301,23.05.2016,1,"GUID,LL,TKL","                          "
+PHIL132.01,Desc.,LOGIC II,4,8,SUN DEMİRLİ,MMWW,7856,,NH 102 | NH 102 | TB 310 | TB 310,20.05.2016,1,,"                          "
+PHIL214.01,Desc.,HISTORY OF PHILOSOPHY II,3,6,MARK STEEN,TTTh,452,,NH 103 | NH 103 | NH 102,23.05.2016,2,,"                          "
+PHIL222.01,Desc.,PHILOSOPHY OF SCIENCE,3,6,BERNA KILINÇ,TThTh,856,,NH 305 | NH 201 | NH 201,26.05.2016,2,,"                          "
+PHIL251.01,Desc.,SPECIAL TOPICS IN LOGIC,3,6,BERNA KILINÇ,WWF,565,,TB 130 | TB 130 | JF 304,31.05.2016,2,,"                          "
+PHIL314.01,Desc.,HISTORY OF PHILOSOPHY IV,3,6,YILDIZ SİLİER,WWF,346,,NH 302 | NH 302 | NH 102,18.05.2016,3,,"                          "
+PHIL332.01,Desc.,ADVANCED LOGIC II,3,6,ALİ KARATAY,FFF,356,,TB 130 | TB 130 | TB 130,25.05.2016,1,,"                          "
+PHIL357.01,Desc.,PHILOSOPHY OF SOCIAL SCIENCES,3,6,LATİFE DEMET EVRENOSOĞLU,ThThTh,678,,JF 124 | JF 124 | JF 124,25.05.2016,2,,"                          "
+PHIL375.01,Desc.,PHILOSOPHY OF MIND,3,6,STEPHEN VOSS,MMW,562,,EF 101 | EF 101 | TB 490,20.05.2016,1,,"                          "
+PHIL382.01,Desc.,ONTOLOGY,3,7,NURBAY IRMAK,TThTh,734,,TB 490 | EF 06 | EF 06,28.05.2016,1,,"                          "
+PHIL400.01,Desc.,CURRENT ISSUES IN PHILOSOPHY,3,6,MURAT BAÇ,MMW,785,,TB 490 | TB 490 | JF 122,,0,,"                          "
+PHIL481.01,Desc.,SEL.TP.METAPHYSICS,3,6,MARK STEEN,TThTh,878,,M 1152 | TB 490 | TB 490,,0,,"                          "
+PHIL483.01,Desc.,SEL.TP.MEDIEVAL ARISTOTELIANISM,3,6,CHRYSSI SIDIROPOULOU,TTTh,345,,TB 130 | TB 130 | TB 130,31.05.2016,1,,"                          "
+PHIL484.01,Desc.,SEL.TP.EASTERN PHILOSOPHY,3,6,STEPHEN VOSS,MWW,278,,M 1171 | JF 122 | JF 122,30.05.2016,1,,"                          "
+PHIL48I.01,Desc.,SP.TP.LATE WITTGENSTEIN,3,6,CHRYSSI SIDIROPOULOU,TThTh,678,,JF 122 | TB 130 | TB 130,21.05.2016,3,,"                          "
+PHIL48W.01,Desc.,SEL.TP.PHILOSOPHY OF EDUCATION,3,6,KENNETH ROBERT WESTPHAL,TThTh,212,,EF 201 | EF 204 | EF 204,24.05.2016,1,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,JOHANNES FRITSCHE,,, ,,,0,,"                          "
+PHIL499.02,Desc.,INDEPENDENT STUDY,3,6,LUCAS THORPE,,, ,,,0,,"                          "
+PHIL499.03,Desc.,INDEPENDENT STUDY,3,6,YILDIZ SİLİER,,, ,,,0,,"                          "
+PHIL505.01,Desc.,THEORY OF KNOWLEDGE,4,10,MURAT BAÇ,TTT,678,,TB 130 | TB 130 | TB 130,,0,,"                          "
+PHIL522.01,Desc.,MATHEMATICAL LOGIC,4,10,ALİ KARATAY,FFF,356,,TB 130 | TB 130 | TB 130,,0,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL580.01,Desc.,SP.TP.PHYS.&MET.IN ARİSTO.DES.&KANT,4,10,JOHANNES FRITSCHE,ThThTh,678,,,,0,,"                          "
+PHIL582.01,Desc.,SP.TP. ISSUES IN POLITICAL PHILOSOPHY,4,10,PINAR CANEVİ,WWW,678,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,MURAT BAÇ,TBA,,,,25.05.2016,2,,"                          "
+PHIL58Z.01,Desc.,SP.TP. IN ETHICS,4,10,KARANFİL SOYHUN,WWW,234,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,STEPHEN VOSS,TBA,,,,31.05.2016,2,,"                          "
+PHIL593.01,Desc.,SP.TP.KANT'S MORAL PSYCHOLOGY,4,10,LUCAS THORPE,MMM,678,,TB 365 | TB 365 | TB 365,23.05.2016,1,,"                          "
+PHIL596.01,Desc.,SP.TP.NOMINALISM&REALISM,4,10,SUN DEMİRLİ,FFF,234,,TB 365 | TB 365 | TB 365,25.05.2016,2,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,24.05.2016,1,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,MURAT BAÇ,TBA,,,,,0,,"                          "

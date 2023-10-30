@@ -1,0 +1,106 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHYL101.01,Desc.,PHYSICS I LAB,0,,EMİNE ERTUĞRUL,TT,910, ,,,,,"                          "
+PHYL102.01,Desc.,PHYSICS II LAB,0,,İSLAM ÇAĞRI İŞERİ,WW,910, ,,,,,"                          "
+PHYL201.01,Desc.,PHYSICS III LAB,0,,İSLAM ÇAĞRI İŞERİ,ThTh,910, ,,,,,"                          "
+PHYL202.01,Desc.,PHYSICS IV LAB,0,,EMİNE ERTUĞRUL,ThTh,910, ,,,,,"                          "
+PHYS101.01,Desc.,PHYSICS I,4,8,HAKAN  ERKOL,MWF,111, ,KB Z01 | KB Z01 | NH 301,30.05.2023,3,,"                          "
+PHYS101.02,Desc.,PHYSICS I,4,8,HAKAN  ERKOL,MWF,222, ,KB Z01 | KB Z01 | NH 301,30.05.2023,3,,"                          "
+PHYS101.03,Desc.,PHYSICS I,4,8,AŞKIN ANKAY,MWF,333, ,NH 301 | EF 106 | NH 305,30.05.2023,3,,"                          "
+PHYS101.04,Desc.,PHYSICS I,4,8,AŞKIN ANKAY,MWF,444, ,NH 301 | EF 106 | NH 305,30.05.2023,3,,"                          "
+PHYS102.01,Desc.,PHYSICS II,4,8,ÖZHAN ÖZATAY,MWF,111, ,NH 301 | NH 301 | NH 305,03.06.2023,1,,"                          "
+PHYS102.02,Desc.,PHYSICS II,4,8,ÖZHAN ÖZATAY,MWF,222, ,NH 301 | NH 301 | NH 305,03.06.2023,1,,"                          "
+PHYS121.01,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,ERHAN GÜLMEZ,MWF,222, ,NH 405 | NH 405 | NH 405,03.06.2023,2,CHE,"                          "
+PHYS121.02,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,ERHAN GÜLMEZ,MWF,333, ,NH 405 | NH 405 | NH 405,03.06.2023,2,EE,"                          "
+PHYS130.01,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,ÖZGÜR BURAK ASLAN,MMWW,1212, ,EF 106 | EF 106 | KP 01 | KP 01,02.06.2023,2,,"                          "
+PHYS130.02,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,ÖZGÜR BURAK ASLAN,MMWW,3434, ,EF 106 | EF 106 | KP 01 | KP 01,02.06.2023,2,,"                          "
+PHYS130.03,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,MEHMET HAKAN ERKUT,MMWW,3434, ,KB Z01 | KB Z01 | KB Z01 | KB Z01,02.06.2023,2,,"                          "
+PHYS130.04,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,MEHMET HAKAN ERKUT,MMWW,5656, ,KB Z01 | KB Z01 | KB Z01 | KB Z01,02.06.2023,2,,"                          "
+PHYS198.01,Desc.,NUMERICAL METHODS IN PHYSICS,3,6,ARKADAŞ İNAN ÖZAKIN,TTThTh,3434, ,NH 104 | NH 104 | NH 104 | NH 104,05.06.2023,3,,"                          "
+PHYS201.01,Desc.,PHYSICS III,4,6,PARVİZ ELAHİ,TTThTh,1212, ,NH 405 | NH 405 | NH 405 | NH 405,23.05.2023,2,,"                          "
+PHYS201.02,Desc.,PHYSICS III,4,6,SERDAR NERGİZ,TTThTh,3434, ,KB Z01 | KB Z01 | KB Z01 | KB Z01,23.05.2023,2,,"                          "
+PHYS201.03,Desc.,PHYSICS III,4,6,MEHMET BURÇİN ÜNLÜ,TTThTh,3434, ,NH 305 | NH 305 | NH 305 | NH 305,23.05.2023,2,,"                          "
+PHYS201.04,Desc.,PHYSICS III,4,6,SERDAR NERGİZ,TTThTh,5656, ,KB Z01 | KB Z01 | KB Z01 | KB Z01,23.05.2023,2,,"                          "
+PHYS201.05,Desc.,PHYSICS III,4,6,İBRAHİM SEMİZ,TTThTh,3434, ,NH 405 | NH 405 | NH 405 | NH 405,23.05.2023,2,,"                          "
+PHYS202.01,Desc.,PHYSICS IV,4,6,DIETER VAN DEN BLEEKEN,TTThTh,1212, ,KP 01 | KP 01 | KP 01 | KP 01,01.06.2023,1,,"                          "
+PHYS202.02,Desc.,PHYSICS IV,4,6,DIETER VAN DEN BLEEKEN,TTThTh,3434, ,KP 01 | KP 01 | KP 01 | KP 01,01.06.2023,1,,"                          "
+PHYS206.01,Desc.,EXPLORING THE COSMOS II,3,5,LEVENT KURNAZ,MMTh,565, ,KB 125 | KB 125 | NH 403,30.05.2023,3,,"                          "
+PHYS225.01,Desc.,INTRODUCTION TO EARTH SCIENCE I,3,6,ALİ ÖZGÜN KONCA,MMM,789, ,EF 206 | EF 206 | EF 206,04.06.2023,1,,"                          "
+PHYS302.01,Desc.,CLASSICAL MECHANICS II,3,3,ILMAR GAHRAMANOV,MMWW,3434, ,EF 206 | EF 206 | NH 404 | NH 404,03.06.2023,1,,"                          "
+PHYS312.01,Desc.,MODERN PHYSICS II,3,5,TONGUÇ RADOR,MMWW,5656, ,KB 316 | KB 316 | KB 316 | KB 316,31.05.2023,1,,"                          "
+PHYS326.01,Desc.,MATHEMATICAL METHODS OF PHYSICS II,3,6,ARKADAŞ İNAN ÖZAKIN,TTThTh,5656, ,NH 104 | NH 104 | NH 104 | NH 104,07.06.2023,3,,"                          "
+PHYS331.01,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,TTFFF,78123, ,,06.06.2023,2,,"        PHYS                  "
+PHYS331.02,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,TTFFF,78567, ,,06.06.2023,2,,"        PHYS                  "
+PHYS331.03,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,TTWWW,78789, ,,06.06.2023,2,,"        PHYS                  "
+PHYS331.04,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,TTThThTh,78789, ,,06.06.2023,2,,"        PHYS                  "
+PHYS332.01,Desc.,ELECTRONICS FOR PHYSICISTS II,3,6,YANI SKARLATOS,,, ,,03.06.2023,3,,"                          "
+PHYS345.01,Desc.,CLASSICAL ASTRONOMY,3,6,ENİSE NİHAL ERCAN,TTTh,343, ,NH 202 | NH 202 | NH 404,31.05.2023,3,,"                          "
+PHYS346.01,Desc.,INTRODUCTION TO ASTROPHYSICS,3,6,ENİSE NİHAL ERCAN,TThTh,545, ,NH 202 | NH 404 | NH 404,31.05.2023,2,,"                          "
+PHYS380.01,Desc.,INTRO.TO ELECTROMAGNETIC RADIATION,3,5,LEVENT AKANT,TTThTh,5656, ,KB 125 | KB 125 | KB 125 | KB 125,24.05.2023,2,,"                          "
+PHYS392.01,Desc.,PHYSICAL ELECTRONICS II,3,4,B.GÜLEN AKTAŞ,WWW,789, ,,31.05.2023,3,,"                          "
+PHYS402.01,Desc.,ELECTROMAGNETISM II,3,6,OSMAN TEOMAN TURGUT,TTThTh,3434, ,NH 404 | NH 404 | NH 403 | NH 403,30.05.2023,2,,"                          "
+PHYS408.01,Desc.,ADVANCED QUANTUM PHYSICS II,3,6,ERSAN DEMİRALP,MMWW,5656, ,NH 403 | NH 403 | NH 404 | NH 404,05.06.2023,3,,"                          "
+PHYS412.01,Desc.,QUANTUM MECHANICS II,3,6,LEVENT AKANT,MMWW,5656, ,EF 102 | EF 102 | EF 102 | EF 102,05.06.2023,3,,"                          "
+PHYS442.01,Desc.,EXPERIMENTAL PHYSICS I,4,7,BORA AKGÜN,WWFFFF,341234, ,NH 303 | NH 303,,,,"                          "
+PHYS442.02,Desc.,EXPERIMENTAL PHYSICS I,4,7,BORA AKGÜN,WWFFFF,345678, ,NH 303 | NH 303,,,,"                          "
+PHYS442.03,Desc.,EXPERIMENTAL PHYSICS I,4,7,BORA AKGÜN,WWThThThTh,341234, ,NH 303 | NH 303,,,,"                          "
+PHYS449.01,Desc.,COSMIC X-RAY ASTRONOMY,3,6,ENİSE NİHAL ERCAN,WWTh,346, ,EF 102 | EF 102 | NH 404,25.05.2023,3,,"                          "
+PHYS456.01,Desc.,MODERN OPTICS,3,6,PARVİZ ELAHİ,TTT,789, ,,04.06.2023,3,,"                          "
+PHYS462.01,Desc.,SOLID STATE PHYSICS,3,6,ÖZHAN ÖZATAY,WWW,789, ,,02.06.2023,3,,"                          "
+PHYS472.01,Desc.,ELEMENTARY PARTICLE PHYSICS,3,6,ILMAR GAHRAMANOV,MMM,789, ,,06.06.2023,3,,"                          "
+PHYS490.01,Desc.,SEL.TP.SYNCHROTRON RADIATION&ITS(ONLINE),3,6,MEHMET ALPER ŞAHİNER,,, ,,03.06.2023,3,,"                          "
+PHYS492.01,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,ÖZHAN ÖZATAY,,, ,,,,,"                          "
+PHYS492.02,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,ÖZGÜR BURAK ASLAN,,, ,,,,,"                          "
+PHYS492.03,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,BORA AKGÜN,,, ,,,,,"                          "
+PHYS492.04,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,ARKADAŞ İNAN ÖZAKIN,,, ,,26.05.2023,1,,"                          "
+PHYS492.06,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,GİZEM ŞENGÖR ERÖNCEL,,, ,,26.05.2023,1,,"                          "
+PHYS492.07,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,METİN ARIK,,, ,,26.05.2023,1,,"                          "
+PHYS492.08,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,HAKAN  ERKOL,,, ,,26.05.2023,1,,"                          "
+PHYS492.09,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,VEYSİ ERKCAN ÖZCAN,,, ,,26.05.2023,1,,"                          "
+PHYS492.10,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,ILMAR GAHRAMANOV,,, ,,26.05.2023,1,,"                          "
+PHYS492.11,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,DIETER VAN DEN BLEEKEN,,, ,,26.05.2023,1,,"                          "
+PHYS492.12,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,LEVENT AKANT,,, ,,26.05.2023,1,,"                          "
+PHYS492.13,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS II,3,6,OSMAN TEOMAN TURGUT,,, ,,26.05.2023,1,,"                          "
+PHYS499.01,Desc.,SP.TP.DATA STRUCTURES&ANALYSIS,3,6,YÜKSEL GÜNAL,,, ,,06.06.2023,1,,"                          "
+PHYS500.01,Desc.,READING IN PHYSICS,1,3,BORA AKGÜN,,, ,,,,,"                          "
+PHYS525.01,Desc.,INTRODUCTION TO GENERAL RELATIVITY,4,10,İBRAHİM SEMİZ,MMThTh,7812, ,,26.05.2023,1,,"                          "
+PHYS532.01,Desc.,QUANTUM MECHANICS II,4,10,TONGUÇ RADOR,TTThTh,5656, ,,05.06.2023,2,,"                          "
+PHYS541.01,Desc.,STATISTICAL MECHANICS I,4,10,ERSAN DEMİRALP,TTThTh,7878, ,,03.06.2023,3,,"                          "
+PHYS571.01,Desc.,X-RAY ASTRONOMY,4,10,ENİSE NİHAL ERCAN,,, ,,06.06.2023,2,,"                          "
+PHYS579.01,Desc.,GRADUATE SEMINAR,0,3,BORA AKGÜN,,, ,,,,,"                          "
+PHYS58B.01,Desc.,SP.TP.IN PHYS:SPACE TIME SYMMETRIES,4,10,GİZEM ŞENGÖR ERÖNCEL,WWFF,2323, ,,02.06.2023,2,,"                          "
+PHYS58K.01,Desc.,SP.TP.STATISTICAL ANAL. OF ANNOS.DATA,4,10,MURAT TÜRKEŞ,,, ,,,,,"                          "
+PHYS58M.01,Desc.,SP.TP.THE PHYS OF MEDICAL IMAGING,4,10,MEHMET BURÇİN ÜNLÜ,,, ,,01.06.2023,2,,"                          "
+PHYS58Y.01,Desc.,SP.TP.INTRODUCTION TO LINEAR PARTICLE ACCELERATORS,4,10,GÖKHAN ÜNEL,,, ,,07.06.2023,2,,"                          "
+PHYS590.01,Desc.,SP.TOP.ACCRETION MECHANISMS,4,10,MEHMET HAKAN ERKUT,,, ,,30.05.2023,1,,"                          "
+PHYS595.01,Desc.,SP.TP.IN PHYS.INTEGRABLE MODELS,4,10,ILMAR GAHRAMANOV,,, ,,25.05.2023,3,,"                          "
+PHYS682.01,Desc.,DIRECTED STUDIES II,4,10,BORA AKGÜN,,, ,,,,,"                          "
+PHYS690.01,Desc.,M.S. THESIS,0,60,ERHAN GÜLMEZ,,, ,,,,,"                          "
+PHYS690.02,Desc.,M.S. THESIS,0,60,ÖZGÜR BURAK ASLAN,,, ,,,,,"                          "
+PHYS690.03,Desc.,M.S. THESIS,0,60,BORA AKGÜN,,, ,,,,,"                          "
+PHYS690.04,Desc.,M.S. THESIS,0,60,ENİSE NİHAL ERCAN,,, ,,,,,"                          "
+PHYS690.05,Desc.,M.S. THESIS,0,60,VEYSİ ERKCAN ÖZCAN,,, ,,,,,"                          "
+PHYS690.06,Desc.,M.S. THESIS,0,60,CAN KOZÇAZ,,, ,,,,,"                          "
+PHYS690.07,Desc.,M.S. THESIS,0,60,DIETER VAN DEN BLEEKEN,,, ,,,,,"                          "
+PHYS690.08,Desc.,M.S. THESIS,0,60,MEHMET BURÇİN ÜNLÜ,,, ,,,,,"                          "
+PHYS690.09,Desc.,M.S. THESIS,0,60,ILMAR GAHRAMANOV,,, ,,,,,"                          "
+PHYS690.10,Desc.,M.S. THESIS,0,60,ARKADAŞ İNAN ÖZAKIN,,, ,,,,,"                          "
+PHYS690.11,Desc.,M.S. THESIS,0,60,GİZEM ŞENGÖR ERÖNCEL,,, ,,,,,"                          "
+PHYS690.12,Desc.,M.S. THESIS,0,60,PARVİZ ELAHİ,,, ,,,,,"                          "
+PHYS690.13,Desc.,M.S. THESIS,0,60,İBRAHİM SEMİZ,,, ,,,,,"                          "
+PHYS690.14,Desc.,M.S. THESIS,0,60,LEVENT KURNAZ,,, ,,,,,"                          "
+PHYS699.01,Desc.,GUIDED RESEARCH,4,10,ERHAN GÜLMEZ,,, ,,,,,"                          "
+PHYS790.01,Desc.,Ph.D.THESIS,0,120,ERHAN GÜLMEZ,,, ,,,,,"                          "
+PHYS790.02,Desc.,Ph.D.THESIS,0,120,LEVENT AKANT,,, ,,,,,"                          "
+PHYS790.03,Desc.,Ph.D.THESIS,0,120,CAN KOZÇAZ,,, ,,,,,"                          "
+PHYS790.04,Desc.,Ph.D.THESIS,0,120,DIETER VAN DEN BLEEKEN,,, ,,,,,"                          "
+PHYS790.05,Desc.,Ph.D.THESIS,0,120,ENİSE NİHAL ERCAN,,, ,,,,,"                          "
+PHYS790.06,Desc.,Ph.D.THESIS,0,120,VEYSİ ERKCAN ÖZCAN,,, ,,,,,"                          "
+PHYS790.07,Desc.,Ph.D.THESIS,0,120,İBRAHİM SEMİZ,,, ,,,,,"                          "
+PHYS790.08,Desc.,Ph.D.THESIS,0,120,ÖZHAN ÖZATAY,,, ,,,,,"                          "
+PHYS790.09,Desc.,Ph.D.THESIS,0,120,OSMAN TEOMAN TURGUT,,, ,,,,,"                          "
+PHYS790.10,Desc.,Ph.D.THESIS,0,120,MEHMET BURÇİN ÜNLÜ,,, ,,,,,"                          "
+PHYS790.11,Desc.,Ph.D.THESIS,0,120,LEVENT KURNAZ,,, ,,,,,"                          "
+STS 322.01,Desc.,HISTORY OF CLASSICAL PHYSICS,3,6,ILMAR GAHRAMANOV,TTT,91011, ,,05.06.2023,2,,"                          "
+STS 323.01,Desc.,HISTORY OF MODERN PHYSICS,3,6,ÖMÜR AKYÜZ,TTTh,121, ,,07.06.2023,2,,"                          "
+STS 488.01,Desc.,SP.TP.THE AGE OF SUSTAINABLE DEVELOPMENT,3,6,LEVENT KURNAZ,ThThTh,123, ,NH 103 | NH 103,05.06.2023,3,,"                          "
+STS 489.01,Desc.,SP.TP.PLANETARY BOUNDARIES,3,6,LEVENT KURNAZ,MMTh,786, ,KB Z01 | KB Z01 | NH 403,06.06.2023,2,,"                          "

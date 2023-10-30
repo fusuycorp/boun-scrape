@@ -1,0 +1,35 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CL  402.02,Desc.,LITERARY CRITICISM II,3,7,SUNA ERTUĞRUL,TThF,222,,,,,,"                          "
+CL  452.01,Desc.,ANALYSIS OF POETRY,4,7,ÖZLEM GÖREY,TTTh,673,,,,,,"                          "
+DRA 204.01,Desc.,MODERN DRAMA,3,6,ASLI TEKİNAY,TTF,562,,,,,,"                          "
+DRA 401.01,Desc.,AMERICAN DRAMA,3,6,ASLI TEKİNAY,TThTh,756,,,,,,"                          "
+EL  102.01,Desc.,SURVEY OF ENGLISH LITERATURE II,3,7,CEVZA SEVGEN,TTThF,4844,,,,,,"                          "
+EL  102.02,Desc.,SURVEY OF ENGLISH LITERATURE II,3,7,LAMİA GÜLÇUR,TTThF,4844,,,,,,"                          "
+EL  102.04,Desc.,SURVEY OF ENGLISH LITERATURE II,3,7,SUNA ERTUĞRUL,TThThF,4484,,,,,,"                          "
+EL  112.01,Desc.,CULTURAL HISTORY OF ENGLAND,3,7,SOSİ ANTİKACIOĞLU,TThF,778,,,,,,"                          "
+EL  202.02,Desc.,THE SIXTEENTH CENTURY,3,6,LAMİA GÜLÇUR,TThF,756,,,,,,"                          "
+EL  310.01,Desc.,CHAUCER,3,5,SOSİ ANTİKACIOĞLU,TThF,845,,,,,,"                          "
+EL  509.01,Desc.,STUDIES IN MODERN CRITICISM,4,10,DİLEK DOLTAŞ,,,,,,,,"                          "
+EL  510.01,Desc.,SHAKESPEARE,4,10,IŞIL BAŞ,TTT,678,,,,,,"                          "
+EL  511.01,Desc.,SEMINAR IN MODERN ENGLISH LITERATURE,4,10,CEVZA SEVGEN,,,Online,,,,,"                          "
+EL  589.01,Desc.,READINGS IN ENGLISH LITERATURE,1,5,IŞIL BAŞ,TBA,,,,,,,"                          "
+EL  690.01,Desc.,MASTER THESIS,0,60,CEVZA SEVGEN,TBA,,,,,,,"                          "
+EL  790.01,Desc.,DOCTORAL DISSERTATION,0,120,CEVZA SEVGEN,TBA,,,,,,,"                          "
+ENGL102.01,Desc.,INTRODUCTION TO LITERARY SCHOLARSHIP II,3,6,OYA BAŞAK,TThTh,356,,,,,,"                          "
+ENGL112.01,Desc.,EXPOSITORY WRITING II,3,5,MÜFİDE PEKİN,MWTh,111,,,,,,"                          "
+ENGL112.02,Desc.,EXPOSITORY WRITING II,3,5,MÜFİDE PEKİN,MWTh,242,,,,,,"                          "
+ENGL112.03,Desc.,EXPOSITORY WRITING II,3,5,MÜFİDE PEKİN,MWTh,458,,,,,,"                          "
+FA  202.01,Desc.,ANATOLIAN ART & CULTURES FROM PREHIST...,3,5,BEHİN AKSOY,ThThTh,789,,,,,,"                          "
+FA  327.01,Desc.,MUSIC:THEORY & APPRECIATION,3,5,EMİNE SERDAROĞLU,TTTh,675,,,,,,"                          "
+FA  489.01,Desc.,SP.TOP.:READINGS&CONVERSATION IN GREEK,3,5,CHRYSSI SIDIROPOULOU,MMTT,6712,,,,,,"                          "
+FA  495.01,Desc.,SP.TOP.:READINGS IN ANCIENT GREEK,3,5,CHRYSSI SIDIROPOULOU,TBA,,,,,,,"                          "
+LING302.01,Desc.,MORPHOLOGY & SYNTAX,3,5,MİNE NAKİPOĞLU,W,8,,,,,,"                          "
+LING484.01,Desc.,SP.TOP.:TEXT ANALYSIS IN TURK,3,5,MİNE NAKİPOĞLU,TBA,,,,,,,"                          "
+LING490.01,Desc.,SP.TOP.LANGUAGE & GENDER,3,5,DİDAR AKAR,MMW,676,,,,,,"                          "
+LIT 212.01,Desc.,STUDIES IN LITERATURE II,3,8,ÖZLEM GÖREY,WThTh,778,,,,,,"                          "
+RUS 102.01,Desc.,BEGINNER'S RUSSIAN II,3,5,OLGA ZVERKOVA,TTThThF,12121,,,,,,"                          "
+RUS 202.01,Desc.,INTERMEDIATE RUSSIAN II,3,5,OLGA ZVERKOVA,MMWWF,12122,,,,,,"                          "
+RUS 302.01,Desc.,ADVANCED RUSSIAN II,3,5,OLGA ZVERKOVA,TBA,,,,,,,"                          "
+TK  204.01,Desc.,STRUCTURE OF MODERN TURKISH,3,5,ESER TAYLAN,MWTh,222,,,,,,"                          "
+TK  204.02,Desc.,STRUCTURE OF MODERN TURKISH,3,5,ASLI GÖKSEL,MWTh,222,,,,,,"                          "
+TK  204.03,Desc.,STRUCTURE OF MODERN TURKISH,3,5,DİDAR AKAR,MWTh,222,,,,,,"                          "

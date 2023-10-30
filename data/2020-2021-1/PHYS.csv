@@ -1,0 +1,105 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHYS101.01,Desc.,PHYSICS I,4,8,HAKAN  ERKOL,MWF,111,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,,,,,,,,"                          "
+PHYS101.02,Desc.,PHYSICS I,4,8,HAKAN  ERKOL,MWF,222,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,,,,,,,,"                          "
+PHYS101.03,Desc.,PHYSICS I,4,8,ÖZGÜR BURAK ASLAN,MWF,333,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,,,,,,,,"                          "
+PHYS101.04,Desc.,PHYSICS I,4,8,ÖZGÜR BURAK ASLAN,MWF,444,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,,,,,,,,"                          "
+PHYS102.01,Desc.,PHYSICS II,4,8,YORGO ŞENİKOĞLU,MMWW,3434,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,,,,,,,,"                          "
+PHYS121.01,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,ERHAN GÜLMEZ,MMWW,1212,Online,,,,IE,"                          "
+,,LAB,,,STAFF STAFF,,,,,,,,"                          "
+PHYS121.02,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,ERHAN GÜLMEZ,MMWW,3434,Online,,,,"BIO,CMPE","                          "
+,,LAB,,,STAFF STAFF,,,,,,,,"                          "
+PHYS130.01,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,AŞKIN ANKAY,MMWW,3434,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,,,,,,,,"                          "
+PHYS130.02,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,AŞKIN ANKAY,MMFF,7834,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,,,,,,,,"                          "
+PHYS197.01,Desc.,ANALYTICAL METHODS IN PHYSICS,3,6,ILMAR GAHRAMANOV,MMWW,1212,Online,,,,,"        PHYS                  "
+PHYS201.01,Desc.,PHYSICS III,4,6,VEYSİ ERKCAN ÖZCAN,TTThTh,1212,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,,,,,,,,"                          "
+PHYS201.02,Desc.,PHYSICS III,4,6,OSMAN TEOMAN TURGUT,TTThTh,3434,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,,,,,,,,"                          "
+PHYS201.03,Desc.,PHYSICS III,4,6,İBRAHİM SEMİZ,TTThTh,3434,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,,,,,,,,"                          "
+PHYS201.04,Desc.,PHYSICS III,4,6,İBRAHİM SEMİZ,TTThTh,5656,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,,,,,,,,"                          "
+PHYS201.05,Desc.,PHYSICS III,4,6,OSMAN TEOMAN TURGUT,TTThTh,7878,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,,,,,,,,"                          "
+PHYS201.06,Desc.,PHYSICS III,4,6,ARKADAŞ İNAN ÖZAKIN,TTThTh,3434,Online,,,,,"                          "
+,,LAB,,,ZÜHAL KAPLAN,WW,910,,,,,,"                          "
+PHYS202.01,Desc.,PHYSICS IV,4,6,PARVİZ ELAHİ,TTThTh,1212,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,,,,,,,,"                          "
+PHYS202.02,Desc.,PHYSICS IV,4,6,SERDAR NERGİZ,TTThTh,5656,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,,,,,,,,"                          "
+PHYS202.03,Desc.,PHYSICS IV,4,6,PARVİZ ELAHİ,TTThTh,3434,Online,,,,,"                          "
+,,LAB,,,ZÜHAL KAPLAN,ThTh,910,,,,,,"                          "
+PHYS221.01,Desc.,THERMAL PROPERTIES OF MATTER,3,5,ÖZHAN ÖZATAY,TTThTh,1212,Online,,,,"PEDU,PHYS","        PHYS                  "
+PHYS225.01,Desc.,INTRODUCTION TO EARTH SCIENCE I,3,6,LEVENT KURNAZ,MMTh,565,Online,,,,,"                          "
+PHYS225.02,Desc.,INTRODUCTION TO EARTH SCIENCE I,3,6,LEVENT KURNAZ,MMTh,786,Online,,,,,"                          "
+PHYS301.01,Desc.,CLASSICAL MECHANICS I,3,6,MEHMET BURÇİN ÜNLÜ,MMWW,3434,Online,,,,"PEDU,PHYS","        PHYS                  "
+PHYS311.01,Desc.,MODERN PHYSICS I,3,7,LEVENT AKANT,MMWW,5656,Online,,,,,"        PHYS                  "
+PHYS311.02,Desc.,MODERN PHYSICS I,3,7,LEVENT AKANT,MMWW,7878,Online,,,,,"                          "
+PHYS312.01,Desc.,MODERN PHYSICS II,3,5,METİN ARIK,,,Online,,,,,"                          "
+PHYS325.01,Desc.,MATHEMATICAL METHODS OF PHYSICS I,3,5,DIETER VAN DEN BLEEKEN,TTThTh,5656,Online,,,,,"        PHYS                  "
+PHYS331.01,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,TTThThTh,78678,Online,,,,,"        PHYS                  "
+PHYS331.02,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,TTFFF,78123,Online,,,,,"        PHYS                  "
+PHYS331.03,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,TTFFF,78456,Online,,,,,"        PHYS                  "
+PHYS331.04,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,TTFFF,78678,Online,,,,,"        PHYS                  "
+PHYS331.05,Desc.,ELECTRONICS FOR PHYSICISTS I,3,5,YANI SKARLATOS,MMMTT,78978,Online,,,,,"        PHYS                  "
+PHYS337.01,Desc.,INTRO.TO PHYSICAL METH.IN MEDICAL DIAG.,3,6,MEHMET BURÇİN ÜNLÜ,TTTh,787,Online,,,,,"                          "
+PHYS345.01,Desc.,CLASSICAL ASTRONOMY,3,6,ENİSE NİHAL ERCAN,MMW,122,Online,,,,,"                          "
+PHYS346.01,Desc.,INTRODUCTION TO ASTROPHYSICS,3,6,ENİSE NİHAL ERCAN,MWW,334,Online,,,,,"                          "
+PHYS391.01,Desc.,PHYSICAL ELECTRONICS I,3,6,B.GÜLEN AKTAŞ,,,Online,,,,,"                          "
+PHYS401.01,Desc.,ELECTROMAGNETISM I,3,4,SERDAR NERGİZ,TTThTh,3434,Online,,,,,"        PHYS                  "
+PHYS407.01,Desc.,ADVANCED QUANTUM PHYSICS I,3,7,ERSAN DEMİRALP,MMWW,5656,Online,,,,"PEDU,PHYS","        PHYS                  "
+PHYS411.01,Desc.,QUANTUM MECHANICS I,3,6,TONGUÇ RADOR,MMWW,5656,Online,,,,,"        PHYS                  "
+PHYS421.01,Desc.,STATISTICAL MECHANICS,3,6,ERSAN DEMİRALP,TTThTh,7878,Online,,,,,"        PHYS                  "
+PHYS449.01,Desc.,COSMIC X-RAY ASTRONOMY,3,6,ENİSE NİHAL ERCAN,TTT,567,Online,,,,,"                          "
+PHYS472.01,Desc.,ELEMENTARY PARTICLE PHYSICS,3,6,BORA AKGÜN,MMWW,7878,Online,,,,,"                          "
+PHYS48R.01,Desc.,SEL.TP.IN PHYS:INTR.TO RELATIVITY THEORY,3,6,TONGUÇ RADOR,MMFF,91045,Online,,,,,"                          "
+PHYS48U.01,Desc.,SEL.TP.:COSMOLOGY,3,6,ALPAR  SEVGEN,,,Online,,,,,"                          "
+PHYS490.01,Desc.,SEL.TP.SYNCHROTRON RADIATION&ITS(ONLINE),3,6,MEHMET ALPER ŞAHİNER,,,Online,,,,,"                          "
+PHYS491.01,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,VEYSİ ERKCAN ÖZCAN,,,Online,,,,,"                          "
+PHYS491.02,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,MEHMET BURÇİN ÜNLÜ,,,Online,,,,,"                          "
+PHYS491.03,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,LEVENT KURNAZ,,,Online,,,,,"                          "
+PHYS491.04,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,METİN ARIK,,,Online,,,,,"                          "
+PHYS491.06,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,CAN KOZÇAZ,,,Online,,,,,"                          "
+PHYS491.07,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,HAKAN  ERKOL,,,Online,,,,,"                          "
+PHYS491.08,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,ILMAR GAHRAMANOV,,,Online,,,,,"                          "
+PHYS491.10,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,ARKADAŞ İNAN ÖZAKIN,,,Online,,,,,"                          "
+PHYS491.11,Desc.,INTRODUCTION TO RESEARCH IN PHYSICS I,3,6,OSMAN TEOMAN TURGUT,,,Online,,,,,"                          "
+PHYS495.01,Desc.,SEL.TP.INTEGRABLE SYSTEMS,3,6,ILMAR GAHRAMANOV,,,Online,,,,,"                          "
+PHYS499.01,Desc.,SP.TP.DATA STRUCTURES&ANALYSIS,3,6,YÜKSEL GÜNAL,,,Online,,,,,"                          "
+PHYS500.01,Desc.,READING IN PHYSICS,1,3,CAN KOZÇAZ,,,Online,,,,,"                          "
+PHYS501.01,Desc.,CLASSICAL DYNAMICS,4,10,CAN KOZÇAZ,,,Online,,,,,"                          "
+PHYS511.01,Desc.,ELECTROMAGNETIC THEORY I,4,10,METİN ARIK,MMWW,5656,Online,,,,,"                          "
+PHYS531.01,Desc.,QUANTUM MECHANICS I,4,10,LEVENT AKANT,TTThTh,7878,Online,,,,,"                          "
+PHYS572.01,Desc.,HIGH ENERGY ASTROPHYSICS,4,10,ENİSE NİHAL ERCAN,,,Online,,,,,"                          "
+PHYS587.01,Desc.,SP. TOP. IN PHYS.DATA AN. IN X-RAY ASTRO,4,10,ENİSE NİHAL ERCAN,,,Online,,,,,"                          "
+PHYS58E.01,Desc.,SP.TP.IN PHYS:SPINTRONICS,4,10,ÖZHAN ÖZATAY,,,Online,,,,,"                          "
+PHYS58H.01,Desc.,SP.TP.IN MATHEMATICAL METHODS,4,10,DIETER VAN DEN BLEEKEN,,,Online,,,,,"                          "
+PHYS58Q.01,Desc.,SL.TOP.IN PHYS: PHOTONICS,4,10,NACİ İNCİ,WWF,343,Online,,,,,"                          "
+PHYS58T.01,Desc.,SP.TP.IN PHYSICS: PHYSICS AT SURFACES,4,10,MEHMET ERBUDAK,,,Online,,,,,"                          "
+PHYS58Y.01,Desc.,SP.TP.INTRODUCTION TO LINEAR PARTICLE ACCELERATORS,4,10,GÖKHAN ÜNEL,,,Online,,,,,"                          "
+PHYS590.01,Desc.,SP.TOP.ACCRETION MECHANISMS,4,10,ENİSE NİHAL ERCAN,,,Online,,,,,"                          "
+PHYS681.01,Desc.,DIRECTED STUDIES I,4,10,MEHMET BURÇİN ÜNLÜ,,,Online,,,,,"                          "
+PHYS689.01,Desc.,SP.TOP.IN PHYS.:ADVANCED TOP.IN PHYSICAL,4,10,B.GÜLEN AKTAŞ,,,Online,,,,,"                          "
+PHYS68T.01,Desc.,SP.TP.ADVANCED COSMOLOGY,4,10,METİN ARIK,,,Online,,,,,"                          "
+PHYS690.01,Desc.,M.S. THESIS,0,60,DIETER VAN DEN BLEEKEN,,, ,,,,,"                          "
+PHYS690.05,Desc.,M.S. THESIS,0,60,ERHAN GÜLMEZ,,, ,,,,,"                          "
+PHYS690.06,Desc.,M.S. THESIS,0,60,VEYSİ ERKCAN ÖZCAN,,, ,,,,,"                          "
+PHYS690.11,Desc.,M.S. THESIS,0,60,CAN KOZÇAZ,,, ,,,,,"                          "
+PHYS700.01,Desc.,GRADUATE SEMINAR,0,6,VEYSİ ERKCAN ÖZCAN,,,Online,,,,,"                          "
+PHYS790.01,Desc.,Ph.D.THESIS,0,120,İBRAHİM SEMİZ,,, ,,,,,"                          "
+PHYS790.02,Desc.,Ph.D.THESIS,0,120,LEVENT KURNAZ,,, ,,,,,"                          "
+PHYS790.03,Desc.,Ph.D.THESIS,0,120,MEHMET BURÇİN ÜNLÜ,,, ,,,,,"                          "
+PHYS790.04,Desc.,Ph.D.THESIS,0,120,NACİ İNCİ,,, ,,,,,"                          "
+PHYS790.05,Desc.,Ph.D.THESIS,0,120,VEYSİ ERKCAN ÖZCAN,,, ,,,,,"                          "
+PHYS790.06,Desc.,Ph.D.THESIS,0,120,ENİSE NİHAL ERCAN,,, ,,,,,"                          "
+PHYS790.07,Desc.,Ph.D.THESIS,0,120,LEVENT AKANT,,, ,,,,,"                          "
+PHYS790.09,Desc.,Ph.D.THESIS,0,120,DIETER VAN DEN BLEEKEN,,, ,,,,,"                          "
+PHYS790.11,Desc.,Ph.D.THESIS,0,120,OSMAN TEOMAN TURGUT,,, ,,,,,"                          "
+STS 488.01,Desc.,SP.TP.THE AGE OF SUSTAINABLE DEVELOPMENT,3,6,LEVENT KURNAZ,TTT,234,Online,,,,,"                          "

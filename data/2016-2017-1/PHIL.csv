@@ -1,0 +1,58 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY ,3,8,YILDIZ SİLİER,WFF,656,,,03.01.2017,2,,"        PSY; LING; GUID; LAW                  "
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY ,3,8,NURBAY IRMAK,MTT,578,,,03.01.2017,2,,"        PHIL                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,6,STEPHEN VOSS,TTTh,348,,,22.12.2016,1,"TKL,TR","        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,4,8,KARANFİL SOYHUN,TTThTh,3434,,,28.12.2016,1,,"                          "
+PHIL131.02,Desc.,LOGIC I,4,8,KARANFİL SOYHUN,TTFF,1212,,,28.12.2016,1,,"                          "
+PHIL213.01,Desc.,HISTORY OF PHILOSOPHY I,3,6,KENNETH ROBERT WESTPHAL,WFF,712,,,21.12.2016,3,,"        PHIL                  "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,MURAT BAÇ,TTW,563,,,02.01.2017,2,,"        PHIL                  "
+PHIL301.01,Desc.,PROBLEMS OF CONTEMPORARY PHILOSOPHY,3,6,MURAT BAÇ,MMW,785,,,03.01.2017,3,,"                          "
+PHIL313.01,Desc.,HISTORY OF PHILOSOPHY III,3,6,SUN DEMİRLİ,MMTh,565,,,24.12.2016,3,,"        PHIL                  "
+PHIL341.01,Desc.,ETHICS,3,6,LUCAS THORPE,MTT,478,,,22.12.2016,1,,"        PHIL                  "
+PHIL48A.01,Desc.,SP.TP. CRITCAL PHILOSOPHY OF RACE,3,6,ÇİĞDEM YAZICI,WWW,678,,,,0,,"                          "
+PHIL48B.01,Desc.,SP.TP.PHIL OF RELIGION AFTER WITTGENST.,3,5,CHRYSSI SIDIROPOULOU,ThFF,456,,,,0,,"                          "
+PHIL48J.01,Desc.,"FREUD,JUNG&PHIL.OF UNCONSCIOUS",3,6,ALPER TÜRKEN,FFF,789,,,,0,,"                          "
+PHIL48P.01,Desc.,SEL.TP.IN PHIL OF SCIENCE,3,6,BERNA KILINÇ,TBA,,,,28.12.2016,1,,"                          "
+PHIL48Z.01,Desc.,SP.TP.PHILOSOPHIES OF THE SELF,3,6,ZEYNEP TALAY TURNER,TTT,456,,,,0,,"                          "
+PHIL498.01,Desc.,SEL.TOP: PHIL.IN CINEMA,3,6,YILDIZ SİLİER,WWF,342,,,,0,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,NURBAY IRMAK,,, ,,,0,,"                          "
+PHIL499.02,Desc.,INDEPENDENT STUDY,3,6,CHRYSSI SIDIROPOULOU,,, ,,,0,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL581.01,Desc.,SP.TP.IN PHILOSOPHY OF SCIENCE,4,10,BERNA KILINÇ,WWW,678,,,,0,,"                          "
+PHIL583.01,Desc.,SP.TP.HEGEL'S MORAL PHILOSOPHY,4,10,KENNETH ROBERT WESTPHAL,WWW,234,,,,0,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL58J.01,Desc.,SP.TP.PHILOSOPHY OF RELIG.AFTER WITTGEN.,4,10,CHRYSSI SIDIROPOULOU,TBA,,,,,0,,"                          "
+PHIL58K.01,Desc.,SP.TP.THE SELF,4,10,STEPHEN VOSS,ThThTh,234,,,,0,,"                          "
+PHIL58L.01,Desc.,SP.TP.SOC.COGNIT.MIN. READ.GR.AG.&INT.,4,10,LUCAS THORPE,MMM,678,,,,0,,"                          "
+PHIL58M.01,Desc.,SP.TP.IN HUME'S PHILOSOPHY,4,10,SUN DEMİRLİ,FFF,234,,,,0,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,İREM KURTSAL STEEN,TBA,,,,,0,,"                          "
+PHIL590.02,Desc.,DIRECTED STUDY,4,10,MARK STEEN,TBA,,,,,0,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL690.02,Desc.,MASTER THESIS,0,60,İREM KURTSAL STEEN,TBA,,,,,0,,"                          "
+PHIL690.03,Desc.,MASTER THESIS,0,60,MARK STEEN,TBA,,,,,0,,"                          "
+PHIL690.04,Desc.,MASTER THESIS,0,60,KENNETH ROBERT WESTPHAL,TBA,,,,,0,,"                          "
+PHIL690.05,Desc.,MASTER THESIS,0,60,KARANFİL SOYHUN,TBA,,,,,0,,"                          "
+PHIL690.06,Desc.,MASTER THESIS,0,60,CHRYSSI SIDIROPOULOU,TBA,,,,,0,,"                          "
+PHIL690.07,Desc.,MASTER THESIS,0,60,NURBAY IRMAK,TBA,,,,,0,,"                          "
+PHIL690.08,Desc.,MASTER THESIS,0,60,YILDIZ SİLİER,TBA,,,,,0,,"                          "
+PHIL690.09,Desc.,MASTER THESIS,0,60,İLHAN İNAN,TBA,,,,,0,,"                          "
+PHIL690.10,Desc.,MASTER THESIS,0,60,JOHANNES FRITSCHE,TBA,,,,,0,,"                          "
+PHIL690.11,Desc.,MASTER THESIS,0,60,BERNA KILINÇ,TBA,,,,,0,,"                          "
+PHIL690.12,Desc.,MASTER THESIS,0,60,SUN DEMİRLİ,TBA,,,,,0,,"                          "
+PHIL690.13,Desc.,MASTER THESIS,0,60,LUCAS THORPE,TBA,,,,,0,,"                          "
+PHIL690.14,Desc.,MASTER THESIS,0,60,STEPHEN VOSS,TBA,,,,,0,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL790.02,Desc.,Ph.D THESIS,0,120,İREM KURTSAL STEEN,TBA,,,,,0,,"                          "
+PHIL790.03,Desc.,Ph.D THESIS,0,120,MARK STEEN,TBA,,,,,0,,"                          "
+PHIL790.04,Desc.,Ph.D THESIS,0,120,KENNETH ROBERT WESTPHAL,TBA,,,,,0,,"                          "
+PHIL790.05,Desc.,Ph.D THESIS,0,120,KARANFİL SOYHUN,TBA,,,,,0,,"                          "
+PHIL790.06,Desc.,Ph.D THESIS,0,120,CHRYSSI SIDIROPOULOU,TBA,,,,,0,,"                          "
+PHIL790.07,Desc.,Ph.D THESIS,0,120,NURBAY IRMAK,TBA,,,,,0,,"                          "
+PHIL790.08,Desc.,Ph.D THESIS,0,120,YILDIZ SİLİER,TBA,,,,,0,,"                          "
+PHIL790.09,Desc.,Ph.D THESIS,0,120,İLHAN İNAN,TBA,,,,,0,,"                          "
+PHIL790.10,Desc.,Ph.D THESIS,0,120,JOHANNES FRITSCHE,TBA,,,,,0,,"                          "
+PHIL790.11,Desc.,Ph.D THESIS,0,120,BERNA KILINÇ,TBA,,,,,0,,"                          "
+PHIL790.12,Desc.,Ph.D THESIS,0,120,SUN DEMİRLİ,TBA,,,,,0,,"                          "
+PHIL790.13,Desc.,Ph.D THESIS,0,120,LUCAS THORPE,TBA,,,,,0,,"                          "
+PHIL790.14,Desc.,Ph.D THESIS,0,120,STEPHEN VOSS,TBA,,,,,0,,"                          "

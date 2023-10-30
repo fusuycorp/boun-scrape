@@ -1,0 +1,61 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+BIO 101.01,Desc.,CELLULAR AND MOLECULAR BIOLOGY I,3,5,MÜGE TÜRET,TFF,356,Online,,,,,"                          "
+BIO 102.01,Desc.,CELLULAR AND MOLECULAR BIOLOGY II,3,5,İBRAHİM YAMAN,TThTh,534,Online,,,,BIO,"                          "
+BIO 102.02,Desc.,CELLULAR AND MOLECULAR BIOLOGY II,3,5,ARZU ÇELİK,TThTh,534,Online,,,,P_SCI,"                          "
+BIO 106.01,Desc.,CELL BIOLOGY LABORATORY,2,3,İBRAHİM YAMAN,W,5,Online,,,,BIO,"                          "
+,,LAB,,,İBRAHİM YAMAN,TTT,678,,,,,,"                          "
+BIO 106.02,Desc.,CELL BIOLOGY LABORATORY,2,3,ARZU ÇELİK,W,5,Online,,,,,"                          "
+,,LAB,,,ARZU ÇELİK,ThThTh,678,,,,,,"                          "
+BIO 121.01,Desc.,INTRO.TO CELL BIOLOGY,3,5,TOLGA SÜTLÜ,WWF,344,Online,,,,,"                          "
+BIO 152.01,Desc.,INTRO. TO MODERN BIOLOGY,3,5,STEVEN FOOTITT,WWF,785,Online,,,,PSY,"                          "
+BIO 152.02,Desc.,INTRO. TO MODERN BIOLOGY,3,5,ŞÜKRÜ ANIL DOĞAN,WWF,785,Online,,,,GUID,"                          "
+BIO 252.01,Desc.,GENETICS,3,6,ESRA BATTALOĞLU,MMW,787,Online,,,,,"                          "
+BIO 254.01,Desc.,GENETICS LABORATORY,3,6,ESRA BATTALOĞLU,W,8,Online,,,,,"                          "
+,,LAB,,,ESRA BATTALOĞLU,WWWW,6789,,,,,,"                          "
+,,LAB,,,ESRA BATTALOĞLU,FFFF,6789,,,,,,"                          "
+BIO 302.01,Desc.,BIOCHEMISTRY II,4,6,ALİ RIZA UMUT ŞAHİN,MMWW,5656,Online,,,,,"                          "
+BIO 308.01,Desc.,SEMINAR I,1,2,MÜGE TÜRET,MM,78,Online,,,,,"                          "
+BIO 308.03,Desc.,SEMINAR I,1,2,ALİ RIZA UMUT ŞAHİN,TT,78,Online,,,,,"                          "
+BIO 308.04,Desc.,SEMINAR I,1,2,TOLGA SÜTLÜ,ThTh,34,Online,,,,,"                          "
+BIO 308.05,Desc.,SEMINAR I,1,2,STEFAN FUSS,FF,56,Online,,,,,"                          "
+BIO 310.01,Desc.,CELLULAR AND MOLECULAR BIOLOGY III,4,6,NESRİN ÖZÖREN,TTThTh,5656,Online,,,,,"                          "
+BIO 322.01,Desc.,RESEARCH TOPICS IN MOLECULAR BIOLOGY,1,2,İBRAHİM YAMAN,F,4,Online,,,,,"                          "
+BIO 342.01,Desc.,HUMAN PHYSIOLOGY,3,6,STEFAN FUSS,MMW,343,Online,,,,,"                          "
+BIO 407.01,Desc.,SEMINAR II,2,3,İBRAHİM YAMAN,ThTh,78,Online,,,,,"                          "
+BIO 460.01,Desc.,DEVELOPMENTAL BIOLOGY,3,6,STEFAN FUSS,TTTh,232,Online,,,,,"                          "
+BIO 470.01,Desc.,GENETIC DISORDERS,3,6,ESRA BATTALOĞLU,TFF,456,Online,,,,,"                          "
+BIO 48B.01,Desc.,SP.TP. BIOINFORMATICS,3,6,IGOR KRYVORUCHKO,TTW,786,Online,,,,,"                          "
+BIO 48F.01,Desc.,SP.TP.DRUG DESIGN,3,6,NECLA BİRGÜL İYİSON,MMW,121,Online,,,,,"                          "
+BIO 48K.01,Desc.,SP.TP.PLANT GROWTH & DEVELOPMENT,3,6,STEVEN FOOTITT,MMW,782,Online,,,,,"                          "
+BIO 496.01,Desc.,SP.TP.INT.TO PROGRM.WITH PYTHON FOR BIO.,3,6,ERŞEN KAVAK,FFF,123,Online,,,,,"                          "
+BIO 520.06,Desc.,LAB. PROJECTS IN BIOLOGY,3,9,STEFAN FUSS,,,Online,,,,,"                          "
+BIO 520.07,Desc.,LAB. PROJECTS IN BIOLOGY,3,9,IGOR KRYVORUCHKO,,,Online,,,,,"                          "
+BIO 520.10,Desc.,LAB. PROJECTS IN BIOLOGY,3,9,ALİ RIZA UMUT ŞAHİN,,,Online,,,,,"                          "
+BIO 58C.01,Desc.,SP.TP.MITOCHONDRIAL BIOLOGY&MEDICINE,3,7,ŞÜKRÜ ANIL DOĞAN,TTTh,568,Online,,,,,"                          "
+BIO 58G.01,Desc.,SP.TP.PHYLOGENETIC ANALYSIS,3,7,IGOR KRYVORUCHKO,MMW,565,Online,,,,,"                          "
+BIO 58H.01,Desc.,SP.TP.ADVANCED IMMUNIOLOGY,3,7,BATU ERMAN,MWW,878,Online,,,,,"                          "
+BIO 602.04,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,7,NESRİN ÖZÖREN,,,Online,,,,,"                          "
+BIO 602.05,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,7,TOLGA SÜTLÜ,,,Online,,,,,"                          "
+BIO 602.06,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,7,ALİ RIZA UMUT ŞAHİN,,,Online,,,,,"                          "
+BIO 602.08,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,7,BATU ERMAN,,,Online,,,,,"                          "
+BIO 68E.01,Desc.,SP.TP.CELL&GENE THERAPHY,3,7,TOLGA SÜTLÜ,TTTh,236,Online,,,,,"                          "
+BIO 690.01,Desc.,M.S.THESIS,0,60,NECLA BİRGÜL İYİSON,,,Online,,,,,"                          "
+BIO 690.02,Desc.,M.S.THESIS,0,60,ŞÜKRÜ ANIL DOĞAN,,,Online,,,,,"                          "
+BIO 690.03,Desc.,M.S.THESIS,0,60,N.C.TOLGA EMRE,,,Online,,,,,"                          "
+BIO 690.04,Desc.,M.S.THESIS,0,60,ARZU ÇELİK,,,Online,,,,,"                          "
+BIO 690.05,Desc.,M.S.THESIS,0,60,STEFAN FUSS,,,Online,,,,,"                          "
+BIO 690.06,Desc.,M.S.THESIS,0,60,IGOR KRYVORUCHKO,,,Online,,,,,"                          "
+BIO 690.07,Desc.,M.S.THESIS,0,60,TOLGA SÜTLÜ,,,Online,,,,,"                          "
+BIO 690.08,Desc.,M.S.THESIS,0,60,NESRİN ÖZÖREN,,,Online,,,,,"                          "
+BIO 690.09,Desc.,M.S.THESIS,0,60,ALİ RIZA UMUT ŞAHİN,,,Online,,,,,"                          "
+BIO 690.10,Desc.,M.S.THESIS,0,60,İBRAHİM YAMAN,,,Online,,,,,"                          "
+BIO 690.11,Desc.,M.S.THESIS,0,60,BATU ERMAN,,,Classroom,,,,,"                          "
+BIO 700.01,Desc.,GRADUATE SEMINAR,0,2,ŞÜKRÜ ANIL DOĞAN,F,3,Online,,,,,"                          "
+BIO 790.01,Desc.,Ph.D.THESIS,0,120,ESRA BATTALOĞLU,,,Online,,,,,"                          "
+BIO 790.02,Desc.,Ph.D.THESIS,0,120,NECLA BİRGÜL İYİSON,,,Online,,,,,"                          "
+BIO 790.03,Desc.,Ph.D.THESIS,0,120,N.C.TOLGA EMRE,,,Online,,,,,"                          "
+BIO 790.04,Desc.,Ph.D.THESIS,0,120,STEFAN FUSS,,,Online,,,,,"                          "
+BIO 790.05,Desc.,Ph.D.THESIS,0,120,NESRİN ÖZÖREN,,,Online,,,,,"                          "
+BIO 790.06,Desc.,Ph.D.THESIS,0,120,ALİ RIZA UMUT ŞAHİN,,,Online,,,,,"                          "
+BIO 790.07,Desc.,Ph.D.THESIS,0,120,MÜGE TÜRET,,,Online,,,,,"                          "
+BIO 790.08,Desc.,Ph.D.THESIS,0,120,İBRAHİM YAMAN,,,Classroom,,,,,"                          "

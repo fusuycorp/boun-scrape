@@ -1,0 +1,34 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+BIO 101.01,Desc.,GENERAL BIOLOGY I,3,6,KUYAŞ BUĞRA,MWW,667,,,,,,"                          "
+BIO 101.02,Desc.,GENERAL BIOLOGY I,3,6,NECLA BİRGÜL İYİSON,TWW,767,,,,,,"                          "
+BIO 104.01,Desc.,GENERAL BIOLOGY II,3,5,MÜGE TÜRET,MMW,788,,,,,,"                          "
+BIO 106.01,Desc.,GENERAL BIOLOGY LAB.,1,4,MÜGE TÜRET,TT,12,,,,,,"                          "
+BIO 241.01,Desc.,CELL BIOLOGY,4,4,AHMET KOMAN,TThTh,556,,,,,,"                          "
+BIO 301.01,Desc.,BIOCHEMISTRY I,4,8,NEŞE BİLGİN,MMWW,5656,,,,,,"                          "
+BIO 305.01,Desc.,PRAC.  APPL. IN BIOCHEM. & GENETICS,2,3,AYŞE NAZLI BAŞAK,Th,1,,,,,,"                          "
+BIO 353.01,Desc.,MOLECULAR GENETICS,4,8,ESRA BATTALOĞLU,MMWW,7878,,,,,,"                          "
+BIO 401.01,Desc.,MOLECULAR BIOLOGY I,4,6,HANDE ÇAĞLAYAN,TTThTh,2334,,,,,,"                          "
+BIO 407.01,Desc.,SEMINAR,1,2,NECLA BİRGÜL İYİSON,W,8,,,,,,"                          "
+BIO 407.02,Desc.,SEMINAR,1,2,NECLA BİRGÜL İYİSON,Th,8,,,,,,"                          "
+BIO 409.01,Desc.,MOLECULAR BIOLOGY LAB. I,3,7,KUYAŞ BUĞRA,W,2,,,,,,"                          "
+BIO 487.01,Desc.,SPEC.TOP.:HUM.MOL. GEN.,3,4,ASLIHAN TOLUN,MWW,634,,,,,,"                          "
+BIO 491.01,Desc.,SPECIAL PROJECTS I,3,8,AYŞE NAZLI BAŞAK,TBA,,,,,,,"                          "
+BIO 491.02,Desc.,SPECIAL PROJECTS I,3,8,NEŞE BİLGİN,TBA,,,,,,,"                          "
+BIO 491.03,Desc.,SPECIAL PROJECTS I,3,8,NECLA BİRGÜL İYİSON,TBA,,,,,,,"                          "
+BIO 491.04,Desc.,SPECIAL PROJECTS I,3,8,ESRA BATTALOĞLU,TBA,,,,,,,"                          "
+BIO 491.05,Desc.,SPECIAL PROJECTS I,3,8,KUYAŞ BUĞRA,TBA,,,,,,,"                          "
+BIO 491.06,Desc.,SPECIAL PROJECTS I,3,8,HANDE ÇAĞLAYAN,TBA,,,,,,,"                          "
+BIO 491.07,Desc.,SPECIAL PROJECTS I,3,8,AHMET KOMAN,TBA,,,,,,,"                          "
+BIO 491.08,Desc.,SPECIAL PROJECTS I,3,8,MÜGE TÜRET,TBA,,,,,,,"                          "
+BIO 491.09,Desc.,SPECIAL PROJECTS I,3,8,JAN WOLANCYK,TBA,,,,,,,"                          "
+BIO 491.10,Desc.,SPECIAL PROJECTS I,3,8,ASLIHAN TOLUN,TBA,,,,,,,"                          "
+BIO 500.01,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,10,AYŞE NAZLI BAŞAK,TBA,,,,,,,"                          "
+BIO 501.01,Desc.,ADVANCED MOLECULAR BIOLOGY,3,7,NEŞE BİLGİN,TBA,,,,,,,"                          "
+BIO 511.01,Desc.,ADVANCED GENETICS,3,7,ESRA BATTALOĞLU,M,2,,,,,,"                          "
+BIO 579.01,Desc.,GRADUATE SEMINAR,0,2,HANDE ÇAĞLAYAN,TBA,,,,,,,"                          "
+BIO 585.01,Desc.,SP.TOP.:THE MOL.BASIS OF INH.HEMOGLOBIN,3,7,AYŞE NAZLI BAŞAK,TBA,,,,,,,"                          "
+BIO 601.01,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,10,KUYAŞ BUĞRA,TBA,,,,,,,"                          "
+BIO 683.01,Desc.,SP.TOP.TRANSCRIPTOME STUDIES,3,7,AHMET KOMAN,TBA,,,,,,,"                          "
+BIO 690.01,Desc.,M.S.THESIS,0,60,KUYAŞ BUĞRA,TBA,,,,,,,"                          "
+BIO 692.01,Desc.,ADVANCED TOP. IN MOLECULAR BIO.&GENETICS,3,7,ASLIHAN TOLUN,TBA,,,,,,,"                          "
+BIO 790.01,Desc.,Ph.D.THESIS,0,120,KUYAŞ BUĞRA,TBA,,,,,,,"                          "

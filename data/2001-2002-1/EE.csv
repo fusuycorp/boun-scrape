@@ -1,0 +1,39 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EE  140.01,Desc.,DIGITAL SYSTEMS,4,5,IŞIL BOZMA,MMW,562,,,,,,"                          "
+EE  210.01,Desc.,INTRODUCTION TO ELECTRICAL ENG.[CMPE],3,6,OĞUZHAN ÇİÇEKOĞLU,MMT,121,,,,,,"                          "
+EE  210.02,Desc.,INTRODUCTION TO ELECTRICAL ENG.[ME],3,6,OĞUZHAN ÇİÇEKOĞLU,TTF,783,,,,,,"                          "
+EE  303.01,Desc.,MATHEMATICAL METHODS IN ELECTRICAL ENGR.,3,4,EMİN ANARIM,MThTh,634,,,,,,"                          "
+EE  313.01,Desc.,PROBABILITY FOR ELECTRICAL ENGINEERS,4,7,YAĞMUR DENİZHAN,TTFF,3456,,,,,,"                          "
+EE  327.01,Desc.,ELECTRICAL NETWORKS LABORATORY,2,3,OĞUZHAN ÇİÇEKOĞLU,M,3,,,,,,"                          "
+EE  333.01,Desc.,ELECTRONICS I,3,4,GÜNHAN DÜNDAR,WWF,232,,,,,,"                          "
+EE  363.01,Desc.,ELECTROMAGNETIC FIELD THEORY,3,4,SELİM ŞEKER,MWW,245,,,,,,"                          "
+EE  433.01,Desc.,COMMUNICATION ELECTRONICS,3,6,AVNİ MORGÜL,MMTh,343,,,,,,"                          "
+EE  435.01,Desc.,INDUSTRIAL ELECTRONICS,3,5,M. OKYAY KAYNAK,WWTh,125,,,,,,"                          "
+EE  437.01,Desc.,OP. AMPS & APPLICATIONS,3,6,YASEMİN KAHYA,MWW,667,,,,,,"                          "
+EE  439.01,Desc.,ELECTRONICS LAB. II,1,6,ÖMER CERİD,FF,78,,,,,,"                          "
+EE  443.01,Desc.,MICROPROCESSORS,4,6,ÖMER CERİD,TTF,344,,,,,,"                          "
+EE  451.01,Desc.,INTRODUCTION TO ROBOT CONTROL,3,6,KEMAL CILIZ,MMTh,561,,,,,,"                          "
+EE  453.01,Desc.,LINEAR SYSTEM THEORY,4,6,KADRİ ÖZÇALDIRAN,MMThTh,3434,,,,,,"                          "
+EE  460.01,Desc.,INTRODUCTION TO REMOTE SENSING,3,6,SELİM ŞEKER,WThTh,667,,,,,,"                          "
+EE  473.01,Desc.,INTRODUCTION TO DIGITAL SIGNAL PROCESSIN,3,6,LEVENT ARSLAN,TTTh,565,,,,,,"                          "
+EE  475.01,Desc.,INTRODUCTION TO IMAGE PROCESSING,3,6,BÜLENT SANKUR,WWF,121,,,,,,"                          "
+EE  477.01,Desc.,DIGITAL COMMUNICATION,4,6,AYŞIN ERTÜZÜN,WWFF,3423,,,,,,"                          "
+EE  479.01,Desc.,COMMUNICATION LABORATORY,1,2,AVNİ MORGÜL,TT,78,,,,,,"                          "
+EE  479.02,Desc.,COMMUNICATION LABORATORY,1,2,AVNİ MORGÜL,ThTh,12,,,,,,"                          "
+EE  492.01,Desc.,PROJECT,4,6,KADRİ ÖZÇALDIRAN,TBA,,,,,,,"                          "
+EE  497.01,Desc.,SP.TOP.(JAVA PROGRAMMING),3,6,IŞIL BOZMA,MWW,278,,,,,,"                          "
+EE  531.01,Desc.,TV  ENGINEERING,3,7,AVNİ MORGÜL,TBA,,,,,,,"                          "
+EE  537.01,Desc.,INTRODUCTION TO VLSI DESIGN,3,7,GÜNHAN DÜNDAR,TBA,,,,,,,"                          "
+EE  540.01,Desc.,COMPUTER COMMUNICATION NETWORKS,3,6,KEMAL CILIZ,MWW,478,,,,,,"                          "
+EE  575.01,Desc.,MULTIRESOLUTION SIGNAL PROCESSING,3,7,EMİN ANARIM,TBA,,,,,,,"                          "
+EE  577.01,Desc.,STATISTICAL SIGNAL ANALYSIS,3,7,BÜLENT SANKUR,WFF,434,,,,,,"                          "
+EE  579.01,Desc.,GRADUATE SEMINAR,0,6,KADRİ ÖZÇALDIRAN,F,7,,,,,,"                          "
+EE  587.01,Desc.,SP.TOP.: FUZZY CONTROL,3,6,M. OKYAY KAYNAK,TBA,,,,,,,"                          "
+EE  631.01,Desc.,ADVANCED ELECTRONIC CIRCUITS,3,6,ÖMER CERİD,TBA,,,,,,,"                          "
+EE  633.01,Desc.,COMPUTATIONAL ASPECTS OF VLSI,3,6,GÜNHAN DÜNDAR,TBA,,,,,,,"                          "
+EE  670.01,Desc.,ADAPTIVE FILTER THEORY,3,6,AYŞIN ERTÜZÜN,WFF,656,,,,,,"                          "
+EE  683.01,Desc.,SP.TOP:ADVANCED TOP.IN SPEECH PROC.,3,6,LEVENT ARSLAN,TBA,,,,,,,"                          "
+EE  685.01,Desc.,SP.TOP.IC DESIGN FOR WIRELESS COMM,3,6,GÜNHAN DÜNDAR,TBA,,,,,,,"                          "
+EE  690.01,Desc.,M.S.THESIS,0,60,KADRİ ÖZÇALDIRAN,TBA,,,,,,,"                          "
+EE  699.01,Desc.,GUIDED RESEARCH,4,8,KADRİ ÖZÇALDIRAN,TBA,,,,,,,"                          "
+EE  790.01,Desc.,Ph.D.THESIS,0,120,KADRİ ÖZÇALDIRAN,TBA,,,,,,,"                          "

@@ -1,0 +1,19 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY I,3,7,GÜROL IRZIK,MWW,212,,,,,,"        PSY; LING; GUID; LAW                  "
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY I,3,7,CHRYSSI SIDIROPOULOU,MWW,256,,,,,,"        PHIL                  "
+PHIL111.02,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,5,ZEYNEP DAVRAN,MWTh,333,,,,,,"                          "
+PHIL131.01,Desc.,LOGIC I,3,10,İLHAN İNAN,WWF,566,,,,,,"                          "
+PHIL131.02,Desc.,LOGIC I,3,10,BERNA KILINÇ,TTTh,787,,,,,,"                          "
+PHIL213.01,Desc.,ANCIENT PHILOSOPHY,3,6,CHRYSSI SIDIROPOULOU,MMT,454,,,,,,"        PHIL                  "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,KARANFİL SOYHUN,WFF,456,,,,,,"        PHIL                  "
+PHIL313.01,Desc.,HISTORY OF MODERN PHILOSOPHY I,3,6,STEPHEN VOSS,MWF,222,,,,,,"        PHIL                  "
+PHIL341.01,Desc.,ETHICS,3,6,KARANFİL SOYHUN,WWF,673,,,,,,"        PHIL                  "
+PHIL451.01,Desc.,HUMAN RIGHTS AND PHIL.LAW,3,6,ZEYNEP DAVRAN,MWTh,454,,,,,,"                          "
+PHIL483.01,Desc.,SP.TOP:KANT,3,6,BERNA KILINÇ,WFF,856,,,,,,"                          "
+PHIL484.01,Desc.,SP.TOP:ORIGINS OF ANALYTIC PHILOSOPHY,3,6,ALİ KARATAY,MMTh,788,,,,,,"                          "
+PHIL522.01,Desc.,MATHEMATICAL LOGIC,4,10,ALİ KARATAY,MThTh,556,,,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,GÜROL IRZIK,TBA, ,,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,2,GÜROL IRZIK,TBA, ,,,,,,"                          "
+PHIL601.01,Desc.,PLATO,4,10,STEPHEN VOSS,MMM,678,,,,,,"                          "
+PHIL637.01,Desc.,CONTEMPORARY PHILOSOPHY,4,10,İLHAN İNAN,WFF,323,,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,GÜROL IRZIK,TBA, ,,,,,,"                          "

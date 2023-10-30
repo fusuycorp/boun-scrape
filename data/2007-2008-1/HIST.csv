@@ -1,0 +1,51 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHIN101.01,Desc.,BEGINNERS CHINESE I,3,5,GUIYUAN YANG,MTWThF,33333,,KGYM106 | KGYM106 | KGYM106 | KGYM106 | KGYM106,,,,"                          "
+CHIN201.01,Desc.,INTERMEDIATE CHINESE I,3,5,GUIYUAN YANG,TWWFF,41212,,,,,,"                          "
+CHIN301.01,Desc.,ADVANCED CHINESE I,3,5,GUIYUAN YANG,WWTh,785,,,,,,"                          "
+HIST101.01,Desc.,HISTORICAL METHOD & THOUGHT I,3,6,EDHEM ELDEM,TTTh,565,,TB 310 | TB 310 | IB 102,,,,"                          "
+HIST105.01,Desc.,THE MAKING OF THE MODERN WORLD I,4,6,ÇİĞDEM KAFESCİOĞLU,MWF,444,,AYHAN Ş | AYHAN Ş | AYHAN Ş,,,,"                          "
+HIST205.01,Desc.,INTR. TO THE HIST.OF ART& VISUAL CULTURE,3,5,LALE BABAOĞLU,MMTh,345,,TB 475 | TB 475 | TB 475,,,,"                          "
+HIST211.01,Desc.,HISTORY OF THE ANCIENT NEAR EAST I,3,5,ASLI ÖZYAR,TFF,434,,TB 475 | TB 490 | TB 490,,,,"                          "
+HIST221.01,Desc.,PRE-OTTOMAN TURKISH HISTORY,3,5,SELÇUK ESENBEL,WWW,3910,,TB 490 | TB 475 | TB 475,,,,"                          "
+HIST233.01,Desc.,HISTORY OF THE BALKANS I,3,5,AYDIN BABUNA,MTT,412,,TB 240 | TB 490 | TB 490,,,,"                          "
+HIST235.01,Desc.,OTTOMAN CULTURAL HISTORY,3,6,DERİN TERZİOĞLU,TTTh,342,,TB 490 | TB 490 | M 2230,,,TKL,"        TKL                  "
+HIST241.01,Desc.,"INTR.WESTERN EUROPEAN,MEDITERRANEAN&ISLA",3,6,EVANGELOS KECHRIOTIS,MFF,256,,M 2171 | TB 490 | TB 490,,,,"                          "
+HIST311.01,Desc.,EUROPEAN SOCIAL & ECONOMIC HISTORY I,3,5,HURİCİHAN İSLAMOĞLU,WWW,7910,,M 1170 | M 2181 | M 2181,,,,"                          "
+HIST321.01,Desc.,LATE OTTOMAN HISTORY,3,5,YÜCEL TERZİBAŞOĞLU,WWW,234,,M 1171 | M 1171 | M 1171,,,,"                          "
+HIST335.01,Desc.,HISTORY OF THE BYZANTINE EMPIRE I,3,5,NEVRA NECİPOĞLU,TTTh,785,,TB 490 | TB 490 | TB 490,,,,"                          "
+HIST354.01,Desc.,"RENAISSANCE,BAROQUE ART & ARCHITECTURE",3,5,PAOLO GIRARDELLI,TThTh,434,,M 1200 | TB 475 | TB 475,,,,"                          "
+HIST401.01,Desc.,HISTORIOGRAPHY I,3,6,MELTEM TOKSÖZ,WThTh,334,,M 1200 | TB 490 | TB 490,,,,"                          "
+HIST411.01,Desc.,NATIONALISM & IMPERALISM 1789-1914,3,5,SELİM DERİNGİL,MMTh,232,,TB 490 | TB 490 | M 2170,,,,"                          "
+HIST425.01,Desc.,HIST.OF THE MIDDLE EAST IN THE NINETEENT,3,6,YÜCEL TERZİBAŞOĞLU,MMM,567,,TB 475 | TB 475 | TB 475,,,,"                          "
+HIST449.01,Desc.,SEMINAR IN OTTOMAN SOURCES,3,5,YAVUZ SELİM KARAKIŞLA,FFF,678,,M 2181 | M 2181 | M 2181,,,,"                          "
+HIST451.01,Desc.,OTTOMAN ART & ARCHITECTURE,3,5,GÜNHAN DANIŞMAN,TThTh,512,,TB 490 | TB 490 | TB 490,,,,"                          "
+HIST455.01,Desc.,HISTORY OF PERFORMING  ARTS IN TURKEY I,3,5,ARZU ÖZTÜRKMEN,TThTh,434,,M 2231,,,,"                          "
+HIST48E.01,Desc.,SP.TOP.IN BYZANTINE ART&ARCHITECTURE I,3,6,ANESTIS VASILAKERIS,MMM,91011,, | N/A | TB 475 | TB 475,,,,"                          "
+HIST492.01,Desc.,SP.TOP.:HISTORY OF NATIONALISM IN THE BA,3,6,EVANGELOS KECHRIOTIS,TTW,232,,M 1200 | M 1200 | TB 490,,,,"                          "
+HIST495.01,Desc.,THESIS I,3,6,ZAFER TOPRAK,,, ,,,,,"                          "
+HIST495.02,Desc.,THESIS I,3,6,NEVRA NECİPOĞLU,,, ,,,,,"                          "
+HIST496.01,Desc.,THESIS II,3,6,ZAFER TOPRAK,,, ,,,,,"                          "
+HIST49C.01,Desc.,SP.TOP.MINIATURE PAIN.TURCO-PERSION&OTTA,3,6,LALE ULUÇ,FFF,678,,TB 240 | TB 240 | TB 240,,,,"                          "
+HIST49D.01,Desc.,SP.TOP.IN ART AND BEAUTY,3,6,LALE BABAOĞLU,TTT,234,,M 2152 | M 2152 | M 2152,,,,"                          "
+HIST501.01,Desc.,HISTORIOGRAPHY,3,7,SELÇUK ESENBEL,TTT,678,,,,,,"                          "
+HIST512.01,Desc.,URBAN HISTORY OF OTTOMAN SOCIETY,3,7,PAOLO GIRARDELLI,TBA,,,,,,,"                          "
+HIST521.01,Desc.,OTT.INTELLECTUAL HISTORY,3,7,SELİM DERİNGİL,TBA,,,,,,,"                          "
+HIST551.01,Desc.,"METH.&THEORY İN THE HIST.OF ART,ARC& VIS",3,7,AHMET ERSOY,WWW,234,,,,,,"                          "
+HIST552.01,Desc.,OTTOMAN ART & ARCHITECTURE,3,7,ÇİĞDEM KAFESCİOĞLU,WWW,678,,,,,,"                          "
+HIST558.01,Desc.,METHOD&THEORY IN CONSERVATION&RESTORATIO,3,7,GÜNHAN DANIŞMAN,TBA,,,,,,,"                          "
+HIST559.01,Desc.,RESEARCH IN THE HIST. OF PERFORMING ARTS,3,7,ARZU ÖZTÜRKMEN,TBA,,,,,,,"                          "
+HIST572.01,Desc.,SEMINAR ON JAPAN SINCE 1868,3,7,SELÇUK ESENBEL,TBA,,,,,,,"                          "
+HIST584.01,Desc.,SEL.READINGS IN LATE OTTOMAN HISTORY I,3,7,ANTONY GREENWOOD,TBA,,,,,,,"        HIST; ATA; TKL                  "
+HIST586.01,Desc.,SPEC.TOP.IN OTT.HIST.,3,6,MELTEM TOKSÖZ,TBA,,,,,,,"                          "
+HIST58E.01,Desc.,SP.TOP.POL.ECO.&INSTITUTIONAL CHANGE,3,6,HURİCİHAN İSLAMOĞLU,TBA,,,,,,,"                          "
+HIST58F.01,Desc.,SP.TP.THE EMERGENCE OF NEW CULT.FORMS  ,3,6,ARZU ÖZTÜRKMEN,TBA,,,,,,,"                          "
+HIST592.01,Desc.,SP.TOP.:LITERACY&BOOK CULTURE,3,7,DERİN TERZİOĞLU,TBA,,,,,,,"                          "
+HIST601.01,Desc.,HISTORY SEMINAR,3,7,MELTEM TOKSÖZ,TBA,,,,,,,"                          "
+HIST603.01,Desc.,SEMINAR IN CONTEMPORARY METHODS IN HIST.,3,7,SELÇUK ESENBEL,TBA,,,,,,,"                          "
+HIST686.01,Desc.,SP.TOP.HIST.OF ABDULHAMID II AND HIST.HI,3,7,YAVUZ SELİM KARAKIŞLA,MMM,91011,,,,,,"                          "
+HIST688.01,Desc.,SP.TOP.IN LATE OTTOMAN HISTORIOGRAPHY,3,7,MELTEM TOKSÖZ,TBA,,,,,,,"                          "
+HIST690.01,Desc.,MASTER THESIS,0,60,ARZU ÖZTÜRKMEN,TBA,,,,,,,"                          "
+HIST790.01,Desc.,PH.D.THESIS,0,120,ARZU ÖZTÜRKMEN,TBA,,,,,,,"                          "
+JP  101.01,Desc.,BEGINNERS JAPANESE I,3,5,MARİKO ERDOĞAN,TThThFF,15612,,TB 240 | NB 118 | NB 118 | NB 118 | NB 118,,,,"                          "
+JP  201.01,Desc.,INTERMEDIATE JAPANESE I,3,5,MARİKO ERDOĞAN,TThThFF,57834,,NB 118 | NB 118 | NB 118 | NB 118 | NB 118,,,,"                          "
+JP  501.01,Desc.,TRANS.OF MOD.&CLAS.JAPANESE TEXTS I,3,5,MARİKO ERDOĞAN,TBA,,,,,,,"                          "

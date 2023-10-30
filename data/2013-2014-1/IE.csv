@@ -1,0 +1,65 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ENG 482.01,Desc.,SP.TOP.IN ENG:STRATEGIC MANAGEMENT FOR E,3,6,LÜTFİ ENSARİ,ThThTh,567,,M 1170 | M 1170 | M 1170,14.01.2014,1,,"                          "
+IE  201.01,Desc.,INTERMEDIATE PROGRAMMING,3,6,ALİ TAMER ÜNAL,ThThFF,7878,,M 2230 | M 2230 | M 3100 | M 3100,16.01.2014,2,,"                          "
+IE  202.01,Desc.,OPERATIONS RESEARCH I,4,7,İLHAN OR,TThThFF,55656,,M 3100 | M 2200 | M 2200 | M 3120 | M 3120,10.01.2014,3,,"                          "
+IE  255.01,Desc.,PROBABILITY FOR INDUSTRIAL ENGINEERS,3,6,WOLFGANG HOERMANN,ThThFF,1212,,M 2230 | M 2230 | M 1100 | M 1100,08.01.2014,2,,"                          "
+IE  256.01,Desc.,STATISTICS FOR INDUSTRIAL ENGINEERS,3,6,MUSTAFA GÖKÇE BAYDOĞAN,ThThFF,1212,,M 3120 | M 3120 | M 3100 | M 3100,11.01.2014,2,,"                          "
+IE  305.01,Desc.,OPERATIONS RESEARCH II,4,7,ZEKİ CANER TAŞKIN,MMTWW,12812,,M 3100 | M 3100 | M 2200 | M 2180 | M 2180,18.01.2014,1,,"                          "
+IE  306.01,Desc.,SYSTEMS SIMULATION,4,7,YAMAN BARLAS,MMTWW,45234,,M 2180 | M 2180 | M 3120 | M 2230 | M 2230,17.01.2014,2,,"                          "
+IE  310.01,Desc.,OPERATIONS RESEARCH,4,5,HAKAN YAŞARCAN,MMThThTh,34345,,M 1100 | M 1100 | M 2230 | M 2230 | M 2230,06.01.2014,1,CMPE,"                          "
+IE  312.01,Desc.,FACILITIES DESIGN & PLANNING,4,6,GÖNENÇ YÜCEL,MTTFF,63434,,M 3120 | M 2180 | M 2180 | M 2171 | M 2171,07.01.2014,3,,"                          "
+IE  341.01,Desc.,ENGINEERING ECONOMICS,4,7,GÜRKAN KUMBAROĞLU,TTWThTh,67534,,M 2200 | M 2200 | M 3100 | M 3100 | M 3100,09.01.2014,2,,"                          "
+IE  413.01,Desc.,SUPPLY CHAIN MAN.,4,7,TANER BİLGİÇ,MTTFF,63434,,M 3100 | M 2181 | M 2181 | M 2180 | M 2180,07.01.2014,2,,"                          "
+IE  423.01,Desc.,QUALITY ENGINEERING,3,6,ALİ RIZA KAYLAN,ThThFF,1212,,M 2181 | M 2181 | M 2230 | M 2230,15.01.2014,1,,"                          "
+IE  430.01,Desc.,ERGONOMICS&HUMAN FACTORS ENGINEERING,3,6,MAHMUT EKŞİOĞLU,ThThFF,6778,,M 2170 | M 2170 | M 3120 | M 3120,16.01.2014,1,,"                          "
+IE  440.01,Desc.,NONLINEAR MODELS IN OPERATIONS RESEARCH,3,6,KUBAN ALTINEL,MMW,121,,M 2230 | M 2230 | M 3100,18.01.2014,3,,"                          "
+IE  450.01,Desc.,STOCHASTIC MODELS IN OPERATIONS RESEARCH,3,6,AYBEK KORUGAN,MMW,342,,M 2152 | M 2152 | M 2230,09.01.2014,2,,"                          "
+IE  456.01,Desc.,GRAPH ALGORITHMS & APPLICATIONS,3,6,TINAZ  EKİM AŞICI,TFF,556,,M 2200 | M 3100 | M 3100,14.01.2014,3,,"                          "
+IE  461.01,Desc.,ENERGY POLICY & PLANNING,3,6,GÜRKAN KUMBAROĞLU,ThFF,856,,M 2170 | M 2200 | M 2200,08.01.2014,2,,"                          "
+IE  491.01,Desc.,SPECIAL PROJECTS,3,6,TANER BİLGİÇ,TBA,,,,,0,,"                          "
+IE  492.01,Desc.,PROJECT,4,8,AYBEK KORUGAN,TBA,,,,,0,,"                          "
+IE  496.01,Desc.,SP.TOP.:ROBUST DESIGN AND ENGINEERING,3,6,SUAT GENÇ,MMM,789,,M 3120 | M 3120 | M 3120,10.01.2014,1,,"                          "
+IE  501.01,Desc.,OPTIMIZATION TECHNIQUES I,3,7,KUBAN ALTINEL,MMWW,3434,,M 2171 | M 2171 | VYKM3 | VYKM3,17.01.2014,3,,"                          "
+IE  505.01,Desc.,STOCHASTIC PROCESSES & APPLICATIONS,3,7,AYBEK KORUGAN,MWW,756,,M 2171 | M 2180 | M 2180,07.01.2014,3,,"                          "
+IE  520.01,Desc.,QUALITY MANAGEMENT,3,7,ALİ RIZA KAYLAN,TTF,783,,M 2180 | M 2180 | M 2230,15.01.2014,3,,"                          "
+IE  523.01,Desc.,DESIGN OF PRODUCTION SYSTEMS,3,7,ÜMİT BİLGE,TTThTh,3434,,M 2171 | M 2171 | M 1181 | M 1181,16.01.2014,1,,"                          "
+IE  550.01,Desc.,DYNAMICS OF SOCIO-ECONOMIC SYSTEMS,3,7,YAMAN BARLAS,TTThTh,5634,,M 2181 | M 2181 | M 2171 | M 2171,18.01.2014,2,,"                          "
+IE  578.01,Desc.,GRADUATE SEMINAR,0,2,REFİK GÜLLÜ,WW,78,,M 2171 | M 2171,,0,,"                          "
+IE  586.01,Desc.,SP.TOP.:QUANTITATIVE FINANCE,3,7,WOLFGANG HOERMANN,ThFF,878,,M 1181 | M 2200 | M 2200,11.01.2014,2,,"                          "
+IE  621.01,Desc.,INVENTORY CONTROL THEORY,3,7,REFİK GÜLLÜ,ThThTh,567,,VYKM3 | VYKM3 | VYKM3,10.01.2014,3,,"                          "
+IE  690.01,Desc.,M.S. THESIS,0,60,KUBAN ALTINEL,TBA,,,,,0,,"                          "
+IE  690.02,Desc.,M.S. THESIS,0,60,MUSTAFA NECATİ ARAS,TBA,,,,,0,,"                          "
+IE  690.03,Desc.,M.S. THESIS,0,60,GÜLAY BARBAROSOĞLU,TBA,,,,,0,,"                          "
+IE  690.04,Desc.,M.S. THESIS,0,60,YAMAN BARLAS,TBA,,,,,0,,"                          "
+IE  690.05,Desc.,M.S. THESIS,0,60,ÜMİT BİLGE,TBA,,,,,0,,"                          "
+IE  690.06,Desc.,M.S. THESIS,0,60,TANER BİLGİÇ,TBA,,,,,0,,"                          "
+IE  690.07,Desc.,M.S. THESIS,0,60,MAHMUT EKŞİOĞLU,TBA,,,,,0,,"                          "
+IE  690.08,Desc.,M.S. THESIS,0,60,REFİK GÜLLÜ,TBA,,,,,0,,"                          "
+IE  690.09,Desc.,M.S. THESIS,0,60,WOLFGANG HOERMANN,TBA,,,,,0,,"                          "
+IE  690.10,Desc.,M.S. THESIS,0,60,ALİ RIZA KAYLAN,TBA,,,,,0,,"                          "
+IE  690.11,Desc.,M.S. THESIS,0,60,AYBEK KORUGAN,TBA,,,,,0,,"                          "
+IE  690.12,Desc.,M.S. THESIS,0,60,GÜRKAN KUMBAROĞLU,TBA,,,,,0,,"                          "
+IE  690.13,Desc.,M.S. THESIS,0,60,İLHAN OR,TBA,,,,,0,,"                          "
+IE  690.14,Desc.,M.S. THESIS,0,60,ALİ TAMER ÜNAL,TBA,,,,,0,,"                          "
+IE  690.15,Desc.,M.S. THESIS,0,60,TINAZ  EKİM AŞICI,TBA,,,,,0,,"                          "
+IE  690.16,Desc.,M.S. THESIS,0,60,HAKAN YAŞARCAN,TBA,,,,,0,,"                          "
+IE  690.17,Desc.,M.S. THESIS,0,60,ZEKİ CANER TAŞKIN,TBA,,,,,0,,"                          "
+IE  690.18,Desc.,M.S. THESIS,0,60,GÖNENÇ YÜCEL,TBA,,,,,0,,"                          "
+IE  790.01,Desc.,Ph.D. THESIS,0,120,KUBAN ALTINEL,TBA,,,,,0,,"                          "
+IE  790.02,Desc.,Ph.D. THESIS,0,120,MUSTAFA NECATİ ARAS,TBA,,,,,0,,"                          "
+IE  790.03,Desc.,Ph.D. THESIS,0,120,GÜLAY BARBAROSOĞLU,TBA,,,,,0,,"                          "
+IE  790.04,Desc.,Ph.D. THESIS,0,120,YAMAN BARLAS,TBA,,,,,0,,"                          "
+IE  790.05,Desc.,Ph.D. THESIS,0,120,ÜMİT BİLGE,TBA,,,,,0,,"                          "
+IE  790.06,Desc.,Ph.D. THESIS,0,120,TANER BİLGİÇ,TBA,,,,,0,,"                          "
+IE  790.07,Desc.,Ph.D. THESIS,0,120,MAHMUT EKŞİOĞLU,TBA,,,,,0,,"                          "
+IE  790.08,Desc.,Ph.D. THESIS,0,120,REFİK GÜLLÜ,TBA,,,,,0,,"                          "
+IE  790.09,Desc.,Ph.D. THESIS,0,120,WOLFGANG HOERMANN,TBA,,,,,0,,"                          "
+IE  790.10,Desc.,Ph.D. THESIS,0,120,ALİ RIZA KAYLAN,TBA,,,,,0,,"                          "
+IE  790.11,Desc.,Ph.D. THESIS,0,120,AYBEK KORUGAN,TBA,,,,,0,,"                          "
+IE  790.12,Desc.,Ph.D. THESIS,0,120,GÜRKAN KUMBAROĞLU,TBA,,,,,0,,"                          "
+IE  790.13,Desc.,Ph.D. THESIS,0,120,İLHAN OR,TBA,,,,,0,,"                          "
+IE  790.14,Desc.,Ph.D. THESIS,0,120,ALİ TAMER ÜNAL,TBA,,,,,0,,"                          "
+IE  790.15,Desc.,Ph.D. THESIS,0,120,TINAZ  EKİM AŞICI,TBA,,,,,0,,"                          "
+IE  790.16,Desc.,Ph.D. THESIS,0,120,HAKAN YAŞARCAN,TBA,,,,,0,,"                          "
+IE  790.17,Desc.,Ph.D. THESIS,0,120,ZEKİ CANER TAŞKIN,TBA,,,,,0,,"                          "
+IE  790.18,Desc.,Ph.D. THESIS,0,120,GÖNENÇ YÜCEL,TBA,,,,,0,,"                          "

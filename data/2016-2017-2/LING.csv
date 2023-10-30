@@ -1,0 +1,61 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CAU 101.01,Desc.,ELEMENTARY LAZ I,3,5,İSMAİL AVCI,MMW,674,,,24.05.2017,3,,"                          "
+CAU 111.01,Desc.,ELEMENTARY KABARDIAN I,3,5,FATİMA JILETEJEVA,TTTh,565,,,24.05.2017,3,,"                          "
+CAU 121.01,Desc.,ELEMENTARY ABKHAZ I,3,5,GUNDA ANKVAB,MMW,899,,,24.05.2017,2,,"                          "
+CAU 122.01,Desc.,ELEMENTARY ABKHAZ II,3,5,GUNDA ANKVAB,MWW,767,,,22.05.2017,3,,"                          "
+CAU 201.01,Desc.,INTERMEDIATE LAZ I,3,5,İSMAİL AVCI,MMM,8910,,,20.05.2017,2,,"                          "
+LING101.01,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS I,3,7,PAVEL LOGAÇEV,MMWW,5656,,,02.06.2017,3,TR,"                          "
+LING101.02,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS I,3,7,ELENA GUERZONI,MMWW,5656,,,02.06.2017,3,LL,"                          "
+LING102.01,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS II,3,7,DİDAR AKAR,MTTh,333,,,22.05.2017,1,,"                          "
+LING104.01,Desc.,PHONETICS,3,6,KADİR GÖKGÖZ,MTTh,444,,,23.05.2017,2,,"                          "
+LING202.01,Desc.,MORPHOLOGY,3,6,BALKIZ ÖZTÜRK,WWTh,565,,,01.06.2017,2,,"                          "
+LING206.01,Desc.,LANGUAGE TYPOLOGY,3,6,ERGİN ÖPENGİN,TTW,568,,,22.05.2017,1,,"                          "
+LING305.01,Desc.,SEMANTICS,3,6,ELENA GUERZONI,TTTh,232,,,30.05.2017,2,,"                          "
+LING313.01,Desc.,PHONOLOGY&MORPHOLOGY OF MODERN TURKISH,3,7,MİNE NAKİPOĞLU,MMW,564,,,26.05.2017,1,,"                          "
+LING314.01,Desc.,SYNTAX&SEMANTICS OF MODERN TURKISH,3,7,BALKIZ ÖZTÜRK,MWTh,333,,,02.06.2017,3,,"                          "
+LING350.01,Desc.,STRUCTURE OF TURKISH SIGN LANGUAGE,3,6,SUMRU ÖZSOY,TTTh,565,,,25.05.2017,1,,"                          "
+LING48G.01,Desc.,SP.TP.GEORGIAN II,3,5,EŞREF YILMAZ,TTT,456,,,18.05.2017,2,,"                          "
+LING48M.01,Desc.,SP. TP. IN LING: GEORGIAN III,3,6,EŞREF YILMAZ,TTT,789,,,25.05.2017,1,,"                          "
+LING512.01,Desc.,MORPHOLOGICAL ANALYSIS,4,10,ASLI GÖKSEL,TTThTh,2312,,,,0,,"                          "
+LING572.01,Desc.,READINGS IN LINGUISTICS II,1,5,DİDAR AKAR,TBA,,,,,0,,"                          "
+LING572.02,Desc.,READINGS IN LINGUISTICS II,1,5,ASLI GÖKSEL,TBA,,,,,0,,"                          "
+LING572.03,Desc.,READINGS IN LINGUISTICS II,1,5,MELTEM KELEPİR,TBA,,,,,0,,"                          "
+LING572.04,Desc.,READINGS IN LINGUISTICS II,1,5,MİNE NAKİPOĞLU,TBA,,,,,0,,"                          "
+LING572.05,Desc.,READINGS IN LINGUISTICS II,1,5,SUMRU ÖZSOY,TBA,,,,,0,,"                          "
+LING572.06,Desc.,READINGS IN LINGUISTICS II,1,5,BALKIZ ÖZTÜRK,TBA,,,,,0,,"                          "
+LING572.08,Desc.,READINGS IN LINGUISTICS II,1,5,ESER TAYLAN,TBA,,,,,0,,"                          "
+LING572.09,Desc.,READINGS IN LINGUISTICS II,1,5,ELENA GUERZONI,TBA,,,,,0,,"                          "
+LING572.10,Desc.,READINGS IN LINGUISTICS II,1,5,PAVEL LOGAÇEV,TBA,,,,,0,,"                          "
+LING572.11,Desc.,READINGS IN LINGUISTICS II,1,5,KADİR GÖKGÖZ,TBA,,,,,0,,"                          "
+LING572.12,Desc.,READINGS IN LINGUISTICS II,1,5,ERGİN ÖPENGİN,TBA,,,,,0,,"                          "
+LING572.13,Desc.,READINGS IN LINGUISTICS II,1,5,DİDAR AKAR,TBA,,,,,,,"                          "
+LING572.14,Desc.,READINGS IN LINGUISTICS II,1,5,ASLI GÖKSEL,TBA,,,,,,,"                          "
+LING572.15,Desc.,READINGS IN LINGUISTICS II,1,5,MELTEM KELEPİR,TBA,,,,,,,"                          "
+LING572.16,Desc.,READINGS IN LINGUISTICS II,1,5,MİNE NAKİPOĞLU,TBA,,,,,,,"                          "
+LING572.17,Desc.,READINGS IN LINGUISTICS II,1,5,SUMRU ÖZSOY,TBA,,,,,,,"                          "
+LING572.18,Desc.,READINGS IN LINGUISTICS II,1,5,BALKIZ ÖZTÜRK,TBA,,,,,,,"                          "
+LING572.19,Desc.,READINGS IN LINGUISTICS II,1,5,ESER TAYLAN,TBA,,,,,,,"                          "
+LING572.20,Desc.,READINGS IN LINGUISTICS II,1,5,ELENA GUERZONI,TBA,,,,,,,"                          "
+LING572.21,Desc.,READINGS IN LINGUISTICS II,1,5,PAVEL LOGAÇEV,TBA,,,,,,,"                          "
+LING579.01,Desc.,GRADUATE SEMINAR,0,5,MELTEM KELEPİR,TBA,,,,,0,,"                          "
+LING580.01,Desc.,SP.STUD.THEORETICAL ISSUES IN SIGN LANG.,4,10,MELTEM KELEPİR,TBA,,,,,,,"                          "
+LING581.01,Desc.,SP.TP.DEPEN.RESOLUTION.IN SENT.PROCESS.,4,10,PAVEL LOGAÇEV,TTThTh,5634,,,,0,,"                          "
+LING586.01,Desc.,SP.TP.TO MOVE OR NOT TO MO.THAT  QUEST.,4,10,SUMRU ÖZSOY,TBA,,,,,,,"                          "
+LING58D.01,Desc.,SP.TP.ACQUISTION OF SYNTAX,4,10,KADİR GÖKGÖZ,MMWW,7823,,,,0,,"                          "
+LING604.01,Desc.,SEMANTIC THEORY,4,10,ELENA GUERZONI,TBA,,,,,,,"                          "
+LING688.01,Desc.,SP.TP.ISS.IN SY.SEM.INT.IN SIG.LANG.LIN.,4,10,MELTEM KELEPİR,TBA,,,,,,,"                          "
+LING690.01,Desc.,MASTER THESIS,0,60,DİDAR AKAR,TBA,,,,,0,,"                          "
+LING690.02,Desc.,MASTER THESIS,0,60,ASLI GÖKSEL,TBA,,,,,0,,"                          "
+LING690.03,Desc.,MASTER THESIS,0,60,MELTEM KELEPİR,TBA,,,,,0,,"                          "
+LING690.04,Desc.,MASTER THESIS,0,60,MİNE NAKİPOĞLU,TBA,,,,,0,,"                          "
+LING690.05,Desc.,MASTER THESIS,0,60,MARKUS POCHTRAGER,TBA,,,,,,,"                          "
+LING690.06,Desc.,MASTER THESIS,0,60,BALKIZ ÖZTÜRK,TBA,,,,,0,,"                          "
+LING690.08,Desc.,MASTER THESIS,0,60,ESER TAYLAN,TBA,,,,,0,,"                          "
+LING690.09,Desc.,MASTER THESIS,0,60,ELENA GUERZONI,TBA,,,,,0,,"                          "
+LING690.10,Desc.,MASTER THESIS,0,60,PAVEL LOGAÇEV,TBA,,,,,0,,"                          "
+LING790.02,Desc.,Ph.D THESIS,0,120,ASLI GÖKSEL,TBA,,,,,0,,"                          "
+LING790.03,Desc.,Ph.D THESIS,0,120,MELTEM KELEPİR,TBA,,,,,0,,"                          "
+LING790.05,Desc.,Ph.D THESIS,0,120,MARKUS POCHTRAGER,TBA,,,,,,,"                          "
+LING790.06,Desc.,Ph.D THESIS,0,120,BALKIZ ÖZTÜRK,TBA,,,,,0,,"                          "
+LING790.08,Desc.,Ph.D THESIS,0,120,SUMRU ÖZSOY,TBA,,,,,0,,"                          "
+TID 102.01,Desc.,ELEMENTARY TURKISH SIGN LANGUAGE II,3,5,FERİDE KORKMAZ,MMM,678,,,17.05.2017,1,,"                          "

@@ -1,0 +1,16 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHYS101.01,Desc.,PHYSICS I,4,8,ENİSE NİHAL ERCAN,,,,,,,,"                          "
+PHYS101.02,Desc.,PHYSICS I,4,8,B.GÜLEN AKTAŞ,,,,,,,,"                          "
+PHYS102.01,Desc.,PHYSICS II,4,8,ENİSE NİHAL ERCAN,,,,,,,,"                          "
+PHYS121.01,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,ÖMER Ö.OĞUZ,,,,,,,,"                          "
+PHYS130.01,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,YAŞAR SAFKAN,,,,,,,,"                          "
+PHYS130.02,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,YANI SKARLATOS,,,,,,,,"                          "
+PHYS201.01,Desc.,PHYSICS III,4,6,ÖMER Ö.OĞUZ,,,,,,,,"                          "
+PHYS201.02,Desc.,PHYSICS III,4,6,SERDAR NERGİZ,,,,,,,,"                          "
+PHYS202.01,Desc.,PHYSICS IV,4,6,ALPAR  SEVGEN,,,,,,,,"                          "
+PHYS205.01,Desc.,EXPLORING THE COSMOS I,3,5,LEVENT KURNAZ,,,,,,,,"                          "
+PHYS221.01,Desc.,THERMAL PROPERTIES OF MATTER,3,5,LEVENT KURNAZ,,,,,,,,"        PHYS                  "
+PHYS301.01,Desc.,CLASSICAL MECHANICS I,3,6,ALPAR  SEVGEN,,,,,,,,"        PHYS                  "
+PHYS302.01,Desc.,CLASSICAL MECHANICS II,3,3,SERDAR NERGİZ,,,,,,,,"                          "
+PHYS311.01,Desc.,QUANTUM PHYSICS I,3,7,HALUK BEKER,,,,,,,,"        PHYS                  "
+PHYS407.01,Desc.,ADVANCED QUANTUM PHYSICS I,3,7,HALUK BEKER,,,,,,,,"        PHYS                  "

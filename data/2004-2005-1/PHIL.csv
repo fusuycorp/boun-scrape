@@ -1,0 +1,29 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY I,3,7,YILDIZ SİLİER,TTTh,346,,,,,,"        PSY; LING; GUID; LAW                  "
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY I,3,7,MURAT BAÇ,WWF,565,,,,,"GUID,PSY,TR","        PHIL                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,5,ZEYNEP DAVRAN,MWTh,333,,,,,TKL,"        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,3,10,KARANFİL SOYHUN,TTF,674,,,,,,"                          "
+PHIL131.02,Desc.,LOGIC I,3,10,SUN DEMİRLİ,MMW,454,,,,,"MATH,MEDU","                          "
+PHIL213.01,Desc.,ANCIENT PHILOSOPHY,3,6,STEPHEN VOSS,WFF,423,,,,,,"        PHIL                  "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,İLHAN İNAN,TThTh,845,,,,,,"        PHIL                  "
+PHIL301.01,Desc.,PROBLEMS OF CONTEMPORARY PHILOSOPHY,3,6,MURAT BAÇ,TTTh,455,,,,,,"                          "
+PHIL313.01,Desc.,HISTORY OF MODERN PHILOSOPHY I,3,6,SUN DEMİRLİ,MFF,756,,,,,,"        PHIL                  "
+PHIL320.01,Desc.,PHILOSOPHY OF RELIGION,3,6,CHRYSSI SIDIROPOULOU,MMW,345,,,,,,"                          "
+PHIL341.01,Desc.,ETHICS,3,6,ZEYNEP DAVRAN,WWTh,676,,,,,,"        PHIL                  "
+PHIL375.01,Desc.,PHILOSOPHY OF MIND,3,6,STEPHEN VOSS,WWF,234,,,,,,"                          "
+PHIL400.01,Desc.,CURRENT ISSUES IN PHILOSOPHY,3,6,YILDIZ SİLİER,TThTh,734,,,,,,"                          "
+PHIL431.01,Desc.,INDUCTIVE LOGIC,3,6,BERNA KILINÇ,TFF,656,,,,,,"                          "
+PHIL487.01,Desc.,SEL.TOP.IN PHILOSOPHY : CONCEPTS,3,6,İLHAN İNAN,TTT,345,,,,,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,GÜROL IRZIK,,, ,,,,,"                          "
+PHIL538.01,Desc.,SP.TOP.IN POLITICAL PHILOSOPHY,4,10,GÜROL IRZIK,MMM,678,,,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL588.01,Desc.,SP.TOP.:WITTGENSTEIN,4,10,CHRYSSI SIDIROPOULOU,TTT,678,,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,2,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL592.01,Desc.,SP.TOP.:THEORIES OF SUBSTANCE,4,10,PINAR CANEVİ,ThThTh,678,,,,,,"                          "
+PHIL596.01,Desc.,SP.TOP.KANT,4,10,ALİ KARATAY,TTT,345,,,,,,"                          "
+PHIL598.01,Desc.,SP.TOP.:RECENT DEBATES IN MOD.NORMATİVE ,4,10,KARANFİL SOYHUN,WWW,345,,,,,,"                          "
+PHIL599.01,Desc.,SP.TOP.CHANCE AND DETERMINISM,4,10,BERNA KILINÇ,WWW,789,,,,,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,İLHAN İNAN,TBA,,,,,,,"                          "

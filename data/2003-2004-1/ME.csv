@@ -1,0 +1,29 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ME  210.01,Desc.,MATERIALS SCIENCE,3,5,MAHMUT A. SAVAŞ,MWW,545,,,,,,"                          "
+ME  212.01,Desc.,MATERIALS SCIENCE,4,5,MAHMUT A. SAVAŞ,MMW,346,,,,,,"                          "
+ME  263.01,Desc.,THERMODYNAMICS I,4,5,ALİ ECDER,TTThTh,1212,,,,,,"                          "
+ME  303.01,Desc.,COMPUTER APPLICATIONS IN MECHANICAL ENG,3,5,HALUK ÖRS,TTTh,342,,,,,,"                          "
+ME  335.01,Desc.,MODELING & CONTROL OF DYNAMIC SYSTEMS,4,5,EMRE KÖSE,MMWW,6712,,,,,,"                          "
+ME  345.01,Desc.,MECHANICS OF MATERIALS I,4,6,GÜNAY ANLAŞ,MMThTh,3434,,,,,,"                          "
+ME  353.01,Desc.,FLUID MECHANICS I,4,6,KUNT ATALIK,TTThTh,1278,,,,,,"                          "
+ME  366.01,Desc.,THERMODYNAMICS II,3,5,HASAN BEDİR,TTF,782,,,,,,"                          "
+ME  424.01,Desc.,MACHINE DESIGN II,4,8,EMRE AKSAN,WWFF,1212,,,,,,"                          "
+ME  429.01,Desc.,MECHANICAL COMPONENT&SYSTEM DESIGN,4,7,EMRE AKSAN,WWW,678,,,,,,"                          "
+ME  435.01,Desc.,MECHATRONICS,3,5,EŞREF EŞKİNAT,MMW,673,,,,,,"                          "
+ME  446.01,Desc.,APPLIED SOLID MECHANICS,3,5,FAZIL ÖNDER SÖNMEZ,MThTh,212,,,,,,"                          "
+ME  451.01,Desc.,APPLIED FLUID MECHANICS,3,5,HALUK ÖRS,TThTh,656,,,,,,"                          "
+ME  478.01,Desc.,DESIGN OF THERMAL SYSTEMS,3,5,TANER DERBENTLİ,MMM,134,,,,,,"                          "
+ME  482.01,Desc.,SP.TOP.IN ME.(APPLICATIONS OF THE FINITE,3,5,TRENT MILLER,,, ,,,,,"                          "
+ME  492.01,Desc.,PROJECT,4,8,AKIN TEZEL,WWW,678,,,,,,"                          "
+ME  511.01,Desc.,PRINCIPLES OF MATERIALS SCIENCE & ENGR.,4,8,SABRİ ALTINTAŞ,TTThTh,3478,,,,,,"                          "
+ME  523.01,Desc.,ELASTICITY ,3,8,GÜNAY ANLAŞ,MMF,785,,,,,,"                          "
+ME  537.01,Desc.,STATE SPACE CONTROL THEORY,3,8,EMRE KÖSE,WFF,412,,,,,,"                          "
+ME  551.01,Desc.,ADVANCED FLUID MECHANICS,4,8,KUNT ATALIK,TTThTh,7812,,,,,,"                          "
+ME  584.01,Desc.,SP.TP.(OPTİMUM STRUCTURE DESİGN),3,8,FAZIL ÖNDER SÖNMEZ,MThTh,567,,,,,,"                          "
+ME  588.01,Desc.,SP.TOP. IN ME:COMBUSTION,3,8,HASAN BEDİR,WFF,134,,,,,,"                          "
+ME  601.01,Desc.,MECHANICS OF CONTINUA I,4,8,AKIN TEZEL,TTThTh,5656,,,,,,"                          "
+ME  610.01,Desc.,FINITE ELEMENTS,3,8,ŞEBNEM ÖZÜPEK,TThTh,889,,,,,,"                          "
+ME  656.01,Desc.,COMPUTATIONAL FLUID DYNAMICS,3,8,ALİ ECDER,MThTh,534,,,,,,"                          "
+ME  687.01,Desc.,SP.TOP.:ROBUST CONTROL,3,8,EŞREF EŞKİNAT,WWF,673,,,,,,"                          "
+ME  690.01,Desc.,M.S.THESIS,0,60,AKIN TEZEL,TBA,,,,,,,"                          "
+ME  790.01,Desc.,Ph.D. THESIS,0,120,AKIN TEZEL,TBA,,,,,,,"                          "

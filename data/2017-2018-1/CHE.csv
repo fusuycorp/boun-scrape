@@ -1,0 +1,56 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHE 110.01,Desc.,INTRODUCTION TO CHEMICAL&BIOSYSTEMS ENG.,3,5,SEZEN SOYER UZUN,WWTh,128,,KB 401 | KB 401 | KB 432,19.12.2017,1,,"                          "
+CHE 201.01,Desc.,PHYSICOCHEMICAL SYSTEMS I,3,5,PEMRA DORUKER TURGUT,MMTFF,78267,,KB 432 | KB 432 | KB 432 | KB 432 | KB 432,21.12.2017,3,,"                          "
+CHE 203.01,Desc.,PHYSICOCHEMICAL SYSTEMS LABORATORY,1,2,PEMRA DORUKER TURGUT,WW,78,,,03.01.2018,2,,"                          "
+CHE 203.02,Desc.,PHYSICOCHEMICAL SYSTEMS LABORATORY,1,2,PEMRA DORUKER TURGUT,ThTh,78,,,03.01.2018,2,,"                          "
+CHE 211.01,Desc.,MASS & ENERGY BALANCES,4,5,MAHİR ARIKOL,MMWWThTh,565656,,KB 432 | KB 432 | KB 432 | KB 432 | KB 432 | KB 432,22.12.2017,3,,"                          "
+CHE 211.02,Desc.,MASS & ENERGY BALANCES,4,5,NAZAR İLERİ ERCAN,MMWWThTh,565656,,KB 401 | KB 401 | KB 401 | KB 401 | KB 428 | KB 428,22.12.2017,3,,"                          "
+CHE 310.01,Desc.,INTRO. TO MACROMOLECULAR SYSTEMS,3,5,PEMRA DORUKER TURGUT,MTT,467,,KB 401 | KB 401 | KB 401,25.12.2017,3,,"                          "
+CHE 321.01,Desc.,CHEM. ENGINEERING THERMODYNAMICS,4,7,TÜRKAN HALİLOĞLU,MMWWTh,78345,,KB 401 | KB 401 | KB 401 | KB 401 | KB 401,03.01.2018,3,,"                          "
+CHE 333.01,Desc.,HEAT TRANSFER,3,5,RAMAZAN YILDIRIM,MMTTh,2334,,KB 401 | KB 401 | KB 401 | KB 401,02.01.2018,3,,"                          "
+CHE 353.01,Desc.,CHEMICAL & BIOCHEMICAL PROCESSES,3,5,NAZAR İLERİ ERCAN,FFF,567,,KB 401 | KB 401 | KB 401,21.12.2017,2,,"                          "
+CHE 383.01,Desc.,PROBABILITY&STATISTICS IN CHEM.ENGR.APPL,3,5,BURAK ALAKENT,TTWTh,4526,,KB 432 | KB 432 | KB 432 | KB 401,28.12.2017,1,,"                          "
+CHE 401.01,Desc.,CHE.ENGINEERING&BIOTECHNOLOGY LABORATORY,3,6,BURAK ALAKENT,ThFFFF,71234,,KB 401,,0,,"                          "
+,,LAB,,,BURAK ALAKENT,FFFF,1234,,KB 401,,0,,"                          "
+CHE 401.02,Desc.,CHE.ENGINEERING&BIOTECHNOLOGY LABORATORY,3,6,BURAK ALAKENT,ThFFFF,85678,,KB 401 | KB 401 | KB 401 | KB 401,,0,,"                          "
+,,LAB,,,BURAK ALAKENT,FFFF,5678,,KB 401,,0,,"                          "
+CHE 427.01,Desc.,BIOREACTION ENGINEERING,3,5,ZEYNEP İLSEN ÖNSAN,MMM,678,,KB 428 | KB 428 | KB 428,20.12.2017,1,,"                          "
+CHE 433.01,Desc.,DESIGN OF CHEMICAL PROCESSING UNITS,3,8,AHMET KERİM AVCI,TTThTh,7834,,KB 432 | KB 432 | KB 432 | KB 432,27.12.2017,3,,"                          "
+CHE 440.01,Desc.,HETEROGENEOUS CATALYSIS,3,5,AHMET ERHAN AKSOYLU,MTT,556,,KB 428 | KB 428 | KB 428,20.12.2017,2,,"                          "
+CHE 463.01,Desc.,BIOPROCESS DESIGN,3,5,KUTLU ÜLGEN,TTW,342,,KB 428 | KB 428 | KB 428,23.12.2017,2,,"                          "
+CHE 465.01,Desc.,OPERATIONAL&ENVIRONMENTAL SAFETY OF CHE.,3,5,ÖNER HORTAÇSU,TTThTh,4512,,KB 401 | KB 401 | KB 428 | KB 428,20.12.2017,2,,"                          "
+CHE 475.01,Desc.,PROCESS DYNAMICS & CONTROL,3,6,MEHMET CİHAN ÇAMURDAN,MMWW,2334,,KB 432 | KB 432 | KB 432 | KB 432,29.12.2017,1,,"                          "
+CHE 477.01,Desc.,PROCESS OPTIMIZATION,3,5,UĞUR AKMAN,MWW,178,,KB 401 | KB 432 | KB 432,22.12.2017,3,,"                          "
+CHE 492.01,Desc.,PROJECT,4,8,SEZEN SOYER UZUN,TBA,,,,,0,,"                          "
+CHE 543.01,Desc.,CATALYSIS FOR GREEN TECHNOLOGIES,3,7,AHMET ERHAN AKSOYLU,TBA,,,,20.12.2017,1,,"                          "
+CHE 555.01,Desc.,APPLIED MATH.&MODELING FOR CHE.ENG.I,3,8,UĞUR AKMAN,TTWW,7834,,KB 428 | KB 428 | KB 428 | KB 428,26.12.2017,2,,"                          "
+CHE 591.01,Desc.,SP.TP.TECH.&APP.OF MOLECULAR BIOTECH.,3,6,BETÜL KIRDAR,TBA,,,,22.12.2017,2,,"                          "
+CHE 631.01,Desc.,ADVANCED FLUID MECHANICS,3,8,A.KEREM UĞUZ,MTT,212,,KB 428 | KB 428 | KB 428,21.12.2017,1,,"                          "
+CHE 634.01,Desc.,INTERFACIAL TRANSPORT PHENOMENA,3,7,A.KEREM UĞUZ,TBA,,,,20.12.2017,2,,"                          "
+CHE 637.01,Desc.,ADVANCED MASS TRANSFER,3,8,KUTLU ÜLGEN,ThThTh,123,,KB 401 | KB 401 | KB 401,19.12.2017,1,,"                          "
+CHE 690.01,Desc.,M.S. THESIS,0,60,UĞUR AKMAN,TBA,,,,,0,,"                          "
+CHE 690.02,Desc.,M.S. THESIS,0,60,AHMET ERHAN AKSOYLU,TBA,,,,,0,,"                          "
+CHE 690.03,Desc.,M.S. THESIS,0,60,BURAK ALAKENT,TBA,,,,,0,,"                          "
+CHE 690.04,Desc.,M.S. THESIS,0,60,AHMET KERİM AVCI,TBA,,,,,0,,"                          "
+CHE 690.05,Desc.,M.S. THESIS,0,60,MEHMET CİHAN ÇAMURDAN,TBA,,,,,0,,"                          "
+CHE 690.06,Desc.,M.S. THESIS,0,60,NAZAR İLERİ ERCAN,TBA,,,,,0,,"                          "
+CHE 690.07,Desc.,M.S. THESIS,0,60,TÜRKAN HALİLOĞLU,TBA,,,,,0,,"                          "
+CHE 690.08,Desc.,M.S. THESIS,0,60,ELİF ÖZKIRIMLI ÖLMEZ,TBA,,,,,0,,"                          "
+CHE 690.09,Desc.,M.S. THESIS,0,60,SEZEN SOYER UZUN,TBA,,,,,0,,"                          "
+CHE 690.10,Desc.,M.S. THESIS,0,60,PEMRA DORUKER TURGUT,TBA,,,,,0,,"                          "
+CHE 690.11,Desc.,M.S. THESIS,0,60,A.KEREM UĞUZ,TBA,,,,,0,,"                          "
+CHE 690.12,Desc.,M.S. THESIS,0,60,KUTLU ÜLGEN,TBA,,,,,0,,"                          "
+CHE 690.13,Desc.,M.S. THESIS,0,60,RAMAZAN YILDIRIM,TBA,,,,,0,,"                          "
+CHE 790.01,Desc.,Ph.D. THESIS,0,120,UĞUR AKMAN,TBA,,,,,0,,"                          "
+CHE 790.02,Desc.,Ph.D. THESIS,0,120,AHMET ERHAN AKSOYLU,TBA,,,,,0,,"                          "
+CHE 790.03,Desc.,Ph.D. THESIS,0,120,BURAK ALAKENT,TBA,,,,,0,,"                          "
+CHE 790.04,Desc.,Ph.D. THESIS,0,120,AHMET KERİM AVCI,TBA,,,,,0,,"                          "
+CHE 790.05,Desc.,Ph.D. THESIS,0,120,MEHMET CİHAN ÇAMURDAN,TBA,,,,,0,,"                          "
+CHE 790.06,Desc.,Ph.D. THESIS,0,120,NAZAR İLERİ ERCAN,TBA,,,,,0,,"                          "
+CHE 790.07,Desc.,Ph.D. THESIS,0,120,TÜRKAN HALİLOĞLU,TBA,,,,,0,,"                          "
+CHE 790.08,Desc.,Ph.D. THESIS,0,120,ELİF ÖZKIRIMLI ÖLMEZ,TBA,,,,,0,,"                          "
+CHE 790.09,Desc.,Ph.D. THESIS,0,120,SEZEN SOYER UZUN,TBA,,,,,0,,"                          "
+CHE 790.10,Desc.,Ph.D. THESIS,0,120,PEMRA DORUKER TURGUT,TBA,,,,,0,,"                          "
+CHE 790.11,Desc.,Ph.D. THESIS,0,120,A.KEREM UĞUZ,TBA,,,,,0,,"                          "
+CHE 790.12,Desc.,Ph.D. THESIS,0,120,KUTLU ÜLGEN,TBA,,,,,0,,"                          "
+CHE 790.13,Desc.,Ph.D. THESIS,0,120,RAMAZAN YILDIRIM,TBA,,,,,0,,"                          "

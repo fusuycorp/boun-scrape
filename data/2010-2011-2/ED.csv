@@ -1,0 +1,52 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ED  513.01,Desc.,DEVELOPMENT & LEARNING IN ADULTHOOD,3,7,ZEYNEP KIZILTEPE,WWW,789,,,04.06.2011,2,,"                          "
+ED  543.01,Desc.,ADULT EDUCATION METHODS,3,7,ZEYNEP KIZILTEPE,TBA,,,,04.06.2011,2,,"                          "
+ED  546.01,Desc.,PROGRAM PLANNING IN ADULT EDUCATION,3,8,ÖZLEM ÜNLÜHİSARCIKLI,TTT,678,,,03.06.2011,2,,"                          "
+ED  558.01,Desc.,ADMINISTRATIVE PROCESS IN EDUCATION,3,8,FATMA GÖK,TBA,,,,06.06.2011,2,,"                          "
+ED  564.01,Desc.,SEMINAR I,3,7,BENGÜ BÖRKAN,TBA,,,,05.06.2011,2,,"                          "
+ED  570.01,Desc.,FIELD EXPERIENCE II,3,8,FATOŞ ERKMAN,WWW,123,,,30.05.2011,1,,"                          "
+ED  570.02,Desc.,FIELD EXPERIENCE II,3,8,AYDAN GÜLERCE,WWW,678,,,30.05.2011,1,,"                          "
+ED  571.01,Desc.,CURRICULUM: THEORY & DESIGN,3,8,GÜZVER YILDIRAN DE WEERDT,TTT,345,,,08.06.2011,3,,"                          "
+ED  581.01,Desc.,SP.TOP. IN EDUCATION,3,7,FATMA GÖK,TBA,,,,08.06.2011,3,,"                          "
+ED  581.02,Desc.,SP.TOP. IN EDUCATION,3,7,FATMA NEVRA SEGGIE,TBA,,,,08.06.2011,3,,"                          "
+ED  582.01,Desc.,SP.TOP.IN EDUCATION,3,7,FATMA NEVRA SEGGIE,TBA,,,,30.05.2011,1,,"                          "
+ED  582.02,Desc.,SP.TOP.IN EDUCATION,3,7,ÖZLEM ÜNLÜHİSARCIKLI,TBA,,,,30.05.2011,1,,"                          "
+ED  583.01,Desc.,SP.TOP. IN EDUCATION I,3,7,GÜZVER YILDIRAN DE WEERDT,TBA,,,,06.06.2011,1,,"                          "
+ED  583.02,Desc.,SP.TOP. IN EDUCATION I,3,7,FATMA GÖK,TBA,,,,06.06.2011,1,,"                          "
+ED  584.01,Desc.,SP.TOP.IN EDUCATION II,3,7,DİLER ÖNER,TBA,,,,03.06.2011,2,,"                          "
+ED  584.02,Desc.,SP.TOP.IN EDUCATION II,3,7,AYŞE HAVVA CANER,TBA,,,,03.06.2011,2,,"                          "
+ED  585.01,Desc.,SP.TOP.IN EDUCATION,3,7,GÜZVER YILDIRAN DE WEERDT,TBA,,,,02.06.2011,2,,"        ED; GUID                  "
+ED  585.02,Desc.,SP.TOP.IN EDUCATION,3,7,BENGÜ BÖRKAN,TBA,,,,02.06.2011,2,,"                          "
+ED  586.01,Desc.,SP.TOP.IN EDUCATION,3,7,FATMA GÖK,TBA,,,,31.05.2011,2,,"                          "
+ED  586.02,Desc.,SP.TOP.IN EDUCATION,3,7,AYDAN GÜLERCE,TBA,,,,31.05.2011,2,,"                          "
+ED  587.01,Desc.,SP.TOP.IN EDUCATION,3,7,STAFF STAFF,TBA,,,,31.05.2011,3,,"                          "
+ED  587.02,Desc.,SP.TOP.IN EDUCATION,3,7,FATOŞ ERKMAN,TBA,,,,31.05.2011,3,,"                          "
+ED  588.01,Desc.,SP.TOP.IN EDUCATION,3,7,DENİZ ALBAYRAK KAYMAK,TBA,,,,02.06.2011,3,,"                          "
+ED  588.02,Desc.,SP.TOP.IN EDUCATION,3,7,ÖZLEM ÜNLÜHİSARCIKLI,TBA,,,,02.06.2011,3,,"                          "
+ED  589.01,Desc.,SP.TOP.IN EDUCATION,3,7,FATMA NEVRA SEGGIE,TBA,,,,01.06.2011,1,,"                          "
+ED  589.02,Desc.,SP.TOP.IN EDUCATION,3,7,ZEYNEP HANDE SART,TBA,,,,01.06.2011,1,,"                          "
+ED  589.03,Desc.,SP.TOP.IN EDUCATION,3,7,YAVUZ AKPINAR,TBA,,,,01.06.2011,1,,"                          "
+ED  591.01,Desc.,SP.TOP.IN EDUCATION,3,7,FATMA GÖK,TBA,,,,04.06.2011,1,,"                          "
+ED  690.01,Desc.,MASTER THESIS,0,60,FATMA NEVRA SEGGIE,,, ,,,0,,"                          "
+ED  690.02,Desc.,MASTER THESIS,0,60,FATMA NEVRA SEGGIE,,, ,,,0,,"                          "
+ED  690.03,Desc.,MASTER THESIS,0,60,FATMA NEVRA SEGGIE,,, ,,,0,,"                          "
+ED  690.04,Desc.,MASTER THESIS,0,60,GÜZVER YILDIRAN DE WEERDT,,, ,,,0,,"                          "
+ED  690.05,Desc.,MASTER THESIS,0,60,GÜZVER YILDIRAN DE WEERDT,,, ,,,0,,"                          "
+ED  690.06,Desc.,MASTER THESIS,0,60,GÜZVER YILDIRAN DE WEERDT,,, ,,,0,,"                          "
+ED  690.07,Desc.,MASTER THESIS,0,60,FATMA GÖK,,, ,,,0,,"                          "
+ED  690.08,Desc.,MASTER THESIS,0,60,FATMA GÖK,,, ,,,0,,"                          "
+ED  690.09,Desc.,MASTER THESIS,0,60,AYŞE HAVVA CANER,,, ,,,0,,"                          "
+ED  690.10,Desc.,MASTER THESIS,0,60,BENGÜ BÖRKAN,,, ,,,0,,"                          "
+ED  690.11,Desc.,MASTER THESIS,0,60,DİLER ÖNER,,, ,,,0,,"                          "
+ED  690.12,Desc.,MASTER THESIS,0,60,YAVUZ AKPINAR,,, ,,,0,,"                          "
+ED  690.13,Desc.,MASTER THESIS,0,60,FATOŞ ERKMAN,,, ,,,0,,"                          "
+ED  690.14,Desc.,MASTER THESIS,0,60,AYDAN GÜLERCE,,, ,,,0,,"                          "
+ED  690.15,Desc.,MASTER THESIS,0,60,DENİZ ALBAYRAK KAYMAK,,, ,,,0,,"                          "
+ED  690.16,Desc.,MASTER THESIS,0,60,STAFF STAFF,,, ,,,0,,"                          "
+ED  690.17,Desc.,MASTER THESIS,0,60,ZEYNEP HANDE SART,,, ,,,0,,"                          "
+ED  690.18,Desc.,MASTER THESIS,0,60,FATMA GÖK,,, ,,,0,,"                          "
+ED  690.19,Desc.,MASTER THESIS,0,60,ÖZLEM ÜNLÜHİSARCIKLI,,, ,,,0,,"                          "
+ED  690.20,Desc.,MASTER THESIS,0,60,ÖZLEM ÜNLÜHİSARCIKLI,,, ,,,0,,"                          "
+ED  790.01,Desc.,Ph.D THESIS,0,120,FATMA GÖK,TBA,,,,,0,,"                          "
+ED  790.02,Desc.,Ph.D THESIS,0,120,ÖZLEM ÜNLÜHİSARCIKLI,TBA,,,,,0,,"                          "
+ED  790.03,Desc.,Ph.D THESIS,0,120,ZEYNEP KIZILTEPE,TBA,,,,,0,,"                          "

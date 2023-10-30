@@ -1,0 +1,67 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AR  201.01,Desc.,ARABIC I,3,5,BARRY WOOD,MMT,124,,M 1170 | M 1170 | YD 101,25.12.2014,1,,"                          "
+PER 201.01,Desc.,PERSIAN I,3,5,BARRY WOOD,TTW,126,,KPARK1 | KPARK1 | KPARK7,26.12.2014,2,,"                          "
+PER 301.01,Desc.,PERSIAN III,3,5,BARRY WOOD,MWW,512,,M 1170 | İB 211 | İB 211,26.12.2014,1,,"                          "
+TKF 111.01,Desc.,ELEMENTARY TURKISH FOR  FOREIGNERS I,4,6,N. ELİF ULUĞ,TTWW,1212,,NBZ 10 | NBZ 10 | NBZ 13 | NBZ 13,25.12.2014,2,,"                          "
+TKF 111.02,Desc.,ELEMENTARY TURKISH FOR  FOREIGNERS I,4,6,N. ELİF ULUĞ,TTWW,3456,,NBZ 10 | NBZ 10 | NBZ 13 | NBZ 13,25.12.2014,2,,"                          "
+TKF 111.03,Desc.,ELEMENTARY TURKISH FOR  FOREIGNERS I,4,6,Z.CEYDA ARSLAN,MMWW,2334,,KPARK2 | KPARK2 | KPARK2 | KPARK2,25.12.2014,2,,"                          "
+TKF 111.04,Desc.,ELEMENTARY TURKISH FOR  FOREIGNERS I,4,6,BİLGEN ERDEM,MMWW,2334,,NBZ 10 | NBZ 10 | NBZ 12 | NBZ 12,25.12.2014,2,,"                          "
+TKF 111.05,Desc.,ELEMENTARY TURKISH FOR  FOREIGNERS I,4,6,BİLGEN ERDEM,TTThTh,3434,,NBZ 13 | NBZ 13 | NBZ 12 | NBZ 12,25.12.2014,2,,"                          "
+TKF 111.06,Desc.,ELEMENTARY TURKISH FOR  FOREIGNERS I,4,6,N. ELİF ULUĞ,TTThTh,7878,,KPARK7 | KPARK7 | KPARK7 | KPARK7,25.12.2014,2,,"                          "
+TKF 112.01,Desc.,ELEMENTARY TURKISH FOR FOREIGNERS II,4,6,BİLGEN ERDEM,MTTW,5121,,NBB 10 | NBZ 12 | NBZ 12 | NBZ 12,26.12.2014,3,,"                          "
+TKF 112.02,Desc.,ELEMENTARY TURKISH FOR FOREIGNERS II,4,6,BİLGEN ERDEM,MTTW,6782,,NBB 10 | NBZ 13 | NBZ 13 | NBZ 12,26.12.2014,3,,"                          "
+TKF 315.01,Desc.,ADVANCED TURKISH GRAM. FOR FOREIGNERS I,3,5,Z.CEYDA ARSLAN,MMT,565,,NBZ 13 | NBZ 13 | NBB 10,25.12.2014,3,,"                          "
+TKF 317.01,Desc.,ADV. READING IN TURKISH FOR FOREIGNERS I,3,6,N. ELİF ULUĞ,TWW,534,,NBZ 10 | NBZ 13 | NBZ 13,26.12.2014,2,,"                          "
+TKL 101.01,Desc.,OTTOMAN TURKISH I,4,6,VEYSEL ÖZTÜRK,ThThFF,5623,,NBZ 11 | NBZ 11 | NBZ 12 | NBZ 12,03.01.2015,2,HIST,"                          "
+TKL 101.02,Desc.,OTTOMAN TURKISH I,4,6,FATMA BÜYÜKKARCI YILMAZ,ThThFF,3434,,NBB 10 | NBB 10 | NBZ 10 | NBZ 10,03.01.2015,2,,"                          "
+TKL 101.03,Desc.,OTTOMAN TURKISH I,4,6,TÜLAY GENÇTÜRK DEMİRCİOĞLU,MMFF,4567,,NBZ 10 | NBZ 10 | NBZ 11 | NBZ 11,03.01.2015,2,,"                          "
+TKL 102.01,Desc.,OTTOMAN TURKISH II,4,6,NEZİHE SEYHAN,MMThTh,2323,,NBZ 11 | NBZ 11 | NBZ 13 | NBZ 13,27.12.2014,2,"HIST,TKL","                          "
+TKL 103.01,Desc.,TURKISH LANGUAGE & GRAMMAR I,3,5,Z.CEYDA ARSLAN,TTW,122,,M 2230 | M 2230 | KPARK2,02.01.2015,3,,"                          "
+TKL 107.01,Desc.,INTRODUCTION TO TEXTUAL ANALYSIS,3,5,ZEYNEP UYSAL,TWW,467,,NBZ 11 | NBZ 12 | NBZ 12,08.01.2015,3,,"                          "
+TKL 201.01,Desc.,RESEARCH METHODS IN TURKISH LITERATURE,3,4,KÖKSAL SEYHAN,MMTh,565,,NBZ 12 | NBZ 12 | NBZ 10,06.01.2015,2,,"                          "
+TKL 204.01,Desc.,GENRES IN DIVAN LITERATURE,3,6,FATMA BÜYÜKKARCI YILMAZ,ThFF,256,,NBB 10 | NBZ 10 | NBZ 10,10.01.2015,3,,"                          "
+TKL 206.01,Desc.,MOD.TURKISH LIT. IN ENGLISH TRANSLATION,3,6,HALİM KARA,TTW,782,,NBZ 12 | NBZ 12 | NBB 10,,0,,"                          "
+TKL 211.01,Desc.,MODERNIZATION IN TURKISH LITERATURE I,3,6,EROL KÖROĞLU,WThTh,578,,NBZ 11 | NBZ 11 | NBZ 11,06.01.2015,3,,"                          "
+TKL 213.01,Desc.,TURKIC LANGUAGES & DIALECTS I,3,5,MEHMET ÖLMEZ,MMM,789,,NBZ 12 | NBZ 12 | NBZ 12,07.01.2015,3,,"                          "
+TKL 215.01,Desc.,OTTOMAN PALEOGRAPHY I,3,5,ARZU ATİK,FFF,345,,NBZ 11 | NBZ 11 | NBZ 11,08.01.2015,3,HIST,"                          "
+TKL 301.01,Desc.,LITERARY THEORY & PRACTICAL CRITICISM I,3,4,OLCAY AKYILDIZ,TTW,126,,NBZ 13 | NBZ 13 | NBZ 10,08.01.2015,3,,"                          "
+TKL 309.01,Desc.,TURKISH POETRY IN THE REPUBLICAN PERIOD,3,4,OLCAY AKYILDIZ,TWW,478,,NBZ 12 | NBZ 10 | NBZ 10,29.12.2014,1,,"                          "
+TKL 311.01,Desc.,TURKISH FOLK LITERATURE I,3,4,KÖKSAL SEYHAN,MThTh,223,,NBZ 13 | NBZ 11 | NBZ 11,27.12.2014,2,,"                          "
+TKL 313.01,Desc.,DIVAN LITERATURE I,3,6,NEZİHE SEYHAN,MMTh,564,,NBZ 11 | NBZ 11 | NBZ 13,03.01.2015,2,,"                          "
+TKL 409.01,Desc.,PROSE IN OLD TURKISH LITERATURE,3,5,ZEYNEP SABUNCU,WFF,534,,NBZ 10 | YD 116 | YD 116,06.01.2015,1,,"                          "
+TKL 414.01,Desc.,TANZİMAT NOVEL,3,5,EROL KÖROĞLU,WWTh,234,,NBZ 11 | NBZ 11 | NBZ 11,07.01.2015,1,,"                          "
+TKL 433.01,Desc.,SHORT STORY IN MODERN TURKISH LITERATURE,3,4,NUR  GÜRANİ ARSLAN,MMW,344,,M 2152 | M 2152 | NBZ 10,09.01.2015,2,,"                          "
+TKL 480.01,Desc.,SP.TP.:LIT.&SOCIAL CHANGE IN THE 1980's,3,6,FATİH ALTUĞ,MMM,678,,NBZ 10 | NBZ 10 | NBZ 10,05.01.2015,2,,"                          "
+TKL 501.01,Desc.,CLASSICS OF DIVAN LITERATURE,3,10,GÜNAY KUT,MMM,678,,,10.01.2015,2,,"                          "
+TKL 501.02,Desc.,CLASSICS OF DIVAN LITERATURE,3,10,NEZİHE SEYHAN,ThThTh,678,,,10.01.2015,2,,"                          "
+TKL 524.01,Desc.,COMTEMPORARY LITERARY ISSUES&APPROACHES,3,8,HALİM KARA,TBA,,,,09.01.2015,1,,"                          "
+TKL 530.01,Desc.,DISCIPLINARY FEATURES OF TURKISH LIT.,3,10,ZEYNEP UYSAL,TTT,678,,,,0,,"                          "
+TKL 534.01,Desc.,PROSE IN TURKISH LITERATURE,3,8,ZEYNEP SABUNCU,WWW,678,,,,0,,"                          "
+TKL 659.01,Desc.,LITERATURE AS A DISCIPLINE&INTERDISCIPLI,4,10,ZEYNEP UYSAL,TBA,,,,,0,,"                          "
+TKL 685.01,Desc.,SP.TP.CHAGATAY LITERATURE,4,10,TÜLAY GENÇTÜRK DEMİRCİOĞLU,TBA,,,,07.01.2015,2,,"                          "
+TKL 686.01,Desc.,SPECIAL TOPICS IN OLD TURKISH LITERATURE,4,10,ZEHRA TOSKA,TBA,,,,,0,,"                          "
+TKL 690.01,Desc.,MASTER THESIS,0,60,NÜKET ESEN,TBA,,,,,0,,"                          "
+TKL 690.02,Desc.,MASTER THESIS,0,60,ZEHRA TOSKA,TBA,,,,,0,,"                          "
+TKL 690.03,Desc.,MASTER THESIS,0,60,ZEYNEP UYSAL,TBA,,,,,0,,"                          "
+TKL 690.04,Desc.,MASTER THESIS,0,60,HALİM KARA,TBA,,,,,0,,"                          "
+TKL 690.05,Desc.,MASTER THESIS,0,60,NUR  GÜRANİ ARSLAN,TBA,,,,,0,,"                          "
+TKL 690.06,Desc.,MASTER THESIS,0,60,ZEYNEP SABUNCU,TBA,,,,,0,,"                          "
+TKL 690.07,Desc.,MASTER THESIS,0,60,FATMA BÜYÜKKARCI YILMAZ,TBA,,,,,0,,"                          "
+TKL 690.08,Desc.,MASTER THESIS,0,60,EROL KÖROĞLU,TBA,,,,,0,,"                          "
+TKL 690.09,Desc.,MASTER THESIS,0,60,NEZİHE SEYHAN,TBA,,,,,0,,"                          "
+TKL 690.10,Desc.,MASTER THESIS,0,60,TÜLAY GENÇTÜRK DEMİRCİOĞLU,TBA,,,,,0,,"                          "
+TKL 690.11,Desc.,MASTER THESIS,0,60,KÖKSAL SEYHAN,TBA,,,,,0,,"                          "
+TKL 690.12,Desc.,MASTER THESIS,0,60,STAFF STAFF,TBA,,,,,0,,"                          "
+TKL 692.01,Desc.,SP.TP.:REWRITING AND EXAMPLES,4,10,NUR  GÜRANİ ARSLAN,TBA,,,,,0,,"                          "
+TKL 790.01,Desc.,DISSERTATION,0,120,NÜKET ESEN,TBA,,,,,0,,"                          "
+TKL 790.02,Desc.,DISSERTATION,0,120,NUR  GÜRANİ ARSLAN,TBA,,,,,0,,"                          "
+TKL 790.03,Desc.,DISSERTATION,0,120,ZEHRA TOSKA,TBA,,,,,0,,"                          "
+TKL 790.04,Desc.,DISSERTATION,0,120,HALİM KARA,TBA,,,,,0,,"                          "
+TKL 790.05,Desc.,DISSERTATION,0,120,ZEYNEP SABUNCU,TBA,,,,,0,,"                          "
+TKL 790.06,Desc.,DISSERTATION,0,120,ZEYNEP UYSAL,TBA,,,,,0,,"                          "
+TKL 790.07,Desc.,DISSERTATION,0,120,EROL KÖROĞLU,TBA,,,,,0,,"                          "
+TKL 790.08,Desc.,DISSERTATION,0,120,FATMA BÜYÜKKARCI YILMAZ,TBA,,,,,0,,"                          "
+TKL 790.09,Desc.,DISSERTATION,0,120,NEZİHE SEYHAN,TBA,,,,,0,,"                          "
+TKL 790.10,Desc.,DISSERTATION,0,120,KÖKSAL SEYHAN,TBA,,,,,0,,"                          "
+TKL 790.11,Desc.,DISSERTATION,0,120,TÜLAY GENÇTÜRK DEMİRCİOĞLU,TBA,,,,,0,,"                          "
+TKL 790.12,Desc.,DISSERTATION,0,120,STAFF STAFF,TBA,,,,,0,,"                          "

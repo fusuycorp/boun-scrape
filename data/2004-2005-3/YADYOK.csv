@@ -1,0 +1,24 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AE  111.01,Desc.,ADVANCED ENGLISH I,3,3,ASUDE KÜÇÜK,MMTTThTh,343456,,,,,,"                          "
+AE  221.01,Desc.,CRITICAL READING,3,4,ASUDE KÜÇÜK,WWThThFF,121212,,,,,,"                          "
+AE  221.02,Desc.,CRITICAL READING,3,4,ASUDE KÜÇÜK,WWThThFF,343434,,,,,,"                          "
+FR  101.01,Desc.,ELEMENTARY FRENCH I,3,7,ŞİRİN TEKKELİ,MMTTWWThThFF,1212121212,,,,,,"                          "
+FR  101.02,Desc.,ELEMENTARY FRENCH I,3,7,SİNEM ÇAKMAK,MMTTWWThThFF,3434343434,,,,,,"                          "
+FR  101.03,Desc.,ELEMENTARY FRENCH I,3,7,ERHAN KAYAALP,MMTTWWThThFF,5656565656,,,,,,"                          "
+FR  102.01,Desc.,ELEMENTARY FRENCH II,3,7,ŞİRİN TEKKELİ,MMTTWWThThFF,3434343434,,,,,,"                          "
+FR  102.02,Desc.,ELEMENTARY FRENCH II,3,7,ERHAN KAYAALP,MMTTWWThThFF,7878787878,,,,,,"                          "
+FR  201.01,Desc.,INTERMEDIATE FRENCH I,3,7,ASLI TARKAN KALAYCIOĞLU,MMTTWWThThFF,3434343434,,,,,,"                          "
+FR  202.01,Desc.,INTERMEDIATE FRENCH II,3,7,ASLI TARKAN KALAYCIOĞLU,MMTTWWThThFF,5656565656,,,,,,"                          "
+FR  301.01,Desc.,ADVANCED FRENCH I,3,5,MARYSE BAHADIRLI,MMTTWWThTh,12121212,,,,,,"                          "
+GER 101.01,Desc.,ELEMENTARY GERMAN I,3,7,ŞEHNAZ KARAATLI,MMTTWWThThFF,1212121212,,,,,,"                          "
+GER 101.02,Desc.,ELEMENTARY GERMAN I,3,7,AYLİN IŞIL BÖLKÜR,MMTTWWThThFF,1212121212,,,,,,"                          "
+GER 101.03,Desc.,ELEMENTARY GERMAN I,3,7,AYŞE BARLAS,MMTTWWThThFF,3434343434,,,,,,"                          "
+GER 101.04,Desc.,ELEMENTARY GERMAN I,3,7,BİGE KOLUKISA İNELMEN,MMTTWWThThFF,3434343434,,,,,,"                          "
+GER 102.01,Desc.,ELEMENTARY GERMAN II,3,7,HÜLYA ARIÇ EROL,MMTTWWThThFF,1212121212,,,,,,"                          "
+GER 102.02,Desc.,ELEMENTARY GERMAN II,3,7,BİGE KOLUKISA İNELMEN,MMTTWWThThFF,5656565656,,,,,,"                          "
+GER 201.01,Desc.,LOWER INTERMEDIATE GERMAN I,3,7,HÜLYA ARIÇ EROL,MMTTWWThThFF,3434343434,,,,,,"                          "
+GER 202.01,Desc.,INTERMEDIATE GERMAN II,3,7,ŞEHNAZ KARAATLI,MMTTWWThThFF,3434343434,,,,,,"                          "
+GER 301.01,Desc.,ADVANCED GERMAN I,3,5,AYŞE BARLAS,MMTTWWThTh,12121212,,,,,,"                          "
+SPA 101.01,Desc.,ELEMENTARY SPANISH I,3,7,ANDRES MORELL,MMTTWWThThFF,1212121212,,,,,,"                          "
+SPA 101.02,Desc.,ELEMENTARY SPANISH I,3,7,ANDRES MORELL,MMTTWWThThFF,3434343434,,,,,,"                          "
+SPA 102.01,Desc.,ELEMENTARY SPANISH II,3,7,MARIA JOSE GONZALEZ,MMTTWWThThFF,1212121212,,,,,,"                          "

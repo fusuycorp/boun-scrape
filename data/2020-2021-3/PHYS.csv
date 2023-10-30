@@ -1,0 +1,22 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHYL101.01,Desc.,PHYSICS I LAB,0,,ZÜHAL KAPLAN,,,Online,,04.09.2021,1,,"                          "
+PHYL102.01,Desc.,PHYSICS II LAB,0,,ZÜHAL KAPLAN,,,Online,,07.09.2021,4,,"                          "
+PHYL201.01,Desc.,PHYSICS III LAB,0,,ZÜHAL KAPLAN,,,Online,,04.09.2021,3,,"                          "
+PHYL202.01,Desc.,PHYSICS IV LAB,0,,ZÜHAL KAPLAN,,,Online,,07.09.2021,1,,"                          "
+PHYS101.01,Desc.,PHYSICS I,4,8,MEHMET BURÇİN ÜNLÜ,MMMMWWWWThThFF,347812787856,Online,,04.09.2021,2,,"                          "
+PHYS101.02,Desc.,PHYSICS I,4,8,MEHMET BURÇİN ÜNLÜ,MMMMWWWWThThFF,129103491091034,Online,,04.09.2021,2,,"                          "
+PHYS121.01,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,ERHAN GÜLMEZ,MMMMTTWWWWThTh,123412127812,Online,,04.09.2021,2,,"                          "
+PHYS130.01,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,YANI SKARLATOS,MMMMTTTTWWThTh,123412343434,Online,,04.09.2021,1,,"                          "
+PHYS130.02,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,YANI SKARLATOS,MMMMWWWWThThFF,567812565612,Online,,04.09.2021,1,,"                          "
+PHYS201.01,Desc.,PHYSICS III,4,6,HAKAN  ERKOL,TTTTWWWWThThFF,125612561212,Online,,07.09.2021,2,,"                          "
+PHYS201.02,Desc.,PHYSICS III,4,6,HAKAN  ERKOL,MMMMTTWWThThThTh,123434343456,Online,,07.09.2021,2,,"                          "
+PHYS201.03,Desc.,PHYSICS III,4,6,CAN KOZÇAZ,MMTTWWThThFFFF,563456561234,Online,,07.09.2021,2,,"                          "
+PHYS202.01,Desc.,PHYSICS IV,4,6,İBRAHİM SEMİZ,MMTTWWWWThThFF,121212341212,Online,,06.09.2021,4,,"                          "
+PHYS202.02,Desc.,PHYSICS IV,4,6,İBRAHİM SEMİZ,MMMMTTTTThThFF,345612343434,Online,,06.09.2021,4,,"                          "
+PHYS205.01,Desc.,EXPLORING THE COSMOS I,3,5,LEVENT KURNAZ,MMMMWWThTh,12561212,Online,,06.09.2021,4,,"                          "
+PHYS221.01,Desc.,THERMAL PROPERTIES OF MATTER,3,5,SERDAR NERGİZ,MMWWThThFFFF,3434345678,Online,,07.09.2021,4,,"        PHYS                  "
+PHYS301.01,Desc.,CLASSICAL MECHANICS I,3,6,SERDAR NERGİZ,MMMMWWWWThTh,1256125656,Online,,04.09.2021,3,,"        PHYS                  "
+PHYS302.01,Desc.,CLASSICAL MECHANICS II,3,3,CAN KOZÇAZ,MMMMWWWWThTh,1234123412,Online,,04.09.2021,2,,"                          "
+PHYS325.01,Desc.,MATHEMATICAL METHODS OF PHYSICS I,3,5,METİN ARIK,MMTTTTWWThTh,3412343434,Online,,04.09.2021,4,,"        PHYS                  "
+PHYS407.01,Desc.,ADVANCED QUANTUM PHYSICS I,3,7,METİN ARIK,MMMMWWWWThTh,1256125656,Online,,06.09.2021,4,,"        PHYS                  "
+STS 401.01,Desc.,HISTORY OF SCIENCE,3,6,LEVENT KURNAZ,MMWWThTh,343434,Online,,04.09.2021,3,,"                          "

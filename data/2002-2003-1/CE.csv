@@ -1,0 +1,35 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CE  241.01,Desc.,MECHANICS OF MATERIALS,4,6,HİLMİ LUŞ,MMWW,5634,,,,,,"                          "
+CE  241.02,Desc.,MECHANICS OF MATERIALS,4,6,ALİ RANA ATILGAN,MMWW,3434,,,,,,"                          "
+CE  301.01,Desc.,CIVIL ENGINEERING SYSTEMS ANALYSISS,3,5,ALİ RANA ATILGAN,MMW,781,,,,,,"                          "
+CE  311.01,Desc.,FLUID MECHANICS,4,6,EMRE OTAY,MMT,235,,,,,,"                          "
+CE  311.02,Desc.,FLUID MECHANICS,4,6,CEM AVCI,MMT,235,,,,,,"                          "
+CE  331.01,Desc.,EARTH SCIENCES,3,5,GÖKHAN BAYKAL,TT,12,,,,,,"                          "
+CE  371.01,Desc.,NUMERICAL METHODS IN CIVIL ENGINEERING,3,5,CEM AVCI,MMW,564,,,,,,"                          "
+CE  421.01,Desc.,ENVIRONMENTAL ENGINEERING,3,6,ATİLLA AKKOYUNLU,MMT,343,,,,,,"                          "
+CE  431.01,Desc.,FOUNDATION ENGINEERING,4,6,TURAN DURGUNOĞLU,MMW,121,,,,,,"                          "
+CE  431.02,Desc.,FOUNDATION ENGINEERING,4,6,EROL GÜLER,MMW,121,,,,,,"                          "
+CE  451.01,Desc.,REINFORCED CONCRETE I,4,6,VEDAT YERLİCİ,WWThTh,3445,,,,,,"                          "
+CE  451.02,Desc.,REINFORCED CONCRETE I,4,6,CENGİZ KARAKOÇ,WWThTh,3445,,,,,,"                          "
+CE  453.01,Desc.,ASEISMIC DESIGN OF STRUCTURES,3,5,SEMİH TEZCAN,MMM,456,,,,,,"                          "
+CE  454.01,Desc.,STEEL STRUCTURES,3,6,GÜLAY ALTAY,ThTh,67,,,,,,"                          "
+CE  501.01,Desc.,THE BOUNDARY ELEMENT METHOD,3,7.50,OSMAN BÖREKÇİ,MTT,878,,,,,,"                          "
+CE  514.01,Desc.,COASTAL HYDRODYNAMICS,3,7.50,OSMAN BÖREKÇİ,MWW,989,,,,,,"                          "
+CE  532.01,Desc.,SOIL DYNAMICS,3,7.50,TURAN DURGUNOĞLU,WW,89,,,,,,"                          "
+CE  547.01,Desc.,ELASTICITY,3,7.50,HİLMİ LUŞ,FFF,678,,,,,,"                          "
+CE  550.01,Desc.,STRUCTURAL DESIGN,3,7.50,GÜLAY ALTAY,TTT,345,,,,,,"                          "
+CE  554.01,Desc.,THEORY&DESIGN FOR MEASURE.IN STRUC.ENGR.,3,7.50,TURAN ÖZTURAN,MMMM,1234,,,,,,"                          "
+CE  558.01,Desc.,ADVANCED REINFORCED CONCRETE,3,7.50,CENGİZ KARAKOÇ,WFF,878,,,,,,"                          "
+CE  559.01,Desc.,STRUCTURAL DYNAMICS,3,7.50,VEDAT YERLİCİ,WThTh,812,,,,,,"                          "
+CE  579.01,Desc.,GRADUATE SEMINAR,0,7.50,EROL GÜLER,W,7,,,,,,"                          "
+CE  587.01,Desc.,SP.TOP.IN CE:WASTE MANAGEMENT MONITORING,3,7.50,AYŞE EDİNÇLİLER,WWW,567,,,,,,"                          "
+CE  592.01,Desc.,SP.STUD.IN CE:INTRO.TO COAST.SEDIMENT ..,3,7.50,EMRE OTAY,TTT,234,,,,,,"                          "
+CE  593.01,Desc.,SP.STUD.IN CE :WATER POL. CONROL&TREATM.,3,6,ATİLLA AKKOYUNLU,TTT,678,,,,,,"                          "
+CE  638.01,Desc.,SOIL BEHAVIOR,3,7.50,GÖKHAN BAYKAL,WWW,123,,,,,,"                          "
+CE  690.01,Desc.,M.S.THESIS,0,60,TURAN ÖZTURAN,TBA,,,,,,,"                          "
+CE  691.01,Desc.,SP. STUD. IN CE.:(MICROFABRIC ANALYSIS T,3,7.50,GÖKHAN BAYKAL,TBA,,,,,,,"                          "
+CE  790.01,Desc.,Ph.D. THESIS,0,120,TURAN ÖZTURAN,TBA,,,,,,,"                          "
+ENGG110.01,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,MMM,678,,,,,,"                          "
+ENGG110.02,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,TTT,678,,,,,,"                          "
+ENGG110.03,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,WWW,678,,,,,,"                          "
+ENGG110.04,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,ThThTh,678,,,,,,"                          "

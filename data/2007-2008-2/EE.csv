@@ -1,0 +1,90 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EE  140.01,Desc.,DIGITAL SYSTEMS,4,5,ŞENOL MUTLU,TTTh,121,,,,,,"                          "
+EE  201.01,Desc.,ELECTRICAL CIRCUITS I,4,5,AYŞIN ERTÜZÜN,MMWW,3434,,KBPCLAB | KBPCLAB,,,,"                          "
+EE  202.01,Desc.,ELECTRICAL CIRCUITS II,4,8,YAĞMUR DENİZHAN,MMWW,5656,,KB 125 | KB 125 | KBPCLAB | KBPCLAB,,,,"                          "
+EE  204.01,Desc.,ELECTROMECHANICAL ENERGY CONVERSION,3,6,YANI SKARLATOS,MMW,787,,KBPCLAB | KBPCLAB | KBPCLAB,,,,"                          "
+EE  208.01,Desc.,BASIC CIRCUIT DESIGN&MEASUREMENT,4,4,AVNİ MORGÜL,TT,56,,KBPCLAB | KBPCLAB,,,,"                          "
+EE  210.02,Desc.,INTRODUCTION TO ELECTRICAL ENGINEERING,3,6,SELİM ŞEKER,MMW,566,,KBZ 01 | KBZ 01 | KBZ 01,,,"PHYS,PEDU","                          "
+EE  212.01,Desc.,INTRODUCTION TO ELECTRONIC ENGINEERING,3,4,OĞUZHAN ÇİÇEKOĞLU,FFF,123,,KBZ 01 | KBZ 01 | KBZ 01,,,CMPE,"                          "
+EE  334.01,Desc.,ELECTRONICS II,4,6,GÜNHAN DÜNDAR,WWFF,2334,,KBPCLAB | KBPCLAB | KBPCLAB | KBPCLAB,,,,"                          "
+EE  338.01,Desc.,ELECTRONICS LABORATORY I,2,3,ARDA YALÇINKAYA,M,6,,KBPCLAB,,,,"                          "
+EE  342.01,Desc.,NUMERICAL METHODS FOR EE,3,5,MURAT SARAÇLAR,MMW,231,,NH 104 | NH 104 | KBPCLAB,,,,"                          "
+EE  352.01,Desc.,SYSTEM DYNAMICS & CONTROL,3,5,KADRİ ÖZÇALDIRAN,TTTh,343,,KBPCLAB | KBPCLAB | KBPCLAB,,,,"                          "
+EE  363.01,Desc.,ELECTROMAGNETIC FIELD THEORY,4,4,HEBA MOHAMED YÜKSEL,TTThTh,5656,, | N/A | KBPCLAB | KBPCLAB,,,,"                          "
+EE  374.01,Desc.,COMMUNICATION ENGINEERING,4,5,BÜLENT SANKUR,TTThTh,1212,,KBPCLAB | KBPCLAB | KBPCLAB | KBPCLAB,,,,"                          "
+EE  432.01,Desc.,DIGITAL ELECTRONICS,3,6,YASEMİN KAHYA,TTTh,232,,,,,,"                          "
+EE  438.01,Desc.,DESIGN WITH INTEGRATED CIRCUITS,3,6,YASEMİN KAHYA,TThTh,545,,,,,,"                          "
+EE  470.01,Desc.,MOBILE COMMUNICATION,3,6,HAKAN DELİÇ,TTTh,344,,,,,,"                          "
+EE  484.01,Desc.,SP.TOP.:MANAGEMENT FOR ENGİNEERS,3,4,BARHAN ÖZCE,MMThTh,7889,,,,,,"                          "
+EE  485.01,Desc.,SP.TOP: INTRODUCTION TO FUZZY CONTROL,3,4,M. OKYAY KAYNAK,WThTh,478,,KBPCLAB | KBPCLAB | KBPCLAB,,,,"                          "
+EE  488.01,Desc.,SP. TOP.:OPTICAL SYSTEM DESIGN,3,4,HEBA MOHAMED YÜKSEL,MM,56,,NH 401 | NH 401,,,,"                          "
+EE  491.01,Desc.,SPECIAL PROJECT,3,6,ŞENOL MUTLU,TBA,,,,,,,"                          "
+EE  492.01,Desc.,PROJECT,4,6,ŞENOL MUTLU,TBA,,,,,,,"                          "
+EE  546.01,Desc.,WIRELESS NETWORKS & MOBILE SYSTEMS II,3,6,EMİN ANARIM,MTT,634,,,,,,"                          "
+EE  548.01,Desc.,WIRELESS COMMUNICATION APPLICATIONS,3,6,MUTLU KOCA,MMM,789,,,,,,"                          "
+EE  550.01,Desc.,ARTIFICIAL NEURAL NETWORKS,3,7,KEMAL CILIZ,MMW,562,,,,,,"                          "
+EE  552.01,Desc.,DIGITAL CONTROL,3,7,MEHMET AKAR,MWW,434,,,,,,"                          "
+EE  562.01,Desc.,MICROWAVES,3,6,AVNİ MORGÜL,ThThTh,346,,,,,,"                          "
+EE  572.01,Desc.,MATHEMATICAL METHODS FOR SIGNAL PROCESSI,3,7,BÜLENT SANKUR,ThThTh,678,,NH 202 | NH 202 | NH 202,,,,"                          "
+EE  574.01,Desc.,IMAGE ANALYSIS,3,7,BURAK ACAR,WWW,789,,,,,,"                          "
+EE  578.01,Desc.,SPEECH PROCESSING,3,7,LEVENT ARSLAN,TTTh,673,, | N/A | KPARK5,,,,"                          "
+EE  583.01,Desc.,SP.TOP.(INDEPENDENT COMPONENT ANALYSIS),3,7,AYŞIN ERTÜZÜN,MTT,667,,,,,,"                          "
+EE  584.01,Desc.,SP.TOP.:PHYCHOACOUSTICS,3,7,LEVENT ARSLAN,MMTh,342,, | N/A | KPARK5,,,,"                          "
+EE  586.01,Desc.,SP.TOP.(STATISCIAL NATURAL LANGUAGE PROC,3,7,MURAT SARAÇLAR,WWTh,343,,,,,,"                          "
+EE  588.01,Desc.,SP.TOP.:(NETWORK SECURITY),3,7,EMİN ANARIM,MTT,478,, | KBPCLAB | KBPCLAB,,,,"                          "
+EE  58F.01,Desc.,SP.TOP.:DECENTRALIZED CONTROL&DECISION M,3,6,MEHMET AKAR,MMW,121,,,,,,"                          "
+EE  58G.01,Desc.,SP.TOP.:INFORMATION SYS.SECURITY PRINCIP,3,6,KEMAL CILIZ,TTT,8910,,,,,,"                          "
+EE  58H.01,Desc.,SP.TOP.:DIGITAL VIDEO PROCESSING,3,6,BURAK ACAR,TTTh,788,,,,,,"                          "
+EE  590.01,Desc.,SP.ST.(BIOLOGICAL EFFECTS OF EM FIELDS),3,7,SELİM ŞEKER,MMW,232,,,,,,"                          "
+EE  591.01,Desc.,SP.ST.(NONLINEAR CONTROL),3,6,YAĞMUR DENİZHAN,WFF,967,, | KPARK5 | KPARK5,,,,"                          "
+EE  598.01,Desc.,SEL.TOP.:(ADVANCED DIGITAL DESIGN),3,7,ŞENOL MUTLU,WWTh,566,,,,,,"                          "
+EE  632.01,Desc.,SYSTEM DESIGN WITH MICROELEC. DEVICES,3,6,ÖMER CERİD,MFF,567,,KBPCLAB,,,,"                          "
+EE  634.01,Desc.,INTEGRATED ELECTRONICS,3,6,ARDA YALÇINKAYA,WFF,734,,,,,,"                          "
+EE  638.01,Desc.,ADVANCED VLSI DESIGN,3,6,GÜNHAN DÜNDAR,MMF,235,, | N/A | KBPCLAB,,,,"                          "
+EE  681.01,Desc.,SP.TOP.:PROCESS ARCHIT.& DEVICE DESING ,3,6,VICTOR ZEKERİYA,TBA,,,,,,,"                          "
+EE  689.01,Desc.,SP.TOP.:APPLIED ADAPTIVE CONTROL,3,6,M. OKYAY KAYNAK,WWW,678,,,,,,"                          "
+EE  690.01,Desc.,M.S.THESIS,0,60,BURAK ACAR,TBA,,,,,,,"                          "
+EE  690.02,Desc.,M.S.THESIS,0,60,MEHMET AKAR,TBA,,,,,,,"                          "
+EE  690.03,Desc.,M.S.THESIS,0,60,EMİN ANARIM,TBA,,,,,,,"                          "
+EE  690.04,Desc.,M.S.THESIS,0,60,LEVENT ARSLAN,TBA,,,,,,,"                          "
+EE  690.05,Desc.,M.S.THESIS,0,60,ÖMER CERİD,TBA,,,,,,,"                          "
+EE  690.06,Desc.,M.S.THESIS,0,60,KEMAL CILIZ,TBA,,,,,,,"                          "
+EE  690.07,Desc.,M.S.THESIS,0,60,OĞUZHAN ÇİÇEKOĞLU,TBA,,,,,,,"                          "
+EE  690.08,Desc.,M.S.THESIS,0,60,HAKAN DELİÇ,TBA,,,,,,,"                          "
+EE  690.09,Desc.,M.S.THESIS,0,60,YAĞMUR DENİZHAN,TBA,,,,,,,"                          "
+EE  690.10,Desc.,M.S.THESIS,0,60,GÜNHAN DÜNDAR,TBA,,,,,,,"                          "
+EE  690.11,Desc.,M.S.THESIS,0,60,AYŞIN ERTÜZÜN,TBA,,,,,,,"                          "
+EE  690.13,Desc.,M.S.THESIS,0,60,YASEMİN KAHYA,TBA,,,,,,,"                          "
+EE  690.14,Desc.,M.S.THESIS,0,60,M. OKYAY KAYNAK,TBA,,,,,,,"                          "
+EE  690.15,Desc.,M.S.THESIS,0,60,MUTLU KOCA,TBA,,,,,,,"                          "
+EE  690.17,Desc.,M.S.THESIS,0,60,AVNİ MORGÜL,TBA,,,,,,,"                          "
+EE  690.18,Desc.,M.S.THESIS,0,60,ŞENOL MUTLU,TBA,,,,,,,"                          "
+EE  690.19,Desc.,M.S.THESIS,0,60,KADRİ ÖZÇALDIRAN,TBA,,,,,,,"                          "
+EE  690.20,Desc.,M.S.THESIS,0,60,BÜLENT SANKUR,TBA,,,,,,,"                          "
+EE  690.21,Desc.,M.S.THESIS,0,60,MURAT SARAÇLAR,TBA,,,,,,,"                          "
+EE  690.22,Desc.,M.S.THESIS,0,60,ARDA YALÇINKAYA,TBA,,,,,,,"                          "
+EE  690.23,Desc.,M.S.THESIS,0,60,HEBA MOHAMED YÜKSEL,TBA,,,,,,,"                          "
+EE  690.24,Desc.,M.S.THESIS,0,60,SELİM ŞEKER,TBA,,,,,,,"                          "
+EE  699.01,Desc.,GUIDED RESEARCH,4,8,BURAK ACAR,TBA,,,,,,,"                          "
+EE  790.01,Desc.,Ph.D.THESIS,0,120,BURAK ACAR,TBA,,,,,,,"                          "
+EE  790.02,Desc.,Ph.D.THESIS,0,120,MEHMET AKAR,TBA,,,,,,,"                          "
+EE  790.03,Desc.,Ph.D.THESIS,0,120,EMİN ANARIM,TBA,,,,,,,"                          "
+EE  790.04,Desc.,Ph.D.THESIS,0,120,LEVENT ARSLAN,TBA,,,,,,,"                          "
+EE  790.05,Desc.,Ph.D.THESIS,0,120,ÖMER CERİD,TBA,,,,,,,"                          "
+EE  790.06,Desc.,Ph.D.THESIS,0,120,KEMAL CILIZ,TBA,,,,,,,"                          "
+EE  790.07,Desc.,Ph.D.THESIS,0,120,OĞUZHAN ÇİÇEKOĞLU,TBA,,,,,,,"                          "
+EE  790.08,Desc.,Ph.D.THESIS,0,120,HAKAN DELİÇ,TBA,,,,,,,"                          "
+EE  790.09,Desc.,Ph.D.THESIS,0,120,GÜNHAN DÜNDAR,TBA,,,,,,,"                          "
+EE  790.10,Desc.,Ph.D.THESIS,0,120,YAĞMUR DENİZHAN,TBA,,,,,,,"                          "
+EE  790.11,Desc.,Ph.D.THESIS,0,120,AYŞIN ERTÜZÜN,TBA,,,,,,,"                          "
+EE  790.13,Desc.,Ph.D.THESIS,0,120,YASEMİN KAHYA,TBA,,,,,,,"                          "
+EE  790.14,Desc.,Ph.D.THESIS,0,120,M. OKYAY KAYNAK,TBA,,,,,,,"                          "
+EE  790.15,Desc.,Ph.D.THESIS,0,120,MUTLU KOCA,TBA,,,,,,,"                          "
+EE  790.17,Desc.,Ph.D.THESIS,0,120,AVNİ MORGÜL,TBA,,,,,,,"                          "
+EE  790.18,Desc.,Ph.D.THESIS,0,120,ŞENOL MUTLU,TBA,,,,,,,"                          "
+EE  790.19,Desc.,Ph.D.THESIS,0,120,KADRİ ÖZÇALDIRAN,TBA,,,,,,,"                          "
+EE  790.20,Desc.,Ph.D.THESIS,0,120,BÜLENT SANKUR,TBA,,,,,,,"                          "
+EE  790.21,Desc.,Ph.D.THESIS,0,120,MURAT SARAÇLAR,TBA,,,,,,,"                          "
+EE  790.22,Desc.,Ph.D.THESIS,0,120,ARDA YALÇINKAYA,TBA,,,,,,,"                          "
+EE  790.23,Desc.,Ph.D.THESIS,0,120,HEBA MOHAMED YÜKSEL,TBA,,,,,,,"                          "
+EE  790.24,Desc.,Ph.D.THESIS,0,120,SELİM ŞEKER,TBA,,,,,,,"                          "

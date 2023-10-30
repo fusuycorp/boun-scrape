@@ -1,0 +1,43 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CAU 101.01,Desc.,ELEMENTARY LAZ I,3,5,İSMAİL AVCI,MMW,454,,M 1152 | M 1152 | M 1181,11.01.2016,1,,"                          "
+CAU 111.01,Desc.,ELEMENTARY KABARDIAN I,3,5,İLHAN AYDEMİR,MMWW,6767,,YD 201 | YD 201 | YD 202 | YD 202,30.12.2015,1,,"                          "
+CAU 112.01,Desc.,ELEMENTARY KABARDIAN II,3,5,İLHAN AYDEMİR,MMWW,8989,,YD 201 | YD 201 | YD 202 | YD 202,12.01.2016,1,,"                          "
+CAU 121.01,Desc.,ELEMENTARY ABKHAZ I,3,5,GUNDA ANKVAB,TTW,676,,GYD 124 | GYD 124 | GYD 301,06.01.2016,2,,"                          "
+CAU 221.01,Desc.,INTERMEDIATE ABKHAZ I,3,5,GUNDA ANKVAB,TWW,878,,GYD 124 | GYD 301 | GYD 301,08.01.2016,3,,"                          "
+LING111.01,Desc.,INTRODUCTION TO LANGUAGE & LINGUISTICS I,3,6,ASLI GÖKSEL,MWTh,555,,M 2171 | M 2170 | YD 06,05.01.2016,1,"TENG,TKL","                          "
+LING111.02,Desc.,INTRODUCTION TO LANGUAGE & LINGUISTICS I,3,6,ELENA GUERZONI,MWTh,555,,YD 102 | NBB 10 | NBB 10,05.01.2016,1,"TENG,TKL","                          "
+LING111.03,Desc.,INTRODUCTION TO LANGUAGE & LINGUISTICS I,3,6,MELTEM KELEPİR,MWTh,555,,M 1171 | TB 490 | M 2152,05.01.2016,1,"TENG,TKL","                          "
+LING201.01,Desc.,PHONOLOGY,3,6,ESER TAYLAN,MWW,778,,GYD 302 | M 1152 | M 1152,02.01.2016,2,,"                          "
+LING305.01,Desc.,SEMANTICS,3,6,ELENA GUERZONI,MThTh,412,,YD 102 | TB 240 | TB 240,08.01.2016,1,,"                          "
+LING316.01,Desc.,BRAIN&LANGUAGE,3,6,MİNE NAKİPOĞLU,TTW,564,,M 1170 | M 1170 | TB 490,12.01.2016,3,,"                          "
+LING350.01,Desc.,STRUCTURE OF TURKISH SIGN LANGUAGE,3,6,SUMRU ÖZSOY,TTTh,345,,M 1152 | M 1152 | TB 240,04.01.2016,1,,"                          "
+LING48K.01,Desc.,SP.TP.GEORGIAN-I,3,6,BARIŞ ALTUN,TTThTh,7878,,NBZ 12 | NBZ 12 | KPARK6 | KPARK6,12.01.2016,3,,"                          "
+LING501.01,Desc.,ASPECTS OF PHONOLOGY,4,10,MARKUS POCHTRAGER,MMWW,2323,,,,0,,"                          "
+LING541.01,Desc.,SYNTACTIC THEORY,4,10,BALKIZ ÖZTÜRK,MMWW,6767,,,,0,,"                          "
+LING572.01,Desc.,READINGS IN LINGUISTICS,1,5,DİDAR AKAR,TBA,,,,,0,,"                          "
+LING572.02,Desc.,READINGS IN LINGUISTICS,1,5,ASLI GÖKSEL,TBA,,,,,0,,"                          "
+LING572.03,Desc.,READINGS IN LINGUISTICS,1,5,MELTEM KELEPİR,TBA,,,,,0,,"                          "
+LING572.04,Desc.,READINGS IN LINGUISTICS,1,5,MİNE NAKİPOĞLU,TBA,,,,,0,,"                          "
+LING572.05,Desc.,READINGS IN LINGUISTICS,1,5,SUMRU ÖZSOY,TBA,,,,,0,,"                          "
+LING572.06,Desc.,READINGS IN LINGUISTICS,1,5,BALKIZ ÖZTÜRK,TBA,,,,,0,,"                          "
+LING572.07,Desc.,READINGS IN LINGUISTICS,1,5,MARKUS POCHTRAGER,TBA,,,,,0,,"                          "
+LING572.08,Desc.,READINGS IN LINGUISTICS,1,5,ESER TAYLAN,TBA,,,,,0,,"                          "
+LING572.09,Desc.,READINGS IN LINGUISTICS,1,5,ELENA GUERZONI,TBA,,,,,0,,"                          "
+LING587.01,Desc.,SP.TOP.:TURKISH MORPHOLOGY,4,10,ASLI GÖKSEL,TTThTh,7812,,,,0,,"                          "
+LING588.01,Desc.,SP.TOP.:INTRODUC.TO DISCOURSE ANAL,4,10,DİDAR AKAR,TTThTh,7812,,,,0,,"                          "
+LING598.01,Desc.,SP.TOP.IN LING.LANG.&COGNITION,4,10,MİNE NAKİPOĞLU,TTThTh,3434,,TB 130 | TB 130,,0,,"                          "
+LING601.01,Desc.,PHONOLOGY,4,10,MARKUS POCHTRAGER,MMWW,6767,,,,0,,"                          "
+LING641.01,Desc.,SYNTAX,4,10,SUMRU ÖZSOY,MMWW,2323,,,,0,,"                          "
+LING690.01,Desc.,MASTER THESIS,0,60,DİDAR AKAR,TBA,,,,,0,,"                          "
+LING690.02,Desc.,MASTER THESIS,0,60,ASLI GÖKSEL,TBA,,,,,0,,"                          "
+LING690.03,Desc.,MASTER THESIS,0,60,MELTEM KELEPİR,TBA,,,,,0,,"                          "
+LING690.04,Desc.,MASTER THESIS,0,60,MİNE NAKİPOĞLU,TBA,,,,,0,,"                          "
+LING690.06,Desc.,MASTER THESIS,0,60,BALKIZ ÖZTÜRK,TBA,,,,,0,,"                          "
+LING690.07,Desc.,MASTER THESIS,0,60,MARKUS POCHTRAGER,TBA,,,,,0,,"                          "
+LING690.08,Desc.,MASTER THESIS,0,60,ESER TAYLAN,TBA,,,,,0,,"                          "
+LING690.09,Desc.,MASTER THESIS,0,60,ELENA GUERZONI,TBA,,,,,0,,"                          "
+LING790.02,Desc.,Ph.D THESIS,0,120,ASLI GÖKSEL,TBA,,,,,0,,"                          "
+LING790.04,Desc.,Ph.D THESIS,0,120,BALKIZ ÖZTÜRK,TBA,,,,,0,,"                          "
+LING790.07,Desc.,Ph.D THESIS,0,120,MARKUS POCHTRAGER,TBA,,,,,0,,"                          "
+TID 101.01,Desc.,ELEMENTARY TURKISH SIGN LANGUAGE I,3,5,ELVAN TAMYÜREK ÖZPARLAK,TTThTh,4545,,TB 415 | TB 415 | TB 415 | TB 415,28.12.2015,1,,"                          "
+TID 101.02,Desc.,ELEMENTARY TURKISH SIGN LANGUAGE I,3,5,ELVAN TAMYÜREK ÖZPARLAK,TTThTh,6767,,TB 415 | TB 415 | TB 415 | TB 415,28.12.2015,1,,"                          "

@@ -1,0 +1,33 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ME  120.01,Desc.,INTRODUCTION TO MECHANICAL ENGINEERING ,3,8,NURİ BÜLENT ERSOY,WWTh,785,,,,,,"                          "
+ME  212.01,Desc.,MATERIALS SCIENCE,4,5,ERCAN BALIKÇI,TTTh,233,,,,,,"                          "
+ME  242.01,Desc.,DYNAMICS,3,5,KUNT ATALIK,MMW,343,,,,,,"                          "
+ME  242.02,Desc.,DYNAMICS,3,5,FAZIL ÖNDER SÖNMEZ,TThTh,767,,,,,,"                          "
+ME  263.01,Desc.,THERMODYNAMICS I,4,5,ALİ ECDER,MMThTh,1212,,,,,,"                          "
+ME  318.01,Desc.,MANUFACTURING TECHNIQUES,4,6,SABRİ ALTINTAŞ,TTTh,565,,,,,,"                          "
+ME  324.01,Desc.,MACHINE DESIGN I,4,6,EMRE AKSAN,TTThTh,3434,,,,,,"                          "
+ME  335.01,Desc.,MODELING & CONTROL OF DYNAMIC SYSTEMS,4,5,EMRE KÖSE,MMWW,2312,,,,,,"                          "
+ME  345.01,Desc.,MECHANICS OF MATERIALS I,4,6,NURİ BÜLENT ERSOY,TTThTh,3423,,,,,,"                          "
+ME  366.01,Desc.,THERMODYNAMICS II,3,5,HASAN BEDİR,TThTh,212,,,,,,"                          "
+ME  411.01,Desc.,MATERIALS ENGINEERING,3,5,MAHMUT A. SAVAŞ,TTTh,781,,,,,,"                          "
+ME  425.01,Desc.,MECHANICAL VIBRATIONSME OPT,3,5,EŞREF EŞKİNAT,TThTh,445,,,,,,"                          "
+ME  429.01,Desc.,MECHANICAL &THERMAL DESIGN,4,7,EMRE AKSAN,T,1,,,,,,"                          "
+ME  430.01,Desc.,AUTOMOTIVE ENGINEERING,3,5,GÜNAY ANLAŞ,TTTh,233,,,,,,"                          "
+ME  453.01,Desc.,GAS DYNAMICS,3,5,HALUK ÖRS,MMW,782,,,,,,"                          "
+ME  474.01,Desc.,HEAT ENGINES,3,5,HASAN BEDİR,MMW,565,,,,,,"                          "
+ME  492.01,Desc.,PROJECT,4,8,EMRE AKSAN,ThThTh,678,,,,,,"                          "
+ME  502.01,Desc.,ADVANCED ENGINEERING MATHEMATICS II,3,8,ALİ ECDER,MWW,412,,,,,,"                          "
+ME  512.01,Desc.,PRINCIPLES OF MANUFACTURING PROCESSES,3,8,MAHMUT A. SAVAŞ,TTTh,562,,,,,,"                          "
+ME  521.01,Desc.,ENGINEERING DESIGN,3,8,FAZIL ÖNDER SÖNMEZ,TTTh,233,,,,,,"                          "
+ME  530.01,Desc.,ADVANCED DYNAMICS,3,8,EMRE KÖSE,MMW,565,,,,,,"                          "
+ME  561.01,Desc.,CONDUCTION HEAT TRANSFER,3,8,KUNT ATALIK,FFF,234,,,,,,"                          "
+ME  614.01,Desc.,MATERIALS PROCESSING,3,8,SABRİ ALTINTAŞ,TThTh,767,,,,,,"                          "
+ME  622.01,Desc.,ADVANCED VIBRATIONS,3,8,EŞREF EŞKİNAT,TTTh,677,,,,,,"                          "
+ME  632.01,Desc.,APPROXIMATE SOLUTION TECHNIQUES,3,8,AKIN TEZEL,WWW,678,,,,,,"                          "
+ME  662.01,Desc.,CONVECTIVE HEAT TRANSFER,3,8,HASAN BEDİR,ThThTh,245,,,,,,"                          "
+ME  690.01,Desc.,M.S.THESIS,0,60,ALİ ECDER,TBA,,,,,,,"                          "
+ME  699.01,Desc.,GUIDED RESEARCH,4,8,GÜNAY ANLAŞ,TBA,,,,,,,"                          "
+ME  699.02,Desc.,GUIDED RESEARCH,4,8,ALİ ECDER,TBA,,,,,,,"                          "
+ME  699.03,Desc.,GUIDED RESEARCH,4,8,MAHMUT A. SAVAŞ,TBA,,,,,,,"                          "
+ME  699.04,Desc.,GUIDED RESEARCH,4,8,FAZIL ÖNDER SÖNMEZ,TBA,,,,,,,"                          "
+ME  790.01,Desc.,Ph.D. THESIS,0,120,AKIN TEZEL,TBA,,,,,,,"                          "

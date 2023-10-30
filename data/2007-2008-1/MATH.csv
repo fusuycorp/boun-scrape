@@ -1,0 +1,31 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.01,Desc.,CALCULUS I,4,6,ÖZLEM BEYARSLAN,TTThTh,1212,,HKD101 | HKD101 | HKD101 | HKD101,,,"AD,EC,PRED SCI","                          "
+MATH101.02,Desc.,CALCULUS I,4,6,ÖZLEM BEYARSLAN,TTThTh,3434,,HKD101 | HKD101 | HKD101 | HKD101,,,"CHEM,PHYS,PRED MATH","                          "
+MATH101.03,Desc.,CALCULUS I,4,6,FATİH ECEVİT,TTThTh,1212,,HKD201 | HKD201 | HKD201 | HKD201,,,"CEDU,BIO,IE,ME","                          "
+MATH101.04,Desc.,CALCULUS I,4,6,FATİH ECEVİT,TTThTh,3434,,HKD201 | HKD201 | HKD201 | HKD201,,,"CMPE,EE,CE,CHE","                          "
+MATH101.05,Desc.,CALCULUS I,4,6,FATİH ECEVİT,TTThTh,5656,,HKD101 | HKD101 | HKD101 | HKD101,,,"CET,MEDU,PEDU","                          "
+MATH102.01,Desc.,CALCULUS II,4,6,FERİT ÖZTÜRK,TTThTh,1212,,YD 406 | YD 406 | PARK1 | PARK1,,,,"                          "
+MATH102.02,Desc.,CALCULUS II,4,6,BURAK GÜREL,TTThTh,3434,,YD 406 | YD 406 | PARK1 | PARK1,,,,"                          "
+MATH105.01,Desc.,INTRODUCTION TO FINITE MATHEMATICS,4,6,GÜLNİHAL YÜCEL,TTThTh,1212,,HKD301 | HKD301 | HKD301 | HKD301,,,"GUID,HIST,POLS","                          "
+MATH105.02,Desc.,INTRODUCTION TO FINITE MATHEMATICS,4,6,GÜLNİHAL YÜCEL,TTThTh,3434,,HKD301 | HKD301 | HKD301 | HKD301,,,"PSY,SOC","                          "
+MATH111.01,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,TALİN BUDAK,TTThTh,1212,,PARK1 | PARK1 | YD 406 | YD 406,,,"MATH,PRED MATH,MEDU","        MATH; MEDU; TMAT; PRMA                  "
+MATH111.02,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,TALİN BUDAK,TTThTh,3434,,PARK1 | PARK1 | YD 406 | YD 406,,,MATH,"        MATH; MEDU; TMAT; PRMA                  "
+MATH131.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS I,4,6,NİLGÜN IŞIK,TTThTh,5656,,ÖZGER A | ÖZGER A | YD 406 | YD 406,,,,"        MATH                  "
+MATH201.03,Desc.,MATRIX THEORY,4,5,N.SADIK DEĞER,MMWW,3434,,PARK1 | PARK1 | PARK1 | PARK1,,,"CE,CHE,CMPE,ME,EE,IE,BIO,CEDU","                          "
+MATH231.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS III,4,4,AHMET KAMİL FEYZİOĞLU,TTThTh,1212,,TB 260 | TB 260 | TB 260 | TB 260,,,,"        MEDU; MATH                  "
+MATH327.01,Desc.,NUMBER THEORY,3,6,CEM YALÇIN YILDIRIM,TTTh,565,,TB 240 | TB 240 | TB 240,,,,"                          "
+MATH331.01,Desc.,REAL ANALYSIS I,4,8,NİLGÜN IŞIK,TTThTh,1212,,TB 310 | TB 310 | TB 310 | TB 310,,,,"        MATH                  "
+MATH411.01,Desc.,MATHEMATICAL LOGIC,3,6,BETÜL TANBAY,TTTh,344,,GYD 409 | GYD 409 | TB 240,,,,"                          "
+MATH476.01,Desc.,DIFFERENTIAL TOPOLOGY,3,7,FERİT ÖZTÜRK,MMTh,127,,TB 240 | TB 240 | TB 240,,,,"                          "
+MATH480.01,Desc.,SEMINAR,2,4,ÖZLEM BEYARSLAN,TBA,,,,,,,"                          "
+MATH48E.01,Desc.,SEL.TOP.:LIE GROUPS&DİF.EQNS.,3,6,BURAK GÜREL,TTTh,566,,KPARK9 | KPARK9 | TB 240,,,,"                          "
+MATH521.01,Desc.,ALGEBRA I,4,10,AHMET KAMİL FEYZİOĞLU,TTThTh,3434,,,,,,"                          "
+MATH571.01,Desc.,TOPOLOGY,4,10,BETÜL TANBAY,TTThTh,5656,,,,,,"                          "
+MATH584.01,Desc.,SELECTED TOPICS IN ALGEBRA&TOPOLOGY,3,7,FERİT ÖZTÜRK,MMTh,127,,,,,,"                          "
+MATH586.01,Desc.,SEL.TOP. IN DIFFERENTIAL GEOMETRY ,3,7,N.SADIK DEĞER,MMW,781,,,,,,"                          "
+MATH589.01,Desc.,SEL.TOP. IN COMBINATORICS,3,7,CEM YALÇIN YILDIRIM,TThTh,878,,,,,,"                          "
+MATH690.02,Desc.,M.S. THESIS,0,60,N.SADIK DEĞER,TBA,,,,,,,"                          "
+MATH690.04,Desc.,M.S. THESIS,0,60,CEM YALÇIN YILDIRIM,TBA,,,,,,,"                          "
+MATH690.05,Desc.,M.S. THESIS,0,60,FERİT ÖZTÜRK,TBA,,,,,,,"                          "
+MATH690.06,Desc.,M.S. THESIS,0,60,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "
+MATH690.07,Desc.,M.S. THESIS,0,60,BURAK GÜREL,TBA,,,,,,,"                          "

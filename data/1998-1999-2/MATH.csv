@@ -1,0 +1,24 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.01,Desc.,CALCULUS I,4,6,NİLGÜN IŞIK,MMWW,1212,,,,,,"                          "
+MATH101.02,Desc.,CALCULUS I,4,6,NİLGÜN IŞIK,MWWM,3434,,,,,,"                          "
+MATH106.01,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,GÜLNİHAL YÜCEL,TTThTh,1212,,,,,,"                          "
+MATH106.02,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,GÜLNİHAL YÜCEL,TTThTh,3434,,,,,,"                          "
+MATH131.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS I,4,6,BETÜL TANBAY,TTThTh,1212,,,,,,"        MATH                  "
+MATH132.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS II,4,8,BETÜL TANBAY,TTThTh,3434,,,,,,"        MATH                  "
+MATH152.01,Desc.,CALCULUS II,4,6,ALP EDEN,TTThTh,1212,,,,,,"                          "
+MATH251.01,Desc.,CALCULUS III,4,5,AYŞE SOYSAL,,, ,,,,,"                          "
+MATH251.02,Desc.,CALCULUS III,4,5,VURAL ALTIN,,, ,,,,,"                          "
+MATH252.01,Desc.,DIFFERENTIAL EQUATIONS,4,7,TALİN BUDAK,MMWW,1212,,,,,,"                          "
+MATH252.02,Desc.,DIFFERENTIAL EQUATIONS,4,7,TALİN BUDAK,MMWW,3434,,,,,,"                          "
+MATH322.01,Desc.,ALGEBRA II,4,8,AHMET KAMİL FEYZİOĞLU,TTThTh,1212,,,,,,"                          "
+MATH343.01,Desc.,PROBABILITY,4,6,YAĞMUR DENİZHAN,MMThTh,2334,,,,,,"                          "
+MATH344.01,Desc.,STATISTICS,3,5,İRİNİ DİMİTRİYADİS,MMThTh,4556,,,,,,"                          "
+MATH442.01,Desc.,RISK ANALYSIS,3,6,İRİNİ DİMİTRİYADİS,TTThTh,3434,,,,,,"                          "
+MATH497.01,Desc.,SEL.TOP.IN MATH.,3,6,ALP EDEN,TBA, ,,,,,,"                          "
+MATH498.01,Desc.,SEL.TOP.IN MATH.,3,6,STAFF STAFF,TBA, ,,,,,,"                          "
+MATH502.01,Desc.,ALGEBRA II,4,8,AHMET KAMİL FEYZİOĞLU,TTThTh,4545,,,,,,"                          "
+MATH516.01,Desc.,REAL ANALSIS  II,4,8,ALP EDEN,S,0,,,,,,"                          "
+MATH579.01,Desc.,GRADUATE SEMINAR,0,1,ALP EDEN,S,0,,,,,,"                          "
+MATH580.01,Desc.,READINGS IN MATHEMATICS,1,3,ALP EDEN,S,0,,,,,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,ALP EDEN,S,0,,,,,,"                          "
+MATH790.01,Desc.,Ph.D.THESIS,0,120,ALP EDEN,S,0,,,,,,"                          "

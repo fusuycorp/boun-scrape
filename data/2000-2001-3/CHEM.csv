@@ -1,0 +1,8 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHEM103.01,Desc.,GENERAL CHEMISTRY I,3,7,NİHAN NUGAY,MMTTWW,343434,,,,,,"        BIO; CEDU; CHE; PEDU; PRSC                  "
+CHEM104.01,Desc.,GENERAL CHEMISTRY II,3,6,NİHAN NUGAY,MMTTWW,121212,,,,,,"        BIO; CHE; CEDU; PRSC                  "
+CHEM105.01,Desc.,FUNDAMENTALS OF CHEMISTRY,4,6,TURGUT NUGAY,MMTTWW,121212,,,,,,"        ME; CMPE; EE; PHYS                  "
+CHEM201.01,Desc.,ORGANIC CHEMISTRY I,4,5,İLKNUR DOĞAN,MMTTWWThTh,121212,,,,,,"                          "
+CHEM202.01,Desc.,ORGANIC CHEMISTRY II,4,5,İLKNUR DOĞAN,MMTTWWThTh,343434,,,,,,"                          "
+CHEM203.01,Desc.,ORGANIC CHEMISTRY LABORATORY I,1,3,İLKNUR DOĞAN,MMMTTT,567567,,,,,,"                          "
+CHEM204.01,Desc.,ORGANIC CHEMISTRY LABORATORY II,1,3,İLKNUR DOĞAN,WWWThThTh,567567,,,,,,"                          "

@@ -1,0 +1,25 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHYS101.01,Desc.,PHYSICS I,4,8,ÖMER Ö.OĞUZ,MMTTThTh,343434,,M 1171 | M 1171 | M 1171 | M 1171 | M 1171 | M 1171,,,,"                          "
+PHYS101.02,Desc.,PHYSICS I,4,8,TAYLAN AKDOĞAN,MMWWThTh,121212,,ETA A2 | ETA A2 | ETA A2 | ETA A2 | ETA A2 | ETA A2,,,,"                          "
+PHYS101.03,Desc.,PHYSICS I,4,8,TAYLAN AKDOĞAN,MMTTThTh,565656,,ETA A2 | ETA A2 | ETA A2 | ETA A2 | ETA A2 | ETA A2,,,,"                          "
+PHYS102.01,Desc.,PHYSICS II,4,8,AŞKIN ANKAY,MMWWThTh,343434,,ETA A2 | ETA A2 | ETA A2 | ETA A2 | ETA A2 | ETA A2,,,,"                          "
+PHYS121.01,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,YANI SKARLATOS,MMWWThTh,121212,,ETA A5 | ETA A5 | ETA A5 | ETA A5 | ETA A5 | ETA A5,,,,"                          "
+PHYS130.01,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,ENİSE NİHAL ERCAN,MMWWThTh,121212,,KB 316 | KB 316 | KB 316 | KB 316 | KB 316 | KB 316,,,,"                          "
+PHYS130.02,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,ENİSE NİHAL ERCAN,MMWWThTh,343434,,KBZ 01 | KBZ 01 | KBZ 01 | KBZ 01 | KBZ 01 | KBZ 01,,,,"                          "
+PHYS130.03,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,NACİ İNCİ,MMWWThTh,565656,,KBZ 01 | KBZ 01 | KBZ 01 | KBZ 01 | KBZ 01 | KBZ 01,,,,"                          "
+PHYS130.04,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,NACİ İNCİ,MMWWThTh,343434,,KPARK7 | KPARK7 | KB 433 | KB 433 | KPARK7 | KPARK7,,,,"                          "
+PHYS201.01,Desc.,PHYSICS III,4,6,SERDAR NERGİZ,MMWWThTh,343434,,KB 125 | KB 125 | KB 125 | KB 125 | KB 125 | KB 125,,,,"                          "
+PHYS201.02,Desc.,PHYSICS III,4,6,MEHMET ENİS OĞUZ,MMWWThTh,121212,,ETA A6 | ETA A6 | ETA A6 | ETA A6 | ETA B5 | ETA B5,,,,"                          "
+PHYS201.03,Desc.,PHYSICS III,4,6,SERDAR NERGİZ,MMWWThTh,121212,,KBZ 01 | KBZ 01 | KBZ 01 | KBZ 01 | KBZ 01 | KBZ 01,,,,"                          "
+PHYS201.04,Desc.,PHYSICS III,4,6,SERDAR NERGİZ,MMWWThTh,565656,,ETA B5 | ETA B5 | ETA B5 | ETA B5 | ETA B5 | ETA B5,,,,"                          "
+PHYS201.05,Desc.,PHYSICS III,4,6,MEHMET ENİS OĞUZ,MMWWThTh,343434,,KPARK11 | KPARK11 | KPARK11 | KPARK11 | KPARK11 | KPARK11,,,,"                          "
+PHYS201.06,Desc.,PHYSICS III,4,6,NACİ İNCİ,MMWWThTh,121212,,KPARK1 | KPARK1 | KPARK1 | KPARK1 | KPARK1 | KPARK1,,,,"                          "
+PHYS202.01,Desc.,PHYSICS IV,4,6,ALPAR  SEVGEN,MMWWThTh,343434,,KB 316 | KB 316 | KB 316 | KB 316 | KB 316 | KB 316,,,,"                          "
+PHYS205.01,Desc.,EXPLORING THE COSMOS I,3,5,LEVENT KURNAZ,MMWWThTh,787878,,KB 316 | KB 316 | KB 316 | KB 316 | KB 316 | KB 316,,,,"                          "
+PHYS205.02,Desc.,EXPLORING THE COSMOS I,3,5,LEVENT KURNAZ,MMWWThTh,565656,,KB 316 | KB 316 | KB 316 | KB 316 | KB 316 | KB 316,,,,"                          "
+PHYS221.01,Desc.,THERMAL PROPERTIES OF MATTER,3,5,ERSAN DEMİRALP,MMWWThTh,565656,,KB 125 | KB 125 | KB 125 | KB 125 | KB 125 | KB 125,,,,"        PHYS                  "
+PHYS301.01,Desc.,CLASSICAL MECHANICS I,3,6,İBRAHİM SEMİZ,MMWWThTh,565656,,,,,,"        PHYS                  "
+PHYS325.01,Desc.,MATHEMATICAL METHODS OF PHYSICS I,3,5,ALİ KAYA,MMWWThTh,787878,,M 1171 | M 1171 | M 1171 | M 1171 | M 1171 | M 1171,,,,"        PHYS                  "
+PHYS345.01,Desc.,CLASSICAL ASTRONOMY,3,6,ENİSE NİHAL ERCAN,MMWWThTh,565656,,ETA A6 | ETA A6 | ETA A6 | ETA A6 | ETA A6 | ETA A6,,,,"                          "
+PHYS346.01,Desc.,INTRODUCTION TO ASTROPHYSICS,3,6,AŞKIN ANKAY,MMWWThTh,787878,,ETA 4 | ETA 4 | ETA 4 | ETA 4 | ETA 4 | ETA 4,,,,"                          "
+PHYS380.01,Desc.,INTRO.TO ELECTROMAGNETIC RADIATION,3,5,ÖMER Ö.OĞUZ,MMWWThTh,565656,,M 1171 | M 1171 | M 1171 | M 1171 | M 1171 | M 1171,,,,"                          "

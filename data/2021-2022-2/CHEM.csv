@@ -1,0 +1,106 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHEM103.01,Desc.,GENERAL CHEMISTRY I,3,7,NİHAN NUGAY,MMW,563,Online,ONLINE | ONLINE | ONLINE,28.05.2022,2,CET,"        BIO; CEDU; CHE; PEDU; PRSC                  "
+,,P.S.,,,NİHAN NUGAY,W,4,,ONLINE,,0,,"        BIO; CEDU; CHE; PEDU; PRSC                  "
+CHEM104.01,Desc.,GENERAL CHEMISTRY II,3,6,BAŞAK KAYITMAZER,MWW,334,Online,ONLINE | ONLINE | ONLINE,03.06.2022,1,"CEDU,CHE,P_SCI","        BIO; CHE; CEDU; PRSC                  "
+,,P.S.,,,BAŞAK KAYITMAZER,M,4,,ONLINE,,0,,"        BIO; CHE; CEDU; PRSC                  "
+CHEM104.02,Desc.,GENERAL CHEMISTRY II,3,6,ALİ ERSİN ACAR,MWW,556,Classroom,NH 202 | NH 102 | NH 102,03.06.2022,1,"BIO,CEDU,CHEM","                          "
+,,P.S.,,,ALİ ERSİN ACAR,M,6,,NH 202,,0,,"                          "
+CHEM105.01,Desc.,FUNDAMENTALS OF CHEMISTRY,4,6,ŞARON ÇATAK,MMW,788,Online,ONLINE | ONLINE | ONLINE,08.06.2022,1,"CE,IE","        ME; CMPE; EE; PHYS                  "
+,,P.S.,,,ŞARON ÇATAK,W,9,,ONLINE,,0,,"        ME; CMPE; EE; PHYS                  "
+CHEM108.01,Desc.,QUALITATIVE ANALYSIS,4,5,MAKBULE GİZEM KIREVLİYASI PEKKÜÇÜK,TT,34,Online,ONLINE | ONLINE,10.06.2022,1,"CEDU,CHEM","                          "
+,,LAB,,,MAKBULE GİZEM KIREVLİYASI PEKKÜÇÜK,TTThTh,5678,,,,0,CEDU,"                          "
+,,P.S.,,,MAKBULE GİZEM KIREVLİYASI PEKKÜÇÜK,ThTh,34,,ONLINE | ONLINE,,0,,"                          "
+,,LAB,,,MAKBULE GİZEM KIREVLİYASI PEKKÜÇÜK,TTThTh,7856,,,,0,CHEM,"                          "
+CHEM109.01,Desc.,GENERAL CHEMISTRY LABORATORY,1,2,REYHAN İŞERİ,WWW,678,Classroom,,06.06.2022,2,CET,"                          "
+CHEM109.02,Desc.,GENERAL CHEMISTRY LABORATORY,1,2,REYHAN İŞERİ,ThThTh,678,Classroom,,06.06.2022,2,PEDU,"                          "
+CHEM109.03,Desc.,GENERAL CHEMISTRY LABORATORY,1,2,REYHAN İŞERİ,FFF,678,Classroom,,06.06.2022,2,P_SCI,"                          "
+CHEM201.01,Desc.,ORGANIC CHEMISTRY I,4,5,MEHMET FIRAT İLKER,MMWW,4545,Online,ONLINE | ONLINE | ONLINE | ONLINE,04.06.2022,3,,"                          "
+,,P.S.,,,MEHMET FIRAT İLKER,M,8,,NH 402,,0,,"                          "
+CHEM202.01,Desc.,ORGANIC CHEMISTRY II,4,5,DUYGU AVCI SEMİZ,MMWW,3434,Classroom,NH 401 | NH 401 | KB Z01 | KB Z01,31.05.2022,3,"CEDU,CHEM","                          "
+,,P.S.,,,DUYGU AVCI SEMİZ,F,3,,NH 201,,0,,"                          "
+CHEM203.01,Desc.,ORGANIC CHEMISTRY LABORATORY I,2,4,EDİZ TAYLAN,WWW,123,Classroom,KB 125,07.06.2022,3,,"                          "
+CHEM204.01,Desc.,ORGANIC CHEMISTRY LABORATORY II,2,4,EDİZ TAYLAN,MMM,567,Classroom,KB Z01,09.06.2022,2,CEDU,"                          "
+CHEM204.02,Desc.,ORGANIC CHEMISTRY LABORATORY II,2,4,EDİZ TAYLAN,WWW,567,Classroom,KB Z01,09.06.2022,2,CHEM,"                          "
+CHEM242.01,Desc.,ANALYTICAL CHEMISTRY,3,4,FATMA AHU AKIN,MMTT,1234,Online/Classroom,NH 401 | NH 401 | ONLINE | ONLINE,30.05.2022,3,"CEDU,CHEM","                          "
+CHEM244.01,Desc.,ANALYTICAL CHEMISTRY LABORATORY,2,4,ÖZGE AKDENİZ,T,7,Online,ONLINE,07.06.2022,1,CHEM,"                          "
+,,LAB,,,ÖZGE AKDENİZ,MMMMM,56789,,,,0,,"                          "
+CHEM244.02,Desc.,ANALYTICAL CHEMISTRY LABORATORY,2,4,ÖZGE AKDENİZ,T,9,Online,ONLINE,07.06.2022,1,CEDU,"                          "
+,,LAB,,,ÖZGE AKDENİZ,WWWWW,56789,,,,0,,"                          "
+CHEM244.03,Desc.,ANALYTICAL CHEMISTRY LABORATORY,2,4,ÖZGE AKDENİZ,T,8,Online,ONLINE,07.06.2022,1,CHEM,"                          "
+,,LAB,,,ÖZGE AKDENİZ,FFFFF,56789,,,,0,,"                          "
+CHEM308.01,Desc.,INSTRUMENTAL ANALYSIS II,4,6,RANA NOMAK SANYAL,TWWTh,5234,Online/Classroom,NH 001 | ONLINE | ONLINE | KB Z01,09.06.2022,2,,"                          "
+,,LAB,,,ŞULE EROL GÜNAL,MMM,678,,,,0,,"                          "
+,,LAB,,,ŞULE EROL GÜNAL,WWW,678,,,,0,,"                          "
+,,LAB,,,ŞULE EROL GÜNAL,FFF,567,,,,0,,"                          "
+CHEM352.01,Desc.,PHYSICAL CHEMISTRY II,4,6,ZEYNEP ATAY GÖK,WWThTh,4523,Online/Classroom,ONLINE | ONLINE | KB Z01 | KB Z01,08.06.2022,2,,"                          "
+,,P.S.,,,ZEYNEP ATAY GÖK,F,4,,ONLINE,,0,,"                          "
+CHEM356.01,Desc.,PHYSICAL CHEMISTRY LABORATORY,2,3,ŞULE EROL GÜNAL,TTTT,6789,Classroom,,01.06.2022,3,,"                          "
+CHEM356.02,Desc.,PHYSICAL CHEMISTRY LABORATORY,2,3,ŞULE EROL GÜNAL,ThThThTh,6789,Classroom,,01.06.2022,3,,"                          "
+CHEM356.03,Desc.,PHYSICAL CHEMISTRY LABORATORY,2,3,ŞULE EROL GÜNAL,FFFF,6789,Classroom,,01.06.2022,3,,"                          "
+CHEM363.01,Desc.,ORGANIC CHEMISTRY III,3,6,AMITAV SANYAL,TTTh,235,Classroom,KB Z01 | KB Z01 | NH 105,11.06.2022,1,,"                          "
+,,P.S.,,,AMITAV SANYAL,F,3,,ONLINE,,0,,"                          "
+CHEM371.01,Desc.,TEXTILE CHEMISTRY,3,6,ŞÜKRİYE İNCİ GÖL,TTTh,9109,Online,ONLINE | ONLINE | ONLINE,10.06.2022,1,,"                          "
+CHEM402.01,Desc.,CHEMISTRY SEMINAR II,1,2,SELİM KÜSEFOĞLU,T,4,Online,ONLINE,30.05.2022,1,,"                          "
+CHEM412.01,Desc.,INTRODUCTION TO NANOCHEMISTRY,3,6,AMITAV SANYAL,,,Classroom,,30.05.2022,3,,"                          "
+CHEM417.01,Desc.,POLYMER CHEMISTRY LABORATORY,3,6,DUYGU AVCI SEMİZ,FFFF,5678,Classroom,KB 126 | KB 126 | KB 126 | KB 126,01.06.2022,1,,"                          "
+CHEM421.01,Desc.,COMPUTATIONAL CHEMISTRY,3,6,TEREZA VARNALI,WWW,678,Online,ONLINE | ONLINE | ONLINE,09.06.2022,1,,"                          "
+CHEM422.01,Desc.,PHOTOCHEMISTRY,3,6,AYŞE NEREN ÖKTE,MMM,234,Online,ONLINE | ONLINE | ONLINE,06.06.2022,1,,"                          "
+CHEM442.01,Desc.,QUALITATIVE ORGANIC ANALYSIS,4,6,TURGUT NUGAY,TTh,11,Online,ONLINE | ONLINE,31.05.2022,1,,"                          "
+,,LAB,,,TURGUT NUGAY,TTTT,2345,,,,0,,"                          "
+,,LAB,,,TURGUT NUGAY,TTTT,6789,,,,0,,"                          "
+,,LAB,,,TURGUT NUGAY,ThThThTh,2345,,,,0,,"                          "
+,,LAB,,,TURGUT NUGAY,ThThThTh,6789,,,,0,,"                          "
+CHEM456.01,Desc.,ELECTROCHEMISTRY,3,6,OKTAY DEMİRCAN,,,Classroom,,10.06.2022,3,,"                          "
+CHEM471.01,Desc.,ENVIRONMENTAL CHEMISTRY,3,6,MEHMET FIRAT İLKER,WWW,789,Online,ONLINE | ONLINE | ONLINE,02.06.2022,3,,"        BIO; CHEM; CHE; CEDU; TCHE                  "
+CHEM473.01,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY I,3,12,ŞARON ÇATAK,,,Classroom,,,,,"                          "
+CHEM474.01,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,ALİ ERSİN ACAR,,,Classroom,,,,,"                          "
+CHEM474.03,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,ZEYNEP ATAY GÖK,,,Classroom,,,,,"                          "
+CHEM474.05,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,VIKTORYA AVIYENTE,,,Classroom,,,,,"                          "
+CHEM474.06,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,OKTAY DEMİRCAN,,,Classroom,,,,,"                          "
+CHEM474.11,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,AYŞE NEREN ÖKTE,,,Classroom,,,,,"                          "
+CHEM474.13,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,AMITAV SANYAL,,,Classroom,,,,,"                          "
+CHEM474.14,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,RANA NOMAK SANYAL,,,Classroom,,,,,"                          "
+CHEM474.15,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,BAŞAK KAYITMAZER,,,Classroom,,,,,"                          "
+CHEM474.16,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,ŞARON ÇATAK,,,Classroom,,,,,"                          "
+CHEM474.17,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,MEHMET FIRAT İLKER,,,Classroom,,,,,"                          "
+CHEM475.02,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,ŞARON ÇATAK,,,Classroom,,,,,"                          "
+CHEM475.03,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,HADİ ÖZBAL,,,Classroom,,,,,"                          "
+CHEM475.06,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,BAŞAK KAYITMAZER,,,Classroom,,,,,"                          "
+CHEM475.07,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,ZEYNEP ATAY GÖK,,,Classroom,,,,,"                          "
+CHEM475.08,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,VIKTORYA AVIYENTE,,,Classroom,,,,,"                          "
+CHEM475.09,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,DUYGU AVCI SEMİZ,,,Classroom,,,,,"                          "
+CHEM475.10,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,OKTAY DEMİRCAN,,,Classroom,,,,,"                          "
+CHEM512.01,Desc.,ADVANCED PHYSICAL CHEMISTRY,3,8,AYŞE NEREN ÖKTE,TTThTh,2323,Online,ONLINE | ONLINE | ONLINE | ONLINE,31.05.2022,3,,"                          "
+CHEM514.01,Desc.,ADVANCED INORGANIC CHEMISTRY,3,8,OKTAY DEMİRCAN,,,,,08.06.2022,2,,"                          "
+CHEM520.01,Desc.,POLYMER THERAPEUTICS,3,8,RANA NOMAK SANYAL,,,,,07.06.2022,3,,"                          "
+CHEM522.01,Desc.,ADVANCED COMPUTATIONAL CHEMISTRY,3,8,VIKTORYA AVIYENTE,,,,,28.05.2022,2,,"                          "
+CHEM533.01,Desc.,SYNTHETIC ORGANIC CHEMISTRY,3,8,ALİ ERSİN ACAR,TTTh,344,Classroom,,06.06.2022,2,,"                          "
+CHEM579.01,Desc.,GRADUATE SEMINAR,0,2,AMITAV SANYAL,,, ,,,,,"                          "
+CHEM580.01,Desc.,SP.TP.LASER CHEMISTRY,3,8,FATMA AHU AKIN,,, ,,04.06.2022,1,,"                          "
+CHEM583.01,Desc.,SP.TP.:BIOANALYTICAL CHEMISTRY,3,8,BAŞAK KAYITMAZER,,,Online,,02.06.2022,3,,"                          "
+CHEM591.01,Desc.,M.S. SEMINAR,0,2,OKTAY DEMİRCAN,,,,,09.06.2022,1,,"                          "
+CHEM597.01,Desc.,SP.TOP.RECENT ADVANCES IN COMPUTATIONAL MODELING,3,8,ŞARON ÇATAK,TTT,678,Classroom,,02.06.2022,1,,"                          "
+CHEM601.01,Desc.,CURRENT RESEARCH TOPICS,1,2,OKTAY DEMİRCAN,,,,,28.05.2022,3,,"                          "
+CHEM690.01,Desc.,M.S. THESIS,0,60,ALİ ERSİN ACAR,,,,,,,,"                          "
+CHEM690.02,Desc.,M.S. THESIS,0,60,FATMA AHU AKIN,,,,,,,,"                          "
+CHEM690.04,Desc.,M.S. THESIS,0,60,DUYGU AVCI SEMİZ,,,,,,,,"                          "
+CHEM690.06,Desc.,M.S. THESIS,0,60,OKTAY DEMİRCAN,,,,,,,,"                          "
+CHEM690.07,Desc.,M.S. THESIS,0,60,İLKNUR DOĞAN,,,,,,,,"                          "
+CHEM690.11,Desc.,M.S. THESIS,0,60,AMITAV SANYAL,,,,,,,,"                          "
+CHEM690.12,Desc.,M.S. THESIS,0,60,RANA NOMAK SANYAL,,,,,,,,"                          "
+CHEM690.14,Desc.,M.S. THESIS,0,60,MEHMET FIRAT İLKER,,,,,,,,"                          "
+CHEM690.15,Desc.,M.S. THESIS,0,60,ŞARON ÇATAK,,,,,,,,"                          "
+CHEM690.17,Desc.,M.S. THESIS,0,60,BAŞAK KAYITMAZER,,,,,,,,"                          "
+CHEM790.01,Desc.,Ph.D.THESIS,0,120,ALİ ERSİN ACAR,,,,,,,,"                          "
+CHEM790.03,Desc.,Ph.D.THESIS,0,120,ZEYNEP ATAY GÖK,,,,,,,,"                          "
+CHEM790.04,Desc.,Ph.D.THESIS,0,120,DUYGU AVCI SEMİZ,,,,,,,,"                          "
+CHEM790.06,Desc.,Ph.D.THESIS,0,120,OKTAY DEMİRCAN,,,,,,,,"                          "
+CHEM790.07,Desc.,Ph.D.THESIS,0,120,İLKNUR DOĞAN,,,,,,,,"                          "
+CHEM790.08,Desc.,Ph.D.THESIS,0,120,BAŞAK KAYITMAZER,,,,,,,,"                          "
+CHEM790.09,Desc.,Ph.D.THESIS,0,120,NİHAN NUGAY,,,,,,,,"                          "
+CHEM790.10,Desc.,Ph.D.THESIS,0,120,TURGUT NUGAY,,,,,,,,"                          "
+CHEM790.11,Desc.,Ph.D.THESIS,0,120,AYŞE NEREN ÖKTE,,,,,,,,"                          "
+CHEM790.12,Desc.,Ph.D.THESIS,0,120,AMITAV SANYAL,,,,,,,,"                          "
+CHEM790.13,Desc.,Ph.D.THESIS,0,120,RANA NOMAK SANYAL,,,,,,,,"                          "
+CHEM790.15,Desc.,Ph.D.THESIS,0,120,ŞARON ÇATAK,,,,,,,,"                          "
+STS 302.01,Desc.,ARCHEOMETRY II,3,4,EMRE  KURUÇAYIRLI,TTTh,898,Classroom,KB Z01 | KB Z01 | KB Z01,10.06.2022,2,,"                          "

@@ -1,0 +1,125 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHEM103.01,Desc.,GENERAL CHEMISTRY I,3,7,TEREZA VARNALI,TThTh,334,,YD 06 | NH 401 | NH 401,06.06.2014,1,,"        BIO; CEDU; CHE; PEDU; PRSC                  "
+CHEM104.01,Desc.,GENERAL CHEMISTRY II,3,6,OKTAY DEMİRCAN,MWW,323,,KBZ 01 | KB 125 | KB 125,05.06.2014,2,"BIO,CEDU","        BIO; CHE; CEDU; PRSC                  "
+CHEM104.02,Desc.,GENERAL CHEMISTRY II,3,6,ECE BULAK,TTW,343,,YD 206 | YD 206 | YD 206,05.06.2014,2,"CHE,PEDU,P_SCI","                          "
+CHEM104.03,Desc.,GENERAL CHEMISTRY II,3,6,NİHAN NUGAY,TTTh,567,,NH 104 | NH 104 | KBZ 01,05.06.2014,2,CHEM,"                          "
+CHEM105.01,Desc.,FUNDAMENTALS OF CHEMISTRY,4,6,BÜLENT AKGÜN,TTTh,566,,KBZ 01 | KBZ 01 | NH 405,07.06.2014,3,CE,"        ME; CMPE; EE; PHYS                  "
+CHEM105.02,Desc.,FUNDAMENTALS OF CHEMISTRY,4,6,MEHMET FIRAT İLKER,WWTh,565,,KBZ 01 | KBZ 01 | KB 125,07.06.2014,3,,"                          "
+CHEM108.01,Desc.,QUALITATIVE ANALYSIS,4,5,ELİZA KALVO,TT,12,,NH 401 | NH 401,07.06.2014,1,"CEDU,CHEM","                          "
+,,LAB,,,ELİZA KALVO,TTThTh,5678,,,,0,,"                          "
+,,P.S.,,,ELİZA KALVO,ThTh,12,,KB 125 | KB 125,,0,,"                          "
+,,LAB,,,ELİZA KALVO,TTThTh,7856,,,,0,,"                          "
+CHEM109.01,Desc.,GENERAL CHEMISTRY LABORATORY,1,2,REYHAN İŞERİ,WWW,678,,,28.05.2014,1,CET,"                          "
+CHEM109.02,Desc.,GENERAL CHEMISTRY LABORATORY,1,2,REYHAN İŞERİ,ThThTh,678,,,28.05.2014,1,CHE,"                          "
+CHEM109.03,Desc.,GENERAL CHEMISTRY LABORATORY,1,2,REYHAN İŞERİ,FFF,678,,,28.05.2014,1,PEDU,"                          "
+CHEM112.01,Desc.,SURVEY OF CHEMISTRY II,3,4,TEREZA VARNALI,TTTh,787,,KB 125 | KB 125 | NH 401,05.06.2014,3,,"                          "
+CHEM201.01,Desc.,ORGANIC CHEMISTRY I,4,5,TURGUT NUGAY,MMTT,1256,,NH 102 | NH 102 | NH 302 | NH 302,31.05.2014,3,,"                          "
+CHEM202.01,Desc.,ORGANIC CHEMISTRY II,4,5,İLKNUR DOĞAN,MMWW,3434,,KB 125 | KB 125 | NH 302 | NH 302,26.05.2014,1,"CEDU,CHEM","                          "
+,,P.S.,,,İLKNUR DOĞAN,F,3,,KB 125,,0,,"                          "
+CHEM203.01,Desc.,ORGANIC CHEMISTRY LABORATORY I,1,3,EDİZ TAYLAN,WWW,123,,KB 125,03.06.2014,2,,"                          "
+CHEM204.01,Desc.,ORGANIC CHEMISTRY LABORATORY II,1,3,EDİZ TAYLAN,MMM,567,,YD 102,07.06.2014,3,CEDU,"                          "
+CHEM204.02,Desc.,ORGANIC CHEMISTRY LABORATORY II,1,3,EDİZ TAYLAN,WWW,567,,KB 125,07.06.2014,3,CHEM,"                          "
+CHEM242.01,Desc.,ANALYTICAL CHEMISTRY,3,4,FATMA AHU AKIN,TTThTh,3434,,KB 126 | KB 126 | KB 126 | KB 126,05.06.2014,1,CHEM,"                          "
+CHEM244.01,Desc.,ANALYTICAL CHEMISTRY LABORATORY,2,4,ÖZGE AKDENİZ,T,7,,YD 101,06.06.2014,2,CHEM,"                          "
+,,LAB,,,ÖZGE AKDENİZ,MMMMM,56789,,,,0,,"                          "
+CHEM244.02,Desc.,ANALYTICAL CHEMISTRY LABORATORY,2,4,ÖZGE AKDENİZ,T,8,,YD 101,06.06.2014,2,,"                          "
+,,LAB,,,ÖZGE AKDENİZ,FFFFF,56789,,,,0,,"                          "
+CHEM250.01,Desc.,PRINCIPLES OF ANALYTICAL CHEMISTRY,4,6,ÖZGE AKDENİZ,TTF,122,,NH 103 | NH 103 | NH 201,06.06.2014,3,CEDU,"                          "
+,,LAB,,,ÖZGE AKDENİZ,WWWWW,56789,,,,0,,"                          "
+CHEM308.01,Desc.,INSTRUMENTAL ANALYSIS II,4,6,BELKIS HALFON,WWF,234,,YD 116 | YD 116 | NH 104,27.05.2014,1,,"                          "
+,,LAB,,,BELKIS HALFON,MMM,678,,,,0,,"                          "
+,,LAB,,,BELKIS HALFON,TTT,567,,,,0,,"                          "
+,,LAB,,,BELKIS HALFON,WWW,567,,,,0,,"                          "
+CHEM318.01,Desc.,SURVEY OF TEXTILE CHEMISTRY,3,6,ŞÜKRİYE İNCİ GÖL,TBA,,,,28.05.2014,1,,"                          "
+CHEM352.01,Desc.,PHYSICAL CHEMISTRY II,4,6,ZEYNEP ATAY GÖK,MMTT,1234,,KB 125 | KB 125 | NH 402 | NH 402,06.06.2014,1,,"                          "
+,,P.S.,,,ZEYNEP ATAY GÖK,M,5,,KB 125,,0,,"                          "
+CHEM356.01,Desc.,PHYSICAL CHEMISTRY LABORATORY,2,3,ŞARON ÇATAK,TTTT,6789,,,28.05.2014,3,,"                          "
+CHEM356.02,Desc.,PHYSICAL CHEMISTRY LABORATORY,2,3,ŞARON ÇATAK,ThThThTh,6789,,,28.05.2014,3,,"                          "
+CHEM363.01,Desc.,ORGANIC CHEMISTRY III,3,6,AMITAV SANYAL,MMFF,3423,,NH 405 | NH 405 | NH 202 | NH 202,07.06.2014,1,,"                          "
+CHEM442.01,Desc.,QUALITATIVE ORGANIC ANALYSIS,4,6,DUYGU AVCI SEMİZ,TTh,11,,YD 104 | YD 104,31.05.2014,2,,"                          "
+,,LAB,,,DUYGU AVCI SEMİZ,TTTThTh,67823,,,,0,,"                          "
+,,LAB,,,DUYGU AVCI SEMİZ,TTThThTh,23567,,,,0,,"                          "
+CHEM471.01,Desc.,ENVIRONMENTAL CHEMISTRY,3,6,MEHMET FIRAT İLKER,TBA,,,,29.05.2014,2,,"        BIO; CHEM; CHE; CEDU; TCHE                  "
+CHEM481.01,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY I,3,12,AMITAV SANYAL,TBA,,,,,0,,"                          "
+CHEM481.02,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY I,3,12,ŞARON ÇATAK,TBA,,,,,0,,"                          "
+CHEM481.03,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY I,3,12,MEHMET FIRAT İLKER,TBA,,,,,0,,"                          "
+CHEM481.04,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY I,3,12,FATMA AHU AKIN,TBA,,,,,0,,"                          "
+CHEM482.01,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,ALİ ERSİN ACAR,TBA,,,,,0,,"                          "
+CHEM482.03,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,ZEYNEP ATAY GÖK,TBA,,,,,0,,"                          "
+CHEM482.04,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,DUYGU AVCI SEMİZ,TBA,,,,,0,,"                          "
+CHEM482.05,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,VIKTORYA AVIYENTE,TBA,,,,,0,,"                          "
+CHEM482.09,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,İLKNUR DOĞAN,TBA,,,,,0,,"                          "
+CHEM482.11,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,BAŞAK KAYITMAZER,TBA,,,,,0,,"                          "
+CHEM482.12,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,SELİM KÜSEFOĞLU,TBA,,,,,0,,"                          "
+CHEM482.13,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,NİHAN NUGAY,TBA,,,,,0,,"                          "
+CHEM482.14,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,TURGUT NUGAY,TBA,,,,,0,,"                          "
+CHEM482.15,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,AYŞE NEREN ÖKTE,TBA,,,,,0,,"                          "
+CHEM482.16,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,HADİ ÖZBAL,TBA,,,,,0,,"                          "
+CHEM482.18,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,AMITAV SANYAL,TBA,,,,,0,,"                          "
+CHEM484.02,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,AMITAV SANYAL,TBA,,,,03.06.2014,2,,"                          "
+CHEM484.03,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,OKTAY DEMİRCAN,TBA,,,,03.06.2014,2,,"                          "
+CHEM484.05,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,BAŞAK KAYITMAZER,TBA,,,,03.06.2014,2,,"                          "
+CHEM484.07,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,ALİ ERSİN ACAR,TBA,,,,03.06.2014,2,,"                          "
+CHEM486.01,Desc.,APPLIED CHEMISTRY,3,6,SELİM KÜSEFOĞLU,WWW,156,,NH 302,02.06.2014,1,,"                          "
+CHEM487.01,Desc.,SP.TOP.:LABORATORY PRACTICE IN POLYMER S,3,6,DUYGU AVCI SEMİZ,TBA,,,,26.05.2014,1,,"                          "
+CHEM488.01,Desc.,SP.TP.CHEMISTRY OF EVERYDAY LIFE,3,6,ALİ ERSİN ACAR,TBA,,,,05.06.2014,1,,"                          "
+CHEM496.01,Desc.,SP.TP.IN PHYSICAL ORGANIC CHEMISTRY,3,3,ŞARON ÇATAK,TBA,,,,26.05.2014,1,,"                          "
+CHEM498.01,Desc.,SP.TOP..QUALTY ASSURANCE,3,6,SAMİM SANER,TBA,,,,26.05.2014,3,,"                          "
+CHEM512.01,Desc.,ADVANCED PHYSICAL CHEMISTRY,3,8,VIKTORYA AVIYENTE,TTThTh,1212,,KB 126 | KB 126 | KB 126 | KB 126,06.06.2014,2,,"                          "
+CHEM531.01,Desc.,MECHANICAL PROPERTIES OF POLYMERS,3,8,NİHAN NUGAY,TBA,,,,28.05.2014,3,,"                          "
+CHEM533.01,Desc.,SYNTHETIC ORGANIC CHEMISTRY,3,8,ALİ ERSİN ACAR,TTTh,566,,,07.06.2014,1,,"                          "
+CHEM536.01,Desc.,STRUCTURAL POLYMER CHEMISTRY,3,8,TURGUT NUGAY,TBA,,,,02.06.2014,1,,"                          "
+CHEM539.01,Desc.,POLYMER COMPOSITES,3,8,SELİM KÜSEFOĞLU,TBA,,,,31.05.2014,1,,"                          "
+CHEM547.01,Desc.,CHEMISTRY OF HETEROCYCLIC COMPOUNDS,3,8,İLKNUR DOĞAN,TBA,,,,27.05.2014,2,,"                          "
+CHEM579.01,Desc.,GRADUATE SEMINAR,0,1,MEHMET FIRAT İLKER,TBA,,,,,0,,"                          "
+CHEM583.01,Desc.,SP.TP.:BIOANALYTICAL CHEMISTRY,3,8,BAŞAK KAYITMAZER,,, ,,26.05.2014,1,,"                          "
+CHEM585.01,Desc.,SP.TOP: CHEMICAL KINETICS&CATALYSIS,3,8,AYŞE NEREN ÖKTE,MMT,235,,,05.06.2014,2,,"                          "
+CHEM588.01,Desc.,SP.TOP.:DENDRIMERS SYNTHESIS&APPLICATION,3,8,AMITAV SANYAL,TBA,,,,26.05.2014,3,,"                          "
+CHEM591.01,Desc.,M.S. SEMINAR,1,2,NEYLAN DİRİLGEN,TBA,,,,,0,,"                          "
+CHEM596.01,Desc.,SP.TP.ALTERNATIVE FUTURE ENERGY SOURCES,3,8,OKTAY DEMİRCAN,TBA,,,,30.05.2014,3,,"                          "
+CHEM601.01,Desc.,PhD. SEMINAR,1,2,NEYLAN DİRİLGEN,TBA,,,,,0,,"                          "
+CHEM690.01,Desc.,M.S. THESIS,0,60,ALİ ERSİN ACAR,TBA,,,,,0,,"                          "
+CHEM690.02,Desc.,M.S. THESIS,0,60,FATMA AHU AKIN,TBA,,,,,0,,"                          "
+CHEM690.03,Desc.,M.S. THESIS,0,60,ZEYNEP ATAY GÖK,TBA,,,,,0,,"                          "
+CHEM690.04,Desc.,M.S. THESIS,0,60,DUYGU AVCI SEMİZ,TBA,,,,,0,,"                          "
+CHEM690.05,Desc.,M.S. THESIS,0,60,VIKTORYA AVIYENTE,TBA,,,,,0,,"                          "
+CHEM690.06,Desc.,M.S. THESIS,0,60,DİLEK ÇALGAN,TBA,,,,,0,,"                          "
+CHEM690.07,Desc.,M.S. THESIS,0,60,OKTAY DEMİRCAN,TBA,,,,,0,,"                          "
+CHEM690.08,Desc.,M.S. THESIS,0,60,NEYLAN DİRİLGEN,TBA,,,,,0,,"                          "
+CHEM690.09,Desc.,M.S. THESIS,0,60,İLKNUR DOĞAN,TBA,,,,,0,,"                          "
+CHEM690.11,Desc.,M.S. THESIS,0,60,BAŞAK KAYITMAZER,TBA,,,,,0,,"                          "
+CHEM690.12,Desc.,M.S. THESIS,0,60,SELİM KÜSEFOĞLU,TBA,,,,,0,,"                          "
+CHEM690.13,Desc.,M.S. THESIS,0,60,NİHAN NUGAY,TBA,,,,,0,,"                          "
+CHEM690.14,Desc.,M.S. THESIS,0,60,TURGUT NUGAY,TBA,,,,,0,,"                          "
+CHEM690.15,Desc.,M.S. THESIS,0,60,AYŞE NEREN ÖKTE,TBA,,,,,0,,"                          "
+CHEM690.16,Desc.,M.S. THESIS,0,60,HADİ ÖZBAL,TBA,,,,,0,,"                          "
+CHEM690.17,Desc.,M.S. THESIS,0,60,AMITAV SANYAL,TBA,,,,,0,,"                          "
+CHEM690.18,Desc.,M.S. THESIS,0,60,RANA NOMAK SANYAL,TBA,,,,,0,,"                          "
+CHEM690.19,Desc.,M.S. THESIS,0,60,TEREZA VARNALI,TBA,,,,,0,,"                          "
+CHEM690.20,Desc.,M.S. THESIS,0,60,MEHMET FIRAT İLKER,TBA,,,,,0,,"                          "
+CHEM690.21,Desc.,M.S. THESIS,0,60,ŞARON ÇATAK,TBA,,,,,0,,"                          "
+CHEM690.22,Desc.,M.S. THESIS,0,60,BÜLENT AKGÜN,TBA,,,,,0,,"                          "
+CHEM699.01,Desc.,GUIDED RESEARCH,4,8,STAFF STAFF,TBA,,,,,0,,"                          "
+CHEM790.01,Desc.,Ph.D.THESIS,0,120,ALİ ERSİN ACAR,TBA,,,,,0,,"                          "
+CHEM790.02,Desc.,Ph.D.THESIS,0,120,FATMA AHU AKIN,TBA,,,,,0,,"                          "
+CHEM790.03,Desc.,Ph.D.THESIS,0,120,ZEYNEP ATAY GÖK,TBA,,,,,0,,"                          "
+CHEM790.04,Desc.,Ph.D.THESIS,0,120,DUYGU AVCI SEMİZ,TBA,,,,,0,,"                          "
+CHEM790.05,Desc.,Ph.D.THESIS,0,120,VIKTORYA AVIYENTE,TBA,,,,,0,,"                          "
+CHEM790.06,Desc.,Ph.D.THESIS,0,120,DİLEK ÇALGAN,TBA,,,,,0,,"                          "
+CHEM790.07,Desc.,Ph.D.THESIS,0,120,OKTAY DEMİRCAN,TBA,,,,,0,,"                          "
+CHEM790.08,Desc.,Ph.D.THESIS,0,120,NEYLAN DİRİLGEN,TBA,,,,,0,,"                          "
+CHEM790.09,Desc.,Ph.D.THESIS,0,120,İLKNUR DOĞAN,TBA,,,,,0,,"                          "
+CHEM790.11,Desc.,Ph.D.THESIS,0,120,BAŞAK KAYITMAZER,TBA,,,,,0,,"                          "
+CHEM790.12,Desc.,Ph.D.THESIS,0,120,SELİM KÜSEFOĞLU,TBA,,,,,0,,"                          "
+CHEM790.13,Desc.,Ph.D.THESIS,0,120,NİHAN NUGAY,TBA,,,,,0,,"                          "
+CHEM790.14,Desc.,Ph.D.THESIS,0,120,TURGUT NUGAY,TBA,,,,,0,,"                          "
+CHEM790.15,Desc.,Ph.D.THESIS,0,120,AYŞE NEREN ÖKTE,TBA,,,,,0,,"                          "
+CHEM790.16,Desc.,Ph.D.THESIS,0,120,HADİ ÖZBAL,TBA,,,,,0,,"                          "
+CHEM790.17,Desc.,Ph.D.THESIS,0,120,AMITAV SANYAL,TBA,,,,,0,,"                          "
+CHEM790.18,Desc.,Ph.D.THESIS,0,120,RANA NOMAK SANYAL,TBA,,,,,0,,"                          "
+CHEM790.19,Desc.,Ph.D.THESIS,0,120,TEREZA VARNALI,TBA,,,,,0,,"                          "
+CHEM790.20,Desc.,Ph.D.THESIS,0,120,MEHMET FIRAT İLKER,TBA,,,,,0,,"                          "
+CHEM790.21,Desc.,Ph.D.THESIS,0,120,ŞARON ÇATAK,TBA,,,,,0,,"                          "
+CHEM790.22,Desc.,Ph.D.THESIS,0,120,BÜLENT AKGÜN,TBA,,,,,0,,"                          "
+SCI 102.01,Desc.,SCIENCE II,3,6,HADİ ÖZBAL,MWTh,777,,NH 101 | NH 101 | NH 101,03.06.2014,1,,"                          "
+STS 302.01,Desc.,ARCHEOMETRY II,3,4,HADİ ÖZBAL,TTTh,898,,KB 126 | KB 126 | KB 126,05.06.2014,1,,"                          "

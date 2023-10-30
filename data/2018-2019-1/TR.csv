@@ -1,0 +1,59 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+INT 301.01,Desc.,INTRODUCTION TO CONSECUTIVE INTERPRETING,3,5,KATE FERGUSON,MTT,667,,JF 334 | JF 101 | JF 101,25.12.2018,1,,"                          "
+INT 301.02,Desc.,INTRODUCTION TO CONSECUTIVE INTERPRETING,3,5,KATE FERGUSON,TWW,856,,JF 101 | JF 334 | JF 334,25.12.2018,1,,"                          "
+INT 301.03,Desc.,INTRODUCTION TO CONSECUTIVE INTERPRETING,3,5,KATE FERGUSON,MMW,787,,JF 334 | JF 334 | JF 334,25.12.2018,1,,"                          "
+INT 318.01,Desc.,INTRO.TO SIMULTANEOUS INTERPRETING,3,4,EBRU DİRİKER,ThThF,232,,JF 102 | JF 102 | TB 240,28.12.2018,2,,"                          "
+INT 320.01,Desc.,COMMUNITY INTERPRETING,3,4,JONATHAN MAURICE ROSS,TWW,978,,JF 333 | JF 333 | JF 333,02.01.2019,3,,"                          "
+INT 415.01,Desc.,SIMULTANEOUS INTERPRETING I,3,5,NİGAR ALEMDAR,FFF,234,,EF 104 | EF 104 | EF 104,03.01.2019,2,,"                          "
+INT 415.02,Desc.,SIMULTANEOUS INTERPRETING I,3,5,AHU LATİFOĞLU DOĞAN,MMM,456,,,03.01.2019,2,,"                          "
+INT 417.01,Desc.,CONSECUTIVE INTERPRETING,3,4,ZEYNEP KIRÇAL,FFF,567,,EF 104 | EF 104 | EF 104,04.01.2019,3,,"                          "
+INT 417.02,Desc.,CONSECUTIVE INTERPRETING,3,4,KATE FERGUSON,WThTh,467,,TB 415 | TB 490 | TB 490,04.01.2019,3,,"                          "
+INT 419.01,Desc.,INTERPRETING PROJECT DESIGN,1,3,NEDİME MERCANGÖZ,,,,,07.01.2019,1,,"                          "
+INT 419.02,Desc.,INTERPRETING PROJECT DESIGN,1,3,HANDE GÜNER,,,,,07.01.2019,1,,"                          "
+INT 481.01,Desc.,SP.TOP.FOR INTERPRETERS,3,5,SELİN ÜLKEROĞLU,,,,,28.12.2018,2,,"                          "
+TR  109.01,Desc.,INTRODUCTION TO TRANSLA.&TRANS.STUDIES I,3,6,AYŞENAZ CENGİZ,TTW,453,,EF 03 | EF 03 | EF 201,03.01.2019,3,,"                          "
+TR  109.02,Desc.,INTRODUCTION TO TRANSLA.&TRANS.STUDIES I,3,6,CEYDA ELGÜL,WWTh,673,,KP 08 | KP 08 | M 1152,03.01.2019,3,,"                          "
+TR  109.03,Desc.,INTRODUCTION TO TRANSLA.&TRANS.STUDIES I,3,6,İREM KONCA,ThThTh,345,,KP 09 | KP 09 | KP 09,03.01.2019,3,,"                          "
+TR  111.01,Desc.,RHETORIC&COMPOSITION FOR TRANSLATORS,4,7,JONATHAN MAURICE ROSS,WWThTh,5689,,JF 333 | JF 333 | JF 333 | JF 333,05.01.2019,2,,"                          "
+TR  111.02,Desc.,RHETORIC&COMPOSITION FOR TRANSLATORS,4,7,JONATHAN MAURICE ROSS,TTThTh,7845,,JF 333 | JF 333 | JF 102 | JF 102,05.01.2019,2,,"                          "
+TR  111.03,Desc.,RHETORIC&COMPOSITION FOR TRANSLATORS,4,7,OĞUZ BAYKARA,MMThTh,7867,,JF 331 | JF 331 | JF 102 | JF 102,05.01.2019,2,,"                          "
+TR  201.01,Desc.,ETYMOLOGY I,3,5,SADİ BÜLENT AKSOY,MMW,343,,NH 304 | NH 304 | İB 201,04.01.2019,2,,"                          "
+TR  203.01,Desc.,INFOR.TECHNOLOGIES(IT)FOR TRANSLATORS,3,4,ÇAĞDAŞ ACAR,FFF,234,,M 1152 | M 1152 | M 1152,29.12.2018,1,,"                          "
+TR  203.02,Desc.,INFOR.TECHNOLOGIES(IT)FOR TRANSLATORS,3,4,ÇAĞDAŞ ACAR,FFF,678,,JF 333 | JF 333 | JF 333,29.12.2018,1,,"                          "
+TR  203.03,Desc.,INFOR.TECHNOLOGIES(IT)FOR TRANSLATORS,3,4,HÜSEYİN MERGAN,FFF,789,,JF 101 | JF 101 | JF 101,29.12.2018,1,,"                          "
+TR  215.01,Desc.,TECHNICAL TRANSLATION,3,4,OĞUZ BAYKARA,MThTh,989,,JF 331 | JF 102 | JF 102,07.01.2019,1,,"                          "
+TR  215.02,Desc.,TECHNICAL TRANSLATION,3,4,İSMAİL KAPLAN,TThTh,678,,JF 332 | JF 101 | JF 101,07.01.2019,1,,"                          "
+TR  215.03,Desc.,TECHNICAL TRANSLATION,3,4,ŞULE DEMİRKOL ERTÜRK,FFF,567,,JF 332 | JF 332 | JF 332,07.01.2019,1,,"                          "
+TR  301.01,Desc.,THEORIES OF TRANSLATION,3,6,CEYDA ELGÜL,WWTh,345,,EF 07 | EF 07 | M 1152,04.01.2019,1,,"                          "
+TR  301.02,Desc.,THEORIES OF TRANSLATION,3,6,AYŞENAZ CENGİZ,TTW,674,,İB 201 | İB 201 | EF 201,04.01.2019,1,,"                          "
+TR  317.01,Desc.,TRANSLATING TEXTS ON ECONOMICS&BUSINESS,3,5,NURHAYAT DALGIÇ,MMM,789,,JF 333 | JF 333 | JF 333,29.12.2018,1,,"                          "
+TR  401.01,Desc.,CONTEMPORARY ISSUES IN TRANS.&TRANS.STUD,1,4,ŞULE DEMİRKOL ERTÜRK,WW,67,,JF 102 | JF 102,26.12.2018,1,,"                          "
+TR  403.01,Desc.,POLITICAL DISCOURSE OF INTER. ORGANIZATI,3,5,İSMAİL KAPLAN,TThTh,756,,JF 332 | JF 101 | JF 101,27.12.2018,3,,"                          "
+TR  403.02,Desc.,POLITICAL DISCOURSE OF INTER. ORGANIZATI,3,5,EBRU DİRİKER,MMM,123,,M 1152 | M 1152 | M 1152,27.12.2018,3,,"                          "
+TR  407.01,Desc.,TRANSLATION OF PROSE FICTION,3,5,SADİ BÜLENT AKSOY,MWW,545,,EF 202 | JF 102 | JF 102,02.01.2019,1,,"                          "
+TR  410.01,Desc.,POETRY TRANSLATION,3,5,OĞUZ BAYKARA,MTT,645,,JF 331 | JF 332 | JF 332,03.01.2019,3,,"                          "
+TR  420.01,Desc.,TRANSLATION PROJECT,4,5,AHU SILA BAYER,,,,,28.12.2018,2,,"                          "
+TR  427.01,Desc.,TRANSLATION PROJECT DESIGN,1,3,JONATHAN MAURICE ROSS,,,,,,,,"                          "
+TR  427.02,Desc.,TRANSLATION PROJECT DESIGN,1,3,CEYDA ELGÜL,,,,,,,,"                          "
+TR  427.03,Desc.,TRANSLATION PROJECT DESIGN,1,3,AHU SILA BAYER,,,,,,,,"                          "
+TR  427.04,Desc.,TRANSLATION PROJECT DESIGN,1,3,AYŞENAZ CENGİZ,,,,,,,,"                          "
+TR  427.05,Desc.,TRANSLATION PROJECT DESIGN,1,3,İSMAİL KAPLAN,,,,,,,,"                          "
+TR  427.07,Desc.,TRANSLATION PROJECT DESIGN,1,3,ARZU AKBATUR,,,,,,,,"                          "
+TR  427.08,Desc.,TRANSLATION PROJECT DESIGN,1,3,ŞEHNAZ TAHİR GÜRÇAĞLAR,,,,,,,,"                          "
+TR  427.09,Desc.,TRANSLATION PROJECT DESIGN,1,3,HÜSEYİN MERGAN,,,,,,,,"                          "
+TR  427.10,Desc.,TRANSLATION PROJECT DESIGN,1,3,OĞUZ BAYKARA,,,,,,,,"                          "
+TR  427.11,Desc.,TRANSLATION PROJECT DESIGN,1,3,NEDİME MERCANGÖZ,,,,,,,,"                          "
+TR  428.01,Desc.,TRANSLATION PROJECT,3,6,AYŞENAZ CENGİZ,,,,,,,,"                          "
+TR  428.02,Desc.,TRANSLATION PROJECT,3,6,KATE FERGUSON,,,,,,,,"                          "
+TR  428.03,Desc.,TRANSLATION PROJECT,3,6,JONATHAN MAURICE ROSS,,,,,,,,"                          "
+TR  428.04,Desc.,TRANSLATION PROJECT,3,6,ŞEHNAZ TAHİR GÜRÇAĞLAR,,,,,,,,"                          "
+TR  483.01,Desc.,SP.TOP.IN TRANSLATION,3,5,DEFNE ORHUN SOYDAN,WWW,567,,,02.01.2019,1,,"                          "
+TR  48R.01,Desc.,SP.TP.AUDIOVISUAL TRANSLATION,3,5,ASLI TAKANAY,MMM,789,,TB 490 | TB 490 | TB 490,22.12.2018,3,,"                          "
+TR  48U.01,Desc.,SP.TP.IN TRANS.OF TEXTS ON ART&ART HIST.,3,5,AYŞE ÇALIK ROSS,ThThTh,678,,JF 331 | JF 331 | JF 331,05.01.2019,2,,"                          "
+TR  49B.01,Desc.,SP.TP.BORGES TRANSLATION LITERATURE,3,4,CEYDA ELGÜL,WThTh,878,,M 1200 | JF 334 | JF 334,05.01.2019,2,,"                          "
+TR  612.01,Desc.,LITERARY TRANSLATION:INTEGRATING THEORY ,3,7,ÖZLEM BERK ALBACHTEN,MMM,123,,,,,,"                          "
+TR  630.01,Desc.,RESEARCH METHODS IN TRANSLATION STUDIES,3,9,EBRU DİRİKER,MMM,678,,,,,,"                          "
+TR  700.01,Desc.,GRADUATE SEMINAR,0,2,ŞULE DEMİRKOL ERTÜRK,,,,,,,,"                          "
+TR  790.01,Desc.,DOCTORAL DISSERTATION,0,120,JONATHAN MAURICE ROSS,,,,,,,,"                          "
+TR  790.02,Desc.,DOCTORAL DISSERTATION,0,120,ÖZLEM BERK ALBACHTEN,,,,,,,,"                          "
+TR  790.03,Desc.,DOCTORAL DISSERTATION,0,120,İSMAİL KAPLAN,,,,,,,,"                          "

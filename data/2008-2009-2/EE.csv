@@ -1,0 +1,70 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EE  142.01,Desc.,DIGITAL SYSTEMS,2,3,ŞENOL MUTLU,WW,56,,NH 001 | NH 001,09.06.2009,1,,"                          "
+EE  201.01,Desc.,ELECTRICAL CIRCUITS I,4,5,AYŞIN ERTÜZÜN,MMWW,5634,,KBPCLAB | KBPCLAB | KB 230 | KB 230,08.06.2009,1,,"                          "
+EE  204.01,Desc.,ELECTROMECHANICAL ENERGY CONVERSION,3,6,YANI SKARLATOS,TTTh,788,,KBZ 01 | KBZ 01 | KBZ 01,06.06.2009,2,,"                          "
+EE  208.01,Desc.,BASIC CIRCUIT DESIGN&MEASUREMENT,4,4,ÖMER CERİD,MM,34,,KBPCLAB | KBPCLAB,01.06.2009,3,,"                          "
+,,LAB,,,ÖMER CERİD,MMFF,7823,,,,0,,"                          "
+,,LAB,,,ÖMER CERİD,ThThFF,6778,,,,0,,"                          "
+EE  210.02,Desc.,INTRODUCTION TO ELECTRICAL ENGINEERING,3,6,LEVENT ARSLAN,MMW,566,,NH 102 | NH 102 | KB 125,05.06.2009,2,"PEDU,PHYS","                          "
+EE  212.01,Desc.,INTRODUCTION TO ELECTRONIC ENGINEERING,3,4,OĞUZHAN ÇİÇEKOĞLU,WWW,567,,KBPCLAB | KBPCLAB | KBPCLAB,05.06.2009,3,CMPE,"                          "
+EE  334.01,Desc.,ELECTRONICS II,4,6,GÜNHAN DÜNDAR,WWFF,2334,,KBPCLAB | KBPCLAB | KBPCLAB | KBPCLAB,28.05.2009,1,,"                          "
+EE  338.01,Desc.,ELECTRONICS LABORATORY I,2,3,ARDA YALÇINKAYA,M,3,,KB 125,26.05.2009,1,,"                          "
+,,LAB,,,ARDA YALÇINKAYA,TTT,678,,,,0,,"                          "
+,,LAB,,,ARDA YALÇINKAYA,WWW,678,,,,0,,"                          "
+,,LAB,,,ARDA YALÇINKAYA,ThThTh,678,,,,0,,"                          "
+EE  342.01,Desc.,NUMERICAL METHODS FOR EE,3,5,MURAT SARAÇLAR,MMW,565,,NH 304 | NH 304 | NH 102,25.05.2009,3,,"                          "
+EE  352.01,Desc.,SYSTEM DYNAMICS & CONTROL,3,5,YAĞMUR DENİZHAN,TTF,346,,KBPCLAB | KBPCLAB | KBPCLAB,08.06.2009,3,,"                          "
+EE  374.01,Desc.,COMMUNICATION ENGINEERING,4,5,BÜLENT SANKUR,TTThTh,1212,,KBPCLAB | KBPCLAB | KBPCLAB | KBPCLAB,02.06.2009,2,,"                          "
+EE  432.01,Desc.,DIGITAL ELECTRONICS,3,6,YASEMİN KAHYA,TTTh,232,, | N/A | TELRA,27.05.2009,2,,"                          "
+EE  438.01,Desc.,DESIGN WITH INTEGRATED CIRCUITS,3,6,YASEMİN KAHYA,TThTh,545,, | TELRA | TELRA,08.06.2009,2,,"                          "
+EE  460.01,Desc.,INTRODUCTION TO REMOTE SENSING,3,6,SELİM ŞEKER,MWW,434,,KB 230,06.06.2009,1,,"                          "
+EE  470.01,Desc.,MOBILE COMMUNICATION,3,6,MUTLU KOCA,TTTh,234,,KB 230 | KB 230 | KB 230,30.05.2009,2,,"                          "
+EE  484.01,Desc.,SP.TOP.:MANAGEMENT FOR ENGINEERS,3,4,BARHAN ÖZCE,MMThTh,7889,,TELRA | TELRA | TELRA | TELRA,03.06.2009,3,,"                          "
+EE  485.01,Desc.,SP.TOP: INTRODUCTION TO FUZZY CONTROL,3,4,M. OKYAY KAYNAK,WThTh,867,, | TELRA | TELRA,29.05.2009,1,,"                          "
+EE  492.01,Desc.,PROJECT,4,6,ŞENOL MUTLU,TBA,,,,05.06.2009,2,,"                          "
+EE  540.01,Desc.,SEL.TOP.ADVANCED DIGITAL DESIGN,3,6,ŞENOL MUTLU,WThTh,867,,KB 230 | KB 230 | KB 230,29.05.2009,2,,"                          "
+EE  550.01,Desc.,ARTIFICIAL NEURAL NETWORKS,3,7,KEMAL CILIZ,MMW,561,,TELRA | TELRA | TELRA,09.06.2009,1,,"                          "
+EE  552.01,Desc.,DIGITAL CONTROL,3,7,MEHMET AKAR,MWW,434,, | TELRA | TELRA,01.06.2009,1,,"                          "
+EE  562.01,Desc.,MICROWAVES,3,6,AVNİ MORGÜL,MMM,347,,TELRA | TELRA | KB 230,01.06.2009,2,,"                          "
+EE  572.01,Desc.,MATHEMATICAL METHODS FOR SIGNAL PROCESSI,3,7,BÜLENT SANKUR,ThThF,566,,KBPCLAB | KBPCLAB | KB 230,28.05.2009,2,,"                          "
+EE  574.01,Desc.,IMAGE ANALYSIS,3,7,BURAK ACAR,TWW,467,,TELRA | KB 230 | KB 230,03.06.2009,1,,"                          "
+EE  576.01,Desc.,MACHINE VISION,3,6,IŞIL BOZMA,MWW,356,, | TELRA | TELRA,06.06.2009,1,,"                          "
+EE  578.01,Desc.,SPEECH PROCESSING,3,7,MURAT SARAÇLAR,TTTh,233,,TELRA | TELRA | TELRA,29.05.2009,2,,"                          "
+EE  584.01,Desc.,SP.TOP.:PHYCHOACOUSTICS,3,7,LEVENT ARSLAN,MThTh,278,,KBPCLAB,09.06.2009,3,,"                          "
+EE  588.01,Desc.,SP.TOP.:(NETWORK SECURITY),3,7,EMİN ANARIM,MMT,568,,KB 230 | KB 230 | KB 230,27.05.2009,2,,"                          "
+EE  58A.01,Desc.,SP.TOP.(OPTIMAL FILTERING FOR SIGNAL PRO,3,6,AYŞIN ERTÜZÜN,TTW,562,,KBPCLAB | KBPCLAB | KB 230,02.06.2009,3,,"                          "
+EE  58F.01,Desc.,SP.TOP.:DECENTRALIZED CONTROL&DECISION M,3,6,MEHMET AKAR,MMW,122,,TELRA | TELRA | TELRA,05.06.2009,1,,"                          "
+EE  590.01,Desc.,SP.ST.(BIOLOGICAL EFFECTS OF EM FIELDS),3,7,SELİM ŞEKER,MMW,235,,KB 230 | KB 230,30.05.2009,1,,"                          "
+EE  591.01,Desc.,SP.ST.(NONLINEAR CONTROL),3,6,YAĞMUR DENİZHAN,TTF,674,,KB 230 | KB 230 | TELRA,01.06.2009,1,,"                          "
+EE  632.01,Desc.,SYSTEM DESIGN WITH MICROELEC. DEVICES,3,6,ÖMER CERİD,MMF,564,, | N/A | KB 230,01.06.2009,1,,"                          "
+EE  638.01,Desc.,ADVANCED VLSI DESIGN,3,6,GÜNHAN DÜNDAR,MMF,236,, | N/A | TELRA,30.05.2009,2,,"                          "
+EE  653.01,Desc.,OPTIMAL CONTROL THEORY,3,6,IŞIL BOZMA,MMW,561,, | N/A | KB 230,04.06.2009,3,,"                          "
+EE  689.01,Desc.,SP.TOP.:APPLIED ADAPTIVE CONTROL,3,6,M. OKYAY KAYNAK,WWTh,675,,,28.05.2009,2,,"                          "
+EE  690.02,Desc.,M.S.THESIS,0,60,MEHMET AKAR,TBA,,,,,0,,"                          "
+EE  690.03,Desc.,M.S.THESIS,0,60,EMİN ANARIM,TBA,,,,,0,,"                          "
+EE  690.04,Desc.,M.S.THESIS,0,60,LEVENT ARSLAN,TBA,,,,,0,,"                          "
+EE  690.09,Desc.,M.S.THESIS,0,60,YAĞMUR DENİZHAN,TBA,,,,,0,,"                          "
+EE  690.10,Desc.,M.S.THESIS,0,60,GÜNHAN DÜNDAR,TBA,,,,,0,,"                          "
+EE  690.11,Desc.,M.S.THESIS,0,60,AYŞIN ERTÜZÜN,TBA,,,,,0,,"                          "
+EE  690.13,Desc.,M.S.THESIS,0,60,YASEMİN KAHYA,TBA,,,,,0,,"                          "
+EE  690.15,Desc.,M.S.THESIS,0,60,MUTLU KOCA,TBA,,,,,0,,"                          "
+EE  690.18,Desc.,M.S.THESIS,0,60,ŞENOL MUTLU,TBA,,,,,0,,"                          "
+EE  690.21,Desc.,M.S.THESIS,0,60,MURAT SARAÇLAR,TBA,,,,,0,,"                          "
+EE  690.25,Desc.,M.S.THESIS,0,60,IŞIL BOZMA,TBA,,,,,0,,"                          "
+EE  698.01,Desc.,SP.ST.(ADVANCED TECHNIQUES IN COMMUN),3,6,MUTLU KOCA,TThTh,423,,KB 230 | KB 230 | KB 230,08.06.2009,1,,"                          "
+EE  699.01,Desc.,GUIDED RESEARCH,4,8,GÜNHAN DÜNDAR,TBA,,,,,0,,"                          "
+EE  790.01,Desc.,Ph.D.THESIS,0,120,BURAK ACAR,TBA,,,,,0,,"                          "
+EE  790.03,Desc.,Ph.D.THESIS,0,120,EMİN ANARIM,TBA,,,,,0,,"                          "
+EE  790.04,Desc.,Ph.D.THESIS,0,120,LEVENT ARSLAN,TBA,,,,,0,,"                          "
+EE  790.05,Desc.,Ph.D.THESIS,0,120,ÖMER CERİD,TBA,,,,,0,,"                          "
+EE  790.07,Desc.,Ph.D.THESIS,0,120,OĞUZHAN ÇİÇEKOĞLU,TBA,,,,,0,,"                          "
+EE  790.08,Desc.,Ph.D.THESIS,0,120,HAKAN DELİÇ,TBA,,,,,0,,"                          "
+EE  790.09,Desc.,Ph.D.THESIS,0,120,GÜNHAN DÜNDAR,TBA,,,,,0,,"                          "
+EE  790.13,Desc.,Ph.D.THESIS,0,120,YASEMİN KAHYA,TBA,,,,,0,,"                          "
+EE  790.14,Desc.,Ph.D.THESIS,0,120,M. OKYAY KAYNAK,TBA,,,,,0,,"                          "
+EE  790.17,Desc.,Ph.D.THESIS,0,120,AVNİ MORGÜL,TBA,,,,,0,,"                          "
+EE  790.20,Desc.,Ph.D.THESIS,0,120,BÜLENT SANKUR,TBA,,,,,0,,"                          "
+EE  790.21,Desc.,Ph.D.THESIS,0,120,MURAT SARAÇLAR,TBA,,,,,0,,"                          "
+EE  790.22,Desc.,Ph.D.THESIS,0,120,ARDA YALÇINKAYA,TBA,,,,,0,,"                          "
+EE  790.24,Desc.,Ph.D.THESIS,0,120,SELİM ŞEKER,TBA,,,,,0,,"                          "
+EE  790.25,Desc.,Ph.D.THESIS,0,120,IŞIL BOZMA,TBA,,,,,0,,"                          "

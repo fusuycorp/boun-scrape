@@ -1,0 +1,78 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+INT 202.01,Desc.,INTRODUCTION TO INTERPRETING,3,5,ESER BAŞARAN,WWW,345,,YD 03 | YD 03 | YD 03,30.05.2015,3,,"                          "
+INT 202.02,Desc.,INTRODUCTION TO INTERPRETING,3,5,EBRU DİRİKER,MMM,789,,YD 04 | YD 04 | YD 04,30.05.2015,3,,"                          "
+INT 318.01,Desc.,INTRO.TO SIMULTANEOUS INTERPRETING,3,4,EBRU DİRİKER,TBA,,,,26.05.2015,1,,"                          "
+INT 320.01,Desc.,COMMUNITY INTERPRETING,3,4,JONATHAN MAURICE ROSS,MMT,782,,NH 404 | NH 404 | YD 202,23.05.2015,2,,"                          "
+INT 412.01,Desc.,SIMULTANEOUS INTERPRETING PRACTICE IN CO,3,5,RANA BERİ ,TBA,,,,21.05.2015,2,,"                          "
+INT 412.02,Desc.,SIMULTANEOUS INTERPRETING PRACTICE IN CO,3,5,ZEYNEP KIRÇAL,TBA,,,,21.05.2015,2,,"                          "
+INT 416.01,Desc.,SIMULTANEOUS INTERPRETING II,3,5,NİGAR ALEMDAR,TBA,,,,16.05.2015,2,,"                          "
+INT 416.02,Desc.,SIMULTANEOUS INTERPRETING II,3,5,EBRU DİRİKER,TBA,,,,16.05.2015,2,,"                          "
+INT 418.01,Desc.,THEORETICAL APPROACHES TO INTERPRETING P,3,5,EBRU DİRİKER,TBA,,,,29.05.2015,1,,"                          "
+INT 418.02,Desc.,THEORETICAL APPROACHES TO INTERPRETING P,3,5,HANDE GÜNER,TBA,,,,29.05.2015,1,,"                          "
+INT 420.01,Desc.,PROJECT IN INTERPRETING,3,5,SELİN ÜLKEROĞLU,TBA,,,,28.05.2015,2,,"                          "
+INT 420.02,Desc.,PROJECT IN INTERPRETING,3,5,JONATHAN MAURICE ROSS,TBA,,,,28.05.2015,2,,"                          "
+INT 420.03,Desc.,PROJECT IN INTERPRETING,3,5,EMİNE DELİORMAN ORTAÇ,TBA,,,,28.05.2015,2,,"                          "
+INT 480.01,Desc.,SP.TOP.FOR INTERPRETERS,3,5,EBRU DİRİKER,TBA,,,,27.05.2015,1,,"                          "
+TR  106.01,Desc.,RESEARCH PAPER WRITING IN TRANS.STUDIES,3,5,JONATHAN MAURICE ROSS,TTW,344,,YD 202 | YD 202 | YD 05,,0,,"                          "
+TR  106.02,Desc.,RESEARCH PAPER WRITING IN TRANS.STUDIES,3,5,JONATHAN MAURICE ROSS,TWW,556,,YD 202 | YD 05 | YD 05,,0,,"                          "
+TR  106.03,Desc.,RESEARCH PAPER WRITING IN TRANS.STUDIES,3,5,MARTİN CYR HICKS,WWTh,564,,YD 06 | YD 06 | YD 101,29.05.2015,1,,"                          "
+TR  108.01,Desc.,TURKISH FOR TRANSLATORS,3,4,SADİ BÜLENT AKSOY,MTT,467,,M 1200 | NH 102 | NH 102,,0,,"                          "
+TR  108.02,Desc.,TURKISH FOR TRANSLATORS,3,4,BÜLENT USTA,FFF,345,,YD 202 | YD 202 | YD 202,,0,,"                          "
+TR  108.03,Desc.,TURKISH FOR TRANSLATORS,3,4,BÜLENT USTA,FFF,789,,M 1152 | M 1152 | M 1152,,0,,"                          "
+TR  110.01,Desc.,INTRODUCTION TO TRANS.&TRANS.STUDIES II,3,6,ARZU AKBATUR,MMW,677,,KPARK4 | KPARK4 | YD 04,26.05.2015,2,,"                          "
+TR  110.02,Desc.,INTRODUCTION TO TRANS.&TRANS.STUDIES II,3,6,AYŞENAZ CENGİZ,WThTh,767,,KPARK4 | ETA 2 | ETA 2,26.05.2015,2,,"                          "
+TR  110.03,Desc.,INTRODUCTION TO TRANS.&TRANS.STUDIES II,3,6,ARZU AKBATUR,TTW,344,,YD 205 | YD 205 | YD 04,26.05.2015,2,,"                          "
+TR  202.01,Desc.,ETYMOLOGY II,3,4,SADİ BÜLENT AKSOY,MTW,333,,M 1200 | NH 404 | YD 116,27.05.2015,3,,"                          "
+TR  206.01,Desc.,LANGUAGE OF JOURNALISM,3,4,MARTİN CYR HICKS,MThTh,667,,ETA 3 | YD 101 | YD 101,26.05.2015,2,,"                          "
+TR  216.01,Desc.,NOTE-TAKING FROM SPEECH,3,4,MARTİN CYR HICKS,TTW,564,,ETA 3 | ETA 3 | YD 06,30.05.2015,1,,"                          "
+TR  314.01,Desc.,LITERARY TRANSLATION,3,5,ARZU AKBATUR,MTT,256,,NH 303 | YD 205 | YD 205,25.05.2015,1,,"                          "
+TR  314.02,Desc.,LITERARY TRANSLATION,3,5,OĞUZ BAYKARA,TTW,564,,M 1200 | M 1200 | NH 303,25.05.2015,1,,"                          "
+TR  316.01,Desc.,TRANSLATION CRITICISM,3,5,ARZU AKBATUR,MWW,356,,NH 303 | YD 04 | YD 04,28.05.2015,2,,"                          "
+TR  316.02,Desc.,TRANSLATION CRITICISM,3,5,AYŞENAZ CENGİZ,MWW,356,,ETA 1 | KPARK4 | KPARK4,28.05.2015,2,,"                          "
+TR  316.03,Desc.,TRANSLATION CRITICISM,3,5,AYŞENAZ CENGİZ,WThTh,845,,KPARK4 | ETA 2 | ETA 2,28.05.2015,2,,"                          "
+TR  318.01,Desc.,SEMINAR,1,3,JONATHAN MAURICE ROSS,W,3,,YD 05,,0,,"                          "
+TR  403.01,Desc.,POLITICAL DISCOURSE OF INTER. ORGANIZATI,3,5,İSMAİL KAPLAN,TThTh,678,,KPARK7 | NH 001 | NH 001,23.05.2015,1,,"                          "
+TR  404.01,Desc.,TRANS.TEXTS ON POLITICAL SCI.&INTER.LAW,3,5,İSMAİL KAPLAN,TTTh,786,,NH 404 | NH 404 | NH 102,27.05.2015,1,,"                          "
+TR  420.01,Desc.,TRANSLATION PROJECT,4,5,KYRIAKI KOUROUNI BRIEL,TBA,,,,,0,,"                          "
+TR  420.02,Desc.,TRANSLATION PROJECT,4,5,İSMAİL KAPLAN,TBA,,,,,0,,"                          "
+TR  420.04,Desc.,TRANSLATION PROJECT,4,5,OĞUZ BAYKARA,TBA,,,,,0,,"                          "
+TR  420.06,Desc.,TRANSLATION PROJECT,4,5,MARTİN CYR HICKS,TBA,,,,,0,,"                          "
+TR  420.08,Desc.,TRANSLATION PROJECT,4,5,ARZU AKBATUR,TBA,,,,,0,,"                          "
+TR  420.09,Desc.,TRANSLATION PROJECT,4,5,AHU SILA BAYER,TBA,,,,,0,,"                          "
+TR  420.10,Desc.,TRANSLATION PROJECT,4,5,JONATHAN MAURICE ROSS,TBA,,,,,0,,"                          "
+TR  420.11,Desc.,TRANSLATION PROJECT,4,5,TUNÇ ÖZBEN,TBA,,,,,0,,"                          "
+TR  420.12,Desc.,TRANSLATION PROJECT,4,5,SUAT KARANTAY,TBA,,,,,0,,"                          "
+TR  428.01,Desc.,TRANSLATION PROJECT,3,6,BÜLENT USTA,TBA,,,,,0,,"                          "
+TR  428.02,Desc.,TRANSLATION PROJECT,3,6,ÖZLEM BERK ALBACHTEN,TBA,,,,,0,,"                          "
+TR  428.05,Desc.,TRANSLATION PROJECT,3,6,OĞUZ BAYKARA,TBA,,,,,0,,"                          "
+TR  428.06,Desc.,TRANSLATION PROJECT,3,6,MARTİN CYR HICKS,TBA,,,,,0,,"                          "
+TR  428.07,Desc.,TRANSLATION PROJECT,3,6,JONATHAN MAURICE ROSS,TBA,,,,,0,,"                          "
+TR  428.08,Desc.,TRANSLATION PROJECT,3,6,İSMAİL KAPLAN,TBA,,,,,0,,"                          "
+TR  428.09,Desc.,TRANSLATION PROJECT,3,6,AYŞENAZ CENGİZ,TBA,,,,,0,,"                          "
+TR  428.10,Desc.,TRANSLATION PROJECT,3,6,SADİ BÜLENT AKSOY,TBA,,,,,0,,"                          "
+TR  428.12,Desc.,TRANSLATION PROJECT,3,6,AHU SILA BAYER,TBA,,,,,0,,"                          "
+TR  428.13,Desc.,TRANSLATION PROJECT,3,6,TOLGA SEÇİLMİŞ,TBA,,,,,0,,"                          "
+TR  428.14,Desc.,TRANSLATION PROJECT,3,6,KYRIAKI KOUROUNI BRIEL,TBA,,,,,0,,"                          "
+TR  48A.01,Desc.,SP.TP.IN TRANS.:TRANSLATION TOOLS,3,4,KYRIAKI KOUROUNI BRIEL,TTW,783, ,NH 001 | NH 001 | YD 201,22.05.2015,1,,"                          "
+TR  48C.01,Desc.,SP.TOP.IN TRANSLATION OF ARCHEOLOGIC,3,5,AYŞE ÇALIK ROSS,ThThTh,123,,YD 201 | YD 201 | YD 201,21.05.2015,2,,"                          "
+TR  48E.01,Desc.,SP.TOP.IN TRANS:DRAMA TRANSLATION,3,5,AHU SILA BAYER,FFF,456,,YD 103 | YD 103 | YD 103,23.05.2015,2,,"                          "
+TR  48F.01,Desc.,SP.TOP.IN TRANS:TRANSLATION TECHNOLOGIES,3,5,KYRIAKI KOUROUNI BRIEL,TWW,645, ,NH 001 | YD 201 | YD 201,23.05.2015,1,,"                          "
+TR  48V.01,Desc.,SP.TP.TRANSLATION IN PHIL.-PHIL. IN TRAN,3,5,ÖMER BEHİÇ ALBAYRAK,FFF,123,,YD 103 | YD 103 | YD 103,26.05.2015,1,,"                          "
+TR  48Z.01,Desc.,SP.TOP.IN TRANS:ADAPTATION STUDIES,3,5,MARTİN CYR HICKS,MMTh,125,,M 1181 | M 1181 | YD 101,22.05.2015,2,,"                          "
+TR  493.01,Desc.,SP.TOP.IN TRANSLATION LOCALIZATION,3,5,TOLGA SEÇİLMİŞ,FFF,456,,M 1200 | M 1200 | M 1200,29.05.2015,2,,"                          "
+TR  630.01,Desc.,RESEARCH METHODS IN TRANSLATION STUDIES,3,9,KYRIAKI KOUROUNI BRIEL,WWW,678,,,,0,,"                          "
+TR  790.01,Desc.,DOCTORAL DISSERTATION,0,120,ŞEHNAZ TAHİR GÜRÇAĞLAR,TBA,,,,,0,,"                          "
+TR  790.02,Desc.,DOCTORAL DISSERTATION,0,120,EBRU DİRİKER,TBA,,,,,0,,"                          "
+TR  790.03,Desc.,DOCTORAL DISSERTATION,0,120,EBRU DİRİKER,TBA,,,,,0,,"                          "
+TR  790.04,Desc.,DOCTORAL DISSERTATION,0,120,ÖZLEM BERK ALBACHTEN,TBA,,,,,0,,"                          "
+TR  790.05,Desc.,DOCTORAL DISSERTATION,0,120,EBRU DİRİKER,TBA,,,,,0,,"                          "
+TR  790.06,Desc.,DOCTORAL DISSERTATION,0,120,EBRU DİRİKER,TBA,,,,,0,,"                          "
+TR  790.07,Desc.,DOCTORAL DISSERTATION,0,120,ÖZLEM BERK ALBACHTEN,TBA,,,,,0,,"                          "
+TR  790.08,Desc.,DOCTORAL DISSERTATION,0,120,ŞEHNAZ TAHİR GÜRÇAĞLAR,TBA,,,,,0,,"                          "
+TR  790.09,Desc.,DOCTORAL DISSERTATION,0,120,ŞEHNAZ TAHİR GÜRÇAĞLAR,TBA,,,,,0,,"                          "
+TR  790.10,Desc.,DOCTORAL DISSERTATION,0,120,ÖZLEM BERK ALBACHTEN,TBA,,,,,0,,"                          "
+TR  790.11,Desc.,DOCTORAL DISSERTATION,0,120,EBRU DİRİKER,TBA,,,,,0,,"                          "
+TR  790.12,Desc.,DOCTORAL DISSERTATION,0,120,ÖZLEM BERK ALBACHTEN,TBA,,,,,0,,"                          "
+TR  790.13,Desc.,DOCTORAL DISSERTATION,0,120,ÖZLEM BERK ALBACHTEN,TBA,,,,,0,,"                          "
+TR  790.14,Desc.,DOCTORAL DISSERTATION,0,120,JONATHAN MAURICE ROSS,TBA,,,,,0,,"                          "
+TR  790.15,Desc.,DOCTORAL DISSERTATION,0,120,ÖZLEM BERK ALBACHTEN,TBA,,,,,0,,"                          "

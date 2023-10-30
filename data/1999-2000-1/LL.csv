@@ -1,0 +1,29 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AL  201.01,Desc.,SURVEY OF AMERICAN LITERATURE,3,6,ASLI TEKİNAY,TThF,576,,,,,,"                          "
+AL  201.02,Desc.,SURVEY OF AMERICAN LITERATURE,3,6,SOSİ ANTİKACIOĞLU,TThF,673,,,,,,"                          "
+CL  103.01,Desc.,CLASSICAL LITERATURE,3,6,LAMİA GÜLÇUR,TFF,578,,,,,,"                          "
+CL  311.01,Desc.,MYTHOLOGY,3,6,IŞIL BAŞ,            ,675,,,,,,"                          "
+CL  311.02,Desc.,MYTHOLOGY,3,6,SUNA ERTUĞRUL,TTTh,672,,,,,,"                          "
+CL  401.01,Desc.,LITERARY CRITICISM I,3,7,OYA BAŞAK,TThTh,434,,,,,,"                          "
+CL  401.02,Desc.,LITERARY CRITICISM I,3,7,SUNA ERTUĞRUL,WWTh,567,,,,,,"                          "
+CL  490.01,Desc.,SP.TOP:BIOGRAPHY,3,6,LAMİA GÜLÇUR,TFF,834,,,,,,"                          "
+EL  101.01,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,CEVZA SEVGEN,TThF,444,,,,,,"                          "
+EL  101.03,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,ASLI TEKİNAY,TThF,444,,,,,,"                          "
+EL  101.04,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,SOSİ ANTİKACIOĞLU,TThF,444,,,,,,"                          "
+EL  412.01,Desc.,RESEARCH AND WRITING,3,6,CEVZA SEVGEN,TBA, ,,,,,,"                          "
+ENGL101.01,Desc.,INTRODUCTION TO LITERARY SCHOLARSHIP I,3,6,OYA BAŞAK,TTTh,677,,,,,,"                          "
+ENGL101.02,Desc.,INTRODUCTION TO LITERARY SCHOLARSHIP I,3,6,IŞIL BAŞ,ThFF,756,,,,,,"                          "
+ENGL111.01,Desc.,EXPOSITORY WRITING I,3,5,MEHMET TAMER GÜRSOY,TTT,123,,,,,,"                          "
+ENGL111.02,Desc.,EXPOSITORY WRITING I,3,5,DİLEK TOKAY,MMM,678,,,,,,"                          "
+ENGL311.01,Desc.,HISTORY OF THE ENGLISH LANGUAGE I,3,5,CEVZA SEVGEN,TThF,565,,,,,,"                          "
+FA  201.01,Desc.,ANATOLIAN ART & CULTURES FROM PREHIST...,3,5,BEHİN AKSOY,ThThTh,678,,,,,,"                          "
+FA  327.01,Desc.,MUSIC:THEORY & APPRECIATION,3,5,EMİNE SERDAROĞLU,TTTh,675,,,,,,"                          "
+FA  346.01,Desc.,AUTEUR DIRECTORS II,3,5,MİTHAT ALAM,MMTTT,78678,,,,,,"                          "
+FA  489.01,Desc.,SP.TOP.:READINGS&CONVERSATION IN GREEK,3,5,CHRYSSI SIDIROPOULOU,MMWW,6778,,,,,,"                          "
+FA  495.01,Desc.,SP.TOP.:READINGS IN  ANCIENT GREEK,3,5,CHRYSSI SIDIROPOULOU,TTW,784,,,,,,"                          "
+LING111.01,Desc.,INTRO. TO LANGUAGE & LINGUISTICS I,3,6,DİDAR AKAR,MWTh,445,,,,,,"                          "
+LING301.01,Desc.,PHONOLOGY,3,5,ESER TAYLAN,TBA, ,,,,,,"                          "
+LING321.01,Desc.,ENGLISH TURKISH CONTRASTIVE ANALYSIS,3,4,SUMRU ÖZSOY,MWTh,432,,,,,,"                          "
+LING481.01,Desc.,SP.TOP.:SYNTAX OF TURKISH,3,5,ESER TAYLAN,TBA, ,,,,,,"                          "
+LING483.01,Desc.,SP.TOP.:TEXT ANALYSIS IN TURKISH,3,5,DİDAR AKAR,TBA, ,,,,,,"                          "
+STS 230.01,Desc.,THEORY OF MUSICAL SOUND,3,6,ALPAR  SEVGEN,FFF,678,,,,,,"                          "

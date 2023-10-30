@@ -1,0 +1,49 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY ,3,8,CHRYSSI SIDIROPOULOU,TThTh,778,,TB 310 | NH 401 | NH 401,,,,"        PSY; LING; GUID; LAW                  "
+PHIL106.01,Desc.,PHILOSOPHICAL TEXTS,3,8,KENNETH ROBERT WESTPHAL,WFF,656,,EF 206 | TB 310 | TB 310,,,,"                          "
+PHIL112.01,Desc.,INTRODUCTION TO MODERN PHILOSOPHY,3,6,STEPHEN VOSS,MWW,334,,TB 310 | TB 310 | TB 310,,,"GUID,LL,TKL","                          "
+PHIL132.01,Desc.,LOGIC II,4,8,KARANFİL SOYHUN,MMWW,3478,,EF 206 | EF 206 | EF 206 | EF 206,,,,"                          "
+PHIL214.01,Desc.,HISTORY OF PHILOSOPHY II,3,6,CHRYSSI SIDIROPOULOU,TTTh,566,,EF 06 | EF 06 | EF 102,,,,"                          "
+PHIL222.01,Desc.,PHILOSOPHY OF SCIENCE,3,6,FRANK ZENKER,TThTh,378,,EF 206 | NH 405 | NH 405,,,,"                          "
+PHIL241.01,Desc.,APPLIED ETHICS ,3,6,NURBAY IRMAK,MMW,347,,TB 240 | TB 240 | TB 310,,,,"                          "
+PHIL314.01,Desc.,HISTORY OF PHILOSOPHY IV,3,6,AHMED MEGUID,MMTh,785,,TB 310 | TB 310 | TB 310,,,,"                          "
+PHIL382.01,Desc.,ONTOLOGY,3,7,NURBAY IRMAK,MWW,634,,EF 116 | NH 202 | NH 202,,,,"                          "
+PHIL473.01,Desc.,PHILOSOPHY AS A WAY OF LIFE,3,7,YILDIZ SİLİER,TTTh,346,,KB 125 | KB 125 | NH 201,,,,"                          "
+PHIL481.01,Desc.,SL.TP.ANIMAL RIGHTS&EUTHENASIA,3,6,KARANFİL SOYHUN,MWW,556,,M 2152 | EF 04 | EF 04,,,,"                          "
+PHIL482.01,Desc.,SL.TP.PROBABILITY&CHANCE,3,6,BERNA KILINÇ,WFF,856,,JF 334 | M 1170 | M 1170,,,,"                          "
+PHIL48L.01,Desc.,SL.TP.REBUBLICANISM,3,6,LUCAS THORPE,TTTh,567,,EF 05 | EF 05 | JF 507,,,,"                          "
+PHIL48N.01,Desc.,SL.TP.SOC.COGN.COLLEC.AGENCY,3,6,LUCAS THORPE,TThTh,834,,JF 332 | JF 507 | JF 507,,,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,CHRYSSI SIDIROPOULOU,,, ,,,,,"                          "
+PHIL499.04,Desc.,INDEPENDENT STUDY,3,6,YILDIZ SİLİER,,, ,,,,,"                          "
+PHIL499.06,Desc.,INDEPENDENT STUDY,3,6,LUCAS THORPE,,, ,,,,,"                          "
+PHIL499.07,Desc.,INDEPENDENT STUDY,3,6,STEPHEN VOSS,,, ,,,,,"                          "
+PHIL506.01,Desc.,ADVANCED ISSUES IN EPISTEMOLOGY ,3,10,KENNETH ROBERT WESTPHAL,WWW,234,,JF 507 | JF 507 | JF 507,,,,"                          "
+PHIL536.01,Desc.,ETHICS,4,10,STEPHEN VOSS,MMM,567,,TB 365 | TB 365 | TB 365,,,,"                          "
+PHIL550.01,Desc.,PLATO,3,10,CHRYSSI SIDIROPOULOU,FFF,345,,TB 365 | TB 365 | TB 365,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL585.01,Desc.,SP.TP.THINKING&ACTING SKILLFULLY,4,10,CHRYSSI SIDIROPOULOU,TTT,234,,JF 507 | JF 507 | JF 507,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL58Y.01,Desc.,SP.TP.POLITICAL FREEDOM,4,10,YILDIZ SİLİER,ThThTh,234, ,TB 365 | TB 365 | TB 365,,,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,3,10,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL590.02,Desc.,DIRECTED STUDY,3,10,NURBAY IRMAK,,,,,,,,"                          "
+PHIL590.04,Desc.,DIRECTED STUDY,3,10,YILDIZ SİLİER,,,,,,,,"                          "
+PHIL590.06,Desc.,DIRECTED STUDY,3,10,LUCAS THORPE,,,,,,,,"                          "
+PHIL590.07,Desc.,DIRECTED STUDY,3,10,STEPHEN VOSS,,,,,,,,"                          "
+PHIL590.09,Desc.,DIRECTED STUDY,3,10,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL590.10,Desc.,DIRECTED STUDY,3,10,AHMED MEGUID,,,,,,,,"                          "
+PHIL635.01,Desc.,NATURALISM,4,,AHMED MEGUID,MMMM,1234,Online,JF 507 | JF 507 | JF 507 | JF 507,,,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,3,30,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL690.02,Desc.,MASTER THESIS,0,60,NURBAY IRMAK,,,,,,,,"                          "
+PHIL690.03,Desc.,MASTER THESIS,0,60,BERNA KILINÇ,,,,,,,,"                          "
+PHIL690.04,Desc.,MASTER THESIS,0,60,YILDIZ SİLİER,,,,,,,,"                          "
+PHIL690.06,Desc.,MASTER THESIS,0,60,LUCAS THORPE,,,,,,,,"                          "
+PHIL690.08,Desc.,MASTER THESIS,0,60,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL690.09,Desc.,MASTER THESIS,0,60,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL690.10,Desc.,MASTER THESIS,0,60,AHMED MEGUID,,,,,,,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL790.05,Desc.,Ph.D THESIS,0,120,KARANFİL SOYHUN,,,,,,,,"                          "
+PHIL790.06,Desc.,Ph.D THESIS,0,120,LUCAS THORPE,,,,,,,,"                          "
+PHIL790.07,Desc.,Ph.D THESIS,0,120,STEPHEN VOSS,,,,,,,,"                          "
+PHIL790.08,Desc.,Ph.D THESIS,0,120,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL790.09,Desc.,Ph.D THESIS,0,120,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "

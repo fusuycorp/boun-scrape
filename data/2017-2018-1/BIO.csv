@@ -1,0 +1,69 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+BIO 101.01,Desc.,CELLULAR AND MOLECULAR BIOLOGY I,3,5,MÜGE TÜRET,ThThF,566,,KP 01 | KP 01 | KP 01,29.12.2017,3,,"                          "
+BIO 101.02,Desc.,CELLULAR AND MOLECULAR BIOLOGY I,3,5,NESRİN ÖZÖREN,TThTh,556,,KP 315 | KP 315 | KP 315,29.12.2017,3,,"                          "
+BIO 102.01,Desc.,CELLULAR AND MOLECULAR BIOLOGY II,3,5,FUNDA ŞAR,TThTh,334,,KP 09 | KP 09 | KP 09,26.12.2017,2,,"                          "
+BIO 106.01,Desc.,CELL BIOLOGY LABORATORY,2,3,FUNDA ŞAR,M,8,,KP 09,25.12.2017,3,,"                          "
+,,LAB,,,FUNDA ŞAR,WWW,678,,KP 214,,0,,"                          "
+BIO 111.01,Desc.,PRELUDE TO MOLECULAR BIOLOGY,1,1,NECLA BİRGÜL İYİSON,F,4,,KP 08,,0,,"                          "
+BIO 201.01,Desc.,EVOLUTION AND BIODIVERSITY,3,3,MÜGE TÜRET,MWW,256,,KP 08 | KP 08 | KP 08,02.01.2018,1,,"                          "
+BIO 203.01,Desc.,BIOSTATISTICS,3,5,MUHAMMAD NASEEM,TTTh,788,,KP 09 | KP 09 | KP 08,28.12.2017,3,,"                          "
+BIO 301.01,Desc.,BIOCHEMISTRY I,4,6,N.C.TOLGA EMRE,TTThTh,2323,,KP 08 | KP 08 | KP 08 | KP 08,27.12.2017,3,,"                          "
+BIO 308.01,Desc.,SEMINAR I,1,2,NEŞE BİLGİN,FF,56,,KP 08 | KP 08,,0,,"                          "
+BIO 331.01,Desc.,TECHNIQUES IN BIOLOGICAL RESEARCH,3,6,ALİ RIZA UMUT ŞAHİN,WFF,423,,KP 08 | KP 08 | KP 08,22.12.2017,3,,"                          "
+BIO 333.01,Desc.,BIOCHEMISTRY LABORATORY,3,6,ALİ RIZA UMUT ŞAHİN,T,4,,KP 08,21.12.2017,1,,"                          "
+,,LAB,,,ALİ RIZA UMUT ŞAHİN,TTTT,5678,,KP 215,,0,,"                          "
+,,LAB,,,ALİ RIZA UMUT ŞAHİN,WWWW,5678,,KP 215,,0,,"                          "
+BIO 353.01,Desc.,MOLECULAR GENETICS,4,5,STEFAN FUSS,MMWW,2323,,KP 09 | KP 09 | KP 08 | KP 08,03.01.2018,1,,"                          "
+BIO 355.01,Desc.,MOLECULAR BIOLOGY LABORATORY,3,4,NECLA BİRGÜL İYİSON,M,4,,KP 08,25.12.2017,2,,"                          "
+,,LAB,,,NECLA BİRGÜL İYİSON,MMMM,5678,,KP 214 | KP 214 | KP 214 | KP 214,,0,,"                          "
+,,LAB,,,NECLA BİRGÜL İYİSON,ThThThTh,5678,,KP 214 | KP 214 | KP 214 | KP 214,,0,,"                          "
+,,LAB,,,NECLA BİRGÜL İYİSON,MMMM,9101112,,KP 214 | KP 214 | KP 214 | KP 214,,0,,"                          "
+BIO 403.01,Desc.,SCIENTIFIC CONDUCT,1,2,STEFAN FUSS,M,8,,KP 08,26.12.2017,2,,"                          "
+BIO 407.01,Desc.,SEMINAR II,2,3,NECLA BİRGÜL İYİSON,TT,56,,KP 09 | KP 09,,0,,"                          "
+BIO 407.02,Desc.,SEMINAR II,2,3,NECLA BİRGÜL İYİSON,ThTh,56,,KP 08 | KP 08,,0,,"                          "
+BIO 420.01,Desc.,IMMUNOLOGY,3,6,NESRİN ÖZÖREN,MWW,778,,KP 08 | KP 08 | KP 08,19.12.2017,1,,"                          "
+BIO 430.01,Desc.,NEUROSCIENCE,3,6,STEFAN FUSS,TFF,856,,KP 04 | KP 09 | KP 09,20.12.2017,1,,"                          "
+BIO 48B.01,Desc.,SP.TP. BIOINFORMATICS,3,6,MUHAMMAD NASEEM,TWW,178,,KUZEY8LAB | KUZEY8L | KUZEY8L,21.12.2017,2,,"                          "
+BIO 491.01,Desc.,SPECIAL PROJECTS I,3,6,ESRA BATTALOĞLU,TBA,,,,,0,,"                          "
+BIO 491.02,Desc.,SPECIAL PROJECTS I,3,6,NECLA BİRGÜL İYİSON,TBA,,,,,0,,"                          "
+BIO 491.07,Desc.,SPECIAL PROJECTS I,3,6,STEFAN FUSS,TBA,,,,,0,,"                          "
+BIO 491.09,Desc.,SPECIAL PROJECTS I,3,6,MUHAMMAD NASEEM,TBA,,,,,0,,"                          "
+BIO 491.10,Desc.,SPECIAL PROJECTS I,3,6,NESRİN ÖZÖREN,TBA,,,,,0,,"                          "
+BIO 491.11,Desc.,SPECIAL PROJECTS I,3,6,ALİ RIZA UMUT ŞAHİN,TBA,,,,,0,,"                          "
+BIO 491.12,Desc.,SPECIAL PROJECTS I,3,6,MÜGE TÜRET,TBA,,,,,0,,"                          "
+BIO 491.13,Desc.,SPECIAL PROJECTS I,3,6,İBRAHİM YAMAN,TBA,,,,,0,,"                          "
+BIO 500.01,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,10,ESRA BATTALOĞLU,TBA,,,,,0,,"                          "
+BIO 500.04,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,10,ALİ RIZA UMUT ŞAHİN,TBA,,,,,0,,"                          "
+BIO 500.05,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,10,İBRAHİM YAMAN,TBA,,,,,0,,"                          "
+BIO 500.06,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,10,NECLA BİRGÜL İYİSON,TBA,,,,,,,"                          "
+BIO 500.08,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,10,N.C.TOLGA EMRE,TBA,,,,,,,"                          "
+BIO 500.09,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,10,STEFAN FUSS,TBA,,,,,,,"                          "
+BIO 500.10,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,10,NESRİN ÖZÖREN,TBA,,,,,,,"                          "
+BIO 501.01,Desc.,ADVANCED MOLECULAR BIOLOGY,3,7,İBRAHİM YAMAN,TBA,,,,22.12.2017,2,,"                          "
+BIO 511.01,Desc.,ADVANCED GENETICS,3,7,ESRA BATTALOĞLU,TBA,,,,19.12.2017,2,,"                          "
+BIO 579.01,Desc.,GRADUATE SEMINAR,0,2,ALİ RIZA UMUT ŞAHİN,TBA,,,,,0,,"                          "
+BIO 583.01,Desc.,SP.TOP.:CANCER GENOMICS&EPIGENOMICS,3,7,N.C.TOLGA EMRE,TBA,,,,19.12.2017,1,,"                          "
+BIO 585.01,Desc.,SP.TP.INT.TO PROG.WITH PYTHON FOR BIO.,3,7,ERŞEN KAVAK,WWW,123,,GÜNEY4LAB | GÜNEY4LAB | GÜNEY4LAB,20.12.2017,3,,"                          "
+BIO 589.01,Desc.,SP.TP.: NON-CODING RNA BIOL.,3,7,FUNDA ŞAR,TBA,,,,03.01.2018,1,,"                          "
+BIO 601.02,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,10,NESRİN ÖZÖREN,TBA,,,,,0,,"                          "
+BIO 601.03,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,10,İBRAHİM YAMAN,TBA,,,,,0,,"                          "
+BIO 601.09,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,10,MUHAMMAD NASEEM,TBA,,,,,,,"                          "
+BIO 690.01,Desc.,M.S.THESIS,0,60,ESRA BATTALOĞLU,TBA,,,,,0,,"                          "
+BIO 690.02,Desc.,M.S.THESIS,0,60,NECLA BİRGÜL İYİSON,TBA,,,,,0,,"                          "
+BIO 690.03,Desc.,M.S.THESIS,0,60,KUYAŞ BUĞRA,TBA,,,,,0,,"                          "
+BIO 690.04,Desc.,M.S.THESIS,0,60,HANDE ÇAĞLAYAN,TBA,,,,,0,,"                          "
+BIO 690.05,Desc.,M.S.THESIS,0,60,N.C.TOLGA EMRE,TBA,,,,,0,,"                          "
+BIO 690.06,Desc.,M.S.THESIS,0,60,ARZU ÇELİK,TBA,,,,,0,,"                          "
+BIO 690.07,Desc.,M.S.THESIS,0,60,STEFAN FUSS,TBA,,,,,0,,"                          "
+BIO 690.08,Desc.,M.S.THESIS,0,60,NESRİN ÖZÖREN,TBA,,,,,0,,"                          "
+BIO 690.09,Desc.,M.S.THESIS,0,60,İBRAHİM YAMAN,TBA,,,,,0,,"                          "
+BIO 690.10,Desc.,M.S.THESIS,0,60,ALİ RIZA UMUT ŞAHİN,TBA,,,,,0,,"                          "
+BIO 790.01,Desc.,Ph.D.THESIS,0,120,ESRA BATTALOĞLU,TBA,,,,,0,,"                          "
+BIO 790.02,Desc.,Ph.D.THESIS,0,120,NECLA BİRGÜL İYİSON,TBA,,,,,0,,"                          "
+BIO 790.03,Desc.,Ph.D.THESIS,0,120,HANDE ÇAĞLAYAN,TBA,,,,,0,,"                          "
+BIO 790.04,Desc.,Ph.D.THESIS,0,120,STEFAN FUSS,TBA,,,,,0,,"                          "
+BIO 790.05,Desc.,Ph.D.THESIS,0,120,NESRİN ÖZÖREN,TBA,,,,,0,,"                          "
+BIO 790.06,Desc.,Ph.D.THESIS,0,120,İBRAHİM YAMAN,TBA,,,,,0,,"                          "
+BIO 790.07,Desc.,Ph.D.THESIS,0,120,N.C.TOLGA EMRE,TBA,,,,,0,,"                          "
+BIO 790.08,Desc.,Ph.D.THESIS,0,120,ALİ RIZA UMUT ŞAHİN,TBA, ,,,,0,,"                          "
+BIO 790.09,Desc.,Ph.D.THESIS,0,120,MÜGE TÜRET,TBA,,,,,0,,"                          "

@@ -1,0 +1,61 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY ,3,8,NURBAY IRMAK,TThTh,634,,TB 310 | NH 303 | NH 303,29.12.2018,1,PHIL,"        PSY; LING; GUID; LAW                  "
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY ,3,8,YILDIZ SİLİER,TTTh,346,,NH 401 | NH 401 | NH 305,29.12.2018,1,PSY,"        PHIL                  "
+PHIL105.01,Desc.,INFORMAL LOGIC,4,8,BERİL İDEMEN SÖZMEN,TFFF,5345,,NH 102 | NH 102 | NH 102 | NH 102,04.01.2019,2,,"        PHIL                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,6,JOHANNES FRITSCHE,MMW,454,,NH 101 | NH 101 | NH 401,07.01.2019,2,"LL,TKL","        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,4,8,KARANFİL SOYHUN,TTThTh,1212,,NH 304 | NH 304 | EF 06 | EF 06,26.12.2018,1,,"                          "
+PHIL131.02,Desc.,LOGIC I,4,8,KARANFİL SOYHUN,TTThTh,3434,,NH 304 | NH 304 | EF 06 | EF 06,26.12.2018,1,MEDU,"                          "
+PHIL213.01,Desc.,HISTORY OF PHILOSOPHY I,3,6,KENNETH ROBERT WESTPHAL,WWF,562,,EF 106 | EF 106 | NH 102,07.01.2019,1,,"        PHIL                  "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,SUN DEMİRLİ,TTTh,788,,TB 310 | TB 310 | NB 119,31.12.2018,1,,"        PHIL                  "
+PHIL313.01,Desc.,HISTORY OF PHILOSOPHY III,3,6,STEPHEN VOSS,TTTh,342,,M 2200 | M 2200 | NH 203,02.01.2019,3,,"        PHIL                  "
+PHIL341.01,Desc.,ETHICS,3,6,BERİL İDEMEN SÖZMEN,MMTh,345,,EF 07 | EF 07 | M 2171,25.12.2018,1,,"        PHIL                  "
+PHIL354.01,Desc.,SOCIAL & POLITICAL PHILOSOPHY,3,6,YILDIZ SİLİER,TThTh,634,,NH 403 | EF 102 | EF 102,04.01.2019,3,,"                          "
+PHIL480.01,Desc.,SP.TP.IN METAPHYSICS,3,6,SUN DEMİRLİ,MWW,534,,TB 415 | JF 334 | JF 334,,,,"                          "
+PHIL48G.01,Desc.,SP.TP.HEIDEGGER,3,6,JOHANNES FRITSCHE,WWW,678,,EF 04 | EF 04 | EF 04,,,,"                          "
+PHIL48M.01,Desc.,SP.TP.IN PHILOSOPHY OF SCIENCE,3,6,BERNA KILINÇ,ThFF,756,,EF 104 | M 1170 | M 1170,05.01.2019,2,,"                          "
+PHIL48T.01,Desc.,SP.TP.SELF.KNOWLEDGE IN EARLY MODERN PHILOSOPHY,3,6,LUCAS THORPE,MMT,675,,JF 507 | JF 507 | JF 507,03.01.2019,1,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,NURBAY IRMAK,,, ,,05.01.2019,2,,"                          "
+PHIL499.02,Desc.,INDEPENDENT STUDY,3,6,CHRYSSI SIDIROPOULOU,,, ,,05.01.2019,2,,"                          "
+PHIL499.03,Desc.,INDEPENDENT STUDY,3,6,LUCAS THORPE,,, ,,05.01.2019,2,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL586.01,Desc.,SEL.TOP.EMBODIED COGNITION,3,10,LUCAS THORPE,TTT,678,,JF 507 | JF 507 | JF 507,07.01.2019,3,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL58D.01,Desc.,SP.TP.PROBABILITY AND INDUCTION,3,10,BERNA KILINÇ,WWW,678,,TB 365 | TB 365 | TB 365,,,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,3,10,NURBAY IRMAK,,,,,,,,"                          "
+PHIL590.02,Desc.,DIRECTED STUDY,3,10,YILDIZ SİLİER,,,,,,,,"                          "
+PHIL590.03,Desc.,DIRECTED STUDY,3,10,BERİL İDEMEN SÖZMEN,,,,,,,,"                          "
+PHIL590.04,Desc.,DIRECTED STUDY,3,10,JOHANNES FRITSCHE,,,,,,,,"                          "
+PHIL590.05,Desc.,DIRECTED STUDY,3,10,KARANFİL SOYHUN,,,,,,,,"                          "
+PHIL590.06,Desc.,DIRECTED STUDY,3,10,BERNA KILINÇ,,,,,,,,"                          "
+PHIL590.07,Desc.,DIRECTED STUDY,3,10,STEPHEN VOSS,,,,,,,,"                          "
+PHIL590.08,Desc.,DIRECTED STUDY,3,10,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL590.09,Desc.,DIRECTED STUDY,3,10,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL590.10,Desc.,DIRECTED STUDY,3,10,LUCAS THORPE,,,,,,,,"                          "
+PHIL590.11,Desc.,DIRECTED STUDY,3,10,SUN DEMİRLİ,,,,,,,,"                          "
+PHIL59B.01,Desc.,SP.TP.IN PHILOSOPHY OF MIND,3,10,STEPHEN VOSS,ThThTh,567,,TB 365 | TB 365 | TB 365,,,,"                          "
+PHIL59C.01,Desc.,SP.TP.HEGEL'S PHENOMENOLOGY OF SPIRIT,3,10,KENNETH ROBERT WESTPHAL,FFF,456,,JF 507 | JF 507 | JF 507,,,,"                          "
+PHIL59D.01,Desc.,SP.TP.IN ANCIENT PHILOSOPHY,3,10,CHRYSSI SIDIROPOULOU,MMM,678,,TB 365 | TB 365 | TB 365,,,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,3,30,KENNETH ROBERT WESTPHAL,,,,,28.12.2018,2,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,NURBAY IRMAK,,,,,,,,"                          "
+PHIL690.02,Desc.,MASTER THESIS,0,60,YILDIZ SİLİER,,,,,,,,"                          "
+PHIL690.03,Desc.,MASTER THESIS,0,60,BERİL İDEMEN SÖZMEN,,,,,,,,"                          "
+PHIL690.04,Desc.,MASTER THESIS,0,60,JOHANNES FRITSCHE,,,,,,,,"                          "
+PHIL690.05,Desc.,MASTER THESIS,0,60,KARANFİL SOYHUN,,,,,,,,"                          "
+PHIL690.06,Desc.,MASTER THESIS,0,60,BERNA KILINÇ,,,,,,,,"                          "
+PHIL690.07,Desc.,MASTER THESIS,0,60,STEPHEN VOSS,,,,,,,,"                          "
+PHIL690.08,Desc.,MASTER THESIS,0,60,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL690.09,Desc.,MASTER THESIS,0,60,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL690.10,Desc.,MASTER THESIS,0,60,LUCAS THORPE,,,,,,,,"                          "
+PHIL690.11,Desc.,MASTER THESIS,0,60,SUN DEMİRLİ,,,,,,,,"                          "
+PHIL700.01,Desc.,GRADUATE SEMINAR,0,2,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,NURBAY IRMAK,,,,,,,,"                          "
+PHIL790.02,Desc.,Ph.D THESIS,0,120,YILDIZ SİLİER,,,,,,,,"                          "
+PHIL790.03,Desc.,Ph.D THESIS,0,120,BERİL İDEMEN SÖZMEN,,,,,,,,"                          "
+PHIL790.04,Desc.,Ph.D THESIS,0,120,JOHANNES FRITSCHE,,,,,,,,"                          "
+PHIL790.05,Desc.,Ph.D THESIS,0,120,KARANFİL SOYHUN,,,,,,,,"                          "
+PHIL790.06,Desc.,Ph.D THESIS,0,120,BERNA KILINÇ,,,,,,,,"                          "
+PHIL790.07,Desc.,Ph.D THESIS,0,120,STEPHEN VOSS,,,,,,,,"                          "
+PHIL790.08,Desc.,Ph.D THESIS,0,120,KENNETH ROBERT WESTPHAL,,,,,,,,"                          "
+PHIL790.09,Desc.,Ph.D THESIS,0,120,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+PHIL790.10,Desc.,Ph.D THESIS,0,120,LUCAS THORPE,,,,,,,,"                          "
+PHIL790.11,Desc.,Ph.D THESIS,0,120,SUN DEMİRLİ,,,,,,,,"                          "

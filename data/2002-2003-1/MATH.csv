@@ -1,0 +1,26 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.01,Desc.,CALCULUS I,4,6,BURAK GÜREL,TTThTh,1212,,,,,,"                          "
+MATH101.02,Desc.,CALCULUS I ,4,6,BURAK GÜREL,TTThTh,3434,,,,,,"                          "
+MATH102.01,Desc.,CALCULUS II,4,6,AYŞE SOYSAL,TTThTh,1212,,,,,,"                          "
+MATH105.01,Desc.,INTRODUCTION TO FINITE MATHEMATICS,4,6,GÜLNİHAL YÜCEL,TTThTh,1212,,,,,,"                          "
+MATH105.02,Desc.,INTRODUCTION TO FINITE MATHEMATICS,4,6,GÜLNİHAL YÜCEL,TTThTh,3434,,,,,,"                          "
+MATH111.01,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,TALİN BUDAK,TTThTh,3434,,,,,,"        MATH; MEDU; TMAT; PRMA                  "
+MATH131.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS I,4,6,CEM YALÇIN YILDIRIM,TTThTh,7878,,,,,,"        MATH                  "
+MATH132.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS II,4,8,TALİN BUDAK,TTThTh,5656,,,,,,"        MATH                  "
+MATH202.01,Desc.,DIFFERENTIAL EQUATIONS,4,7,ALP EDEN,MMWW,1212,,,,,,"                          "
+MATH202.02,Desc.,DIFFERENTIAL EQUATIONS,4,7,ALP EDEN,MMWW,3434,,,,,,"                          "
+MATH231.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS III,4,4,AHMET KAMİL FEYZİOĞLU,TTThTh,1212,,,,,,"        MEDU; MATH                  "
+MATH331.01,Desc.,REAL ANALYSIS I,4,8,NİLGÜN IŞIK,TTThTh,1212,,,,,,"        MATH                  "
+MATH331.02,Desc.,REAL ANALYSIS I,4,8,NİLGÜN IŞIK,TTThTh,5656,,,,,,"                          "
+MATH342.01,Desc.,LIFE INSURANCE MATHEMATICS,4,6,İRİNİ DİMİTRİYADİS,MMTT,5678,,,,,,"                          "
+MATH343.01,Desc.,PROBABILITY,4,6,İRİNİ DİMİTRİYADİS,MMWW,1212,,,,,,"                          "
+MATH471.01,Desc.,TOPOLOGY,4,8,AHMET KAMİL FEYZİOĞLU,TTThTh,3434,,,,,,"                          "
+MATH480.01,Desc.,SEMINAR,2,4,BETÜL TANBAY,TBA,,,,,,,"                          "
+MATH511.01,Desc.,MATHEMATICAL METHODS IN PHYSICS&ENGR. I,4,8,HALUK BEKER,MMFF,7867,,,,,,"                          "
+MATH531.01,Desc.,REAL ANALYSIS I,4,10,BETÜL TANBAY,TTThTh,3434,,,,,,"                          "
+MATH533.01,Desc.,COMPLEX ANALYSIS I,4,10,CEM YALÇIN YILDIRIM,TTThTh,5656,,,,,,"                          "
+MATH579.01,Desc.,GRADUATE SEMINAR,0,1,BETÜL TANBAY,TBA,,,,,,,"                          "
+MATH581.01,Desc.,SELECTED TOPİCS IN ANALYSIS I,3,7,BETÜL TANBAY,TBA,,,,,,,"                          "
+MATH587.01,Desc.,SEL.TOP. IN DIFFERENTIAL EQUATIONS,3,7,BURAK GÜREL,TBA,,,,,,,"                          "
+MATH590.01,Desc.,READINGS IN MATHEMATICS,1,3,BETÜL TANBAY,,,,,,,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,BETÜL TANBAY,TBA,,,,,,,"                          "

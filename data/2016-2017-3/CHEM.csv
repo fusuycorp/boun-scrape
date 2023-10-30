@@ -1,0 +1,14 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHEM103.01,Desc.,GENERAL CHEMISTRY I,3,7,ŞARON ÇATAK,TTWWThTh,343434,,KB 126 | KB 126 | KB 126 | KB 126 | KB 126 | KB 126,02.08.2017,4,,"        BIO; CEDU; CHE; PEDU; PRSC                  "
+,,P.S.,,,ŞARON ÇATAK,T,5,,,,0,,"        BIO; CEDU; CHE; PEDU; PRSC                  "
+CHEM104.01,Desc.,GENERAL CHEMISTRY II,3,6,JESMI ÇAVUŞOĞLU,TTWWThTh,121212,,KB Z01 | KB Z01 | NH 305 | NH 305 | EF 06 | EF 06,02.08.2017,3,,"        BIO; CHE; CEDU; PRSC                  "
+,,P.S.,,,JESMI ÇAVUŞOĞLU,ThTh,34,,,,0,,"        BIO; CHE; CEDU; PRSC                  "
+CHEM105.01,Desc.,FUNDAMENTALS OF CHEMISTRY,4,6,ŞARON ÇATAK,TTWWThTh,676767,,KB 126 | KB 126 | KB 126 | KB 126 | KB 126 | KB 126,03.08.2017,2,,"        ME; CMPE; EE; PHYS                  "
+,,P.S.,,,ŞARON ÇATAK,Th,5,,,,0,,"        ME; CMPE; EE; PHYS                  "
+CHEM201.01,Desc.,ORGANIC CHEMISTRY I,4,5,İLKNUR DOĞAN,MMTTWWThTh,78787878,,NH 402 | NH 402 | EF 116 | EF 116 | EF 02 | EF 02 | KB 125 | KB 125,04.08.2017,1,,"                          "
+,,P.S.,,,İLKNUR DOĞAN,WW,56,,,,0,,"                          "
+CHEM202.01,Desc.,ORGANIC CHEMISTRY II,4,5,İLKNUR DOĞAN,MMTTWWThTh,34343434,,NH 402 | NH 402 | EF 116 | EF 116 | EF 02 | EF 02 | KB 125 | KB 125,03.08.2017,2,,"                          "
+,,P.S.,,,İLKNUR DOĞAN,MM,910,,,,0,,"                          "
+CHEM203.01,Desc.,ORGANIC CHEMISTRY LABORATORY I,1,4,ŞULE EROL GÜNAL,MMMThThTh,456456,,NH 403 | NH 403 | NH 403 | NH 303 | NH 303 | NH 303,02.08.2017,1,,"                          "
+CHEM204.01,Desc.,ORGANIC CHEMISTRY LABORATORY II,1,4,EDİZ TAYLAN,TTTWWW,567567,,NH 303 | NH 303 | NH 303 | NH 304 | NH 304 | NH 304,02.08.2017,3,,"                          "
+CHEM485.01,Desc.,SP.TP.:CHEMISTRY OF OLIVES,3,4,ZEYNEP DELEN,TTTWWW,567567,,NH 304 | NH 304 | NH 304 | NH 403 | NH 403 | NH 403,02.08.2017,3,,"                          "

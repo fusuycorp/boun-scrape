@@ -1,0 +1,14 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CMPE150.01,Desc.,INTRODUCTION TO COMPUTING,3,5,SADIK FİKRET GÜRGEN,TT,56,,BM A4 | BM A4,07.08.2019,3,,"                          "
+,,LAB,,,STAFF STAFF,WWWWThThThTh,56785678,,BM A4 | BM A4 | BM A4 | BM A4 | BM A4 | BM A4 | BM A4 | BM A4,,0,,"                          "
+CMPE150.02,Desc.,INTRODUCTION TO COMPUTING,3,5,TAFLAN GÜNDEM,TT,12,,BM A4 | BM A4,07.08.2019,3,,"        CMPE                  "
+,,LAB,,,STAFF STAFF,WWWWThThThTh,12341234,,BM A4 | BM A4 | BM A4 | BM A4 | BM A4 | BM A4 | BM A4 | BM A4,,0,,"        CMPE                  "
+CMPE210.01,Desc.,FUNDAMENTALS OF OBJECT ORIENTED PROG.,4,5,SADIK FİKRET GÜRGEN,MMTTWW,121212,,BM A3 | BM A3 | BM A3 | BM A3 | BM A3 | BM A3,07.08.2019,4,,"                          "
+CMPE250.01,Desc.,DATA STRUCTURES & ALGORITHMS,4,6,MORDOHAY ŞALOM,TTTFFF,345345,,BM A2 | BM A2 | BM A2 | BM A2 | BM A2 | BM A2,07.08.2019,3,,"                          "
+,,P.S.,,,STAFF STAFF,TTFF,7878,,BM A2 | BM A2 | BM A2 | BM A2,,0,,"                          "
+CMPE260.01,Desc.,PRINCIPLES OF PROGRAMMING LANGUAGES,3,5,FATMA BAŞAK AYDEMİR,MMTTWW,121212,,BM A5 | BM A5 | BM A5 | BM A5 | BM A5 | BM A5,09.08.2019,1,,"                          "
+CMPE321.01,Desc.,INTRODUCTION TO DATABASE SYSTEMS,4,6,TAFLAN GÜNDEM,MMWWFF,565656,,BM A5 | BM A5 | BM A5 | BM A5 | BM A5 | BM A5,09.08.2019,4,,"                          "
+CMPE321.02,Desc.,INTRODUCTION TO DATABASE SYSTEMS,4,6,TAFLAN GÜNDEM,MMWWFF,343434,,BM A5 | BM A5 | BM A5 | BM A5 | BM A5 | BM A5,09.08.2019,4,,"                          "
+,,P.S.,,,STAFF STAFF,,,,,,0,,"                          "
+CMPE350.01,Desc.,FORMAL LANGUAGES & AUTOMATA THEORY,3,5,ÖZLEM SALEHİ KÖKEN,WWWThThTh,567567,,BM A3 | BM A3 | BM A3 | BM A3 | BM A3 | BM A3,07.08.2019,1,,"                          "
+CMPE496.01,Desc.,SP.TOP.IN CMPE:HUMAN COMPUTER INTERACTIO,3,6,SADIK FİKRET GÜRGEN,MMTTWW,343434, ,BM A3 | BM A3 | BM A3 | BM A3 | BM A3 | BM A3,07.08.2019,2,,"                          "

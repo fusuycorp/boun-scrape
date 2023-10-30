@@ -1,0 +1,80 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ME  207.01,Desc.,PROBABILITY&STATISTICS FOR ME,3,5,ALİ ECDER,TTTh,342,,M 1100 | M 1100 | M 1100,02.01.2019,3,,"                          "
+ME  210.01,Desc.,MATERIALS SCIENCE,3,5,GÜLİN VARDAR,TTTh,343,,NH 201 | NH 201 | M 1100,31.12.2018,1,EE,"                          "
+ME  241.01,Desc.,STATICS,3,5,ŞEBNEM ÖZÜPEK,WFF,534,,M 2230 | M 3100 | M 3100,25.12.2018,2,,"                          "
+ME  303.01,Desc.,COMPUTER APPLICATIONS IN MECHANICAL ENG,3,5,MURAT ÇELİK,TTTh,342,,M 2180 | M 2180 | M 2181,02.01.2019,3,,"                          "
+,,LAB,,,MURAT ÇELİK,Th,1,,,,0,,"                          "
+ME  331.01,Desc.,MECHATRONICS,3,5,EVREN SAMUR,TThTh,134,,M 1100 | M 2170 | M 2170,26.12.2018,2,,"                          "
+ME  345.01,Desc.,MECHANICS OF MATERIALS,4,6,ŞEBNEM ÖZÜPEK,MMWW,7878,,NB Z11 | NB Z11 | M 3120 | M 3120,03.01.2019,2,,"                          "
+ME  345.02,Desc.,MECHANICS OF MATERIALS,4,6,SERTAN ALKAN,MMWW,7878,,M 3100 | M 3100 | NB Z13 | NB Z13,03.01.2019,2,,"                          "
+ME  353.01,Desc.,FLUID MECHANICS I,4,6,KUNT ATALIK,MMWW,3434,,M 2171 | M 2171 | M 2181 | M 2181,31.12.2018,1,,"                          "
+ME  362.01,Desc.,HEAT TRANSFER,4,5,ALİ ECDER,TTThTh,7856,,M 1100 | M 1100 | M 2230 | M 2230,27.12.2018,2,,"                          "
+ME  411.01,Desc.,MATERIALS ENGINEERING,3,5,GÜLİN VARDAR,TThTh,212,,M 2180 | M 2171 | M 2171,24.12.2018,3,,"                          "
+ME  424.01,Desc.,MACHINE DESIGN II,4,8,FAZIL ÖNDER SÖNMEZ,MMWW,7878,,M 3120 | M 3120 | M 2230 | M 2230,04.01.2019,3,,"                          "
+ME  429.01,Desc.,MECHANICAL &THERMAL DESIGN,4,7,ÇETİN YILMAZ,WW,34,,M 3120 | M 3120,,,,"                          "
+,,P.S.,,,ÇETİN YILMAZ,MTT,534,,M 2181 | M 2170 | M 2170,,0,,"                          "
+ME  429.02,Desc.,MECHANICAL &THERMAL DESIGN,4,7,HASAN BEDİR,WW,34,,M 2200 | M 2200,,,,"                          "
+,,P.S.,,,HASAN BEDİR,MTT,534,,M 3120 | M 2171 | M 2171,,0,,"                          "
+ME  446.01,Desc.,APPLIED SOLID MECHANICS,3,5,FAZIL ÖNDER SÖNMEZ,MMW,122,,M 2200 | M 2200 | M 1170,05.01.2019,1,,"                          "
+ME  466.01,Desc.,THERMODYNAMICS II,3,5,FATMA NAZLI DÖNMEZER AKGÜN,MMW,341,,M 3100 | M 3100 | M 2180,25.12.2018,1,,"                          "
+ME  478.01,Desc.,DESIGN OF THERMAL SYSTEMS,3,5,HAKAN ERTÜRK,MWW,656,,M 3120 | M 3120 | M 3120,27.12.2018,3,,"                          "
+ME  483.01,Desc.,SP.TOP.PRODUCT DESIGN AND DEV.,3,5,SABRİ ALTINTAŞ,TTTh,785,,M 3100 | M 3100 | M 3100,28.12.2018,3,,"                          "
+ME  492.01,Desc.,PROJECT,4,8,HASAN BEDİR,Th,4,,M 3120,,,,"                          "
+ME  501.01,Desc.,ADVANCED ENGINEERING MATHEMATICS I,3,8,FATMA NAZLI DÖNMEZER AKGÜN,MWW,656,,M 2200 | M 1171 | M 1171,03.01.2019,2,,"                          "
+ME  503.01,Desc.,MECHANICS OF CONTINUA I,4,8,AKIN TEZEL,TTThTh,5656,,M 1181 | M 1181 | M 1181 | M 1181,05.01.2019,1,,"                          "
+ME  511.01,Desc.,PRINCIPLES OF MAT.SCIENCE&ENG.,3,8,SABRİ ALTINTAŞ,TThTh,478,,M 1152 | M 1181 | M 1181,04.01.2019,3,,"                          "
+ME  523.01,Desc.,ELASTICITY ,3,8,GÜNAY ANLAŞ,TThTh,334,,M 1152 | M 2231 | M 2231,02.01.2019,3,,"                          "
+ME  537.01,Desc.,STATE SPACE CONTROL THEORY,3,8,EVREN SAMUR,TThTh,212,,M 2230 | M 2170 | M 2170,28.12.2018,3,,"                          "
+ME  551.01,Desc.,ADVANCED FLUID MECHANICS,3,8,KUNT ATALIK,MWW,278,,M 2171 | M 2152 | M 2152,04.01.2019,1,,"                          "
+ME  560.01,Desc.,ADVANCED THERMODYNAMICS,3,8,HASAN BEDİR,MWW,112,,M 1181 | M 2200 | M 2200,24.12.2018,3,,"                          "
+ME  561.01,Desc.,CONDUCTION HEAT TRANSFER,3,8,HAKAN ERTÜRK,MMW,343,,M 2231 | M 2231 | M 1171,29.12.2018,1,,"                          "
+ME  579.01,Desc.,GRADUATE SEMINAR,0,2,SERTAN ALKAN,M,5,,M 2231,,,,"                          "
+ME  599.01,Desc.,GUIDED RESEARCH ,0,8,GÜNAY ANLAŞ,,,,,,,,"                          "
+ME  599.02,Desc.,GUIDED RESEARCH ,0,8,KUNT ATALIK,,,,,,,,"                          "
+ME  599.04,Desc.,GUIDED RESEARCH ,0,8,HASAN BEDİR,,,,,,,,"                          "
+ME  599.05,Desc.,GUIDED RESEARCH ,0,8,MURAT ÇELİK,,,,,,,,"                          "
+ME  599.06,Desc.,GUIDED RESEARCH ,0,8,FATMA NAZLI DÖNMEZER AKGÜN,,,,,,,,"                          "
+ME  599.07,Desc.,GUIDED RESEARCH ,0,8,ALİ ECDER,,,,,,,,"                          "
+ME  599.08,Desc.,GUIDED RESEARCH ,0,8,HAKAN ERTÜRK,,,,,,,,"                          "
+ME  599.09,Desc.,GUIDED RESEARCH ,0,8,HALUK ÖRS,,,,,,,,"                          "
+ME  599.10,Desc.,GUIDED RESEARCH ,0,8,ŞEBNEM ÖZÜPEK,,,,,,,,"                          "
+ME  599.11,Desc.,GUIDED RESEARCH ,0,8,EVREN SAMUR,,,,,,,,"                          "
+ME  599.12,Desc.,GUIDED RESEARCH ,0,8,FAZIL ÖNDER SÖNMEZ,,,,,,,,"                          "
+ME  599.13,Desc.,GUIDED RESEARCH ,0,8,GÜLİN VARDAR,,,,,,,,"                          "
+ME  599.14,Desc.,GUIDED RESEARCH ,0,8,ÇETİN YILMAZ,,,,,,,,"                          "
+ME  622.01,Desc.,ADVANCED VIBRATIONS,3,8,ÇETİN YILMAZ,MMW,787,,M 1181 | M 1181 | M 1152,07.01.2019,2,,"                          "
+ME  690.01,Desc.,M.S.THESIS,0,60,GÜNAY ANLAŞ,,,,,,,,"                          "
+ME  690.02,Desc.,M.S.THESIS,0,60,KUNT ATALIK,,,,,,,,"                          "
+ME  690.04,Desc.,M.S.THESIS,0,60,HASAN BEDİR,,,,,,,,"                          "
+ME  690.05,Desc.,M.S.THESIS,0,60,MURAT ÇELİK,,,,,,,,"                          "
+ME  690.06,Desc.,M.S.THESIS,0,60,FATMA NAZLI DÖNMEZER AKGÜN,,,,,,,,"                          "
+ME  690.07,Desc.,M.S.THESIS,0,60,ALİ ECDER,,,,,,,,"                          "
+ME  690.08,Desc.,M.S.THESIS,0,60,HAKAN ERTÜRK,,,,,,,,"                          "
+ME  690.09,Desc.,M.S.THESIS,0,60,HALUK ÖRS,,,,,,,,"                          "
+ME  690.10,Desc.,M.S.THESIS,0,60,ŞEBNEM ÖZÜPEK,,,,,,,,"                          "
+ME  690.11,Desc.,M.S.THESIS,0,60,EVREN SAMUR,,,,,,,,"                          "
+ME  690.12,Desc.,M.S.THESIS,0,60,FAZIL ÖNDER SÖNMEZ,,,,,,,,"                          "
+ME  690.13,Desc.,M.S.THESIS,0,60,GÜLİN VARDAR,,,,,,,,"                          "
+ME  690.14,Desc.,M.S.THESIS,0,60,ÇETİN YILMAZ,,,,,,,,"                          "
+ME  690.15,Desc.,M.S.THESIS,0,60,CAN AYDINER,,,,,,,,"                          "
+ME  699.01,Desc.,GUIDED RESEARCH I,4,8,GÜNAY ANLAŞ,,,,,,,,"                          "
+ME  699.02,Desc.,GUIDED RESEARCH I,4,8,HASAN BEDİR,,,,,,,,"                          "
+ME  699.03,Desc.,GUIDED RESEARCH I,4,8,ŞEBNEM ÖZÜPEK,,,,,,,,"                          "
+ME  699.04,Desc.,GUIDED RESEARCH I,4,8,EVREN SAMUR,,,,,,,,"                          "
+ME  69A.01,Desc.,GUIDED RESEARCH II,0,8,GÜNAY ANLAŞ,,,,,07.01.2019,3,,"                          "
+ME  69A.02,Desc.,GUIDED RESEARCH II,0,8,HASAN BEDİR,,,,,07.01.2019,3,,"                          "
+ME  700.01,Desc.,GRADUATE SEMINAR,0,2,SERTAN ALKAN,M,5,,M 1181,,,,"                          "
+ME  790.01,Desc.,Ph.D. THESIS,0,120,GÜNAY ANLAŞ,,,,,,,,"                          "
+ME  790.02,Desc.,Ph.D. THESIS,0,120,KUNT ATALIK,,,,,,,,"                          "
+ME  790.04,Desc.,Ph.D. THESIS,0,120,HASAN BEDİR,,,,,,,,"                          "
+ME  790.05,Desc.,Ph.D. THESIS,0,120,MURAT ÇELİK,,,,,,,,"                          "
+ME  790.06,Desc.,Ph.D. THESIS,0,120,FATMA NAZLI DÖNMEZER AKGÜN,,,,,,,,"                          "
+ME  790.07,Desc.,Ph.D. THESIS,0,120,ALİ ECDER,,,,,,,,"                          "
+ME  790.08,Desc.,Ph.D. THESIS,0,120,HAKAN ERTÜRK,,,,,,,,"                          "
+ME  790.09,Desc.,Ph.D. THESIS,0,120,HALUK ÖRS,,,,,,,,"                          "
+ME  790.10,Desc.,Ph.D. THESIS,0,120,ŞEBNEM ÖZÜPEK,,,,,,,,"                          "
+ME  790.11,Desc.,Ph.D. THESIS,0,120,EVREN SAMUR,,,,,,,,"                          "
+ME  790.12,Desc.,Ph.D. THESIS,0,120,FAZIL ÖNDER SÖNMEZ,,,,,,,,"                          "
+ME  790.13,Desc.,Ph.D. THESIS,0,120,GÜLİN VARDAR,,,,,,,,"                          "
+ME  790.14,Desc.,Ph.D. THESIS,0,120,ÇETİN YILMAZ,,,,,,,,"                          "
+ME  790.15,Desc.,Ph.D. THESIS,0,120,CAN AYDINER,,,,,,,,"                          "

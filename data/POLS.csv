@@ -1,0 +1,56 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Quota,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+POLS101.01,Desc.,INTRODUCTION TO POLITICAL SCIENCE,3,6,Info,GÜN KUT,TWW,223, ,NH 305 | İB 102 | İB 102,,,POLS,"                          "
+POLS101.02,Desc.,INTRODUCTION TO POLITICAL SCIENCE,3,6,Info,HAKAN YILMAZ,MMM,789, ,EF 206 | EF 206 | EF 206,,,EC,"                          "
+POLS101.03,Desc.,INTRODUCTION TO POLITICAL SCIENCE,3,6,Info,VOLKAN ÇIDAM,MTT,378, ,EF 206 | NH 305 | NH 305,,,"SOC,TR","                          "
+POLS201.01,Desc.,HISTORY OF POLITICAL THOUGHT I,3,5,Info,GAYE  İLHAN DEMİRYOL,WThTh,323, ,NB 119 | İB 102 | İB 102,,,,"                          "
+POLS203.01,Desc.,SOCIAL STATISTICS,4,6,Info,BAŞAK TARAKTAŞ,MMTT,6767, ,İB 102 | İB 102 | NH 203 | NH 203,,,,"                          "
+POLS215.01,Desc.,COMPARATIVE POLITICS,3,6,Info,MURAT AKAN,MMT,342, ,NH 301 | NH 301 | NH 405,,,,"                          "
+POLS217.01,Desc.,DIPLOMATIC HISTORY,3,6,Info,ZÜHRE AKSOY,TTW,342, ,EF 106 | EF 106 | NH 105,,,,"                          "
+POLS303.01,Desc.,FUNDAMENTALS OF POLITICAL ECONOMY,3,7,Info,MİNE EDER,WThTh,667, ,NH 101 | NH 101 | NH 101,,,,"                          "
+POLS317.01,Desc.,POLITICS AND SOCIETY IN THE MID.EAST,3,5,Info,SELÇUK AYDIN,MWW,523, ,İB 201 | KB 125 | KB 125,,,,"                          "
+POLS321.01,Desc.,THEORIES OF INTERNATIONAL RELATIONS,3,5,Info,ASLI ÇALKIVİK,FFF,678, ,İB 201 | İB 201 | İB 201,,,,"                          "
+POLS324.01,Desc.,INTERNATIONAL LAW,3,5,Info,FLEUR VAN LEEUWEN,ThFF,423, ,İB 312 | İB 201 | İB 201,,,,"                          "
+POLS342.01,Desc.,AMERICAN GOVERNMENT,3,5,Info,MEHMET ALİ ÇİÇEKDAĞ,MMW,121, ,M 1170 | M 1170 | İB 301,,,,"                          "
+POLS408.01,Desc.,DEMOCRATIC THEORY,3,6,Info,GAYE  İLHAN DEMİRYOL,WWTh,676, ,İB 201 | İB 201 | İB 312,,,,"                          "
+POLS420.01,Desc.,INTERNATIONAL POLITICAL ECONOMY,3,6,Info,ALPER YAĞCI,WWTh,677, ,İB 312 | İB 312 | İB 301,,,,"                          "
+POLS432.01,Desc.,POLITICAL ECONOMY OF EXCLUSION,3,6,Info,MİNE EDER,WWW,345, ,EF 103 | EF 103 | EF 103,,,,"                          "
+POLS435.01,Desc.,ISSUES IN TURKISH FOREIGN POLICY,3,6,Info,GÜN KUT,TTW,344, ,NH 302 | NH 302 | İB 201,,,,"                          "
+POLS464.01,Desc.,THE LAW OF INTERNATIONAL INSTITUTIONS,3,6,Info,FLEUR VAN LEEUWEN,ThThF,234, ,İB 312 | İB 312 | İB 201,,,,"                          "
+POLS478.01,Desc.,POPULISM AND DEMOCRACY,3,5,Info,MURAT AKAN,MTT,534, ,NH 302 | NH 402 | NH 402,,,,"                          "
+POLS483.01,Desc.,SELECTED TOPICS IN POLITICAL THEORY,3,6,Info,VOLKAN ÇIDAM,ThThTh,678, ,İB 201 | İB 201 | İB 201,,,,"                          "
+POLS501.01,Desc.,ADVANCED RESEARCH METHODS ,3,8,Info,BAŞAK TARAKTAŞ,MMM,123, ,,,,,"                          "
+POLS521.01,Desc.,INTERNATIONAL POLITICS,3,8,Info,ZÜHRE AKSOY,WWW,456, ,,,,,"                          "
+POLS541.01,Desc.,COMPARATIVE POLITICS,3,8,Info,ALPER YAĞCI,ThThTh,456, ,,,,,"                          "
+POLS579.01,Desc.,GRADUATE SEMINAR,0,7,Info,MURAT ÖNDER,,, ,,,,,"                          "
+POLS585.01,Desc.,RESEARCH & READING IN POLITICAL THEORY I,3,6,Info,VOLKAN ÇIDAM,,, ,,,,,"                          "
+POLS587.01,Desc.,R&R IN POLITICAL THEORY,3,6,Info,GAYE  İLHAN DEMİRYOL,,, ,,,,,"                          "
+POLS589.01,Desc.,R. & R. IN INTERNATIONAL RELATIONS I,3,6,Info,ALPER YAĞCI,,, ,,,,,"                          "
+POLS590.01,Desc.,R&R IN INTERNATIONAL RELATIONS,3,6,Info,ZÜHRE AKSOY,,, ,,,,,"                          "
+POLS591.01,Desc.,R&R IN INTERNATIONAL RELATIONS,3,6,Info,FLEUR VAN LEEUWEN,,, ,,,,,"                          "
+POLS592.01,Desc.,R.&R.IN INTERNATIONAL RELATIONS II,3,6,Info,GÜN KUT,,, ,,,,,"                          "
+POLS593.01,Desc.,R.&R.IN COMPARATIVE POLITICS I,3,6,Info,MİNE EDER,,, ,,,,,"                          "
+POLS594.01,Desc.,R&R IN COMPARATIVE POLITICS,3,6,Info,SELÇUK AYDIN,,, ,,,,,"                          "
+POLS597.01,Desc.,R.&R. IN QUANTITATIVE METHODS I,3,6,Info,BAŞAK TARAKTAŞ,,, ,,,,,"                          "
+POLS622.01,Desc.,"SECULARISM, DEMOCRACY&RELIGION",3,9,Info,MURAT AKAN,,, ,,,,,"                          "
+POLS687.01,Desc.,R&R IN COMPARATIVE POLITICS,3,8,Info,MURAT ÖNDER,,, ,,,,,"                          "
+POLS690.01,Desc.,MASTER THESIS,0,60,Info,MURAT AKAN,,, ,,,,,"                          "
+POLS690.02,Desc.,MASTER THESIS,0,60,Info,ZÜHRE AKSOY,,, ,,,,,"                          "
+POLS690.04,Desc.,MASTER THESIS,0,60,Info,FLEUR VAN LEEUWEN,,, ,,,,,"                          "
+POLS690.05,Desc.,MASTER THESIS,0,60,Info,VOLKAN ÇIDAM,,, ,,,,,"                          "
+POLS690.06,Desc.,MASTER THESIS,0,60,Info,MİNE EDER,,, ,,,,,"                          "
+POLS690.09,Desc.,MASTER THESIS,0,60,Info,GÜN KUT,,, ,,,,,"                          "
+POLS690.12,Desc.,MASTER THESIS,0,60,Info,BAŞAK TARAKTAŞ,,, ,,,,,"                          "
+POLS690.13,Desc.,MASTER THESIS,0,60,Info,GAYE  İLHAN DEMİRYOL,,, ,,,,,"                          "
+POLS690.14,Desc.,MASTER THESIS,0,60,Info,ALPER YAĞCI,,, ,,,,,"                          "
+POLS690.15,Desc.,MASTER THESIS,0,60,Info,MURAT ÖNDER,,, ,,,,,"                          "
+POLS690.16,Desc.,MASTER THESIS,0,60,Info,SELÇUK AYDIN,,, ,,,,,"                          "
+POLS700.01,Desc.,GRADUATE SEMINAR,0,7,Info,MİNE EDER,,, ,,,,,"                          "
+POLS790.01,Desc.,DOCTORAL DISSERTATION,0,120,Info,MURAT AKAN,,, ,,,,,"                          "
+POLS790.02,Desc.,DOCTORAL DISSERTATION,0,120,Info,ZÜHRE AKSOY,,, ,,,,,"                          "
+POLS790.04,Desc.,DOCTORAL DISSERTATION,0,120,Info,MİNE EDER,,, ,,,,,"                          "
+POLS790.05,Desc.,DOCTORAL DISSERTATION,0,120,Info,BAŞAK TARAKTAŞ,,, ,,,,,"                          "
+POLS790.06,Desc.,DOCTORAL DISSERTATION,0,120,Info,VOLKAN ÇIDAM,,, ,,,,,"                          "
+POLS790.08,Desc.,DOCTORAL DISSERTATION,0,120,Info,GÜN KUT,,, ,,,,,"                          "
+POLS790.13,Desc.,DOCTORAL DISSERTATION,0,120,Info,GAYE  İLHAN DEMİRYOL,,, ,,,,,"                          "
+POLS790.14,Desc.,DOCTORAL DISSERTATION,0,120,Info,ALPER YAĞCI,,, ,,,,,"                          "
+POLS790.15,Desc.,DOCTORAL DISSERTATION,0,120,Info,MURAT ÖNDER,,, ,,,,,"                          "

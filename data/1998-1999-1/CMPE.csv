@@ -1,0 +1,25 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CMPE150.01,Desc.,INTRODUCTION TO COMPUTING,3,5,CEM SAY,M,4,,,,,,"                          "
+CMPE150.02,Desc.,INTRODUCTION TO COMPUTING,3,5,VURAL ALTIN,M,6,,,,,,"        CMPE                  "
+CMPE220.01,Desc.,DISCRETE COMPUTATIONAL STRUCTURES,3,4,ETHEM ALPAYDIN,TTF,126,,,,,,"                          "
+CMPE230.01,Desc.,SYSTEMS PROGRAMMING,4,6,CAN ÖZTURAN,TWW,634,,,,,,"                          "
+CMPE322.01,Desc.,OPERATING SYSTEMS,4,5,M. UFUK ÇAĞLAYAN,WWTh,125,,,,,,"                          "
+CMPE344.01,Desc.,COMPUTER ORGANIZATION,4,5,OĞUZ TOSUN,MMTh,126,,,,,,"                          "
+CMPE422.01,Desc.,DATABASE SYSTEMS II,3,6,TAFLAN GÜNDEM,WFF,578,,,,,,"                          "
+CMPE444.01,Desc.,MICROPROCESSOR BASED SYSTEM DESIGN,4,6,SADIK FİKRET GÜRGEN,MWW,212,,,,,,"                          "
+CMPE460.01,Desc.,COMPUTER GRAPHICS,3,6,LALE AKARUN,MTT,312,,,,,,"                          "
+CMPE475.01,Desc.,COMPUTER COMMUNICATIONS & NETWORKING,3,6,M. UFUK ÇAĞLAYAN,WThTh,412,,,,,,"                          "
+CMPE480.01,Desc.,INTRODUCTION TO ARTIFICIAL INTELLIGENCE,3,6,CEM SAY,WWF,786,,,,,,"                          "
+CMPE491.01,Desc.,SPEC. PROJECT IN COMPUTER ENGINEERING,3,6,CEM ERSOY,S,0,,,,,,"                          "
+CMPE492.01,Desc.,PROJECT,4,7,CEM ERSOY,S,0,,,,,,"                          "
+CMPE511.01,Desc.,COMPUTER ARCHITECTURE,3,8,OĞUZ TOSUN,ThThTh,234,,,,,,"                          "
+CMPE521.01,Desc.,PRINCIPLES OF DATABASE SYSTEMS,3,8,TAFLAN GÜNDEM,WWF,784,,,,,,"                          "
+CMPE530.01,Desc.,MATH. FUNDS. OF ARTIFICAL INTELLIGENCE,3,8,SADIK FİKRET GÜRGEN,WWW,456,,,,,,"                          "
+CMPE540.01,Desc.,PRINCIPLES OF ARTIFICIAL INTELLIGENCE,3,8,H. LEVENT AKIN,WThTh,667,,,,,,"                          "
+CMPE560.01,Desc.,QUALITATIVE REASONING,3,8,CEM SAY,S,0,,,,,,"                          "
+CMPE580.01,Desc.,COMPUTER NETWORKS I,3,8,CEM ERSOY,TTT,123,,,,,,"                          "
+CMPE592.01,Desc.,SP.TOP.:WIRELESS INFORMATION NETWORKS,3,8,METE KABATEPE,S,0,,,,,,"                          "
+CMPE598.01,Desc.,SP.TOP. IN CMPE: PAR.SCI.COMP.,3,8,CAN ÖZTURAN,FFF,123,,,,,,"                          "
+CMPE621.01,Desc.,PATTERN RECOGNITION,3,8,ETHEM ALPAYDIN,S,0,,,,,,"                          "
+CMPE622.01,Desc.,COMPUTER VISION,3,8,LALE AKARUN,TTT,678,,,,,,"                          "
+ENG 101.01,Desc.,INTRODUCTION TO COMPUTERS,3,7,EROL İNELMEN,S,0,,,,,,"                          "

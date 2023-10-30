@@ -1,0 +1,53 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+BM  501.01,Desc.,BIOLOGY OF LIVING SYSTEMS,3,6,HALE SAYBAŞILI,TTW,565,,KB 107 | KB 107 | KB 107,,,,"                          "
+BM  507.01,Desc.,BIOMEDICAL INSTRUMENTATION LABORATORY,2,4,BURAK GÜÇLÜ,TT,78,,KB 119 | KB 119,,,,"                          "
+BM  508.01,Desc.,BIOMEDICAL TESTING & MEASUREMENT LAB.,2,6,YEKTA ÜLGEN,ThTh,78,,KB 119 | KB 119,,,,"                          "
+BM  516.01,Desc.,BIOPHOTONICS,3,6,MURAT GÜLSOY,TWW,112,,KB 106 | KB 106 | KB 106,,,,"                          "
+BM  525.01,Desc.,TISSUE BIOMECHANICS,3,6,CAN YÜCESOY,MFF,112,,KB 106 | KB 106 | KB 106,,,,"                          "
+BM  563.01,Desc.,MEDICAL IMAGING,3,6,YEKTA ÜLGEN,TTTh,235,,KB 118 | KB 118 | KB 118,,,,"                          "
+BM  573.01,Desc.,CARDIOVASCULAR IMAGING,3,6,CENGİZHAN ÖZTÜRK,MMF,122,,KB 107 | KB 107 | KB 107,,,,"                          "
+BM  579.01,Desc.,GRADUATE SEMINAR,0,1,CENGİZHAN ÖZTÜRK,F,7,,KB 118,,,,"                          "
+BM  586.01,Desc.,SP.STUD.:SKELETAL MUSCLE MECHANICS,3,6,CAN YÜCESOY,MTT,234,,KB 106 | KB 106 | KB 106,,,,"                          "
+BM  587.01,Desc.,SP.STUD.(DESIGN OF BIOMECHANICAL DEVICES,3,6,SABRİ ALTINTAŞ,ThThTh,678,,KB 107 | KB 106 | KB 106,,,,"                          "
+BM  588.01,Desc.,SP.STUD: PRINCIPLES OF NEUROIMAGING,3,6,AHMET ADEMOĞLU,WWF,783,,KB 106 | KB 106 | KB 106,,,,"                          "
+BM  598.01,Desc.,SEL.TOP.WAVELETS AND ITS APP.IN BIOM.SI,3,6,YASEMİN KAHYA,WThTh,323,,KB 107 | KB 107 | KB 107,,,,"                          "
+BM  611.01,Desc.,NUCLEAR BIOMEDICAL INSTRUMENTATION,3,6,ALBERT GÜVENİŞ,TTF,783,,KB 107 | KB 107 | KB 107,,,,"                          "
+BM  641.01,Desc.,MAGNETIC RESONANCE IMAGING PRINCIPLES,3,6,MEHMED ÖZKAN,MMTh,563,,KB 106 | KB 106 | KB 106,,,,"                          "
+BM  671.01,Desc.,INTRODUCTION TO MEDICAL INFORMATICS,3,6,ALBERT GÜVENİŞ,MFF,556,,KB 107 | KB 107 | KB 107,,,,"                          "
+BM  690.01,Desc.,MASTER'S THESIS,0,60,AHMET ADEMOĞLU,TBA,,,,,,,"                          "
+BM  690.02,Desc.,MASTER'S THESIS,0,60,ALBERT GÜVENİŞ,TBA,,,,,,,"                          "
+BM  690.04,Desc.,MASTER'S THESIS,0,60,BURAK GÜÇLÜ,TBA,,,,,,,"                          "
+BM  690.05,Desc.,MASTER'S THESIS,0,60,CAN YÜCESOY,TBA,,,,,,,"                          "
+BM  690.06,Desc.,MASTER'S THESIS,0,60,CENGİZHAN ÖZTÜRK,TBA,,,,,,,"                          "
+BM  690.07,Desc.,MASTER'S THESIS,0,60,HALE SAYBAŞILI,TBA,,,,,,,"                          "
+BM  690.09,Desc.,MASTER'S THESIS,0,60,MEHMED ÖZKAN,TBA,,,,,,,"                          "
+BM  690.10,Desc.,MASTER'S THESIS,0,60,MURAT GÜLSOY,TBA,,,,,,,"                          "
+BM  690.12,Desc.,MASTER'S THESIS,0,60,SABRİ ALTINTAŞ,TBA,,,,,,,"                          "
+BM  690.13,Desc.,MASTER'S THESIS,0,60,YASEMİN KAHYA,TBA,,,,,,,"                          "
+BM  690.14,Desc.,MASTER'S THESIS,0,60,YEKTA ÜLGEN,TBA,,,,,,,"                          "
+BM  690.15,Desc.,MASTER'S THESIS,0,60,STAFF STAFF,TBA,,,,,,,"                          "
+BM  693.01,Desc.,SP.TOP.(PLANNING &EVALUATION OF CLINICAL,3,6,EMİN MEHMET YUSUF,MMM,789,,KB 106 | KB 106 | KB 106,,,,"                          "
+BM  699.01,Desc.,GUIDED RESEARCH,4,6,AHMET ADEMOĞLU,TBA,,,,,,,"                          "
+BM  699.02,Desc.,GUIDED RESEARCH,4,6,ALBERT GÜVENİŞ,,,,,,,,"                          "
+BM  699.04,Desc.,GUIDED RESEARCH,4,6,BURAK GÜÇLÜ,,,,,,,,"                          "
+BM  699.05,Desc.,GUIDED RESEARCH,4,6,CAN YÜCESOY,,,,,,,,"                          "
+BM  699.06,Desc.,GUIDED RESEARCH,4,6,CENGİZHAN ÖZTÜRK,,,,,,,,"                          "
+BM  699.07,Desc.,GUIDED RESEARCH,4,6,HALE SAYBAŞILI,,,,,,,,"                          "
+BM  699.09,Desc.,GUIDED RESEARCH,4,6,MEHMED ÖZKAN,,,,,,,,"                          "
+BM  699.10,Desc.,GUIDED RESEARCH,4,6,MURAT GÜLSOY,,,,,,,,"                          "
+BM  699.12,Desc.,GUIDED RESEARCH,4,6,SABRİ ALTINTAŞ,,,,,,,,"                          "
+BM  699.13,Desc.,GUIDED RESEARCH,4,6,YASEMİN KAHYA,,,,,,,,"                          "
+BM  699.14,Desc.,GUIDED RESEARCH,4,6,YEKTA ÜLGEN,,,,,,,,"                          "
+BM  699.15,Desc.,GUIDED RESEARCH,4,6,STAFF STAFF,,,,,,,,"                          "
+BM  790.01,Desc.,Ph.D.THESIS,0,120,AHMET ADEMOĞLU,TBA,,,,,,,"                          "
+BM  790.02,Desc.,Ph.D.THESIS,0,120,ALBERT GÜVENİŞ,,,,,,,,"                          "
+BM  790.04,Desc.,Ph.D.THESIS,0,120,BURAK GÜÇLÜ,,,,,,,,"                          "
+BM  790.05,Desc.,Ph.D.THESIS,0,120,CAN YÜCESOY,,,,,,,,"                          "
+BM  790.06,Desc.,Ph.D.THESIS,0,120,CENGİZHAN ÖZTÜRK,,,,,,,,"                          "
+BM  790.07,Desc.,Ph.D.THESIS,0,120,HALE SAYBAŞILI,,,,,,,,"                          "
+BM  790.09,Desc.,Ph.D.THESIS,0,120,MEHMED ÖZKAN,,,,,,,,"                          "
+BM  790.10,Desc.,Ph.D.THESIS,0,120,MURAT GÜLSOY,,,,,,,,"                          "
+BM  790.12,Desc.,Ph.D.THESIS,0,120,SABRİ ALTINTAŞ,,,,,,,,"                          "
+BM  790.13,Desc.,Ph.D.THESIS,0,120,YASEMİN KAHYA,,,,,,,,"                          "
+BM  790.14,Desc.,Ph.D.THESIS,0,120,YEKTA ÜLGEN,,,,,,,,"                          "
+BM  790.15,Desc.,Ph.D.THESIS,0,120,LEVENT KURNAZ,,,,,,,,"                          "

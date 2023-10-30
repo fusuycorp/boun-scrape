@@ -1,0 +1,27 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH106.01,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,GÜLNİHAL YÜCEL,TTThTh,1212,,GYM | GYM | GYM | GYM,,,,"                          "
+MATH106.02,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,GÜLNİHAL YÜCEL,TTThTh,3434,,PARK2 | PARK2 | PARK2 | PARK2,,,,"                          "
+MATH132.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS II,4,8,TALİN BUDAK,TTThTh,3434,,TB 240 | TB 240 | M 1170 | M 1170,,,,"        MATH                  "
+MATH162.01,Desc.,DISCRETE MATHEMATICS,4,6,CEM YALÇIN YILDIRIM,TTThTh,5656,,M 1100 | M 1100 | PARK2 | PARK2,,,,"                          "
+MATH201.01,Desc.,MATRIX THEORY,4,5,BURAK GÜREL,MMWW,1212,,GYM | GYM | GYM | GYM,,,,"                          "
+MATH201.02,Desc.,MATRIX THEORY,4,5,BURAK GÜREL,MMWW,3434,,GYM | GYM | GYM | GYM,,,,"                          "
+MATH202.01,Desc.,DIFFERENTIAL EQUATIONS,4,7,FERİT ÖZTÜRK,MMWW,1212,,PARK1 | PARK1 | PARK1 | PARK1,,,,"                          "
+MATH202.02,Desc.,DIFFERENTIAL EQUATIONS,4,7,FERİT ÖZTÜRK,MMWW,3434,,PARK1 | PARK1 | PARK1 | PARK1,,,,"                          "
+MATH224.01,Desc.,LINEAR ALGEBRA I,3,6,NİLGÜN IŞIK,MMW,121,,TB 310 | TB 310 | TB 240,,,,"                          "
+MATH224.02,Desc.,LINEAR ALGEBRA I,3,6,NİLGÜN IŞIK,MMW,562,,PARK2 | PARK2 | TB 310,,,,"                          "
+MATH232.01,Desc.,INTRODUCTION TO COMPLEX ANALYSIS,3,6,BETÜL TANBAY,TTTh,343,,TB 310 | TB 310 | TB 310,,,,"                          "
+MATH322.01,Desc.,ALGEBRA II,4,8,AHMET KAMİL FEYZİOĞLU,MMWW,3434,,TB 260 | TB 260 | TB 260 | TB 260,,,,"                          "
+MATH332.01,Desc.,REAL ANALYSIS II,4,8,TALİN BUDAK,TTThTh,1212,,TB 260 | TB 260 | TB 260 | TB 260,,,,"                          "
+MATH336.01,Desc.,NUMERICAL ANALYSIS,4,6,ALP EDEN,MMWW,1212,,TB 260 | TB 260 | TB 260 | TB 260,,,,"                          "
+MATH436.01,Desc.,FUNCTIONAL ANALYSIS,3,7,BETÜL TANBAY,TTTh,564,,TB 240 | TB 240 | TB 240,,,,"                          "
+MATH480.01,Desc.,SEMINAR,2,4,BURAK GÜREL,TBA,,,,,,,"                          "
+MATH48D.01,Desc.,SEL.TOP.MATH(ORNAMENTS),3,6,AHMET KAMİL FEYZİOĞLU,MMW,121,,M 2200 | M 2200 | TB 490,,,,"                          "
+MATH528.01,Desc.,ANALYTIC NUMBER THEORY,4,10,CEM YALÇIN YILDIRIM,TTThTh,8989,,,,,,"                          "
+MATH545.01,Desc.,MATHEMATICS OF FINANCE,4,10,ALP EDEN,MMWW,3434,,,,,,"                          "
+MATH58G.01,Desc.,SPECIAL TOPICS IN TOPOLOGY,3,7,TALİN BUDAK,ThThTh,678,,,,,,"                          "
+MATH683.01,Desc.,SEMINAR IN APPLIED MATHEMATICS II,4,10,ALP EDEN,FFFF,1234,,,,,,"                          "
+MATH690.02,Desc.,M.S. THESIS,0,60,ALP EDEN,TBA,,,,,,,"                          "
+MATH690.04,Desc.,M.S. THESIS,0,60,FERİT ÖZTÜRK,TBA,,,,,,,"                          "
+MATH690.05,Desc.,M.S. THESIS,0,60,TALİN BUDAK,TBA,,,,,,,"                          "
+MATH690.06,Desc.,M.S. THESIS,0,60,N.SADIK DEĞER,TBA,,,,,,,"                          "
+MATH790.02,Desc.,Ph.D.THESIS,0,120,ALP EDEN,TBA,,,,,,,"                          "

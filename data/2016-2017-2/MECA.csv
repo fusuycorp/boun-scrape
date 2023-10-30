@@ -1,0 +1,11 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MECA502.01,Desc.,INDUSTRIAL CONTROL&INSTRUMENTATION,3,8,YANI SKARLATOS,StStSt,678,,,,0,,"                          "
+MECA504.01,Desc.,EMBEDDED SYS&HARDWARE SOFTWARE CO-DESIGN,3,8,ŞENOL MUTLU,StStSt,234,,,,0,,"                          "
+MECA514.01,Desc.,"MATERIALS SELECTION, DESIGN&ECONOMICS",3,7,SABRİ ALTINTAŞ,WWW,111213,,,,0,,"                          "
+MECA524.01,Desc.,CONTROL SYSTEM DESIGN,3,7,MEHMET AKAR,ThThTh,111213,,,,0,,"                          "
+MECA533.01,Desc.,NEURAL NETWORKS,3,7,İSMAİL FAİK BAŞKAYA,TTT,111213,,,,0,,"                          "
+MECA577.01,Desc.,DIRECTED STUDIES I,0,4,YANI SKARLATOS,StSt,910,,,,0,,"                          "
+MECA578.01,Desc.,DIRECTED STUDIES II,0,4,STAFF STAFF,TBA,,,,,0,,"                          "
+MECA589.01,Desc.,SP.TP.IMAGE PROCESSING,3,7,BÜLENT SANKUR,MMM,111213,,,,,,"                          "
+MECA590.01,Desc.,PROJECT,0,16,MEHMET AKAR,TBA,,,,,0,,"                          "
+MECA591.01,Desc.,GUIDED RESEARCH,1,4,MEHMET AKAR,TBA,,,,,0,,"                          "

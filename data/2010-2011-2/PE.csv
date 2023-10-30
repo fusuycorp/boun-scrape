@@ -1,0 +1,62 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PE  102.01,Desc.,STEP II,1,2,VİLDAN ZAN KİPRİ,TT,56,,,,0,,"                          "
+PE  102.02,Desc.,STEP II,1,2,VİLDAN ZAN KİPRİ,WW,34,,,,0,,"                          "
+PE  102.03,Desc.,STEP II,1,2,VİLDAN ZAN KİPRİ,WW,56,,,,0,,"                          "
+PE  102.04,Desc.,STEP II,1,2,VİLDAN ZAN KİPRİ,ThTh,78,,,,0,,"                          "
+PE  104.01,Desc.,FITNESS II,1,2,STAFF STAFF,M,3,,,,0,,"                          "
+PE  104.02,Desc.,FITNESS II,1,2,STAFF STAFF,M,4,,,,0,,"                          "
+PE  104.03,Desc.,FITNESS II,1,2,MEHMET OKTAR,M,7,,,,0,,"                          "
+PE  104.04,Desc.,FITNESS II,1,2,MEHMET OKTAR,M,8,,,,0,,"                          "
+PE  104.05,Desc.,FITNESS II,1,2,STAFF STAFF,W,7,,,,0,,"                          "
+PE  104.06,Desc.,FITNESS II,1,2,STAFF STAFF,W,8,,,,0,,"                          "
+PE  104.07,Desc.,FITNESS II,1,2,MEHMET OKTAR,Th,7,,,,0,,"                          "
+PE  104.08,Desc.,FITNESS II,1,2,MEHMET OKTAR,Th,8,,,,0,,"                          "
+PE  104.09,Desc.,FITNESS II,1,2,MEHMET OKTAR,F,5,,,,0,,"                          "
+PE  104.10,Desc.,FITNESS II,1,2,MEHMET OKTAR,F,6,,,,0,,"                          "
+PE  104.11,Desc.,FITNESS II,1,2,STAFF STAFF,F,7,,,,0,,"                          "
+PE  104.12,Desc.,FITNESS II,1,2,STAFF STAFF,F,8,,,,0,,"                          "
+PE  114.01,Desc.,AEROBIC DANCE II,1,2,VİLDAN ZAN KİPRİ,TT,78,,,,0,,"                          "
+PE  114.02,Desc.,AEROBIC DANCE II,1,2,VİLDAN ZAN KİPRİ,ThTh,56,,,,0,,"                          "
+PE  118.01,Desc.,BADMINTON II,1,2,MEHMET OKTAR,MM,56,,,,0,,"                          "
+PE  118.02,Desc.,BADMINTON II,1,2,MEHMET OKTAR,ThTh,56,,,,0,,"                          "
+PE  118.03,Desc.,BADMINTON II,1,2,MEHMET OKTAR,FF,78,,,,0,,"                          "
+PE  120.01,Desc.,BASKETBALL  II,1,2,ALTİMUR TÜLMEN,MM,78,,,,0,,"                          "
+PE  120.02,Desc.,BASKETBALL  II,1,2,ALTİMUR TÜLMEN,WW,56,,,,0,,"                          "
+PE  120.03,Desc.,BASKETBALL  II,1,2,ALTİMUR TÜLMEN,FF,56,,,,0,,"                          "
+PE  122.01,Desc.,SOCCER II,1,2,ORHAN YALINTAŞ,MM,56,,,,0,,"                          "
+PE  122.02,Desc.,SOCCER II,1,2,ORHAN YALINTAŞ,WW,56,,,,0,,"                          "
+PE  122.03,Desc.,SOCCER II,1,2,ORHAN YALINTAŞ,FF,56,,,,0,,"                          "
+PE  122.04,Desc.,SOCCER II,1,2,ORHAN YALINTAŞ,FF,78,,,,0,,"                          "
+PE  124.01,Desc.,TENNIS II,1,2,ENİS GÜLLER,MM,56,,,,0,,"                          "
+PE  124.02,Desc.,TENNIS II,1,2,ENİS GÜLLER,MM,78,,,,0,,"                          "
+PE  124.03,Desc.,TENNIS II,1,2,ALPER DURU,TT,34,,,,0,,"                          "
+PE  124.04,Desc.,TENNIS II,1,2,ALPER DURU,TT,56,,,,0,,"                          "
+PE  124.05,Desc.,TENNIS II,1,2,ENİS GÜLLER,WW,34,,,,0,,"                          "
+PE  124.06,Desc.,TENNIS II,1,2,ENİS GÜLLER,WW,56,,,,0,,"                          "
+PE  124.07,Desc.,TENNIS II,1,2,ALPER DURU,ThTh,34,,,,0,,"                          "
+PE  124.08,Desc.,TENNIS II,1,2,ALPER DURU,ThTh,56,,,,0,,"                          "
+PE  124.09,Desc.,TENNIS II,1,2,ENİS GÜLLER,FF,12,,,,0,,"                          "
+PE  124.10,Desc.,TENNIS II,1,2,ENİS GÜLLER,FF,34,,,,0,,"                          "
+PE  126.01,Desc.,VOLLEYBALL II,1,2,ERCÜMENT PAĞDA,TT,78,,,,0,,"                          "
+PE  126.02,Desc.,VOLLEYBALL II,1,2,ERCÜMENT PAĞDA,WW,78,,,,0,,"                          "
+PE  126.03,Desc.,VOLLEYBALL II,1,2,ERCÜMENT PAĞDA,ThTh,78,,,,0,,"                          "
+PE  130.01,Desc.,SELF DEFENCE SPORTS II,1,2,DİLEK EMÇİOĞLU,WW,910,,,,0,,"                          "
+PE  130.02,Desc.,SELF DEFENCE SPORTS II,1,2,DİLEK EMÇİOĞLU,FF,910,,,,0,,"                          "
+PE  130.04,Desc.,SELF DEFENCE SPORTS II,1,2,STAFF STAFF,WW,910,,,,0,,"                          "
+PE  130.05,Desc.,SELF DEFENCE SPORTS II,1,2,STAFF STAFF,FF,910,,,,0,,"                          "
+PE  141.01,Desc.,ELEMENTARY SWIMMING,1,2,TUNCAY KOCABIYIK,M,1,,,,0,,"                          "
+PE  141.02,Desc.,ELEMENTARY SWIMMING,1,2,TUNCAY KOCABIYIK,M,2,,,,0,,"                          "
+PE  141.03,Desc.,ELEMENTARY SWIMMING,1,2,TUNCAY KOCABIYIK,M,5,,,,0,,"                          "
+PE  141.04,Desc.,ELEMENTARY SWIMMING,1,2,TUNCAY KOCABIYIK,W,1,,,,0,,"                          "
+PE  141.05,Desc.,ELEMENTARY SWIMMING,1,2,TUNCAY KOCABIYIK,W,2,,,,0,,"                          "
+PE  141.06,Desc.,ELEMENTARY SWIMMING,1,2,TUNCAY KOCABIYIK,W,5,,,,0,,"                          "
+PE  141.07,Desc.,ELEMENTARY SWIMMING,1,2,TUNCAY KOCABIYIK,F,1,,,,0,,"                          "
+PE  141.08,Desc.,ELEMENTARY SWIMMING,1,2,TUNCAY KOCABIYIK,F,2,,,,0,,"                          "
+PE  142.01,Desc.,ADVANCED SWIMMING,1,2,TUNCAY KOCABIYIK,M,6,,,,0,,"                          "
+PE  142.02,Desc.,ADVANCED SWIMMING,1,2,TUNCAY KOCABIYIK,W,6,,,,0,,"                          "
+PE  142.03,Desc.,ADVANCED SWIMMING,1,2,TUNCAY KOCABIYIK,F,5,,,,0,,"                          "
+PE  142.04,Desc.,ADVANCED SWIMMING,1,2,TUNCAY KOCABIYIK,F,6,,,,0,,"                          "
+PE  146.01,Desc.,FUTSAL II,1,2,MUSTAFA EROL,TT,56,,,,0,,"                          "
+PE  146.02,Desc.,FUTSAL II,1,2,MUSTAFA EROL,TT,78,,,,0,,"                          "
+PE  146.03,Desc.,FUTSAL II,1,2,MUSTAFA EROL,WW,78,,,,0,,"                          "
+PE  146.04,Desc.,FUTSAL II,1,2,MUSTAFA EROL,ThTh,78,,,,0,,"                          "

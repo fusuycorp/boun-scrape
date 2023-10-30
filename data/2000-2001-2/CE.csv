@@ -1,0 +1,35 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CE  202.01,Desc.,INTRO. TO PROBABILITY & STATISTICS,3,6,OSMAN BÖREKÇİ,MTT,889,,,,,,"                          "
+CE  202.02,Desc.,INTRO. TO PROBABILITY & STATISTICS,3,6,GÖKMEN ERGÜN,TTTh,673,,,,,,"                          "
+CE  212.01,Desc.,ENGINEERING MATERIALS,3,5,ALİ RANA ATILGAN,MMWW,1212,,,,,,"                          "
+CE  212.02,Desc.,ENGINEERING MATERIALS,3,5,TURAN ÖZTURAN,MMWW,1212,,,,,,"                          "
+CE  222.01,Desc.,INTRO. TO ENV. POLLUTION  CONTROL,3,7,ATİLLA AKKOYUNLU,MMT,788,,,,,,"                          "
+CE  241.01,Desc.,MECHANICS OF MATERIALS,4,6,ALİ RANA ATILGAN,MMWWF,34785,,,,,,"                          "
+CE  312.01,Desc.,HYDRAULIC ENGINEERING I,4,6,CEM AVCI,MMMTT,12534,,,,,,"                          "
+CE  312.02,Desc.,HYDRAULIC ENGINEERING I,4,6,EMRE OTAY,MMMTT,12534,,,,,,"                          "
+CE  332.01,Desc.,SOIL MECHANICS I,3,5,TURAN DURGUNOĞLU,TTTh,122,,,,,,"                          "
+CE  332.02,Desc.,SOIL MECHANICS I,3,5,EROL GÜLER,TTTh,122,,,,,,"                          "
+CE  334.01,Desc.,SOIL MECHANICS LABORATORY,1,4,GÖKHAN BAYKAL,ThThThTh,1678,,,,,,"                          "
+CE  352.01,Desc.,STRUCTURAL ANALYSIS II,4,7,GÜLAY ALTAY,WWThThTh,34345,,,,,,"                          "
+CE  352.02,Desc.,STRUCTURAL ANALYSIS II,4,7,VEDAT YERLİCİ,WWThThTh,34345,,,,,,"                          "
+CE  371.01,Desc.,NUMERICAL METHODS IN CIVIL ENGINEERING,3,5,CEM AVCI,MMT,346,,,,,,"                          "
+CE  414.01,Desc.,INTRODUCTION TO COASTAL ENGINEERING,3,5,OSMAN BÖREKÇİ,TTW,566,,,,,,"                          "
+CE  452.01,Desc.,REINFONCED CONCRETE II,4,5,CENGİZ KARAKOÇ,WThTh,278,,,,,,"                          "
+CE  453.01,Desc.,ASEISMIC DESIGN OF STRUCTURES,3,5,SEMİH TEZCAN,FFF,125,,,,,,"                          "
+CE  491.01,Desc.,SP.TOP.:COMPUTER AIDED STRUCTURAL ENG.,3,5,SAMİ AND KILIÇ,MMT,348,,,,,,"                          "
+CE  533.01,Desc.,GEOTECHNICS IN PRACTICE,3,7.50,TURAN DURGUNOĞLU,TBA,,,,,,,"                          "
+CE  536.01,Desc.,SOIL IMPROVEMENT TECHNIQUES,3,6,GÖKHAN BAYKAL,WWW,123,,,,,,"                          "
+CE  578.01,Desc.,PLAIN CONCRETE,3,7.50,TURAN ÖZTURAN,FFF,234,,,,,,"                          "
+CE  579.01,Desc.,GRADUATE SEMINAR,0,7.50,CEM AVCI,W,6,,,,,,"                          "
+CE  580.01,Desc.,SP.TOP.IN CE NONLINEAR PROB.IN REIN.CON.,3,7.50,CENGİZ KARAKOÇ,TBA,,,,,,,"                          "
+CE  583.01,Desc.,SP.TOP.:STRUCTURAL STELL DESIGN,3,6,GÜLAY ALTAY,WW,89,,,,,,"                          "
+CE  593.01,Desc.,SP.STUD.IN CE :WATER POL. CONROL&TREATM.,3,6,ATİLLA AKKOYUNLU,TBA,,,,,,,"                          "
+CE  598.01,Desc.,SP. STUD. IN CE(COASTAL STRUCTURES),3,7.50,EMRE OTAY,MMWW,4545,,,,,,"                          "
+CE  601.01,Desc.,FINITE ELEMENTS I,3,7.50,SEMİH TEZCAN,FFF,678,,,,,,"                          "
+CE  651.01,Desc.,NON-LINEAR STRUCTURAL ANALYSIS,3,7.50,SAMİ AND KILIÇ,FFF,567,,,,,,"                          "
+CE  690.01,Desc.,M.S.THESIS,0,60,GÖKHAN BAYKAL,TBA,,,,,,,"                          "
+CE  790.01,Desc.,Ph.D. THESIS,0,120,GÖKHAN BAYKAL,TBA,,,,,,,"                          "
+ENGG110.01,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,MMM,678,,,,,,"                          "
+ENGG110.02,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,TTT,678,,,,,,"                          "
+ENGG110.03,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,WWW,678,,,,,,"                          "
+ENGG110.04,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,ThThTh,678,,,,,,"                          "

@@ -1,0 +1,76 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EC  101.01,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,BURÇAY ERUS,TTTh,565,Online,,,,"AD,EC,POLS","                          "
+EC  101.02,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,GÜZİN GÜLSÜN AKIN,TTTh,565,Online,,,,"AD,EC,POLS","                          "
+EC  101.03,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,GÖKHAN ÖZERTAN,TTTh,565,Online,,,,"AD,EC,POLS","                          "
+EC  101.04,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,KIVANÇ KARAMAN,TTTh,565,Online,,,,"CE,CMPE,ME","                          "
+EC  101.05,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,MURAT KIRDAR,TTTh,787,Online,,,,"IE,PHYS","                          "
+EC  101.06,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,GÜZİN GÜLSÜN AKIN,TTTh,787,Online,,,,EE,"                          "
+EC  101.07,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,RIFAT BARIŞ TEKİN,FFF,234,Online,,,,"CHE,GUID,PSY,SOC","                          "
+EC  101.08,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,MURAT KIRDAR,TTTh,232,Online,,,,,"        TRM; INTT; MIS                  "
+EC  103.01,Desc.,ORIENTATION TO ECONOMICS,1,1,ORHAN TORUL,Th,8,Online,,,,,"                          "
+EC  203.01,Desc.,MICROECONOMICS I,3,6,E. ÜNAL ZENGİNOBUZ,TTTh,565,Online,,,,"AD,EC","                          "
+EC  203.02,Desc.,MICROECONOMICS I,3,6,MURAT YILMAZ,TTTh,787,Online,,,,"AD,EC","                          "
+EC  203.03,Desc.,MICROECONOMICS I,3,6,ORHAN AYGÜN,TTTh,787,Online,,,,"AD,EC","                          "
+EC  205.01,Desc.,MACROECONOMICS I,3,6,ORHAN TORUL,MWW,545,Online,,,,,"                          "
+EC  205.02,Desc.,MACROECONOMICS I,3,6,ORHAN TORUL,MWW,678,Online,,,,,"                          "
+EC  223.01,Desc.,MATHEMATICS FOR ECONOMISTS,3,6,EMEKCAN YÜCEL,MWW,545,Online,,,,,"                          "
+EC  223.02,Desc.,MATHEMATICS FOR ECONOMISTS,3,6,EMEKCAN YÜCEL,MWW,678,Online,,,,,"                          "
+EC  233.01,Desc.,MATHEMATICAL STATISTICS I,3,6,OZAN HATİPOĞLU,TTTh,122,Online,,,,,"                          "
+EC  233.02,Desc.,MATHEMATICAL STATISTICS I,3,6,OZAN HATİPOĞLU,TTTh,341,Online,,,,,"                          "
+EC  308.01,Desc.,ADVANCED MACROECONOMICS,3,6,MELTEM POYRAZ,MMW,567,Online,,,,,"                          "
+EC  331.01,Desc.,ECONOMETRICS,3,6,SELCEN ÇAKIR,MWW,245,Online,,,,,"                          "
+EC  331.02,Desc.,ECONOMETRICS,3,6,SELCEN ÇAKIR,MWW,323,Online,,,,,"                          "
+EC  344.01,Desc.,"MONEY, BANKING & FINANCIAL INSTITUTIONS",3,6,BURAK SALTOĞLU,TFF,656,Online,,,,,"                          "
+EC  344.02,Desc.,"MONEY, BANKING & FINANCIAL INSTITUTIONS",3,6,BURAK SALTOĞLU,TTF,784,Online,,,,,"                          "
+EC  351.01,Desc.,PUBLIC FINANCE,3,6,AYŞE YELİZ KAÇAMAK,MWW,323,Online,,,,,"                          "
+EC  361.01,Desc.,INTERNATIONAL ECONOMICS,3,6,TOLGA UMUT KUZUBAŞ,TThTh,323,Online,,,,,"                          "
+EC  406.01,Desc.,AGRICULTURAL ECONOMICS,3,6,GÖKHAN ÖZERTAN,TThTh,323,Online,,,,,"                          "
+EC  411.01,Desc.,HISTORY OF ECONOMIC THOUGHT,3,6,FİKRET ADAMAN,TThTh,545,Online,,,,,"                          "
+EC  411.02,Desc.,HISTORY OF ECONOMIC THOUGHT,3,6,FİKRET ADAMAN,TThTh,678,Online,,,,,"                          "
+EC  436.01,Desc.,QUANTITATIVE METH.FOR PUBLIC POLICY EVAL,3,6,BURÇAY ERUS,TThTh,767,Online,,,,,"                          "
+EC  471.01,Desc.,GROWTH AND DEVELOPMENT,3,6,BEGÜM ÖZKAYNAK,TTTh,786,Online,,,,,"                          "
+EC  471.02,Desc.,GROWTH AND DEVELOPMENT,3,6,CEYHUN ELGİN,WWF,454,Online,,,,,"                          "
+EC  48E.01,Desc.,SP.TP.IN FINAN.ECON.&MACHINE LEARN.,3,6,BURAK SALTOĞLU,TFF,423,Online,,,,,"                          "
+EC  48F.01,Desc.,SP.TP.IN GOVERNANCE,3,6,İZZETTİN ÖNDER,WWW,678,Online,,,,,"                          "
+EC  48I.01,Desc.,SP.TP.IN EC AND FINANCIAL INSTITUTIONS,3,6,AHMET İRFAN SÖYLEMEZOĞLU,MMM,234,Online,,,,,"                          "
+EC  48K.01,Desc.,SP.TP.ADVANCED RESEARCH METHODS IN APPLIED ECONOMICS,3,6,CEYHUN ELGİN,WFF,656,Online,,,,,"                          "
+EC  48Q.01,Desc.,SP.TP.FINANCIAL STATEMENT ANALYSIS,3,6,NAZLI ARIKAN,TTT,123,Online,,,,,"                          "
+EC  48R.01,Desc.,SP. TP. IN COMPETITION POLICY,3,6,AYŞE MUMCU,TThTh,545,Online,,,,,"                          "
+EC  48T.01,Desc.,SP.TP.FINANCIAL MODELLING&ITS APP.USING R,3,6,MUSTAFA CAN ÖZER,ThThTh,789,Online,,,,,"                          "
+EC  48V.01,Desc.,SP.TP.BANKING AND FINANCE,3,6,AYHAN YÜKSEL,MMM,678,Online,,,,,"                          "
+EC  48Z.01,Desc.,SP.TP.IN MATCHING THEORY,3,6,ORHAN AYGÜN,TThTh,545,Online,,,,,"                          "
+EC  501.01,Desc.,MICRO-ECONOMICS I,4,8,E. ÜNAL ZENGİNOBUZ,TTThTh,2378,Online,,,,,"                          "
+EC  503.01,Desc.,MACRO-ECONOMICS I,4,8,MURAT KOYUNCU,MMWW,2323,Online,,,,,"                          "
+EC  521.01,Desc.,MATHEMATICAL METHODS FOR ECONOMICS I,4,7,AYŞE YELİZ KAÇAMAK,MMWW,5656,Online,,,,,"                          "
+EC  531.01,Desc.,ECONOMETRICS I,4,8,İNSAN TUNALI,TTThTh,5645,Online,,,,,"                          "
+EC  579.01,Desc.,GRADUATE SEMINAR,0,5,OZAN HATİPOĞLU,FF,78,Online,,,,,"                          "
+EC  583.01,Desc.,SEL.TOP.IN FINANCIAL MARKETS& REGULATION,3,7,AHMET FARUK AYSAN,WWW,789,Online,,,,,"                          "
+EC  58P.01,Desc.,SP.TP.IN EMPIRICAL METHODS,3,7,SELCEN ÇAKIR,MMW,566,Online,,,,,"                          "
+EC  599.01,Desc.,TERM PROJECT,0,13,OZAN HATİPOĞLU,,,Online,,,,,"                          "
+EC  601.01,Desc.,ADVANCED MICROECONOMICS I,4,11,MURAT YILMAZ,TTT,234,Online,,,,,"                          "
+EC  603.01,Desc.,ADVANCED MACROECONOMICS I,4,11,MELTEM POYRAZ,WWW,234,Online,,,,,"                          "
+EC  690.01,Desc.,MASTER THESIS,0,60,FİKRET ADAMAN,,, ,,,,,"                          "
+EC  690.02,Desc.,MASTER THESIS,0,60,GÜZİN GÜLSÜN AKIN,,, ,,,,,"                          "
+EC  690.03,Desc.,MASTER THESIS,0,60,SELCEN ÇAKIR,,, ,,,,,"                          "
+EC  690.04,Desc.,MASTER THESIS,0,60,BURÇAY ERUS,,, ,,,,,"                          "
+EC  690.05,Desc.,MASTER THESIS,0,60,OZAN HATİPOĞLU,,, ,,,,,"                          "
+EC  690.06,Desc.,MASTER THESIS,0,60,AYŞE YELİZ KAÇAMAK,,, ,,,,,"                          "
+EC  690.07,Desc.,MASTER THESIS,0,60,KIVANÇ KARAMAN,,, ,,,,,"                          "
+EC  690.08,Desc.,MASTER THESIS,0,60,MURAT KOYUNCU,,, ,,,,,"                          "
+EC  690.09,Desc.,MASTER THESIS,0,60,TOLGA UMUT KUZUBAŞ,,, ,,,,,"                          "
+EC  690.10,Desc.,MASTER THESIS,0,60,BEGÜM ÖZKAYNAK,,, ,,,,,"                          "
+EC  690.11,Desc.,MASTER THESIS,0,60,MELTEM POYRAZ,,, ,,,,,"                          "
+EC  690.12,Desc.,MASTER THESIS,0,60,BURAK SALTOĞLU,,, ,,,,,"                          "
+EC  690.13,Desc.,MASTER THESIS,0,60,ORHAN TORUL,,, ,,,,,"                          "
+EC  690.14,Desc.,MASTER THESIS,0,60,LEVENT YILDIRAN,,, ,,,,,"                          "
+EC  690.15,Desc.,MASTER THESIS,0,60,MURAT YILMAZ,,, ,,,,,"                          "
+EC  690.16,Desc.,MASTER THESIS,0,60,EMEKCAN YÜCEL,,, ,,,,,"                          "
+EC  690.17,Desc.,MASTER THESIS,0,60,E. ÜNAL ZENGİNOBUZ,,, ,,,,,"                          "
+EC  690.18,Desc.,MASTER THESIS,0,60,CEYHUN ELGİN,,, ,,,,,"                          "
+EC  690.19,Desc.,MASTER THESIS,0,60,MURAT KIRDAR,,, ,,,,,"                          "
+EC  690.20,Desc.,MASTER THESIS,0,60,GÖKHAN ÖZERTAN,,, ,,,,,"                          "
+EC  700.01,Desc.,GRADUATE SEMINAR,0,5,OZAN HATİPOĞLU,FF,78,Online,,,,,"                          "
+EC  790.01,Desc.,Ph.D THESIS,0,120,BURÇAY ERUS,,, ,,,,,"                          "
+EC  790.02,Desc.,Ph.D THESIS,0,120,MURAT KOYUNCU,,, ,,,,,"                          "
+EC  790.03,Desc.,Ph.D THESIS,0,120,OZAN HATİPOĞLU,,, ,,,,,"                          "
+EC  790.04,Desc.,Ph.D THESIS,0,120,MURAT KIRDAR,,, ,,,,,"                          "

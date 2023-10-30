@@ -1,0 +1,31 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.01,Desc.,CALCULUS I,4,6,TALİN BUDAK,TTThTh,1212,,HKD201 | HKD201 | HKD201 | HKD201,,,,"                          "
+MATH101.02,Desc.,CALCULUS I,4,6,TALİN BUDAK,TTThTh,3434,,HKD201 | HKD201 | HKD201 | HKD201,,,,"                          "
+MATH102.03,Desc.,CALCULUS II,4,6,AHMET KAMİL FEYZİOĞLU,TTThTh,3434,,HKD301 | HKD301 | HKD301 | HKD301,,,,"                          "
+MATH106.01,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,GÜLNİHAL YÜCEL,TTThTh,1212,,GYM | GYM | GYM | GYM,,,,"                          "
+MATH106.02,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,GÜLNİHAL YÜCEL,TTThTh,3434,,GYM | GYM | GYM | GYM,,,,"                          "
+MATH132.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS II,4,8,BETÜL TANBAY,TTThTh,5656,,TB 260 | TB 260 | TB 260 | TB 260,,,,"        MATH                  "
+MATH162.01,Desc.,DISCRETE MATHEMATICS,4,6,FERİT ÖZTÜRK,MMWW,7834,,PARK1 | PARK1 | GYM | GYM,,,,"                          "
+MATH201.02,Desc.,MATRIX THEORY,4,5,NİLGÜN IŞIK,MMWW,1212,,PARK1 | PARK1 | PARK1 | PARK1,,,,"                          "
+MATH201.03,Desc.,MATRIX THEORY,4,5,NİLGÜN IŞIK,MMWW,5656,,HKD101 | HKD101 | HKD101 | HKD101,,,,"                          "
+MATH202.01,Desc.,DIFFERENTIAL EQUATIONS,4,7,N.SADIK DEĞER,MMWW,1212,,HKD101 | HKD101 | HKD101 | HKD101,,,,"                          "
+MATH202.02,Desc.,DIFFERENTIAL EQUATIONS,4,7,N.SADIK DEĞER,MMWW,3434,,HKD101 | HKD101 | HKD101 | HKD101,,,,"                          "
+MATH202.03,Desc.,DIFFERENTIAL EQUATIONS,4,7,BURAK GÜREL,MMWW,3434,,PARK1 | PARK1 | PARK1 | PARK1,,,,"                          "
+MATH322.01,Desc.,ALGEBRA II,4,8,AHMET KAMİL FEYZİOĞLU,TTThTh,1212,,HKD301 | HKD301 | HKD301 | HKD301,,,,"                          "
+MATH332.01,Desc.,REAL ANALYSIS II,4,8,FERİT ÖZTÜRK,MMWW,1212,,M 1100 | M 1100 | TB 310 | TB 310,,,,"                          "
+MATH336.01,Desc.,NUMERICAL ANALYSIS,4,6,ALP EDEN,TTThTh,3434,,TB 260 | TB 260 | TB 260 | TB 260,,,,"                          "
+MATH352.01,Desc.,PARTIAL DIFFERENTIAL EQUATIONS,3,6,BURAK GÜREL,MMTh,788,,M 2152 | M 2152 | M 2170,,,,"                          "
+MATH432.01,Desc.,COMPLEX ANALYSIS II,3,7,CEM YALÇIN YILDIRIM,TTTh,787,,TB 260 | TB 260 | TB 260,,,,"                          "
+MATH480.01,Desc.,SEMINAR,2,4,N.SADIK DEĞER,TBA,,,,,,,"                          "
+MATH48A.01,Desc.,SEL.TOP.MODAL LOGIC,3,5,ALİ KARATAY,MFF,334,,GYM | TB 310 | TB 310,,,,"                          "
+MATH48B.01,Desc.,SEL.TOP.IN MATHEMATICS ( MODULE THEORY ),3,6,CEMAL KOÇ,WWW,789,,TB 240 | TB 240 | TB 240,,,,"                          "
+MATH527.01,Desc.,NUMBER THEORY,4,10,CEM YALÇIN YILDIRIM,TTThTh,5656,,,,,,"                          "
+MATH532.01,Desc.,REAL ANALYSIS II,4,10,BETÜL TANBAY,TTThTh,3434,,,,,,"                          "
+MATH552.01,Desc.,PARTIAL DIFFERENTIAL EQUATIONS II,4,10,ALP EDEN,MMMM,6789,,TB 240 | TB 240 | TB 240 | TB 240,,,,"                          "
+MATH579.01,Desc.,GRADUATE SEMINAR,0,1,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "
+MATH587.01,Desc.,SEL.TOP. IN DIFFERENTIAL EQUATIONS,3,7,ALP EDEN,TBA,,,,,,,"                          "
+MATH58A.01,Desc.,SEL.TOP.IN ALGEBRAIC TOPOLOGY,3,7,FERİT ÖZTÜRK,TBA,,,,,,,"                          "
+MATH58B.01,Desc.,SEL.TOP.IN MODULE THEORY,3,7,CEMAL KOÇ,WWF,786,,TB 240 | TB 240 | TB 240,,,,"                          "
+MATH58C.01,Desc.,SEL.TOP.IN MODAL LOGIC,3,7,ALİ KARATAY,MFF,334,,GYM | TB 310 | TB 310,,,,"                          "
+MATH590.01,Desc.,READINGS IN MATHEMATICS,1,3,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "

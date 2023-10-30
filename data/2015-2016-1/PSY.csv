@@ -1,0 +1,48 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PSY 101.01,Desc.,INTRODUCTION TO PSYCHOLOGY I,3,5,NUR YENİÇERİ,MWF,333,,AYHAN Ş | AYHAN Ş | AYHAN Ş,04.01.2016,2,,"                          "
+PSY 101.02,Desc.,INTRODUCTION TO PSYCHOLOGY I,3,5,ESRA MUNGAN,MMT,675,,NH 405 | NH 405 | NH 304,,0,PSY,"                          "
+PSY 201.01,Desc.,INTRO. TO STATISTICS FOR PSYCHOLOGY I,4,8,ALİ TEKCAN,TTThTh,1223,,M 1171 | M 1171 | M 2152 | M 2152,04.01.2016,1,,"                          "
+PSY 228.01,Desc.,COGNITIVE PSYCHOLOGY,3,6,AYŞECAN BODUROĞLU,MThTh,356,,NH 304 | NH 304 | NH 304,29.12.2015,2,,"                          "
+PSY 233.01,Desc.,LIFE SPAN DEVELOP.PSY.I:BIO.&COGNITIVE..,3,6,GAYE SOLEY,WWF,455,,NH 303 | NH 303 | NB 119,07.01.2016,2,,"                          "
+PSY 241.01,Desc.,SOCIAL PSYCHOLOGY,3,5,ADİL SARIBAY,TTTh,344,,NH 301 | NH 301 | NH 301,02.01.2016,1,,"                          "
+PSY 251.01,Desc.,PSYCHOLOGY OF PERSONALITY,3,6,SERRA MÜDERRİSOĞLU,MFF,267,,NB 119 | NB 119 | NB 119,11.01.2016,3,,"                          "
+PSY 301.01,Desc.,RESEARCH METHODS IN PSYCHOLOGY I,4,6,GAYE SOLEY,WWFF,7823,,TB 310 | TB 310 | NH 304 | NH 304,29.12.2015,1,,"                          "
+PSY 304.01,Desc.,EXPERIMENTAL PSYCHOLOGY,4,7,İNCİ AYHAN,MMWWW,45123,,NH 304 | NH 304 | YD 102 | YD 102 | YD 102,,0,,"                          "
+PSY 364.01,Desc.,CHILD PSYCHOPATHOLOGY,3,6,NUR YENİÇERİ,TTTh,344,,NH 304 | NH 304 | NH 103,04.01.2016,3,,"                          "
+PSY 48L.01,Desc.,SEL.TP.MUSIC COGNITION II,3,5,ESRA MUNGAN,ThFF,645,,,,0,,"                          "
+PSY 48M.01,Desc.,SEL.TOP.:QUALITATIVE ANALYSIS,3,5,SERRA MÜDERRİSOĞLU,MMM,678, ,NH 304 | NH 304 | NH 304,,0,,"                          "
+PSY 49C.01,Desc.,READ.&RES.IN POWER&GROUP PROCESSES,3,6,BİLGE ATACA,,, ,,,0,,"                          "
+PSY 49D.01,Desc.,READINGS&RESEARCH IN SOCIAL COGNITION,3,6,ADİL SARIBAY,TBA,,,,,0,,"                          "
+PSY 49G.01,Desc.,R&R VISUAL ATTENTION&WORKING MEMORY,3,6,AYŞECAN BODUROĞLU,TBA,,,,06.01.2016,1,,"                          "
+PSY 49J.01,Desc.,READING&RESEARCH IN PSY:LEARNING&IMPRINT,3,6,FEYZA ÇORAPÇI,TBA,,,,,0,,"                          "
+PSY 49L.01,Desc.,R&R IN PSY:COLLECTIVE MEMORY,3,6,ALİ TEKCAN,TBA,,,,11.01.2016,2,,"                          "
+PSY 49O.01,Desc.,R&R.:PSYCHOBIOLOGY OF STRESS,3,6,ELİF AYSİMİ DUMAN,TBA,,,,,0,,"                          "
+PSY 49P.01,Desc.,R&R IN PSY:PERCEPTION,3,6,İNCİ AYHAN,,, ,,,0,,"                          "
+PSY 49Q.01,Desc.,R&R IN.:CLASSICAL CONDITIONING IN QUAIL,3,6,FALİH KÖKSAL,MMMM,6789,,M 1171 | M 1171 | M 1171 | M 1171,,0,,"                          "
+PSY 49U.01,Desc.,R&R.:CHILD MALTREATMENT,3,6,SERRA MÜDERRİSOĞLU,TBA,,,,,0,,"                          "
+PSY 503.01,Desc.,SEMINAR IN ETHICS,0,3,NUR YENİÇERİ,M,6,,,,0,,"                          "
+PSY 521.01,Desc.,ADVANCED COGNITIVE PSYCHOLOGY,4,8,AYŞECAN BODUROĞLU,WWWW,5678,,,12.01.2016,3,,"                          "
+PSY 523.01,Desc.,ADVANCED LEARNING THEORY,4,8,FALİH KÖKSAL,FFFF,6789,,,11.01.2016,2,,"                          "
+PSY 531.01,Desc.,ADVANCED DEVELOPMENTAL PSYCHOLOGY,4,8,İSMAİL ERCAN ALP,MMFF,7867,,,12.01.2016,1,,"                          "
+PSY 541.01,Desc.,ADVANCED SOCIAL PSYCHOLOGY I,4,8,ADİL SARIBAY,FFFF,2345,,,,0,,"                          "
+PSY 567.01,Desc.,ADVANCED CLINICAL PSYCHOLOGY,4,8,GÜLER OKMAN FİŞEK,WWWW,6789,,,30.12.2015,2,,"                          "
+PSY 569.01,Desc.,CHILD PSYCHOPATHOLOGY & THERAPHY,4,8,FEYZA ÇORAPÇI,TTTT,6789,,,,0,,"                          "
+PSY 571.01,Desc.,PSYCHOBIOLOGY,4,8,ELİF AYSİMİ DUMAN,TTTT,2345,,,04.01.2016,2,,"                          "
+PSY 588.01,Desc.,SP. TOP. IN COGNITIVE PSYCHOLOGY,4,8,İNCİ AYHAN,ThThThTh,2345,,,,0,,"                          "
+PSY 68S.01,Desc.,DIRECTED READINGS IN COGNITIVE PSYCHOLOG,0,10,AYŞECAN BODUROĞLU,TBA,,,,08.01.2016,2,,"                          "
+PSY 68S.02,Desc.,DIRECTED READINGS IN COGNITIVE PSYCHOLOG,0,10,ALİ TEKCAN,TBA,,,,08.01.2016,2,,"                          "
+PSY 68T.01,Desc.,DIRECTED READINGS IN DEVELOPMENTAL PSY.,0,10,FEYZA ÇORAPÇI,TBA,,,,30.12.2015,2,,"                          "
+PSY 690.04,Desc.,MASTER THESIS,0,60,AYŞECAN BODUROĞLU,TBA,,,,,0,,"                          "
+PSY 690.05,Desc.,MASTER THESIS,0,60,FEYZA ÇORAPÇI,TBA,,,,,0,,"                          "
+PSY 690.06,Desc.,MASTER THESIS,0,60,ELİF AYSİMİ DUMAN,TBA,,,,,0,,"                          "
+PSY 690.08,Desc.,MASTER THESIS,0,60,ESRA MUNGAN,TBA,,,,,0,,"                          "
+PSY 690.09,Desc.,MASTER THESIS,0,60,SERRA MÜDERRİSOĞLU,TBA,,,,,0,,"                          "
+PSY 690.10,Desc.,MASTER THESIS,0,60,ADİL SARIBAY,TBA,,,,,0,,"                          "
+PSY 690.11,Desc.,MASTER THESIS,0,60,GAYE SOLEY,TBA,,,,,0,,"                          "
+PSY 690.12,Desc.,MASTER THESIS,0,60,ALİ TEKCAN,TBA,,,,,0,,"                          "
+PSY 69I.01,Desc.,LAB/FIELD WORK IN DEV.PSYCHOLOGY 1-4,2,10,GAYE SOLEY,TBA,,,,12.01.2016,3,,"                          "
+PSY 790.01,Desc.,DOCTORAL DISSERTATION,0,120,AYŞECAN BODUROĞLU,TBA,,,,,0,,"                          "
+PSY 790.02,Desc.,DOCTORAL DISSERTATION,0,120,ALİ TEKCAN,TBA,,,,,0,,"                          "
+PSY 790.03,Desc.,DOCTORAL DISSERTATION,0,120,FEYZA ÇORAPÇI,TBA,,,,,0,,"                          "
+PSY 790.04,Desc.,DOCTORAL DISSERTATION,0,120,SERRA MÜDERRİSOĞLU,TBA,,,,,0,,"                          "
+PSY 790.05,Desc.,DOCTORAL DISSERTATION,0,120,FALİH KÖKSAL,TBA,,,,,0,,"                          "

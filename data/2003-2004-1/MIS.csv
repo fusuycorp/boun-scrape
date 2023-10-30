@@ -1,0 +1,23 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MIS 111.01,Desc.,ECONOMICS I,3,5,BERTAN YILMAZ BADUR,MMT,121,,,,,,"                          "
+MIS 113.01,Desc.,MANAGEMENT & ORGANIZATION,3,5,ÖZGÜR DÖĞERLİOĞLU,MFF,323,,,,,,"                          "
+MIS 131.01,Desc.,PROBLEM SOLVING & ALGORITHMS,4,6,ZUHAL TANRIKULU,WWF,344,,,,,,"                          "
+MIS 143.01,Desc.,BUSINESS MATHEMATICS I,3,5,AYFER ECEVİT,TTW,232,,,,,,"                          "
+MIS 211.01,Desc.,ACCOUNTING I,3,4,İPEK MEREY,TThTh,456,,,,,,"                          "
+MIS 213.01,Desc.,QUANTITATIVE TECHNIQUES,3,4,ASLI SENCER,MWW,212,,,,,,"                          "
+MIS 233.01,Desc.,INTERMEDIATE PROGRAMMING,4,7,OSMAN NURİ DARCAN,MMW,343,,,,,,"                          "
+MIS 313.01,Desc.,QUANTITATIVE ANAL. FOR DECISION MAKING,3,5,SONA MARDİKYAN,MMT,344,,,,,,"                          "
+MIS 371.01,Desc.,INTERNET INFORMATION SERVICES,3,5,BİRGÜL KUTLU,FF,23,,,,,,"                          "
+MIS 462.01,Desc.,ADVANCED BUSINESS PROGRAMMING,4,5,OSMAN NURİ DARCAN,MMTh,674,,,,,,"                          "
+MIS 467.01,Desc.,DATA MINING,3,5,BERTAN YILMAZ BADUR,WWTh,452,,,,,,"                          "
+MIS 481.01,Desc.,SENIOR SEMINARS IN MIS,3,2,AYFER ECEVİT,WWW,678,,,,,,"                          "
+MIS 492.01,Desc.,PROJECT,4,8,BERTAN YILMAZ BADUR,TBA,,,,,,,"                          "
+MIS 492.02,Desc.,PROJECT,4,8,ZUHAL TANRIKULU,TBA,,,,,,,"                          "
+MIS 493.01,Desc.,SP TOP.IN MIS(E-MARKETING),3,5,HANDE TÜRKER,TTTh,235,,,,,,"                          "
+MIS 501.01,Desc.,TECHNICAL FOUNDATIONS OF MIS,4,6,ZUHAL TANRIKULU,TBA,,,,,,,"                          "
+MIS 502.01,Desc.,MANAGERIAL FOUNDATIONS OF MIS,4,6,HANDE TÜRKER,MMWW,5645,,,,,,"                          "
+MIS 511.01,Desc.,DATA RESOURCES MANAGEMENT,3,6,OSMAN NURİ DARCAN,WWW,678,,,,,,"                          "
+MIS 513.01,Desc.,MANAGING COMMUNICATION TECHNOLOGY,3,6,BİRGÜL KUTLU,WWW,123,,,,,,"                          "
+MIS 515.01,Desc.,"SYSTEMS ANALYSIS, MODELING & DESIGN",3,6,MELTEM ÖZTURAN,TTT,123,,,,,,"                          "
+MIS 517.01,Desc.,ADVANCED OPERATIONS MANAGEMENT,3,6,ASLI SENCER,ThThTh,234,,,,,,"                          "
+MIS 579.01,Desc.,GRADUATE SEMINAR,0,6,ZUHAL TANRIKULU,TT,45,,,,,,"                          "

@@ -1,0 +1,34 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PA  211.01,Desc.,PAINTING,2,4,MUTLU M.ERBAY,FFFF,1234,,HÜLYA A | HÜLYA A | HÜLYA A | HÜLYA A,,0,,"                          "
+PA  213.01,Desc.,PAINTING,2,4,MUTLU M.ERBAY,TTTT,1234,,HÜLYA A | HÜLYA A | HÜLYA A | HÜLYA A,,0,,"                          "
+PA  215.01,Desc.,PAINTING,2,4,DİLEK DEMİRCİ,WWWW,1234,,,,0,,"                          "
+PA  221.01,Desc.,CERAMICS,2,4,SAKİNE ÇİL,MMMM,1234,,,,0,,"                          "
+PA  225.01,Desc.,SCULPTURE,2,4,NİLGÜN ÇAKMAK,TTTT,1234,,HEYKEL | HEYKEL | HEYKEL | HEYKEL ,,0,,"                          "
+PA  225.02,Desc.,SCULPTURE,2,4,NİLGÜN ÇAKMAK,ThThThTh,1234,,HEYKEL | HEYKEL | HEYKEL | HEYKEL ,,0,,"                          "
+PA  225.03,Desc.,SCULPTURE,2,4,AYDIN SOFU,WWWW,5678,,HEYKEL | HEYKEL | HEYKEL | HEYKEL ,,0,,"                          "
+PA  241.01,Desc.,APPLIED ARTS,2,4,MUTLU M.ERBAY,FFFF,5678,,HÜLYA A | HÜLYA A | HÜLYA A | HÜLYA A,,0,,"                          "
+PA  243.01,Desc.,APPLIED ARTS,2,4,MUTLU M.ERBAY,WWWW,1234,,HÜLYA A | HÜLYA A | HÜLYA A | HÜLYA A,,0,,"                          "
+PA  246.01,Desc.,ART OF ANIMATION,2,4,GALİP TEKİN,WWWW,5678,,MÜZİK S | MÜZİK S | MÜZİK S | MÜZİK S,,0,,"                          "
+PA  246.02,Desc.,ART OF ANIMATION,2,4,GALİP TEKİN,ThThThTh,5678,,MÜZİK S | MÜZİK S | MÜZİK S | MÜZİK S,,0,,"                          "
+PA  311.01,Desc.,PAINTING,2,4,FETHİYE F.ERBAY,FFFF,1234,,HÜLYA A | HÜLYA A | HÜLYA A | HÜLYA A,,0,,"                          "
+PA  313.01,Desc.,PAINTING,2,4,MUTLU M.ERBAY,TTTT,5678,,HÜLYA A | HÜLYA A | HÜLYA A | HÜLYA A,,0,,"                          "
+PA  315.01,Desc.,PAINTING,2,4,DİLEK DEMİRCİ,WWWW,5678,,,,0,,"                          "
+PA  321.01,Desc.,CERAMICS,2,4,SAKİNE ÇİL,MMMM,5678,,,,0,,"                          "
+PA  321.02,Desc.,CERAMICS,2,4,ASLI AYDEMİR,FFFF,1234,,,,0,,"                          "
+PA  325.01,Desc.,SCULPTURE ,2,4,NİLGÜN ÇAKMAK,MMMM,5678,,HEYKEL | HEYKEL | HEYKEL | HEYKEL ,,0,,"                          "
+PA  325.02,Desc.,SCULPTURE ,2,4,NİLGÜN ÇAKMAK,MMMM,1234,,HEYKEL | HEYKEL | HEYKEL | HEYKEL ,,0,,"                          "
+PA  325.03,Desc.,SCULPTURE ,2,4,AYDIN SOFU,WWWW,1234,,HEYKEL | HEYKEL | HEYKEL | HEYKEL ,,0,,"                          "
+PA  327.01,Desc.,CERAMICS,2,4,SAKİNE ÇİL,TTTT,1234,,,,0,,"                          "
+PA  327.02,Desc.,CERAMICS,2,4,ASLI AYDEMİR,ThThThTh,1234,,,,0,,"                          "
+PA  341.01,Desc.,APPLIED ARTS,2,4,MUTLU M.ERBAY,WWWW,5678,,HÜLYA A | HÜLYA A | HÜLYA A | HÜLYA A,,0,,"                          "
+PA  351.01,Desc.,WESTERN MUSICAL PRACTICUM I,2,4,EMİNE SERDAROĞLU,MMMM,1234,,,,0,,"                          "
+PA  351.02,Desc.,WESTERN MUSICAL PRACTICUM I,2,4,EMİNE SERDAROĞLU,FFFF,1234,,,,0,,"                          "
+PA  355.01,Desc.,OTTOMAN MUSICAL PRACTICUM I,2,4,GÖNÜL PAÇACI,WWWW,5678,,MÜZİK S | MÜZİK S | MÜZİK S | MÜZİK S,,0,,"                          "
+PA  373.01,Desc.,PHOTOGRAPHIC STUDIO&MULTIPLE IMAGING,3,6,NURİ ÖZER ERBAY,ThThThTh,1234,,HÜLYA A | HÜLYA A | HÜLYA A | HÜLYA A,,0,,"                          "
+PA  415.01,Desc.,PAINTING,2,4,DİLEK DEMİRCİ,ThThThTh,1234,,,,0,,"                          "
+PA  421.01,Desc.,CERAMICS,2,4,SAKİNE ÇİL,FFFF,1234,,,,0,,"                          "
+PA  421.02,Desc.,CERAMICS,2,4,ASLI AYDEMİR,ThThThTh,5678,,,,0,,"                          "
+PA  425.01,Desc.,SCULPTURE,2,4,NİLGÜN ÇAKMAK,ThThThTh,5678,,HEYKEL | HEYKEL | HEYKEL | HEYKEL ,,0,,"                          "
+PA  427.01,Desc.,CERAMICS,2,4,SAKİNE ÇİL,FFFF,5678,,,,0,,"                          "
+PA  427.02,Desc.,CERAMICS,2,4,ASLI AYDEMİR,FFFF,5678,,,,0,,"                          "
+PA  488.01,Desc.,MODERN DANCE,2,4,AYRİN ERSÖZ,ThThThTh,1234,,BALE SA | BALE SA | BALE SA | BALE SA,,0,,"                          "

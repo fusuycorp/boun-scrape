@@ -1,0 +1,70 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+FLED104.01,Desc.,CRITICAL THINKING INTO WRITING,3,8,NUR YİĞİTOĞLU,ThThTh,126,Classroom,ET 01 | ET 01 | ET 02,,,,"                          "
+FLED104.02,Desc.,CRITICAL THINKING INTO WRITING,3,8,SELAHATTİN YILMAZ,FFF,678,Online,ONLINE | ONLINE | ONLINE,,,,"                          "
+FLED104.03,Desc.,CRITICAL THINKING INTO WRITING,3,8,JUDY MONTHIE DOYUM,ThThTh,126,Classroom,EF 116 | EF 116 | NH 104,,,,"                          "
+FLED104.04,Desc.,CRITICAL THINKING INTO WRITING,3,8,JUDY MONTHIE DOYUM,TTT,156,Classroom,NH 402 | NH 402 | NH 402,,,,"                          "
+FLED104.05,Desc.,CRITICAL THINKING INTO WRITING,3,8,DERYA ALTINMAKAS,FFF,678,Online,ONLINE | ONLINE | ONLINE,,,,"                          "
+FLED106.01,Desc.,DEV. COMMUNICATIVE COMPETENCE IN ENGLISH,3,8,IŞIL ERDUYAN,TTTh,237,Classroom,EF 106 | EF 106 | NH 402,,,,"                          "
+FLED106.02,Desc.,DEV. COMMUNICATIVE COMPETENCE IN ENGLISH,3,8,JUDY MONTHIE DOYUM,TTTh,237,Classroom,NH 102 | NH 102 | NH 104,,,,"                          "
+FLED211.01,Desc.,ENGLISH LANGUAGE AWARENESS,3,7,NAZİK DİNÇTOPAL DENİZ,TWW,445,Online/Classroom,EF 206 | ONLINE | ONLINE,01.06.2022,1,,"                          "
+FLED212.01,Desc.,SECOND LANGUAGE LEARNING,3,6,AYŞE GÜREL,TThTh,556,Classroom,NH 305 | NH 405 | NH 405,31.05.2022,2,,"                          "
+FLED216.01,Desc.,COMMUNITY SERVICE PRACTICES IN FLED,3,6,GÜLCAN ERÇETİN,FFF,234,Online,ONLINE | ONLINE | ONLINE,,,,"                          "
+FLED216.02,Desc.,COMMUNITY SERVICE PRACTICES IN FLED,3,6,BELMA HAZNEDAR,FFF,234,Online,ONLINE | ONLINE | ONLINE,,,,"                          "
+FLED216.03,Desc.,COMMUNITY SERVICE PRACTICES IN FLED,3,6,AYŞE GÜREL,FFF,234,Classroom,,,,,"                          "
+FLED216.04,Desc.,COMMUNITY SERVICE PRACTICES IN FLED,3,6,SENEM YILDIZ ERSOY,FFF,234,Online,ONLINE | ONLINE | ONLINE,,,,"                          "
+FLED216.05,Desc.,COMMUNITY SERVICE PRACTICES IN FLED,3,6,SİBEL TATAR,FFF,234,Online,ONLINE | ONLINE | ONLINE,,,,"                          "
+FLED216.06,Desc.,COMMUNITY SERVICE PRACTICES IN FLED,3,6,NUR YİĞİTOĞLU,FFF,234,Online,ONLINE | ONLINE | ONLINE,,,,"                          "
+FLED216.07,Desc.,COMMUNITY SERVICE PRACTICES IN FLED,3,6,NAZİK DİNÇTOPAL DENİZ,FFF,234,Online,ONLINE | ONLINE | ONLINE,,,,"                          "
+FLED216.08,Desc.,COMMUNITY SERVICE PRACTICES IN FLED,3,6,IŞIL ERDUYAN,FFF,234,Online,ONLINE | ONLINE | ONLINE,,,,"                          "
+FLED218.01,Desc.,RESEARCH METHODS IN APPLIED LINGUISTICS,3,7,YASSER TEIMOURI,ThThTh,789,Online,ONLINE | ONLINE | ONLINE,,,,"                          "
+FLED302.01,Desc.,TEACHING SECOND LANGUAGE GRAMMAR,3,4,ŞEBNEM YALÇIN,MMW,231,Online,ONLINE | ONLINE | ONLINE,07.06.2022,3,,"                          "
+FLED302.03,Desc.,TEACHING SECOND LANGUAGE GRAMMAR,3,4,YASSER TEIMOURI,TTT,789,Classroom,NH 001 | NH 001 | NH 001,07.06.2022,3,,"                          "
+FLED306.01,Desc.,CHILDHOOD BILINGUALISM&BILINGUAL EDUC.,3,4,BELMA HAZNEDAR,MMM,456,Online,ONLINE | ONLINE | ONLINE,,,,"                          "
+FLED311.01,Desc.,SECOND LANGUAGE TEACHING METHODS,3,4,SİBEL TATAR,TTW,124,Online,ONLINE | ONLINE | ONLINE,28.05.2022,3,,"                          "
+FLED314.01,Desc.,THE USE OF DRAMA IN FOREIGN LANG. EDU.,3,4,JUDY MONTHIE DOYUM,WWW,789,Classroom,EF 205 | EF 205 | EF 205,,,,"                          "
+FLED318.01,Desc.,TEACHING SECOND LANGUAGE SKILLS,3,5,GÜLCAN ERÇETİN,MMW,782,Online,ONLINE | ONLINE | ONLINE,11.06.2022,1,,"                          "
+FLED318.02,Desc.,TEACHING SECOND LANGUAGE SKILLS,3,5,SENEM YILDIZ ERSOY,TTW,782,Online/Classroom,NH 202 | NH 202 | ONLINE,11.06.2022,1,,"                          "
+FLED411.01,Desc.,TECHNOLOGY ENHANCED LANGUAGE TEACHING,4,9,SENEM YILDIZ ERSOY,WWThTh,3456,Online,ONLINE | ONLINE | ONLINE | ONLINE,06.06.2022,3,,"                          "
+FLED412.01,Desc.,PRACTICE TEACHING IN EFL,4,9,SİBEL TATAR,MMMM,1234,Classroom,EF 103 | EF 103 | EF 103 | EF 103,,,,"                          "
+FLED412.02,Desc.,PRACTICE TEACHING IN EFL,4,9,SUMRU AKCAN,MMMM,1234,Classroom,EF 201 | EF 201 | EF 201 | EF 201,,,,"                          "
+FLED412.03,Desc.,PRACTICE TEACHING IN EFL,4,9,NUR YİĞİTOĞLU,MMMM,1234,Classroom,EF 101 | EF 101 | EF 101 | EF 101,,,,"                          "
+FLED412.04,Desc.,PRACTICE TEACHING IN EFL,4,9,BELMA HAZNEDAR,MMWW,1212,Classroom,EF 116 | EF 116 | EF 205 | EF 205,,,,"                          "
+FLED412.05,Desc.,PRACTICE TEACHING IN EFL,4,9,ŞEBNEM YALÇIN,MMMM,5678,Classroom,EF 203 | EF 203 | EF 203 | EF 203,,,,"                          "
+FLED412.06,Desc.,PRACTICE TEACHING IN EFL,4,9,NAZİK DİNÇTOPAL DENİZ,MMMM,1234,Classroom,EF 203 | EF 203 | EF 203 | EF 203,,,,"                          "
+FLED412.07,Desc.,PRACTICE TEACHING IN EFL,4,9,IŞIL ERDUYAN,MMMM,1234,Classroom,ET 03 | ET 03 | ET 03 | ET 03,,,,"                          "
+FLED412.08,Desc.,PRACTICE TEACHING IN EFL,4,9,NESRİN KUTLAY,MMTT,6767,Classroom,ET 03 | ET 03 | EF 205 | EF 205,,,,"                          "
+FLED416.01,Desc.,SEMINAR ON PRACTICE TEACHING IN EFL,4,6,SİBEL TATAR,ThTh,78,Online,ONLINE | ONLINE,,,,"                          "
+FLED416.02,Desc.,SEMINAR ON PRACTICE TEACHING IN EFL,4,6,SUMRU AKCAN,ThTh,78,Online,ONLINE | ONLINE,,,,"                          "
+FLED504.01,Desc.,LEARNING TURKISH AS A FOREIGN LANGUAGE,3,8,AYŞE GÜREL,ThThTh,789,Classroom,,,,,"                          "
+FLED505.01,Desc.,QUALITATIVE RESEARCH DESIGN IN LANGU.STU,3,8,SİBEL TATAR,TTT,567,Classroom,,,,,"                          "
+FLED602.01,Desc.,ADVANCED RESEARCH METHODS,4,9,YASSER TEIMOURI,,,Online,,,,,"                          "
+FLED615.01,Desc.,ISSUES IN FOREIGN LANGUAGE EDUCATION PLANNING,4,9,YASEMİN BAYYURT,TTTT,78910,Online,ONLINE | ONLINE | ONLINE | ONLINE,,,,"                          "
+FLED617.01,Desc.,LANGUAGE ATTRITION,4,9,AYŞE GÜREL,TTTT,6789,Classroom,,,,,"                          "
+FLED683.01,Desc.,SP.TP.IN ISLA RESEARCH,4,9,ŞEBNEM YALÇIN,WWWW,6789,Online,ONLINE | ONLINE | ONLINE | ONLINE,,,,"                          "
+FLED690.01,Desc.,MASTER THESIS,0,60,BELMA HAZNEDAR,,,Online,,,,,"                          "
+FLED690.02,Desc.,MASTER THESIS,0,60,LEYLA MESUDE MARTI,,,Online,,,,,"                          "
+FLED690.03,Desc.,MASTER THESIS,0,60,SUMRU AKCAN,,,Online,,,,,"                          "
+FLED690.04,Desc.,MASTER THESIS,0,60,NUR YİĞİTOĞLU,,,Online,,,,,"                          "
+FLED690.05,Desc.,MASTER THESIS,0,60,SENEM YILDIZ ERSOY,,,Online,,,,,"                          "
+FLED690.06,Desc.,MASTER THESIS,0,60,ŞEBNEM YALÇIN,,,Online,,,,,"                          "
+FLED690.07,Desc.,MASTER THESIS,0,60,GÜLCAN ERÇETİN,,,Online,,,,,"                          "
+FLED690.08,Desc.,MASTER THESIS,0,60,SİBEL TATAR,,,Online,,,,,"                          "
+FLED690.09,Desc.,MASTER THESIS,0,60,YASEMİN BAYYURT,,,Online,,,,,"                          "
+FLED690.10,Desc.,MASTER THESIS,0,60,AYŞE GÜREL,,,Online,,,,,"                          "
+FLED690.11,Desc.,MASTER THESIS,0,60,NAZİK DİNÇTOPAL DENİZ,,,Online,,,,,"                          "
+FLED690.12,Desc.,MASTER THESIS,0,60,IŞIL ERDUYAN,,,Online,,,,,"                          "
+FLED690.13,Desc.,MASTER THESIS,0,60,YASSER TEIMOURI,,,Online,,,,,"                          "
+FLED691.01,Desc.,SP.TP.SENTENCE PROCESSING IN THE FIRST&SECOND LANGUAGE,4,9,NAZİK DİNÇTOPAL DENİZ,TTTT,6789,Online,ONLINE | ONLINE | ONLINE | ONLINE,,,,"                          "
+FLED694.01,Desc.,SP.TP.ISSUES IN CLASSROOM WRITING ASSESSMENT&FEEDBACK IN L2 SCHOOL CONTEXTS,4,9,NUR YİĞİTOĞLU,ThThThTh,78910,Online,ONLINE | ONLINE | ONLINE | ONLINE,,,,"                          "
+FLED699.01,Desc.,SP.TP.IN APPLIED LINGUISTICS,4,9,IŞIL ERDUYAN,WWWW,6789,Online,ONLINE | ONLINE | ONLINE | ONLINE,,,,"                          "
+FLED790.01,Desc.,Ph.D THESIS,0,120,BELMA HAZNEDAR,,,Online,,,,,"                          "
+FLED790.02,Desc.,Ph.D THESIS,0,120,YASEMİN BAYYURT,,,Online,,,,,"                          "
+FLED790.04,Desc.,Ph.D THESIS,0,120,SİBEL TATAR,,,Online,,,,,"                          "
+FLED790.05,Desc.,Ph.D THESIS,0,120,LEYLA MESUDE MARTI,,,Online,,,,,"                          "
+FLED790.06,Desc.,Ph.D THESIS,0,120,GÜLCAN ERÇETİN,,,Online,,,,,"                          "
+FLED790.07,Desc.,Ph.D THESIS,0,120,ŞEBNEM YALÇIN,,,Online,,,,,"                          "
+FLED790.08,Desc.,Ph.D THESIS,0,120,SUMRU AKCAN,,,Online,,,,,"                          "
+FLED790.09,Desc.,Ph.D THESIS,0,120,SENEM YILDIZ ERSOY,,,Online,,,,,"                          "
+FLED790.10,Desc.,Ph.D THESIS,0,120,IŞIL ERDUYAN,,,Online,,,,,"                          "
+FLED790.11,Desc.,Ph.D THESIS,0,120,NAZİK DİNÇTOPAL DENİZ,,,Online,,,,,"                          "
+FLED790.12,Desc.,Ph.D THESIS,0,120,NUR YİĞİTOĞLU,,,Online,,,,,"                          "

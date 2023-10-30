@@ -1,0 +1,40 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ED  104.01,Desc.,SOCIAL FOUNDATIONS OF EDUCATION,3,5,GÜLİSTAN GÜRSEL BİLGİN,WThTh,656,,EF 116 | EF 116 | EF 116,,,,"                          "
+ED  132.01,Desc.,ETHICAL ISSUES IN COUNSELING,2,5,DENİZ ALBAYRAK KAYMAK,ThTh,12,,EF 116 | EF 116,,,,"                          "
+ED  200.01,Desc.,LIVING WITH DISABILITIES,3,5,ENGİN YILMAZ,TTTh,677,,EF 106 | EF 106 | EF  116,,,,"                          "
+ED  203.01,Desc.,HISTORY OF TURKISH EDUCATION ,3,5,RIFAT OKÇABOL,TWW,578,,EF 116 | EF 104 | EF 104,,,,"                          "
+ED  208.01,Desc.,RESEARCH METHODOLOGY,4,6,ÖZLEM ÜNLÜHİSARCIKLI,TTThTh,2334,,EF 116 | EF 116 | NH 201 | NH 201,,,,"                          "
+ED  252.01,Desc.,EDUCATIONAL ADMINISTRATION,3,5,FATMA NEVRA SEGGIE,WWTh,346,,EF 06 | EF 06 | EF 106,,,,"                          "
+ED  282.01,Desc.,PRINCIPLES & METHODS OF INSTRUCTION,3,5,GÜLİSTAN GÜRSEL BİLGİN,WWTh,342,,EF 116 | EF 116 | EF 106,,,"CEDU,MEDU,PEDU,P_MATH","                          "
+ED  300.02,Desc.,COMMUNITY INVOLVEMENT,3,5,AYŞE HAVVA CANER,TTT,789,,EF 205 | EF 205 | EF 205,,,,"                          "
+ED  300.03,Desc.,COMMUNITY INVOLVEMENT,3,5,JENNIFER SERTEL,WWW,678,,EF 202 | EF 202 | EF 202,,,,"                          "
+ED  306.01,Desc.,COMPARATIVE EDUCATION,3,5,ZEYNEP KIZILTEPE,TWW,834,,EF 116 | EF 102 | EF 102,,,,"                          "
+ED  310.01,Desc.,GENDER & EDUCATION,3,5,ÖZLEM ADA ÜLKE,ThThTh,8910,,EF 102 | EF 102 | EF 102,,,,"                          "
+ED  330.01,Desc.,BASIC COUNSELING SKILLS,3,6,AYŞE GÜR TURABOĞLU,TTT,234,,EF 104 | EF 104 | EF 104,,,,"        GUID                  "
+ED  330.02,Desc.,BASIC COUNSELING SKILLS,3,6,AYŞE GÜR TURABOĞLU,TTT,567,,EF 103 | EF 103 | EF 103,,,,"        GUID                  "
+ED  371.01,Desc.,INSTRUCTIONAL PRODUCT DEVELOPMENT,3,6,AYŞE HAVVA CANER,WW,67,,EF 204 | EF 204,,,,"                          "
+ED  373.01,Desc.,MEASUREMENT & EVALUATION ,3,6,BENGÜ BÖRKAN,MMW,565,,EF 106 | EF 106 | EF 106,,,,"                          "
+ED  378.01,Desc.,INTRODUCTION TO ASSESSMENT IN COUNSELING,3,6,ZEYNEP HANDE SART,TThTh,112,,EF 116 | NH 203 | NH 203,,,,"                          "
+ED  415.01,Desc.,UNDERSTANDING DISABILITY,3,6,YELİZ ŞIK,ThThTh,8910,,EF 205 | EF 205 | EF 205,,,,"                          "
+ED  417.01,Desc.,CRISIS INTERVENTION,3,6,NEYLAN ÖZDEMİR,ThThTh,234,,EF 204 | EF 204 | EF 204,,,,"        GUID; PSY; ED                  "
+ED  434.01,Desc.,ADVANCED COUNSELING SKILLS,3,6,SİBEL AKMEHMET ŞEKERLER,TTTT,2345,,EF 109 | EF 109 | EF 109 | EF 109,,,,"        GUID                  "
+ED  434.02,Desc.,ADVANCED COUNSELING SKILLS,3,6,AYDAN GÜLERCE,TTTT,6789,,EF 109 | EF 109 | EF 109 | EF 109,,,,"        GUID                  "
+ED  434.03,Desc.,ADVANCED COUNSELING SKILLS,3,6,SEVİLAY SİTRAVA,MMMM,5678,,EF 109 | EF 109 | EF 109 | EF 109,,,,"                          "
+ED  436.01,Desc.,EDUCATIONAL NEUROLOGY,3,5,BARIŞ KORKMAZ,ThThTh,789,,EF 204 | EF 204 | EF 204,,,,"                          "
+ED  442.01,Desc.,ADULT EDUCATION,3,5,RIFAT OKÇABOL,TTW,785,,EF 203 | EF 203 | EF 101,,,,"                          "
+ED  444.01,Desc.,PSYCHOEDUCATIONAL CONSULTATION,3,6,YELİZ ŞIK,ThThTh,567,,EF 206 | EF 206 | EF 206,,,,"                          "
+ED  472.01,Desc.,INDIVIDUAL STUDY ,3,5,ZEYNEP HANDE SART,,,,,,,,"                          "
+ED  475.01,Desc.,SUPPORTIVE SERVICES IN HIGHER EDUCATION,3,5,DENİZ ALBAYRAK KAYMAK,,,,,,,,"                          "
+ED  475.02,Desc.,SUPPORTIVE SERVICES IN HIGHER EDUCATION,3,5,GÜLBİN ÖZTÜRK TÜTER,,,,,,,,"                          "
+ED  478.01,Desc.,SCHOOL COUNSELING PRACTICUM II,4,8,SİBEL AKMEHMET ŞEKERLER,FF,23,,EF 205 | EF 205,,,,"                          "
+ED  478.02,Desc.,SCHOOL COUNSELING PRACTICUM II,4,8,DENİZ ALBAYRAK KAYMAK,FF,12,,EF 204 | EF 204,,,,"                          "
+ED  478.03,Desc.,SCHOOL COUNSELING PRACTICUM II,4,8,GÜLİSTAN GÜRSEL BİLGİN,FF,12,,EF 101 | EF 101,,,,"                          "
+ED  478.04,Desc.,SCHOOL COUNSELING PRACTICUM II,4,8,AYŞE HAVVA CANER,FF,12,,EF 104 | EF 104,,,,"                          "
+ED  478.05,Desc.,SCHOOL COUNSELING PRACTICUM II,4,8,FATMA NEVRA SEGGIE,FF,23,,EF 103 | EF 103,,,,"                          "
+ED  478.06,Desc.,SCHOOL COUNSELING PRACTICUM II,4,8,ZEYNEP HANDE SART,FF,23,,EF 102 | EF 102,,,,"                          "
+ED  478.07,Desc.,SCHOOL COUNSELING PRACTICUM II,4,8,ÖZLEM ÜNLÜHİSARCIKLI,FF,12,,EF 202 | EF 202,,,,"                          "
+ED  478.08,Desc.,SCHOOL COUNSELING PRACTICUM II,4,8,NİHAL YENİAD MALKAMAK,FF,23,,EF 201 | EF 201,,,,"                          "
+ED  48A.01,Desc.,SP.TP.IN.EDU:SOCI.SUPPORT NETW.&ADVOCACY,3,6,DENİZ ALBAYRAK KAYMAK,,,,,,,,"                          "
+ED  48M.01,Desc.,SP.TOP.IN EDU.:DANCE AND MOVEMENT,3,6,MICHAL BARDAVID,ThThTh,8910,,PARKE SALON | PARKE SALON | PARKE SALON,,,,"                          "
+ED  49C.01,Desc.,SP.STUD.SELF REGULATION CHILDREN,3,5,NİHAL YENİAD MALKAMAK,MMM,567,,EF 103 | EF 103 | EF 103,,,,"                          "
+ED  49D.01,Desc.,SP.STUD.APPLICATIONS OF CBT AT SCHOOLS,3,5,ASLIHAN DÖNMEZ,TTT,91011, ,EF 101 | EF 101 | EF 101,,,,"                          "

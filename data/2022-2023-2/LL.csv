@@ -1,0 +1,67 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AL  312.01,Desc.,SURVEY OF AMERICAN LIT. FROM LATE 19 CEN,3,6,N.CİHAN YURDAÜN,MMW,787, ,TB 490 | TB 490 | TB 240,30.05.2023,2,,"                          "
+AL  312.02,Desc.,SURVEY OF AMERICAN LIT. FROM LATE 19 CEN,3,6,MYRTO DRIZOU,MMW,787, ,M 2152 | M 2152 | M 2170,30.05.2023,2,,"                          "
+AS  250.01,Desc.,INTRODUCTION TO AMERICAN STUDIES,3,6,MYRTO DRIZOU,MWW,434, ,TB 490 | M 2170 | M 2170,31.05.2023,2,,"                          "
+AS  412.01,Desc.,RESEARCH & WRITING IN AMERICAN STUDIES,3,6,ASLI TEKİNAY,,, ,,30.05.2023,1,,"                          "
+CL  106.01,Desc.,LITERARY THEORY AND CRITICISM I,3,6,MATTHEW GUMPERT,WWF,234, ,M 2230 | M 2230 | M 1170,01.06.2023,3,,"                          "
+CL  106.02,Desc.,LITERARY THEORY AND CRITICISM I,3,6,JAMESON J.KISMET BELL,MWW,723, ,M 2230 | JF 102 | JF 102,01.06.2023,3,,"                          "
+CL  206.01,Desc.,LITERARY THEORY&CRITICISM II,3,6,NAZ BULAMUR,WFF,223, ,JF 108 | TB 490 | TB 490,07.06.2023,2,,"                          "
+CL  206.02,Desc.,LITERARY THEORY&CRITICISM II,3,6,MATTHEW GUMPERT,WFF,723, ,M 2181 | M 1170 | M 1170,07.06.2023,2,,"                          "
+CL  485.01,Desc.,SP.TP.ABJECTION&ALTERITY AN CONTEMPORARY NOVEL,3,6,ÖZLEM ÖĞÜT,MWW,234, ,M 1181 | TB 240 | TB 240,04.06.2023,1,,"                          "
+CL  48R.01,Desc.,"SP.TP.UTOPIA:FABULATION, FICTION, VISION",3,6,BURCU KAYIŞÇI AKKOYUN,TTTh,233, ,TB 415 | TB 415 | EF 07,24.05.2023,3,,"                          "
+DRA 401.01,Desc.,AMERICAN DRAMA,3,6,ASLI TEKİNAY,TTTh,344, ,JF 334 | JF 334 | M 2170,03.06.2023,2,,"                          "
+EL  102.01,Desc.,SURVEY OF ENG.LIT.FROM RESTORATION TO PR,3,6,BURCU KAYIŞÇI AKKOYUN,TThTh,445, ,M 2181 | M 2230 | M 2230,03.06.2023,2,"FLED,LL","                          "
+,,P.S.,,,BURCU KAYIŞÇI AKKOYUN,T,8,,M 2171,,0,,"                          "
+EL  102.03,Desc.,SURVEY OF ENG.LIT.FROM RESTORATION TO PR,3,6,BAŞAK DEMİRHAN,TThTh,445, ,M 1200 | M 2181 | M 2181,03.06.2023,2,"FLED,LL","                          "
+,,P.S.,,,BAŞAK DEMİRHAN,T,8,,M 1171,,0,,"                          "
+EL  102.04,Desc.,SURVEY OF ENG.LIT.FROM RESTORATION TO PR,3,6,ÖZLEM GÖREY,TThTh,445, ,NH 403 | M 1171 | M 1171,03.06.2023,2,"FLED,LL","                          "
+,,P.S.,,,ÖZLEM GÖREY,T,8,,JF 333,,0,,"                          "
+EL  202.01,Desc.,THE ENGLISH RENAISSANCE,3,6,AYLİN ALKAÇ,WWF,564, ,TB 240 | TB 240 | M 2170,26.05.2023,3,,"                          "
+EL  202.02,Desc.,THE ENGLISH RENAISSANCE,3,6,JAMESON J.KISMET BELL,MMW,236, ,TB 415 | TB 415 | EF 202,26.05.2023,3,,"                          "
+EL  305.01,Desc.,STUDIES IN SHAKESPEARE,3,6,EMİNE FİŞEK,WFF,545, ,TB 415 | TB 415 | TB 415,25.05.2023,3,,"                          "
+EL  305.02,Desc.,STUDIES IN SHAKESPEARE,3,6,KIM FORTUNY,MMW,565, ,JF 331 | JF 331 | M 2231,25.05.2023,3,,"                          "
+EL  306.01,Desc.,THE ENGLISH ROMANTICS,3,6,BAŞAK DEMİRHAN,TFF,567, ,M 1200 | M 2230 | M 2230,01.06.2023,1,,"                          "
+EL  402.01,Desc.,MODERN NOVEL,3,6,ÖZLEM ÖĞÜT,MMW,676, ,M 2200 | M 2200 | TB 415,06.06.2023,1,,"                          "
+EL  402.02,Desc.,MODERN NOVEL,3,6,AYLİN ALKAÇ,WFF,878, ,TB 240 | TB 415 | TB 415,06.06.2023,1,,"                          "
+EL  408.01,Desc.,MODERN POETRY,3,6,N.CİHAN YURDAÜN,WFF,545, ,M 2180 | TB 240 | TB 240,30.05.2023,3,,"                          "
+EL  408.02,Desc.,MODERN POETRY,3,6,ÖZLEM GÖREY,TTTh,672, ,JF 333 | JF 333 | M 1171,30.05.2023,3,,"                          "
+EL  412.01,Desc.,SENIOR THESIS,3,6,AYLİN ALKAÇ,,, ,,,,,"                          "
+EL  412.02,Desc.,SENIOR THESIS,3,6,NAZ BULAMUR,,, ,,,,,"                          "
+EL  412.03,Desc.,SENIOR THESIS,3,6,BAŞAK DEMİRHAN,,, ,,,,,"                          "
+EL  412.04,Desc.,SENIOR THESIS,3,6,MYRTO DRIZOU,,, ,,,,,"                          "
+EL  412.05,Desc.,SENIOR THESIS,3,6,EMİNE FİŞEK,,, ,,,,,"                          "
+EL  412.06,Desc.,SENIOR THESIS,3,6,KIM FORTUNY,,, ,,,,,"                          "
+EL  412.07,Desc.,SENIOR THESIS,3,6,MATTHEW GUMPERT,,, ,,,,,"                          "
+EL  412.08,Desc.,SENIOR THESIS,3,6,JAMESON J.KISMET BELL,,, ,,,,,"                          "
+EL  412.09,Desc.,SENIOR THESIS,3,6,BURCU KAYIŞÇI AKKOYUN,,, ,,,,,"                          "
+EL  412.11,Desc.,SENIOR THESIS,3,6,ÖZLEM ÖĞÜT,,, ,,,,,"                          "
+EL  412.12,Desc.,SENIOR THESIS,3,6,HANDE TEKDEMİR,,, ,,,,,"                          "
+EL  412.13,Desc.,SENIOR THESIS,3,6,ASLI TEKİNAY,,, ,,,,,"                          "
+EL  412.14,Desc.,SENIOR THESIS,3,6,N.CİHAN YURDAÜN,,, ,,,,,"                          "
+EL  412.15,Desc.,SENIOR THESIS,3,6,ÖZLEM GÖREY,,, ,,,,,"                          "
+EL  480.01,Desc.,SP.TP.VICTORIAN  NOVEL,3,6,HANDE TEKDEMİR,WFF,623, ,NH 201 | TB 415 | TB 415,03.06.2023,3,,"                          "
+EL  690.01,Desc.,MASTER THESIS,0,60,MATTHEW GUMPERT,,, ,,,,,"                          "
+EL  690.02,Desc.,MASTER THESIS,0,60,NAZ BULAMUR,,, ,,,,,"                          "
+EL  690.04,Desc.,MASTER THESIS,0,60,BURCU KAYIŞÇI AKKOYUN,,, ,,,,,"                          "
+EL  690.05,Desc.,MASTER THESIS,0,60,ÖZLEM GÖREY,,, ,,,,,"                          "
+EL  690.06,Desc.,MASTER THESIS,0,60,HANDE TEKDEMİR,,, ,,,,,"                          "
+EL  690.07,Desc.,MASTER THESIS,0,60,ÖZLEM ÖĞÜT,,, ,,,,,"                          "
+EL  690.08,Desc.,MASTER THESIS,0,60,ASLI TEKİNAY,,, ,,,,,"                          "
+ENGL105.01,Desc.,INTRODUCTION TO LITERARY FORMS I,3,6,KIM FORTUNY,MWW,878, ,TB 310 | TB 310 | TB 310,04.06.2023,3,,"                          "
+ENGL106.01,Desc.,INTRODUCTION TO LITERARY FORMS II,3,6,HANDE TEKDEMİR,WWF,787, ,NH 201 | NH 201 | M 2152,06.06.2023,2,"LL,TR","                          "
+ENGL106.02,Desc.,INTRODUCTION TO LITERARY FORMS II,3,6,EMİNE FİŞEK,WWF,787, ,M 1170 | M 1170 | M 1171,06.06.2023,2,"LL,TR","                          "
+ENGL106.03,Desc.,INTRODUCTION TO LITERARY FORMS II,3,6,NAZ BULAMUR,WWF,787, ,TB 490 | TB 490 | M 1170,06.06.2023,2,"LL,TR","                          "
+ENGL112.01,Desc.,EXPOSITORY WRITING II,3,5,DERİN TERZİOĞLU,TTTh,785, ,NH 403 | NH 403 | NH 302,01.06.2023,1,,"                          "
+FA  341.01,Desc.,HISTORY OF THE CINEMA,3,5,TUBA AY,FFFFF,56789, ,JF 108 | JF 108 | JF 108 | JF 108 | JF 108,23.05.2023,3,,"                          "
+FA  348.01,Desc.,INTRODUCTION TO FILM ANALYSIS,3,5,CİHAT ARINÇ,MMMFFF,678678, ,MİTHAT ALAM | MİTHAT ALAM | MİTHAT ALAM | MİTHAT ALAM | MİTHAT ALAM | MİTHAT ALAM,23.05.2023,1,,"                          "
+FA  349.01,Desc.,FILM THEORY,3,5,TUBA AY,ThThThThTh,56789, ,JF 108 | JF 108 | JF 108 | JF 108 | JF 108,22.05.2023,1,,"                          "
+FA  486.01,Desc.,SPECIAL TOPICS.:SCRIPTWRITING,3,5,SALİH MEHMET İNAN,MMM,345, ,JF 108 | JF 108 | JF 108,,,,"                          "
+FA  488.01,Desc.,SP.TP.:SURVEY OF 19TH CENTURY MUSIC,3,5,EMİNE SERDAROĞLU,ThThTh,234, ,JF 108 | JF 108 | JF 108,,,,"                          "
+FA  489.01,Desc.,SP.TOP.:GRAPHIC NOVEL,3,5,MEHMET EMİN ADANALI,WWW,345, ,JF 108 | JF 108 | JF 108,22.05.2023,3,,"                          "
+FA  48R.01,Desc.,SP.TP.CONTEMPORARY ART,3,5,NÜZHET MERVE ERTUFAN,FFF,678, ,JF 101 | JF 101 | JF 101,23.05.2023,3,,"                          "
+FA  490.01,Desc.,SP.TP.ADV.GRAPHIC NOVEL&COMICS,3,5,MEHMET EMİN ADANALI,,, ,,22.05.2023,2,,"                          "
+FA  49D.01,Desc.,SP.TP.MUSIC AND THE VISUAL ARTS,3,5,RANA İREN,WWW,123, ,İB 211 | İB 211 | İB 211,23.05.2023,1,,"                          "
+FA  49F.01,Desc.,SP.TP.MAKING OF A FILM,3,5,MUHAMMET YUSUF EMİRDAR,FFF,234, ,M 2171 | M 2171 | M 2171,,,,"                          "
+FA  49S.01,Desc.,SP.TP.VIOLENCE OF THE IMAGE,3,5,ŞAHAN YATARKALKMAZ,MMM,678, ,JF 108 | JF 108 | JF 108,23.05.2023,1,,"                          "
+LIT 311.01,Desc.,COPYWRITING FOR MARKETING&ADVERTISING,3,6,SAMİ BASUT,WWW,678, ,M 3100 | M 1100 | M 1100,07.06.2023,3,,"                          "
+LIT 412.01,Desc.,COPYWRITING II,3,6,NEŞET DERELİ,WWW,91011, ,TB 490 | TB 490 | TB 490,,,,"                          "

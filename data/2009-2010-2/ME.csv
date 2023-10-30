@@ -1,0 +1,70 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ME  120.01,Desc.,INTRODUCTION TO MECHANICAL ENGINEERING ,3,8,GÜNAY ANLAŞ,TTTh,454,,M 2171 | M 2171 | M 2200,,,,"                          "
+ME  210.01,Desc.,MATERIALS SCIENCE,3,5,ERCAN BALIKÇI,TTTh,121,,M 2200 | M 2200 | M 2230,,,CHE,"                          "
+ME  212.01,Desc.,MATERIALS SCIENCE,4,5,NURİ BÜLENT ERSOY,TTTh,121,,M 3120 | M 3120 | M 2200,,,,"                          "
+ME  241.01,Desc.,STATICS,3,5,ŞEBNEM ÖZÜPEK,TFF,523,,M 2231 | M 2231 | M 2231,,,,"                          "
+ME  242.01,Desc.,DYNAMICS,3,5,FAZIL ÖNDER SÖNMEZ,MMW,566,,M 2170 | M 2170 | M 3100,,,,"                          "
+ME  263.01,Desc.,THERMODYNAMICS I,4,5,ALİ ECDER,TTThTh,3434,,M 3100 | M 3100 | M 3100 | M 3100,,,,"                          "
+ME  318.01,Desc.,MANUFACTURING TECHNIQUES,4,6,SABRİ ALTINTAŞ,TTTh,788,,M 2230 | M 2230 | M 2230,,,,"                          "
+ME  324.01,Desc.,MACHINE DESIGN I,4,6,NURİ BÜLENT ERSOY,TTThTh,5656,,M 3100 | M 3100 | M 3120 | M 3120,,,,"                          "
+ME  335.01,Desc.,MODELING & CONTROL OF DYNAMIC SYSTEMS,4,5,EŞREF EŞKİNAT,MMWW,7845,,M 3120 | M 3120 | M 3100 | M 3100,,,,"                          "
+ME  362.01,Desc.,HEAT TRANSFER,4,5,HASAN BEDİR,MMWW,2323,,M 3120 | M 3120 | M 2170 | M 2170,,,,"                          "
+ME  411.01,Desc.,MATERIALS ENGINEERING,3,5,ERCAN BALIKÇI,TTTh,567,,M 2200 | M 2200 | M 2230,,,,"                          "
+ME  425.01,Desc.,MECHANICAL VIBRATIONS,3,5,ÇETİN YILMAZ,TThTh,456,,M 2231 | M 2181 | M 2181,,,,"                          "
+ME  429.01,Desc.,MECHANICAL &THERMAL DESIGN,4,7,EMRE AKSAN,Th,4,,M 2231,,,,"                          "
+ME  430.01,Desc.,AUTOMOTIVE ENGINEERING,3,5,GÜNAY ANLAŞ,TThTh,323,,M 2171 | M 2200 | M 2200,,,,"                          "
+ME  455.01,Desc.,FLUID MECHANICS II,3,5,KUNT ATALIK,MWW,423,,M 3120 | M 2152 | M 2152,,,,"                          "
+ME  474.01,Desc.,HEAT ENGINES,3,5,HASAN BEDİR,MMW,566,,M 2181 | M 2181 | M 3120,,,,"                          "
+ME  485.01,Desc.,SP. TOP. IN MECHANICAL ENGINEERING,3,5,MURAT ÇELİK,TTTh,788,,M 2170 | M 2170 | M 2152,,,,"                          "
+ME  492.01,Desc.,PROJECT,4,8,ÇETİN YILMAZ,Th,4,,M 2181,,,,"                          "
+ME  492.02,Desc.,PROJECT,4,8,HAKAN ERTÜRK,Th,4,,M 2181,,,,"                          "
+ME  502.01,Desc.,ADVANCED ENGINEERING MATHEMATICS II,3,8,MURAT ÇELİK,TTTh,121,,M 1170 | M 1170 | M 2152,,,,"                          "
+ME  512.01,Desc.,PRINCIPLES OF MANUFACTURING PROCESSES,3,8,SABRİ ALTINTAŞ,TThTh,667,,M 2230 | M 3100 | M 3100,,,,"                          "
+ME  521.01,Desc.,ENGINEERING DESIGN,3,8,FAZIL ÖNDER SÖNMEZ,MWW,334,,M 1152 | M 1152 | M 1152,,,,"                          "
+ME  530.01,Desc.,ADVANCED DYNAMICS,3,8,EŞREF EŞKİNAT,MFF,434,,M 2200 | SHANNON | SHANNON,,,,"                          "
+ME  561.01,Desc.,CONDUCTION HEAT TRANSFER,3,8,KUNT ATALIK,MWW,656,,M 2231 | M 1181 | M 1181,,,,"                          "
+ME  579.01,Desc.,GRADUATE SEMINAR,0,2,ÇETİN YILMAZ,Th,2,,M 2152,,,,"                          "
+ME  579.02,Desc.,GRADUATE SEMINAR,0,2,HAKAN ERTÜRK,Th,2,,M 2152,,,,"                          "
+ME  599.01,Desc.,GUIDED RESEARCH ,0,8,GÜNAY ANLAŞ,TBA,,,,,,,"                          "
+ME  599.02,Desc.,GUIDED RESEARCH ,0,8,KUNT ATALIK,TBA,,,,,,,"                          "
+ME  599.03,Desc.,GUIDED RESEARCH ,0,8,EŞREF EŞKİNAT,TBA,,,,,,,"                          "
+ME  599.04,Desc.,GUIDED RESEARCH ,0,8,HASAN BEDİR,TBA,,,,,,,"                          "
+ME  599.05,Desc.,GUIDED RESEARCH ,0,8,MURAT ÇELİK,TBA,,,,,,,"                          "
+ME  599.06,Desc.,GUIDED RESEARCH ,0,8,ALİ ECDER,TBA,,,,,,,"                          "
+ME  599.07,Desc.,GUIDED RESEARCH ,0,8,NURİ BÜLENT ERSOY,TBA,,,,,,,"                          "
+ME  599.08,Desc.,GUIDED RESEARCH ,0,8,HAKAN ERTÜRK,TBA,,,,,,,"                          "
+ME  599.09,Desc.,GUIDED RESEARCH ,0,8,EMRE KÖSE,TBA,,,,,,,"                          "
+ME  599.10,Desc.,GUIDED RESEARCH ,0,8,FAZIL ÖNDER SÖNMEZ,TBA,,,,,,,"                          "
+ME  613.01,Desc.,DEFORMATION OF ENGINEERING MATERIALS,3,8,CAN AYDINER,TTTh,788,,M 2231 | M 2231 | M 1152,,,,"                          "
+ME  632.01,Desc.,APPROXIMATE SOLUTION TECHNIQUES,3,8,AKIN TEZEL,TThTh,545,,M 1181 | M 2171 | M 2171,,,,"                          "
+ME  663.01,Desc.,RADIATION HEAT TRANSFER,3,8,HAKAN ERTÜRK,TTTh,343,,M 1152 | M 1152 | M 1181,,,,"                          "
+ME  687.01,Desc.,SP.TOP.:ROBUST CONTROL,3,8,EMRE KÖSE,TTTh,343,,M 1181 | M 1181 | M 2231,,,,"                          "
+ME  690.01,Desc.,M.S.THESIS,0,60,ALİ ECDER,TBA,,,,,,,"                          "
+ME  690.02,Desc.,M.S.THESIS,0,60,SABRİ ALTINTAŞ,TBA,,,,,,,"                          "
+ME  690.03,Desc.,M.S.THESIS,0,60,GÜNAY ANLAŞ,TBA,,,,,,,"                          "
+ME  690.04,Desc.,M.S.THESIS,0,60,KUNT ATALIK,TBA,,,,,,,"                          "
+ME  690.05,Desc.,M.S.THESIS,0,60,ERCAN BALIKÇI,TBA,,,,,,,"                          "
+ME  690.06,Desc.,M.S.THESIS,0,60,HASAN BEDİR,TBA,,,,,,,"                          "
+ME  690.07,Desc.,M.S.THESIS,0,60,EŞREF EŞKİNAT,TBA,,,,,,,"                          "
+ME  690.08,Desc.,M.S.THESIS,0,60,NURİ BÜLENT ERSOY,TBA,,,,,,,"                          "
+ME  690.09,Desc.,M.S.THESIS,0,60,EMRE KÖSE,TBA,,,,,,,"                          "
+ME  690.10,Desc.,M.S.THESIS,0,60,ŞEBNEM ÖZÜPEK,TBA,,,,,,,"                          "
+ME  690.11,Desc.,M.S.THESIS,0,60,FAZIL ÖNDER SÖNMEZ,TBA,,,,,,,"                          "
+ME  690.12,Desc.,M.S.THESIS,0,60,ÇETİN YILMAZ,TBA,,,,,,,"                          "
+ME  690.13,Desc.,M.S.THESIS,0,60,HAKAN ERTÜRK,TBA,,,,,,,"                          "
+ME  699.01,Desc.,GUIDED RESEARCH I,4,8,GÜNAY ANLAŞ,TBA,,,,,,,"                          "
+ME  699.02,Desc.,GUIDED RESEARCH I,4,8,ŞEBNEM ÖZÜPEK,TBA,,,,,,,"                          "
+ME  69A.01,Desc.,GUIDED RESEARCH II,0,8,KUNT ATALIK,TBA,,,,,,,"                          "
+ME  69B.01,Desc.,GUIDED RESEARCH III,0,8,EMRE KÖSE,TBA,,,,,,,"                          "
+ME  69B.02,Desc.,GUIDED RESEARCH III,0,8,FAZIL ÖNDER SÖNMEZ,TBA,,,,,,,"                          "
+ME  69B.03,Desc.,GUIDED RESEARCH III,0,8,NURİ BÜLENT ERSOY,TBA,,,,,,,"                          "
+ME  790.01,Desc.,Ph.D. THESIS,0,120,ALİ ECDER,TBA,,,,,,,"                          "
+ME  790.02,Desc.,Ph.D. THESIS,0,120,SABRİ ALTINTAŞ,TBA,,,,,,,"                          "
+ME  790.03,Desc.,Ph.D. THESIS,0,120,GÜNAY ANLAŞ,TBA,,,,,,,"                          "
+ME  790.04,Desc.,Ph.D. THESIS,0,120,KUNT ATALIK,TBA,,,,,,,"                          "
+ME  790.05,Desc.,Ph.D. THESIS,0,120,HASAN BEDİR,TBA,,,,,,,"                          "
+ME  790.06,Desc.,Ph.D. THESIS,0,120,EŞREF EŞKİNAT,TBA,,,,,,,"                          "
+ME  790.07,Desc.,Ph.D. THESIS,0,120,NURİ BÜLENT ERSOY,TBA,,,,,,,"                          "
+ME  790.08,Desc.,Ph.D. THESIS,0,120,EMRE KÖSE,TBA,,,,,,,"                          "
+ME  790.09,Desc.,Ph.D. THESIS,0,120,ŞEBNEM ÖZÜPEK,TBA,,,,,,,"                          "
+ME  790.10,Desc.,Ph.D. THESIS,0,120,FAZIL ÖNDER SÖNMEZ,TBA,,,,,,,"                          "

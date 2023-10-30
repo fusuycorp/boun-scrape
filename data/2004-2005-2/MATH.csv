@@ -1,0 +1,28 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.03,Desc.,CALCULUS I,4,6,BURAK GÜREL,TTThTh,3434,,,,,,"                          "
+MATH102.03,Desc.,CALCULUS II,4,6,BETÜL TANBAY,TTThTh,1212,,,,,,"                          "
+MATH102.04,Desc.,CALCULUS II,4,6,BETÜL TANBAY,TTThTh,3434,,,,,,"                          "
+MATH106.01,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,GÜLNİHAL YÜCEL,TTThTh,1212,,,,,,"                          "
+MATH106.02,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,GÜLNİHAL YÜCEL,TTThTh,3434,,,,,,"                          "
+MATH111.01,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,CEM YALÇIN YILDIRIM,MMThTh,7878,,,,,,"        MATH; MEDU; TMAT; PRMA                  "
+MATH132.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS II,4,8,CEM YALÇIN YILDIRIM,TTThTh,5656,,,,,,"        MATH                  "
+MATH201.01,Desc.,MATRIX THEORY,4,5,N.SADIK DEĞER,MMWW,1212,,,,,,"                          "
+MATH201.02,Desc.,MATRIX THEORY,4,5,N.SADIK DEĞER,MMWW,3434,,,,,,"                          "
+MATH202.01,Desc.,DIFFERENTIAL EQUATIONS,4,7,NİLGÜN IŞIK,MMWW,1212,,,,,,"                          "
+MATH202.02,Desc.,DIFFERENTIAL EQUATIONS,4,7,NİLGÜN IŞIK,MMWW,5656,,,,,,"                          "
+MATH202.03,Desc.,DIFFERENTIAL EQUATIONS,4,7,FERİT ÖZTÜRK,MMWW,3434,,,,,,"                          "
+MATH202.04,Desc.,DIFFERENTIAL EQUATIONS,4,7,AHMET KAMİL FEYZİOĞLU,MMWW,3434,,,,,,"                          "
+MATH232.01,Desc.,INTRODUCTION TO COMPLEX ANALYSIS,3,6,TALİN BUDAK,TTTh,123,,,,,,"                          "
+MATH232.02,Desc.,INTRODUCTION TO COMPLEX ANALYSIS,3,6,TALİN BUDAK,TTTh,344,,,,,,"                          "
+MATH332.01,Desc.,REAL ANALYSIS II,4,8,ALP EDEN,TTThTh,1212,,,,,,"                          "
+MATH351.01,Desc.,QUALITATIVE THEORY  OF ORDINARY DIF.EQU.,3,6,BURAK GÜREL,TTTh,788,,,,,,"                          "
+MATH477.01,Desc.,PROJECTIVE GEOMETRY,3,7,FERİT ÖZTÜRK,MMTh,787,,,,,,"                          "
+MATH480.01,Desc.,SEMINAR,2,4,BURAK GÜREL,WW,67,,,,,,"                          "
+MATH489.01,Desc.,SEL.TOP.IN MATH.:ADVANCED MATH.LOGIC,3,6,ALİ KARATAY,TFF,756,,,,,,"                          "
+MATH525.01,Desc.,ALGEBRAIC NUMBER THEORY,4,10,AHMET KAMİL FEYZİOĞLU,TTThTh,1212,,,,,,"                          "
+MATH544.01,Desc.,STOCHASTIC PROCESSES&MARTINGA.,4,10,ALP EDEN,TBA,,,,,,,"                          "
+MATH545.01,Desc.,MATHEMATICS OF FINANCE,4,10,ALP EDEN,TTThTh,5656,,,,,,"                          "
+MATH579.01,Desc.,GRADUATE SEMINAR,0,1,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "
+MATH590.01,Desc.,READINGS IN MATHEMATICS,1,3,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "
+MATH683.01,Desc.,SEMINAR IN APPLIED MATHEMATICS II,4,10,ALP EDEN,TBA,,,,,,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "

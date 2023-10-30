@@ -1,0 +1,34 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH102.01,Desc.,CALCULUS II,4,6,ÖZLEM BEYARSLAN,TTThTh,1212,,NH 105 | NH 105 | NH 105 | NH 105,,,"AD,BIO,CE,CET,CHE,PEDU","                          "
+MATH102.02,Desc.,CALCULUS II,4,6,ÖZLEM BEYARSLAN,TTThTh,3434,,NH 101 | NH 101 | NH 101 | NH 101,,,"CEDU,CHEM,CMPE,EE,IE,ME,PHYS","                          "
+MATH106.01,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,GÜLNİHAL YÜCEL,TTThTh,1212,,KPARK1 | KPARK1 | KPARK1 | KPARK1,,,"PHIL,POLS,SOC","                          "
+MATH106.02,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,GÜLNİHAL YÜCEL,TTThTh,3434,,KPARK1 | KPARK1 | KPARK1 | KPARK1,,,"HIST,PSY","                          "
+MATH111.01,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,AHMET KAMİL FEYZİOĞLU,TTThTh,1212,,TB 310 | TB 310 | TB 310 | TB 310,,,,"        MATH; MEDU; TMAT; PRMA                  "
+MATH132.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS II,4,8,BURAK GÜREL,TTThTh,3434,,NH 302 | NH 302 | NH 302 | NH 302,,,,"        MATH                  "
+MATH162.01,Desc.,DISCRETE MATHEMATICS,4,6,FERİT ÖZTÜRK,MMWW,4545,,NH 405 | NH 405 | NH 405 | NH 405,,,MEDU,"                          "
+MATH201.01,Desc.,MATRIX THEORY,4,5,FERİT ÖZTÜRK,MMWW,1212,,NH 105 | NH 105 | NH 301 | NH 301,,,,"                          "
+MATH201.02,Desc.,MATRIX THEORY,4,5,N.SADIK DEĞER,MMWW,3434,,GYM | GYM | GYM | GYM,,,,"                          "
+MATH202.01,Desc.,DIFFERENTIAL EQUATIONS,4,7,FATİH ECEVİT,MMWW,1212,,NH 401 | NH 401 | NH 401 | NH 401,,,"CE,CEDU,CHE,CHEM,CMPE,EE,IE,ME,PHYS","                          "
+MATH202.02,Desc.,DIFFERENTIAL EQUATIONS,4,7,FATİH ECEVİT,MMWW,3434,,NH 401 | NH 401 | NH 401 | NH 401,,,"MATH,MEDU,PEDU,PRED MATH,PRED SCI","                          "
+MATH224.01,Desc.,LINEAR ALGEBRA I,3,6,TALİN BUDAK,TTTh,344,,GYM | GYM | GYM,,,"MATH,MEDU","                          "
+MATH232.01,Desc.,INTRODUCTION TO COMPLEX ANALYSIS,3,6,BURAK GÜREL,TTTh,566,,NH 401 | NH 401 | NH 401,,,"MATH,MEDU","                          "
+MATH332.01,Desc.,REAL ANALYSIS II,4,8,CEM YALÇIN YILDIRIM,TTThTh,5656,,TB 260 | TB 260 | TB 260 | TB 260,,,,"                          "
+MATH336.01,Desc.,NUMERICAL ANALYSIS,4,6,ALP EDEN,TTThTh,1212,,M 1170 | M 1170 | M 1170 | M 1170,,,,"                          "
+MATH480.01,Desc.,SEMINAR,2,4,FATİH ECEVİT,TBA,,,,,,,"                          "
+MATH48G.01,Desc.,SP.TOP.MATH.ASPECTS OF GENERAL RELAT.,3,6,N.SADIK DEĞER,MMW,121,,TB 260 | TB 260 | TB 240,,,,"                          "
+MATH522.01,Desc.,ALGEBRA II,4,10,AHMET KAMİL FEYZİOĞLU,TTThTh,3434,,,,,,"                          "
+MATH525.01,Desc.,ALGEBRAIC NUMBER THEORY,4,10,CEM YALÇIN YILDIRIM,TTThTh,7878,,,,,,"                          "
+MATH541.01,Desc.,PROBABILITY THEORY,4,10,ALP EDEN,TTThTh,5656,,,,,,"                          "
+MATH579.01,Desc.,GRADUATE SEMINAR,0,1,TALİN BUDAK,TBA,,,,,,,"                          "
+MATH588.01,Desc.,SEL.TOP. IN APPLIED MATHEMATICS,3,7,ALP EDEN,FFF,123,,,,,,"                          "
+MATH58J.01,Desc.,SELECTED TOPICS THEORY ALGEBRAS,3,7,ÖZLEM BEYARSLAN,TBA,,,,,,,"                          "
+MATH590.01,Desc.,READINGS IN MATHEMATICS,1,3,TALİN BUDAK,TBA,,,,,,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,CEM YALÇIN YILDIRIM,TBA,,,,,,,"                          "
+MATH690.02,Desc.,M.S. THESIS,0,60,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "
+MATH690.03,Desc.,M.S. THESIS,0,60,FERİT ÖZTÜRK,TBA,,,,,,,"                          "
+MATH690.04,Desc.,M.S. THESIS,0,60,BURAK GÜREL,TBA,,,,,,,"                          "
+MATH690.06,Desc.,M.S. THESIS,0,60,N.SADIK DEĞER,TBA,,,,,,,"                          "
+MATH690.07,Desc.,M.S. THESIS,0,60,TALİN BUDAK,TBA,,,,,,,"                          "
+MATH690.08,Desc.,M.S. THESIS,0,60,NİLGÜN IŞIK,TBA,,,,,,,"                          "
+MATH690.10,Desc.,M.S. THESIS,0,60,ALP EDEN,TBA,,,,,,,"                          "
+MATH790.01,Desc.,Ph.D.THESIS,0,120,ALP EDEN,TBA,,,,,,,"                          "

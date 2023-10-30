@@ -1,0 +1,26 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL105.01,Desc.,CRITICAL THINKING,3,6,KARANFİL SOYHUN,TThTh,656,,NH 305 | NH 104 | NH 104,06.06.2011,3,,"        PHIL                  "
+PHIL106.01,Desc.,PHILOSOPHICAL TEXTS,3,7,JOHANNES FRITSCHE,MMF,566,,TB 490 | TB 490 | NBB 10,04.06.2011,3,,"                          "
+PHIL112.01,Desc.,INTRODUCTION TO MODERN PHILOSOPHY,3,5,STEPHEN VOSS,MWW,578,,NH 101 | NH 101 | NH 101,30.05.2011,1,"ED,LL,TKL,TR","                          "
+PHIL132.01,Desc.,LOGIC II,3,6,İLHAN İNAN,MThTh,278,,NBZ 11 | M 2180 | M 2180,31.05.2011,3,,"                          "
+PHIL214.01,Desc.,HISTORY OF PHILOSOPHY II,3,6,CHRYSSI SIDIROPOULOU,MMW,345,,NH 401 | NH 401 | NH 304,01.06.2011,3,,"                          "
+PHIL222.01,Desc.,PHILOSOPHY OF SCIENCE,3,6,BERNA KILINÇ,TTF,785,,NB 119 | NB 119 | NBB 10,03.06.2011,2,,"                          "
+PHIL314.01,Desc.,HISTORY OF PHILOSOPHY IV,3,6,LUCAS THORPE,TTW,562,,TB 240 | TB 240 | NH 302,30.05.2011,2,,"                          "
+PHIL382.01,Desc.,ONTOLOGY,3,7,SUN DEMİRLİ,TTF,344,,NH 203 | NH 203 | NBZ 13,09.06.2011,2,,"                          "
+PHIL438.01,Desc.,PHILOSOPHY OF TIME,3,6,SUN DEMİRLİ,ThThTh,456,,,07.06.2011,3,,"                          "
+PHIL488.01,Desc.,SP.TP.PHILOSOPHY OF TIME,3,6,SUN DEMİRLİ,ThThTh,456,,YD 106 | YD 104 | YD 104,31.05.2011,1,,"                          "
+PHIL48F.01,Desc.,SP.TOP.:PHILOSOPHICAL REFLECT.ON SUFISM,3,6,STEPHEN VOSS,MMW,343,,NH 304 | NH 304 | YD 104,06.06.2011,1,,"                          "
+PHIL48J.01,Desc.,SP.TOP.:KANT,3,6,LUCAS THORPE,TWW,256,,TB 240 | NH 302 | NH 302,01.06.2011,1,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,BERNA KILINÇ,,, ,,06.06.2011,3,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,JOHANNES FRITSCHE,TBA,,,,,0,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,BERNA KILINÇ,TBA,,,,30.05.2011,3,,"                          "
+PHIL58A.01,Desc.,SP.TP.ANCIENT GREEK TEXTS,4,10,CHRYSSI SIDIROPOULOU,WFF,445,,,03.06.2011,1,,"                          "
+PHIL58C.01,Desc.,SP.TP.HEIDEGGER,4,10,JOHANNES FRITSCHE,MFF,823,,YD 201 | YD 201 | YD 201,05.06.2011,3,,"                          "
+PHIL58D.01,Desc.,SP.TP.REFERENCE AND EXISTENCE,4,10,İLHAN İNAN,MMM,567,,,03.06.2011,3,,"                          "
+PHIL58E.01,Desc.,SP.TP.NATURALISM IN ETHICS,4,10,KARANFİL SOYHUN,TTT,234,,,30.05.2011,2,,"                          "
+PHIL58F.01,Desc.,SP.TP.:MODAL LOGIC,4,10,ALİ KARATAY,WWF,786,,,07.06.2011,3,,"                          "
+PHIL58G.01,Desc.,SP.TP.HELLENISTIC PHILOSOPHY,4,10,PINAR CANEVİ,TTT,678,,,04.06.2011,2,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,BERNA KILINÇ,TBA,,,,03.06.2011,2,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,BERNA KILINÇ,TBA,,,,02.06.2011,1,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,JOHANNES FRITSCHE,TBA,,,,,0,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,JOHANNES FRITSCHE,TBA,,,,,0,,"                          "

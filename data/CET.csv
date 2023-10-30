@@ -1,0 +1,17 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Quota,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CET 501.01,Desc.,"EDUCATION, INSTRUCTION, AND TECHNOLOGY",3,8,Info,HAMDİ ERKUNT,WWW,789, ,ET B511 | ET B511 | ET B511,,,,"                          "
+CET 511.01,Desc.,THEORE.FOUNDA.OF TECH.BASED LEARNING EN.,3,7,Info,GÜNİZİ KARTAL,WWW,123, ,ET B511 | ET B511 | ET B511,,,,"                          "
+CET 531.01,Desc.,AUTHORING SYSTEMS IN EDUCATION,3,7,Info,YAVUZ AKPINAR,TTTT,5678, ,EF 406 | EF 406 | EF 406 | EF 406,,,,"                          "
+CET 580.01,Desc.,SPECIAL TOPICS IN EDUCATIONAL TECHNOLOGY,3,7,Info,HAMDİ ERKUNT,FFF,8910, ,ET B511 | ET B511 | ET B511,,,,"                          "
+CET 580.02,Desc.,SPECIAL TOPICS IN EDUCATIONAL TECHNOLOGY,3,7,Info,GÜNİZİ KARTAL,ThThTh,345, ,ET B511 | ET B511 | ET B511,,,,"                          "
+CET 580.03,Desc.,SPECIAL TOPICS IN EDUCATIONAL TECHNOLOGY,3,7,Info,MUTLU ŞEN AKBULUT,MMM,567, ,ET B511 | ET B511 | ET B511,,,,"                          "
+CET 580.04,Desc.,SPECIAL TOPICS IN EDUCATIONAL TECHNOLOGY,3,7,Info,OĞUZ AK,WWW,567, ,EF 416 | EF 416 | EF 416,,,,"                          "
+CET 584.01,Desc.,SP.TP.RESEARCH&DESIGN OF DIGITAL LEARNING GAMES,3,7,Info,OĞUZ AK,ThThTh,567, ,EF 406 | EF 406 | EF 406,,,,"                          "
+CET 586.01,Desc.,SP.TP.EDU.TEC.:COMPUTATIONAL THINKING,3,7,Info,DUYGU UMUTLU,TTT,234, ,ET B511 | ET B511 | ET B511,,,,"                          "
+CET 690.01,Desc.,MASTER'S THESIS,0,30,Info,GÜNİZİ KARTAL,,, ,,,,,"                          "
+CET 690.02,Desc.,MASTER'S THESIS,0,30,Info,HAMDİ ERKUNT,,, ,,,,,"                          "
+CET 690.03,Desc.,MASTER'S THESIS,0,30,Info,DİLER ÖNER,,, ,,,,,"                          "
+CET 690.04,Desc.,MASTER'S THESIS,0,30,Info,YAVUZ AKPINAR,,, ,,,,,"                          "
+CET 690.05,Desc.,MASTER'S THESIS,0,30,Info,DUYGU UMUTLU,,, ,,,,,"                          "
+CET 690.06,Desc.,MASTER'S THESIS,0,30,Info,MUTLU ŞEN AKBULUT,,, ,,,,,"                          "
+CET 690.07,Desc.,MASTER'S THESIS,0,30,Info,OĞUZ AK,,, ,,,,,"                          "

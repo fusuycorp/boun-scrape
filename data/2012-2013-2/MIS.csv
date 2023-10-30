@@ -1,0 +1,68 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MIS 112.01,Desc.,ECONOMICS II,3,5,ALİ TÜKEL,WWTh,343,,HKC107 | HKC107 | HKC104,06.06.2013,1,,"                          "
+,,P.S.,,,ALİ TÜKEL,M,3,,HKA302,,0,,"                          "
+MIS 132.01,Desc.,INTRODUCTION TO PROGRAMMING,3,6,BERTAN YILMAZ BADUR,WW,12,,HKA202 | HKA202,08.06.2013,1,,"                          "
+,,LAB,,,BERTAN YILMAZ BADUR,FF,12,,HKB102 | HKB102,,0,,"                          "
+,,LAB,,,BERTAN YILMAZ BADUR,FF,34,,HKB102 | HKB102,,0,,"                          "
+MIS 144.01,Desc.,BUSINESS MATHEMATICS II,3,5,AYFER ECEVİT,MMTh,564,,HKD301 | HKD301 | HKC107,04.06.2013,1,,"                          "
+,,P.S.,,,AYFER ECEVİT,FF,56,,HKB105 | HKB105,,0,,"                          "
+MIS 212.01,Desc.,MANAGERIAL ACCOUNTING,3,5,ALİ TÜKEL,TTTh,342,,HKC107 | HKC107 | HKA301,28.05.2013,3,,"                          "
+MIS 216.01,Desc.,PRINCIPLES OF MARKETING,3,5,ASLIHAN NASIR,MMT,232,,HKC104 | HKC104 | HKC107,07.06.2013,2,,"                          "
+MIS 224.01,Desc.,RESEARCH METHODOLOGY,3,6,HANDE TÜRKER,MWW,423,,HKA301 | HKA302 | HKA302,27.05.2013,1,,"                          "
+,,P.S.,,,HANDE TÜRKER,W,7,,HKB105,,0,,"                          "
+,,P.S.,,,HANDE TÜRKER,W,8,,HKB105,,0,,"                          "
+MIS 252.01,Desc.,BUSINESS DATA COMMUNICATIONS ,3,6,BİLGİN METİN,WWTh,561,,HKB105 | HKB105 | HKB105,01.06.2013,3,,"                          "
+MIS 316.01,Desc.,FINANCE,3,5,CEYLAN ONAY,TTTh,673,,HKB105 | HKB105 | HKB105,30.05.2013,2,,"                          "
+MIS 326.01,Desc.,OBJECT ORIENTED MODELING,3,5,OSMAN NURİ DARCAN,MMW,234,,HKB105 | HKB105 | HKB105,03.06.2013,2,,"                          "
+,,P.S.,,,OSMAN NURİ DARCAN,ThTh,56,,HKB104 | HKB104,,0,,"                          "
+,,P.S.,,,OSMAN NURİ DARCAN,FF,23,,HKB104 | HKB104,,0,,"                          "
+,,P.S.,,,OSMAN NURİ DARCAN,WW,910,,B102 | B102,,0,,"                          "
+MIS 336.01,Desc.,BUSINESS PROGRAM DEVELOPMENT,4,7,BİRGÜL KUTLU,TTTh,122,,HKB105 | HKB105 | HKB105,28.05.2013,1,,"                          "
+,,LAB,,,BİRGÜL KUTLU,ThTh,78,,HKB104 | HKB104,,0,,"                          "
+,,LAB,,,BİRGÜL KUTLU,FF,45,,HKB104 | HKB104,,0,,"                          "
+MIS 344.01,Desc.,QUANTITATIVE ANALY. FOR DECISION MAKING,3,5,SONA MARDİKYAN,MMTh,454,,HKB105 | HKB105 | HKB105,08.06.2013,3,,"                          "
+,,P.S.,,,SONA MARDİKYAN,M,1,,HKB105,,0,,"                          "
+MIS 416.01,Desc.,HUMAN FACTORS IN COMPUTING,3,6,TANJU AKDENİZ,MMM,678,,HKB105 | HKB105 | HKB105,29.05.2013,2,,"                          "
+MIS 424.01,Desc.,INFORMATION SYSTEMS MANAGEMENT,3,6,ZUHAL TANRIKULU,TTW,343,,HKA301 | HKA301 | HKC106,01.06.2013,1,,"                          "
+MIS 474.01,Desc.,INFORMATION SYSTEM PROJECT MANAGEMENT,3,5,UĞUR GÖKHAN ÖZDİNÇ,TTT,678,Online,HKB107 | HKB107 | HKB107,08.06.2013,1,,"                          "
+MIS 481.01,Desc.,SENIOR SEMINARS IN MIS,1,2,AYFER ECEVİT,T,5,,HKB105,04.06.2013,3,,"                          "
+MIS 485.01,Desc.,SP.TOP.IN MIS:SMALL BUSINESS MANAGEMENT,3,5,İPEK MEREY,WWW,678,,HKB101 | HKB101 | HKB101,01.06.2013,3,,"                          "
+MIS 492.01,Desc.,PROJECT,4,8,BERTAN YILMAZ BADUR,ThThThThFFFF,12345678,,HKB226 | HKB226 | HKB226 | HKB226 | HKB226 | HKB226 | HKB226 | HKB226,,0,,"                          "
+MIS 492.02,Desc.,PROJECT,4,8,ASLI SENCER,TTTTWWWW,23455678,,HKB208 | HKB208 | HKB208 | HKB208 | HKB208 | HKB208 | HKB208 | HKB208,,0,,"                          "
+MIS 492.03,Desc.,PROJECT,4,8,HANDE TÜRKER,MMWWWFFF,89456567,,HKB227 | HKB227 | HKB227 | HKB227 | HKB227,,0,,"                          "
+MIS 492.04,Desc.,PROJECT,4,8,SONA MARDİKYAN,FFFFFFFF,12345678,,HKB210 | HKB210 | HKB210 | HKB210 | HKB210 | HKB210 | HKB210 | HKB210,,0,,"                          "
+MIS 492.05,Desc.,PROJECT,4,8,BİLGİN METİN,TTTTTTTT,23456789,,HKB211 | HKB211 | HKB211 | HKB211 | HKB211 | HKB211 | HKB211 | HKB211,,0,,"                          "
+MIS 492.07,Desc.,PROJECT,4,8,ZUHAL TANRIKULU,TTTWWWThTh,58945623,,HKB205 | HKB205 | HKB205 | HKB205 | HKB205 | HKB205,,0,,"                          "
+MIS 492.08,Desc.,PROJECT,4,8,ALİ TÜKEL,TTTTTWWW,56789567,,HKB218 | HKB218 | HKB218 | HKB218 | HKB218 | HKB218 | HKB218 | HKB218,,0,,"                          "
+MIS 492.09,Desc.,PROJECT,4,8,CEYLAN ONAY,ThThFFFFFF,34123678,,,,0,,"                          "
+MIS 492.10,Desc.,PROJECT,4,8,ÖZGÜR DÖĞERLİOĞLU,MMMMMTTT,56789234,,HKB225 | HKB225 | HKB225 | HKB225 | HKB225 | HKB225 | HKB225 | HKB225,,0,,"                          "
+MIS 49A.01,Desc.,SP.TP.INTR.TO WEB DESIGN FOR SOCIAL SCI.,3,5,CEM GÖKNİL,TTT,678, ,HKB102 | HKB102 | HKB102,31.05.2013,3,,"                          "
+MIS 518.01,Desc.,ADVANCED OPERATIONS MANAGEMENT,3,6,ASLI SENCER,WWW,234,,HKB108 | HKB108 | HKB108,30.05.2013,1,,"                          "
+MIS 522.01,Desc.,PROJECT & CHANGE MANAGEMENT,3,6,MELTEM ÖZTURAN,TTT,123,,HKB108 | HKB108 | HKB108,04.06.2013,2,,"                          "
+MIS 547.01,Desc.,ORGANIZATIONAL IMP. OF INFORMATION TECH.,3,6,ÖZGÜR DÖĞERLİOĞLU,MMM,234,,HKB108 | HKB108 | HKB108,07.06.2013,2,,"                          "
+MIS 578.01,Desc.,DIRECTED READINGS IN MIS,0,5,BERTAN YILMAZ BADUR,MM,67,,,,0,,"                          "
+MIS 578.02,Desc.,DIRECTED READINGS IN MIS,0,5,OSMAN NURİ DARCAN,MM,67,,HKB226 | HKB226,08.06.2013,2,,"                          "
+MIS 578.03,Desc.,DIRECTED READINGS IN MIS,0,5,ÖZGÜR DÖĞERLİOĞLU,ThTh,34,,,08.06.2013,2,,"                          "
+MIS 578.04,Desc.,DIRECTED READINGS IN MIS,0,5,ASLI SENCER,MM,67,,,08.06.2013,2,,"                          "
+MIS 578.05,Desc.,DIRECTED READINGS IN MIS,0,5,HANDE TÜRKER,MM,67,,,08.06.2013,2,,"                          "
+MIS 578.06,Desc.,DIRECTED READINGS IN MIS,0,5,BİRGÜL KUTLU,MM,67,,,08.06.2013,2,,"                          "
+MIS 578.07,Desc.,DIRECTED READINGS IN MIS,0,5,SONA MARDİKYAN,MM,67,,HKB210 | HKB210,08.06.2013,2,,"                          "
+MIS 578.08,Desc.,DIRECTED READINGS IN MIS,0,5,BİLGİN METİN,MM,67,,HKB211 | HKB211,08.06.2013,2,,"                          "
+MIS 578.09,Desc.,DIRECTED READINGS IN MIS,0,5,ASLIHAN NASIR,MM,67,,HKB224 | HKB224,08.06.2013,2,,"                          "
+MIS 578.10,Desc.,DIRECTED READINGS IN MIS,0,5,ZUHAL TANRIKULU,ThTh,45,,,,0,,"                          "
+MIS 586.01,Desc.,SP.TP.IN MIS:E-FINANCE,3,6,CEYLAN ONAY,MMM,678,,HKB108 | HKB108 | HKB108,06.06.2013,1,,"                          "
+MIS 589.01,Desc.,SP.TP.IN MIS:BRAND MANAGEMENT,3,6,ASLIHAN NASIR,ThThTh,234,,HKB108 | HKB108 | HKB108,07.06.2013,3,,"                          "
+MIS 590.01,Desc.,SP.TP.BUSINESS PROCESS MANAGEMENT,3,6,ASLI SENCER,TTT,678,,HKB108 | HKB108 | HKB108,01.06.2013,1,,"                          "
+MIS 690.01,Desc.,MASTER'S THESIS,0,60,BERTAN YILMAZ BADUR,TBA,,,,,0,,"                          "
+MIS 690.02,Desc.,MASTER'S THESIS,0,60,OSMAN NURİ DARCAN,TBA,,,,,0,,"                          "
+MIS 690.03,Desc.,MASTER'S THESIS,0,60,ÖZGÜR DÖĞERLİOĞLU,TBA,,,,,0,,"                          "
+MIS 690.04,Desc.,MASTER'S THESIS,0,60,ASLI SENCER,TBA,,,,,0,,"                          "
+MIS 690.05,Desc.,MASTER'S THESIS,0,60,HANDE TÜRKER,TBA,,,,,0,,"                          "
+MIS 690.06,Desc.,MASTER'S THESIS,0,60,BİRGÜL KUTLU,TBA,,,,,0,,"                          "
+MIS 690.07,Desc.,MASTER'S THESIS,0,60,SONA MARDİKYAN,TBA,,,,,0,,"                          "
+MIS 690.08,Desc.,MASTER'S THESIS,0,60,BİLGİN METİN,TBA,,,,,0,,"                          "
+MIS 690.09,Desc.,MASTER'S THESIS,0,60,ASLIHAN NASIR,TBA,,,,,0,,"                          "
+MIS 690.10,Desc.,MASTER'S THESIS,0,60,ZUHAL TANRIKULU,TBA,,,,,0,,"                          "
+MIS 690.11,Desc.,MASTER'S THESIS,0,60,CEYLAN ONAY,TBA,,,,,0,,"                          "
+MIS 690.12,Desc.,MASTER'S THESIS,0,60,MELTEM ÖZTURAN,TBA,,,,,0,,"                          "
+MIS 690.13,Desc.,MASTER'S THESIS,0,60,ALİ TÜKEL,TBA,,,,,0,,"                          "

@@ -1,0 +1,59 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PSY 101.01,Desc.,INTRODUCTION TO PSYCHOLOGY,3,5,GÜNEŞ ÜNAL,MWF,222,,AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK,,,,"                          "
+PSY 101.02,Desc.,INTRODUCTION TO PSYCHOLOGY,3,5,GÜNEŞ ÜNAL,MWF,333,,AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK,,,,"                          "
+PSY 111.01,Desc.,FUNDAMENTALS OF PSYCHOLOGY I,3,7,ESRA MUNGAN,TTW,566,,EF 06 | EF 06 | NB 119,,,,"                          "
+PSY 201.01,Desc.,INTRO. TO STATISTICS FOR PSYCHOLOGY I,4,8,ALİ TEKCAN,TTFF,1223,,EF 106 | EF 106 | EF 106 | EF 106,,,,"                          "
+,,P.S.,,,ALİ TEKCAN,ThTh,78,,BİM 2LAB | BİM 2LAB,,,,"                          "
+PSY 228.01,Desc.,COGNITIVE PSYCHOLOGY,3,6,AYŞECAN BODUROĞLU,TThTh,756,,NB 119 | NH 301 | NH 301,,,,"                          "
+PSY 241.01,Desc.,SOCIAL PSYCHOLOGY,3,5,NUR SOYLU,TTTh,344,,AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK,,,GUID,"                          "
+PSY 251.01,Desc.,PSYCHOLOGY OF PERSONALITY,3,6,SERRA MÜDERRİSOĞLU,MMW,344,,EF 06 | EF 06 | NH 301,,,,"                          "
+PSY 271.01,Desc.,INTRO.TO NEUROSCIENCE:BRAIN&BEHAVIOR,3,6,GÜNEŞ ÜNAL,TThTh,556,,TB 310 | NH 403 | NH 403,,,,"                          "
+PSY 301.01,Desc.,RESEARCH METHODS IN PSYCHOLOGY I,4,6,DENİZ TAHİROĞLU,WWThTh,5612,,NH 301 | NH 301 | EF 206 | EF 206,,,,"                          "
+PSY 304.01,Desc.,EXPERIMENTAL PSYCHOLOGY,4,7,İNCİ AYHAN,TTFFF,78456,,NH 103 | NH 103 | NB Z10 | NB Z10 | NB Z10,,,,"                          "
+PSY 304.02,Desc.,EXPERIMENTAL PSYCHOLOGY,4,7,NUR SOYLU,TTFFF,78456,,NB Z13 | NB Z13 | NB Z12 | NB Z12 | NB Z12,,,,"                          "
+PSY 327.01,Desc.,SENSATION & PERCEPTION  ,3,6,İNCİ AYHAN,TFF,512,,NH 102 | TB 310 | TB 310,,,,"                          "
+PSY 363.01,Desc.,ABNORMAL PSYCHOLOGY,3,6,NUR YENİÇERİ,TThTh,434,,NH 202 | KP 01 | KP 01,,,,"                          "
+PSY 364.01,Desc.,CHILD PSYCHOPATHOLOGY,3,6,FEYZA ÇORAPÇI,MTT,434,,NH 404 | KP 01 | KP 01,,,,"                          "
+PSY 482.01,Desc.,SELECTED TOPICS IN CLINICAL PSYCHOLOGY,3,6,YASEMİN SOHTORİK İLKMEN,TTW,567,,KP 02 | KP 02 | NH 203,,,,"                          "
+PSY 48M.01,Desc.,SEL.TOP.:QUALITATIVE ANALYSIS,3,6,SERRA MÜDERRİSOĞLU,MMM,789, ,NB Z11 | NB Z11 | NB Z11,,,,"                          "
+PSY 48R.01,Desc.,SEL.TOP.:MUSIC COGNITION I,3,6,ESRA MUNGAN,FFF,789,,,,,,"                          "
+PSY 491.01,Desc.,READINGS &RESEARCH IN BIOLOGICAL PSY.,3,5,GÜNEŞ ÜNAL,,,,,,,,"                          "
+PSY 49A.01,Desc.,R&R: DEVELOPMENTAL PSYCHOLOGY,3,6,DENİZ TAHİROĞLU,,,,,,,,"                          "
+PSY 49C.01,Desc.,READ.&RES.IN POWER&GROUP PROCESSES,3,6,NUR SOYLU,,, ,,,,,"                          "
+PSY 49H.01,Desc.,R&R EVALUATION OF CHILDREN,3,6,FEYZA ÇORAPÇI,,,,,,,,"                          "
+PSY 49I.01,Desc.,R&R:WORKING MEMORY,3,6,AYŞECAN BODUROĞLU,,,,,,,,"                          "
+PSY 501.01,Desc.,ADVANCED RESEARCH METHODS I,4,8,ADİL SARIBAY,FFFF,1234,,,,,,"                          "
+PSY 504.01,Desc.,RESEARCH PROJECT IN PSYCHOLOGY I,4,8,İNCİ AYHAN,,,,,,,,"                          "
+PSY 504.05,Desc.,RESEARCH PROJECT IN PSYCHOLOGY I,4,8,SERRA MÜDERRİSOĞLU,,,,,,,,"                          "
+PSY 504.06,Desc.,RESEARCH PROJECT IN PSYCHOLOGY I,4,8,ESRA MUNGAN,,,,,,,,"                          "
+PSY 504.07,Desc.,RESEARCH PROJECT IN PSYCHOLOGY I,4,8,ADİL SARIBAY,,,,,,,,"                          "
+PSY 504.09,Desc.,RESEARCH PROJECT IN PSYCHOLOGY I,4,8,DENİZ TAHİROĞLU,,,,,,,,"                          "
+PSY 504.10,Desc.,RESEARCH PROJECT IN PSYCHOLOGY I,4,8,ALİ TEKCAN,,,,,,,,"                          "
+PSY 504.11,Desc.,RESEARCH PROJECT IN PSYCHOLOGY I,4,8,GÜNEŞ ÜNAL,,,,,,,,"                          "
+PSY 504.12,Desc.,RESEARCH PROJECT IN PSYCHOLOGY I,4,8,NUR SOYLU,,,,,,,,"                          "
+PSY 521.01,Desc.,ADVANCED COGNITIVE PSYCHOLOGY,4,8,AYŞECAN BODUROĞLU,WWWW,5678,,,,,,"                          "
+PSY 532.01,Desc.,COGNITIVE DEVELOPMENT,4,8,DENİZ TAHİROĞLU,TTTT,1234,,,,,,"                          "
+PSY 565.01,Desc.,CLINICAL ASSESSMENT,4,8,NUR YENİÇERİ,TTTT,6789,,,,,,"                          "
+PSY 567.01,Desc.,ADVANCED CLINICAL PSYCHOLOGY,4,8,GÜLER OKMAN FİŞEK,MMM,234,,,,,,"                          "
+PSY 569.01,Desc.,CHILD PSYCHOPATHOLOGY & THERAPHY,4,8,FEYZA ÇORAPÇI,MMMM,6789,,,,,,"                          "
+PSY 579.01,Desc.,GRADUATE SEMINAR,0,4,YASEMİN SOHTORİK İLKMEN,,,,,,,,"                          "
+PSY 661.01,Desc.,SUPERVISION I,4,8,NUR YENİÇERİ,,,,,,,,"                          "
+PSY 68E.01,Desc.,SL.TP.IN COGN.PSY.:VIS.WORK.MEM.REPRSNT.,4,10,AYŞECAN BODUROĞLU,MMMM,2345,,,,,,"                          "
+PSY 690.02,Desc.,MASTER THESIS,0,60,AYŞECAN BODUROĞLU,,,,,,,,"                          "
+PSY 690.03,Desc.,MASTER THESIS,0,60,FEYZA ÇORAPÇI,,,,,,,,"                          "
+PSY 690.05,Desc.,MASTER THESIS,0,60,SERRA MÜDERRİSOĞLU,,,,,,,,"                          "
+PSY 690.06,Desc.,MASTER THESIS,0,60,ESRA MUNGAN,,,,,,,,"                          "
+PSY 690.07,Desc.,MASTER THESIS,0,60,ADİL SARIBAY,,,,,,,,"                          "
+PSY 690.08,Desc.,MASTER THESIS,0,60,GAYE SOLEY,,,,,,,,"                          "
+PSY 690.09,Desc.,MASTER THESIS,0,60,DENİZ TAHİROĞLU,,,,,,,,"                          "
+PSY 690.10,Desc.,MASTER THESIS,0,60,ALİ TEKCAN,,,,,,,,"                          "
+PSY 690.11,Desc.,MASTER THESIS,0,60,GÜNEŞ ÜNAL,,,,,,,,"                          "
+PSY 690.12,Desc.,MASTER THESIS,0,60,NUR SOYLU,,,,,,,,"                          "
+PSY 69A.01,Desc.,LAB/FIELD WORK IN BEHAVIORAL NEUROSCIENC,2,10,GÜNEŞ ÜNAL,,,,,,,,"                          "
+PSY 69E.01,Desc.,LAB/FIELD WORK IN COGNITIVE PSY. 1-4,2,10,ALİ TEKCAN,,,,,,,,"                          "
+PSY 69G.01,Desc.,LAB/FIELD WORK IN COGNITIVE PSY. 1-4,2,10,AYŞECAN BODUROĞLU,,,,,,,,"                          "
+PSY 69I.01,Desc.,LAB/FIELD WORK IN DEV.PSYCHOLOGY 1-4,2,10,FEYZA ÇORAPÇI,,,,,,,,"                          "
+PSY 69M.01,Desc.,LAB/FIELD WORK IN SOCIAL PSYCHOLOGY 1-4,2,10,ADİL SARIBAY,,,,,,,,"                          "
+PSY 790.01,Desc.,DOCTORAL DISSERTATION,0,120,FEYZA ÇORAPÇI,,,,,,,,"                          "
+PSY 790.02,Desc.,DOCTORAL DISSERTATION,0,120,SERRA MÜDERRİSOĞLU,,,,,,,,"                          "
+PSY 790.03,Desc.,DOCTORAL DISSERTATION,0,120,ALİ TEKCAN,,,,,,,,"                          "

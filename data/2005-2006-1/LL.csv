@@ -1,0 +1,59 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AL  201.01,Desc.,SURVEY OF AMERICAN LITERATURE,3,6,LAMİA GÜLÇUR,TWF,543,,,,,,"                          "
+AL  201.02,Desc.,SURVEY OF AMERICAN LITERATURE,3,6,SOSİ ANTİKACIOĞLU,TWTh,545,,,,,,"                          "
+AL  302.01,Desc.,TWENTIETH CENTURY AMERICAN POETRY,3,6,SOSİ ANTİKACIOĞLU,TWW,878,,,,,,"                          "
+CL  103.01,Desc.,CLASSICAL LITERATURE,3,6,SUNA ERTUĞRUL,MWTh,352,,,,,,"                          "
+CL  311.01,Desc.,MYTHOLOGY,3,6,SUNA ERTUĞRUL,MMW,566,,,,,,"                          "
+CL  401.01,Desc.,LITERARY CRITICISM I,3,7,OYA BAŞAK,TTTh,233,,,,,,"                          "
+CL  480.01,Desc.,SP.TOP.:HEIDEGGER AND HOLDERLIN,3,6,SUNA ERTUĞRUL,TBA,,,,,,,"                          "
+CL  488.01,Desc.,SPC.TOP.:MID-20th CENTURY NOVEL ,3,6,KIM FORTUNY,TFF,612,,,,,,"                          "
+EL  101.01,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,CEVZA SEVGEN,TThF,444,,,,,,"                          "
+EL  101.03,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,KIM FORTUNY,TThF,444,,,,,,"                          "
+EL  101.04,Desc.,SURVEY OF ENGLISH LITERATURE I,3,7,ÖZLEM GÖREY,TThF,444,,,,,,"                          "
+EL  205.01,Desc.,THE ENGLISH NOVEL,3,6,ÖZLEM ÖĞÜT,ThFF,612,,,,,,"                          "
+EL  312.01,Desc.,SHAKESPEARE IN HIS AGE II,3,6,S.SÜHEYLA ARTEMEL,FFF,789,,,,,,"                          "
+EL  401.01,Desc.,STUDIES IN SHAKESPEARE,3,7,IŞIL BAŞ,TTTh,455,,,,,,"                          "
+EL  412.01,Desc.,RESEARCH AND WRITING,3,6,SOSİ ANTİKACIOĞLU,TBA,,,,,,,"                          "
+EL  412.02,Desc.,RESEARCH AND WRITING,3,6,IŞIL BAŞ,TBA,,,,,,,"                          "
+EL  412.04,Desc.,RESEARCH AND WRITING,3,6,SUNA ERTUĞRUL,TBA,,,,,,,"                          "
+EL  412.05,Desc.,RESEARCH AND WRITING,3,6,KIM FORTUNY,TBA,,,,,,,"                          "
+EL  412.06,Desc.,RESEARCH AND WRITING,3,6,ÖZLEM GÖREY,TBA,,,,,,,"                          "
+EL  412.07,Desc.,RESEARCH AND WRITING,3,6,LAMİA GÜLÇUR,TBA,,,,,,,"                          "
+EL  412.08,Desc.,RESEARCH AND WRITING,3,6,ÖZLEM ÖĞÜT,TBA,,,,,,,"                          "
+EL  412.09,Desc.,RESEARCH AND WRITING,3,6,SUMRU ÖZSOY,TBA,,,,,,,"                          "
+EL  641.01,Desc.,JOYCE AND THE MODERN  ENGLISH NOVEL,4,10,ÖZLEM ÖĞÜT,TTT,678,,,,,,"                          "
+EL  689.01,Desc.,STUDIES IN ENGLISH LITERATURE,1,5,IŞIL BAŞ,TBA,,,,,,,"                          "
+EL  690.01,Desc.,MASTER THESIS,0,60,CEVZA SEVGEN,TBA,,,,,,,"                          "
+EL  694.01,Desc.,SPC.STUD:FEMINISM AND WOMAN WRITERS,4,10,IŞIL BAŞ,WWW,678,,,,,,"                          "
+EL  790.01,Desc.,DOCTORAL DISSERTATION,0,120,IŞIL BAŞ,TBA,,,,,,,"                          "
+EL  790.02,Desc.,DOCTORAL DISSERTATION,0,120,ASLI TEKİNAY,TBA,,,,,,,"                          "
+ENGL101.01,Desc.,INTRODUCTION TO LITERARY SCHOLARSHIP I,3,6,LAMİA GÜLÇUR,TWF,735,,,,,,"                          "
+ENGL101.02,Desc.,INTRODUCTION TO LITERARY SCHOLARSHIP I,3,6,LAMİA GÜLÇUR,WWF,677,,,,,,"                          "
+ENGL111.01,Desc.,EXPOSITORY WRITING I,3,5,MÜFİDE PEKİN,MWTh,211,,,,,,"                          "
+ENGL111.02,Desc.,EXPOSITORY WRITING I,3,5,MÜFİDE PEKİN,MWTh,623,,,,,,"                          "
+ENGL111.03,Desc.,EXPOSITORY WRITING I,3,5,MÜFİDE PEKİN,MWTh,564,,,,,,"                          "
+ENGL111.04,Desc.,EXPOSITORY WRITING I,3,5,MÜFİDE PEKİN,MWTh,188,,,,,,"                          "
+ENGL201.01,Desc.,STRUCTURE OF MODERN ENGLISH,3,6,BALKIZ ÖZTÜRK,MWTh,556,,,,,,"                          "
+ENGL201.02,Desc.,STRUCTURE OF MODERN ENGLISH,3,6,BALKIZ ÖZTÜRK,MWTh,667,,,,,,"                          "
+ENGL311.01,Desc.,HISTORY OF THE ENGLISH LANGUAGE I,3,5,CEVZA SEVGEN,TThF,666,,,,,,"                          "
+FA  201.01,Desc.,ANATOLIAN ART & CULTURES FROM PREHIST...,3,5,BEHİN AKSOY,ThThTh,678,,,,,,"                          "
+FA  304.01,Desc.,WESTERN PAINTING IN THE TWENTIETH CENTUR,3,5,SEDEF HATAPKAPULU,FFF,123,,,,,,"                          "
+FA  327.01,Desc.,MUSIC:THEORY & APPRECIATION,3,5,EMİNE SERDAROĞLU,WWW,234,,,,,,"                          "
+FA  485.01,Desc.,SP.TOP.:THEATER SEMINAR,3,5,STAFF STAFF,,, ,,,,,"                          "
+FA  488.01,Desc.,SPECIAL TOPICS.:THE NEW YORK POETS,3,5,STAFF STAFF,,, ,,,,,"                          "
+GR  101.01,Desc.,MODERN GREEK FOR BEGINNERS I,3,5,CHRYSSI SIDIROPOULOU,MMWW,7867,,,,,,"                          "
+GR  201.01,Desc.,INTERMEDIATE MODERN GREEK I,3,5,CHRYSSI SIDIROPOULOU,TBA,,,,,,,"                          "
+LAT 211.01,Desc.,INTERMEDIATE LATIN I,3,5,GÜLİN SUNER,TBA,,,,,,,"                          "
+LING111.01,Desc.,INTRO. TO LANGUAGE & LINGUISTICS I,3,6,SUMRU ÖZSOY,MWTh,445,,,,,,"                          "
+LING111.02,Desc.,INTRO. TO LANGUAGE & LINGUISTICS I,3,6,DİDAR AKAR,MWTh,445,,,,,,"                          "
+LING111.03,Desc.,INTRO. TO LANGUAGE & LINGUISTICS I,3,6,DİDAR AKAR,MWTh,556,,,,,,"                          "
+LING321.01,Desc.,ENGLISH TURKISH CONTRASTIVE ANALYSIS,3,4,MELTEM KELEPİR,MWTh,555,,,,,,"                          "
+LING403.01,Desc.,TRANSLATION I,3,6,ÖZLEM GÖREY,TFF,767,,,,,,"                          "
+LING481.01,Desc.,SPECIAL TOPICS IN LINGUISTICS,3,5,STAFF STAFF,TBA,,,,,,,"                          "
+LING497.01,Desc.,SP.TOP.:BRAIN & LANGUAGE,3,5,MİNE NAKİPOĞLU,TThTh,334,,,,,,"                          "
+LIT 325.01,Desc.,CREATIVE WRITING I,3,6,MURAT GÜLSOY,TTT,567,,,,,,"                          "
+LIT 411.01,Desc.,COPYWRITING I,3,6,NEŞET DERELİ,WWW,91011,,,,,,"                          "
+RUS 101.01,Desc.,BEGINNERS RUSSIAN I,3,5,OLGA ZVERKOVA,MMWWF,12121,,,,,,"                          "
+RUS 201.01,Desc.,INTERMEDIATE RUSSIAN I,3,5,OLGA ZVERKOVA,MMWWF,45342,,,,,,"                          "
+RUS 301.01,Desc.,ADVANCED RUSSIAN I,3,5,OLGA ZVERKOVA,TBA,,,,,,,"                          "
+STS 230.01,Desc.,THEORY OF MUSICAL SOUND,3,6,ALPAR  SEVGEN,FFF,678,,,,,,"                          "

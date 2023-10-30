@@ -1,0 +1,41 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CE  202.01,Desc.,INTRO. TO PROBABILITY & STATISTICS,3,6,HİLMİ LUŞ,MMT,787,,M 3100 | M 3100 | M 3120,,,,"                          "
+CE  202.02,Desc.,INTRO. TO PROBABILITY & STATISTICS,3,6,EMRE OTAY,TWW,778,,M 2200 | M 2200 | M 2200,,,,"                          "
+CE  212.01,Desc.,ENGINEERING MATERIALS,3,5,TURAN ÖZTURAN,TTThTh,1212,,M 3120 | M 3120 | M 2180 | M 2180,,,,"                          "
+CE  222.01,Desc.,INTRO. TO ENV. POLLUTION  CONTROL,3,7,ATİLLA AKKOYUNLU,MMM,678,,M 1181 | M 3120 | M 3120,,,,"                          "
+CE  241.01,Desc.,MECHANICS OF MATERIALS,4,6,SAMİ AND KILIÇ,TTThTh,5678,,M 2170 | M 2170 | M 2180 | M 2180,,,,"                          "
+CE  312.01,Desc.,HYDRAULIC ENGINEERING I,4,6,OSMAN BÖREKÇİ,MMWW,2334,,M 2230 | M 2230 | M 3100 | M 3100,,,,"                          "
+CE  312.02,Desc.,HYDRAULIC ENGINEERING I,4,6,CEM AVCI,MMWW,2334,,M 2171 | M 2171 | M 2180 | M 2180,,,,"                          "
+CE  332.01,Desc.,SOIL MECHANICS I,3,5,TURAN DURGUNOĞLU,FFF,123,,M 1100 | M 1100 | M 1100,,,,"                          "
+CE  332.02,Desc.,SOIL MECHANICS I,3,5,GÖKHAN BAYKAL,TTTh,122,,M 2200 | M 2200 | M 3120,,,,"                          "
+CE  334.01,Desc.,SOIL MECHANICS LABORATORY,1,4,GÖKHAN BAYKAL,ThThThTh,1678,,M 3120,,,,"                          "
+CE  352.01,Desc.,STRUCTURAL ANALYSIS II,4,7,GÜLAY ALTAY,TTThThTh,34345,,M 2170 | M 2170 | M 2170 | M 2170 | M 2170,,,,"                          "
+CE  352.02,Desc.,STRUCTURAL ANALYSIS II,4,7,VEDAT YERLİCİ,TTThThTh,34345,,M 2171 | M 2171 | M 2171 | M 2171 | M 2171,,,,"                          "
+CE  412.01,Desc.,HYDRAULIC ENGINEERING II,3,5,CEM AVCI,MMT,455,,M 2230 | M 2230 | M 2180,,,,"                          "
+CE  414.01,Desc.,INTRODUCTION TO COASTAL ENGINEERING,3,5,OSMAN BÖREKÇİ,MTT,678,,M 3120 | M 2181 | M 2181,,,,"                          "
+CE  452.01,Desc.,REINFORCED CONCRETE II,4,5,CENGİZ KARAKOÇ,WWTh,9106,,M 3120 | M 3120 | M 2171,,,,"                          "
+CE  453.01,Desc.,ASEISMIC DESIGN OF STRUCTURES,3,5,SEMİH TEZCAN,FFF,678,,M 2181 | M 2181 | M 2181,,,,"                          "
+CE  480.01,Desc.,SP.STUD.IN CE.:INTRODUCTION TO ARCHITECT,3,5,ERHAN KARAESMEN,FFF,234, ,M 3100 | M 3100 | M 3100,,,,"                          "
+CE  492.01,Desc.,PROJECT,4,8,CEM YALÇIN                   ,FFF,678,,M 2200 | M 2200 | M 2200,,,,"                          "
+CE  494.01,Desc.,SP.TOP.IN CE:ROAD SAFETY ENG.,3,5,GÖKMEN ERGÜN,TWW,312,,M 2231 | M 3100 | M 3100,,,,"                          "
+CE  505.01,Desc.,APPLIED STOCHASTIC ANALYSIS&MODELING,3,6,EMRE OTAY,TTT,234,,M 1181 | M 1181 | M 1181,,,,"                          "
+CE  531.01,Desc.,SOIL MECHANICS II,3,7.50,ÖZER ÇİNİCİOĞLU,WWW,234,,M 1181 | M 1181 | M 1181,,,,"                          "
+CE  534.01,Desc.,DESIGNING WITH GEOSYNTHETICS,3,6,EROL GÜLER,MMM,789,,M 1181 | M 1181 | M 1181,,,,"                          "
+CE  536.01,Desc.,SOIL IMPROVEMENT TECHNIQUES,3,6,GÖKHAN BAYKAL,WWW,234,,,,,,"                          "
+CE  547.01,Desc.,ELASTICITY,3,7.50,HİLMİ LUŞ,ThThF,345,,M 1181 | M 1181 | M 1170,,,,"                          "
+CE  551.01,Desc.,NONLINEAR PROBLEMS IN REINFORCED CONCRET,3,6,CENGİZ KARAKOÇ,TTT,789,,M 1181 | M 1181 | M 1181,,,,"                          "
+CE  552.01,Desc.,PRESTRESSED & PREFABRICATED SYSTEMS,3,6,CEM YALÇIN                   ,ThThTh,678,,M 2203 | M 2203 | M 2203,,,,"                          "
+CE  562.01,Desc.,ADVANCED TRAFFIC ENGINEERING,3,6,GÖKMEN ERGÜN,ThThTh,789,,M 2231 | M 2231 | M 2231,,,,"                          "
+CE  583.01,Desc.,SP.TOP.:STRUCTURAL STELL DESIGN,3,6,GÜLAY ALTAY,WWW,8910,,M 2203 | M 2203 | M 2203,,,,"                          "
+CE  588.01,Desc.,SP.TOP.IN CE:BEHAVIOR OF REINFORCED CONC,3,7.50,UĞUR ERSOY,TBA,,,,,,,"                          "
+CE  593.01,Desc.,SP.STUD.IN CE :WATER POL. CONROL&TREATM.,3,6,ATİLLA AKKOYUNLU,MMM,234,,M 3120,,,,"                          "
+CE  596.01,Desc.,SP.TOP.IN CE:RETAINING STRUCTURES,3,6,AYŞE EDİNÇLİLER,WWW,568, ,M 2203 | M 2203 | M 3120,,,,"                          "
+CE  601.01,Desc.,FINITE ELEMENTS I,3,7.50,SEMİH TEZCAN,FFF,123,,M 3120 | M 3120 | M 3120,,,,"                          "
+CE  651.01,Desc.,NON-LINEAR STRUCTURAL ANALYSIS,3,7.50,SAMİ AND KILIÇ,MMM,567,,M 1152 | M 1152 | M 1152,,,,"                          "
+CE  690.01,Desc.,M.S.THESIS,0,60,EROL GÜLER,TBA,,,,,,,"                          "
+CE  691.01,Desc.,SP.STUD.IN CE.:ADVANCED WATER WAVE THEOR,3,7.50,OSMAN BÖREKÇİ,TBA,,,,,,,"                          "
+CE  790.01,Desc.,Ph.D. THESIS,0,120,EROL GÜLER,TBA,,,,,,,"                          "
+ENGG110.01,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,MMM,678,,M 3160 | M 3160 | M 3160,,,,"                          "
+ENGG110.02,Desc.,ENGINEERING GRAPHICS,3,5,İREM EREZ,TTT,678,,M 3160 | M 3160 | M 3160,,,,"                          "
+ENGG110.03,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,WWW,678,,M 3160 | M 3160 | M 3160,,,,"                          "
+ENGG110.04,Desc.,ENGINEERING GRAPHICS,3,5,İLYAS İSTİF,ThThTh,678,,M 3160 | M 3160 | M 3160,,,,"                          "

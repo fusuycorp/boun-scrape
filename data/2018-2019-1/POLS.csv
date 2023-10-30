@@ -1,0 +1,61 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+POLS101.01,Desc.,INTRODUCTION TO POLITICAL SCIENCE,3,6,HAKAN YILMAZ,MMT,788,,NH 101 | NH 101 | EF 206,24.12.2018,1,POLS,"                          "
+POLS101.02,Desc.,INTRODUCTION TO POLITICAL SCIENCE,3,6,ZÜHRE AKSOY,MMW,343,,NH 405 | NH 405 | NH 401,24.12.2018,1,EC,"                          "
+POLS101.03,Desc.,INTRODUCTION TO POLITICAL SCIENCE,3,6,MURAT AKAN,MTT,534,,NH 301 | EF 206 | EF 206,24.12.2018,1,"SOC,TR","                          "
+POLS201.01,Desc.,HISTORY OF POLITICAL THOUGHT I,3,5,VOLKAN ÇIDAM,TTTh,673,,NH 101 | NH 101 | EF 206,03.01.2019,1,,"                          "
+POLS203.01,Desc.,SOCIAL STATISTICS,4,6,ZEYNEP KADİRBEYOĞLU,WWFF,3423,,NH 105 | NH 105 | NH 305 | NH 305,,,,"                          "
+POLS215.01,Desc.,COMPARATIVE POLITICS,3,6,MURAT AKAN,MMT,342,,NH 301 | NH 301 | EF 206,04.01.2019,2,,"                          "
+POLS217.01,Desc.,DIPLOMATIC HISTORY,3,6,BANN SENG TAN,TTTh,455,,İB 102 | İB 102 | NH 305,05.01.2019,2,,"                          "
+POLS303.01,Desc.,FUNDAMENTALS OF POLITICAL ECONOMY,3,7,MİNE EDER,MMW,565,,NH 401 | NH 401 | NH 101,24.12.2018,2,,"                          "
+POLS304.01,Desc.,DEVELOPMENT OF CONTEMPORARY DEMOCRACIES,3,5,MERT ARSLANALP,WWF,343,,NH 202 | NH 202 | İB 301,,,,"                          "
+POLS305.01,Desc.,POLITICS OF NATIONALISM & ETHNICITY,3,5,DİLEK ÇINAR,TTTh,784,,İB 211 | İB 211 | M 1100,,,,"                          "
+POLS309.01,Desc.,POLITICAL ECONOMY OF CONTEMPORARY TURKEY,3,5,MİNE EDER,MWW,778,,NH 402 | İB 301 | İB 301,25.12.2018,1,,"                          "
+POLS326.01,Desc.,TWENTIETH CENTURY DIPLOMATIC HISTORY,3,5,MEHMET GÖK,TWW,467,,İB 301 | M 2180 | M 2180,29.12.2018,2,,"                          "
+POLS330.01,Desc.,POLITICAL GEOGRAPHY,3,5,GÜN KUT,TTW,123,,M 2152 | M 2152 | İB 301,,,,"                          "
+POLS333.01,Desc.,LOCAL POLITICS&DEMOCRACY,3,5,GÜL SOSAY,TTTh,457,,NB Z13 | NB Z13 | NB 119,,,,"                          "
+POLS342.01,Desc.,AMERICAN GOVERNMENT,3,5,MEHMET ALİ ÇİÇEKDAĞ,TTTh,233,,NB Z13 | NB Z13 | İB 312,04.01.2019,2,,"                          "
+POLS373.01,Desc.,POLITICS & CULTURE,3,5,HAKAN YILMAZ,TTT,567,,EF 204 | EF 206 | EF 206,25.12.2018,3,,"                          "
+POLS403.01,Desc.,POLITICAL PHILOSOPHY,3,6,İLKAY SUNAR,MMM,678,,,31.12.2018,1,,"                          "
+POLS406.01,Desc.,"POLITICS, IDEOLOGY & DISCOURSE",3,6,ZEYNEP GAMBETTI,WThTh,478,,NH 201 | M 2152 | M 2152,,,,"                          "
+POLS415.01,Desc.,POLITICAL PSYCHOLOGY,3,6,SELCAN KAYNAK,MMT,345,,M 2180 | M 2180 | İB 312,05.01.2019,1,,"                          "
+POLS417.01,Desc.,FROM WEIMAR TO BERLIN,3,6,DİLEK ÇINAR,TThTh,478,,M 2152 | İB 201 | İB 201,,,,"                          "
+POLS420.01,Desc.,INTERNATIONAL POLITICAL ECONOMY,3,6,GÜL SOSAY,TThTh,845,,İB 201 | İB 301 | İB 301,,,,"                          "
+POLS431.01,Desc.,POLITICS OF POSTMODERNITY & ITS CRITICS,3,6,ZEYNEP GAMBETTI,WWTh,784,,İB 102 | İB 102 | M 1200,,,,"                          "
+POLS435.01,Desc.,ISSUES IN TURKISH FOREIGN POLICY,3,6,GÜN KUT,TWW,312,,M 2152 | İB 301 | İB 301,,,,"                          "
+POLS449.01,Desc.,INTERNATIONAL CONFLICT ANALYSIS,3,6,BANN SENG TAN,TThTh,223,,NH 103 | İB 201 | İB 201,03.01.2019,2,,"                          "
+POLS483.01,Desc.,SELECTED TOPICS IN POLITICAL THEORY,3,6,VOLKAN ÇIDAM,TThTh,356,,NB Z12 | İB 312 | İB 312,,,,"                          "
+POLS501.01,Desc.,ADVANCED RESEARCH METHODS ,3,8,ZEYNEP KADİRBEYOĞLU,WWW,678,,,,,,"                          "
+POLS521.01,Desc.,INTERNATIONAL POLITICS,3,8,ZÜHRE AKSOY,TTT,567,,,,,,"                          "
+POLS541.01,Desc.,COMPARATIVE POLITICS,3,8,MERT ARSLANALP,ThThTh,678,,,,,,"                          "
+POLS582.01,Desc.,R&R IN TURKISH POLITICS,3,6,MERT ARSLANALP,,,,,,,,"                          "
+POLS585.01,Desc.,RESEARCH & READING IN POLITICAL THEORY I,3,6,VOLKAN ÇIDAM,,,,,,,,"                          "
+POLS585.02,Desc.,RESEARCH & READING IN POLITICAL THEORY I,3,6,ZEYNEP GAMBETTI,,,,,,,,"                          "
+POLS589.01,Desc.,R. & R. IN INTERNATIONAL RELATIONS I,3,6,ZÜHRE AKSOY,,,,,,,,"                          "
+POLS590.01,Desc.,R&R IN INTERNATIONAL RELATIONS,3,6,GÜN KUT,,,,,,,,"                          "
+POLS593.01,Desc.,R.&R.IN COMPARATIVE POLITICS I,3,6,DİLEK ÇINAR,,,,,,,,"                          "
+POLS593.03,Desc.,R.&R.IN COMPARATIVE POLITICS I,3,6,SELCAN KAYNAK,,,,,,,,"                          "
+POLS596.01,Desc.,R.&R. IN COMPARATIVE POLITICS II,3,6,MİNE EDER,,,,,,,,"                          "
+POLS622.01,Desc.,"SECULARISM, DEMOCRACY&RELIGION",3,9,MURAT AKAN,,,,,,,,"                          "
+POLS687.01,Desc.,R&R IN COMPARATIVE POLITICS,3,8,GÜL SOSAY,,,,,,,,"                          "
+POLS688.01,Desc.,R&R IN COMPARATIVE POLITICS,3,8,ZEYNEP KADİRBEYOĞLU,,,,,,,,"                          "
+POLS690.01,Desc.,MASTER THESIS,0,60,MURAT AKAN,,,,,,,,"                          "
+POLS690.02,Desc.,MASTER THESIS,0,60,ZÜHRE AKSOY,,,,,,,,"                          "
+POLS690.06,Desc.,MASTER THESIS,0,60,VOLKAN ÇIDAM,,,,,,,,"                          "
+POLS690.07,Desc.,MASTER THESIS,0,60,DİLEK ÇINAR,,,,,,,,"                          "
+POLS690.08,Desc.,MASTER THESIS,0,60,MİNE EDER,,,,,,,,"                          "
+POLS690.09,Desc.,MASTER THESIS,0,60,ZEYNEP KADİRBEYOĞLU,,,,,,,,"                          "
+POLS690.10,Desc.,MASTER THESIS,0,60,MERT ARSLANALP,,,,,,,,"                          "
+POLS690.11,Desc.,MASTER THESIS,0,60,GÜN KUT,,,,,,,,"                          "
+POLS690.13,Desc.,MASTER THESIS,0,60,GÜL SOSAY,,,,,,,,"                          "
+POLS690.14,Desc.,MASTER THESIS,0,60,BANN SENG TAN,,,,,,,,"                          "
+POLS690.15,Desc.,MASTER THESIS,0,60,ZEYNEP GAMBETTI,,,,,,,,"                          "
+POLS691.01,Desc.,R&R IN RESEARCH METHODS,3,,BANN SENG TAN,,,,,,,,"                          "
+POLS790.01,Desc.,Ph.D THESIS,0,120,HAKAN YILMAZ,,,,,,,,"                          "
+POLS790.02,Desc.,Ph.D THESIS,0,120,MURAT AKAN,,,,,,,,"                          "
+POLS790.04,Desc.,Ph.D THESIS,0,120,MİNE EDER,,,,,,,,"                          "
+POLS790.05,Desc.,Ph.D THESIS,0,120,DİLEK ÇINAR,,,,,,,,"                          "
+POLS790.07,Desc.,Ph.D THESIS,0,120,ZEYNEP GAMBETTI,,,,,,,,"                          "
+POLS790.08,Desc.,Ph.D THESIS,0,120,ZEYNEP KADİRBEYOĞLU,,,,,,,,"                          "
+POLS790.09,Desc.,Ph.D THESIS,0,120,GÜN KUT,,,,,,,,"                          "
+POLS790.10,Desc.,Ph.D THESIS,0,120,GÜL SOSAY,,,,,,,,"                          "
+POLS790.11,Desc.,Ph.D THESIS,0,120,VOLKAN ÇIDAM,,,,,,,,"                          "

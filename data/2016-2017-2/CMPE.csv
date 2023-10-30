@@ -1,0 +1,149 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CMPE140.01,Desc.,INTRO.TO COMPUTING FOR EC.&MANAGEMEMT,3,5,BERT ARNRICH,WW,67,,,01.06.2017,1,EC,"                          "
+,,LAB,,,STAFF STAFF,FF,12,,BM B4 | BM B4,,0,,"                          "
+,,P.S.,,,STAFF STAFF,W,8,,NH 401,,0,,"                          "
+CMPE140.02,Desc.,INTRO.TO COMPUTING FOR EC.&MANAGEMEMT,3,5,BERT ARNRICH,WW,67,,,01.06.2017,1,EC,"                          "
+,,LAB,,,STAFF STAFF,FF,56,,BM B4 | BM B4,,0,,"                          "
+,,P.S.,,,STAFF STAFF,W,8,,NH 401,,0,,"                          "
+CMPE150.01,Desc.,INTRODUCTION TO COMPUTING,3,5,ARZUCAN ÖZGÜR TÜRKMEN,T,7,,,24.05.2017,1,EE,"                          "
+,,LAB,,,STAFF STAFF,ThTh,56,,BM B4 | BM B4,,0,,"                          "
+,,P.S.,,,STAFF STAFF,TTh,84,,NH 401 | BM B4,,0,,"                          "
+CMPE150.02,Desc.,INTRODUCTION TO COMPUTING,3,5,ARZUCAN ÖZGÜR TÜRKMEN,T,7,,,24.05.2017,1,CE,"        CMPE                  "
+,,LAB,,,STAFF STAFF,FF,78,,BM A4 | BM A4,,0,,"        CMPE                  "
+,,P.S.,,,STAFF STAFF,TF,86,,NH 401 | BM A4,,0,,"        CMPE                  "
+CMPE150.03,Desc.,INTRODUCTION TO COMPUTING,3,5,ARZUCAN ÖZGÜR TÜRKMEN,T,7,,,24.05.2017,1,IE,"        CMPE                  "
+,,LAB,,,STAFF STAFF,WW,23,,BM A4 | BM A4,,0,,"        CMPE                  "
+,,P.S.,,,STAFF STAFF,TW,81,,NH 401 | BM A4,,0,,"        CMPE                  "
+CMPE150.04,Desc.,INTRODUCTION TO COMPUTING,3,5,H. LEVENT AKIN,T,7,,,24.05.2017,1,CET,"                          "
+,,LAB,,,STAFF STAFF,WW,78,,BM A4 | BM A4,,0,,"                          "
+,,P.S.,,,STAFF STAFF,TW,86,,EF 206 | BM A4,,0,,"                          "
+CMPE150.05,Desc.,INTRODUCTION TO COMPUTING,3,5,H. LEVENT AKIN,T,7,,,24.05.2017,1,,"                          "
+,,LAB,,,STAFF STAFF,FF,45,,BM A4 | BM A4,,0,,"                          "
+,,P.S.,,,STAFF STAFF,TF,83,,EF 206 | BM A4,,0,,"                          "
+CMPE160.01,Desc.,INTRODUCTION TO OBJECT ORIENTED PROG.,4,8,TUNA TUĞCU,MWW,367,,,01.06.2017,2,,"                          "
+,,P.S.,,,STAFF STAFF,FF,34,,BM B4 | BM B4,,0,,"                          "
+CMPE160.02,Desc.,INTRODUCTION TO OBJECT ORIENTED PROG.,4,8,TUNA TUĞCU,MWW,367,,,01.06.2017,2,,"                          "
+,,P.S.,,,STAFF STAFF,FF,12,,BM A4 | BM A4,,0,,"                          "
+CMPE230.01,Desc.,SYSTEMS PROGRAMMING,4,6,CAN ÖZTURAN,TTTh,234,,,29.05.2017,3,,"                          "
+,,P.S.,,,STAFF STAFF,MM,78,,BM A2 | BM A2,,0,,"                          "
+CMPE240.01,Desc.,DIGITAL SYSTEMS,4,6,MEHMET ALPER ŞEN,TThTh,578,,,27.05.2017,2,,"                          "
+,,LAB,,,STAFF STAFF,FF,12,,BM 11 | BM 11,,0,,"                          "
+,,P.S.,,,STAFF STAFF,T,6,,BM A2,,0,,"                          "
+,,LAB,,,STAFF STAFF,FF,34,,BM 11 | BM 11,,0,,"                          "
+CMPE260.01,Desc.,PRINCIPLES OF PROGRAMMING LANGUAGES,3,5,ALBERT ALİ SALAH,TTF,785,,,23.05.2017,1,,"                          "
+CMPE321.01,Desc.,INTRODUCTION TO DATABASE SYSTEMS,4,6,TAFLAN GÜNDEM,MFF,678,,,27.05.2017,1,,"                          "
+CMPE350.01,Desc.,FORMAL LANGUAGES & AUTOMATA THEORY,3,5,CEM SAY,MFF,323,,,01.06.2017,1,,"                          "
+,,P.S.,,,STAFF STAFF,TBA,,,,,0,,"                          "
+CMPE352.01,Desc.,FUNDAMENTALS OF SOFTWARE ENGINEERING,2,4,SUZAN ÜSKÜDARLI,TT,34,,,26.05.2017,3,,"                          "
+CMPE362.01,Desc.,INTRO.TO SIGNAL PROC. FOR COMPUTER.ENG.,3,6,FATİH ALAGÖZ,WThTh,823,,,25.05.2017,1,,"                          "
+CMPE460.01,Desc.,INTRODUCTION TO COMPUTER GRAPHICS,3,6,LALE AKARUN,TTW,232,,,18.05.2017,2,,"                          "
+CMPE462.01,Desc.,MACHINE LEARNING,3,6,EMRE UĞUR,MMW,455,,,18.05.2017,2,,"                          "
+CMPE476.01,Desc.,DISTRIBUTED SYSTEMS,3,6,M. UFUK ÇAĞLAYAN,WWTh,671,,,27.05.2017,3,,"                          "
+CMPE477.01,Desc.,WIRELESS & MOBILE NETWORKS,3,6,CEM ERSOY,MMT,233,,,26.05.2017,1,,"                          "
+CMPE482.01,Desc.,SP.TP.NUMERICAL LINEAR ALGEBRA&ITS APPL.,3,5,ALİ TAYLAN CEMGİL,WThTh,623,,,20.05.2017,2,,"                          "
+CMPE483.01,Desc.,SP.TP.BLOCKCHAIN PROGRAMMING,3,6,CAN ÖZTURAN,,, ,,30.05.2017,3,,"                          "
+CMPE490.01,Desc.,SP.TP.INTERNET OF THINGS,3,6,ARDA YURDAKUL,TTTh,674,,,22.05.2017,3,,"                          "
+CMPE491.01,Desc.,SPEC. PROJECT IN COMPUTER ENGINEERING,3,6,PINAR YOLUM BİRBİL,TBA,,,,,0,,"                          "
+CMPE492.01,Desc.,PROJECT,4,7,PINAR YOLUM BİRBİL,TBA,,,,,0,,"                          "
+CMPE493.01,Desc.,SP.TP.INTRODUCTION TO INFORMATION RETRI.,3,6,ARZUCAN ÖZGÜR TÜRKMEN,WWTh,785,,,27.05.2017,3,,"                          "
+CMPE496.01,Desc.,SP.TOP.IN CMPE:HUMAN COMPUTER INTERACTIO,3,6,SADIK FİKRET GÜRGEN,,, ,,23.05.2017,2,,"                          "
+CMPE516.01,Desc.,FAULT TOLERANT COMPUTING,3,8,OĞUZ TOSUN,ThThTh,234,,,25.05.2017,2,,"                          "
+CMPE526.01,Desc.,OPERATING SYSTEM & NETWORK SECURITY,3,8,M. UFUK ÇAĞLAYAN,ThThTh,678,,,29.05.2017,2,,"                          "
+CMPE529.01,Desc.,CONCURRENCY CONTROL&RECOVERY IN DATABASE,3,8,TAFLAN GÜNDEM,WWW,678,,,24.05.2017,2,,"                          "
+CMPE532.01,Desc.,SPEECH PROCESSING,3,8,SADIK FİKRET GÜRGEN,TTT,567,,,18.05.2017,2,,"                          "
+CMPE545.01,Desc.,ARTIFICIAL NEURAL NETWORKS,3,8,ETHEM ALPAYDIN,FFF,234,,,29.05.2017,2,,"                          "
+CMPE547.01,Desc.,BAYESIAN STATISTICS&MACHINE LEARNING,3,8,ALİ TAYLAN CEMGİL,WWW,234,,,01.06.2017,2,,"                          "
+CMPE556.01,Desc.,COMPLEX NETWORKS,3,8,HALUK BİNGÖL,WWW,678,,,27.05.2017,1,,"                          "
+CMPE557.01,Desc.,COMPLEX SYSTEMS,3,8,HALUK BİNGÖL,TTT,678,,,18.05.2017,2,,"                          "
+CMPE561.01,Desc.,NATURAL LANGUAGE PROCESSING,3,8,TUNGA GÜNGÖR,WWW,345,,,01.06.2017,1,,"                          "
+CMPE565.01,Desc.,AUTONOMOUS ROBOTS,3,8,H. LEVENT AKIN,ThThTh,234,,,25.05.2017,1,,"                          "
+CMPE567.01,Desc.,BROADBAND WIRELESS NETWORKS,3,8,TUNA TUĞCU,ThThTh,123,,,27.05.2017,3,,"                          "
+CMPE579.01,Desc.,GRADUATE SEMINAR,0,8,ARDA YURDAKUL,T,4,,,,0,,"                          "
+CMPE582.01,Desc.,SP.TOP.IN CMPE:SATELLITE NETWORKS,3,8,FATİH ALAGÖZ,,, ,,29.05.2017,2,,"                          "
+CMPE584.01,Desc.,SP.TOP.IN CMPE:RECONFIGURABLE COMPUTING,3,8,ARDA YURDAKUL,,, ,,24.05.2017,2,,"                          "
+CMPE589.01,Desc.,SP.TP.SOFTWARE TESTING&VERIFICATION,3,8,MEHMET ALPER ŞEN,,, ,,02.06.2017,2,,"                          "
+CMPE58A.01,Desc.,SP.TP.IN CMPE:COOPERAT.STUD.IN THE CONTE,3,8,SUZAN ÜSKÜDARLI,,, ,,25.05.2017,2,,"                          "
+CMPE58B.01,Desc.,SP.TP.FUTURE INTERNET OPPORTUNITIES,3,8,MEHMET ŞÜKRÜ KURAN,TBA,,,,30.05.2017,3,,"                          "
+CMPE58C.01,Desc.,SP.TOP. IN CMPE: WIRELESS SENSOR,3,8,MEHMET YUNUS DÖNMEZ,MMM,123,,,30.05.2017,3,,"                          "
+CMPE58G.01,Desc.,SP.TOP.ADV.TOP.IN.THEORETICAL COM.SCI,3,8,CEM SAY,,, ,,25.05.2017,2,,"                          "
+CMPE58Y.01,Desc.,SP.TP.ROBOT LEARNING,3,8,EMRE UĞUR,,, ,,30.05.2017,3,,"                          "
+CMPE58Z.01,Desc.,SP.TP.IN CMPE:INTRODUCTION TO BIOMETRICS,3,8,BERK GÖKBERK,FFF,678,,,02.06.2017,2,,"                          "
+CMPE590.01,Desc.,SP.TOP.IN CMPE:MACHINE TRANSLATION,3,8,TUNGA GÜNGÖR,TTT,678,,,22.05.2017,3,,"                          "
+CMPE594.01,Desc.,SP.TP.STATISTICS IN MOBILE COMPUTING,3,8,BERT ARNRICH,MMM,456,,,18.05.2017,2,,"                          "
+CMPE597.01,Desc.,SP.TP.DEEP LEARNING,3,8,ETHEM ALPAYDIN,,, ,,30.05.2017,2,,"                          "
+CMPE599.01,Desc.,GUIDED RESEARCH IN MS-I,4,8,ARZUCAN ÖZGÜR TÜRKMEN,TBA,,,,26.05.2017,2,,"                          "
+CMPE599.02,Desc.,GUIDED RESEARCH IN MS-I,4,8,H. LEVENT AKIN,TBA,,,,26.05.2017,2,,"                          "
+CMPE599.03,Desc.,GUIDED RESEARCH IN MS-I,4,8,EMRE UĞUR,TBA,,,,26.05.2017,2,,"                          "
+CMPE599.04,Desc.,GUIDED RESEARCH IN MS-I,4,8,MEHMET ALPER ŞEN,TBA,,,,26.05.2017,2,,"                          "
+CMPE599.05,Desc.,GUIDED RESEARCH IN MS-I,4,8,FATİH ALAGÖZ,TBA,,,,26.05.2017,2,,"                          "
+CMPE599.06,Desc.,GUIDED RESEARCH IN MS-I,4,8,TUNA TUĞCU,TBA,,,,26.05.2017,2,,"                          "
+CMPE599.07,Desc.,GUIDED RESEARCH IN MS-I,4,8,TUNGA GÜNGÖR,TBA,,,,26.05.2017,2,,"                          "
+CMPE599.08,Desc.,GUIDED RESEARCH IN MS-I,4,8,PINAR YOLUM BİRBİL,TBA,,,,26.05.2017,2,,"                          "
+CMPE599.10,Desc.,GUIDED RESEARCH IN MS-I,4,8,CEM SAY,TBA,,,,26.05.2017,2,,"                          "
+CMPE59A.01,Desc.,GUIDED RESEARCH IN MS-II,0,8,ARDA YURDAKUL,TBA,,,,26.05.2017,1,,"                          "
+CMPE59A.02,Desc.,GUIDED RESEARCH IN MS-II,0,8,BERT ARNRICH,TBA,,,,26.05.2017,1,,"                          "
+CMPE59A.03,Desc.,GUIDED RESEARCH IN MS-II,0,8,TUNGA GÜNGÖR,TBA,,,,26.05.2017,1,,"                          "
+CMPE59A.04,Desc.,GUIDED RESEARCH IN MS-II,0,8,CEM ERSOY,TBA,,,,26.05.2017,1,,"                          "
+CMPE59B.01,Desc.,SP.TP.PRIVACY MANAG.IN ONLINE SOC.NETW.,3,8,PINAR YOLUM BİRBİL,TTT,234,,,18.05.2017,2,,"                          "
+CMPE59M.01,Desc.,SP.TP.INTERACTION DESIGN,3,8,ALBERT ALİ SALAH,ThThTh,678,,,24.05.2017,2,,"                          "
+CMPE690.01,Desc.,M.S.THESIS,0,60,LALE AKARUN,TBA,,,,,0,,"                          "
+CMPE690.02,Desc.,M.S.THESIS,0,60,H. LEVENT AKIN,TBA,,,,,0,,"                          "
+CMPE690.03,Desc.,M.S.THESIS,0,60,FATİH ALAGÖZ,TBA,,,,,0,,"                          "
+CMPE690.04,Desc.,M.S.THESIS,0,60,ETHEM ALPAYDIN,TBA,,,,,0,,"                          "
+CMPE690.05,Desc.,M.S.THESIS,0,60,BERT ARNRICH,TBA,,,,,0,,"                          "
+CMPE690.06,Desc.,M.S.THESIS,0,60,HALUK BİNGÖL,TBA,,,,,0,,"                          "
+CMPE690.07,Desc.,M.S.THESIS,0,60,ALİ TAYLAN CEMGİL,TBA,,,,,0,,"                          "
+CMPE690.08,Desc.,M.S.THESIS,0,60,M. UFUK ÇAĞLAYAN,TBA,,,,,0,,"                          "
+CMPE690.09,Desc.,M.S.THESIS,0,60,CEM ERSOY,TBA,,,,,0,,"                          "
+CMPE690.10,Desc.,M.S.THESIS,0,60,TAFLAN GÜNDEM,TBA,,,,,0,,"                          "
+CMPE690.11,Desc.,M.S.THESIS,0,60,TUNGA GÜNGÖR,TBA,,,,,0,,"                          "
+CMPE690.12,Desc.,M.S.THESIS,0,60,SADIK FİKRET GÜRGEN,TBA,,,,,0,,"                          "
+CMPE690.13,Desc.,M.S.THESIS,0,60,ARZUCAN ÖZGÜR TÜRKMEN,TBA,,,,,0,,"                          "
+CMPE690.14,Desc.,M.S.THESIS,0,60,CAN ÖZTURAN,TBA,,,,,0,,"                          "
+CMPE690.15,Desc.,M.S.THESIS,0,60,CEM SAY,TBA,,,,,0,,"                          "
+CMPE690.16,Desc.,M.S.THESIS,0,60,ALBERT ALİ SALAH,TBA,,,,,0,,"                          "
+CMPE690.17,Desc.,M.S.THESIS,0,60,MEHMET ALPER ŞEN,TBA,,,,,0,,"                          "
+CMPE690.18,Desc.,M.S.THESIS,0,60,TUNA TUĞCU,TBA,,,,,0,,"                          "
+CMPE690.19,Desc.,M.S.THESIS,0,60,EMRE UĞUR,TBA,,,,,0,,"                          "
+CMPE690.20,Desc.,M.S.THESIS,0,60,SUZAN ÜSKÜDARLI,TBA,,,,,0,,"                          "
+CMPE690.21,Desc.,M.S.THESIS,0,60,PINAR YOLUM BİRBİL,TBA,,,,,0,,"                          "
+CMPE690.22,Desc.,M.S.THESIS,0,60,ARDA YURDAKUL,TBA,,,,,0,,"                          "
+CMPE699.01,Desc.,GUIDED RESEARCH IN PhD I,4,8,FATİH ALAGÖZ,TBA,,,,,,8,"                          "
+CMPE699.02,Desc.,GUIDED RESEARCH IN PhD I,4,8,CAN ÖZTURAN,TBA,,,,,,,"                          "
+CMPE699.03,Desc.,GUIDED RESEARCH IN PhD I,4,8,MEHMET ALPER ŞEN,TBA,,,,,,,"                          "
+CMPE699.04,Desc.,GUIDED RESEARCH IN PhD I,4,8,BERT ARNRICH,TBA,,,,,,,"                          "
+CMPE699.05,Desc.,GUIDED RESEARCH IN PhD I,4,8,TUNGA GÜNGÖR,TBA,,,,,,,"                          "
+CMPE699.06,Desc.,GUIDED RESEARCH IN PhD I,4,8,PINAR YOLUM BİRBİL,TBA,,,,,,,"                          "
+CMPE69A.01,Desc.,GUIDED RESEARCH IN PhD II,0,8,FATİH ALAGÖZ,TBA,,,,20.05.2017,1,,"                          "
+CMPE69A.02,Desc.,GUIDED RESEARCH IN PhD II,0,8,TUNGA GÜNGÖR,TBA,,,,20.05.2017,1,,"                          "
+CMPE790.01,Desc.,Ph.D.THESIS,0,120,LALE AKARUN,TBA,,,,,0,,"                          "
+CMPE790.02,Desc.,Ph.D.THESIS,0,120,H. LEVENT AKIN,TBA,,,,,0,,"                          "
+CMPE790.03,Desc.,Ph.D.THESIS,0,120,FATİH ALAGÖZ,TBA,,,,,0,,"                          "
+CMPE790.04,Desc.,Ph.D.THESIS,0,120,ETHEM ALPAYDIN,TBA,,,,,0,,"                          "
+CMPE790.05,Desc.,Ph.D.THESIS,0,120,BERT ARNRICH,TBA,,,,,0,,"                          "
+CMPE790.06,Desc.,Ph.D.THESIS,0,120,HALUK BİNGÖL,TBA,,,,,0,,"                          "
+CMPE790.07,Desc.,Ph.D.THESIS,0,120,ALİ TAYLAN CEMGİL,TBA,,,,,0,,"                          "
+CMPE790.08,Desc.,Ph.D.THESIS,0,120,M. UFUK ÇAĞLAYAN,TBA,,,,,0,,"                          "
+CMPE790.09,Desc.,Ph.D.THESIS,0,120,CEM ERSOY,TBA,,,,,0,,"                          "
+CMPE790.10,Desc.,Ph.D.THESIS,0,120,TAFLAN GÜNDEM,TBA,,,,,0,,"                          "
+CMPE790.11,Desc.,Ph.D.THESIS,0,30,TUNGA GÜNGÖR,TBA,,,,,0,,"                          "
+CMPE790.12,Desc.,Ph.D.THESIS,0,120,SADIK FİKRET GÜRGEN,TBA,,,,,0,,"                          "
+CMPE790.13,Desc.,Ph.D.THESIS,0,120,ARZUCAN ÖZGÜR TÜRKMEN,TBA,,,,,0,,"                          "
+CMPE790.14,Desc.,Ph.D.THESIS,0,120,CAN ÖZTURAN,TBA,,,,,0,,"                          "
+CMPE790.15,Desc.,Ph.D.THESIS,0,120,CEM SAY,TBA,,,,,0,,"                          "
+CMPE790.16,Desc.,Ph.D.THESIS,0,120,ALBERT ALİ SALAH,TBA,,,,,0,,"                          "
+CMPE790.17,Desc.,Ph.D.THESIS,0,120,MEHMET ALPER ŞEN,TBA,,,,,0,,"                          "
+CMPE790.18,Desc.,Ph.D.THESIS,0,120,TUNA TUĞCU,TBA,,,,,0,,"                          "
+CMPE790.19,Desc.,Ph.D.THESIS,0,120,EMRE UĞUR,TBA,,,,,0,,"                          "
+CMPE790.20,Desc.,Ph.D.THESIS,0,120,SUZAN ÜSKÜDARLI,TBA,,,,,0,,"                          "
+CMPE790.21,Desc.,Ph.D.THESIS,0,120,PINAR YOLUM BİRBİL,TBA,,,,,0,,"                          "
+CMPE790.22,Desc.,Ph.D.THESIS,0,120,ARDA YURDAKUL,TBA,,,,,0,,"                          "
+ENG 101.01,Desc.,INTRODUCTION TO COMPUTERS,3,7,KEMAL KAPLAN,MM,34,,,25.05.2017,3,"BIO,P_SCI","                          "
+,,LAB,,,STAFF STAFF,MM,56,,BM A4 | BM A4,,0,,"                          "
+ENG 101.02,Desc.,INTRODUCTION TO COMPUTERS,3,7,KEMAL KAPLAN,MM,34,,,25.05.2017,3,CEDU,"                          "
+,,LAB,,,STAFF STAFF,MM,56,,BM A4 | BM A4,,0,,"                          "
+ENG 101.03,Desc.,INTRODUCTION TO COMPUTERS,3,7,KEMAL KAPLAN,MM,34,,,25.05.2017,3,MEDU,"                          "
+,,LAB,,,STAFF STAFF,MM,78,,BM A4 | BM A4,,0,,"                          "
+ENG 101.04,Desc.,INTRODUCTION TO COMPUTERS,3,7,KEMAL KAPLAN,MM,34,,,25.05.2017,3,P_MATH,"                          "
+,,LAB,,,STAFF STAFF,MM,78,,BM A4 | BM A4,,0,,"                          "
+ENG 493.01,Desc.,SP.TP.IN LAUNCH. A SUC.SOFTWARE STARTUP,3,5,EMRAH YALAZ,WWW,123,,,30.05.2017,3,,"                          "

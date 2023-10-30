@@ -1,0 +1,42 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Quota,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CSE 551.01,Desc.,COMPUTATIONAL METHODS,3,8,Info,BERTAN YILMAZ BADUR,,, ,,,,,"                          "
+CSE 552.01,Desc.,COMPUTATIONAL PROJECT,3,8,Info,KUNT ATALIK,,, ,,,,,"                          "
+CSE 552.02,Desc.,COMPUTATIONAL PROJECT,3,8,Info,CAN AYDINER,,, ,,,,,"                          "
+CSE 552.03,Desc.,COMPUTATIONAL PROJECT,3,8,Info,BERTAN YILMAZ BADUR,,, ,,,,,"                          "
+CSE 552.04,Desc.,COMPUTATIONAL PROJECT,3,8,Info,MUSTAFA GÖKÇE BAYDOĞAN,,, ,,,,,"                          "
+CSE 552.05,Desc.,COMPUTATIONAL PROJECT,3,8,Info,ARKADAŞ İNAN ÖZAKIN,,, ,,,,,"                          "
+CSE 552.06,Desc.,COMPUTATIONAL PROJECT,3,8,Info,FATİH ECEVİT,,, ,,,,,"                          "
+CSE 552.07,Desc.,COMPUTATIONAL PROJECT,3,8,Info,WOLFGANG HOERMANN,,, ,,,,,"                          "
+CSE 552.08,Desc.,COMPUTATIONAL PROJECT,3,8,Info,ÜMİT IŞLAK,,, ,,,,,"                          "
+CSE 552.09,Desc.,COMPUTATIONAL PROJECT,3,8,Info,SAMİ AND KILIÇ,,, ,,,,,"                          "
+CSE 552.10,Desc.,COMPUTATIONAL PROJECT,3,8,Info,LEVENT KURNAZ,,, ,,,,,"                          "
+CSE 552.11,Desc.,COMPUTATIONAL PROJECT,3,8,Info,ELİF ÖZKIRIMLI ÖLMEZ,,, ,,,,,"                          "
+CSE 552.12,Desc.,COMPUTATIONAL PROJECT,3,8,Info,ŞEBNEM ÖZÜPEK,,, ,,,,,"                          "
+CSE 552.13,Desc.,COMPUTATIONAL PROJECT,3,8,Info,CAN ÖZTURAN,,, ,,,,,"                          "
+CSE 552.14,Desc.,COMPUTATIONAL PROJECT,3,8,Info,BETÜL URALCAN,,, ,,,,,"                          "
+CSE 552.15,Desc.,COMPUTATIONAL PROJECT,3,8,Info,KUTLU ÜLGEN,,, ,,,,,"                          "
+CSE 552.16,Desc.,COMPUTATIONAL PROJECT,3,8,Info,ARDA YURDAKUL,,, ,,,,,"                          "
+CSE 552.17,Desc.,COMPUTATIONAL PROJECT,3,8,Info,BURAK ALAKENT,,, ,,,,,"                          "
+CSE 552.18,Desc.,COMPUTATIONAL PROJECT,3,8,Info,CEM AVCI,,, ,,,,,"                          "
+CSE 578.01,Desc.,SEMINAR,0,1,Info,LEVENT KURNAZ,,, ,,,,,"                          "
+CSE 579.01,Desc.,GRADUATE SEMINAR,0,1,Info,LEVENT KURNAZ,,, ,,,,,"                          "
+CSE 592.01,Desc.,SP.TP.DOWNSCALING METHODS&APPLICATIONS IN CLIMATE SCIENCE,3,8,Info,MUSTAFA TUFAN TURP,,, ,,,,,"                          "
+CSE 593.01,Desc.,SP.TP.IMPACT MODELING PROCESSES FOR CLIMATE SCIENCE,3,8,Info,NAZAN AN,,, ,,,,,"                          "
+CSE 690.01,Desc.,M.S. THESIS,0,60,Info,KUNT ATALIK,,, ,,,,,"                          "
+CSE 690.02,Desc.,M.S. THESIS,0,60,Info,CAN AYDINER,,, ,,,,,"                          "
+CSE 690.03,Desc.,M.S. THESIS,0,60,Info,BERTAN YILMAZ BADUR,,, ,,,,,"                          "
+CSE 690.04,Desc.,M.S. THESIS,0,60,Info,MUSTAFA GÖKÇE BAYDOĞAN,,, ,,,,,"                          "
+CSE 690.05,Desc.,M.S. THESIS,0,60,Info,ARKADAŞ İNAN ÖZAKIN,,, ,,,,,"                          "
+CSE 690.06,Desc.,M.S. THESIS,0,60,Info,FATİH ECEVİT,,, ,,,,,"                          "
+CSE 690.07,Desc.,M.S. THESIS,0,60,Info,WOLFGANG HOERMANN,,, ,,,,,"                          "
+CSE 690.08,Desc.,M.S. THESIS,0,60,Info,ÜMİT IŞLAK,,, ,,,,,"                          "
+CSE 690.09,Desc.,M.S. THESIS,0,60,Info,SAMİ AND KILIÇ,,, ,,,,,"                          "
+CSE 690.10,Desc.,M.S. THESIS,0,60,Info,LEVENT KURNAZ,,, ,,,,,"                          "
+CSE 690.11,Desc.,M.S. THESIS,0,60,Info,ELİF ÖZKIRIMLI ÖLMEZ,,, ,,,,,"                          "
+CSE 690.12,Desc.,M.S. THESIS,0,60,Info,ŞEBNEM ÖZÜPEK,,, ,,,,,"                          "
+CSE 690.13,Desc.,M.S. THESIS,0,60,Info,CAN ÖZTURAN,,, ,,,,,"                          "
+CSE 690.14,Desc.,M.S. THESIS,0,60,Info,BETÜL URALCAN,,, ,,,,,"                          "
+CSE 690.15,Desc.,M.S. THESIS,0,60,Info,KUTLU ÜLGEN,,, ,,,,,"                          "
+CSE 690.16,Desc.,M.S. THESIS,0,60,Info,ARDA YURDAKUL,,, ,,,,,"                          "
+CSE 690.17,Desc.,M.S. THESIS,0,60,Info,BURAK ALAKENT,,, ,,,,,"                          "
+CSE 690.18,Desc.,M.S. THESIS,0,60,Info,CEM AVCI,,, ,,,,,"                          "

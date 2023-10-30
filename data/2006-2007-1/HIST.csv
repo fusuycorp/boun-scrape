@@ -1,0 +1,48 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHIN101.01,Desc.,BEGINNERS CHINESE I,3,5,GUIYUAN YANG,MTWThF,33333,,KGYM106 | KGYM106 | KGYM106 | KGYM106 | KGYM106,,,,"                          "
+CHIN201.01,Desc.,INTERMEDIATE CHINESE I,3,5,GUIYUAN YANG,MWWFF,41212,,KGYM106 | KGYM106 | KGYM106 | KGYM106 | KGYM106,,,,"                          "
+CHIN401.01,Desc.,READINGS IN CHINESE CULTURE I,3,5,GUIYUAN YANG,TTTh,121,,KGYM106 | KGYM106 | KGYM106,,,,"                          "
+HIST101.01,Desc.,HISTORICAL METHOD & THOUGHT I,3,6,EDHEM ELDEM,TTTh,565,,M 1200 | M 1200 | TB 260,,,,"                          "
+HIST205.01,Desc.,INTR. TO THE HIST.OF ART& VISUAL CULTURE,3,5,LALE BABAOĞLU,MMTh,345,,TB 490 | TB 490 | TB 490,,,,"                          "
+HIST211.01,Desc.,HISTORY OF THE ANCIENT NEAR EAST I,3,5,ASLI ÖZYAR,WFF,334,,TB 475 | TB 490 | TB 490,,,,"                          "
+HIST221.01,Desc.,PRE-OTTOMAN TURKISH HISTORY,3,5,SELÇUK ESENBEL,WWW,569,,TB 490 | TB 490 | TB 260,,,,"                          "
+HIST233.01,Desc.,HISTORY OF THE BALKANS I,3,5,AYDIN BABUNA,MThTh,412,,M 2180 | M 2171 | M 2171,,,,"                          "
+HIST241.01,Desc.,"INTR.WESTERN EUROPEAN,MEDITERRANEAN&ISLA",3,6,EVANGELOS KECHRIOTIS,MFF,256,,TB 490 | TB 260 | TB 260,,,,"                          "
+HIST311.01,Desc.,EUROPEAN SOCIAL & ECONOMIC HISTORY I,3,5,HURİCİHAN İSLAMOĞLU,TTT,5910,,M 1171 | TB 490 | TB 490,,,,"                          "
+HIST321.01,Desc.,LATE OTTOMAN HISTORY,3,5,YÜCEL TERZİBAŞOĞLU,MMT,563,,M 2152 | M 2152 | TB 240,,,,"                          "
+HIST335.01,Desc.,HISTORY OF THE BYZANTINE EMPIRE I,3,5,NEVRA NECİPOĞLU,TTTh,675,,TB 475 | TB 475 | TB 475,,,,"                          "
+HIST351.01,Desc.,ART &ARCHITECTURE OF THE ISLAMIC WORLD I,3,5,ÇİĞDEM KAFESCİOĞLU,TTTh,676,,TB 490 | TB 490 | TB 475,,,,"                          "
+HIST354.01,Desc.,"RENAISSANCE,BAROQUE ART & ARCHITECTURE",3,5,PAOLO GIRARDELLI,WFF,556,,TB 240 | TB 475 | TB 475,,,,"                          "
+HIST401.01,Desc.,HISTORIOGRAPHY I,3,6,MELTEM TOKSÖZ,WThTh,334,,TB 240 | TB 475 | TB 475,,,,"                          "
+HIST411.01,Desc.,NATIONALISM & IMPERALISM 1789-1914,3,5,SELİM DERİNGİL,MMTh,232,,TB 240 | TB 240 | TB 490,,,,"                          "
+HIST425.01,Desc.,HIST.OF THE MIDDLE EAST IN THE NINETEENT,3,6,YÜCEL TERZİBAŞOĞLU,TTW,784,,TB 310 | TB 310 | TB 475,,,,"                          "
+HIST449.01,Desc.,SEMINAR IN OTTOMAN SOURCES,3,5,YAVUZ SELİM KARAKIŞLA,FFF,678,,M 1170 | M 1170 | M 1170,,,,"                          "
+HIST451.01,Desc.,OTTOMAN ART & ARCHITECTURE,3,5,GÜNHAN DANIŞMAN,TFF,512,,TB 490 | TB 490 | TB 490,,,,"                          "
+HIST453.01,Desc.,SEMINAR IN THE HISTORY OF ART AND ARCHIT,3,5,AHMET ERSOY,MMTh,452,,TB 475 | TB 475 | TB 475,,,,"                          "
+HIST483.01,Desc.,SP.TOP.:FIGURATIVE TRADITION IN TURCO-PE,3,6,LALE ULUÇ,FFF,678,,M 1152 | M 1152 | M 1152,,,,"                          "
+HIST48E.01,Desc.,SP.TOP.IN BYZANTINE ART&ARCHITECTURE I,3,6,ANESTIS VASILAKERIS,MMM,91011,,TB 490 | TB 490,,,,"                          "
+HIST492.01,Desc.,SP.TOP.:HISTORY OF NATIONALISM IN THE BA,3,6,EVANGELOS KECHRIOTIS,TTW,232,,NBZ 06 | NBZ 06 | M 1152,,,,"                          "
+HIST495.01,Desc.,THESIS I,3,6,ZAFER TOPRAK,,, ,,,,,"                          "
+HIST495.02,Desc.,THESIS I,3,6,NEVRA NECİPOĞLU,,, ,,,,,"                          "
+HIST496.01,Desc.,THESIS II,3,6,ZAFER TOPRAK,,, ,,,,,"                          "
+HIST49D.01,Desc.,SP.TOP.IN ART AND BEAUTY,3,6,LALE BABAOĞLU,TTT,234,,M 1152 | M 1152 | M 1152,,,,"                          "
+HIST501.01,Desc.,HISTORIOGRAPHY,3,7,SELÇUK ESENBEL,TTT,678,,,,,,"                          "
+HIST512.01,Desc.,URBAN HISTORY OF OTTOMAN SOCIETY,3,7,PAOLO GIRARDELLI,ThThTh,234,,,,,,"                          "
+HIST521.01,Desc.,OTT.INTELLECTUAL HISTORY,3,7,SELİM DERİNGİL,TBA,,,,,,,"                          "
+HIST551.01,Desc.,"METH.&THEORY İN THE HIST.OF ART,ARC& VIS",3,7,AHMET ERSOY,TBA,,,,,,,"                          "
+HIST573.01,Desc.,SEMINAR ON CHINA&CENTRAL ASIA,3,7,SELÇUK ESENBEL,TBA,,,,,,,"                          "
+HIST584.01,Desc.,SEL.READINGS IN LATE OTTOMAN HISTORY I,3,7,ANTONY GREENWOOD,TBA,,,,,,,"        HIST; ATA; TKL                  "
+HIST588.01,Desc.,SEMINAR IN ANATOLIAN ARCHAEOLOGY & HIST.,3,7,ASLI ÖZYAR,TBA,,,,,,,"                          "
+HIST590.01,Desc.,SP.TOP.GLOBALIZATION AND DEVELOP IN HIS ,3,7,HURİCİHAN İSLAMOĞLU,TBA,,,,,,,"                          "
+HIST593.01,Desc.,SPEC. TOP. IN HIST.OF TECHNOLOGY,3,6,GÜNHAN DANIŞMAN,TBA,,,,,,,"                          "
+HIST601.01,Desc.,HISTORY SEMINAR,3,7,MELTEM TOKSÖZ,TBA,,,,,,,"                          "
+HIST603.01,Desc.,SEMINAR IN CONTEMPORARY METHODS IN HIST.,3,7,YAVUZ SELİM KARAKIŞLA,TBA,,,,,,,"                          "
+HIST611.01,Desc.,SEMINAR IN LATE OTTOMAN HISTORY,3,7,EDHEM ELDEM,,,,,,,,"                          "
+HIST635.01,Desc.,SEMINAR IN BYZANTINE INSTITUTIONS,3,7,ANESTIS VASILAKERIS,TBA,,,,,,,"                          "
+HIST681.01,Desc.,SEL.TOP.:HISTORY OF ISTANBUL UNDER OCCUP,3,7,YAVUZ SELİM KARAKIŞLA,MMM,91011,,,,,,"                          "
+HIST690.01,Desc.,MASTER THESIS,0,60,ARZU ÖZTÜRKMEN,TBA,,,,,,,"                          "
+HIST691.01,Desc.,SEMI. IN OT. ART VISUAL CUL.&URBAN ENV.I,3,7,ÇİĞDEM KAFESCİOĞLU,WWW,678,,,,,,"                          "
+HIST790.01,Desc.,PH.D.THESIS,0,120,ARZU ÖZTÜRKMEN,TBA,,,,,,,"                          "
+JP  101.01,Desc.,BEGINNERS JAPANESE I,3,5,MARİKO ERDOĞAN,TThThFF,15612,,TB 475 | NBZ 13 | NBZ 13 | PARK2 | PARK2,,,,"                          "
+JP  201.01,Desc.,INTERMEDIATE JAPANESE I,3,5,MARİKO ERDOĞAN,TThThFF,57834,,TB 475 | NBZ 13 | NBZ 13 | M 1152 | M 1152,,,,"                          "
+JP  501.01,Desc.,TRANS.OF MOD.&CLAS.JAPANESE TEXTS I,3,5,MARİKO ERDOĞAN,TBA,,,,,,,"                          "

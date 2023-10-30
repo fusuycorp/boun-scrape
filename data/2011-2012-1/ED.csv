@@ -1,0 +1,58 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ED  501.01,Desc.,INFERENTIAL STATISTICS IN EDUCATION,3,8,BENGÜ BÖRKAN,TTWW,5689,, | N/A | YD 03 | YD 03,07.01.2012,1,,"                          "
+ED  505.01,Desc.,RESEARCH DESIGN & METHODOLOGY,3,8,GÜZVER YILDIRAN DE WEERDT,MTT,434,,,05.01.2012,3,,"                          "
+ED  505.02,Desc.,RESEARCH DESIGN & METHODOLOGY,3,8,DENİZ ALBAYRAK KAYMAK,TTWW,2367,,,05.01.2012,3,,"                          "
+ED  511.01,Desc.,ADVANCED EDUCATIONAL PSYCHOLOGY,3,7,ZEYNEP KIZILTEPE,WWW,234,,,14.01.2012,3,,"                          "
+ED  513.01,Desc.,DEVELOPMENT & LEARNING IN ADULTHOOD,3,7,ZEYNEP KIZILTEPE,TTT,678,,,04.01.2012,1,,"                          "
+ED  523.01,Desc.,THEORIES & TECHNIQUES OF COUNSELING,3,7,FATOŞ ERKMAN,WWW,123,,,16.01.2012,2,,"                          "
+ED  526.01,Desc.,COUNSELING WITH FAMILIES & GROUPS,3,8,AYDAN GÜLERCE,MMM,234,,,06.01.2012,2,,"                          "
+ED  541.01,Desc.,FUNDAMENTALS OF ADULT EDUCATION,3,7,RIFAT OKÇABOL,WWW,345,,,13.01.2012,2,,"                          "
+ED  569.01,Desc.,FIELD EXPERIENCE I,3,8,AYŞE HAVVA CANER,TBA,,,,06.01.2012,2,,"                          "
+ED  573.01,Desc.,"MEASUREMENT, EVALUATION & ASSESSMENT",3,7,YAVUZ AKPINAR,TTTh,782,,,05.01.2012,1,,"                          "
+ED  579.01,Desc.,GRADUATE SEMINAR,0,1,FATMA GÖK,TBA,,,,,0,,"                          "
+ED  581.01,Desc.,SP.TOP. IN EDUCATION,3,7,ARKADAŞ İNAN ÖZAKIN,TBA,,,,07.01.2012,1,,"                          "
+ED  581.02,Desc.,SP.TOP. IN EDUCATION,3,7,DİLER ÖNER,TBA,,,,07.01.2012,1,,"                          "
+ED  582.01,Desc.,SP.TOP.IN EDUCATION,3,7,FATMA GÖK,TBA,,,,09.01.2012,3,,"                          "
+ED  582.02,Desc.,SP.TOP.IN EDUCATION,3,7,FATMA GÖK,TBA,,,,09.01.2012,3,,"                          "
+ED  583.01,Desc.,SP.TOP. IN EDUCATION I,3,7,AYDAN GÜLERCE,TBA,,,,06.01.2012,3,,"                          "
+ED  583.02,Desc.,SP.TOP. IN EDUCATION I,3,7,ZEYNEP HANDE SART,TBA,,,,06.01.2012,3,,"                          "
+ED  584.01,Desc.,SP.TOP.IN EDUCATION II,3,7,FATMA NEVRA SEGGIE,TBA,,,,13.01.2012,1,,"                          "
+ED  584.02,Desc.,SP.TOP.IN EDUCATION II,3,7,GÜZVER YILDIRAN DE WEERDT,TBA,,,,13.01.2012,1,,"                          "
+ED  584.03,Desc.,SP.TOP.IN EDUCATION II,3,7,YAVUZ AKPINAR,TBA,,,,13.01.2012,1,,"                          "
+ED  585.01,Desc.,SP.TOP.IN EDUCATION,3,7,FATOŞ ERKMAN,TBA,,,,04.01.2012,2,,"        ED; GUID                  "
+ED  585.02,Desc.,SP.TOP.IN EDUCATION,3,7,FATMA NEVRA SEGGIE,TBA,,,,04.01.2012,2,,"                          "
+ED  586.01,Desc.,SP.TOP.IN EDUCATION,3,7,GÜZVER YILDIRAN DE WEERDT,TBA,,,,14.01.2012,2,,"                          "
+ED  586.02,Desc.,SP.TOP.IN EDUCATION,3,7,FATMA GÖK,TBA,,,,14.01.2012,2,,"                          "
+ED  587.01,Desc.,SP.TOP.IN EDUCATION,3,7,DENİZ ALBAYRAK KAYMAK,TBA,,,,11.01.2012,3,,"                          "
+ED  587.02,Desc.,SP.TOP.IN EDUCATION,3,7,ZEYNEP KIZILTEPE,TBA,,,,11.01.2012,3,,"                          "
+ED  588.01,Desc.,SP.TOP.IN EDUCATION,3,7,FATOŞ ERKMAN,TBA,,,,10.01.2012,2,,"                          "
+ED  588.02,Desc.,SP.TOP.IN EDUCATION,3,7,FATOŞ ERKMAN,TBA,,,,10.01.2012,2,,"                          "
+ED  589.01,Desc.,SP.TOP.IN EDUCATION,3,7,AYŞE HAVVA CANER,TBA,,,,09.01.2012,1,,"                          "
+ED  589.02,Desc.,SP.TOP.IN EDUCATION,3,7,BENGÜ BÖRKAN,TBA,,,,09.01.2012,1,,"                          "
+ED  641.01,Desc.,COMPARATIVE ADULT EDUCATION,3,8,FATMA NEVRA SEGGIE,TTT,678,,,17.01.2012,1,,"                          "
+ED  643.01,Desc.,MASS-MEDIA ADULT EDUCATION,3,8,CAN CANDAN,TBA,,,,12.01.2012,3,,"                          "
+ED  690.01,Desc.,MASTER THESIS,0,60,AYŞE HAVVA CANER,,, ,,,0,,"                          "
+ED  690.02,Desc.,MASTER THESIS,0,60,DİLER ÖNER,,, ,,,0,,"                          "
+ED  690.03,Desc.,MASTER THESIS,0,60,FATMA GÖK,,, ,,,0,,"                          "
+ED  690.04,Desc.,MASTER THESIS,0,60,FATMA GÖK,,, ,,,0,,"                          "
+ED  690.05,Desc.,MASTER THESIS,0,60,FATMA NEVRA SEGGIE,,, ,,,0,,"                          "
+ED  690.06,Desc.,MASTER THESIS,0,60,DENİZ ALBAYRAK KAYMAK,,, ,,,0,,"                          "
+ED  690.07,Desc.,MASTER THESIS,0,60,FATOŞ ERKMAN,,, ,,,0,,"                          "
+ED  690.08,Desc.,MASTER THESIS,0,60,FATOŞ ERKMAN,,, ,,,0,,"                          "
+ED  690.09,Desc.,MASTER THESIS,0,60,FATMA NEVRA SEGGIE,,, ,,,0,,"                          "
+ED  690.10,Desc.,MASTER THESIS,0,60,AYDAN GÜLERCE,,, ,,,0,,"                          "
+ED  690.11,Desc.,MASTER THESIS,0,60,ZEYNEP HANDE SART,,, ,,,0,,"                          "
+ED  690.12,Desc.,MASTER THESIS,0,60,YAVUZ AKPINAR,,, ,,,0,,"                          "
+ED  690.13,Desc.,MASTER THESIS,0,60,GÜZVER YILDIRAN DE WEERDT,,, ,,,0,,"                          "
+ED  690.14,Desc.,MASTER THESIS,0,60,ZEYNEP KIZILTEPE,,, ,,,0,,"                          "
+ED  690.15,Desc.,MASTER THESIS,0,60,FATOŞ ERKMAN,,, ,,,0,,"                          "
+ED  690.16,Desc.,MASTER THESIS,0,60,FATMA GÖK,,, ,,,0,,"                          "
+ED  690.17,Desc.,MASTER THESIS,0,60,FATMA GÖK,,, ,,,0,,"                          "
+ED  690.18,Desc.,MASTER THESIS,0,60,BENGÜ BÖRKAN,,, ,,,0,,"                          "
+ED  690.19,Desc.,MASTER THESIS,0,60,STAFF STAFF,,, ,,,0,,"                          "
+ED  690.20,Desc.,MASTER THESIS,0,60,STAFF STAFF,,, ,,,0,,"                          "
+ED  695.01,Desc.,SPECIAL STUDIES IN EDUCATION,3,7,FATMA GÖK,TBA,,,,04.01.2012,1,,"                          "
+ED  790.01,Desc.,Ph.D THESIS,0,120,AYŞE HAVVA CANER,TBA,,,,,0,,"                          "
+ED  790.02,Desc.,Ph.D THESIS,0,120,ZEYNEP KIZILTEPE,TBA,,,,,0,,"                          "
+ED  790.03,Desc.,Ph.D THESIS,0,120,FATMA GÖK,TBA,,,,,0,,"                          "
+ED  790.04,Desc.,Ph.D THESIS,0,120,FATMA GÖK,TBA,,,,,0,,"                          "

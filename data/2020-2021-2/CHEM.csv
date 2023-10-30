@@ -1,0 +1,111 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHEM103.01,Desc.,GENERAL CHEMISTRY I,3,7,MEHMET FIRAT İLKER,MMW,563,Online,,,,CET,"        BIO; CEDU; CHE; PEDU; PRSC                  "
+,,P.S.,,,MEHMET FIRAT İLKER,W,4,,,,,CET,"        BIO; CEDU; CHE; PEDU; PRSC                  "
+CHEM104.01,Desc.,GENERAL CHEMISTRY II,3,6,NİHAN NUGAY,MWW,334,Online,,,,"BIO,CEDU,CHE,PEDU,P_SCI","        BIO; CHE; CEDU; PRSC                  "
+,,P.S.,,,NİHAN NUGAY,Th,5,,,,,,"        BIO; CHE; CEDU; PRSC                  "
+CHEM104.02,Desc.,GENERAL CHEMISTRY II,3,6,BAŞAK KAYITMAZER,MMW,121,Online,,,,CHEM,"                          "
+,,P.S.,,,BAŞAK KAYITMAZER,W,2,,,,,,"                          "
+CHEM105.01,Desc.,FUNDAMENTALS OF CHEMISTRY,4,6,HURİYE ERDOĞAN DAĞDAŞ,TWW,578,Online,,,,"CE,IE","        ME; CMPE; EE; PHYS                  "
+,,LAB,,,HURİYE ERDOĞAN DAĞDAŞ,MMM,234,,,,,IE,"        ME; CMPE; EE; PHYS                  "
+,,P.S.,,,HURİYE ERDOĞAN DAĞDAŞ,Th,5,,,,,"CE,IE","        ME; CMPE; EE; PHYS                  "
+,,LAB,,,HURİYE ERDOĞAN DAĞDAŞ,FFF,678,,,,,CE,"                          "
+CHEM108.01,Desc.,QUALITATIVE ANALYSIS,4,5,ELİZA KALVO,TT,34,Online,,,,"CEDU,CHEM","                          "
+,,LAB,,,ELİZA KALVO,TTThTh,5678,,,,,CEDU,"                          "
+,,P.S.,,,ELİZA KALVO,ThTh,34,,,,,"CEDU,CHEM","                          "
+,,LAB,,,ELİZA KALVO,TTThTh,7856,,,,,CHEM,"                          "
+CHEM109.01,Desc.,GENERAL CHEMISTRY LABORATORY,1,2,REYHAN İŞERİ,WWW,678,Online,,,,CET,"                          "
+CHEM109.02,Desc.,GENERAL CHEMISTRY LABORATORY,1,2,REYHAN İŞERİ,ThThTh,678,Online,,,,PEDU,"                          "
+CHEM109.03,Desc.,GENERAL CHEMISTRY LABORATORY,1,2,REYHAN İŞERİ,FFF,678,Online,,,,P_SCI,"                          "
+CHEM201.01,Desc.,ORGANIC CHEMISTRY I,4,5,AMITAV SANYAL,MMWW,4545,Online,,,,,"                          "
+,,P.S.,,,AMITAV SANYAL,F,3,,,,,,"                          "
+CHEM202.01,Desc.,ORGANIC CHEMISTRY II,4,5,ALİ ERSİN ACAR,MMWW,3434,Online,,,,"CEDU,CHEM","                          "
+,,P.S.,,,ALİ ERSİN ACAR,F,3,,,,,"CEDU,CHEM","                          "
+CHEM203.01,Desc.,ORGANIC CHEMISTRY LABORATORY I,2,4,EDİZ TAYLAN,WWW,123,Online,,,,,"                          "
+CHEM204.01,Desc.,ORGANIC CHEMISTRY LABORATORY II,2,4,EDİZ TAYLAN,MMM,567,Online,,,,,"                          "
+CHEM204.02,Desc.,ORGANIC CHEMISTRY LABORATORY II,2,4,EDİZ TAYLAN,WWW,567,Online,,,,,"                          "
+CHEM242.01,Desc.,ANALYTICAL CHEMISTRY,3,4,FATMA AHU AKIN,TTThTh,3434,Online,,,,,"                          "
+CHEM244.01,Desc.,ANALYTICAL CHEMISTRY LABORATORY,2,4,ÖZGE AKDENİZ,T,7,Online,,,,CHEM,"                          "
+,,LAB,,,ÖZGE AKDENİZ,MMMMM,56789,,,,,,"                          "
+CHEM244.02,Desc.,ANALYTICAL CHEMISTRY LABORATORY,2,4,ÖZGE AKDENİZ,,,Online,,,,,"                          "
+,,LAB,,,ÖZGE AKDENİZ,WWWWW,56789,,,,,,"                          "
+CHEM244.03,Desc.,ANALYTICAL CHEMISTRY LABORATORY,2,4,ÖZGE AKDENİZ,T,8,Online,,,,,"                          "
+,,LAB,,,ÖZGE AKDENİZ,FFFFF,56789,,,,,,"                          "
+CHEM308.01,Desc.,INSTRUMENTAL ANALYSIS II,4,6,RANA NOMAK SANYAL,TWWTh,5234,Online,,,,,"                          "
+,,LAB,,,ŞULE EROL GÜNAL,MMM,678,,,,,,"                          "
+,,LAB,,,ŞULE EROL GÜNAL,WWW,678,,,,,,"                          "
+,,LAB,,,ŞULE EROL GÜNAL,FFF,567,,,,,,"                          "
+CHEM352.01,Desc.,PHYSICAL CHEMISTRY II,4,6,ZEYNEP ATAY GÖK,WWThTh,4523,Online,,,,,"                          "
+,,P.S.,,,ZEYNEP ATAY GÖK,F,4,,,,,,"                          "
+CHEM356.01,Desc.,PHYSICAL CHEMISTRY LABORATORY,2,3,ŞULE EROL GÜNAL,TTTT,6789,Online,,,,,"                          "
+CHEM356.02,Desc.,PHYSICAL CHEMISTRY LABORATORY,2,3,ŞULE EROL GÜNAL,ThThThTh,6789,Online,,,,,"                          "
+CHEM356.03,Desc.,PHYSICAL CHEMISTRY LABORATORY,2,3,ŞULE EROL GÜNAL,FFFF,6789,Online,,,,,"                          "
+CHEM363.01,Desc.,ORGANIC CHEMISTRY III,3,6,İLKNUR DOĞAN,MTF,222,Online,,,,,"                          "
+,,P.S.,,,İLKNUR DOĞAN,F,3,,,,,,"                          "
+CHEM371.01,Desc.,TEXTILE CHEMISTRY,3,6,ŞÜKRİYE İNCİ GÖL,,,Online,,,,,"                          "
+CHEM402.01,Desc.,CHEMISTRY SEMINAR II,1,2,SELİM KÜSEFOĞLU,T,4,Online,,,,,"                          "
+CHEM410.01,Desc.,FORENSIC CHEMISTRY,3,6,ZEYNEP ATAY GÖK,MMW,781,Online,,,,,"                          "
+CHEM412.01,Desc.,INTRODUCTION TO NANOCHEMISTRY,3,6,AMITAV SANYAL,,,Online,,,,,"                          "
+CHEM421.01,Desc.,COMPUTATIONAL CHEMISTRY,3,6,TEREZA VARNALI,WWW,678,Online,,,,,"                          "
+CHEM422.01,Desc.,PHOTOCHEMISTRY,3,6,AYŞE NEREN ÖKTE,MMT,345,Online,,,,,"                          "
+CHEM442.01,Desc.,QUALITATIVE ORGANIC ANALYSIS,4,6,TURGUT NUGAY,TTh,11,Online,,,,,"                          "
+,,LAB,,,TURGUT NUGAY,TTTT,2345,,,,,,"                          "
+,,LAB,,,TURGUT NUGAY,TTTT,6789,,,,,,"                          "
+,,LAB,,,TURGUT NUGAY,ThThThTh,2345,,,,,,"                          "
+,,LAB,,,TURGUT NUGAY,ThThThTh,6789,,,,,,"                          "
+CHEM456.01,Desc.,ELECTROCHEMISTRY,3,6,OKTAY DEMİRCAN,,,Online,,,,,"                          "
+CHEM471.01,Desc.,ENVIRONMENTAL CHEMISTRY,3,6,MEHMET FIRAT İLKER,WWW,789,Online,,,,,"        BIO; CHEM; CHE; CEDU; TCHE                  "
+CHEM473.01,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY I,3,12,ŞARON ÇATAK,,,Online,,,,,"                          "
+CHEM474.01,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,ALİ ERSİN ACAR,,,Online,,,,,"                          "
+CHEM474.02,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,FATMA AHU AKIN,,,Online,,,,,"                          "
+CHEM474.05,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,VIKTORYA AVIYENTE,,,Online,,,,,"                          "
+CHEM474.13,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,AMITAV SANYAL,,,Online,,,,,"                          "
+CHEM474.14,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,RANA NOMAK SANYAL,,,Online,,,,,"                          "
+CHEM474.15,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,BAŞAK KAYITMAZER,,,Online,,,,,"                          "
+CHEM474.16,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,ŞARON ÇATAK,,,Online,,,,,"                          "
+CHEM474.17,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,MEHMET FIRAT İLKER,,,Online,,,,,"                          "
+CHEM474.18,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY II,3,12,HURİYE ERDOĞAN DAĞDAŞ,TTTFFF,123123,Online,,,,,"                          "
+CHEM475.01,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,İLKNUR DOĞAN,,,Online,,,,,"                          "
+CHEM475.02,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,ŞARON ÇATAK,,,Online,,,,,"                          "
+CHEM475.04,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,HADİ ÖZBAL,,,Online,,,,,"                          "
+CHEM475.05,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,HURİYE ERDOĞAN DAĞDAŞ,TTTFFF,567678,Online,,,,,"                          "
+CHEM475.06,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,AYŞE NEREN ÖKTE,,,Online,,,,,"                          "
+CHEM475.07,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,TEREZA VARNALI,ThThThFFF,678678,Online,,,,,"                          "
+CHEM475.08,Desc.,RESEARCH TECHNIQUES IN CHEMISTRY III,3,12,BAŞAK KAYITMAZER,,,Online,,,,,"                          "
+CHEM512.01,Desc.,ADVANCED PHYSICAL CHEMISTRY,3,8,AYŞE NEREN ÖKTE,TTThTh,2323,Online,,,,,"                          "
+CHEM514.01,Desc.,ADVANCED INORGANIC CHEMISTRY,3,8,OKTAY DEMİRCAN,,,Online,,,,,"                          "
+CHEM520.01,Desc.,POLYMER THERAPEUTICS,3,8,RANA NOMAK SANYAL,,,Online,,,,,"                          "
+CHEM522.01,Desc.,ADVANCED COMPUTATIONAL CHEMISTRY,3,8,VIKTORYA AVIYENTE,,,Online,,,,,"                          "
+CHEM533.01,Desc.,SYNTHETIC ORGANIC CHEMISTRY,3,8,ALİ ERSİN ACAR,TTTh,344,Online,,,,,"                          "
+CHEM534.01,Desc.,PHYSICAL ORGANIC CHEMISTRY,3,8,ŞARON ÇATAK,TTT,678,Online,,,,,"                          "
+CHEM579.01,Desc.,GRADUATE SEMINAR,0,2,AMITAV SANYAL,,,Online,,,,,"                          "
+CHEM580.01,Desc.,SP.TP.LASER CHEMISTRY,3,8,FATMA AHU AKIN,,,Online,,,,,"                          "
+CHEM583.01,Desc.,SP.TP.:BIOANALYTICAL CHEMISTRY,3,8,BAŞAK KAYITMAZER,TWW,778,Online,,,,,"                          "
+CHEM58A.01,Desc.,SP.TP.PROTEINS&ENZYMES,3,6,HURİYE ERDOĞAN DAĞDAŞ,WWW,234,Classroom,,,,,"                          "
+CHEM591.01,Desc.,M.S. SEMINAR,0,2,OKTAY DEMİRCAN,,,Online,,,,,"                          "
+CHEM601.01,Desc.,CURRENT RESEARCH TOPICS,1,2,AMITAV SANYAL,,,Online,,,,,"                          "
+CHEM690.01,Desc.,M.S. THESIS,0,60,ALİ ERSİN ACAR,,,Online,,,,,"                          "
+CHEM690.04,Desc.,M.S. THESIS,0,60,DUYGU AVCI SEMİZ,,,Online,,,,,"                          "
+CHEM690.05,Desc.,M.S. THESIS,0,60,VIKTORYA AVIYENTE,,,Online,,,,,"                          "
+CHEM690.06,Desc.,M.S. THESIS,0,60,OKTAY DEMİRCAN,,,Online,,,,,"                          "
+CHEM690.07,Desc.,M.S. THESIS,0,60,İLKNUR DOĞAN,,,Online,,,,,"                          "
+CHEM690.11,Desc.,M.S. THESIS,0,60,AMITAV SANYAL,,,Online,,,,,"                          "
+CHEM690.14,Desc.,M.S. THESIS,0,60,MEHMET FIRAT İLKER,,,Online,,,,,"                          "
+CHEM690.15,Desc.,M.S. THESIS,0,60,ŞARON ÇATAK,,,Online,,,,,"                          "
+CHEM690.18,Desc.,M.S. THESIS,0,60,BAŞAK KAYITMAZER,,,Online,,,,,"                          "
+CHEM699.01,Desc.,GUIDED RESEARCH,4,8,ALİ ERSİN ACAR,,,Online,,,,,"                          "
+CHEM699.02,Desc.,GUIDED RESEARCH,4,8,RANA NOMAK SANYAL,,,Online,,,,,"                          "
+CHEM699.03,Desc.,GUIDED RESEARCH,4,8,AMITAV SANYAL,,,Online,,,,,"                          "
+CHEM700.01,Desc.,GRADUATE SEMINAR,0,2,AMITAV SANYAL,,,Online,,,,,"                          "
+CHEM790.01,Desc.,Ph.D.THESIS,0,120,ALİ ERSİN ACAR,,,Online,,,,,"                          "
+CHEM790.03,Desc.,Ph.D.THESIS,0,120,ZEYNEP ATAY GÖK,,,Online,,,,,"                          "
+CHEM790.04,Desc.,Ph.D.THESIS,0,120,DUYGU AVCI SEMİZ,,,Online,,,,,"                          "
+CHEM790.06,Desc.,Ph.D.THESIS,0,120,OKTAY DEMİRCAN,,,Online,,,,,"                          "
+CHEM790.07,Desc.,Ph.D.THESIS,0,120,İLKNUR DOĞAN,,,Online,,,,,"                          "
+CHEM790.08,Desc.,Ph.D.THESIS,0,120,BAŞAK KAYITMAZER,,,Online,,,,,"                          "
+CHEM790.09,Desc.,Ph.D.THESIS,0,120,NİHAN NUGAY,,,Online,,,,,"                          "
+CHEM790.10,Desc.,Ph.D.THESIS,0,120,TURGUT NUGAY,,,Online,,,,,"                          "
+CHEM790.11,Desc.,Ph.D.THESIS,0,120,AYŞE NEREN ÖKTE,,,Online,,,,,"                          "
+CHEM790.12,Desc.,Ph.D.THESIS,0,120,AMITAV SANYAL,,,Online,,,,,"                          "
+CHEM790.13,Desc.,Ph.D.THESIS,0,120,RANA NOMAK SANYAL,,,Online,,,,,"                          "
+CHEM790.15,Desc.,Ph.D.THESIS,0,120,ŞARON ÇATAK,,,Online,,,,,"                          "
+STS 302.01,Desc.,ARCHEOMETRY II,3,4,EMRE  KURUÇAYIRLI,TTTh,898,Online,,,,,"                          "

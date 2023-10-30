@@ -1,0 +1,56 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.01,Desc.,CALCULUS I,4,6,ÇAĞRI KARAKURT,TTThTh,1212,,,23.12.2016,2,,"                          "
+MATH101.02,Desc.,CALCULUS I,4,6,ÇAĞRI KARAKURT,TTThTh,3434,,,23.12.2016,2,,"                          "
+MATH101.03,Desc.,CALCULUS I,4,6,BETÜL TANBAY,TTThTh,1212,,,23.12.2016,2,,"                          "
+MATH101.04,Desc.,CALCULUS I,4,6,BETÜL TANBAY,TTThTh,3434,,,23.12.2016,2,,"                          "
+MATH101.05,Desc.,CALCULUS I,4,6,EKİN ÖZMAN KARAKURT,TTThTh,5656,,,23.12.2016,2,,"                          "
+MATH102.01,Desc.,CALCULUS II,4,6,MÜGE TAŞKIN AYDIN,TTThTh,1212,,,21.12.2016,1,,"                          "
+MATH102.02,Desc.,CALCULUS II,4,6,MÜGE TAŞKIN AYDIN,TTThTh,3434,,,21.12.2016,1,,"                          "
+MATH105.01,Desc.,INTRODUCTION TO FINITE MATHEMATICS,4,6,SİNAN S.IŞIK,TTThTh,1212,,,23.12.2016,2,,"                          "
+MATH105.02,Desc.,INTRODUCTION TO FINITE MATHEMATICS,4,6,SİNAN S.IŞIK,TTThTh,3434,,,23.12.2016,2,,"                          "
+MATH111.01,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,NİLGÜN IŞIK,TTThTh,1212,,,24.12.2016,2,,"        MATH; MEDU; TMAT; PRMA                  "
+MATH111.02,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,NİLGÜN IŞIK,TTThTh,3434,,,24.12.2016,2,,"        MATH; MEDU; TMAT; PRMA                  "
+MATH131.01,Desc.,CALCULUS OF A SINGLE VARIABLE,4,8,TALİN BUDAK,TTThTh,3434,,,21.12.2016,1,,"        MATH                  "
+MATH132.01,Desc.,CALCULUS OF SEVERAL VARIABLES,4,8,N.SADIK DEĞER,MMWW,1212,,,29.12.2016,3,,"        MATH                  "
+MATH201.01,Desc.,MATRIX THEORY,4,5,ARZU BOYSAL,MMWW,1212,,,21.12.2016,3,,"                          "
+MATH201.02,Desc.,MATRIX THEORY,4,5,ARZU BOYSAL,MMWW,3434,,,21.12.2016,3,,"                          "
+MATH201.03,Desc.,MATRIX THEORY,4,5,SERDAR ALTOK,MMWW,1212,,,21.12.2016,3,,"                          "
+MATH202.01,Desc.,DIFFERENTIAL EQUATIONS,4,7,ALP BASSA,MMWW,1212,,,21.12.2016,2,,"                          "
+MATH202.02,Desc.,DIFFERENTIAL EQUATIONS,4,7,FATİH ECEVİT,MMWW,3434,,,21.12.2016,2,,"                          "
+MATH221.01,Desc.,LINEAR ALGEBRA,4,8,ÖZLEM BEYARSLAN,TTThTh,5656,,,03.01.2017,2,,"        MATH                  "
+MATH222.01,Desc.,GROUP THEORY,4,8,OLCAY COŞKUN,TTThTh,5656,,,03.01.2017,2,,"        MATH; MEDU                  "
+MATH231.01,Desc.,ADVANCED CALCULUS I,4,8,FATİH ECEVİT,MMWW,5656,,,28.12.2016,2,,"        MEDU; MATH                  "
+MATH323.01,Desc.,"RINGS,FIELDS&GALOIS THEORY",4,8,ALP BASSA,MMWW,3434,,,30.12.2016,3,,"        MATH                  "
+MATH327.01,Desc.,NUMBER THEORY,3,6,CEM YALÇIN YILDIRIM,TTTh,9109,,,26.12.2016,2,,"                          "
+MATH331.01,Desc.,METRIC SPACES,4,8,FERİT ÖZTÜRK,TTThTh,1212,,,21.12.2016,3,,"        MATH                  "
+MATH331.02,Desc.,METRIC SPACES,4,8,FERİT ÖZTÜRK,TTThTh,3434,,,21.12.2016,3,,"                          "
+MATH338.01,Desc.,COMPLEX ANALYSIS I,4,8,AHMET KAMİL FEYZİOĞLU,MMWW,1212,,,29.12.2016,1,,"                          "
+MATH344.01,Desc.,STATISTICS,3,5,ÜMİT IŞLAK,MFF,812,,,27.12.2016,3,BIO,"                          "
+MATH345.01,Desc.,PROBABILITY,3,6,SERDAR ALTOK,MTT,778,,,23.12.2016,3,,"                          "
+MATH401.01,Desc.,HISTORY OF MATHEMATICS,3,6,AHMET KAMİL FEYZİOĞLU,MWW,334,,,21.12.2016,1,,"                          "
+MATH411.01,Desc.,MATHEMATICAL LOGIC,3,6,ÖZLEM BEYARSLAN,TTTh,343,,,22.12.2016,3,,"                          "
+MATH475.01,Desc.,DIFFERENTIAL GEOMETRY,3,7,N.SADIK DEĞER,MMW,343,,,20.12.2016,2,,"                          "
+MATH484.01,Desc.,SELECTED TOPICS IN MATH.,3,6,FLAVIO D ALESSANDRO,TTW,128,,,23.12.2016,1,,"                          "
+MATH48X.01,Desc.,SEL.TP.IN CATEGORY THEORY,3,6,ALİ KARATAY,FFF,578,,,27.12.2016,3,,"                          "
+MATH490.01,Desc.,PROJECT,3,6,OLCAY COŞKUN,TBA,,,,,0,,"                          "
+MATH490.02,Desc.,PROJECT,3,6,EKİN ÖZMAN KARAKURT,TBA,,,,,0,,"                          "
+MATH490.03,Desc.,PROJECT,3,6,N.SADIK DEĞER,TBA,,,,,0,,"                          "
+MATH521.01,Desc.,ALGEBRA I,4,10,EKİN ÖZMAN KARAKURT,MMWW,1212,,,28.12.2016,1,,"                          "
+MATH531.01,Desc.,REAL ANALYSIS I,4,10,ALİ ÜLGER,MMThTh,5656,,,20.12.2016,2,,"                          "
+MATH581.01,Desc.,SELECTED TOPİCS IN ANALYSIS I,3,7,CEM YALÇIN YILDIRIM,TThTh,778,,,20.12.2016,1,,"                          "
+MATH585.01,Desc.,SEL. TOP. IN PROBABILITY & STATISTICS,3,7,ÜMİT IŞLAK,TTT,678,,,20.12.2016,1,,"                          "
+MATH58C.01,Desc.,SEL.TP.IN ARITHMETIC GEOMETRY,3,7,EKİN ÖZMAN KARAKURT,FFF,123,,,03.01.2017,1,,"                          "
+MATH58F.01,Desc.,SEL.TOP.MOD.REPRESENT.OF FINITE GROUPS,3,7,OLCAY COŞKUN,TTTh,343,,,03.01.2017,3,,"                          "
+MATH58G.01,Desc.,SP.TP.CONTACT STRUCTURES,3,7,ÇAĞRI KARAKURT,TTTh,787,,,20.12.2016,1,,"                          "
+MATH58S.01,Desc.,SP.TP.INTR.TO SUPERSYMMETRY&SUPERGRAV. ,3,7,N.SADIK DEĞER,TTT,567,,,20.12.2016,1,,"                          "
+MATH58W.01,Desc.,SP.TP.ELLIPT FUN.MOD.FORM&RIEM.SURF.II,3,7,ALP BASSA,MMW,565,,,28.12.2016,2,,"                          "
+MATH590.01,Desc.,READINGS IN MATHEMATICS,1,3,TALİN BUDAK,TBA,,,,,0,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,OLCAY COŞKUN,TBA,,,,,0,,"                          "
+MATH690.03,Desc.,M.S. THESIS,0,60,FATİH ECEVİT,TBA,,,,,0,,"                          "
+MATH690.04,Desc.,M.S. THESIS,0,60,ÇAĞRI KARAKURT,TBA,,,,,0,,"                          "
+MATH690.05,Desc.,M.S. THESIS,0,60,EKİN ÖZMAN KARAKURT,TBA,,,,,0,,"                          "
+MATH690.06,Desc.,M.S. THESIS,0,60,SERDAR ALTOK,TBA,,,,,0,,"                          "
+MATH690.07,Desc.,M.S. THESIS,0,60,MÜGE TAŞKIN AYDIN,TBA,,,,,0,,"                          "
+MATH790.01,Desc.,Ph.D.THESIS,0,120,ARZU BOYSAL,TBA,,,,,0,,"                          "
+MATH790.02,Desc.,Ph.D.THESIS,0,120,OLCAY COŞKUN,TBA,,,,,0,,"                          "
+MATH790.04,Desc.,Ph.D.THESIS,0,120,BURAK GÜREL,TBA,,,,,0,,"                          "

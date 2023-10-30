@@ -1,0 +1,34 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY ,3,8,MURAT BAÇ,WWF,785,,NH 102 | NH 102 | NH 304,06.01.2015,3,,"        PSY; LING; GUID; LAW                  "
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY ,3,8,MARK STEEN,MWW,667,,TB 310 | NH 301 | NH 301,06.01.2015,3,"PSY,TR","        PHIL                  "
+PHIL105.01,Desc.,INFORMAL LOGIC,3,8,NURBAY IRMAK,MMW,563,,YD 06 | YD 06 | YD 04,05.01.2015,2,,"        PHIL                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,6,CHRYSSI SIDIROPOULOU,WThTh,634,,TB 310 | NH 105 | NH 105,05.01.2015,3,"LL,TKL","        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,4,8,İLHAN İNAN,ThThFF,3467,,NH 102 | NH 102 | NH 301 | NH 301,10.01.2015,1,,"                          "
+PHIL131.02,Desc.,LOGIC I,4,8,SUN DEMİRLİ,TTFF,6734,,NH 105 | NH 105 | NH 301 | NH 301,10.01.2015,1,"MATH,MEDU","                          "
+PHIL131.03,Desc.,LOGIC I,4,8,KARANFİL SOYHUN,TTFF,3434,,NH 202 | NH 202 | NH 302 | NH 302,10.01.2015,1,,"                          "
+PHIL213.01,Desc.,HISTORY OF PHILOSOPHY I,3,6,CHRYSSI SIDIROPOULOU,MWW,545,,YD 104 | M 1200 | M 1200,09.01.2015,2,,"        PHIL                  "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,MARK STEEN,MMW,342,,NH 303 | NH 303 | YD 05,29.12.2014,2,,"        PHIL                  "
+PHIL301.01,Desc.,PROBLEMS OF CONTEMPORARY PHILOSOPHY,3,6,MURAT BAÇ,WFF,423,,TB 130 | TB 130 | TB 130,,0,,"                          "
+PHIL313.01,Desc.,HISTORY OF PHILOSOPHY III,3,6,SUN DEMİRLİ,TTF,126,,NH 403 | NH 403 | NH 304,05.01.2015,1,,"        PHIL                  "
+PHIL341.01,Desc.,ETHICS,3,6,İREM KURTSAL STEEN,TTTh,568,,YD 202 | YD 202 | M 1200,03.01.2015,3,,"        PHIL                  "
+PHIL354.01,Desc.,SOCIAL & POLITICAL PHILOSOPHY,3,6,KENNETH ROBERT WESTPHAL,MFF,845,,NH 103 | M 2231 | M 2231,02.01.2015,3,,"                          "
+PHIL375.01,Desc.,PHILOSOPHY OF MIND,3,6,STEPHEN VOSS,TThTh,734,,M 1200 | NH 001 | NH 001,,0,,"                          "
+PHIL470.01,Desc.,PHILOSOPHY OF MATHEMATICS,3,6,ALİ KARATAY,MMM,567,,TB 240 | TB 240 | TB 240,,0,,"                          "
+PHIL48C.01,Desc.,SP.TP.BIOETHICS,3,5,NURBAY IRMAK,MWW,256,,TB 130 | TB 130 | TB 130,27.12.2014,3,,"                          "
+PHIL48J.01,Desc.,"FREUD,JUNG&PHIL.OF UNCONSCIOUS",3,6,ALPER TÜRKEN,FFF,678,,M 1170 | M 1170 | M 1170,,0,,"                          "
+PHIL48N.01,Desc.,KANTIAN ETHICS,3,6,LUCAS THORPE,WWW,678,,TB 240 | TB 240 | TB 240,,0,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,YILDIZ SİLİER,,, ,,07.01.2015,1,,"                          "
+PHIL517.01,Desc.,TOPICS IN CONTEMPORARY PHILOSOPHY,4,10,STEPHEN VOSS,TTT,234,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL536.01,Desc.,ETHICS,4,10,KARANFİL SOYHUN,TTT,678,,TB 130 | TB 130 | TB 130,,0,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,MURAT BAÇ,TBA,,,,29.12.2014,2,,"                          "
+PHIL58A.01,Desc.,SP.TP.MODERN FOUNDATION OF JUSTICE,4,10,KENNETH ROBERT WESTPHAL,MMM,234,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL58C.01,Desc.,SP.TP.PLATO'S REPUCLIC,4,10,PINAR CANEVİ,WWW,678,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL58D.01,Desc.,SP.TP.PHILOSOPHY OF RELIGION,4,10,İREM KURTSAL STEEN,ThThTh,234,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL58E.01,Desc.,SP.TP.CONCEPTS:FROM PERCEPTION TO ACTION,4,10,LUCAS THORPE,ThThTh,678,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL58F.01,Desc.,SP.TP.ADVANCED PHIL.OF MATHEMATICS,4,10,ALİ KARATAY,TBA,,,,03.01.2015,2,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,MURAT BAÇ,TBA,,,,08.01.2015,1,,"                          "
+PHIL648.01,Desc.,PHILOSOPHY OF LANGUAGE,4,10,İLHAN İNAN,FFF,234,,TB 365 | TB 365 | TB 365,07.01.2015,1,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,29.12.2014,3,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,MURAT BAÇ,TBA,,,,,0,,"                          "

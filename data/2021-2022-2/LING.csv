@@ -1,0 +1,70 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CAU 101.01,Desc.,ELEMENTARY LAZ I,3,5,İSMAİL AVCI,ThThTh,8910,Classroom,TB 415 | TB 415 | TB 415,11.06.2022,3,,"                          "
+CAU 111.01,Desc.,ELEMENTARY KABARDIAN I,3,5,FATIMAT ZHILETEZHEVA,TTT,789,Classroom,JF 102 | JF 102 | JF 102,10.06.2022,3,,"                          "
+CAU 121.01,Desc.,ELEMENTARY ABKHAZ I,3,5,GUNDA ANKVAB,TTT,456,Classroom,JF 108 | JF 108 | JF 108,02.06.2022,2,,"                          "
+LING101.01,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS I,3,7,ELENA GUERZONI,MMWW,5656,Online,ONLINE | ONLINE | ONLINE | ONLINE,10.06.2022,2,,"                          "
+LING101.02,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS I,3,7,PAVEL LOGAÇEV,MMWW,5656,Online,ONLINE | ONLINE | ONLINE | ONLINE,10.06.2022,2,,"                          "
+LING102.01,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS II,3,7,DİDAR AKAR,TTTh,562,Classroom,NH 401 | NH 401 | EF 206,04.06.2022,3,,"                          "
+LING104.01,Desc.,PHONETICS,3,6,KADİR GÖKGÖZ,WWTh,786,Classroom,NH 401 | NH 401 | EF 106,,,,"                          "
+LING202.01,Desc.,MORPHOLOGY,3,6,MİNE NAKİPOĞLU,TTThTh,5645,Classroom,NH 302 | NH 305 | NH 203 | NH 203,06.06.2022,2,,"                          "
+LING206.01,Desc.,LANGUAGE TYPOLOGY,3,6,METİN BAĞRIAÇIK,MMT,783,Classroom,NH 405 | NH 405 | NH 303,07.06.2022,2,,"                          "
+LING314.01,Desc.,SYNTAX&SEMANTICS OF MODERN TURKISH,3,7,ÖMER DEMİROK,MMWTh,2333,Online,ONLINE | ONLINE | ONLINE | ONLINE,02.06.2022,3,,"                          "
+LING314.02,Desc.,SYNTAX&SEMANTICS OF MODERN TURKISH,3,7,ÜMİT ATLAMAZ,TTWW,5656,Online,ONLINE | ONLINE | ONLINE | ONLINE,02.06.2022,3,,"                          "
+LING350.01,Desc.,STRUCTURE OF TURKISH SIGN LANGUAGE,3,6,SUMRU ÖZSOY,MMW,567,Classroom,M 1170 | M 1170 | M 2200,01.06.2022,2,,"                          "
+LING360.01,Desc.,COMPUTATIONAL METHODS IN LINGUISTICS,3,6,ÜMİT ATLAMAZ,MMWW,2323,Classroom,M 3120 | M 3120 | M 3120 | M 3120,28.05.2022,2,,"                          "
+LING409.01,Desc.,FIELD METHODS,3,6,METİN BAĞRIAÇIK,TTF,784,Classroom,NH 102 | NH 102 | M 1171,31.05.2022,1,,"                          "
+LING412.01,Desc.,RESEARCH & WRITING,4,8,MİNE NAKİPOĞLU,,,Classroom,,,,,"                          "
+LING412.02,Desc.,RESEARCH & WRITING,4,8,BALKIZ ÖZTÜRK,,,Classroom,,,,,"                          "
+LING412.03,Desc.,RESEARCH & WRITING,4,8,ELENA GUERZONI,,,Classroom,,,,,"                          "
+LING412.04,Desc.,RESEARCH & WRITING,4,8,PAVEL LOGAÇEV,,,Classroom,,,,,"                          "
+LING412.05,Desc.,RESEARCH & WRITING,4,8,KADİR GÖKGÖZ,,,Classroom,,,,,"                          "
+LING412.06,Desc.,RESEARCH & WRITING,4,8,STEFANO CANALIS,,,Classroom,,,,,"                          "
+LING412.07,Desc.,RESEARCH & WRITING,4,8,ÖMER DEMİROK,,,Classroom,,,,,"                          "
+LING412.08,Desc.,RESEARCH & WRITING,4,8,DİDAR AKAR,,,Classroom,,,,,"                          "
+LING412.09,Desc.,RESEARCH & WRITING,4,8,METİN BAĞRIAÇIK,,,Classroom,,,,,"                          "
+LING412.10,Desc.,RESEARCH & WRITING,4,8,ÜMİT ATLAMAZ,,,Classroom,,,,,"                          "
+LING412.11,Desc.,RESEARCH & WRITING,4,8,MİNE NAKİPOĞLU,,,Classroom,,,,,"                          "
+LING412.12,Desc.,RESEARCH & WRITING,4,8,DİDAR AKAR,,,Classroom,,,,,"                          "
+LING412.13,Desc.,RESEARCH & WRITING,4,8,ÜMİT ATLAMAZ,,,Classroom,,,,,"                          "
+LING412.14,Desc.,RESEARCH & WRITING,4,8,ÖMER DEMİROK,,,Classroom,,,,,"                          "
+LING501.01,Desc.,ASPECTS OF PHONOLOGY,4,10,STEFANO CANALIS,MMWW,5656,Classroom,,,,,"                          "
+LING512.01,Desc.,MORPHOLOGICAL ANALYSIS,4,10,ÖMER DEMİROK,MMWW,7878,Classroom,,,,,"                          "
+LING553.01,Desc.,DISCOURSE ANALYSIS,4,10,DİDAR AKAR,TTThTh,2356,Classroom,,,,,"                          "
+LING570.01,Desc.,GUIDED STUDIES,3,5,MİNE NAKİPOĞLU,,,Classroom,,,,,"                          "
+LING570.02,Desc.,GUIDED STUDIES,3,5,BALKIZ ÖZTÜRK,,,Classroom,,,,,"                          "
+LING570.03,Desc.,GUIDED STUDIES,3,5,ELENA GUERZONI,,,Classroom,,,,,"                          "
+LING570.04,Desc.,GUIDED STUDIES,3,5,PAVEL LOGAÇEV,,,Classroom,,,,,"                          "
+LING570.05,Desc.,GUIDED STUDIES,3,5,KADİR GÖKGÖZ,,,Classroom,,,,,"                          "
+LING570.06,Desc.,GUIDED STUDIES,3,5,STEFANO CANALIS,,,Classroom,,,,,"                          "
+LING570.07,Desc.,GUIDED STUDIES,3,5,ÖMER DEMİROK,,,Classroom,,,,,"                          "
+LING570.08,Desc.,GUIDED STUDIES,3,5,DİDAR AKAR,,,Classroom,,,,,"                          "
+LING570.09,Desc.,GUIDED STUDIES,3,5,METİN BAĞRIAÇIK,,,Classroom,,,,,"                          "
+LING570.10,Desc.,GUIDED STUDIES,3,5,ÜMİT ATLAMAZ,,,Classroom,,,,,"                          "
+LING571.01,Desc.,READINGS IN LINGUISTICS I,1,5,ÜMİT ATLAMAZ,,,Classroom,,09.06.2022,3,,"                          "
+LING572.01,Desc.,READINGS IN LINGUISTICS II,1,5,MİNE NAKİPOĞLU,,,Classroom,,,,,"                          "
+LING572.02,Desc.,READINGS IN LINGUISTICS II,1,5,BALKIZ ÖZTÜRK,,,Classroom,,,,,"                          "
+LING572.03,Desc.,READINGS IN LINGUISTICS II,1,5,ELENA GUERZONI,,,Classroom,,,,,"                          "
+LING572.04,Desc.,READINGS IN LINGUISTICS II,1,5,PAVEL LOGAÇEV,,,Classroom,,,,,"                          "
+LING572.05,Desc.,READINGS IN LINGUISTICS II,1,5,KADİR GÖKGÖZ,,,Classroom,,,,,"                          "
+LING572.06,Desc.,READINGS IN LINGUISTICS II,1,5,STEFANO CANALIS,,,Classroom,,,,,"                          "
+LING572.07,Desc.,READINGS IN LINGUISTICS II,1,5,ÖMER DEMİROK,,,Classroom,,,,,"                          "
+LING572.08,Desc.,READINGS IN LINGUISTICS II,1,5,DİDAR AKAR,,,Classroom,,,,,"                          "
+LING572.09,Desc.,READINGS IN LINGUISTICS II,1,5,METİN BAĞRIAÇIK,,,Classroom,,,,,"                          "
+LING572.10,Desc.,READINGS IN LINGUISTICS II,1,5,ÜMİT ATLAMAZ,,,Classroom,,,,,"                          "
+LING579.01,Desc.,GRADUATE SEMINAR,0,5,STEFANO CANALIS,,,Classroom,,,,,"                          "
+LING582.01,Desc.,SP.TP.ISSUES IN SIGN LANGUAGE MORPHO-SYNTAX,4,10,KADİR GÖKGÖZ,TTThTh,5634,Classroom,,,,,"                          "
+LING58C.01,Desc.,SP.TP.IN LINGS ADVANCED TP.IN SEMANTICS,4,10,ELENA GUERZONI,MMWW,2323,Classroom,,,,,"                          "
+LING601.01,Desc.,PHONOLOGY,4,10,STEFANO CANALIS,,,,,10.06.2022,2,,"                          "
+LING682.01,Desc.,SP.TP.CONTACT-INDUCED SYNTACTIC CHANGE,4,10,METİN BAĞRIAÇIK,,, ,,11.06.2022,1,,"                          "
+LING690.01,Desc.,MASTER THESIS,0,60,MİNE NAKİPOĞLU,,,,,,,,"                          "
+LING690.02,Desc.,MASTER THESIS,0,60,BALKIZ ÖZTÜRK,,,,,,,,"                          "
+LING690.03,Desc.,MASTER THESIS,0,60,ELENA GUERZONI,,,,,,,,"                          "
+LING690.04,Desc.,MASTER THESIS,0,60,PAVEL LOGAÇEV,,,,,,,,"                          "
+LING690.05,Desc.,MASTER THESIS,0,60,KADİR GÖKGÖZ,,,,,,,,"                          "
+LING690.06,Desc.,MASTER THESIS,0,60,STEFANO CANALIS,,,,,,,,"                          "
+LING690.07,Desc.,MASTER THESIS,0,60,ÖMER DEMİROK,,,,,,,,"                          "
+LING690.08,Desc.,MASTER THESIS,0,60,DİDAR AKAR,,,,,,,,"                          "
+LING690.09,Desc.,MASTER THESIS,0,60,METİN BAĞRIAÇIK,,,,,,,,"                          "
+LING690.10,Desc.,MASTER THESIS,0,60,ÜMİT ATLAMAZ,,,,,,,,"                          "
+TID 101.01,Desc.,ELEMENTARY TURKISH SIGN LANGUAGE I,3,5,FERİDE KORKMAZ,WWW,345,Classroom,JF 331 | JF 331 | JF 331,25.05.2022,3,,"                          "
+TID 102.01,Desc.,ELEMENTARY TURKISH SIGN LANGUAGE II,3,5,FERİDE KORKMAZ,WWW,789,Classroom,JF 331 | JF 331 | JF 331,26.05.2022,3,,"                          "

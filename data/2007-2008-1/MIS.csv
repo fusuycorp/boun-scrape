@@ -1,0 +1,41 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MIS 111.01,Desc.,ECONOMICS I,3,5,BERTAN YILMAZ BADUR,MFF,656,,HKC107 | HKC107 | HKC107,,,,"                          "
+MIS 113.01,Desc.,MANAGEMENT & ORGANIZATION,3,5,ÖZGÜR DÖĞERLİOĞLU,MMT,343,,HKB105 | HKB105 | HKB103,,,,"                          "
+MIS 125.01,Desc.,INTRODUCTION TO INFORMATION SYS.& TECHNO,4,5,EROL İNELMEN,TFF,223,,HKC107 | HKC107 | HKC107,,,,"                          "
+MIS 131.01,Desc.,INTRODUCTION TO ALGORITHMS,4,6,ZUHAL TANRIKULU,WWTh,563,,HKC107 | HKC107 | HKB105,,,,"                          "
+MIS 143.01,Desc.,BUSINESS MATHEMATICS I,3,5,AYFER ECEVİT,TTTh,454,,HKA301 | HKA301 | HKA301,,,,"                          "
+MIS 211.01,Desc.,FINANCIAL ACCOUNTING,3,4,CEYLAN ONAY,MMW,785,,HKB105 | HKB105 | HKA302,,,,"                          "
+MIS 213.01,Desc.,QUANTITATIVE TECHNIQUES,3,4,SONA MARDİKYAN,MThTh,323,,HKA202 | HKA301 | HKA301,,,,"                          "
+MIS 231.01,Desc.,INTRODUCTION TO PROGRAMMING,4,6,BİRGÜL KUTLU,WFF,323,,HKB103 | HKB105 | HKB105,,,,"                          "
+MIS 251.01,Desc.,COMPUTER HARDWARE & SYSTEM SOFTWARE,4,7,BİLGİN METİN,MMTh,565,,HKB105 | HKB105 | HKA301,,,,"                          "
+MIS 313.01,Desc.,QUANTITATIVE ANAL. FOR DECISION MAKING,3,5,SONA MARDİKYAN,MThTh,445,,HKA202 | HKB105 | HKB105,,,,"                          "
+MIS 316.01,Desc.,FINANCE,3,5,ALİ TÜKEL,MMW,676,,HKA202 | HKA202 | HKA302,,,,"                          "
+MIS 317.01,Desc.,INTERPERSONAL COMMUNICATION ,3,4,ÖZGÜR DÖĞERLİOĞLU,MTT,545,,HKA202 | HKB105 | HKB105,,,,"                          "
+MIS 415.01,Desc.,HUMAN FACTORS IN COMPUTING,3,6,TANJU AKDENİZ,ThThTh,678,,HKA301 | HKA301 | HKA301,,,,"                          "
+MIS 417.01,Desc.,LEGAL & ETHICAL ISSUES IN COMPUTING,3,6,ASLIHAN NASIR,MTT,523,,HKA303 | HKA301 | HKA301,,,,"                          "
+MIS 463.01,Desc.,DECISION SUPPORT SYSTEMS FOR BUSINESS,3,6,ASLI SENCER,MWW,245,,HKB105 | HKB105 | HKB105,,,,"                          "
+MIS 469.01,Desc.,APPLIED RESEARCH IN MIS,3,5,ZUHAL TANRIKULU,WWTh,235,,HKB101 | HKB101 | HKB101,,,,"                          "
+MIS 481.01,Desc.,SENIOR SEMINARS IN MIS,1,2,AYFER ECEVİT,W,7,,HKB107,,,,"                          "
+MIS 483.01,Desc.,SP.TOP.IN MIS:FINANCIAL MANAGEMENT,3,5,CEYLAN ONAY,TTW,678,,HKB101 | HKB101 | HKB101,,,,"                          "
+MIS 486.01,Desc.,SP.TOP.İN MIS:ELECT.&MOBILE COM. İN THE,3,5,UĞUR GÖKHAN ÖZDİNÇ,TTT,678,,HKC107 | HKC107 | HKC107,,,,"                          "
+MIS 492.01,Desc.,PROJECT,4,8,ÖZGÜR DÖĞERLİOĞLU,TBA,,,,,,,"                          "
+MIS 492.02,Desc.,PROJECT,4,8,SONA MARDİKYAN,TBA,,,,,,,"                          "
+MIS 493.01,Desc.,SP TOP.IN MIS.(E-MARKETING),3,5,HANDE TÜRKER,MMTh,344,,HKB101 | HKB101 | HKB101,,,,"                          "
+MIS 501.01,Desc.,TECHNICAL FOUNDATIONS OF MIS,4,6,BİRGÜL KUTLU,FFF,678,,,,,,"                          "
+MIS 502.01,Desc.,MANAGERIAL FOUNDATIONS OF MIS,4,6,ÖZGÜR DÖĞERLİOĞLU,MMMM,6789,,HKB108 | HKB108 | HKB108 | HKB108,,,,"                          "
+MIS 511.01,Desc.,DATA RESOURCES MANAGEMENT,3,6,OSMAN NURİ DARCAN,ThThTh,234,,HKB 108 | HKB 108 | HKB 108,,,,"                          "
+MIS 513.01,Desc.,MANAGING COMMUNICATION TECHNOLOGY,3,6,BİLGİN METİN,FFF,234,,HKB108 | HKB108 | HKB108,,,,"                          "
+MIS 515.01,Desc.,"SYSTEMS ANALYSIS, MODELING & DESIGN",3,6,MELTEM ÖZTURAN,TTT,123,,HKB108 | HKB 108 | HKB 108,,,,"                          "
+MIS 517.01,Desc.,ADVANCED OPERATIONS MANAGEMENT,3,6,ASLI SENCER,WWW,678,,HKB108 | HKB108 | HKB108,,,,"                          "
+MIS 579.01,Desc.,GRADUATE SEMINAR,0,6,ZUHAL TANRIKULU,T,4,,HKB108,,,,"                          "
+MIS 580.01,Desc.,SP.TOP IN MIS:OBJECT ORIEN.MOD.WITH UML ,3,6,OSMAN NURİ DARCAN,TTT,678,,HKB108 | HKB108 | HKB108,,,,"                          "
+MIS 582.01,Desc.,SP.TP.IN MIS:MARKET.OF HIGH TECH.PRODUC.,3,6,ASLIHAN NASIR,MMM,234,,HKB108 | HKB108 | HKB108,,,,"                          "
+MIS 583.01,Desc.,SP.TP.IN MIS:INFRASTRUCTURE OF FINANCIAL,3,6,ALİ TÜKEL,WWW,234,,HKB 108 | HKB 108 | HKB 108,,,,"                          "
+MIS 690.02,Desc.,MASTER'S THESIS,0,60,BERTAN YILMAZ BADUR,TBA,,,,,,,"                          "
+MIS 690.03,Desc.,MASTER'S THESIS,0,60,ÖZGÜR DÖĞERLİOĞLU,TBA,,,,,,,"                          "
+MIS 690.04,Desc.,MASTER'S THESIS,0,60,BİRGÜL KUTLU,TBA,,,,,,,"                          "
+MIS 690.05,Desc.,MASTER'S THESIS,0,60,ASLI SENCER,TBA,,,,,,,"                          "
+MIS 690.06,Desc.,MASTER'S THESIS,0,60,HANDE TÜRKER,TBA,,,,,,,"                          "
+MIS 690.07,Desc.,MASTER'S THESIS,0,60,ASLIHAN NASIR,TBA,,,,,,,"                          "
+MIS 690.09,Desc.,MASTER'S THESIS,0,60,MELTEM ÖZTURAN,TBA,,,,,,,"                          "
+MIS 690.10,Desc.,MASTER'S THESIS,0,60,ZUHAL TANRIKULU,TBA,,,,,,,"                          "

@@ -1,0 +1,52 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+INT 202.01,Desc.,INTRODUCTION TO INTERPRETING,3,5,KATE FERGUSON,TTF,563,Online,,,,,"                          "
+INT 202.02,Desc.,INTRODUCTION TO INTERPRETING,3,5,KATE FERGUSON,WWF,564,Online,,,,,"                          "
+INT 202.03,Desc.,INTRODUCTION TO INTERPRETING,3,5,BİLGE HAS BIYIKLI,MMM,123,Online,,,,,"                          "
+INT 318.01,Desc.,INTRO.TO SIMULTANEOUS INTERPRETING,3,4,NEDİME MERCANGÖZ,MMM,567,Online,,,,,"                          "
+INT 318.02,Desc.,INTRO.TO SIMULTANEOUS INTERPRETING,3,4,KATE FERGUSON,ThThTh,345,Online,,,,,"                          "
+INT 412.01,Desc.,SIMULTANEOUS INTERPRETING PRACTICE IN CO,3,5,HANDE GÜNER,FFF,678,Online,,,,,"                          "
+INT 416.01,Desc.,SIMULTANEOUS INTERPRETING II,3,5,EBRU DİRİKER,MTT,867,Online,,,,,"                          "
+INT 418.01,Desc.,THEORETICAL APPROACHES TO INTERPRETING P,3,5,EBRU DİRİKER,MMT,678,Online,,,,,"                          "
+INT 480.01,Desc.,SP.TOP.FOR INTERPRETERS,3,5,AHU LATİFOĞLU DOĞAN,TTT,234,Online,,,,,"                          "
+TR  106.01,Desc.,RESEARCH PAPER WRITING IN TRANS.STUDIES,3,5,JAN BUTS,WThTh,889,Online,,,,,"                          "
+TR  106.02,Desc.,RESEARCH PAPER WRITING IN TRANS.STUDIES,3,5,ENA HODJIKJ,TTW,347,Online,,,,,"                          "
+TR  106.03,Desc.,RESEARCH PAPER WRITING IN TRANS.STUDIES,3,5,ENA HODJIKJ,TTW,673,Online,,,,,"                          "
+TR  108.01,Desc.,TURKISH FOR TRANSLATORS,3,4,ŞULE DEMİRKOL ERTÜRK,ThThF,343,Online,,,,,"                          "
+TR  108.02,Desc.,TURKISH FOR TRANSLATORS,3,4,ŞULE DEMİRKOL ERTÜRK,ThThF,675,Online,,,,,"                          "
+TR  108.03,Desc.,TURKISH FOR TRANSLATORS,3,4,FAZİLET AKDOĞAN ÖZDEMİR,TThTh,656,Online,,,,,"                          "
+TR  110.01,Desc.,INTRODUCTION TO TRANS.&TRANS.STUDIES II,3,6,AYŞENAZ CENGİZ,TTW,347,Online,,,,,"                          "
+TR  110.02,Desc.,INTRODUCTION TO TRANS.&TRANS.STUDIES II,3,6,CEYDA ELGÜL,TTW,783,Online,,,,,"                          "
+TR  110.03,Desc.,INTRODUCTION TO TRANS.&TRANS.STUDIES II,3,6,FAZİLET AKDOĞAN ÖZDEMİR,TFF,567,Online,,,,,"                          "
+TR  314.01,Desc.,LITERARY TRANSLATION,3,5,CEYDA ELGÜL,TTW,347,Online,,,,,"                          "
+TR  314.02,Desc.,LITERARY TRANSLATION,3,5,CEYDA ELGÜL,TWW,545,Online,,,,,"                          "
+TR  316.01,Desc.,TRANSLATION CRITICISM,3,5,AYŞENAZ CENGİZ,TWW,834,Online,,,,,"                          "
+TR  316.02,Desc.,TRANSLATION CRITICISM,3,5,FAZİLET AKDOĞAN ÖZDEMİR,ThFF,734,Online,,,,,"                          "
+TR  318.01,Desc.,SEMINAR,1,3,JONATHAN MAURICE ROSS,FF,56,Online,,,,,"                          "
+TR  320.01,Desc.,EU POLICIES&INST.:TRANS.OF KEY DOCUMENTS,3,4,MEHMET ŞAHİN,MTT,623,Online,,,,,"                          "
+TR  320.02,Desc.,EU POLICIES&INST.:TRANS.OF KEY DOCUMENTS,3,4,MEHMET ŞAHİN,TTW,565,Online,,,,,"                          "
+TR  405.01,Desc.,TRANSLATING TEXTS ON SOCIAL SCIENCES,3,5,ŞULE DEMİRKOL ERTÜRK,ThFF,867,Online,,,,,"                          "
+TR  427.01,Desc.,TRANSLATION PROJECT DESIGN,1,3,CEYDA ELGÜL,,,Online,,,,,"                          "
+TR  427.02,Desc.,TRANSLATION PROJECT DESIGN,1,3,JONATHAN MAURICE ROSS,,,Online,,,,,"                          "
+TR  428.01,Desc.,TRANSLATION PROJECT,3,6,JONATHAN MAURICE ROSS,,,Online,,,,,"                          "
+TR  428.02,Desc.,TRANSLATION PROJECT,3,6,CEYDA ELGÜL,,,Online,,,,,"                          "
+TR  428.03,Desc.,TRANSLATION PROJECT,3,6,ŞULE DEMİRKOL ERTÜRK,,,Online,,,,,"                          "
+TR  428.04,Desc.,TRANSLATION PROJECT,3,6,AYŞENAZ CENGİZ,,,Online,,,,,"                          "
+TR  428.05,Desc.,TRANSLATION PROJECT,3,6,ENA HODJIKJ,,,Online,,,,,"                          "
+TR  428.06,Desc.,TRANSLATION PROJECT,3,6,EBRU DİRİKER,,,Online,,,,,"                          "
+TR  428.07,Desc.,TRANSLATION PROJECT,3,6,MEHMET ŞAHİN,,,Online,,,,,"                          "
+TR  428.08,Desc.,TRANSLATION PROJECT,3,6,KATE FERGUSON,,,Online,,,,,"                          "
+TR  428.09,Desc.,TRANSLATION PROJECT,3,6,ŞEHNAZ TAHİR GÜRÇAĞLAR,,,Online,,,,,"                          "
+TR  428.10,Desc.,TRANSLATION PROJECT,3,6,ARZU AKBATUR,,,Online,,,,,"                          "
+TR  428.11,Desc.,TRANSLATION PROJECT,3,6,HÜSEYİN MERGAN,,,Online,,,,,"                          "
+TR  428.12,Desc.,TRANSLATION PROJECT,3,6,DEFNE ORHUN SOYDAN,,,Online,,,,,"                          "
+TR  487.01,Desc.,SP.TP.LEGAL TRANSLATION II,3,5,DEFNE ORHUN SOYDAN,ThThTh,345,Online,,,,,"                          "
+TR  489.01,Desc.,SP.TP.INTRODUCTION TO RESEARCH METHODS,3,5,ŞEHNAZ TAHİR GÜRÇAĞLAR,WWW,678,Online,,,,,"                          "
+TR  48A.01,Desc.,SP.TP.IN TRANS.:TRANSLATION TOOLS,3,4,HÜSEYİN MERGAN,TTT,91011,Online,,,,,"                          "
+TR  48F.01,Desc.,SP.TOP.IN TRANS:TRANSLATION TECHNOLOGIES,3,5,MEHMET ŞAHİN,MMW,237,Online,,,,,"                          "
+TR  48M.01,Desc.,SP.TOP.DEBATE,3,5,JONATHAN MAURICE ROSS,ThThF,672,Online,,,,,"                          "
+TR  48Y.01,Desc.,SP.TP.TERMINOLOGY & LEXICOLOGY,3,5,JAN BUTS,TTW,789,Online,,,,,"                          "
+TR  491.01,Desc.,SP.TP.TRANSLATION STUDIES&THE DIGITAL TRANSITION,3,5,JAN BUTS,TWW,912,Online,,,,,"                          "
+TR  790.01,Desc.,DOCTORAL DISSERTATION,0,120,JONATHAN MAURICE ROSS,,,Online,,,,,"                          "
+TR  790.02,Desc.,DOCTORAL DISSERTATION,0,120,ÖZLEM BERK ALBACHTEN,,,Online,,,,,"                          "
+TR  790.03,Desc.,DOCTORAL DISSERTATION,0,120,ŞULE DEMİRKOL ERTÜRK,,,Online,,,,,"                          "
+TR  790.04,Desc.,DOCTORAL DISSERTATION,0,120,AYŞENAZ CENGİZ,,,Online,,,,,"                          "

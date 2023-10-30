@@ -1,0 +1,87 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+BIO 101.01,Desc.,CELLULAR AND MOLECULAR BIOLOGY I,3,5,ŞÜKRÜ ANIL DOĞAN,TFF,334, ,EF 206 | EF 106 | EF 106,06.06.2023,3,,"                          "
+BIO 101.02,Desc.,CELLULAR AND MOLECULAR BIOLOGY I,3,5,FATİH YANAR,TFF,334, ,NH 304 | NH 304 | NH 304,06.06.2023,3,,"                          "
+BIO 102.01,Desc.,CELLULAR AND MOLECULAR BIOLOGY II,3,5,N.C.TOLGA EMRE,TThTh,534, ,NH 303 | NH 304 | NH 304,31.05.2023,2,"P_SCI, BIO","                          "
+BIO 102.02,Desc.,CELLULAR AND MOLECULAR BIOLOGY II,3,5,İBRAHİM YAMAN,TThTh,534, ,EF 116 | EF 06 | EF 06,31.05.2023,2,"P_SCI, BIO","                          "
+BIO 106.01,Desc.,CELL BIOLOGY LABORATORY,2,3,N.C.TOLGA EMRE,W,5, ,EF 206,03.06.2023,2,"BIO,P_SCI","                          "
+,,LAB,,,N.C.TOLGA EMRE,MMM,678,,KP 214 | KP 214 | KP 214,,0,"BIO, P_SCI","                          "
+BIO 106.02,Desc.,CELL BIOLOGY LABORATORY,2,3,İBRAHİM YAMAN,W,5, ,EF 106,03.06.2023,2,"BIO,P_SCI","                          "
+,,LAB,,,N.C.TOLGA EMRE,TTT,678,,KP 214 | KP 214 | KP 214,,0,"BIO, P_SCI","                          "
+,,LAB,,,İBRAHİM YAMAN,ThThTh,678,,KP 214 | KP 214 | KP 214,,0,"BIO,P_SCI","                          "
+BIO 121.01,Desc.,INTRO.TO CELL BIOLOGY,3,5,SEYFULLAH ENES KOTİL,WWF,344, ,NH 203 | NH 203 | NH 401,05.06.2023,3,,"                          "
+BIO 121.02,Desc.,INTRO.TO CELL BIOLOGY,3,5,İBRAHİM KURT,WWF,344, ,KP 09 | KP 09 | KP 01,05.06.2023,3,,"                          "
+BIO 152.01,Desc.,INTRO. TO MODERN BIOLOGY,3,5,STEVEN FOOTITT,WWF,781, ,KP 01 | KP 01 | KP 01,03.06.2023,2,,"                          "
+BIO 152.02,Desc.,INTRO. TO MODERN BIOLOGY,3,5,SEYFULLAH ENES KOTİL,WWF,781, ,EF 206 | EF 206 | EF 116,03.06.2023,2,,"                          "
+BIO 152.03,Desc.,INTRO. TO MODERN BIOLOGY,3,5,İBRAHİM KURT,WWF,781, ,NH 405 | NH 405 | NH 405,03.06.2023,2,,"                          "
+BIO 252.01,Desc.,GENETICS,3,6,BATU ERMAN,MMF,783, ,KP 01 | KP 01 | KP 01,07.06.2023,2,,"                          "
+BIO 254.01,Desc.,GENETICS LABORATORY,3,6,ARZU ÇELİK,T,1, ,KB Z01,30.05.2023,1,,"                          "
+,,LAB,,,ARZU ÇELİK,ThThThTh,1234,,KP 215 | KP 215 | KP 215 | KP 215,,0,,"                          "
+,,LAB,,,ARZU ÇELİK,FFFF,6789,,KP 215 | KP 215 | KP 215 | KP 215,,0,,"                          "
+BIO 302.01,Desc.,BIOCHEMISTRY II,4,6,ALİ RIZA UMUT ŞAHİN,MMWW,5656, ,KP 01 | KP 01 | KP 01 | KP 01,26.05.2023,3,,"                          "
+BIO 308.01,Desc.,SEMINAR I,1,2,ARZU ÇELİK,MM,78, ,KP 08 | KP 08,,,,"                          "
+BIO 308.02,Desc.,SEMINAR I,1,2,ALİ RIZA UMUT ŞAHİN,WW,78, ,KP 08 | KP 08,,,,"                          "
+BIO 308.03,Desc.,SEMINAR I,1,2,STEVEN FOOTITT,TT,78, ,KP 08 | KP 08,,,,"                          "
+BIO 308.04,Desc.,SEMINAR I,1,2,ARZU ÇELİK,MM,910, ,KP 08 | KP 08,,,,"                          "
+BIO 308.05,Desc.,SEMINAR I,1,2,BATU ERMAN,TT,34, ,KP 08 | KP 08,,,,"                          "
+BIO 310.01,Desc.,CELLULAR AND MOLECULAR BIOLOGY III,4,6,ARZU ÇELİK,MMFF,1212, ,KP 01 | KP 01 | EF 106 | EF 106,30.05.2023,3,,"                          "
+BIO 322.01,Desc.,RESEARCH TOPICS IN MOLECULAR BIOLOGY,1,2,ŞÜKRÜ ANIL DOĞAN,F,4, ,KP 315,,,,"                          "
+BIO 342.01,Desc.,HUMAN PHYSIOLOGY,3,6,STEFAN FUSS,WThTh,278, ,NH 305 | KP 01 | KP 01,03.06.2023,3,,"                          "
+BIO 407.02,Desc.,SEMINAR II,2,3,NECLA BİRGÜL İYİSON,TT,12, ,KP 08 | KP 08,,,,"                          "
+BIO 475.01,Desc.,PLANT MOLECULAR BIOLOGY & GENETICS,3,6,STEVEN FOOTITT,TThTh,334, ,KP 09 | KP 09 | KP 09,31.05.2023,2,,"                          "
+BIO 48B.01,Desc.,SP.TP. BIOINFORMATICS,3,6,FATİH YANAR,TTW,786, ,KUZEY8LAB | KUZEY8LAB | KUZEY8LAB,02.06.2023,3,,"                          "
+BIO 48F.01,Desc.,SP.TP.DRUG DESIGN,3,6,NECLA BİRGÜL İYİSON,MMW,121, ,KP 08 | KP 08 | KP 08,31.05.2023,1,,"                          "
+BIO 492.01,Desc.,SPECIAL PROJECT II,3,6,NECLA BİRGÜL İYİSON,,, ,,02.06.2023,2,,"                          "
+BIO 492.02,Desc.,SPECIAL PROJECT II,3,6,ŞÜKRÜ ANIL DOĞAN,,, ,,02.06.2023,2,,"                          "
+BIO 492.03,Desc.,SPECIAL PROJECT II,3,6,N.C.TOLGA EMRE,,, ,,02.06.2023,2,,"                          "
+BIO 492.04,Desc.,SPECIAL PROJECT II,3,6,BATU ERMAN,,, ,,02.06.2023,2,,"                          "
+BIO 492.05,Desc.,SPECIAL PROJECT II,3,6,STEVEN FOOTITT,,, ,,02.06.2023,2,,"                          "
+BIO 492.06,Desc.,SPECIAL PROJECT II,3,6,ARZU ÇELİK,,, ,,02.06.2023,2,,"                          "
+BIO 492.07,Desc.,SPECIAL PROJECT II,3,6,STEFAN FUSS,,, ,,02.06.2023,2,,"                          "
+BIO 492.08,Desc.,SPECIAL PROJECT II,3,6,NESRİN ÖZÖREN,,, ,,02.06.2023,2,,"                          "
+BIO 492.09,Desc.,SPECIAL PROJECT II,3,6,ALİ RIZA UMUT ŞAHİN,,, ,,02.06.2023,2,,"                          "
+BIO 492.10,Desc.,SPECIAL PROJECT II,3,6,İBRAHİM YAMAN,,, ,,02.06.2023,2,,"                          "
+BIO 492.11,Desc.,SPECIAL PROJECT II,3,6,SEYFULLAH ENES KOTİL,,, ,,02.06.2023,2,,"                          "
+BIO 492.12,Desc.,SPECIAL PROJECT II,3,6,İBRAHİM KURT,,, ,,02.06.2023,2,,"                          "
+BIO 492.13,Desc.,SPECIAL PROJECT II,3,6,FATİH YANAR,,, ,,02.06.2023,2,,"                          "
+BIO 496.01,Desc.,SP.TP.INT.TO PROGRM.WITH PYTHON FOR BIO.,3,6,ERŞEN KAVAK,FFF,678, ,KP 314 | KP 314 | KP 314,06.06.2023,1,,"                          "
+BIO 496.02,Desc.,SP.TP.INT.TO PROGRM.WITH PYTHON FOR BIO.,3,6,SEYFULLAH ENES KOTİL,MMM,234, ,KP 314 | KP 314 | KP 314,06.06.2023,1,,"                          "
+BIO 520.01,Desc.,LAB. PROJECTS IN BIOLOGY,3,9,NECLA BİRGÜL İYİSON,,, ,,,,,"                          "
+BIO 520.02,Desc.,LAB. PROJECTS IN BIOLOGY,3,9,ŞÜKRÜ ANIL DOĞAN,,, ,,,,,"                          "
+BIO 520.03,Desc.,LAB. PROJECTS IN BIOLOGY,3,9,N.C.TOLGA EMRE,,, ,,,,,"                          "
+BIO 520.04,Desc.,LAB. PROJECTS IN BIOLOGY,3,9,BATU ERMAN,,, ,,,,,"                          "
+BIO 520.05,Desc.,LAB. PROJECTS IN BIOLOGY,3,9,STEVEN FOOTITT,,, ,,,,,"                          "
+BIO 520.06,Desc.,LAB. PROJECTS IN BIOLOGY,3,9,ARZU ÇELİK,,, ,,,,,"                          "
+BIO 520.07,Desc.,LAB. PROJECTS IN BIOLOGY,3,9,STEFAN FUSS,,, ,,,,,"                          "
+BIO 520.08,Desc.,LAB. PROJECTS IN BIOLOGY,3,9,NESRİN ÖZÖREN,,, ,,,,,"                          "
+BIO 520.09,Desc.,LAB. PROJECTS IN BIOLOGY,3,9,ALİ RIZA UMUT ŞAHİN,,, ,,,,,"                          "
+BIO 520.10,Desc.,LAB. PROJECTS IN BIOLOGY,3,9,İBRAHİM YAMAN,,, ,,,,,"                          "
+BIO 560.01,Desc.,NEUROBIOLOGY,3,7,STEFAN FUSS,,, ,,01.06.2023,1,,"                          "
+BIO 587.01,Desc.,SP.TP. CELL CYCLE & APOPTOSIS,3,7,NESRİN ÖZÖREN,,, ,,07.06.2023,2,,"                          "
+BIO 58A.01,Desc.,SP.TP.MOLECULAR TOXICOLOGY,3,7,İBRAHİM YAMAN,,, ,,07.06.2023,1,,"                          "
+BIO 58C.01,Desc.,SP.TP.MITOCHONDRIAL BIOLOGY&MEDICINE,3,7,ŞÜKRÜ ANIL DOĞAN,,, ,,04.06.2023,3,,"                          "
+BIO 602.01,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,7,NECLA BİRGÜL İYİSON,,, ,,,,,"                          "
+BIO 602.02,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,7,ŞÜKRÜ ANIL DOĞAN,,, ,,,,,"                          "
+BIO 602.03,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,7,N.C.TOLGA EMRE,,, ,,,,,"                          "
+BIO 602.04,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,7,BATU ERMAN,,, ,,,,,"                          "
+BIO 602.05,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,7,STEVEN FOOTITT,,, ,,,,,"                          "
+BIO 602.06,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,7,ARZU ÇELİK,,, ,,,,,"                          "
+BIO 602.07,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,7,STEFAN FUSS,,, ,,,,,"                          "
+BIO 602.08,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,7,NESRİN ÖZÖREN,,, ,,,,,"                          "
+BIO 602.09,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,7,ALİ RIZA UMUT ŞAHİN,,, ,,,,,"                          "
+BIO 602.10,Desc.,ADV. TECHNIQUES IN HUMAN GENETICS,3,7,İBRAHİM YAMAN,,, ,,,,,"                          "
+BIO 688.01,Desc.,ADV.TP.DEORPHANIZATION OF ORPHAN GPCRS,3,7,NECLA BİRGÜL İYİSON,,, ,,24.05.2023,2,,"                          "
+BIO 690.01,Desc.,M.S.THESIS,0,60,NECLA BİRGÜL İYİSON,,, ,,,,,"                          "
+BIO 690.02,Desc.,M.S.THESIS,0,60,ŞÜKRÜ ANIL DOĞAN,,, ,,,,,"                          "
+BIO 690.03,Desc.,M.S.THESIS,0,60,BATU ERMAN,,, ,,,,,"                          "
+BIO 690.04,Desc.,M.S.THESIS,0,60,STEVEN FOOTITT,,, ,,,,,"                          "
+BIO 690.05,Desc.,M.S.THESIS,0,60,ARZU ÇELİK,,, ,,,,,"                          "
+BIO 690.06,Desc.,M.S.THESIS,0,60,STEFAN FUSS,,, ,,,,,"                          "
+BIO 690.07,Desc.,M.S.THESIS,0,60,NESRİN ÖZÖREN,,, ,,,,,"                          "
+BIO 690.08,Desc.,M.S.THESIS,0,60,İBRAHİM YAMAN,,, ,,,,,"                          "
+BIO 700.01,Desc.,GRADUATE SEMINAR,0,2,BATU ERMAN,,, ,,,,,"                          "
+BIO 790.01,Desc.,Ph.D.THESIS,0,120,NECLA BİRGÜL İYİSON,,, ,,,,,"                          "
+BIO 790.02,Desc.,Ph.D.THESIS,0,120,BATU ERMAN,,, ,,,,,"                          "
+BIO 790.03,Desc.,Ph.D.THESIS,0,120,N.C.TOLGA EMRE,,, ,,,,,"                          "
+BIO 790.04,Desc.,Ph.D.THESIS,0,120,NESRİN ÖZÖREN,,, ,,,,,"                          "
+BIO 790.05,Desc.,Ph.D.THESIS,0,120,ALİ RIZA UMUT ŞAHİN,,, ,,,,,"                          "
+BIO 790.06,Desc.,Ph.D.THESIS,0,120,İBRAHİM YAMAN,,, ,,,,,"                          "

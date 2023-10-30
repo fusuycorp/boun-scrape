@@ -1,0 +1,50 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHE 110.01,Desc.,INTRODUCTION TO CHEMICAL&BIOSYSTEMS ENG.,3,5,SEZEN SOYER UZUN,WWTh,128,Online,ONLINE | ONLINE | ONLINE,17.01.2022,2,,"                          "
+CHE 201.01,Desc.,PHYSICOCHEMICAL SYSTEMS I,3,5,BETÜL URALCAN,MMTFF,78267,Online/Classroom,ONLINE | ONLINE | ONLINE | NH 305 | NH 305,15.01.2022,3,,"                          "
+CHE 203.01,Desc.,PHYSICOCHEMICAL SYSTEMS LABORATORY,1,2,BETÜL URALCAN,ThTh,12,Classroom,KB 401 | KB 401,13.01.2022,2,,"                          "
+CHE 203.02,Desc.,PHYSICOCHEMICAL SYSTEMS LABORATORY,1,2,BETÜL URALCAN,ThTh,78,Classroom,KB Z01 | KB Z01,13.01.2022,2,,"                          "
+CHE 211.01,Desc.,MASS & ENERGY BALANCES,4,5,A.KEREM UĞUZ,MMWWThTh,565656,Online,ONLINE | ONLINE | ONLINE | ONLINE | ONLINE | ONLINE,11.01.2022,1,,"                          "
+CHE 321.01,Desc.,CHEM. ENGINEERING THERMODYNAMICS,4,7,TÜRKAN HALİLOĞLU,MMWWTh,78345,Online/Classroom,EF 106 | EF 106 | ONLINE | ONLINE | ONLINE,20.01.2022,2,,"                          "
+CHE 333.01,Desc.,HEAT TRANSFER,3,5,RAMAZAN YILDIRIM,MMTTh,2334,Online/Classroom,EF 206 | EF 206 | ONLINE | ONLINE,12.01.2022,3,,"                          "
+CHE 353.01,Desc.,CHEMICAL & BIOCHEMICAL PROCESSES,3,5,RAMAZAN YILDIRIM,FFF,567,Online,ONLINE | ONLINE | ONLINE,11.01.2022,3,,"                          "
+CHE 383.01,Desc.,PROBABILITY&STATISTICS IN CHEM.ENGR.APPL,3,5,BURAK ALAKENT,TTWTh,4526,Online,ONLINE | ONLINE | ONLINE | ONLINE,10.01.2022,3,,"                          "
+CHE 401.01,Desc.,CHE.ENGINEERING&BIOTECHNOLOGY LABORATORY,3,6,BURAK ALAKENT,Th,8,Online,ONLINE,17.01.2022,2,,"                          "
+,,LAB,,,BURAK ALAKENT,FFFF,1234,,,,0,,"                          "
+CHE 401.02,Desc.,CHE.ENGINEERING&BIOTECHNOLOGY LABORATORY,3,6,BURAK ALAKENT,Th,7,Online,ONLINE,17.01.2022,2,,"                          "
+,,LAB,,,BURAK ALAKENT,FFFF,5678,,,,0,,"                          "
+CHE 427.01,Desc.,BIOREACTION ENGINEERING,3,5,ZEYNEP İLSEN ÖNSAN,MMM,678,Online,ONLINE | ONLINE | ONLINE,10.01.2022,2,,"                          "
+CHE 433.01,Desc.,DESIGN OF CHEMICAL PROCESSING UNITS,3,8,AHMET KERİM AVCI,TTThTh,7834,Online,ONLINE | ONLINE | ONLINE | ONLINE,12.01.2022,2,,"                          "
+CHE 444.01,Desc.,FUEL CELLS,3,5,DAMLA EROĞLU PALA,MMT,233,Online/Classroom,KB 433 | KB 433 | ONLINE,20.01.2022,1,,"                          "
+CHE 465.01,Desc.,OPERATIONAL&ENVIRONMENTAL SAFETY OF CHEMICAL PLANTS,3,5,ÖNER HORTAÇSU,TTW,453,Online/Classroom,ONLINE | ONLINE | KB 433,08.01.2022,2,,"                          "
+CHE 475.01,Desc.,PROCESS DYNAMICS & CONTROL,3,6,DAMLA EROĞLU PALA,TTWW,1212,Online/Classroom,ONLINE | ONLINE | KB 433 | KB 433,21.01.2022,3,,"                          "
+CHE 477.01,Desc.,PROCESS OPTIMIZATION,3,5,UĞUR AKMAN,MWW,178,Classroom,KB 433 | KB 433 | KB 433,19.01.2022,3,,"                          "
+CHE 480.01,Desc.,SP.TP.THERMAL ENGINEERING,3,5,MAHİR ARIKOL,ThThTh,567,Online,ONLINE | ONLINE | ONLINE,07.01.2022,2,,"                          "
+CHE 492.01,Desc.,PROJECT,4,8,BETÜL URALCAN,,,Online,,07.01.2022,2,,"                          "
+CHE 555.01,Desc.,APPLIED MATH.&MODELING FOR CHE.ENG.I,3,8,UĞUR AKMAN,TTWW,7834,Online/Classroom,ONLINE | ONLINE | KB 401 | KB 401,15.01.2022,3,,"                          "
+CHE 579.01,Desc.,GRADUATE SEMINAR,0,2,BURAK ALAKENT,,,Online,,,,,"                          "
+CHE 631.01,Desc.,ADVANCED FLUID MECHANICS,3,10,A.KEREM UĞUZ,MTT,212,Online/Classroom,KB 401 | ONLINE | ONLINE,08.01.2022,2,,"                          "
+CHE 637.01,Desc.,ADVANCED MASS TRANSFER,3,10,KUTLU ÜLGEN,WWW,567,Classroom,KB 401 | KB 401 | KB 401,07.01.2022,1,,"                          "
+CHE 690.01,Desc.,M.S. THESIS,0,60,UĞUR AKMAN,,,Online,,,,,"                          "
+CHE 690.02,Desc.,M.S. THESIS,0,60,AHMET ERHAN AKSOYLU,,,Online,,,,,"                          "
+CHE 690.03,Desc.,M.S. THESIS,0,60,BURAK ALAKENT,,,Online,,,,,"                          "
+CHE 690.04,Desc.,M.S. THESIS,0,60,AHMET KERİM AVCI,,,Online,,,,,"                          "
+CHE 690.06,Desc.,M.S. THESIS,0,60,NAZAR İLERİ ERCAN,,,Online,,,,,"                          "
+CHE 690.07,Desc.,M.S. THESIS,0,60,TÜRKAN HALİLOĞLU,,,Online,,,,,"                          "
+CHE 690.09,Desc.,M.S. THESIS,0,60,SEZEN SOYER UZUN,,,Online,,,,,"                          "
+CHE 690.11,Desc.,M.S. THESIS,0,60,A.KEREM UĞUZ,,,Online,,,,,"                          "
+CHE 690.12,Desc.,M.S. THESIS,0,60,KUTLU ÜLGEN,,,Online,,,,,"                          "
+CHE 690.13,Desc.,M.S. THESIS,0,60,RAMAZAN YILDIRIM,,,Online,,,,,"                          "
+CHE 690.14,Desc.,M.S. THESIS,0,60,DAMLA EROĞLU PALA,,,Online,,,,,"                          "
+CHE 690.16,Desc.,M.S. THESIS,0,60,BETÜL URALCAN,,,Online,,,,,"                          "
+CHE 700.01,Desc.,GRADUATE SEMINAR,0,2,BURAK ALAKENT,,,Online,,,,,"                          "
+CHE 790.01,Desc.,Ph.D. THESIS,0,120,UĞUR AKMAN,,,Online,,,,,"                          "
+CHE 790.02,Desc.,Ph.D. THESIS,0,120,AHMET ERHAN AKSOYLU,,,Online,,,,,"                          "
+CHE 790.03,Desc.,Ph.D. THESIS,0,120,BURAK ALAKENT,,,Online,,,,,"                          "
+CHE 790.04,Desc.,Ph.D. THESIS,0,120,AHMET KERİM AVCI,,,Online,,,,,"                          "
+CHE 790.06,Desc.,Ph.D. THESIS,0,120,NAZAR İLERİ ERCAN,,,Online,,,,,"                          "
+CHE 790.07,Desc.,Ph.D. THESIS,0,120,TÜRKAN HALİLOĞLU,,,Online,,,,,"                          "
+CHE 790.09,Desc.,Ph.D. THESIS,0,120,SEZEN SOYER UZUN,,,Online,,,,,"                          "
+CHE 790.11,Desc.,Ph.D. THESIS,0,120,A.KEREM UĞUZ,,,Online,,,,,"                          "
+CHE 790.12,Desc.,Ph.D. THESIS,0,120,KUTLU ÜLGEN,,,Online,,,,,"                          "
+CHE 790.13,Desc.,Ph.D. THESIS,0,120,RAMAZAN YILDIRIM,,,Online,,,,,"                          "
+CHE 790.14,Desc.,Ph.D. THESIS,0,120,DAMLA EROĞLU PALA,,,Online,,,,,"                          "

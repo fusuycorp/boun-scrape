@@ -1,0 +1,28 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EQE 400.01,Desc.,INTRODUCTION TO EARTHQAKE ENGINEERING ,3,5,KARİN ŞEŞETYAN,FFF,234,Online,,,,,"                          "
+EQE 520.01,Desc.,STRONG GROUND MOTION,4,10,GÜLÜM TANIRCAN,WWWW,5678,Online,,,,,"                          "
+EQE 530.01,Desc.,EARTHQUAKE RESPONSE ANAL.OF STRUCTURES I,3,8,SİNAN AKKAR,WWW,123,Online,,,,,"                          "
+EQE 540.01,Desc.,GEOTECHNICAL EARTHQUAKE ENGINEERING,3,8,AYŞE EDİNÇLİLER,ThThTh,678,Online,,,,,"                          "
+EQE 545.01,Desc.,MATHEMATICAL METHODS IN EARTHQUAKE ENG.,3,8,UFUK HANCILAR,TTT,678,Online,,,,,"                          "
+EQE 579.01,Desc.,GRADUATE SEMINAR,0,3,UFUK HANCILAR,,,Online,,,,,"                          "
+EQE 586.01,Desc.,SEL.TP.NON LINEAR SEISMIC ANL.OF REIN.CO,3,7,GÖKTÜRK ÖNEM,FFF,567,Online,,,,,"                          "
+EQE 677.01,Desc.,SIMULATION OF STRONG GROUND MOTION,3,7,ESER ÇAKTI,MMM,678,Online,,,,,"                          "
+EQE 681.01,Desc.,SP.TP.EARTHQUAKE RISK ASSESSMENT,3,7,UFUK HANCILAR,TTT,123,Online,,,,,"                          "
+EQE 682.01,Desc.,SP.TP.DSGN OF STR.WITH PASSIVE&CONT.SYS.,3,7,MUSTAFA ÖZDER ERDİK,MMM,234,Online,,,,,"                          "
+EQE 683.01,Desc.,SP.TOP.RANDOM VIB.WITH APP.IN WIND&EARTH,3,7,ERDAL ŞAFAK,ThThTh,234,Online,,,,,"                          "
+EQE 684.01,Desc.,SP.TP.APPLIED SEISMOLOGY,3,7,ALİ PINAR,FFF,567,Online,,,,,"                          "
+EQE 686.01,Desc.,SP.TP.DEFORMAT.BASED SEISM. ASSESS.&DES.,3,6,MEHMET NURAY AYDINOĞLU,TTT,678,Online,,,,,"                          "
+EQE 690.04,Desc.,M.S.THESIS,0,60,SİNAN AKKAR,,,Online,,,,,"                          "
+EQE 690.05,Desc.,M.S.THESIS,0,60,ESER ÇAKTI,,,Online,,,,,"                          "
+EQE 690.06,Desc.,M.S.THESIS,0,60,AYŞE EDİNÇLİLER,,,Online,,,,,"                          "
+EQE 690.08,Desc.,M.S.THESIS,0,60,GÜLÜM TANIRCAN,,,Online,,,,,"                          "
+EQE 690.09,Desc.,M.S.THESIS,0,60,UFUK HANCILAR,,,Online,,,,,"                          "
+EQE 690.10,Desc.,M.S.THESIS,0,60,KARİN ŞEŞETYAN,,,Online,,,,,"                          "
+EQE 700.01,Desc.,GRADUATE SEMINAR,0,,UFUK HANCILAR,,,Online,,,,,"                          "
+EQE 790.01,Desc.,Ph.D. THESIS,0,120,ERDAL ŞAFAK,,,Online,,,,,"                          "
+EQE 790.03,Desc.,Ph.D. THESIS,0,120,ALİ PINAR,,,Online,,,,,"                          "
+EQE 790.04,Desc.,Ph.D. THESIS,0,120,SİNAN AKKAR,,,Online,,,,,"                          "
+EQE 790.05,Desc.,Ph.D. THESIS,0,120,ESER ÇAKTI,,,Online,,,,,"                          "
+EQE 790.06,Desc.,Ph.D. THESIS,0,120,AYŞE EDİNÇLİLER,,,Online,,,,,"                          "
+EQE 790.08,Desc.,Ph.D. THESIS,0,120,GÜLÜM TANIRCAN,,,Online,,,,,"                          "
+EQE 790.09,Desc.,Ph.D. THESIS,0,120,UFUK HANCILAR,,,Online,,,,,"                          "

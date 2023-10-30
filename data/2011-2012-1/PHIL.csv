@@ -1,0 +1,28 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY ,3,7,YILDIZ SİLİER,WWF,235,,YD 204 | YD 204 | M 2200,14.01.2012,1,PHIL,"        PSY; LING; GUID; LAW                  "
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY ,3,7,MURAT BAÇ,TThTh,545,,NH 105 | NH 401 | NH 401,14.01.2012,1,"PSY,TR","        PHIL                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,5,JOHANNES FRITSCHE,TTF,786,,TB 310 | TB 310 | TB 310,14.01.2012,2,"LL,TKL","        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,3,10,KARANFİL SOYHUN,TThTh,878,,NH 105 | NH 401 | NH 401,12.01.2012,2,PHIL,"                          "
+PHIL131.02,Desc.,LOGIC I,3,10,İLHAN İNAN,TThTh,778,,YD 206 | NH 105 | NH 105,12.01.2012,2,"MATH,MEDU","                          "
+PHIL213.01,Desc.,HISTORY OF PHILOSOPHY I,3,6,CHRYSSI SIDIROPOULOU,MMW,347,,NH 202 | NH 202 | TB 310,05.01.2012,3,,"        PHIL                  "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,LUCAS THORPE,TThTh,623,,YD 206 | HKD101 | HKD101,09.01.2012,2,,"        PHIL                  "
+PHIL313.01,Desc.,HISTORY OF PHILOSOPHY III,3,6,STEPHEN VOSS,MWW,412,,TB 310 | TB 240 | TB 240,11.01.2012,3,,"        PHIL                  "
+PHIL341.01,Desc.,ETHICS,3,6,JOHANNES FRITSCHE,WFF,445,,TB 310 | TB 310 | TB 310,16.01.2012,2,,"        PHIL                  "
+PHIL354.01,Desc.,SOCIAL & POLITICAL PHILOSOPHY,3,6,YILDIZ SİLİER,MMW,235,,NH 201 | NH 201 | M 2171,11.01.2012,1,,"                          "
+PHIL481.01,Desc.,SELECTED TOPICS IN LOGIC,3,6,ALİ KARATAY,TTF,786,,NH 305 | NH 305 | M 1181,12.01.2012,3,,"                          "
+PHIL48D.01,Desc.,SL.TP.:PHILOSOPHY OF CURIOSITY,3,5,İLHAN İNAN,TThTh,623,,NH 104 | NH 001 | NH 001,09.01.2012,3,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,MURAT BAÇ,,, ,,13.01.2012,2,,"                          "
+PHIL49K.01,Desc.,SELECTED TOPICS IN ETHICS,3,6,KARANFİL SOYHUN,TTTh,455,,TB 240 | TB 240 | NH 201,07.01.2012,2,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,JOHANNES FRITSCHE,TBA,,,,,0,,"                          "
+PHIL580.01,Desc.,SP.TOP.:ARISTOTLE,4,10,CHRYSSI SIDIROPOULOU,WWW,345,,,10.01.2012,2,,"                          "
+PHIL585.01,Desc.,SP.TOP.:CAUSATION,4,10,BERNA KILINÇ,ThThF,565,,,12.01.2012,2,,"                          "
+PHIL588.01,Desc.,SP.TP.:BASIC METAPHYSICAL CONCEPTS,4,10,PINAR CANEVİ,WWW,678,,,05.01.2012,3,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,JOHANNES FRITSCHE,TBA,,,,10.01.2012,2,,"                          "
+PHIL58B.01,Desc.,SP.TP.:CONTEMPORARY KANTIAN EPISTEMOLOGY,4,5,LUCAS THORPE,TTTh,344,,,16.01.2012,1,,"                          "
+PHIL58R.01,Desc.,SELECTED TOP. IN ETHICS,4,10,KARANFİL SOYHUN,TBA,,,,04.01.2012,3,,"                          "
+PHIL58X.01,Desc.,SP.TP.LOGIC FOR PHILOSOPHERS,4,10,ALİ KARATAY,TBA,,,,05.01.2012,1,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,MURAT BAÇ,TBA,,,,14.01.2012,3,,"                          "
+PHIL652.01,Desc.,PHILOSOPHY OF MIND,4,10,STEPHEN VOSS,MMM,678,,,07.01.2012,1,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,BERNA KILINÇ,TBA,,,,05.01.2012,3,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,BERNA KILINÇ,TBA,,,,,0,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,BERNA KILINÇ,TBA,,,,,0,,"                          "

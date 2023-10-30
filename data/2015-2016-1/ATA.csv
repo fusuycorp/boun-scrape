@@ -1,0 +1,86 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ATA 507.01,Desc.,HISTORIOGRAPHY,3,9,CENGİZ KIRLI,TTT,678,,ATA SEM | ATA SEM | ATA SEM,,0,,"                          "
+ATA 508.01,Desc.,ACAD. WRITING FOR MODERN HIST.STUDIES-I,0,6,TRACY LORD,TBA,,,,,0,,"                          "
+ATA 508.02,Desc.,ACAD. WRITING FOR MODERN HIST.STUDIES-I,0,6,TRACY LORD,TBA,,,,,0,,"                          "
+ATA 524.01,Desc.,LEGAL REFORMS IN TURKISH HISTORY,3,7,ZİYA UMUT TÜREM,ThThTh,234,,ATA SEM | ATA SEM | ATA SEM,,0,,"                          "
+ATA 531.01,Desc.,ECONOMIC&SOCIAL HISTORY OF TURKEY,3,7,ŞEVKET OSMAN PAMUK,TTT,234,,NBZ 10 | NBZ 10 | NBZ 10,,0,,"                          "
+ATA 542.01,Desc.,SOC.HIST OF ART&LIT.IN THE REPUBLIC. ERA,3,7,DUYGU KÖKSAL,MMM,678,,ATA SEM | ATA SEM | ATA SEM,,0,,"                          "
+ATA 551.01,Desc.,FOREIGN POLICY OF THE REPUBLIC,3,7,AYDIN BABUNA,MMM,678,,ATA SEM | ATA SEM | ATA SEM,,0,,"                          "
+ATA 571.01,Desc.,GUIDED RESEARCH IN TURKISH HISTORY I,3,6,DUYGU KÖKSAL,TBA,,,,,0,,"                          "
+ATA 571.02,Desc.,GUIDED RESEARCH IN TURKISH HISTORY I,3,6,CENGİZ KIRLI,TBA,,,,,0,,"                          "
+ATA 571.03,Desc.,GUIDED RESEARCH IN TURKISH HISTORY I,3,6,ZİYA UMUT TÜREM,TBA,,,,,0,,"                          "
+ATA 574.01,Desc.,GUIDED RESEARCH IN WORLD HISTORY-I,3,6,ÇAĞLAR KEYDER,FFF,234,,,,0,,"                          "
+ATA 585.01,Desc.,SEL.TOP.IN ECONOMY AND SOCIETY IN TURKEY,3,7,ASIM KARAÖMERLİOĞLU,ThThTh,678,,ATA SEM | ATA SEM | ATA SEM,,0,,"                          "
+ATA 594.01,Desc.,TOPICS IN THE HIST.OF THE MODERN WORLD,3,7,NADİR ÖZBEK,WWW,234,,ATA SEM | ATA SEM | ATA SEM,,0,,"                          "
+ATA 678.01,Desc.,GUIDED RESEARCH IN PHD,3,9,ZAFER TOPRAK,FFF,234,,,,0,,"                          "
+ATA 679.01,Desc.,DIRECTED READINGS IN HISTORY&THEORY,3,9,BERNA YAZICI,TBA,,,,,0,,"                          "
+ATA 686.01,Desc.,SPECIAL TOPICS IN MODERN TURKISH HISTORY,3,7,AYŞE BUĞRA,WWW,234,,ATA SEM | ATA SEM | ATA SEM,,0,,"                          "
+ATA 68B.01,Desc.,SP.TP.IN MODERN TURKISH HISTORY,3,7,BERNA YAZICI,WWW,678,,ATA SEM | ATA SEM | ATA SEM,,0,,"                          "
+ATA 690.01,Desc.,MASTER THESIS,0,60,CENGİZ KIRLI,TBA,,,,,0,,"                          "
+ATA 690.02,Desc.,MASTER THESIS,0,60,ZİYA UMUT TÜREM,TBA,,,,,0,,"                          "
+ATA 690.03,Desc.,MASTER THESIS,0,60,ŞEVKET OSMAN PAMUK,TBA,,,,,0,,"                          "
+ATA 690.04,Desc.,MASTER THESIS,0,60,DUYGU KÖKSAL,TBA,,,,,0,,"                          "
+ATA 690.05,Desc.,MASTER THESIS,0,60,AYDIN BABUNA,TBA,,,,,0,,"                          "
+ATA 690.06,Desc.,MASTER THESIS,0,60,ASIM KARAÖMERLİOĞLU,TBA,,,,,0,,"                          "
+ATA 690.07,Desc.,MASTER THESIS,0,60,NADİR ÖZBEK,TBA,,,,,0,,"                          "
+ATA 690.08,Desc.,MASTER THESIS,0,60,BERNA YAZICI,TBA,,,,,0,,"                          "
+ATA 690.09,Desc.,MASTER THESIS,0,60,AYŞE BUĞRA,TBA,,,,,0,,"                          "
+ATA 690.10,Desc.,MASTER THESIS,0,60,ZAFER TOPRAK,TBA,,,,,0,,"                          "
+ATA 690.11,Desc.,MASTER THESIS,0,60,ÇAĞLAR KEYDER,TBA,,,,,0,,"                          "
+ATA 790.01,Desc.,PH.D THESIS,0,120,CENGİZ KIRLI,TBA,,,,,0,,"                          "
+ATA 790.02,Desc.,PH.D THESIS,0,30,ZİYA UMUT TÜREM,TBA,,,,,0,,"                          "
+ATA 790.03,Desc.,PH.D THESIS,0,120,ŞEVKET OSMAN PAMUK,TBA,,,,,0,,"                          "
+ATA 790.04,Desc.,PH.D THESIS,0,120,DUYGU KÖKSAL,TBA,,,,,0,,"                          "
+ATA 790.05,Desc.,PH.D THESIS,0,120,AYDIN BABUNA,TBA,,,,,0,,"                          "
+ATA 790.06,Desc.,PH.D THESIS,0,120,ASIM KARAÖMERLİOĞLU,TBA,,,,,0,,"                          "
+ATA 790.07,Desc.,PH.D THESIS,0,120,NADİR ÖZBEK,TBA,,,,,0,,"                          "
+ATA 790.08,Desc.,PH.D THESIS,0,120,BERNA YAZICI,TBA,,,,,0,,"                          "
+ATA 790.09,Desc.,PH.D THESIS,0,120,AYŞE BUĞRA,TBA,,,,,0,,"                          "
+ATA 790.10,Desc.,PH.D THESIS,0,120,ZAFER TOPRAK,TBA,,,,,0,,"                          "
+ATA 790.11,Desc.,PH.D THESIS,0,120,ÇAĞLAR KEYDER,TBA,,,,,0,,"                          "
+ATA 790.12,Desc.,PH.D THESIS,0,120,MELTEM AHISKA,TBA,,,,,0,,"                          "
+HTR 311.01,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,SEVTAP DEMİRCİ,TT,56,,NH 302 | NH 302,30.12.2015,3,,"                          "
+HTR 311.02,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,SEVTAP DEMİRCİ,ThTh,56,,GYD 304 | GYD 304,30.12.2015,3,,"                          "
+HTR 311.03,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,UĞUR SİPAHİOĞLU,WW,23,,M 1200 | M 1200,30.12.2015,3,,"                          "
+HTR 311.04,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,UĞUR SİPAHİOĞLU,WW,45,,M 1200 | M 1200,30.12.2015,3,,"                          "
+HTR 311.05,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,UĞUR SİPAHİOĞLU,ThTh,12,,GYD 304 | GYD 304,30.12.2015,3,,"                          "
+HTR 311.06,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,UĞUR SİPAHİOĞLU,ThTh,34,,GYD 304 | GYD 304,30.12.2015,3,,"                          "
+HTR 311.07,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,AYŞE GÜN SOYSAL,TT,23,,NH 402 | NH 402,30.12.2015,3,,"                          "
+HTR 311.08,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,AYŞE GÜN SOYSAL,TT,45,,NH 402 | NH 402,30.12.2015,3,,"                          "
+HTR 311.09,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,AYŞE GÜN SOYSAL,WW,23,,ETA 2 | ETA 2,30.12.2015,3,,"                          "
+HTR 311.10,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,AYŞE GÜN SOYSAL,WW,45,,ETA 2 | ETA 2,30.12.2015,3,,"                          "
+HTR 311.11,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,EMİNE TİRALİ,MM,34,,M 1181 | M 1181,30.12.2015,3,,"                          "
+HTR 311.12,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,EMİNE TİRALİ,MM,67,,M 2170 | M 2170,30.12.2015,3,,"                          "
+HTR 311.13,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,EMİNE TİRALİ,WW,34,,ETA 3 | ETA 3,30.12.2015,3,,"                          "
+HTR 311.14,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,EMİNE TİRALİ,WW,78,,NH 102 | NH 102,30.12.2015,3,,"                          "
+HTR 311.15,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,RABİA TAYLAN YARARCAN,MM,12,,M 1171 | M 1171,30.12.2015,3,,"                          "
+HTR 311.16,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,RABİA TAYLAN YARARCAN,MM,34,,M 1171 | M 1171,30.12.2015,3,,"                          "
+HTR 311.17,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,RABİA TAYLAN YARARCAN,TT,12,,NH 302 | NH 302,30.12.2015,3,,"                          "
+HTR 311.18,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,RABİA TAYLAN YARARCAN,TT,34,,NH 302 | NH 302,30.12.2015,3,,"                          "
+HTR 311.23,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,ZİYA UMUT TÜREM,MM,34,,YD 02 | YD 02,30.12.2015,3,,"                          "
+HTR 311.24,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,CENGİZ KIRLI,MM,67,,YD 02 | YD 02,30.12.2015,3,,"                          "
+HTR 311.25,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,ASIM KARAÖMERLİOĞLU,MM,45,,M 1170 | M 1170,30.12.2015,3,,"                          "
+HTR 311.26,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,ZİYA UMUT TÜREM,MM,67,,M 1170 | M 1170,30.12.2015,3,,"                          "
+HTR 311.28,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,NADİR ÖZBEK,TT,34,,ETA 1 | ETA 1,30.12.2015,3,,"                          "
+HTR 311.30,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,NADİR ÖZBEK,TT,56,,ETA 1 | ETA 1,30.12.2015,3,,"                          "
+HTR 311.31,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,NADİR ÖZBEK,TT,78,,YD 02 | YD 02,30.12.2015,3,,"                          "
+HTR 311.32,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,AYŞE BUĞRA,TT,56,,YD 02 | YD 02,30.12.2015,3,,"                          "
+HTR 311.33,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,BERNA YAZICI,TT,56,,KPARK5 | KPARK5,30.12.2015,3,,"                          "
+HTR 311.34,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,BERNA YAZICI,TT,78,,KPARK5 | KPARK5,30.12.2015,3,,"                          "
+HTR 311.35,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,BERNA YAZICI,WW,12,,NH 404 | NH 404,30.12.2015,3,,"                          "
+HTR 311.36,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,BERNA YAZICI,WW,34,,NH 404 | NH 404,30.12.2015,3,,"                          "
+HTR 311.37,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,ASIM KARAÖMERLİOĞLU,WW,23,,YD 101 | YD 101,30.12.2015,3,,"                          "
+HTR 311.38,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,CENGİZ KIRLI,WW,45,,YD 101 | YD 101,30.12.2015,3,,"                          "
+HTR 311.39,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,ASIM KARAÖMERLİOĞLU,WW,56,,NH 402 | NH 402,30.12.2015,3,,"                          "
+HTR 311.40,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,AYŞE BUĞRA,WW,78,,NH 402 | NH 402,30.12.2015,3,,"                          "
+HTR 311.41,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,AYDIN BABUNA,WW,45,,KPARK1 | KPARK1,30.12.2015,3,,"                          "
+HTR 311.42,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,DUYGU KÖKSAL,WW,67,,KPARK1 | KPARK1,30.12.2015,3,,"                          "
+HTR 311.43,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,CENGİZ KIRLI,ThTh,12,,KPARK7 | KPARK7,30.12.2015,3,,"                          "
+HTR 311.44,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,DUYGU KÖKSAL,ThTh,34,,KPARK7 | KPARK7,30.12.2015,3,,"                          "
+HTR 311.45,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,ZİYA UMUT TÜREM,ThTh,56,,HKD301 | HKD301,30.12.2015,3,,"                          "
+HTR 311.46,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,ZİYA UMUT TÜREM,ThTh,78,,HKD301 | HKD301,30.12.2015,3,,"                          "
+HTR 311.49,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,AYŞE BUĞRA,ThTh,56,,ETA 1 | ETA 1,30.12.2015,3,,"                          "
+HTR 311.50,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,DUYGU KÖKSAL,ThTh,78,,ETA 1 | ETA 1,30.12.2015,3,,"                          "
+HTR 311.51,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,AYDIN BABUNA,ThTh,56,,M 1170 | M 1170,30.12.2015,3,,"                          "
+HTR 311.52,Desc.,HISTORY OF THE TURKISH REPUBLIC I,2,3,AYDIN BABUNA,ThTh,78,,M 1170 | M 1170,30.12.2015,3,,"                          "
+HTR 405.01,Desc.,HIST.OF THE TURKISH REPUBLIC FOR F.S.I,2,3,SEVTAP DEMİRCİ,TT,78,,NH 302 | NH 302,31.12.2015,1,,"                          "

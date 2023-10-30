@@ -1,0 +1,58 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL106.01,Desc.,PHILOSOPHICAL TEXTS,3,8,YILDIZ SİLİER,ThFF,634, ,EF 206 | TB 310 | TB 310,04.06.2023,1,,"                          "
+PHIL112.01,Desc.,INTRODUCTION TO MODERN PHILOSOPHY,3,6,SUN DEMİRLİ,TTTh,566, ,TB 310 | TB 310 | NH 305,30.05.2023,1,"GUID,LL,TKL","                          "
+PHIL132.01,Desc.,LOGIC II,4,8,KARANFİL SOYHUN,TTThTh,3434, ,EF 106 | EF 106 | NH 302 | NH 302,06.06.2023,2,,"                          "
+PHIL214.01,Desc.,HISTORY OF PHILOSOPHY II,3,6,CHRYSSI SIDIROPOULOU,MFF,467, ,NH 201 | TB 310 | TB 310,02.06.2023,3,,"                          "
+PHIL222.01,Desc.,PHILOSOPHY OF SCIENCE,3,6,BERNA KILINÇ,TThTh,689, ,NH 202 | EF 116 | EF 116,26.05.2023,1,,"                          "
+PHIL314.01,Desc.,HISTORY OF PHILOSOPHY IV,3,6,LUCAS THORPE,WWTh,787, ,NH 202 | NH 202 | EF 206,30.05.2023,2,,"                          "
+PHIL354.01,Desc.,SOCIAL & POLITICAL PHILOSOPHY,3,6,YILDIZ SİLİER,ThThF,346, ,NH 303 | NH 303 | NH 102,,,,"                          "
+PHIL375.01,Desc.,PHILOSOPHY OF MIND,3,6,STEPHEN VOSS,MMW,343, ,NH 103 | NH 103 | NH 103,,,,"                          "
+PHIL382.01,Desc.,ONTOLOGY,3,7,NURBAY IRMAK,MMW,564, ,NH 401 | NH 401 | NH 103,07.06.2023,2,,"                          "
+PHIL48T.01,Desc.,SP.TP.PHILOSOPHICAL PERSPECTIVES ON GREEK TRAGEDY,3,6,M.KEMAL IŞIK,FFF,789, ,TB 240 | TB 240 | TB 240,01.06.2023,3,,"                          "
+PHIL48U.01,Desc.,SP.TP.THE EXISTENTIAL AFFECT:ANXIETY FROM EARLY GREEK TO LATE MODERNITIY,3,6,MAYA MANDALİNCİ,TTT,234, ,M 2170 | M 2170 | M 2170,25.05.2023,1,,"                          "
+PHIL490.01,Desc.,SP.TP.ANCIENT GREEK PHILOSOPHICAL TEXTS ,3,6,CHRYSSI SIDIROPOULOU,MMF,784, ,JF 507 | JF 507 | JF 507,,,,"                          "
+PHIL495.01,Desc.,SP.TP.IN EPISTOMOLOGY,3,6,BERNA KILINÇ,TTTh,786, ,NH 202 | NH 202 | NH 304,,,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,CHRYSSI SIDIROPOULOU,,, ,,,,,"                          "
+PHIL499.02,Desc.,INDEPENDENT STUDY,3,6,STEPHEN VOSS,,, ,,,,,"                          "
+PHIL499.03,Desc.,INDEPENDENT STUDY,3,6,BERNA KILINÇ,,, ,,,,,"                          "
+PHIL499.04,Desc.,INDEPENDENT STUDY,3,6,YILDIZ SİLİER,,, ,,,,,"                          "
+PHIL499.05,Desc.,INDEPENDENT STUDY,3,6,NURBAY IRMAK,,, ,,,,,"                          "
+PHIL499.06,Desc.,INDEPENDENT STUDY,3,6,SUN DEMİRLİ,,, ,,,,,"                          "
+PHIL499.07,Desc.,INDEPENDENT STUDY,3,6,LUCAS THORPE,,, ,,,,,"                          "
+PHIL499.08,Desc.,INDEPENDENT STUDY,3,6,BARRY STOCKER,,, ,,,,,"                          "
+PHIL49A.01,Desc.,SEL.TP.CONSEQUENTIALISM IN ETHICS,3,6,KARANFİL SOYHUN,WWTh,565, ,KP 04 | KP 04 | JF 507,03.06.2023,1,,"                          "
+PHIL49B.01,Desc.,SP.TP.19TH CENTURY EUROPEAN PHILOSOPHY,3,6,BARRY STOCKER,MWW,112, ,TB 415 | TB 415 | TB 415,03.06.2023,2,,"                          "
+PHIL515.01,Desc.,TOP. IN HIST. OF PHILOSOPHY,4,10,NEDİM NOMER,TTT,345, ,,05.06.2023,2,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,CHRYSSI SIDIROPOULOU,,, ,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,CHRYSSI SIDIROPOULOU,,, ,,,,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,CHRYSSI SIDIROPOULOU,,, ,,,,,"                          "
+PHIL590.02,Desc.,DIRECTED STUDY,4,10,STEPHEN VOSS,,, ,,,,,"                          "
+PHIL590.03,Desc.,DIRECTED STUDY,4,10,BERNA KILINÇ,,, ,,,,,"                          "
+PHIL590.04,Desc.,DIRECTED STUDY,4,10,YILDIZ SİLİER,,, ,,,,,"                          "
+PHIL590.05,Desc.,DIRECTED STUDY,4,10,NURBAY IRMAK,,, ,,,,,"                          "
+PHIL590.06,Desc.,DIRECTED STUDY,4,10,SUN DEMİRLİ,,, ,,,,,"                          "
+PHIL590.07,Desc.,DIRECTED STUDY,4,10,LUCAS THORPE,,, ,,,,,"                          "
+PHIL590.08,Desc.,DIRECTED STUDY,4,10,BARRY STOCKER,,, ,,,,,"                          "
+PHIL591.01,Desc.,SP.TP.KANT'S TRANSCENDENTAL DIALECTIC,4,10,LUCAS THORPE,ThThTh,8910, ,,,,,"                          "
+PHIL592.01,Desc.,SP.TP.SOCIAL EPISTEMOLOGY,4,10,BERNA KILINÇ,,, ,,,,,"                          "
+PHIL593.01,Desc.,SP.TP.METAPHYSICS OF PROPERTIES,4,10,SUN DEMİRLİ,WWW,456, ,,,,,"                          "
+PHIL595.01,Desc.,SP.TP.HUMANITY,4,10,STEPHEN VOSS,WWW,789, ,,,,,"                          "
+PHIL59C.01,Desc.,SP.TP.FOUCAULT,3,10,BARRY STOCKER,MMM,345, ,"TBA,TBA | TBA,TBA | TBA,TBA",07.06.2023,3,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,3,30,CHRYSSI SIDIROPOULOU,,, ,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,CHRYSSI SIDIROPOULOU,,, ,,,,,"                          "
+PHIL690.02,Desc.,MASTER THESIS,0,60,STEPHEN VOSS,,, ,,,,,"                          "
+PHIL690.03,Desc.,MASTER THESIS,0,60,BERNA KILINÇ,,, ,,,,,"                          "
+PHIL690.04,Desc.,MASTER THESIS,0,60,YILDIZ SİLİER,,, ,,,,,"                          "
+PHIL690.05,Desc.,MASTER THESIS,0,60,NURBAY IRMAK,,, ,,,,,"                          "
+PHIL690.06,Desc.,MASTER THESIS,0,60,SUN DEMİRLİ,,, ,,,,,"                          "
+PHIL690.07,Desc.,MASTER THESIS,0,60,LUCAS THORPE,,, ,,,,,"                          "
+PHIL690.08,Desc.,MASTER THESIS,0,60,BARRY STOCKER,,, ,,,,,"                          "
+PHIL700.01,Desc.,GRADUATE SEMINAR,0,2,CHRYSSI SIDIROPOULOU,,, ,,,,,"                          "
+PHIL790.01,Desc.,DOCTORAL DISSERTATION,0,120,CHRYSSI SIDIROPOULOU,,, ,,,,,"                          "
+PHIL790.02,Desc.,DOCTORAL DISSERTATION,0,120,STEPHEN VOSS,,, ,,,,,"                          "
+PHIL790.03,Desc.,DOCTORAL DISSERTATION,0,120,BERNA KILINÇ,,, ,,,,,"                          "
+PHIL790.04,Desc.,DOCTORAL DISSERTATION,0,120,YILDIZ SİLİER,,, ,,,,,"                          "
+PHIL790.05,Desc.,DOCTORAL DISSERTATION,0,120,NURBAY IRMAK,,, ,,,,,"                          "
+PHIL790.06,Desc.,DOCTORAL DISSERTATION,0,120,SUN DEMİRLİ,,, ,,,,,"                          "
+PHIL790.07,Desc.,DOCTORAL DISSERTATION,0,120,LUCAS THORPE,,, ,,,,,"                          "
+PHIL790.08,Desc.,DOCTORAL DISSERTATION,0,120,BARRY STOCKER,,, ,,,,,"                          "

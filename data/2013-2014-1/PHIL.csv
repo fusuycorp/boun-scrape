@@ -1,0 +1,34 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY ,3,7,YILDIZ SİLİER,TWW,312,,NH 303 | NH 001 | NH 001,06.01.2014,3,,"        PSY; LING; GUID; LAW                  "
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY ,3,7,MURAT BAÇ,MFF,712,,NH 101 | NH 101 | NH 101,06.01.2014,3,"PSY,TR","        PHIL                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,6,JOHANNES FRITSCHE,MMM,345,,KPARK1 | KPARK1 | KPARK1,10.01.2014,2,"LL,TKL","        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,3,8,BERNA KILINÇ,MThTh,734,,NH 402 | M 2180 | M 2180,16.01.2014,2,,"                          "
+PHIL131.02,Desc.,LOGIC I,3,8,İREM KURTSAL STEEN,TThTh,634,,NH 104 | YD 06 | YD 06,16.01.2014,2,"MEDU,MATH","                          "
+PHIL213.01,Desc.,HISTORY OF PHILOSOPHY I,3,6,CHRYSSI SIDIROPOULOU,MWW,478,,M 1200 | NBZ 12 | NBZ 12,08.01.2014,3,,"        PHIL                  "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,MARK STEEN,MMW,563,,NH 103 | NH 103 | NH 203,,0,,"        PHIL                  "
+PHIL313.01,Desc.,HISTORY OF PHILOSOPHY III,3,6,STEPHEN VOSS,TFF,223,,YD 116 | TB 490 | TB 490,11.01.2014,2,,"        PHIL                  "
+PHIL341.01,Desc.,ETHICS,3,6,LUCAS THORPE,WFF,545,,TB 490 | NBZ 12 | NBZ 12,10.01.2014,2,,"        PHIL                  "
+PHIL361.01,Desc.,NATURAL PHILOSOPHY,3,6,İREM KURTSAL STEEN,TTTh,346,,NH 304 | NH 304 | NBZ 11,17.01.2014,2,,"                          "
+PHIL400.01,Desc.,CURRENT ISSUES IN PHILOSOPHY,3,6,MURAT BAÇ,MMF,235,,TB 130 | TB 130 | TB 130,09.01.2014,3,,"                          "
+PHIL421.01,Desc.,THEORIES OF RATIONALITY,3,6,BERNA KILINÇ,WWW,678,,TB 130 | TB 130 | TB 130,,0,,"                          "
+PHIL48T.01,Desc.,SEL.TP.ISLAMIC PHILOSOPHY,3,6,NAZİF MUHTAROĞLU,TTT,345,,TB 130 | TB 130 | TB 130,,0,,"                          "
+PHIL495.01,Desc.,"SP.TP.ANCIENT,MEDIEVAL TEXT IN EAST&WEST",3,6,CHRYSSI SIDIROPOULOU,MWW,534,,TB 365 | TB 130 | TB 130,15.01.2014,2,,"                          "
+PHIL496.01,Desc.,SEL.TP.META PHILOSOPHY,3,6,İLHAN İNAN,ThThTh,789,,TB 130 | TB 130 | TB 130,,0,,"                          "
+PHIL497.01,Desc.,SEL.TP.HEGEL'S LOGIC,3,6,ALPER TÜRKEN,FFF,678,,M 1152 | M 1152 | M 1152,,0,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,BERNA KILINÇ,,, ,,,0,,"                          "
+PHIL499.02,Desc.,INDEPENDENT STUDY,3,6,YILDIZ SİLİER,,, ,,,0,,"                          "
+PHIL517.01,Desc.,TOPICS IN CONTEMPORARY PHILOSOPHY,4,10,STEPHEN VOSS,WWW,345,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL536.01,Desc.,ETHICS,4,10,KARANFİL SOYHUN,MMM,234,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,MURAT BAÇ,TBA,,,,08.01.2014,2,,"                          "
+PHIL58P.01,Desc.,SP.TP.PERSONAL IDENTITY,4,10,MARK STEEN,WWW,678,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,JOHANNES FRITSCHE,TBA,,,,,0,,"                          "
+PHIL59A.01,Desc.,SP.TP.MODAL LOGIC,4,10,ALİ KARATAY,MMM,789,,YD 104 | YD 104 | YD 104,09.01.2014,2,,"                          "
+PHIL59B.01,Desc.,"SP.TP.ARISTOTLE,HEGEL AND HEIDEGGER",4,10,JOHANNES FRITSCHE,ThThTh,345,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL59C.01,Desc.,SP.TP.PHILOSOPHICAL QUESTIONS,4,10,İLHAN İNAN,TTT,345,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL59D.01,Desc.,SP.TP.POST-HEGELİANİSM TO POST-MODERNİSM,4,10,PINAR CANEVİ,TTT,678,,TB 130 | TB 130 | TB 130,,0,,"                          "
+PHIL59E.01,Desc.,SP.TP.SOCIALIST FEMINISM,4,10,YILDIZ SİLİER,FFF,234,,TB 130 | TB 130 | TB 130,,0,,"                          "
+PHIL59F.01,Desc.,SP.TP.EMBODIMENT,4,10,LUCAS THORPE,ThThTh,678,,TB 365 | TB 365 | TB 365,,0,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,18.01.2014,2,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,MURAT BAÇ,TBA,,,,,0,,"                          "

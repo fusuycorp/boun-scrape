@@ -1,0 +1,21 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.01,Desc.,CALCULUS I,4,6,AYŞE SOYSAL,TTThTh,1212,,,,,,"                          "
+MATH101.02,Desc.,CALCULUS I,4,6,NİLGÜN IŞIK,TTThTh,1212,,,,,,"                          "
+MATH101.03,Desc.,CALCULUS I,4,6,NİLGÜN IŞIK,TTThTh,3434,,,,,,"                          "
+MATH101.04,Desc.,CALCULUS I,4,6,TALİN BUDAK,TTThTh,5656,,,,,,"                          "
+MATH105.01,Desc.,INTRODUCTION TO FINITE MATHEMATICS,4,6,GÜLNİHAL YÜCEL,TTThTh,1212,,,,,,"                          "
+MATH105.02,Desc.,INTRODUCTION TO FINITE MATHEMATICS,4,6,GÜLNİHAL YÜCEL,TTThTh,3434,,,,,,"                          "
+MATH131.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS I,4,6,AHMET KAMİL FEYZİOĞLU,TTThTh,3434,,,,,,"        MATH                  "
+MATH132.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS II,4,8,TALİN BUDAK,TTThTh,2323,,,,,,"        MATH                  "
+MATH331.01,Desc.,REAL ANALYSIS I,4,8,ALP EDEN,TTThTh,1212,,,,,,"        MATH                  "
+MATH342.01,Desc.,LIFE INSURANCE MATHEMATICS,4,6,İRİNİ DİMİTRİYADİS,TTThTh,3434,,,,,,"                          "
+MATH343.01,Desc.,PROBABILITY,4,6,İRİNİ DİMİTRİYADİS,MMThTh,5656,,,,,,"                          "
+MATH471.01,Desc.,TOPOLOGY,4,8,BETÜL TANBAY,TTThTh,3434,,,,,,"                          "
+MATH480.01,Desc.,SEMINAR,2,4,BETÜL TANBAY,TBA,,,,,,,"                          "
+MATH501.01,Desc.,ALGEBRA I,4,8,AHMET KAMİL FEYZİOĞLU,TTThTh,1212,,,,,,"                          "
+MATH502.99,Desc.,ALGEBRA II,4,8,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "
+MATH515.01,Desc.,REAL ANALYSIS I,4,8,ALP EDEN,TTThTh,5656,,,,,,"                          "
+MATH516.99,Desc.,REAL ANALSIS  II,4,8,ALP EDEN,TBA,,,,,,,"                          "
+MATH579.01,Desc.,GRADUATE SEMINAR,0,1,BETÜL TANBAY,TBA,,,,,,,"                          "
+MATH593.01,Desc.,SEL. TOP. IN DIFFERENTIAL EQUATIONS I,4,10,ALP EDEN,TBA,,,,,,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,BETÜL TANBAY,TBA,,,,,,,"                          "

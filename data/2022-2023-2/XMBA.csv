@@ -1,0 +1,85 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ADEX504.01,Desc.,CORPORATE FINANCE II,2,3,CENK CEVAT KARAHAN,MMM,101112, ,İB 102 | İB 102 | İB 102,,,,"                          "
+ADEX504.02,Desc.,CORPORATE FINANCE II,2,3,CENK CEVAT KARAHAN,TTT,101112, ,,,,,"                          "
+ADEX508.01,Desc.,FINANCIAL RISK MANAGEMENT,2,3,CENK CEVAT KARAHAN,ThThTh,101112, ,,,,,"                          "
+ADEX517.01,Desc.,CORPORATE GOVERNANCE,2,3,VEDAT AKGİRAY,StStSt,234, ,,,,,"                          "
+ADEX521.01,Desc.,SPECIAL TOPICS IN FINANCE&ACCOUNTING,2,3,VEDAT AKGİRAY,FFF,101112, ,,,,,"                          "
+ADEX524.01,Desc.,CORPORATE SOCIAL RESPONSIBILITY?ICS,2,3,ESER BORAK,TTT,101112, ,,,,,"                          "
+ADEX524.02,Desc.,CORPORATE SOCIAL RESPONSIBILITY?ICS,2,3,ESER BORAK,MMM,101112, ,,,,,"                          "
+ADEX537.01,Desc.,STRATEGIC MANAGEMENT,2,3,GÜVEN ALPAY,WWW,101112, ,İB 102 | İB 102 | İB 102,,,,"                          "
+ADEX537.02,Desc.,STRATEGIC MANAGEMENT,2,3,GÜVEN ALPAY,ThThTh,101112, ,,,,,"                          "
+ADEX557.01,Desc.,DIGITAL STRATEGY,2,3,ALİ COŞKUN,ThThTh,101112, ,,,,,"                          "
+ADEX557.02,Desc.,DIGITAL STRATEGY,2,3,ALİ COŞKUN,WWW,101112, ,,,,,"                          "
+ADEX560.01,Desc.,ENTREPRENEURSHIP FOR MANAGERS,2,3,TAHA ARVAS,StStSt,234, ,,,,,"                          "
+ADEX573.01,Desc.,DATA SCIENCE FOR BUSINESS,2,3,ULAŞ AKKÜÇÜK,FFF,101112, ,,,,,"                          "
+ADEX58V.01,Desc.,SP.TP.CURRENT ISSUES-A BUSINESS PERSPECTIVE TO FINANCIAL SITUATIONS,2,4,NESLİHAN N.YILMAZ,FFF,101112, ,,,,,"                          "
+ADEX58Y.01,Desc.,SP.TP.FINANCIAL POLICY MAKING FOR EXECUTIVES,2,4,ALİ COŞKUN,TTT,101112, ,,,,,"                          "
+ADEX58Z.01,Desc.,SP.TP.IN DIGITAL MARKETING,2,4,ALİ COŞKUN,StStSt,234, ,,,,,"                          "
+ADEX593.01,Desc.,DIRECTED READINGS II,1,3,VEDAT AKGİRAY,,, ,,,,,"                          "
+ADEX593.02,Desc.,DIRECTED READINGS II,1,3,ULAŞ AKKÜÇÜK,,, ,,,,,"                          "
+ADEX593.03,Desc.,DIRECTED READINGS II,1,3,GÜVEN ALPAY,,, ,,,,,"                          "
+ADEX593.04,Desc.,DIRECTED READINGS II,1,3,BELGİN ARISAN,,, ,,,,,"                          "
+ADEX593.06,Desc.,DIRECTED READINGS II,1,3,ESER BORAK,,, ,,,,,"                          "
+ADEX593.07,Desc.,DIRECTED READINGS II,1,3,ASUNUR CEZAR,,, ,,,,,"                          "
+ADEX593.08,Desc.,DIRECTED READINGS II,1,3,ALİ COŞKUN,,, ,,,,,"                          "
+ADEX593.09,Desc.,DIRECTED READINGS II,1,3,METİN ERCAN,,, ,,,,,"                          "
+ADEX593.10,Desc.,DIRECTED READINGS II,1,3,YAVUZ ACAR,,, ,,,,,"                          "
+ADEX593.12,Desc.,DIRECTED READINGS II,1,3,HAYAT KABASAKAL,,, ,,,,,"                          "
+ADEX593.14,Desc.,DIRECTED READINGS II,1,3,CENK CEVAT KARAHAN,,, ,,,,,"                          "
+ADEX593.15,Desc.,DIRECTED READINGS II,1,3,İREM NUHOĞLU,,, ,,,,,"                          "
+ADEX593.16,Desc.,DIRECTED READINGS II,1,3,ATİLLA ODABAŞI,,, ,,,,,"                          "
+ADEX593.17,Desc.,DIRECTED READINGS II,1,3,NESRİN OKAY AKMAN,,, ,,,,,"                          "
+ADEX593.18,Desc.,DIRECTED READINGS II,1,3,ÖZGÜN BURCU RODOPMAN,,, ,,,,,"                          "
+ADEX593.20,Desc.,DIRECTED READINGS II,1,3,MİNE UĞURLU,,, ,,,,,"                          "
+ADEX593.21,Desc.,DIRECTED READINGS II,1,3,NESLİHAN N.YILMAZ,,, ,,,,,"                          "
+ADEX594.01,Desc.,DIRECTED READINGS III,1,3,VEDAT AKGİRAY,,, ,,,,,"                          "
+ADEX594.02,Desc.,DIRECTED READINGS III,1,3,ULAŞ AKKÜÇÜK,,, ,,,,,"                          "
+ADEX594.03,Desc.,DIRECTED READINGS III,1,3,GÜVEN ALPAY,,, ,,,,,"                          "
+ADEX594.04,Desc.,DIRECTED READINGS III,1,3,BELGİN ARISAN,,, ,,,,,"                          "
+ADEX594.06,Desc.,DIRECTED READINGS III,1,3,ESER BORAK,,, ,,,,,"                          "
+ADEX594.07,Desc.,DIRECTED READINGS III,1,3,ASUNUR CEZAR,,, ,,,,,"                          "
+ADEX594.08,Desc.,DIRECTED READINGS III,1,3,ALİ COŞKUN,,, ,,,,,"                          "
+ADEX594.09,Desc.,DIRECTED READINGS III,1,3,METİN ERCAN,,, ,,,,,"                          "
+ADEX594.10,Desc.,DIRECTED READINGS III,1,3,YAVUZ ACAR,,, ,,,,,"                          "
+ADEX594.12,Desc.,DIRECTED READINGS III,1,3,HAYAT KABASAKAL,,, ,,,,,"                          "
+ADEX594.14,Desc.,DIRECTED READINGS III,1,3,CENK CEVAT KARAHAN,,, ,,,,,"                          "
+ADEX594.15,Desc.,DIRECTED READINGS III,1,3,İREM NUHOĞLU,,, ,,,,,"                          "
+ADEX594.16,Desc.,DIRECTED READINGS III,1,3,ATİLLA ODABAŞI,,, ,,,,,"                          "
+ADEX594.17,Desc.,DIRECTED READINGS III,1,3,NESRİN OKAY AKMAN,,, ,,,,,"                          "
+ADEX594.18,Desc.,DIRECTED READINGS III,1,3,ÖZGÜN BURCU RODOPMAN,,, ,,,,,"                          "
+ADEX594.20,Desc.,DIRECTED READINGS III,1,3,MİNE UĞURLU,,, ,,,,,"                          "
+ADEX594.21,Desc.,DIRECTED READINGS III,1,3,NESLİHAN N.YILMAZ,,, ,,,,,"                          "
+ADEX597.01,Desc.,TERM PROJECT II,0,3,VEDAT AKGİRAY,,, ,,,,,"                          "
+ADEX597.02,Desc.,TERM PROJECT II,0,3,ULAŞ AKKÜÇÜK,,, ,,,,,"                          "
+ADEX597.03,Desc.,TERM PROJECT II,0,3,GÜVEN ALPAY,,, ,,,,,"                          "
+ADEX597.04,Desc.,TERM PROJECT II,0,3,BELGİN ARISAN,,, ,,,,,"                          "
+ADEX597.06,Desc.,TERM PROJECT II,0,3,ESER BORAK,,, ,,,,,"                          "
+ADEX597.07,Desc.,TERM PROJECT II,0,3,ASUNUR CEZAR,,, ,,,,,"                          "
+ADEX597.08,Desc.,TERM PROJECT II,0,3,ALİ COŞKUN,,, ,,,,,"                          "
+ADEX597.09,Desc.,TERM PROJECT II,0,3,METİN ERCAN,,, ,,,,,"                          "
+ADEX597.10,Desc.,TERM PROJECT II,0,3,YAVUZ ACAR,,, ,,,,,"                          "
+ADEX597.12,Desc.,TERM PROJECT II,0,3,HAYAT KABASAKAL,,, ,,,,,"                          "
+ADEX597.14,Desc.,TERM PROJECT II,0,3,CENK CEVAT KARAHAN,,, ,,,,,"                          "
+ADEX597.15,Desc.,TERM PROJECT II,0,3,İREM NUHOĞLU,,, ,,,,,"                          "
+ADEX597.16,Desc.,TERM PROJECT II,0,3,ATİLLA ODABAŞI,,, ,,,,,"                          "
+ADEX597.17,Desc.,TERM PROJECT II,0,3,NESRİN OKAY AKMAN,,, ,,,,,"                          "
+ADEX597.18,Desc.,TERM PROJECT II,0,3,ÖZGÜN BURCU RODOPMAN,,, ,,,,,"                          "
+ADEX597.20,Desc.,TERM PROJECT II,0,3,MİNE UĞURLU,,, ,,,,,"                          "
+ADEX597.21,Desc.,TERM PROJECT II,0,3,NESLİHAN N.YILMAZ,,, ,,,,,"                          "
+ADEX598.01,Desc.,TERM PROJECT III,0,3,VEDAT AKGİRAY,,, ,,,,,"                          "
+ADEX598.02,Desc.,TERM PROJECT III,0,3,ULAŞ AKKÜÇÜK,,, ,,,,,"                          "
+ADEX598.03,Desc.,TERM PROJECT III,0,3,GÜVEN ALPAY,,, ,,,,,"                          "
+ADEX598.04,Desc.,TERM PROJECT III,0,3,BELGİN ARISAN,,, ,,,,,"                          "
+ADEX598.06,Desc.,TERM PROJECT III,0,3,ESER BORAK,,, ,,,,,"                          "
+ADEX598.07,Desc.,TERM PROJECT III,0,3,ASUNUR CEZAR,,, ,,,,,"                          "
+ADEX598.08,Desc.,TERM PROJECT III,0,3,ALİ COŞKUN,,, ,,,,,"                          "
+ADEX598.09,Desc.,TERM PROJECT III,0,3,METİN ERCAN,,, ,,,,,"                          "
+ADEX598.10,Desc.,TERM PROJECT III,0,3,YAVUZ ACAR,,, ,,,,,"                          "
+ADEX598.12,Desc.,TERM PROJECT III,0,3,HAYAT KABASAKAL,,, ,,,,,"                          "
+ADEX598.14,Desc.,TERM PROJECT III,0,3,CENK CEVAT KARAHAN,,, ,,,,,"                          "
+ADEX598.15,Desc.,TERM PROJECT III,0,3,İREM NUHOĞLU,,, ,,,,,"                          "
+ADEX598.16,Desc.,TERM PROJECT III,0,3,ATİLLA ODABAŞI,,, ,,,,,"                          "
+ADEX598.17,Desc.,TERM PROJECT III,0,3,NESRİN OKAY AKMAN,,, ,,,,,"                          "
+ADEX598.18,Desc.,TERM PROJECT III,0,3,ÖZGÜN BURCU RODOPMAN,,, ,,,,,"                          "
+ADEX598.20,Desc.,TERM PROJECT III,0,3,MİNE UĞURLU,,, ,,,,,"                          "
+ADEX598.21,Desc.,TERM PROJECT III,0,3,NESLİHAN N.YILMAZ,,, ,,,,,"                          "

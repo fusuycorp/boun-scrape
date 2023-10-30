@@ -1,0 +1,37 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CMPE150.01,Desc.,INTRODUCTION TO COMPUTING,3,5,H. LEVENT AKIN,MTT,534,,,,,,"                          "
+CMPE150.02,Desc.,INTRODUCTION TO COMPUTING,3,5,AYŞE BAŞAR,M,4,,,,,,"        CMPE                  "
+CMPE150.03,Desc.,INTRODUCTION TO COMPUTING,3,5,VURAL ALTIN,M,6,,,,,,"        CMPE                  "
+CMPE151.01,Desc.,PASCAL PROGRAMMING,3,5,ARDA YURDAKUL,WWThTh,3478,,,,,,"                          "
+CMPE220.01,Desc.,DISCRETE COMPUTATIONAL STRUCTURES,3,4,ARDA YURDAKUL,ThThF,126,,,,,,"                          "
+CMPE230.01,Desc.,SYSTEMS PROGRAMMING,4,6,CAN ÖZTURAN,TTW,345,,,,,,"                          "
+CMPE235.01,Desc.,OPERATING SYSTEMS AND THEIR USE,3,7,TUNGA GÜNGÖR,WWWW,5678,,,,,,"                          "
+CMPE300.01,Desc.,ANALYSIS OF ALGORITHMS,3,5,TUNGA GÜNGÖR,FFF,234,,,,,,"                          "
+CMPE322.01,Desc.,OPERATING SYSTEMS,4,5,CEM ERSOY,MMMWW,17812,,,,,,"                          "
+CMPE344.01,Desc.,COMPUTER ORGANIZATION,4,5,OĞUZ TOSUN,MMTh,347,,,,,,"                          "
+CMPE422.01,Desc.,DATABASE SYSTEMS II,3,6,TAFLAN GÜNDEM,FFF,678,,,,,,"                          "
+CMPE441.01,Desc.,HIGH-LEVEL DIGITAL DESIGN,3,6,ARDA YURDAKUL,TTW,786,,,,,,"                          "
+CMPE444.01,Desc.,MICROPROCESSOR BASED SYSTEM DESIGN,4,6,SADIK FİKRET GÜRGEN,MMW,233,,,,,,"                          "
+CMPE460.01,Desc.,COMPUTER GRAPHICS,3,6,LALE AKARUN,MMT,562,,,,,,"                          "
+CMPE471.01,Desc.,INFORMATION SYSTEM SECURITY,3,6,AYŞE BAŞAR,FFF,123,,,,,,"                          "
+CMPE475.01,Desc.,COMPUTER NETWORKS,3,6,M. UFUK ÇAĞLAYAN,WThTh,512,,,,,,"                          "
+CMPE480.01,Desc.,INTRODUCTION TO ARTIFICIAL INTELLIGENCE,3,6,CEM SAY,TWW,678,,,,,,"                          "
+CMPE491.01,Desc.,SPEC. PROJECT IN COMPUTER ENGINEERING,3,6,M. UFUK ÇAĞLAYAN,TBA,,,,,,,"                          "
+CMPE492.01,Desc.,PROJECT,4,7,M. UFUK ÇAĞLAYAN,TBA,TBA,,,,,,"                          "
+CMPE511.01,Desc.,COMPUTER ARCHITECTURE,3,8,OĞUZ TOSUN,ThThTh,234,,,,,,"                          "
+CMPE521.01,Desc.,PRINCIPLES OF DATABASE SYSTEMS,3,8,TAFLAN GÜNDEM,WWW,678,,,,,,"                          "
+CMPE540.01,Desc.,PRINCIPLES OF ARTIFICIAL INTELLIGENCE,3,8,H. LEVENT AKIN,WWW,234,,,,,,"                          "
+CMPE560.01,Desc.,QUALITATIVE REASONING,3,8,CEM SAY,FFF,678,,,,,,"                          "
+CMPE579.01,Desc.,GRADUATE SEMINAR,0,8,CEM ERSOY,T,4,,,,,,"                          "
+CMPE580.01,Desc.,COMPUTER NETWORKS I,3,8,CEM ERSOY,TTT,123,,,,,,"                          "
+CMPE587.01,Desc.,SP.TOP.IN CMPE:ADV.NETWORK PROGRAMMING,3,8,M. UFUK ÇAĞLAYAN,FFF,678,,,,,,"                          "
+CMPE592.01,Desc.,SP.TOP.IN CMPE:MULTIMEDIA SYS.,3,8,SADIK FİKRET GÜRGEN,WWW,678,,,,,,"                          "
+CMPE597.01,Desc.,SP.TOP.IN CMPE:GRAPH ALGORITHMS,3,8,CAN ÖZTURAN,MMM,123,,,,,,"                          "
+CMPE601.01,Desc.,GRADUATE SEMINAR IN COMPUTER ENG. I,1,3,CEM ERSOY,T,4,,,,,,"                          "
+CMPE622.01,Desc.,COMPUTER VISION,3,8,LALE AKARUN,ThThTh,678,,,,,,"                          "
+CMPE690.01,Desc.,M.S.THESIS,0,60,CEM ERSOY,TBA,,,,,,,"                          "
+CMPE699.01,Desc., GUIDED RESEARCH ,4,8,H. LEVENT AKIN,TBA,,,,,,,"                          "
+CMPE699.02,Desc., GUIDED RESEARCH ,4,8,LALE AKARUN,TBA,TBA,,,,,,"                          "
+CMPE790.01,Desc.,Ph.D.THESIS,0,120,CEM ERSOY,TBA,,,,,,,"                          "
+ENG 101.01,Desc.,INTRODUCTION TO COMPUTERS,3,7,EROL İNELMEN,WWTh,787,,,,,,"                          "
+ENG 101.02,Desc.,INTRODUCTION TO COMPUTERS,3,7,ARDA YURDAKUL,MFF,778,,,,,,"                          "

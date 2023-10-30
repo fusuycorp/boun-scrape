@@ -4,22 +4,12 @@ from bs4 import BeautifulSoup
 import csv
 import urllib.parse
 import os
+from pathlib import Path
 
-# Specify the directory and file paths
-list_directory = "lists"
-data_directory = "data"
-
-# Create the directory if it doesn't exist
-if not os.path.exists(list_directory):
-    os.mkdir(list_directory)
-    print(f"Directory '{list_directory}' created.")
-
-# Create the directory if it doesn't exist
-if not os.path.exists(data_directory):
-    os.mkdir(data_directory)
-    print(f"Directory '{data_directory}' created.")
-
-
+def createDir (location):
+	if not os.path.exists(location):
+			os.mkdir(location)
+			print(f"Directory '{location}' created.")
 
 # menu_maker.py
 class Terminal_Menu:
@@ -35,8 +25,16 @@ class Terminal_Menu:
         selection = input(selection_prompt)
         return self.menu_items[int(selection) - 1]
 
+# Specify the directory and file paths
+list_directory = "lists"
+data_directory = "data"
+html_directory = "html"
+createDir(list_directory)
+createDir(data_directory)
+createDir(html_directory)
 semester_file = "lists/semesters.txt"
 program_list_file = 'lists/programs_list.json'
+program_list_html_file = 'lists/programs_html.html'
 semesters = ''
 programs = ''
 
@@ -121,16 +119,21 @@ def getProgramList():
 			'ctl00$cphMainContent$gRecResp': '03AFcWeA6g9ONNGc7p2KW9oc99_qE4qzLuW2KsSKUcF9EQ7cBZdRsBl--VdqychTism4wMeYRKPSiWVr6p984U59m3jvOxZfjSpwyZBeK4emRPlEEX-VEU5a6LnDhehAwNCEvS6suh8U2RKA0iJZzDZMhTTlAEaxnTnYoOzhblK_6S4ecH9C_IcMiOXArpb8218uS_HflP_8ASuhX2HvkAXZdzYfcN0_RgF3w_ifX62SjqddEMD3YJA17rL2Tnedz1NMLhOQquJK3fxyeybM1canEEK2rxUqF2zyhlkBe3LoanubAggRXz9VaiP9d_nNPl832-Rusf1_KIrmhBVTQQYzIhairO4Mw0lkq_cXwd4del_i9HyxNoL7G_fFgSSL4cMGuceeVSRR2W_rbKFuRtBj2FXb4OzXUGQvev4ea4HivXuleIbTk7qarB0I8ARYFUxrE424zvNTeweHqN1KBD0Uz5y8cRvdiQvNU2pUb6oZQfl1q4thANQNhGK6X-tZ5bHXO8VR6Fa1of2OZXPiYCwo-6lee1GezNsrU4cHWICZpSlLxqxdWRKvPZLgddT0dcPUInwQGpHknw',
 	}
 
-	response = requests.post(
-			'https://registration.boun.edu.tr/BUIS/General/schedule.aspx',
-			params=params,
-			cookies=cookies,
-			headers=headers,
-			data=data,
-			verify=False,
-	)
-	if("ECONOMICS" in response.text): return response.text
-	else: raise Exception("GET PROGRAM LIST ERROR")
+	try:
+		response = requests.post(
+				'https://registration.boun.edu.tr/BUIS/General/schedule.aspx',
+				params=params,
+				cookies=cookies,
+				headers=headers,
+				data=data,
+				verify=False,
+		)
+		if("ECONOMICS" in response.text): return response.text
+		else: raise Exception("GET PROGRAM LIST ERROR")
+	except:
+		global program_list_html_file
+		with open(program_list_html_file, 'r') as file:
+			return file.read()
 
 def scrapeProgramList(htmlText):
 	soup = BeautifulSoup(htmlText, 'lxml')
@@ -155,13 +158,6 @@ def writeProgramList(programs):
 	with open(program_list_file, 'w') as file:
 		json.dump(programs, file, indent=4)  # Use indent for pretty formatting
 
-# Gets schedule page of a program from registration
-# Get params from the programs_list
-# params = {
-# 	"donem": "2023/2024-1",
-# 	"kisaadi": "ASIA",
-# 	"bolum": "ASIAN+STUDIES+WITH+THESIS"
-# }
 def getSchedule(params):
 	print('Getting for '+params['kisaadi'])
 	baseUrl = "https://registration.boun.edu.tr/scripts/sch.asp"
@@ -169,6 +165,7 @@ def getSchedule(params):
 	r = requests.get(baseUrl, params=params)
 	r.encoding = 'iso8859-9'
 
+	writeHtml(params['donem'].replace('/','-'),params['kisaadi'], r.text)
 	return r.text
 
 # Scrapes schedule page of a program to turn it into a list
@@ -178,22 +175,57 @@ def scrapeSchedule(htmlText):
 	table = soup.find_all('table')
 
 	parsed_table = []
-	for row in table[2].find_all('tr'):
-		rowMatrix = []
-		cells = row.find_all('td')
-		for cell in cells:
-			rowMatrix.append(cell.text.replace('\t', '').replace('\xa0', '').replace('\n',''))
-		parsed_table.append(rowMatrix)
-
+	try:
+		for row in table[2].find_all('tr'):
+			rowMatrix = []
+			cells = row.find_all('td')
+			for cell in cells:
+				rowMatrix.append(cell.text.replace('\t', '').replace('\xa0', '').replace('\n',''))
+			parsed_table.append(rowMatrix)
+	except:
+		print("ERROR HERE")
 	return parsed_table
 
-def writeCsv(name, parsed_table):
-	print('Writing for '+name)
-	with open('data/'+name+'.csv','w') as file:
-		writer = csv.writer(file)
-    # Write each row from the nested list
-		for row in parsed_table:
-			writer.writerow(row)
+def writeHtml(semester, name, text):
+	print(f'Writing HTML of {semester}/{name}')
+	createDir(f'html/{semester}')
+
+	file_path = f'html/{semester}/{name}.html'
+	path = Path(file_path)
+
+	if path.exists():
+		print(f"File '{file_path}' exists.")
+		with open(f'html/{semester}/{name}.2.html','w') as file:
+			file.write(text)
+
+		# Open the file and write to it
+	else:
+		with open(f'html/{semester}/{name}.html','w') as file:
+			file.write(text)
+
+
+def writeCsv(semester, name, parsed_table):
+	print(f'Writing CSV of {semester}/{name}')
+	createDir(f'data/{semester}')
+
+	file_path = f'data/{semester}/{name}.csv'
+	path = Path(file_path)
+
+	if path.exists():
+		print(f"File '{file_path}' exists.")
+		with open(f'data/{semester}/{name}.2.csv','w') as file:
+			writer = csv.writer(file)
+			# Write each row from the nested list
+			for row in parsed_table:
+				writer.writerow(row)
+
+		# Open the file and write to it
+	else:
+		with open(f'data/{semester}/{name}.csv','w') as file:
+			writer = csv.writer(file)
+			# Write each row from the nested list
+			for row in parsed_table:
+				writer.writerow(row)
 
 def parseDays(days):
 	days_list: []
@@ -271,7 +303,7 @@ def getEverything():
 			params = programs[p]
 			params['donem'] = s
 			a = scrapeSchedule(getSchedule(params))
-			writeCsv(params['kisaadi'], a)
+			writeCsv(params['donem'].replace('/','-'), params['kisaadi'], a)
 
 def menu():
 	menu_items = [

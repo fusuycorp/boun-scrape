@@ -1,0 +1,65 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+FLED101.01,Desc.,DEV. COMMUNICATIVE COMPETENCE IN ENGL.I,3,4,AYLİN ÜNALDI,TWW,567,,YD 102 | YD 104 | YD 104,,0,,"                          "
+FLED101.02,Desc.,DEV. COMMUNICATIVE COMPETENCE IN ENGL.I,3,4,AYLİN ÜNALDI,TFF,623,,YD 102 | YD 102 | YD 102,,0,,"                          "
+FLED103.01,Desc.,ENGLISH COMPOSITION,3,4,SEVDA AKYÜZ,ThThTh,123,,YD 101 | YD 101 | YD 101,,0,,"                          "
+FLED103.02,Desc.,ENGLISH COMPOSITION,3,4,AYLİN ÜNALDI,TWW,123,,YD 202 | YD 104 | YD 104,,0,,"                          "
+FLED103.03,Desc.,ENGLISH COMPOSITION,3,4,ŞEBNEM YALÇIN,ThThTh,123,,YD 205 | YD 205 | YD 205,,0,,"                          "
+FLED103.04,Desc.,ENGLISH COMPOSITION,3,4,ŞEBNEM YALÇIN,WWW,123,,YD 203 | YD 203 | YD 203,,0,,"                          "
+FLED201.01,Desc.,SURVEY OF APPLIED LINGUISTICS,3,3,AYŞE GÜREL,FFF,678,,NH 305 | NH 305 | NH 305,07.01.2014,2,,"                          "
+FLED303.01,Desc.,TEFL:GRAMMAR,3,4,ŞEBNEM YALÇIN,MMW,129,,YD 02 | YD 02 | YD 102,,0,,"                          "
+FLED303.02,Desc.,TEFL:GRAMMAR,3,4,ŞEBNEM YALÇIN,WWTh,564,,YD 102 | YD 102 | YD 205,,0,,"                          "
+FLED307.01,Desc.,TEFL:LISTENING & SPEAKING,3,4,SİBEL TATAR,TWW,434,,YD 03 | YD 04 | YD 04,,0,,"                          "
+FLED307.02,Desc.,TEFL:LISTENING & SPEAKING,3,4,SİBEL TATAR,TWW,878,,YD 02 | YD 102 | YD 102,,0,,"                          "
+FLED311.01,Desc.,SECOND LANGUAGE TEACHING METHODS,3,4,SUMRU AKCAN,MMTh,787,,YD 106 | YD 106 | YD 106,09.01.2014,1,,"                          "
+FLED313.01,Desc.,RESEARCH METH.IN TEACHING ENGLISH AS A F,3,5,LEYLA MESUDE MARTI,TTTh,123,,YD 102 | YD 102 | YD 104,,0,,"                          "
+FLED313.02,Desc.,RESEARCH METH.IN TEACHING ENGLISH AS A F,3,5,LEYLA MESUDE MARTI,TThTh,756,,YD 02 | YD 04 | YD 04,,0,,"                          "
+FLED401.01,Desc.,THE USE OF LITERARY TEXTS IN TEFL,4,6,JUDY MONTHIE DOYUM,TTThTh,5634,,YD 04 | YD 04 | YD 204 | YD 204,08.01.2014,2,,"                          "
+FLED401.02,Desc.,THE USE OF LITERARY TEXTS IN TEFL,4,6,JUDY MONTHIE DOYUM,TTThTh,3412,,YD 02 | YD 02 | YD 204 | YD 204,08.01.2014,2,,"                          "
+FLED403.01,Desc.,SCHOOL EXPERIENCE IN EFL,3,6,JUDY MONTHIE DOYUM,ThTh,56,,YD 204 | YD 204,,0,,"                          "
+FLED403.02,Desc.,SCHOOL EXPERIENCE IN EFL,3,6,SUMRU AKCAN,ThTh,56,,YD 102 | YD 102,,0,,"                          "
+FLED411.01,Desc.,MATERIALS EVA.&PREPARATION IN TEFL,4,9,ALİ IŞIK,ThThThTh,78910,,YD 102 | YD 102 | YD 102 | YD 102,09.01.2014,2,,"                          "
+FLED411.02,Desc.,MATERIALS EVA.&PREPARATION IN TEFL,4,9,H.MÜGE SATAR,WWWW,5678,,YD 04 | YD 04 | YD 04 | YD 04,,0,,"                          "
+FLED415.01,Desc.,LANGUAGE TRANSFER,3,5,YASEMİN BAYYURT,MTT,412,,NH 105 | GARANTİ SEM.1 | GARANTİ SEM.1,,0,,"                          "
+FLED483.01,Desc.,SP.TP.IN ENGLISH LANG.EDUCATION,3,4,YASEMİN BAYYURT,MWW,912,,YD 203 | YD 204 | YD 204,,0,,"                          "
+FLED501.01,Desc.,RESEARCH METHODS,3,8,GÜLCAN ERÇETİN,ThThTh,678,,,,0,,"                          "
+FLED504.01,Desc.,LEARNING TURKISH AS A FOREIGN LANGUAGE,3,8,AYŞE GÜREL,WWW,678,,,,0,,"                          "
+FLED511.01,Desc.,THEORIES OF SECOND LANGUAGE ACQUISITION,3,8,BELMA HAZNEDAR,TTT,678,,,,0,,"                          "
+FLED515.01,Desc.,CROSS-CULTURAL COMMUNICATION & LANG.EDU.,3,7,LEYLA MESUDE MARTI,MMM,678,,,,0,,"                          "
+FLED524.01,Desc.,APPROACHES TO TEACHING LANGUAGE SKILLS,3,7,SİBEL TATAR,MMM,678,,,,0,,"                          "
+FLED580.01,Desc.,SEL.TOP.IN ENGLISH LANGUAGE TEACHING,3,7,GÜLCAN ERÇETİN,TBA,,,,,0,,"                          "
+FLED615.01,Desc.,ISSUES IN FOREIGN LANGUAGE ED.PLANNING,4,8,YASEMİN BAYYURT,ThThThTh,6789,,,,0,,"                          "
+FLED682.01,Desc.,SP.TOP.IN APPLIED LINGUISTICS,4,7,AYŞE GÜREL,TBA,,,,,0,,"                          "
+FLED690.01,Desc.,MASTER THESIS,0,60,GÜLCAN ERÇETİN,TBA,,,,,0,,"                          "
+FLED690.02,Desc.,MASTER THESIS,0,60,YASEMİN BAYYURT,TBA,,,,,0,,"                          "
+FLED690.03,Desc.,MASTER THESIS,0,60,GÜLCAN ERÇETİN,TBA,,,,,0,,"                          "
+FLED690.04,Desc.,MASTER THESIS,0,60,BELMA HAZNEDAR,TBA,,,,,0,,"                          "
+FLED690.05,Desc.,MASTER THESIS,0,60,SUMRU AKCAN,TBA,,,,,0,,"                          "
+FLED690.06,Desc.,MASTER THESIS,0,60,SUMRU AKCAN,TBA,,,,,0,,"                          "
+FLED690.07,Desc.,MASTER THESIS,0,60,BELMA HAZNEDAR,TBA,,,,,0,,"                          "
+FLED690.08,Desc.,MASTER THESIS,0,60,SUMRU AKCAN,TBA,,,,,0,,"                          "
+FLED690.09,Desc.,MASTER THESIS,0,60,SİBEL TATAR,TBA,,,,,0,,"                          "
+FLED690.10,Desc.,MASTER THESIS,0,60,SENEM YILDIZ ERSOY,TBA,,,,,0,,"                          "
+FLED690.11,Desc.,MASTER THESIS,0,60,YASEMİN BAYYURT,TBA,,,,,0,,"                          "
+FLED690.12,Desc.,MASTER THESIS,0,60,SENEM YILDIZ ERSOY,TBA,,,,,0,,"                          "
+FLED690.13,Desc.,MASTER THESIS,0,60,BELMA HAZNEDAR,TBA,,,,,0,,"                          "
+FLED690.14,Desc.,MASTER THESIS,0,60,SUMRU AKCAN,TBA,,,,,0,,"                          "
+FLED690.15,Desc.,MASTER THESIS,0,60,GÜLCAN ERÇETİN,TBA,,,,,0,,"                          "
+FLED690.16,Desc.,MASTER THESIS,0,60,GÜLCAN ERÇETİN,TBA,,,,,0,,"                          "
+FLED690.17,Desc.,MASTER THESIS,0,60,BELMA HAZNEDAR,TBA,,,,,0,,"                          "
+FLED690.18,Desc.,MASTER THESIS,0,60,SENEM YILDIZ ERSOY,TBA,,,,,0,,"                          "
+FLED690.19,Desc.,MASTER THESIS,0,60,AYŞE GÜREL,TBA,,,,,0,,"                          "
+FLED690.20,Desc.,MASTER THESIS,0,60,LEYLA MESUDE MARTI,TBA,,,,,0,,"                          "
+FLED790.01,Desc.,Ph.D THESIS,0,120,BELMA HAZNEDAR,TBA,,,,,0,,"                          "
+FLED790.02,Desc.,Ph.D THESIS,0,120,YASEMİN BAYYURT,TBA,,,,,0,,"                          "
+FLED790.03,Desc.,Ph.D THESIS,0,120,YASEMİN BAYYURT,TBA,,,,,0,,"                          "
+FLED790.06,Desc.,Ph.D THESIS,0,120,YASEMİN BAYYURT,TBA,,,,,0,,"                          "
+FLED790.07,Desc.,Ph.D THESIS,0,120,GÜLCAN ERÇETİN,TBA,,,,,0,,"                          "
+FLED790.08,Desc.,Ph.D THESIS,0,120,GÜLCAN ERÇETİN,TBA,,,,,0,,"                          "
+FLED790.09,Desc.,Ph.D THESIS,0,120,AYŞE GÜREL,TBA,,,,,0,,"                          "
+FLED790.10,Desc.,Ph.D THESIS,0,120,AYŞE GÜREL,TBA,,,,,0,,"                          "
+FLED790.11,Desc.,Ph.D THESIS,0,120,YASEMİN BAYYURT,TBA,,,,,0,,"                          "
+FLED790.12,Desc.,Ph.D THESIS,0,120,YASEMİN BAYYURT,TBA,,,,,0,,"                          "
+ITA 101.01,Desc.,ELEMENTARY ITALIAN I,3,5,IVANA VIAPPIANI,MMWW,5634,,YD 203 | YD 203 | YD 205 | YD 205,02.01.2014,1,,"                          "
+ITA 201.01,Desc.,INTERMEDIATE ITALIAN I,3,5,IVANA VIAPPIANI,MMFF,7834,,YD 203 | YD 203 | YD 205 | YD 205,02.01.2014,3,,"                          "
+ITA 201.02,Desc.,INTERMEDIATE ITALIAN I,3,5,IVANA VIAPPIANI,WWFF,1256,,YD 205 | YD 205 | YD 205 | YD 205,02.01.2014,3,,"                          "
+ITA 301.01,Desc.,UPPER INTERMEDIATE ITALIAN I,3,5,IVANA VIAPPIANI,WWFF,5612,,YD 205 | YD 205 | YD 205 | YD 205,02.01.2014,2,,"                          "

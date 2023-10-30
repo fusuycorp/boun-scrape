@@ -1,0 +1,41 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ED  101.01,Desc.,INTRODUCTION TO EDUCATION,3,6,FATMA NEVRA SEGGIE,MTT,112,,,26.05.2017,1,,"        CET; PRSC; PEDU; FLED; GUID; TPHY; CEDU; TCHE; MEDU; TMAT; PRSO; PRED; ED; PRMA                  "
+ED  104.01,Desc.,SOCIAL FOUNDATIONS OF EDUCATION,3,5,FATMA GÜMÜŞ,WThTh,667,,,29.05.2017,2,,"                          "
+ED  132.01,Desc.,ETHICAL ISSUES IN COUNSELING,2,4,DENİZ ALBAYRAK KAYMAK,ThTh,23,,,23.05.2017,1,,"                          "
+ED  200.01,Desc.,LIVING WITH DISABILITIES,3,5,ENGİN YILMAZ,WWTh,786,,,,0,,"                          "
+ED  203.01,Desc.,HISTORY OF TURKISH EDUCATION ,3,5,RIFAT OKÇABOL,TTW,125,,,22.05.2017,1,,"                          "
+ED  206.01,Desc.,PHILOSOPHY OF EDUCATION,3,5,ÖZGE ÖZDEMİR,TTT,567,,,02.06.2017,3,,"                          "
+ED  208.01,Desc.,RESEARCH METHODOLOGY,4,6,NİHAL YENİAD MALKAMAK,MTTFF,33456,,,26.05.2017,3,,"                          "
+ED  208.02,Desc.,RESEARCH METHODOLOGY,4,6,NİHAL YENİAD MALKAMAK,MWWFF,23478,,,26.05.2017,3,,"                          "
+ED  270.01,Desc.,PROGRAM DEVELOPMENT & EVALUATION,4,6,ÖZLEM YAZLIK ALCOTT,ThThThFF,23456,,,29.05.2017,2,,"                          "
+ED  270.02,Desc.,PROGRAM DEVELOPMENT & EVALUATION,4,6,ÖZLEM YAZLIK ALCOTT,ThThFFF,78123,,,29.05.2017,2,,"                          "
+ED  282.01,Desc.,PRINCIPLES & METHODS OF INSTRUCTION,3,5,ÖZLEM ÜNLÜHİSARCIKLI,TThTh,634,,,27.05.2017,2,"MEDU,P_MATH","                          "
+ED  282.02,Desc.,PRINCIPLES & METHODS OF INSTRUCTION,3,5,ÖZLEM ÜNLÜHİSARCIKLI,TThTh,867,,,27.05.2017,2,"CEDU,PEDU","                          "
+ED  300.01,Desc.,COMMUNITY INVOLVEMENT,3,5,ZEYNEP HANDE SART,WWThThTh,67234,,,,0,,"        GUID                  "
+ED  300.02,Desc.,COMMUNITY INVOLVEMENT,3,5,JENNIFER SERTEL,WWW,8910,,,,0,,"                          "
+ED  301.01,Desc.,CHILD MALTREATMENT,3,5,AYŞE GÜR TURABOĞLU,ThThTh,234,,,27.05.2017,1,,"                          "
+ED  330.01,Desc.,BASIC COUNSELING SKILLS,3,6,AYŞE GÜR TURABOĞLU,ThThThTh,6789,,,29.05.2017,1,,"        GUID                  "
+ED  342.01,Desc.,COMMUNITY & COUNSELING,3,5,DENİZ ALBAYRAK KAYMAK,TBA,,,,,0,,"                          "
+ED  352.01,Desc.,EDUCATIONAL ADMINISTRATION,3,5,FATMA NEVRA SEGGIE,MMTT,2334,,,25.05.2017,2,,"                          "
+ED  373.01,Desc.,MEASUREMENT & EVALUATION ,3,6,BENGÜ BÖRKAN,MMW,343,,,01.06.2017,3,,"                          "
+ED  378.01,Desc.,INTRODUCTION TO ASSESSMENT IN COUNSELING,3,6,ZEYNEP HANDE SART,TTWW,6723,,,02.06.2017,1,,"                          "
+ED  401.01,Desc.,CLASSROOM MANAGEMENT ,3,6,ZEYNEP KIZILTEPE,TTWW,1267,,,23.05.2017,3,,"        PEDU; TPHY; PRSC; PRMA; FLED; CEDU; TCHE; MEDU; TMAT; PRSO; GUID; PRED; CET; ED                  "
+ED  417.01,Desc.,CRISIS INTERVENTION,3,6,NEYLAN ÖZDEMİR,ThThTh,123,,,30.05.2017,2,,"        GUID; PSY; ED                  "
+ED  434.01,Desc.,ADVANCED COUNSELING SKILLS,3,6,AYDAN GÜLERCE,MMMM,6789,,,,0,,"        GUID                  "
+ED  434.02,Desc.,ADVANCED COUNSELING SKILLS,3,6,AYDAN GÜLERCE,WWWW,6789,,,,0,,"        GUID                  "
+ED  434.03,Desc.,ADVANCED COUNSELING SKILLS,3,6,SEVİLAY SİTRAVA,ThThThTh,1234,,,,0,,"                          "
+ED  436.01,Desc.,EDUCATIONAL NEUROLOGY,3,5,BARIŞ KORKMAZ,ThThTh,678,,,26.05.2017,1,,"                          "
+ED  442.01,Desc.,ADULT EDUCATION,3,5,RIFAT OKÇABOL,WWW,678,,,23.05.2017,3,,"                          "
+ED  444.01,Desc.,PSYCHOEDUCATIONAL CONSULTATION,3,6,YELİZ ŞIK,ThThTh,789,,,26.05.2017,1,,"                          "
+ED  465.01,Desc.,DIVERSE PERSPECTIVES IN EDUCATIO. ISSUES,3,5,GAYE YILMAZ,MMM,567,,,22.05.2017,1,,"                          "
+ED  475.01,Desc.,SUPPORTIVE SERVICES IN HIGHER EDUCATION,3,5,DENİZ ALBAYRAK KAYMAK,TBA,,,,,0,,"                          "
+ED  475.02,Desc.,SUPPORTIVE SERVICES IN HIGHER EDUCATION,3,5,LEYLA NAVARO,TBA,,,,,0,,"                          "
+ED  478.01,Desc.,FIELD PRACTICE II,4,8,DENİZ ALBAYRAK KAYMAK,MMWW,1212,,,29.05.2017,3,,"                          "
+ED  478.02,Desc.,FIELD PRACTICE II,4,8,ZEYNEP HANDE SART,TBA,,,,29.05.2017,3,,"                          "
+ED  478.03,Desc.,FIELD PRACTICE II,4,8,NİHAL YENİAD MALKAMAK,TBA,,,,29.05.2017,3,,"                          "
+ED  478.04,Desc.,FIELD PRACTICE II,4,8,LEYLA NAVARO,TBA,,,,29.05.2017,3,,"                          "
+ED  478.05,Desc.,FIELD PRACTICE II,4,8,MICHAL BARDAVID,TBA,,,,29.05.2017,3,,"                          "
+ED  478.06,Desc.,FIELD PRACTICE II,4,8,AYŞE GÜR TURABOĞLU,TBA,,,,29.05.2017,3,,"                          "
+ED  48M.01,Desc.,SP.TOP.IN EDU.:DANCE AND MOVEMENT,3,6,MICHAL BARDAVID,WWW,345,,,24.05.2017,2,,"                          "
+ED  48Y.01,Desc.,SP.TP.EATING DIS.PRE.&PRO.OF HEALT.EAT.,3,6,FEYZA BAYRAKTAR,TTT,789,,,23.05.2017,3,,"                          "
+ED  49A.01,Desc.,SP.STUD.RESEARCH ETHICS,3,4,BENGÜ BÖRKAN,MTT,145,,,30.05.2017,3,,"                          "

@@ -1,0 +1,72 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+BIO 101.01,Desc.,CELLULAR AND MOLECULAR BIOLOGY I,3,5,MÜGE TÜRET,MMTh,565,Online,,,,,"                          "
+BIO 101.02,Desc.,CELLULAR AND MOLECULAR BIOLOGY I,3,5,ŞÜKRÜ ANIL DOĞAN,MMTh,565,Online,,,,,"                          "
+BIO 102.01,Desc.,CELLULAR AND MOLECULAR BIOLOGY II,3,5,ARZU ÇELİK,TThTh,334,Online,,,,,"                          "
+BIO 111.01,Desc.,PRELUDE TO MOLECULAR BIOLOGY,1,1,ESRA BATTALOĞLU,Th,8,Online,,,,,"                          "
+BIO 121.01,Desc.,INTRO.TO CELL BIOLOGY,3,5,ESRA BATTALOĞLU,WWF,344,Online,,,,,"                          "
+BIO 201.01,Desc.,EVOLUTION AND BIODIVERSITY,3,3,STEVEN FOOTITT,MWW,378,Online,,,,,"                          "
+BIO 203.01,Desc.,BIOSTATISTICS,3,5,IGOR KRYVORUCHKO,WWF,563,Online,,,,,"                          "
+BIO 301.01,Desc.,BIOCHEMISTRY I,4,6,İBRAHİM YAMAN,MMWW,3434,Online,,,,,"                          "
+BIO 308.01,Desc.,SEMINAR I,1,2,NECLA BİRGÜL İYİSON,TT,12,Online,,,,,"                          "
+BIO 331.01,Desc.,TECHNIQUES IN BIOLOGICAL RESEARCH,3,6,ALİ RIZA UMUT ŞAHİN,MMTh,673,Online,,,,,"                          "
+BIO 333.01,Desc.,BIOCHEMISTRY LABORATORY,3,6,ALİ RIZA UMUT ŞAHİN,T,4,Classroom,,,,,"                          "
+,,LAB,,,ALİ RIZA UMUT ŞAHİN,TTTT,5678,,,,,,"                          "
+,,LAB,,,ALİ RIZA UMUT ŞAHİN,ThThThTh,5678,,,,,,"                          "
+BIO 353.01,Desc.,MOLECULAR GENETICS,4,5,STEFAN FUSS,WWFF,1234,Online,,,,,"                          "
+BIO 355.01,Desc.,MOLECULAR BIOLOGY LABORATORY,3,4,ARZU ÇELİK,Th,2,Classroom,,,,,"                          "
+,,LAB,,,ARZU ÇELİK,WWWW,5678,,,,,,"                          "
+,,LAB,,,ARZU ÇELİK,FFFF,5678,,,,,,"                          "
+BIO 403.01,Desc.,SCIENTIFIC CONDUCT,1,2,STEFAN FUSS,W,8,Online,,,,,"                          "
+BIO 407.01,Desc.,SEMINAR II,2,3,ŞÜKRÜ ANIL DOĞAN,MM,12,Online,,,,,"                          "
+BIO 407.02,Desc.,SEMINAR II,2,3,TOLGA SÜTLÜ,TT,12,Online,,,,,"                          "
+BIO 407.03,Desc.,SEMINAR II,2,3,STEVEN FOOTITT,ThTh,12,Online,,,,,"                          "
+BIO 407.04,Desc.,SEMINAR II,2,3,ARZU ÇELİK,MM,12,Online,,,,,"                          "
+BIO 407.05,Desc.,SEMINAR II,2,3,NECLA BİRGÜL İYİSON,ThTh,12,Online,,,,,"                          "
+BIO 420.01,Desc.,IMMUNOLOGY,3,6,TOLGA SÜTLÜ,WWF,122,Online,,,,,"                          "
+BIO 430.01,Desc.,NEUROSCIENCE,3,6,STEFAN FUSS,MMTh,787,Online,,,,,"                          "
+BIO 475.01,Desc.,PLANT MOLECULAR BIOLOGY & GENETICS,3,6,MÜGE TÜRET,WWF,568,Online,,,,,"                          "
+BIO 48B.01,Desc.,SP.TP. BIOINFORMATICS,3,6,IGOR KRYVORUCHKO,TTF,565,Online,,,,,"                          "
+BIO 48H.01,Desc.,SP.TP.BIOENTREPRENEURSHIP&INNOVATION ESSENTIALS,3,6,SEVGİ SALMAN ÜNVER,TTT,678,Online,,,,,"                          "
+BIO 493.01,Desc.,SP.TP.:SIGNALING&CANCER,3,6,NECLA BİRGÜL İYİSON,TTTh,344,Online,,,,,"                          "
+BIO 500.01,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,NECLA BİRGÜL İYİSON,,,Classroom,,,,,"                          "
+BIO 500.02,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,ŞÜKRÜ ANIL DOĞAN,,,Classroom,,,,,"                          "
+BIO 500.03,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,N.C.TOLGA EMRE,,,Classroom,,,,,"                          "
+BIO 500.04,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,STEVEN FOOTITT,,,Classroom,,,,,"                          "
+BIO 500.05,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,ARZU ÇELİK,,,Classroom,,,,,"                          "
+BIO 500.06,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,STEFAN FUSS,,,Classroom,,,,,"                          "
+BIO 500.07,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,IGOR KRYVORUCHKO,,,Classroom,,,,,"                          "
+BIO 500.08,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,NESRİN ÖZÖREN,,,Classroom,,,,,"                          "
+BIO 500.09,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,TOLGA SÜTLÜ,,,Classroom,,,,,"                          "
+BIO 500.10,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,ALİ RIZA UMUT ŞAHİN,,,Classroom,,,,,"                          "
+BIO 500.11,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,İBRAHİM YAMAN,,,Classroom,,,,,"                          "
+BIO 501.01,Desc.,ADVANCED MOLECULAR BIOLOGY,3,7,NESRİN ÖZÖREN,WWTh,787,Online,,,,,"                          "
+BIO 511.01,Desc.,ADVANCED GENETICS,3,7,TOLGA SÜTLÜ,MMT,787,Online,,,,,"                          "
+BIO 579.01,Desc.,GRADUATE SEMINAR,0,2,ŞÜKRÜ ANIL DOĞAN,F,6,Online,,,,,"                          "
+BIO 58F.01,Desc.,SP.TP.KEY PATHWAYS IN CANCER,3,7,NECLA BİRGÜL İYİSON,,,Online,,,,,"                          "
+BIO 601.01,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,NECLA BİRGÜL İYİSON,,,Online,,,,,"                          "
+BIO 601.02,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,N.C.TOLGA EMRE,,,Online,,,,,"                          "
+BIO 601.03,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,ARZU ÇELİK,,,Online,,,,,"                          "
+BIO 601.04,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,STEFAN FUSS,,,Online,,,,,"                          "
+BIO 601.05,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,NESRİN ÖZÖREN,,,Online,,,,,"                          "
+BIO 601.06,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,TOLGA SÜTLÜ,,,Online,,,,,"                          "
+BIO 601.07,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,ALİ RIZA UMUT ŞAHİN,,,Online,,,,,"                          "
+BIO 601.08,Desc.,ADV. TECHNIQUES IN MOLECULAR BIOLOGY,3,16,İBRAHİM YAMAN,,,Online,,,,,"                          "
+BIO 690.01,Desc.,M.S.THESIS,0,60,ESRA BATTALOĞLU,,,Online,,,,,"                          "
+BIO 690.02,Desc.,M.S.THESIS,0,60,NECLA BİRGÜL İYİSON,,,Online,,,,,"                          "
+BIO 690.03,Desc.,M.S.THESIS,0,60,ŞÜKRÜ ANIL DOĞAN,,,Online,,,,,"                          "
+BIO 690.04,Desc.,M.S.THESIS,0,60,N.C.TOLGA EMRE,,,Online,,,,,"                          "
+BIO 690.05,Desc.,M.S.THESIS,0,60,ARZU ÇELİK,,,Online,,,,,"                          "
+BIO 690.06,Desc.,M.S.THESIS,0,60,STEFAN FUSS,,,Online,,,,,"                          "
+BIO 690.07,Desc.,M.S.THESIS,0,60,NESRİN ÖZÖREN,,,Online,,,,,"                          "
+BIO 690.08,Desc.,M.S.THESIS,0,60,ALİ RIZA UMUT ŞAHİN,,,Online,,,,,"                          "
+BIO 690.09,Desc.,M.S.THESIS,0,60,İBRAHİM YAMAN,,,Online,,,,,"                          "
+BIO 690.10,Desc.,M.S.THESIS,0,60,IGOR KRYVORUCHKO,,,Classroom,,,,,"                          "
+BIO 690.11,Desc.,M.S.THESIS,0,60,TOLGA SÜTLÜ,,,Classroom,,,,,"                          "
+BIO 700.01,Desc.,GRADUATE SEMINAR,0,2,ALİ RIZA UMUT ŞAHİN,,,Online,,,,,"                          "
+BIO 790.01,Desc.,Ph.D.THESIS,0,120,ESRA BATTALOĞLU,,,Online,,,,,"                          "
+BIO 790.02,Desc.,Ph.D.THESIS,0,120,NECLA BİRGÜL İYİSON,,,Online,,,,,"                          "
+BIO 790.03,Desc.,Ph.D.THESIS,0,120,N.C.TOLGA EMRE,,,Online,,,,,"                          "
+BIO 790.04,Desc.,Ph.D.THESIS,0,120,STEFAN FUSS,,,Online,,,,,"                          "
+BIO 790.05,Desc.,Ph.D.THESIS,0,120,NESRİN ÖZÖREN,,,Online,,,,,"                          "
+BIO 790.06,Desc.,Ph.D.THESIS,0,120,ALİ RIZA UMUT ŞAHİN,,,Online,,,,,"                          "
+BIO 790.07,Desc.,Ph.D.THESIS,0,120,MÜGE TÜRET,,,Online,,,,,"                          "

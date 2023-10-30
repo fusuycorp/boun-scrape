@@ -1,0 +1,109 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AL  312.01,Desc.,SURVEY OF AMERICAN LIT. FROM LATE 19 CEN,3,6,KIM FORTUNY,TTTh,785,,M 1170 | M 1170 | TB 490,22.05.2018,3,"FLED,LL","                          "
+AL  312.02,Desc.,SURVEY OF AMERICAN LIT. FROM LATE 19 CEN,3,6,N.CİHAN YURDAÜN,TTTh,785,,M 2152 | M 2152 | NH 302,22.05.2018,3,"FLED,LL","                          "
+AS  250.01,Desc.,INTRODUCTION TO AMERICAN STUDIES,3,6,ASLI TEKİNAY,TTTh,124,,JF 334 | JF 334 | JF102,16.05.2018,2,,"                          "
+CL  104.01,Desc.,CLASSICAL LITERATURE,3,6,JAMESON J.KISMET BELL,MMW,347,,TB 415 | TB 415 | TB 490,25.05.2018,1,,"                          "
+CL  104.02,Desc.,CLASSICAL LITERATURE,3,6,LAMİA GÜLÇUR,MThTh,756,,TB 490 | EF 206 | EF 206,25.05.2018,1,,"                          "
+CL  206.01,Desc.,LITERARY THEORY&CRITICISM II,3,6,IŞIL BAŞ,TTTh,452,,NH 201 | NH 201 | NH 104,23.05.2018,1,,"                          "
+,,LAB,,,IŞIL BAŞ,W,5,,M 2180,,0,,"                          "
+CL  480.01,Desc.,SP.TP.CONTEM.ADAPTA&APP.OF SHAKES.TRAGED,3,6,İNCİ BİLGİN TEKİN,WFF,356,,JF 333 | TB 240 | TB 240,29.05.2018,1,,"                          "
+EL  102.01,Desc.,SURVEY OF ENG.LIT.FROM RESTORATION TO PR,3,6,CEVZA SEVGEN,TThF,444,,TB 240 | TB 240 | TB 415,26.05.2018,1,"FLED,LL","                          "
+,,LAB,,,CEVZA SEVGEN,T,8,,M 2171,,0,,"                          "
+EL  102.02,Desc.,SURVEY OF ENG.LIT.FROM RESTORATION TO PR,3,6,EMİNE FİŞEK,TThF,444,,EF 102 | TB 415 | M 2181,26.05.2018,1,"FLED,LL","                          "
+,,LAB,,,EMİNE FİŞEK,T,8,,JF 102,,0,,"                          "
+EL  102.03,Desc.,SURVEY OF ENG.LIT.FROM RESTORATION TO PR,3,6,ÖZLEM GÖREY,TThF,444,,M 2171 | JF 101 | TB 240,26.05.2018,1,"FLED,LL","                          "
+,,LAB,,,ÖZLEM GÖREY,T,8,,TB 415,,0,,"                          "
+EL  102.04,Desc.,SURVEY OF ENG.LIT.FROM RESTORATION TO PR,3,6,KIM FORTUNY,TThF,444,,İB 312 | TB 490 | TB 310,26.05.2018,1,"FLED,LL","                          "
+,,LAB,,,KIM FORTUNY,F,8,,TB 415,,0,,"                          "
+EL  202.01,Desc.,THE ENGLISH RENAISSANCE,3,6,JAMESON J.KISMET BELL,MWW,634,,M 1181 | NB Z11 | NB Z11,24.05.2018,1,,"                          "
+EL  202.02,Desc.,THE ENGLISH RENAISSANCE,3,6,ETHAN JOHN GUAGLIARDO,MWW,334,,JF 108 | TB 240 | TB 240,24.05.2018,1,,"                          "
+EL  305.01,Desc.,STUDIES IN SHAKESPEARE,3,6,CEVZA SEVGEN,TThF,667,,M 2171 | TB 240 | TB 415,18.05.2018,1,,"                          "
+EL  305.02,Desc.,STUDIES IN SHAKESPEARE,3,6,EMİNE FİŞEK,TFF,678,,M 1171 | TB 490 | TB 490,18.05.2018,1,,"                          "
+EL  306.01,Desc.,THE ENGLISH ROMANTICS,3,6,BAŞAK DEMİRHAN,WFF,434,,JF 102 | M 2200 | M 2200,16.05.2018,1,,"                          "
+EL  408.01,Desc.,MODERN POETRY,3,6,N.CİHAN YURDAÜN,TTTh,343,,JF 334 | JF 334 | TB 240,28.05.2018,3,,"                          "
+EL  408.02,Desc.,MODERN POETRY,3,6,ÖZLEM GÖREY,TTTh,673,,TB 415 | TB 415 | JF 101,28.05.2018,3,,"                          "
+EL  412.01,Desc.,SENIOR THESIS,3,6,AYLİN ALKAÇ,,,,,,,,"                          "
+EL  412.02,Desc.,SENIOR THESIS,3,6,IŞIL BAŞ,,,,,,,,"                          "
+EL  412.03,Desc.,SENIOR THESIS,3,6,BAŞAK DEMİRHAN,,,,,,,,"                          "
+EL  412.04,Desc.,SENIOR THESIS,3,6,EMİNE FİŞEK,,,,,,,,"                          "
+EL  412.05,Desc.,SENIOR THESIS,3,6,KIM FORTUNY,,,,,,,,"                          "
+EL  412.06,Desc.,SENIOR THESIS,3,6,ÖZLEM GÖREY,,,,,,,,"                          "
+EL  412.07,Desc.,SENIOR THESIS,3,6,ETHAN JOHN GUAGLIARDO,,,,,,,,"                          "
+EL  412.08,Desc.,SENIOR THESIS,3,6,JAMESON J.KISMET BELL,,,,,,,,"                          "
+EL  412.09,Desc.,SENIOR THESIS,3,6,ÖZLEM ÖĞÜT,,,,,,,,"                          "
+EL  412.10,Desc.,SENIOR THESIS,3,6,HANDE TEKDEMİR,,,,,,,,"                          "
+EL  412.11,Desc.,SENIOR THESIS,3,6,ASLI TEKİNAY,,,,,,,,"                          "
+EL  412.12,Desc.,SENIOR THESIS,3,6,N.CİHAN YURDAÜN,,,,,,,,"                          "
+EL  412.13,Desc.,SENIOR THESIS,3,6,CEVZA SEVGEN,,,,,,,,"                          "
+EL  488.01,Desc.,SP.TP.SP.TP.LONG VICTORIAN NOVEL,3,6,BAŞAK DEMİRHAN,WWF,676, ,TB 240 | TB 240 | M 1152,17.05.2018,1,,"                          "
+EL  48A.01,Desc.,SP.TP.MEMORY &THE 20TH CENTURY NOVEL,3,6,HANDE TEKDEMİR,WFF,656, ,JF 333 | TB 415 | TB 415,29.05.2018,1,,"                          "
+EL  589.01,Desc.,READINGS IN ENGLISH LITERATURE,1,5,BAŞAK DEMİRHAN,,,,,25.05.2018,2,,"                          "
+EL  592.01,Desc.,SPC.STUD.:LITERARY THEORY,4,10,ETHAN JOHN GUAGLIARDO,MMM,678,,,,,,"                          "
+EL  593.01,Desc.,SPC.STUD.:ENGLISH NOVEL,4,10,NAZ BULAMUR,FFF,567,,,,,,"                          "
+EL  594.01,Desc.,ADVAN.TOP.IN ENGLISH LITERATURE,4,10,AYLİN ALKAÇ,,,,,,,,"                          "
+EL  594.03,Desc.,ADVAN.TOP.IN ENGLISH LITERATURE,4,10,BAŞAK DEMİRHAN,,,,,,,,"                          "
+EL  594.04,Desc.,ADVAN.TOP.IN ENGLISH LITERATURE,4,10,EMİNE FİŞEK,,,,,,,,"                          "
+EL  594.08,Desc.,ADVAN.TOP.IN ENGLISH LITERATURE,4,10,JAMESON J.KISMET BELL,,,,,,,,"                          "
+EL  594.09,Desc.,ADVAN.TOP.IN ENGLISH LITERATURE,4,10,ÖZLEM ÖĞÜT,,,,,,,,"                          "
+EL  594.11,Desc.,ADVAN.TOP.IN ENGLISH LITERATURE,4,10,ASLI TEKİNAY,,,,,,,,"                          "
+EL  594.12,Desc.,ADVAN.TOP.IN ENGLISH LITERATURE,4,10,N.CİHAN YURDAÜN,,,,,,,,"                          "
+EL  594.13,Desc.,ADVAN.TOP.IN ENGLISH LITERATURE,4,10,MATTHEW GUMPERT,,,,,,,,"                          "
+EL  690.01,Desc.,MASTER THESIS,0,60,KIM FORTUNY,,,,,,,,"                          "
+EL  690.02,Desc.,MASTER THESIS,0,60,ÖZLEM GÖREY,,,,,,,,"                          "
+EL  690.03,Desc.,MASTER THESIS,0,60,ETHAN JOHN GUAGLIARDO,,,,,,,,"                          "
+EL  690.04,Desc.,MASTER THESIS,0,60,MATTHEW GUMPERT,,,,,,,,"                          "
+EL  690.05,Desc.,MASTER THESIS,0,60,ÖZLEM ÖĞÜT,,,,,,,,"                          "
+EL  690.06,Desc.,MASTER THESIS,0,60,HANDE TEKDEMİR,,,,,,,,"                          "
+EL  690.07,Desc.,MASTER THESIS,0,60,ASLI TEKİNAY,,,,,,,,"                          "
+EL  690.08,Desc.,MASTER THESIS,0,60,EMİNE FİŞEK,,,,,,,,"                          "
+EL  790.01,Desc.,DOCTORAL DISSERTATION,0,120,EMİNE FİŞEK,,,,,,,,"                          "
+EL  790.02,Desc.,DOCTORAL DISSERTATION,0,120,MATTHEW GUMPERT,,,,,,,,"                          "
+EL  790.03,Desc.,DOCTORAL DISSERTATION,0,120,ÖZLEM ÖĞÜT,,,,,,,,"                          "
+EL  790.04,Desc.,DOCTORAL DISSERTATION,0,120,HANDE TEKDEMİR,,,,,,,,"                          "
+EL  790.05,Desc.,DOCTORAL DISSERTATION,0,120,ASLI TEKİNAY,,,,,,,,"                          "
+EL  790.06,Desc.,DOCTORAL DISSERTATION,0,120,KIM FORTUNY,,,,,,,,"                          "
+ENGL106.01,Desc.,INTRODUCTION TO LITERARY FORMS II,3,6,ÖZLEM ÖĞÜT,WWF,343,,NH 304 | NH 304 | M 2230,23.05.2018,3,"LL,TR","                          "
+ENGL106.02,Desc.,INTRODUCTION TO LITERARY FORMS II,3,6,HANDE TEKDEMİR,WWF,343,,NH 402 | NH 402 | M 2180,23.05.2018,3,"LL,TR","                          "
+ENGL106.03,Desc.,INTRODUCTION TO LITERARY FORMS II,3,6,AYLİN ALKAÇ,WWF,343,,EF 07 | EF 07 | M 2181,23.05.2018,3,"LL,TR","                          "
+ENGL112.01,Desc.,EXPOSITORY WRITING II,3,5,PILAR MILAGROS,MWW,356,,M 1152 | JF 101 | JF 101,,,HIST,"                          "
+ENGL112.02,Desc.,EXPOSITORY WRITING II,3,5,PILAR MILAGROS,MMW,563,,TB 240 | TB 240 | JF 101,,,HIST,"                          "
+ENGL112.03,Desc.,EXPOSITORY WRITING II,3,5,LEILA BRAVERMAN,TThTh,345,,TB 240 | EF 06 | EF 06,,,HIST,"                          "
+ENGL112.04,Desc.,EXPOSITORY WRITING II,3,5,LEILA BRAVERMAN,TTTh,562,,NH 304 | NH 304 | JF 102,,,HIST,"                          "
+FA  324.01,Desc.,MUSIC APPRECIATION II,3,5,BERNA ADATOZ,MMM,567,,NH 001 | NH 001 | NH 001,12.05.2018,2,,"                          "
+FA  324.02,Desc.,MUSIC APPRECIATION II,3,5,UFUK ÇAKMAK,WWW,345,,TB 415 | TB 415 | TB 415,12.05.2018,2,,"                          "
+FA  327.01,Desc.,MUSIC:THEORY & APPRECIATION,3,5,EMİNE SERDAROĞLU,ThThTh,234,,JF 108 | JF 108 | JF 108,,,,"                          "
+FA  341.01,Desc.,HISTORY OF THE CINEMA,3,5,ŞAHAN YATARKALKMAZ,MMMMM,45678,,JF 108 | JF 108 | JF 108 | JF 108 | JF 108,12.05.2018,2,,"                          "
+FA  348.01,Desc.,INTRODUCTION TO FILM ANALYSIS,3,5,TUBA AY,FFFFF,45678,,JF 108 | JF 108 | JF 108 | JF108 | JF 108,12.05.2018,1,,"                          "
+FA  350.01,Desc.,PROJECT IN FILM ANALYSIS,3,5,CAN CANDAN,MMMMMM,234567,,NB Z09 | NB Z09 | NB Z09 | NB Z09 | NB Z09 | NB Z09,,,,"                          "
+FA  480.01,Desc.,SP.TP.:CLASSICAL MUS.IN CIN.:AUT.&T.MUS.,3,5,MEHMET FEYZİ ERÇİN,TTT,678,,NH 404 | NH 404 | NH 404,,,,"                          "
+FA  485.01,Desc.,SP.TP.MYSTERY IN FILM,3,5,AYŞEGÜL DOĞAN,WWW,345,,MİTHAT ALAM | MİTHAT ALAM | MİTHAT ALAM,,,,"                          "
+,,P.S.,,,AYŞEGÜL DOĞAN,WW,67,,MİTHAT ALAM | MİTHAT ALAM,,0,,"                          "
+FA  486.01,Desc.,SPECIAL TOPICS.:SCRIPTWRITING,3,5,SALİH MEHMET İNAN,WWW,345, ,JF 108 | JF 108 | JF 108,,,,"                          "
+FA  489.01,Desc.,SP.TOP.:GRAPHIC NOVEL,3,5,MEHMET EMİN ADANALI,WWW,345, ,JF 332 | JF 332 | JF 332,12.05.2018,2,,"                          "
+FA  48C.01,Desc.,SP.TP.CINEMA AND POLITICS,3,5,ASLI DALDAL,ThThTh,123,,ET 01 | ET 01 | ET 01,12.05.2018,1,,"                          "
+FA  48I.01,Desc.,SP.TOP.:DOCUMENTARY IN TURKEY,3,5,CAN CANDAN,ThThTh,234,,NB Z09 | NB Z09 | NB Z09,,,,"                          "
+FA  48J.01,Desc.,SP.TP.MYTHIC STRUC.&STORYTELLING IN CIN.,3,5,SALİH MEHMET İNAN,MMM,345, ,SİNEBU | SİNEBU | SİNEBU,,,,"                          "
+FA  48P.01,Desc.,SP.TOP.DRAMATIC STRUCTURE:FILM&TV,3,5,BEHRE ÖVGÜ ÖZALP,TTT,345,,JF 108 | JF 108 | JF 108,,,,"                          "
+FA  48R.01,Desc.,SP.TOP.CONTEMPORARY ART,3,5,SENA BAŞÖZ,TTT,678, ,JF 331 | JF 331 | JF 331,12.05.2018,1,,"                          "
+FA  490.01,Desc.,SP.TP.ADV.GRAPHIC NOVEL&COMICS,3,5,MEHMET EMİN ADANALI,,, ,,14.05.2018,1,,"                          "
+FA  493.01,Desc.,SP.TP.TWELVE MASTERS:FILM AS ART,3,5,JAK ŞALOM,TTT,567, ,MİTHAT ALAM | MİTHAT ALAM | MİTHAT ALAM,12.05.2018,3,,"                          "
+FA  496.01,Desc.,SP.TOP.: JAZZ APPRECIATION II,3,5,SEDA BİNBAŞGİL,TTT,678,,JF 108 | JF 108 | JF 108,12.05.2018,3,,"                          "
+FA  497.01,Desc.,SP.TP.CONTEMPORARY PERFORMANCE PRACTICES,3,5,ONUR KARAOĞLU,MMM,234, ,EF 04 | EF 04 | EF 04,14.05.2018,1,,"                          "
+FA  49D.01,Desc.,SP.TP.MUSIC AND THE VISUAL ARTS,3,5,RANA İREN,TTT,123, ,JF 102 | JF 102 | JF 102,14.05.2018,1,,"                          "
+FA  49E.02,Desc.,SP.TP.SUBVERSIVE CINEMA,3,5,ŞAHAN YATARKALKMAZ,MMM,91011,,JF 108 | JF 108 | JF 108,14.05.2018,1,,"                          "
+FA  49K.01,Desc.,SP.TP.FILM NOIR ,3,5,TUBA AY,MMM,678,,NH 402 | NH 402 | NH 402,14.05.2018,1,,"                          "
+FA  49L.01,Desc.,SP.TP.THE GRAMM.OF FILM LANG.:FILM EDIT.,3,5,ÖZCAN VARDAR,MMM,234,,MİTHAT ALAM | MİTHAT ALAM | MİTHAT ALAM,12.05.2018,2,,"                          "
+,,P.S.,,,ÖZCAN VARDAR,MM,56,,MİTHAT ALAM | MİTHAT ALAM,,0,,"                          "
+FA  49X.01,Desc.,SP.TP.MUSIC AND LITERATURE,3,5,F.ZEYNEP BİLGE,ThThTh,567,,TB 415 | TB 415 | TB 415,14.05.2018,2,,"                          "
+FA  49Z.01,Desc.,SP.TP.FIN DE SIECLE&EAR.20Th CENT.IN EUR,3,5,UFUK ÇAKMAK,MMM,345,,JF 102 | JF 102 | JF 102,12.05.2018,1,,"                          "
+GR  102.01,Desc.,MODERN GREEK FOR BEGINNERS II,3,5,CHRYSSI SIDIROPOULOU,ThThTh,678,,JF 331 | JF 331 | JF 331,14.05.2018,3,,"                          "
+GR  112.01,Desc.,ANCIENT GREEK II,3,5,ATHANASIA  STAVROU,MMThTh,91034,,,12.05.2018,3,,"                          "
+GR  202.01,Desc.,INTERMEDIATE MODERN GREEK II,3,5,ATHANASIA  STAVROU,FF,34,,M 2231 | M 2231,12.05.2018,1,,"                          "
+GR  212.01,Desc.,ANCIENT GREEK IV,3,5,ATHANASIA  STAVROU,TTThTh,7834,,,12.05.2018,2,,"                          "
+LAT 112.01,Desc.,ELEMANTARY LATIN II,3,5,BRIGITA KUKJALKO,ThThFF,8989,,EF 103 | EF 103 | TB 240 | TB 240,12.05.2018,1,,"                          "
+LAT 212.01,Desc.,INTERMEDIATE LATIN II,3,5,BRIGITA KUKJALKO,TTFF,91012,,,14.05.2018,1,,"                          "
+LIT 212.01,Desc.,STUDIES IN LITERATURE II,3,8,AYLİN ALKAÇ,WFF,756,,NH 103 | M 2181 | M 2181,23.05.2018,1,"HIST,PHYS","                          "
+LIT 212.02,Desc.,STUDIES IN LITERATURE II,3,8,AYLİN ALKAÇ,WFF,878,,NH 103 | M 2181 | M 2181,23.05.2018,1,"HIST,PHYS","                          "
+LIT 212.03,Desc.,STUDIES IN LITERATURE II,3,8,ÖZLEM ÖĞÜT,WFF,878,,TB 240 | M 2230 | M 2230,23.05.2018,1,"HIST,PHYS","                          "
+LIT 311.01,Desc.,COPYWRITING FOR MARKETING&ADVERTISING,3,6,SAMİ BASUT,WWW,678,,TB 415 | TB 415 | TB 415,18.05.2018,3,,"                          "
+LIT 412.01,Desc.,COPYWRITING II,3,6,NEŞET DERELİ,WWW,101112,,TB 415 | TB 415 | TB 415,26.05.2018,1,,"                          "

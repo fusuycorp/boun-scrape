@@ -1,0 +1,23 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY I,3,7,GÜROL IRZIK,WThTh,212,,,,,,"        PSY; LING; GUID; LAW                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,5,ZEYNEP DAVRAN,MWTh,333,,,,,,"        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,3,10,KARANFİL SOYHUN,TFF,523,,,,,,"                          "
+PHIL131.02,Desc.,LOGIC I,3,10,KARANFİL SOYHUN,TTF,235,,,,,,"                          "
+PHIL132.01,Desc.,LOGIC II,3,6,BERNA KILINÇ,TThTh,678,,,,,,"                          "
+PHIL213.01,Desc.,ANCIENT PHILOSOPHY,3,6,CHRYSSI SIDIROPOULOU,TWW,456,,,,,,"        PHIL                  "
+PHIL251.01,Desc.,SPECIAL TOPICS IN LOGIC,3,5,ALİ KARATAY,TFF,523,,,,,,"                          "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,ALİ KARATAY,TTF,786,,,,,,"        PHIL                  "
+PHIL313.01,Desc.,HISTORY OF MODERN PHILOSOPHY I,3,6,SUN DEMİRLİ,TTTh,125,,,,,,"        PHIL                  "
+PHIL354.01,Desc.,SOCIAL & POLITICAL PHILOSOPHY,3,6,ZEYNEP DAVRAN,MMW,564,,,,,,"                          "
+PHIL400.01,Desc.,CURRENT ISSUES IN PHILOSOPHY,3,6,STEPHEN VOSS,TTTh,454,,,,,,"                          "
+PHIL487.01,Desc.,SEL.TOP.IN PHILOSOPHY : CONCEPTS,3,6,İLHAN İNAN,ThThTh,678,,,,,,"                          "
+PHIL494.01,Desc.,SP.TOPICS:OBJECTS AND REALITY,3,6,SUN DEMİRLİ,WWF,565,,,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,2,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,GÜROL IRZIK,TBA,,,,,,,"                          "
+PHIL593.01,Desc.,SP.TOPICS:SCIENCE AND RELIGION,4,10,BERNA KILINÇ,WWW,789,,,,,,"                          "
+PHIL594.01,Desc.,SP.TOPICS:KNOWLEDGE AND LANGUAGE,4,10,İLHAN İNAN,TTT,567,,,,,,"                          "
+PHIL603.01,Desc.,ARISTOTLE,4,10,STEPHEN VOSS,ThThTh,678,,,,,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,İLHAN İNAN,TBA,,,,,,,"                          "

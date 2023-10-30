@@ -1,0 +1,24 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL105.01,Desc.,CRITICAL THINKING,3,6,KARANFİL SOYHUN,TTTh,562,,NH 102 | NH 102 | M 1200,,,,"        PHIL                  "
+PHIL106.01,Desc.,PHILOSOPHICAL TEXTS,3,7,MURAT BAÇ,WWTh,561,,M 2171 | M 2171 | M 2170,,,,"                          "
+PHIL112.01,Desc.,INTRODUCTION TO MODERN PHILOSOPHY,3,5,STEPHEN VOSS,TTTh,564,,NH 305 | NH 305 | NH 305,,,ED-LL-TKL-TR,"                          "
+PHIL132.01,Desc.,LOGIC II,3,6,BERNA KILINÇ,TTF,786,,M 1100 | M 1100 | TB 310,,,,"                          "
+PHIL214.01,Desc.,HISTORY OF PHILOSOPHY II,3,6,CHRYSSI SIDIROPOULOU,MWW,478,,NH 202 | NH 402 | NH 402,,,,"                          "
+PHIL222.01,Desc.,PHILOSOPHY OF SCIENCE,3,6,BERNA KILINÇ,TThTh,678,,M 1100 | TB 310 | TB 310,,,,"                          "
+PHIL314.01,Desc.,HISTORY OF PHILOSOPHY IV,3,6,JOHANNES FRITSCHE,MWW,112,,TB 310 | M 2171 | M 2171,,,,"                          "
+PHIL332.01,Desc.,ADVANCED LOGIC II,3,6,ALİ KARATAY,TTF,564,,M 2170 | M 2170 | M 2170,,,,"                          "
+PHIL382.01,Desc.,ONTOLOGY,3,7,STEPHEN VOSS,MMF,562,,M 1100 | M 1100 | TB 310,,,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,YILDIZ SİLİER,,, ,,,,,"                          "
+PHIL49F.01,Desc.,SP.TOP.:WONDER & LANGUAGE,3,6,İLHAN İNAN,WWW,345,,YD 103 | YD 103 | YD 103,,,,"                          "
+PHIL49G.01,Desc.,"SP.TOP.:ETHICS IN SOPHISTS,PLATO&ARISTOT",3,6,JOHANNES FRITSCHE,TTT,123,,YD 101 | YD 101 | YD 101,,,,"                          "
+PHIL49J.01,Desc.,SP.TOP.:KIERKEGAARD,3,6,BARRY STOCKER,FFF,356,,M 2170 | TB 240 | TB 240,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,YILDIZ SİLİER,TBA,,,,,,,"                          "
+PHIL59A.01,Desc.,SP.TOP.:CURIOSITY,4,10,İLHAN İNAN,ThThTh,678,,,,,,"                          "
+PHIL59B.01,Desc.,SP.TOP.:POLITICAL PHILOSOPHY,4,10,PINAR CANEVİ,WWW,678,,,,,,"                          "
+PHIL59C.01,Desc.,SP.TOP.:MARX'S ETHICS,4,10,ZEYNEP DAVRAN,TTT,678,,YD 201 | YD 201 | YD 201,,,,"                          "
+PHIL59D.01,Desc.,SP.TOP.:PRAGMATISM & TRUTH,4,10,MURAT BAÇ,ThThTh,345,,,,,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,MURAT BAÇ,TBA,,,,,,,"                          "

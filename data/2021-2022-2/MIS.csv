@@ -1,0 +1,106 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MIS 112.01,Desc.,ECONOMICS II,3,5,ALİ TÜKEL,TTTh,127,Online/Classroom,HD 201 | HD 201 | ONLINE,02.06.2022,2,,"                          "
+,,P.S.,,,ALİ TÜKEL,Th,8,,ONLINE,,0,,"                          "
+MIS 116.01,Desc.,PRINCIPLES OF MARKETING,3,5,ASLIHAN NASIR,MThTh,356,Online/Classroom,HD 201 | ONLINE | ONLINE,09.06.2022,3,,"                          "
+MIS 132.01,Desc.,OBJECT ORIENTED PROGRAMMING,4,6,BERTAN YILMAZ BADUR,MMTh,121,Online/Classroom,HD 201 | HD 201 | ONLINE,07.06.2022,2,,"                          "
+,,LAB,,,BERTAN YILMAZ BADUR,FF,67,,ONLINE | ONLINE,,0,,"                          "
+MIS 134.01,Desc.,INTRODUCTION TO DATABASE,3,5,FİGEN BACIOĞLU,ThTh,23,Online,ONLINE | ONLINE,01.06.2022,1,,"                          "
+,,LAB,,,FİGEN BACIOĞLU,WW,78,,ONLINE | ONLINE,,0,,"                          "
+MIS 144.01,Desc.,BUSINESS MATHEMATICS II,3,5,PINAR ADANALI,MMT,563,Classroom,HD 301 | HD 301 | HD 201,31.05.2022,1,,"                          "
+,,P.S.,,,PINAR ADANALI,MT,74,,HD 301 | HD 201,,0,,"                          "
+MIS 212.01,Desc.,MANAGERIAL ACCOUNTING,3,5,ALİ TÜKEL,MMW,672,Online/Classroom,HD 201 | HD 201 | ONLINE,11.06.2022,1,,"                          "
+MIS 224.01,Desc.,RESEARCH METHODOLOGY,3,6,AYSUN BOZANTA HAKYEMEZ,MTT,456,Online/Classroom,HD 101 | ONLINE | ONLINE,01.06.2022,3,,"                          "
+,,P.S.,,,AYSUN BOZANTA HAKYEMEZ,W,4,,ONLINE,,0,,"                          "
+MIS 228.01,Desc.,MANAGERIAL COMMUNICATION,3,6,ÖZGÜR DÖĞERLİOĞLU,WThTh,667,Online/Classroom,ONLINE | HD 201 | HD 201,08.06.2022,2,,"                          "
+MIS 252.01,Desc.,BUSINESS DATA COMMUNICATIONS ,3,6,BİLGİN METİN,MThTh,112,Classroom,HD 301 | HD 301 | HD 301,09.06.2022,1,,"                          "
+MIS 316.01,Desc.,FINANCE,3,5,CEYLAN ONAY,TTTh,346,Online/Classroom,HD 301 | HD 301 | ONLINE,06.06.2022,3,,"                          "
+MIS 326.01,Desc.,OBJECT ORIENTED MODELING,3,5,NAZIM TAŞKIN,MTT,578,Online/Classroom,ONLINE | HD 301 | HD 301,07.06.2022,1,,"                          "
+,,P.S.,,,NAZIM TAŞKIN,FF,34,,ONLINE | ONLINE,,0,,"                          "
+MIS 336.01,Desc.,BUSINESS APPLICATION DEVELOPMENT,2,5,MELTEM ÖZTURAN,Th,1,Online,ONLINE,11.06.2022,2,,"                          "
+,,LAB,,,MELTEM ÖZTURAN,FF,12,,ONLINE | ONLINE,,0,,"                          "
+MIS 344.01,Desc.,QUANTITATIVE ANALY. FOR DECISION MAKING,3,5,SONA MARDİKYAN,WWTh,235,Online/Classroom,HD 301 | HD 301 | ONLINE,28.05.2022,3,,"                          "
+,,P.S.,,,SONA MARDİKYAN,Th,2,,ONLINE,,0,,"                          "
+MIS 346.01,Desc.,ENTERPRISE INFORMATION SYSTEMS,3,6,ZUHAL TANRIKULU,WW,67,Classroom,HD 201 | HD 201,10.06.2022,1,,"                          "
+,,LAB,,,ZUHAL TANRIKULU,ThTh,78,,ONLINE | ONLINE,,0,,"                          "
+MIS 422.01,Desc.,E-BUSINESS MANAGEMENT,3,6,HANDE TÜRKER,TWW,645,Online/Classroom,ONLINE | HD 301 | HD 301,04.06.2022,1,,"                          "
+MIS 432.01,Desc.,SUPPLY CHAIN MANAGEMENT,3,6,ASLI SENCER,TThTh,567,Online/Classroom,ONLINE | HD 301 | HD 301,28.05.2022,1,,"                          "
+MIS 459.01,Desc.,HUMAN FACTORS IN COMPUTING,3,6,TANJU AKDENİZ,WWW,123,Classroom,HA 301 | HA 301 | HA 301,10.06.2022,3,,"                          "
+MIS 482.01,Desc.,SP.TP.INTRODUCTION TO INTERNET OF THINGS&ROBOTICS,3,5,HAKAN ÖZKARA,WWW,789,Classroom,HA 301 | HA 301 | HA 301,02.06.2022,2,,"                          "
+MIS 483.01,Desc.,SP.TP.DATA PRIVACY & PERS.DATA PROT.MAN.,3,5,ERCÜMENT ARI,FFF,123,Online,ONLINE | ONLINE | ONLINE,07.06.2022,2,,"                          "
+MIS 487.01,Desc.,SP.TOP.IN MIS:INFO SYSTEMS SECURITY,3,5,BİLGİN METİN,TTT,123,Online,ONLINE | ONLINE | ONLINE,30.05.2022,1,,"                          "
+MIS 492.01,Desc.,PROJECT,4,8,BERTAN YILMAZ BADUR,,,,,,,,"                          "
+MIS 492.03,Desc.,PROJECT,4,8,NAZIM TAŞKIN,,,,,,,,"                          "
+MIS 492.04,Desc.,PROJECT,4,8,ÖZGÜR DÖĞERLİOĞLU,,,,,,,,"                          "
+MIS 492.05,Desc.,PROJECT,4,8,AHMET ONUR DURAHİM,,,,,,,,"                          "
+MIS 492.06,Desc.,PROJECT,4,8,HANDE TÜRKER,,,,,,,,"                          "
+MIS 492.07,Desc.,PROJECT,4,8,SONA MARDİKYAN,,,,,,,,"                          "
+MIS 492.08,Desc.,PROJECT,4,8,BİLGİN METİN,,,,,,,,"                          "
+MIS 492.09,Desc.,PROJECT,4,8,ASLIHAN NASIR,,,,,,,,"                          "
+MIS 492.10,Desc.,PROJECT,4,8,CEYLAN ONAY,,,,,,,,"                          "
+MIS 492.11,Desc.,PROJECT,4,8,MELTEM ÖZTURAN,,,,,,,,"                          "
+MIS 492.12,Desc.,PROJECT,4,8,ASLI SENCER,,,,,,,,"                          "
+MIS 492.13,Desc.,PROJECT,4,8,ZUHAL TANRIKULU,,,,,,,,"                          "
+MIS 492.14,Desc.,PROJECT,4,8,ALİ TÜKEL,,,,,,,,"                          "
+MIS 492.15,Desc.,PROJECT,4,8,FİGEN BACIOĞLU,,,,,,,,"                          "
+MIS 49A.01,Desc.,SP.TP.INTR.TO WEB DESIGN FOR SOCIAL SCI.,3,5,CEM GÖKNİL,MMM,678,Online,ONLINE | ONLINE | ONLINE,10.06.2022,1,,"                          "
+MIS 49M.01,Desc.,SP.TP.IN MIS:MOBILE APP.DEVELOPMENT,3,5,ATIL SAMANCIOĞLU,ThThTh,123,Classroom,HB 102 | HB 102 | HB 102,03.06.2022,1,,"                          "
+MIS 49Y.01,Desc.,SP.TP.APPLIED MACHINE LEARNING,3,5,DEĞER AYATA,FFF,678,Online,ONLINE | ONLINE | ONLINE,08.06.2022,3,,"                          "
+MIS 518.01,Desc.,ADVANCED OPERATIONS MANAGEMENT,3,6,ASLI SENCER,WWW,678,Online,ONLINE | ONLINE | ONLINE,27.05.2022,3,,"                          "
+MIS 522.01,Desc.,PROJECT & CHANGE MANAGEMENT,3,6,NAZIM TAŞKIN,MMM,123,Classroom,HA 301 | HA 301 | HA 301,31.05.2022,2,,"                          "
+MIS 547.01,Desc.,ORGANIZATIONAL IMP. OF INFORMATION TECH.,3,6,ÖZGÜR DÖĞERLİOĞLU,WWW,234,Online,ONLINE | ONLINE | ONLINE,30.05.2022,3,,"                          "
+MIS 577.01,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,BERTAN YILMAZ BADUR,,,,,,,,"                          "
+MIS 577.03,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,NAZIM TAŞKIN,,,,,,,,"                          "
+MIS 577.04,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,ÖZGÜR DÖĞERLİOĞLU,,,,,,,,"                          "
+MIS 577.05,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,AHMET ONUR DURAHİM,,,,,,,,"                          "
+MIS 577.06,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,HANDE TÜRKER,,,,,,,,"                          "
+MIS 577.07,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,SONA MARDİKYAN,,,,,,,,"                          "
+MIS 577.08,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,BİLGİN METİN,,,,,,,,"                          "
+MIS 577.09,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,ASLIHAN NASIR,,,,,,,,"                          "
+MIS 577.10,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,CEYLAN ONAY,,,,,,,,"                          "
+MIS 577.11,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,MELTEM ÖZTURAN,,,,,,,,"                          "
+MIS 577.12,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,ASLI SENCER,,,,,,,,"                          "
+MIS 577.13,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,ZUHAL TANRIKULU,,,,,,,,"                          "
+MIS 577.14,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,ALİ TÜKEL,,,,,,,,"                          "
+MIS 579.01,Desc.,GRADUATE SEMINAR,0,6,ZUHAL TANRIKULU,T,4,Online,ONLINE,,,,"                          "
+MIS 581.01,Desc.,SP.TP.ARTIFICIAL INTELLIGENCE:PRINCIPLES&TECHNIQUES,3,6,AHMET ONUR DURAHİM,ThThTh,678,Classroom,HA 303 | HA 303 | HA 303,09.06.2022,1,,"                          "
+MIS 58B.01,Desc.,SP.TP.MACHINE LEARNING I,3,6,BERTAN YILMAZ BADUR,MMM,456,Classroom,HA 301 | HA 301 | HA 301,02.06.2022,3,,"                          "
+MIS 612.01,Desc.,MULTIVARIATE STATISTICAL METHODS,4,8,SONA MARDİKYAN,MMMM,2345,Online,ONLINE | ONLINE | ONLINE | ONLINE,04.06.2022,1,,"                          "
+MIS 622.01,Desc.,INTEGRATED INFORMATION SYSTEMS,3,6,MELTEM ÖZTURAN,TTT,123,Classroom,HB 216 | HB 216 | HB 216,,,,"                          "
+MIS 651.01,Desc.,SOFT COMPUTING FOR ENTERPRISE KNOW.MANA.,3,6,ZUHAL TANRIKULU,ThThTh,678,Classroom,HB 216 | HB 216 | HB 216,06.06.2022,2,,"                          "
+MIS 678.01,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,BERTAN YILMAZ BADUR,,,,,,,,"                          "
+MIS 678.03,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,NAZIM TAŞKIN,,,,,,,,"                          "
+MIS 678.04,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,ÖZGÜR DÖĞERLİOĞLU,,,,,,,,"                          "
+MIS 678.05,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,AHMET ONUR DURAHİM,,,,,,,,"                          "
+MIS 678.06,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,HANDE TÜRKER,,,,,,,,"                          "
+MIS 678.07,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,SONA MARDİKYAN,,,,,,,,"                          "
+MIS 678.08,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,BİLGİN METİN,,,,,,,,"                          "
+MIS 678.09,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,ASLIHAN NASIR,,,,,,,,"                          "
+MIS 678.10,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,CEYLAN ONAY,,,,,,,,"                          "
+MIS 678.11,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,MELTEM ÖZTURAN,,,,,,,,"                          "
+MIS 678.12,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,ASLI SENCER,,,,,,,,"                          "
+MIS 678.13,Desc.,DIRECTED READINGS IN MANAGEMENT INFORMATION SYSTEMS,0,6,ZUHAL TANRIKULU,,,,,,,,"                          "
+MIS 690.01,Desc.,MASTER'S THESIS,0,60,BERTAN YILMAZ BADUR,,,,,,,,"                          "
+MIS 690.03,Desc.,MASTER'S THESIS,0,60,NAZIM TAŞKIN,,,,,,,,"                          "
+MIS 690.04,Desc.,MASTER'S THESIS,0,60,ÖZGÜR DÖĞERLİOĞLU,,,,,,,,"                          "
+MIS 690.05,Desc.,MASTER'S THESIS,0,60,AHMET ONUR DURAHİM,,,,,,,,"                          "
+MIS 690.06,Desc.,MASTER'S THESIS,0,60,HANDE TÜRKER,,,,,,,,"                          "
+MIS 690.07,Desc.,MASTER'S THESIS,0,60,SONA MARDİKYAN,,,,,,,,"                          "
+MIS 690.08,Desc.,MASTER'S THESIS,0,60,BİLGİN METİN,,,,,,,,"                          "
+MIS 690.09,Desc.,MASTER'S THESIS,0,60,ASLIHAN NASIR,,,,,,,,"                          "
+MIS 690.10,Desc.,MASTER'S THESIS,0,60,CEYLAN ONAY,,,,,,,,"                          "
+MIS 690.11,Desc.,MASTER'S THESIS,0,60,MELTEM ÖZTURAN,,,,,,,,"                          "
+MIS 690.12,Desc.,MASTER'S THESIS,0,60,ASLI SENCER,,,,,,,,"                          "
+MIS 690.13,Desc.,MASTER'S THESIS,0,60,ZUHAL TANRIKULU,,,,,,,,"                          "
+MIS 690.14,Desc.,MASTER'S THESIS,0,60,ALİ TÜKEL,,,,,,,,"                          "
+MIS 790.01,Desc.,PH.D THESIS,0,30,BERTAN YILMAZ BADUR,,,,,,,,"                          "
+MIS 790.03,Desc.,PH.D THESIS,0,30,NAZIM TAŞKIN,,,,,,,,"                          "
+MIS 790.04,Desc.,PH.D THESIS,0,30,ÖZGÜR DÖĞERLİOĞLU,,,,,,,,"                          "
+MIS 790.05,Desc.,PH.D THESIS,0,30,AHMET ONUR DURAHİM,,,,,,,,"                          "
+MIS 790.06,Desc.,PH.D THESIS,0,30,HANDE TÜRKER,,,,,,,,"                          "
+MIS 790.07,Desc.,PH.D THESIS,0,30,SONA MARDİKYAN,,,,,,,,"                          "
+MIS 790.08,Desc.,PH.D THESIS,0,30,BİLGİN METİN,,,,,,,,"                          "
+MIS 790.09,Desc.,PH.D THESIS,0,30,ASLIHAN NASIR,,,,,,,,"                          "
+MIS 790.10,Desc.,PH.D THESIS,0,30,CEYLAN ONAY,,,,,,,,"                          "
+MIS 790.11,Desc.,PH.D THESIS,0,30,MELTEM ÖZTURAN,,,,,,,,"                          "
+MIS 790.12,Desc.,PH.D THESIS,0,30,ASLI SENCER,,,,,,,,"                          "
+MIS 790.13,Desc.,PH.D THESIS,0,30,ZUHAL TANRIKULU,,,,,,,,"                          "

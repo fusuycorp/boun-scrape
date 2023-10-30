@@ -1,0 +1,18 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+FE  500.01,Desc.,INTRODUCTION TO FINANCIAL ENGINEERING,1,10,NESRİN OKAY AKMAN,StSt,45,,,,0,,"                          "
+FE  501.01,Desc.,OPTIMIZATION MODELS IN EC. AND FINANCE,3,9,İLHAN OR,WWW,111213,,,,0,,"                          "
+FE  502.01,Desc.,FUNDAMENTALS OF ECONOMICS,3,8,NESRİN OKAY AKMAN,StStSt,678,,,,0,,"                          "
+FE  507.01,Desc.,MATHEMATICS OF UNCERTAINTY,3,9,ALP EDEN,StStSt,123,,,,0,,"                          "
+FE  514.01,Desc.,CORPORATE FINANCE,3,6,MİNE UĞURLU,ThThTh,111213,,,,0,,"                          "
+FE  522.01,Desc.,COMPUTATIONAL FINANCE,3,9,REFİK GÜLLÜ,TTT,111213,,,,0,,"                          "
+FE  523.01,Desc.,INVESTMENT ANALYSIS & PORTFOLIO THEORY,3,7,ALİ RANA ATILGAN,MMM,111213,,,,0,,"                          "
+FE  571.01,Desc.,FINANCIAL ENGINEERING PROJECT I,0,4,REFİK GÜLLÜ,TBA,,,,,0,,"                          "
+FE  572.01,Desc.,FINANCIAL ENGINEERING PROJECT II,0,8,ALP EDEN,TBA,,,,,0,,"                          "
+FE  587.01,Desc.,SP.TOP. C++ PROGRAMMING FOR FINANCE,3,6,ALİ TAYLAN CEMGİL,StStSt,678,,,,0,,"                          "
+FE  599.01,Desc.,DIRECTED STUDIES,0,4,REFİK GÜLLÜ,TBA,,,,,0,,"                          "
+FE  599.02,Desc.,DIRECTED STUDIES,0,4,ALP EDEN,,,,,,0,,"                          "
+FE  599.03,Desc.,DIRECTED STUDIES,0,4,NESRİN OKAY AKMAN,,,,,,0,,"                          "
+FE  599.04,Desc.,DIRECTED STUDIES,0,4,İLHAN OR,,,,,,0,,"                          "
+FE  599.05,Desc.,DIRECTED STUDIES,0,4,MİNE UĞURLU,,,,,,0,,"                          "
+FE  599.06,Desc.,DIRECTED STUDIES,0,4,ALİ RANA ATILGAN,,,,,,0,,"                          "
+FE  599.07,Desc.,DIRECTED STUDIES,0,4,ALİ TAYLAN CEMGİL,,,,,,0,,"                          "

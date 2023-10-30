@@ -1,0 +1,32 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ED  101.01,Desc.,INTRODUCTION TO EDUCATION,3,5,RIFAT OKÇABOL,MMW,122,,,,,"GUID1, PRED1","        CET; PRSC; PEDU; FLED; GUID; TPHY; CEDU; TCHE; MEDU; TMAT; PRSO; PRED; ED; PRMA                  "
+ED  101.02,Desc.,INTRODUCTION TO EDUCATION,3,5,AYŞE HAVVA CANER,MMT,567,,,,,"PREDMATH1,PREDSCI1","                          "
+ED  101.03,Desc.,INTRODUCTION TO EDUCATION,3,5,AYŞE HAVVA CANER,MMT,788,,,,,CET1,"                          "
+ED  104.01,Desc.,SOCIAL FOUNDATIONS OF EDUCATION,3,6,AKI VIRTANEN-ERAYDIN,TTW,121,,,,,,"                          "
+ED  104.02,Desc.,SOCIAL FOUNDATIONS OF EDUCATION,3,6,AKI VIRTANEN-ERAYDIN,TTW,563,,,,,,"                          "
+ED  121.01,Desc.,ORIENTATION TO GUID & COUN.,1,2,DENİZ ALBAYRAK KAYMAK,T,6,,,,,,"        GUID                  "
+ED  213.01,Desc.,DEVELOPMENT AND LEARNING,3,5,ZEYNEP KIZILTEPE,TWW,323,,,,,"PRED2, TENG2","                          "
+ED  213.02,Desc.,DEVELOPMENT AND LEARNING,3,5,ZEYNEP KIZILTEPE,TWW,556,,,,,"MEDU3, CEDU3","                          "
+ED  213.03,Desc.,DEVELOPMENT AND LEARNING,3,5,ÖZLEM ÜNLÜHİSARCIKLI,TTTh,673,,,,,"PREDMATH2, PEDU3","                          "
+ED  213.04,Desc.,DEVELOPMENT AND LEARNING,3,5,ZEYNEP HANDE SART,MMW,237,,,,,GUID2,"                          "
+ED  213.05,Desc.,DEVELOPMENT AND LEARNING,3,5,ZEYNEP HANDE SART,MMW,678,,,,,"CET2, PREDSCI2","                          "
+ED  221.01,Desc.,FUNDAMENTALS OF GUIDANCE &COUNSELING,3,4,DENİZ ALBAYRAK KAYMAK,MWW,334,,,,,"CET3,CEDU3,PREDSCI3TENG4","        CET; PRPRSC; PEDU; TPHY; PRMA; FLCEDU; TCHE; MEDU; TMAT; PRSO; GUID; PRSC; FLED                  "
+ED  306.01,Desc.,COMPARATIVE EDUCATION,3,4,AKI VIRTANEN-ERAYDIN,WThTh,434,,,,,,"                          "
+ED  325.01,Desc.,THEORIES OF  PERSONALITY IN COUN.,3,4,AYDAN GÜLERCE,TWW,312,,,,,,"                          "
+ED  373.01,Desc.,MEASUREMENT & EVALUATION,3,4,GÜZVER YILDIRAN DE WEERDT,MMW,346,,,,,,"                          "
+ED  405.01,Desc.,SCHOOL EXPERIENCE II,3,8,DENİZ ALBAYRAK KAYMAK,W,6,,,,,,"                          "
+ED  419.01,Desc.,LIFESPAN DEVELOPMENT,3,4,ZEYNEP HANDE SART,TTWW,3423,,,,,,"                          "
+ED  421.01,Desc.,ASSESSMENT IN GUID.& COUN.,3,7,FATOŞ ERKMAN,TTThTh,1212,,,,,,"                          "
+ED  425.01,Desc.,GROUP DYNAMICS & COUNSELING,3,5,NEYLAN ÖZDEMİR,MMMM,1234,,,,,,"        GUID                  "
+ED  431.01,Desc.,FAMILY COUNSELING,3,5,AYDAN GÜLERCE,TTWW,6778,,,,,,"                          "
+ED  469.01,Desc.,PSYCHOLOGY OF ADOLESCENCE,3,4,NEVİN DÖLEK,MMM,567,,,,,,"                          "
+ED  472.01,Desc.,INDIVIDUAL STUDY,3,5,DENİZ ALBAYRAK KAYMAK,TBA,,,,,,,"                          "
+ED  472.03,Desc.,INDIVIDUAL STUDY,3,5,LEYLA NAVARO,TBA,,,,,,,"                          "
+ED  472.07,Desc.,INDIVIDUAL STUDY,3,5,STAFF STAFF,TBA,,,,,,,"                          "
+ED  472.08,Desc.,INDIVIDUAL STUDY,3,5,STAFF STAFF,TBA,,,,,,,"                          "
+ED  484.01,Desc.,SPECIAL EDUCATION,3,4,ÖZLEM ÜNLÜHİSARCIKLI,TBA,,,,,,,"                          "
+ED  486.01,Desc.,SP.TOP. EDUCATION,3,4,AYŞE HAVVA CANER,TWW,545,,,,,,"                          "
+ED  492.01,Desc.,SPECIAL STUDIES IN EDUCATION,3,4,ZEYNEP HANDE SART,TTW,784,,,,,,"                          "
+ED  494.01,Desc.,SP.STUD.IN EDUC.,3,4,ÖZLEM ADA ÜLKE,ThThTh,567,,,,,,"                          "
+ED  496.01,Desc.,SPECIAL STUDIES IN EDUCATION,3,4,AYŞE GÜR TURABOĞLU,FFF,567,,,,,,"                          "
+ED  498.01,Desc.,SPECIAL STUDIES IN EDUC,3,4,AKI VIRTANEN-ERAYDIN,TBA,,,,,,,"                          "

@@ -1,0 +1,29 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+IE  201.01,Desc.,INTERMEDIATE PROGRAMMING,3,6,ALİ TAMER ÜNAL,TT,78,,,,,,"                          "
+IE  202.01,Desc.,OPERATIONS RESEARCH I:LINEAR MODELS,4,6,İLHAN OR,TTTh,673,,,,,,"                          "
+IE  255.01,Desc.,PROBABILITY FOR INDUSTRIAL ENGINEERS,3,6,WOLFGANG HOERMANN,MMWW,7845,,,,,,"                          "
+IE  303.01,Desc.,OP. RESEARCH II:NONLINEAR & NETWORK MOD.,4,6,KUBAN ALTINEL,MMT,121,,,,,,"                          "
+IE  306.01,Desc.,SYSTEMS SIMULATION,4,6,YAMAN BARLAS,,, ,,,,,"                          "
+IE  310.01,Desc.,OPERATIONS RESEARCH,4,5,TANER BİLGİÇ,MMTh,121,,,,,,"                          "
+IE  341.01,Desc.,ENGINEERING ECONOMICS,4,5,DAVİD PİNHAS,,, ,,,,,"                          "
+IE  413.01,Desc.,PRODUCTION PLANNING II,4,7,GÜLAY BARBAROSOĞLU,TTTh,343,,,,,,"                          "
+IE  423.01,Desc.,QUALITY CONTROL,3,5,ALİ RIZA KAYLAN,,, ,,,,,"                          "
+IE  441.01,Desc.,PLANNING FOR ENGINEERS,4,6,TANER BİLGİÇ,MWW,523,,,,,,"                          "
+IE  481.01,Desc.,SP. TOP.:FUZZY SETS & FUZZY LOGIC,3,6,FAHRİ ÖZOK,WWW,678,,,,,,"                          "
+IE  482.01,Desc.,SP. TOP.: MANUFACTURING MANAGEMENT,3,6,GÜLAY BARBAROSOĞLU,TThTh,656,,,,,,"                          "
+IE  491.01,Desc.,SPECIAL PROJECTS,3,6,ÜMİT BİLGE,TBA, ,,,,,,"                          "
+IE  492.01,Desc.,PROJECT,4,8,KUBAN ALTINEL,TBA, ,,,,,,"                          "
+IE  494.01,Desc.,SP.TOP.RESEARCH&DEVELOPMENT MANAGEMENT,3,6,ATİLLA ÖNER,TTT,678,,,,,,"                          "
+IE  499.01,Desc.,SP.TOP.IN IE:COMPUTER VISION FOR MANUFAC,3,6,AYTÜL ERÇİL,TBA, ,,,,,,"                          "
+IE  501.01,Desc.,OPTIMIZATION TECHNIQUES I,3,7,İLHAN OR,TThTh,556,,,,,,"                          "
+IE  503.01,Desc.,METHODS OF INDUSTRIAL ENGINEERING,3,7,ÜMİT BİLGE,ThThTh,678,,,,,,"                          "
+IE  510.01,Desc.,SIMULATION MODELING,3,7,ALİ RIZA KAYLAN,FFF,234,,,,,,"                          "
+IE  515.01,Desc.,NETWORK THEORY,3,7,KUBAN ALTINEL,MMTT,5634,,,,,,"                          "
+IE  525.01,Desc.,STAT.PAT.RECOG. & MACHINE VIS. FOR MANU.,3,7,AYTÜL ERÇİL,MWW,156,,,,,,"                          "
+IE  550.01,Desc.,DYNAMICS OF SOCIO-ECONOMIC SYSTEMS,3,7,YAMAN BARLAS,MMTT,1278,,,,,,"                          "
+IE  578.01,Desc.,GRADUATE SEMINAR,0,2,ÜMİT BİLGE,MM,78,,,,,,"                          "
+IE  591.01,Desc.,SP.TOP.: INTRO.TO FINANCIAL ENGR.,3,7,DAVİD PİNHAS,MMTh,342,,,,,,"                          "
+IE  624.01,Desc.,SCHEDULING & SEQUENCING,3,7,ALİ TAMER ÜNAL,TThTh,323,,,,,,"                          "
+IE  690.01,Desc.,M.S. THESIS,0,60,İLHAN OR,,,,,,,,"                          "
+IE  694.01,Desc.,SP.TOP.IN IE:ADVANCED OPTI.TECH.IN PRODU,3,7,ALİ TAMER ÜNAL,TBA, ,,,,,,"                          "
+IE  790.01,Desc.,Ph.D. THESIS,0,120,İLHAN OR,,,,,,,,"                          "

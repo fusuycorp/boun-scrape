@@ -1,0 +1,65 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AD  102.01,Desc.,INTRODUCTION TO MANAGEMENT(A-J),3,5,STAFF STAFF,TTT,789,Classroom,HD 101 | HD 101 | HD 101,,,,"                          "
+AD  220.01,Desc.,MANAGEMENT OF ORGANIZATIONS(A-J),3,5,ÖZGÜN BURCU RODOPMAN,ThThTh,234,Classroom,NH 104 | NH 104 | NH 104,,,,"                          "
+BIO 407.02,Desc.,SEMINAR II,2,3,N.C.TOLGA EMRE,TT,23,Online,ONLINE | ONLINE,,,,"                          "
+BIO 500.06,Desc.,MODERN TECH. IN MOLECULAR BIO.,3,14,ARZU ÇELİK,,,Online,,,,,"                          "
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY ,3,8,NURBAY IRMAK,MWW,456,Online/Classroom,ONLINE | EF 206 | EF 206,,,PHIL,"        PSY; LING; GUID; LAW                  "
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY ,3,8,YILDIZ SİLİER,TThTh,111112,Online,ONLINE | ONLINE | ONLINE,,,PSY,"        PHIL                  "
+PHIL105.01,Desc.,INFORMAL LOGIC,4,8,BERNA KILINÇ,MMWW,7889,Online/Classroom,ONLINE | ONLINE | AYHAN ŞAHENK | AYHAN ŞAHENK,10.01.2022,2,,"        PHIL                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,6,STEPHEN VOSS,TTTh,566,Online,ONLINE | ONLINE | ONLINE,,,"LL,TKL","        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,4,8,FRANK ZENKER,TTThTh,7889,Online,ONLINE | ONLINE | ONLINE | ONLINE,,,MEDU,"                          "
+PHIL213.01,Desc.,HISTORY OF PHILOSOPHY I,3,6,CHRYSSI SIDIROPOULOU,ThThF,343,Online,ONLINE | ONLINE | ONLINE,,,,"        PHIL                  "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,SUN DEMİRLİ,TWW,334,Online/Classroom,ONLINE | NH 405 | NH 405,,,,"        PHIL                  "
+PHIL313.01,Desc.,HISTORY OF PHILOSOPHY III,3,6,LUCAS THORPE,TThTh,456,Online/Classroom,ONLINE | NB 119 | NB 119,,,,"        PHIL                  "
+PHIL341.01,Desc.,ETHICS,3,6,KARANFİL SOYHUN,MMW,567,Online/Classroom,KP 01 | KP 01 | ONLINE,,,,"        PHIL                  "
+PHIL453.01,Desc.,FREEDOM ,3,6,YILDIZ SİLİER,TThTh,634,Online/Classroom,ONLINE | NH 103 | NH 103,,,,"                          "
+PHIL486.01,Desc.,SP.TP.NATURALISM IN ETHICS,3,6,KARANFİL SOYHUN,MMW,343,Online/Classroom,NH 201 | NH 201 | ONLINE,,,,"                          "
+PHIL489.01,Desc.,SP.TP.KANT'S PHILOSOPHY OF RELIGION,3,6,SENİYE TİLEV,MMM,789,Classroom,M 1200 | M 1200 | M 1200,,,,"                          "
+PHIL48B.01,Desc.,SP.TP.MIND DYNAMICS,3,5,HAYDAR OĞUZ ERDİN,TWW,512,Online,ONLINE | ONLINE | ONLINE,,,,"                          "
+PHIL48I.01,Desc.,SP.TP.THE ONTOLOGY OF DEATH,3,6,MAYA MANDALİNCİ,FFF,789,Online,ONLINE | ONLINE | ONLINE,,,,"                          "
+PHIL48J.01,Desc.,SP.TP.WITTGENSTEIN LANGUAGE&MIND,3,6,CHRYSSI SIDIROPOULOU,ThFF,756,Online/Classroom,M 3100 | ONLINE | ONLINE,,,,"                          "
+PHIL48K.01,Desc.,SP.TP.IN MODAL LOGIC,3,6,BERNA KILINÇ,TTTh,788,Online/Classroom,ONLINE | ONLINE | M 3100,21.01.2022,3,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,BERNA KILINÇ,,,Online,,,,,"                          "
+PHIL499.02,Desc.,INDEPENDENT STUDY,3,6,NURBAY IRMAK,,,Online,,,,,"                          "
+PHIL499.03,Desc.,INDEPENDENT STUDY,3,6,LUCAS THORPE,,,Online,,,,,"                          "
+PHIL499.04,Desc.,INDEPENDENT STUDY,3,6,YILDIZ SİLİER,,,Online,,,,,"                          "
+PHIL499.05,Desc.,INDEPENDENT STUDY,3,6,SUN DEMİRLİ,,,Online,,,,,"                          "
+PHIL499.06,Desc.,INDEPENDENT STUDY,3,6,KARANFİL SOYHUN,,,Online,,,,,"                          "
+PHIL499.07,Desc.,INDEPENDENT STUDY,3,6,CHRYSSI SIDIROPOULOU,,,Online,,,,,"                          "
+PHIL499.08,Desc.,INDEPENDENT STUDY,3,6,FRANK ZENKER,,,Online,,,,,"                          "
+PHIL499.10,Desc.,INDEPENDENT STUDY,3,6,STEPHEN VOSS,,,Online,,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,CHRYSSI SIDIROPOULOU,,,Online,,,,,"                          "
+PHIL587.01,Desc.,SP.TP.IN VALUE SELF&MIND,4,10,STEPHEN VOSS,ThThTh,234,Classroom,JF 507 | JF 507 | JF 507,10.01.2022,1,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,CHRYSSI SIDIROPOULOU,,,Online,,10.01.2022,1,,"                          "
+PHIL58G.01,Desc.,SP.TP.META ANALYSIS,4,10,FRANK ZENKER,,,Online,,10.01.2022,2,,"                          "
+PHIL58H.01,Desc.,SP.TP.TEMPORAL PERCEPTION,4,10,LUCAS THORPE,TTT,678,Online,ONLINE | ONLINE | ONLINE,10.01.2022,3,,"                          "
+PHIL58J.01,Desc.,SP.TP.IN EARLY MODERN PHILOSOPHY,4,10,SUN DEMİRLİ,FFF,456,Online,ONLINE | ONLINE | ONLINE,11.01.2022,1,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,BERNA KILINÇ,,,Online,,,,,"                          "
+PHIL590.02,Desc.,DIRECTED STUDY,4,10,NURBAY IRMAK,,,Online,,,,,"                          "
+PHIL590.03,Desc.,DIRECTED STUDY,4,10,LUCAS THORPE,,,Online,,,,,"                          "
+PHIL590.04,Desc.,DIRECTED STUDY,4,10,YILDIZ SİLİER,,,Online,,,,,"                          "
+PHIL590.05,Desc.,DIRECTED STUDY,4,10,SUN DEMİRLİ,,,Online,,,,,"                          "
+PHIL590.06,Desc.,DIRECTED STUDY,4,10,KARANFİL SOYHUN,,,Online,,,,,"                          "
+PHIL590.07,Desc.,DIRECTED STUDY,4,10,CHRYSSI SIDIROPOULOU,,,Online,,,,,"                          "
+PHIL590.08,Desc.,DIRECTED STUDY,4,10,FRANK ZENKER,,,Online,,,,,"                          "
+PHIL590.10,Desc.,DIRECTED STUDY,4,10,STEPHEN VOSS,,,Online,,,,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,3,30,CHRYSSI SIDIROPOULOU,,,Online,,11.01.2022,2,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,BERNA KILINÇ,,,Online,,,,,"                          "
+PHIL690.02,Desc.,MASTER THESIS,0,60,NURBAY IRMAK,,,Online,,,,,"                          "
+PHIL690.03,Desc.,MASTER THESIS,0,60,LUCAS THORPE,,,Online,,,,,"                          "
+PHIL690.04,Desc.,MASTER THESIS,0,60,YILDIZ SİLİER,,,Online,,,,,"                          "
+PHIL690.05,Desc.,MASTER THESIS,0,60,SUN DEMİRLİ,,,Online,,,,,"                          "
+PHIL690.06,Desc.,MASTER THESIS,0,60,KARANFİL SOYHUN,,,Online,,,,,"                          "
+PHIL690.07,Desc.,MASTER THESIS,0,60,CHRYSSI SIDIROPOULOU,,,Online,,,,,"                          "
+PHIL690.08,Desc.,MASTER THESIS,0,60,FRANK ZENKER,,,Online,,,,,"                          "
+PHIL690.10,Desc.,MASTER THESIS,0,60,STEPHEN VOSS,,,Online,,,,,"                          "
+PHIL700.01,Desc.,GRADUATE SEMINAR,0,2,CHRYSSI SIDIROPOULOU,,,Online,,,,,"                          "
+PHIL790.01,Desc.,DOCTORAL DISSERTATION,0,120,BERNA KILINÇ,,,Online,,,,,"                          "
+PHIL790.02,Desc.,DOCTORAL DISSERTATION,0,120,NURBAY IRMAK,,,Online,,,,,"                          "
+PHIL790.03,Desc.,DOCTORAL DISSERTATION,0,120,LUCAS THORPE,,,Online,,,,,"                          "
+PHIL790.04,Desc.,DOCTORAL DISSERTATION,0,120,YILDIZ SİLİER,,,Online,,,,,"                          "
+PHIL790.05,Desc.,DOCTORAL DISSERTATION,0,120,SUN DEMİRLİ,,,Online,,,,,"                          "
+PHIL790.06,Desc.,DOCTORAL DISSERTATION,0,120,KARANFİL SOYHUN,,,Online,,,,,"                          "
+PHIL790.07,Desc.,DOCTORAL DISSERTATION,0,120,CHRYSSI SIDIROPOULOU,,,Online,,,,,"                          "
+PHIL790.08,Desc.,DOCTORAL DISSERTATION,0,120,FRANK ZENKER,,,Online,,,,,"                          "
+PHIL790.10,Desc.,DOCTORAL DISSERTATION,0,120,STEPHEN VOSS,,,Online,,,,,"                          "

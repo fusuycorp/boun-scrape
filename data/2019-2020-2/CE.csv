@@ -1,0 +1,75 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CE  212.01,Desc.,ENGINEERING MATERIALS,3,5,TURAN ÖZTURAN,TTThTh,1212,,M 3100 | M 3100 | M 3100 | M 3100,,,,"                          "
+CE  212.02,Desc.,ENGINEERING MATERIALS,3,5,NİLÜFER ÖZYURT,TTThTh,1212,,M 3120 | M 3120 | M 3120 | M 3120,,,,"                          "
+CE  214.01,Desc.,FLUID MECHANICS,4,6,EMRE OTAY,MMWW,1212,,M 3100 | M 3100 | M 3100 | M 3100,,,,"                          "
+CE  244.01,Desc.,DYNAMICS,3,5,HİLMİ LUŞ,TTTh,345,,M 1100 | M 1100 | NH 304,,,,"                          "
+CE  246.01,Desc.,STRENGTH OF MATERIALS,4,7,SAMİ AND KILIÇ,MMThTh,7834,,NH 203 | NH 203 | NH 203 | NH 203,,,,"                          "
+,,P.S.,,,SAMİ AND KILIÇ,WW,78,,M 2181 | M 2181,,,,"                          "
+CE  322.01,Desc.,ENVIRONMENTAL ENGINEERING,3,5,ATİLLA AKKOYUNLU,MMW,236,,M 2181 | M 2181,,,,"                          "
+,,P.S.,,,ATİLLA AKKOYUNLU,WW,78,,M 1200 | M 1200,,,,"                          "
+CE  336.01,Desc.,FOUNDATION ENGINEERING,4,6,İREM ZEYNEP YILDIRIM,TTWW,1223,,M 2181 | M 2181 | M 3120 | M 3120,,,,"                          "
+,,P.S.,,,İREM ZEYNEP YILDIRIM,T,8,,M 2171,,,,"                          "
+CE  354.01,Desc.,REINFORCED CONCRETE I,4,7,CEM YALÇIN                   ,TTThTh,3434,,M 3120 | M 3120 | M 2230 | M 2230,,,,"                          "
+,,P.S.,,,CEM YALÇIN                   ,,,,,,,,"                          "
+CE  356.01,Desc.,STEEL STRUCTURES,3,5,SERDAR SELAMET,TTThTh,6767,,M 2181 | M 2181 | M 2230 | M 2230,,,,"                          "
+CE  402.01,Desc.,CIVIL ENGINEERING SYSTEMS ANALYSIS,3,5,SEMRA ÇOMU,TWW,556,,M 2230 | M 1100 | M 1100,,,,"                          "
+CE  463.01,Desc.,INTRO. TO INTELLIG. TRANSPORTATION SYS.,3,5,ILGIN GÖKAŞAR,TTW,344,,M 2200 | M 2200 | M 2180,,,,"                          "
+CE  480.01,Desc.,SP.STUD.IN CE.:INTRODUCTION TO ARCHITECT,3,6,ERHAN KARAESMEN,FFF,234, ,M 3120 | M 3120 | M 3120,,,,"                          "
+CE  48C.01,Desc.,SP.TP.PLANNING & DESIGN OF ENERGY FACILITIES,3,5,CEM AVCI,MMT,677, ,M 2200 | M 2200 | M 2170,,,,"                          "
+CE  48D.01,Desc.,SP.ST.IN CE:PREFABRICATION STRUCT.ENGIN.,3,6,NİYAZİ ÖZGÜR BEZGİN,ThThTh,567,,M 2170 | M 2170 | M 2170,,,,"                          "
+CE  48T.01,Desc.,SP.TP.ADVANCED CONCRETE,3,6,TURAN ÖZTURAN,TTW,677, ,M 2180 | M 2180 | M 3100,,,,"                          "
+CE  492.01,Desc.,PROJECT,4,8,SERDAR SELAMET,FFF,678,,M 3120 | M 3120 | M 3120,,,,"                          "
+CE  49F.01,Desc.,SP.TP.DEV.OF CONS.PRO.&INVESTMENT MAN.,3,6,MEHMET EMRE ÇAMLIBEL,WWW,789, ,M 2170 | M 2170 | M 2170,,,,"                          "
+CE  49G.01,Desc.,SP.TP. STUCTURAL TIMBER DESIGN,3,6,ARIO CECCOTTI,TTThTh,1212,,M 2170 | M 2170 | M 2181 | M 2181,,,,"                          "
+CE  530.01,Desc.,ADV. GEOTECHNICAL ENGINEERING LABORATORY,3,8,GÖKHAN BAYKAL,WWW,234,,M 1152 | M 1152 | M 1152,,,,"                          "
+CE  538.01,Desc.,PILES AND PILE FOUNDATIONS,3,8,ÖZER ÇİNİCİOĞLU,TTT,234,,M 2231 | M 2231 | M 2231,,,,"                          "
+CE  548.01,Desc.,STRUCTURAL HEALTH MONITORING,3,8,SERDAR SOYÖZ,ThThTh,567,,M 1181 | M 1181 | M 1181,,,,"                          "
+CE  551.01,Desc.,NONLINEAR PROBLEMS IN REINFORCED CONCRET,3,8,CENGİZ KARAKOÇ,ThThTh,789,,M 2231 | M 2231 | M 2231,,,,"                          "
+CE  563.01,Desc.,METHODS OF ANALYSIS FOR PLANNERS&RESEARC,3,8,GÖKMEN ERGÜN,MMM,678,,M 2152 | M 2152 | M 2152,,,,"                          "
+CE  564.01,Desc.,ADVANCED TRAFFIC FLOW THEORY&CONTROL,3,8,ILGIN GÖKAŞAR,TTW,125,,M 2200 | M 2200 | M 2180,,,,"                          "
+CE  572.01,Desc.,PERFORMANCE MANAGEMENT IN CONSTRUCTION,3,8,BELİZ ÖZORHON,ThThTh,567,,M 2180 | M 2180 | M 2180,,,,"                          "
+CE  579.01,Desc.,GRADUATE SEMINAR,0,1,CEM YALÇIN                   ,W,8,,M 2171,,,,"                          "
+CE  58D.01,Desc.,SP.TP.ADVANCED FOUNDATION ENGINEERING,3,8,İREM ZEYNEP YILDIRIM,MMM,234, ,M 1152 | M 1152 | M 1152,,,,"                          "
+CE  58K.01,Desc.,SP.TOP.PERFORMANCE BASED SEISMIC DESIGN OF TALL BUILDINGS,3,8,KUTAY ORAKÇAL,ThThTh,234, ,M 1181 | M 1181 | M 1181,,,,"                          "
+CE  58M.01,Desc.,SP.TP.IN CE:SP.TOP.IN STRUCTURAL ENGIN.,3,8,UĞUR ERSOY,WWW,567, ,M 1152 | M 1152 | M 1152,,,,"                          "
+CE  596.01,Desc.,SP.TOP.IN CE:RETAINING STRUCTURES,3,8,AYŞE EDİNÇLİLER,WWW,567, ,M 2231 | M 2231 | M 2231,,,,"                          "
+CE  59B.01,Desc.,SP.TP.MESHLESS METH.FOR NUMERICAL MODEL.,3,8,OSMAN BÖREKÇİ,TWW,756, ,M 1152 | M 2230 | M 2230,,,,"                          "
+CE  59F.01,Desc.,SP.TP.PUBLIC TRANSPORTATION,3,8,ILGIN GÖKAŞAR,WWW,123,,M 2180 | M 2180 | M 2180,,,,"                          "
+CE  651.01,Desc.,NON-LINEAR STRUCTURAL ANALYSIS,3,10,SAMİ AND KILIÇ,WWW,678,,M 1181 | M 1181 | M 1181,,,,"                          "
+CE  656.01,Desc.,EARTHQUAKE ENGINEERING,3,10,SERDAR SOYÖZ,TTT,678,,M 2231 | M 2231 | M 2231,,,,"                          "
+CE  680.01,Desc.,SP.TP.RESEARCH METHODS IN CONSTRUCTION,3,7.50,BELİZ ÖZORHON,MMM,234, ,M 1181 | M 1181 | M 1181,,,,"                          "
+CE  690.01,Desc.,M.S.THESIS,0,60,CEM AVCI,,,,,,,,"                          "
+CE  690.02,Desc.,M.S.THESIS,0,60,ÖZER ÇİNİCİOĞLU,,,,,,,,"                          "
+CE  690.03,Desc.,M.S.THESIS,0,60,SEMRA ÇOMU,,,,,,,,"                          "
+CE  690.04,Desc.,M.S.THESIS,0,60,GÖKHAN BAYKAL,,,,,,,,"                          "
+CE  690.05,Desc.,M.S.THESIS,0,60,ILGIN GÖKAŞAR,,,,,,,,"                          "
+CE  690.06,Desc.,M.S.THESIS,0,60,SAMİ AND KILIÇ,,,,,,,,"                          "
+CE  690.07,Desc.,M.S.THESIS,0,60,HİLMİ LUŞ,,,,,,,,"                          "
+CE  690.08,Desc.,M.S.THESIS,0,60,KUTAY ORAKÇAL,,,,,,,,"                          "
+CE  690.09,Desc.,M.S.THESIS,0,60,EMRE OTAY,,,,,,,,"                          "
+CE  690.10,Desc.,M.S.THESIS,0,60,BELİZ ÖZORHON,,,,,,,,"                          "
+CE  690.11,Desc.,M.S.THESIS,0,60,NİLÜFER ÖZYURT,,,,,,,,"                          "
+CE  690.12,Desc.,M.S.THESIS,0,60,SERDAR SELAMET,,,,,,,,"                          "
+CE  690.13,Desc.,M.S.THESIS,0,60,SERDAR SOYÖZ,,,,,,,,"                          "
+CE  690.14,Desc.,M.S.THESIS,0,60,CEM YALÇIN                   ,,,,,,,,"                          "
+CE  690.15,Desc.,M.S.THESIS,0,60,İREM ZEYNEP YILDIRIM,,,,,,,,"                          "
+CE  700.01,Desc.,GRADUATE SEMINAR,0,1,CEM YALÇIN                   ,W,9,,M 2171,,,,"                          "
+CE  790.02,Desc.,Ph.D. THESIS,0,120,ÖZER ÇİNİCİOĞLU,,,,,,,,"                          "
+CE  790.03,Desc.,Ph.D. THESIS,0,120,SEMRA ÇOMU,,,,,,,,"                          "
+CE  790.04,Desc.,Ph.D. THESIS,0,120,GÖKHAN BAYKAL,,,,,,,,"                          "
+CE  790.05,Desc.,Ph.D. THESIS,0,120,ILGIN GÖKAŞAR,,,,,,,,"                          "
+CE  790.08,Desc.,Ph.D. THESIS,0,120,KUTAY ORAKÇAL,,,,,,,,"                          "
+CE  790.09,Desc.,Ph.D. THESIS,0,120,EMRE OTAY,,,,,,,,"                          "
+CE  790.10,Desc.,Ph.D. THESIS,0,120,BELİZ ÖZORHON,,,,,,,,"                          "
+CE  790.11,Desc.,Ph.D. THESIS,0,120,NİLÜFER ÖZYURT,,,,,,,,"                          "
+CE  790.12,Desc.,Ph.D. THESIS,0,120,SERDAR SELAMET,,,,,,,,"                          "
+CE  790.13,Desc.,Ph.D. THESIS,0,120,SERDAR SOYÖZ,,,,,,,,"                          "
+CE  790.14,Desc.,Ph.D. THESIS,0,120,CEM YALÇIN                   ,,,,,,,,"                          "
+ENGG110.01,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,TT,67,,M 3160 | M 3160,,,CE,"                          "
+,,LAB,,,FEZA BAYKAL,TT,89,,M 3160 | M 3160,,,,"                          "
+ENGG110.02,Desc.,ENGINEERING GRAPHICS,3,5,FEZA BAYKAL,ThTh,67,,M 3160 | M 3160,,,CE,"                          "
+,,LAB,,,FEZA BAYKAL,ThTh,89,,M 3160 | M 3160,,,,"                          "
+ENGG110.03,Desc.,ENGINEERING GRAPHICS,3,5,İLYAS İSTİF,FF,67,,M 3160 | M 3160,,,ME,"                          "
+,,LAB,,,İLYAS İSTİF,FF,12,,M 3160 | M 3160,,,,"                          "
+ENGG110.04,Desc.,ENGINEERING GRAPHICS,3,5,İLYAS İSTİF,FF,89,,M 3160 | M 3160,,,,"                          "
+,,LAB,,,İLYAS İSTİF,FF,34,,M 3160 | M 3160,,,,"                          "

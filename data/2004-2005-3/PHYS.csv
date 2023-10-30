@@ -1,0 +1,15 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHYS101.01,Desc.,PHYSICS I,4,8,ÖMER Ö.OĞUZ,MMTTThTh,343434,,,,,,"                          "
+PHYS101.02,Desc.,PHYSICS I,4,8,ALİ KAYA,MMWWThTh,121212,,,,,,"                          "
+PHYS102.01,Desc.,PHYSICS II,4,8,SERDAR NERGİZ,MMWWThTh,565656,,,,,,"                          "
+PHYS121.01,Desc.,INTRODUCTORY MECHANICS & THERMODYNAMICS,4,8,YANI SKARLATOS,MMWWThTh,565656,,,,,,"                          "
+PHYS130.01,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,YANI SKARLATOS,MMWWThTh,343434,,,,,,"                          "
+PHYS130.02,Desc.,"THERMODYN., WAVES, OPTICS & MODERN PHYS.",4,7,YANI SKARLATOS,MMWWThTh,121212,,,,,,"                          "
+PHYS201.01,Desc.,PHYSICS III,4,6,SERDAR NERGİZ,MMWWThTh,343434,,,,,,"                          "
+PHYS201.02,Desc.,PHYSICS III,4,6,SERDAR NERGİZ,MMWWThTh,121212,,,,,,"                          "
+PHYS202.01,Desc.,PHYSICS IV,4,6,ALPAR  SEVGEN,MMWWThTh,343434,,,,,,"                          "
+PHYS205.01,Desc.,EXPLORING THE COSMOS I,3,5,LEVENT KURNAZ,MMWWThTh,787878,,,,,,"                          "
+PHYS221.01,Desc.,THERMAL PROPERTIES OF MATTER,3,5,ERSAN DEMİRALP,MMWWThTh,565656,,,,,,"        PHYS                  "
+PHYS301.01,Desc.,CLASSICAL MECHANICS I,3,6,METİN ARIK,MMWWThTh,565656,,,,,,"        PHYS                  "
+PHYS302.01,Desc.,CLASSICAL MECHANICS II,3,3,ÖMER Ö.OĞUZ,MMWWThTh,787878,,,,,,"                          "
+PHYS325.01,Desc.,MATHEMATICAL METHODS OF PHYSICS I,3,5,METİN ARIK,MMWWThTh,787878,,,,,,"        PHYS                  "

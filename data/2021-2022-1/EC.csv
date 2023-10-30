@@ -1,0 +1,64 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EC  101.01,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,GÖKHAN ÖZERTAN,TTTh,565,Classroom,HD 301 | HD 301 | AYHAN ŞAHENK,10.01.2022,1,"AD,EC,POLS","                          "
+EC  101.02,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,GÜZİN GÜLSÜN AKIN,TTTh,565,Classroom,NH 305 | NH 305 | HD 101,10.01.2022,1,"AD,EC,POLS","                          "
+EC  101.03,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,ORHAN AYGÜN,TTTh,565,Classroom,HD 201 | HD 201 | HD 201,10.01.2022,1,"AD,EC,POLS","                          "
+EC  101.04,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,KIVANÇ KARAMAN,TTTh,565,Online/Classroom,ONLINE | ONLINE | BTS,10.01.2022,1,,"                          "
+EC  101.05,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,GÖKHAN ÖZERTAN,TTTh,787,Online/Classroom,NH 305 | NH 305 | ONLINE,10.01.2022,1,,"                          "
+EC  101.06,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,AYŞE MUMCU,TTTh,787,Online/Classroom,ONLINE | ONLINE | BTS,10.01.2022,1,,"                          "
+EC  101.07,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,RIFAT BARIŞ TEKİN,FFF,234,Classroom,BTS | BTS | BTS,10.01.2022,1,,"                          "
+EC  101.08,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,ORHAN AYGÜN,TTTh,233,Online,ONLINE | ONLINE | ONLINE,10.01.2022,1,,"        TRM; INTT; MIS                  "
+EC  101.09,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,GÜZİN GÜLSÜN AKIN,TTTh,233,Online,ONLINE | ONLINE | ONLINE,10.01.2022,1,,"                          "
+EC  103.01,Desc.,ORIENTATION TO ECONOMICS,1,1,ORHAN AYGÜN,Th,8,Classroom,NH 401,19.01.2022,3,,"                          "
+EC  203.01,Desc.,MICROECONOMICS I,3,6,MEHMET YİĞİT GÜRDAL,TTTh,565,Online/Classroom,ONLINE | ONLINE | NH 401,11.01.2022,2,"AD,EC","                          "
+EC  203.02,Desc.,MICROECONOMICS I,3,6,MEHMET YİĞİT GÜRDAL,TTTh,787,Online/Classroom,ONLINE | ONLINE | NH 401,11.01.2022,2,"AD,EC","                          "
+EC  203.03,Desc.,MICROECONOMICS I,3,6,MURAT YILMAZ,TTTh,787,Online/Classroom,ONLINE | ONLINE | NH 105,11.01.2022,2,"AD,EC","                          "
+EC  205.01,Desc.,MACROECONOMICS I,3,6,EMEKCAN YÜCEL,TTTh,456,Online/Classroom,ONLINE | ONLINE | NH 401,12.01.2022,2,,"                          "
+EC  205.02,Desc.,MACROECONOMICS I,3,6,EMEKCAN YÜCEL,TTTh,787,Online/Classroom,ONLINE | ONLINE | NH 405,12.01.2022,2,,"                          "
+EC  233.01,Desc.,MATHEMATICAL STATISTICS I,3,6,OZAN HATİPOĞLU,TThTh,134,Online/Classroom,ONLINE | NH 101 | NH 101,13.01.2022,3,,"                          "
+EC  233.02,Desc.,MATHEMATICAL STATISTICS I,3,6,OZAN HATİPOĞLU,TThTh,212,Online/Classroom,ONLINE | NH 101 | NH 101,13.01.2022,3,,"                          "
+EC  308.01,Desc.,ADVANCED MACROECONOMICS,3,6,MURAT KOYUNCU,MMW,566,Classroom,NB 119 | NB 119 | NH 305,14.01.2022,2,,"                          "
+EC  331.01,Desc.,ECONOMETRICS,3,6,SELCEN ÇAKIR,TThTh,323,Online,ONLINE | ONLINE | ONLINE,21.01.2022,2,,"                          "
+EC  331.02,Desc.,ECONOMETRICS,3,6,SELCEN ÇAKIR,TTTh,455,Online,ONLINE | ONLINE | ONLINE,21.01.2022,2,,"                          "
+EC  344.01,Desc.,"MONEY, BANKING & FINANCIAL INSTITUTIONS",3,6,BURAK SALTOĞLU,TFF,656,Online,ONLINE | ONLINE | ONLINE,17.01.2022,2,,"                          "
+EC  344.02,Desc.,"MONEY, BANKING & FINANCIAL INSTITUTIONS",3,6,LEVENT YILDIRAN,MWW,345,Classroom,NB 119 | NH 305 | NH 305,17.01.2022,2,,"                          "
+EC  351.01,Desc.,PUBLIC FINANCE,3,6,AYŞE YELİZ KAÇAMAK,MWW,223,Classroom,NH 305 | NB 119 | NB 119,20.01.2022,3,,"                          "
+EC  361.01,Desc.,INTERNATIONAL ECONOMICS,3,6,TOLGA UMUT KUZUBAŞ,MWW,478,Classroom,NH 101 | NH 305 | NH 305,12.01.2022,1,,"                          "
+EC  404.01,Desc.,ENVIRONMENTAL&ECOLOGICAL ECONOMICS,3,6,BEGÜM ÖZKAYNAK,TThTh,545,Online,ONLINE | ONLINE | ONLINE,11.01.2022,3,,"                          "
+EC  406.01,Desc.,AGRICULTURAL ECONOMICS,3,6,GÖKHAN ÖZERTAN,TTTh,121,Online,ONLINE | ONLINE | ONLINE,15.01.2022,1,,"                          "
+EC  411.01,Desc.,HISTORY OF ECONOMIC THOUGHT,3,6,FİKRET ADAMAN,TThTh,545,Online/Classroom,NH 102 | ONLINE | ONLINE,18.01.2022,1,,"                          "
+EC  411.02,Desc.,HISTORY OF ECONOMIC THOUGHT,3,6,FİKRET ADAMAN,TThTh,678,Online/Classroom,NH 102 | ONLINE | ONLINE,18.01.2022,1,,"                          "
+EC  436.01,Desc.,QUANTITATIVE METH.FOR PUBLIC POLICY EVAL,3,6,BURÇAY ERUS,MWW,345,Classroom,NH 104 | NB 119 | NB 119,07.01.2022,2,,"                          "
+EC  449.01,Desc.,TOPICS IN BANKING AND FINANCE,3,6,LEVENT YILDIRAN,MWW,223,Classroom,NB 119 | NH 305 | NH 305,21.01.2022,3,,"                          "
+EC  471.01,Desc.,GROWTH AND DEVELOPMENT,3,6,BEGÜM ÖZKAYNAK,TTTh,786,Online,ONLINE | ONLINE | ONLINE,19.01.2022,2,,"                          "
+EC  471.02,Desc.,GROWTH AND DEVELOPMENT,3,6,CEYHUN ELGİN,MMW,566,Classroom,NH 405 | NH 405 | NH 103,19.01.2022,2,,"                          "
+EC  48E.01,Desc.,SP.TP.IN FINAN.ECON.&MACHINE LEARN.,3,6,BURAK SALTOĞLU,TFF,723,Online,ONLINE | ONLINE | ONLINE,11.01.2022,1,,"                          "
+EC  48F.01,Desc.,SP.TP.IN GOVERNANCE,3,6,İZZETTİN ÖNDER,WWW,678,Classroom,NB 119 | NB 119 | NB 119,12.01.2022,1,,"                          "
+EC  48I.01,Desc.,SP.TP.IN EC AND FINANCIAL INSTITUTIONS,3,6,AHMET İRFAN SÖYLEMEZOĞLU,MMM,789,Classroom,M 1170 | M 1170 | M 1170,10.01.2022,3,,"                          "
+EC  48M.01,Desc.,SP.TP.IN LABOR ECONOMICS,3,6,MELTEM POYRAZ,MWW,478,Classroom,NB 119 | NH 102 | NH 102,21.01.2022,2,,"                          "
+EC  48Q.01,Desc.,SP.TP.FINANCIAL STATEMENT ANALYSIS,3,6,NAZLI ARIKAN,TTT,123,Online,ONLINE | ONLINE | ONLINE,20.01.2022,1,,"                          "
+EC  48R.01,Desc.,SP. TP. IN COMPETITION POLICY,3,6,AYŞE MUMCU,TThTh,545,Online,ONLINE | ONLINE | ONLINE,15.01.2022,2,,"                          "
+EC  48T.01,Desc.,SP.TP.FINANCIAL MODELLING&ITS APP.USING R,3,6,MUSTAFA CAN ÖZER,ThThTh,789,Online,ONLINE | ONLINE | ONLINE,10.01.2022,1,,"                          "
+EC  48V.01,Desc.,SP.TP.BANKING AND FINANCE,3,6,AYHAN YÜKSEL,MMM,789,Classroom,M 1171 | M 1171 | M 1171,08.01.2022,3,,"                          "
+EC  501.01,Desc.,MICRO-ECONOMICS I,4,8,E. ÜNAL ZENGİNOBUZ,TTThTh,3434,Classroom,İB 301 | İB 301 | İB 301 | İB 301,10.01.2022,2,,"                          "
+EC  503.01,Desc.,MACRO-ECONOMICS I,4,8,CEYHUN ELGİN,MMWW,2323,Online/Classroom,ONLINE | ONLINE | İB 201 | İB 201,10.01.2022,3,,"                          "
+EC  521.01,Desc.,MATHEMATICAL METHODS FOR ECONOMICS I,4,7,AYŞE YELİZ KAÇAMAK,MMWW,5656,Online/Classroom,ONLINE | ONLINE | İB 201 | İB 201,11.01.2022,2,,"                          "
+EC  531.01,Desc.,ECONOMETRICS I,4,8,İNSAN TUNALI,TTThTh,8989,Classroom,İB 201 | İB 201 | İB 201 | İB 201,11.01.2022,1,,"                          "
+EC  579.01,Desc.,GRADUATE SEMINAR,0,5,OZAN HATİPOĞLU,FF,78,Online,ONLINE | ONLINE,,,,"                          "
+EC  601.01,Desc.,ADVANCED MICROECONOMICS I,4,11,MURAT YILMAZ,WWW,789,Classroom,İB 201 | İB 201 | İB 201,10.01.2022,1,,"                          "
+EC  603.01,Desc.,ADVANCED MACROECONOMICS I,4,11,MURAT KOYUNCU,WWW,234,Classroom,İB 301 | İB 301 | İB 301,10.01.2022,3,,"                          "
+EC  690.04,Desc.,MASTER THESIS,0,60,SELCEN ÇAKIR,,,Online,,,,,"                          "
+EC  690.05,Desc.,MASTER THESIS,0,60,CEYHUN ELGİN,,,Online,,,,,"                          "
+EC  690.07,Desc.,MASTER THESIS,0,60,MEHMET YİĞİT GÜRDAL,,,Online,,,,,"                          "
+EC  690.08,Desc.,MASTER THESIS,0,60,OZAN HATİPOĞLU,,,Online,,,,,"                          "
+EC  690.11,Desc.,MASTER THESIS,0,60,MURAT KOYUNCU,,,Online,,,,,"                          "
+EC  690.12,Desc.,MASTER THESIS,0,60,TOLGA UMUT KUZUBAŞ,,,Online,,,,,"                          "
+EC  690.13,Desc.,MASTER THESIS,0,60,AYŞE MUMCU,,,Online,,,,,"                          "
+EC  690.16,Desc.,MASTER THESIS,0,60,MELTEM POYRAZ,,,Online,,,,,"                          "
+EC  690.17,Desc.,MASTER THESIS,0,60,BURAK SALTOĞLU,,,Online,,,,,"                          "
+EC  690.19,Desc.,MASTER THESIS,0,60,MURAT YILMAZ,,,Online,,,,,"                          "
+EC  690.20,Desc.,MASTER THESIS,0,60,EMEKCAN YÜCEL,,,Online,,,,,"                          "
+EC  700.01,Desc.,GRADUATE SEMINAR,0,5,OZAN HATİPOĞLU,FF,78,Online,ONLINE | ONLINE,,,,"                          "
+EC  790.01,Desc.,Ph.D THESIS,0,120,BURÇAY ERUS,,,Online,,,,,"                          "
+EC  790.02,Desc.,Ph.D THESIS,0,120,MURAT KOYUNCU,,,Online,,,,,"                          "
+EC  790.03,Desc.,Ph.D THESIS,0,120,OZAN HATİPOĞLU,,,Online,,,,,"                          "
+EC  790.04,Desc.,Ph.D THESIS,0,120,E. ÜNAL ZENGİNOBUZ,,,Online,,,,,"                          "

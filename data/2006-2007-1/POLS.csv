@@ -1,0 +1,30 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+POLS101.01,Desc.,INTRODUCTION TO POLITICAL SCIENCE,3,6,YEŞİM ARAT,MMW,231,,PARK2 | PARK2 | GYM,,,,"                          "
+POLS101.02,Desc.,INTRODUCTION TO POLITICAL SCIENCE,3,6,ZÜHRE AKSOY,TTTh,344,,YD 406 | YD 406 | PARK2,,,,"                          "
+POLS101.03,Desc.,INTRODUCTION TO POLITICAL SCIENCE,3,6,ZEYNEP GAMBETTI,MMTh,672,,PARK2 | PARK2 | GYM,,,,"                          "
+POLS101.04,Desc.,INTRODUCTION TO POLITICAL SCIENCE,3,6,HAKAN YILMAZ,MMW,232,,GYM | GYM | GYM,,,,"                          "
+POLS201.01,Desc.,HISTORY OF POLITICAL THOUGHT I ,3,5,AYŞEN CANDAŞ,TTW,566,,M 2171 | M 2171 | YD 106,,,,"                          "
+POLS201.02,Desc.,HISTORY OF POLITICAL THOUGHT I ,3,5,İLKAY SUNAR,TTT,678,,IB 210 | IB 210 | IB 210,,,,"                          "
+POLS203.01,Desc.,SOCIAL STATISTICS I ,4,6,SELCAN KAYNAK,TTThTh,3445,,YD 416 | YD 416 | M 1171 | M 1171,,,,"                          "
+POLS215.01,Desc.,COMPARATIVE POLITICS,3,6,MURAT AKAN,WFF,434,,PARK2 | IB 102 | IB 102,,,,"                          "
+POLS303.01,Desc.,FUNDAMENTALS OF POLITICAL ECONOMY,3,7,KORAY ÇALIŞKAN,WFF,556,,YD 106 | IB 102 | IB 102,,,,"                          "
+POLS317.01,Desc.,POLITICS & SOCIETY IN THE MIDDLE EAST,3,5,KORAY ÇALIŞKAN,WWF,232,,IB 210 | IB 210 | IB 102,,,,"                          "
+POLS373.01,Desc.,POLITICS & CULTURE,3,5,HAKAN YILMAZ,MWW,567,,IB 210 | YD 206 | YD 206,,,,"                          "
+POLS404.01,Desc.,RELIGION AND SOCIETY,3,6,MURAT AKAN,WWW,123,,IB 301 | IB 301 | IB 301,,,,"                          "
+POLS406.01,Desc.,"POLITICS, IDEOLOGY & DISCOURSE",3,6,ZEYNEP GAMBETTI,MThTh,356,,M 2180 | M 2170 | M 2170,,,,"                          "
+POLS408.01,Desc.,DEMOCRATIC THEORY,3,6,AYŞEN CANDAŞ,TWW,878,,M 1170 | YD 104 | YD 104,,,,"                          "
+POLS417.01,Desc.,FROM WEIMAR TO BERLIN,3,6,NERMİN ABADAN UNAT,MThTh,423,,IB 210 | IB 210 | IB 210,,,,"                          "
+POLS441.01,Desc.,FOREIGN POLICY,3,8,GÜL SOSAY,TTTh,124,,IB 102 | IB 102 | IB 102,,,,"                          "
+POLS475.01,Desc.,GENDER & POLITICS,3,6,YEŞİM ARAT,WWW,234,,NBZ 06 | NBZ 06 | NBZ 06,,,,"                          "
+POLS486.01,Desc.,DIRECTED RESEARCH & READING I,3,6,GÜL SOSAY,TBA,,,,,,,"                          "
+POLS487.01,Desc.,DIRECTED RESEARCH & READING II,3,6,SELCAN KAYNAK,TBA,,,,,,,"                          "
+POLS490.01,Desc.,SEMINAR IN AMERICAN CULTURE & POLITICS,3,6,ASLI TEKİNAY,TBA,,,,,,,"                          "
+POLS501.01,Desc.,ADVANCED RESEARCH METHODS ,3,8,SELCAN KAYNAK,WWW,345,,IB 312 | IB 312 | IB 312,,,,"                          "
+POLS521.01,Desc.,INTERNATIONAL POLITICS,3,8,ZÜHRE AKSOY,FFF,345,,IB 312 | IB 312 | IB 312,,,,"                          "
+POLS525.01,Desc.,CURRENT ISSUES IN WORLD POLITICS I,3,7,GÜL SOSAY,TTT,456,,NBZ 06 | NBZ 06,,,,"                          "
+POLS581.01,Desc.,RESEARCH & READING IN TURKISH POLITICS I,3,6,HAKAN YILMAZ,TBA,,,,,,,"                          "
+POLS585.01,Desc.,RESEARCH & READING IN POLITICAL THEORY I,3,6,ZEYNEP GAMBETTI,TBA,,,,,,,"                          "
+POLS585.02,Desc.,RESEARCH & READING IN POLITICAL THEORY I,3,6,AYŞEN CANDAŞ,TBA,,,,,,,"                          "
+POLS593.02,Desc.,R.&R.IN COMPARATIVE POLITICS I,3,6,MURAT AKAN,TBA,,,,,,,"                          "
+POLS690.01,Desc.,MASTER THESIS,0,60,MURAT AKAN,TBA,,,,,,,"                          "
+POLS790.01,Desc.,Ph.D THESIS,0,120,HAKAN YILMAZ,TBA, ,,,,,,"                          "

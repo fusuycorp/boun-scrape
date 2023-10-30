@@ -1,0 +1,41 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHEM103.01,Desc.,GENERAL CHEMISTRY I,3,7,ECE BULAK,MWF,111,,,,,,"        BIO; CEDU; CHE; PEDU; PRSC                  "
+CHEM103.02,Desc.,GENERAL CHEMISTRY I,3,7,BELKIS HALFON,MWF,222,,,,,,"                          "
+CHEM104.01,Desc.,GENERAL CHEMISTRY II,3,6,ZEYNEP ATAY GÖK,MMW,671,,,,,,"        BIO; CHE; CEDU; PRSC                  "
+CHEM105.01,Desc.,FUNDAMENTALS OF CHEMISTRY,4,6,NİHAN NUGAY,MWF,111,,,,,,"        ME; CMPE; EE; PHYS                  "
+CHEM105.02,Desc.,FUNDAMENTALS OF CHEMISTRY,4,6,TURGUT NUGAY,MWF,222,,,,,,"                          "
+CHEM105.03,Desc.,FUNDAMENTALS OF CHEMISTRY,4,6,TURGUT NUGAY,MWF,333,,,,,,"                          "
+CHEM107.01,Desc.,INTRODUCTION TO PRACTICAL CHEMISTRY,3,4,ELİZA KALVO,MW,55,,,,,,"                          "
+CHEM108.01,Desc.,QUALITATIVE ANALYSIS,4,5,ELİZA KALVO,TThTh,212,,,,,,"                          "
+CHEM109.01,Desc.,GENERAL CHEMISTRY LABORATORY,1,2,REYHAN İŞERİ,ThThTh,678,,,,,,"                          "
+CHEM109.02,Desc.,GENERAL CHEMISTRY LABORATORY,1,2,REYHAN İŞERİ,FFF,678,,,,,,"                          "
+CHEM109.03,Desc.,GENERAL CHEMISTRY LABORATORY,1,2,REYHAN İŞERİ,TTT,678,,,,,,"                          "
+CHEM111.01,Desc.,SURVEY OF CHEMISTRY I,3,4,TEREZA VARNALI,TWTh,322,,,,,,"                          "
+CHEM121.01,Desc.,CHEMICAL ORIENTATION I,1,1,SELİM KÜSEFOĞLU,TBA,,,,,,,"                          "
+CHEM122.01,Desc.,CHEMICAL ORIENTATION II,1,1,SELİM KÜSEFOĞLU,TBA,,,,,,,"                          "
+CHEM201.02,Desc.,ORGANIC CHEMISTRY I,4,5,İLKNUR DOĞAN,MWWF,3343,,,,,,"                          "
+CHEM203.03,Desc.,ORGANIC CHEMISTRY LAB.I,1,3,İLKNUR DOĞAN,WWW,567,,,,,,"                          "
+CHEM241.01,Desc.,ORGANIC CHEMISTRY FOR ENGINEERS,4,6,SELİM KÜSEFOĞLU,WWFF,1212,,,,,,"                          "
+CHEM301.01,Desc.,ANALYTICAL CHEMISTRY I,3,4,NEYLAN DİRİLGEN,MMWWF,12122,,,,,,"                          "
+CHEM303.01,Desc.,ANALYTICAL CEMISTRY LAB.I,2,5,NEYLAN DİRİLGEN,MMMMM,45678,,,,,,"                          "
+CHEM303.02,Desc.,ANALYTICAL CEMISTRY LAB.I,2,5,NEYLAN DİRİLGEN,WWWWW,45678,,,,,,"                          "
+CHEM303.03,Desc.,ANALYTICAL CEMISTRY LAB.I,2,5,NEYLAN DİRİLGEN,FFFFF,45678,,,,,,"                          "
+CHEM311.01,Desc.,CHEMICAL LITERATURE,1,2,İLKNUR DOĞAN,T,3,,,,,,"                          "
+CHEM361.01,Desc.,COMPUTER APPLICATIONS IN CHEMISTRY,3,2,VIKTORYA AVIYENTE,MMM,567,,,,,,"                          "
+CHEM415.01,Desc.,GENERAL BIOCHEMISTRY,4,6,DİLEK ÇALGAN,MMTh,563,,,,,,"                          "
+CHEM421.01,Desc.,COMPUTATIONAL CHEMISTRY,3,4,TEREZA VARNALI,WWW,678,,,,,,"                          "
+CHEM451.01,Desc.,ADVANCED PHYSICAL CHEMISTRY,3,6,VIKTORYA AVIYENTE,TTThTh,1212,,,,,,"                          "
+CHEM491.01,Desc.,CHEMICAL INSTRUMENTATION,4,6,ZEYNEP ATAY GÖK,MMW,122,,,,,,"                          "
+CHEM531.01,Desc.,MECHANICAL PROPERTIES OF POLYMERS,3,8,NİHAN NUGAY,TBA,,,,,,,"                          "
+CHEM535.01,Desc.,POLYMER CHEMISTRY,3,8,SELİM KÜSEFOĞLU,WWF,565,,,,,,"                          "
+CHEM538.01,Desc.,POLYMER APPLICATIONS,3,8,DUYGU AVCI SEMİZ,MMW,121,,,,,,"                          "
+CHEM579.01,Desc.,GRADUATE SEMINAR,0,1,VIKTORYA AVIYENTE,TBA,,,,,,,"                          "
+CHEM582.01,Desc.,SP.TOP.ADV.STUDIES IN NMR,3,8,HADİ ÖZBAL,MTT,334,,,,,,"                          "
+CHEM591.01,Desc.,RESEARCH SEMINAR I,1,2,SELİM KÜSEFOĞLU,TBA,,,,,,,"                          "
+CHEM592.01,Desc.,RESEARCH SEMINAR II,1,2,SELİM KÜSEFOĞLU,TBA,,,,,,,"                          "
+CHEM648.01,Desc.,ORGANOMETALLIC CHEMISTRY,3,8,ECE BULAK,TBA,,,,,,,"                          "
+CHEM684.01,Desc.,SP.TOP.IN CHEMISTRY ADVANCED NATURAL PRO,3,,BELKIS HALFON,TBA,,,,,,,"                          "
+CHEM690.01,Desc.,M.S. THESIS,0,60,İLKNUR DOĞAN,TBA,,,,,,,"                          "
+CHEM699.01,Desc.,GUIDED RESEARCH,4,8,İLKNUR DOĞAN,TBA,,,,,,,"                          "
+CHEM790.01,Desc.,Ph.D.THESIS,0,120,İLKNUR DOĞAN,TBA,,,,,,,"                          "
+STS 301.01,Desc.,ARCHEOMETRY I,3,6,HADİ ÖZBAL,TThTh,878,,,,,,"                          "

@@ -1,0 +1,107 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ME  120.01,Desc.,INTRODUCTION TO MECHANICAL ENGINEERING ,3,8,GÜLİN VARDAR,TTThTh,1212,Online,,,,,"                          "
+ME  207.01,Desc.,PROBABILITY&STATISTICS FOR ME,3,5,ALİ ECDER,TTTh,783,Online,,,,,"                          "
+ME  210.01,Desc.,MATERIALS SCIENCE,3,5,SERTAN ALKAN,TTTh,343,Online,,,,,"                          "
+ME  212.01,Desc.,MATERIALS SCIENCE,4,5,NURİ BÜLENT ERSOY,TTTh,344,Online,,,,,"                          "
+ME  242.01,Desc.,DYNAMICS,3,5,EVREN SAMUR,MMW,786,Online,,,,,"                          "
+ME  242.02,Desc.,DYNAMICS,3,5,CAN AYDINER,MMW,786,Online,,,,,"                          "
+ME  244.02,Desc.,MECHANICS OF MATERIALS,4,6,ŞEBNEM ÖZÜPEK,TTThTh,5612,Online,,,,,"                          "
+ME  263.01,Desc.,THERMODYNAMICS I,3,5,FATMA NAZLI DÖNMEZER AKGÜN,MWW,545,Online,,,,,"                          "
+ME  303.01,Desc.,COMPUTER APPLICATIONS IN MECHANICAL ENG,3,5,MURAT ÇELİK,MMW,125,Online,,,,,"                          "
+,,LAB,,,MURAT ÇELİK,W,2,,,,,,"                          "
+ME  304.01,Desc.,EXPERIMENTAL ENGINEERING,3,5,EVREN SAMUR,W,8,Online,,,,,"                          "
+ME  318.01,Desc.,MANUFACTURING TECHNIQUES,4,6,SABRİ ALTINTAŞ,TTTh,344,Online,,,,,"                          "
+ME  324.01,Desc.,MACHINE DESIGN I,4,6,FAZIL ÖNDER SÖNMEZ,MMWW,3434,Online,,,,,"                          "
+ME  324.02,Desc.,MACHINE DESIGN I,4,6,SERTAN ALKAN,MMWW,3434,Online,,,,,"                          "
+ME  335.01,Desc.,MODELING & CONTROL OF DYNAMIC SYSTEMS,4,6,SİNAN ÖNCÜ,MMWW,5667,Online,,,,,"                          "
+ME  362.01,Desc.,HEAT TRANSFER,4,6,HAKAN ERTÜRK,TTThTh,7856,Online,,,,,"                          "
+ME  425.01,Desc.,MECHANICAL VIBRATIONS,3,5,ÇETİN YILMAZ,MWW,278,Online,,,,,"                          "
+ME  429.01,Desc.,MECHANICAL &THERMAL DESIGN,4,8,HASAN BEDİR,WW,12,Online,,,,,"                          "
+ME  430.01,Desc.,AUTOMOTIVE ENGINEERING,3,5,GÜNAY ANLAŞ,TThTh,334,Online,,,,,"                          "
+ME  455.01,Desc.,FLUID MECHANICS II,3,5,ALİ ECDER,TThTh,556,Online,,,,,"                          "
+ME  474.01,Desc.,HEAT ENGINES,3,5,HASAN BEDİR,MWW,434,Online,,,,,"                          "
+ME  492.01,Desc.,PROJECT,4,8,ÇETİN YILMAZ,M,3,Online,,,,,"                          "
+,,P.S.,,,ÇETİN YILMAZ,,,,,,,,"                          "
+ME  492.02,Desc.,PROJECT,4,8,HASAN BEDİR,M,3,Online,,,,,"                          "
+,,P.S.,,,HASAN BEDİR,,,,,,,,"                          "
+ME  502.01,Desc.,ADVANCED ENGINEERING MATHEMATICS II,3,8,MURAT ÇELİK,MMW,676,Online,,,,,"                          "
+ME  512.01,Desc.,PRINCIPLES OF MANUFACTURING PROCESSES,3,8,SABRİ ALTINTAŞ,TThTh,678,Online,,,,,"                          "
+ME  521.01,Desc.,ENGINEERING DESIGN,3,8,NURİ BÜLENT ERSOY,TTTh,786,Online,,,,,"                          "
+ME  530.01,Desc.,ADVANCED DYNAMICS,3,8,SİNAN ÖNCÜ,MWW,823,Online,,,,,"                          "
+ME  579.01,Desc.,GRADUATE SEMINAR,0,2,ŞEBNEM ÖZÜPEK,W,5,Online,,,,,"                          "
+ME  58G.01,Desc.,SP.TP.ENERGY STORAGE,3,8,GÜLİN VARDAR,TTTh,344,Online,,,,,"                          "
+ME  599.01,Desc.,GUIDED RESEARCH ,0,8,SERTAN ALKAN,,,Online,,,,,"                          "
+ME  599.02,Desc.,GUIDED RESEARCH ,0,8,GÜNAY ANLAŞ,,,Online,,,,,"                          "
+ME  599.03,Desc.,GUIDED RESEARCH ,0,8,KUNT ATALIK,,,Online,,,,,"                          "
+ME  599.04,Desc.,GUIDED RESEARCH ,0,8,CAN AYDINER,,,Online,,,,,"                          "
+ME  599.05,Desc.,GUIDED RESEARCH ,0,8,HASAN BEDİR,,,Online,,,,,"                          "
+ME  599.06,Desc.,GUIDED RESEARCH ,0,8,MURAT ÇELİK,,,Online,,,,,"                          "
+ME  599.07,Desc.,GUIDED RESEARCH ,0,8,FATMA NAZLI DÖNMEZER AKGÜN,,,Online,,,,,"                          "
+ME  599.08,Desc.,GUIDED RESEARCH ,0,8,ALİ ECDER,,,Online,,,,,"                          "
+ME  599.09,Desc.,GUIDED RESEARCH ,0,8,NURİ BÜLENT ERSOY,,,Online,,,,,"                          "
+ME  599.10,Desc.,GUIDED RESEARCH ,0,8,HAKAN ERTÜRK,,,Online,,,,,"                          "
+ME  599.11,Desc.,GUIDED RESEARCH ,0,8,SİNAN ÖNCÜ,,,Online,,,,,"                          "
+ME  599.12,Desc.,GUIDED RESEARCH ,0,8,HALUK ÖRS,,,Online,,,,,"                          "
+ME  599.13,Desc.,GUIDED RESEARCH ,0,8,ŞEBNEM ÖZÜPEK,,,Online,,,,,"                          "
+ME  599.14,Desc.,GUIDED RESEARCH ,0,8,EVREN SAMUR,,,Online,,,,,"                          "
+ME  599.15,Desc.,GUIDED RESEARCH ,0,8,FAZIL ÖNDER SÖNMEZ,,,Online,,,,,"                          "
+ME  599.16,Desc.,GUIDED RESEARCH ,0,8,GÜLİN VARDAR,,,Online,,,,,"                          "
+ME  599.17,Desc.,GUIDED RESEARCH ,0,8,ÇETİN YILMAZ,,,Online,,,,,"                          "
+ME  613.01,Desc.,DEFORMATION OF ENGINEERING MATERIALS,3,8,CAN AYDINER,MWW,178,Online,,,,,"                          "
+ME  632.01,Desc.,APPROXIMATE SOLUTION TECHNIQUES,3,8,AKIN TEZEL,TTTh,565,Online,,,,,"                          "
+ME  662.01,Desc.,CONVECTIVE HEAT TRANSFER,3,8,KUNT ATALIK,MMW,454,Online,,,,,"                          "
+ME  663.01,Desc.,RADIATION HEAT TRANSFER,3,8,HAKAN ERTÜRK,TThTh,223,Online,,,,,"                          "
+ME  68H.01,Desc.,SP.TP.(MICRO & NANOSCALE HEAT TRANSFER,3,8,FATMA NAZLI DÖNMEZER AKGÜN,MMW,231,Online,,,,,"                          "
+ME  690.01,Desc.,M.S.THESIS,0,60,SERTAN ALKAN,,,Online,,,,,"                          "
+ME  690.02,Desc.,M.S.THESIS,0,60,GÜNAY ANLAŞ,,,Online,,,,,"                          "
+ME  690.03,Desc.,M.S.THESIS,0,60,KUNT ATALIK,,,Online,,,,,"                          "
+ME  690.04,Desc.,M.S.THESIS,0,60,CAN AYDINER,,,Online,,,,,"                          "
+ME  690.05,Desc.,M.S.THESIS,0,60,HASAN BEDİR,,,Online,,,,,"                          "
+ME  690.06,Desc.,M.S.THESIS,0,60,MURAT ÇELİK,,,Online,,,,,"                          "
+ME  690.07,Desc.,M.S.THESIS,0,60,FATMA NAZLI DÖNMEZER AKGÜN,,,Online,,,,,"                          "
+ME  690.08,Desc.,M.S.THESIS,0,60,ALİ ECDER,,,Online,,,,,"                          "
+ME  690.09,Desc.,M.S.THESIS,0,60,NURİ BÜLENT ERSOY,,,Online,,,,,"                          "
+ME  690.10,Desc.,M.S.THESIS,0,60,HAKAN ERTÜRK,,,Online,,,,,"                          "
+ME  690.11,Desc.,M.S.THESIS,0,60,SİNAN ÖNCÜ,,,Online,,,,,"                          "
+ME  690.12,Desc.,M.S.THESIS,0,60,HALUK ÖRS,,,Online,,,,,"                          "
+ME  690.13,Desc.,M.S.THESIS,0,60,ŞEBNEM ÖZÜPEK,,,Online,,,,,"                          "
+ME  690.14,Desc.,M.S.THESIS,0,60,EVREN SAMUR,,,Online,,,,,"                          "
+ME  690.15,Desc.,M.S.THESIS,0,60,FAZIL ÖNDER SÖNMEZ,,,Online,,,,,"                          "
+ME  690.16,Desc.,M.S.THESIS,0,60,GÜLİN VARDAR,,,Online,,,,,"                          "
+ME  690.17,Desc.,M.S.THESIS,0,60,ÇETİN YILMAZ,,,Online,,,,,"                          "
+ME  699.01,Desc.,GUIDED RESEARCH I,4,8,SERTAN ALKAN,,,Online,,,,,"                          "
+ME  699.02,Desc.,GUIDED RESEARCH I,4,8,GÜNAY ANLAŞ,,,Online,,,,,"                          "
+ME  699.03,Desc.,GUIDED RESEARCH I,4,8,KUNT ATALIK,,,Online,,,,,"                          "
+ME  699.04,Desc.,GUIDED RESEARCH I,4,8,CAN AYDINER,,,Online,,,,,"                          "
+ME  699.05,Desc.,GUIDED RESEARCH I,4,8,HASAN BEDİR,,,Online,,,,,"                          "
+ME  699.06,Desc.,GUIDED RESEARCH I,4,8,MURAT ÇELİK,,,Online,,,,,"                          "
+ME  699.07,Desc.,GUIDED RESEARCH I,4,8,FATMA NAZLI DÖNMEZER AKGÜN,,,Online,,,,,"                          "
+ME  699.08,Desc.,GUIDED RESEARCH I,4,8,ALİ ECDER,,,Online,,,,,"                          "
+ME  699.09,Desc.,GUIDED RESEARCH I,4,8,NURİ BÜLENT ERSOY,,,Online,,,,,"                          "
+ME  699.10,Desc.,GUIDED RESEARCH I,4,8,HAKAN ERTÜRK,,,Online,,,,,"                          "
+ME  699.11,Desc.,GUIDED RESEARCH I,4,8,SİNAN ÖNCÜ,,,Online,,,,,"                          "
+ME  699.12,Desc.,GUIDED RESEARCH I,4,8,HALUK ÖRS,,,Online,,,,,"                          "
+ME  699.13,Desc.,GUIDED RESEARCH I,4,8,ŞEBNEM ÖZÜPEK,,,Online,,,,,"                          "
+ME  699.14,Desc.,GUIDED RESEARCH I,4,8,EVREN SAMUR,,,Online,,,,,"                          "
+ME  699.15,Desc.,GUIDED RESEARCH I,4,8,FAZIL ÖNDER SÖNMEZ,,,Online,,,,,"                          "
+ME  699.16,Desc.,GUIDED RESEARCH I,4,8,GÜLİN VARDAR,,,Online,,,,,"                          "
+ME  699.17,Desc.,GUIDED RESEARCH I,4,8,ÇETİN YILMAZ,,,Online,,,,,"                          "
+ME  69B.01,Desc.,GUIDED RESEARCH III,0,8,CAN AYDINER,,,Online,,,,,"                          "
+ME  700.01,Desc.,GRADUATE SEMINAR,0,2,ŞEBNEM ÖZÜPEK,T,2, ,,,,,"                          "
+ME  790.01,Desc.,Ph.D. THESIS,0,120,SERTAN ALKAN,,,Online,,,,,"                          "
+ME  790.02,Desc.,Ph.D. THESIS,0,120,GÜNAY ANLAŞ,,,Online,,,,,"                          "
+ME  790.03,Desc.,Ph.D. THESIS,0,120,KUNT ATALIK,,,Online,,,,,"                          "
+ME  790.04,Desc.,Ph.D. THESIS,0,120,CAN AYDINER,,,Online,,,,,"                          "
+ME  790.05,Desc.,Ph.D. THESIS,0,120,HASAN BEDİR,,,Online,,,,,"                          "
+ME  790.06,Desc.,Ph.D. THESIS,0,120,MURAT ÇELİK,,,Online,,,,,"                          "
+ME  790.07,Desc.,Ph.D. THESIS,0,120,FATMA NAZLI DÖNMEZER AKGÜN,,,Online,,,,,"                          "
+ME  790.08,Desc.,Ph.D. THESIS,0,120,ALİ ECDER,,,Online,,,,,"                          "
+ME  790.09,Desc.,Ph.D. THESIS,0,120,NURİ BÜLENT ERSOY,,,Online,,,,,"                          "
+ME  790.10,Desc.,Ph.D. THESIS,0,120,HAKAN ERTÜRK,,,Online,,,,,"                          "
+ME  790.11,Desc.,Ph.D. THESIS,0,120,SİNAN ÖNCÜ,,,Online,,,,,"                          "
+ME  790.12,Desc.,Ph.D. THESIS,0,120,HALUK ÖRS,,,Online,,,,,"                          "
+ME  790.13,Desc.,Ph.D. THESIS,0,120,ŞEBNEM ÖZÜPEK,,,Online,,,,,"                          "
+ME  790.14,Desc.,Ph.D. THESIS,0,120,EVREN SAMUR,,,Online,,,,,"                          "
+ME  790.15,Desc.,Ph.D. THESIS,0,120,FAZIL ÖNDER SÖNMEZ,,,Online,,,,,"                          "
+ME  790.16,Desc.,Ph.D. THESIS,0,120,GÜLİN VARDAR,,,Online,,,,,"                          "
+ME  790.17,Desc.,Ph.D. THESIS,0,120,ÇETİN YILMAZ,,,Online,,,,,"                          "

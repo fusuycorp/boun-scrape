@@ -1,0 +1,28 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL101.01,Desc.,INTRODUCTION TO PHILOSOPHY ,3,7,MURAT BAÇ,WWTh,125,,M 1100 | M 1100 | TB 240,06.01.2010,1,,"        PSY; LING; GUID; LAW                  "
+PHIL101.02,Desc.,INTRODUCTION TO PHILOSOPHY ,3,7,KARANFİL SOYHUN,WFF,556,,NB 119 | NH 301 | NH 301,06.01.2010,1,ED-PSY-TR,"        PHIL                  "
+PHIL111.01,Desc.,INTRO.TO ANCIENT & MEDIEVAL PHILOSOPHY,3,5,JOHANNES FRITSCHE,MMW,566,,YD 106 | YD 106 | TB 310,18.01.2010,3,LL2-TKL2,"        LL; TKL                  "
+PHIL131.01,Desc.,LOGIC I,3,10,SUN DEMİRLİ,MMTh,564,,M 2200 | M 2200 | NH 304,14.01.2010,2,,"                          "
+PHIL131.02,Desc.,LOGIC I,3,10,BERNA KILINÇ,TTF,565,,TB 310 | TB 310 | TB 310,14.01.2010,2,MATH2-MEDU2,"                          "
+PHIL213.01,Desc.,HISTORY OF PHILOSOPHY I,3,6,CHRYSSI SIDIROPOULOU,MWW,456,,TB 240 | NH 104 | NH 104,16.01.2010,2,,"        PHIL                  "
+PHIL273.01,Desc.,EPISTEMOLOGY,3,6,MURAT BAÇ,WThTh,812,,M 2171 | M 1170 | M 1170,19.01.2010,3,,"        PHIL                  "
+PHIL313.01,Desc.,HISTORY OF PHILOSOPHY III,3,6,STEPHEN VOSS,MThTh,234,,M 2170 | NH 102 | NH 102,12.01.2010,2,,"        PHIL                  "
+PHIL331.01,Desc.,ADVANCED LOGIC I,3,6,ALİ KARATAY,WFF,656,,M 1170 | M 2152 | M 2152,18.01.2010,2,,"                          "
+PHIL341.01,Desc.,ETHICS,3,6,KARANFİL SOYHUN,TTF,564,,M 1170 | M 1170 | TB 310,15.01.2010,3,,"        PHIL                  "
+PHIL461.01,Desc.,AESTHETICS,3,6,BARRY STOCKER,FFF,345,,M 2231 | M 2231 | M 2231,18.01.2010,1,,"                          "
+PHIL489.01,Desc.,SP.TOP.:TOPICS IN METAPHYSICS,3,6,SUN DEMİRLİ,TTT,789,,YD 103 | YD 103 | YD 103,15.01.2010,1,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,CHRYSSI SIDIROPOULOU,,, ,,08.01.2010,1,,"                          "
+PHIL49C.01,Desc.,SP.TOP.:DARWIN&PHILOSOPHY,3,6,BERNA KILINÇ,ThThF,786,,M 2181 | M 2181 | M 2181,19.01.2010,1,,"                          "
+PHIL501.01,Desc.,METAPHYSICS,4,10,SUN DEMİRLİ,TBA,,,,07.01.2010,3,,"                          "
+PHIL538.01,Desc.,SP.TOP.IN POLITICAL PHILOSOPHY,4,10,ZEYNEP DAVRAN,TTT,678,,,13.01.2010,3,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,06.01.2010,2,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,MURAT BAÇ,TBA,,,,12.01.2010,2,,"                          "
+PHIL591.01,Desc.,SP.TOP.:FREGE,4,10,ALİ KARATAY,WWW,234,,,19.01.2010,1,,"                          "
+PHIL592.01,Desc.,SP.TOP.:KANTIAN ETHICS&COMMUNITARIANISM,4,10,JOHANNES FRITSCHE,TTT,234,,,08.01.2010,3,,"                          "
+PHIL594.01,Desc.,SP.TOP.:WHITEHEAD'S PROCESS PHIL.,4,10,PINAR CANEVİ,WWW,678,,,09.01.2010,3,,"                          "
+PHIL598.01,Desc.,SP.TOP.:ADVANCED PHIL.OF MIND,4,10,STEPHEN VOSS,MMM,678,,,15.01.2010,3,,"                          "
+PHIL674.01,Desc.,TOPICS IN PHILOSOPHY OF SCIENCE,4,10,BERNA KILINÇ,TBA,,,,11.01.2010,2,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,15.01.2010,1,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,MURAT BAÇ,TBA,,,,,0,,"                          "

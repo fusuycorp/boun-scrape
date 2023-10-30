@@ -1,0 +1,37 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ED  101.01,Desc.,INTRODUCTION TO EDUCATION,3,5,RIFAT OKÇABOL,TWW,156,,YD 202 | YD 206 | YD 206,,,"CEDU, MEDU, PEDU","        CET; PRSC; PEDU; FLED; GUID; TPHY; CEDU; TCHE; MEDU; TMAT; PRSO; PRED; ED; PRMA                  "
+ED  101.02,Desc.,INTRODUCTION TO EDUCATION,3,5,FATMA GÖK,MTT,134,,YD 202 | YD 206 | YD 206,,,GUID,"                          "
+ED  101.03,Desc.,INTRODUCTION TO EDUCATION,3,5,AYŞE HAVVA CANER,TTW,567,,YD 204 | YD 204 | YD 203,,,"CET, PRED","                          "
+ED  101.04,Desc.,INTRODUCTION TO EDUCATION,3,5,FATMA NEVRA SEGGIE,WThTh,112,,YD 04 | YD 204 | YD 204,,,"PRED_SCI,TENG","                          "
+ED  101.05,Desc.,INTRODUCTION TO EDUCATION,3,5,FATMA NEVRA SEGGIE,WWTh,233,,YD 04 | YD 04 | YD 204,,,PRED_MATH,"                          "
+ED  121.01,Desc.,ORIENTATION TO GUID & COUN.,1,2,DENİZ ALBAYRAK KAYMAK,T,7,,YD 116,,,,"        GUID                  "
+ED  201.01,Desc.,STATISTICS IN EDUCATION,4,6,BENGÜ BÖRKAN,TTThTh,5623,,YD 206 | YD 206 | YD 206 | YD 206,,,,"        GUID                  "
+ED  211.01,Desc.,EDUCATIONAL PSYCHOLOGY,3,4,ZEYNEP KIZILTEPE,TTW,345,,YD 202 | YD 202 | NH 101,,,"PRED_MATH, PRED_SCI","        CET; PRSC; PEDU; TPHY; PRMA; FLED; CEDU; TCHE; MEDU; TMAT; PRSO; GUID; ED                  "
+ED  213.01,Desc.,DEVELOPMENT AND LEARNING,3,5,ZEYNEP HANDE SART,TTW,231,,YD 104 | YD 104 | YD 102,,,GUID,"                          "
+ED  213.02,Desc.,DEVELOPMENT AND LEARNING,3,5,ZEYNEP KIZILTEPE,TWW,267,,YD 202 | YD 106 | YD 106,,,"CEDU, MEDU, PEDU","                          "
+ED  213.03,Desc.,DEVELOPMENT AND LEARNING,3,5,ÖZLEM ÜNLÜHİSARCIKLI,TTTh,563,,YD 116 | YD 116 | YD 02,,,"CET, TENG","                          "
+ED  221.01,Desc.,FUNDAMENTALS OF GUIDANCE &COUNSELING,3,4,DENİZ ALBAYRAK KAYMAK,MWW,334,,YD 104 | YD 104 | YD 104,,,GUID,"        CET; PRPRSC; PEDU; TPHY; PRMA; FLCEDU; TCHE; MEDU; TMAT; PRSO; GUID; PRSC; FLED                  "
+ED  221.02,Desc.,FUNDAMENTALS OF GUIDANCE &COUNSELING,3,4,SİBEL AKMEHMET ŞEKERLER,MMTh,673,,YD 106 | YD 106 | YD 116,,,"PRED_MATH, PRED_SCI","                          "
+ED  221.03,Desc.,FUNDAMENTALS OF GUIDANCE &COUNSELING,3,4,SİBEL AKMEHMET ŞEKERLER,TTTh,674,,YD 106 | YD 106 | YD 116,,,"CEDU, MEDU, PEDU","                          "
+ED  282.01,Desc.,PRINCIPLES & METHODS OF INSTRUCTION,3,5,ÖZLEM ÜNLÜHİSARCIKLI,TTTh,784,,YD 05 | YD 05 | YD 05,,,,"                          "
+ED  306.01,Desc.,COMPARATIVE EDUCATION,3,4,FATMA NEVRA SEGGIE,WWTh,454,,YD 202 | YD 202 | YD 204,,,,"                          "
+ED  316.01,Desc.,PEER GUIDANCE II,4,6,DENİZ ALBAYRAK KAYMAK,WWThTh,6723,,YD 101 | YD 101 | YD 104 | YD 104,,,,"                          "
+ED  322.01,Desc.,PREVENTION IN COUNSELING,3,4,FATOŞ ERKMAN,WThTh,845,,YD 204 | YD 201 | YD 201,,,,"                          "
+ED  325.01,Desc.,THEORIES OF  PERSONALITY IN COUN.,3,4,SİBEL AKMEHMET ŞEKERLER,TTW,232,,YD 04 | YD 04 | YD 102,,,,"                          "
+ED  373.01,Desc.,MEASUREMENT & EVALUATION,3,4,GÜZVER YILDIRAN DE WEERDT,MMW,343,,YD 202 | YD 202 | YD 202,,,,"                          "
+ED  382.01,Desc.,CLASSROOM MANAGEMENT ,3,6,AYŞE HAVVA CANER,WWThTh,5667,,YD 203 | YD 203 | YD 203 | YD 203,,,,"                          "
+ED  405.01,Desc.,SCHOOL EXPERIENCE II,3,8,DENİZ ALBAYRAK KAYMAK,M,5,,YD 202,,,,"                          "
+ED  419.01,Desc.,LIFESPAN DEVELOPMENT,3,4,ZEYNEP HANDE SART,WWTh,673,,YD 202 | YD 202 | YD 201,,,,"                          "
+ED  421.01,Desc.,ASSESSMENT IN GUID.& COUN.,3,7,FATOŞ ERKMAN,WWThTh,1212,,YD 104 | YD 104 | YD 202 | YD 202,,,,"                          "
+ED  425.01,Desc.,GROUP DYNAMICS & COUNSELING,3,5,NEYLAN ÖZDEMİR,MMMM,1234,,YD 204 | YD 204 | YD 204 | YD 204,,,,"        GUID                  "
+ED  429.01,Desc.,PSYCHOLOGICAL MALADJUSTMENT & COUNSELING,3,4,İREM ANLI,ThThTh,8910,,YD 202 | YD 202 | YD 202,,,,"        GUID                  "
+ED  472.01,Desc.,INDIVIDUAL STUDY,3,5,LEYLA NAVARO,TBA,,,,,,,"                          "
+ED  472.03,Desc.,INDIVIDUAL STUDY,3,5,YELİZ ŞIK,TBA,,,,,,,"                          "
+ED  472.04,Desc.,INDIVIDUAL STUDY,3,5,GÜLBİN ÖZTÜRK TÜTER,TBA,,,,,,,"                          "
+ED  482.01,Desc.,SP.TOP.IN EDUCATION,3,4,GÜZVER YILDIRAN DE WEERDT,TTW,566,,YD 202 | YD 202 | YD 205,,,,"                          "
+ED  494.01,Desc.,SP.STUD.IN EDUC.,3,4,BARIŞ KORKMAZ,ThThTh,678,,YD 206 | YD 206 | YD 206,,,,"                          "
+ED  497.01,Desc.,SP.STUD.IN EDUC.,3,4,MIRYAM ANJEL,MMM,789,,YD 202 | YD 202 | YD 202,,,,"                          "
+ED  498.01,Desc.,SP.TOP.IN EDUCATION:INNOVATIVE TEACHING,3,4,HAYAL KÖKSAL,WWW,123,,ETB511 | ETB511 | ETB511,,,,"                          "
+ED  49B.01,Desc.,SPECIAL TOPICS IN EDUCATION,3,4,FATMA GÖK,TBA,,,,,,,"                          "
+ED  49C.01,Desc.,SPECIAL STUDIES IN EDUCATION,3,5,ZEYNEP HANDE SART,TWW,489,,YD 203 | YD 203 | YD 203,,,,"                          "
+ED  49D.01,Desc.,SPECIAL STUDIES IN EDUCATION,3,5,AYŞE HAVVA CANER,TBA,,,,,,,"                          "

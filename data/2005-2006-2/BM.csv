@@ -1,0 +1,20 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+BM  502.01,Desc.,INTRODUCTION TO MED.PHYSIOLOGY,4,6,BURAK GÜÇLÜ,WWFF,7856,,KBZ 01 | KBZ 01 | KBZ 01 | KBZ 01,,,,"                          "
+BM  507.01,Desc.,BIOMEDICAL INSTRUMENTATION LABORATORY,2,4,BURAK GÜÇLÜ,TT,89,,KB 119 | KB 119,,,,"                          "
+BM  508.01,Desc.,BIOMEDICAL TESTING & MEASUREMENT LAB.,2,6,YEKTA ÜLGEN,ThTh,89,,KB 119 | KB 119,,,,"                          "
+BM  515.01,Desc.,LASER-TISSUE INTERACTION MECHANISMS,3,6,MURAT GÜLSOY,TFF,112,,KB 107 | KB 107 | KB 107,,,,"                          "
+BM  526.01,Desc.,MOTION BIOMECHANICS,3,6,CAN YÜCESOY,WFF,312,,KB 106 | KB 106 | KB 106,,,,"                          "
+BM  530.01,Desc.,SIGNAL TRANSDUCTION IN CNS,3,6,HALE SAYBAŞILI,WThTh,623,,KB 107 | KB 107 | KB 107,,,,"                          "
+BM  532.01,Desc.,BIOLOGICAL TIME SERIES ANALYSIS,3,6,AHMET ADEMOĞLU,MThTh,367,,KB 106 | KB 107 | KB 107,,,,"                          "
+BM  554.01,Desc.,MODELLING OF BIOLOGICAL SYSTEMS,3,6,CENGİZHAN ÖZTÜRK,MMW,121,,KB 107 | KB 107 | KB 107,,,,"                          "
+BM  564.01,Desc.,BIO. INSTRUMENTATION&MEASUREMENT,3,6,YEKTA ÜLGEN,TTTh,235,, | N/A | KBZ 01,,,,"                          "
+BM  585.01,Desc.,SP.STUD.:NOVEL APPLICATIONS IN BIOMEDICA,3,6,MURAT GÜLSOY,ThThTh,367,,KB 106 | KB 106 | KB 106,,,,"                          "
+BM  586.01,Desc.,SP.STUD.:SKELETAL MUSCLE MECHANICS,3,6,CAN YÜCESOY,WWF,563,,KB 106 | KB 106 | KB 106,,,,"                          "
+BM  601.01,Desc.,QUALITY ASSURANCE PRIN.FOR BIOMED.ENGIN.,3,6,ALBERT GÜVENİŞ,MMM,689,,KB 107 | KB 107 | KB 107,,,,"                          "
+BM  633.01,Desc.,DYNAMICS OF NEURAL SYSTEMS,3,6,BURAK GÜÇLÜ,ThThF,128,,KB 106 | KB 106 | KB 106,,,,"                          "
+BM  672.01,Desc.,PICTURE ARCHIVING&COMMUN.SYS.IN BIO.IMAG,3,6,ALBERT GÜVENİŞ,FFF,348,,KB 107 | KB 107 | KB 107,,,,"                          "
+BM  688.01,Desc.,SP.STUD.:MRI: ADVANCED TOPICS,3,6,CENGİZHAN ÖZTÜRK,WFF,9910,,,,,,"                          "
+BM  690.01,Desc.,MASTER'S THESIS,0,60,YEKTA ÜLGEN,TBA,,,,,,,"                          "
+BM  694.01,Desc.,SP.TOP: (GOOD CLINICAL PRACTICES),3,6,EMİN MEHMET YUSUF,MMM,789,,KB 106 | KB 106 | KB 106,,,,"                          "
+BM  699.01,Desc.,GUIDED RESEARCH,4,6,YEKTA ÜLGEN,TBA,,,,,,,"                          "
+BM  790.01,Desc.,Ph.D.THESIS,0,120,YEKTA ÜLGEN,TBA,,,,,,,"                          "

@@ -1,0 +1,120 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CMPE140.01,Desc.,INTRO.TO COMPUTING FOR EC.&MANAGEMEMT,3,5,MEHMET KAAN ÖZTÜRK,WW,56,Online,,,,AD,"                          "
+,,LAB,,,STAFF STAFF,FF,78,,,,,AD,"                          "
+,,P.S.,,,STAFF STAFF,F,6,,,,,AD,"                          "
+CMPE150.01,Desc.,INTRODUCTION TO COMPUTING,3,5,ARZUCAN ÖZGÜR TÜRKMEN,T,7,Online,,,,"CE,MATH","                          "
+,,LAB,,,STAFF STAFF,FF,78,,,,,"CE,MATH","                          "
+,,P.S.,,,STAFF STAFF,TF,86,,,,,"CE,MATH","                          "
+CMPE150.02,Desc.,INTRODUCTION TO COMPUTING,3,5,ARZUCAN ÖZGÜR TÜRKMEN,W,6,Online,,,,"CHE,ME","        CMPE                  "
+,,LAB,,,STAFF STAFF,WW,78,,,,,"CHE,ME","        CMPE                  "
+,,P.S.,,,STAFF STAFF,TT,78,,,,,"CHE,ME","        CMPE                  "
+CMPE150.03,Desc.,INTRODUCTION TO COMPUTING,3,5,EMRE UĞUR,T,8,Online,,,,CMPE,"        CMPE                  "
+,,LAB,,,STAFF STAFF,FF,12,,,,,CMPE,"        CMPE                  "
+,,P.S.,,,STAFF STAFF,MM,12,,,,,CMPE,"        CMPE                  "
+CMPE210.01,Desc.,FUNDAMENTALS OF OBJECT ORIENTED PROG.,4,5,SADIK FİKRET GÜRGEN,TWW,434,Online,,,,CET,"                          "
+CMPE220.01,Desc.,DISCRETE COMPUTATIONAL STRUCTURES,3,5,HALUK BİNGÖL,WThTh,723,Online,,,,,"                          "
+CMPE220.02,Desc.,DISCRETE COMPUTATIONAL STRUCTURES,3,5,HALUK BİNGÖL,WWTh,894,Online,,,,,"                          "
+CMPE250.01,Desc.,DATA STRUCTURES & ALGORITHMS,4,6,HÜSEYİN BİRKAN YILMAZ,MMW,566,Online,,,,,"                          "
+,,P.S.,,,STAFF STAFF,WW,45,,,,,,"                          "
+CMPE300.01,Desc.,ANALYSIS OF ALGORITHMS,3,5,TUNGA GÜNGÖR,TWW,434,Online,,,,,"                          "
+CMPE322.01,Desc.,OPERATING SYSTEMS,4,6,TUNA TUĞCU,WThTh,512,Online,,,,,"                          "
+,,P.S.,,,STAFF STAFF,ThTh,67,,,,,,"                          "
+CMPE343.01,Desc.,INTRO.TO PROBA.&STATIS.FOR COM.ENGINEERS,3,6,İNCİ MELİHA BAYTAŞ,MMT,565,Online,,,,,"                          "
+,,P.S.,,,STAFF STAFF,T,6,,,,,,"                          "
+CMPE344.01,Desc.,COMPUTER ORGANIZATION,4,6,LALE AKARUN,TTW,231,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,FF,12,,,,,,"                          "
+CMPE344.02,Desc.,COMPUTER ORGANIZATION,4,6,MAHDI FAZELI,MMT,781,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,FF,34,,,,,,"                          "
+CMPE425.01,Desc.,COMPILER DESIGN,3,6,CAN ÖZTURAN,MTT,523,Online,,,,,"                          "
+CMPE436.01,Desc.,CONCURRENT&DISTRIBUTED PROGRAMMING,3,6,MEHMET ALPER ŞEN,TThTh,578,Online,,,,,"                          "
+CMPE443.01,Desc.,PRINCIPLES OF EMBEDDED SYSTEMS DESIGN,4,6,ARDA YURDAKUL,WWTh,673,Online,,,,,"        CMPE                  "
+,,LAB,,,STAFF STAFF,WW,23,,,,,,"        CMPE                  "
+,,LAB,,,STAFF STAFF,WW,45,,,,,,"                          "
+,,LAB,,,STAFF STAFF,WW,89,,,,,,"                          "
+CMPE451.01,Desc.,PROJECT DEVELOPMENT IN SOFTWARE ENG.,2,5,SUZAN ÜSKÜDARLI,T,5,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,TT,78,,,,,,"                          "
+CMPE451.02,Desc.,PROJECT DEVELOPMENT IN SOFTWARE ENG.,2,5,SUZAN ÜSKÜDARLI,T,6,Online,,,,,"                          "
+,,LAB,,,STAFF STAFF,TT,78,,,,,,"                          "
+CMPE475.01,Desc.,COMPUTER NETWORKS,3,6,CEM ERSOY,MMW,231,Online,,,,,"                          "
+CMPE480.01,Desc.,INTRODUCTION TO ARTIFICIAL INTELLIGENCE,3,6,EMRE UĞUR,MTT,412,Online,,,,,"                          "
+CMPE483.01,Desc.,SP.TP.BLOCKCHAIN PROGRAMMING,3,6,CAN ÖZTURAN,MFF,112,Online,,,,,"                          "
+CMPE487.01,Desc.,SP.TP.APPLIED COMPUTER NETWORKS,3,6,EREN SOYAK,MMM,789,Online,,,,,"                          "
+CMPE491.01,Desc.,SPEC. PROJECT IN COMPUTER ENGINEERING,3,6,MAHDI FAZELI,,,Online,,,,,"                          "
+CMPE492.01,Desc.,PROJECT,4,8,MAHDI FAZELI,,,Online,,,,,"                          "
+CMPE493.01,Desc.,SP.TP.INTRODUCTION TO INFORMATION RETRI.,3,6,ARZUCAN ÖZGÜR TÜRKMEN,MMT,563,Online,,,,,"                          "
+CMPE494.01,Desc.,SP.TP.INFORMATION SECURITY,3,6,FATMA BAŞAK AYDEMİR,MTT,412,Online,,,,,"                          "
+CMPE49F.01,Desc.,SP.TP.INTRO.TO SATELLITE SPACE NETWORK,3,6,FATİH ALAGÖZ,WWTh,895,Online,,,,,"                          "
+CMPE49G.01,Desc.,SP.TP.FUNDA.OF PART.-BASED SIMU.,3,6,HÜSEYİN BİRKAN YILMAZ,WWW,345,Online,,,,,"                          "
+CMPE524.01,Desc.,COMPUTER NETWORK DESIGN,3,10,CEM ERSOY,TTT,123,Online,,,,,"                          "
+CMPE530.01,Desc.,MATHEMATICAL FUNDAMENTALS OF ARTIFICIAL INTELLIGENCE,3,10,SADIK FİKRET GÜRGEN,MMM,234,Online,,,,,"                          "
+CMPE537.01,Desc.,COMPUTER VISION,3,10,LALE AKARUN,ThThTh,234,Online,,,,,"                          "
+CMPE544.01,Desc.,PATTERN RECOGNITION,3,10,İNCİ MELİHA BAYTAŞ,FFF,234,Online,,,,,"                          "
+CMPE561.01,Desc.,NATURAL LANGUAGE PROCESSING,3,10,TUNGA GÜNGÖR,TTT,678,Online,,,,,"                          "
+CMPE579.01,Desc.,GRADUATE SEMINAR,0,1,ARZUCAN ÖZGÜR TÜRKMEN,T,4,Online,,,,,"                          "
+CMPE581.01,Desc.,SP.TOP:COM.ENG.FOR MOB./WIRELESS NETWORK,3,10,FATİH ALAGÖZ,ThThTh,678,Online,,,,,"                          "
+CMPE585.01,Desc.,SP.TP. INTERNET OF THINGS,3,10,ARDA YURDAKUL,TTT,567,Online,,,,,"                          "
+CMPE587.01,Desc.,SP.TP.HOW TO GENERATE (ALMOST) ANYTHING,3,10,PINAR YANARDAĞ,FFF,678,Online,,,,,"                          "
+CMPE588.01,Desc.,SP.TP.TESTING&VERIFICATION TECH.FOR MACHINE LEARNING,3,10,MEHMET ALPER ŞEN,ThThTh,234,Online,,,,,"                          "
+CMPE58D.01,Desc.,SP.TOP.IN CMPE:REQUIREMENTS ENGINEERING,3,10,FATMA BAŞAK AYDEMİR,WWW,123,Online,,,,,"                          "
+CMPE58H.01,Desc.,SP.TOP.CMPE:SOCIAL SEMANTIC WEB,3,10,SUZAN ÜSKÜDARLI,ThThTh,678,Online,,,,,"        COGS                  "
+CMPE58M.01,Desc.,SP.TOP.TECHNOVATION:TECHNOLOGY TRENDS & INNOVATION,3,10,OĞUZ TOSUN,WWW,678,Online,,,,,"                          "
+CMPE595.01,Desc.,SP.TOP.IN CMPE:COMPLEXITY THEORY,3,10,CEM SAY,TTT,235,Online,,,,,"                          "
+CMPE598.01,Desc.,SP.TOP.IN CMPE:QUANTUM ALGORITHMS,3,10,CEM SAY,ThThTh,234,Online,,,,,"                          "
+CMPE599.01,Desc.,GUIDED RESEARCH IN MS-I,4,10,CEM ERSOY,FFFFFF,456789,Online,,,,,"                          "
+CMPE599.02,Desc.,GUIDED RESEARCH IN MS-I,4,10,CEM SAY,MMMMMM,123456,Online,,,,,"                          "
+CMPE599.03,Desc.,GUIDED RESEARCH IN MS-I,4,10,FATİH ALAGÖZ,MMMMMM,123456,Online,,,,,"                          "
+CMPE599.04,Desc.,GUIDED RESEARCH IN MS-I,4,10,İNCİ MELİHA BAYTAŞ,MMMThThTh,789678,Online,,,,,"                          "
+CMPE599.05,Desc.,GUIDED RESEARCH IN MS-I,4,10,MEHMET ALPER ŞEN,MMMMMM,123456,Online,,,,,"                          "
+CMPE599.06,Desc.,GUIDED RESEARCH IN MS-I,4,10,TUNGA GÜNGÖR,MMThThFF,121212,Online,,,,,"                          "
+CMPE599.07,Desc.,GUIDED RESEARCH IN MS-I,4,10,EMRE UĞUR,WWWThThTh,123123,Online,,,,,"                          "
+CMPE599.08,Desc.,GUIDED RESEARCH IN MS-I,4,10,FATMA BAŞAK AYDEMİR,MMMMMM,123456,Online,,,,,"                          "
+CMPE599.09,Desc.,GUIDED RESEARCH IN MS-I,4,10,TUNA TUĞCU,MMMFFF,123123,Online,,,,,"                          "
+CMPE599.10,Desc.,GUIDED RESEARCH IN MS-I,4,10,MAHDI FAZELI,WWWWWW,123456,Online,,,,,"                          "
+CMPE599.11,Desc.,GUIDED RESEARCH IN MS-I,4,10,CAN ÖZTURAN,WWWWWW,345678,Online,,,,,"                          "
+CMPE59A.06,Desc.,GUIDED RESEARCH IN MS-II,0,10,TUNGA GÜNGÖR,MMThTh,5656,Online,,,,,"                          "
+CMPE59A.07,Desc.,GUIDED RESEARCH IN MS-II,0,10,EMRE UĞUR,FFFF,1234,Online,,,,,"                          "
+CMPE59A.08,Desc.,GUIDED RESEARCH IN MS-II,0,10,FATMA BAŞAK AYDEMİR,TTTT,3456,Online,,,,,"                          "
+CMPE690.01,Desc.,M.S.THESIS,0,60,LALE AKARUN,,, ,,,,,"                          "
+CMPE690.02,Desc.,M.S.THESIS,0,60,H. LEVENT AKIN,,, ,,,,,"                          "
+CMPE690.03,Desc.,M.S.THESIS,0,60,FATİH ALAGÖZ,,, ,,,,,"                          "
+CMPE690.04,Desc.,M.S.THESIS,0,60,FATMA BAŞAK AYDEMİR,,, ,,,,,"                          "
+CMPE690.05,Desc.,M.S.THESIS,0,60,HALUK BİNGÖL,,, ,,,,,"                          "
+CMPE690.07,Desc.,M.S.THESIS,0,60,CEM ERSOY,,, ,,,,,"                          "
+CMPE690.09,Desc.,M.S.THESIS,0,60,TUNGA GÜNGÖR,,, ,,,,,"                          "
+CMPE690.10,Desc.,M.S.THESIS,0,60,SADIK FİKRET GÜRGEN,,, ,,,,,"                          "
+CMPE690.11,Desc.,M.S.THESIS,0,60,ARZUCAN ÖZGÜR TÜRKMEN,,, ,,,,,"                          "
+CMPE690.12,Desc.,M.S.THESIS,0,60,CAN ÖZTURAN,,, ,,,,,"                          "
+CMPE690.13,Desc.,M.S.THESIS,0,60,CEM SAY,,, ,,,,,"                          "
+CMPE690.14,Desc.,M.S.THESIS,0,60,MEHMET ALPER ŞEN,,, ,,,,,"                          "
+CMPE690.15,Desc.,M.S.THESIS,0,60,TUNA TUĞCU,,, ,,,,,"                          "
+CMPE690.16,Desc.,M.S.THESIS,0,60,EMRE UĞUR,,, ,,,,,"                          "
+CMPE690.17,Desc.,M.S.THESIS,0,60,SUZAN ÜSKÜDARLI,,, ,,,,,"                          "
+CMPE690.18,Desc.,M.S.THESIS,0,60,ARDA YURDAKUL,,, ,,,,,"                          "
+CMPE690.19,Desc.,M.S.THESIS,0,60,İNCİ MELİHA BAYTAŞ,,, ,,,,,"                          "
+CMPE690.20,Desc.,M.S.THESIS,0,60,HÜSEYİN BİRKAN YILMAZ,,, ,,,,,"                          "
+CMPE699.01,Desc.,GUIDED RESEARCH IN PhD I,4,10,CEM ERSOY,ThThThThThTh,456789,Online,,,,,"                          "
+CMPE699.02,Desc.,GUIDED RESEARCH IN PhD I,4,10,CEM SAY,WWWWWW,123456,Online,,,,,"                          "
+CMPE699.03,Desc.,GUIDED RESEARCH IN PhD I,4,10,ARZUCAN ÖZGÜR TÜRKMEN,MMMMTT,123412,Online,,,,,"                          "
+CMPE699.04,Desc.,GUIDED RESEARCH IN PhD I,4,10,FATİH ALAGÖZ,WWWThThTh,123123,Online,,,,,"                          "
+CMPE699.06,Desc.,GUIDED RESEARCH IN PhD I,4,10,TUNGA GÜNGÖR,MMThThFF,343434,Online,,,,,"                          "
+CMPE699.07,Desc.,GUIDED RESEARCH IN PhD I,4,10,EMRE UĞUR,WWWThThTh,456456,Online,,,,,"                          "
+CMPE69A.07,Desc.,GUIDED RESEARCH IN PhD II,0,10,EMRE UĞUR,FFFF,5678,Online,,,,,"                          "
+CMPE69A.11,Desc.,GUIDED RESEARCH IN PhD II,0,10,CAN ÖZTURAN,WWWW,1234,Online,,,,,"                          "
+CMPE700.01,Desc.,GRADUATE SEMINAR,0,1,SUZAN ÜSKÜDARLI,T,4,Online,,,,,"                          "
+CMPE790.01,Desc.,Ph.D.THESIS,0,120,LALE AKARUN,,, ,,,,,"                          "
+CMPE790.02,Desc.,Ph.D.THESIS,0,120,H. LEVENT AKIN,,, ,,,,,"                          "
+CMPE790.03,Desc.,Ph.D.THESIS,0,120,FATİH ALAGÖZ,,, ,,,,,"                          "
+CMPE790.04,Desc.,Ph.D.THESIS,0,120,FATMA BAŞAK AYDEMİR,,, ,,,,,"                          "
+CMPE790.05,Desc.,Ph.D.THESIS,0,120,HALUK BİNGÖL,,, ,,,,,"                          "
+CMPE790.07,Desc.,Ph.D.THESIS,0,120,CEM ERSOY,,, ,,,,,"                          "
+CMPE790.09,Desc.,Ph.D.THESIS,0,30,TUNGA GÜNGÖR,,, ,,,,,"                          "
+CMPE790.10,Desc.,Ph.D.THESIS,0,120,SADIK FİKRET GÜRGEN,,, ,,,,,"                          "
+CMPE790.11,Desc.,Ph.D.THESIS,0,120,ARZUCAN ÖZGÜR TÜRKMEN,,, ,,,,,"                          "
+CMPE790.12,Desc.,Ph.D.THESIS,0,120,CAN ÖZTURAN,,, ,,,,,"                          "
+CMPE790.13,Desc.,Ph.D.THESIS,0,120,CEM SAY,,, ,,,,,"                          "
+CMPE790.14,Desc.,Ph.D.THESIS,0,120,MEHMET ALPER ŞEN,,, ,,,,,"                          "
+CMPE790.15,Desc.,Ph.D.THESIS,0,120,TUNA TUĞCU,,, ,,,,,"                          "
+CMPE790.16,Desc.,Ph.D.THESIS,0,120,EMRE UĞUR,,, ,,,,,"                          "
+CMPE790.17,Desc.,Ph.D.THESIS,0,120,SUZAN ÜSKÜDARLI,,, ,,,,,"                          "
+CMPE790.18,Desc.,Ph.D.THESIS,0,120,ARDA YURDAKUL,,, ,,,,,"                          "
+ENG 493.01,Desc.,SP.TP.IN LAUNCH. A SUC.SOFTWARE STARTUP,3,5,CAN ARIK SARAÇOĞLU,MMM,123,Online,,,,,"                          "

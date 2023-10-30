@@ -1,0 +1,27 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL106.01,Desc.,PHILOSOPHICAL TEXTS,3,7,YILDIZ SİLİER,MThTh,667,,M 2230 | NH 404 | NH 404,09.06.2009,3,PHIL,"                          "
+PHIL112.01,Desc.,INTRODUCTION TO MODERN PHILOSOPHY,3,5,STEPHEN VOSS,TTTh,565,,TB 310 | TB 310 | NH 401,01.06.2009,1,LL-TKL-TR-ED,"                          "
+PHIL132.01,Desc.,LOGIC II,3,6,BERNA KILINÇ,TTF,566,,M 2181 | M 2181 | TB 310,27.05.2009,3,PHIL,"                          "
+PHIL132.02,Desc.,LOGIC II,3,6,ALİ KARATAY,TTF,345,,NH 402 | NH 402 | TB 240,27.05.2009,3,,"                          "
+PHIL214.01,Desc.,HISTORY OF PHILOSOPHY II,3,6,CHRYSSI SIDIROPOULOU,WThTh,645,,TB 240 | M 1171 | M 1171,03.06.2009,3,,"                          "
+PHIL222.01,Desc.,PHILOSOPHY OF SCIENCE,3,6,GÜROL IRZIK,MMW,783,,NH 301 | NH 301 | NH 105,30.05.2009,2,,"                          "
+PHIL314.01,Desc.,HISTORY OF PHILOSOPHY IV,3,6,JOHANNES FRITSCHE,TTW,782,,TB 240 | TB 240 | M 1171,08.06.2009,2,,"                          "
+PHIL320.01,Desc.,PHILOSOPHY OF RELIGION,3,6,CHRYSSI SIDIROPOULOU,WWTh,456,,TB 240 | TB 240 | M 1171,26.05.2009,1,,"                          "
+PHIL382.01,Desc.,ONTOLOGY,3,7,STEPHEN VOSS,TThTh,212,,M 1171 | TB 240 | TB 240,02.06.2009,1,,"                          "
+PHIL400.01,Desc.,CURRENT ISSUES IN PHILOSOPHY,3,6,MURAT BAÇ,FFF,125,,TB 240 | TB 240 | M 1171,28.05.2009,3,,"                          "
+PHIL420.01,Desc.,ADVANCED PHILOSOPHY OF SCIENCE,3,6,GÜROL IRZIK,WWW,678,,M 1170 | M 1170 | M 1170,05.06.2009,2,,"                          "
+PHIL470.01,Desc.,PHILOSOPHY OF MATHEMATICS,3,6,ALİ KARATAY,TFF,534,,NH 402 | TB 240 | TB 240,29.05.2009,2,,"                          "
+PHIL498.01,Desc.,SEL.TOP: PHIL.IN CINEMA,3,6,YILDIZ SİLİER,MMM,234,,MİTHAT | MİTHAT | MİTHAT ,02.06.2009,3,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,SUN DEMİRLİ,,, ,,08.06.2009,1,,"                          "
+PHIL505.01,Desc.,THEORY OF KNOWLEDGE,4,10,MURAT BAÇ,WWW,234,,,01.06.2009,1,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,03.06.2009,1,,"                          "
+PHIL58J.01,Desc.,SP.TOP.:PHILOSOPHY & LİTERATURE,4,10,ZEYNEP DAVRAN,TTT,678,,,30.05.2009,1,,"                          "
+PHIL58K.01,Desc.,SP.TOP.:MIND AND COGNITION,4,10,KARANFİL SOYHUN,TTT,345,,,27.05.2009,1,,"                          "
+PHIL58L.01,Desc.,SP.TOPICS EVIDENCE,4,10,BERNA KILINÇ,ThThTh,678,,,04.06.2009,1,,"                          "
+PHIL58O.01,Desc.,SP.TOP.:PHILOSOPHY IN HISTORY,4,10,JOHANNES FRITSCHE,MMM,678,,,26.05.2009,2,,"                          "
+PHIL58P.01,Desc.,SP.TOP.:PHIL OF NATURE&MODERN PHILOSOPHY,4,10,PINAR CANEVİ,WWW,678,,,01.06.2009,3,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,SUN DEMİRLİ,TBA,,,,05.06.2009,1,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,04.06.2009,2,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,MURAT BAÇ,TBA,,,,,0,,"                          "

@@ -1,0 +1,27 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CMPE150.02,Desc.,INTRODUCTION TO COMPUTING,3,5,VURAL ALTIN,M,6,,,,,,"        CMPE                  "
+CMPE220.01,Desc.,DISCRETE COMPUTATIONAL STRUCTURES,3,4,ETHEM ALPAYDIN,MMF,126,,,,,,"                          "
+CMPE230.01,Desc.,SYSTEMS PROGRAMMING,4,6,CAN ÖZTURAN,TTW,345,,,,,,"                          "
+CMPE322.01,Desc.,OPERATING SYSTEMS,4,5,CEM ERSOY,WWTh,125,,,,,,"                          "
+CMPE344.01,Desc.,COMPUTER ORGANIZATION,4,5,OĞUZ TOSUN,MMTh,346,,,,,,"                          "
+CMPE422.01,Desc.,DATABASE SYSTEMS II,3,6,TAFLAN GÜNDEM,WFF,578,,,,,,"                          "
+CMPE444.01,Desc.,MICROPROCESSOR BASED SYSTEM DESIGN,4,6,SADIK FİKRET GÜRGEN,MWW,212,,,,,,"                          "
+CMPE460.01,Desc.,COMPUTER GRAPHICS,3,6,LALE AKARUN,MMW,563,,,,,,"                          "
+CMPE475.01,Desc.,COMPUTER COMMUNICATIONS & NETWORKING,3,6,M. UFUK ÇAĞLAYAN,WThTh,512,,,,,,"                          "
+CMPE480.01,Desc.,INTRODUCTION TO ARTIFICIAL INTELLIGENCE,3,6,CEM SAY,MWW,478,,,,,,"                          "
+CMPE491.01,Desc.,SPEC. PROJECT IN COMPUTER ENGINEERING,3,6,M. UFUK ÇAĞLAYAN,TBA, ,,,,,,"                          "
+CMPE492.01,Desc.,PROJECT,4,7,M. UFUK ÇAĞLAYAN,TBA, ,,,,,,"                          "
+CMPE493.01,Desc.,SP.TOP.IN CMPE:NATURAL LANGUAGE PROCESS.,3,6,CEM SAY,FFF,678,,,,,,"                          "
+CMPE511.01,Desc.,COMPUTER ARCHITECTURE,3,8,OĞUZ TOSUN,ThThTh,234,,,,,,"                          "
+CMPE521.01,Desc.,PRINCIPLES OF DATABASE SYSTEMS,3,8,TAFLAN GÜNDEM,WWW,678,,,,,,"                          "
+CMPE540.01,Desc.,PRINCIPLES OF ARTIFICIAL INTELLIGENCE,3,8,H. LEVENT AKIN,ThThTh,567,,,,,,"                          "
+CMPE579.01,Desc.,GRADUATE SEMINAR,0,8,TAFLAN GÜNDEM,TBA, ,,,,,,"                          "
+CMPE580.01,Desc.,COMPUTER NETWORKS I,3,8,CEM ERSOY,TTT,123,,,,,,"                          "
+CMPE587.01,Desc.,SP.TOP.IN CMPE:ADV.NETWORKING PROGRAMMIN,3,8,M. UFUK ÇAĞLAYAN,ThThTh,567,,,,,,"                          "
+CMPE598.01,Desc.,SP.TOP. IN CMPE: PAR.SCI.COMP.,3,8,CAN ÖZTURAN,MMM,123,,,,,,"                          "
+CMPE601.01,Desc.,GRADUATE SEMINAR IN COMPUTER ENG. I,1,3,TAFLAN GÜNDEM,T,4,,,,,,"                          "
+CMPE621.01,Desc.,PATTERN RECOGNITION,3,8,ETHEM ALPAYDIN,FFF,123,,,,,,"                          "
+CMPE622.01,Desc.,COMPUTER VISION,3,8,LALE AKARUN,TTT,678,,,,,,"                          "
+CMPE699.01,Desc.,GUIDED RESEARCH,4,8,H. LEVENT AKIN,TBA, ,,,,,,"                          "
+ENG 101.01,Desc.,INTRODUCTION TO COMPUTERS,3,7,EROL İNELMEN,WWF,452,,,,,,"                          "
+ENG 101.02,Desc.,INTRODUCTION TO COMPUTERS,3,7,EROL İNELMEN,TBA, ,,,,,,"                          "

@@ -1,0 +1,54 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ENG 380.01,Desc.,SP.TP.PROFESSIONALISM&COMMUNICATIONS S.,3,5,MUSTAFA AKAN,WWW,123, ,M 2180 | M 2180 | M 2180,07.01.2023,3,,"                          "
+IE  201.01,Desc.,INTERMEDIATE PROGRAMMING,3,6,ZEKİ CANER TAŞKIN,TTThTh,5612, ,VYKM2 | VYKM2 | M 3100 | M 3100,12.01.2023,1,,"                          "
+IE  202.01,Desc.,OPERATIONS RESEARCH I,4,7,TINAZ  EKİM AŞICI,MMTTTh,56125, ,M 1100 | M 1100 | M 1100 | M 1100 | M 1100,10.01.2023,2,,"                          "
+IE  203.01,Desc.,OPERATIONS RESEARCH II,4,7,MUSTAFA NECATİ ARAS,MMWThTh,34834, ,VYKM4 | VYKM4 | VYKM2 | VYKM3 | VYKM3,03.01.2023,2,,"                          "
+IE  220.01,Desc.,MATERIALS AND PROCESSES IN MANUFACTURING,3,5,OSMAN GÖKHAN ERSOY,MFFF,8123, ,M 3100 | VYKM2 | VYKM2 | VYKM2,09.01.2023,3,,"                          "
+IE  255.01,Desc.,PROBABILITY FOR INDUSTRIAL ENGINEERS,3,6,AYBEK KORUGAN,MMWW,1267, ,M 1100 | M 1100 | NH 301 | NH 301,03.01.2023,1,,"                          "
+IE  306.01,Desc.,SYSTEMS SIMULATION,4,7,GÖNENÇ YÜCEL,MTTFF,61256, ,NH 102 | VYKM1 | VYKM1 | NH 305 | NH 305,09.01.2023,1,,"                          "
+IE  310.01,Desc.,OPERATIONS RESEARCH,4,5,KEREM ÖZKISACIK,MTTFF,77812, ,NH 405 | M 1100 | M 1100 | NH 101 | NH 101,07.01.2023,3,,"                          "
+IE  312.01,Desc.,FACILITIES DESIGN & PLANNING,4,7,ÜMİT BİLGE,MTTThTh,33434, ,VYKM1 | VYKM1 | VYKM1 | NH 202 | NH 202,02.01.2023,1,,"                          "
+IE  313.01,Desc.,SUPPLY CHAIN MANAGEMENT,4,7,TANER BİLGİÇ,MTTThTh,33434, ,,06.01.2023,1,,"                          "
+IE  341.01,Desc.,ENGINEERING ECONOMICS,4,7,ALİ TAMER ÜNAL,TTWFF,56434, ,VYKM1 | VYKM1 | M 1100 | NH 301 | NH 301,05.01.2023,3,,"                          "
+IE  423.01,Desc.,QUALITY ENGINEERING,3,6,ALİ RIZA KAYLAN,TTThTh,7878, ,VYKM1 | VYKM1 | M 1100 | M 1100,11.01.2023,1,,"                          "
+IE  430.01,Desc.,ERGONOMICS&HUMAN FACTORS ENGINEERING,3,6,MAHMUT EKŞİOĞLU,WWFF,7834, ,M 3120 | M 3120 | M 3120 | M 3120,13.01.2023,3,,"                          "
+IE  440.01,Desc.,NONLINEAR MODELS IN OPERATIONS RESEARCH,3,6,KUBAN ALTINEL,MWW,456, ,M 3120 | M 3100 | M 3100,03.01.2023,1,,"                          "
+IE  442.01,Desc.,ENTERPRISE INFORMATION SYSTEMS MODELING,3,6,ALİ TAMER ÜNAL,WWF,128, ,M 2230 | M 2230 | M 2230,10.01.2023,1,,"                          "
+IE  450.01,Desc.,STOCHASTIC MODELS IN OPERATIONS RESEARCH,3,6,REFİK GÜLLÜ,TTFF,1212, ,NH 202 | NH 202 | NH 202 | NH 202,03.01.2023,2,,"                          "
+IE  492.01,Desc.,PROJECT,4,8,TANER BİLGİÇ,MM,78, ,VYKM2 | VYKM2,11.01.2023,2,,"                          "
+IE  498.01,Desc.,SP.TP.RISK ASSESSMENT & ANALYSIS,3,6,İLHAN OR,TTThTh,5656, ,M 3100 | M 3100 | VYKM1 | VYKM1,05.01.2023,1,,"                          "
+IE  49M.01,Desc.,SP.TP.IN NETWORK EXTRACTION&ANALYSIS,3,6,TINAZ  EKİM AŞICI,MTT,234, ,,07.01.2023,2,,"                          "
+IE  501.01,Desc.,OPTIMIZATION TECHNIQUES I,3,8,KUBAN ALTINEL,MMWW,1212, ,M 2181 | M 2181 | M 2152 | M 2152,30.12.2022,3,,"                          "
+IE  505.01,Desc.,STOCHASTIC PROCESSES AND APPLICATIONS,3,8,AYBEK KORUGAN,MWW,534, ,VYKM3 | M 2170 | M 2170,07.01.2023,1,,"                          "
+IE  518.01,Desc.,ADVANCED GRAPH THEORY,3,8,TINAZ  EKİM AŞICI,ThThTh,123, ,VYKM4 | VYKM4 | VYKM4,30.12.2022,2,,"                          "
+IE  533.01,Desc.,SYSTEMS THEORY,3,8,GÖNENÇ YÜCEL,MWW,378, ,VYKM3 | VYKM3 | VYKM3,10.01.2023,2,,"                          "
+IE  579.01,Desc.,GRADUATE SEMINAR,0,1,KUBAN ALTINEL,WW,78, ,M 2181 | M 2181,,,,"                          "
+IE  588.01,Desc.,SP.TP.: AGENT BASED MODELING&SIMULATION,3,8,GÖNENÇ YÜCEL,MWW,456, ,M 1171 | VYKM3 | VYKM3,12.01.2023,1,,"                          "
+IE  594.01,Desc.,SP.TP.APPS OF INV.THEORY&SUPP.CHAIN,3,8,REFİK GÜLLÜ,TFF,556, ,M 2231 | VYKM3 | VYKM3,05.01.2023,2,,"                          "
+IE  613.01,Desc.,LARGE SCALE PROGRAMMING,3,8,ZEKİ CANER TAŞKIN,TTTh,787, ,M 2231 | M 2231 | M 2181,06.01.2023,2,,"                          "
+IE  690.01,Desc.,M.S. THESIS,0,60,KUBAN ALTINEL,,, ,,,,,"                          "
+IE  690.02,Desc.,M.S. THESIS,0,60,MUSTAFA NECATİ ARAS,,, ,,,,,"                          "
+IE  690.05,Desc.,M.S. THESIS,0,60,ÜMİT BİLGE,,, ,,,,,"                          "
+IE  690.06,Desc.,M.S. THESIS,0,60,TANER BİLGİÇ,,, ,,,,,"                          "
+IE  690.07,Desc.,M.S. THESIS,0,60,MAHMUT EKŞİOĞLU,,, ,,,,,"                          "
+IE  690.08,Desc.,M.S. THESIS,0,60,REFİK GÜLLÜ,,, ,,,,,"                          "
+IE  690.11,Desc.,M.S. THESIS,0,60,AYBEK KORUGAN,,, ,,,,,"                          "
+IE  690.12,Desc.,M.S. THESIS,0,60,GÜRKAN KUMBAROĞLU,,, ,,,,,"                          "
+IE  690.14,Desc.,M.S. THESIS,0,60,ALİ TAMER ÜNAL,,, ,,,,,"                          "
+IE  690.15,Desc.,M.S. THESIS,0,60,TINAZ  EKİM AŞICI,,, ,,,,,"                          "
+IE  690.16,Desc.,M.S. THESIS,0,60,HAKAN YAŞARCAN,,, ,,,,,"                          "
+IE  690.17,Desc.,M.S. THESIS,0,60,ZEKİ CANER TAŞKIN,,, ,,,,,"                          "
+IE  690.18,Desc.,M.S. THESIS,0,60,GÖNENÇ YÜCEL,,, ,,,,,"                          "
+IE  790.01,Desc.,Ph.D. THESIS,0,120,KUBAN ALTINEL,,, ,,,,,"                          "
+IE  790.02,Desc.,Ph.D. THESIS,0,120,MUSTAFA NECATİ ARAS,,, ,,,,,"                          "
+IE  790.05,Desc.,Ph.D. THESIS,0,120,ÜMİT BİLGE,,, ,,,,,"                          "
+IE  790.06,Desc.,Ph.D. THESIS,0,120,TANER BİLGİÇ,,, ,,,,,"                          "
+IE  790.07,Desc.,Ph.D. THESIS,0,120,MAHMUT EKŞİOĞLU,,, ,,,,,"                          "
+IE  790.08,Desc.,Ph.D. THESIS,0,120,REFİK GÜLLÜ,,, ,,,,,"                          "
+IE  790.11,Desc.,Ph.D. THESIS,0,120,AYBEK KORUGAN,,, ,,,,,"                          "
+IE  790.12,Desc.,Ph.D. THESIS,0,120,GÜRKAN KUMBAROĞLU,,, ,,,,,"                          "
+IE  790.14,Desc.,Ph.D. THESIS,0,120,ALİ TAMER ÜNAL,,, ,,,,,"                          "
+IE  790.15,Desc.,Ph.D. THESIS,0,120,TINAZ  EKİM AŞICI,,, ,,,,,"                          "
+IE  790.16,Desc.,Ph.D. THESIS,0,120,HAKAN YAŞARCAN,,, ,,,,,"                          "
+IE  790.17,Desc.,Ph.D. THESIS,0,120,ZEKİ CANER TAŞKIN,,, ,,,,,"                          "
+IE  790.18,Desc.,Ph.D. THESIS,0,120,GÖNENÇ YÜCEL,,, ,,,,,"                          "

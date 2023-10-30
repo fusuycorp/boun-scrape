@@ -1,0 +1,33 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL105.01,Desc.,CRITICAL THINKING,3,6,BERNA KILINÇ,TTF,565,,TB 240 | TB 240 | TB 310,09.06.2012,1,,"        PHIL                  "
+,,P.S.,,,BERNA KILINÇ,TBA,,,,,0,,"        PHIL                  "
+PHIL106.01,Desc.,PHILOSOPHICAL TEXTS,3,7,JOHANNES FRITSCHE,MMF,786,,YD 116 | YD 116 | NH 104,05.06.2012,1,,"                          "
+,,P.S.,,,JOHANNES FRITSCHE,TBA,,,,,0,,"                          "
+PHIL112.01,Desc.,INTRODUCTION TO MODERN PHILOSOPHY,3,5,STEPHEN VOSS,TTTh,344,,NH 401 | NH 401 | NH 401,07.06.2012,2,"GUID,LL,TR,TKL","                          "
+PHIL132.01,Desc.,LOGIC II,3,6,İLHAN İNAN,TTTh,783,,NH 201 | NH 201 | M 1171,31.05.2012,1,,"                          "
+,,P.S.,,,İLHAN İNAN,TBA,,,,,0,,"                          "
+PHIL214.01,Desc.,HISTORY OF PHILOSOPHY II,3,6,CHRYSSI SIDIROPOULOU,MMW,343,,YD 04 | YD 04 | YD 03,05.06.2012,3,,"                          "
+PHIL222.01,Desc.,PHILOSOPHY OF SCIENCE,3,6,İREM KURTSAL STEEN,MWW,245,,TB 240 | YD 02 | YD 02,09.06.2012,3,,"                          "
+PHIL314.01,Desc.,HISTORY OF PHILOSOPHY IV,3,6,LUCAS THORPE,TTTh,347,,YD 05 | YD 05 | NH 103,28.05.2012,3,,"                          "
+PHIL375.01,Desc.,PHILOSOPHY OF MIND,3,6,STEPHEN VOSS,TThTh,556,,NH 101 | NH 103 | NH 103,31.05.2012,2,,"                          "
+PHIL382.01,Desc.,ONTOLOGY,3,7,MARK STEEN,MMW,562,,TB 240 | TB 240 | YD 02,07.06.2012,3,,"                          "
+PHIL400.01,Desc.,CURRENT ISSUES IN PHILOSOPHY,3,6,MARK STEEN,WWW,678,,YD 02 | YD 02 | YD 02,02.06.2012,3,,"                          "
+PHIL406.01,Desc.,ADVANCED STUDY OF PHILOSOPHICAL TEXTS,3,6,LUCAS THORPE,TThTh,634,,NH 302 | NH 303 | NH 303,01.06.2012,2,,"                          "
+PHIL48L.01,Desc.,SEL.TOPICS IN LOGIC II,3,6,ALİ KARATAY,TTF,786,,NH 302 | NH 302 | M 1170,07.06.2012,1,,"                          "
+PHIL48U.01,Desc.,SP.TOP.:PHILOSOPHY IN THE ISLAMIC WORLD,3,6,CHRYSSI SIDIROPOULOU,MWW,245,,NH 201 | NH 305 | NH 305,31.05.2012,3,,"                          "
+PHIL498.01,Desc.,SEL.TOP: PHIL.IN CINEMA,3,6,YILDIZ SİLİER,FFF,234,,MİTHAT | MİTHAT | MİTHAT ,28.05.2012,1,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,KARANFİL SOYHUN,,, ,,30.05.2012,1,,"                          "
+PHIL515.01,Desc.,TOP. IN HIST. OF PHILOSOPHY,4,10,JOHANNES FRITSCHE,FFF,234,,YD 203 | YD 203 | YD 203,29.05.2012,1,,"                          "
+PHIL538.01,Desc.,SP.TOP.IN POLITICAL PHILOSOPHY,4,10,YILDIZ SİLİER,ThThTh,234,,,30.05.2012,3,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,JOHANNES FRITSCHE,TBA,,,,,0,,"                          "
+PHIL581.01,Desc.,SP.TP.:BASIC VALUE CONCEPTS OF PHILOSOP.,4,10,PINAR CANEVİ,TTT,678,,YD 103 | YD 103 | YD 103,31.05.2012,3,,"                          "
+PHIL582.01,Desc.,SP.TP.:TRUTH&REFERENCE,4,10,İLHAN İNAN,ThThTh,678,,,07.06.2012,2,,"                          "
+PHIL583.01,Desc.,"SP.TP.:COMPOSITION,VAGUENESS&PERSISTENCE",4,10,İREM KURTSAL STEEN,MMM,678,,,31.05.2012,1,,"                          "
+PHIL587.01,Desc.,SP.TP.:ONTOLOGY OF TRUTH,4,10,MURAT BAÇ,WWW,678,,,01.06.2012,2,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,JOHANNES FRITSCHE,TBA,,,,01.06.2012,1,,"                          "
+PHIL58Y.01,Desc.,SP.TP.:LOGIC FOR PHILOSOPHERS II,4,10,ALİ KARATAY,F,6,,,29.05.2012,3,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,KARANFİL SOYHUN,TBA,,,,09.06.2012,2,,"                          "
+PHIL590.02,Desc.,DIRECTED STUDY,4,10,MURAT BAÇ,TBA,,,,09.06.2012,2,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,JOHANNES FRITSCHE,TBA,,,,04.06.2012,2,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,JOHANNES FRITSCHE,TBA,,,,,0,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,JOHANNES FRITSCHE,TBA,,,,,0,,"                          "

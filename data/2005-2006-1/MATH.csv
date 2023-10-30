@@ -1,0 +1,26 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.03,Desc.,CALCULUS I,4,6,TALİN BUDAK,TTThTh,1212,,,,,,"                          "
+MATH101.04,Desc.,CALCULUS I,4,6,TALİN BUDAK,TTThTh,3434,,,,,,"                          "
+MATH105.01,Desc.,INTRODUCTION TO FINITE MATHEMATICS,4,6,GÜLNİHAL YÜCEL,TTThTh,1212,,,,,,"                          "
+MATH105.02,Desc.,INTRODUCTION TO FINITE MATHEMATICS,4,6,GÜLNİHAL YÜCEL,TTThTh,3434,,,,,,"                          "
+MATH131.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS I,4,6,BETÜL TANBAY,TTThTh,3434,,,,,,"        MATH                  "
+MATH162.01,Desc.,DISCRETE MATHEMATICS,4,6,N.SADIK DEĞER,MMWW,1212,,,,,,"                          "
+MATH202.01,Desc.,DIFFERENTIAL EQUATIONS,4,7,NİLGÜN IŞIK,MMWW,1212,,,,,,"                          "
+MATH202.02,Desc.,DIFFERENTIAL EQUATIONS,4,7,NİLGÜN IŞIK,MMWW,5656,,,,,,"                          "
+MATH231.01,Desc.,CALCULUS FOR MATHEMATICS STUDENTS III,4,4,BURAK GÜREL,MMWW,1212,,,,,,"        MEDU; MATH                  "
+MATH321.01,Desc.,ALGEBRA I,4,8,AHMET KAMİL FEYZİOĞLU,MMWW,1212,,,,,,"                          "
+MATH327.01,Desc.,NUMBER THEORY,3,6,CEM YALÇIN YILDIRIM,TTTh,565,,,,,,"                          "
+MATH331.01,Desc.,REAL ANALYSIS I,4,8,FERİT ÖZTÜRK,TTThTh,1212,,,,,,"        MATH                  "
+MATH333.01,Desc.,FOURIER SERIES ,3,6,BURAK GÜREL,MMTh,566,,,,,,"                          "
+MATH343.01,Desc.,PROBABILITY,4,6,ALP EDEN,TTThTh,3434,,,,,,"                          "
+MATH431.01,Desc.,COMPLEX ANALYSIS I,4,8,CEM YALÇIN YILDIRIM,TTThTh,7878,,,,,,"                          "
+MATH478.01,Desc.,GROUPS&GEOMETRIES,3,7,N.SADIK DEĞER,MMW,785,,,,,,"                          "
+MATH480.01,Desc.,SEMINAR,2,4,FERİT ÖZTÜRK,WW,67,,,,,,"                          "
+MATH491.01,Desc.,SELEC.TP.IN MATHEMATICS:CATEGORY THEORY ,3,6,ALİ KARATAY,MFF,356,,,,,,"                          "
+MATH531.01,Desc.,REAL ANALYSIS I,4,10,ALP EDEN,TTThTh,1212,,,,,,"                          "
+MATH551.01,Desc.,PARTIAL DIFFERENTIAL EQUATIONS I,4,10,ALP EDEN,TBA,,,,,,,"                          "
+MATH571.01,Desc.,TOPOLOGY,4,10,BETÜL TANBAY,TTThTh,5656,,,,,,"                          "
+MATH572.01,Desc.,ALGEBRAIC TOPOLOGY,4,10,FERİT ÖZTÜRK,TTThTh,7878,,,,,,"                          "
+MATH579.01,Desc.,GRADUATE SEMINAR,0,1,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "
+MATH590.01,Desc.,READINGS IN MATHEMATICS,1,3,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,AHMET KAMİL FEYZİOĞLU,TBA,,,,,,,"                          "

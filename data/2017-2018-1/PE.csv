@@ -1,0 +1,117 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PE  101.01,Desc.,STEP I,1,2,VİLDAN ZAN KİPRİ,T,4,,,,0,,"                          "
+PE  101.02,Desc.,STEP I,1,2,VİLDAN ZAN KİPRİ,T,5,,,,0,,"                          "
+PE  101.03,Desc.,STEP I,1,2,VİLDAN ZAN KİPRİ,W,4,,,,0,,"                          "
+PE  103.01,Desc.,FITNESS I,1,2,MEHMET OKTAR,M,3,,,,0,,"                          "
+PE  103.02,Desc.,FITNESS I,1,2,MEHMET OKTAR,M,4,,,,0,,"                          "
+PE  103.03,Desc.,FITNESS I,1,2,ORHAN YALINTAŞ,M,4,,,,0,,"                          "
+PE  103.04,Desc.,FITNESS I,1,2,ORHAN YALINTAŞ,M,5,,,,0,,"                          "
+PE  103.05,Desc.,FITNESS I,1,2,ERCÜMENT PAĞDA,M,7,,,,0,,"                          "
+PE  103.06,Desc.,FITNESS I,1,2,ERCÜMENT PAĞDA,M,8,,,,0,,"                          "
+PE  103.07,Desc.,FITNESS I,1,2,MUSTAFA EROL,T,5,,,,0,,"                          "
+PE  103.08,Desc.,FITNESS I,1,2,MUSTAFA EROL,T,6,,,,0,,"                          "
+PE  103.09,Desc.,FITNESS I,1,2,MUSTAFA EROL,T,7,,,,0,,"                          "
+PE  103.10,Desc.,FITNESS I,1,2,MUSTAFA EROL,T,8,,,,0,,"                          "
+PE  103.11,Desc.,FITNESS I,1,2,MEHMET OKTAR,W,3,,,,0,,"                          "
+PE  103.12,Desc.,FITNESS I,1,2,MEHMET OKTAR,W,4,,,,0,,"                          "
+PE  103.13,Desc.,FITNESS I,1,2,MUSTAFA EROL,W,5,,,,0,,"                          "
+PE  103.14,Desc.,FITNESS I,1,2,MUSTAFA EROL,W,6,,,,0,,"                          "
+PE  103.15,Desc.,FITNESS I,1,2,MUSTAFA EROL,W,7,,,,0,,"                          "
+PE  103.16,Desc.,FITNESS I,1,2,MUSTAFA EROL,W,8,,,,0,,"                          "
+PE  103.17,Desc.,FITNESS I,1,2,ORHAN YALINTAŞ,W,4,,,,0,,"                          "
+PE  103.18,Desc.,FITNESS I,1,2,ORHAN YALINTAŞ,W,5,,,,0,,"                          "
+PE  103.19,Desc.,FITNESS I,1,2,MUSTAFA EROL,Th,5,,,,0,,"                          "
+PE  103.20,Desc.,FITNESS I,1,2,MUSTAFA EROL,Th,6,,,,0,,"                          "
+PE  103.21,Desc.,FITNESS I,1,2,MUSTAFA EROL,Th,7,,,,0,,"                          "
+PE  103.22,Desc.,FITNESS I,1,2,MUSTAFA EROL,Th,8,,,,0,,"                          "
+PE  103.23,Desc.,FITNESS I,1,2,MEHMET OKTAR,F,3,,,,0,,"                          "
+PE  103.24,Desc.,FITNESS I,1,2,MEHMET OKTAR,F,4,,,,0,,"                          "
+PE  103.25,Desc.,FITNESS I,1,2,ERCÜMENT PAĞDA,F,7,,,,0,,"                          "
+PE  103.26,Desc.,FITNESS I,1,2,ERCÜMENT PAĞDA,F,8,,,,0,,"                          "
+PE  107.01,Desc.,YOGA & RELAXATION TECHNIQUES I,1,2,İREN ALGÜL,M,6,Online,,,0,,"                          "
+PE  107.02,Desc.,YOGA & RELAXATION TECHNIQUES I,1,2,İREN ALGÜL,M,7,Online,,,0,,"                          "
+PE  107.03,Desc.,YOGA & RELAXATION TECHNIQUES I,1,2,İREN ALGÜL,M,8,Online,,,0,,"                          "
+PE  107.04,Desc.,YOGA & RELAXATION TECHNIQUES I,1,2,İREN ALGÜL,M,9,Online,,,0,,"                          "
+PE  107.05,Desc.,YOGA & RELAXATION TECHNIQUES I,1,2,İREN ALGÜL,F,6,Online,,,0,,"                          "
+PE  107.06,Desc.,YOGA & RELAXATION TECHNIQUES I,1,2,İREN ALGÜL,F,7,Online,,,0,,"                          "
+PE  107.07,Desc.,YOGA & RELAXATION TECHNIQUES I,1,2,İREN ALGÜL,F,8,Online,,,0,,"                          "
+PE  107.08,Desc.,YOGA & RELAXATION TECHNIQUES I,1,2,İREN ALGÜL,F,9,Online,,,0,,"                          "
+PE  113.01,Desc.,AEROBIC DANCE I,1,2,VİLDAN ZAN KİPRİ,M,3,,,,0,,"                          "
+PE  113.02,Desc.,AEROBIC DANCE I,1,2,VİLDAN ZAN KİPRİ,M,4,,,,0,,"                          "
+PE  113.03,Desc.,AEROBIC DANCE I,1,2,VİLDAN ZAN KİPRİ,M,5,,,,0,,"                          "
+PE  113.04,Desc.,AEROBIC DANCE I,1,2,ORHAN YALINTAŞ,T,3,,,,0,,"                          "
+PE  113.05,Desc.,AEROBIC DANCE I,1,2,ORHAN YALINTAŞ,T,5,,,,0,,"                          "
+PE  113.06,Desc.,AEROBIC DANCE I,1,2,VİLDAN ZAN KİPRİ,W,3,,,,0,,"                          "
+PE  113.07,Desc.,AEROBIC DANCE I,1,2,VİLDAN ZAN KİPRİ,W,5,,,,0,,"                          "
+PE  113.08,Desc.,AEROBIC DANCE I,1,2,ORHAN YALINTAŞ,Th,3,,,,0,,"                          "
+PE  113.09,Desc.,AEROBIC DANCE I,1,2,ORHAN YALINTAŞ,Th,5,,,,0,,"                          "
+PE  117.01,Desc.,BADMINTON I,1,2,MEHMET OKTAR,M,5,,,,0,,"                          "
+PE  117.02,Desc.,BADMINTON I,1,2,MEHMET OKTAR,M,6,,,,0,,"                          "
+PE  117.03,Desc.,BADMINTON I,1,2,MEHMET OKTAR,W,5,,,,0,,"                          "
+PE  117.04,Desc.,BADMINTON I,1,2,MEHMET OKTAR,W,6,,,,0,,"                          "
+PE  117.05,Desc.,BADMINTON I,1,2,MEHMET OKTAR,F,5,,,,0,,"                          "
+PE  117.06,Desc.,BADMINTON I,1,2,MEHMET OKTAR,F,6,,,,0,,"                          "
+PE  119.01,Desc.,BASKETBALL I,1,2,BURAK Ş. ACARTÜRK,Th,6,,,,0,,"                          "
+PE  119.02,Desc.,BASKETBALL I,1,2,BURAK Ş. ACARTÜRK,Th,7,,,,0,,"                          "
+PE  119.03,Desc.,BASKETBALL I,1,2,BURAK Ş. ACARTÜRK,Th,8,,,,0,,"                          "
+PE  119.04,Desc.,BASKETBALL I,1,2,BURAK Ş. ACARTÜRK,Th,9,,,,0,,"                          "
+PE  123.01,Desc.,TENNIS I,1,2,ENİS GÜLLER,M,3,,,,0,,"                          "
+PE  123.02,Desc.,TENNIS I,1,2,ENİS GÜLLER,M,4,,,,0,,"                          "
+PE  123.03,Desc.,TENNIS I,1,2,ENİS GÜLLER,M,5,,,,0,,"                          "
+PE  123.04,Desc.,TENNIS I,1,2,ENİS GÜLLER,M,6,,,,0,,"                          "
+PE  123.05,Desc.,TENNIS I,1,2,ENİS GÜLLER,M,7,,,,0,,"                          "
+PE  123.06,Desc.,TENNIS I,1,2,ALPER DURU,T,1,,,,0,,"                          "
+PE  123.07,Desc.,TENNIS I,1,2,ALPER DURU,T,2,,,,0,,"                          "
+PE  123.08,Desc.,TENNIS I,1,2,ALPER DURU,T,3,,,,0,,"                          "
+PE  123.09,Desc.,TENNIS I,1,2,ALPER DURU,T,4,,,,0,,"                          "
+PE  123.10,Desc.,TENNIS I,1,2,ENİS GÜLLER,W,3,,,,0,,"                          "
+PE  123.11,Desc.,TENNIS I,1,2,ENİS GÜLLER,W,4,,,,0,,"                          "
+PE  123.12,Desc.,TENNIS I,1,2,ENİS GÜLLER,W,5,,,,0,,"                          "
+PE  123.13,Desc.,TENNIS I,1,2,ENİS GÜLLER,W,6,,,,0,,"                          "
+PE  123.14,Desc.,TENNIS I,1,2,ALPER DURU,Th,1,,,,0,,"                          "
+PE  123.15,Desc.,TENNIS I,1,2,ALPER DURU,Th,2,,,,0,,"                          "
+PE  123.16,Desc.,TENNIS I,1,2,ALPER DURU,Th,3,,,,0,,"                          "
+PE  123.17,Desc.,TENNIS I,1,2,ALPER DURU,Th,4,,,,0,,"                          "
+PE  123.18,Desc.,TENNIS I,1,2,ENİS GÜLLER,F,2,,,,0,,"                          "
+PE  123.19,Desc.,TENNIS I,1,2,ENİS GÜLLER,F,3,,,,0,,"                          "
+PE  125.01,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,T,6,,,,0,,"                          "
+PE  125.02,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,T,7,,,,0,,"                          "
+PE  125.03,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,T,8,,,,0,,"                          "
+PE  125.04,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,W,7,,,,0,,"                          "
+PE  125.05,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,W,8,,,,0,,"                          "
+PE  125.06,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,Th,6,,,,0,,"                          "
+PE  125.07,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,Th,7,,,,0,,"                          "
+PE  125.08,Desc.,VOLLEYBALL I,1,2,ERCÜMENT PAĞDA,Th,8,,,,0,,"                          "
+PE  125.09,Desc.,VOLLEYBALL I,1,2,HASAN JEYAN ERBEN,T,9,,,,0,,"                          "
+PE  125.10,Desc.,VOLLEYBALL I,1,2,HASAN JEYAN ERBEN,T,10,,,,0,,"                          "
+PE  125.11,Desc.,VOLLEYBALL I,1,2,HASAN JEYAN ERBEN,T,11,,,,0,,"                          "
+PE  125.12,Desc.,VOLLEYBALL I,1,2,HASAN JEYAN ERBEN,W,9,,,,0,,"                          "
+PE  125.13,Desc.,VOLLEYBALL I,1,2,HASAN JEYAN ERBEN,W,10,,,,0,,"                          "
+PE  125.14,Desc.,VOLLEYBALL I,1,2,HASAN JEYAN ERBEN,Th,9,,,,0,,"                          "
+PE  125.15,Desc.,VOLLEYBALL I,1,2,HASAN JEYAN ERBEN,Th,10,,,,0,,"                          "
+PE  125.16,Desc.,VOLLEYBALL I,1,2,HASAN JEYAN ERBEN,Th,11,,,,0,,"                          "
+PE  135.01,Desc.,ROWING I,1,2,RECEP AKICI,W,6,,,,0,,"                          "
+PE  137.01,Desc.,LATIN-AERO DANCE I,1,2,SEZGİ ÇOPUR,Th,7,,,,0,,"                          "
+PE  137.02,Desc.,LATIN-AERO DANCE I,1,2,SEZGİ ÇOPUR,Th,8,,,,0,,"                          "
+PE  137.03,Desc.,LATIN-AERO DANCE I,1,2,SEZGİ ÇOPUR,Th,9,,,,0,,"                          "
+PE  137.04,Desc.,LATIN-AERO DANCE I,1,2,SEZGİ ÇOPUR,Th,10,,,,0,,"                          "
+PE  137.05,Desc.,LATIN-AERO DANCE I,1,2,SEZGİ ÇOPUR,F,7,,,,0,,"                          "
+PE  137.06,Desc.,LATIN-AERO DANCE I,1,2,SEZGİ ÇOPUR,F,8,,,,0,,"                          "
+PE  137.07,Desc.,LATIN-AERO DANCE I,1,2,SEZGİ ÇOPUR,F,9,,,,0,,"                          "
+PE  137.08,Desc.,LATIN-AERO DANCE I,1,2,SEZGİ ÇOPUR,F,10,,,,0,,"                          "
+PE  141.01,Desc.,ELEMENTARY SWIMMING,1,2,METİN OĞUZ,M,1,,,,0,,"                          "
+PE  141.02,Desc.,ELEMENTARY SWIMMING,1,2,METİN OĞUZ,M,2,,,,0,,"                          "
+PE  141.03,Desc.,ELEMENTARY SWIMMING,1,2,CAN DİNÇ,T,1,,,,0,,"                          "
+PE  141.04,Desc.,ELEMENTARY SWIMMING,1,2,CAN DİNÇ,T,2,,,,0,,"                          "
+PE  141.05,Desc.,ELEMENTARY SWIMMING,1,2,CAN DİNÇ,T,5,,,,0,,"                          "
+PE  141.06,Desc.,ELEMENTARY SWIMMING,1,2,CAN DİNÇ,T,6,,,,0,,"                          "
+PE  141.07,Desc.,ELEMENTARY SWIMMING,1,2,CAN DİNÇ,Th,1,,,,0,,"                          "
+PE  141.08,Desc.,ELEMENTARY SWIMMING,1,2,CAN DİNÇ,Th,2,,,,0,,"                          "
+PE  141.09,Desc.,ELEMENTARY SWIMMING,1,2,CAN DİNÇ,Th,5,,,,0,,"                          "
+PE  141.10,Desc.,ELEMENTARY SWIMMING,1,2,CAN DİNÇ,Th,6,,,,0,,"                          "
+PE  141.11,Desc.,ELEMENTARY SWIMMING,1,2,METİN OĞUZ,F,1,,,,0,,"                          "
+PE  141.12,Desc.,ELEMENTARY SWIMMING,1,2,METİN OĞUZ,F,2,,,,0,,"                          "
+PE  142.01,Desc.,ADVANCED SWIMMING,1,2,METİN OĞUZ,M,5,,,,0,,"                          "
+PE  142.02,Desc.,ADVANCED SWIMMING,1,2,METİN OĞUZ,M,6,,,,0,,"                          "
+PE  142.03,Desc.,ADVANCED SWIMMING,1,2,METİN OĞUZ,F,5,,,,0,,"                          "
+PE  142.04,Desc.,ADVANCED SWIMMING,1,2,METİN OĞUZ,F,6,,,,0,,"                          "

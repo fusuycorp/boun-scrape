@@ -1,0 +1,121 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AD  102.01,Desc.,INTRODUCTION TO MANAGEMENT,3,5,ALİ COŞKUN,TTT,91011,Classroom,İB 102 | İB 102 | İB 102,,,,"                          "
+AD  131.01,Desc.,INTRO. TO LAW I,3,4,MEHMET ARTEMEL,ThThTh,678, ,NH 101 | NH 101 | NH 101,12.01.2023,3,"EC,POLS","                          "
+AD  131.02,Desc.,INTRO. TO LAW I,3,4,MEHMET ARTEMEL,FFF,678, ,NH 101 | NH 101 | NH 101,12.01.2023,3,"EC,POLS","                          "
+AD  211.01,Desc.,FINANCIAL ACCOUNTING FOR ECONOMISTS,3,4,FATİH F.YILMAZ,MMM,123, ,İB 102 | İB 102 | İB 102,10.01.2023,3,EC,"                          "
+AD  213.01,Desc.,FINANCIAL ACCOUNTING,3,5,ALİ COŞKUN,TTT,234, ,İB 211 | İB 211 | İB 211,10.01.2023,3,,"                          "
+AD  213.02,Desc.,FINANCIAL ACCOUNTING,3,5,ALİ COŞKUN,WWW,234, ,İB 211 | İB 211 | İB 211,10.01.2023,3,,"                          "
+AD  216.01,Desc.,FINANCIAL & COST ACCOUNTING,4,6,UĞUR AKDOĞAN,ThFFF,6678, ,İB 102 | İB 102 | İB 102 | İB 102,11.01.2023,2,IE,"                          "
+AD  220.01,Desc.,MANAGEMENT OF ORGANIZATIONS,3,5,ÖZGÜN BURCU RODOPMAN,ThThTh,234, ,İB 201 | İB 201 | İB 201,02.01.2023,2,,"                          "
+AD  251.02,Desc.,MANAGERIAL STATISTICS I,3,5,NESRİN OKAY AKMAN,MMM,345, ,İB 201 | İB 201 | İB 201,06.01.2023,3,,"                          "
+AD  302.01,Desc.,RESEARCH METHODS,3,6,BELGİN ARISAN,ThThTh,234, ,İB 102 | İB 102 | İB 102,,,,"                          "
+AD  311.01,Desc.,FINANCIAL MANAGEMENT (A-J),3,6,NESLİHAN N.YILMAZ,TTT,234, ,İB 312 | İB 312 | İB 312,07.01.2023,1,,"                          "
+AD  311.02,Desc.,FINANCIAL MANAGEMENT (K-Z),3,6,ERDİNÇ AKYILDIRIM,FFF,123, ,NH 401 | NH 401 | NH 401,07.01.2023,1,,"                          "
+AD  351.01,Desc.,OPERATIONS MANAGEMENT,3,5,YAVUZ ACAR,WWW,234, ,İB 102 | İB 102 | İB 102,10.01.2023,1,,"                          "
+AD  353.01,Desc.,MANAGEMENT SCIENCE,3,5,UMMAN MAHİR  YILDIRIM,WWW,567, ,İB 102 | İB 102 | İB 102,02.01.2023,1,,"                          "
+AD  401.01,Desc.,GLOBALIZATION&INTERNATIONAL MANAGEMENT,3,6,ÖZLEM ÖZ,TWW,545, ,İB 211 | İB 312 | İB 312,,,,"                          "
+AD  408.01,Desc.,STRATEGIC MANAGEMENT,3,6,AHMET ESEN,ThThTh,234, ,NH 303 | NH 303 | NH 303,12.01.2023,2,,"                          "
+AD  409.01,Desc.,BUSINESS ETHICS,3,6,ESER BORAK,TTT,234, ,İB 102 | İB 102 | İB 102,03.01.2023,2,,"                          "
+AD  410.01,Desc.,ADVANCED MANAGERIAL ACCOUNTING,3,6,İREM NUHOĞLU,TTT,678, ,İB 312 | İB 312 | İB 312,30.12.2022,2,,"                          "
+AD  420.01,Desc.,ENTREPRENEURIAL FINANCE: FIN.POL.FOR NEW,3,6,CENK CEVAT KARAHAN,MMM,234, ,İB 301 | İB 301 | İB 301,,,,"                          "
+AD  424.01,Desc.,HUMAN BEHAVIOR IN ORGANIZATIONS,3,6,HAYAT KABASAKAL,MMM,234, ,İB 312 | İB 312 | İB 312,,,,"                          "
+AD  425.01,Desc.,MANAGEMENT OF TECHNOLOGY,3,6,OSMAN YILMAZ,FFF,789, ,İB 211 | İB 211 | İB 211,06.01.2023,2,,"                          "
+AD  430.01,Desc.,TURKISH BUSINESS ENVIRONMENT,3,6,İDİL TÜRKMENOĞLU,WWW,91011, ,İB 102 | İB 102 | İB 102,04.01.2023,3,,"                          "
+AD  441.01,Desc.,CONSUMER BEHAVIOR,3,6,ESER BORAK,MMT,456, ,İB 102 | İB 102 | İB 102,11.01.2023,1,,"                          "
+AD  452.01,Desc.,INFORMATION SYSTEMS MANAGEMENT,3,6,ASUNUR CEZAR,ThThTh,678, ,EF 206 | EF 206 | EF 206,09.01.2023,1,,"                          "
+AD  452.02,Desc.,INFORMATION SYSTEMS MANAGEMENT,3,6,ASUNUR CEZAR,ThThTh,678, ,EF 206 | EF 206 | EF 206,09.01.2023,1,,"                          "
+AD  460.01,Desc.,E-COMMERCE,3,6,VEDAT AKGİRAY,ThThTh,91011, ,İB 312 | İB 312 | İB 312,02.01.2023,3,,"                          "
+AD  467.01,Desc.,CORPORATE GOVERNANCE,3,6,VEDAT AKGİRAY,MMM,234, ,İB 211 | İB 211 | İB 211,10.01.2023,2,,"                          "
+AD  470.01,Desc.,INVESTMENT MANAGEMENT,3,6,ATİLLA ODABAŞI,FFF,678, ,İB 301 | İB 301 | İB 301,06.01.2023,2,,"                          "
+AD  474.01,Desc.,INVESTMENT&FINANCIAL DATA ANALYSIS,3,6,TAHA ARVAS,WWW,678, ,M 2171 | M 2171 | M 2171,11.01.2023,3,,"                          "
+AD  480.01,Desc.,SP.TP. IN MANAGEMENT : LEADERSHİP & CREATIVITY,3,6,BEHİCE ERTENÜ,TTT,678, ,İB 301 | İB 301 | İB 301,05.01.2023,1,,"                          "
+AD  497.01,Desc.,BACHELOR OF ARTS DEGREE PROJECT,3,6,GÜVEN ALPAY,FFF,123, ,İB 102 | İB 102 | İB 102,,,,"                          "
+AD  49A.01,Desc.,SP.TP.IN FINANCE-BEHAVIORAL FINANCE,3,6,NESLİHAN N.YILMAZ,ThThTh,345, ,İB 312 | İB 312 | İB 312,12.01.2023,2,,"                          "
+AD  49B.01,Desc.,SP.TP.FINANCE-FINTECH,3,6,VEDAT AKGİRAY,WWW,678, ,EMBA | EMBA | EMBA,11.01.2023,2,,"                          "
+AD  49C.01,Desc.,SP.TP.IN INTERNATIONAL BUSINESS&SALES LAW,3,6,ERDEM BÜYÜKSAGİS,FFF,678, ,İB 312 | İB 312 | İB 312,05.01.2023,2,,"                          "
+AD  501.01,Desc.,TOPICS IN BUSINESS ECONOMICS,3,6,METİN ERCAN,FFF,234, ,,02.01.2023,2,,"                          "
+AD  504.01,Desc.,RESEARCH METHODOLOGY,3,6,BELGİN ARISAN,MMM,234, ,,,,,"                          "
+AD  514.01,Desc.,ADVANCED FINANCIAL MANAGEMENT,3,7.50,OĞUZHAN ÖZBAŞ,,, ,,13.01.2023,1,,"                          "
+AD  527.01,Desc.,ORGANIZATIONAL BEHAVIOR&DESIGN,3,6,HAYAT KABASAKAL,ThThTh,234, ,,,,,"                          "
+AD  545.01,Desc.,THEORY QUEST IN MARKETING,3,6,GÜLDEN ASUGMAN,WWW,345, ,,06.01.2023,2,,"                          "
+AD  551.01,Desc.,INTRO. THEORIES OF OPERATIONS MANAGEMENT,3,6,YAVUZ ACAR,ThThTh,8910, ,,07.01.2023,1,,"                          "
+AD  568.01,Desc.,"ACCOUNTING,INFORMATION&CONTROL SYSTEMS",3,6,ALİ COŞKUN,WWW,678, ,,,,,"                          "
+AD  573.01,Desc.,FINANCIAL ECONOMETRICS,3,7.50,NESRİN OKAY AKMAN,TTT,8910, ,,02.01.2023,3,,"                          "
+AD  577.01,Desc.,FINANCIAL THEORY&CORPORATE POLICY,3,6,MİNE UĞURLU,TTT,456, ,,05.01.2023,2,,"                          "
+AD  579.01,Desc.,GRADUATE SEMINAR,0,2,METİN ERCAN,MMM,8910, ,,,,,"                          "
+AD  581.01,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,YAVUZ ACAR,,, ,,,,,"                          "
+AD  581.02,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,VEDAT AKGİRAY,,, ,,,,,"                          "
+AD  581.03,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,ERDİNÇ AKYILDIRIM,,, ,,,,,"                          "
+AD  581.04,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,BELGİN ARISAN,,, ,,,,,"                          "
+AD  581.05,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,GÜLDEN ASUGMAN,,, ,,,,,"                          "
+AD  581.06,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,ASUNUR CEZAR,,, ,,,,,"                          "
+AD  581.07,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,ALİ COŞKUN,,, ,,,,,"                          "
+AD  581.08,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,METİN ERCAN,,, ,,,,,"                          "
+AD  581.09,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,HAYAT KABASAKAL,,, ,,,,,"                          "
+AD  581.10,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,HÜSEYİN KARACA,,, ,,,,,"                          "
+AD  581.11,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,ÖZLEM HESAPÇI KARACA,,, ,,,,,"                          "
+AD  581.12,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,CENK CEVAT KARAHAN,,, ,,,,,"                          "
+AD  581.13,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,İREM NUHOĞLU,,, ,,,,,"                          "
+AD  581.14,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,NESRİN OKAY AKMAN,,, ,,,,,"                          "
+AD  581.15,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,ÖZLEM ÖZ,,, ,,,,,"                          "
+AD  581.16,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,ÖZGÜN BURCU RODOPMAN,,, ,,,,,"                          "
+AD  581.17,Desc.,DIRECTED READINGS IN MANAGEMENT,3,6,NESLİHAN N.YILMAZ,,, ,,,,,"                          "
+AD  59C.01,Desc.,SP.TP.IN FINANCIAL ANALYTICS,3,7.50,ERDİNÇ AKYILDIRIM,ThThTh,567, ,,05.01.2023,3,,"                          "
+AD  600.01,Desc.,RESEARCH METHODS,4,10,FATİH KİRAZ,MMM,567, ,,09.01.2023,1,,"                          "
+AD  613.01,Desc.,THEORY OF FINANCIAL MARKETS&INSTRUMENTS,4,10,CENK CEVAT KARAHAN,TTT,234, ,,12.01.2023,2,,"                          "
+AD  620.01,Desc.,HISTORY OF MANAGEMENT THOUGHT,4,10,ÖZGÜN BURCU RODOPMAN,ThThTh,567, ,,11.01.2023,1,,"                          "
+AD  627.01,Desc.,ORGANIZATION THEORY,4,20,GÜVEN ALPAY,TTT,123, ,,,,,"                          "
+AD  640.01,Desc.,MARKETING THEORY,4,10,GÜLDEN ASUGMAN,,, ,,,,,"                          "
+AD  643.01,Desc.,THEORY OF CONSUMER BEHAVIOR,4,20,ÖZLEM HESAPÇI KARACA,,, ,,,,,"                          "
+AD  675.01,Desc.,DIRECTED READINGS IN OIM,4,30,YAVUZ ACAR,,, ,,,,,"                          "
+AD  676.01,Desc.,DIRECTED READINGS IN OIM,4,30,ASUNUR CEZAR,,, ,,,,,"                          "
+AD  680.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,VEDAT AKGİRAY,,, ,,,,,"                          "
+AD  680.02,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,ERDİNÇ AKYILDIRIM,,, ,,,,,"                          "
+AD  680.03,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,ALİ COŞKUN,,, ,,,,,"                          "
+AD  680.04,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,METİN ERCAN,,, ,,,,,"                          "
+AD  681.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,CENK CEVAT KARAHAN,,, ,,,,,"                          "
+AD  682.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,İREM NUHOĞLU,,, ,,,,,"                          "
+AD  683.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,NESRİN OKAY AKMAN,,, ,,,,,"                          "
+AD  684.01,Desc.,DIRECTED READINGS IN FINANCE THEORY,4,30,NESLİHAN N.YILMAZ,,, ,,,,,"                          "
+AD  685.01,Desc.,DIRECTED READ.IN MGMT.&ORGANIZ.THEORY,4,30,HAYAT KABASAKAL,,, ,,,,,"                          "
+AD  686.01,Desc.,DIRECTED READ.IN MGMT.&ORGANIZ.THEORY,4,30,ÖZLEM ÖZ,,, ,,,,,"                          "
+AD  687.01,Desc.,DIRECTED READ.IN MGMT.&ORGANIZ. THEORY,4,30,ÖZGÜN BURCU RODOPMAN,,, ,,,,,"                          "
+AD  690.01,Desc.,MASTER THESIS,0,60,YAVUZ ACAR,,, ,,,,,"                          "
+AD  690.02,Desc.,MASTER THESIS,0,60,VEDAT AKGİRAY,,, ,,,,,"                          "
+AD  690.03,Desc.,MASTER THESIS,0,60,ERDİNÇ AKYILDIRIM,,, ,,,,,"                          "
+AD  690.04,Desc.,MASTER THESIS,0,60,BELGİN ARISAN,,, ,,,,,"                          "
+AD  690.05,Desc.,MASTER THESIS,0,60,GÜLDEN ASUGMAN,,, ,,,,,"                          "
+AD  690.06,Desc.,MASTER THESIS,0,60,ASUNUR CEZAR,,, ,,,,,"                          "
+AD  690.07,Desc.,MASTER THESIS,0,60,ALİ COŞKUN,,, ,,,,,"                          "
+AD  690.08,Desc.,MASTER THESIS,0,60,METİN ERCAN,,, ,,,,,"                          "
+AD  690.09,Desc.,MASTER THESIS,0,60,HAYAT KABASAKAL,,, ,,,,,"                          "
+AD  690.10,Desc.,MASTER THESIS,0,60,HÜSEYİN KARACA,,, ,,,,,"                          "
+AD  690.11,Desc.,MASTER THESIS,0,60,ÖZLEM HESAPÇI KARACA,,, ,,,,,"                          "
+AD  690.12,Desc.,MASTER THESIS,0,60,CENK CEVAT KARAHAN,,, ,,,,,"                          "
+AD  690.13,Desc.,MASTER THESIS,0,60,İREM NUHOĞLU,,, ,,,,,"                          "
+AD  690.14,Desc.,MASTER THESIS,0,60,NESRİN OKAY AKMAN,,, ,,,,,"                          "
+AD  690.15,Desc.,MASTER THESIS,0,60,ÖZLEM ÖZ,,, ,,,,,"                          "
+AD  690.16,Desc.,MASTER THESIS,0,60,ÖZGÜN BURCU RODOPMAN,,, ,,,,,"                          "
+AD  690.17,Desc.,MASTER THESIS,0,60,NESLİHAN N.YILMAZ,,, ,,,,,"                          "
+AD  691.01,Desc.,DIRECTED READINGS IN MARKETING THEORY,4,30,BELGİN ARISAN,,, ,,,,,"                          "
+AD  692.01,Desc.,DIRECTED READINGS IN MARKETING THEORY,4,30,GÜLDEN ASUGMAN,,, ,,,,,"                          "
+AD  693.01,Desc.,DIRECTED READINGS IN MARKETING THEORY,4,30,HÜSEYİN KARACA,,, ,,,,,"                          "
+AD  694.01,Desc.,DIRECTED READINGS IN MARKETING THEORY,4,30,ÖZLEM HESAPÇI KARACA,,, ,,,,,"                          "
+AD  698.01,Desc.,RESEARCH SEMINAR III,0,3,METİN ERCAN,MMM,8910, ,,,,,"                          "
+AD  790.01,Desc.,Ph.D DISSERTATION,0,120,YAVUZ ACAR,,, ,,,,,"                          "
+AD  790.02,Desc.,Ph.D DISSERTATION,0,120,VEDAT AKGİRAY,,, ,,,,,"                          "
+AD  790.03,Desc.,Ph.D DISSERTATION,0,120,ERDİNÇ AKYILDIRIM,,, ,,,,,"                          "
+AD  790.04,Desc.,Ph.D DISSERTATION,0,120,BELGİN ARISAN,,, ,,,,,"                          "
+AD  790.05,Desc.,Ph.D DISSERTATION,0,120,GÜLDEN ASUGMAN,,, ,,,,,"                          "
+AD  790.06,Desc.,Ph.D DISSERTATION,0,120,ASUNUR CEZAR,,, ,,,,,"                          "
+AD  790.07,Desc.,Ph.D DISSERTATION,0,120,ALİ COŞKUN,,, ,,,,,"                          "
+AD  790.08,Desc.,Ph.D DISSERTATION,0,120,METİN ERCAN,,, ,,,,,"                          "
+AD  790.09,Desc.,Ph.D DISSERTATION,0,120,HAYAT KABASAKAL,,, ,,,,,"                          "
+AD  790.10,Desc.,Ph.D DISSERTATION,0,120,HÜSEYİN KARACA,,, ,,,,,"                          "
+AD  790.11,Desc.,Ph.D DISSERTATION,0,120,ÖZLEM HESAPÇI KARACA,,, ,,,,,"                          "
+AD  790.12,Desc.,Ph.D DISSERTATION,0,120,CENK CEVAT KARAHAN,,, ,,,,,"                          "
+AD  790.13,Desc.,Ph.D DISSERTATION,0,120,İREM NUHOĞLU,,, ,,,,,"                          "
+AD  790.14,Desc.,Ph.D DISSERTATION,0,120,NESRİN OKAY AKMAN,,, ,,,,,"                          "
+AD  790.15,Desc.,Ph.D DISSERTATION,0,120,ÖZLEM ÖZ,,, ,,,,,"                          "
+AD  790.16,Desc.,Ph.D DISSERTATION,0,120,ÖZGÜN BURCU RODOPMAN,,, ,,,,,"                          "
+AD  790.17,Desc.,Ph.D DISSERTATION,0,120,NESLİHAN N.YILMAZ,,, ,,,,,"                          "

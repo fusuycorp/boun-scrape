@@ -1,0 +1,36 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CAU 101.01,Desc.,ELEMENTARY LAZ I,3,5,İSMAİL AVCI,MMW,674,,EF 103 | EF 103 | JF 122,30.05.2016,1,,"                          "
+CAU 102.01,Desc.,ELEMENTARY LAZ II,3,5,İSMAİL AVCI,MMM,91011,,JF 301 | JF 301 | JF 301,23.05.2016,3,,"                          "
+CAU 111.01,Desc.,ELEMENTARY KABARDIAN I,3,5,İLHAN AYDEMİR,MMWW,6767,,JF 124 | JF 124 | JF 301 | JF 301,28.05.2016,1,,"                          "
+CAU 112.01,Desc.,ELEMENTARY KABARDIAN II,3,5,İLHAN AYDEMİR,MMWW,8989,,JF 124 | JF 124 | JF 301 | JF 301,23.05.2016,2,,"                          "
+CAU 122.01,Desc.,ELEMENTARY ABKHAZ II,3,5,GUNDA ANKVAB,TTW,676,,JF 304 | JF 304 | JF 303,31.05.2016,2,,"                          "
+CAU 222.01,Desc.,INTERMADIATE ABKHAZ II,3,5,GUNDA ANKVAB,TWW,878,,JF 304 | JF 303 | JF 303,28.05.2016,3,,"                          "
+LING102.01,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS II,3,7,MİNE NAKİPOĞLU,MMWW,5656,,JF 302 | JF 302 | JF 302 | JF 302,20.05.2016,3,,"                          "
+LING104.01,Desc.,PHONETICS,3,6,MARKUS POCHTRAGER,MWTh,222,,NH 403 | JF 303 | JF 304,21.05.2016,2,,"                          "
+LING111.01,Desc.,INTRODUCTION TO LANGUAGE & LINGUISTICS I,3,6,MARKUS POCHTRAGER,MWTh,333,,NH 404 | JF 303 | JF 304,24.05.2016,3,,"                          "
+LING111.02,Desc.,INTRODUCTION TO LANGUAGE & LINGUISTICS I,3,6,ELENA GUERZONI,MWTh,333,,NH 403 | NH 404 | NH 103,24.05.2016,3,,"                          "
+LING202.01,Desc.,MORPHOLOGY,3,6,MELTEM KELEPİR,MMTh,785,,JF 122 | JF 122 | JF 124,26.05.2016,2,,"                          "
+LING203.01,Desc.,SYNTAX,3,6,SUMRU ÖZSOY,TTW,677,,JF 302 | JF 302 | JF 124,28.05.2016,1,,"                          "
+LING48G.01,Desc.,SP.TP.GEORGIAN II,3,6,EŞREF YILMAZ,WFF,989,,JF 302 | TB 490 | TB 490,21.05.2016,2,,"                          "
+LING48K.01,Desc.,SP.TP.GEORGIAN-I,3,6,EŞREF YILMAZ,WWF,787,,JF 302 | JF 302 | TB 490,21.05.2016,3,,"                          "
+LING504.01,Desc.,SEMANTICS,4,10,ELENA GUERZONI,TTWW,7878,,,,0,,"                          "
+LING512.01,Desc.,MORPHOLOGICAL ANALYSIS,4,10,ASLI GÖKSEL,TTWW,5656,,,,0,,"                          "
+LING571.06,Desc.,READINGS IN LINGUISTICS I,1,5,BALKIZ ÖZTÜRK,TBA,,,,18.05.2016,3,,"                          "
+LING571.07,Desc.,READINGS IN LINGUISTICS I,1,5,MARKUS POCHTRAGER,TBA,,,,18.05.2016,3,,"                          "
+LING579.01,Desc.,GRADUATE SEMINAR,0,5,ASLI GÖKSEL,TBA,,,,,0,,"                          "
+LING586.01,Desc.,SP.TP.TO MOVE OR NOT TO MO.THAT  QUEST.,4,10,SUMRU ÖZSOY,TTWW,23910,,,,0,,"                          "
+LING58A.01,Desc.,SP.TP.SOCIOLINGUISTIC ANALYSIS,4,10,DİDAR AKAR,MMWW,7878,,,,0,,"                          "
+LING58B.01,Desc.,SP.TP.LANG ACQ,4,10,MİNE NAKİPOĞLU,WThThTh,3234,,,,0,,"                          "
+LING612.01,Desc.,MORPHOLOGICAL THEORY,4,10,BALKIZ ÖZTÜRK,MMWW,5656,,,,0,,"                          "
+LING690.01,Desc.,MASTER THESIS,0,60,DİDAR AKAR,TBA,,,,,0,,"                          "
+LING690.02,Desc.,MASTER THESIS,0,60,ASLI GÖKSEL,,,,,,0,,"                          "
+LING690.03,Desc.,MASTER THESIS,0,60,MELTEM KELEPİR,,,,,,0,,"                          "
+LING690.04,Desc.,MASTER THESIS,0,60,MİNE NAKİPOĞLU,,,,,,0,,"                          "
+LING690.06,Desc.,MASTER THESIS,0,60,BALKIZ ÖZTÜRK,,,,,,0,,"                          "
+LING690.07,Desc.,MASTER THESIS,0,60,MARKUS POCHTRAGER,,,,,,0,,"                          "
+LING690.08,Desc.,MASTER THESIS,0,60,ESER TAYLAN,,,,,,0,,"                          "
+LING690.09,Desc.,MASTER THESIS,0,60,ELENA GUERZONI,,,,,,0,,"                          "
+LING790.02,Desc.,Ph.D THESIS,0,120,ASLI GÖKSEL,,,,,,0,,"                          "
+LING790.04,Desc.,Ph.D THESIS,0,120,BALKIZ ÖZTÜRK,,,,,,0,,"                          "
+LING790.07,Desc.,Ph.D THESIS,0,120,MARKUS POCHTRAGER,,,,,,0,,"                          "
+TID 102.01,Desc.,ELEMENTARY TURKISH SIGN LANGUAGE II,3,5,ELVAN TAMYÜREK ÖZPARLAK,TTThTh,4545,,JF 301 | JF 301 | JF 301 | JF 301,16.05.2016,1,,"                          "

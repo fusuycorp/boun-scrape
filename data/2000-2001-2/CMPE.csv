@@ -1,0 +1,33 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CMPE150.01,Desc.,"INTRODUCTION TO COMPUTING(PASCAL,C)",3,5,AYŞE BAŞAR,M,4,,,,,,"                          "
+CMPE150.02,Desc.,INTRODUCTION TO COMPUTING(FORTRAN),3,5,VURAL ALTIN,M,6,,,,,,"        CMPE                  "
+CMPE150.03,Desc.,INTRODUCTION TO COMPUTINGFORTRAN),3,5,VURAL ALTIN,T,6,,,,,,"        CMPE                  "
+CMPE152.01,Desc.,C PROGRAMMING,3,5,AYŞE BAŞAR,TBA,,,,,,,"                          "
+CMPE160.01,Desc.,INTERMEDIATE PROGRAMMING,4,9,H. LEVENT AKIN,TWW,245,,,,,,"                          "
+CMPE240.01,Desc.,DIGITAL SYSTEMS,4,6,LALE AKARUN,MThTh,212,,,,,,"                          "
+CMPE250.01,Desc.,DATA STRUCTURES & ALGORITHMS,4,6,SADIK FİKRET GÜRGEN,TTW,342,,,,,,"                          "
+CMPE321.01,Desc.,INTRODUCTION TO DATABASE SYSTEMS,4,6,TAFLAN GÜNDEM,FFF,678,,,,,,"                          "
+CMPE350.01,Desc.,FORMAL LANGUAGES & AUTOMATA THEORY,3,5,CEM SAY,MWW,578,,,,,,"                          "
+CMPE360.01,Desc.,NUMERICAL METHODS,3,5,CAN ÖZTURAN,TThTh,512,,,,,,"                          "
+CMPE446.01,Desc.,COMPUTER ARCHITECTURE,3,6,OĞUZ TOSUN,TThTh,234,,,,,,"                          "
+CMPE476.01,Desc.,PARALLEL & DISTRIBUTED SYSTEMS,3,6,M. UFUK ÇAĞLAYAN,WWTh,671,,,,,,"                          "
+CMPE478.01,Desc.,PARALLEL PROCESSING,3,6,CAN ÖZTURAN,MMW,121,,,,,,"                          "
+CMPE484.01,Desc.,SP.TOP.:FUNDAMENTALS OF ELECTRONIC COMMR,3,5,AYŞE BAŞAR,TThTh,178,,,,,,"                          "
+CMPE489.01,Desc.,SP.TOP.:COGNITIVE SCIENCE,3,5,ETHEM ALPAYDIN,ThThF,344,,,,,,"                          "
+CMPE492.01,Desc.,PROJECT,4,7,M. UFUK ÇAĞLAYAN,TBA,,,,,,,"                          "
+CMPE495.01,Desc.,SPEC. TOP.(WIRELESS &MOBILE NETWORKS),3,6,CEM ERSOY,MMT,347,,,,,,"                          "
+CMPE516.01,Desc.,FAULT TOLERANT COMPUTING,3,8,OĞUZ TOSUN,MMM,234,,,,,,"                          "
+CMPE545.01,Desc.,ARTIFICIAL NEURAL NETWORKS,3,8,ETHEM ALPAYDIN,FFF,123,,,,,,"                          "
+CMPE560.01,Desc.,QUALITATIVE REASONING,3,8,CEM SAY,FFF,678,,,,,,"                          "
+CMPE579.01,Desc.,GRADUATE SEMINAR,0,8,M. UFUK ÇAĞLAYAN,T,4,,,,,,"                          "
+CMPE581.01,Desc.,SP.TOP.IN CMPE:MULTIMEDIA COMPRESSION,3,8,LALE AKARUN,TBA,,,,,,,"                          "
+CMPE582.01,Desc.,COMPUTER NETWORKS II,3,8,CEM ERSOY,TTT,123,,,,,,"                          "
+CMPE593.01,Desc.,SP.TOP.AUTONOMOUS ROBOTS,3,8,H. LEVENT AKIN,ThThTh,234,,,,,,"                          "
+CMPE596.01,Desc.,SP.TOP.:VLSI DESIGN AUTOMATION,3,8,ARDA YURDAKUL,MMM,678,,,,,,"                          "
+CMPE623.01,Desc.,SPEECH PROCESSING,3,8,SADIK FİKRET GÜRGEN,WWW,678,,,,,,"                          "
+CMPE650.01,Desc.,ADV. TOPICS IN DATABASE SYSTEMS,3,8,TAFLAN GÜNDEM,WWW,678,,,,,,"                          "
+CMPE690.01,Desc.,M.S.THESIS,0,60,CEM ERSOY,TBA,,,,,,,"                          "
+CMPE699.01,Desc., GUIDED RESEARCH ,4,8,ETHEM ALPAYDIN,TBA,,,,,,,"                          "
+CMPE790.01,Desc.,Ph.D.THESIS,0,120,CEM ERSOY,TBA,,,,,,,"                          "
+ENG 101.01,Desc.,INTRODUCTION TO COMPUTERS,3,7,EROL İNELMEN,WWF,787,,,,,,"                          "
+ENG 101.03,Desc.,INTRODUCTION TO COMPUTERS,3,7,AYŞE BAŞAR,MThTh,378,,,,,,"                          "

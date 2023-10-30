@@ -1,0 +1,10 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CMPE150.01,Desc.,INTRODUCTION TO COMPUTING,3,5,TUNA TUĞCU,MM,56,,,,,,"                          "
+CMPE150.02,Desc.,INTRODUCTION TO COMPUTING,3,5,TUNA TUĞCU,MM,78,,,,,,"        CMPE                  "
+CMPE150.03,Desc.,INTRODUCTION TO COMPUTING,3,5,SADIK FİKRET GÜRGEN,MM,56,,,,,,"        CMPE                  "
+CMPE160.01,Desc.,INTRODUCTION TO OBJECT ORIENTED PROG.,4,9,SADIK FİKRET GÜRGEN,MMTTWW,121212,,,,,,"                          "
+CMPE250.01,Desc.,DATA STRUCTURES & ALGORITHMS,4,6,SADIK FİKRET GÜRGEN,MMTTWW,343434,,,,,,"                          "
+CMPE321.01,Desc.,INTRODUCTION TO DATABASE SYSTEMS,4,6,TAFLAN GÜNDEM,MMWWFF,565656,,,,,,"                          "
+CMPE350.01,Desc.,FORMAL LANGUAGES & AUTOMATA THEORY,3,5,CEM SAY,TTWWFF,787878,,,,,,"                          "
+ENG 101.01,Desc.,INTRODUCTION TO COMPUTERS,3,7,TUNA TUĞCU,MM,34,,,,,,"                          "
+ENG 101.02,Desc.,INTRODUCTION TO COMPUTERS,3,7,CEM SAY,MM,34,,,,,,"                          "

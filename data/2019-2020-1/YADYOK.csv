@@ -1,0 +1,370 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AE  111.03,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,AYLİN VARTANYAN,TWW,545,,NH 403 | NH 201 | NH 201,,,,"                          "
+AE  111.04,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,AYLİN VARTANYAN,TWW,778,,M 2181 | JF 334 | JF 334,,,,"                          "
+AE  111.05,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,AYLİN VARTANYAN,TThTh,867,,M 2181 | NH 201 | NH 201,,,,"                          "
+AE  111.06,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,EDWARD MITCHELL,MTTh,455,,EF 205 | JF 332 | NH 203,,,,"                          "
+AE  111.07,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,EDWARD MITCHELL,MTTh,666,,M 2170 | JF 332 | NH 203,,,,"                          "
+AE  111.08,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,FATMA ANG TAŞKENT,MMW,121,,M 1171 | M 1171 | M 1170,,,,"                          "
+AE  111.09,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,FATMA ANG TAŞKENT,MMW,562,,M 2171 | M 2171 | M 1170,,,,"                          "
+AE  111.10,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,MELİS GÜNEKAN,TTW,236,,NH 403 | NH 403 | NH 104,,,,"                          "
+AE  111.11,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,MELİS GÜNEKAN,TTW,677,,JF 102 | JF 102 | NH 104,,,,"                          "
+AE  111.12,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,NAZIM ÇAPKIN,WWTh,122,,JF 333 | JF 333 | M 1171,,,,"                          "
+AE  111.13,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,NAZIM ÇAPKIN,WWTh,563,,JF 334 | JF 334 | M 1171,,,,"                          "
+AE  111.15,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,ÇİĞDEM DALAY,MMT,125,,JF 108 | JF 108 | EF 101,,,,"                          "
+AE  111.16,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,ÇİĞDEM DALAY,MMT,346,,JF 108 | JF 108 | EF 101,,,,"                          "
+AE  111.17,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,NİLGÜN FIRAT,MThTh,478,,EF 204 | M 1170 | M 1170,,,,"                          "
+AE  111.18,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,NİLGÜN FIRAT,MMTh,675,,NH 202 | NH 202 | M 1171,,,,"                          "
+AE  111.19,Desc.,CRITICAL SKILLS IN ENGLISH I,3,3,GÖZDE HAN,FFF,678,,M 2181 | M 2181 | M 2181,,,,"                          "
+AE  112.01,Desc.,CRITICAL SKILLS IN ENGLISH II,3,4,YAĞIZ TANLI,MTW,543,,M 2170 | KP 04 | JF 334,,,,"                          "
+AE  205.01,Desc.,ENGLISH THROUGH PUBLIC SPEAKING&DRAMA II,3,4,YAĞIZ TANLI,MTW,154,,M 2180 | KP 04 | JF 334,,,,"                          "
+AE  205.02,Desc.,ENGLISH THROUGH PUBLIC SPEAKING&DRAMA II,3,4,YAĞIZ TANLI,MTW,412,,M 2170 | JF 332 | JF 334,,,,"                          "
+AE  221.01,Desc.,CRITICAL READING,3,4,ÇİĞDEM DALAY,TWW,712,,EF 202 | EF 202 | EF 202,,,,"                          "
+AE  221.02,Desc.,CRITICAL READING,3,4,ÇİĞDEM DALAY,TWW,834,,EF 202 | EF 202 | EF 202,,,,"                          "
+AE  221.03,Desc.,CRITICAL READING,3,4,NAZIM ÇAPKIN,ThFF,523,,JF 334 | M 2170 | M 2170,,,,"                          "
+AE  221.04,Desc.,CRITICAL READING,3,4,NAZIM ÇAPKIN,ThFF,656,,JF 334 | M 1200 | M 1200,,,,"                          "
+AE  221.05,Desc.,CRITICAL READING,3,4,NİLGÜN FIRAT,MWW,356,,EF 204 | M 1200 | M 1200,,,,"                          "
+AE  221.06,Desc.,CRITICAL READING,3,4,NİLGÜN FIRAT,WWTh,784,,M 1200 | M 1200 | M 1171,,,,"                          "
+AE  221.07,Desc.,CRITICAL READING,3,4,ASUDE KÜÇÜK,FFF,456,,M 2152 | M 2152 | M 2152,,,,"                          "
+AE  221.08,Desc.,CRITICAL READING,3,4,MELİS GÜNEKAN,WFF,223,,M 2230 | M 2152 | M 2152,,,,"                          "
+AE  221.09,Desc.,CRITICAL READING,3,4,MELİS GÜNEKAN,WFF,367,,M 2230 | M 2170 | M 2170,,,,"                          "
+AE  221.10,Desc.,CRITICAL READING,3,4,ÜLKER BİLGİN,WWTh,454,,EF 204 | EF 204 | M 2152,,,,"                          "
+AE  221.11,Desc.,CRITICAL READING,3,4,İNCİ BİLGİN TEKİN,TTTh,343,,NH 404 | NH 404 | EF 02,,,,"                          "
+AE  222.01,Desc.,CRITICAL READING II,3,4,İNCİ BİLGİN TEKİN,TThTh,545,,NH 404 | EF 02 | EF 02,,,,"                          "
+AE  241.01,Desc.,ENGLISH FOR SELF-EXPRESSION I,3,4,İNCİ BİLGİN TEKİN,TThTh,667,,KP 03 | JF 108 | JF 108,,,,"                          "
+AE  281.01,Desc.,EXPRESSIVE ARTS&CONFLICT TRANSFORMATION,3,5,AYLİN VARTANYAN,TThTh,412,,NH 403 | NH 001 | NH 001,,,,"                          "
+AE  300.01,Desc.,ENGLISH THROUGH DRAMATIC TEXT I,3,4,YAĞIZ TANLI,MTW,221,,M 2180 | JF 332 | JF 334,,,,"                          "
+AE  411.01,Desc.,LANGUAGE AWARENESS THROUGH TRANSLATION I,3,5,FATMA ANG TAŞKENT,TThTh,134,,JF 334 | EF 204 | EF 204,,,,"                          "
+AE  411.02,Desc.,LANGUAGE AWARENESS THROUGH TRANSLATION I,3,5,FATMA ANG TAŞKENT,TThTh,267,,JF 334 | M 2152 | M 2152,,,,"                          "
+AE  480.01,Desc.,SP.TOP.THE UTOPIAN IMPULSE,3,5,EDWARD MITCHELL,MTTh,333,,EF 205 | NH 001 | NH 201,,,,"                          "
+ARM 101.01,Desc.,ARMENIAN FOR BEGINNERS I,3,5,HERA İSKENDEROĞLU,MMM,234,,KYD 118 | KYD 118 | KYD 118,,,,"                          "
+CHIN101.01,Desc.,BEGINNERS CHINESE I,3,6,GUIYUAN YANG,MMWWW,12123,,Konf.Enst. | Konf.Enst. | Konf.Enst. | Konf.Enst. | Konf.Enst.,,,,"                          "
+CHIN101.02,Desc.,BEGINNERS CHINESE I,3,6,DAN ZHENG,TTTThTh,56734,,Konf.Enst. | Konf.Enst. | Konf.Enst. | Konf.Enst. | Konf.Enst.,,,,"                          "
+CHIN102.01,Desc.,BEGINNERS CHINESE II,3,6,FEI YANG,MMWWW,34456,,Konf.Enst. | Konf.Enst. | Konf.Enst. | Konf.Enst. | Konf.Enst.,,,,"                          "
+CHIN102.02,Desc.,BEGINNERS CHINESE II,3,6,FEI YANG,TTThThTh,34456,,Konf.Enst. | Konf.Enst. | Konf.Enst. | Konf.Enst. | Konf.Enst.,,,,"                          "
+CHIN201.01,Desc.,INTERMEDIATE CHINESE I,3,6,GUIYUAN YANG,MMWWW,78789,,Konf.Enst. | Konf.Enst. | Konf.Enst. | Konf.Enst. | Konf.Enst.,,,,"                          "
+CHIN301.01,Desc.,ADVANCED CHINESE I,3,5,FEI YANG,,,,,,,,"                          "
+CHIN401.01,Desc.,READINGS IN CHINESE CULTURE I,3,5,DAN ZHENG,,,,,,,,"                          "
+FR  101.01,Desc.,ELEMENTARY FRENCH I,3,7,ERHAN KAYAALP,MMWWThTh,565656,,NH 302 | NH 302 | EF 101 | EF 101 | M 2181 | M 2181,,,INTT,"                          "
+FR  101.02,Desc.,ELEMENTARY FRENCH I,3,7,ERHAN KAYAALP,MMWWThTh,787878,,NH 302 | NH 302 | JF 333 | JF 333 | M 2181 | M 2181,,,HIST,"                          "
+FR  101.03,Desc.,ELEMENTARY FRENCH I,3,7,PINAR MAYTALMAN,TTWWFF,121212,,KYD 01 | KYD 01 | ET 03 | ET 03 | JF 102 | JF 102,,,"TR,LL,PHYS","                          "
+FR  101.04,Desc.,ELEMENTARY FRENCH I,3,7,PINAR MAYTALMAN,TTWWFF,343434,,KYD 01 | KYD 01 | ET 03 | ET 03 | JF 102 | JF 102,,,,"                          "
+FR  101.05,Desc.,ELEMENTARY FRENCH I,3,7,OJENİ MAZALTO,TTWWThTh,121212,,JF 108 | JF 108 | JF 101 | JF 101 | JF 101 | JF 101,,,,"                          "
+FR  101.06,Desc.,ELEMENTARY FRENCH I,3,7,ANNE LAURE BRACHET,TTWWFF,787878,,KYD 01 | KYD 01 | ET 02 | ET 02 | JF 332 | JF 332,,,TRM,"                          "
+FR  102.01,Desc.,ELEMENTARY FRENCH II,3,7,JOSELINE OJALVO,MMTTWW,121212,,KP 04 | KP 04 | KP 05 | KP 05 | KP 09 | KP 09,,,,"                          "
+FR  102.02,Desc.,ELEMENTARY FRENCH II,3,7,JOSELINE OJALVO,MMTTWW,343434,,KP 04 | KP 04 | EF 203 | EF 203 | KYD 209 | KYD 209,,,,"                          "
+FR  102.03,Desc.,ELEMENTARY FRENCH II,3,7,ASLI TARKAN KALAYCIOĞLU,MMWWThTh,343434,,JF 333 | JF 333 | KYD 02 | KYD 02 | KYD 02 | KYD 02,,,,"                          "
+FR  102.04,Desc.,ELEMENTARY FRENCH II,3,7,ASLI TARKAN KALAYCIOĞLU,MMWWThTh,565656,,JF 333 | JF 333 | KYD 02 | KYD 02 | KYD 02 | KYD 02,,,,"                          "
+FR  102.05,Desc.,ELEMENTARY FRENCH II,3,7,DAVID BAGLIETO,MMWWThTh,121212,,KP 06 | KP 06 | KP 07 | KP 07 | KYD 117 | KYD 117,,,,"                          "
+FR  102.06,Desc.,ELEMENTARY FRENCH II,3,7,ULAŞ AKARSU,MMTTWW,787878,,KYD 02 | KYD 02 | KYD 117 | KYD 117 | KYD 02 | KYD 02,,,,"                          "
+FR  201.01,Desc.,INTERMEDIATE FRENCH I,3,7,SENİHA SIRMA FURTUN,TTWWThTh,121212,,ET 02 | ET 02 | KP 08 | KP 08 | JF 331 | JF 331,,,"TR,LL,PHYS","                          "
+FR  201.02,Desc.,INTERMEDIATE FRENCH I,3,7,SENİHA SIRMA FURTUN,TTWWThTh,343434,,ET 02 | ET 02 | KP 08 | KP 08 | JF 331 | JF 331,,,,"                          "
+FR  201.03,Desc.,INTERMEDIATE FRENCH I,3,7,PINAR PEKTAŞ,WWThThFF,565656,,KP 09 | KP 09 | JF 332 | JF 332 | EF 203 | EF 203,,,INTT,"                          "
+FR  201.04,Desc.,INTERMEDIATE FRENCH I,3,7,PINAR PEKTAŞ,WWThThFF,787878,,KP 09 | KP 09 | JF 332 | JF 332 | EF 203 | EF 203,,,"HIST,TRM","                          "
+FR  202.01,Desc.,INTERMEDIATE FRENCH II,3,7,ANNE LAURE BRACHET,TTWWFF,565656,,KYD 01 | KYD 01 | ET 02 | ET 02 | JF 332 | JF 332,,,,"                          "
+FR  202.02,Desc.,INTERMEDIATE FRENCH II,3,7,IRINA DE HERDT,MMWWThTh,787878,,EF 204 | EF 204 | KYD 01 | KYD 01 | KYD 01 | KYD 01,,,,"                          "
+FR  202.03,Desc.,INTERMEDIATE FRENCH II,3,7,ULAŞ AKARSU,MMTTWW,910910910,,KYD 02 | KYD 02 | KYD 117 | KYD 117 | KYD 02 | KYD 02,,,,"                          "
+FR  301.01,Desc.,ADVANCED FRENCH I,3,7,CAROLINE BEGIN,TTThThFF,121212,,KYD 112 | KYD 112 | EF 203 | EF 203 | JF 332 | JF 332,,,"TR,LL,PHYS","                          "
+FR  301.02,Desc.,ADVANCED FRENCH I,3,7,CAROLINE BEGIN,TTThThFF,343434,,KYD 112 | KYD 112 | EF 203 | EF 203 | JF 332 | JF 332,,,,"                          "
+FR  301.03,Desc.,ADVANCED FRENCH I,3,7,IRINA DE HERDT,MMWWThTh,565656,,EF 204 | EF 204 | KYD 01 | KYD 01 | KYD 01 | KYD 01,,,INTT,"                          "
+FR  302.01,Desc.,ADVANCED FRENCH II,3,7,DAVID BAGLIETO,MMWWThTh,343434,,KP 06 | KP 06 | KP 07 | KP 07 | KYD 117 | KYD 117,,,,"                          "
+FR  411.01,Desc.,FRENCH-TURKISH / TURKISH-FRENCH TRANS. I,3,5,SİNEM ÇAKMAK,FFF,234,,JF 331 | JF 331 | JF 331,,,,"                          "
+FR  421.01,Desc.,FRENCH CULTURE I,3,5,SİNEM ÇAKMAK,FFF,567,,JF 331 | JF 331 | JF 331,,,TR,"                          "
+GER 101.01,Desc.,ELEMENTARY GERMAN I,3,7,FAHRİYE FEVZİOĞLU,TTWWThTh,121212,,KYD 111 | KYD 111 | KP 06 | KP 06 | JF 332 | JF 332,,,"TR,LL,PHYS","                          "
+GER 101.02,Desc.,ELEMENTARY GERMAN I,3,7,FAHRİYE FEVZİOĞLU,TTWWThTh,343434,,KYD 111 | KYD 111 | KP 06 | KP 06 | JF 332 | JF 332,,,,"                          "
+GER 101.03,Desc.,ELEMENTARY GERMAN I,3,7,SİBYLLE ÇİZENEL,MMTTWW,565656,,KYD 110 | KYD 110 | KYD 02 | KYD 02 | KYD 110 | KYD 110,,,INTT,"                          "
+GER 101.04,Desc.,ELEMENTARY GERMAN I,3,7,MÜJGAN ŞAHİNOĞLU,TTWWThTh,787878,,KP 06 | KP 06 | KP 03 | KP 03 | JF 331 | JF 331,,,TRM,"                          "
+GER 101.05,Desc.,ELEMENTARY GERMAN I,3,7,MICHAELA TAUBENBERGER,MMWWThTh,787878,,KP 04 | KP 04 | NH 302 | NH 302 | KP 05 | KP 05,,,,"                          "
+GER 102.01,Desc.,ELEMENTARY GERMAN II,3,7,FİGEN STEINECKE,TTWWThTh,121212,,EF 05 | EF 05 | JF 332 | JF 332 | JF 102 | JF 102,,,,"                          "
+GER 102.02,Desc.,ELEMENTARY GERMAN II,3,7,ZUHAL ÇETİN,MMTTWW,343434,,KP 02 | KP 02 | KYD 02 | KYD 02 | KYD 110 | KYD 110,,,,"                          "
+GER 102.03,Desc.,ELEMENTARY GERMAN II,3,7,LORENZ BIEHLIG,MMWWFF,565656,,KYD 02 | KYD 02 | KYD 118 | KYD 118 | EF 205 | EF 205,,,,"                          "
+GER 102.04,Desc.,ELEMENTARY GERMAN II,3,7,LORENZ BIEHLIG,MMWWFF,121212,,KYD 111 | KYD 111 | KP 05 | KP 05 | KYD 01 | KYD 01,,,,"                          "
+GER 102.05,Desc.,ELEMENTARY GERMAN II,3,7,AYLİN IŞIL BÖLKÜR,TTWWThTh,121212,,KP 06 | KP 06 | KYD 118 | KYD 118 | KYD 01 | KYD 01,,,,"                          "
+GER 201.01,Desc.,PRE-INTERMEDIATE GERMAN I,3,7,MARTTI ZEYER,TTWWThTh,121212,,KYD 118 | KYD 118 | KYD 111 | KYD 111 | EF 05 | EF 05,,,"TR,LL,PHYS","                          "
+GER 201.02,Desc.,PRE-INTERMEDIATE GERMAN I,3,7,BETÜL ÖZTÜRK,MMWWThTh,343434,,KP 07 | KP 07 | KYD 117 | KYD 117 | EF 04 | EF 04,,,,"                          "
+GER 201.03,Desc.,PRE-INTERMEDIATE GERMAN I,3,7,BETÜL ÖZTÜRK,MMWWThTh,565656,,KP 07 | KP 07 | KYD 117 | KYD 117 | EF 04 | EF 04,,,INTT,"                          "
+GER 201.04,Desc.,PRE-INTERMEDIATE GERMAN I,3,7,ELİF DÖNMEZ,MMTTThTh,787878,,JF 334 | JF 334 | ET 02 | ET 02 | KP 09 | KP 09,,,TRM,"                          "
+GER 202.02,Desc.,PRE-INTERMEDIATE GERMAN II,3,7,AYLİN IŞIL BÖLKÜR,TTWWThTh,343434,,KP 06 | KP 06 | KYD 118 | KYD 118 | KYD 01 | KYD 01,,,,"                          "
+GER 202.03,Desc.,PRE-INTERMEDIATE GERMAN II,3,7,BİGE KOLUKISA İNELMEN,MMTTThTh,235656,,JF 331 | JF 331 | KYD 117 | KYD 117 | KYD 110 | KYD 110,,,,"                          "
+GER 301.01,Desc.,INTERMEDIATE GERMAN I,3,7,ZUHAL ÇETİN,MMTTWW,121212,,KP 02 | KP 02 | KYD 02 | KYD 02 | KYD 110 | KYD 110,,,TR,"                          "
+GER 301.02,Desc.,INTERMEDIATE GERMAN I,3,7,MÜJGAN ŞAHİNOĞLU,TTWWThTh,565656,,KP 06 | KP 06 | KP 03 | KP 03 | JF 331 | JF 331,,,INTT,"                          "
+GER 302.01,Desc.,INTERMEDIATE GERMAN II,3,7,SİBYLLE ÇİZENEL,MMTTWW,121212,,KP 07 | KP 07 | TB 415 | TB 415 | JF 102 | JF 102,,,,"                          "
+GER 302.02,Desc.,INTERMEDIATE GERMAN II,3,7,ELİF DÖNMEZ,MMTTThTh,565656,,JF 334 | JF 334 | ET 02 | ET 02 | KP 09 | KP 09,,,,"                          "
+GER 403.01,Desc.,INTERMEDIATE GERMAN III,3,7,MARTTI ZEYER,TTWWThTh,343434,,KYD 118 | KYD 118 | KYD 111 | KYD 111 | EF 05 | EF 05,,,,"                          "
+GER 404.01,Desc.,UPPER INTERMEDIATE GERMAN I,3,7,FİGEN STEINECKE,TTWWThTh,787878,,KYD 120 | KYD 120 | KYD 117 | KYD 117 | JF 334 | JF 334,,,,"                          "
+GER 411.01,Desc.,TRANSLATION I,3,5,BİGE KOLUKISA İNELMEN,TTT,234,,KYD 117 | KYD 117 | KYD 117,,,TR,"                          "
+GER 411.02,Desc.,TRANSLATION I,3,5,BİGE KOLUKISA İNELMEN,ThThTh,234,,KYD 110 | KYD 110 | KYD 110,,,,"                          "
+GER 413.01,Desc.,GERMAN CIVILIZATION I,3,5,MARTTI ZEYER,MMWW,3456,,EF 03 | EF 03 | KP 07 | KP 07,,,,"                          "
+GR  101.01,Desc.,MODERN GREEK FOR BEGINNERS I,3,5,EVANGELIA ACHLADI,MMMWWW,456456,,KP 05 | KP 05 | KP 05 | KYD 120 | KYD 120 | KYD 120,,,,"                          "
+GR  201.01,Desc.,INTERMEDIATE MODERN GREEK I,3,5,EVANGELIA ACHLADI,MMMWWW,123123,,KP 05 | KP 05 | KP 05 | KYD 120 | KYD 120 | KYD 120,,,,"                          "
+GR  301.01,Desc.,ADVANCED MODERN GREEK I,3,5,CHRYSSI SIDIROPOULOU,,,,,,,,"                          "
+ITA 101.01,Desc.,ELEMENTARY ITALIAN I,3,5,MANUEL MALAGUTİ,TTThTh,5645,,KYD 112 | KYD 112 | KP 07 | KP 07,,,,"                          "
+ITA 101.02,Desc.,ELEMENTARY ITALIAN I,3,5,IVANA VIAPPIANI,MMWW,1256,,KYD 117 | KYD 117 | EF 03 | EF 03,,,,"                          "
+ITA 101.03,Desc.,ELEMENTARY ITALIAN I,3,5,IVANA VIAPPIANI,WWFF,7834,,EF 106 | EF 106 | KYD 117 | KYD 117,,,,"                          "
+ITA 102.01,Desc.,ELEMENTARY ITALIAN II,3,5,MANUEL MALAGUTİ,TTFF,7856,,KYD 111 | KYD 111 | EF 201 | EF 201,,,,"                          "
+ITA 102.02,Desc.,ELEMENTARY ITALIAN II,3,5,CRISTINA COLUSSO,MMWW,7878,,KP 03 | KP 03 | KYD 120 | KYD 120,,,,"                          "
+ITA 201.01,Desc.,INTERMEDIATE ITALIAN I,3,5,MANUEL MALAGUTİ,ThThFF,6778,,KYD 209 | KYD 209 | EF 201 | EF 201,,,,"                          "
+ITA 301.01,Desc.,UPPER INTERMEDIATE ITALIAN I,3,5,IVANA VIAPPIANI,MMFF,3412,,KYD 117 | KYD 117 | KYD 117 | KYD 117,,,,"                          "
+JP  101.02,Desc.,BEGINNERS JAPANESE I,3,6,KANNA IMAI,MMMThTh,67812,,KGYM | KGYM | KGYM | KGYM | KGYM,,,,"                          "
+JP  201.01,Desc.,INTERMEDIATE JAPANESE I,3,6,YURIKO ÖNCÜ,TThThFF,57834,,NB 118 | NB 118 | NB 118 | NB 118 | NB 118,,,,"                          "
+JP  201.02,Desc.,INTERMEDIATE JAPANESE I,3,6,YURIKO ÖNCÜ,TTTWW,78978,,NB 118 | NB 118 | NB 118 | KGYM | KGYM,,,,"                          "
+JP  301.01,Desc.,UPPER INTERMEDIATE JAPANESE I,3,5,YURIKO ÖNCÜ,TTThTh,2345,,KGYM | KGYM | KGYM | KGYM,,,,"                          "
+JP  301.02,Desc.,UPPER INTERMEDIATE JAPANESE I,3,5,KANNA IMAI,WWFF,4567,,KGYM | KGYM | KGYM | KGYM,,,,"                          "
+JP  403.01,Desc.,JAPANESE-TURKISH TRANSLATION I,3,5,OĞUZ BAYKARA,TTT,789,,JF 331 | JF 331 | JF 331,,,,"                          "
+KR  101.01,Desc.,BEGINNERS KOREAN I,3,5,MIRA JEONG,MMThTh,3434,,KYD 01 | KYD 01 | KYD 111 | KYD 111,,,,"                          "
+KR  101.02,Desc.,BEGINNERS KOREAN I,3,5,MIRA JEONG,MMThTh,5656,,KYD 01 | KYD 01 | KYD 111 | KYD 111,,,,"                          "
+KR  101.03,Desc.,BEGINNERS KOREAN I,3,5,MIRA JEONG,MMThTh,7878,,KYD 01 | KYD 01 | KYD 111 | KYD 111,,,,"                          "
+KR  201.01,Desc.,INTERMEDIATE KOREAN I,3,5,HWA CHEON H.LEE,MMThTh,3434,,KYD 111 | KYD 111 | KYD 118 | KYD 118,,,,"                          "
+KR  201.02,Desc.,INTERMEDIATE KOREAN I,3,5,HWA CHEON H.LEE,MMThTh,5656,,KYD 111 | KYD 111 | KYD 118 | KYD 118,,,,"                          "
+KR  301.01,Desc.,ADVANCED KOREAN I,3,5,HWA CHEON H.LEE,MMThThTh,78789,,KYD 111 | KYD 111 | KYD 118 | KYD 118 | KYD 118,,,,"                          "
+POR 101.01,Desc.,ELEMENTARY PORTUGUESE I,3,7,VAGNER FERREIRA RODRIGUES,MMWWThTh,565612,,KP 06 | KP 06 | KYD 111 | KYD 111 | KP 06 | KP 06,,,,"                          "
+POR 101.02,Desc.,ELEMENTARY PORTUGUESE I,3,7,LUIS MANUEL FELIX QUINTAS ELOI,MMTTThTh,125656,,KYD 120 | KYD 120 | KYD 118 | KYD 118 | NH 202 | NH 202,,,,"                          "
+POR 101.03,Desc.,ELEMENTARY PORTUGUESE I,3,7,LUIS MANUEL FELIX QUINTAS ELOI,MMTTThTh,347878,,KYD 120 | KYD 120 | KYD 118 | KYD 118 | NH 202 | NH 202,,,,"                          "
+POR 102.01,Desc.,ELEMENTARY PORTUGUESE II,3,7,VAGNER FERREIRA RODRIGUES,MMWWThTh,787834,,KP 06 | KP 06 | KYD 111 | KYD 111 | KP 06 | KP 06,,,,"                          "
+RUS 101.02,Desc.,ELEMENTARY RUSSIAN I,3,7,FATIMAT ZHILETEZHEVA,TTWWThTh,121212,,EF 205 | EF 205 | EF 03 | EF 03 | ET 03 | ET 03,,,,"                          "
+RUS 102.01,Desc.,ELEMENTARY RUSSIAN II,3,7,OLGA ZVERKOVA,MMTTThTh,341212,,NB 118 | NB 118 | NB 118 | NB 118 | NB 118 | NB 118,,,,"                          "
+RUS 201.01,Desc.,PRE-INTERMEDIATE RUSSIAN I,3,7,OLGA ZVERKOVA,MMTTThTh,563434,,NB 118 | NB 118 | NB 118 | NB 118 | NB 118 | NB 118,,,,"                          "
+RUS 202.01,Desc.,PRE-INTERMEDIATE RUSSIAN II,3,7,FATIMAT ZHILETEZHEVA,TTWWThTh,343434,,EF 205 | EF 205 | EF 03 | EF 03 | ET 03 | ET 03,,,,"                          "
+RUS 301.01,Desc.,INTERMEDIATE RUSSIAN I,3,7,NATALIA DEMİRKAPILI,MMMFFF,123123,,JF 332 | JF 332 | JF 332 | JF 334 | JF 334 | JF 334,,,,"                          "
+SFL 11A.01,Desc.,PROGRAM 1 FALL A,,,HELİN BAŞAK,,,,,,,,"                          "
+SFL 11A.02,Desc.,PROGRAM 1 FALL A,,,FEYZA ÇELİKTAŞ,,,,,,,,"                          "
+SFL 11A.03,Desc.,PROGRAM 1 FALL A,,,BEKİR ATEŞ,,,,,,,,"                          "
+SFL 11A.04,Desc.,PROGRAM 1 FALL A,,,ELİF TÜRKOĞLU,,,,,,,,"                          "
+SFL 11A.05,Desc.,PROGRAM 1 FALL A,,,SERAP ERDAL BULUT,,,,,,,,"                          "
+SFL 11A.06,Desc.,PROGRAM 1 FALL A,,,JOSILYN MARKEL,,,,,,,,"                          "
+SFL 11A.07,Desc.,PROGRAM 1 FALL A,,,HANİFE EMEL YÜKSEL AYTAR,,,,,,,,"                          "
+SFL 11A.08,Desc.,PROGRAM 1 FALL A,,,ÖZGE DİŞLİ,,,,,,,,"                          "
+SFL 11A.09,Desc.,PROGRAM 1 FALL A,,,DUYGU ŞİMŞEK ÖZDİNÇ,,,,,,,,"                          "
+SFL 11A.10,Desc.,PROGRAM 1 FALL A,,,YILDIZ YILDIRIM,,,,,,,,"                          "
+SFL 11A.11,Desc.,PROGRAM 1 FALL A,,,CHRISTINA ELISAVET BOTONAKI,,,,,,,,"                          "
+SFL 11A.12,Desc.,PROGRAM 1 FALL A,,,ESRA BENER,,,,,,,,"                          "
+SFL 11A.13,Desc.,PROGRAM 1 FALL A,,,PETER HENRY ELLIS BOYCE,,,,,,,,"                          "
+SFL 11B.01,Desc.,PROGRAM 1 FALL B,,,GÖKÇE KURUÇAY,,,,,,,,"                          "
+SFL 11B.02,Desc.,PROGRAM 1 FALL B,,,GÖKÇE KURUÇAY,,,,,,,,"                          "
+SFL 11B.03,Desc.,PROGRAM 1 FALL B,,,AYSUN BALKAN,,,,,,,,"                          "
+SFL 11B.04,Desc.,PROGRAM 1 FALL B,,,AYSUN BALKAN,,,,,,,,"                          "
+SFL 11B.05,Desc.,PROGRAM 1 FALL B,,,FUAT ÖZKUL,,,,,,,,"                          "
+SFL 11B.06,Desc.,PROGRAM 1 FALL B,,,FUAT ÖZKUL,,,,,,,,"                          "
+SFL 11B.07,Desc.,PROGRAM 1 FALL B,,,ERGÜN ÜZÜMOĞLU,,,,,,,,"                          "
+SFL 11B.08,Desc.,PROGRAM 1 FALL B,,,ERGÜN ÜZÜMOĞLU,,,,,,,,"                          "
+SFL 11B.09,Desc.,PROGRAM 1 FALL B,,,GÜLSÜN AYDINLAR,,,,,,,,"                          "
+SFL 11B.10,Desc.,PROGRAM 1 FALL B,,,DENİZ SAVAŞAL ATLI,,,,,,,,"                          "
+SFL 11B.11,Desc.,PROGRAM 1 FALL B,,,DENİZ SAVAŞAL ATLI,,,,,,,,"                          "
+SFL 11B.12,Desc.,PROGRAM 1 FALL B,,,SEMA ÖZÇALLI,,,,,,,,"                          "
+SFL 11B.13,Desc.,PROGRAM 1 FALL B,,,SEMA ÖZÇALLI,,,,,,,,"                          "
+SFL 12A.01,Desc.,PROGRAM 1 SPRING A,,,HELİN BAŞAK,,,,,,,,"                          "
+SFL 12A.02,Desc.,PROGRAM 1 SPRING A,,,FEYZA ÇELİKTAŞ,,,,,,,,"                          "
+SFL 12A.03,Desc.,PROGRAM 1 SPRING A,,,BEKİR ATEŞ,,,,,,,,"                          "
+SFL 12A.04,Desc.,PROGRAM 1 SPRING A,,,ELİF TÜRKOĞLU,,,,,,,,"                          "
+SFL 12A.05,Desc.,PROGRAM 1 SPRING A,,,SERAP ERDAL BULUT,,,,,,,,"                          "
+SFL 12A.06,Desc.,PROGRAM 1 SPRING A,,,JOSILYN MARKEL,,,,,,,,"                          "
+SFL 12A.07,Desc.,PROGRAM 1 SPRING A,,,HANİFE EMEL YÜKSEL AYTAR,,,,,,,,"                          "
+SFL 12A.09,Desc.,PROGRAM 1 SPRING A,,,DUYGU ŞİMŞEK ÖZDİNÇ,,,,,,,,"                          "
+SFL 12A.10,Desc.,PROGRAM 1 SPRING A,,,STAFF STAFF,,,,,,,,"                          "
+SFL 12A.11,Desc.,PROGRAM 1 SPRING A,,,CHRISTINA ELISAVET BOTONAKI,,,,,,,,"                          "
+SFL 12A.12,Desc.,PROGRAM 1 SPRING A,,,ESRA BENER,,,,,,,,"                          "
+SFL 12A.13,Desc.,PROGRAM 1 SPRING A,,,PETER HENRY ELLIS BOYCE,,,,,,,,"                          "
+SFL 12B.01,Desc.,PROGRAM 1 SPRING B,,,GÖKÇE KURUÇAY,,,,,,,,"                          "
+SFL 12B.02,Desc.,PROGRAM 1 SPRING B,,,GÖKÇE KURUÇAY,,,,,,,,"                          "
+SFL 12B.03,Desc.,PROGRAM 1 SPRING B,,,AYSUN BALKAN,,,,,,,,"                          "
+SFL 12B.04,Desc.,PROGRAM 1 SPRING B,,,AYSUN BALKAN,,,,,,,,"                          "
+SFL 12B.05,Desc.,PROGRAM 1 SPRING B,,,FUAT ÖZKUL,,,,,,,,"                          "
+SFL 12B.06,Desc.,PROGRAM 1 SPRING B,,,FUAT ÖZKUL,,,,,,,,"                          "
+SFL 12B.07,Desc.,PROGRAM 1 SPRING B,,,ERGÜN ÜZÜMOĞLU,,,,,,,,"                          "
+SFL 12B.08,Desc.,PROGRAM 1 SPRING B,,,ERGÜN ÜZÜMOĞLU,,,,,,,,"                          "
+SFL 12B.09,Desc.,PROGRAM 1 SPRING B,,,GÜLSÜN AYDINLAR,,,,,,,,"                          "
+SFL 12B.11,Desc.,PROGRAM 1 SPRING B,,,HANDE KARAKOÇ,,,,,,,,"                          "
+SFL 12B.12,Desc.,PROGRAM 1 SPRING B,,,SEMA ÖZÇALLI,,,,,,,,"                          "
+SFL 12B.13,Desc.,PROGRAM 1 SPRING B,,,SEMA ÖZÇALLI,,,,,,,,"                          "
+SFL 21A.01,Desc.,PROGRAM 2 FALL A,,,MUSTAFA GÖNENÇ,,,,,,,,"                          "
+SFL 21A.02,Desc.,PROGRAM 2 FALL A,,,SEÇİL BARAN,,,,,,,,"                          "
+SFL 21A.03,Desc.,PROGRAM 2 FALL A,,,KERBAN HANÖZ,,,,,,,,"                          "
+SFL 21A.04,Desc.,PROGRAM 2 FALL A,,,GÖNÜL TUĞBA AKDAĞ,,,,,,,,"                          "
+SFL 21A.05,Desc.,PROGRAM 2 FALL A,,,GÜL AKKOÇ,,,,,,,,"                          "
+SFL 21A.06,Desc.,PROGRAM 2 FALL A,,,NURAY AKÇA,,,,,,,,"                          "
+SFL 21A.07,Desc.,PROGRAM 2 FALL A,,,BERAT BAŞER,,,,,,,,"                          "
+SFL 21A.08,Desc.,PROGRAM 2 FALL A,,,MELİKE YILMAZ BAŞTUĞ,,,,,,,,"                          "
+SFL 21A.09,Desc.,PROGRAM 2 FALL A,,,ÖZGE YAĞIŞ,,,,,,,,"                          "
+SFL 21A.10,Desc.,PROGRAM 2 FALL A,,,SEMİH TÜRKOĞLU,,,,,,,,"                          "
+SFL 21A.11,Desc.,PROGRAM 2 FALL A,,,JÜLİDE BANU ÖZTÜRK İNEGÖLLÜOĞLU,,,,,,,,"                          "
+SFL 21A.12,Desc.,PROGRAM 2 FALL A,,,FETİYE ERBİL,,,,,,,,"                          "
+SFL 21A.13,Desc.,PROGRAM 2 FALL A,,,ÜLFET ÖĞÜT,,,,,,,,"                          "
+SFL 21A.14,Desc.,PROGRAM 2 FALL A,,,MASOOD AZİMİ,,,,,,,,"                          "
+SFL 21A.15,Desc.,PROGRAM 2 FALL A,,,FATMA BAYRAM,,,,,,,,"                          "
+SFL 21A.16,Desc.,PROGRAM 2 FALL A,,,HÜRMÜZ TELÇEKER,,,,,,,,"                          "
+SFL 21A.17,Desc.,PROGRAM 2 FALL A,,,ZEYNEP ABANOZ ÇELİK,,,,,,,,"                          "
+SFL 21A.18,Desc.,PROGRAM 2 FALL A,,,EMRE KUTLAY,,,,,,,,"                          "
+SFL 21A.19,Desc.,PROGRAM 2 FALL A,,,BEGÜM ECE YILDIZ,,,,,,,,"                          "
+SFL 21A.20,Desc.,PROGRAM 2 FALL A,,,ASLI KUTAL ÇULHA,,,,,,,,"                          "
+SFL 21B.01,Desc.,PROGRAM 2 FALL B,,,OYA ASLI KARADUMAN,,,,,,,,"                          "
+SFL 21B.02,Desc.,PROGRAM 2 FALL B,,,OYA ASLI KARADUMAN,,,,,,,,"                          "
+SFL 21B.03,Desc.,PROGRAM 2 FALL B,,,ÇAĞDAŞ KALAFAT,,,,,,,,"                          "
+SFL 21B.04,Desc.,PROGRAM 2 FALL B,,,ÇAĞDAŞ KALAFAT,,,,,,,,"                          "
+SFL 21B.05,Desc.,PROGRAM 2 FALL B,,,EBRU EROĞLU,,,,,,,,"                          "
+SFL 21B.06,Desc.,PROGRAM 2 FALL B,,,EBRU EROĞLU,,,,,,,,"                          "
+SFL 21B.07,Desc.,PROGRAM 2 FALL B,,,DİDEM KUMBAROĞLU,,,,,,,,"                          "
+SFL 21B.08,Desc.,PROGRAM 2 FALL B,,,DİDEM KUMBAROĞLU,,,,,,,,"                          "
+SFL 21B.09,Desc.,PROGRAM 2 FALL B,,,FUNDAGÜL İNCİ,,,,,,,,"                          "
+SFL 21B.10,Desc.,PROGRAM 2 FALL B,,,FUNDAGÜL İNCİ,,,,,,,,"                          "
+SFL 21B.11,Desc.,PROGRAM 2 FALL B,,,EMEL TOZLU,,,,,,,,"                          "
+SFL 21B.12,Desc.,PROGRAM 2 FALL B,,,NESRİN KUTLAY,,,,,,,,"                          "
+SFL 21B.13,Desc.,PROGRAM 2 FALL B,,,NESRİN KUTLAY,,,,,,,,"                          "
+SFL 21B.14,Desc.,PROGRAM 2 FALL B,,,MÜGE EKİNCİOĞLU,,,,,,,,"                          "
+SFL 21B.15,Desc.,PROGRAM 2 FALL B,,,ASLI BAYSALLI,,,,,,,,"                          "
+SFL 21B.16,Desc.,PROGRAM 2 FALL B,,,ASLI BAYSALLI,,,,,,,,"                          "
+SFL 21B.17,Desc.,PROGRAM 2 FALL B,,,ÇİĞDEM TABAN,,,,,,,,"                          "
+SFL 21B.18,Desc.,PROGRAM 2 FALL B,,,ÇİĞDEM TABAN,,,,,,,,"                          "
+SFL 21B.19,Desc.,PROGRAM 2 FALL B,,,SAMİ BATOK,,,,,,,,"                          "
+SFL 21B.20,Desc.,PROGRAM 2 FALL B,,,SAMİ BATOK,,,,,,,,"                          "
+SFL 22A.01,Desc.,PROGRAM 2 SPRING A,,,MUSTAFA GÖNENÇ,,,,,,,,"                          "
+SFL 22A.02,Desc.,PROGRAM 2 SPRING A,,,SEÇİL BARAN,,,,,,,,"                          "
+SFL 22A.03,Desc.,PROGRAM 2 SPRING A,,,KERBAN HANÖZ,,,,,,,,"                          "
+SFL 22A.04,Desc.,PROGRAM 2 SPRING A,,,GÖNÜL TUĞBA AKDAĞ,,,,,,,,"                          "
+SFL 22A.05,Desc.,PROGRAM 2 SPRING A,,,GÜL AKKOÇ,,,,,,,,"                          "
+SFL 22A.06,Desc.,PROGRAM 2 SPRING A,,,NURAY AKÇA,,,,,,,,"                          "
+SFL 22A.07,Desc.,PROGRAM 2 SPRING A,,,BERAT BAŞER,,,,,,,,"                          "
+SFL 22A.08,Desc.,PROGRAM 2 SPRING A,,,MELİKE YILMAZ BAŞTUĞ,,,,,,,,"                          "
+SFL 22A.09,Desc.,PROGRAM 2 SPRING A,,,ÖZGE YAĞIŞ,,,,,,,,"                          "
+SFL 22A.10,Desc.,PROGRAM 2 SPRING A,,,SEMİH TÜRKOĞLU,,,,,,,,"                          "
+SFL 22A.11,Desc.,PROGRAM 2 SPRING A,,,JÜLİDE BANU ÖZTÜRK İNEGÖLLÜOĞLU,,,,,,,,"                          "
+SFL 22A.12,Desc.,PROGRAM 2 SPRING A,,,FETİYE ERBİL,,,,,,,,"                          "
+SFL 22A.13,Desc.,PROGRAM 2 SPRING A,,,ÜLFET ÖĞÜT,,,,,,,,"                          "
+SFL 22A.14,Desc.,PROGRAM 2 SPRING A,,,MASOOD AZİMİ,,,,,,,,"                          "
+SFL 22A.15,Desc.,PROGRAM 2 SPRING A,,,FATMA BAYRAM,,,,,,,,"                          "
+SFL 22A.16,Desc.,PROGRAM 2 SPRING A,,,HÜRMÜZ TELÇEKER,,,,,,,,"                          "
+SFL 22A.17,Desc.,PROGRAM 2 SPRING A,,,ZEYNEP ABANOZ ÇELİK,,,,,,,,"                          "
+SFL 22A.18,Desc.,PROGRAM 2 SPRING A,,,EMRE KUTLAY,,,,,,,,"                          "
+SFL 22A.19,Desc.,PROGRAM 2 SPRING A,,,BEGÜM ECE YILDIZ,,,,,,,,"                          "
+SFL 22A.20,Desc.,PROGRAM 2 SPRING A,,,ASLI KUTAL ÇULHA,,,,,,,,"                          "
+SFL 22B.01,Desc.,PROGRAM 2 SPRING B,,,OYA ASLI KARADUMAN,,,,,,,,"                          "
+SFL 22B.02,Desc.,PROGRAM 2 SPRING B,,,OYA ASLI KARADUMAN,,,,,,,,"                          "
+SFL 22B.03,Desc.,PROGRAM 2 SPRING B,,,ÇAĞDAŞ KALAFAT,,,,,,,,"                          "
+SFL 22B.04,Desc.,PROGRAM 2 SPRING B,,,ÇAĞDAŞ KALAFAT,,,,,,,,"                          "
+SFL 22B.05,Desc.,PROGRAM 2 SPRING B,,,EBRU EROĞLU,,,,,,,,"                          "
+SFL 22B.06,Desc.,PROGRAM 2 SPRING B,,,EBRU EROĞLU,,,,,,,,"                          "
+SFL 22B.07,Desc.,PROGRAM 2 SPRING B,,,DİDEM KUMBAROĞLU,,,,,,,,"                          "
+SFL 22B.08,Desc.,PROGRAM 2 SPRING B,,,DİDEM KUMBAROĞLU,,,,,,,,"                          "
+SFL 22B.09,Desc.,PROGRAM 2 SPRING B,,,FUNDAGÜL İNCİ,,,,,,,,"                          "
+SFL 22B.10,Desc.,PROGRAM 2 SPRING B,,,FUNDAGÜL İNCİ,,,,,,,,"                          "
+SFL 22B.11,Desc.,PROGRAM 2 SPRING B,,,EMEL TOZLU,,,,,,,,"                          "
+SFL 22B.12,Desc.,PROGRAM 2 SPRING B,,,NESRİN KUTLAY,,,,,,,,"                          "
+SFL 22B.13,Desc.,PROGRAM 2 SPRING B,,,NESRİN KUTLAY,,,,,,,,"                          "
+SFL 22B.14,Desc.,PROGRAM 2 SPRING B,,,MÜGE EKİNCİOĞLU,,,,,,,,"                          "
+SFL 22B.15,Desc.,PROGRAM 2 SPRING B,,,ASLI BAYSALLI,,,,,,,,"                          "
+SFL 22B.16,Desc.,PROGRAM 2 SPRING B,,,ASLI BAYSALLI,,,,,,,,"                          "
+SFL 22B.17,Desc.,PROGRAM 2 SPRING B,,,ÇİĞDEM TABAN,,,,,,,,"                          "
+SFL 22B.18,Desc.,PROGRAM 2 SPRING B,,,ÇİĞDEM TABAN,,,,,,,,"                          "
+SFL 22B.19,Desc.,PROGRAM 2 SPRING B,,,SAMİ BATOK,,,,,,,,"                          "
+SFL 22B.20,Desc.,PROGRAM 2 SPRING B,,,SAMİ BATOK,,,,,,,,"                          "
+SFL 31A.01,Desc.,PROGRAM 3 FALL A,,,YEŞİM ERDOĞRU,,,,,,,,"                          "
+SFL 31A.02,Desc.,PROGRAM 3 FALL A,,,NİL KURTULAN DEMİREL,,,,,,,,"                          "
+SFL 31A.03,Desc.,PROGRAM 3 FALL A,,,NAGİHAN KISA KAZ,,,,,,,,"                          "
+SFL 31A.04,Desc.,PROGRAM 3 FALL A,,,ZAFER YAVAŞ,,,,,,,,"                          "
+SFL 31A.05,Desc.,PROGRAM 3 FALL A,,,HÜLYA ERSOY,,,,,,,,"                          "
+SFL 31A.06,Desc.,PROGRAM 3 FALL A,,,IAN FITZMORRIS,,,,,,,,"                          "
+SFL 31A.07,Desc.,PROGRAM 3 FALL A,,,ELIZABETH K. RITCHIE,,,,,,,,"                          "
+SFL 31A.08,Desc.,PROGRAM 3 FALL A,,,HATİCE EBRU ATAÇ,,,,,,,,"                          "
+SFL 31A.09,Desc.,PROGRAM 3 FALL A,,,PAUL WARREN WAITE JR,,,,,,,,"                          "
+SFL 31A.10,Desc.,PROGRAM 3 FALL A,,,SOSİ ZOVİKOĞLU,,,,,,,,"                          "
+SFL 31A.11,Desc.,PROGRAM 3 FALL A,,,İNCİ AYTAÇOĞLU,,,,,,,,"                          "
+SFL 31A.12,Desc.,PROGRAM 3 FALL A,,,OYA ÖZAĞAÇ,,,,,,,,"                          "
+SFL 31A.13,Desc.,PROGRAM 3 FALL A,,,ÖZGE ÇAĞLAR AKSOY,,,,,,,,"                          "
+SFL 31A.14,Desc.,PROGRAM 3 FALL A,,,İPEK SEYALIOĞLU,,,,,,,,"                          "
+SFL 31A.15,Desc.,PROGRAM 3 FALL A,,,LARA KASAR,,,,,,,,"                          "
+SFL 31A.16,Desc.,PROGRAM 3 FALL A,,,ÖZLEM  TUNA,,,,,,,,"                          "
+SFL 31B.01,Desc.,PROGRAM 3 FALL B,,,S.MERVE AKBAŞ,,,,,,,,"                          "
+SFL 31B.02,Desc.,PROGRAM 3 FALL B,,,S.MERVE AKBAŞ,,,,,,,,"                          "
+SFL 31B.03,Desc.,PROGRAM 3 FALL B,,,S.MERVE AKBAŞ,,,,,,,,"                          "
+SFL 31B.04,Desc.,PROGRAM 3 FALL B,,,S.MERVE AKBAŞ,,,,,,,,"                          "
+SFL 31B.05,Desc.,PROGRAM 3 FALL B,,,SİNEM YILMAZ,,,,,,,,"                          "
+SFL 31B.06,Desc.,PROGRAM 3 FALL B,,,SİNEM YILMAZ,,,,,,,,"                          "
+SFL 31B.07,Desc.,PROGRAM 3 FALL B,,,SİNEM YILMAZ,,,,,,,,"                          "
+SFL 31B.08,Desc.,PROGRAM 3 FALL B,,,SİNEM YILMAZ,,,,,,,,"                          "
+SFL 31B.09,Desc.,PROGRAM 3 FALL B,,,PINAR DEMİRCİ,,,,,,,,"                          "
+SFL 31B.10,Desc.,PROGRAM 3 FALL B,,,BANU İLAL,,,,,,,,"                          "
+SFL 31B.11,Desc.,PROGRAM 3 FALL B,,,GÜLAY TAŞSEVEN,,,,,,,,"                          "
+SFL 31B.12,Desc.,PROGRAM 3 FALL B,,,GÜLAY TAŞSEVEN,,,,,,,,"                          "
+SFL 31B.13,Desc.,PROGRAM 3 FALL B,,,ŞEBNEM YAŞAROL,,,,,,,,"                          "
+SFL 31B.14,Desc.,PROGRAM 3 FALL B,,,SELMA AYTEN ÜSTÜNDAĞ,,,,,,,,"                          "
+SFL 31B.15,Desc.,PROGRAM 3 FALL B,,,SELMA AYTEN ÜSTÜNDAĞ,,,,,,,,"                          "
+SFL 31B.16,Desc.,PROGRAM 3 FALL B,,,GÜLAY TAŞSEVEN,,,,,,,,"                          "
+SFL 32A.01,Desc.,PROGRAM 3 SPRING A,,,YEŞİM ERDOĞRU,,,,,,,,"                          "
+SFL 32A.02,Desc.,PROGRAM 3 SPRING A,,,NİL KURTULAN DEMİREL,,,,,,,,"                          "
+SFL 32A.03,Desc.,PROGRAM 3 SPRING A,,,NAGİHAN KISA KAZ,,,,,,,,"                          "
+SFL 32A.04,Desc.,PROGRAM 3 SPRING A,,,ZAFER YAVAŞ,,,,,,,,"                          "
+SFL 32A.05,Desc.,PROGRAM 3 SPRING A,,,HÜLYA ERSOY,,,,,,,,"                          "
+SFL 32A.06,Desc.,PROGRAM 3 SPRING A,,,IAN FITZMORRIS,,,,,,,,"                          "
+SFL 32A.07,Desc.,PROGRAM 3 SPRING A,,,ELIZABETH K. RITCHIE,,,,,,,,"                          "
+SFL 32A.08,Desc.,PROGRAM 3 SPRING A,,,HATİCE EBRU ATAÇ,,,,,,,,"                          "
+SFL 32A.09,Desc.,PROGRAM 3 SPRING A,,,PAUL WARREN WAITE JR,,,,,,,,"                          "
+SFL 32A.10,Desc.,PROGRAM 3 SPRING A,,,SOSİ ZOVİKOĞLU,,,,,,,,"                          "
+SFL 32A.11,Desc.,PROGRAM 3 SPRING A,,,İNCİ AYTAÇOĞLU,,,,,,,,"                          "
+SFL 32A.12,Desc.,PROGRAM 3 SPRING A,,,OYA ÖZAĞAÇ,,,,,,,,"                          "
+SFL 32A.13,Desc.,PROGRAM 3 SPRING A,,,ÖZGE ÇAĞLAR AKSOY,,,,,,,,"                          "
+SFL 32A.14,Desc.,PROGRAM 3 SPRING A,,,İPEK SEYALIOĞLU,,,,,,,,"                          "
+SFL 32A.15,Desc.,PROGRAM 3 SPRING A,,,LARA KASAR,,,,,,,,"                          "
+SFL 32A.16,Desc.,PROGRAM 3 SPRING A,,,ÖZLEM  TUNA,,,,,,,,"                          "
+SFL 32B.01,Desc.,PROGRAM 3 SPRING B,,,S.MERVE AKBAŞ,,,,,,,,"                          "
+SFL 32B.02,Desc.,PROGRAM 3 SPRING B,,,S.MERVE AKBAŞ,,,,,,,,"                          "
+SFL 32B.03,Desc.,PROGRAM 3 SPRING B,,,S.MERVE AKBAŞ,,,,,,,,"                          "
+SFL 32B.04,Desc.,PROGRAM 3 SPRING B,,,S.MERVE AKBAŞ,,,,,,,,"                          "
+SFL 32B.05,Desc.,PROGRAM 3 SPRING B,,,SİNEM YILMAZ,,,,,,,,"                          "
+SFL 32B.06,Desc.,PROGRAM 3 SPRING B,,,SİNEM YILMAZ,,,,,,,,"                          "
+SFL 32B.07,Desc.,PROGRAM 3 SPRING B,,,SİNEM YILMAZ,,,,,,,,"                          "
+SFL 32B.08,Desc.,PROGRAM 3 SPRING B,,,SİNEM YILMAZ,,,,,,,,"                          "
+SFL 32B.09,Desc.,PROGRAM 3 SPRING B,,,PINAR DEMİRCİ,,,,,,,,"                          "
+SFL 32B.10,Desc.,PROGRAM 3 SPRING B,,,BANU İLAL,,,,,,,,"                          "
+SFL 32B.11,Desc.,PROGRAM 3 SPRING B,,,GÜLAY TAŞSEVEN,,,,,,,,"                          "
+SFL 32B.12,Desc.,PROGRAM 3 SPRING B,,,GÜLAY TAŞSEVEN,,,,,,,,"                          "
+SFL 32B.13,Desc.,PROGRAM 3 SPRING B,,,ŞEBNEM YAŞAROL,,,,,,,,"                          "
+SFL 32B.14,Desc.,PROGRAM 3 SPRING B,,,SELMA AYTEN ÜSTÜNDAĞ,,,,,,,,"                          "
+SFL 32B.15,Desc.,PROGRAM 3 SPRING B,,,SELMA AYTEN ÜSTÜNDAĞ,,,,,,,,"                          "
+SFL 32B.16,Desc.,PROGRAM 3 SPRING B,,,GÜLAY TAŞSEVEN,,,,,,,,"                          "
+SFL 41A.01,Desc.,PROGRAM 4 FALL A,,,YELİZ AYAN,,,,,,,,"                          "
+SFL 41A.02,Desc.,PROGRAM 4 FALL A,,,AHU ERSÖZLÜ,,,,,,,,"                          "
+SFL 41A.03,Desc.,PROGRAM 4 FALL A,,,NEIL B. WARRINGTON,,,,,,,,"                          "
+SFL 41A.04,Desc.,PROGRAM 4 FALL A,,,ASLI SÜREYYA SAYMAN,,,,,,,,"                          "
+SFL 41A.05,Desc.,PROGRAM 4 FALL A,,,ELİFCAN ATA KIL,,,,,,,,"                          "
+SFL 41A.06,Desc.,PROGRAM 4 FALL A,,,ALAZ PESEN,,,,,,,,"                          "
+SFL 41A.07,Desc.,PROGRAM 4 FALL A,,,VALERİE ANNE NEEDHAM,,,,,,,,"                          "
+SFL 41A.08,Desc.,PROGRAM 4 FALL A,,,NAYAT BASMA,,,,,,,,"                          "
+SFL 41A.09,Desc.,PROGRAM 4 FALL A,,,I. ÇİÇEK GEZEK,,,,,,,,"                          "
+SFL 41A.10,Desc.,PROGRAM 4 FALL A,,,TERENCE HOLDEN,,,,,,,,"                          "
+SFL 41A.11,Desc.,PROGRAM 4 FALL A,,,İNAYET DENİZ ÖZGÖRGÜLÜ,,,,,,,,"                          "
+SFL 41B.11,Desc.,PROGRAM 4 FALL B,,,SELMA AYTEN ÜSTÜNDAĞ,,,,,,,,"                          "
+SFL 42A.01,Desc.,PROGRAM 4 SPRING A,,,YELİZ AYAN,,,,,,,,"                          "
+SFL 42A.02,Desc.,PROGRAM 4 SPRING A,,,AHU ERSÖZLÜ,,,,,,,,"                          "
+SFL 42A.03,Desc.,PROGRAM 4 SPRING A,,,NEIL B. WARRINGTON,,,,,,,,"                          "
+SFL 42A.05,Desc.,PROGRAM 4 SPRING A,,,ELİFCAN ATA KIL,,,,,,,,"                          "
+SFL 42A.06,Desc.,PROGRAM 4 SPRING A,,,ALAZ PESEN,,,,,,,,"                          "
+SFL 42A.07,Desc.,PROGRAM 4 SPRING A,,,VALERİE ANNE NEEDHAM,,,,,,,,"                          "
+SFL 42A.08,Desc.,PROGRAM 4 SPRING A,,,NAYAT BASMA,,,,,,,,"                          "
+SFL 42A.09,Desc.,PROGRAM 4 SPRING A,,,I. ÇİÇEK GEZEK,,,,,,,,"                          "
+SFL 42A.10,Desc.,PROGRAM 4 SPRING A,,,TERENCE HOLDEN,,,,,,,,"                          "
+SFL 42B.04,Desc.,PROGRAM 4 SPRING B,,,ASLI SÜREYYA SAYMAN,,,,,,,,"                          "
+SFL 42B.11,Desc.,PROGRAM 4 SPRING B,,,SELMA AYTEN ÜSTÜNDAĞ,,,,,,,,"                          "
+SPA 101.01,Desc.,ELEMENTARY SPANISH I,3,7,MONICA  SOUTO GONZALEZ,MMTTWW,121212,,KP 03 | KP 03 | KYD 209 | KYD 209 | KYD 01 | KYD 01,,,TR,"                          "
+SPA 101.02,Desc.,ELEMENTARY SPANISH I,3,7,MONICA  SOUTO GONZALEZ,MMTTWW,343434,,KP 03 | KP 03 | KYD 209 | KYD 209 | KYD 01 | KYD 01,,,,"                          "
+SPA 101.03,Desc.,ELEMENTARY SPANISH I,3,7,MARIA JOSE GONZALEZ,TTWWThTh,121212,,KYD 110 | KYD 110 | EF 02 | EF 02 | KYD 112 | KYD 112,,,,"                          "
+SPA 101.04,Desc.,ELEMENTARY SPANISH I,3,7,MARIA JOSE GONZALEZ,TTWWThTh,343434,,KYD 110 | KYD 110 | EF 02 | EF 02 | KYD 112 | KYD 112,,,"TR,LING","                          "
+SPA 101.05,Desc.,ELEMENTARY SPANISH I,3,7,MONTSERRAT MUNOZ,TTWWThTh,565656,,ET 03 | ET 03 | KP 06 | KP 06 | KYD 112 | KYD 112,,,INTT,"                          "
+SPA 101.06,Desc.,ELEMENTARY SPANISH I,3,7,MONTSERRAT MUNOZ,TTWWThTh,787878,,ET 03 | ET 03 | KP 06 | KP 06 | KYD 112 | KYD 112,,,"TRM,HIST","                          "
+SPA 101.07,Desc.,ELEMENTARY SPANISH I,3,7,MARIA SANCHEZ,WWThThFF,565634,,KYD 112 | KYD 112 | NH 304 | NH 304 | KYD 01 | KYD 01,,,,"                          "
+SPA 101.08,Desc.,ELEMENTARY SPANISH I,3,7,MARIA SANCHEZ,WWThThFF,787856,,KYD 112 | KYD 112 | NH 304 | NH 304 | KYD 01 | KYD 01,,,,"                          "
+SPA 102.01,Desc.,ELEMENTARY SPANISH II,3,7,ALICIA  DE LA ANTONIA,MMThThFF,121212,,KYD 110 | KYD 110 | KYD 120 | KYD 120 | EF 104 | EF 104,,,,"                          "
+SPA 102.02,Desc.,ELEMENTARY SPANISH II,3,7,ALICIA  DE LA ANTONIA,MMThThFF,343434,,KYD 110 | KYD 110 | KYD 120 | KYD 120 | EF 104 | EF 104,,,,"                          "
+SPA 102.03,Desc.,ELEMENTARY SPANISH II,3,7,JUAN CORDOBA,MMWWFF,343412,,KYD 209 | KYD 209 | EF 04 | EF 04 | M 2231 | M 2231,,,,"                          "
+SPA 102.04,Desc.,ELEMENTARY SPANISH II,3,7,LUZ MARIA RUIZ MARTINEZ,TTWWThTh,565656,,KYD 110 | KYD 110 | EF 07 | EF 07 | KYD 120 | KYD 120,,,,"                          "
+SPA 102.05,Desc.,ELEMENTARY SPANISH II,3,7,LUZ MARIA RUIZ MARTINEZ,TTWWThTh,787878,,KYD 110 | KYD 110 | EF 07 | EF 07 | KYD 120 | KYD 120,,,,"                          "
+SPA 201.01,Desc.,PRE-INTERMEDIATE SPANISH I,3,7,NICOLAS MENDEZ,WWThThFF,121212,,ET 02 | ET 02 | EF 103 | EF 103 | EF 203 | EF 203,,,TR,"                          "
+SPA 201.02,Desc.,PRE-INTERMEDIATE SPANISH I,3,7,NICOLAS MENDEZ,WWThThFF,343434,,ET 02 | ET 02 | EF 103 | EF 103 | EF 203 | EF 203,,,"TR,LING","                          "
+SPA 201.03,Desc.,PRE-INTERMEDIATE SPANISH I,3,7,CLAUDIA ZAMARRIPA KURAL,TTWWThTh,785656,,KYD 02 | KYD 02 | KP 08 | KP 08 | KYD 117 | KYD 117,,,INTT,"                          "
+SPA 201.04,Desc.,PRE-INTERMEDIATE SPANISH I,3,7,CLAUDIA ZAMARRIPA KURAL,TTWWThTh,9107878,,KYD 02 | KYD 02 | KP 08 | KP 08 | KYD 117 | KYD 117,,,"TRM,HIST","                          "
+SPA 202.01,Desc.,PRE-INTERMEDIATE SPANISH II,3,7,ANGELA PLATA ALONSO,MMWWFF,121212,,KYD 112 | KYD 112 | EF 101 | EF 101 | JF 333 | JF 333,,,,"                          "
+SPA 202.02,Desc.,PRE-INTERMEDIATE SPANISH II,3,7,ANGELA PLATA ALONSO,MMWWFF,343434,,KYD 112 | KYD 112 | EF 101 | EF 101 | JF 333 | JF 333,,,,"                          "
+SPA 202.03,Desc.,PRE-INTERMEDIATE SPANISH II,3,7,JUAN CORDOBA,MMWWFF,565634,,KYD 209 | KYD 209 | EF 04 | EF 04 | M 2231 | M 2231,,,,"                          "
+SPA 301.01,Desc.,INTERMEDIATE SPANISH I,3,7,MARIA FERNANDA GOMEZ RIVERA,MMTTWW,121212,,KYD 02 | KYD 02 | KYD 120 | KYD 120 | KYD 112 | KYD 112,,,TR,"                          "
+SPA 301.02,Desc.,INTERMEDIATE SPANISH I,3,7,MERYEM ARIKAN,TTThThFF,565634,,ET 01 | ET 01 | EF 05 | EF 05 | JF 101 | JF 101,,,INTT,"                          "
+SPA 302.01,Desc.,INTERMEDIATE SPANISH II,3,7,MARIA FERNANDA GOMEZ RIVERA,MMTTWW,343434,,KYD 02 | KYD 02 | KYD 120 | KYD 120 | KYD 112 | KYD 112,,,,"                          "
+SPA 302.02,Desc.,INTERMEDIATE SPANISH II,3,7,MERYEM ARIKAN,TTThThFF,787856,,ET 01 | ET 01 | EF 05 | EF 05 | JF 101 | JF 101,,,,"                          "
+SPA 321.01,Desc.,HISPANO-AMERICAN & SPANISH CULTURE I,3,5,JUAN CORDOBA,WWFF,7856,,EF 04 | EF 04 | M 2231 | M 2231,,,,"                          "
+SPA 411.01,Desc.,TRANSLATION I,3,5,ZÜLEYHA YILMAZ,TTT,789,,KYD 112 | KYD 112 | KYD 112,,,,"                          "

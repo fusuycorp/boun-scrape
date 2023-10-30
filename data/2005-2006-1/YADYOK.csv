@@ -1,0 +1,101 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AE  111.01,Desc.,ADVANCED ENGLISH I,3,3,DENİZ ILGAZ,MTW,111,,,,,,"                          "
+AE  111.02,Desc.,ADVANCED ENGLISH I,3,3,DENİZ ILGAZ,MTW,222,,,,,,"                          "
+AE  111.03,Desc.,ADVANCED ENGLISH I,3,3,GÖKÇE ÇELİKKOL GAZELLE,MTW,222,,,,,,"                          "
+AE  111.04,Desc.,ADVANCED ENGLISH I,3,3,GÖKÇE ÇELİKKOL GAZELLE,MTW,311,,,,,,"                          "
+AE  111.05,Desc.,ADVANCED ENGLISH I,3,3,ASUDE KÜÇÜK,MWTh,777,,,,,,"                          "
+AE  111.06,Desc.,ADVANCED ENGLISH I,3,3,İNCİ BİLGİN TEKİN,MMT,565,,,,,,"                          "
+AE  111.07,Desc.,ADVANCED ENGLISH I,3,3,İNCİ BİLGİN TEKİN,MTT,812,,,,,,"                          "
+AE  111.08,Desc.,ADVANCED ENGLISH I,3,3,ASUDE KÜÇÜK,MWTh,888,,,,,,"                          "
+AE  111.09,Desc.,ADVANCED ENGLISH I,3,3,ÜLKER BİLGİN,MTTh,322,,,,,,"                          "
+AE  111.10,Desc.,ADVANCED ENGLISH I,3,3,MELTEM GÜRLE,MFF,478,,,,,,"                          "
+AE  111.11,Desc.,ADVANCED ENGLISH I,3,3,MELTEM GÜRLE,MFF,556,,,,,,"                          "
+AE  111.12,Desc.,ADVANCED ENGLISH I,3,3,EDWARD MITCHELL,TWTh,572,,,,,,"                          "
+AE  111.13,Desc.,ADVANCED ENGLISH I,3,3,EDWARD MITCHELL,TWTh,683,,,,,,"                          "
+AE  111.14,Desc.,ADVANCED ENGLISH I,3,3,SUZAN ALPTEKİN,MThF,111,,,,,,"                          "
+AE  111.15,Desc.,ADVANCED ENGLISH I,3,3,SUZAN ALPTEKİN,MThF,222,,,,,,"                          "
+AE  111.16,Desc.,ADVANCED ENGLISH I,3,3,SUZAN ALPTEKİN,MThF,333,,,,,,"                          "
+AE  111.17,Desc.,ADVANCED ENGLISH I,3,3,SUZAN ALPTEKİN,MThF,454,,,,,,"                          "
+AE  112.01,Desc.,ADVANCED ENGLISH II,3,4,YAĞIZ TANLI,MWTh,514,,,,,,"                          "
+AE  112.02,Desc.,ADVANCED ENGLISH II,3,4,YAĞIZ TANLI,MWTh,241,,,,,,"                          "
+AE  201.01,Desc.,REPORT WRITING I,3,3,ÜLKER BİLGİN,MTTh,433,,,,,,"                          "
+AE  201.02,Desc.,REPORT WRITING I,3,3,ÜLKER BİLGİN,MTTh,644,,,,,,"                          "
+AE  201.03,Desc.,REPORT WRITING I,3,3,ÜLKER BİLGİN,MTTh,766,,,,,,"                          "
+AE  205.01,Desc.,ENGLISH THROUGH PUBLIC SPEAKING&DRAMA II,3,4,YAĞIZ TANLI,MWTh,152,,,,,,"                          "
+AE  205.02,Desc.,ENGLISH THROUGH PUBLIC SPEAKING&DRAMA II,3,4,YAĞIZ TANLI,MWTh,425,,,,,,"                          "
+AE  221.01,Desc.,CRITICAL READING,3,4,MELTEM GÜRLE,MThTh,656,,,,,,"                          "
+AE  221.02,Desc.,CRITICAL READING,3,4,MELTEM GÜRLE,MThTh,778,,,,,,"                          "
+AE  221.03,Desc.,CRITICAL READING,3,4,EDWARD MITCHELL,TWTh,864,,,,,,"                          "
+AE  221.04,Desc.,CRITICAL READING,3,4,BELGİN ALTOP,TWTh,272,,,,,,"                          "
+AE  221.05,Desc.,CRITICAL READING,3,4,BELGİN ALTOP,TWTh,483,,,,,,"                          "
+AE  221.06,Desc.,CRITICAL READING,3,4,ASUDE KÜÇÜK,MWTh,555,,,,,,"                          "
+AE  221.07,Desc.,CRITICAL READING,3,4,ASUDE KÜÇÜK,MWTh,666,,,,,,"                          "
+AE  231.01,Desc.,ENGLISH FOR INTERNATIONAL RELATIONS,3,4,DENİZ ILGAZ,MTW,333,,,,,,"                          "
+AE  231.02,Desc.,ENGLISH FOR INTERNATIONAL RELATIONS,3,4,DENİZ ILGAZ,MTW,444,,,,,,"                          "
+AE  231.03,Desc.,ENGLISH FOR INTERNATIONAL RELATIONS,3,4,GÖKÇE ÇELİKKOL GAZELLE,MTW,444,,,,,,"                          "
+AE  231.04,Desc.,ENGLISH FOR INTERNATIONAL RELATIONS,3,4,GÖKÇE ÇELİKKOL GAZELLE,MTW,555,,,,,,"                          "
+AE  241.01,Desc.,ENGLISH FOR SELF-EXPRESSION I,3,4,BELGİN ALTOP,TWTh,554,,,,,,"                          "
+AE  241.02,Desc.,ENGLISH FOR SELF-EXPRESSION I,3,4,BELGİN ALTOP,TWTh,665,,,,,,"                          "
+FR  101.01,Desc.,ELEMENTARY FRENCH I,3,7,ŞİRİN TEKKELİ,MMTTWW,121212,,,,,,"                          "
+FR  101.02,Desc.,ELEMENTARY FRENCH I,3,7,ERHAN KAYAALP,MMWWThTh,565656,,,,,,"                          "
+FR  101.03,Desc.,ELEMENTARY FRENCH I,3,7,SONEL BOSNALI,TTThThFF,787878,,,,,,"                          "
+FR  101.04,Desc.,ELEMENTARY FRENCH I,3,7,DAVID BAGLIETO,MMWWThTh,565656,,,,,,"                          "
+FR  101.05,Desc.,ELEMENTARY FRENCH I,3,7,JOSELINE OJALVO,TTWWThTh,341234,,,,,,"                          "
+FR  101.06,Desc.,ELEMENTARY FRENCH I,3,7,MERAL DEMİREL,MMWWFF,343434,,,,,,"                          "
+FR  101.07,Desc.,ELEMENTARY FRENCH I,3,7,ŞİRİN TEKKELİ,MMTTWW,343434,,,,,,"                          "
+FR  102.01,Desc.,ELEMENTARY FRENCH II,3,7,ASLI TARKAN KALAYCIOĞLU,MMWWThTh,343434,,,,,,"                          "
+FR  102.02,Desc.,ELEMENTARY FRENCH II,3,7,ASLI TARKAN KALAYCIOĞLU,MMWWThTh,565656,,,,,,"                          "
+FR  102.03,Desc.,ELEMENTARY FRENCH II,3,7,ANNE MARIE TIMONIER,WWThThFF,121212,,,,,,"                          "
+FR  201.01,Desc.,INTERMEDIATE FRENCH I,3,7,SİNEM ÇAKMAK,MMThThFF,565656,,,,,,"                          "
+FR  201.02,Desc.,INTERMEDIATE FRENCH I,3,7,YASEMİN KESKİNER,TTWWFF,121212,,,,,,"                          "
+FR  201.03,Desc.,INTERMEDIATE FRENCH I,3,7,YASEMİN KESKİNER,TTWWFF,343434,,,,,,"                          "
+FR  201.04,Desc.,INTERMEDIATE FRENCH I,3,7,ERHAN KAYAALP,MMWWThTh,787878,,,,,,"                          "
+FR  202.01,Desc.,INTERMEDIATE FRENCH II,3,7,ANNE MARIE TIMONIER,WWThThFF,343434,,,,,,"                          "
+FR  202.02,Desc.,INTERMEDIATE FRENCH II,3,7,SONEL BOSNALI,TTThThFF,565656,,,,,,"                          "
+FR  301.01,Desc.,ADVANCED FRENCH I,3,5,DAVID BAGLIETO,MMThTh,7878,,,,,,"                          "
+FR  301.02,Desc.,ADVANCED FRENCH I,3,5,MARYSE BAHADIRLI,MMWW,1212,,,,,,"                          "
+FR  301.03,Desc.,ADVANCED FRENCH I,3,5,MARYSE BAHADIRLI,MMWW,3434,,,,,,"                          "
+FR  301.04,Desc.,ADVANCED FRENCH I,3,5,MARYSE BAHADIRLI,MMWW,5656,,,,,,"                          "
+FR  302.02,Desc.,ADVANCED FRENCH II,3,5,JOSELINE OJALVO,TTThTh,1212,,,,,,"                          "
+FR  401.01,Desc.,MODERN FRENCH LITERATURE I,3,5,MEHMET RIFAT GÜZELŞEN,WWW,678,,,,,,"                          "
+FR  403.01,Desc.,FRENCH THROUGH HISTORICAL TEXTS,3,5,MERAL DEMİREL,WWW,678,,,,,,"                          "
+FR  411.01,Desc.,FRENCH-TURKISH / TURKISH-FRENCH TRANS. I,3,5,MEHMET RIFAT GÜZELŞEN,WWW,345,,,,,,"                          "
+FR  431.01,Desc.,FRENCH IN PRESS,3,5,SİNEM ÇAKMAK,ThFF,434,,,,,,"                          "
+GER 101.01,Desc.,ELEMENTARY GERMAN I,3,7,AYŞE BARLAS,MMWWThTh,565656,,,,,,"                          "
+GER 101.02,Desc.,ELEMENTARY GERMAN I,3,7,BARBARA HARENDZ-WEIMERT,MMWWFF,121212,,,,,,"                          "
+GER 101.03,Desc.,ELEMENTARY GERMAN I,3,7,AYLİN IŞIL BÖLKÜR,MMTTWW,121212,,,,,,"                          "
+GER 101.04,Desc.,ELEMENTARY GERMAN I,3,7,AYŞE BARLAS,MMWWThTh,787878,,,,,,"                          "
+GER 101.05,Desc.,ELEMENTARY GERMAN I,3,7,BARBARA HARENDZ-WEIMERT,MMWWFF,343434,,,,,,"                          "
+GER 101.06,Desc.,ELEMENTARY GERMAN I,3,7,SİBYLLE ÇİZENEL,TTThThFF,563434,,,,,,"                          "
+GER 101.07,Desc.,ELEMENTARY GERMAN I,3,7,ŞEHNAZ KARAATLI,MMTTThTh,787878,,,,,,"                          "
+GER 101.08,Desc.,ELEMENTARY GERMAN I,3,7,AYLİN IŞIL BÖLKÜR,MMTTWW,343434,,,,,,"                          "
+GER 102.01,Desc.,ELEMENTARY GERMAN II,3,7,BİGE KOLUKISA İNELMEN,MMWWThTh,565656,,,,,,"                          "
+GER 102.02,Desc.,ELEMENTARY GERMAN II,3,7,ELİF DÖNMEZ,MMWWFF,343434,,,,,,"                          "
+GER 201.01,Desc.,LOWER INTERMEDIATE GERMAN I,3,7,NİLÜFER ANDİÇ ,MMWWThTh,565656,,,,,,"                          "
+GER 201.02,Desc.,LOWER INTERMEDIATE GERMAN I,3,7,ELİF DÖNMEZ,MMWWFF,121212,,,,,,"                          "
+GER 201.03,Desc.,LOWER INTERMEDIATE GERMAN I,3,7,HÜLYA ARIÇ EROL,MMTTWW,121212,,,,,,"                          "
+GER 201.04,Desc.,LOWER INTERMEDIATE GERMAN I,3,7,NİLÜFER ANDİÇ ,MMWWThTh,787878,,,,,,"                          "
+GER 201.05,Desc.,LOWER INTERMEDIATE GERMAN I,3,7,ERCÜMENT İDİK,MMTTThTh,343434,,,,,,"                          "
+GER 201.06,Desc.,LOWER INTERMEDIATE GERMAN I,3,7,ŞEHNAZ KARAATLI,MMTTThTh,565656,,,,,,"                          "
+GER 201.07,Desc.,LOWER INTERMEDIATE GERMAN I,3,7,MÜJGAN ŞAHİNOĞLU,MMWWThTh,565656,,,,,,"                          "
+GER 202.01,Desc.,INTERMEDIATE GERMAN II,3,7,ALEXANDRA GRÜNDEL,TTThThFF,898989,,,,,,"                          "
+GER 301.01,Desc.,ADVANCED GERMAN I,3,5,HÜLYA ARIÇ EROL,MMWW,5656,,,,,,"                          "
+GER 301.02,Desc.,ADVANCED GERMAN I,3,5,ERCÜMENT İDİK,MMThTh,1212,,,,,,"                          "
+GER 301.03,Desc.,ADVANCED GERMAN I,3,5,GÜL REFİĞ,TTThTh,7878,,,,,,"                          "
+GER 301.04,Desc.,ADVANCED GERMAN I,3,5,SİBYLLE ÇİZENEL,TTThTh,1212,,,,,,"                          "
+GER 302.01,Desc.,ADVANCED GERMAN II,3,5,BİGE KOLUKISA İNELMEN,MMWW,3434,,,,,,"                          "
+GER 322.01,Desc.,GERMAN CIVILIZATION II,3,5,ALEXANDRA GRÜNDEL,TTThTh,6767,,,,,,"                          "
+GER 411.01,Desc.,TRANSLATION I,3,5,GÜVEN SAVAŞ KIZILTAN,MTT,456,,,,,,"                          "
+GER 411.02,Desc.,TRANSLATION I,3,5,GÜVEN SAVAŞ KIZILTAN,MMT,564,,,,,,"                          "
+GER 411.03,Desc.,TRANSLATION I,3,5,GÜVEN SAVAŞ KIZILTAN,MMM,789,,,,,,"                          "
+GER 421.01,Desc.,MODERN GERMAN LITERATURE I,3,5,SİBYLLE ÇİZENEL,FFF,678,,,,,,"                          "
+SPA 101.01,Desc.,ELEMENTARY SPANISH I,3,7,MERYEM ARIKAN,MMWWFF,343434,,,,,,"                          "
+SPA 101.02,Desc.,ELEMENTARY SPANISH I,3,7,CRISTINA RUBIO,TTThThFF,787878,,,,,,"                          "
+SPA 102.01,Desc.,ELEMENTARY SPANISH II,3,7,MERYEM ARIKAN,MMWWFF,121212,,,,,,"                          "
+SPA 102.02,Desc.,ELEMENTARY SPANISH II,3,7,CLAUDIA ZAMARRIPA KURAL,MMWWThTh,563434,,,,,,"                          "
+SPA 201.01,Desc.,INTERMEDIATE SPANISH I,3,7,MARIA JOSE GONZALEZ,TTWWThTh,343434,,,,,,"                          "
+SPA 201.02,Desc.,INTERMEDIATE SPANISH I,3,7,MARIA JOSE GONZALEZ,TTWWThTh,561256,,,,,,"                          "
+SPA 202.01,Desc.,INTERMEDIATE SPANISH II,3,7,CLAUDIA ZAMARRIPA KURAL,MMWWThTh,341212,,,,,,"                          "
+SPA 202.02,Desc.,INTERMEDIATE SPANISH II,3,7,CRISTINA RUBIO,TTThThFF,343434,,,,,,"                          "
+SPA 301.01,Desc.,ADVANCED SPANISH I,3,5,CRISTINA RUBIO,ThThFF,5656,,,,,,"                          "
+SPA 302.01,Desc.,ADVANCED SPANISH II,3,5,MARIA FERNANDA GOMEZ RIVERA,MMFF,5656,,,,,,"                          "

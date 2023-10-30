@@ -1,0 +1,87 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AD  104.01,Desc.,BUSINESS COMMUNICATIONS ,3,5,MEHMET ARTEMEL,ThThTh,678,,PARK1 | PARK1 | PARK1,,,,"                          "
+CMPE150.01,Desc.,INTRODUCTION TO COMPUTING,3,5,SUZAN ÜSKÜDARLI,M,1,,HKD201,,,,"                          "
+CMPE150.02,Desc.,INTRODUCTION TO COMPUTING,3,5,SUZAN ÜSKÜDARLI,M,1,,HKD201,,,,"        CMPE                  "
+CMPE150.03,Desc.,INTRODUCTION TO COMPUTING,3,5,TUNA TUĞCU,M,1,,HKD201,,,,"        CMPE                  "
+CMPE150.04,Desc.,INTRODUCTION TO COMPUTING,3,5,TUNA TUĞCU,M,1,,HKD201,,,,"                          "
+CMPE150.05,Desc.,INTRODUCTION TO COMPUTING,3,5,SUZAN ÜSKÜDARLI,M,2,,HKD201,,,,"                          "
+CMPE150.06,Desc.,INTRODUCTION TO COMPUTING,3,5,SUZAN ÜSKÜDARLI,M,2,,HKD201,,,,"                          "
+CMPE150.07,Desc.,INTRODUCTION TO COMPUTING,3,5,TUNA TUĞCU,M,2,,HKD201,,,,"                          "
+CMPE150.08,Desc.,INTRODUCTION TO COMPUTING,3,5,TUNA TUĞCU,M,2,,HKD201,,,,"                          "
+CMPE150.09,Desc.,INTRODUCTION TO COMPUTING,3,5,TUNA TUĞCU,Th,6,,ETA A4,,,,"                          "
+CMPE150.10,Desc.,INTRODUCTION TO COMPUTING,3,5,TUNA TUĞCU,Th,6,,ETA A4,,,,"                          "
+CMPE160.01,Desc.,INTRODUCTION TO OBJECT ORIENTED PROG.,4,9,H. LEVENT AKIN,TTTh,787,,ETA A2 | ETA A2 | ETA A2,,,,"                          "
+CMPE210.01,Desc.,FUNDAMENTALS OF OBJECT ORIENTED PROG.,4,5,ALİ VAHİT ŞAHİNER,TTTh,784,,ETA A3 | ETA A3 | ETA A2,,,,"                          "
+CMPE220.01,Desc.,DISCRETE COMPUTATIONAL STRUCTURES,3,4,HALUK BİNGÖL,MMF,564,,ETA B5 | ETA B5 | ETA A3,,,,"                          "
+CMPE230.01,Desc.,SYSTEMS PROGRAMMING,4,6,CAN ÖZTURAN,TTW,344,,ETA B5 | ETA B5 | ETA B5,,,,"                          "
+CMPE240.01,Desc.,DIGITAL SYSTEMS,4,6,ARDA YURDAKUL,MMW,343,,ETA A2 | ETA A2 | ETA A2,,,,"                          "
+CMPE250.01,Desc.,DATA STRUCTURES & ALGORITHMS,4,6,SADIK FİKRET GÜRGEN,TWW,556,,ETA A3 | ETA A3 | ETA A3,,,,"                          "
+CMPE300.01,Desc.,ANALYSIS OF ALGORITHMS,3,5,FATİH ALAGÖZ,TWW,367,,ETA A2 | ETA A2 | ETA A2,,,,"                          "
+CMPE320.01,Desc.,PRINCIPLES OF PROGRAMMING LANGUAGES,3,6,TUNGA GÜNGÖR,TTW,565,,ETA A2 | ETA A2 | ETA A2,,,,"                          "
+CMPE321.01,Desc.,INTRODUCTION TO DATABASE SYSTEMS,4,6,TAFLAN GÜNDEM,MFF,667,,ETA A2 | ETA A2 | ETA A2,,,,"                          "
+CMPE350.01,Desc.,FORMAL LANGUAGES & AUTOMATA THEORY,3,5,CEM SAY,MFF,545,,ETA A2 | ETA A2 | ETA A2,,,,"                          "
+CMPE360.01,Desc.,NUMERICAL METHODS,3,5,LALE AKARUN,MMT,122,,ETA A2 | ETA A2 | ETA A2,,,,"                          "
+CMPE446.01,Desc.,INTRODUCTION TO COMPUTER ARCHITECTURE,3,6,OĞUZ TOSUN,MMTh,236,,ETA A5 | ETA A5 | ETA A3,,,,"                          "
+CMPE463.01,Desc.,DATA MINING,3,6,ETHEM ALPAYDIN,MMF,456,,ETA A3 | ETA A3 | ETA A5,,,,"                          "
+CMPE476.01,Desc.,DISTRIBUTED SYSTEMS,3,6,M. UFUK ÇAĞLAYAN,WWTh,561,,ETA B5 | ETA B5 | ETA B5,,,,"                          "
+CMPE477.01,Desc.,WIRELESS & MOBILE NETWORKS,3,6,CEM ERSOY,TTTh,122,,ETA A5 | ETA A5 | ETA B5,,,,"                          "
+CMPE478.01,Desc.,PARALLEL PROCESSING,3,6,CAN ÖZTURAN,WThTh,334,,ETA B5 | ETA B5 | ETA B5,,,,"                          "
+CMPE491.01,Desc.,SPEC. PROJECT IN COMPUTER ENGINEERING,3,6,ETHEM ALPAYDIN,TBA,,,,,,,"                          "
+CMPE492.01,Desc.,PROJECT,4,7,ETHEM ALPAYDIN,TBA,,,,,,,"                          "
+CMPE513.01,Desc.,ALGORITHMS IN VLSI DESIGN,3,8,ARDA YURDAKUL,WWW,456,,,,,,"                          "
+CMPE516.01,Desc.,FAULT TOLERANT COMPUTING,3,8,OĞUZ TOSUN,ThThTh,234,,ETA A6 | ETA A6 | ETA A6,,,,"                          "
+CMPE526.01,Desc.,OPERATING SYSTEM & NETWORK SECURITY,3,8,M. UFUK ÇAĞLAYAN,ThThTh,678,,ETA A5 | ETA A5 | ETA A5,,,,"                          "
+CMPE532.01,Desc.,SPEECH PROCESSING,3,8,SADIK FİKRET GÜRGEN,TTT,678,,ETA A5 | ETA A5 | ETA A5,,,,"                          "
+CMPE535.01,Desc.,COMPUTER GRAPHICS,3,8,ALİ VAHİT ŞAHİNER,ThThTh,678,,ETA A6 | ETA A6 | ETA A6,,,,"                          "
+CMPE545.01,Desc.,ARTIFICIAL NEURAL NETWORKS,3,8,ETHEM ALPAYDIN,FFF,234,,ETA A6 | ETA A6 | ETA A6,,,,"                          "
+CMPE565.01,Desc.,AUTONOMOUS ROBOTS,3,8,H. LEVENT AKIN,ThThTh,234,,ETA A5 | ETA A5 | ETA A5,,,,"                          "
+CMPE579.01,Desc.,GRADUATE SEMINAR,0,8,ARDA YURDAKUL,T,4,,,,,,"                          "
+CMPE582.01,Desc.,SP.TOP.IN CMPE:SATELLITE NETWORKS,3,8,FATİH ALAGÖZ,TTT,789, ,ETA A6 | ETA A6 | ETA A6,,,,"                          "
+CMPE586.01,Desc.,SP.TOP.IN WIRELESS INFORMATION NETWORKS,3,8,METE KABATEPE,MMM,8910,,ETA A6 | ETA A6 | ETA A6,,,,"                          "
+CMPE588.01,Desc.,SP.TOP.IN CMPE:MODELING OF INTERNET,3,8,HALUK BİNGÖL,MMM,123,,ETA A6 | ETA A6 | ETA A6,,,,"                          "
+CMPE589.01,Desc.,SP.TOP.IN CMPE:SOFTWARE QUALITY MODELING,3,8,AYŞE BAŞAR,WWW,123,,ETA A5 | ETA A5 | ETA A5,,,,"                          "
+CMPE58C.01,Desc.,SP.TOP. IN CMPE: WIRELESS SENSOR NETWORKS,3,8,TUNA TUĞCU,TTT,456,,ETA A6 | ETA A6 | ETA A6,,,,"                          "
+CMPE590.01,Desc.,SP.TOP.IN CMPE:MACHINE TRANSLATION,3,8,TUNGA GÜNGÖR,WWW,678,,ETA A6 | ETA A6 | ETA A6,,,,"                          "
+CMPE594.01,Desc.,SP.TOP.IN CMPE:3D COMPUTER VISION,3,8,LALE AKARUN,WWW,123,,ETA A6 | ETA A6 | ETA A6,,,,"                          "
+CMPE598.01,Desc.,SP.TOP.IN CMPE:QUANTUM ALGORITHMS,3,8,CEM SAY,MMF,238,,ETA A3 | ETA A3 | ETA A6,,,,"                          "
+CMPE650.01,Desc.,ADV. TOPICS IN DATABASE SYSTEMS,3,8,TAFLAN GÜNDEM,WWW,678,,ETA A5 | ETA A5 | ETA A5,,,,"                          "
+CMPE690.01,Desc.,M.S.THESIS,0,60,CEM ERSOY,TBA,,,,,,,"                          "
+CMPE690.02,Desc.,M.S.THESIS,0,60,SADIK FİKRET GÜRGEN,TBA,,,,,,,"                          "
+CMPE690.03,Desc.,M.S.THESIS,0,60,TAFLAN GÜNDEM,TBA,,,,,,,"                          "
+CMPE690.04,Desc.,M.S.THESIS,0,60,HALUK BİNGÖL,TBA,,,,,,,"                          "
+CMPE690.05,Desc.,M.S.THESIS,0,60,FATİH ALAGÖZ,TBA,,,,,,,"                          "
+CMPE690.06,Desc.,M.S.THESIS,0,60,LALE AKARUN,TBA,,,,,,,"                          "
+CMPE690.07,Desc.,M.S.THESIS,0,60,OĞUZ TOSUN,TBA,,,,,,,"                          "
+CMPE690.08,Desc.,M.S.THESIS,0,60,PINAR YOLUM BİRBİL,TBA,,,,,,,"                          "
+CMPE690.09,Desc.,M.S.THESIS,0,60,ALİ VAHİT ŞAHİNER,TBA,,,,,,,"                          "
+CMPE690.10,Desc.,M.S.THESIS,0,60,AYŞE BAŞAR,TBA,,,,,,,"                          "
+CMPE690.11,Desc.,M.S.THESIS,0,60,H. LEVENT AKIN,TBA,,,,,,,"                          "
+CMPE690.12,Desc.,M.S.THESIS,0,60,ETHEM ALPAYDIN,TBA,,,,,,,"                          "
+CMPE690.13,Desc.,M.S.THESIS,0,60,M. UFUK ÇAĞLAYAN,TBA,,,,,,,"                          "
+CMPE690.14,Desc.,M.S.THESIS,0,60,SUZAN ÜSKÜDARLI,TBA,,,,,,,"                          "
+CMPE690.15,Desc.,M.S.THESIS,0,60,ARDA YURDAKUL,TBA,,,,,,,"                          "
+CMPE690.16,Desc.,M.S.THESIS,0,60,CEM SAY,TBA,,,,,,,"                          "
+CMPE690.17,Desc.,M.S.THESIS,0,60,TUNA TUĞCU,TBA,,,,,,,"                          "
+CMPE690.18,Desc.,M.S.THESIS,0,60,CAN ÖZTURAN,TBA,,,,,,,"                          "
+CMPE699.01,Desc., GUIDED RESEARCH ,4,8,FATİH ALAGÖZ,TBA,,,,,,,"                          "
+CMPE699.02,Desc., GUIDED RESEARCH ,4,8,CAN ÖZTURAN,TBA,,,,,,,"                          "
+CMPE699.03,Desc., GUIDED RESEARCH ,4,8,CEM SAY,TBA,,,,,,,"                          "
+CMPE699.04,Desc., GUIDED RESEARCH ,4,8,LALE AKARUN,TBA,,,,,,,"                          "
+CMPE699.05,Desc., GUIDED RESEARCH ,4,8,TUNA TUĞCU,TBA,,,,,,,"                          "
+CMPE699.06,Desc., GUIDED RESEARCH ,4,8,M. UFUK ÇAĞLAYAN,TBA,,,,,,,"                          "
+CMPE699.07,Desc., GUIDED RESEARCH ,4,8,SADIK FİKRET GÜRGEN,TBA,,,,,,,"                          "
+CMPE790.01,Desc.,Ph.D.THESIS,0,120,CEM ERSOY,TBA,,,,,,,"                          "
+CMPE790.02,Desc.,Ph.D.THESIS,0,120,FATİH ALAGÖZ,TBA,,,,,,,"                          "
+CMPE790.03,Desc.,Ph.D.THESIS,0,120,LALE AKARUN,TBA,,,,,,,"                          "
+CMPE790.04,Desc.,Ph.D.THESIS,0,120,OĞUZ TOSUN,TBA,,,,,,,"                          "
+CMPE790.05,Desc.,Ph.D.THESIS,0,120,TUNGA GÜNGÖR,TBA,,,,,,,"                          "
+CMPE790.06,Desc.,Ph.D.THESIS,0,120,PINAR YOLUM BİRBİL,TBA,,,,,,,"                          "
+CMPE790.07,Desc.,Ph.D.THESIS,0,120,AYŞE BAŞAR,TBA,,,,,,,"                          "
+CMPE790.08,Desc.,Ph.D.THESIS,0,120,H. LEVENT AKIN,TBA,,,,,,,"                          "
+CMPE790.09,Desc.,Ph.D.THESIS,0,120,ETHEM ALPAYDIN,TBA,,,,,,,"                          "
+CMPE790.10,Desc.,Ph.D.THESIS,0,120,M. UFUK ÇAĞLAYAN,TBA,,,,,,,"                          "
+CMPE790.11,Desc.,Ph.D.THESIS,0,120,CEM SAY,TBA,,,,,,,"                          "
+CMPE790.12,Desc.,Ph.D.THESIS,0,120,CAN ÖZTURAN,TBA,,,,,,,"                          "
+ENG 101.01,Desc.,INTRODUCTION TO COMPUTERS,3,7,SUZAN ÜSKÜDARLI,MM,34,,HKD201 | HKD201,,,,"                          "
+ENG 101.02,Desc.,INTRODUCTION TO COMPUTERS,3,7,SUZAN ÜSKÜDARLI,MM,34,,HKD201 | HKD201,,,,"                          "
+ENG 101.03,Desc.,INTRODUCTION TO COMPUTERS,3,7,SUZAN ÜSKÜDARLI,MM,34,,HKD201 | HKD201,,,,"                          "

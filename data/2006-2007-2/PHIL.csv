@@ -1,0 +1,42 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL106.01,Desc.,PHILOSOPHICAL TEXTS,3,7,MURAT BAÇ,TThF,755,,M 1170 | TB 490 | M 1170,,,,"                          "
+PHIL112.01,Desc.,INTRODUCTION TO MODERN PHILOSOPHY,3,5,ZEYNEP DAVRAN,TThTh,556,,PARK2 | GYM | GYM,,,,"                          "
+PHIL132.01,Desc.,LOGIC II,3,6,SUN DEMİRLİ,TThTh,534,,TB 260 | NB 119 | NB 119,,,,"                          "
+PHIL214.01,Desc.,HISTORY OF PHILOSOPHY II,3,6,CHRYSSI SIDIROPOULOU,MMT,564,,M 1171 | M 1171 | ÖZGER A,,,,"                          "
+PHIL222.01,Desc.,PHILOSOPHY OF SCIENCE,3,6,KARANFİL SOYHUN,TWW,856,,M 1171 | M 2171 | M 2171,,,,"                          "
+PHIL314.01,Desc.,HISTORY OF PHILOSOPHY IV,3,6,YILDIZ SİLİER,MMTh,346,,TB 310 | TB 310 | NBZ 11,,,,"                          "
+PHIL375.01,Desc.,PHILOSOPHY OF MIND,3,6,STEPHEN VOSS,TFF,356,,GYD 402 | M 1200 | M 1200,,,,"                          "
+PHIL382.01,Desc.,ONTOLOGY,3,7,SUN DEMİRLİ,WFF,434,,M 1171 | M 1200 | M 1200,,,,"                          "
+PHIL412.01,Desc.,ADVANCED HISTORY OF PHILOSOPHY,3,6,STEPHEN VOSS,TTF,562,,M 1200 | M 1200 | M 1200,,,,"                          "
+PHIL453.01,Desc.,FREEDOM ,3,6,YILDIZ SİLİER,MThTh,734,,NBZ 13 | M 1181 | M 1181,,,,"                          "
+PHIL48M.01,Desc.,SP.TOP.REDISCOVERY OF ARISTOTLE IN ISLAM,3,6,CHRYSSI SIDIROPOULOU,TTW,785,,TB 240 | TB 240 | M 1171,,,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,ALİ KARATAY,,, ,,,,,"                          "
+PHIL517.01,Desc.,TOPICS IN CONTEMPORARY PHILOSOPHY,4,10,MURAT BAÇ,WWW,345,,,,,,"                          "
+PHIL538.01,Desc.,SP.TOP.IN POLITICAL PHILOSOPHY,4,10,ZEYNEP DAVRAN,WWW,678,,,,,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL58E.01,Desc.,SP.TOP.: KANT'S SECOND CRITIQUE,4,10,PINAR CANEVİ,ThThTh,678,,,,,,"                          "
+PHIL58G.01,Desc.,SP.TOP: DAVIDSON,4,10,ALİ KARATAY,MMM,234,,,,,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL597.01,Desc.,SP.TOP: PHILOSOPHICAL LOGIC,4,10,İLHAN İNAN,ThThTh,345,,,,,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,STEPHEN VOSS,TBA,,,,,,,"                          "
+PHIL690.02,Desc.,MASTER THESIS,0,60,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL690.03,Desc.,MASTER THESIS,0,60,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL690.04,Desc.,MASTER THESIS,0,60,ALİ KARATAY,TBA,,,,,,,"                          "
+PHIL690.05,Desc.,MASTER THESIS,0,60,BERNA KILINÇ,TBA,,,,,,,"                          "
+PHIL690.06,Desc.,MASTER THESIS,0,60,CHRYSSI SIDIROPOULOU,TBA,,,,,,,"                          "
+PHIL690.07,Desc.,MASTER THESIS,0,60,GÜROL IRZIK,TBA,,,,,,,"                          "
+PHIL690.08,Desc.,MASTER THESIS,0,60,KARANFİL SOYHUN,TBA,,,,,,,"                          "
+PHIL690.09,Desc.,MASTER THESIS,0,60,SUN DEMİRLİ,TBA,,,,,,,"                          "
+PHIL690.10,Desc.,MASTER THESIS,0,60,YILDIZ SİLİER,TBA,,,,,,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,STEPHEN VOSS,TBA,,,,,,,"                          "
+PHIL790.02,Desc.,Ph.D THESIS,0,120,MURAT BAÇ,TBA,,,,,,,"                          "
+PHIL790.03,Desc.,Ph.D THESIS,0,120,İLHAN İNAN,TBA,,,,,,,"                          "
+PHIL790.04,Desc.,Ph.D THESIS,0,120,ALİ KARATAY,TBA,,,,,,,"                          "
+PHIL790.05,Desc.,Ph.D THESIS,0,120,BERNA KILINÇ,TBA,,,,,,,"                          "
+PHIL790.06,Desc.,Ph.D THESIS,0,120,CHRYSSI SIDIROPOULOU,TBA,,,,,,,"                          "
+PHIL790.07,Desc.,Ph.D THESIS,0,120,GÜROL IRZIK,TBA,,,,,,,"                          "
+PHIL790.08,Desc.,Ph.D THESIS,0,120,KARANFİL SOYHUN,TBA,,,,,,,"                          "
+PHIL790.09,Desc.,Ph.D THESIS,0,120,SUN DEMİRLİ,TBA,,,,,,,"                          "
+PHIL790.10,Desc.,Ph.D THESIS,0,120,YILDIZ SİLİER,TBA,,,,,,,"                          "

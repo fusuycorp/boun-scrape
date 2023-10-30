@@ -1,0 +1,65 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+IE  120.01,Desc.,INDUSTRIAL ENG.:OVERVIEW&ORIENTAT,1,2,MUSTAFA NECATİ ARAS,MMM,789,,M 2230 | M 2230 | M 2230,05.06.2011,2,,"                          "
+IE  202.01,Desc.,OPERATIONS RESEARCH I,4,6,TINAZ  EKİM AŞICI,MWWThTh,55656,,M 3100 | M 3100 | M 3100 | M 3120 | M 3120,02.06.2011,3,,"                          "
+IE  220.01,Desc.,MATERIALS & PROCESSES IN MANUFACTURING,4,7,KEMAL BERKKAN,FFF,345,,M 1100 | M 1100 | M 1100,09.06.2011,3,,"                          "
+IE  256.01,Desc.,STATISTICS FOR INDUSTRIAL ENGINEERS,3,5,MAHMUT EKŞİOĞLU,MMTW,3457,,M 2230 | M 2230 | M 2230 | M 2180,07.06.2011,3,,"                          "
+IE  304.01,Desc.,OPERATIONS RESEARCH III:STOCHASTIC MOD.,4,6,AYBEK KORUGAN,TWWFF,93412,,M 2230 | M 3120 | M 3120 | M 2230 | M 2230,04.06.2011,2,,"                          "
+IE  306.01,Desc.,SYSTEMS SIMULATION,4,6,ALİ RIZA KAYLAN,MMTWW,78812,,M 2181 | M 2181 | M 3100 | M 2180 | M 2180,07.06.2011,1,,"                          "
+IE  306.02,Desc.,SYSTEMS SIMULATION,4,6,TANER BİLGİÇ,MMTWW,78812,,M 2180 | M 2180 | M 2200 | M 2152 | M 2152,07.06.2011,1,CMPE,"                          "
+IE  312.01,Desc.,FACILITIES DESIGN & PLANNING,4,6,ÜMİT BİLGE,TTThThF,34346,,M 2230 | M 2230 | M 2230 | M 2230 | M 2230,31.05.2011,2,,"                          "
+IE  341.01,Desc.,ENGINEERING ECONOMICS,4,5,HAKAN YAŞARCAN,MMMTT,12612,,M 3120 | M 3120 | M 2200 | M 2200 | M 2200,01.06.2011,3,,"                          "
+IE  485.01,Desc.,SP.TP.NONLINEAR MOD.IN OPERATIONS RES.,3,6,KUBAN ALTINEL,WWThTh,5656,,M 2171 | M 2171 | M 2200 | M 2200,30.05.2011,2,,"                          "
+IE  488.01,Desc.,SP.TOP.:FORECASTING,3,6,WOLFGANG HOERMANN,TTThTh,6712,,M 3100 | M 3100 | M 2171 | M 2171,02.06.2011,2,,"                          "
+IE  492.01,Desc.,PROJECT,4,8,REFİK GÜLLÜ,TBA,,,,07.06.2011,2,,"                          "
+IE  494.01,Desc.,SP.TOP.:GRAPH ALGORITHMS&APPLICATION,3,6,TINAZ  EKİM AŞICI,TThTh,578,,M 3120 | M 2170 | M 2170,08.06.2011,3,,"                          "
+IE  498.01,Desc.,SP.TOP.RISK ASSESSMENT & ANALYSIS,3,6,İLHAN OR,MMWW,34910,,M 3100 | M 3100 | M 2230 | M 2230,05.06.2011,3,,"                          "
+IE  499.01,Desc.,SP.TOP.ENTERPRISE INFOR. SYSTEMS MOD.,3,6,ZEKİ CANER TAŞKIN,MFF,578,,M 2200 | M 2230 | M 2230,30.05.2011,1,,"                          "
+IE  506.01,Desc.,DESIGN & ANALYSIS OF EXPERIMENTS,3,7,ALİ RIZA KAYLAN,WWTh,569,,M 2180 | M 2180 | M 2181,08.06.2011,1,,"                          "
+IE  508.01,Desc.,STATISTICAL INFERENCE,3,7,WOLFGANG HOERMANN,TTThTh,3456,,M 1170 | M 1170 | M 2180 | M 2180,30.05.2011,3,,"                          "
+IE  515.01,Desc.,GRAPHS & NETWORK FLOWS,3,7,ZEKİ CANER TAŞKIN,MMF,126,,M 2231 | M 2231 | M 3120,02.06.2011,1,,"                          "
+IE  517.01,Desc.,HEURISTIC METHODS IN OPTIMIZATION,3,7,MUSTAFA NECATİ ARAS,TTTh,124,,M 2180 | M 2180 | M 2200,09.06.2011,3,,"                          "
+IE  524.01,Desc.,PLANNING OF PRODUCTION SYSTEMS,3,7,ALİ TAMER ÜNAL,ThFF,123,,M 1171 | M 2152 | M 2152,06.06.2011,1,,"                          "
+IE  533.01,Desc.,SYSTEMS THEORY,3,7,YAMAN BARLAS,MMWW,3412,,M 2152 | M 2152 | M 2231 | M 2231,01.06.2011,3,,"                          "
+IE  546.01,Desc.,COMPETITIVE MODELS IN SUPPLY CHAIN MAN.,3,7,TANER BİLGİÇ,WWF,341,,M 2152 | M 2152 | M 2152,02.06.2011,3,,"                          "
+IE  548.01,Desc.,STOCHASTIC MODELS FOR MANUFACTURING SYS.,3,7,AYBEK KORUGAN,TThTh,623,,M 2231 | M 1171 | M 1171,06.06.2011,3,,"                          "
+IE  565.01,Desc.,WORK PERFORMANCE ENGINEERING,3,7,MAHMUT EKŞİOĞLU,MThTh,678,,M 1200 | M 2171 | M 2171,01.06.2011,1,,"                          "
+IE  579.01,Desc.,GRADUATE SEMINAR,0,2,İLHAN OR,WWW,789,,M 1181 | M 1181 | M 1181,,0,,"                          "
+IE  587.01,Desc.,SP.TOP.OPTIMAL CONTROL THEORY,3,7,MUSTAFA AKAN,FFF,789,,M 1181 | M 1181 | M 1181,08.06.2011,1,,"                          "
+IE  592.01,Desc.,SP.TOP.IN IE:STOCHASTIC MODELS IN FINAN.,3,7,REFİK GÜLLÜ,TTT,789,,M 2171 | M 2171 | M 2171,01.06.2011,1,,"                          "
+IE  611.01,Desc.,INTEGER PROGRAMMING,3,7,KUBAN ALTINEL,WWThTh,1223,,M 1181 | M 1181 | M 1181 | M 1181,04.06.2011,2,,"                          "
+IE  624.01,Desc.,SCHEDULING & SEQUENCING,3,7,ALİ TAMER ÜNAL,ThThTh,789,,M 1181 | M 1181 | M 1181,06.06.2011,3,,"                          "
+IE  690.01,Desc.,M.S. THESIS,0,60,KUBAN ALTINEL,TBA,,,,,0,,"                          "
+IE  690.02,Desc.,M.S. THESIS,0,60,MUSTAFA NECATİ ARAS,TBA,,,,,0,,"                          "
+IE  690.03,Desc.,M.S. THESIS,0,60,GÜLAY BARBAROSOĞLU,TBA,,,,,0,,"                          "
+IE  690.04,Desc.,M.S. THESIS,0,60,YAMAN BARLAS,TBA,,,,,0,,"                          "
+IE  690.05,Desc.,M.S. THESIS,0,60,ÜMİT BİLGE,TBA,,,,,0,,"                          "
+IE  690.06,Desc.,M.S. THESIS,0,60,TANER BİLGİÇ,TBA,,,,,0,,"                          "
+IE  690.07,Desc.,M.S. THESIS,0,60,MAHMUT EKŞİOĞLU,TBA,,,,,0,,"                          "
+IE  690.08,Desc.,M.S. THESIS,0,60,REFİK GÜLLÜ,TBA,,,,,0,,"                          "
+IE  690.09,Desc.,M.S. THESIS,0,60,WOLFGANG HOERMANN,TBA,,,,,0,,"                          "
+IE  690.10,Desc.,M.S. THESIS,0,60,ALİ RIZA KAYLAN,TBA,,,,,0,,"                          "
+IE  690.11,Desc.,M.S. THESIS,0,60,AYBEK KORUGAN,TBA,,,,,0,,"                          "
+IE  690.12,Desc.,M.S. THESIS,0,60,GÜRKAN KUMBAROĞLU,TBA,,,,,0,,"                          "
+IE  690.13,Desc.,M.S. THESIS,0,60,İLHAN OR,TBA,,,,,0,,"                          "
+IE  690.14,Desc.,M.S. THESIS,0,60,ALİ TAMER ÜNAL,TBA,,,,,0,,"                          "
+IE  690.15,Desc.,M.S. THESIS,0,60,TINAZ  EKİM AŞICI,TBA,,,,,0,,"                          "
+IE  690.16,Desc.,M.S. THESIS,0,60,HAKAN YAŞARCAN,TBA,,,,,0,,"                          "
+IE  690.17,Desc.,M.S. THESIS,0,60,ZEKİ CANER TAŞKIN,TBA,,,,,0,,"                          "
+IE  698.01,Desc.,SP.STUDIES RISK ANALYSIS,3,7,İLHAN OR,TBA,,,,06.06.2011,3,,"                          "
+IE  790.01,Desc.,Ph.D. THESIS,0,120,KUBAN ALTINEL,TBA,,,,,0,,"                          "
+IE  790.02,Desc.,Ph.D. THESIS,0,120,MUSTAFA NECATİ ARAS,TBA,,,,,0,,"                          "
+IE  790.03,Desc.,Ph.D. THESIS,0,120,GÜLAY BARBAROSOĞLU,TBA,,,,,0,,"                          "
+IE  790.04,Desc.,Ph.D. THESIS,0,120,YAMAN BARLAS,TBA,,,,,0,,"                          "
+IE  790.05,Desc.,Ph.D. THESIS,0,120,ÜMİT BİLGE,TBA,,,,,0,,"                          "
+IE  790.06,Desc.,Ph.D. THESIS,0,120,TANER BİLGİÇ,TBA,,,,,0,,"                          "
+IE  790.07,Desc.,Ph.D. THESIS,0,120,MAHMUT EKŞİOĞLU,TBA,,,,,0,,"                          "
+IE  790.08,Desc.,Ph.D. THESIS,0,120,REFİK GÜLLÜ,TBA,,,,,0,,"                          "
+IE  790.09,Desc.,Ph.D. THESIS,0,120,WOLFGANG HOERMANN,TBA,,,,,0,,"                          "
+IE  790.10,Desc.,Ph.D. THESIS,0,120,ALİ RIZA KAYLAN,TBA,,,,,0,,"                          "
+IE  790.11,Desc.,Ph.D. THESIS,0,120,AYBEK KORUGAN,TBA,,,,,0,,"                          "
+IE  790.12,Desc.,Ph.D. THESIS,0,120,GÜRKAN KUMBAROĞLU,TBA,,,,,0,,"                          "
+IE  790.13,Desc.,Ph.D. THESIS,0,120,İLHAN OR,TBA,,,,,0,,"                          "
+IE  790.14,Desc.,Ph.D. THESIS,0,120,ALİ TAMER ÜNAL,TBA,,,,,0,,"                          "
+IE  790.15,Desc.,Ph.D. THESIS,0,120,TINAZ  EKİM AŞICI,TBA,,,,,0,,"                          "
+IE  790.16,Desc.,Ph.D. THESIS,0,120,HAKAN YAŞARCAN,TBA,,,,,0,,"                          "
+IE  790.17,Desc.,Ph.D. THESIS,0,120,ZEKİ CANER TAŞKIN,TBA,,,,,0,,"                          "

@@ -1,0 +1,2537 @@
+
+
+<html>
+<HEAD>
+<title>Schedule</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso8859-9" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../inc/regstyle.css" />
+<script src="/BUIS/js/jquery-1.10.2.min.js"></script>
+<script src="/BUIS/js/jquery-ui-1.10.3.min.js"></script>
+
+<script type="text/javascript">
+    function OpenMap(tdBbj) {
+        var text = $(tdBbj).text();
+        if (text.replace(/^\s+|\s+$/gm, '') != "") {
+            var scrollTop = $(document).scrollTop() + 100;
+            var building = text.split(" ")[0];
+            $("#gMapFrame").attr("src", "sch_map.asp?BN=" + building);
+            $("#gMap").dialog({ modal: true, minWidth: 630, minHeight: 510, height: "auto", width: "auto", overflow: "hidden" });
+            $('.ui-dialog').css('top', scrollTop + 'px');
+            window.scrollTo(0, scrollTop - 100);
+        }
+    }
+
+</script>
+
+	<script Lang="JScript">
+		function showQuota(ab,co,se,te) {
+			window.open('quotasearch.asp?abbr='+ab+'&code='+co+'&section='+se+'&donem='+te, 'myWin', 'resizable,scrollbars,width=500, height=400');
+		}
+
+
+
+	</script>
+
+<style>
+    .schtd2.labps {
+        background-color: #c7d2c8;
+        color:#8e5353;
+        ;
+    }
+     .schtd.labps {
+        background-color: #fffff6;
+        color:#8e5353;
+        ;
+    }
+
+</style>
+</HEAD>
+<body bgcolor="#FFFFFF" bgproperties="fixed">
+<font class='bodytextdark'><font size='+1'>Course Schedule</font>
+<br>
+<IMG  src='/images/pro_nav_btmline.gif' width='430' height='1'>
+<br>
+
+
+    
+<table width="250px">
+ <tr>
+    <td witdh=50% Class="bodytextdark">Semester   :</td>
+    <td witdh=50% Class="bodytextdark">2016/2017-3</td>
+ </tr>
+ <tr>
+    <td witdh=50% Class="bodytextdark">
+    Department :
+    </td>
+    <td witdh=50% Class="bodytextdark">YADYOK</td>
+ </tr>
+</table>
+    <p style="font-size:10pt; color:black; font-weight:normal;">Click on to the classroom to view it on the campus map. <br /></p>
+<hr>
+
+    
+
+    <table style="margin:20px 0">
+        <tr>		 
+            <td colspan=10 class="bodygray" style="font-family:Verdana, Arial, Helvetica; font-weight:bold">
+                The <u>course</u> slots are as follows :
+            </td>
+        </tr>
+        <tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 1</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 09:00 - 09:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 2</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 10:00 - 10:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 3</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 11:00 - 11:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 4</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 12:00 - 12:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 5</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 13:00 - 13:50</td>
+  
+                </tr><tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 6</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 14:00 - 14:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 7</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 15:00 - 15:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 8</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 16:00 - 16:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 9</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 17:00 - 17:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 10</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 18:00 - 18:50</td>
+  
+                </tr><tr>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 11</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 19:00 - 19:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 12</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 20:00 - 20:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 13</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 21:00 - 21:50</td>
+  
+            <td class="bodygray" style="font-size:11px; white-space: nowrap; text-align:right;"><b>Slot 14</td>
+			<td class="bodygray" style="font-size:11px; white-space: nowrap; padding-right:20px;">: 22:00 - 22:50</td>
+
+        </tr>
+    </table>
+
+<table border="1" cellpadding="3" width="1300px" style="border-collapse: collapse" bordercolor="#111111" cellspacing="0">
+ <tr class="schtitle">
+    <td width=5% align=left>Code.Sec</td>
+    <td width=5%>Desc.</td>
+    <td width=12% align=left>Name</td>
+    <td width=2% align=left>Cr.</td>
+    <td width=2% align=left>Ects</td>
+
+    <td width=5% align=left>Instr.</td>
+    <td width=5% align=left>Days</td>
+    <td width=4% align=left>Hours</td>
+                <!-- FinalExamLocation -->
+     <td width=5% align=left>Course Delivery Method</td>
+<!--    <td width=5% align=left>Final Exam Location</td>-->
+
+    <td width=11% align=left>Rooms</td>
+    <td width=7% align=left>Exam</td>
+    <td width=4% align=left>Sl.</td>
+    <td width=7% align=left><a class="title" href="#reqdept">Required for Dept.(*)</a></td>
+    <td width=5% align=left>Departments</td>
+
+
+     <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+    
+    </tr>
+
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>AE  111.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AE  111&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ADVANCED ENGLISH I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>3&nbsp;</td>
+
+		<td>FATMA ANG TAŞKENT&nbsp;</td>
+		<td>MMTTThTh&nbsp;</td>
+		<td>121212&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">EF 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">EF 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">EF 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">EF 201</span>&nbsp;</td>
+        
+			<td>02.08.2017&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>AE  111.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=AE  111&section=02&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ADVANCED ENGLISH I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>3&nbsp;</td>
+
+		<td>FATMA ANG TAŞKENT&nbsp;</td>
+		<td>MMTTThTh&nbsp;</td>
+		<td>565656&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">EF 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">EF 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">EF 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">EF 201</span>&nbsp;</td>
+        
+			<td>02.08.2017&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>FR  101.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=FR  101&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ELEMENTARY FRENCH I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>SENİHA SIRMA FURTUN&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>3434343434&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 02</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 02</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span>&nbsp;</td>
+        
+			<td>03.08.2017&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>FR  101.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=FR  101&section=02&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ELEMENTARY FRENCH I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ERHAN KAYAALP&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>5656565656&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KP 06</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KP 06</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 104</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 104</span>&nbsp;</td>
+        
+			<td>03.08.2017&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>FR  101.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=FR  101&section=03&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ELEMENTARY FRENCH I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ERHAN KAYAALP&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>7878787878&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KP 06</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KP 06</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 201</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 104</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">NH 104</span>&nbsp;</td>
+        
+			<td>03.08.2017&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>FR  101.04</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=FR  101&section=04&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ELEMENTARY FRENCH I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>OJENİ MAZALTO&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>1212121212&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 108</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 108</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 108</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 108</span>&nbsp;</td>
+        
+			<td>03.08.2017&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>FR  102.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=FR  102&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ELEMENTARY FRENCH II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ASLI TARKAN KALAYCIOĞLU&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>3434343434&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KP 02</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KP 02</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">M 2180</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">M 2180</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">EF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">EF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span>&nbsp;</td>
+        
+			<td>02.08.2017&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>FR  102.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=FR  102&section=02&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ELEMENTARY FRENCH II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>SENİHA SIRMA FURTUN&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>1212121212&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 02</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 02</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span>&nbsp;</td>
+        
+			<td>02.08.2017&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>FR  201.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=FR  201&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTERMEDIATE FRENCH I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>SİNEM ÇAKMAK&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>3434343434&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 111</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 111</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 111</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 111</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 111</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 111</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span>&nbsp;</td>
+        
+			<td>03.08.2017&nbsp;</td>
+			<td>4&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>FR  202.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=FR  202&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTERMEDIATE FRENCH II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ASLI TARKAN KALAYCIOĞLU&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>7878787878&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">JF 331</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 331</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 110</span>&nbsp;</td>
+        
+			<td>02.08.2017&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>FR  302.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=FR  302&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ADVANCED FRENCH II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>SİNEM ÇAKMAK&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>5656565656&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 111</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 111</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 111</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 111</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 111</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 111</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 111</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 111</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 111</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 111</span>&nbsp;</td>
+        
+			<td>02.08.2017&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>GER 101.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=GER 101&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ELEMENTARY GERMAN I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>FAHRİYE FEVZİOĞLU&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>1212121212&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 101</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 101</span>&nbsp;</td>
+        
+			<td>04.08.2017&nbsp;</td>
+			<td>4&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>GER 101.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=GER 101&section=02&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ELEMENTARY GERMAN I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>FAHRİYE FEVZİOĞLU&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>3434343434&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 112</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 101</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 101</span>&nbsp;</td>
+        
+			<td>04.08.2017&nbsp;</td>
+			<td>4&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>GER 101.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=GER 101&section=03&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ELEMENTARY GERMAN I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ELİF DÖNMEZ&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>5656565656&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span>&nbsp;</td>
+        
+			<td>04.08.2017&nbsp;</td>
+			<td>4&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>GER 101.04</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=GER 101&section=04&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ELEMENTARY GERMAN I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ELİF DÖNMEZ&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>7878787878&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span>&nbsp;</td>
+        
+			<td>04.08.2017&nbsp;</td>
+			<td>4&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>GER 201.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=GER 201&section=03&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PRE-INTERMEDIATE GERMAN I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ŞEHNAZ KARAATLI&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>1212121212&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span>&nbsp;</td>
+        
+			<td>02.08.2017&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>GER 201.04</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=GER 201&section=04&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PRE-INTERMEDIATE GERMAN I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ŞEHNAZ KARAATLI&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>3434343434&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 118</span>&nbsp;</td>
+        
+			<td>02.08.2017&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>GER 202.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=GER 202&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PRE-INTERMEDIATE GERMAN II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>ELİF DÖNMEZ&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>3434343434&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 117</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span>&nbsp;</td>
+        
+			<td>02.08.2017&nbsp;</td>
+			<td>3&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>GER 301.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=GER 301&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTERMEDIATE GERMAN I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>DİLEK BAŞKAN AKDAĞ&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>1212121212&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span>&nbsp;</td>
+        
+			<td>02.08.2017&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>GER 302.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=GER 302&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>INTERMEDIATE GERMAN II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>DİLEK BAŞKAN AKDAĞ&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>3434343434&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 120</span>&nbsp;</td>
+        
+			<td>02.08.2017&nbsp;</td>
+			<td>4&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>RUS 101.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=RUS 101&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ELEMENTARY RUSSIAN I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>NATALIA DEMİRKAPILI&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>1212121212&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 209</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 209</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 209</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 209</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 209</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 209</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 209</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 209</span>&nbsp;</td>
+        
+			<td>02.08.2017&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>RUS 102.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=RUS 102&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ELEMENTARY RUSSIAN II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>NATALIA DEMİRKAPILI&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>3434343434&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 102</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 209</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 209</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 209</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 209</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 209</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 209</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 209</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 209</span>&nbsp;</td>
+        
+			<td>03.08.2017&nbsp;</td>
+			<td>4&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL 13A.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13A&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER A&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>AYSUN BALKAN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL 13A.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13A&section=02&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER A&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>SEMA ÖZÇALLI&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL 13A.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13A&section=03&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER A&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>ÖZLEM  TUNA&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL 13A.04</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13A&section=04&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER A&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>SEHER DEMİR AYTAŞKIN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL 13A.05</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13A&section=05&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER A&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>GÖNÜL TUĞBA AKDAĞ&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL 13A.06</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13A&section=06&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER A&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>ELİF TÜRKOĞLU&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL 13A.07</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13A&section=07&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER A&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>ÖZGE YAĞIŞ&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL 13A.08</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13A&section=08&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER A&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>AHMET BÜLBÜL&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL 13A.09</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13A&section=09&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER A&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>HÜRMÜZ TELÇEKER&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL 13A.10</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13A&section=10&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER A&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>FEYZA ÇELİKTAŞ&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL 13B.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13B&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER B&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>SEÇİL BARAN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL 13B.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13B&section=02&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER B&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>DENİZ SAVAŞAL ATLI&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL 13B.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13B&section=03&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER B&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>GÜLAY TAŞSEVEN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL 13B.04</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13B&section=04&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER B&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>SEÇİL BARAN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL 13B.05</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13B&section=05&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER B&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>AYSUN BALKAN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL 13B.06</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13B&section=06&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER B&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>GÜLAY TAŞSEVEN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL 13B.07</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13B&section=07&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER B&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>SEMA ÖZÇALLI&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL 13B.08</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13B&section=08&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER B&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>DENİZ SAVAŞAL ATLI&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL 13B.09</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13B&section=09&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER B&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>ERGÜN ÜZÜMOĞLU&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL 13B.10</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL 13B&section=10&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>PROGRAM 1 SUMMER B&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>ERGÜN ÜZÜMOĞLU&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL RL2.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RL2&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL LISTENING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>HÜRMÜZ TELÇEKER&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL RL2.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RL2&section=02&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL LISTENING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>SELMA AYTEN ÜSTÜNDAĞ&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL RL2.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RL2&section=03&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL LISTENING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>SEMA ÖZÇALLI&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL RL2.04</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RL2&section=04&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL LISTENING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>AYSUN BALKAN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL RL2.05</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RL2&section=05&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL LISTENING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>ELİF TÜRKOĞLU&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL RR2.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RR2&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL READING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>FATMA BAYRAM&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL RR2.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RR2&section=02&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL READING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>SİNEM YILMAZ&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL RR2.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RR2&section=03&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL READING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>SAMİ BATOK&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL RR2.04</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RR2&section=04&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL READING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>PINAR DEMİRCİ&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL RR2.05</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RR2&section=05&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL READING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>DUYGU UMUTLU&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL RW2.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RW2&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL WRITING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>FATMA BAYRAM&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL RW2.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RW2&section=02&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL WRITING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>ÇİĞDEM TABAN&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL RW2.03</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RW2&section=03&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL WRITING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>SAMİ BATOK&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL RW2.04</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RW2&section=04&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL WRITING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>PINAR DEMİRCİ&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL RW2.05</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RW2&section=05&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL WRITING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>DUYGU UMUTLU&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL RW2.06</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RW2&section=06&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL WRITING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>SELMA AYTEN ÜSTÜNDAĞ&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL RW2.07</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RW2&section=07&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL WRITING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>EMİNE FÜSUN SAVCI&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SFL RW2.08</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RW2&section=08&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL WRITING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>ESER GÜLABİ&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SFL RW2.09</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SFL RW2&section=09&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>REMEDIAL WRITING&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+
+		<td>OYA ÖZAĞAÇ&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td>&nbsp;</td>
+        
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SPA 101.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SPA 101&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ELEMENTARY SPANISH I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>MERYEM ARIKAN&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>3434343434&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 108</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 108</span>&nbsp;</td>
+        
+			<td>02.08.2017&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd2">
+
+		<td><font style='font-size:12px'>SPA 101.02</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SPA 101&section=02&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ELEMENTARY SPANISH I&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>MERYEM ARIKAN&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>5656565656&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 108</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 108</span>&nbsp;</td>
+        
+			<td>02.08.2017&nbsp;</td>
+			<td>2&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+			<tr class="schtd">
+
+		<td><font style='font-size:12px'>SPA 102.01</font>&nbsp;</td>
+
+			<td><a href="#" onclick='javascript:window.open("/scripts/schedule/coursedescription.asp?course=SPA 102&section=01&term=2016/2017-3","schwin","width=820,height=500,alwaysRaised,resizable=yes,screenX=10,screenY=100,location=no,titlebar=no,toolbar=no,menubar=no,directories=no,status=no,scrollbars=yes")'>Desc.</a></td>
+
+        <td>ELEMENTARY SPANISH II&nbsp;</td>
+		<td>3&nbsp;</td>
+		<td>7&nbsp;</td>
+
+		<td>MERYEM ARIKAN&nbsp;</td>
+		<td>MMTTWWThThFF&nbsp;</td>
+		<td>7878787878&nbsp;</td>
+                <!-- FinalExamLocation -->
+        <td>&nbsp;</td>
+<!--        <td>&nbsp;</td>-->
+
+
+        
+		    <td><span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">KYD 01</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 108</span> <span style="color:red">|</span> <span onclick="OpenMap(this)" style="cursor:pointer;">JF 108</span>&nbsp;</td>
+        
+			<td>02.08.2017&nbsp;</td>
+			<td>1&nbsp;</td>
+
+   	 	<td>&nbsp;</td>
+   	 	
+        <td>
+
+        
+          &nbsp;
+        </td>
+
+
+        <!--SADECE AGÜDE ÇALIŞACAK!! #3821,#3794-->
+        
+   	 	</tr>
+
+</table>
+<br>
+<a name="reqdept"><font size=2><b>(*) : </b>Departments that should choose this section for <u>mass courses</u></font></a>
+<br><br>
+<b><a href="javascript:window.history.go(-1)"> << Back</a></b>
+ <div id="gMap" style="width:600px;height:480px; display:none;">
+     <iframe id="gMapFrame" src="" width="590" height="460" scrolling="no" style="border:none;">
+</iframe>
+ </div>
+</body>
+</html>

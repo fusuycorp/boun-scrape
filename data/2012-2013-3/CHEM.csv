@@ -1,0 +1,9 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHEM103.01,Desc.,GENERAL CHEMISTRY I,3,7,OKTAY DEMİRCAN,TTWWThTh,343434,,KBZ 01 | KBZ 01 | KBZ 01 | KBZ 01 | KBZ 01 | KBZ 01,06.08.2013,2,,"        BIO; CEDU; CHE; PEDU; PRSC                  "
+CHEM104.01,Desc.,GENERAL CHEMISTRY II,3,6,ŞARON ÇATAK,TTWWThTh,343434,,NH 202 | NH 202 | KPARK1 | KPARK1 | KB 125 | KB 125,06.08.2013,4,,"        BIO; CHE; CEDU; PRSC                  "
+CHEM105.01,Desc.,FUNDAMENTALS OF CHEMISTRY,4,6,BAŞAK KAYITMAZER,TTWWThTh,121212,,KB 125 | KB 125 | NH 103 | NH 103 | KB 125 | KB 125,03.08.2013,2,,"        ME; CMPE; EE; PHYS                  "
+CHEM201.01,Desc.,ORGANIC CHEMISTRY I,4,5,İLKNUR DOĞAN,MMTTWWThTh,78787878,,NH 102 | NH 102 | KB 125 | KB 125 | KB 125 | KB 125 | NH 104 | NH 104,06.08.2013,1,,"                          "
+CHEM202.01,Desc.,ORGANIC CHEMISTRY II,4,5,İLKNUR DOĞAN,MMTTWWThTh,34343434,,NH 102 | NH 102 | KB 125 | KB 125 | KB 125 | KB 125 | NH 104 | NH 104,03.08.2013,3,,"                          "
+,,P.S.,,,İLKNUR DOĞAN,ThTh,12,,,,0,,"                          "
+CHEM204.01,Desc.,ORGANIC CHEMISTRY LABORATORY II,1,3,EDİZ TAYLAN,TTTTThThThTh,56785678,,KBZ 01 | KBZ 01 | KBZ 01 | KBZ 01 | KB 125 | KB 125 | KB 125 | KB 125,06.08.2013,1,,"                          "
+,,LAB,,,EDİZ TAYLAN,ThThThTh,5678,,,,0,,"                          "

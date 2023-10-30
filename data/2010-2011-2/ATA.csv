@@ -1,0 +1,70 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ATA 425.01,Desc.,CULTURE&SOCIETY IN MODERN TURKEY,3,6,TRACY LORD,FFF,123,,,08.06.2011,3,,"                          "
+ATA 425.02,Desc.,CULTURE&SOCIETY IN MODERN TURKEY,3,6,TRACY LORD,FFF,456,,,08.06.2011,3,,"                          "
+ATA 507.01,Desc.,HISTORIOGRAPHY,3,6,CENGİZ KIRLI,TTT,678,,,04.06.2011,1,,"                          "
+ATA 531.01,Desc.,ECONOMIC&SOCIAL HISTORY OF TURKEY,3,6,ŞEVKET OSMAN PAMUK,ThThTh,678,,,09.06.2011,1,,"                          "
+ATA 547.01,Desc.,WOMEN&GENDER IN MODERN TURKEY,3,6,DUYGU KÖKSAL,MMM,678,,,30.05.2011,2,,"                          "
+ATA 588.01,Desc.,SEL.TP.IN TURKISH POLITICAL THOUGHT,3,6,ASIM KARAÖMERLİOĞLU,ThThTh,678,,,07.06.2011,2,,"                          "
+ATA 655.01,Desc.,POLITICS&SOCIETY IN EASTERN EUROPE,3,6,AYDIN BABUNA,MMM,678,,,01.06.2011,1,,"                          "
+ATA 684.01,Desc.,SP.TOP.IN MODERN HISTORY,3,6,NADİR ÖZBEK,WWW,234,,,30.05.2011,3,,"                          "
+ATA 685.01,Desc.,SP.TOP. IN MODERN TURKISH HISTORY,3,6,BERNA YAZICI,WWW,678,,,31.05.2011,2,,"                          "
+ATA 686.01,Desc.,SPECIAL TOPICS IN MODERN TURKISH HISTORY,3,6,AYŞE BUĞRA,TTT,234,,,03.06.2011,2,,"                          "
+ATA 690.01,Desc.,MASTER THESIS,0,60,BERNA YAZICI,TBA,,,,,0,,"                          "
+ATA 690.02,Desc.,MASTER THESIS,0,60,ASIM KARAÖMERLİOĞLU,TBA,,,,,0,,"                          "
+ATA 690.03,Desc.,MASTER THESIS,0,60,ZAFER TOPRAK,TBA,,,,,0,,"                          "
+ATA 690.04,Desc.,MASTER THESIS,0,60,NADİR ÖZBEK,TBA,,,,,0,,"                          "
+ATA 690.05,Desc.,MASTER THESIS,0,60,DUYGU KÖKSAL,TBA,,,,,0,,"                          "
+ATA 690.06,Desc.,MASTER THESIS,0,60,CENGİZ KIRLI,TBA,,,,,0,,"                          "
+ATA 690.07,Desc.,MASTER THESIS,0,60,AYDIN BABUNA,TBA,,,,,0,,"                          "
+ATA 690.08,Desc.,MASTER THESIS,0,60,AYŞE BUĞRA,TBA,,,,,0,,"                          "
+ATA 690.09,Desc.,MASTER THESIS,0,60,ŞEVKET OSMAN PAMUK,TBA,,,,,0,,"                          "
+ATA 690.10,Desc.,MASTER THESIS,0,60,ÇAĞLAR KEYDER,TBA,,,,,0,,"                          "
+ATA 692.01,Desc.,SP.TOP.IN MODERN TURKISH HISTORY,3,6,BERNA YAZICI,TBA,,,,02.06.2011,2,,"                          "
+ATA 692.02,Desc.,SP.TOP.IN MODERN TURKISH HISTORY,3,6,ASIM KARAÖMERLİOĞLU,TBA,,,,02.06.2011,2,,"                          "
+ATA 692.03,Desc.,SP.TOP.IN MODERN TURKISH HISTORY,3,6,NADİR ÖZBEK,TBA,,,,02.06.2011,2,,"                          "
+ATA 692.04,Desc.,SP.TOP.IN MODERN TURKISH HISTORY,3,6,DUYGU KÖKSAL,TBA,,,,02.06.2011,2,,"                          "
+ATA 692.05,Desc.,SP.TOP.IN MODERN TURKISH HISTORY,3,6,CENGİZ KIRLI,TBA,,,,02.06.2011,2,,"                          "
+ATA 698.01,Desc.,SP.TOP. IN MODERN TURKISH HISTORY,3,6,ŞEVKET OSMAN PAMUK,FFF,234,,,31.05.2011,2,,"                          "
+ATA 790.01,Desc.,PH.D THESIS,0,120,BERNA YAZICI,TBA,,,,,0,,"                          "
+ATA 790.02,Desc.,PH.D THESIS,0,120,ASIM KARAÖMERLİOĞLU,TBA,,,,,0,,"                          "
+ATA 790.03,Desc.,PH.D THESIS,0,30,ZAFER TOPRAK,TBA,,,,,0,,"                          "
+ATA 790.04,Desc.,PH.D THESIS,0,120,NADİR ÖZBEK,TBA,,,,,0,,"                          "
+ATA 790.05,Desc.,PH.D THESIS,0,120,DUYGU KÖKSAL,TBA,,,,,0,,"                          "
+ATA 790.06,Desc.,PH.D THESIS,0,120,CENGİZ KIRLI,TBA,,,,,0,,"                          "
+ATA 790.07,Desc.,PH.D THESIS,0,120,AYDIN BABUNA,TBA,,,,,0,,"                          "
+ATA 790.08,Desc.,PH.D THESIS,0,120,AYŞE BUĞRA,TBA,,,,,0,,"                          "
+ATA 790.09,Desc.,PH.D THESIS,0,120,ŞEVKET OSMAN PAMUK,TBA,,,,,0,,"                          "
+ATA 790.10,Desc.,PH.D THESIS,0,120,ÇAĞLAR KEYDER,TBA,,,,,0,,"                          "
+ATA 790.11,Desc.,PH.D THESIS,0,120,MELTEM AHISKA,TBA,,,,,0,,"                          "
+HTR 312.01,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,SEVTAP DEMİRCİ,TT,45,,M 1200 | M 1200,06.06.2011,2,,"                          "
+HTR 312.02,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,SEVTAP DEMİRCİ,ThTh,45,,M 1171 | M 1171,06.06.2011,2,,"                          "
+HTR 312.03,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,UĞUR SİPAHİOĞLU,WW,12,,YD 06 | YD 06,06.06.2011,2,,"                          "
+HTR 312.04,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,UĞUR SİPAHİOĞLU,WW,45,,YD 06 | YD 06,06.06.2011,2,,"                          "
+HTR 312.05,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,UĞUR SİPAHİOĞLU,ThTh,34,,NH 403 | NH 403,06.06.2011,2,,"                          "
+HTR 312.06,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,UĞUR SİPAHİOĞLU,ThTh,56,,NH 403 | NH 403,06.06.2011,2,,"                          "
+HTR 312.07,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,AYŞE GÜN SOYSAL,TT,12,,NH 303 | NH 403,06.06.2011,2,,"                          "
+HTR 312.08,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,AYŞE GÜN SOYSAL,TT,34,,NH 403 | NH 403,06.06.2011,2,,"                          "
+HTR 312.09,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,AYŞE GÜN SOYSAL,WW,23,,KPARK1 | KPARK1,06.06.2011,2,,"                          "
+HTR 312.10,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,AYŞE GÜN SOYSAL,WW,45,,KPARK1 | KPARK1,06.06.2011,2,,"                          "
+HTR 312.11,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,NADİR ÖZBEK,MM,34,,NH 403 | NH 403,06.06.2011,2,,"                          "
+HTR 312.12,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,NADİR ÖZBEK,MM,56,,NH 403 | NH 403,06.06.2011,2,,"                          "
+HTR 312.14,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,DUYGU KÖKSAL,WW, 78,,NH 104 | NH 104,06.06.2011,2,,"                          "
+HTR 312.15,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,RABİA TAYLAN YARARCAN,MM,12,,NH 103 | NH 103,06.06.2011,2,,"                          "
+HTR 312.16,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,RABİA TAYLAN YARARCAN,MM,34,,NH 103 | NH 103,06.06.2011,2,,"                          "
+HTR 312.17,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,RABİA TAYLAN YARARCAN,TT,12,,NH 202 | NH 202,06.06.2011,2,,"                          "
+HTR 312.18,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,RABİA TAYLAN YARARCAN,TT,34,,NH 202 | NH 202,06.06.2011,2,,"                          "
+HTR 312.19,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,CENGİZ KIRLI,MM,12,,NH 304 | NH 304,06.06.2011,2,,"                          "
+HTR 312.20,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,CENGİZ KIRLI,MM,67,,NH 302 | NH 302,06.06.2011,2,,"                          "
+HTR 312.21,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,BERNA YAZICI,MM,45,,NH 405 | NH 405,06.06.2011,2,,"                          "
+HTR 312.22,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,BERNA YAZICI,MM,78,,NH 403 | NH 403,06.06.2011,2,,"                          "
+HTR 312.23,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,ASIM KARAÖMERLİOĞLU,WW,45,,NH 401 | NH 401,06.06.2011,2,,"                          "
+HTR 312.24,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,ASIM KARAÖMERLİOĞLU,WW,67,,NH 401 | NH 401,06.06.2011,2,,"                          "
+HTR 312.25,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,NADİR ÖZBEK,MM,12,,M 2230 | M 2230,06.06.2011,2,,"                          "
+HTR 312.26,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,NADİR ÖZBEK,MM,78,,M 1100 | M 1100,06.06.2011,2,,"                          "
+HTR 312.27,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,CENGİZ KIRLI,FF,23,,NH 304 | NH 304,06.06.2011,2,,"                          "
+HTR 312.28,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,CENGİZ KIRLI,FF,56,,NH 304 | NH 304,06.06.2011,2,,"                          "
+HTR 312.29,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,BERNA YAZICI,ThTh,45,,M 1170 | M 1170,06.06.2011,2,,"                          "
+HTR 312.30,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,BERNA YAZICI,ThTh,78,,M 1100 | M 1100,06.06.2011,2,,"                          "
+HTR 312.31,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,DUYGU KÖKSAL,ThTh,56,,NH 303 | NH 303,06.06.2011,2,,"                          "
+HTR 312.32,Desc.,HISTORY OF THE TURKISH REPUBLIC II,2,3,DUYGU KÖKSAL,ThTh,78,,NH 303 | NH 303,06.06.2011,2,,"                          "
+HTR 406.01,Desc.,HIST. OF THE TURKISH REPUBLIC FOR F.S.II,2,3,SEVTAP DEMİRCİ,TT,78,,M 1100 | M 1100,08.06.2011,2,,"                          "

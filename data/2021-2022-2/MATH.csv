@@ -1,0 +1,66 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.01,Desc.,CALCULUS I,4,6,ÖZLEM BEYARSLAN,TTThTh,1212,Online,ONLINE | ONLINE | ONLINE | ONLINE,11.06.2022,1,,"                          "
+MATH101.02,Desc.,CALCULUS I,4,6,TALİN BUDAK,TTThTh,3434,Classroom,M 1100 | M 1100 | TB 310 | TB 310,11.06.2022,1,,"                          "
+MATH102.01,Desc.,CALCULUS II,4,6,OLCAY COŞKUN,TTThTh,1212,Classroom,AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK,03.06.2022,2,,"                          "
+MATH102.02,Desc.,CALCULUS II,4,6,OLCAY COŞKUN,TTThTh,3434,Classroom,AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK | AYHAN ŞAHENK,03.06.2022,2,,"                          "
+MATH102.03,Desc.,CALCULUS II,4,6,ARZU BOYSAL,TTThTh,1212,Online,ONLINE | ONLINE | ONLINE | ONLINE,03.06.2022,2,,"                          "
+MATH102.04,Desc.,CALCULUS II,4,6,FERİT ÖZTÜRK,TTThTh,3434,Classroom,BTS | BTS | BTS | BTS,03.06.2022,2,,"                          "
+MATH102.05,Desc.,CALCULUS II,4,6,ARZU BOYSAL,TTThTh,3434,Online,ONLINE | ONLINE | ONLINE | ONLINE,03.06.2022,2,,"                          "
+MATH106.01,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,SİNAN S.IŞIK,TTThTh,1212,Online,ONLINE | ONLINE | ONLINE | ONLINE,03.06.2022,3,,"                          "
+MATH106.02,Desc.,INTRODUCTION TO CALCULUS FOR SOCIAL SC.,4,6,SİNAN S.IŞIK,MMWW,7878,Online,ONLINE | ONLINE | ONLINE | ONLINE,03.06.2022,3,,"                          "
+MATH111.01,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,AHMET KAMİL FEYZİOĞLU,MMWW,1212,Online,ONLINE | ONLINE | ONLINE | ONLINE,04.06.2022,3,,"        MATH; MEDU; TMAT; PRMA                  "
+MATH131.01,Desc.,CALCULUS OF A SINGLE VARIABLE,4,8,BETÜL TANBAY,TTThTh,1212,Online,ONLINE | ONLINE | ONLINE | ONLINE,11.06.2022,3,,"        MATH                  "
+MATH132.01,Desc.,CALCULUS OF SEVERAL VARIABLES,4,8,FATİH ECEVİT,TTThTh,7878,Classroom,TB 310 | TB 310 | TB 310 | TB 310,08.06.2022,2,,"        MATH                  "
+MATH162.01,Desc.,DISCRETE MATHEMATICS,4,8,ÜMİT IŞLAK,TTThTh,3434,Classroom,TB 310 | TB 310 | NH 101 | NH 101,07.06.2022,3,,"                          "
+MATH162.02,Desc.,DISCRETE MATHEMATICS,4,8,ÜMİT IŞLAK,TTThTh,5656,Classroom,TB 310 | TB 310 | NH 101 | NH 101,07.06.2022,3,,"                          "
+MATH201.01,Desc.,MATRIX THEORY,4,5,KAZIM İLHAN İKEDA,MMWW,1212,Online,ONLINE | ONLINE | ONLINE | ONLINE,31.05.2022,1,,"                          "
+MATH201.02,Desc.,MATRIX THEORY,4,5,KAZIM İLHAN İKEDA,MMWW,3434,Online,ONLINE | ONLINE | ONLINE | ONLINE,31.05.2022,1,,"                          "
+MATH202.01,Desc.,DIFFERENTIAL EQUATIONS,4,7,YASEMİN KARA,MMWW,1212,Classroom,NH 101 | NH 101 | NH 101 | NH 101,31.05.2022,2,,"                          "
+MATH202.02,Desc.,DIFFERENTIAL EQUATIONS,4,7,CRAIG CHARLES  VAN COEVERING,MMWW,3434,Online,ONLINE | ONLINE | ONLINE | ONLINE,31.05.2022,2,,"                          "
+MATH202.03,Desc.,DIFFERENTIAL EQUATIONS,4,7,ALP BASSA,MMWW,1212,Online,ONLINE | ONLINE | ONLINE | ONLINE,31.05.2022,2,,"                          "
+MATH221.01,Desc.,LINEAR ALGEBRA,4,8,MÜGE TAŞKIN AYDIN,TTThTh,3434,Online,ONLINE | ONLINE | ONLINE | ONLINE,03.06.2022,3,,"        MATH                  "
+MATH222.01,Desc.,GROUP THEORY,4,8,AYHAN GÜNAYDIN,MMFF,1212,Online,ONLINE | ONLINE | ONLINE | ONLINE,28.05.2022,2,,"        MATH; MEDU                  "
+MATH231.01,Desc.,ADVANCED CALCULUS I,4,8,AHMET KAMİL FEYZİOĞLU,MMWW,3434,Online,ONLINE | ONLINE | ONLINE | ONLINE,06.06.2022,2,,"        MEDU; MATH                  "
+MATH234.01,Desc.,ADVANCED CALCULUS II,4,8,FERİT ÖZTÜRK,TTThTh,7878,Classroom,NH 101 | NH 101 | NH 101 | NH 101,11.06.2022,3,,"                          "
+MATH324.01,Desc.,REPRESENTATION THEORY OF FINITE GROUPS,3,6,ÖZLEM BEYARSLAN,TThTh,545,Classroom,TB 240 | TB 240 | TB 240,01.06.2022,1,,"                          "
+MATH338.01,Desc.,COMPLEX ANALYSIS I,4,8,YASEMİN KARA,MMWW,3434,Classroom,NH 101 | NH 101 | NH 101 | NH 101,09.06.2022,1,,"                          "
+MATH352.01,Desc.,PARTIAL DIFFERENTIAL EQUATIONS,3,6,BURAK GÜREL,FFF,345,Online,ONLINE | ONLINE | ONLINE,02.06.2022,3,,"                          "
+MATH361.01,Desc.,COMBINATORICS,3,6,MÜGE TAŞKIN AYDIN,TFF,112,Online,ONLINE | ONLINE | ONLINE,07.06.2022,3,,"                          "
+MATH427.01,Desc.,ELEMENTARY NUMBER THEORY II,3,6,CEM YALÇIN YILDIRIM,TTTh,787,Online,ONLINE | ONLINE | ONLINE,28.05.2022,3,,"                          "
+MATH436.01,Desc.,FUNCTIONAL ANALYSIS,3,7,TALİN BUDAK,TThTh,212,Classroom,M 1100 | TB 310 | TB 310,01.06.2022,2,,"                          "
+MATH474.01,Desc.,MATH. ASPECTS OF GENERAL RELATIVITY,3,6,N.SADIK DEĞER,TTTh,343,Classroom,TB 240 | TB 240 | TB 240,06.06.2022,2,,"                          "
+MATH48B.01,Desc.,SEL.TOP.SYMPLECTIC GEOMETRY&ITS APPLICATIONS TO INVERSE PROBLEMS,3,6,ÇAĞRI DİNER,WWW,678,Classroom,TB 120 | TB 120 | TB 120,03.06.2022,2,,"                          "
+MATH490.01,Desc.,PROJECT,3,6,ALP BASSA,,,,,,,,"                          "
+MATH490.02,Desc.,PROJECT,3,6,FERİT ÖZTÜRK,,,,,,,,"                          "
+MATH490.03,Desc.,PROJECT,3,6,BURAK GÜREL,,, ,,,,,"                          "
+MATH490.04,Desc.,PROJECT,3,6,OLCAY COŞKUN,,,Online,,,,,"                          "
+MATH490.05,Desc.,PROJECT,3,6,MÜGE TAŞKIN AYDIN,,,Online,,,,,"                          "
+MATH490.06,Desc.,PROJECT,3,6,ÜMİT IŞLAK,,,Online,,,,,"                          "
+MATH499.01,Desc.,SEL.TP.INTRODUCTION TO ANALYTIC NUMBER THEORY,3,6,CEM YALÇIN YILDIRIM,TThTh,10910,Online,ONLINE | ONLINE | ONLINE,10.06.2022,2,,"                          "
+MATH522.01,Desc.,ALGEBRA II,4,10,AYHAN GÜNAYDIN,MMFF,5634,Classroom,TB 415 | TB 415,08.06.2022,2,,"                          "
+MATH525.01,Desc.,ALGEBRAIC NUMBER THEORY,4,10,ALP BASSA,MMWW,3434,Classroom,,04.06.2022,3,,"                          "
+MATH532.01,Desc.,REAL ANALYSIS II,4,10,FATİH ECEVİT,TTThTh,5656,Online,ONLINE | ONLINE | ONLINE | ONLINE,02.06.2022,2,,"                          "
+MATH535.01,Desc.,FUNCTIONAL ANALYSIS,4,10,BETÜL TANBAY,TTThTh,3434,Online,ONLINE | ONLINE | ONLINE | ONLINE,11.06.2022,2,,"                          "
+MATH575.01,Desc.,DIFFERENTIABLE MANIFOLDS,3,7,N.SADIK DEĞER,TTTh,121,Classroom,,07.06.2022,2,,"                          "
+MATH579.01,Desc.,GRADUATE SEMINAR,0,1,BURAK GÜREL,,,Online,,,,,"                          "
+MATH58H.01,Desc.,SEL.TP.COMPUTATIONAL ALGEBRAIC GEOMETRY,3,7,TÜRKÜ ÖZLÜM ÇELİK,TTTh,787,Classroom,,07.06.2022,2,,"                          "
+MATH58J.01,Desc.,SEL.TP.COHOMOLOGY OF MANIFOLDS,3,7,UMUT VAROLGÜNEŞ,MMTh,676,Classroom,,02.06.2022,1,,"                          "
+MATH590.01,Desc.,READINGS IN MATHEMATICS,1,3,BURAK GÜREL,,,Online,,,,,"                          "
+MATH611.01,Desc.,DIFFERENTIAL GEOMETRY I,4,10,CRAIG CHARLES  VAN COEVERING,MMWW,1212,Classroom,,28.05.2022,1,,"                          "
+MATH680.01,Desc.,SEMINAR IN PURE MATHEMATICS I,4,10,OLCAY COŞKUN,WWFF,1212,Online,ONLINE | ONLINE | ONLINE | ONLINE,30.05.2022,1,,"                          "
+MATH690.01,Desc.,M.S. THESIS,0,60,FATİH ECEVİT,,, ,,,,,"                          "
+MATH690.02,Desc.,M.S. THESIS,0,60,CRAIG CHARLES  VAN COEVERING,,,,,,,,"                          "
+MATH690.03,Desc.,M.S. THESIS,0,60,OLCAY COŞKUN,,,,,,,,"                          "
+MATH690.04,Desc.,M.S. THESIS,0,60,ÜMİT IŞLAK,,,,,,,,"                          "
+MATH690.05,Desc.,M.S. THESIS,0,60,ÖZLEM BEYARSLAN,,,,,,,,"                          "
+MATH690.06,Desc.,M.S. THESIS,0,60,MÜGE TAŞKIN AYDIN,,,,,,,,"                          "
+MATH690.07,Desc.,M.S. THESIS,0,60,FERİT ÖZTÜRK,,,,,,,,"                          "
+MATH690.08,Desc.,M.S. THESIS,0,60,KAZIM İLHAN İKEDA,,,,,,,,"                          "
+MATH690.09,Desc.,M.S. THESIS,0,60,BURAK GÜREL,,,,,,,,"                          "
+MATH690.10,Desc.,M.S. THESIS,0,60,BETÜL TANBAY,,,,,,,,"                          "
+MATH700.01,Desc.,GRADUATE SEMINAR,0,1,BURAK GÜREL,,,Online,,,,,"                          "
+MATH790.01,Desc.,Ph.D.THESIS,0,120,BURAK GÜREL,,,,,,,,"                          "
+MATH790.02,Desc.,Ph.D.THESIS,0,120,AYHAN GÜNAYDIN,,,,,,,,"                          "
+MATH790.03,Desc.,Ph.D.THESIS,0,120,OLCAY COŞKUN,,,,,,,,"                          "
+MATH790.04,Desc.,Ph.D.THESIS,0,120,FERİT ÖZTÜRK,,,,,,,,"                          "
+MATH790.05,Desc.,Ph.D.THESIS,0,120,ALP BASSA,,,,,,,,"                          "

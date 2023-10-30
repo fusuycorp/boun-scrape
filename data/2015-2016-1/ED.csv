@@ -1,0 +1,25 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ED  501.01,Desc.,STATISTICS,4,8,BENGÜ BÖRKAN,MTTT,7123,,,30.12.2015,2,,"                          "
+ED  505.01,Desc.,ADVANCED RESEARCH METHODS,4,8,MELİKE ACAR,MMMM,2345,,,29.12.2015,1,,"                          "
+ED  521.01,Desc.,COUNSELING THEORIES & TECHNIQUES I,3,7,KADİR ÖZER,WWW,345,,,05.01.2016,1,,"                          "
+ED  528.01,Desc.,GROUP DYNAMICS & COUNSELING,3,8,DENİZ ALBAYRAK KAYMAK,WW,12,,,04.01.2016,1,,"                          "
+ED  541.01,Desc.,FUNDAMENTALS OF ADULT EDUCATION,3,7,RIFAT OKÇABOL,TBA,,,,06.01.2016,1,,"                          "
+ED  551.01,Desc.,DEVELOPMENTAL DISORDERS,3,7,ZEYNEP HANDE SART,MMW,899,,,09.01.2016,2,,"                          "
+ED  563.01,Desc.,COUNSELING PRACTICE I,2,10,FATOŞ ERKMAN,ThThTh,234,,,07.01.2016,3,,"                          "
+ED  585.01,Desc.,SP.TOP.IN EDUCATION,3,7,BENGÜ BÖRKAN,WWW,123,,,09.01.2016,3,,"        ED; GUID                  "
+ED  58F.01,Desc.,"SP.TP.EDUCATION,GLOBALIZATION&SOCIETY",3,7,FATMA GÖK,TBA,,,,11.01.2016,2,,"                          "
+ED  690.01,Desc.,MASTER THESIS,0,60,SİBEL AKMEHMET ŞEKERLER,,, ,,,0,,"                          "
+ED  690.02,Desc.,MASTER THESIS,0,60,DENİZ ALBAYRAK KAYMAK,,, ,,,0,,"                          "
+ED  690.03,Desc.,MASTER THESIS,0,60,BENGÜ BÖRKAN,,, ,,,0,,"                          "
+ED  690.04,Desc.,MASTER THESIS,0,60,AYŞE HAVVA CANER,,, ,,,0,,"                          "
+ED  690.05,Desc.,MASTER THESIS,0,60,FATOŞ ERKMAN,,, ,,,0,,"                          "
+ED  690.07,Desc.,MASTER THESIS,0,60,AYDAN GÜLERCE,,, ,,,0,,"                          "
+ED  690.08,Desc.,MASTER THESIS,0,60,ZEYNEP KIZILTEPE,,, ,,,0,,"                          "
+ED  690.09,Desc.,MASTER THESIS,0,60,ZEYNEP HANDE SART,,, ,,,0,,"                          "
+ED  690.11,Desc.,MASTER THESIS,0,60,ÖZLEM ÜNLÜHİSARCIKLI,,, ,,,0,,"                          "
+ED  690.12,Desc.,MASTER THESIS,0,60,FATMA GÖK,,, ,,,0,,"                          "
+ED  690.13,Desc.,MASTER THESIS,0,60,SERKAN ÖZEL,,, ,,,0,,"                          "
+ED  790.01,Desc.,Ph.D THESIS,0,120,AYŞE HAVVA CANER,TBA,,,,,0,,"                          "
+ED  790.02,Desc.,Ph.D THESIS,0,120,FATMA GÖK,TBA,,,,,0,,"                          "
+ED  790.03,Desc.,Ph.D THESIS,0,120,ZEYNEP KIZILTEPE,TBA,,,,,0,,"                          "
+ED  790.05,Desc.,Ph.D THESIS,0,120,ÖZLEM ÜNLÜHİSARCIKLI,TBA,,,,,0,,"                          "

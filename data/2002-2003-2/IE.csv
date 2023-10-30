@@ -1,0 +1,25 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+IE  202.01,Desc.,OPERATIONS RESEARCH I:LINEAR MODELS,4,6,İLHAN OR,MWWFF,21256,,,,,,"                          "
+IE  256.01,Desc.,STATISTICS FOR INDUSTRIAL ENGINEERS,3,5,WOLFGANG HOERMANN,TTThTh,1212,,,,,,"                          "
+IE  306.01,Desc.,SYSTEMS SIMULATION,4,6,ASLI SENCER,MMWFF,67323,,,,,,"                          "
+IE  312.01,Desc.,FACILITIES DESIGN & PLANNING,3,6,ÜMİT BİLGE,TTThTh,5656,,,,,,"                          "
+IE  320.01,Desc.,MATERIALS & PROCESSES IN MANUFACTURING,3,5,KEMAL BERKKAN,TTT,789,,,,,,"                          "
+IE  430.01,Desc.,ERGONOMICS & WORK STUDY,3,6,FAHRİ ÖZOK,MMM,789,,,,,,"                          "
+IE  443.01,Desc.,ENGINEERING INVESTMENT DECISIONS,3,6,DAVİD PİNHAS,MMW,343,,,,,,"                          "
+IE  480.01,Desc.,SP.TOP.:CASE STUDIES IN IE,3,6,ALİ RIZA KAYLAN,ThThTh,8910,,,,,,"                          "
+IE  482.01,Desc.,SP.TOP.:DATA MINING,3,6,İLKAY BODUROĞLU,MMTh,127,,,,,,"                          "
+IE  486.01,Desc.,SP.TOP.:FLEXIBLE MANUFACTURING,3,6,ÜMİT BİLGE,WFF,434,,,,,,"                          "
+IE  489.01,Desc.,SP.TOP.:ENERGY POLICY AND PLANNING,3,6,GÜRKAN KUMBAROĞLU,FFF,8910,,,,,,"                          "
+IE  491.01,Desc.,SPECIAL PROJECTS,3,6,ALİ RIZA KAYLAN,TBA,,,,,,,"                          "
+IE  496.01,Desc.,SP.TOP.:ROBUST DESIGN AND ENGINEERING,3,6,SUAT GENÇ,TTT,123,,,,,,"                          "
+IE  506.01,Desc.,STATISTICAL DATA ANALYSIS,3,7,ALİ RIZA KAYLAN,TTThTh,1234,,,,,,"                          "
+IE  542.01,Desc.,MANUFACTURING INFORMATION SYSTEMS,3,7,ALİ TAMER ÜNAL,FFF,567,,,,,,"                          "
+IE  544.01,Desc.,DECISION ANALYSIS,3,7,TANER BİLGİÇ,WWTh,121,,,,,,"                          "
+IE  579.01,Desc.,GRADUATE SEMINAR,0,2,ALİ TAMER ÜNAL,WWW,789,,,,,,"                          "
+IE  589.01,Desc.,SP.TOP.IN IE: INVENTORY THEORY ,3,7,TANER BİLGİÇ,FFF,234,,,,,,"                          "
+IE  598.01,Desc.,SP.PROJECTS IN IE .ADVANCED DYNAMICS MOD,3,7,YAMAN BARLAS,TBA,,,,,,,"                          "
+IE  602.01,Desc.,DYNAMIC SYSTEMS MODELING & ANALYSIS,3,7,YAMAN BARLAS,TTThTh,7878,,,,,,"                          "
+IE  604.01,Desc.,PRODUCTION SYSTEMS II,3,7,GÜLAY BARBAROSOĞLU,TTTh,455,,,,,,"                          "
+IE  611.01,Desc.,INTEGER PROGRAMMING,3,7,KUBAN ALTINEL,MMTT,1212,,,,,,"                          "
+IE  690.01,Desc.,M.S. THESIS,0,60,KUBAN ALTINEL,TBA,,,,,,,"                          "
+IE  790.01,Desc.,Ph.D. THESIS,0,120,KUBAN ALTINEL,TBA,,,,,,,"                          "

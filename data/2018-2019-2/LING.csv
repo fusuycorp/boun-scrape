@@ -1,0 +1,41 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CAU 101.01,Desc.,ELEMENTARY LAZ I,3,5,İSMAİL AVCI,WWW,567,,JF 101 | JF 101 | JF 101,24.05.2019,1,,"                          "
+CAU 102.01,Desc.,ELEMENTARY LAZ II,3,5,İSMAİL AVCI,WWW,8910,,JF 101 | JF 101 | JF 101,20.05.2019,1,,"                          "
+CAU 111.01,Desc.,ELEMENTARY KABARDIAN I,3,5,FATIMAT ZHILETEZHEVA,FFF,567,,NH 103 | NH 103 | NH 103,18.05.2019,1,,"                          "
+CAU 121.01,Desc.,ELEMENTARY ABKHAZ I,3,5,GUNDA ANKVAB,TTT,678,,JF 331 | JF 331 | JF 331,22.05.2019,1,,"                          "
+CAU 122.01,Desc.,ELEMENTARY ABKHAZ II,3,5,GUNDA ANKVAB,WWW,789,,EF 05 | EF 05 | EF 05,31.05.2019,1,,"                          "
+CAU 221.01,Desc.,INTERMEDIATE ABKHAZ I,3,5,GUNDA ANKVAB,TWW,556,,JF 331 | EF 05 | EF 05,28.05.2019,1,,"                          "
+LING101.01,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS I,3,7,ELENA GUERZONI,MMWW,5656,,NH 202 | NH 202 | NH 201 | NH 201,22.05.2019,2,,"                          "
+LING101.02,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS I,3,7,PAVEL LOGAÇEV,MMWW,5656,,M 1171 | M 1171 | NH 202 | NH 202,22.05.2019,2,,"                          "
+LING102.01,Desc.,INTRODUCTION TO LANGUAGE&LINGUISTICS II,3,7,DİDAR AKAR,MTTh,363,,M 1170 | NH 104 | TB 240,20.05.2019,1,,"                          "
+LING104.01,Desc.,PHONETICS,3,6,KADİR GÖKGÖZ,TTF,782,,NH 102 | NH 102 | M 1171,31.05.2019,3,,"                          "
+LING202.01,Desc.,MORPHOLOGY,3,6,MİNE NAKİPOĞLU,TTTh,345,,JF 333 | JF 333 | TB 310,22.05.2019,3,,"                          "
+LING206.01,Desc.,LANGUAGE TYPOLOGY,3,6,BALKIZ ÖZTÜRK,MWW,656,,TB 415 | M 2200 | M 2200,27.05.2019,3,,"                          "
+LING314.01,Desc.,SYNTAX&SEMANTICS OF MODERN TURKISH,3,7,BALKIZ ÖZTÜRK,MWTh,333,,NH 001 | M 2180 | M 2152,25.05.2019,3,,"                          "
+LING324.01,Desc.,HISTORICAL LINGUISTICS,3,6,STEFANO CANALIS,TWW,278,,JF 102 | TB 240 | TB 240,23.05.2019,2,,"                          "
+LING350.01,Desc.,STRUCTURE OF TURKISH SIGN LANGUAGE,3,6,SUMRU ÖZSOY,MWTh,444,,,21.05.2019,3,,"                          "
+LING412.01,Desc.,RESEARCH & WRITING,4,8,MİNE NAKİPOĞLU,,,,,,,,"                          "
+LING412.04,Desc.,RESEARCH & WRITING,4,8,PAVEL LOGAÇEV,,,,,,,,"                          "
+LING412.05,Desc.,RESEARCH & WRITING,4,8,KADİR GÖKGÖZ,,,,,,,,"                          "
+LING412.08,Desc.,RESEARCH & WRITING,4,8,DİDAR AKAR,,,,,,,,"                          "
+LING440.01,Desc.,ADVANCED SYNTAX,3,6,SUMRU ÖZSOY,MWTh,222,,JF 331 | M 1171 | JF 331,,,,"                          "
+LING48G.01,Desc.,SP.TP.GEORGIAN II,3,5,MANANA GURGENIDZE,MMM,789,,M 1181 | M 1181 | M 1181,20.05.2019,1,,"                          "
+LING48K.01,Desc.,SP.TP.GEORGIAN-I,3,6,MANANA GURGENIDZE,MMM,456,,M 1181 | M 1181 | M 1181,31.05.2019,2,,"                          "
+LING48N.01,Desc.,SP.TP.LANGUAGE AND COGNITION,3,6,MİNE NAKİPOĞLU,WWTh,567,,M 1200 | M 1200 | M 2230,21.05.2019,3,,"                          "
+LING501.01,Desc.,ASPECTS OF PHONOLOGY,4,10,STEFANO CANALIS,TTThTh,7856,,,,,,"                          "
+LING572.02,Desc.,READINGS IN LINGUISTICS II,1,5,MİNE NAKİPOĞLU,,,,,,,,"                          "
+LING579.01,Desc.,GRADUATE SEMINAR,0,5,ELENA GUERZONI,,,,,,,,"                          "
+LING581.01,Desc.,SP.TP.DEPEN.RESOLUTION.IN SENT.PROCESS.,4,10,PAVEL LOGAÇEV,TTWW,5612,,,,,,"                          "
+LING58C.01,Desc.,SP.TP.IN LINGS ADVANCED TP.IN SEMANTICS,4,10,ELENA GUERZONI,TTThTh,3434, ,,,,,"                          "
+LING58D.01,Desc.,SP.TP.ACQUISTION OF SYNTAX,4,10,KADİR GÖKGÖZ,TTFF,91056,,,,,,"                          "
+LING690.01,Desc.,MASTER THESIS,0,60,DİDAR AKAR,,,,,,,,"                          "
+LING690.02,Desc.,MASTER THESIS,0,60,ASLI GÖKSEL,,,,,,,,"                          "
+LING690.04,Desc.,MASTER THESIS,0,60,MİNE NAKİPOĞLU,,,,,,,,"                          "
+LING690.05,Desc.,MASTER THESIS,0,60,BALKIZ ÖZTÜRK,,,,,,,,"                          "
+LING690.06,Desc.,MASTER THESIS,0,60,ELENA GUERZONI,,,,,,,,"                          "
+LING690.07,Desc.,MASTER THESIS,0,60,PAVEL LOGAÇEV,,,,,,,,"                          "
+LING690.08,Desc.,MASTER THESIS,0,60,KADİR GÖKGÖZ,,,,,,,,"                          "
+LING790.01,Desc.,Ph.D THESIS,0,120,KADİR GÖKGÖZ,,,,,,,,"                          "
+LING790.02,Desc.,Ph.D THESIS,0,120,BALKIZ ÖZTÜRK,,,,,,,,"                          "
+TID 101.01,Desc.,ELEMENTARY TURKISH SIGN LANGUAGE I,3,5,SUMRU ÖZSOY,WWW,345,,JF 331 | JF 331 | JF 331,17.05.2019,1,,"                          "
+TID 102.01,Desc.,ELEMENTARY TURKISH SIGN LANGUAGE II,3,5,SUMRU ÖZSOY,WWW,789,,JF 331 | JF 331 | JF 331,16.05.2019,1,,"                          "

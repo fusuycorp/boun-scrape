@@ -1,0 +1,25 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+IE  120.01,Desc.,INFORMATION TECHNOLOGY FOR INDUST. ENGR.,3,2,NIJAZ BAJGORIC,TTThTh,5612,,,,,,"                          "
+IE  202.01,Desc.,OPERATIONS RESEARCH I:LINEAR MODELS,4,6,İLHAN OR,MWWThTh,44578,,,,,,"                          "
+IE  256.01,Desc.,STATISTICS FOR INDUSTRIAL ENGINEERS,3,5,AYTÜL ERÇİL,MMTT,1278,,,,,,"                          "
+IE  304.01,Desc.,OPERATIONS RESEARCH III:STOCHASTIC MOD.,4,6,GÜLAY BARBAROSOĞLU,MMTThTh,78767,,,,,,"                          "
+IE  306.01,Desc.,SYSTEMS SIMULATION,4,6,ALİ TAMER ÜNAL,TTThFF,78534,,,,,,"                          "
+IE  312.01,Desc.,PRODUCTION PLANNING I,3,6,ÜMİT BİLGE,MTTTh,4343,,,,,,"                          "
+IE  320.01,Desc.,MATERIALS & PROCESSES IN MANUFACTURING,3,5,KEMAL BERKKAN,WWWThTh,67812,,,,,,"                          "
+IE  414.01,Desc.,COMPUTER INTEGRATED MANUFACTURING SYSTEM,4,6,ÜMİT BİLGE,WThThFF,87834,,,,,,"                          "
+IE  424.01,Desc.,EXPLORATORY&GRAPHICAL METHODS FOR DATA..,3,6,AYTÜL ERÇİL,MTWW,6356,,,,,,"                          "
+IE  430.01,Desc.,ERGONOMICS,3,6,FAHRİ ÖZOK,,, ,,,,,"                          "
+IE  443.01,Desc.,ENGINEERING INVESTMENT DECISIONS,3,6,DAVİD PİNHAS,MMWW,2334,,,,,,"                          "
+IE  492.01,Desc.,PROJECT,4,8,KUBAN ALTINEL,TBA, ,,,,,,"                          "
+IE  495.01,Desc.,SP.TOP.IN IE:ENTERPRISE MODELING&INTEGRA,3,6,TANER BİLGİÇ,TThTh,656,,,,,,"                          "
+IE  498.01,Desc.,SPECIAL STUDIES NEW PRODUCT DEVELOPMENT,3,6,ATİLLA ÖNER,TTT,678,,,,,,"                          "
+IE  502.01,Desc.,OPTIMIZATION TECHNIQUES II,3,7,KUBAN ALTINEL,MMTT,1212,,,,,,"                          "
+IE  506.01,Desc.,STATISTICAL DATA ANALYSIS,3,7,ALİ RIZA KAYLAN,TWW,856,,,,,,"                          "
+IE  542.01,Desc.,MANUFACTURING INFORMATION SYSTEMS,3,7,ALİ TAMER ÜNAL,TTTh,458,,,,,,"                          "
+IE  544.01,Desc.,DECISION ANALYSIS,3,7,TANER BİLGİÇ,WThTh,112,,,,,,"                          "
+IE  579.01,Desc.,GRADUATE SEMINAR,0,2,ALİ RIZA KAYLAN,WWW,789,,,,,,"                          "
+IE  590.01,Desc.,SP.TOP.IN IE:ECONOMETRIC MOD.OF FINANC..,3,7,WOLFGANG HOERMANN,WWTh,343,,,,,,"                          "
+IE  594.01,Desc.,S.T.IN IE:FUNDAMENTALS OF CONCURRENT ENG,3,7,ALİ RIZA KAYLAN,TBA, ,,,,,,"                          "
+IE  604.01,Desc.,PRODUCTION SYSTEMS II,3,7,GÜLAY BARBAROSOĞLU,MMTh,453,,,,,,"                          "
+IE  690.01,Desc.,M.S. THESIS,0,60,İLHAN OR,,,,,,,,"                          "
+IE  790.01,Desc.,Ph.D. THESIS,0,120,İLHAN OR,,,,,,,,"                          "

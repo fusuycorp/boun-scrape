@@ -1,0 +1,34 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ED  101.01,Desc.,INTRODUCTION TO EDUCATION,3,5,RIFAT OKÇABOL,MMW,122,,YD 302 | YD 302 | YD 302,,,,"        CET; PRSC; PEDU; FLED; GUID; TPHY; CEDU; TCHE; MEDU; TMAT; PRSO; PRED; ED; PRMA                  "
+ED  101.02,Desc.,INTRODUCTION TO EDUCATION,3,5,DİLEK ÇANKAYA,TTTh,785,,YD 316 | YD 316 | YD 202,,,,"                          "
+ED  104.01,Desc.,SOCIAL FOUNDATIONS OF EDUCATION,3,6,AKI VIRTANEN-ERAYDIN,TTW,127,,YD 116 | YD 116 | YD 416,,,,"                          "
+ED  106.01,Desc.,SCHOOL EXPERIENCE I,3,5,ÖZLEM ÜNLÜHİSARCIKLI,T,5,,YD 302,,,,"                          "
+ED  208.01,Desc.,RESEARCH METHODOLOGY,4,6,AKI VIRTANEN-ERAYDIN,TTWThTh,78678,,YD 206 | YD 206 | YD 106 | YD 302 | YD 302,,,,"                          "
+ED  213.01,Desc.,DEVELOPMENT AND LEARNING,3,5,ÖZLEM ÜNLÜHİSARCIKLI,TThTh,334,,YD 116 | YD 406 | YD 406,,,,"                          "
+ED  262.01,Desc.,PLANNING & EVALUATION OF INSTRUCTION,4,7,GÜZVER YILDIRAN DE WEERDT,MMTTT,34345,,YD 406 | YD 406 | YD 406 | YD 406 | YD 406,,,,"                          "
+ED  262.05,Desc.,PLANNING & EVALUATION OF INSTRUCTION,4,7,ÖZLEM ÜNLÜHİSARCIKLI,TTThThTh,78567,,YD 304 | YD 304 | YD 406 | YD 406 | YD 406,,,,"                          "
+ED  270.01,Desc.,PROGRAM DEVELOPMENT & EVALUATION,4,6,FATOŞ ERKMAN,TTTThTh,45656,,YD 304 | YD 304 | YD 304 | YD 116 | YD 116,,,,"                          "
+ED  306.01,Desc.,COMPARATIVE EDUCATION,3,4,AKI VIRTANEN-ERAYDIN,WWTh,124,,YD 116 | YD 116 | YD 304,,,,"                          "
+ED  311.01,Desc.,DATA PROCESSING & ANALYSIS,4,5,AYŞESİM DİRİ,MMMMM,12345,,,,,,"                          "
+ED  328.01,Desc.,APPLIED RESEARCH,4,6,ZEYNEP HANDE SART,TTTThTh,23423,,ETB511 | ETB511 | ETB511 | YD 302 | YD 302,,,,"                          "
+ED  340.01,Desc.,CAREER DEVELOPMENT IN COUNSELING,3,5,NEVİN DÖLEK,MMM,567,,YD 118 | YD 118 | YD 118,,,,"                          "
+ED  382.01,Desc.,CLASSROOM MANAGEMENT ,3,6,AYŞE HAVVA CANER,MMTT,5656,,ETB511 | ETB511 | ETB511 | ETB511,,,,"                          "
+ED  382.02,Desc.,CLASSROOM MANAGEMENT ,3,6,AYŞE HAVVA CANER,MMTT,7878,,ETB511 | ETB511 | ETB511 | ETB511,,,,"                          "
+ED  382.03,Desc.,CLASSROOM MANAGEMENT ,3,6,SİBEL AKMEHMET ŞEKERLER,TTWW,3456,,YD 006 | YD 006 | YD 306 | YD 306,,,,"                          "
+ED  382.05,Desc.,CLASSROOM MANAGEMENT ,3,6,SİBEL AKMEHMET ŞEKERLER,WWFF,7878,, | N/A | YD 416 | YD 416,,,,"                          "
+ED  417.01,Desc.,CRISIS INTERVENTION,3,4,NEYLAN ÖZDEMİR,WWW,123,,,,,,"        GUID; PSY; ED                  "
+ED  434.01,Desc.,COUNSELING SKILLS II,4,6,SİBEL AKMEHMET ŞEKERLER,ThThThFF,67812,,YD 202 | YD 202 | YD 202,,,,"        GUID                  "
+ED  434.02,Desc.,COUNSELING SKILLS II,4,6,SİBEL AKMEHMET ŞEKERLER,WWThFF,13134,, | YD 104 | YD 302,,,,"        GUID                  "
+ED  442.01,Desc.,ADULT EDUCATION,3,5,RIFAT OKÇABOL,TTTW,6783,,YD 118 | YD 118 | YD 118 | YD 305,,,,"                          "
+ED  452.01,Desc.,EDUCATIONAL ADMINISTRATION,3,4,FATMA GÖK,TTW,455,,YD 416 | YD 416 | YD 302,,,,"                          "
+ED  472.01,Desc.,INDIVIDUAL STUDY,3,5,LEYLA NAVARO,TBA,,,,,,,"                          "
+ED  472.04,Desc.,INDIVIDUAL STUDY,3,5,PINAR İLKKARACAN,TBA,,,,,,,"                          "
+ED  474.01,Desc.,SEMINAR IN COUNSELING,3,4,ZEYNEP HANDE SART,WThTh,245,,YD 416 | ETB511 | ETB511,,,,"                          "
+ED  478.01,Desc.,FIELD PRACTICE,4,8,DENİZ ALBAYRAK KAYMAK,MMMWWWW,3456789,,YD 302 | YD 302 | N/A | YD 404 | YD 404,,,,"                          "
+ED  481.01,Desc.,SP.TOP.IN EDUCATION:ISSUES IN EDUCAT.RES,3,4,GÜZVER YILDIRAN DE WEERDT,MWW,534,,YD 304 | YD 302 | YD 302,,,,"                          "
+ED  483.01,Desc.,SPECIAL TOPICS IN EDUCATION,3,4,BARIŞ KORKMAZ,WWW,678,,YD 305 | YD 305 | YD 305,,,,"                          "
+ED  484.01,Desc.,SP.TOP.IN EDU.:CURRENT EDUCATIONAL POLIC,3,4,AYŞE HAVVA CANER,WWTh,893,,YD 401 | YD 401 | YD 304,,,,"                          "
+ED  485.01,Desc.,SP.TOP IN EDUCATION:QUALITATIVE RES.METH,3,4,AKI VIRTANEN-ERAYDIN,WThTh,412,,YD 305 | YD 117 | YD 117,,,,"                          "
+ED  488.01,Desc.,SP.TOP.IN EDUCATION: COUNSELING APPLICAT,3,4,MIRYAM ANJEL,TTT,678,,YD 204 | YD 204 | YD 204,,,,"                          "
+ED  493.01,Desc.,SP.STUD. IN ED.:EDUCATION AND GLOBAL,3,4,FATMA GÖK,TBA,,,,,,,"                          "
+ED  498.01,Desc.,SP.TOP.IN EDUCATION:INNOVATIVE TEACHING,3,4,HAYAL KÖKSAL,ThThTh,123,,ETB511 | ETB511 | ETB511,,,,"                          "

@@ -1,0 +1,17 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MIS 111.01,Desc.,ECONOMICS I,3,5,BERTAN YILMAZ BADUR,TTF,126,,,,,,"                          "
+MIS 124.01,Desc.,INTRODUCTION TO INFORMATION SYS.&TECH.,3,5,ASLI SENCER,WWW,678,,,,,,"                          "
+MIS 131.01,Desc.,PROBLEM SOLVING & ALGORITHMS,4,6,ZUHAL TANRIKULU,WWF,235,,,,,,"                          "
+MIS 143.01,Desc.,BUSINESS MATHEMATICS I,3,5,AYFER ECEVİT,MMTh,344,,,,,,"                          "
+MIS 213.01,Desc.,QUANTITATIVE TECHNIQUES,3,4,ASLI SENCER,WThTh,545,,,,,,"                          "
+MIS 233.01,Desc.,INTERMEDIATE PROGRAMMING,4,7,OSMAN NURİ DARCAN,MWW,423,,,,,,"                          "
+MIS 313.01,Desc.,QUANTITATIVE ANAL. FOR DECISION MAKING,3,5,SONA MARDİKYAN,MMTh,343,,,,,,"                          "
+MIS 321.01,Desc.,SYSTEM ANALYSIS & DESIGN,4,6,MELTEM ÖZTURAN,TTTh,232,,,,,,"                          "
+MIS 371.01,Desc.,INTERNET INFORMATION SERVICES,3,5,BİRGÜL KUTLU,FF,12,,,,,,"                          "
+MIS 462.01,Desc.,ADVANCED BUSINESS PROGRAMMING,4,5,OSMAN NURİ DARCAN,MMTh,674,,,,,,"                          "
+MIS 467.01,Desc.,DATA MINING,3,5,BERTAN YILMAZ BADUR,MMTh,341,,,,,,"                          "
+MIS 481.01,Desc.,SENIOR SEMINARS IN MIS,3,2,AYFER ECEVİT,WWW,678,,,,,,"                          "
+MIS 492.02,Desc.,PROJECT,4,8,OSMAN NURİ DARCAN,MM,89,,,,,,"                          "
+MIS 492.03,Desc.,PROJECT,4,8,MELTEM ÖZTURAN,MM,89,,,,,,"                          "
+MIS 492.04,Desc.,PROJECT,4,8,BERTAN YILMAZ BADUR,WW,34,,,,,,"                          "
+MIS 493.01,Desc.,SP TOP.IN MANAGEMENT INFORMTION SYSTEMS,3,5,HANDE TÜRKER,TTW,235,,,,,,"                          "

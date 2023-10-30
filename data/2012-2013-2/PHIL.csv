@@ -1,0 +1,36 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+PHIL105.01,Desc.,CRITICAL THINKING,3,6,KARANFİL SOYHUN,WFF,645,,NH 104 | M 2180 | M 2180,04.06.2013,1,,"        PHIL                  "
+,,P.S.,,,KARANFİL SOYHUN,TBA,,,,,0,,"        PHIL                  "
+PHIL106.01,Desc.,PHILOSOPHICAL TEXTS,3,7,MURAT BAÇ,TTW,562,,M 2200 | M 2200 | TB 490,,0,,"                          "
+,,P.S.,,,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL112.01,Desc.,INTRODUCTION TO MODERN PHILOSOPHY,3,5,MARK STEEN,TTTh,343,,KPARK1 | KPARK1 | TB 310,07.06.2013,2,"ED,LL,TKL,TR","                          "
+PHIL132.01,Desc.,LOGIC II,3,6,SUN DEMİRLİ,MMTh,562,,YD 106 | YD 106 | NH 102,07.06.2013,2,,"                          "
+,,P.S.,,,SUN DEMİRLİ,TBA,,,,,0,,"                          "
+PHIL214.01,Desc.,HISTORY OF PHILOSOPHY II,3,6,CHRYSSI SIDIROPOULOU,TWW,334,,NH 404 | NH 302 | NH 302,01.06.2013,2,,"                          "
+PHIL222.01,Desc.,PHILOSOPHY OF SCIENCE,3,6,BERNA KILINÇ,TTTh,786,,NH 301 | NH 301 | TB 490,28.05.2013,1,,"                          "
+PHIL314.01,Desc.,HISTORY OF PHILOSOPHY IV,3,6,JOHANNES FRITSCHE,MThTh,245,,M 2171 | TB 310 | TB 310,29.05.2013,1,,"                          "
+PHIL332.01,Desc.,ADVANCED LOGIC II,3,6,ALİ KARATAY,TFF,656,,M 2231 | M 2171 | M 2171,30.05.2013,1,,"                          "
+PHIL354.01,Desc.,SOCIAL & POLITICAL PHILOSOPHY,3,6,YILDIZ SİLİER,TTTh,232,,YD 02 | YD 02 | NH 103,07.06.2013,1,,"                          "
+PHIL382.01,Desc.,ONTOLOGY,3,7,İREM KURTSAL STEEN,MMW,347,,NH 103 | NH 103 | NH 402,06.06.2013,2,,"                          "
+PHIL414.01,Desc.,HISTORY OF ANALYTIC PHILOSOPHY,3,6,MARK STEEN,TThTh,278,,KPARK5 | NH 102 | NH 102,,0,,"                          "
+PHIL442.01,Desc.,ISSUES IN ETHICS,3,6,KARANFİL SOYHUN,WWW,234,,TB 130 | TB 130 | TB 130,,0,,"                          "
+PHIL444.01,Desc.,PHILOSOHY & LITERATURE,3,6,MELTEM GÜRLE,TTT,678,,NH 001 | NH 001 | NH 001,,0,,"                          "
+PHIL453.01,Desc.,FREEDOM ,3,6,YILDIZ SİLİER,FFF,234,,TB 490 | TB 490 | TB 490,,0,,"                          "
+PHIL464.01,Desc.,TRANS. OF PHILOSOPH. TEXTS INTO TURKISH,3,6,İLHAN İNAN,ThThTh,345,,NH 104 | NH 104 | NH 104,,0,,"                          "
+PHIL465.01,Desc.,ADVANCED STUDY OF PHILOSOPHICAL TEXTS,3,6,CHRYSSI SIDIROPOULOU,TTW,455,,NH 404 | NH 404 | NH 302,,0,,"                          "
+PHIL499.01,Desc.,INDEPENDENT STUDY,3,6,STEPHEN VOSS,,, ,,,0,,"                          "
+PHIL499.02,Desc.,INDEPENDENT STUDY,3,6,LUCAS THORPE,,, ,,,0,,"                          "
+PHIL505.01,Desc.,THEORY OF KNOWLEDGE,4,10,MURAT BAÇ,WWW,678,,TB 365 | TB 365 | TB 365,06.06.2013,1,,"                          "
+PHIL579.01,Desc.,GRADUATE SEMINAR,0,10,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL589.01,Desc.,READINGS IN PHILOSOPHY,1,10,MURAT BAÇ,TBA,,,,04.06.2013,1,,"                          "
+PHIL58H.01,Desc.,SP.TP.THE LATE KANT,4,10,LUCAS THORPE,ThThTh,678,,TB 365 | TB 365 | TB 365,29.05.2013,2,,"                          "
+PHIL58I.01,Desc.,SP.TP.DERRIDA,4,10,JOHANNES FRITSCHE,MMTh,452,,TB 130 | TB 130 | TB 130,07.06.2013,1,,"                          "
+PHIL58N.01,Desc.,SP.TP.EARLY MODERN PHIL.,4,10,SUN DEMİRLİ,FFF,345,,TB 130 | TB 130 | TB 130,27.05.2013,1,,"                          "
+PHIL58S.01,Desc.,SP.TP.CONCEPTS OF PHENOMENA,4,10,PINAR CANEVİ,TTT,678,,TB 130 | TB 130 | TB 130,28.05.2013,3,,"                          "
+PHIL58W.01,Desc.,"SP.TP.THE NATURAL,THE FUNDAMEN.&THE GOOD",4,10,İREM KURTSAL STEEN,WWW,234,,TB 365 | TB 365 | TB 365,04.06.2013,1,,"                          "
+PHIL590.01,Desc.,DIRECTED STUDY,4,10,STEPHEN VOSS,TBA,,,,27.05.2013,2,,"                          "
+PHIL648.01,Desc.,PHILOSOPHY OF LANGUAGE,4,10,İLHAN İNAN,MMM,678,,TB 130 | TB 130 | TB 130,31.05.2013,3,,"                          "
+PHIL676.01,Desc.,TOPICS IN LOGIC,4,,ALİ KARATAY,TTT,91011,,TB 240 | TB 240,01.06.2013,3,,"                          "
+PHIL689.01,Desc.,STUDIES IN PHILOSOPHY,1,2,MURAT BAÇ,TBA,,,,27.05.2013,1,,"                          "
+PHIL690.01,Desc.,MASTER THESIS,0,60,MURAT BAÇ,TBA,,,,,0,,"                          "
+PHIL790.01,Desc.,Ph.D THESIS,0,120,MURAT BAÇ,TBA,,,,,0,,"                          "

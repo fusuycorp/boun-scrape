@@ -1,0 +1,58 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EC  102.01,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,CEM BEHAR,TTTh,565,,IB 102 | IB 102 | NH 301,02.06.2009,3,AD-EC-POLS,"                          "
+EC  102.02,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,REFİK ERZAN,TTTh,565,,NB 119 | NB 119 | NB 119,02.06.2009,3,AD-EC-POLS,"                          "
+EC  102.03,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,KIVANÇ KARAMAN,TTTh,565,,NH 105 | NH 105 | NH 105,02.06.2009,3,AD-EC-POLS,"                          "
+EC  102.04,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,BEGÜM ÖZKAYNAK,TTTh,563,,NH 305 | NH 305 | YD 206,02.06.2009,3,ME-CE,"                          "
+EC  102.05,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,BURÇAY ERUS,MWW,356,,NH 404 | NB 119 | NB 119,02.06.2009,3,TR,"                          "
+EC  102.06,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,BURÇAY ERUS,MMW,564,,NH 301 | NH 301 | NB 119,02.06.2009,3,IE-EE,"                          "
+EC  102.07,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,ŞEMSA ÖZAR,TWTh,777,,NB 119 | NB 119 | IB 102,02.06.2009,3,CMPE-PHYS,"                          "
+EC  102.08,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,BURÇİN ÜNEL,TTTh,565,,YD 206 | YD 206 | NH 305,02.06.2009,3,CHE,"                          "
+EC  102.09,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,CEM BEHAR,TThTh,323,,NB 119 | NH 301 | NH 301,02.06.2009,3,ED,"                          "
+EC  102.10,Desc.,PRINCIPLES OF MACROECONOMICS,3,4,MEHMET İNHAN,FFF,678,,NB 119 | NB 119 | NB 119,02.06.2009,3,HIST-SOC,"                          "
+EC  205.01,Desc.,MACROECONOMICS I,3,5,PINAR  ARDIÇ,MMW,565,,NB 119 | NB 119 | NH 301,03.06.2009,3,AD,"                          "
+EC  206.01,Desc.,MICROECONOMICS II,3,5,BURÇİN ÜNEL,TThTh,423,,YD 206 | NH 403 | NH 403,09.06.2009,2,,"                          "
+EC  206.02,Desc.,MICROECONOMICS II,3,5,AYŞE MUMCU,MWW,267,,M 1100 | M 1200 | M 1200,09.06.2009,2,,"                          "
+EC  232.01,Desc.,STATISTICS II,4,6,ULAŞ AKKÜÇÜK,TTW,782,,IB 201 | IB 201 | NBZ 13,05.06.2009,2,AD,"                          "
+EC  232.02,Desc.,STATISTICS II,4,6,NESRİN OKAY AKMAN,TThTh,678,,IB 201 | IB 301 | IB 301,05.06.2009,2,AD,"                          "
+EC  234.01,Desc.,MATHEMATICAL STATISTICS II,3,5,GÜZİN GÜLSÜN AKIN,WWF,121,,IB 102 | IB 102 | NB 119,30.05.2009,1,,"                          "
+EC  234.02,Desc.,MATHEMATICAL STATISTICS II,3,5,BEGÜM ÖZKAYNAK,TThTh,856,,NH 202 | YD 206 | YD 206,30.05.2009,1,,"                          "
+EC  301.01,Desc.,ECONOMICS OF INDUSTRIAL ORGANIZATION,3,6,E. ÜNAL ZENGİNOBUZ,TThTh,445,,NBZ 11 | NBZ 11 | NBZ 11,06.06.2009,1,,"                          "
+EC  305.01,Desc.,URBAN ECONOMICS,3,6,GÜZİN GÜLSÜN AKIN,WWF,344,,IB 201 | IB 201 | NB 119,30.05.2009,2,,"                          "
+EC  306.01,Desc.,ADVANCED MICROECONOMICS,3,6,KIVANÇ KARAMAN,TThTh,723,,NH 305 | NB 119 | NB 119,09.06.2009,1,,"                          "
+EC  308.01,Desc.,ADVANCED MACROECONOMICS,3,6,PINAR  ARDIÇ,MMW,127,,NB 119 | NB 119 | NH 305,26.05.2009,1,,"                          "
+EC  332.01,Desc.,ADVANCED ECONOMETRICS,3,6,GÖKHAN ÖZERTAN,MWW,312,,NB 119 | NB 119 | NB 119,03.06.2009,3,,"                          "
+EC  344.01,Desc.,"MONEY, BANKING & FINANCIAL INSTITUTIONS",3,6,BURAK SALTOĞLU,TFF,323,,M 1200 | NB 119 | NB 119,05.06.2009,2,,"                          "
+EC  344.02,Desc.,"MONEY, BANKING & FINANCIAL INSTITUTIONS",3,6,LEVENT YILDIRAN,WWF,565,,NH 103 | NH 103 | NB 119,05.06.2009,2,,"                          "
+EC  352.01,Desc.,TOPICS IN PUBLIC FINANCE,3,6,E. ÜNAL ZENGİNOBUZ,TTTh,566,,NH 001 | NH 001 | NB 119,04.06.2009,3,,"                          "
+EC  362.01,Desc.,TOPICS IN INTERNATIONAL ECONOMICS,3,6,AHMET FARUK AYSAN,MMF,566,,M 1100 | M 1100 | M 2230,29.05.2009,1,,"                          "
+EC  406.01,Desc.,AGRICULTURAL ECONOMICS,3,6,GÖKHAN ÖZERTAN,MMW,565,,NBZ 11 | NBZ 11 | NBZ 11,01.06.2009,1,,"                          "
+EC  412.01,Desc.,TOPICS IN HIST. OF ECO. THOUGHT,3,6,FİKRET ADAMAN,TTTh,121,,M 1100 | M 1100 | NB 119,06.06.2009,3,,"                          "
+EC  433.01,Desc.,PROJECT EVALUATION,3,6,CEVAT KARATAŞ,MMM,678,,IB 102 | IB 102 | IB 102,08.06.2009,2,,"                          "
+EC  454.01,Desc.,TURKISH TAX SYTEMS,3,6,İZZETTİN ÖNDER,TTTh,121,,NBZ 11 | NBZ 11 | NBZ 11,01.06.2009,3,,"                          "
+EC  470.01,Desc.,TURKISH ECONOMY,3,6,REFİK ERZAN,TThTh,878,,NB 119 | NB 119 | NB 119,02.06.2009,2,,"                          "
+EC  474.01,Desc.,TOPICS IN INTERNATIONAL DEVELOPMENT,3,6,ŞEMSA ÖZAR,TWTh,444,,NB 119 | M 1100 | NB 119,28.05.2009,2,,"                          "
+EC  502.01,Desc.,MICRO-ECONOMICS II,4,8,AYŞE MUMCU,MMWW,3434,,NBB 10 | M 1152 | NBZ 12 | NBZ 12,02.06.2009,3,,"                          "
+EC  504.01,Desc.,MACRO-ECONOMICS II,4,8,OZAN HATİPOĞLU,MMWW,1212,,NBZ 11 | NBZ 11 | NBZ 11 | NBZ 11,30.05.2009,1,,"                          "
+EC  516.01,Desc.,ECONOMIC HISTORY OF TURKEY,3,7,ŞEVKET OSMAN PAMUK,ThThTh,678,,NBZ 12 | NBZ 12 | NBZ 12,28.05.2009,3,,"                          "
+EC  532.01,Desc.,ECONOMETRICS II,4,8,BURAK SALTOĞLU,TTFF,4545,,IB 301 | IB 301 | NBZ 10 | NBZ 10,27.05.2009,2,,"                          "
+EC  543.01,Desc.,ECONOMICS OF UNCERTAINTY&INFORMATION,3,7,BURÇİN ÜNEL,WWW,678,,NBZ 13 | NBZ 13 | NBZ 13,04.06.2009,3,,"                          "
+EC  579.01,Desc.,GRADUATE SEMINAR,0,5,BURAK SALTOĞLU,TBA,,,,,0,,"                          "
+EC  582.01,Desc.,SP.TOP.POL. EC. OF THE INFORMAL SECTOR,3,7,OZAN HATİPOĞLU,MWW,434,,NBB 10 | NBB 10 | NBB 10,06.06.2009,3,,"                          "
+EC  583.01,Desc.,SEL.TOP.IN FINANCIAL MARKETS& REGULATION,3,7,AHMET FARUK AYSAN,MFF,723,,NBZ 10 | NBB 10 | NBB 10,01.06.2009,3,,"                          "
+EC  584.01,Desc.,SP.TOP.IN BANKING & FİNANCE,3,7,LEVENT YILDIRAN,FFF,123,,NBZ 10 | NBZ 10 | NBZ 10,06.06.2009,1,,"                          "
+EC  58A.01,Desc.,SP.TOP.IN MICROECONOMICS,3,7,E. ÜNAL ZENGİNOBUZ,TBA,,,,05.06.2009,2,,"                          "
+EC  58B.01,Desc.,SP.TOP.IN MACROECONOMICS,3,7,PINAR  ARDIÇ,TBA,,,,03.06.2009,2,,"                          "
+EC  58C.01,Desc.,SP.TOP.IN APPLIED ECONOMICS,3,7,BURÇAY ERUS,TBA,,,,26.05.2009,1,,"                          "
+EC  599.01,Desc.,TERM PROJECT,0,13,GÖKHAN ÖZERTAN,TBA,,,,03.06.2009,3,,"                          "
+EC  599.02,Desc.,TERM PROJECT,0,13,REFİK ERZAN,TBA,,,,03.06.2009,3,,"                          "
+EC  599.03,Desc.,TERM PROJECT,0,13,E. ÜNAL ZENGİNOBUZ,TBA,,,,03.06.2009,3,,"                          "
+EC  599.04,Desc.,TERM PROJECT,0,13,BEGÜM ÖZKAYNAK,TBA,,,,03.06.2009,3,,"                          "
+EC  690.01,Desc.,MASTER THESIS,0,60,PINAR  ARDIÇ,TBA,,,,,0,,"                          "
+EC  690.02,Desc.,MASTER THESIS,0,60,AYŞE MUMCU,TBA,,,,,0,,"                          "
+EC  690.03,Desc.,MASTER THESIS,0,60,OZAN HATİPOĞLU,TBA,,,,,0,,"                          "
+EC  690.05,Desc.,MASTER THESIS,0,60,BURAK SALTOĞLU,TBA,,,,,0,,"                          "
+EC  690.06,Desc.,MASTER THESIS,0,60,ŞEMSA ÖZAR,TBA,,,,,0,,"                          "
+EC  690.07,Desc.,MASTER THESIS,0,60,KIVANÇ KARAMAN,TBA,,,,,0,,"                          "
+EC  690.08,Desc.,MASTER THESIS,0,60,GÜZİN GÜLSÜN AKIN,TBA,,,,,0,,"                          "
+EC  690.09,Desc.,MASTER THESIS,0,60,LEVENT YILDIRAN,TBA,,,,,0,,"                          "
+EC  690.11,Desc.,MASTER THESIS,0,60,AHMET FARUK AYSAN,TBA,,,,,0,,"                          "

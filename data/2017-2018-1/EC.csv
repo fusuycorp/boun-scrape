@@ -1,0 +1,63 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+EC  101.01,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,ŞEMSA ÖZAR,TTTh,565,,NB 119 | NB 119 | NH 101,25.12.2017,2,"AD,EC,POLS","                          "
+EC  101.02,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,BURÇAY ERUS,TTTh,565,,NH 101 | NH 101 | NH 301,25.12.2017,2,"AD,EC,POLS","                          "
+EC  101.03,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,GÖKHAN ÖZERTAN,TTTh,565,,NH 105 | NH 105 | NH 105,25.12.2017,2,"AD,EC,POLS","                          "
+EC  101.04,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,MEHMET YİĞİT GÜRDAL,MMW,565,,NB 119 | NB 119 | NB 119,25.12.2017,2,CE,"                          "
+EC  101.05,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,AYŞE MUMCU,MMW,343,,NH 105 | NH 105 | NH 401,25.12.2017,2,"CHE,EE","                          "
+EC  101.07,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,ORHAN AYGÜN,MWW,678,,NH 301 | NH 301 | NH 301,25.12.2017,2,"CMPE,IE","                          "
+EC  101.08,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,AYLA TÜRKYILMAZ,WWW,678,,NH 305 | NH 305 | NH 305,25.12.2017,2,"GUID,PSY,SOC","        TRM; INTT; MIS                  "
+EC  101.09,Desc.,PRINCIPLES OF MICROECONOMICS,3,6,RIFAT BARIŞ TEKİN,FFF,234,,NB 119 | NB 119 | NB 119,25.12.2017,2,"ME,PHYS","                          "
+EC  103.01,Desc.,ORIENTATION TO ECONOMICS,1,1,TOLGA UMUT KUZUBAŞ,M,8,,NB 119,,,,"                          "
+EC  203.01,Desc.,MICROECONOMICS I,3,6,LEVENT YILDIRAN,TTTh,343,,NB 119 | NB 119 | EF 106,02.01.2018,3,"AD,EC","                          "
+EC  203.02,Desc.,MICROECONOMICS I,3,6,MURAT KIRDAR,TTTh,343,,NH 404 | NH 404 | NB 119,02.01.2018,3,"AD,EC","                          "
+EC  203.03,Desc.,MICROECONOMICS I,3,6,E. ÜNAL ZENGİNOBUZ,TThTh,656,,İB 102 | NB 119 | NB 119,02.01.2018,3,"AD,EC","                          "
+EC  205.01,Desc.,MACROECONOMICS I,3,6,ORHAN TORUL,MWW,534,,NH 105 | NB 119 | NB 119,22.12.2017,3,,"                          "
+EC  205.02,Desc.,MACROECONOMICS I,3,6,ORHAN TORUL,MWW,678,,NH 105 | NH 103 | NH 103,22.12.2017,3,,"                          "
+EC  223.01,Desc.,MATHEMATICS FOR ECONOMISTS,3,6,OZAN HATİPOĞLU,MWW,112,Online,NB 119 | M 1100 | M 1100,25.12.2017,2,,"                          "
+EC  223.02,Desc.,MATHEMATICS FOR ECONOMISTS,3,6,EMEKCAN YÜCEL,MWW,478,Online,EF 05 | NH 402 | NH 402,25.12.2017,2,,"                          "
+EC  233.01,Desc.,MATHEMATICAL STATISTICS I,3,6,BEGÜM ÖZKAYNAK,WFF,523,,NH 301 | NH 203 | NH 203,20.12.2017,2,,"                          "
+EC  233.02,Desc.,MATHEMATICAL STATISTICS I,3,6,BEGÜM ÖZKAYNAK,WFF,656,,NH 301 | NB 119 | NB 119,20.12.2017,2,,"                          "
+EC  331.01,Desc.,ECONOMETRICS,3,6,BURÇAY ERUS,TThTh,323,,NH 202 | NH 104 | NH 104,22.12.2017,3,,"                          "
+EC  331.02,Desc.,ECONOMETRICS,3,6,GÖKHAN ÖZERTAN,TThTh,323,,NH 302 | NH 102 | NH 102,22.12.2017,3,,"                          "
+EC  344.01,Desc.,"MONEY, BANKING & FINANCIAL INSTITUTIONS",3,6,LEVENT YILDIRAN,TThTh,656,,EF 206 | NH 401 | NH 401,29.12.2017,1,,"                          "
+EC  344.02,Desc.,"MONEY, BANKING & FINANCIAL INSTITUTIONS",3,6,BURAK SALTOĞLU,TFF,423,,NH 202 | NH 103 | NH 103,29.12.2017,1,,"                          "
+EC  351.01,Desc.,PUBLIC FINANCE,3,6,FİKRET ADAMAN,TTTh,124,,NH 103 | NH 103 | NH 104,28.12.2017,1,,"                          "
+EC  361.01,Desc.,INTERNATIONAL ECONOMICS,3,6,TOLGA UMUT KUZUBAŞ,TTTh,121,Online,NB 119 | NB 119 | M 1100,26.12.2017,3,,"                          "
+EC  361.02,Desc.,INTERNATIONAL ECONOMICS,3,6,MALİK ÇÜRÜK,MMW,122,Online,NH 202 | NH 202 | NH 103,26.12.2017,3,,"                          "
+EC  411.01,Desc.,HISTORY OF ECONOMIC THOUGHT,3,6,FİKRET ADAMAN,TThTh,556,,M 1100 | NH 405 | NH 405,03.01.2018,1,,"                          "
+EC  471.01,Desc.,GROWTH AND DEVELOPMENT,3,6,CEYHUN ELGİN,TThTh,323,,NH 303 | EF 116 | EF 116,28.12.2017,2,,"                          "
+EC  471.02,Desc.,GROWTH AND DEVELOPMENT,3,6,ŞEMSA ÖZAR,TThTh,878,,İB 211 | NH 103 | NH 103,28.12.2017,2,,"                          "
+EC  480.01,Desc.,SP.TP.TURKISH BANKING SECTOR,3,6,AHMET BURAK EMEL,TTT,789,,NB Z13 | NB Z13 | NB Z13,03.01.2018,2,,"                          "
+EC  482.01,Desc.,"SP.TOP.:INSTITUTIONS,DEVELOPMENT&HISTORY",3,6,KIVANÇ KARAMAN,MWW,434, ,NB 119 | M 2152 | M 2152,27.12.2017,3,,"                          "
+EC  48C.01,Desc.,SP.TP.ENVIRONMENTAL&ECONOMIC POLICIES,3,6,VESİLE KULAÇOĞLU,WWW,789,,NB Z12 | NB Z12 | NB Z12,21.12.2017,2,,"                          "
+EC  48F.01,Desc.,SP.TP.IN GOVERNANCE,3,6,İZZETTİN ÖNDER,WWW,678,,EF 02 | EF 02 | EF 02,21.12.2017,2,,"                          "
+EC  48V.01,Desc.,SP.TP.BANKING AND FINANCE,3,6,AYHAN YÜKSEL,MMM,678,,NH 303 | NH 303 | NH 303,28.12.2017,3,,"                          "
+EC  48X.01,Desc.,"SP.TP.IN INT.TRADE,INVESTMENT&GLOBAL.",3,6,SABRİ ARHAN ERTAN,FFF,456,,M 2180 | M 2180 | M 2180,25.12.2017,3,,"                          "
+EC  48Z.01,Desc.,SP.TP.IN MATCHING THEORY,3,6,ORHAN AYGÜN,MMW,345, ,NB Z11 | NB Z11 | İB 312,,,,"                          "
+EC  501.01,Desc.,MICRO-ECONOMICS I,4,8,AYŞE MUMCU,MMWW,5667,,NH 302 | NH 302 | NB Z10 | NB Z10,27.12.2017,2,,"                          "
+EC  503.01,Desc.,MACRO-ECONOMICS I,4,8,TOLGA UMUT KUZUBAŞ,TTThTh,5656,,NB Z12 | NB Z12 | NB Z13 | NB Z13,19.12.2017,3,,"                          "
+EC  521.01,Desc.,MATHEMATICAL METHODS FOR ECONOMICS I,4,7,EMEKCAN YÜCEL,MMWW,1223,,NB B10 | NB B10 | NB Z13 | NB Z13,03.01.2018,1,,"                          "
+EC  531.01,Desc.,ECONOMETRICS I,4,8,MURAT KIRDAR,TTThTh,7878,,NB Z12 | NB Z12 | M 2171 | M 2171,20.12.2017,2,,"                          "
+EC  579.01,Desc.,GRADUATE SEMINAR,0,5,CEYHUN ELGİN,FF,78,,NB Z10 | NB Z10,,0,,"                          "
+EC  583.01,Desc.,SEL.TOP.IN FINANCIAL MARKETS& REGULATION,3,7,AHMET FARUK AYSAN,MMM,678,,İB 211 | İB 211 | İB 211,02.01.2018,2,,"                          "
+EC  58L.01,Desc.,SP.TP.MACRO ECONOMETRICS,3,7,OZAN HATİPOĞLU,MMW,233, ,NB Z12 | NB Z12,19.12.2017,3,,"                          "
+EC  599.05,Desc.,TERM PROJECT,0,13,CEYHUN ELGİN,TBA,,,,19.12.2017,1,,"                          "
+EC  599.11,Desc.,TERM PROJECT,0,13,TOLGA UMUT KUZUBAŞ,TBA,,,,19.12.2017,1,,"                          "
+EC  601.01,Desc.,ADVANCED MICROECONOMICS I,4,11,MEHMET YİĞİT GÜRDAL,WWW,678,,M 2170 | M 2170 | M 2170,,,,"                          "
+EC  603.01,Desc.,ADVANCED MACROECONOMICS I,4,11,MALİK ÇÜRÜK,TTT,567,,NB B10 | NB B10 | NB B10,,,,"                          "
+EC  690.01,Desc.,MASTER THESIS,0,60,FİKRET ADAMAN,TBA,,,,,0,,"                          "
+EC  690.03,Desc.,MASTER THESIS,0,60,ORHAN AYGÜN,TBA,,,,,,,"                          "
+EC  690.04,Desc.,MASTER THESIS,0,60,MALİK ÇÜRÜK,TBA,,,,,,,"                          "
+EC  690.05,Desc.,MASTER THESIS,0,60,CEYHUN ELGİN,TBA,,,,,,,"                          "
+EC  690.06,Desc.,MASTER THESIS,0,60,BURÇAY ERUS,TBA,,,,,,,"                          "
+EC  690.07,Desc.,MASTER THESIS,0,60,MEHMET YİĞİT GÜRDAL,TBA,,,,,,,"                          "
+EC  690.08,Desc.,MASTER THESIS,0,60,OZAN HATİPOĞLU,TBA,,,,,,,"                          "
+EC  690.09,Desc.,MASTER THESIS,0,60,KIVANÇ KARAMAN,TBA,,,,,,,"                          "
+EC  690.10,Desc.,MASTER THESIS,0,60,MURAT KIRDAR,TBA,,,,,,,"                          "
+EC  690.11,Desc.,MASTER THESIS,0,60,TOLGA UMUT KUZUBAŞ,TBA,,,,,,,"                          "
+EC  690.13,Desc.,MASTER THESIS,0,60,ŞEMSA ÖZAR,TBA,,,,,,,"                          "
+EC  690.14,Desc.,MASTER THESIS,0,60,GÖKHAN ÖZERTAN,TBA,,,,,,,"                          "
+EC  690.15,Desc.,MASTER THESIS,0,60,BEGÜM ÖZKAYNAK,TBA,,,,,,,"                          "
+EC  690.16,Desc.,MASTER THESIS,0,60,BURAK SALTOĞLU,TBA,,,,,,,"                          "
+EC  790.01,Desc.,Ph.D THESIS,0,120,FİKRET ADAMAN,TBA,,,,,,,"                          "
+EC  790.02,Desc.,Ph.D THESIS,0,120,BURÇAY ERUS,TBA,,,,,,,"                          "

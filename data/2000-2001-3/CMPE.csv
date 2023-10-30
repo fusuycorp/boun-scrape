@@ -1,0 +1,7 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CMPE150.01,Desc.,INTRODUCTION TO COMPUTING(PASCAL),3,5,AYŞE BAŞAR,MMWWWW,561278,,,,,,"                          "
+CMPE150.02,Desc.,INTRODUCTION TO COMPUTING(C LANGUAGE),3,5,AYŞE BAŞAR,TTWWThTh,561278,,,,,,"        CMPE                  "
+CMPE160.01,Desc.,INTERMEDIATE PROGRAMMING,4,9,SADIK FİKRET GÜRGEN,MMTTWW,676767,,,,,,"                          "
+CMPE230.01,Desc.,SYSTEMS PROGRAMMING,4,6,CAN ÖZTURAN,TTWWThTh,121212,,,,,,"                          "
+CMPE250.01,Desc.,DATA STRUCTURES & ALGORITHMS,4,6,SADIK FİKRET GÜRGEN,MMTTWW,343434,,,,,,"                          "
+CMPE321.01,Desc.,INTRODUCTION TO DATABASE SYSTEMS,4,6,TAFLAN GÜNDEM,TTWWFF,565656,,,,,,"                          "

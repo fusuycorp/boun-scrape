@@ -1,0 +1,14 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CMPE150.01,Desc.,INTRODUCTION TO COMPUTING,3,5,SADIK FİKRET GÜRGEN,MMWW,7878,,ETA A2 | ETA A2 | ETA A2 | ETA A2,,,,"                          "
+CMPE150.02,Desc.,INTRODUCTION TO COMPUTING,3,5,TAFLAN GÜNDEM,MMWW,7878,,ETA A2 | ETA A2 | ETA A2 | ETA A2,,,,"        CMPE                  "
+CMPE150.03,Desc.,INTRODUCTION TO COMPUTING,3,5,AYŞE BAŞAR,MMWW,7878,,ETA A2 | ETA A2 | ETA A2 | ETA A2,,,,"        CMPE                  "
+CMPE150.04,Desc.,INTRODUCTION TO COMPUTING,3,5,TAFLAN GÜNDEM,TTThTh,7878,,ETA A2 | ETA A2 | ETA A2 | ETA A2,,,,"                          "
+CMPE160.01,Desc.,INTRODUCTION TO OBJECT ORIENTED PROG.,4,9,SADIK FİKRET GÜRGEN,MMTTWW,121212,,ETA A2 | ETA A2 | ETA A2 | ETA A2 | ETA A2 | ETA A2,,,,"                          "
+CMPE250.01,Desc.,DATA STRUCTURES & ALGORITHMS,4,6,SADIK FİKRET GÜRGEN,MMTTWW,343434,,ETA A2 | ETA A2 | ETA A2 | ETA A2 | ETA A2 | ETA A2,,,,"                          "
+CMPE300.01,Desc.,ANALYSIS OF ALGORITHMS,3,5,TUNGA GÜNGÖR,TTWWThTh,787878,,ETA A2 | ETA A2 | ETA A3 | ETA A3 | ETA A2 | ETA A2,,,,"                          "
+CMPE320.01,Desc.,PRINCIPLES OF PROGRAMMING LANGUAGES,3,6,TUNGA GÜNGÖR,TTWWThTh,343434,,ETA A3 | ETA A3 | ETA A3 | ETA A3 | ETA A2 | ETA A2,,,,"                          "
+CMPE321.01,Desc.,INTRODUCTION TO DATABASE SYSTEMS,4,6,TAFLAN GÜNDEM,MMWWFF,565656,,ETA A2 | ETA A2 | ETA A2 | ETA A2 | ETA A2 | ETA A2,,,,"                          "
+CMPE322.01,Desc.,OPERATING SYSTEMS,4,5,M. UFUK ÇAĞLAYAN,TTWWThTh,567856,,ETA A3 | ETA A3 | ETA A6 | ETA A6 | ETA A2 | ETA A2,,,,"                          "
+CMPE475.01,Desc.,COMPUTER NETWORKS,3,6,M. UFUK ÇAĞLAYAN,TTWWThTh,123412,,ETA A3 | ETA A3 | ETA A6 | ETA A6 | ETA A2 | ETA A2,,,,"                          "
+ENG 101.02,Desc.,INTRODUCTION TO COMPUTERS,3,7,TUNGA GÜNGÖR,TTThTh,5656,,ETA A4 | ETA A4 | ETA A4 | ETA A4,,,,"                          "
+ENG 101.03,Desc.,INTRODUCTION TO COMPUTERS,3,7,AYŞE BAŞAR,TTThTh,5656,,ETA A4 | ETA A4 | ETA A4 | ETA A4,,,,"                          "

@@ -1,0 +1,62 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+AL  311.01,Desc.,SURVEY OF AMERICAN LIT. FROM 17-19 CENTU,3,6,KIM FORTUNY,MWW,556, ,M 1170 | JF 108 | JF 108,03.01.2023,3,,"                          "
+AL  311.02,Desc.,SURVEY OF AMERICAN LIT. FROM 17-19 CENTU,3,6,BURCU KAYIŞÇI AKKOYUN,TTTh,673, ,NH 404 | NH 404 | M 2230,03.01.2023,3,,"                          "
+AL  480.01,Desc.,SP.TP.EDITH WHARTON IN CONTEXT,3,6,MYRTO DRIZOU,WFF,323, ,EF 204 | M 1170 | M 1170,04.01.2023,1,,"                          "
+AL  481.01,Desc.,SP.TP.:TEXT&IMAGE CONTEMP AMER.FIC.,3,6,NAZ BULAMUR,TFF,423, ,JF 102 | M 1171 | M 1171,10.01.2023,1,,"                          "
+CL  103.01,Desc.,CLASSICAL LITERATURE,3,6,MATTHEW GUMPERT,MMW,787, ,EF 204 | EF 204 | TB 415,13.01.2023,1,,"                          "
+CL  103.02,Desc.,CLASSICAL LITERATURE,3,6,ÖZLEM ÖĞÜT,MMW,784, ,TB 490 | TB 490 | M 2231,13.01.2023,1,,"                          "
+CL  205.01,Desc.,LITERARY THEORY&CRITICISM I,3,6,MATTHEW GUMPERT,MWW,334, ,TB 490 | M 2200 | M 2200,09.01.2023,3,,"                          "
+CL  205.02,Desc.,LITERARY THEORY&CRITICISM I,3,6,HANDE TEKDEMİR,MWW,334, ,TB 415 | TB 415 | TB 415,09.01.2023,3,,"                          "
+CL  307.01,Desc.,LITERARY THEORY&CRITICISM III,3,6,ÖZLEM ÖĞÜT,MWW,478, ,TB 415 | TB 240 | TB 240,02.01.2023,1,,"                          "
+CL  307.02,Desc.,LITERARY THEORY&CRITICISM III,3,6,AYLİN ALKAÇ,WFF,878, ,JF 331 | M 1171 | M 1171,02.01.2023,1,,"                          "
+CL  452.01,Desc.,ANALYSIS OF POETRY,4,7,ÖZLEM GÖREY,TTTh,673, ,TB 415 | TB 415 | M 2181,30.12.2022,2,,"                          "
+CL  484.01,Desc.,SP.TP.ECOPOETICS,3,6,KIM FORTUNY,MMW,788, ,M 1171 | M 1171 | M 1181,13.01.2023,1,,"                          "
+DRA 403.01,Desc.,MODERN DRAMA,3,6,ASLI TEKİNAY,TThTh,445, ,TB 415 | TB 415 | TB 415,09.01.2023,2,,"                          "
+DRA 403.02,Desc.,MODERN DRAMA,3,6,EMİNE FİŞEK,MWW,356, ,JF 333 | M 2180 | M 2180,09.01.2023,2,,"                          "
+EL  101.01,Desc.,SURVEY OF ENG.LIT.FROM OLD ENG.PERIOD TO,3,6,ÖZLEM GÖREY,TThTh,445, ,M 1170 | M 2181 | M 2181,02.01.2023,2,"LL,TENG","                          "
+,,P.S.,,,ÖZLEM GÖREY,T,8,,TB 415,,0,"LL,TENG","                          "
+EL  101.02,Desc.,SURVEY OF ENG.LIT.FROM OLD ENG.PERIOD TO,3,6,BURCU KAYIŞÇI AKKOYUN,TThTh,445, ,NH 403 | M 2230 | M 2230,02.01.2023,2,"LL,TENG","                          "
+,,P.S.,,,BURCU KAYIŞÇI AKKOYUN,T,8,,NH 404,,0,"LL,TENG","                          "
+EL  101.03,Desc.,SURVEY OF ENG.LIT.FROM OLD ENG.PERIOD TO,3,6,MELİH LEVI,TThTh,445, ,M 2181 | M 2152 | M 2152,02.01.2023,2,"LL,TENG","                          "
+,,P.S.,,,MELİH LEVI,T,8,,M 1171,,0,"LL,TENG","                          "
+EL  101.04,Desc.,SURVEY OF ENG.LIT.FROM OLD ENG.PERIOD TO,3,6,N.CİHAN YURDAÜN,TThTh,445, ,M 1171 | NH 001 | NH 001,02.01.2023,2,"LL,TENG","                          "
+,,P.S.,,,N.CİHAN YURDAÜN,T,8,,M 1200,,0,"LL,TENG","                          "
+EL  201.01,Desc.,MEDIEVAL ENGLISH LITERATURE,3,6,JAMESON J.KISMET BELL,TFF,423, ,M 2180 | TB 240 | TB 240,06.01.2023,1,,"                          "
+EL  201.02,Desc.,MEDIEVAL ENGLISH LITERATURE,3,6,EMİNE FİŞEK,MMW,568, ,TB 415 | TB 415 | TB 415,06.01.2023,1,,"                          "
+EL  303.02,Desc.,RESTORATION AND AUGUSTAN LITERATURE,3,6,NAZ BULAMUR,TTF,236, ,M 1170 | M 1170 | M 1170,07.01.2023,3,,"                          "
+EL  303.03,Desc.,RESTORATION AND AUGUSTAN LITERATURE,3,6,JAMESON J.KISMET BELL,TTF,236, ,NB B10 | NB B10 | TB 415,07.01.2023,3,,"                          "
+EL  405.01,Desc.,VICTORIAN POETRY & PROSE,3,6,MELİH LEVI,TTTh,232, ,M 2181 | M 2181 | TB 490,05.01.2023,1,,"                          "
+EL  405.02,Desc.,VICTORIAN POETRY & PROSE,3,6,HANDE TEKDEMİR,MMW,567, ,M 1171 | M 1171 | JF 108,05.01.2023,1,,"                          "
+EL  412.01,Desc.,SENIOR THESIS,3,6,AYLİN ALKAÇ,,, ,,,,,"                          "
+EL  412.02,Desc.,SENIOR THESIS,3,6,NAZ BULAMUR,,, ,,,,,"                          "
+EL  412.03,Desc.,SENIOR THESIS,3,6,BAŞAK DEMİRHAN,,, ,,,,,"                          "
+EL  412.04,Desc.,SENIOR THESIS,3,6,MYRTO DRIZOU,,, ,,,,,"                          "
+EL  412.05,Desc.,SENIOR THESIS,3,6,EMİNE FİŞEK,,, ,,,,,"                          "
+EL  412.06,Desc.,SENIOR THESIS,3,6,KIM FORTUNY,,, ,,,,,"                          "
+EL  412.07,Desc.,SENIOR THESIS,3,6,MELİH LEVI,,, ,,,,,"                          "
+EL  412.08,Desc.,SENIOR THESIS,3,6,MATTHEW GUMPERT,,, ,,,,,"                          "
+EL  412.09,Desc.,SENIOR THESIS,3,6,BURCU KAYIŞÇI AKKOYUN,,, ,,,,,"                          "
+EL  412.10,Desc.,SENIOR THESIS,3,6,JAMESON J.KISMET BELL,,, ,,,,,"                          "
+EL  412.11,Desc.,SENIOR THESIS,3,6,ÖZLEM ÖĞÜT,,, ,,,,,"                          "
+EL  412.12,Desc.,SENIOR THESIS,3,6,HANDE TEKDEMİR,,, ,,,,,"                          "
+EL  412.13,Desc.,SENIOR THESIS,3,6,ASLI TEKİNAY,,, ,,,,,"                          "
+EL  412.14,Desc.,SENIOR THESIS,3,6,N.CİHAN YURDAÜN,,, ,,,,,"                          "
+EL  48C.01,Desc.,SP.TP.HUMAN THROUGH THE POSTHUMAN IN FICTION,3,6,N.CİHAN YURDAÜN,TFF,545, ,M 1171 | M 1170 | M 1170,06.01.2023,3,,"                          "
+EL  48D.01,Desc.,SP.TP.REALISM IN THE NINETEENTH CENTURY ENGLISH NOVEL,3,6,BAŞAK DEMİRHAN,WFF,378, ,M 1170 | M 1200 | M 1200,12.01.2023,1,,"                          "
+EL  690.02,Desc.,MASTER THESIS,0,60,NAZ BULAMUR,,, ,,,,,"                          "
+EL  690.05,Desc.,MASTER THESIS,0,60,ÖZLEM GÖREY,,, ,,,,,"                          "
+EL  690.06,Desc.,MASTER THESIS,0,60,HANDE TEKDEMİR,,, ,,,,,"                          "
+ENGL105.01,Desc.,INTRODUCTION TO LITERARY FORMS I,3,6,AYLİN ALKAÇ,WWF,564, ,NH 202 | NH 202 | M 1171,10.01.2023,3,"LL,TR","                          "
+ENGL105.02,Desc.,INTRODUCTION TO LITERARY FORMS I,3,6,MYRTO DRIZOU,WWF,564, ,NH 303 | NH 303 | NH 303,10.01.2023,3,"LL,TR","                          "
+ENGL105.03,Desc.,INTR1ODUCTION TO LITERARY FORMS I,3,6,BAŞAK DEMİRHAN,WWF,564, ,NH 203 | NH 203 | M 1100,10.01.2023,3,"LL,TR","                          "
+FA  348.01,Desc.,INTRODUCTION TO FILM ANALYSIS,3,5,TUBA AY,FFFFF,56789, ,JF 108 | JF 108 | JF 108 | JF 108 | JF 108,28.12.2022,1,,"                          "
+FA  349.01,Desc.,FILM THEORY,3,5,TUBA AY,ThThThThTh,56789, ,JF 108 | JF 108 | JF 108 | JF 108 | JF 108,29.12.2022,3,,"                          "
+FA  488.01,Desc.,SP.TP.:SURVEY OF 19TH CENTURY MUSIC,3,5,EMİNE SERDAROĞLU,WWW,234, ,JF 108 | JF 108 | JF 108,,,,"                          "
+FA  489.01,Desc.,SP.TOP.:GRAPHIC NOVEL,3,5,MEHMET EMİN ADANALI,WWW,345, ,EF 202 | EF 202 | EF 202,28.12.2022,3,,"                          "
+FA  48J.01,Desc.,SP.TP.MYTHIC STRUC.&STORYTELLING IN CIN.,3,5,SALİH MEHMET İNAN,MMM,345, ,JF 101 | JF 101 | JF 101,,,,"                          "
+FA  490.01,Desc.,SP.TP.ADV.GRAPHIC NOVEL&COMICS,3,5,MEHMET EMİN ADANALI,,, ,,29.12.2022,3,,"                          "
+FA  49A.01,Desc.,"SP.TP.CINEMA&AUDIENCE,SOCIOLOGIC. DEBATE",3,5,JAK ŞALOM,TTT,678, ,MİTHAT ALAM | MİTHAT ALAM | MİTHAT ALAM,,,,"                          "
+FA  49D.01,Desc.,SP.TP.MUSIC AND THE VISUAL ARTS,3,5,RANA İREN,WWW,123, ,MİTHAT ALAM | MİTHAT ALAM | MİTHAT ALAM,29.12.2022,3,,"                          "
+FA  49E.01,Desc.,SP.TP.SUBVERSIVE CINEMA,3,5,ŞAHAN YATARKALKMAZ,MMM,678, ,JF 108 | JF 108 | JF 108,,,,"                          "
+FA  49F.01,Desc.,SP.TP.MAKING OF A FILM,3,5,MUHAMMET YUSUF EMİRDAR,FFF,234, ,M 2230 | M 2230 | M 2230,,,,"                          "
+LIT 411.01,Desc.,COPYWRITING I,3,6,NEŞET DERELİ,WWW,91011, ,JF 333 | JF 333 | JF 333,,,,"                          "

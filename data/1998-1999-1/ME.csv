@@ -1,0 +1,27 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ME  210.01,Desc.,MATERIALS SCIENCE,3,5,TURAN ÖZTURAN,WWTh,674,,,,,,"                          "
+ME  210.02,Desc.,MATERIALS SCIENCE,3,5,MAHMUT A. SAVAŞ,WWTh,342,,,,,,"                          "
+ME  212.01,Desc.,MATERIALS SCIENCE,4,5,MAHMUT A. SAVAŞ,TTTh,343,,,,,,"                          "
+ME  303.01,Desc.,COMPUTER APPLICATIONS IN MECHANICAL ENG,3,5,EMRE KÖSE,MTTh,686,,,,,,"                          "
+ME  335.01,Desc.,MODELING & CONTROL OF DYNAMIC SYSTEMS,4,5,EŞREF EŞKİNAT,MMWW,2378,,,,,,"                          "
+ME  345.01,Desc.,MECHANICS OF MATERIALS I,4,6,FAZIL ÖNDER SÖNMEZ,TTThTh,3434,,,,,,"                          "
+ME  353.01,Desc.,FLUID MECHANICS I,4,6,ALİ ECDER,MMTW,7854,,,,,,"                          "
+ME  415.01,Desc.,MECHANICAL METALLURGY,3,5,SABRİ ALTINTAŞ,TWW,478,,,,,,"                          "
+ME  424.01,Desc.,MACHINE DESIGN II,4,8,EMRE AKSAN,TTThTh,2334,,,,,,"                          "
+ME  425.01,Desc.,MECHANICAL VIBRATIONS,3,5,EŞREF EŞKİNAT,MTT,567,,,,,,"                          "
+ME  446.01,Desc.,APPLIED SOLID MECHANICS,3,5,EMRE AKSAN,TThTh,112,,,,,,"                          "
+ME  451.01,Desc.,APPLIED FLUID MECHANICS,3,5,HALUK ÖRS,MMW,344,,,,,,"                          "
+ME  478.01,Desc.,DESIGN OF THERMAL SYSTEMS,3,5,TANER DERBENTLİ,ThThTh,578,,,,,,"                          "
+ME  492.01,Desc.,PROJECT,4,8,AKIN TEZEL,S,0,,,,,,"                          "
+ME  537.01,Desc.,STATE SPACE CONTROL THEORY,3,8,EMRE KÖSE,MThTh,878,,,,,,"                          "
+ME  579.01,Desc.,GRADUATE SEMINAR,0,2,EŞREF EŞKİNAT,F,5,,,,,,"                          "
+ME  581.01,Desc.,SP. TOP. : MAT. SELECTION,3,8,MAHMUT A. SAVAŞ,ThFF,123,,,,,,"                          "
+ME  601.01,Desc.,MECHANICS OF CONTINUA I,4,8,AKIN TEZEL,MMTT,6767,,,,,,"                          "
+ME  610.01,Desc.,FINITE ELEMENTS,3,8,FAZIL ÖNDER SÖNMEZ,WWTh,786,,,,,,"                          "
+ME  611.01,Desc.,PRINCIPLES OF MATERIALS SCIENCE & ENGR.,4,8,SABRİ ALTINTAŞ,TTWW,1234,,,,,,"                          "
+ME  651.01,Desc.,ADVANCED FLUID MECHANICS,4,8,ALİ ECDER,MTWW,5856,,,,,,"                          "
+ME  661.01,Desc.,CONDUCTION HEAT TRANSFER,3,8,AKIN TEZEL,ThThT,348,,,,,,"                          "
+ME  663.01,Desc.,RADIATION HEAT TRANSFER,3,8,HASAN BEDİR,MMF,121,,,,,,"                          "
+ME  683.01,Desc.,SP. TOP.:CFD,3,8,HALUK ÖRS,MWW,212,,,,,,"                          "
+ME  690.01,Desc.,M.S.THESIS,0,60,AKIN TEZEL,S,0,,,,,,"                          "
+ME  790.01,Desc.,Ph.D. THESIS,0,120,AKIN TEZEL,S,0,,,,,,"                          "

@@ -1,0 +1,44 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CHIN201.01,Desc.,INTERMEDIATE CHINESE I,3,5,GUIYUAN YANG,MMMWW,12312,,,,,,"                          "
+CHIN202.01,Desc.,INTERMEDIATE CHINESE II,3,5,GUIYUAN YANG,TTTThTh,12312,,,,,,"                          "
+CHIN301.01,Desc.,ADVANCED CHINESE I,3,5,GUIYUAN YANG,WThFFF,34123,,,,,,"                          "
+HIST102.01,Desc.,HISTORICAL METHOD & THOUGHT II,3,6,EDHEM ELDEM,TThTh,656,,,,,,"                          "
+HIST106.01,Desc.,THE MAKING OF THE MODERN WORLD II,4,6,YAVUZ SELİM KARAKIŞLA,MWF,444,,,,,,"                          "
+HIST212.01,Desc.,HISTORY OF THE ANCIENT NEAR EAST II,3,5,ASLI ÖZYAR,WFF,323,,,,,,"                          "
+HIST222.01,Desc.,OTTOMAN HISTORY:THE CLASSICAL PERIOD,3,5,CENGİZ ŞİŞMAN,TThTh,612,,,,,,"                          "
+HIST312.01,Desc.,EUROPEAN SOCIAL & ECONOMIC HISTORY II,3,5,HERBERT REGİNBOGİN,FFF,234,,,,,,"                          "
+HIST322.01,Desc.,HISTORY OF MODERN TURKEY,3,4,MELTEM TOKSÖZ,TTW,232,,,,,,"                          "
+HIST336.01,Desc.,HISTORY OF THE BYZANTINE EMPIRE II,3,5,NEVRA NECİPOĞLU,TTTh,675,,,,,,"                          "
+HIST353.01,Desc.,THE ART &ARCHITECTURE OF THE MIDDLE AGES,3,5,LALE BABAOĞLU,MMTh,346,,,,,,"                          "
+HIST355.01,Desc.,HISTORY OF MODERN ART & ARCHITECTURE,3,5,PAOLO GIRARDELLI,WFF,556,,,,,,"                          "
+HIST402.01,Desc.,HISTORIOGRAPHY II,3,6,AHMET ERSOY,WThTh,434,,,,,,"                          "
+HIST414.01,Desc.,HISTORY OF THE 20THE CENTURY II,3,5,AYDIN BABUNA,MWW,456,,,,,,"                          "
+HIST434.01,Desc.,JAPANESE HIST.:FROM FEUDAL TO MOD.JAP.II,3,5,SELÇUK ESENBEL,WWW,789,,,,,,"                          "
+HIST453.01,Desc.,SEMINAR IN THE HISTORY OF ART AND ARCHIT,3,5,PAOLO GIRARDELLI,TBA,,,,,,,"                          "
+HIST455.01,Desc.,HISTORY OF PERFORMING  ARTS IN TURKEY I,3,5,ARZU ÖZTÜRKMEN,TWW,256,,,,,,"                          "
+HIST484.01,Desc.,SP.TP.ARCHITECTURE&IDENTITIY IN 19TH CEN,3,6,PAOLO GIRARDELLI,ThThTh,567,,,,,,"                          "
+HIST490.01,Desc.,SP.TOP.:NATIONALISM IN THE BALKANS II,3,6,EVANGELOS KECHRIOTIS,TTTh,122,,,,,,"                          "
+HIST495.01,Desc.,THESIS I,3,6,ZAFER TOPRAK,,, ,,,,,"                          "
+HIST496.01,Desc.,THESIS II,3,6,ZAFER TOPRAK,,, ,,,,,"                          "
+HIST496.02,Desc.,THESIS II,3,6,NEVRA NECİPOĞLU,,, ,,,,,"                          "
+HIST502.01,Desc.,OTTOMAN HISTORIOGRAPHY,3,7,SELÇUK ESENBEL,TTT,678,,,,,,"                          "
+HIST511.01,Desc.,RURAL HISTORY OF OTTOMAN SOCIETY,3,7,ARZU ÖZTÜRKMEN,TBA,,,,,,,"                          "
+HIST522.01,Desc.,OTTOMAN INTELLECTUAL HISTORY II,3,7,SELİM DERİNGİL,MMM,678,,,,,,"                          "
+HIST559.01,Desc.,RESEARCH IN THE HIST. OF PERFORMING ARTS,3,7,ARZU ÖZTÜRKMEN,WWW,789,,,,,,"                          "
+HIST572.01,Desc.,SEMINAR ON JAPAN SINCE 1868,3,7,SELÇUK ESENBEL,TBA,,,,,,,"                          "
+HIST573.01,Desc.,SEMINAR ON CHINA&CENTRAL ASIA,3,7,SELÇUK ESENBEL,TBA,,,,,,,"                          "
+HIST580.01,Desc.,SP.TOP.IN RELIGIONS STRUGGLE IN EUROPEAN,3,6,SURAIYA FAROQHI,TBA,,,,,,,"                          "
+HIST585.01,Desc.,SEL. READINGS IN LATE OTTOMAN HISTORY II,3,7,ANTONY GREENWOOD,TBA,,,,,,,"                          "
+HIST589.01,Desc.,SP.TOP. IN LATE HIST.1700-1914,3,6,MELTEM TOKSÖZ,WWW,678,,,,,,"                          "
+HIST601.01,Desc.,HISTORY SEMINAR,3,7,MELTEM TOKSÖZ,TBA,,,,,,,"                          "
+HIST604.01,Desc.,SEMINAR IN SOCIAL HISTORY,3,7,SELÇUK ESENBEL,TBA,,,,,,,"                          "
+HIST609.01,Desc.,TOP.IN 19TH & 20TH CENTURY HISTORY,3,7,EVANGELOS KECHRIOTIS,WWW,234,,,,,,"                          "
+HIST633.01,Desc.,READINGS IN BYZANTINE HISTORY,3,7,NEVRA NECİPOĞLU,WWW,678,,,,,,"                          "
+HIST655.01,Desc.,SEMINAR IN OTTOMAN ART & ARCHITECTURE I,3,6,ÇİĞDEM KAFESCİOĞLU,WWW,567,,,,,,"                          "
+HIST656.01,Desc.,SEMINAR IN OTTOMAN ART & ARCHITECTURE II,3,6,AHMET ERSOY,TBA,,,,,,,"                          "
+HIST690.01,Desc.,MASTER THESIS,0,60,MELTEM TOKSÖZ,TBA,,,,,,,"                          "
+HIST698.01,Desc.,SELECTED TOPICS HISTORY OF OTT.LABOR,3,7,YAVUZ SELİM KARAKIŞLA,TBA,,,,,,,"                          "
+HIST790.01,Desc.,PH.D.THESIS,0,120,ÇİĞDEM KAFESCİOĞLU,TBA,,,,,,,"                          "
+JP  102.01,Desc.,JAPANESE FOR BEGINNERS,3,5,MARİKO ERDOĞAN,TWWFF,15612,,,,,,"                          "
+JP  202.01,Desc.,INTERMEDIATE JAPANESE,3,5,MARİKO ERDOĞAN,TWWFF,67834,,,,,,"                          "
+JP  502.01,Desc.,TRANS OF MOD.&CLAS JAPANESE TEXT II,3,5,MARİKO ERDOĞAN,TBA,,,,,,,"                          "

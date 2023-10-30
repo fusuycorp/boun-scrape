@@ -1,0 +1,56 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Quota,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+ENG 380.01,Desc.,SP.TP.PROFESSIONALISM&COMMUNICATIONS S.,3,5,Info,MUSTAFA AKAN,WWW,123, ,M 2180 | M 2180 | M 2180,,,,"                          "
+IE  201.01,Desc.,INTERMEDIATE PROGRAMMING,3,6,Info,ZEKİ CANER TAŞKIN,TTThTh,1212, ,VYKM1 | VYKM1 | VYKM1 | VYKM1,,,,"                          "
+IE  202.01,Desc.,OPERATIONS RESEARCH I,4,7,Info,TINAZ  EKİM AŞICI,MTTThTh,57834, ,VYKM1 | M 1100 | M 1100 | M 1100 | M 1100,,,,"                          "
+IE  220.01,Desc.,MATERIALS AND PROCESSES IN MANUFACTURING,3,5,Info,OSMAN GÖKHAN ERSOY,MFFF,8123, ,NH 203 | VYKM3 | VYKM3 | VYKM3,,,,"                          "
+IE  255.01,Desc.,PROBABILITY FOR INDUSTRIAL ENGINEERS,3,6,Info,AYBEK KORUGAN,TTThTh,3478, ,NH 201 | NH 201 | NH 103 | NH 103,,,,"                          "
+IE  306.01,Desc.,SYSTEMS SIMULATION,4,7,Info,GÖNENÇ YÜCEL,TTThThF,34563, ,VYKM1 | VYKM1 | VYKM1 | VYKM1 | M 1100,,,,"                          "
+IE  310.01,Desc.,OPERATIONS RESEARCH,4,5,Info,KEREM ÖZKISACIK,MWWFF,74512, ,NH 203 | M 1100 | M 1100 | M 1100 | M 1100,,,,"                          "
+IE  312.01,Desc.,FACILITIES DESIGN & PLANNING,4,7,Info,ÜMİT BİLGE,MTTThTh,67834, ,VYKM1 | VYKM1 | VYKM1 | VYKM3 | VYKM3,,,,"                          "
+IE  313.01,Desc.,SUPPLY CHAIN MANAGEMENT,4,7,Info,ALİ TAMER ÜNAL,TTThThF,56782, ,UNDERGRAD LAB | UNDERGRAD LAB | VYKM3 | VYKM3 | M 3100,,,,"                          "
+IE  341.01,Desc.,ENGINEERING ECONOMICS,4,7,Info,MUSTAFA AKAN,WWWFF,67867, ,M 1100 | M 1100 | M 1100 | M 1100 | M 1100,,,,"                          "
+IE  400.01,Desc.,ENGINEERING INTERNSHIP,0,10,Info,REFİK GÜLLÜ,,, ,,,,,"                          "
+IE  423.01,Desc.,QUALITY ENGINEERING,3,6,Info,MUSTAFA GÖKÇE BAYDOĞAN,TTThTh,7812, ,VYKM3 | VYKM3 | VYKM3 | VYKM3,,,,"                          "
+IE  430.01,Desc.,ERGONOMICS&HUMAN FACTORS ENGINEERING,3,6,Info,MAHMUT EKŞİOĞLU,MMWW,3434, ,VYKM1 | VYKM1 | VYKM3 | VYKM3,,,,"                          "
+IE  440.01,Desc.,NONLINEAR MODELS IN OPERATIONS RESEARCH,3,6,Info,KUBAN ALTINEL,MMW,125, ,VYKM2 | VYKM2 | VYKM4,,,,"                          "
+IE  442.01,Desc.,ENTERPRISE INFORMATION SYSTEMS MODELING,3,6,Info,ALİ TAMER ÜNAL,TTTh,124, ,VYKM2 | VYKM2 | VYKM4,,,,"                          "
+IE  450.01,Desc.,STOCHASTIC MODELS IN OPERATIONS RESEARCH,3,6,Info,REFİK GÜLLÜ,MMWW,5612, ,M 3100 | M 3100 | VYKM3 | VYKM3,,,,"                          "
+IE  492.01,Desc.,PROJECT,4,8,Info,TANER BİLGİÇ,MM,78, ,M 3120 | M 3120,,,,"                          "
+IE  498.01,Desc.,SP.TP.RISK ASSESSMENT & ANALYSIS,3,6,Info,İLHAN OR,TTThTh,3456, ,VYKM4 | VYKM4 | VYKM2 | VYKM2,,,,"                          "
+IE  501.01,Desc.,OPTIMIZATION TECHNIQUES I,3,8,Info,KUBAN ALTINEL,MMWW,5612, ,VYKM3 | VYKM3 | M 3100 | M 3100,,,,"                          "
+IE  505.01,Desc.,STOCHASTIC PROCESSES AND APPLICATIONS,3,8,Info,AYBEK KORUGAN,MMWW,3434, ,VYKM2 | VYKM2 | M 3100 | M 3100,,,,"                          "
+IE  515.01,Desc.,GRAPHS AND NETWORK FLOWS,3,8,Info,ZEKİ CANER TAŞKIN,ThThF,676, ,M 2231 | M 2231 | M 3120,,,,"                          "
+IE  518.01,Desc.,ADVANCED GRAPH THEORY,3,8,Info,TINAZ  EKİM AŞICI,TTT,125, ,VYKM3 | VYKM3 | VYKM2,,,,"                          "
+IE  544.01,Desc.,DECISION ANALYSIS,3,8,Info,TANER BİLGİÇ,ThFF,534, ,M 3120 | M 2181 | M 2181,,,,"                          "
+IE  550.01,Desc.,DYNAMICS OF SOCIO-ECONOMIC SYSTEMS,3,8,Info,GÖNENÇ YÜCEL,TFF,878, ,VYKM2 | M 2171 | M 2171,,,,"                          "
+IE  579.01,Desc.,GRADUATE SEMINAR,0,1,Info,MAHMUT EKŞİOĞLU,WWW,678, ,M 3120 | M 3120 | M 3120,,,,"                          "
+IE  582.01,Desc.,SP.TP.STATISTICAL LEARN.FOR DATA MINING,3,8,Info,MUSTAFA GÖKÇE BAYDOĞAN,TTTh,564, ,M 2171 | M 2171 | M 3120,,,,"                          "
+IE  594.01,Desc.,SP.TP.APPS OF INV.THEORY&SUPP.CHAIN,3,8,Info,REFİK GÜLLÜ,MMW,125, ,M 2200 | M 2200 | VYKM2,,,,"                          "
+IE  690.01,Desc.,M.S. THESIS,0,60,Info,KUBAN ALTINEL,,, ,,,,,"                          "
+IE  690.05,Desc.,M.S. THESIS,0,60,Info,ÜMİT BİLGE,,, ,,,,,"                          "
+IE  690.06,Desc.,M.S. THESIS,0,60,Info,TANER BİLGİÇ,,, ,,,,,"                          "
+IE  690.07,Desc.,M.S. THESIS,0,60,Info,MAHMUT EKŞİOĞLU,,, ,,,,,"                          "
+IE  690.08,Desc.,M.S. THESIS,0,60,Info,REFİK GÜLLÜ,,, ,,,,,"                          "
+IE  690.11,Desc.,M.S. THESIS,0,60,Info,AYBEK KORUGAN,,, ,,,,,"                          "
+IE  690.12,Desc.,M.S. THESIS,0,60,Info,GÜRKAN KUMBAROĞLU,,, ,,,,,"                          "
+IE  690.14,Desc.,M.S. THESIS,0,60,Info,ALİ TAMER ÜNAL,,, ,,,,,"                          "
+IE  690.15,Desc.,M.S. THESIS,0,60,Info,TINAZ  EKİM AŞICI,,, ,,,,,"                          "
+IE  690.16,Desc.,M.S. THESIS,0,60,Info,HAKAN YAŞARCAN,,, ,,,,,"                          "
+IE  690.17,Desc.,M.S. THESIS,0,60,Info,ZEKİ CANER TAŞKIN,,, ,,,,,"                          "
+IE  690.18,Desc.,M.S. THESIS,0,60,Info,GÖNENÇ YÜCEL,,, ,,,,,"                          "
+IE  690.19,Desc.,M.S. THESIS,0,60,Info,MUSTAFA GÖKÇE BAYDOĞAN,,, ,,,,,"                          "
+IE  690.20,Desc.,M.S. THESIS,0,60,Info,KÖNÜL BAYRAMOĞLU KAVLAK,,, ,,,,,"                          "
+IE  790.01,Desc.,Ph.D. THESIS,0,120,Info,KUBAN ALTINEL,,, ,,,,,"                          "
+IE  790.05,Desc.,Ph.D. THESIS,0,120,Info,ÜMİT BİLGE,,, ,,,,,"                          "
+IE  790.06,Desc.,Ph.D. THESIS,0,120,Info,TANER BİLGİÇ,,, ,,,,,"                          "
+IE  790.07,Desc.,Ph.D. THESIS,0,120,Info,MAHMUT EKŞİOĞLU,,, ,,,,,"                          "
+IE  790.08,Desc.,Ph.D. THESIS,0,120,Info,REFİK GÜLLÜ,,, ,,,,,"                          "
+IE  790.11,Desc.,Ph.D. THESIS,0,120,Info,AYBEK KORUGAN,,, ,,,,,"                          "
+IE  790.12,Desc.,Ph.D. THESIS,0,120,Info,GÜRKAN KUMBAROĞLU,,, ,,,,,"                          "
+IE  790.14,Desc.,Ph.D. THESIS,0,120,Info,ALİ TAMER ÜNAL,,, ,,,,,"                          "
+IE  790.15,Desc.,Ph.D. THESIS,0,120,Info,TINAZ  EKİM AŞICI,,, ,,,,,"                          "
+IE  790.16,Desc.,Ph.D. THESIS,0,120,Info,HAKAN YAŞARCAN,,, ,,,,,"                          "
+IE  790.17,Desc.,Ph.D. THESIS,0,120,Info,ZEKİ CANER TAŞKIN,,, ,,,,,"                          "
+IE  790.18,Desc.,Ph.D. THESIS,0,120,Info,GÖNENÇ YÜCEL,,, ,,,,,"                          "
+IE  790.19,Desc.,Ph.D. THESIS,0,120,Info,MUSTAFA GÖKÇE BAYDOĞAN,,, ,,,,,"                          "
+IE  790.20,Desc.,Ph.D. THESIS,0,120,Info,KÖNÜL BAYRAMOĞLU KAVLAK,,, ,,,,,"                          "

@@ -1,0 +1,34 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+CMPE150.02,Desc.,INTRODUCTION TO COMPUTING(FORTRAN),3,5,VURAL ALTIN,M,6,,,,,,"        CMPE                  "
+CMPE150.03,Desc.,INTRODUCTION TO COMPUTING(FORTRAN),3,5,VURAL ALTIN,T,6,,,,,,"        CMPE                  "
+CMPE160.01,Desc.,INTRODUCTION TO OBJECT ORIENTED PROG.,4,9,H. LEVENT AKIN,MWW,245,,,,,,"                          "
+CMPE240.01,Desc.,DIGITAL SYSTEMS,4,6,ARDA YURDAKUL,MThTh,212,,,,,,"                          "
+CMPE250.01,Desc.,DATA STRUCTURES & ALGORITHMS,4,6,SADIK FİKRET GÜRGEN,TTW,232,,,,,,"                          "
+CMPE320.01,Desc.,PRINCIPLES OF PROGRAMMING LANGUAGES,3,6,TUNGA GÜNGÖR,TTW,565,,,,,,"                          "
+CMPE321.01,Desc.,INTRODUCTION TO DATABASE SYSTEMS,4,6,TAFLAN GÜNDEM,FFF,678,,,,,,"                          "
+CMPE350.01,Desc.,FORMAL LANGUAGES & AUTOMATA THEORY,3,5,CEM SAY,MThTh,656,,,,,,"                          "
+CMPE360.01,Desc.,NUMERICAL METHODS,3,5,CAN ÖZTURAN,WThTh,412,,,,,,"                          "
+CMPE416.01,Desc.,INTRODOCTION TO CRYPTOGRAPHY,3,6,M. UFUK ÇAĞLAYAN,FFF,234,,,,,,"                          "
+CMPE446.01,Desc.,INTRODUCTION TO COMPUTER ARCHITECTURE,3,6,OĞUZ TOSUN,TThTh,234,,,,,,"                          "
+CMPE462.01,Desc.,MACHINE LEARNING,3,6,ETHEM ALPAYDIN,TThTh,367,,,,,,"                          "
+CMPE464.01,Desc.,IMAGE PROCESSING FOR COMPUTER GRAPHICS,3,6,LALE AKARUN,MMT,561,,,,,,"                          "
+CMPE472.01,Desc.,FUNDAMENTALS OF ELECTRONIC COMMERCE,3,6,AYŞE BAŞAR,FFF,123,,,,,,"                          "
+CMPE476.01,Desc.,DISTRIBUTED SYSTEMS,3,6,M. UFUK ÇAĞLAYAN,WWTh,671,,,,,,"                          "
+CMPE477.01,Desc.,WIRELESS & MOBILE NETWORKS,3,6,CEM ERSOY,MMW,343,,,,,,"                          "
+CMPE478.01,Desc.,PARALLEL PROCESSING,3,6,CAN ÖZTURAN,MMW,121,,,,,,"                          "
+CMPE491.01,Desc.,SPEC. PROJECT IN COMPUTER ENGINEERING,3,6,M. UFUK ÇAĞLAYAN,TBA,,,,,,,"                          "
+CMPE492.01,Desc.,PROJECT,4,7,M. UFUK ÇAĞLAYAN,TBA,,,,,,,"                          "
+CMPE513.01,Desc.,ALGORITHMS IN VLSI DESIGN,3,8,ARDA YURDAKUL,ThThTh,678,,,,,,"                          "
+CMPE516.01,Desc.,FAULT TOLERANT COMPUTING,3,8,OĞUZ TOSUN,MMM,234,,,,,,"                          "
+CMPE524.01,Desc.,COMPUTER NETWORK DESIGN,3,8,CEM ERSOY,TTT,123,,,,,,"                          "
+CMPE535.01,Desc.,COMPUTER GRAPHICS,3,8,LALE AKARUN,WWW,123,,,,,,"                          "
+CMPE545.01,Desc.,ARTIFICIAL NEURAL NETWORKS,3,8,ETHEM ALPAYDIN,FFF,234,,,,,,"                          "
+CMPE561.01,Desc.,NATURAL LANGUAGE PROCESSING,3,8,CEM SAY,FFF,678,,,,,,"                          "
+CMPE565.01,Desc.,AUTONOMOUS ROBOTS,3,8,H. LEVENT AKIN,ThThTh,234,,,,,,"                          "
+CMPE579.01,Desc.,GRADUATE SEMINAR,0,8,TUNGA GÜNGÖR,T,4,,,,,,"                          "
+CMPE590.01,Desc.,SP.TOP.IN CMPE:MACHINE TRANSLATION,3,8,TUNGA GÜNGÖR,TBA,,,,,,,"                          "
+CMPE623.01,Desc.,SPEECH PROCESSING,3,8,SADIK FİKRET GÜRGEN,WWW,678,,,,,,"                          "
+CMPE628.01,Desc.,CONCURRENCY CONTROL & RECOVERY IN DATA.,3,8,TAFLAN GÜNDEM,WWW,678,,,,,,"                          "
+CMPE690.01,Desc.,M.S.THESIS,0,60,CEM ERSOY,TBA,,,,,,,"                          "
+CMPE695.01,Desc.,SP.TOP.IN CMPE:WIRELESS INFORMATION SYS.,3,8,METE KABATEPE,MMM,678,,,,,,"                          "
+CMPE790.01,Desc.,Ph.D.THESIS,0,120,CEM ERSOY,TBA,,,,,,,"                          "

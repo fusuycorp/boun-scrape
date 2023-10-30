@@ -1,0 +1,11 @@
+Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
+MATH101.01,Desc.,CALCULUS I,4,6,AYŞE SOYSAL,MMTTThThFF,121212,,,,,,"                          "
+MATH102.01,Desc.,CALCULUS II,4,6,İBRAHİM SEMİZ,MMTTWWThTh,121212,,,,,,"                          "
+MATH102.02,Desc.,CALCULUS II,4,6,İBRAHİM SEMİZ,MMTTWWThTh,343434,,,,,,"                          "
+MATH102.03,Desc.,CALCULUS II,4,6,SERDAR NERGİZ,MMTTWWThTh,343434,,,,,,"                          "
+MATH105.01,Desc.,INTRODUCTION TO FINITE MATHEMATICS,4,6,GÜLNİHAL YÜCEL,MMTTWWThTh,121212,,,,,,"                          "
+MATH111.01,Desc.,INTRODUCTION TO MATHEMATICAL STRUCTURES,4,8,ALİ KARATAY,MMTTWWThTh,121212,,,,,,"        MATH; MEDU; TMAT; PRMA                  "
+MATH224.01,Desc.,LINEAR ALGEBRA I,3,6,TALİN BUDAK,TTWWThTh,343434,,,,,,"                          "
+MATH343.01,Desc.,PROBABILITY,4,6,ALP EDEN,MMTTWWThTh,121212,,,,,,"                          "
+MATH344.01,Desc.,STATISTICS,3,5,KEMAL GÜRSOY,TTWWThTh,343434,,,,,,"                          "
+MATH485.01,Desc.,SEL.TOP. IN MATH.: ORNAMENTS & GROUPS,3,6,AHMET KAMİL FEYZİOĞLU,MMTTThTh,121212,,,,,,"                          "
