@@ -13,6 +13,7 @@ RUN pip install --no-cache-dir \
     beautifulsoup4>=4.14.3 \
     fastapi>=0.136.1 \
     "passlib[bcrypt]>=1.7.4" \
+    "bcrypt<4.1" \
     "python-jose[cryptography]>=3.5.0" \
     python-multipart>=0.0.29 \
     requests>=2.33.1 \
