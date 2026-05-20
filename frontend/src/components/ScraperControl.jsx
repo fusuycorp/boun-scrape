@@ -25,6 +25,7 @@ export default function ScraperControl({ token }) {
   });
   const [logs, setLogs] = useState('');
   const [actionLoading, setActionLoading] = useState(false);
+  const [forceRefresh, setForceRefresh] = useState(false);
   const [confirm, setConfirm] = useState(null); // { type: 'start'|'stop'|'clear', phaseId }
 
   const terminalEndRef = useRef(null);
@@ -79,13 +80,14 @@ export default function ScraperControl({ token }) {
       const res = await fetch('/api/scrape/start', {
         method: 'POST',
         headers,
-        body: JSON.stringify({ phase: activeStep }),
+        body: JSON.stringify({ phase: activeStep, force_refresh: forceRefresh }),
       });
       if (!res.ok) {
         const errData = await res.json().catch(() => ({}));
         throw new Error(errData.detail || 'Failed to trigger scraping task.');
       }
       toast.success(`Stage started: ${PHASES.find((p) => p.id === activeStep)?.name || activeStep}`);
+      setForceRefresh(false);
       fetchStatus();
       fetchLogs();
     } catch (err) {
@@ -225,6 +227,21 @@ export default function ScraperControl({ token }) {
                 );
               })}
             </div>
+
+            {(activeStep === 'phase1' || activeStep === 'phase3') && (
+              <label className="flex items-start gap-2.5 pt-4 border-t border-[hsla(var(--glass-border))] cursor-pointer select-none text-xs text-[hsl(var(--text-secondary))]">
+                <input
+                  type="checkbox"
+                  checked={forceRefresh}
+                  onChange={(e) => setForceRefresh(e.target.checked)}
+                  disabled={isRunning || actionLoading}
+                  className="mt-0.5 accent-[hsl(var(--accent-primary))] cursor-pointer disabled:cursor-not-allowed"
+                />
+                <span>
+                  <span className="font-semibold text-[hsl(var(--text-primary))]">Force refresh</span> — ignore the file cache and re-download every term/department for this stage. Leave off to skip terms already on disk.
+                </span>
+              </label>
+            )}
 
             <div className="pt-4 border-t border-[hsla(var(--glass-border))] flex gap-3">
               {isRunning ? (

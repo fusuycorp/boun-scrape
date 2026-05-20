@@ -163,6 +163,7 @@ async def update_config(config: ConfigUpdate, current_user: str = Depends(get_cu
 
 class ScrapeStartRequest(BaseModel):
     phase: str  # "phase1", "phase2", "phase3", "phase4"
+    force_refresh: bool = False
 
 @router.post("/scrape/start")
 async def start_scraping(req: ScrapeStartRequest, current_user: str = Depends(get_current_user)):
@@ -177,7 +178,7 @@ async def start_scraping(req: ScrapeStartRequest, current_user: str = Depends(ge
             detail=f"A scraping task (Phase {status_info['phase'].upper()}) is already running. Stop it or wait for it to complete."
         )
         
-    success = scraper_manager.start_phase(req.phase)
+    success = scraper_manager.start_phase(req.phase, force_refresh=req.force_refresh)
     if not success:
         raise HTTPException(status_code=500, detail=f"Failed to start Phase {req.phase.upper()}. Check server logs.")
         

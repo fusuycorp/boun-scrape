@@ -83,7 +83,7 @@ class ScraperManager:
                     pass
                 return True
 
-    def start_phase(self, phase: str) -> bool:
+    def start_phase(self, phase: str, force_refresh: bool = False) -> bool:
         with self.lock:
             if self.process and self.process.poll() is None:
                 # Process is already running
@@ -118,6 +118,9 @@ class ScraperManager:
             env = os.environ.copy()
             env["AUTO_CONFIRM"] = "1"  # Bypass prompts in scraper.py
             env["PYTHONUNBUFFERED"] = "1"  # Disable python print buffer to get real-time stdout
+            if force_refresh:
+                env["FORCE_REFRESH"] = "1"
+                self.logs.append("[!] Force refresh enabled — cached files will be re-downloaded.\n")
             
             try:
                 # Use current virtual environment's python or standard python

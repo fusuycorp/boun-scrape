@@ -58,8 +58,8 @@ def scrape_worker(term, dept, cookies, base_url, term_dir):
     kisaadi = dept["kisaadi"]
     bolum = dept["bolum"]
     output_path = os.path.join(term_dir, f"{kisaadi}.html")
-    
-    if os.path.exists(output_path):
+
+    if os.path.exists(output_path) and os.environ.get("FORCE_REFRESH") != "1":
         return "SKIPPED"
 
     session = get_session(cookies)
@@ -104,6 +104,9 @@ def main():
         print(f"[*] Loaded {len(cookies)} cookies.")
     else:
         print("[!] No cookies loaded. Scrape will fail.")
+
+    if os.environ.get("FORCE_REFRESH") == "1":
+        print("[!] Force refresh enabled — cached department files will be re-downloaded.")
 
     html_files = sorted([f for f in os.listdir(responses_dir) if f.endswith(".html")], reverse=True)
     print(f"[*] Found {len(html_files)} terms to process.")

@@ -158,15 +158,24 @@ def main():
     current_viewstate = data['viewstate']
     current_generator = data['generator']
     current_validation = data['validation']
-    
+
+    force_refresh = os.environ.get("FORCE_REFRESH") == "1"
+    if force_refresh:
+        print("[!] Force refresh enabled — cached term files will be re-downloaded.")
+
     for term in terms_to_process:
+        safe_term = term.replace("/", "_")
+        file_path = os.path.join(responses_dir, f"{safe_term}.html")
+
+        if not force_refresh and os.path.exists(file_path):
+            print(f"[=] Skipping (cached): {term}")
+            continue
+
         print(f"[>] Processing term: {term}...", end=" ", flush=True)
-        
+
         term_html = fetch_term(session, term, current_viewstate, current_generator, current_validation)
         
         if term_html:
-            safe_term = term.replace("/", "_")
-            file_path = os.path.join(responses_dir, f"{safe_term}.html")
             with open(file_path, "w", encoding="utf-8") as f:
                 f.write(term_html)
             
