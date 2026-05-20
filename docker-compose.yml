@@ -7,6 +7,9 @@ services:
       - schedules-data:/data
     environment:
       - DB_PATH=${DB_PATH:-/data/schedules.db}
+      - ADMIN_USER=${ADMIN_USER}
+      - ADMIN_PASSWORD_HASH=${ADMIN_PASSWORD_HASH}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
     restart: always
 
   frontend:
