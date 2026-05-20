@@ -1,55 +1,0 @@
-Code.Sec,Desc.,Name,Cr.,Ects,Instr.,Days,Hours,Course Delivery Method,Rooms,Exam,Sl.,Required for Dept.(*),Departments
-ADEX508.01,Desc.,ECONOMIC POLICY SEMINAR,3,5,DENİZ GÖKÇE,,,,,,,,"                          "
-ADEX508.02,Desc.,ECONOMIC POLICY SEMINAR,3,5,DENİZ GÖKÇE,,,,,,,,"                          "
-ADEX517.01,Desc.,INVESTMENTS & PORTFOLIO THEORY,3,5,ATİLLA ODABAŞI,,,,,,,,"                          "
-ADEX518.01,Desc.,INVESTMENT BANKING,2,4,VEDAT AKGİRAY,,,,,,,,"                          "
-ADEX528.01,Desc.,GLOBAL ASPECTS OF MANAGEMENT,3,5,MUZAFFER BODUR,,,,,,,,"                          "
-ADEX528.02,Desc.,GLOBAL ASPECTS OF MANAGEMENT,3,5,ULAŞ AKKÜÇÜK,,,,,,,,"                          "
-ADEX542.01,Desc.,CONSUMER BEHAVIOR,3,5,ESER BORAK,,,,,,,,"                          "
-ADEX556.02,Desc.,SUPPLY CHAIN MANAGEMENT,2,4,YAVUZ ACAR,,,,,,,,"                          "
-ADEX575.01,Desc.,E-COMMERCE & E-BUSINESS MANAGEMENT,2,4,AYŞEGÜL TOKER,,,,,,,,"                          "
-ADEX580.01,Desc.,CURRENT TOPICS IN MANAGEMENT,2,4,GÜVEN ALPAY,,,,,,,,"                          "
-ADEX581.01,Desc.,SP.TOP. IN ORG. BEHAVIOR: LEADERSHIP,2,4,ÖZGÜN BURCU RODOPMAN,,,,,,,,"                          "
-ADEX58L.01,Desc.,SP. TOPICS IN BRAND MANAGEMENT,2,4,ÖZLEM HESAPÇI KARACA,,,,,,,,"                          "
-ADEX598.01,Desc.,DIRECTED READINGS II,1,2,ALİ COŞKUN,,,,,,,,"                          "
-ADEX598.02,Desc.,DIRECTED READINGS II,1,2,ARZU İŞERİ SAY,,,,,,,,"                          "
-ADEX598.03,Desc.,DIRECTED READINGS II,1,2,ATİLLA ODABAŞI,,,,,,,,"                          "
-ADEX598.04,Desc.,DIRECTED READINGS II,1,2,AYŞEGÜL TOKER,,,,,,,,"                          "
-ADEX598.05,Desc.,DIRECTED READINGS II,1,2,ÖZGÜN BURCU RODOPMAN,,,,,,,,"                          "
-ADEX598.06,Desc.,DIRECTED READINGS II,1,2,CENK CEVAT KARAHAN,,,,,,,,"                          "
-ADEX598.07,Desc.,DIRECTED READINGS II,1,2,ESER BORAK,,,,,,,,"                          "
-ADEX598.08,Desc.,DIRECTED READINGS II,1,2,GÜVEN ALPAY,,,,,,,,"                          "
-ADEX598.09,Desc.,DIRECTED READINGS II,1,2,HAYAT KABASAKAL,,,,,,,,"                          "
-ADEX598.11,Desc.,DIRECTED READINGS II,1,2,İREM NUHOĞLU,,,,,,,,"                          "
-ADEX598.12,Desc.,DIRECTED READINGS II,1,2,METİN BERK,,,,,,,,"                          "
-ADEX598.13,Desc.,DIRECTED READINGS II,1,2,MİNE UĞURLU,,,,,,,,"                          "
-ADEX598.15,Desc.,DIRECTED READINGS II,1,2,MUSTAFA DİLBER,,,,,,,,"                          "
-ADEX598.16,Desc.,DIRECTED READINGS II,1,2,NESLİHAN N.YILMAZ,,,,,,,,"                          "
-ADEX598.17,Desc.,DIRECTED READINGS II,1,2,NESRİN OKAY AKMAN,,,,,,,,"                          "
-ADEX598.18,Desc.,DIRECTED READINGS II,1,2,ÖZLEM HESAPÇI KARACA,,,,,,,,"                          "
-ADEX598.19,Desc.,DIRECTED READINGS II,1,2,ÖZLEM ÖZ,,,,,,,,"                          "
-ADEX598.21,Desc.,DIRECTED READINGS II,1,2,ŞEVKET GÜNTER,,,,,,,,"                          "
-ADEX598.22,Desc.,DIRECTED READINGS II,1,2,ULAŞ AKKÜÇÜK,,,,,,,,"                          "
-ADEX598.23,Desc.,DIRECTED READINGS II,1,2,VEDAT AKGİRAY,,,,,,,,"                          "
-ADEX598.24,Desc.,DIRECTED READINGS II,1,2,YAVUZ ACAR,,,,,,,,"                          "
-ADEX599.01,Desc.,TERM PROJECT,0,4,ALİ COŞKUN,,,,,,,,"                          "
-ADEX599.02,Desc.,TERM PROJECT,0,4,ARZU İŞERİ SAY,,,,,,,,"                          "
-ADEX599.03,Desc.,TERM PROJECT,0,4,ATİLLA ODABAŞI,,,,,,,,"                          "
-ADEX599.04,Desc.,TERM PROJECT,0,4,AYŞEGÜL TOKER,,,,,,,,"                          "
-ADEX599.05,Desc.,TERM PROJECT,0,4,ÖZGÜN BURCU RODOPMAN,,,,,,,,"                          "
-ADEX599.06,Desc.,TERM PROJECT,0,4,CENK CEVAT KARAHAN,,,,,,,,"                          "
-ADEX599.07,Desc.,TERM PROJECT,0,4,ESER BORAK,,,,,,,,"                          "
-ADEX599.08,Desc.,TERM PROJECT,0,4,GÜVEN ALPAY,,,,,,,,"                          "
-ADEX599.09,Desc.,TERM PROJECT,0,4,HAYAT KABASAKAL,,,,,,,,"                          "
-ADEX599.11,Desc.,TERM PROJECT,0,4,İREM NUHOĞLU,,,,,,,,"                          "
-ADEX599.12,Desc.,TERM PROJECT,0,4,METİN BERK,,,,,,,,"                          "
-ADEX599.13,Desc.,TERM PROJECT,0,4,MİNE UĞURLU,,,,,,,,"                          "
-ADEX599.15,Desc.,TERM PROJECT,0,4,MUSTAFA DİLBER,,,,,,,,"                          "
-ADEX599.16,Desc.,TERM PROJECT,0,4,NESLİHAN N.YILMAZ,,,,,,,,"                          "
-ADEX599.17,Desc.,TERM PROJECT,0,4,NESRİN OKAY AKMAN,,,,,,,,"                          "
-ADEX599.18,Desc.,TERM PROJECT,0,4,ÖZLEM HESAPÇI KARACA,,,,,,,,"                          "
-ADEX599.19,Desc.,TERM PROJECT,0,4,ÖZLEM ÖZ,,,,,,,,"                          "
-ADEX599.21,Desc.,TERM PROJECT,0,4,ŞEVKET GÜNTER,,,,,,,,"                          "
-ADEX599.22,Desc.,TERM PROJECT,0,4,ULAŞ AKKÜÇÜK,,,,,,,,"                          "
-ADEX599.23,Desc.,TERM PROJECT,0,4,VEDAT AKGİRAY,,,,,,,,"                          "
-ADEX599.24,Desc.,TERM PROJECT,0,4,YAVUZ ACAR,,,,,,,,"                          "
