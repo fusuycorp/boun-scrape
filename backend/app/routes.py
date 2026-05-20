@@ -195,6 +195,60 @@ async def stop_scraping(current_user: str = Depends(get_current_user)):
 async def get_scrape_status(current_user: str = Depends(get_current_user)):
     return scraper_manager.get_status()
 
+@router.get("/scrape/terms")
+async def get_scrape_terms(current_user: str = Depends(get_current_user)):
+    """List every term seen on disk with last-scraped timestamps.
+
+    Sources timestamps from file mtimes:
+      - phase1_at  -> mtime of responses/<safe_term>.html
+      - phase3_at  -> max mtime across schedules/<safe_term>/*.html
+    Both are unix seconds (float) or None when missing.
+    """
+    backend_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    responses_dir = os.path.join(backend_dir, "responses")
+    schedules_root = os.path.join(backend_dir, "schedules")
+
+    terms: Dict[str, Dict[str, Any]] = {}
+
+    if os.path.isdir(responses_dir):
+        for fname in os.listdir(responses_dir):
+            if not fname.endswith(".html"):
+                continue
+            safe_term = fname[:-5]
+            term = safe_term.replace("_", "/")
+            try:
+                mtime = os.path.getmtime(os.path.join(responses_dir, fname))
+            except OSError:
+                mtime = None
+            terms.setdefault(term, {"term": term, "phase1_at": None, "phase3_at": None, "schedule_count": 0})
+            terms[term]["phase1_at"] = mtime
+
+    if os.path.isdir(schedules_root):
+        for safe_term in os.listdir(schedules_root):
+            term_dir = os.path.join(schedules_root, safe_term)
+            if not os.path.isdir(term_dir):
+                continue
+            term = safe_term.replace("_", "/")
+            latest = None
+            count = 0
+            for fname in os.listdir(term_dir):
+                if not fname.endswith(".html"):
+                    continue
+                count += 1
+                try:
+                    m = os.path.getmtime(os.path.join(term_dir, fname))
+                except OSError:
+                    continue
+                if latest is None or m > latest:
+                    latest = m
+            terms.setdefault(term, {"term": term, "phase1_at": None, "phase3_at": None, "schedule_count": 0})
+            terms[term]["phase3_at"] = latest
+            terms[term]["schedule_count"] = count
+
+    # Sort newest-term first by string compare (terms look like 2024/2025-1)
+    return {"terms": sorted(terms.values(), key=lambda t: t["term"], reverse=True)}
+
+
 @router.get("/scrape/logs")
 async def get_scrape_logs(
     current_user: str = Depends(get_current_user),

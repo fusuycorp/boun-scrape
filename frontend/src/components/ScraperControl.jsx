@@ -1,9 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
   Play,
   Square,
   Trash2,
   Terminal as ConsoleIcon,
+  Clock,
+  RefreshCw,
 } from 'lucide-react';
 import ConfirmDialog from './ConfirmDialog';
 import { useToast } from '../hooks/useToast';
@@ -28,9 +30,28 @@ export default function ScraperControl({ token }) {
   const [forceRefresh, setForceRefresh] = useState(false);
   const [confirm, setConfirm] = useState(null); // { type: 'start'|'stop'|'clear', phaseId }
 
+  const [terms, setTerms] = useState([]);
+  const [termsLoading, setTermsLoading] = useState(true);
+  const [termsError, setTermsError] = useState(null);
+
   const terminalEndRef = useRef(null);
   const logInterval = useRef(null);
   const statusInterval = useRef(null);
+
+  const fetchTerms = useCallback(async () => {
+    try {
+      setTermsError(null);
+      const headers = { Authorization: `Bearer ${token}` };
+      const res = await fetch('/api/scrape/terms', { headers });
+      if (!res.ok) throw new Error('Failed to load term cache.');
+      const data = await res.json();
+      setTerms(data.terms || []);
+    } catch (err) {
+      setTermsError(err.message || 'Failed to load term cache.');
+    } finally {
+      setTermsLoading(false);
+    }
+  }, [token]);
 
   const fetchStatus = async () => {
     try {
@@ -58,6 +79,7 @@ export default function ScraperControl({ token }) {
   useEffect(() => {
     fetchStatus();
     fetchLogs();
+    fetchTerms();
     statusInterval.current = setInterval(fetchStatus, 2000);
     logInterval.current = setInterval(fetchLogs, 1500);
     return () => {
@@ -66,6 +88,14 @@ export default function ScraperControl({ token }) {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token]);
+
+  const wasRunningRef = useRef(false);
+  useEffect(() => {
+    if (wasRunningRef.current && status.status !== 'running') {
+      fetchTerms();
+    }
+    wasRunningRef.current = status.status === 'running';
+  }, [status.status, fetchTerms]);
 
   useEffect(() => {
     if (terminalEndRef.current) {
@@ -346,6 +376,64 @@ export default function ScraperControl({ token }) {
         </div>
       </div>
 
+      <section aria-labelledby="cached-terms-heading" className="glass-panel p-6 flex flex-col gap-4">
+        <header className="flex items-center justify-between gap-3 flex-wrap">
+          <div>
+            <h2 id="cached-terms-heading" className="text-sm font-semibold flex items-center gap-2">
+              <Clock size={16} className="text-[hsl(var(--accent-primary))]" aria-hidden="true" />
+              Cached Terms
+            </h2>
+            <p className="text-xs text-[hsl(var(--text-muted))] mt-1">
+              Last-scraped timestamp per term, sourced from the file cache. Terms with a Stage 1 timestamp are skipped on the next run unless Force refresh is enabled.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={fetchTerms}
+            disabled={termsLoading}
+            className="btn-secondary text-xs py-2 px-3 inline-flex items-center gap-1.5"
+          >
+            <RefreshCw size={14} className={termsLoading ? 'animate-spin-slow' : ''} aria-hidden="true" />
+            Refresh
+          </button>
+        </header>
+
+        {termsError ? (
+          <div className="text-sm text-[hsl(var(--color-danger))] bg-[hsla(var(--color-danger)/0.08)] border border-[hsla(var(--color-danger)/0.2)] rounded-lg px-3 py-2">
+            {termsError}
+          </div>
+        ) : termsLoading ? (
+          <div className="text-xs text-[hsl(var(--text-muted))]">Loading…</div>
+        ) : terms.length === 0 ? (
+          <div className="text-xs text-[hsl(var(--text-muted))] text-center py-6">
+            No terms cached yet. Run Stage 1 to populate.
+          </div>
+        ) : (
+          <div className="premium-table-container max-h-80 overflow-auto">
+            <table className="premium-table">
+              <thead className="sticky top-0">
+                <tr>
+                  <th>Term</th>
+                  <th>Stage 1 (term page)</th>
+                  <th>Stage 3 (schedules)</th>
+                  <th className="text-right">Files</th>
+                </tr>
+              </thead>
+              <tbody>
+                {terms.map((t) => (
+                  <tr key={t.term}>
+                    <td className="font-mono text-xs">{t.term}</td>
+                    <td className="text-xs text-[hsl(var(--text-secondary))]">{formatTimestamp(t.phase1_at)}</td>
+                    <td className="text-xs text-[hsl(var(--text-secondary))]">{formatTimestamp(t.phase3_at)}</td>
+                    <td className="text-xs text-right tabular-nums">{t.schedule_count || 0}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </section>
+
       <ConfirmDialog
         open={!!confirmConfig}
         title={confirmConfig?.title}
@@ -357,6 +445,25 @@ export default function ScraperControl({ token }) {
         onCancel={() => !actionLoading && setConfirm(null)}
       />
     </div>
+  );
+}
+
+function formatTimestamp(unixSeconds) {
+  if (!unixSeconds) return <span className="text-[hsl(var(--text-muted))]">Never</span>;
+  const d = new Date(unixSeconds * 1000);
+  const now = Date.now();
+  const diffMs = now - d.getTime();
+  const diffMin = Math.round(diffMs / 60000);
+  let relative;
+  if (diffMin < 1) relative = 'just now';
+  else if (diffMin < 60) relative = `${diffMin}m ago`;
+  else if (diffMin < 60 * 24) relative = `${Math.round(diffMin / 60)}h ago`;
+  else relative = `${Math.round(diffMin / (60 * 24))}d ago`;
+  const absolute = d.toLocaleString();
+  return (
+    <span title={absolute}>
+      {absolute} <span className="text-[hsl(var(--text-muted))]">({relative})</span>
+    </span>
   );
 }
 
