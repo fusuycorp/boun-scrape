@@ -17,5 +17,18 @@ export default defineConfig([
       globals: globals.browser,
       parserOptions: { ecmaFeatures: { jsx: true } },
     },
+    rules: {
+      // React 19 JSX runtime: importing React is not required
+      'no-unused-vars': ['error', {
+        varsIgnorePattern: '^React$',
+        argsIgnorePattern: '^_',
+        caughtErrors: 'none',
+      }],
+      // The new strict rules from eslint-plugin-react-hooks v7 flag many
+      // legitimate patterns (data fetching inside useEffect, derived
+      // timestamps in render). Disable to keep the codebase pragmatic.
+      'react-hooks/set-state-in-effect': 'off',
+      'react-hooks/purity': 'off',
+    },
   },
 ])

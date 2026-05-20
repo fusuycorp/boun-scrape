@@ -6,8 +6,17 @@ import ScraperControl from './components/ScraperControl';
 import CourseData from './components/CourseData';
 import QuotaMonitor from './components/QuotaMonitor';
 import ConfigManager from './components/ConfigManager';
+import { ToastProvider } from './components/Toast';
 
 export default function App() {
+  return (
+    <ToastProvider>
+      <AppInner />
+    </ToastProvider>
+  );
+}
+
+function AppInner() {
   const [token, setToken] = useState(() => localStorage.getItem('token') || '');
   const [username, setUsername] = useState('');
   const [activeTab, setActiveTab] = useState('dashboard');

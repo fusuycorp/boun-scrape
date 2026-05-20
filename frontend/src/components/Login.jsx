@@ -1,11 +1,25 @@
-import React, { useState } from 'react';
-import { User, Lock, Key, Compass } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { User, Lock, Key, Compass, Eye, EyeOff, AlertTriangle } from 'lucide-react';
 
 export default function Login({ onLoginSuccess }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [capsLock, setCapsLock] = useState(false);
+  const usernameRef = useRef(null);
+
+  useEffect(() => {
+    // Autofocus username on mount
+    usernameRef.current?.focus();
+  }, []);
+
+  const detectCapsLock = (e) => {
+    if (typeof e.getModifierState === 'function') {
+      setCapsLock(e.getModifierState('CapsLock'));
+    }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -45,17 +59,19 @@ export default function Login({ onLoginSuccess }) {
     }
   };
 
+  const errorId = 'login-error';
+
   return (
-    <div className="relative min-h-screen w-screen flex items-center justify-center overflow-hidden bg-[hsl(var(--bg-primary))]">
+    <main className="relative min-h-screen w-screen flex items-center justify-center overflow-hidden bg-[hsl(var(--bg-primary))]">
       {/* Decorative Blur Spheres */}
-      <div className="bg-glow-violet top-[15%] left-[20%]" />
-      <div className="bg-glow-pink bottom-[15%] right-[20%]" />
-      
+      <div className="bg-glow-violet top-[15%] left-[20%]" aria-hidden="true" />
+      <div className="bg-glow-pink bottom-[15%] right-[20%]" aria-hidden="true" />
+
       <div className="w-full max-w-md px-6 z-10 animate-fade-in">
         {/* Brand Icon & Title */}
         <div className="flex flex-col items-center mb-8">
           <div className="p-4 rounded-full bg-gradient-to-tr from-[hsl(var(--accent-primary))] to-[hsl(var(--accent-secondary))] text-white shadow-lg shadow-[hsla(var(--accent-primary)/0.2)] mb-4">
-            <Compass size={40} className="animate-spin-slow" />
+            <Compass size={40} className="animate-spin-slow" aria-hidden="true" />
           </div>
           <h1 className="text-3xl font-extrabold text-gradient-purple tracking-tight">ULTIMATE BOUN</h1>
           <p className="text-[hsl(var(--text-secondary))] text-sm mt-1">Registration Scraping & Tracking Suite</p>
@@ -64,53 +80,93 @@ export default function Login({ onLoginSuccess }) {
         {/* Login Form Panel */}
         <div className="glass-panel p-8 glass-panel-hover">
           <h2 className="text-xl font-semibold mb-6 flex items-center gap-2">
-            <Key size={20} className="text-[hsl(var(--accent-primary))]" />
+            <Key size={20} className="text-[hsl(var(--accent-primary))]" aria-hidden="true" />
             Administrative Portal
           </h2>
 
-          <form onSubmit={handleSubmit} className="space-y-5">
+          <form onSubmit={handleSubmit} className="space-y-5" noValidate>
             {error && (
-              <div className="p-3 text-sm text-[hsl(var(--color-danger))] bg-[hsla(var(--color-danger)/0.1)] border border-[hsla(var(--color-danger)/0.2)] rounded-lg">
-                {error}
+              <div
+                id={errorId}
+                role="alert"
+                aria-live="assertive"
+                className="p-3 text-sm text-[hsl(var(--color-danger))] bg-[hsla(var(--color-danger)/0.1)] border border-[hsla(var(--color-danger)/0.2)] rounded-lg flex items-start gap-2"
+              >
+                <AlertTriangle size={16} className="mt-0.5 shrink-0" aria-hidden="true" />
+                <span>{error}</span>
               </div>
             )}
 
             <div className="flex flex-col gap-1.5">
-              <label className="text-xs font-semibold text-[hsl(var(--text-secondary))] uppercase tracking-wider">
+              <label htmlFor="login-username" className="text-xs font-semibold text-[hsl(var(--text-secondary))] uppercase tracking-wider">
                 Username
               </label>
               <div className="relative flex items-center">
-                <span className="absolute left-3.5 text-[hsl(var(--text-muted))]">
+                <span className="absolute left-3.5 text-[hsl(var(--text-muted))]" aria-hidden="true">
                   <User size={18} />
                 </span>
                 <input
+                  id="login-username"
+                  ref={usernameRef}
                   type="text"
                   placeholder="Enter administrator username"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   className="glass-input w-full pl-11"
+                  autoComplete="username"
                   required
+                  aria-invalid={!!error}
+                  aria-describedby={error ? errorId : undefined}
                 />
               </div>
             </div>
 
             <div className="flex flex-col gap-1.5">
-              <label className="text-xs font-semibold text-[hsl(var(--text-secondary))] uppercase tracking-wider">
+              <label htmlFor="login-password" className="text-xs font-semibold text-[hsl(var(--text-secondary))] uppercase tracking-wider">
                 Password
               </label>
               <div className="relative flex items-center">
-                <span className="absolute left-3.5 text-[hsl(var(--text-muted))]">
+                <span className="absolute left-3.5 text-[hsl(var(--text-muted))]" aria-hidden="true">
                   <Lock size={18} />
                 </span>
                 <input
-                  type="password"
+                  id="login-password"
+                  type={showPassword ? 'text' : 'password'}
                   placeholder="Enter administrator password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="glass-input w-full pl-11"
+                  onKeyDown={detectCapsLock}
+                  onKeyUp={detectCapsLock}
+                  className="glass-input w-full pl-11 pr-11"
+                  autoComplete="current-password"
                   required
+                  aria-invalid={!!error}
+                  aria-describedby={
+                    [error ? errorId : null, capsLock ? 'login-capslock' : null]
+                      .filter(Boolean)
+                      .join(' ') || undefined
+                  }
                 />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword((s) => !s)}
+                  aria-label={showPassword ? 'Hide password' : 'Show password'}
+                  aria-pressed={showPassword}
+                  className="absolute right-3 p-1 text-[hsl(var(--text-muted))] hover:text-[hsl(var(--text-primary))] rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--accent-primary))]"
+                >
+                  {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                </button>
               </div>
+              {capsLock && (
+                <p
+                  id="login-capslock"
+                  role="status"
+                  className="text-[11px] flex items-center gap-1.5 text-[hsl(var(--color-warning))] mt-1"
+                >
+                  <AlertTriangle size={12} aria-hidden="true" />
+                  Caps Lock is on
+                </p>
+              )}
             </div>
 
             <button
@@ -120,7 +176,7 @@ export default function Login({ onLoginSuccess }) {
             >
               {loading ? (
                 <span className="flex items-center gap-2">
-                  <svg className="animate-spin h-5 w-5 text-white" viewBox="0 0 24 24" fill="none">
+                  <svg className="animate-spin h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
                   </svg>
@@ -138,6 +194,6 @@ export default function Login({ onLoginSuccess }) {
           Protected Administrative Session. Unauthorized access prohibited.
         </p>
       </div>
-    </div>
+    </main>
   );
 }

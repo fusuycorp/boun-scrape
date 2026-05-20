@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
 
 :root {
   /* HSL Color System */
@@ -370,3 +371,121 @@ h1, h2, h3, h4, h5, h6 {
 .pulse-green { background-color: hsl(var(--color-success)); }
 .pulse-purple { background-color: hsl(var(--accent-primary)); }
 .pulse-red { background-color: hsl(var(--color-danger)); }
+
+/* Screen-reader-only utility */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Global focus-visible ring for keyboard users */
+:focus-visible {
+  outline: 2px solid hsl(var(--accent-primary));
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+button:focus-visible,
+a:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px solid hsl(var(--accent-primary));
+  outline-offset: 2px;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none; /* glass-input handles ring via box-shadow */
+}
+
+/* Skeleton shimmer for loading placeholders */
+@keyframes skeleton-pulse {
+  0% { background-position: -200px 0; }
+  100% { background-position: calc(200px + 100%) 0; }
+}
+
+.skeleton {
+  background-color: hsla(var(--bg-tertiary) / 0.6);
+  background-image: linear-gradient(
+    90deg,
+    hsla(var(--bg-tertiary) / 0) 0,
+    hsla(var(--text-muted) / 0.08) 50%,
+    hsla(var(--bg-tertiary) / 0) 100%
+  );
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  line-height: 1;
+  animation: skeleton-pulse 1.4s ease-in-out infinite;
+}
+
+/* Sticky table header support */
+.premium-table thead.sticky-header th {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: hsl(var(--bg-tertiary));
+}
+
+.premium-table th.sortable {
+  padding: 0;
+}
+
+.premium-table th.sortable button {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  padding: 14px 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color var(--transition-fast);
+}
+
+.premium-table th.sortable button:hover {
+  color: hsl(var(--text-primary));
+}
+
+/* Reduced motion: respect user preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-spin-slow,
+  .animate-spin {
+    animation: none !important;
+  }
+
+  .pulse-indicator::after {
+    animation: none !important;
+    display: none;
+  }
+
+  .animate-pulse {
+    animation: none !important;
+  }
+
+  .skeleton {
+    animation: none !important;
+    background-image: none;
+  }
+}
