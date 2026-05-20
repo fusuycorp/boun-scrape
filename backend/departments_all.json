@@ -1,0 +1,477 @@
+[
+    {
+        "name": "MANAGEMENT",
+        "kisaadi": "AD",
+        "bolum": "MANAGEMENT"
+    },
+    {
+        "name": "ASIAN STUDIES",
+        "kisaadi": "ASIA",
+        "bolum": "ASIAN STUDIES"
+    },
+    {
+        "name": "ASIAN STUDIES WITH THESIS",
+        "kisaadi": "ASIA",
+        "bolum": "ASIAN STUDIES WITH THESIS"
+    },
+    {
+        "name": "ATATURK INSTITUTE FOR MODERN TURKISH HISTORY",
+        "kisaadi": "ATA",
+        "bolum": "ATATURK INSTITUTE FOR MODERN TURKISH HISTORY"
+    },
+    {
+        "name": "AUTOMOTIVE ENGINEERING",
+        "kisaadi": "AUTO",
+        "bolum": "AUTOMOTIVE ENGINEERING"
+    },
+    {
+        "name": "MOLECULAR BIOLOGY & GENETICS",
+        "kisaadi": "BIO",
+        "bolum": "MOLECULAR BIOLOGY & GENETICS"
+    },
+    {
+        "name": "BUSINESS INFORMATION SYSTEMS",
+        "kisaadi": "BIS",
+        "bolum": "BUSINESS INFORMATION SYSTEMS"
+    },
+    {
+        "name": "BUSINESS INFORMATION SYSTEMS (WITH THESIS)",
+        "kisaadi": "BIS",
+        "bolum": "BUSINESS INFORMATION SYSTEMS (WITH THESIS)"
+    },
+    {
+        "name": "BIOMEDICAL ENGINEERING",
+        "kisaadi": "BM",
+        "bolum": "BIOMEDICAL ENGINEERING"
+    },
+    {
+        "name": "CRITICAL AND CULTURAL STUDIES",
+        "kisaadi": "CCS",
+        "bolum": "CRITICAL AND CULTURAL STUDIES"
+    },
+    {
+        "name": "CIVIL ENGINEERING",
+        "kisaadi": "CE",
+        "bolum": "CIVIL ENGINEERING"
+    },
+    {
+        "name": "CONSTRUCTION ENGINEERING AND MANAGEMENT",
+        "kisaadi": "CEM",
+        "bolum": "CONSTRUCTION ENGINEERING AND MANAGEMENT"
+    },
+    {
+        "name": "COMPUTER EDUCATION & EDUCATIONAL TECHNOLOGY",
+        "kisaadi": "CET",
+        "bolum": "COMPUTER EDUCATION & EDUCATIONAL TECHNOLOGY"
+    },
+    {
+        "name": "EDUCATIONAL TECHNOLOGY",
+        "kisaadi": "CET",
+        "bolum": "EDUCATIONAL TECHNOLOGY"
+    },
+    {
+        "name": "CHEMICAL ENGINEERING",
+        "kisaadi": "CHE",
+        "bolum": "CHEMICAL ENGINEERING"
+    },
+    {
+        "name": "CHEMISTRY",
+        "kisaadi": "CHEM",
+        "bolum": "CHEMISTRY"
+    },
+    {
+        "name": "COMPUTER ENGINEERING",
+        "kisaadi": "CMPE",
+        "bolum": "COMPUTER ENGINEERING"
+    },
+    {
+        "name": "COGNITIVE SCIENCE",
+        "kisaadi": "COGS",
+        "bolum": "COGNITIVE SCIENCE"
+    },
+    {
+        "name": "COMPUTER PROGRAMMING  PROGRAM",
+        "kisaadi": "COMP",
+        "bolum": "COMPUTER PROGRAMMING  PROGRAM"
+    },
+    {
+        "name": "COMPUTATIONAL SCIENCE & ENGINEERING",
+        "kisaadi": "CSE",
+        "bolum": "COMPUTATIONAL SCIENCE & ENGINEERING"
+    },
+    {
+        "name": "DATA SCIENCE AND ARTIFICIAL INTELLIGENCE",
+        "kisaadi": "DSAI",
+        "bolum": "DATA SCIENCE AND ARTIFICIAL INTELLIGENCE"
+    },
+    {
+        "name": "ECONOMICS",
+        "kisaadi": "EC",
+        "bolum": "ECONOMICS"
+    },
+    {
+        "name": "EDUCATIONAL SCIENCES",
+        "kisaadi": "ED",
+        "bolum": "EDUCATIONAL SCIENCES"
+    },
+    {
+        "name": "ELECTRICAL & ELECTRONICS ENGINEERING",
+        "kisaadi": "EE",
+        "bolum": "ELECTRICAL & ELECTRONICS ENGINEERING"
+    },
+    {
+        "name": "ECONOMICS AND FINANCE",
+        "kisaadi": "EF",
+        "bolum": "ECONOMICS AND FINANCE"
+    },
+    {
+        "name": "ELECTRONICS  PROGRAM",
+        "kisaadi": "ELT",
+        "bolum": "ELECTRONICS  PROGRAM"
+    },
+    {
+        "name": "ENVIRONMENTAL SCIENCES",
+        "kisaadi": "ENV",
+        "bolum": "ENVIRONMENTAL SCIENCES"
+    },
+    {
+        "name": "ENVIRONMENTAL TECHNOLOGY",
+        "kisaadi": "ENVT",
+        "bolum": "ENVIRONMENTAL TECHNOLOGY"
+    },
+    {
+        "name": "EARTHQUAKE ENGINEERING",
+        "kisaadi": "EQE",
+        "bolum": "EARTHQUAKE ENGINEERING"
+    },
+    {
+        "name": "EUROPEAN STUDIES",
+        "kisaadi": "ES",
+        "bolum": "EUROPEAN STUDIES"
+    },
+    {
+        "name": "ENGINEERING AND TECHNOLOGY MANAGEMENT",
+        "kisaadi": "ETM",
+        "bolum": "ENGINEERING AND TECHNOLOGY MANAGEMENT"
+    },
+    {
+        "name": "FINANCIAL ENGINEERING",
+        "kisaadi": "FE",
+        "bolum": "FINANCIAL ENGINEERING"
+    },
+    {
+        "name": "FUEL AND ENERGY TECHNOLOGIES",
+        "kisaadi": "FET",
+        "bolum": "FUEL AND ENERGY TECHNOLOGIES"
+    },
+    {
+        "name": "FILM AND MEDIA STUDIES",
+        "kisaadi": "FILM",
+        "bolum": "FILM AND MEDIA STUDIES"
+    },
+    {
+        "name": "FOREIGN LANGUAGE EDUCATION",
+        "kisaadi": "FLED",
+        "bolum": "FOREIGN LANGUAGE EDUCATION"
+    },
+    {
+        "name": "FOREIGN LANGUAGE TEACHING (WITHOUT THESIS)",
+        "kisaadi": "FLT",
+        "bolum": "FOREIGN LANGUAGE TEACHING (WITHOUT THESIS)"
+    },
+    {
+        "name": "GEODESY",
+        "kisaadi": "GED",
+        "bolum": "GEODESY"
+    },
+    {
+        "name": "GLOBAL & INTERNATIONAL AFFAIRS",
+        "kisaadi": "GIAP",
+        "bolum": "GLOBAL & INTERNATIONAL AFFAIRS"
+    },
+    {
+        "name": "GEOPHYSICS",
+        "kisaadi": "GPH",
+        "bolum": "GEOPHYSICS"
+    },
+    {
+        "name": "GUIDANCE & PSYCHOLOGICAL COUNSELING",
+        "kisaadi": "GUID",
+        "bolum": "GUIDANCE & PSYCHOLOGICAL COUNSELING"
+    },
+    {
+        "name": "HISTORY",
+        "kisaadi": "HIST",
+        "bolum": "HISTORY"
+    },
+    {
+        "name": "HUMANITIES COURSES COORDINATOR",
+        "kisaadi": "HUM",
+        "bolum": "HUMANITIES COURSES COORDINATOR"
+    },
+    {
+        "name": "INDUSTRIAL ENGINEERING",
+        "kisaadi": "IE",
+        "bolum": "INDUSTRIAL ENGINEERING"
+    },
+    {
+        "name": "INTERNATIONAL COMPETITION AND TRADE",
+        "kisaadi": "INCT",
+        "bolum": "INTERNATIONAL COMPETITION AND TRADE"
+    },
+    {
+        "name": "CONFERENCE INTERPRETING",
+        "kisaadi": "INT",
+        "bolum": "CONFERENCE INTERPRETING"
+    },
+    {
+        "name": "INTERNATIONAL TRADE",
+        "kisaadi": "INTT",
+        "bolum": "INTERNATIONAL TRADE"
+    },
+    {
+        "name": "INTERNATIONAL TRADE MANAGEMENT",
+        "kisaadi": "INTT",
+        "bolum": "INTERNATIONAL TRADE MANAGEMENT"
+    },
+    {
+        "name": "INFORMATION SYSTEMS ENGINEERING",
+        "kisaadi": "ISEM",
+        "bolum": "INFORMATION SYSTEMS ENGINEERING"
+    },
+    {
+        "name": "LAW PR.",
+        "kisaadi": "LAW",
+        "bolum": "LAW PR."
+    },
+    {
+        "name": "LINGUISTICS",
+        "kisaadi": "LING",
+        "bolum": "LINGUISTICS"
+    },
+    {
+        "name": "ENGLISH LITERATURE",
+        "kisaadi": "LL",
+        "bolum": "ENGLISH LITERATURE"
+    },
+    {
+        "name": "WESTERN LANGUAGES & LITERATURES",
+        "kisaadi": "LL",
+        "bolum": "WESTERN LANGUAGES & LITERATURES"
+    },
+    {
+        "name": "LEARNING SCIENCES",
+        "kisaadi": "LS",
+        "bolum": "LEARNING SCIENCES"
+    },
+    {
+        "name": "BUSINESS ADMINISTRATION PROGRAM",
+        "kisaadi": "MAN",
+        "bolum": "BUSINESS ADMINISTRATION PROGRAM"
+    },
+    {
+        "name": "MATHEMATICS",
+        "kisaadi": "MATH",
+        "bolum": "MATHEMATICS"
+    },
+    {
+        "name": "MEDICAL SYSTEMS & INFORMATICS",
+        "kisaadi": "MDSI",
+        "bolum": "MEDICAL SYSTEMS & INFORMATICS"
+    },
+    {
+        "name": "MECHANICAL ENGINEERING",
+        "kisaadi": "ME",
+        "bolum": "MECHANICAL ENGINEERING"
+    },
+    {
+        "name": "MECHATRONICS ENGINEERING (WITH THESIS)",
+        "kisaadi": "MECA",
+        "bolum": "MECHATRONICS ENGINEERING (WITH THESIS)"
+    },
+    {
+        "name": "MECHATRONICS ENGINEERING (WITHOUT THESIS)",
+        "kisaadi": "MECA",
+        "bolum": "MECHATRONICS ENGINEERING (WITHOUT THESIS)"
+    },
+    {
+        "name": "INTERNATIONAL RELATIONS:TURKEY,EUROPE AND THE MIDDLE EAST",
+        "kisaadi": "MIR",
+        "bolum": "INTERNATIONAL RELATIONS:TURKEY,EUROPE AND THE MIDDLE EAST"
+    },
+    {
+        "name": "INTERNATIONAL RELATIONS:TURKEY,EUROPE AND THE MIDDLE EAST WITH THESIS",
+        "kisaadi": "MIR",
+        "bolum": "INTERNATIONAL RELATIONS:TURKEY,EUROPE AND THE MIDDLE EAST WITH THESIS"
+    },
+    {
+        "name": "MANAGEMENT INFORMATION SYSTEMS",
+        "kisaadi": "MIS",
+        "bolum": "MANAGEMENT INFORMATION SYSTEMS"
+    },
+    {
+        "name": "TURİZM VE OTEL İŞLETMECİLİĞİ PROGRAMI",
+        "kisaadi": "MSG",
+        "bolum": "TURİZM VE OTEL İŞLETMECİLİĞİ PROGRAMI"
+    },
+    {
+        "name": "NUCLEAR ENGINEERING",
+        "kisaadi": "NE",
+        "bolum": "NUCLEAR ENGINEERING"
+    },
+    {
+        "name": "FINE ARTS",
+        "kisaadi": "PA",
+        "bolum": "FINE ARTS"
+    },
+    {
+        "name": "PHYSICAL EDUCATION",
+        "kisaadi": "PE",
+        "bolum": "PHYSICAL EDUCATION"
+    },
+    {
+        "name": "INTEGRATED BS&MS PROGRAM IN TEACHING PHYSICS",
+        "kisaadi": "PEDU",
+        "bolum": "INTEGRATED BS&MS PROGRAM IN TEACHING PHYSICS"
+    },
+    {
+        "name": "PEDAGOGICAL FORMATION CERTIFICATE PROGRAM",
+        "kisaadi": "PF",
+        "bolum": "PEDAGOGICAL FORMATION CERTIFICATE PROGRAM"
+    },
+    {
+        "name": "PHILOSOPHY",
+        "kisaadi": "PHIL",
+        "bolum": "PHILOSOPHY"
+    },
+    {
+        "name": "PHYSICS",
+        "kisaadi": "PHYS",
+        "bolum": "PHYSICS"
+    },
+    {
+        "name": "POLITICAL SCIENCE&INTERNATIONAL RELATIONS",
+        "kisaadi": "POLS",
+        "bolum": "POLITICAL SCIENCE&INTERNATIONAL RELATIONS"
+    },
+    {
+        "name": "EARLY CHILDHOOD EDUCATION",
+        "kisaadi": "PRED",
+        "bolum": "EARLY CHILDHOOD EDUCATION"
+    },
+    {
+        "name": "PRIMARY EDUCATION",
+        "kisaadi": "PRED",
+        "bolum": "PRIMARY EDUCATION"
+    },
+    {
+        "name": "UNDERGRADUATE PROGRAM IN MATHEMATICS EDUCATION",
+        "kisaadi": "PRMA",
+        "bolum": "UNDERGRADUATE PROGRAM IN MATHEMATICS EDUCATION"
+    },
+    {
+        "name": "UNDERGRADUATE PROGRAM IN SCIENCE EDUCATION",
+        "kisaadi": "PRSC",
+        "bolum": "UNDERGRADUATE PROGRAM IN SCIENCE EDUCATION"
+    },
+    {
+        "name": "UNDERGRADUATE PROGRAM IN PRESCHOOL EDUCATION",
+        "kisaadi": "PRSO",
+        "bolum": "UNDERGRADUATE PROGRAM IN PRESCHOOL EDUCATION"
+    },
+    {
+        "name": "PSYCHOLOGY",
+        "kisaadi": "PSY",
+        "bolum": "PSYCHOLOGY"
+    },
+    {
+        "name": "MATHEMATICS AND SCIENCE EDUCATION",
+        "kisaadi": "SCED",
+        "bolum": "MATHEMATICS AND SCIENCE EDUCATION"
+    },
+    {
+        "name": "SECONDARY SCHOOL SCIENCE AND MATHEMATICS EDUCATION",
+        "kisaadi": "SCED",
+        "bolum": "SECONDARY SCHOOL SCIENCE AND MATHEMATICS EDUCATION"
+    },
+    {
+        "name": "SYSTEMS & CONTROL ENGINEERING",
+        "kisaadi": "SCO",
+        "bolum": "SYSTEMS & CONTROL ENGINEERING"
+    },
+    {
+        "name": "SOCIOLOGY",
+        "kisaadi": "SOC",
+        "bolum": "SOCIOLOGY"
+    },
+    {
+        "name": "SOCIAL POLICY WITH THESIS",
+        "kisaadi": "SPL",
+        "bolum": "SOCIAL POLICY WITH THESIS"
+    },
+    {
+        "name": "SOFTWARE ENGINEERING",
+        "kisaadi": "SWE",
+        "bolum": "SOFTWARE ENGINEERING"
+    },
+    {
+        "name": "SOFTWARE ENGINEERING WITH THESIS",
+        "kisaadi": "SWE",
+        "bolum": "SOFTWARE ENGINEERING WITH THESIS"
+    },
+    {
+        "name": "TURKISH COURSES COORDINATOR",
+        "kisaadi": "TK",
+        "bolum": "TURKISH COURSES COORDINATOR"
+    },
+    {
+        "name": "TURKISH LANGUAGE & LITERATURE",
+        "kisaadi": "TKL",
+        "bolum": "TURKISH LANGUAGE & LITERATURE"
+    },
+    {
+        "name": "TOURISM ADMINISTRATION PROGRAM",
+        "kisaadi": "TOUR",
+        "bolum": "TOURISM ADMINISTRATION PROGRAM"
+    },
+    {
+        "name": "TRANSLATION & INTERPRETING",
+        "kisaadi": "TR",
+        "bolum": "TRANSLATION & INTERPRETING"
+    },
+    {
+        "name": "TRANSLATION AND INTERPRETING STUDIES",
+        "kisaadi": "TR",
+        "bolum": "TRANSLATION AND INTERPRETING STUDIES"
+    },
+    {
+        "name": "SUSTAINABLE TOURISM MANAGEMENT",
+        "kisaadi": "TRM",
+        "bolum": "SUSTAINABLE TOURISM MANAGEMENT"
+    },
+    {
+        "name": "TOURISM ADMINISTRATION",
+        "kisaadi": "TRM",
+        "bolum": "TOURISM ADMINISTRATION"
+    },
+    {
+        "name": "TOURISM MANAGEMENT",
+        "kisaadi": "TRM",
+        "bolum": "TOURISM MANAGEMENT"
+    },
+    {
+        "name": "TRANSLATION",
+        "kisaadi": "WTR",
+        "bolum": "TRANSLATION"
+    },
+    {
+        "name": "EXECUTIVE MBA",
+        "kisaadi": "XMBA",
+        "bolum": "EXECUTIVE MBA"
+    },
+    {
+        "name": "SCHOOL OF FOREIGN LANGUAGES",
+        "kisaadi": "YADYOK",
+        "bolum": "SCHOOL OF FOREIGN LANGUAGES"
+    }
+]

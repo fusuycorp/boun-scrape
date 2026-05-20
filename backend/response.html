@@ -1,0 +1,330 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en-us" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="no-js ie8"> <![endif]-->
+<!--[if IE 9]>    <html lang="en-us" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-us" class="no-js">
+<!--<![endif]-->
+
+<head><meta http-equiv="cache-control" content="max-age=0" /><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="expires" content="1" /><meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" /><meta http-equiv="pragma" content="no-cache" /><meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- CSS Files -->
+    <link href="/BUIS/App_Themes/bsboun/css/adminica/reset.css" rel="stylesheet" /><link href="/BUIS/App_Themes/bsboun/css/adminica/main.css?doRefresh=3" rel="stylesheet" /><link href="/BUIS/App_Themes/bsboun/css/adminica/mobile.css?doRefresh=1" rel="stylesheet" /><link href="/BUIS/App_Themes/bsboun/css/plugins/bootstrap/bootstrap-2.3.1.css?doRefresh=1" rel="stylesheet" /><link media="screen" href="/BUIS/App_Themes/bsboun/css/themes/skin_light.css?doRefresh=1" rel="stylesheet" /><link media="screen" href="/BUIS/App_Themes/bsboun/css/themes/theme_blue.css" rel="stylesheet" /><link href="/BUIS/App_Themes/bsboun/css/themes/bg_white_wood.css" rel="stylesheet" /><link href="/BUIS/App_Themes/bsboun/css/adminica/colours.css?doRefresh=2" rel="stylesheet" /><link href="/BUIS/App_Themes/bsboun/css/adminica/grid.css" rel="stylesheet" /><link href="/BUIS/App_Themes/bsboun/plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" /><link href="/BUIS/App_Themes/bsboun/css/fontawsome/css/all.min.css" rel="stylesheet" />
+
+    <!-- End of CSS Files-->
+
+    <!-- Plugin CSS Files-->
+
+    <!-- Plugin CSS Files-->
+
+    <!-- JS Files -->
+    <script src="/BUIS/App_Themes/bsboun/js/jquery/jquery-3.7.1.min.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/prefixfree/prefixfree.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/adminica/adminica_ui.js?doRefresh=2"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/adminica/adminica_mobile.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/adminica/adminica_load.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/plugins-min.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/bootstrap/bootstrap.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/bootbox.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/ModalMessage.js?doRefresh=2"></script>
+    <script src="/BUIS/App_Themes/bsboun/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.tr.min.js"></script>
+    <script src="/BUIS/js/jquery.maskedinput.js"></script>
+    <script src="/BUIS/App_Themes/bsboun/js/Validation.js"></script>
+
+    <script type="text/javascript">
+
+   
+
+        $(document).ready(function () {
+
+            var isInIFrame = false;
+
+            // BUIS Deki Generic IFrmeise
+            try {
+                if (parent.location.pathname != location.pathname && parent.location.pathname.toLowerCase() == "/buis/manage/ObikasASPFrame.aspx".toLowerCase()) {
+                    isInIFrame = true;
+                }
+            } catch (e) {
+
+            }
+
+            // OBIKAS daki Frame içinde ise
+            try {
+                if (parent.rmain !== undefined) {
+                    $(parent.rmain.document).length;
+                    isInIFrame = true;
+                }
+            }
+            catch (e) {
+
+            }
+
+            if (isInIFrame) {
+                $('#sidebar').hide();
+                $('.navbar-fixed-top').hide();
+                $('#wrapper').css('padding-top', '3px');
+                $('div.main_container').css('margin', '10px 0px 10px 0px');
+            }
+
+            
+
+
+        });
+
+         
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-65314-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        
+
+    </script>
+    <!-- End of JS Files-->
+
+    <title>
+	BOĞAZİÇİ UNIVERSITY | STUDENT INFORMATION REGISTRATION SYSTEM (OBIKAS)
+</title>
+    <style type="text/css">
+        #buttonBar div {
+            display: -webkit-inline-box !important;
+        }
+
+        div#wrapper {
+            padding: 0 !important;
+        }
+    </style>
+
+    </head>
+<body>
+    <form method="post" action="./schedule.aspx?p=semester" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4BE93B14" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+</div>
+        <div id="wrapper" data-adminica-nav-top="3" data-adminica-nav-inner="4" data-adminica-side-top="3" data-adminica-side-inner="4" class="has_fixed_bar">
+
+            
+    <div class="box">
+        <div class="block">
+            <div class="section">
+                
+                <div id="buttonBar" class="button_bar clearfix">
+                    <div id="ctl00_cphMainContent_divSemester">
+                        <div>
+                            <label class="control-label">Semester:</label>
+                        </div>
+                        <div>
+                            <select name="ctl00$cphMainContent$ddlSemester" id="ctl00_cphMainContent_ddlSemester" class="span2">
+	<option value="2025/2026-3">2025/2026-3</option>
+	<option value="2025/2026-2">2025/2026-2</option>
+	<option value="2025/2026-1">2025/2026-1</option>
+	<option value="2024/2025-3">2024/2025-3</option>
+	<option value="2024/2025-2">2024/2025-2</option>
+	<option value="2024/2025-1">2024/2025-1</option>
+	<option value="2023/2024-3">2023/2024-3</option>
+	<option value="2023/2024-2">2023/2024-2</option>
+	<option value="2023/2024-1">2023/2024-1</option>
+	<option value="2022/2023-3">2022/2023-3</option>
+	<option value="2022/2023-2">2022/2023-2</option>
+	<option value="2022/2023-1">2022/2023-1</option>
+	<option value="2021/2022-3">2021/2022-3</option>
+	<option value="2021/2022-2">2021/2022-2</option>
+	<option value="2021/2022-1">2021/2022-1</option>
+	<option value="2020/2021-3">2020/2021-3</option>
+	<option value="2020/2021-2">2020/2021-2</option>
+	<option value="2020/2021-1">2020/2021-1</option>
+	<option value="2019/2020-3">2019/2020-3</option>
+	<option value="2019/2020-2">2019/2020-2</option>
+	<option value="2019/2020-1">2019/2020-1</option>
+	<option value="2018/2019-3">2018/2019-3</option>
+	<option value="2018/2019-2">2018/2019-2</option>
+	<option value="2018/2019-1">2018/2019-1</option>
+	<option value="2017/2018-3">2017/2018-3</option>
+	<option value="2017/2018-2">2017/2018-2</option>
+	<option value="2017/2018-1">2017/2018-1</option>
+	<option value="2016/2017-3">2016/2017-3</option>
+	<option value="2016/2017-2">2016/2017-2</option>
+	<option value="2016/2017-1">2016/2017-1</option>
+	<option value="2015/2016-3">2015/2016-3</option>
+	<option value="2015/2016-2">2015/2016-2</option>
+	<option value="2015/2016-1">2015/2016-1</option>
+	<option value="2014/2015-3">2014/2015-3</option>
+	<option value="2014/2015-2">2014/2015-2</option>
+	<option value="2014/2015-1">2014/2015-1</option>
+	<option value="2013/2014-3">2013/2014-3</option>
+	<option value="2013/2014-2">2013/2014-2</option>
+	<option value="2013/2014-1">2013/2014-1</option>
+	<option value="2012/2013-3">2012/2013-3</option>
+	<option value="2012/2013-2">2012/2013-2</option>
+	<option value="2012/2013-1">2012/2013-1</option>
+	<option value="2011/2012-3">2011/2012-3</option>
+	<option value="2011/2012-2">2011/2012-2</option>
+	<option value="2011/2012-1">2011/2012-1</option>
+	<option value="2010/2011-3">2010/2011-3</option>
+	<option value="2010/2011-2">2010/2011-2</option>
+	<option value="2010/2011-1">2010/2011-1</option>
+	<option value="2009/2010-3">2009/2010-3</option>
+	<option value="2009/2010-2">2009/2010-2</option>
+	<option value="2009/2010-1">2009/2010-1</option>
+	<option value="2008/2009-3">2008/2009-3</option>
+	<option value="2008/2009-2">2008/2009-2</option>
+	<option value="2008/2009-1">2008/2009-1</option>
+	<option value="2007/2008-3">2007/2008-3</option>
+	<option value="2007/2008-2">2007/2008-2</option>
+	<option value="2007/2008-1">2007/2008-1</option>
+	<option value="2006/2007-3">2006/2007-3</option>
+	<option value="2006/2007-2">2006/2007-2</option>
+	<option value="2006/2007-1">2006/2007-1</option>
+	<option value="2005/2006-3">2005/2006-3</option>
+	<option value="2005/2006-2">2005/2006-2</option>
+	<option value="2005/2006-1">2005/2006-1</option>
+	<option value="2004/2005-3">2004/2005-3</option>
+	<option value="2004/2005-2">2004/2005-2</option>
+	<option value="2004/2005-1">2004/2005-1</option>
+	<option value="2003/2004-3">2003/2004-3</option>
+	<option value="2003/2004-2">2003/2004-2</option>
+	<option value="2003/2004-1">2003/2004-1</option>
+	<option value="2002/2003-3">2002/2003-3</option>
+	<option value="2002/2003-2">2002/2003-2</option>
+	<option value="2002/2003-1">2002/2003-1</option>
+	<option value="2001/2002-3">2001/2002-3</option>
+	<option value="2001/2002-2">2001/2002-2</option>
+	<option value="2001/2002-1">2001/2002-1</option>
+	<option value="2000/2001-3">2000/2001-3</option>
+	<option value="2000/2001-2">2000/2001-2</option>
+	<option value="2000/2001-1">2000/2001-1</option>
+	<option value="1999/2000-3">1999/2000-3</option>
+	<option value="1999/2000-2">1999/2000-2</option>
+	<option value="1999/2000-1">1999/2000-1</option>
+	<option value="1998/1999-3">1998/1999-3</option>
+	<option value="1998/1999-2">1998/1999-2</option>
+	<option value="1998/1999-1">1998/1999-1</option>
+	<option value="1997/1998-3">1997/1998-3</option>
+	<option value="1997/1998-2">1997/1998-2</option>
+	<option value="1997/1998-1">1997/1998-1</option>
+	<option value="1996/1997-3">1996/1997-3</option>
+	<option value="1996/1997-2">1996/1997-2</option>
+	<option value="1996/1997-1">1996/1997-1</option>
+	<option value="1995/1996-3">1995/1996-3</option>
+	<option value="1995/1996-2">1995/1996-2</option>
+	<option value="1995/1996-1">1995/1996-1</option>
+	<option value="1994/1995-3">1994/1995-3</option>
+	<option value="1994/1995-2">1994/1995-2</option>
+	<option value="1994/1995-1">1994/1995-1</option>
+	<option value="1993/1994-3">1993/1994-3</option>
+	<option value="1993/1994-2">1993/1994-2</option>
+	<option value="1993/1994-1">1993/1994-1</option>
+	<option value="1992/1993-2">1992/1993-2</option>
+	<option value="1992/1993-1">1992/1993-1</option>
+	<option value="1991/1992-2">1991/1992-2</option>
+	<option value="1991/1992-1">1991/1992-1</option>
+	<option value="1990/1991-2">1990/1991-2</option>
+	<option value="1990/1991-1">1990/1991-1</option>
+	<option value="1989/1990-2">1989/1990-2</option>
+	<option value="1989/1990-1">1989/1990-1</option>
+	<option value="1988/1989-2">1988/1989-2</option>
+	<option value="1988/1989-1">1988/1989-1</option>
+	<option value="1987/1988-2">1987/1988-2</option>
+	<option value="1987/1988-1">1987/1988-1</option>
+	<option value="1986/1987-2">1986/1987-2</option>
+	<option value="1986/1987-1">1986/1987-1</option>
+	<option value="1985/1986-2">1985/1986-2</option>
+	<option value="1985/1986-1">1985/1986-1</option>
+	<option value="1984/1985-2">1984/1985-2</option>
+	<option value="1984/1985-1">1984/1985-1</option>
+	<option value="1983/1984-2">1983/1984-2</option>
+	<option value="1983/1984-1">1983/1984-1</option>
+	<option value="1982/1983-2">1982/1983-2</option>
+	<option value="1982/1983-1">1982/1983-1</option>
+	<option value="1981/1982-2">1981/1982-2</option>
+	<option value="1981/1982-1">1981/1982-1</option>
+	<option value="1980/1981-2">1980/1981-2</option>
+	<option value="1980/1981-1">1980/1981-1</option>
+	<option value="1979/1980-2">1979/1980-2</option>
+	<option value="1979/1980-1">1979/1980-1</option>
+	<option value="1978/1979-2">1978/1979-2</option>
+	<option value="1978/1979-1">1978/1979-1</option>
+	<option value="1977/1978-2">1977/1978-2</option>
+	<option value="1977/1978-1">1977/1978-1</option>
+	<option value="1976/1977-2">1976/1977-2</option>
+	<option value="1976/1977-1">1976/1977-1</option>
+	<option value="1975/1976-2">1975/1976-2</option>
+	<option value="1975/1976-1">1975/1976-1</option>
+	<option value="1974/1975-2">1974/1975-2</option>
+	<option value="1974/1975-1">1974/1975-1</option>
+	<option value="1973/1974-2">1973/1974-2</option>
+	<option value="1973/1974-1">1973/1974-1</option>
+	<option value="1972/1973-2">1972/1973-2</option>
+	<option value="1972/1973-1">1972/1973-1</option>
+	<option value="1971/1972-2">1971/1972-2</option>
+	<option value="1971/1972-1">1971/1972-1</option>
+	<option value="1970/1971-2">1970/1971-2</option>
+	<option selected="selected" value="1970/1971-1">1970/1971-1</option>
+
+</select>
+                        </div>
+                    </div>
+
+                    
+
+                    <div>
+                        <input type="submit" name="ctl00$cphMainContent$btnSearch" value="Go" id="ctl00_cphMainContent_btnSearch" class="btn btn-primary" />
+                        <input type="hidden" name="ctl00$cphMainContent$gRecResp" id="gRecResp" value="0cAFcWeA4GiodWQ_HzW-zms4l41bkJboY0Ys4gsy9nxBnUsFECfQYcgCK5jSLy4E2OU1H-co-Uz_JqqhrLiUtVvIPIzj8NsR10LWtZSEkY83lvui6mPD7eyTrQPi-D3xcZOwEptdB6AxRpRUykdJJFizUSFH2BmycsHgroDciMRnypiNJUgj2gATmU_savwO1ImhhYZVEb3L3xSNqAcEWQk898l4fjTUIIiry-08vPXZkWFNbyTiA2W7URz5C_gl4ZbOdvW0oAZtfDpjdHH76-mgjP0L53G1MB60XH5PrnZjiWANU8SgOqrXORoAlQtN198mWtg3kmTu9pPYH64CsHldMRtD9yLQYo3onLLaCgLqZWEHOhkapmW9A5a7RyjNJ97Gf6ZeWgU_Iym21eYYaFyJ0yw0pR5iJCwTFPomAU_C34PboobTVMtOD6Gt8DN8FeA40Z7KKt773xmr0mYpwAEOinmKjWWxpS3BOD-LwF04lsGmnd1Ni-femzplosQDYruUF2jtdgetNY2nAyCNvSxMAhIxmJe-hURUZ7thuiL9hMSp21MEf_5Qc2h9BqkyJIqdqwdmBYEecxvaq-SksQiKDSamABzBZkAVOXzc9wjZSfodvmF7Y_KakfOnRypglIfYLn6L1KhVI-b2JePvlhXye-gNM0_-7kkoxQn_0o7XCqTpxFR4rOSrZP_5mMc2cC7AEZzGFZTnNETcxyJ3EVrkcJHtEfMNhuhUdRdSFV9a_0HE1qf9nLzLZs1X61aLkTJin8qlC3JmQ1tX_iDiOoEo-FzDC8xE5op1jXx3kGcGwfX_BvQN3fUzKzbGlH_ykDEeLBxoB90RKrrPijjZxRNPcrbe1cBuJcJ5S7ktQ0oL4zg8ru3gVuJMxKBV-vH7hMj_FrrsP5prr05M11RIu2kJbT-JkXv71h_BpZtIrgEa29lq-2UAp3rrKAWlSKNXhotl17Qw7qt5h4kLQNmx4sX6m3XbPbR53lsJlIspxgeK7HY_2mIGRdWJXrCEpE0HCgBN7ntUfClnOdnyzVHykObDb_S1qarfD6zaaTwGEgqepw4ARkFqUyv2as7WR02KL-YT6CgNSNS93i-KsViv7ENot6KZEJAHKFIEqErQcXVXZC8vO6bnoBsazj76RLrRz7LUAY-eWz5XQm11Roj9fcHioMJuDB2yn8OLEyxfOJqxUiQNcWRoCDbBNHFRi5dWY270tJlN4O2M9Q6EG5gPwfnDPUDSC2iRATvq4Ubzx9-UgFva3B3oIAuDKNRag_mLQDDiW3nA-Ct17JpYYR3I1Ws9jEJQfBcXa18CSyh98QsmMDHtQ_JK9Yt5JXXvIU4CfQyNh8zZvipnbg1fWSCV12j1fKFGKYXu1mf8zxmEDKA2CuQhYeKAwgxY9MYeK8kOsc5aSm9i6g-zVJiOvg41juEeclI1SFWFCYW3FksEwXV70BLZ5bug_CWt0ETK9eu5czaAkJUyAEbyMKFiLKFqyPekCZpwtExCqWw24i175znhNUT4PgRvD9zHs9999rL806VWBpQ6egoyJwMcCK38234l_7hI1yI05LevfoBrD0FcRouW2VWNSzx6JzBum7eSpSNWtUgV0l7ZYvsiu_GwtGswyCPbg0__xWAuYJu3eQo9igPYb0T95smbeU504Lx38K-Wz1avgnIq26Ja2TNpGUT3B_cemFUERWJ289zoFPHV6AoBREHHIZZ4ypzM7u8tLh9SwQF3grfHpzcGRGy571DTB4g60VhJMcjnGh29xV7HGMvODFYfWKw0GnUmSZVB2QqOjDW6hcVzZ1gytJDocbAYuej5LJfQWm-IWIbQEC9SSIJVr-9sr7BLVVSEKxbpooKxRT6xMB8s4TKOpR1ksK78IvhYo4UGVVPs7swlq6OT35q1ZnOX_EgRUJ__xUhYGbCywGRg9WBUPtBtQg3ynv_aLaShz2MECprPef4pwOF28BSB9ZrldRFtloSkP_aRpETkJIstsCEjArOuUj5LknkWHnMr9nbguO_trvjr5hZJZ43G4Qja5BMEyN8_qFJjLnraN70gkdwH8kOmxdcfnzk8Ql5CIksxjmANwZk2myhz5uo4oBYs1AahoGGBkFuzApZyC2InSOpt1PnupPBLDUq-7cLMA1dTKdUhGrv50fioeoUhI5ld8aMV-4GcT7ESq3Ih3GcoAiEFZZe0bIj0lwPBAXVS0ceDCSoDzILgjGIGKgDjreGU4FLfabmKdRmvq6cR5dVFkg5ocA" />
+                    </div>
+                </div>
+                <div id="ctl00_cphMainContent_pnlCourseList" class="box">
+	
+                    
+                            <table class="table table-bordered">
+                                <thead>
+                                    <th>Departments / Programs / Instructor(s):</th>
+                                </thead>
+                                <tbody>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=1970/1971-1&kisaadi=EC&bolum=ECONOMICS">
+                                    
+                                    
+                                    ECONOMICS
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td><a href="/scripts/sch.asp?donem=1970/1971-1&kisaadi=AD&bolum=MANAGEMENT">
+                                    
+                                    
+                                    MANAGEMENT
+                                                                        
+                                </a></td>
+                            </tr>
+                        
+                            </tbody>
+                        </table>
+                        
+                
+</div>
+            </div>
+        </div>
+    </div>
+
+            
+
+        </div>
+    </form>
+</body>
+</html>
