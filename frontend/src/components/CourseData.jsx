@@ -14,8 +14,13 @@ import {
   ArrowDown,
   ArrowUpDown,
   X,
+  Inbox,
+  User,
+  MapPin,
+  Clock,
 } from 'lucide-react';
 import { useToast } from '../hooks/useToast';
+import EmptyState from './EmptyState';
 
 const BOLUM_ARRAY = [
   { code: 'ASIA', name: 'ASIAN STUDIES', val: 'ASIA&bolum=ASIAN+STUDIES' },
@@ -46,7 +51,7 @@ const COLUMNS = [
   { key: 'section', label: 'Sec', width: '8%' },
   { key: 'course_name', label: 'Course Name', width: '25%' },
   { key: 'instructor', label: 'Instructor', width: '18%' },
-  { key: 'slots', label: 'Meetings (Day / Hour / Room)', width: '17%', sortable: false },
+  { key: 'slots', label: 'Meetings', width: '17%', sortable: false },
 ];
 
 export default function CourseData({ token }) {
@@ -223,18 +228,18 @@ export default function CourseData({ token }) {
   };
 
   return (
-    <div className="flex-1 p-8 overflow-y-auto space-y-8 animate-fade-in relative">
+    <div className="flex-1 p-4 sm:p-8 overflow-y-auto space-y-8 animate-fade-in relative">
       <div className="bg-glow-violet top-[15%] right-[5%]" aria-hidden="true" />
 
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-extrabold text-gradient tracking-tight">Course Database Explorer</h1>
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-gradient tracking-tight">Course Database Explorer</h1>
           <p className="text-[hsl(var(--text-secondary))] text-sm mt-1">Exhaustively filter, look up, and export historical schedules details</p>
         </div>
 
         <button onClick={handleExportCSV} className="btn-secondary self-start md:self-auto text-xs py-2.5 flex items-center gap-2">
           <Download size={14} aria-hidden="true" />
-          Export Flattened CSV
+          Export CSV
         </button>
       </div>
 
@@ -244,7 +249,7 @@ export default function CourseData({ token }) {
           <Compass size={18} className="text-[hsl(var(--accent-primary))]" aria-hidden="true" />
           Easy Schedule Access Hub
         </h2>
-        <p className="text-xs text-[hsl(var(--text-secondary))] mb-6">Select parameters to search in our local database or jump directly to the live official schedules page</p>
+        <p className="text-xs text-[hsl(var(--text-secondary))] mb-6">Jump to live official schedules or search locally</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 items-end">
           <div className="flex flex-col gap-1.5">
@@ -277,7 +282,7 @@ export default function CourseData({ token }) {
           <div className="flex gap-2 lg:col-span-1 sm:col-span-3">
             <button onClick={handleLocalSearchSchedule} className="flex-1 btn-primary text-xs py-2.5 px-3">Search Locally</button>
             <button onClick={handleOpenOfficialSchedule} className="flex-1 btn-secondary text-xs py-2.5 px-3 flex items-center justify-center gap-1.5">
-              Go Official Link
+              Official Link
               <ExternalLink size={12} aria-hidden="true" />
             </button>
           </div>
@@ -285,14 +290,14 @@ export default function CourseData({ token }) {
       </section>
 
       {/* Advanced Search */}
-      <section className="glass-panel p-6 space-y-6" aria-labelledby="filters-heading">
+      <section className="glass-panel p-4 sm:p-6 space-y-6" aria-labelledby="filters-heading">
         <div className="flex items-center justify-between border-b border-[hsla(var(--glass-border))] pb-4">
           <h2 id="filters-heading" className="text-base font-bold flex items-center gap-2">
             <Filter size={18} className="text-[hsl(var(--accent-secondary))]" aria-hidden="true" />
             Database Filters
           </h2>
-          <span className="text-xs text-[hsl(var(--text-secondary))] font-medium" aria-live="polite">
-            Matching courses found: <strong className="text-[hsl(var(--text-primary))]">{total.toLocaleString()}</strong>
+          <span className="text-xs text-[hsl(var(--text-secondary))] font-medium hidden sm:inline" aria-live="polite">
+            Found: <strong className="text-[hsl(var(--text-primary))]">{total.toLocaleString()}</strong>
           </span>
         </div>
 
@@ -360,7 +365,7 @@ export default function CourseData({ token }) {
               ? 'Loading rows...'
               : error
               ? error
-              : `Showing ${sortedCourses.length} of ${total.toLocaleString()} matching course${total === 1 ? '' : 's'}`}
+              : `Showing ${sortedCourses.length} of ${total.toLocaleString()} records`}
           </span>
           {sortKey && (
             <button
@@ -373,168 +378,125 @@ export default function CourseData({ token }) {
           )}
         </div>
 
-        {/* Data table */}
-        <div className="premium-table-container relative max-h-[60vh] overflow-auto">
+        {/* Data list / table */}
+        <div className="relative min-h-[300px]">
           {loading && (
-            <div className="absolute inset-0 z-10 flex items-center justify-center bg-[hsla(var(--bg-secondary)/0.5)] backdrop-blur-sm">
+            <div className="absolute inset-0 z-20 flex items-center justify-center bg-[hsla(var(--bg-secondary)/0.5)] backdrop-blur-sm rounded-xl">
               <div className="flex flex-col items-center gap-3" role="status">
                 <svg className="animate-spin h-7 w-7 text-[hsl(var(--accent-primary))]" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
                 </svg>
-                <span className="text-xs text-[hsl(var(--text-secondary))]">Fetching records...</span>
+                <span className="text-xs text-[hsl(var(--text-secondary))]">Syncing database...</span>
               </div>
             </div>
           )}
 
-          <table className="premium-table">
-            <thead className="sticky-header">
-              <tr>
-                {COLUMNS.map((col) => {
-                  const isSorted = sortKey === col.key;
-                  const sortable = col.sortable !== false;
-                  return (
-                    <th
-                      key={col.key}
-                      style={{ width: col.width }}
-                      className={sortable ? 'sortable' : ''}
-                      aria-sort={isSorted ? (sortDir === 'asc' ? 'ascending' : 'descending') : 'none'}
-                    >
-                      {sortable ? (
-                        <button
-                          type="button"
-                          onClick={() => handleSort(col.key)}
-                          aria-label={`Sort by ${col.label}`}
-                        >
-                          <span>{col.label}</span>
-                          {isSorted ? (
-                            sortDir === 'asc' ? (
-                              <ArrowUp size={12} aria-hidden="true" />
-                            ) : (
-                              <ArrowDown size={12} aria-hidden="true" />
-                            )
-                          ) : (
-                            <ArrowUpDown size={12} className="opacity-40" aria-hidden="true" />
-                          )}
-                        </button>
-                      ) : (
-                        col.label
-                      )}
-                    </th>
-                  );
-                })}
-              </tr>
-            </thead>
-            <tbody>
-              {sortedCourses.length > 0 ? (
-                sortedCourses.map((course) => {
-                  const isExpanded = expandedCourse === course.id;
-                  return (
-                    <React.Fragment key={course.id}>
-                      <tr
-                        onClick={() => setExpandedCourse(isExpanded ? null : course.id)}
-                        className={`cursor-pointer transition-all ${isExpanded ? 'bg-[hsla(var(--bg-tertiary)/0.6)]' : ''}`}
-                      >
-                        <td className="font-semibold text-xs text-[hsl(var(--text-secondary))]">{course.term}</td>
-                        <td className="font-bold text-xs text-[hsl(var(--accent-primary))]">{course.department}</td>
-                        <td className="font-semibold text-xs">{course.course_code}</td>
-                        <td className="text-xs">{course.section}</td>
-                        <td className="font-medium text-[13px]">{course.course_name}</td>
-                        <td className="text-xs text-[hsl(var(--text-secondary))] truncate max-w-[150px]">{course.instructor}</td>
-                        <td>
-                          <div className="flex flex-wrap gap-1">
-                            {course.slots && course.slots.length > 0 ? (
-                              course.slots.map((s, sIdx) => (
-                                <span
-                                  key={sIdx}
-                                  className="px-2 py-0.5 text-[10px] font-semibold bg-[hsla(var(--accent-primary)/0.08)] border border-[hsla(var(--accent-primary)/0.15)] text-[hsl(var(--text-primary))] rounded-md"
-                                >
-                                  {s.day} {s.hour} {s.room && `(${s.room})`}
-                                </span>
-                              ))
-                            ) : (
-                              <span className="text-[10px] text-[hsl(var(--text-muted))] uppercase">TBA</span>
-                            )}
-                          </div>
-                        </td>
-                      </tr>
-
-                      {isExpanded && (
-                        <tr>
-                          <td colSpan={7} className="bg-[hsla(var(--bg-tertiary)/0.35)] px-8 py-6 border-b border-[hsla(var(--glass-border))]">
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in text-xs text-[hsl(var(--text-secondary))]">
-                              <div className="space-y-2">
-                                <h4 className="font-bold text-sm text-[hsl(var(--text-primary))] flex items-center gap-1.5">
-                                  <Layers size={14} className="text-[hsl(var(--accent-primary))]" aria-hidden="true" />
-                                  Course Specifications
-                                </h4>
-                                <p><strong>Credits:</strong> {course.credits || 'TBA'}</p>
-                                <p><strong>ECTS:</strong> {course.ects || 'TBA'}</p>
-                                <p><strong>Delivery Method:</strong> {course.delivery_method || 'Traditional'}</p>
-                                <p><strong>SL:</strong> {course.sl || 'TBA'}</p>
-                              </div>
-
-                              <div className="space-y-2">
-                                <h4 className="font-bold text-sm text-[hsl(var(--text-primary))] flex items-center gap-1.5">
-                                  <Calendar size={14} className="text-[hsl(var(--accent-secondary))]" aria-hidden="true" />
-                                  Examination Particulars
-                                </h4>
-                                <p><strong>Exam Date:</strong> {course.exam_date || 'TBA'}</p>
-                                <p><strong>Exam Location:</strong> {course.exam_location || 'TBA'}</p>
-                              </div>
-
-                              <div className="space-y-2">
-                                <h4 className="font-bold text-sm text-[hsl(var(--text-primary))] flex items-center gap-1.5">
-                                  <Info size={14} className="text-[hsl(var(--color-info))]" aria-hidden="true" />
-                                  Departmental Relations
-                                </h4>
-                                <p><strong>Required For:</strong> {course.required_for || 'None specified'}</p>
-                                <p><strong>Shared Departments:</strong> {course.departments || 'None'}</p>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                      )}
-                    </React.Fragment>
-                  );
-                })
-              ) : !loading ? (
+          {/* Desktop Table */}
+          <div className="hidden lg:block premium-table-container max-h-[60vh] overflow-auto">
+            <table className="premium-table">
+              <thead className="sticky-header">
                 <tr>
-                  <td colSpan={7} className="text-center text-[hsl(var(--text-muted))] py-12">
-                    {error ? (
-                      <span className="text-[hsl(var(--color-danger))]">{error}</span>
-                    ) : (
-                      <span>
-                        No course records matched these active search parameters.
-                        {(searchTerm || selectedDay || selectedDept) && (
+                  {COLUMNS.map((col) => {
+                    const isSorted = sortKey === col.key;
+                    const sortable = col.sortable !== false;
+                    return (
+                      <th
+                        key={col.key}
+                        style={{ width: col.width }}
+                        className={sortable ? 'sortable' : ''}
+                        aria-sort={isSorted ? (sortDir === 'asc' ? 'ascending' : 'descending') : 'none'}
+                      >
+                        {sortable ? (
                           <button
                             type="button"
-                            onClick={() => { setSearchInput(''); setSelectedDay(''); setSelectedDept(''); }}
-                            className="ml-2 underline hover:text-[hsl(var(--text-primary))]"
+                            onClick={() => handleSort(col.key)}
+                            aria-label={`Sort by ${col.label}`}
                           >
-                            Reset filters
+                            <span>{col.label}</span>
+                            {isSorted ? (
+                              sortDir === 'asc' ? (
+                                <ArrowUp size={12} aria-hidden="true" />
+                              ) : (
+                                <ArrowDown size={12} aria-hidden="true" />
+                              )
+                            ) : (
+                              <ArrowUpDown size={12} className="opacity-40" aria-hidden="true" />
+                            )}
                           </button>
+                        ) : (
+                          col.label
                         )}
-                      </span>
-                    )}
-                  </td>
+                      </th>
+                    );
+                  })}
                 </tr>
-              ) : null}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {sortedCourses.length > 0 ? (
+                  sortedCourses.map((course) => (
+                    <CourseRow 
+                      key={course.id} 
+                      course={course} 
+                      isExpanded={expandedCourse === course.id} 
+                      onToggle={() => setExpandedCourse(expandedCourse === course.id ? null : course.id)} 
+                    />
+                  ))
+                ) : !loading ? (
+                  <tr>
+                    <td colSpan={7}>
+                      <EmptyState 
+                        title="No Courses Found" 
+                        description="Adjust your filters or try a different keyword to locate the schedule you're looking for."
+                        icon={Inbox}
+                        action={searchTerm || selectedDay || selectedDept ? {
+                          label: "Clear All Filters",
+                          onClick: () => { setSearchInput(''); setSelectedDay(''); setSelectedDept(''); }
+                        } : null}
+                      />
+                    </td>
+                  </tr>
+                ) : null}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Mobile Card List */}
+          <div className="lg:hidden space-y-4">
+            {sortedCourses.length > 0 ? (
+              sortedCourses.map((course) => (
+                <CourseCard 
+                  key={course.id} 
+                  course={course} 
+                  isExpanded={expandedCourse === course.id} 
+                  onToggle={() => setExpandedCourse(expandedCourse === course.id ? null : course.id)} 
+                />
+              ))
+            ) : !loading ? (
+              <EmptyState 
+                title="No Results Matching Filters" 
+                description="We couldn't find any courses matching your search. Try broadening your criteria."
+                icon={Inbox}
+                action={searchTerm || selectedDay || selectedDept ? {
+                  label: "Reset Search",
+                  onClick: () => { setSearchInput(''); setSelectedDay(''); setSelectedDept(''); }
+                } : null}
+              />
+            ) : null}
+          </div>
         </div>
 
         {totalPages > 1 && (
           <div className="flex items-center justify-between pt-4 border-t border-[hsla(var(--glass-border))]">
             <span className="text-xs text-[hsl(var(--text-secondary))]">
-              Showing page <strong className="text-[hsl(var(--text-primary))]">{page}</strong> of{' '}
+              Page <strong className="text-[hsl(var(--text-primary))]">{page}</strong> of{' '}
               <strong className="text-[hsl(var(--text-primary))]">{totalPages}</strong>
             </span>
 
             <div className="flex gap-2">
               <button disabled={page <= 1} onClick={() => setPage((p) => Math.max(1, p - 1))} className="btn-secondary py-1.5 px-3 text-xs flex items-center gap-1">
                 <ChevronLeft size={14} aria-hidden="true" />
-                Previous
+                Prev
               </button>
               <button disabled={page >= totalPages} onClick={() => setPage((p) => Math.min(totalPages, p + 1))} className="btn-secondary py-1.5 px-3 text-xs flex items-center gap-1">
                 Next
@@ -544,6 +506,132 @@ export default function CourseData({ token }) {
           </div>
         )}
       </section>
+    </div>
+  );
+}
+
+function CourseRow({ course, isExpanded, onToggle }) {
+  return (
+    <React.Fragment>
+      <tr
+        onClick={onToggle}
+        className={`cursor-pointer transition-all ${isExpanded ? 'bg-[hsla(var(--bg-tertiary)/0.6)]' : ''}`}
+      >
+        <td className="font-semibold text-xs text-[hsl(var(--text-secondary))]">{course.term}</td>
+        <td className="font-bold text-xs text-[hsl(var(--accent-primary))]">{course.department}</td>
+        <td className="font-semibold text-xs">{course.course_code}</td>
+        <td className="text-xs">{course.section}</td>
+        <td className="font-medium text-[13px]">{course.course_name}</td>
+        <td className="text-xs text-[hsl(var(--text-secondary))] truncate max-w-[150px]">{course.instructor}</td>
+        <td>
+          <MeetingBadges slots={course.slots} />
+        </td>
+      </tr>
+      {isExpanded && (
+        <tr>
+          <td colSpan={7} className="bg-[hsla(var(--bg-tertiary)/0.35)] px-8 py-6 border-b border-[hsla(var(--glass-border))]">
+            <ExpandedDetails course={course} />
+          </td>
+        </tr>
+      )}
+    </React.Fragment>
+  );
+}
+
+function CourseCard({ course, isExpanded, onToggle }) {
+  return (
+    <div className={`glass-panel overflow-hidden transition-all ${isExpanded ? 'ring-1 ring-[hsl(var(--accent-primary))]' : ''}`}>
+      <div className="p-4 cursor-pointer" onClick={onToggle}>
+        <div className="flex justify-between items-start mb-2">
+          <div className="flex flex-col">
+            <span className="text-[10px] font-bold text-[hsl(var(--text-muted))] uppercase tracking-wider mb-0.5">{course.term} • {course.department}</span>
+            <h3 className="text-sm font-bold text-[hsl(var(--text-primary))]">{course.course_code}.{course.section}</h3>
+          </div>
+          <span className="text-[10px] bg-[hsla(var(--accent-primary)/0.1)] text-[hsl(var(--accent-primary))] px-2 py-0.5 rounded font-bold">{course.credits} CR</span>
+        </div>
+        <p className="text-xs font-medium text-[hsl(var(--text-secondary))] mb-3 leading-snug">{course.course_name}</p>
+        <div className="flex items-center gap-2 text-[11px] text-[hsl(var(--text-muted))] mb-4">
+          <User size={12} />
+          <span className="truncate">{course.instructor}</span>
+        </div>
+        <MeetingBadges slots={course.slots} />
+      </div>
+      {isExpanded && (
+        <div className="bg-[hsla(var(--bg-tertiary)/0.4)] p-4 border-t border-[hsla(var(--glass-border))]">
+          <ExpandedDetails course={course} />
+        </div>
+      )}
+    </div>
+  );
+}
+
+function MeetingBadges({ slots }) {
+  if (!slots || slots.length === 0) {
+    return <span className="text-[10px] text-[hsl(var(--text-muted))] uppercase">TBA</span>;
+  }
+  return (
+    <div className="flex flex-wrap gap-1">
+      {slots.map((s, idx) => (
+        <span
+          key={idx}
+          className="px-2 py-0.5 text-[10px] font-semibold bg-[hsla(var(--accent-primary)/0.08)] border border-[hsla(var(--accent-primary)/0.15)] text-[hsl(var(--text-primary))] rounded-md"
+        >
+          {s.day} {s.hour} {s.room && `(${s.room})`}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+function ExpandedDetails({ course }) {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in">
+      <div className="space-y-4">
+        <h4 className="font-bold text-xs uppercase tracking-widest text-[hsl(var(--text-primary))] flex items-center gap-2">
+          <Layers size={14} className="text-[hsl(var(--accent-primary))]" aria-hidden="true" />
+          Course Specs
+        </h4>
+        <div className="space-y-2">
+          <DetailItem label="Credits" value={course.credits} />
+          <DetailItem label="ECTS" value={course.ects} />
+          <DetailItem label="Method" value={course.delivery_method || 'Traditional'} />
+          <DetailItem label="SL" value={course.sl} />
+        </div>
+      </div>
+
+      <div className="space-y-4">
+        <h4 className="font-bold text-xs uppercase tracking-widest text-[hsl(var(--text-primary))] flex items-center gap-2">
+          <Calendar size={14} className="text-[hsl(var(--accent-secondary))]" aria-hidden="true" />
+          Examination
+        </h4>
+        <div className="space-y-2">
+          <DetailItem label="Exam Date" value={course.exam_date} icon={Clock} />
+          <DetailItem label="Location" value={course.exam_location} icon={MapPin} />
+        </div>
+      </div>
+
+      <div className="space-y-4">
+        <h4 className="font-bold text-xs uppercase tracking-widest text-[hsl(var(--text-primary))] flex items-center gap-2">
+          <Info size={14} className="text-[hsl(var(--color-info))]" aria-hidden="true" />
+          Relations
+        </h4>
+        <div className="space-y-2">
+          <DetailItem label="Required For" value={course.required_for} />
+          <DetailItem label="Shared With" value={course.departments} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DetailItem({ label, value, icon: Icon }) {
+  return (
+    <div className="flex flex-col gap-0.5">
+      <span className="text-[10px] text-[hsl(var(--text-muted))] font-bold uppercase">{label}</span>
+      <div className="flex items-center gap-1.5 text-xs text-[hsl(var(--text-secondary))] font-medium">
+        {Icon && <Icon size={12} className="opacity-50" />}
+        <span>{value || 'Not Specified'}</span>
+      </div>
     </div>
   );
 }

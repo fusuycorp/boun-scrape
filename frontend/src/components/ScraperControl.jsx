@@ -6,8 +6,10 @@ import {
   Terminal as ConsoleIcon,
   Clock,
   RefreshCw,
+  Inbox,
 } from 'lucide-react';
 import ConfirmDialog from './ConfirmDialog';
+import EmptyState from './EmptyState';
 import { useToast } from '../hooks/useToast';
 
 const PHASES = [
@@ -205,25 +207,18 @@ export default function ScraperControl({ token }) {
   })();
 
   return (
-    <div className="flex-1 p-8 overflow-y-auto space-y-8 animate-fade-in relative">
+    <div className="flex-1 p-4 sm:p-8 overflow-y-auto space-y-8 animate-fade-in relative">
       <div className="bg-glow-pink top-[10%] left-[5%]" aria-hidden="true" />
 
       <div>
-        <h1 className="text-3xl font-extrabold text-gradient tracking-tight">Scraper Control Room</h1>
-        <p className="text-[hsl(var(--text-secondary))] text-sm mt-1">Configure parameters and run scraping routines as async background threads</p>
-      </div>
-
-      {/* SR live region for state changes */}
-      <div className="sr-only" aria-live="polite" aria-atomic="true">
-        {isRunning
-          ? `Scraper running ${runningPhase || ''} at ${status.progress.percent}%`
-          : `Scraper ${status.status}`}
+        <h1 className="text-2xl sm:text-3xl font-extrabold text-gradient tracking-tight">Scraper Control Room</h1>
+        <p className="text-[hsl(var(--text-secondary))] text-sm mt-1">Configure and run scraping routines as background tasks</p>
       </div>
 
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 z-10 relative">
-        <div className="xl:col-span-1 space-y-6 flex flex-col justify-between">
+        <div className="xl:col-span-1 space-y-6 flex flex-col">
           <div className="glass-panel p-6 space-y-5">
-            <h2 className="text-lg font-bold">Scraping Pipeline Steps</h2>
+            <h2 className="text-lg font-bold">Pipeline Steps</h2>
 
             <div className="flex flex-col gap-3" role="radiogroup" aria-label="Scraping stage">
               {PHASES.map((p) => {
@@ -248,7 +243,7 @@ export default function ScraperControl({ token }) {
                       {isThisRunning && (
                         <span className="flex items-center gap-1 text-[10px] text-[hsl(var(--accent-primary))] font-bold uppercase tracking-wider">
                           <span className="pulse-indicator pulse-purple w-1.5 h-1.5" aria-hidden="true" />
-                          Running
+                          Active
                         </span>
                       )}
                     </div>
@@ -268,7 +263,7 @@ export default function ScraperControl({ token }) {
                   className="mt-0.5 accent-[hsl(var(--accent-primary))] cursor-pointer disabled:cursor-not-allowed"
                 />
                 <span>
-                  <span className="font-semibold text-[hsl(var(--text-primary))]">Force refresh</span> — ignore the file cache and re-download every term/department for this stage. Leave off to skip terms already on disk.
+                  <strong className="text-[hsl(var(--text-primary))]">Force refresh</strong> — ignore disk cache and re-download every term.
                 </span>
               </label>
             )}
@@ -279,14 +274,10 @@ export default function ScraperControl({ token }) {
                   type="button"
                   onClick={() => setConfirm({ type: 'stop' })}
                   disabled={actionLoading}
-                  className="w-full btn-secondary text-sm flex items-center justify-center gap-2 py-3 text-[hsl(var(--color-danger))] border-[hsla(var(--color-danger)/0.2)] hover:bg-[hsla(var(--color-danger)/0.1)] hover:border-[hsla(var(--color-danger)/0.3)]"
+                  className="w-full btn-secondary text-sm flex items-center justify-center gap-2 py-3 text-[hsl(var(--color-danger))] border-[hsla(var(--color-danger)/0.2)] hover:bg-[hsla(var(--color-danger)/0.1)]"
                 >
-                  {actionLoading ? (
-                    <Spinner />
-                  ) : (
-                    <Square size={16} fill="currentColor" aria-hidden="true" />
-                  )}
-                  Terminate Scraper
+                  <Square size={16} fill="currentColor" aria-hidden="true" />
+                  Terminate
                 </button>
               ) : (
                 <button
@@ -295,37 +286,28 @@ export default function ScraperControl({ token }) {
                   disabled={actionLoading}
                   className="w-full btn-primary text-sm flex items-center justify-center gap-2 py-3"
                 >
-                  {actionLoading ? (
-                    <Spinner />
-                  ) : (
-                    <Play size={16} fill="currentColor" aria-hidden="true" />
-                  )}
-                  Execute Stage
+                  <Play size={16} fill="currentColor" aria-hidden="true" />
+                  Start Execution
                 </button>
               )}
             </div>
           </div>
 
           {isRunning && (
-            <div className="glass-panel p-6 bg-gradient-to-tr from-[hsla(var(--accent-primary)/0.05)] to-[hsla(var(--accent-secondary)/0.02)] border-[hsla(var(--accent-primary)/0.2)] flex flex-col gap-4">
-              <div>
-                <h3 className="text-sm font-semibold flex items-center gap-2">
-                  <span className="pulse-indicator pulse-purple w-2 h-2" aria-hidden="true" />
-                  Active Background Job
-                </h3>
-                <p className="text-xs text-[hsl(var(--text-muted))] mt-1">Currently compiling data streams</p>
+            <div className="glass-panel p-6 bg-gradient-to-tr from-[hsla(var(--accent-primary)/0.05)] to-[hsla(var(--accent-secondary)/0.02)] border-[hsla(var(--accent-primary)/0.2)] flex flex-col gap-4 animate-fade-in">
+              <div className="flex items-center gap-2">
+                <span className="pulse-indicator pulse-purple w-2 h-2" aria-hidden="true" />
+                <h3 className="text-sm font-semibold">Compiling Data Streams...</h3>
               </div>
 
               <div className="space-y-2" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(status.progress.percent || 0)}>
-                <div className="flex justify-between text-xs font-semibold">
-                  <span className="text-[hsl(var(--text-secondary))]">
-                    Progress: {status.progress.current} / {status.progress.total > 0 ? status.progress.total : '?'}
-                  </span>
+                <div className="flex justify-between text-[10px] font-bold uppercase tracking-wider text-[hsl(var(--text-muted))]">
+                  <span>Current: {status.progress.current} / {status.progress.total > 0 ? status.progress.total : '?'}</span>
                   <span className="text-[hsl(var(--accent-primary))]">{status.progress.percent}%</span>
                 </div>
-                <div className="w-full h-2.5 bg-[hsl(var(--bg-tertiary))] rounded-full overflow-hidden border border-[hsla(var(--glass-border))]">
+                <div className="w-full h-2 bg-[hsl(var(--bg-tertiary))] rounded-full overflow-hidden border border-[hsla(var(--glass-border))]">
                   <div
-                    className="h-full bg-gradient-to-r from-[hsl(var(--accent-primary))] to-[hsl(var(--accent-secondary))] rounded-full transition-all duration-300"
+                    className="h-full bg-gradient-to-r from-[hsl(var(--accent-primary))] to-[hsl(var(--accent-secondary))] transition-all duration-300"
                     style={{ width: `${status.progress.percent}%` }}
                   />
                 </div>
@@ -334,44 +316,42 @@ export default function ScraperControl({ token }) {
           )}
         </div>
 
-        <div className="xl:col-span-2 glass-panel p-6 flex flex-col h-[580px] justify-between">
-          <div className="flex items-center justify-between border-b border-[hsla(var(--glass-border))] pb-4 mb-4">
-            <div className="flex items-center gap-2.5">
-              <div className="flex gap-1.5" aria-hidden="true">
-                <span className="w-3 h-3 rounded-full bg-rose-500 opacity-80" />
-                <span className="w-3 h-3 rounded-full bg-amber-500 opacity-80" />
-                <span className="w-3 h-3 rounded-full bg-emerald-500 opacity-80" />
+        <div className="xl:col-span-2 flex flex-col gap-6">
+          <div className="glass-panel p-6 flex flex-col h-[500px]">
+            <div className="flex items-center justify-between border-b border-[hsla(var(--glass-border))] pb-4 mb-4">
+              <div className="flex items-center gap-2.5">
+                <div className="flex gap-1.5" aria-hidden="true">
+                  <span className="w-2.5 h-2.5 rounded-full bg-rose-500 opacity-60" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-amber-500 opacity-60" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 opacity-60" />
+                </div>
+                <span className="text-xs font-bold text-[hsl(var(--text-muted))] uppercase tracking-widest ml-2">Terminal Output</span>
               </div>
-              <div className="h-4 w-px bg-[hsl(var(--border-color))]" aria-hidden="true" />
-              <span className="text-xs font-medium text-[hsl(var(--text-secondary))] flex items-center gap-2">
-                <ConsoleIcon size={14} className="text-[hsl(var(--text-muted))]" aria-hidden="true" />
-                stdout_logs.log
-              </span>
+
+              <button
+                type="button"
+                onClick={() => setConfirm({ type: 'clear' })}
+                disabled={actionLoading}
+                className="text-[10px] font-bold uppercase tracking-wider text-[hsl(var(--text-muted))] hover:text-[hsl(var(--color-danger))] flex items-center gap-1.5"
+              >
+                <Trash2 size={12} />
+                Clear
+              </button>
             </div>
 
-            <button
-              type="button"
-              onClick={() => setConfirm({ type: 'clear' })}
-              disabled={actionLoading}
-              className="text-xs text-[hsl(var(--text-muted))] hover:text-[hsl(var(--color-danger))] flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-transparent hover:border-[hsla(var(--color-danger)/0.15)] hover:bg-[hsla(var(--color-danger)/0.05)] transition-all"
-            >
-              <Trash2 size={13} aria-hidden="true" />
-              Clear Console
-            </button>
-          </div>
-
-          <div className="flex-1 bg-[hsl(var(--bg-tertiary))] border border-[hsla(var(--glass-border))] rounded-xl p-4 overflow-y-auto font-mono text-[13px] leading-relaxed text-emerald-400 select-all shadow-inner" aria-label="Scraper console output" role="log">
-            {logs ? (
-              <pre className="whitespace-pre-wrap font-mono">
-                {logs}
-                <div ref={terminalEndRef} />
-              </pre>
-            ) : (
-              <div className="h-full flex flex-col items-center justify-center text-[hsl(var(--text-muted))] font-sans gap-2">
-                <ConsoleIcon size={32} className="opacity-30" aria-hidden="true" />
-                <p className="text-xs">No active terminal data. Triggers logs by starting a phase.</p>
-              </div>
-            )}
+            <div className="flex-1 bg-[hsl(var(--bg-tertiary))] border border-[hsla(var(--glass-border))] rounded-xl p-4 overflow-y-auto font-mono text-[13px] leading-relaxed text-emerald-400 select-all shadow-inner" aria-label="Scraper console output" role="log">
+              {logs ? (
+                <pre className="whitespace-pre-wrap font-mono">
+                  {logs}
+                  <div ref={terminalEndRef} />
+                </pre>
+              ) : (
+                <div className="h-full flex flex-col items-center justify-center text-[hsl(var(--text-muted))] font-sans gap-3">
+                  <ConsoleIcon size={32} className="opacity-20" aria-hidden="true" />
+                  <p className="text-xs font-medium">No log data buffered from server.</p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -379,12 +359,12 @@ export default function ScraperControl({ token }) {
       <section aria-labelledby="cached-terms-heading" className="glass-panel p-6 flex flex-col gap-4">
         <header className="flex items-center justify-between gap-3 flex-wrap">
           <div>
-            <h2 id="cached-terms-heading" className="text-sm font-semibold flex items-center gap-2">
+            <h2 id="cached-terms-heading" className="text-sm font-bold flex items-center gap-2">
               <Clock size={16} className="text-[hsl(var(--accent-primary))]" aria-hidden="true" />
-              Cached Terms
+              Cached Semester Data
             </h2>
-            <p className="text-xs text-[hsl(var(--text-muted))] mt-1">
-              Last-scraped timestamp per term, sourced from the file cache. Terms with a Stage 1 timestamp are skipped on the next run unless Force refresh is enabled.
+            <p className="text-[10px] text-[hsl(var(--text-muted))] uppercase tracking-wider mt-1 font-semibold">
+              Term mapping status and local file counts
             </p>
           </div>
           <button
@@ -393,39 +373,43 @@ export default function ScraperControl({ token }) {
             disabled={termsLoading}
             className="btn-secondary text-xs py-2 px-3 inline-flex items-center gap-1.5"
           >
-            <RefreshCw size={14} className={termsLoading ? 'animate-spin-slow' : ''} aria-hidden="true" />
-            Refresh
+            <RefreshCw size={14} className={termsLoading ? 'animate-spin-slow' : ''} />
+            Refresh Cache
           </button>
         </header>
 
         {termsError ? (
-          <div className="text-sm text-[hsl(var(--color-danger))] bg-[hsla(var(--color-danger)/0.08)] border border-[hsla(var(--color-danger)/0.2)] rounded-lg px-3 py-2">
+          <div className="text-xs text-[hsl(var(--color-danger))] bg-[hsla(var(--color-danger)/0.05)] border border-[hsla(var(--color-danger)/0.2)] rounded-lg px-3 py-2">
             {termsError}
           </div>
         ) : termsLoading ? (
-          <div className="text-xs text-[hsl(var(--text-muted))]">Loading…</div>
-        ) : terms.length === 0 ? (
-          <div className="text-xs text-[hsl(var(--text-muted))] text-center py-6">
-            No terms cached yet. Run Stage 1 to populate.
+          <div className="flex gap-2 p-4">
+             <span className="skeleton h-4 w-full" />
           </div>
+        ) : terms.length === 0 ? (
+          <EmptyState 
+            title="No Cached Terms" 
+            description="Run Stage 1 to discover available semesters and academic terms from the Bogazici index."
+            icon={Inbox}
+          />
         ) : (
           <div className="premium-table-container max-h-80 overflow-auto">
             <table className="premium-table">
               <thead className="sticky top-0">
                 <tr>
                   <th>Term</th>
-                  <th>Stage 1 (term page)</th>
-                  <th>Stage 3 (schedules)</th>
+                  <th>Stage 1</th>
+                  <th>Stage 3</th>
                   <th className="text-right">Files</th>
                 </tr>
               </thead>
               <tbody>
                 {terms.map((t) => (
                   <tr key={t.term}>
-                    <td className="font-mono text-xs">{t.term}</td>
+                    <td className="font-mono text-xs font-bold text-[hsl(var(--accent-primary))]">{t.term}</td>
                     <td className="text-xs text-[hsl(var(--text-secondary))]">{formatTimestamp(t.phase1_at)}</td>
                     <td className="text-xs text-[hsl(var(--text-secondary))]">{formatTimestamp(t.phase3_at)}</td>
-                    <td className="text-xs text-right tabular-nums">{t.schedule_count || 0}</td>
+                    <td className="text-xs text-right tabular-nums font-semibold">{t.schedule_count || 0}</td>
                   </tr>
                 ))}
               </tbody>
@@ -449,29 +433,20 @@ export default function ScraperControl({ token }) {
 }
 
 function formatTimestamp(unixSeconds) {
-  if (!unixSeconds) return <span className="text-[hsl(var(--text-muted))]">Never</span>;
+  if (!unixSeconds) return <span className="text-[hsl(var(--text-muted))] italic">Never</span>;
   const d = new Date(unixSeconds * 1000);
   const now = Date.now();
   const diffMs = now - d.getTime();
   const diffMin = Math.round(diffMs / 60000);
   let relative;
-  if (diffMin < 1) relative = 'just now';
+  if (diffMin < 1) relative = 'now';
   else if (diffMin < 60) relative = `${diffMin}m ago`;
   else if (diffMin < 60 * 24) relative = `${Math.round(diffMin / 60)}h ago`;
   else relative = `${Math.round(diffMin / (60 * 24))}d ago`;
-  const absolute = d.toLocaleString();
+  const absolute = d.toLocaleDateString();
   return (
-    <span title={absolute}>
-      {absolute} <span className="text-[hsl(var(--text-muted))]">({relative})</span>
+    <span title={d.toLocaleString()}>
+      {absolute} <span className="text-[10px] text-[hsl(var(--text-muted))] font-bold uppercase ml-1">({relative})</span>
     </span>
-  );
-}
-
-function Spinner() {
-  return (
-    <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-    </svg>
   );
 }

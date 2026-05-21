@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { User, Lock, Key, Compass, Eye, EyeOff, AlertTriangle } from 'lucide-react';
+import { useAuth } from '../contexts/AuthContext';
 
-export default function Login({ onLoginSuccess }) {
+export default function Login() {
+  const { login } = useAuth();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -50,8 +52,7 @@ export default function Login({ onLoginSuccess }) {
       }
 
       const data = await response.json();
-      localStorage.setItem('token', data.access_token);
-      onLoginSuccess(data.access_token);
+      login(data.access_token);
     } catch (err) {
       setError(err.message || 'Server connection failed.');
     } finally {

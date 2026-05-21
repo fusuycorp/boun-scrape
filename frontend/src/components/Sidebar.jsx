@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import {
   LayoutDashboard,
   Terminal,
@@ -12,21 +13,15 @@ import {
 } from 'lucide-react';
 
 const MENU_ITEMS = [
-  { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
-  { id: 'scraper', label: 'Scraper Control', icon: Terminal },
-  { id: 'data', label: 'Course Explorer', icon: Database },
-  { id: 'quota', label: 'Quota Monitor', icon: Activity },
-  { id: 'config', label: 'Configurations', icon: Sliders },
+  { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard, path: '/' },
+  { id: 'scraper', label: 'Scraper Control', icon: Terminal, path: '/scraper' },
+  { id: 'data', label: 'Course Explorer', icon: Database, path: '/explorer' },
+  { id: 'quota', label: 'Quota Monitor', icon: Activity, path: '/quota' },
+  { id: 'config', label: 'Configurations', icon: Sliders, path: '/config' },
 ];
 
-export default function Sidebar({ activeTab, setActiveTab, onLogout, username }) {
-  const buttonsRef = useRef([]);
+export default function Sidebar({ onLogout, username }) {
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  // Close mobile sidebar when tab changes
-  useEffect(() => {
-    setMobileOpen(false);
-  }, [activeTab]);
 
   // Close mobile drawer on escape
   useEffect(() => {
@@ -37,27 +32,6 @@ export default function Sidebar({ activeTab, setActiveTab, onLogout, username })
     document.addEventListener('keydown', handler);
     return () => document.removeEventListener('keydown', handler);
   }, [mobileOpen]);
-
-  const handleKeyDown = (e, idx) => {
-    if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
-      e.preventDefault();
-      const next = (idx + 1) % MENU_ITEMS.length;
-      buttonsRef.current[next]?.focus();
-    } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
-      e.preventDefault();
-      const prev = (idx - 1 + MENU_ITEMS.length) % MENU_ITEMS.length;
-      buttonsRef.current[prev]?.focus();
-    } else if (e.key === 'Home') {
-      e.preventDefault();
-      buttonsRef.current[0]?.focus();
-    } else if (e.key === 'End') {
-      e.preventDefault();
-      buttonsRef.current[MENU_ITEMS.length - 1]?.focus();
-    } else if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      setActiveTab(MENU_ITEMS[idx].id);
-    }
-  };
 
   const sidebarContent = (
     <>
@@ -89,30 +63,32 @@ export default function Sidebar({ activeTab, setActiveTab, onLogout, username })
             Core Utilities
           </p>
           <ul aria-labelledby="sidebar-section-label" className="flex flex-col gap-1.5 list-none p-0 m-0">
-            {MENU_ITEMS.map((item, idx) => {
+            {MENU_ITEMS.map((item) => {
               const Icon = item.icon;
-              const isActive = activeTab === item.id;
               return (
                 <li key={item.id}>
-                  <button
-                    ref={(el) => (buttonsRef.current[idx] = el)}
-                    onClick={() => setActiveTab(item.id)}
-                    onKeyDown={(e) => handleKeyDown(e, idx)}
-                    aria-current={isActive ? 'page' : undefined}
-                    tabIndex={isActive ? 0 : -1}
-                    className={`w-full flex items-center gap-3.5 px-4 py-3 rounded-xl text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--accent-primary))] ${
-                      isActive
-                        ? 'bg-[hsla(var(--accent-primary)/0.12)] text-[hsl(var(--text-primary))] border-l-4 border-[hsl(var(--accent-primary))] shadow-sm'
-                        : 'text-[hsl(var(--text-secondary))] hover:bg-[hsla(var(--bg-tertiary)/0.5)] hover:text-[hsl(var(--text-primary))]'
-                    }`}
+                  <NavLink
+                    to={item.path}
+                    onClick={() => setMobileOpen(false)}
+                    className={({ isActive }) => 
+                      `w-full flex items-center gap-3.5 px-4 py-3 rounded-xl text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--accent-primary))] ${
+                        isActive
+                          ? 'bg-[hsla(var(--accent-primary)/0.12)] text-[hsl(var(--text-primary))] border-l-4 border-[hsl(var(--accent-primary))] shadow-sm'
+                          : 'text-[hsl(var(--text-secondary))] hover:bg-[hsla(var(--bg-tertiary)/0.5)] hover:text-[hsl(var(--text-primary))]'
+                      }`
+                    }
                   >
-                    <Icon
-                      size={18}
-                      aria-hidden="true"
-                      className={isActive ? 'text-[hsl(var(--accent-primary))]' : 'text-[hsl(var(--text-muted))]'}
-                    />
-                    {item.label}
-                  </button>
+                    {({ isActive }) => (
+                      <>
+                        <Icon
+                          size={18}
+                          aria-hidden="true"
+                          className={isActive ? 'text-[hsl(var(--accent-primary))]' : 'text-[hsl(var(--text-muted))]'}
+                        />
+                        {item.label}
+                      </>
+                    )}
+                  </NavLink>
                 </li>
               );
             })}
