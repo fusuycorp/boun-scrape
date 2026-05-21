@@ -8,7 +8,6 @@ import {
   FileText,
   ExternalLink,
   ChevronRight,
-  Sparkles,
   AlertTriangle,
   RefreshCw,
   Inbox,
@@ -29,7 +28,7 @@ const INITIAL_CONFIG = {
   seed_html_size: 0,
 };
 
-export default function Dashboard({ setActiveTab, token }) {
+export default function Dashboard({ token }) {
   const [stats, setStats] = useState(INITIAL_STATS);
   const [config, setConfig] = useState(INITIAL_CONFIG);
   const [loading, setLoading] = useState(true);

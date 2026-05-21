@@ -358,7 +358,6 @@ function StatItem({ label, value, icon: Icon, color }) {
 
 function WatchlistItem({ item, data, loading, error, onRefresh, onRemove }) {
   const [expanded, setExpanded] = useState(false);
-  const courseId = `${item.abbr}${item.code}-${item.section}`;
   
   let statusBadge = { label: 'Idle', class: 'badge-info' };
   if (loading) statusBadge = { label: 'Syncing...', class: 'badge-info' };

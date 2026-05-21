@@ -7,6 +7,12 @@ export function AuthProvider({ children }) {
   const [username, setUsername] = useState('');
   const [authenticating, setAuthenticating] = useState(true);
 
+  const logout = useCallback(() => {
+    localStorage.removeItem('token');
+    setToken('');
+    setUsername('');
+  }, []);
+
   const validateToken = useCallback(async (tokenToValidate) => {
     if (!tokenToValidate) {
       setAuthenticating(false);
@@ -32,7 +38,7 @@ export function AuthProvider({ children }) {
     } finally {
       setAuthenticating(false);
     }
-  }, []);
+  }, [logout]);
 
   useEffect(() => {
     validateToken(token);
@@ -41,12 +47,6 @@ export function AuthProvider({ children }) {
   const login = (newToken) => {
     localStorage.setItem('token', newToken);
     setToken(newToken);
-  };
-
-  const logout = () => {
-    localStorage.removeItem('token');
-    setToken('');
-    setUsername('');
   };
 
   const value = {
