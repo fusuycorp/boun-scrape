@@ -7,6 +7,7 @@ import {
   Clock,
   RefreshCw,
   Inbox,
+  Copy,
 } from 'lucide-react';
 import ConfirmDialog from './ConfirmDialog';
 import EmptyState from './EmptyState';
@@ -39,19 +40,36 @@ export default function ScraperControl({ token }) {
   const terminalEndRef = useRef(null);
   const logInterval = useRef(null);
   const statusInterval = useRef(null);
+  
+  const isMountedRef = useRef(true);
+
+  // Mount tracking
+  useEffect(() => {
+    isMountedRef.current = true;
+    return () => {
+      isMountedRef.current = false;
+    };
+  }, []);
 
   const fetchTerms = useCallback(async () => {
     try {
-      setTermsError(null);
+      if (isMountedRef.current) setTermsError(null);
       const headers = { Authorization: `Bearer ${token}` };
       const res = await fetch('/api/scrape/terms', { headers });
       if (!res.ok) throw new Error('Failed to load term cache.');
       const data = await res.json();
-      setTerms(data.terms || []);
+      
+      if (isMountedRef.current) {
+        setTerms(data.terms || []);
+      }
     } catch (err) {
-      setTermsError(err.message || 'Failed to load term cache.');
+      if (isMountedRef.current) {
+        setTermsError(err.message || 'Failed to load term cache.');
+      }
     } finally {
-      setTermsLoading(false);
+      if (isMountedRef.current) {
+        setTermsLoading(false);
+      }
     }
   }, [token]);
 
@@ -59,7 +77,10 @@ export default function ScraperControl({ token }) {
     try {
       const headers = { Authorization: `Bearer ${token}` };
       const res = await fetch('/api/scrape/status', { headers });
-      if (res.ok) setStatus(await res.json());
+      if (res.ok) {
+        const data = await res.json();
+        if (isMountedRef.current) setStatus(data);
+      }
     } catch (err) {
       console.error('Error fetching scraper status:', err);
     }
@@ -71,7 +92,7 @@ export default function ScraperControl({ token }) {
       const res = await fetch('/api/scrape/logs?limit=500', { headers });
       if (res.ok) {
         const data = await res.json();
-        setLogs(data.logs.join(''));
+        if (isMountedRef.current) setLogs(data.logs.join(''));
       }
     } catch (err) {
       console.error('Error fetching logs:', err);
@@ -106,7 +127,7 @@ export default function ScraperControl({ token }) {
   }, [logs]);
 
   const runStart = async () => {
-    setActionLoading(true);
+    if (isMountedRef.current) setActionLoading(true);
     try {
       const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' };
       const res = await fetch('/api/scrape/start', {
@@ -119,19 +140,21 @@ export default function ScraperControl({ token }) {
         throw new Error(errData.detail || 'Failed to trigger scraping task.');
       }
       toast.success(`Stage started: ${PHASES.find((p) => p.id === activeStep)?.name || activeStep}`);
-      setForceRefresh(false);
+      if (isMountedRef.current) setForceRefresh(false);
       fetchStatus();
       fetchLogs();
     } catch (err) {
       toast.error(err.message || 'Failed to start scraper.');
     } finally {
-      setActionLoading(false);
-      setConfirm(null);
+      if (isMountedRef.current) {
+        setActionLoading(false);
+        setConfirm(null);
+      }
     }
   };
 
   const runStop = async () => {
-    setActionLoading(true);
+    if (isMountedRef.current) setActionLoading(true);
     try {
       const headers = { Authorization: `Bearer ${token}` };
       const res = await fetch('/api/scrape/stop', { method: 'POST', headers });
@@ -141,24 +164,34 @@ export default function ScraperControl({ token }) {
     } catch (err) {
       toast.error(err.message || 'Failed to cancel scraping task.');
     } finally {
-      setActionLoading(false);
-      setConfirm(null);
+      if (isMountedRef.current) {
+        setActionLoading(false);
+        setConfirm(null);
+      }
     }
   };
 
   const runClearLogs = async () => {
-    setActionLoading(true);
+    if (isMountedRef.current) setActionLoading(true);
     try {
       const headers = { Authorization: `Bearer ${token}` };
       await fetch('/api/scrape/logs?clear=true', { headers });
-      setLogs('');
+      if (isMountedRef.current) setLogs('');
       toast.success('Console history cleared.');
     } catch (err) {
       toast.error('Failed to clear logs.');
     } finally {
-      setActionLoading(false);
-      setConfirm(null);
+      if (isMountedRef.current) {
+        setActionLoading(false);
+        setConfirm(null);
+      }
     }
+  };
+
+  const copyLogsToClipboard = () => {
+    if (!logs) return;
+    navigator.clipboard.writeText(logs);
+    toast.success('Logs copied to clipboard!');
   };
 
   const isRunning = status.status === 'running';
@@ -294,7 +327,7 @@ export default function ScraperControl({ token }) {
           </div>
 
           {isRunning && (
-            <div className="glass-panel p-6 bg-gradient-to-tr from-[hsla(var(--accent-primary)/0.05)] to-[hsla(var(--accent-secondary)/0.02)] border-[hsla(var(--accent-primary)/0.2)] flex flex-col gap-4 animate-fade-in">
+            <div className="glass-panel p-6 bg-gradient-to-tr from-[hsla(var(--accent-primary)/0.05)] to-[hsla(var(--accent-secondary)/0.02)] border-[hsla(var(--accent-primary)/0.2)] flex flex-col gap-4 animate-pulse">
               <div className="flex items-center gap-2">
                 <span className="pulse-indicator pulse-purple w-2 h-2" aria-hidden="true" />
                 <h3 className="text-sm font-semibold">Compiling Data Streams...</h3>
@@ -328,15 +361,27 @@ export default function ScraperControl({ token }) {
                 <span className="text-xs font-bold text-[hsl(var(--text-muted))] uppercase tracking-widest ml-2">Terminal Output</span>
               </div>
 
-              <button
-                type="button"
-                onClick={() => setConfirm({ type: 'clear' })}
-                disabled={actionLoading}
-                className="text-[10px] font-bold uppercase tracking-wider text-[hsl(var(--text-muted))] hover:text-[hsl(var(--color-danger))] flex items-center gap-1.5"
-              >
-                <Trash2 size={12} />
-                Clear
-              </button>
+              <div className="flex gap-4">
+                {logs && (
+                  <button
+                    type="button"
+                    onClick={copyLogsToClipboard}
+                    className="text-[10px] font-bold uppercase tracking-wider text-[hsl(var(--text-muted))] hover:text-[hsl(var(--text-primary))] flex items-center gap-1.5"
+                  >
+                    <Copy size={12} />
+                    Copy
+                  </button>
+                )}
+                <button
+                  type="button"
+                  onClick={() => setConfirm({ type: 'clear' })}
+                  disabled={actionLoading}
+                  className="text-[10px] font-bold uppercase tracking-wider text-[hsl(var(--text-muted))] hover:text-[hsl(var(--color-danger))] flex items-center gap-1.5"
+                >
+                  <Trash2 size={12} />
+                  Clear
+                </button>
+              </div>
             </div>
 
             <div className="flex-1 bg-[hsl(var(--bg-tertiary))] border border-[hsla(var(--glass-border))] rounded-xl p-4 overflow-y-auto font-mono text-[13px] leading-relaxed text-emerald-400 select-all shadow-inner" aria-label="Scraper console output" role="log">
@@ -384,7 +429,7 @@ export default function ScraperControl({ token }) {
           </div>
         ) : termsLoading ? (
           <div className="flex gap-2 p-4">
-             <span className="skeleton h-4 w-full" />
+             <span className="skeleton h-4 w-full animate-pulse bg-[hsla(var(--text-muted)/0.15)] rounded" />
           </div>
         ) : terms.length === 0 ? (
           <EmptyState 

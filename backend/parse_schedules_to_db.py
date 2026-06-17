@@ -160,7 +160,9 @@ def process_file(file_path):
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     schedules_dir = os.path.join(script_dir, "schedules")
-    db_path = os.path.join(script_dir, "schedules.db")
+    db_path = os.environ.get("DB_PATH")
+    if not db_path:
+        db_path = os.path.abspath(os.path.join(script_dir, "..", "schedules.db"))
     csv_path = os.path.join(script_dir, "schedules.csv")
     
     if not os.path.exists(schedules_dir):
@@ -232,6 +234,13 @@ def main():
                 print(f"\r[*] Progress: {count}/{len(all_files)} files parsed", end="", flush=True)
     
     print(f"\n[*] Inserting {len(all_data)} courses into database...")
+    
+    # Optimize SQLite settings
+    cursor.execute("PRAGMA synchronous = OFF;")
+    cursor.execute("PRAGMA journal_mode = MEMORY;")
+    
+    # Start explicit transaction
+    cursor.execute("BEGIN TRANSACTION;")
     
     # Batch insertion
     for item in all_data:

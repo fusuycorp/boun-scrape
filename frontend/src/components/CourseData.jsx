@@ -22,28 +22,6 @@ import {
 import { useToast } from '../hooks/useToast';
 import EmptyState from './EmptyState';
 
-const BOLUM_ARRAY = [
-  { code: 'ASIA', name: 'ASIAN STUDIES', val: 'ASIA&bolum=ASIAN+STUDIES' },
-  { code: 'ATA', name: 'ATATURK INSTITUTE', val: 'ATA&bolum=ATATURK+INSTITUTE+FOR+MODERN+TURKISH+HISTORY' },
-  { code: 'CHE', name: 'CHEMICAL ENGINEERING', val: 'CHE&bolum=CHEMICAL+ENGINEERING' },
-  { code: 'CHEM', name: 'CHEMISTRY', val: 'CHEM&bolum=CHEMISTRY' },
-  { code: 'CE', name: 'CIVIL ENGINEERING', val: 'CE&bolum=CIVIL+ENGINEERING' },
-  { code: 'CMPE', name: 'COMPUTER ENGINEERING', val: 'CMPE&bolum=COMPUTER+ENGINEERING' },
-  { code: 'EC', name: 'ECONOMICS', val: 'EC&bolum=ECONOMICS' },
-  { code: 'EE', name: 'ELECTRICAL ENGINEERING', val: 'EE&bolum=ELECTRICAL+%26+ELECTRONICS+ENGINEERING' },
-  { code: 'HIST', name: 'HISTORY', val: 'HIST&bolum=HISTORY' },
-  { code: 'IE', name: 'INDUSTRIAL ENGINEERING', val: 'IE&bolum=INDUSTRIAL+ENGINEERING' },
-  { code: 'MATH', name: 'MATHEMATICS', val: 'MATH&bolum=MATHEMATICS' },
-  { code: 'ME', name: 'MECHANICAL ENGINEERING', val: 'ME&bolum=MECHANICAL+ENGINEERING' },
-  { code: 'BIO', name: 'MOLECULAR BIOLOGY', val: 'BIO&bolum=MOLECULAR+BIOLOGY+%26+GENETICS' },
-  { code: 'PHIL', name: 'PHILOSOPHY', val: 'PHIL&bolum=PHILOSOPHY' },
-  { code: 'PHYS', name: 'PHYSICS', val: 'PHYS&bolum=PHYSICS' },
-  { code: 'POLS', name: 'POLITICAL SCIENCE', val: 'POLS&bolum=POLITICAL+SCIENCE%26INTERNATIONAL+RELATIONS' },
-  { code: 'PSY', name: 'PSYCHOLOGY', val: 'PSY&bolum=PSYCHOLOGY' },
-  { code: 'SOC', name: 'SOCIOLOGY', val: 'SOC&bolum=SOCIOLOGY' },
-  { code: 'SWE', name: 'SOFTWARE ENGINEERING', val: 'SWE&bolum=SOFTWARE+ENGINEERING' },
-];
-
 const COLUMNS = [
   { key: 'term', label: 'Semester', width: '12%' },
   { key: 'department', label: 'Dept', width: '8%' },
@@ -60,6 +38,7 @@ export default function CourseData({ token }) {
   // Drop-down data
   const [terms, setTerms] = useState([]);
   const [depts, setDepts] = useState([]);
+  const [deptsAll, setDeptsAll] = useState([]);
 
   // Filters
   const [selectedTerm, setSelectedTerm] = useState('');
@@ -85,7 +64,7 @@ export default function CourseData({ token }) {
   // Link Generator
   const [linkYear, setLinkYear] = useState(new Date().getFullYear() - 1);
   const [linkTerm, setLinkTerm] = useState('1');
-  const [linkDeptVal, setLinkDeptVal] = useState(BOLUM_ARRAY[5].val);
+  const [linkDeptVal, setLinkDeptVal] = useState('');
 
   // Debounced search
   const debounceRef = useRef(null);
@@ -103,10 +82,12 @@ export default function CourseData({ token }) {
     const fetchMetaData = async () => {
       try {
         const headers = { Authorization: `Bearer ${token}` };
-        const [termsRes, deptsRes] = await Promise.all([
+        const [termsRes, deptsRes, deptsAllRes] = await Promise.all([
           fetch('/api/terms', { headers }),
           fetch('/api/departments', { headers }),
+          fetch('/api/departments/all', { headers }),
         ]);
+
         if (termsRes.ok) {
           const termsData = await termsRes.json();
           setTerms(termsData);
@@ -114,6 +95,15 @@ export default function CourseData({ token }) {
         }
         if (deptsRes.ok) {
           setDepts(await deptsRes.json());
+        }
+        if (deptsAllRes.ok) {
+          const allData = await deptsAllRes.json();
+          setDeptsAll(allData);
+          if (allData.length > 0) {
+            // Default to MATH if found, otherwise first item
+            const defaultDept = allData.find(d => d.kisaadi === 'MATH') || allData[0];
+            setLinkDeptVal(`${defaultDept.kisaadi}&bolum=${encodeURIComponent(defaultDept.bolum)}`);
+          }
         }
       } catch (err) {
         console.error('Failed to load terms/departments list:', err);
@@ -176,16 +166,18 @@ export default function CourseData({ token }) {
   }, [courses, sortKey, sortDir]);
 
   const handleOpenOfficialSchedule = () => {
+    if (!linkDeptVal) return;
     const donem = `${linkYear}/${linkYear + 1}-${linkTerm}`;
     const urlString = `https://registration.boun.edu.tr/scripts/sch.asp?donem=${donem}&kisaadi=${linkDeptVal}`;
     window.open(urlString, '_blank');
   };
 
   const handleLocalSearchSchedule = () => {
-    const matchedDept = BOLUM_ARRAY.find((b) => b.val === linkDeptVal);
+    if (!linkDeptVal) return;
+    const kisaadi = linkDeptVal.split('&')[0];
     const donem = `${linkYear}/${linkYear + 1}-${linkTerm}`;
     setSelectedTerm(donem);
-    if (matchedDept) setSelectedDept(matchedDept.code);
+    setSelectedDept(kisaadi);
     setPage(1);
   };
 
@@ -194,25 +186,29 @@ export default function CourseData({ token }) {
       toast.info('No data available to export.');
       return;
     }
-    let csvContent = 'data:text/csv;charset=utf-8,';
+    // Excel Turkish compatibility requires UTF-8 BOM
+    let csvContent = '\uFEFF';
     csvContent += 'Term,Department,Course Code,Section,Course Name,Instructor,Credits,ECTS,Delivery Method,Meeting Day,Meeting Hour,Room\n';
     courses.forEach((c) => {
-      const baseInfo = `"${c.term}","${c.department}","${c.course_code}","${c.section}","${c.course_name.replace(/"/g, '""')}","${c.instructor.replace(/"/g, '""')}","${c.credits}","${c.ects}","${c.delivery_method}"`;
+      const baseInfo = `"${c.term || ''}","${c.department || ''}","${c.course_code || ''}","${c.section || ''}","${(c.course_name || '').replace(/"/g, '""')}","${(c.instructor || '').replace(/"/g, '""')}","${c.credits || ''}","${c.ects || ''}","${c.delivery_method || ''}"`;
       if (c.slots && c.slots.length > 0) {
         c.slots.forEach((s) => {
-          csvContent += `${baseInfo},"${s.day}","${s.hour}","${s.room}"\n`;
+          csvContent += `${baseInfo},"${s.day || ''}","${s.hour || ''}","${s.room || ''}"\n`;
         });
       } else {
         csvContent += `${baseInfo},"TBA","TBA","TBA"\n`;
       }
     });
-    const encodedUri = encodeURI(csvContent);
+    
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
-    link.setAttribute('href', encodedUri);
-    link.setAttribute('download', 'scraped_courses_export.csv');
+    link.setAttribute('href', url);
+    link.setAttribute('download', `scraped_courses_${selectedTerm.replace('/', '_') || 'all'}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    URL.revokeObjectURL(url);
     toast.success(`Exported ${courses.length} courses to CSV.`);
   };
 
@@ -244,7 +240,7 @@ export default function CourseData({ token }) {
       </div>
 
       {/* Easy Access Generator */}
-      <section className="glass-panel p-6 bg-gradient-to-tr from-[hsla(var(--accent-primary)/0.04)] to-transparent border-[hsla(var(--accent-primary)/0.15)] relative" aria-labelledby="easy-access-heading">
+      <section className="glass-panel p-6 bg-gradient-to-tr from-[hsla(var(--accent-primary)/0.04)] to-transparent border-[hsla(var(--accent-primary)/0.15)] relative animate-fade-in" aria-labelledby="easy-access-heading">
         <h2 id="easy-access-heading" className="text-base font-bold mb-1 flex items-center gap-2">
           <Compass size={18} className="text-[hsl(var(--accent-primary))]" aria-hidden="true" />
           Easy Schedule Access Hub
@@ -273,9 +269,15 @@ export default function CourseData({ token }) {
           <div className="flex flex-col gap-1.5">
             <label htmlFor="link-dept" className="text-[11px] font-semibold uppercase tracking-wider text-[hsl(var(--text-secondary))]">Department</label>
             <select id="link-dept" value={linkDeptVal} onChange={(e) => setLinkDeptVal(e.target.value)} className="glass-select text-xs py-2.5">
-              {BOLUM_ARRAY.map((b) => (
-                <option key={b.code} value={b.val}>{b.code} - {b.name}</option>
-              ))}
+              {deptsAll.length > 0 ? (
+                deptsAll.map((b) => (
+                  <option key={b.kisaadi + '-' + b.bolum} value={`${b.kisaadi}&bolum=${encodeURIComponent(b.bolum)}`}>
+                    {b.kisaadi} - {b.name}
+                  </option>
+                ))
+              ) : (
+                <option value="">Loading departments...</option>
+              )}
             </select>
           </div>
 

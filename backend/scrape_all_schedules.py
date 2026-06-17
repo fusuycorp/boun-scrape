@@ -75,6 +75,8 @@ def scrape_worker(term, dept, cookies, base_url, term_dir):
     }
     
     try:
+        import random
+        time.sleep(random.uniform(0.1, 0.4))
         response = session.get(target_url, params=params, headers=headers, timeout=15)
         response.raise_for_status()
         response.encoding = 'windows-1254'
@@ -127,7 +129,7 @@ def main():
 
     print(f"[*] Total tasks to process: {len(all_tasks)}")
     
-    max_workers = 50  # Adjust based on server tolerance
+    max_workers = 10  # Reduced to avoid triggers
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = {executor.submit(scrape_worker, t, d, cookies, base_site_url, td): (t, d) for t, d, td in all_tasks}
         

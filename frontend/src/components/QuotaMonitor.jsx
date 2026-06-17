@@ -54,13 +54,25 @@ export default function QuotaMonitor({ token }) {
   const [countdown, setCountdown] = useState(10);
 
   const countdownTimer = useRef(null);
+  const isMountedRef = useRef(true);
+
+  // Mount state tracking
+  useEffect(() => {
+    isMountedRef.current = true;
+    return () => {
+      isMountedRef.current = false;
+    };
+  }, []);
 
   useEffect(() => {
     const fetchTerms = async () => {
       try {
         const headers = { Authorization: `Bearer ${token}` };
         const res = await fetch('/api/terms', { headers });
-        if (res.ok) setTermsList(await res.json());
+        if (res.ok) {
+          const list = await res.json();
+          if (isMountedRef.current) setTermsList(list);
+        }
       } catch (err) {
         console.error(err);
       }
@@ -74,8 +86,10 @@ export default function QuotaMonitor({ token }) {
 
   const fetchQuota = useCallback(async (item) => {
     const courseId = `${item.abbr}${item.code}-${item.section}`;
-    setLoadingMap((prev) => ({ ...prev, [courseId]: true }));
-    setErrorMap((prev) => ({ ...prev, [courseId]: '' }));
+    if (isMountedRef.current) {
+      setLoadingMap((prev) => ({ ...prev, [courseId]: true }));
+      setErrorMap((prev) => ({ ...prev, [courseId]: '' }));
+    }
 
     try {
       const headers = { Authorization: `Bearer ${token}` };
@@ -88,21 +102,28 @@ export default function QuotaMonitor({ token }) {
       const res = await fetch(`/api/quota/check?${params.toString()}`, { headers });
       if (!res.ok) throw new Error('Server connection error.');
       const data = await res.json();
+
+      if (!isMountedRef.current) return;
+
       if (!data.success) {
         setErrorMap((prev) => ({ ...prev, [courseId]: data.message || 'Error loading quotas.' }));
       } else {
         setQuotaData((prev) => ({ ...prev, [courseId]: data.data }));
       }
     } catch (err) {
-      setErrorMap((prev) => ({ ...prev, [courseId]: 'Failed to connect to backend.' }));
+      if (isMountedRef.current) {
+        setErrorMap((prev) => ({ ...prev, [courseId]: 'Failed to connect to backend.' }));
+      }
     } finally {
-      setLoadingMap((prev) => ({ ...prev, [courseId]: false }));
+      if (isMountedRef.current) {
+        setLoadingMap((prev) => ({ ...prev, [courseId]: false }));
+      }
     }
   }, [term, token]);
 
   const refreshAll = useCallback(() => {
     watchlist.forEach((item) => fetchQuota(item));
-    setLastUpdated(new Date());
+    if (isMountedRef.current) setLastUpdated(new Date());
   }, [watchlist, fetchQuota]);
 
   useEffect(() => {
@@ -400,8 +421,8 @@ function WatchlistItem({ item, data, loading, error, onRefresh, onRemove }) {
           </div>
         ) : loading && !data ? (
           <div className="flex flex-col gap-2 py-2">
-            <span className="skeleton h-3 w-full" />
-            <span className="skeleton h-3 w-2/3" />
+            <span className="skeleton h-3 w-full animate-pulse bg-[hsla(var(--text-muted)/0.15)] rounded" />
+            <span className="skeleton h-3 w-2/3 animate-pulse bg-[hsla(var(--text-muted)/0.15)] rounded" />
           </div>
         ) : data && data.length > 0 ? (
           <div className="space-y-3">

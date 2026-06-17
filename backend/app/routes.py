@@ -62,6 +62,19 @@ async def get_terms(current_user: str = Depends(get_current_user)):
 async def get_departments(current_user: str = Depends(get_current_user)):
     return get_unique_departments()
 
+@router.get("/departments/all")
+async def get_all_departments(current_user: str = Depends(get_current_user)):
+    backend_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    json_path = os.path.join(backend_dir, "departments_all.json")
+    if os.path.exists(json_path):
+        try:
+            import json
+            with open(json_path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Error loading departments_all.json: {e}")
+    return []
+
 @router.get("/courses")
 async def get_courses(
     current_user: str = Depends(get_current_user),
