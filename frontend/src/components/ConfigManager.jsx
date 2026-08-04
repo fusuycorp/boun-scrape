@@ -1,300 +1,201 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import {
-  Save,
-  Cookie,
-  FileText,
-  HelpCircle,
-  AlertTriangle,
-  Lock,
-  Undo2,
-  RefreshCw,
-} from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Sliders, Cookie, FileCode2, Save, RotateCcw, ShieldCheck, AlertCircle } from 'lucide-react';
+import { api } from '../api/client';
+import { useMountedRef } from '../hooks/useSafeAsync';
 import { useToast } from '../hooks/useToast';
 
-const MIN_COOKIE_LEN = 16;
-const MIN_HTML_LEN = 100;
-
-export default function ConfigManager({ token }) {
-  const toast = useToast();
+export default function ConfigManager() {
+  const showToast = useToast();
+  const isMountedRef = useMountedRef();
 
   const [cookies, setCookies] = useState('');
   const [seedHtml, setSeedHtml] = useState('');
-  const [touched, setTouched] = useState({ cookies: false, seedHtml: false });
+  const [initialState, setInitialState] = useState({ cookies: '', seedHtml: '' });
 
-  const [status, setStatus] = useState({
-    cookie_loaded: false,
-    cookie_masked: '',
-    seed_html_loaded: false,
-    seed_html_size: 0,
-  });
-
+  const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
-  const [loadError, setLoadError] = useState('');
 
-  const fetchConfig = useCallback(async () => {
-    setLoading(true);
-    setLoadError('');
+  const fetchConfig = async () => {
     try {
-      const headers = { Authorization: `Bearer ${token}` };
-      const res = await fetch('/api/config', { headers });
-      if (!res.ok) throw new Error('Failed to load configurations.');
-      const data = await res.json();
-      setStatus(data);
+      setLoading(true);
+      const res = await api.getScraperConfig();
+      if (isMountedRef.current) {
+        setStatus(res);
+        const cookieVal = res.cookie_masked ? `ASP.NET_SessionId=${res.cookie_masked}` : '';
+        setCookies(cookieVal);
+        setInitialState({ cookies: cookieVal, seedHtml: '' });
+      }
     } catch (err) {
-      setLoadError(err.message || 'Failed to load configurations.');
+      if (isMountedRef.current) {
+        showToast(err.message || 'Failed to load configuration status', 'error');
+      }
     } finally {
-      setLoading(false);
+      if (isMountedRef.current) {
+        setLoading(false);
+      }
     }
-  }, [token]);
+  };
 
   useEffect(() => {
     fetchConfig();
-  }, [fetchConfig]);
+  }, []);
 
-  // Field-level validation
-  const cookieError =
-    touched.cookies && cookies && cookies.trim().length < MIN_COOKIE_LEN
-      ? `Cookie value looks too short (min ${MIN_COOKIE_LEN} chars). Did you paste the full header?`
-      : touched.cookies && cookies && !/=/.test(cookies)
-      ? 'Expected key=value pairs (e.g. ASP.NET_SessionId=...).'
-      : '';
-
-  const seedError =
-    touched.seedHtml && seedHtml && seedHtml.trim().length < MIN_HTML_LEN
-      ? `HTML content seems too short (min ${MIN_HTML_LEN} chars).`
-      : touched.seedHtml && seedHtml && !/<html|<table|<body|<!doctype/i.test(seedHtml)
-      ? 'This does not look like a valid HTML document.'
-      : '';
-
-  const dirty = cookies.length > 0 || seedHtml.length > 0;
-  const hasErrors = !!cookieError || !!seedError;
-  const canSave = dirty && !hasErrors && !saving;
+  const isDirty = cookies !== initialState.cookies || seedHtml !== '';
 
   const handleSave = async (e) => {
-    e?.preventDefault?.();
-    if (!canSave) return;
+    e.preventDefault();
+    if (!isDirty) return;
 
     setSaving(true);
     try {
-      const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' };
       const payload = {};
-      if (cookies) payload.cookies = cookies;
-      if (seedHtml) payload.seed_html = seedHtml;
+      if (cookies !== initialState.cookies) payload.cookies = cookies;
+      if (seedHtml !== '') payload.seed_html = seedHtml;
 
-      const res = await fetch('/api/config', {
-        method: 'POST',
-        headers,
-        body: JSON.stringify(payload),
-      });
-
-      if (!res.ok) throw new Error('Failed to update configs.');
-      const data = await res.json();
-      toast.success(data.message || 'Configuration saved.');
-      setCookies('');
+      const res = await api.updateScraperConfig(payload);
+      showToast(res.message || 'Configuration updated successfully!', 'success');
       setSeedHtml('');
-      setTouched({ cookies: false, seedHtml: false });
-      await fetchConfig();
+      fetchConfig();
     } catch (err) {
-      toast.error(err.message || 'Error occurred while saving configurations.');
+      showToast(err.message || 'Failed to save configuration', 'error');
     } finally {
-      setSaving(false);
+      if (isMountedRef.current) {
+        setSaving(false);
+      }
     }
   };
 
-  const handleDiscard = () => {
-    setCookies('');
+  const handleReset = () => {
+    setCookies(initialState.cookies);
     setSeedHtml('');
-    setTouched({ cookies: false, seedHtml: false });
-    toast.info('Unsaved changes discarded.');
   };
 
-  if (loading) {
-    return (
-      <div className="flex-1 p-8 flex items-center justify-center" role="status" aria-live="polite">
-        <div className="flex flex-col items-center gap-3">
-          <svg className="animate-spin h-8 w-8 text-[hsl(var(--accent-primary))]" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-          </svg>
-          <span className="text-[hsl(var(--text-secondary))] text-sm">Loading Configurations...</span>
-        </div>
-      </div>
-    );
-  }
-
   return (
-    <div className="flex-1 p-8 overflow-y-auto space-y-8 animate-fade-in relative pb-32">
-      <div className="bg-glow-violet bottom-[15%] right-[10%]" aria-hidden="true" />
-
+    <div className="space-y-8 animate-fade-in">
+      {/* Header */}
       <div>
-        <h1 className="text-3xl font-extrabold text-gradient tracking-tight">System Configurations</h1>
-        <p className="text-[hsl(var(--text-secondary))] text-sm mt-1">Configure crawling sessions, bypass reCAPTCHA, and upload mapping seeds</p>
+        <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          Session & Credentials Manager
+        </h1>
+        <p className="text-xs sm:text-sm text-slate-400 mt-1">
+          Manage reCAPTCHA bypass session cookies (`cookies.txt`) and ASP.NET ViewState seed files (`response.html`).
+        </p>
       </div>
 
-      {loadError && (
-        <div role="alert" className="glass-panel p-4 flex items-start gap-3 border-[hsla(var(--color-danger)/0.3)] bg-[hsla(var(--color-danger)/0.05)]">
-          <AlertTriangle size={18} className="text-[hsl(var(--color-danger))] mt-0.5 shrink-0" aria-hidden="true" />
-          <div className="flex-1">
-            <h2 className="text-sm font-bold text-[hsl(var(--color-danger))]">Could not load current config</h2>
-            <p className="text-xs text-[hsl(var(--text-secondary))] mt-1">{loadError}</p>
+      {/* Config Status Info */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="p-6 rounded-2xl glass-panel border border-white/10 flex items-center gap-4">
+          <div className="p-3.5 rounded-xl bg-violet-500/20 text-violet-300 border border-violet-500/30">
+            <Cookie className="w-6 h-6" />
           </div>
-          <button onClick={fetchConfig} className="btn-secondary text-xs py-2 px-3">
-            <RefreshCw size={14} aria-hidden="true" />
-            Retry
-          </button>
-        </div>
-      )}
-
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 z-10 relative">
-        <section className="lg:col-span-2 glass-panel p-6" aria-labelledby="config-form-heading">
-          <h2 id="config-form-heading" className="text-base font-bold mb-4 flex items-center gap-2">
-            <Lock size={18} className="text-[hsl(var(--accent-primary))]" aria-hidden="true" />
-            Session Credentials Input
-          </h2>
-
-          <form onSubmit={handleSave} className="space-y-6" noValidate>
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center justify-between">
-                <label htmlFor="cfg-cookies" className="text-xs font-semibold text-[hsl(var(--text-secondary))] uppercase tracking-wider flex items-center gap-1.5">
-                  <Cookie size={14} className="text-[hsl(var(--text-muted))]" aria-hidden="true" />
-                  Browser Session Cookies
-                </label>
-                {status.cookie_loaded && (
-                  <span className="text-[10px] badge badge-success">Loaded: {status.cookie_masked}</span>
-                )}
-              </div>
-              <textarea
-                id="cfg-cookies"
-                placeholder="Paste the 'Cookie' header value from your browser here (e.g. ASP.NET_SessionId=...; buisSemester=...)"
-                value={cookies}
-                onChange={(e) => setCookies(e.target.value)}
-                onBlur={() => setTouched((t) => ({ ...t, cookies: true }))}
-                rows={4}
-                className={`glass-input font-mono text-xs w-full resize-y ${
-                  cookieError ? 'border-[hsla(var(--color-danger)/0.5)] focus:border-[hsl(var(--color-danger))]' : ''
-                }`}
-                aria-invalid={!!cookieError}
-                aria-describedby={cookieError ? 'cfg-cookies-error' : 'cfg-cookies-hint'}
-                style={cookieError ? { borderColor: 'hsla(var(--color-danger)/0.5)' } : undefined}
-              />
-              {cookieError ? (
-                <span id="cfg-cookies-error" role="alert" className="text-[11px] text-[hsl(var(--color-danger))] flex items-center gap-1.5">
-                  <AlertTriangle size={12} aria-hidden="true" />
-                  {cookieError}
+          <div>
+            <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+              cookies.txt Status
+            </span>
+            <div className="flex items-center gap-2 mt-1">
+              {status?.cookie_loaded ? (
+                <span className="text-sm font-extrabold text-emerald-400">
+                  Active ({status.cookie_masked || 'Loaded'})
                 </span>
               ) : (
-                <span id="cfg-cookies-hint" className="text-[10px] text-[hsl(var(--text-muted))] leading-relaxed">
-                  Open Developer Tools (F12) → Network Tab → Search any department schedule page on Bogazici Registration → Copy the value of the <code>Cookie</code> header and paste it above.
+                <span className="text-sm font-extrabold text-amber-400">
+                  Not Loaded / Expired
                 </span>
               )}
             </div>
+          </div>
+        </div>
 
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center justify-between">
-                <label htmlFor="cfg-seed" className="text-xs font-semibold text-[hsl(var(--text-secondary))] uppercase tracking-wider flex items-center gap-1.5">
-                  <FileText size={14} className="text-[hsl(var(--text-muted))]" aria-hidden="true" />
-                  Seed response.html Content
-                </label>
-                {status.seed_html_loaded && (
-                  <span className="text-[10px] badge badge-success">Loaded: {(status.seed_html_size / 1024).toFixed(1)} KB</span>
-                )}
-              </div>
-              <textarea
-                id="cfg-seed"
-                placeholder="Paste raw HTML content of schedule.aspx index page here..."
-                value={seedHtml}
-                onChange={(e) => setSeedHtml(e.target.value)}
-                onBlur={() => setTouched((t) => ({ ...t, seedHtml: true }))}
-                rows={6}
-                className="glass-input font-mono text-xs w-full resize-y"
-                aria-invalid={!!seedError}
-                aria-describedby={seedError ? 'cfg-seed-error' : 'cfg-seed-hint'}
-                style={seedError ? { borderColor: 'hsla(var(--color-danger)/0.5)' } : undefined}
-              />
-              {seedError ? (
-                <span id="cfg-seed-error" role="alert" className="text-[11px] text-[hsl(var(--color-danger))] flex items-center gap-1.5">
-                  <AlertTriangle size={12} aria-hidden="true" />
-                  {seedError}
+        <div className="p-6 rounded-2xl glass-panel border border-white/10 flex items-center gap-4">
+          <div className="p-3.5 rounded-xl bg-pink-500/20 text-pink-300 border border-pink-500/30">
+            <FileCode2 className="w-6 h-6" />
+          </div>
+          <div>
+            <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+              response.html Seed
+            </span>
+            <div className="flex items-center gap-2 mt-1">
+              {status?.seed_html_loaded ? (
+                <span className="text-sm font-extrabold text-emerald-400">
+                  Present ({status.seed_html_size?.toLocaleString()} bytes)
                 </span>
               ) : (
-                <span id="cfg-seed-hint" className="text-[10px] text-[hsl(var(--text-muted))] leading-relaxed">
-                  This seed file maps semesters/terms dynamically for Phase 1. You can paste the raw source code of the Bogazici schedule page.
+                <span className="text-sm font-extrabold text-amber-400">
+                  Missing Seed File
                 </span>
               )}
             </div>
-          </form>
-        </section>
-
-        <aside className="lg:col-span-1 space-y-6" aria-label="Help and guidance">
-          <div className="glass-panel p-6 border-[hsla(var(--color-warning)/0.25)] bg-gradient-to-tr from-[hsla(var(--color-warning)/0.03)] to-transparent flex flex-col gap-4">
-            <h3 className="text-sm font-semibold text-[hsl(var(--color-warning))] flex items-center gap-2">
-              <AlertTriangle size={18} aria-hidden="true" />
-              reCAPTCHA Security Bypass
-            </h3>
-            <p className="text-xs text-[hsl(var(--text-secondary))] leading-relaxed">
-              Bogazici Registration implements reCAPTCHA v3. To ensure successful scraping in Phase 3 and real-time quota lookups, session cookies are mandatory.
-            </p>
-            <ol className="space-y-2 text-xs text-[hsl(var(--text-secondary))] leading-relaxed list-decimal pl-4">
-              <li>Open your browser, navigate to Bogazici Registration Schedules page.</li>
-              <li>Pass the captcha check by searching any department (e.g. CMPE).</li>
-              <li>Copy the Cookie header string from network logs.</li>
-              <li>Paste it here. The scraper will automatically inherit these credentials.</li>
-            </ol>
-          </div>
-
-          <div className="glass-panel p-6 flex flex-col gap-4">
-            <h3 className="text-sm font-semibold flex items-center gap-2">
-              <HelpCircle size={18} className="text-[hsl(var(--color-info))]" aria-hidden="true" />
-              Need Assistance?
-            </h3>
-            <p className="text-xs text-[hsl(var(--text-secondary))] leading-relaxed">
-              If scraping fails with "reCAPTCHA warning", your session cookies have expired. Re-authenticate in your browser, capture a new Cookie string, and update configurations above.
-            </p>
-          </div>
-        </aside>
-      </div>
-
-      {/* Sticky save/discard footer - only when dirty */}
-      {dirty && (
-        <div
-          className="fixed bottom-0 left-0 lg:left-64 right-0 z-30 glass-panel border-t border-[hsla(var(--accent-primary)/0.3)] rounded-none px-6 py-3 flex items-center justify-between gap-4 animate-fade-in"
-          style={{ borderRadius: 0 }}
-          role="region"
-          aria-label="Unsaved changes"
-        >
-          <div className="text-xs text-[hsl(var(--text-secondary))]">
-            <strong className="text-[hsl(var(--text-primary))]">Unsaved changes.</strong>{' '}
-            {hasErrors ? (
-              <span className="text-[hsl(var(--color-danger))]">Fix validation errors before saving.</span>
-            ) : (
-              'Review and save your configuration updates.'
-            )}
-          </div>
-          <div className="flex gap-2">
-            <button type="button" onClick={handleDiscard} disabled={saving} className="btn-secondary text-xs py-2 px-3">
-              <Undo2 size={14} aria-hidden="true" />
-              Discard
-            </button>
-            <button type="button" onClick={handleSave} disabled={!canSave} className="btn-primary text-xs py-2 px-3">
-              {saving ? (
-                <>
-                  <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-                  </svg>
-                  Saving...
-                </>
-              ) : (
-                <>
-                  <Save size={14} aria-hidden="true" />
-                  Save Configurations
-                </>
-              )}
-            </button>
           </div>
         </div>
-      )}
+      </div>
+
+      {/* Form */}
+      <form onSubmit={handleSave} className="space-y-6">
+        {/* Cookie Input */}
+        <div className="p-6 rounded-2xl glass-panel border border-white/10 space-y-3">
+          <label className="block text-sm font-bold text-white flex items-center gap-2">
+            <Cookie className="w-4 h-4 text-violet-400" />
+            Session Cookie String (`ASP.NET_SessionId`)
+          </label>
+          <p className="text-xs text-slate-400">
+            Paste the raw cookie string from your browser inspection tool when logged into registration.bogazici.edu.tr.
+          </p>
+          <textarea
+            rows="3"
+            value={cookies}
+            onChange={(e) => setCookies(e.target.value)}
+            placeholder="ASP.NET_SessionId=abcdef1234567890..."
+            className="w-full p-4 rounded-xl glass-input text-white text-xs font-mono focus:outline-none focus:ring-2 focus:ring-violet-500/50"
+          />
+        </div>
+
+        {/* Seed HTML Input */}
+        <div className="p-6 rounded-2xl glass-panel border border-white/10 space-y-3">
+          <label className="block text-sm font-bold text-white flex items-center gap-2">
+            <FileCode2 className="w-4 h-4 text-pink-400" />
+            Seed Form HTML (`response.html`)
+          </label>
+          <p className="text-xs text-slate-400">
+            Paste full HTML source of schedule.aspx containing ASP.NET `__VIEWSTATE` and `__EVENTVALIDATION` fields.
+          </p>
+          <textarea
+            rows="6"
+            value={seedHtml}
+            onChange={(e) => setSeedHtml(e.target.value)}
+            placeholder="<!DOCTYPE html><html><head>...<input type='hidden' name='__VIEWSTATE'..."
+            className="w-full p-4 rounded-xl glass-input text-white text-xs font-mono focus:outline-none focus:ring-2 focus:ring-violet-500/50"
+          />
+        </div>
+
+        {/* Save Floating Bar */}
+        {isDirty && (
+          <div className="fixed bottom-6 right-6 z-40 p-4 rounded-2xl bg-slate-900/90 border border-violet-500/50 shadow-2xl backdrop-blur-xl flex items-center gap-4 animate-slide-up">
+            <div className="flex items-center gap-2 text-xs font-bold text-violet-300">
+              <AlertCircle className="w-4 h-4 text-violet-400" />
+              <span>Unsaved changes</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={handleReset}
+                className="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold transition-colors"
+              >
+                Discard
+              </button>
+              <button
+                type="submit"
+                disabled={saving}
+                className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-violet-600 to-pink-600 hover:from-violet-500 hover:to-pink-500 text-white font-bold text-xs shadow-lg transition-all"
+              >
+                <Save className="w-4 h-4" />
+                <span>{saving ? 'Saving...' : 'Save Config'}</span>
+              </button>
+            </div>
+          </div>
+        )}
+      </form>
     </div>
   );
 }

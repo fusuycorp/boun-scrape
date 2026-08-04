@@ -1,639 +1,471 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import {
   Search,
   Filter,
   Download,
-  ExternalLink,
+  Calendar,
+  Building2,
+  BookOpen,
   ChevronLeft,
   ChevronRight,
-  Info,
-  Calendar,
-  Layers,
-  Compass,
-  ArrowUp,
-  ArrowDown,
-  ArrowUpDown,
   X,
-  Inbox,
   User,
   MapPin,
   Clock,
+  Info,
+  ExternalLink,
 } from 'lucide-react';
+import { api } from '../api/client';
+import { useMountedRef } from '../hooks/useSafeAsync';
 import { useToast } from '../hooks/useToast';
-import EmptyState from './EmptyState';
 
-const COLUMNS = [
-  { key: 'term', label: 'Semester', width: '12%' },
-  { key: 'department', label: 'Dept', width: '8%' },
-  { key: 'course_code', label: 'Course Code', width: '12%' },
-  { key: 'section', label: 'Sec', width: '8%' },
-  { key: 'course_name', label: 'Course Name', width: '25%' },
-  { key: 'instructor', label: 'Instructor', width: '18%' },
-  { key: 'slots', label: 'Meetings', width: '17%', sortable: false },
-];
+export default function CourseData() {
+  const showToast = useToast();
+  const isMountedRef = useMountedRef();
 
-export default function CourseData({ token }) {
-  const toast = useToast();
-
-  // Drop-down data
-  const [terms, setTerms] = useState([]);
-  const [depts, setDepts] = useState([]);
-  const [deptsAll, setDeptsAll] = useState([]);
-
-  // Filters
-  const [selectedTerm, setSelectedTerm] = useState('');
-  const [selectedDept, setSelectedDept] = useState('');
-  const [searchInput, setSearchInput] = useState('');
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedDay, setSelectedDay] = useState('');
-
-  // Sorting (client-side)
-  const [sortKey, setSortKey] = useState(null);
-  const [sortDir, setSortDir] = useState('asc');
-
-  // Data state
   const [courses, setCourses] = useState([]);
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
-  const [limit] = useState(50);
-  const [totalPages, setTotalPages] = useState(1);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
-  const [expandedCourse, setExpandedCourse] = useState(null);
+  const [pages, setPages] = useState(1);
+  const [loading, setLoading] = useState(true);
 
-  // Link Generator
-  const [linkYear, setLinkYear] = useState(new Date().getFullYear() - 1);
-  const [linkTerm, setLinkTerm] = useState('1');
-  const [linkDeptVal, setLinkDeptVal] = useState('');
+  // Filters
+  const [search, setSearch] = useState('');
+  const [debouncedSearch, setDebouncedSearch] = useState('');
+  const [selectedTerm, setSelectedTerm] = useState('');
+  const [selectedDept, setSelectedDept] = useState('');
+  const [selectedDay, setSelectedDay] = useState('');
 
-  // Debounced search
-  const debounceRef = useRef(null);
+  // Lookup options
+  const [terms, setTerms] = useState([]);
+  const [departments, setDepartments] = useState([]);
+
+  // Detail Modal
+  const [activeCourse, setActiveCourse] = useState(null);
+
+  // Debounce search input
   useEffect(() => {
-    if (debounceRef.current) clearTimeout(debounceRef.current);
-    debounceRef.current = setTimeout(() => {
-      setSearchTerm(searchInput);
+    const timer = setTimeout(() => {
+      setDebouncedSearch(search);
       setPage(1);
     }, 250);
-    return () => clearTimeout(debounceRef.current);
-  }, [searchInput]);
+    return () => clearTimeout(timer);
+  }, [search]);
 
-  // Fetch meta
+  // Load lookup options
   useEffect(() => {
-    const fetchMetaData = async () => {
-      try {
-        const headers = { Authorization: `Bearer ${token}` };
-        const [termsRes, deptsRes, deptsAllRes] = await Promise.all([
-          fetch('/api/terms', { headers }),
-          fetch('/api/departments', { headers }),
-          fetch('/api/departments/all', { headers }),
-        ]);
-
-        if (termsRes.ok) {
-          const termsData = await termsRes.json();
-          setTerms(termsData);
-          if (termsData.length > 0) setSelectedTerm(termsData[0]);
+    Promise.all([api.getTerms().catch(() => []), api.getDepartments().catch(() => [])]).then(
+      ([termsRes, deptsRes]) => {
+        if (isMountedRef.current) {
+          setTerms(termsRes);
+          setDepartments(deptsRes);
         }
-        if (deptsRes.ok) {
-          setDepts(await deptsRes.json());
-        }
-        if (deptsAllRes.ok) {
-          const allData = await deptsAllRes.json();
-          setDeptsAll(allData);
-          if (allData.length > 0) {
-            // Default to MATH if found, otherwise first item
-            const defaultDept = allData.find(d => d.kisaadi === 'MATH') || allData[0];
-            setLinkDeptVal(`${defaultDept.kisaadi}&bolum=${encodeURIComponent(defaultDept.bolum)}`);
-          }
-        }
-      } catch (err) {
-        console.error('Failed to load terms/departments list:', err);
       }
-    };
-    fetchMetaData();
-  }, [token]);
+    );
+  }, [isMountedRef]);
 
-  const fetchCourses = async () => {
+  // Fetch courses
+  const fetchCourses = useCallback(async () => {
     setLoading(true);
-    setError('');
     try {
-      const headers = { Authorization: `Bearer ${token}` };
-      const queryParams = new URLSearchParams({
-        page: page.toString(),
-        limit: limit.toString(),
+      const res = await api.getCourses({
+        term: selectedTerm,
+        department: selectedDept,
+        search: debouncedSearch,
+        day: selectedDay,
+        page,
+        limit: 50,
       });
-      if (selectedTerm) queryParams.append('term', selectedTerm);
-      if (selectedDept) queryParams.append('department', selectedDept);
-      if (searchTerm) queryParams.append('search', searchTerm);
-      if (selectedDay) queryParams.append('day', selectedDay);
 
-      const res = await fetch(`/api/courses?${queryParams.toString()}`, { headers });
-      if (!res.ok) throw new Error('Failed to fetch courses.');
-      const data = await res.json();
-      setCourses(data.courses);
-      setTotal(data.total);
-      setTotalPages(data.pages);
+      if (isMountedRef.current) {
+        setCourses(res.courses || []);
+        setTotal(res.total || 0);
+        setPages(res.pages || 1);
+      }
     } catch (err) {
-      setError(err.message || 'Failed to load courses.');
+      if (isMountedRef.current) {
+        showToast(err.message || 'Failed to fetch course records', 'error');
+      }
     } finally {
-      setLoading(false);
+      if (isMountedRef.current) {
+        setLoading(false);
+      }
     }
-  };
+  }, [selectedTerm, selectedDept, debouncedSearch, selectedDay, page, isMountedRef, showToast]);
 
   useEffect(() => {
     fetchCourses();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [page, limit, selectedTerm, selectedDept, selectedDay, searchTerm, token]);
+  }, [fetchCourses]);
 
-  const handleSort = (key) => {
-    if (sortKey === key) {
-      setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'));
-    } else {
-      setSortKey(key);
-      setSortDir('asc');
-    }
-  };
+  const daysList = ['M', 'T', 'W', 'Th', 'F', 'Sa'];
 
-  const sortedCourses = useMemo(() => {
-    if (!sortKey) return courses;
-    const arr = [...courses];
-    arr.sort((a, b) => {
-      const av = a[sortKey] ?? '';
-      const bv = b[sortKey] ?? '';
-      const cmp = String(av).localeCompare(String(bv), undefined, { numeric: true });
-      return sortDir === 'asc' ? cmp : -cmp;
-    });
-    return arr;
-  }, [courses, sortKey, sortDir]);
-
-  const handleOpenOfficialSchedule = () => {
-    if (!linkDeptVal) return;
-    const donem = `${linkYear}/${linkYear + 1}-${linkTerm}`;
-    const urlString = `https://registration.boun.edu.tr/scripts/sch.asp?donem=${donem}&kisaadi=${linkDeptVal}`;
-    window.open(urlString, '_blank');
-  };
-
-  const handleLocalSearchSchedule = () => {
-    if (!linkDeptVal) return;
-    const kisaadi = linkDeptVal.split('&')[0];
-    const donem = `${linkYear}/${linkYear + 1}-${linkTerm}`;
-    setSelectedTerm(donem);
-    setSelectedDept(kisaadi);
-    setPage(1);
-  };
-
-  const handleExportCSV = () => {
+  // CSV Exporter using Blob with UTF-8 BOM
+  const exportCSV = () => {
     if (courses.length === 0) {
-      toast.info('No data available to export.');
+      showToast('No course records available to export', 'error');
       return;
     }
-    // Excel Turkish compatibility requires UTF-8 BOM
-    let csvContent = '\uFEFF';
-    csvContent += 'Term,Department,Course Code,Section,Course Name,Instructor,Credits,ECTS,Delivery Method,Meeting Day,Meeting Hour,Room\n';
-    courses.forEach((c) => {
-      const baseInfo = `"${c.term || ''}","${c.department || ''}","${c.course_code || ''}","${c.section || ''}","${(c.course_name || '').replace(/"/g, '""')}","${(c.instructor || '').replace(/"/g, '""')}","${c.credits || ''}","${c.ects || ''}","${c.delivery_method || ''}"`;
-      if (c.slots && c.slots.length > 0) {
-        c.slots.forEach((s) => {
-          csvContent += `${baseInfo},"${s.day || ''}","${s.hour || ''}","${s.room || ''}"\n`;
-        });
-      } else {
-        csvContent += `${baseInfo},"TBA","TBA","TBA"\n`;
-      }
-    });
-    
+
+    const headers = [
+      'Term',
+      'Department',
+      'Course Code',
+      'Section',
+      'Course Title',
+      'Instructor',
+      'Credits',
+      'ECTS',
+      'Exam Location',
+      'Exam Date',
+    ];
+
+    const rows = courses.map((c) => [
+      `"${c.term || ''}"`,
+      `"${c.department || ''}"`,
+      `"${c.course_code || ''}"`,
+      `"${c.section || ''}"`,
+      `"${(c.course_name || '').replace(/"/g, '""')}"`,
+      `"${(c.instructor || '').replace(/"/g, '""')}"`,
+      `"${c.credits || ''}"`,
+      `"${c.ects || ''}"`,
+      `"${c.exam_location || ''}"`,
+      `"${c.exam_date || ''}"`,
+    ]);
+
+    const csvContent = '\uFEFF' + [headers.join(','), ...rows.map((r) => r.join(','))].join('\n');
     const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
-    link.setAttribute('href', url);
-    link.setAttribute('download', `scraped_courses_${selectedTerm.replace('/', '_') || 'all'}.csv`);
+    link.href = url;
+    link.setAttribute('download', `boun_courses_${selectedDept || 'all'}_${selectedTerm || 'all'}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
     URL.revokeObjectURL(url);
-    toast.success(`Exported ${courses.length} courses to CSV.`);
-  };
 
-  const years = useMemo(() => {
-    const arr = [];
-    const currentYear = new Date().getFullYear();
-    for (let y = 1970; y <= currentYear; y++) arr.unshift(y);
-    return arr;
-  }, []);
-
-  const clearSearch = () => {
-    setSearchInput('');
+    showToast('CSV dataset exported successfully!', 'success');
   };
 
   return (
-    <div className="flex-1 p-4 sm:p-8 overflow-y-auto space-y-8 animate-fade-in relative">
-      <div className="bg-glow-violet top-[15%] right-[5%]" aria-hidden="true" />
-
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+    <div className="space-y-6 animate-fade-in">
+      {/* Header */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-gradient tracking-tight">Course Database Explorer</h1>
-          <p className="text-[hsl(var(--text-secondary))] text-sm mt-1">Exhaustively filter, look up, and export historical schedules details</p>
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            Course Database Explorer
+          </h1>
+          <p className="text-xs sm:text-sm text-slate-400 mt-1">
+            Search indexed Boğaziçi course records, schedule slots, instructors, and examination schedules.
+          </p>
         </div>
 
-        <button onClick={handleExportCSV} className="btn-secondary self-start md:self-auto text-xs py-2.5 flex items-center gap-2">
-          <Download size={14} aria-hidden="true" />
-          Export CSV
+        <button
+          onClick={exportCSV}
+          disabled={courses.length === 0}
+          className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 to-pink-600 hover:from-violet-500 hover:to-pink-500 text-white font-bold text-xs shadow-lg transition-all duration-200 hover:scale-[1.02] disabled:opacity-50"
+        >
+          <Download className="w-4 h-4" />
+          <span>Export CSV</span>
         </button>
       </div>
 
-      {/* Easy Access Generator */}
-      <section className="glass-panel p-6 bg-gradient-to-tr from-[hsla(var(--accent-primary)/0.04)] to-transparent border-[hsla(var(--accent-primary)/0.15)] relative animate-fade-in" aria-labelledby="easy-access-heading">
-        <h2 id="easy-access-heading" className="text-base font-bold mb-1 flex items-center gap-2">
-          <Compass size={18} className="text-[hsl(var(--accent-primary))]" aria-hidden="true" />
-          Easy Schedule Access Hub
-        </h2>
-        <p className="text-xs text-[hsl(var(--text-secondary))] mb-6">Jump to live official schedules or search locally</p>
+      {/* Filter Controls Bar */}
+      <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {/* Keyword Search */}
+          <div className="relative">
+            <Search className="w-4 h-4 absolute left-3.5 top-3.5 text-slate-400" />
+            <input
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search code, name, instructor..."
+              className="w-full pl-10 pr-4 py-2.5 rounded-xl glass-input text-white text-xs placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-violet-500/50"
+            />
+            {search && (
+              <button
+                onClick={() => setSearch('')}
+                className="absolute right-3 top-3 text-slate-400 hover:text-white"
+              >
+                <X className="w-3.5 h-3.5" />
+              </button>
+            )}
+          </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 items-end">
-          <div className="flex flex-col gap-1.5">
-            <label htmlFor="link-year" className="text-[11px] font-semibold uppercase tracking-wider text-[hsl(var(--text-secondary))]">Academic Year</label>
-            <select id="link-year" value={linkYear} onChange={(e) => setLinkYear(parseInt(e.target.value))} className="glass-select text-xs py-2.5">
-              {years.map((y) => (
-                <option key={y} value={y}>{y} / {y + 1}</option>
+          {/* Semester Selector */}
+          <div>
+            <select
+              value={selectedTerm}
+              onChange={(e) => {
+                setSelectedTerm(e.target.value);
+                setPage(1);
+              }}
+              className="w-full px-3.5 py-2.5 rounded-xl glass-select text-white text-xs focus:outline-none focus:ring-2 focus:ring-violet-500/50"
+            >
+              <option value="">All Semesters</option>
+              {terms.map((t) => (
+                <option key={t} value={t}>
+                  {t}
+                </option>
               ))}
             </select>
           </div>
 
-          <div className="flex flex-col gap-1.5">
-            <label htmlFor="link-term" className="text-[11px] font-semibold uppercase tracking-wider text-[hsl(var(--text-secondary))]">Semester</label>
-            <select id="link-term" value={linkTerm} onChange={(e) => setLinkTerm(e.target.value)} className="glass-select text-xs py-2.5">
-              <option value="1">1 (Fall)</option>
-              <option value="2">2 (Spring)</option>
-              <option value="3">3 (Summer)</option>
-            </select>
-          </div>
-
-          <div className="flex flex-col gap-1.5">
-            <label htmlFor="link-dept" className="text-[11px] font-semibold uppercase tracking-wider text-[hsl(var(--text-secondary))]">Department</label>
-            <select id="link-dept" value={linkDeptVal} onChange={(e) => setLinkDeptVal(e.target.value)} className="glass-select text-xs py-2.5">
-              {deptsAll.length > 0 ? (
-                deptsAll.map((b) => (
-                  <option key={b.kisaadi + '-' + b.bolum} value={`${b.kisaadi}&bolum=${encodeURIComponent(b.bolum)}`}>
-                    {b.kisaadi} - {b.name}
-                  </option>
-                ))
-              ) : (
-                <option value="">Loading departments...</option>
-              )}
-            </select>
-          </div>
-
-          <div className="flex gap-2 lg:col-span-1 sm:col-span-3">
-            <button onClick={handleLocalSearchSchedule} className="flex-1 btn-primary text-xs py-2.5 px-3">Search Locally</button>
-            <button onClick={handleOpenOfficialSchedule} className="flex-1 btn-secondary text-xs py-2.5 px-3 flex items-center justify-center gap-1.5">
-              Official Link
-              <ExternalLink size={12} aria-hidden="true" />
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Advanced Search */}
-      <section className="glass-panel p-4 sm:p-6 space-y-6" aria-labelledby="filters-heading">
-        <div className="flex items-center justify-between border-b border-[hsla(var(--glass-border))] pb-4">
-          <h2 id="filters-heading" className="text-base font-bold flex items-center gap-2">
-            <Filter size={18} className="text-[hsl(var(--accent-secondary))]" aria-hidden="true" />
-            Database Filters
-          </h2>
-          <span className="text-xs text-[hsl(var(--text-secondary))] font-medium hidden sm:inline" aria-live="polite">
-            Found: <strong className="text-[hsl(var(--text-primary))]">{total.toLocaleString()}</strong>
-          </span>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
-          <div className="flex flex-col gap-1.5">
-            <label htmlFor="filter-search" className="text-[11px] font-semibold uppercase tracking-wider text-[hsl(var(--text-secondary))]">Keyword Search</label>
-            <div className="relative flex items-center">
-              <span className="absolute left-3 text-[hsl(var(--text-muted))]" aria-hidden="true"><Search size={15} /></span>
-              <input
-                id="filter-search"
-                type="text"
-                placeholder="Code, title, instructor..."
-                value={searchInput}
-                onChange={(e) => setSearchInput(e.target.value)}
-                className="glass-input text-xs pl-9 pr-9 w-full py-2.5"
-                aria-label="Search courses"
-              />
-              {searchInput && (
-                <button
-                  type="button"
-                  onClick={clearSearch}
-                  aria-label="Clear search"
-                  className="absolute right-2 p-1 text-[hsl(var(--text-muted))] hover:text-[hsl(var(--text-primary))] rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--accent-primary))]"
-                >
-                  <X size={12} />
-                </button>
-              )}
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-1.5">
-            <label htmlFor="filter-dept" className="text-[11px] font-semibold uppercase tracking-wider text-[hsl(var(--text-secondary))]">Department</label>
-            <select id="filter-dept" value={selectedDept} onChange={(e) => { setSelectedDept(e.target.value); setPage(1); }} className="glass-select text-xs py-2.5">
-              <option value="">All Departments</option>
-              {depts.map((d) => (<option key={d} value={d}>{d}</option>))}
-            </select>
-          </div>
-
-          <div className="flex flex-col gap-1.5">
-            <label htmlFor="filter-term" className="text-[11px] font-semibold uppercase tracking-wider text-[hsl(var(--text-secondary))]">Academic Semester</label>
-            <select id="filter-term" value={selectedTerm} onChange={(e) => { setSelectedTerm(e.target.value); setPage(1); }} className="glass-select text-xs py-2.5">
-              <option value="">All Semesters</option>
-              {terms.map((t) => (<option key={t} value={t}>{t}</option>))}
-            </select>
-          </div>
-
-          <div className="flex flex-col gap-1.5">
-            <label htmlFor="filter-day" className="text-[11px] font-semibold uppercase tracking-wider text-[hsl(var(--text-secondary))]">Meeting Day</label>
-            <select id="filter-day" value={selectedDay} onChange={(e) => { setSelectedDay(e.target.value); setPage(1); }} className="glass-select text-xs py-2.5">
-              <option value="">All Days</option>
-              <option value="M">Monday</option>
-              <option value="T">Tuesday</option>
-              <option value="W">Wednesday</option>
-              <option value="Th">Thursday</option>
-              <option value="F">Friday</option>
-              <option value="St">Saturday</option>
-            </select>
-          </div>
-        </div>
-
-        {/* Row count summary */}
-        <div className="text-[11px] text-[hsl(var(--text-muted))] flex items-center justify-between" aria-live="polite">
-          <span>
-            {loading
-              ? 'Loading rows...'
-              : error
-              ? error
-              : `Showing ${sortedCourses.length} of ${total.toLocaleString()} records`}
-          </span>
-          {sortKey && (
-            <button
-              type="button"
-              onClick={() => { setSortKey(null); setSortDir('asc'); }}
-              className="text-[hsl(var(--text-muted))] hover:text-[hsl(var(--text-primary))] underline"
+          {/* Department Selector */}
+          <div>
+            <select
+              value={selectedDept}
+              onChange={(e) => {
+                setSelectedDept(e.target.value);
+                setPage(1);
+              }}
+              className="w-full px-3.5 py-2.5 rounded-xl glass-select text-white text-xs focus:outline-none focus:ring-2 focus:ring-violet-500/50"
             >
-              Clear sort
+              <option value="">All Departments</option>
+              {departments.map((d) => (
+                <option key={d} value={d}>
+                  {d}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Day Filters */}
+          <div className="flex items-center gap-1 bg-slate-900/60 p-1 rounded-xl border border-white/5">
+            <button
+              onClick={() => {
+                setSelectedDay('');
+                setPage(1);
+              }}
+              className={`flex-1 py-1.5 rounded-lg text-[11px] font-bold transition-colors ${
+                selectedDay === '' ? 'bg-violet-600 text-white' : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              Any Day
             </button>
-          )}
+            {daysList.map((day) => (
+              <button
+                key={day}
+                onClick={() => {
+                  setSelectedDay(day);
+                  setPage(1);
+                }}
+                className={`w-7 py-1.5 rounded-lg text-[11px] font-bold transition-colors ${
+                  selectedDay === day ? 'bg-violet-600 text-white' : 'text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                {day}
+              </button>
+            ))}
+          </div>
         </div>
+      </div>
 
-        {/* Data list / table */}
-        <div className="relative min-h-[300px]">
-          {loading && (
-            <div className="absolute inset-0 z-20 flex items-center justify-center bg-[hsla(var(--bg-secondary)/0.5)] backdrop-blur-sm rounded-xl">
-              <div className="flex flex-col items-center gap-3" role="status">
-                <svg className="animate-spin h-7 w-7 text-[hsl(var(--accent-primary))]" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-                </svg>
-                <span className="text-xs text-[hsl(var(--text-secondary))]">Syncing database...</span>
-              </div>
-            </div>
-          )}
-
-          {/* Desktop Table */}
-          <div className="hidden lg:block premium-table-container max-h-[60vh] overflow-auto">
-            <table className="premium-table">
-              <thead className="sticky-header">
+      {/* Courses Data Grid / Table */}
+      <div className="rounded-2xl glass-panel border border-white/10 overflow-hidden shadow-xl">
+        {loading ? (
+          <div className="p-12 text-center text-slate-400 flex flex-col items-center gap-3">
+            <div className="w-8 h-8 rounded-full border-2 border-violet-500 border-t-transparent animate-spin" />
+            <span className="text-xs font-medium">Querying course database...</span>
+          </div>
+        ) : courses.length === 0 ? (
+          <div className="p-12 text-center text-slate-400 space-y-2">
+            <BookOpen className="w-10 h-10 mx-auto text-slate-600" />
+            <p className="text-sm font-bold text-white">No Courses Found</p>
+            <p className="text-xs text-slate-500">Try adjusting your filters or search terms.</p>
+          </div>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-xs text-slate-300">
+              <thead className="bg-slate-950/80 text-slate-400 font-bold uppercase tracking-wider border-b border-white/10">
                 <tr>
-                  {COLUMNS.map((col) => {
-                    const isSorted = sortKey === col.key;
-                    const sortable = col.sortable !== false;
-                    return (
-                      <th
-                        key={col.key}
-                        style={{ width: col.width }}
-                        className={sortable ? 'sortable' : ''}
-                        aria-sort={isSorted ? (sortDir === 'asc' ? 'ascending' : 'descending') : 'none'}
-                      >
-                        {sortable ? (
-                          <button
-                            type="button"
-                            onClick={() => handleSort(col.key)}
-                            aria-label={`Sort by ${col.label}`}
-                          >
-                            <span>{col.label}</span>
-                            {isSorted ? (
-                              sortDir === 'asc' ? (
-                                <ArrowUp size={12} aria-hidden="true" />
-                              ) : (
-                                <ArrowDown size={12} aria-hidden="true" />
-                              )
-                            ) : (
-                              <ArrowUpDown size={12} className="opacity-40" aria-hidden="true" />
-                            )}
-                          </button>
-                        ) : (
-                          col.label
-                        )}
-                      </th>
-                    );
-                  })}
+                  <th className="py-3.5 px-4">Code / Sec</th>
+                  <th className="py-3.5 px-4">Course Title</th>
+                  <th className="py-3.5 px-4">Instructor</th>
+                  <th className="py-3.5 px-4">Schedule Slots</th>
+                  <th className="py-3.5 px-4">Credits</th>
+                  <th className="py-3.5 px-4 text-right">Details</th>
                 </tr>
               </thead>
-              <tbody>
-                {sortedCourses.length > 0 ? (
-                  sortedCourses.map((course) => (
-                    <CourseRow 
-                      key={course.id} 
-                      course={course} 
-                      isExpanded={expandedCourse === course.id} 
-                      onToggle={() => setExpandedCourse(expandedCourse === course.id ? null : course.id)} 
-                    />
-                  ))
-                ) : !loading ? (
-                  <tr>
-                    <td colSpan={7}>
-                      <EmptyState 
-                        title="No Courses Found" 
-                        description="Adjust your filters or try a different keyword to locate the schedule you're looking for."
-                        icon={Inbox}
-                        action={searchTerm || selectedDay || selectedDept ? {
-                          label: "Clear All Filters",
-                          onClick: () => { setSearchInput(''); setSelectedDay(''); setSelectedDept(''); }
-                        } : null}
-                      />
+              <tbody className="divide-y divide-white/5">
+                {courses.map((course) => (
+                  <tr
+                    key={course.id}
+                    className="hover:bg-white/5 transition-colors group cursor-pointer"
+                    onClick={() => setActiveCourse(course)}
+                  >
+                    <td className="py-3.5 px-4 whitespace-nowrap">
+                      <span className="font-extrabold text-white group-hover:text-violet-300 transition-colors">
+                        {course.course_code}
+                      </span>
+                      <span className="ml-1.5 px-2 py-0.5 rounded-full bg-violet-500/10 text-violet-400 text-[10px] font-bold border border-violet-500/20">
+                        {course.section}
+                      </span>
+                    </td>
+                    <td className="py-3.5 px-4 max-w-xs truncate font-medium text-slate-200">
+                      {course.course_name}
+                    </td>
+                    <td className="py-3.5 px-4 whitespace-nowrap text-slate-400">
+                      {course.instructor || 'TBA'}
+                    </td>
+                    <td className="py-3.5 px-4">
+                      <div className="flex flex-wrap gap-1">
+                        {course.slots && course.slots.length > 0 ? (
+                          course.slots.map((s, idx) => (
+                            <span
+                              key={idx}
+                              className="px-2 py-0.5 rounded bg-slate-900 text-slate-300 border border-white/10 text-[10px] font-mono"
+                            >
+                              {s.day} {s.hour} ({s.room || 'TBA'})
+                            </span>
+                          ))
+                        ) : (
+                          <span className="text-slate-500 text-[11px] italic">No slots</span>
+                        )}
+                      </div>
+                    </td>
+                    <td className="py-3.5 px-4 whitespace-nowrap">
+                      <span className="font-bold text-slate-300">{course.credits || '-'} Cr</span>
+                      {course.ects && <span className="ml-1 text-slate-500">({course.ects} ECTS)</span>}
+                    </td>
+                    <td className="py-3.5 px-4 text-right whitespace-nowrap">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setActiveCourse(course);
+                        }}
+                        className="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-violet-600 text-slate-200 hover:text-white font-bold text-[11px] transition-colors"
+                      >
+                        Inspect
+                      </button>
                     </td>
                   </tr>
-                ) : null}
+                ))}
               </tbody>
             </table>
           </div>
+        )}
 
-          {/* Mobile Card List */}
-          <div className="lg:hidden space-y-4">
-            {sortedCourses.length > 0 ? (
-              sortedCourses.map((course) => (
-                <CourseCard 
-                  key={course.id} 
-                  course={course} 
-                  isExpanded={expandedCourse === course.id} 
-                  onToggle={() => setExpandedCourse(expandedCourse === course.id ? null : course.id)} 
-                />
-              ))
-            ) : !loading ? (
-              <EmptyState 
-                title="No Results Matching Filters" 
-                description="We couldn't find any courses matching your search. Try broadening your criteria."
-                icon={Inbox}
-                action={searchTerm || selectedDay || selectedDept ? {
-                  label: "Reset Search",
-                  onClick: () => { setSearchInput(''); setSelectedDay(''); setSelectedDept(''); }
-                } : null}
-              />
-            ) : null}
+        {/* Pagination Bar */}
+        <div className="px-5 py-4 bg-slate-950/60 border-t border-white/10 flex items-center justify-between">
+          <span className="text-xs text-slate-400">
+            Showing <strong className="text-white">{courses.length}</strong> of{' '}
+            <strong className="text-white">{total.toLocaleString()}</strong> courses
+          </span>
+
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setPage((p) => Math.max(1, p - 1))}
+              disabled={page <= 1}
+              className="p-2 rounded-xl glass-panel text-slate-300 hover:text-white disabled:opacity-30"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            <span className="text-xs font-bold text-slate-300 px-2">
+              Page {page} of {pages}
+            </span>
+            <button
+              onClick={() => setPage((p) => Math.min(pages, p + 1))}
+              disabled={page >= pages}
+              className="p-2 rounded-xl glass-panel text-slate-300 hover:text-white disabled:opacity-30"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
           </div>
         </div>
+      </div>
 
-        {totalPages > 1 && (
-          <div className="flex items-center justify-between pt-4 border-t border-[hsla(var(--glass-border))]">
-            <span className="text-xs text-[hsl(var(--text-secondary))]">
-              Page <strong className="text-[hsl(var(--text-primary))]">{page}</strong> of{' '}
-              <strong className="text-[hsl(var(--text-primary))]">{totalPages}</strong>
-            </span>
+      {/* Course Detail Modal Drawer */}
+      {activeCourse && (
+        <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-4 animate-fade-in">
+          <div className="w-full max-w-2xl rounded-3xl glass-panel p-6 sm:p-8 border border-white/10 shadow-2xl space-y-6 max-h-[90vh] overflow-y-auto">
+            {/* Modal Header */}
+            <div className="flex items-start justify-between">
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="px-2.5 py-0.5 rounded-full bg-violet-500/20 text-violet-300 text-xs font-bold border border-violet-500/30">
+                    {activeCourse.department}
+                  </span>
+                  <span className="text-xs text-slate-400 font-semibold">{activeCourse.term}</span>
+                </div>
+                <h2 className="text-2xl font-extrabold text-white">
+                  {activeCourse.course_code} - Sec {activeCourse.section}
+                </h2>
+                <p className="text-sm font-medium text-slate-300 mt-1">{activeCourse.course_name}</p>
+              </div>
 
-            <div className="flex gap-2">
-              <button disabled={page <= 1} onClick={() => setPage((p) => Math.max(1, p - 1))} className="btn-secondary py-1.5 px-3 text-xs flex items-center gap-1">
-                <ChevronLeft size={14} aria-hidden="true" />
-                Prev
+              <button
+                onClick={() => setActiveCourse(null)}
+                className="p-2 rounded-xl glass-panel text-slate-400 hover:text-white"
+              >
+                <X className="w-5 h-5" />
               </button>
-              <button disabled={page >= totalPages} onClick={() => setPage((p) => Math.min(totalPages, p + 1))} className="btn-secondary py-1.5 px-3 text-xs flex items-center gap-1">
-                Next
-                <ChevronRight size={14} aria-hidden="true" />
+            </div>
+
+            {/* Course Properties */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-2xl bg-slate-900/60 border border-white/5">
+              <div>
+                <span className="text-[10px] uppercase font-bold text-slate-400">Instructor</span>
+                <p className="text-xs font-bold text-white mt-0.5">{activeCourse.instructor || 'TBA'}</p>
+              </div>
+              <div>
+                <span className="text-[10px] uppercase font-bold text-slate-400">Credits / ECTS</span>
+                <p className="text-xs font-bold text-white mt-0.5">
+                  {activeCourse.credits || '-'} Cr ({activeCourse.ects || '-'} ECTS)
+                </p>
+              </div>
+              <div>
+                <span className="text-[10px] uppercase font-bold text-slate-400">Exam Location</span>
+                <p className="text-xs font-bold text-white mt-0.5">{activeCourse.exam_location || 'TBA'}</p>
+              </div>
+              <div>
+                <span className="text-[10px] uppercase font-bold text-slate-400">Delivery</span>
+                <p className="text-xs font-bold text-white mt-0.5">{activeCourse.delivery_method || 'N/A'}</p>
+              </div>
+            </div>
+
+            {/* Slots List */}
+            <div>
+              <h3 className="text-sm font-bold text-white mb-3 flex items-center gap-2">
+                <Clock className="w-4 h-4 text-violet-400" />
+                Schedule Timetable Slots
+              </h3>
+              {activeCourse.slots && activeCourse.slots.length > 0 ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {activeCourse.slots.map((s, idx) => (
+                    <div
+                      key={idx}
+                      className="p-3 rounded-xl bg-slate-900/80 border border-white/5 flex items-center justify-between"
+                    >
+                      <div>
+                        <span className="text-xs font-extrabold text-violet-300">
+                          {s.day} Period {s.hour}
+                        </span>
+                        <p className="text-[11px] text-slate-400 mt-0.5">{s.slot_title || 'Lecture'}</p>
+                      </div>
+                      <span className="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-200 text-xs font-mono font-bold">
+                        {s.room || 'TBA'}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-xs text-slate-500 italic">No slot information recorded for this course.</p>
+              )}
+            </div>
+
+            {/* Close Button */}
+            <div className="pt-4 border-t border-white/10 flex justify-end">
+              <button
+                onClick={() => setActiveCourse(null)}
+                className="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold transition-colors"
+              >
+                Close Inspector
               </button>
             </div>
           </div>
-        )}
-      </section>
-    </div>
-  );
-}
-
-function CourseRow({ course, isExpanded, onToggle }) {
-  return (
-    <React.Fragment>
-      <tr
-        onClick={onToggle}
-        className={`cursor-pointer transition-all ${isExpanded ? 'bg-[hsla(var(--bg-tertiary)/0.6)]' : ''}`}
-      >
-        <td className="font-semibold text-xs text-[hsl(var(--text-secondary))]">{course.term}</td>
-        <td className="font-bold text-xs text-[hsl(var(--accent-primary))]">{course.department}</td>
-        <td className="font-semibold text-xs">{course.course_code}</td>
-        <td className="text-xs">{course.section}</td>
-        <td className="font-medium text-[13px]">{course.course_name}</td>
-        <td className="text-xs text-[hsl(var(--text-secondary))] truncate max-w-[150px]">{course.instructor}</td>
-        <td>
-          <MeetingBadges slots={course.slots} />
-        </td>
-      </tr>
-      {isExpanded && (
-        <tr>
-          <td colSpan={7} className="bg-[hsla(var(--bg-tertiary)/0.35)] px-8 py-6 border-b border-[hsla(var(--glass-border))]">
-            <ExpandedDetails course={course} />
-          </td>
-        </tr>
-      )}
-    </React.Fragment>
-  );
-}
-
-function CourseCard({ course, isExpanded, onToggle }) {
-  return (
-    <div className={`glass-panel overflow-hidden transition-all ${isExpanded ? 'ring-1 ring-[hsl(var(--accent-primary))]' : ''}`}>
-      <div className="p-4 cursor-pointer" onClick={onToggle}>
-        <div className="flex justify-between items-start mb-2">
-          <div className="flex flex-col">
-            <span className="text-[10px] font-bold text-[hsl(var(--text-muted))] uppercase tracking-wider mb-0.5">{course.term} • {course.department}</span>
-            <h3 className="text-sm font-bold text-[hsl(var(--text-primary))]">{course.course_code}.{course.section}</h3>
-          </div>
-          <span className="text-[10px] bg-[hsla(var(--accent-primary)/0.1)] text-[hsl(var(--accent-primary))] px-2 py-0.5 rounded font-bold">{course.credits} CR</span>
-        </div>
-        <p className="text-xs font-medium text-[hsl(var(--text-secondary))] mb-3 leading-snug">{course.course_name}</p>
-        <div className="flex items-center gap-2 text-[11px] text-[hsl(var(--text-muted))] mb-4">
-          <User size={12} />
-          <span className="truncate">{course.instructor}</span>
-        </div>
-        <MeetingBadges slots={course.slots} />
-      </div>
-      {isExpanded && (
-        <div className="bg-[hsla(var(--bg-tertiary)/0.4)] p-4 border-t border-[hsla(var(--glass-border))]">
-          <ExpandedDetails course={course} />
         </div>
       )}
-    </div>
-  );
-}
-
-function MeetingBadges({ slots }) {
-  if (!slots || slots.length === 0) {
-    return <span className="text-[10px] text-[hsl(var(--text-muted))] uppercase">TBA</span>;
-  }
-  return (
-    <div className="flex flex-wrap gap-1">
-      {slots.map((s, idx) => (
-        <span
-          key={idx}
-          className="px-2 py-0.5 text-[10px] font-semibold bg-[hsla(var(--accent-primary)/0.08)] border border-[hsla(var(--accent-primary)/0.15)] text-[hsl(var(--text-primary))] rounded-md"
-        >
-          {s.day} {s.hour} {s.room && `(${s.room})`}
-        </span>
-      ))}
-    </div>
-  );
-}
-
-function ExpandedDetails({ course }) {
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in">
-      <div className="space-y-4">
-        <h4 className="font-bold text-xs uppercase tracking-widest text-[hsl(var(--text-primary))] flex items-center gap-2">
-          <Layers size={14} className="text-[hsl(var(--accent-primary))]" aria-hidden="true" />
-          Course Specs
-        </h4>
-        <div className="space-y-2">
-          <DetailItem label="Credits" value={course.credits} />
-          <DetailItem label="ECTS" value={course.ects} />
-          <DetailItem label="Method" value={course.delivery_method || 'Traditional'} />
-          <DetailItem label="SL" value={course.sl} />
-        </div>
-      </div>
-
-      <div className="space-y-4">
-        <h4 className="font-bold text-xs uppercase tracking-widest text-[hsl(var(--text-primary))] flex items-center gap-2">
-          <Calendar size={14} className="text-[hsl(var(--accent-secondary))]" aria-hidden="true" />
-          Examination
-        </h4>
-        <div className="space-y-2">
-          <DetailItem label="Exam Date" value={course.exam_date} icon={Clock} />
-          <DetailItem label="Location" value={course.exam_location} icon={MapPin} />
-        </div>
-      </div>
-
-      <div className="space-y-4">
-        <h4 className="font-bold text-xs uppercase tracking-widest text-[hsl(var(--text-primary))] flex items-center gap-2">
-          <Info size={14} className="text-[hsl(var(--color-info))]" aria-hidden="true" />
-          Relations
-        </h4>
-        <div className="space-y-2">
-          <DetailItem label="Required For" value={course.required_for} />
-          <DetailItem label="Shared With" value={course.departments} />
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function DetailItem({ label, value, icon: Icon }) {
-  return (
-    <div className="flex flex-col gap-0.5">
-      <span className="text-[10px] text-[hsl(var(--text-muted))] font-bold uppercase">{label}</span>
-      <div className="flex items-center gap-1.5 text-xs text-[hsl(var(--text-secondary))] font-medium">
-        {Icon && <Icon size={12} className="opacity-50" />}
-        <span>{value || 'Not Specified'}</span>
-      </div>
     </div>
   );
 }
