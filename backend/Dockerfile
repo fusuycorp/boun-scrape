@@ -1,34 +1,40 @@
-FROM python:3.11-slim
-
-# Copy uv binary
-COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+# Stage 1: Build virtual environment
+FROM python:3.11-slim AS builder
 
 WORKDIR /app
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
+# Install uv package manager
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
-# Copy package management files first to leverage build cache
+# Copy dependency manifest files
 COPY pyproject.toml uv.lock ./
 
-# Install dependencies using uv into a virtualenv
+# Create virtualenv and install dependencies using uv cache mount
 RUN --mount=type=cache,target=/root/.cache/uv \
     uv sync --frozen --no-install-project --no-dev
 
-# Copy the backend code
-COPY . .
+# Stage 2: Minimal runtime image
+FROM python:3.11-slim AS runner
 
-# Set environment variables (prepend virtualenv to PATH)
-ENV PATH="/app/.venv/bin:$PATH"
-ENV DB_PATH=/data/schedules.db
-ENV PYTHONUNBUFFERED=1
+WORKDIR /app
 
-# Create data directory for SQLite
+# Environment configuration
+ENV PATH="/app/.venv/bin:$PATH" \
+    DB_PATH=/data/schedules.db \
+    PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1
+
+# Copy virtual environment from builder stage
+COPY --from=builder /app/.venv /app/.venv
+
+# Copy application source files and seed data
+COPY pyproject.toml ./
+COPY departments_all.json* ./
+COPY app ./app
+
+# Create directory for SQLite database storage
 RUN mkdir -p /data
 
 EXPOSE 8000
 
-# Start the application
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

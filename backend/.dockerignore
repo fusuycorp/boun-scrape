@@ -1,0 +1,37 @@
+# Version control
+.git
+.gitignore
+
+# Python cache & virtual environment
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local databases and raw scraped files
+*.db
+*.sqlite
+*.sqlite3
+departments.json
+response.html
+cookies.txt
+
+# Standalone scripts & scratch files
+parse_responses.py
+parse_schedules_to_db.py
+scrape_all_schedules.py
+scrape_schedules.py
+scraper.py
+
+# Environment / local configs & documentation
+.env
+.env.*
+README.md
