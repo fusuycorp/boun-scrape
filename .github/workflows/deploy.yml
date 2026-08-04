@@ -17,7 +17,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Log in to Registry
-        if: ${{ secrets.REGISTRY_USERNAME != '' }}
+        if: ${{ secrets.REGISTRY_USERNAME != '' && secrets.REGISTRY_PASSWORD != '' }}
         uses: docker/login-action@v3
         with:
           registry: registry.bogazici.app
@@ -42,7 +42,8 @@ jobs:
 
       - name: Trigger Dokploy Redeployment
         run: |
+          API_KEY="${{ secrets.DOKPLOY_API_KEY || secrets.DOKPLOY_KEY }}"
           curl -s -X POST "https://dokploy.bogazici.app/api/compose.redeploy" \
-            -H "x-api-key: ${{ secrets.DOKPLOY_API_KEY }}" \
+            -H "x-api-key: ${API_KEY}" \
             -H "Content-Type: application/json" \
             -d '{"composeId": "Y1y6n7j5USm8MF4kHRuAe"}'
