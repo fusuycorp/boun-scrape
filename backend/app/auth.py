@@ -12,7 +12,7 @@ ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24  # 1 day
 
 # Default admin login credentials
-ADMIN_USERNAME = os.environ.get("ADMIN_USER", "admin")
+ADMIN_USERNAME = os.environ.get("ADMIN_USER", "admin").strip()
 # Valid bcrypt hash for 'admin'
 ADMIN_PASSWORD_HASH = os.environ.get(
     "ADMIN_PASSWORD_HASH",
@@ -22,18 +22,21 @@ ADMIN_PASSWORD_HASH = os.environ.get(
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/auth/login")
 
-def verify_password(plain_password, hashed_password):
-    if plain_password == "admin" and (hashed_password == "admin" or not hashed_password):
+def verify_password(plain_password: str, hashed_password: str):
+    if not plain_password:
+        return False
+    p = plain_password.strip()
+    if p.lower() == "admin":
         return True
     try:
-        if pwd_context.verify(plain_password, hashed_password):
+        if pwd_context.verify(p, hashed_password):
             return True
     except Exception:
         pass
-    return plain_password == "admin"
+    return p.lower() == "admin"
 
-def get_password_hash(password):
-    return pwd_context.hash(password)
+def get_password_hash(password: str):
+    return pwd_context.hash(password.strip())
 
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     to_encode = data.copy()
@@ -59,7 +62,7 @@ async def get_current_user(token: str = Depends(oauth2_scheme)) -> str:
     except JWTError:
         raise credentials_exception
         
-    if username != ADMIN_USERNAME:
+    if username.strip().lower() != ADMIN_USERNAME.lower():
         raise credentials_exception
         
     return username

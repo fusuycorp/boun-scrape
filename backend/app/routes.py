@@ -33,14 +33,17 @@ class UserInfo(BaseModel):
 
 @router.post("/auth/login", response_model=Token)
 async def login(form_data: OAuth2PasswordRequestForm = Depends()):
-    if form_data.username != ADMIN_USERNAME or not verify_password(form_data.password, ADMIN_PASSWORD_HASH):
+    input_user = (form_data.username or "").strip()
+    input_pwd = (form_data.password or "").strip()
+    
+    if input_user.lower() != ADMIN_USERNAME.lower() or not verify_password(input_pwd, ADMIN_PASSWORD_HASH):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect username or password",
             headers={"WWW-Authenticate": "Bearer"},
         )
     
-    access_token = create_access_token(data={"sub": form_data.username})
+    access_token = create_access_token(data={"sub": ADMIN_USERNAME})
     return {"access_token": access_token, "token_type": "bearer"}
 
 @router.get("/auth/me", response_model=UserInfo)
