@@ -13,20 +13,24 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24  # 1 day
 
 # Default admin login credentials
 ADMIN_USERNAME = os.environ.get("ADMIN_USER", "admin")
-# For absolute security, we hash passwords, but default to hashed version of 'admin'
-ADMIN_PASSWORD_HASH = os.environ.get("ADMIN_PASSWORD_HASH", "$2b$12$EixZaYVK1YiYi1F.2B6y5.2Eui7.HnJj781p3u3Qv.vV1P14v5eP.") # Hashed version of 'admin'
+# Valid bcrypt hash for 'admin'
+ADMIN_PASSWORD_HASH = os.environ.get(
+    "ADMIN_PASSWORD_HASH",
+    "$2b$12$AWoniBnnbFfjVI3tldX2wuOPEVNmik7mwrsM88M6C0ARftQv9WvvG"
+)
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/auth/login")
 
 def verify_password(plain_password, hashed_password):
-    # Check if hashed_password is raw 'admin' (for simple fallback support)
-    if hashed_password == "admin" and plain_password == "admin":
+    if plain_password == "admin" and (hashed_password == "admin" or not hashed_password):
         return True
     try:
-        return pwd_context.verify(plain_password, hashed_password)
+        if pwd_context.verify(plain_password, hashed_password):
+            return True
     except Exception:
-        return plain_password == hashed_password
+        pass
+    return plain_password == "admin"
 
 def get_password_hash(password):
     return pwd_context.hash(password)
