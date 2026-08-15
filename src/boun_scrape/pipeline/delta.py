@@ -137,9 +137,10 @@ def compute_deltas(
                 )
             )
 
-        # Room change
-        prev_rooms = [s.room for s in prev.slots]
-        curr_rooms = [s.room for s in curr.slots]
+        # Room change (compare sorted slots, consistent with the hash gating this block,
+        # so unstable HTML row ordering alone never produces a spurious change event)
+        prev_rooms = [s["room"] for s in prev_dict["slots"]]
+        curr_rooms = [s["room"] for s in curr_dict["slots"]]
         if prev_rooms != curr_rooms:
             has_specific_change = True
             events.append(
@@ -157,8 +158,8 @@ def compute_deltas(
             )
 
         # Slots changed (days / hours / count / title)
-        prev_schedule_slots = [(s.day, s.hour, s.slot_title) for s in prev.slots]
-        curr_schedule_slots = [(s.day, s.hour, s.slot_title) for s in curr.slots]
+        prev_schedule_slots = [(s["day"], s["hour"], s["slot_title"]) for s in prev_dict["slots"]]
+        curr_schedule_slots = [(s["day"], s["hour"], s["slot_title"]) for s in curr_dict["slots"]]
         if prev_schedule_slots != curr_schedule_slots:
             has_specific_change = True
             events.append(

@@ -73,17 +73,16 @@ def parse_hours(hour_str: str | None, num_slots: int) -> list[str]:
             chars.extend([""] * (num_slots - len(chars)))
         return chars[:num_slots]
 
-    res: list[str] = []
-    i = 0
-    raw_len = len(raw)
-    while len(res) < num_slots and i < raw_len:
-        if num_2_digit > 0 and raw[i] == "1" and i + 1 < raw_len:
-            res.append(raw[i : i + 2])
-            i += 2
-            num_2_digit -= 1
-        else:
-            res.append(raw[i])
-            i += 1
+    # Periods are always listed in ascending order and only periods 10-14 are
+    # two digits, so every two-digit period trails every single-digit one:
+    # take the leading single-digit periods first, then chunk the remainder
+    # into two-digit periods. (A purely greedy left-to-right scan for '1'
+    # misparses cases like '110' for 2 slots — period 1 followed by period 10 —
+    # as ['11', '0'] instead of ['1', '10'].)
+    num_single_digit = num_slots - num_2_digit
+    res: list[str] = list(raw[:num_single_digit])
+    remainder = raw[num_single_digit:]
+    res.extend(remainder[i : i + 2] for i in range(0, len(remainder), 2))
 
     if len(res) < num_slots:
         res.extend([""] * (num_slots - len(res)))

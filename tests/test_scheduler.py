@@ -239,6 +239,81 @@ class TestScrapeScheduler:
             await scheduler.aclose()
 
     @pytest.mark.asyncio
+    async def test_execute_scrape_cycle_honors_configured_max_concurrency(
+        self,
+        monkeypatch: pytest.MonkeyPatch,
+        tmp_path: Path,
+    ) -> None:
+        """Regression: settings.max_concurrency must reach scrape_term_pipeline,
+        not silently fall back to the hardcoded default of 10."""
+        from boun_scrape import config as config_module
+        from boun_scrape.scheduler import runner as runner_module
+
+        captured_concurrency: list[int] = []
+
+        async def fake_scrape_term_pipeline(client, term, progress_callback=None, concurrency=10):
+            captured_concurrency.append(concurrency)
+            return []
+
+        monkeypatch.setattr(runner_module, "scrape_term_pipeline", fake_scrape_term_pipeline)
+
+        db_mgr = DatabaseManager(str(tmp_path / "test.db"))
+        db_mgr.init_db()
+        repo = CourseRepository(db_mgr)
+
+        settings = config_module.Settings(max_concurrency=2)
+        scheduler = ScrapeScheduler(
+            repository=repo,
+            default_term="2024/2025-1",
+            settings=settings,
+            client=BounScraperClient(min_jitter=0, max_jitter=0),
+        )
+
+        await scheduler.execute_scrape_cycle(export=False, dispatch_webhooks=False)
+
+        assert captured_concurrency == [2]
+        await scheduler.aclose()
+
+    @pytest.mark.asyncio
+    async def test_execute_scrape_cycle_persists_failed_run_on_term_discovery_error(
+        self,
+        tmp_path: Path,
+    ) -> None:
+        """Regression: a failure during term resolution (no default_term given) must
+        still be persisted as a FAILED run, not vanish before any record is written."""
+
+        def fail_handler(request: httpx.Request) -> httpx.Response:
+            return httpx.Response(500, text="Internal University Server Error")
+
+        transport = httpx.MockTransport(fail_handler)
+        async with httpx.AsyncClient(
+            transport=transport, base_url=BASE_URL
+        ) as http_client:
+            scraper_client = BounScraperClient(
+                http_client=http_client, min_jitter=0, max_jitter=0
+            )
+            db_mgr = DatabaseManager(str(tmp_path / "test.db"))
+            db_mgr.init_db()
+            repo = CourseRepository(db_mgr)
+
+            scheduler = ScrapeScheduler(
+                client=scraper_client,
+                repository=repo,
+                # No default_term: forces discover_terms(), which fails against the
+                # 500-returning mock portal before any term is known.
+            )
+
+            with pytest.raises(Exception):
+                await scheduler.execute_scrape_cycle()
+
+            runs = repo.get_scrape_runs()
+            assert len(runs) == 1
+            assert runs[0].status == RunStatus.FAILED
+            assert runs[0].error_message is not None
+
+            await scheduler.aclose()
+
+    @pytest.mark.asyncio
     async def test_scheduler_lifecycle_start_and_stop(
         self,
         tmp_path: Path,

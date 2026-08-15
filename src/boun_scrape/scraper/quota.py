@@ -1,9 +1,12 @@
 """Live quota scraper service with in-memory TTL caching and concurrent batch fetching."""
 
 import asyncio
+import logging
 import time
 from dataclasses import dataclass
 from typing import Self
+
+logger = logging.getLogger(__name__)
 
 from boun_scrape.config import Settings, get_settings
 from boun_scrape.domain.models import QuotaRecord
@@ -152,21 +155,30 @@ class QuotaService:
 
         async def _fetch_single(
             term: str, abbr: str, code: str, section: str
-        ) -> tuple[str, list[QuotaRecord]]:
+        ) -> list[QuotaRecord]:
             async with sem:
-                records = await self.fetch_quota(
+                return await self.fetch_quota(
                     term=term,
                     abbr=abbr,
                     code=code,
                     section=section,
                     bypass_cache=bypass_cache,
                 )
-                key = format_course_key(abbr, code, section)
-                return key, records
 
-        tasks = [_fetch_single(t, a, c, s) for t, a, c, s in items]
-        results = await asyncio.gather(*tasks)
-        return dict(results)
+        keys = [format_course_key(a, c, s) for _, a, c, s in items]
+        results = await asyncio.gather(
+            *[_fetch_single(t, a, c, s) for t, a, c, s in items],
+            return_exceptions=True,
+        )
+
+        output: dict[str, list[QuotaRecord]] = {}
+        for key, result in zip(keys, results):
+            if isinstance(result, BaseException):
+                logger.warning("Batch quota lookup failed for %s: %s", key, result)
+                output[key] = []
+                continue
+            output[key] = result
+        return output
 
     async def __aenter__(self) -> Self:
         return self

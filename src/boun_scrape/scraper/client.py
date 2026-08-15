@@ -226,6 +226,8 @@ class BounScraperClient:
             except RecaptchaBlockedError:
                 raise
             except (httpx.TransportError, httpx.TimeoutException, BounHttpError) as err:
+                if isinstance(err, BounHttpError) and err.status_code is not None and err.status_code < 500:
+                    raise
                 last_exception = err
                 if attempt < retries:
                     backoff = (2 ** (attempt - 1)) * 0.5 + random.uniform(0.05, 0.2)
@@ -271,6 +273,8 @@ class BounScraperClient:
             except RecaptchaBlockedError:
                 raise
             except (httpx.TransportError, httpx.TimeoutException, BounHttpError) as err:
+                if isinstance(err, BounHttpError) and err.status_code is not None and err.status_code < 500:
+                    raise
                 last_exception = err
                 if attempt < retries:
                     backoff = (2 ** (attempt - 1)) * 0.5 + random.uniform(0.05, 0.2)
