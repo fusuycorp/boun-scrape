@@ -9,5 +9,19 @@ export const ToastContext = createContext({
 });
 
 export function useToast() {
-  return useContext(ToastContext);
+  const ctx = useContext(ToastContext);
+
+  const showToast = (message, variant = 'info', opts = {}) => {
+    if (ctx && ctx.toast) {
+      return ctx.toast(variant, message, opts);
+    }
+  };
+
+  showToast.success = (msg, opts) => ctx?.success?.(msg, opts);
+  showToast.error = (msg, opts) => ctx?.error?.(msg, opts);
+  showToast.info = (msg, opts) => ctx?.info?.(msg, opts);
+  showToast.dismiss = (id) => ctx?.dismiss?.(id);
+  showToast.toast = ctx?.toast;
+
+  return showToast;
 }

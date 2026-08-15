@@ -342,8 +342,9 @@ export default function ScraperControl() {
       {/* Confirmation Modal */}
       {confirmPhase && (
         <ConfirmDialog
+          open={Boolean(confirmPhase)}
           title={`Launch ${confirmPhase.toUpperCase()}?`}
-          message={`Are you sure you want to execute ${confirmPhase}? This will launch Python background subprocesses to crawl BOUN servers.`}
+          description={`Are you sure you want to execute ${confirmPhase}? This will launch automated background scraping tasks to crawl BOUN servers.`}
           confirmLabel="Execute Stage"
           onConfirm={() => handleStartPhase(confirmPhase)}
           onCancel={() => setConfirmPhase(null)}
