@@ -9,7 +9,6 @@ import {
   LogOut,
   Menu,
   X,
-  User,
   ExternalLink,
 } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
@@ -19,68 +18,113 @@ export default function Sidebar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navItems = [
-    { to: '/', label: 'Dashboard', icon: LayoutDashboard },
-    { to: '/scraper', label: 'Scraper Controller', icon: Terminal },
-    { to: '/explorer', label: 'Course Explorer', icon: Search },
-    { to: '/quota', label: 'Quota Monitor', icon: Activity },
-    { to: '/config', label: 'Session Config', icon: Sliders },
+    { to: '/', label: '[01] //_DASHBOARD', icon: LayoutDashboard },
+    { to: '/scraper', label: '[02] //_PIPELINE', icon: Terminal },
+    { to: '/explorer', label: '[03] //_COURSES', icon: Search },
+    { to: '/quota', label: '[04] //_QUOTA', icon: Activity },
+    { to: '/config', label: '[05] //_CONFIG', icon: Sliders },
   ];
 
   const toggleMobile = () => setMobileOpen((prev) => !prev);
   const closeMobile = () => setMobileOpen(false);
 
+  const navLinkStyle = (isActive) => ({
+    display: 'flex',
+    alignItems: 'center',
+    gap: '10px',
+    padding: '8px 14px',
+    fontSize: '11px',
+    fontWeight: 700,
+    letterSpacing: '0.06em',
+    textTransform: 'uppercase',
+    fontFamily: 'var(--font-mono)',
+    color: isActive ? 'var(--neon-green)' : 'var(--text-muted)',
+    background: isActive ? 'rgba(0,255,102,0.05)' : 'transparent',
+    borderLeft: isActive ? '2px solid var(--neon-green)' : '2px solid transparent',
+    textDecoration: 'none',
+    transition: 'all 0.1s ease',
+  });
+
   return (
     <>
-      {/* Mobile Top Navigation Bar */}
-      <div className="md:hidden fixed top-0 left-0 right-0 h-16 bg-slate-950/80 backdrop-blur-xl border-b border-white/10 px-4 flex items-center justify-between z-40">
-        <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-violet-600 to-pink-500 flex items-center justify-center text-white font-black text-sm shadow-md">
-            BS
-          </div>
-          <span className="font-extrabold text-white text-base tracking-tight">BOUN Scraper</span>
-        </div>
-
+      {/* Mobile Top Bar */}
+      <div style={{
+        display: 'none',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        height: '48px',
+        background: 'var(--bg-tertiary)',
+        borderBottom: '1px solid var(--border-hard)',
+        padding: '0 12px',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        zIndex: 40,
+      }}>
+        <span style={{ color: 'var(--neon-green)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em' }}>
+          [BOUN_DECK]
+        </span>
         <button
           onClick={toggleMobile}
           aria-label="Toggle navigation menu"
-          className="p-2.5 rounded-xl glass-panel text-slate-300 hover:text-white"
+          style={{
+            padding: '6px',
+            background: 'var(--bg-secondary)',
+            border: '1px solid var(--border-hard)',
+            color: 'var(--text-secondary)',
+            cursor: 'pointer',
+          }}
         >
-          {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          {mobileOpen ? <X size={16} /> : <Menu size={16} />}
         </button>
       </div>
 
-      {/* Mobile Drawer Overlay Backing */}
-      {mobileOpen && (
-        <div
-          className="md:hidden fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-40 animate-fade-in"
-          onClick={closeMobile}
-        />
-      )}
-
-      {/* Sidebar Container */}
-      <aside
-        className={`fixed top-0 bottom-0 left-0 w-64 bg-slate-950/90 border-r border-white/10 backdrop-blur-2xl z-50 flex flex-col justify-between transition-transform duration-300 ease-in-out md:translate-x-0 ${
-          mobileOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
-      >
+      {/* Sidebar */}
+      <aside style={{
+        position: 'fixed',
+        top: '24px',
+        bottom: '22px',
+        left: 0,
+        width: '240px',
+        background: 'var(--bg-primary)',
+        borderRight: '1px solid var(--border-hard)',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        zIndex: 50,
+        overflow: 'hidden',
+      }}>
         <div>
-          {/* Header Brand */}
-          <div className="h-20 px-6 flex items-center gap-3 border-b border-white/5">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-violet-600 to-pink-500 flex items-center justify-center text-white font-extrabold text-lg shadow-lg shadow-violet-500/25">
-              B
-            </div>
-            <div>
-              <h2 className="font-extrabold text-white text-base tracking-tight leading-none">
-                BOUN Scraper
-              </h2>
-              <span className="text-[10px] uppercase font-bold text-violet-400 tracking-wider">
-                Admin Console
-              </span>
+          {/* ASCII Header */}
+          <div style={{
+            padding: '16px 14px',
+            borderBottom: '1px solid var(--border-hard)',
+          }}>
+            <pre className="glow-green" style={{
+              color: 'var(--neon-green)',
+              fontSize: '10px',
+              lineHeight: '1.3',
+              margin: 0,
+              fontFamily: 'var(--font-mono)',
+            }}>
+{`┌──────────────────┐
+│  BOUN_DECK v2.0  │
+└──────────────────┘`}
+            </pre>
+            <div style={{
+              color: 'var(--neon-amber)',
+              fontSize: '10px',
+              fontWeight: 700,
+              letterSpacing: '0.06em',
+              marginTop: '6px',
+            }}>
+              ROOT@BOUN-CRAWLER:~#
             </div>
           </div>
 
-          {/* Navigation Links */}
-          <nav className="p-4 space-y-1.5">
+          {/* Navigation */}
+          <nav style={{ padding: '10px 6px' }}>
             {navItems.map((item) => {
               const Icon = item.icon;
               return (
@@ -89,15 +133,9 @@ export default function Sidebar() {
                   to={item.to}
                   end={item.to === '/'}
                   onClick={closeMobile}
-                  className={({ isActive }) =>
-                    `flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-sm transition-all duration-200 ${
-                      isActive
-                        ? 'bg-gradient-to-r from-violet-600/30 to-pink-500/20 text-white border border-violet-500/40 shadow-lg shadow-violet-500/10'
-                        : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
-                    }`
-                  }
+                  style={({ isActive }) => navLinkStyle(isActive)}
                 >
-                  <Icon className="w-5 h-5 shrink-0" />
+                  <Icon size={14} style={{ flexShrink: 0, opacity: 0.7 }} />
                   <span>{item.label}</span>
                 </NavLink>
               );
@@ -105,39 +143,75 @@ export default function Sidebar() {
           </nav>
         </div>
 
-        {/* Footer Profile & Logout */}
-        <div className="p-4 border-t border-white/5 space-y-3">
-          {/* University Link */}
+        {/* Footer */}
+        <div style={{ padding: '10px', borderTop: '1px solid var(--border-hard)' }}>
+          {/* BOUN Portal Link */}
           <a
             href="https://registration.bogazici.edu.tr"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-slate-900/50 hover:bg-slate-900 border border-white/5 text-slate-400 hover:text-slate-200 text-xs transition-colors"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              padding: '6px 10px',
+              border: '1px solid var(--border-hard)',
+              background: 'var(--bg-secondary)',
+              color: 'var(--neon-green)',
+              fontSize: '10px',
+              fontWeight: 700,
+              letterSpacing: '0.06em',
+              textDecoration: 'none',
+              marginBottom: '8px',
+            }}
           >
-            <span>BOUN Portal</span>
-            <ExternalLink className="w-3.5 h-3.5" />
+            <span>[&gt;&gt; UPLINK: BOUN.EDU.TR]</span>
+            <ExternalLink size={10} />
           </a>
 
-          {/* User Badge & Logout */}
-          <div className="flex items-center justify-between p-3 rounded-xl bg-slate-900/80 border border-white/10">
-            <div className="flex items-center gap-2.5 overflow-hidden">
-              <div className="w-8 h-8 rounded-lg bg-violet-500/20 text-violet-300 border border-violet-500/30 flex items-center justify-center shrink-0 font-bold text-xs">
-                <User className="w-4 h-4" />
+          {/* Operator Card */}
+          <div style={{
+            padding: '8px 10px',
+            background: 'var(--bg-secondary)',
+            border: '1px solid var(--border-hard)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}>
+            <div>
+              <div style={{
+                color: 'var(--neon-amber)',
+                fontSize: '10px',
+                fontWeight: 700,
+                letterSpacing: '0.06em',
+              }}>
+                [OPERATOR: {user?.username || 'ADMIN'}]
               </div>
-              <div className="truncate">
-                <p className="text-xs font-bold text-white truncate">
-                  {user?.username || 'Administrator'}
-                </p>
-                <span className="text-[10px] text-slate-400 font-medium">Session Active</span>
+              <div style={{
+                color: 'var(--text-muted)',
+                fontSize: '9px',
+                marginTop: '2px',
+              }}>
+                SESSION: ACTIVE
               </div>
             </div>
 
             <button
               onClick={logout}
               title="Logout"
-              className="p-2 text-slate-400 hover:text-rose-400 hover:bg-rose-500/10 rounded-lg transition-colors"
+              style={{
+                padding: '4px 8px',
+                background: 'rgba(255,0,85,0.06)',
+                border: '1px solid var(--neon-pink)',
+                color: 'var(--neon-pink)',
+                fontSize: '9px',
+                fontWeight: 700,
+                letterSpacing: '0.08em',
+                cursor: 'pointer',
+                fontFamily: 'var(--font-mono)',
+              }}
             >
-              <LogOut className="w-4 h-4" />
+              [EJECT]
             </button>
           </div>
         </div>

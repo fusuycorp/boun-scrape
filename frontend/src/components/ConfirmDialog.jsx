@@ -1,25 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import { AlertTriangle, X } from 'lucide-react';
 
-/**
- * Reusable accessible confirmation dialog.
- * Props:
- *  - open: boolean
- *  - title: string
- *  - description: string | ReactNode
- *  - confirmLabel: string (default "Confirm")
- *  - cancelLabel: string (default "Cancel")
- *  - destructive: boolean (styles confirm as danger)
- *  - busy: boolean (disables buttons + shows spinner)
- *  - onConfirm: () => void | Promise<void>
- *  - onCancel: () => void
- */
 export default function ConfirmDialog({
   open,
-  title = 'Are you sure?',
+  title = 'CONFIRM_OPERATION?',
   description,
-  confirmLabel = 'Confirm',
-  cancelLabel = 'Cancel',
+  confirmLabel = '[CONFIRM_EXECUTION]',
+  cancelLabel = '[ABORT]',
   destructive = false,
   busy = false,
   onConfirm,
@@ -31,7 +18,6 @@ export default function ConfirmDialog({
   useEffect(() => {
     if (!open) return undefined;
     previouslyFocused.current = document.activeElement;
-    // Focus confirm button on open (after paint)
     const t = setTimeout(() => confirmBtnRef.current?.focus(), 30);
 
     const handleKey = (e) => {
@@ -55,36 +41,81 @@ export default function ConfirmDialog({
 
   return (
     <div
-      className="fixed inset-0 z-[200] flex items-center justify-center p-4 animate-fade-in"
+      style={{
+        position: 'fixed',
+        inset: 0,
+        zIndex: 200,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '16px',
+      }}
       role="dialog"
       aria-modal="true"
       aria-labelledby="confirm-dialog-title"
       aria-describedby="confirm-dialog-desc"
     >
       <div
-        className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'rgba(5, 5, 8, 0.85)',
+        }}
         onClick={() => !busy && onCancel?.()}
         aria-hidden="true"
       />
-      <div className="glass-panel relative w-full max-w-md p-6 z-10">
-        <div className="flex items-start gap-4">
+      <div
+        className="cyber-card animate-fade-in"
+        style={{
+          position: 'relative',
+          width: '100%',
+          maxWidth: '460px',
+          padding: '20px',
+          border: `2px solid ${destructive ? 'var(--neon-pink)' : 'var(--neon-amber)'}`,
+          zIndex: 10,
+          boxShadow: '6px 6px 0 rgba(0, 0, 0, 0.9)',
+        }}
+      >
+        <div className="hazard-bar" style={{ marginBottom: '16px' }} />
+
+        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
           <div
-            className={`p-2.5 rounded-xl shrink-0 ${
-              destructive
-                ? 'bg-[hsla(var(--color-danger)/0.12)] text-[hsl(var(--color-danger))] border border-[hsla(var(--color-danger)/0.25)]'
-                : 'bg-[hsla(var(--accent-primary)/0.12)] text-[hsl(var(--accent-primary))] border border-[hsla(var(--accent-primary)/0.25)]'
-            }`}
+            style={{
+              padding: '6px',
+              border: `1px solid ${destructive ? 'var(--neon-pink)' : 'var(--neon-amber)'}`,
+              color: destructive ? 'var(--neon-pink)' : 'var(--neon-amber)',
+              background: destructive ? 'rgba(255, 0, 85, 0.08)' : 'rgba(255, 176, 0, 0.08)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0,
+            }}
           >
-            <AlertTriangle size={20} />
+            <AlertTriangle size={18} />
           </div>
-          <div className="flex-1 min-w-0">
-            <h2 id="confirm-dialog-title" className="text-base font-bold leading-tight">
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <h2
+              id="confirm-dialog-title"
+              style={{
+                fontSize: '13px',
+                fontWeight: 700,
+                color: destructive ? 'var(--neon-pink)' : 'var(--neon-amber)',
+                letterSpacing: '0.06em',
+                textTransform: 'uppercase',
+                margin: 0,
+              }}
+            >
               {title}
             </h2>
             {description && (
               <div
                 id="confirm-dialog-desc"
-                className="text-xs text-[hsl(var(--text-secondary))] mt-2 leading-relaxed"
+                style={{
+                  fontSize: '11px',
+                  color: 'var(--text-secondary)',
+                  marginTop: '8px',
+                  lineHeight: '1.5',
+                }}
               >
                 {description}
               </div>
@@ -95,18 +126,25 @@ export default function ConfirmDialog({
             onClick={() => !busy && onCancel?.()}
             disabled={busy}
             aria-label="Close dialog"
-            className="text-[hsl(var(--text-muted))] hover:text-[hsl(var(--text-primary))] p-1 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--accent-primary))]"
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: 'var(--text-muted)',
+              cursor: 'pointer',
+              padding: '2px',
+            }}
           >
             <X size={16} />
           </button>
         </div>
 
-        <div className="flex gap-3 justify-end mt-6">
+        <div style={{ display: 'flex', gap: '10px', justifyContent: 'flex-end', marginTop: '20px' }}>
           <button
             type="button"
             onClick={onCancel}
             disabled={busy}
-            className="btn-secondary text-xs py-2 px-4"
+            className="btn-cyber"
+            style={{ fontSize: '10px', padding: '6px 14px' }}
           >
             {cancelLabel}
           </button>
@@ -115,23 +153,10 @@ export default function ConfirmDialog({
             type="button"
             onClick={onConfirm}
             disabled={busy}
-            className={
-              destructive
-                ? 'btn-secondary text-xs py-2 px-4 text-[hsl(var(--color-danger))] border-[hsla(var(--color-danger)/0.3)] hover:bg-[hsla(var(--color-danger)/0.1)] hover:border-[hsla(var(--color-danger)/0.5)]'
-                : 'btn-primary text-xs py-2 px-4'
-            }
+            className={`btn-cyber ${destructive ? 'btn-cyber-danger' : 'btn-cyber-primary'}`}
+            style={{ fontSize: '10px', padding: '6px 14px' }}
           >
-            {busy ? (
-              <span className="flex items-center gap-2">
-                <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none">
-                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-                </svg>
-                Working...
-              </span>
-            ) : (
-              confirmLabel
-            )}
+            {busy ? '[...PROCESSING]' : confirmLabel}
           </button>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Sliders, Cookie, FileCode2, Save, RotateCcw, ShieldCheck, AlertCircle } from 'lucide-react';
+import { Cookie, FileCode2, Save, RotateCcw, AlertCircle } from 'lucide-react';
 import { api } from '../api/client';
 import { useMountedRef } from '../hooks/useSafeAsync';
 import { useToast } from '../hooks/useToast';
@@ -28,7 +28,7 @@ export default function ConfigManager() {
       }
     } catch (err) {
       if (isMountedRef.current) {
-        showToast(err.message || 'Failed to load configuration status', 'error');
+        showToast(err.message || 'FAILED_TO_LOAD_CONFIG_STATUS', 'error');
       }
     } finally {
       if (isMountedRef.current) {
@@ -54,11 +54,11 @@ export default function ConfigManager() {
       if (seedHtml !== '') payload.seed_html = seedHtml;
 
       const res = await api.updateScraperConfig(payload);
-      showToast(res.message || 'Configuration updated successfully!', 'success');
+      showToast(res.message || 'CONFIGURATION_UPDATED_SUCCESSFULLY', 'success');
       setSeedHtml('');
       fetchConfig();
     } catch (err) {
-      showToast(err.message || 'Failed to save configuration', 'error');
+      showToast(err.message || 'FAILED_TO_COMMIT_CONFIG', 'error');
     } finally {
       if (isMountedRef.current) {
         setSaving(false);
@@ -72,91 +72,96 @@ export default function ConfigManager() {
   };
 
   return (
-    <div className="space-y-8 animate-fade-in">
+    <div className="animate-fade-in" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
       {/* Header */}
       <div>
-        <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-          Session & Credentials Manager
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+          <span className="led-indicator led-green" />
+          <span style={{ color: 'var(--neon-green)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.1em' }}>
+            SYS://CREDENTIALS_VAULT
+          </span>
+        </div>
+        <h1 className="glow-green" style={{ color: 'var(--neon-green)', fontSize: '20px', margin: 0 }}>
+          /// SESSION_AND_KEYRING_MANAGER
         </h1>
-        <p className="text-xs sm:text-sm text-slate-400 mt-1">
-          Manage reCAPTCHA bypass session cookies (`cookies.txt`) and ASP.NET ViewState seed files (`response.html`).
+        <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginTop: '4px' }}>
+          Mount reCAPTCHA session tokens (`cookies.txt`) and ASP.NET ViewState form payloads (`response.html`).
         </p>
       </div>
 
-      {/* Config Status Info */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <div className="p-6 rounded-2xl glass-panel border border-white/10 flex items-center gap-4">
-          <div className="p-3.5 rounded-xl bg-violet-500/20 text-violet-300 border border-violet-500/30">
-            <Cookie className="w-6 h-6" />
+      {/* Config Status Info Deck */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
+        {/* Cookie Status */}
+        <div className="cyber-card" style={{ border: '1px solid var(--border-hard)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+            <Cookie size={16} style={{ color: 'var(--neon-amber)' }} />
+            <span style={{ color: 'var(--neon-amber)', fontSize: '11px', fontWeight: 700 }}>
+              KEYRING_01: cookies.txt
+            </span>
           </div>
           <div>
-            <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-              cookies.txt Status
-            </span>
-            <div className="flex items-center gap-2 mt-1">
-              {status?.cookie_loaded ? (
-                <span className="text-sm font-extrabold text-emerald-400">
-                  Active ({status.cookie_masked || 'Loaded'})
-                </span>
-              ) : (
-                <span className="text-sm font-extrabold text-amber-400">
-                  Not Loaded / Expired
-                </span>
-              )}
-            </div>
+            {status?.cookie_loaded ? (
+              <span className="cyber-badge cyber-badge-green">
+                [● ACTIVE: {status.cookie_masked || 'MOUNTED'}]
+              </span>
+            ) : (
+              <span className="cyber-badge cyber-badge-amber">
+                [! NOT_LOADED / EXPIRED]
+              </span>
+            )}
           </div>
         </div>
 
-        <div className="p-6 rounded-2xl glass-panel border border-white/10 flex items-center gap-4">
-          <div className="p-3.5 rounded-xl bg-pink-500/20 text-pink-300 border border-pink-500/30">
-            <FileCode2 className="w-6 h-6" />
+        {/* Seed HTML Status */}
+        <div className="cyber-card" style={{ border: '1px solid var(--border-hard)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+            <FileCode2 size={16} style={{ color: 'var(--neon-pink)' }} />
+            <span style={{ color: 'var(--neon-pink)', fontSize: '11px', fontWeight: 700 }}>
+              KEYRING_02: response.html
+            </span>
           </div>
           <div>
-            <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-              response.html Seed
-            </span>
-            <div className="flex items-center gap-2 mt-1">
-              {status?.seed_html_loaded ? (
-                <span className="text-sm font-extrabold text-emerald-400">
-                  Present ({status.seed_html_size?.toLocaleString()} bytes)
-                </span>
-              ) : (
-                <span className="text-sm font-extrabold text-amber-400">
-                  Missing Seed File
-                </span>
-              )}
-            </div>
+            {status?.seed_html_loaded ? (
+              <span className="cyber-badge cyber-badge-green">
+                [● PRESENT: {status.seed_html_size?.toLocaleString()} BYTES]
+              </span>
+            ) : (
+              <span className="cyber-badge cyber-badge-amber">
+                [! MISSING_SEED_FILE]
+              </span>
+            )}
           </div>
         </div>
       </div>
 
       {/* Form */}
-      <form onSubmit={handleSave} className="space-y-6">
+      <form onSubmit={handleSave} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
         {/* Cookie Input */}
-        <div className="p-6 rounded-2xl glass-panel border border-white/10 space-y-3">
-          <label className="block text-sm font-bold text-white flex items-center gap-2">
-            <Cookie className="w-4 h-4 text-violet-400" />
-            Session Cookie String (`ASP.NET_SessionId`)
+        <div className="cyber-card" style={{ border: '1px solid var(--border-hard)', padding: '20px' }}>
+          <label style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--neon-amber)', fontSize: '11px', fontWeight: 700, marginBottom: '6px' }}>
+            <Cookie size={14} />
+            RAW_COOKIE_STRING: (ASP.NET_SessionId)
           </label>
-          <p className="text-xs text-slate-400">
-            Paste the raw cookie string from your browser inspection tool when logged into registration.bogazici.edu.tr.
+          <p style={{ color: 'var(--text-secondary)', fontSize: '11px', marginBottom: '12px' }}>
+            Paste the raw cookie string from browser devtools while authenticated on registration.bogazici.edu.tr.
           </p>
           <textarea
             rows="3"
             value={cookies}
             onChange={(e) => setCookies(e.target.value)}
             placeholder="ASP.NET_SessionId=abcdef1234567890..."
-            className="w-full p-4 rounded-xl glass-input text-white text-xs font-mono focus:outline-none focus:ring-2 focus:ring-violet-500/50"
+            className="cyber-input"
+            style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', lineHeight: '1.5' }}
           />
         </div>
 
         {/* Seed HTML Input */}
-        <div className="p-6 rounded-2xl glass-panel border border-white/10 space-y-3">
-          <label className="block text-sm font-bold text-white flex items-center gap-2">
-            <FileCode2 className="w-4 h-4 text-pink-400" />
-            Seed Form HTML (`response.html`)
+        <div className="cyber-card" style={{ border: '1px solid var(--border-hard)', padding: '20px' }}>
+          <label style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--neon-pink)', fontSize: '11px', fontWeight: 700, marginBottom: '6px' }}>
+            <FileCode2 size={14} />
+            SEED_FORM_HTML_BUFFER: (response.html)
           </label>
-          <p className="text-xs text-slate-400">
+          <p style={{ color: 'var(--text-secondary)', fontSize: '11px', marginBottom: '12px' }}>
             Paste full HTML source of schedule.aspx containing ASP.NET `__VIEWSTATE` and `__EVENTVALIDATION` fields.
           </p>
           <textarea
@@ -164,33 +169,51 @@ export default function ConfigManager() {
             value={seedHtml}
             onChange={(e) => setSeedHtml(e.target.value)}
             placeholder="<!DOCTYPE html><html><head>...<input type='hidden' name='__VIEWSTATE'..."
-            className="w-full p-4 rounded-xl glass-input text-white text-xs font-mono focus:outline-none focus:ring-2 focus:ring-violet-500/50"
+            className="cyber-input"
+            style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', lineHeight: '1.5' }}
           />
         </div>
 
         {/* Save Floating Bar */}
         {isDirty && (
-          <div className="fixed bottom-6 right-6 z-40 p-4 rounded-2xl bg-slate-900/90 border border-violet-500/50 shadow-2xl backdrop-blur-xl flex items-center gap-4 animate-slide-up">
-            <div className="flex items-center gap-2 text-xs font-bold text-violet-300">
-              <AlertCircle className="w-4 h-4 text-violet-400" />
-              <span>Unsaved changes</span>
+          <div
+            className="cyber-card animate-fade-in"
+            style={{
+              position: 'fixed',
+              bottom: '36px',
+              right: '24px',
+              zIndex: 80,
+              padding: '14px 20px',
+              border: '2px solid var(--neon-amber)',
+              background: 'var(--bg-secondary)',
+              boxShadow: '6px 6px 0 rgba(0, 0, 0, 0.9)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '16px',
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--neon-amber)', fontSize: '11px', fontWeight: 700 }}>
+              <AlertCircle size={14} />
+              <span>UNCOMMITTED_CHANGES</span>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <button
                 type="button"
                 onClick={handleReset}
-                className="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold transition-colors"
+                className="btn-cyber"
+                style={{ fontSize: '10px', padding: '6px 12px' }}
               >
-                Discard
+                [DISCARD]
               </button>
               <button
                 type="submit"
                 disabled={saving}
-                className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-violet-600 to-pink-600 hover:from-violet-500 hover:to-pink-500 text-white font-bold text-xs shadow-lg transition-all"
+                className="btn-cyber btn-cyber-primary"
+                style={{ fontSize: '10px', padding: '6px 14px' }}
               >
-                <Save className="w-4 h-4" />
-                <span>{saving ? 'Saving...' : 'Save Config'}</span>
+                <Save size={12} />
+                <span>{saving ? '[...COMMITTING]' : '[>> COMMIT_CHANGES]'}</span>
               </button>
             </div>
           </div>

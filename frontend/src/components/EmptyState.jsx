@@ -1,24 +1,66 @@
 import React from 'react';
 
 export default function EmptyState({ 
-  title, 
-  description, 
+  title = '[STATUS: NO_RECORDS_FOUND]', 
+  description = 'No matching data located in current memory buffer.', 
   icon: Icon, 
   action 
 }) {
   return (
-    <div className="flex flex-col items-center justify-center py-16 px-4 text-center animate-fade-in">
-      <div className="p-5 rounded-3xl bg-[hsla(var(--bg-tertiary)/0.5)] border border-[hsla(var(--glass-border))] text-[hsl(var(--text-muted))] mb-5 shadow-inner">
-        {Icon && <Icon size={40} className="opacity-40" aria-hidden="true" />}
+    <div
+      className="animate-fade-in"
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '48px 16px',
+        textAlign: 'center',
+        fontFamily: 'var(--font-mono)',
+      }}
+    >
+      <div
+        style={{
+          padding: '16px',
+          border: '1px dashed var(--border-hard)',
+          background: 'var(--bg-tertiary)',
+          color: 'var(--neon-green)',
+          marginBottom: '16px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        {Icon ? <Icon size={32} style={{ opacity: 0.6 }} /> : <span style={{ fontSize: '18px' }}>[Ø]</span>}
       </div>
-      <h3 className="text-lg font-bold text-[hsl(var(--text-primary))] mb-2">{title}</h3>
-      <p className="text-sm text-[hsl(var(--text-secondary))] max-w-sm mx-auto leading-relaxed mb-8">
+      <h3
+        style={{
+          fontSize: '13px',
+          fontWeight: 700,
+          color: 'var(--text-primary)',
+          letterSpacing: '0.06em',
+          textTransform: 'uppercase',
+          marginBottom: '6px',
+        }}
+      >
+        {title}
+      </h3>
+      <p
+        style={{
+          fontSize: '11px',
+          color: 'var(--text-secondary)',
+          maxWidth: '380px',
+          lineHeight: '1.5',
+          marginBottom: '20px',
+        }}
+      >
         {description}
       </p>
       {action && (
         <button 
           onClick={action.onClick} 
-          className="btn-primary text-xs py-2.5 px-6"
+          className="btn-cyber btn-cyber-primary"
+          style={{ fontSize: '10px', padding: '6px 16px' }}
         >
           {action.label}
         </button>

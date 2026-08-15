@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Shield, Lock, User, ArrowRight, AlertCircle, Loader2 } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { useToast } from '../hooks/useToast';
 
@@ -17,7 +16,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!username || !password) {
-      setError('Please enter both username and password.');
+      setError('MISSING_FIELDS: PROVIDE_OPERATOR_ID_AND_PASSKEY');
       return;
     }
 
@@ -26,110 +25,142 @@ export default function Login() {
 
     try {
       await login(username, password);
-      showToast('Successfully authenticated!', 'success');
+      showToast('Authentication sequence completed', 'success');
       navigate('/', { replace: true });
     } catch (err) {
-      setError(err.message || 'Invalid credentials');
+      setError(err.message || 'INVALID_CREDENTIALS');
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center p-4 relative overflow-hidden bg-slate-950">
-      {/* Ambient Radial Background Glows */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-violet-600/20 rounded-full blur-[128px] pointer-events-none" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-600/20 rounded-full blur-[128px] pointer-events-none" />
+    <div style={{
+      minHeight: '100vh',
+      width: '100%',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '16px',
+      background: 'var(--bg-void)',
+    }}>
+      {/* Hazard stripe */}
+      <div className="hazard-bar" style={{ width: '100%', maxWidth: '440px', marginBottom: '0' }} />
 
-      <div className="w-full max-w-md relative z-10">
-        {/* Card */}
-        <div className="rounded-3xl glass-panel p-8 sm:p-10 border border-white/10 shadow-2xl backdrop-blur-2xl">
-          {/* Header */}
-          <div className="text-center mb-8">
-            <div className="mx-auto w-14 h-14 rounded-2xl bg-gradient-to-tr from-violet-600 to-pink-500 flex items-center justify-center text-white shadow-lg shadow-violet-500/30 mb-4">
-              <Shield className="w-7 h-7" />
-            </div>
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-              BOUN Scraper
-            </h1>
-            <p className="text-xs sm:text-sm text-slate-400 mt-1 font-medium">
-              Administrative Schedule Control Console
-            </p>
+      {/* Login Card */}
+      <div className="cyber-card" style={{
+        width: '100%',
+        maxWidth: '440px',
+        border: '2px solid var(--border-hard)',
+        padding: '28px',
+      }}>
+        {/* ASCII Banner */}
+        <pre className="glow-green" style={{
+          color: 'var(--neon-green)',
+          fontSize: '10px',
+          lineHeight: '1.3',
+          textAlign: 'center',
+          margin: '0 0 20px 0',
+          fontFamily: 'var(--font-mono)',
+          overflow: 'hidden',
+        }}>
+{`╔══════════════════════════════════════════╗
+║  BOGAZICI UNIVERSITY MAINFRAME TERMINAL  ║
+║  RESTRICTED // LEVEL-4 CLEARANCE ONLY    ║
+╚══════════════════════════════════════════╝`}
+        </pre>
+
+        {/* Error */}
+        {error && (
+          <div style={{
+            marginBottom: '16px',
+            padding: '10px 12px',
+            background: 'rgba(255,0,85,0.06)',
+            border: '1px solid var(--neon-pink)',
+            color: 'var(--neon-pink)',
+            fontSize: '11px',
+            fontWeight: 700,
+            fontFamily: 'var(--font-mono)',
+            letterSpacing: '0.04em',
+          }}>
+            [!] ACCESS_DENIED: {error}
+          </div>
+        )}
+
+        {/* Form */}
+        <form onSubmit={handleSubmit}>
+          <div style={{ marginBottom: '14px' }}>
+            <label style={{
+              display: 'block',
+              color: 'var(--neon-amber)',
+              fontSize: '10px',
+              fontWeight: 700,
+              letterSpacing: '0.1em',
+              textTransform: 'uppercase',
+              marginBottom: '6px',
+              fontFamily: 'var(--font-mono)',
+            }}>
+              OPERATOR_ID:
+            </label>
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="admin"
+              required
+              className="cyber-input"
+            />
           </div>
 
-          {/* Error Callout */}
-          {error && (
-            <div className="mb-6 p-4 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center gap-3 text-rose-300 text-xs font-semibold animate-shake">
-              <AlertCircle className="w-4 h-4 shrink-0 text-rose-400" />
-              <span>{error}</span>
-            </div>
-          )}
-
-          {/* Form */}
-          <form onSubmit={handleSubmit} className="space-y-5">
-            <div>
-              <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
-                Username
-              </label>
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                  <User className="w-4 h-4" />
-                </div>
-                <input
-                  type="text"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                  placeholder="admin"
-                  required
-                  className="w-full pl-10 pr-4 py-3 rounded-xl glass-input text-white text-sm focus:outline-none focus:ring-2 focus:ring-violet-500/50"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
-                Password
-              </label>
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                  <Lock className="w-4 h-4" />
-                </div>
-                <input
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  placeholder="••••••••"
-                  required
-                  className="w-full pl-10 pr-4 py-3 rounded-xl glass-input text-white text-sm focus:outline-none focus:ring-2 focus:ring-violet-500/50"
-                />
-              </div>
-            </div>
-
-            <button
-              type="submit"
-              disabled={loading}
-              className="w-full mt-2 py-3.5 px-4 rounded-xl bg-gradient-to-r from-violet-600 to-pink-600 hover:from-violet-500 hover:to-pink-500 text-white font-bold text-sm tracking-wide shadow-lg shadow-violet-600/30 flex items-center justify-center gap-2 transition-all duration-200 hover:scale-[1.01] active:scale-[0.99] disabled:opacity-50"
-            >
-              {loading ? (
-                <>
-                  <Loader2 className="w-4 h-4 animate-spin" />
-                  <span>Authenticating...</span>
-                </>
-              ) : (
-                <>
-                  <span>Sign In to Dashboard</span>
-                  <ArrowRight className="w-4 h-4" />
-                </>
-              )}
-            </button>
-          </form>
-
-          {/* Footer Note */}
-          <div className="mt-8 text-center border-t border-white/5 pt-4">
-            <p className="text-[11px] text-slate-400">
-              Boğaziçi University Registration Schedule System Engine
-            </p>
+          <div style={{ marginBottom: '20px' }}>
+            <label style={{
+              display: 'block',
+              color: 'var(--neon-amber)',
+              fontSize: '10px',
+              fontWeight: 700,
+              letterSpacing: '0.1em',
+              textTransform: 'uppercase',
+              marginBottom: '6px',
+              fontFamily: 'var(--font-mono)',
+            }}>
+              SECURITY_PASSKEY:
+            </label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="••••••••"
+              required
+              className="cyber-input"
+            />
           </div>
+
+          <button
+            type="submit"
+            disabled={loading}
+            className="btn-cyber btn-cyber-primary"
+            style={{ width: '100%', padding: '10px 16px', fontSize: '12px' }}
+          >
+            {loading ? '[...AUTHENTICATING]' : '[>> AUTHENTICATE]'}
+          </button>
+        </form>
+
+        {/* Footer */}
+        <div style={{
+          marginTop: '20px',
+          paddingTop: '12px',
+          borderTop: '1px solid var(--border-dim)',
+          textAlign: 'center',
+        }}>
+          <span style={{
+            color: 'var(--text-muted)',
+            fontSize: '9px',
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+          }}>
+            BOUN REGISTRATION DATA EXTRACTION ENGINE // v2.0
+          </span>
         </div>
       </div>
     </div>

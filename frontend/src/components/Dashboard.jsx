@@ -9,8 +9,6 @@ import {
   Search,
   Activity,
   ShieldCheck,
-  AlertTriangle,
-  Play,
   RefreshCw,
   Cookie,
   FileCode2,
@@ -43,7 +41,7 @@ export default function Dashboard() {
       }
     } catch (err) {
       if (isMountedRef.current) {
-        showToast(err.message || 'Failed to load dashboard statistics', 'error');
+        showToast(err.message || 'FAILED_TO_LOAD_TELEMETRY', 'error');
       }
     } finally {
       if (isMountedRef.current) {
@@ -59,85 +57,102 @@ export default function Dashboard() {
 
   const statCards = [
     {
-      title: 'Total Courses',
+      code: '01',
+      title: 'COURSES_INDEXED',
       value: stats?.total_courses?.toLocaleString() || '0',
       icon: BookOpen,
-      color: 'from-violet-500/20 to-purple-500/20 border-violet-500/30 text-violet-400',
+      color: 'var(--neon-green)',
     },
     {
-      title: 'Time Slots',
+      code: '02',
+      title: 'TIME_SLOTS',
       value: stats?.total_slots?.toLocaleString() || '0',
       icon: Layers,
-      color: 'from-pink-500/20 to-rose-500/20 border-pink-500/30 text-pink-400',
+      color: 'var(--neon-cyan)',
     },
     {
-      title: 'Departments',
+      code: '03',
+      title: 'DEPARTMENTS',
       value: stats?.total_departments?.toLocaleString() || '0',
       icon: Building2,
-      color: 'from-sky-500/20 to-blue-500/20 border-sky-500/30 text-sky-400',
+      color: 'var(--neon-amber)',
     },
     {
-      title: 'Semesters Indexed',
+      code: '04',
+      title: 'SEMESTERS',
       value: stats?.total_terms?.toLocaleString() || '0',
       icon: Calendar,
-      color: 'from-emerald-500/20 to-teal-500/20 border-emerald-500/30 text-emerald-400',
+      color: 'var(--neon-pink)',
     },
   ];
 
   return (
-    <div className="space-y-8 animate-fade-in">
+    <div className="animate-fade-in" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
       {/* Header Banner */}
-      <div className="relative overflow-hidden rounded-2xl glass-panel p-8 border border-white/10 shadow-2xl">
-        <div className="absolute top-0 right-0 -mt-12 -mr-12 w-64 h-64 bg-violet-600/20 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-1/3 -mb-12 w-64 h-64 bg-pink-600/10 rounded-full blur-3xl pointer-events-none" />
-
-        <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <div className="cyber-card" style={{ border: '2px solid var(--border-hard)', padding: '20px' }}>
+        <div className="hazard-bar" style={{ marginBottom: '14px' }} />
+        <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '16px' }}>
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-xs font-semibold text-violet-300 mb-3">
-              <Activity className="w-3.5 h-3.5 animate-pulse text-violet-400" />
-              BOUN Registration Crawler System v2.0
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
+              <span className="led-indicator led-green" />
+              <span style={{ color: 'var(--neon-green)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.1em' }}>
+                SYS://CONTROL_MAINFRAME // V2.0
+              </span>
             </div>
-            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Administrative Control Center
+            <h1 className="glow-green" style={{ color: 'var(--neon-green)', fontSize: '20px', margin: 0 }}>
+              /// ADMINISTRATIVE_CONTROL_CENTER
             </h1>
-            <p className="mt-2 text-slate-400 max-w-xl text-sm sm:text-base">
-              Monitor real-time course registration schedule indexing, manage web crawler background stages, inspect section quotas, and search class timetables.
+            <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginTop: '6px', maxWidth: '640px' }}>
+              Real-time course timetable indexing telemetry, multi-stage crawler execution, and live quota surveillance radar.
             </p>
           </div>
 
           <button
             onClick={fetchDashboardData}
             disabled={refreshing}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-xl glass-panel hover:border-violet-500/50 text-slate-200 text-sm font-medium transition-all duration-200 disabled:opacity-50"
+            className="btn-cyber"
+            style={{ fontSize: '11px', padding: '8px 16px' }}
           >
-            <RefreshCw className={`w-4 h-4 ${refreshing ? 'animate-spin text-violet-400' : ''}`} />
-            Refresh Data
+            <RefreshCw size={13} className={refreshing ? 'animate-spin' : ''} style={{ color: 'var(--neon-green)' }} />
+            <span>{refreshing ? '[...POLLING]' : '[>> RELOAD_TELEMETRY]'}</span>
           </button>
         </div>
       </div>
 
       {/* Metric Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        {statCards.map((card, idx) => {
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px' }}>
+        {statCards.map((card) => {
           const Icon = card.icon;
           return (
             <div
-              key={idx}
-              className={`relative overflow-hidden rounded-2xl p-6 bg-gradient-to-br ${card.color} border backdrop-blur-xl transition-all duration-300 hover:scale-[1.02] shadow-lg`}
+              key={card.code}
+              className="cyber-card"
+              style={{
+                border: '1px solid var(--border-hard)',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+              }}
             >
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-semibold tracking-wider uppercase text-slate-300">
-                  {card.title}
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px' }}>
+                <span style={{ color: 'var(--neon-amber)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.08em' }}>
+                  [{card.code}] {card.title}
                 </span>
-                <div className="p-2.5 rounded-xl bg-slate-900/40 border border-white/10">
-                  <Icon className="w-5 h-5" />
-                </div>
+                <Icon size={16} style={{ color: card.color, opacity: 0.7 }} />
               </div>
-              <div className="mt-4">
+              <div>
                 {loading ? (
-                  <div className="h-8 w-24 bg-white/10 rounded animate-pulse" />
+                  <span style={{ color: 'var(--text-muted)', fontSize: '22px', fontWeight: 700 }}>[...]</span>
                 ) : (
-                  <span className="text-3xl font-extrabold text-white tracking-tight">
+                  <span
+                    style={{
+                      color: card.color,
+                      fontSize: '28px',
+                      fontWeight: 800,
+                      letterSpacing: '-0.02em',
+                      fontFamily: 'var(--font-mono)',
+                    }}
+                  >
                     {card.value}
                   </span>
                 )}
@@ -147,112 +162,153 @@ export default function Dashboard() {
         })}
       </div>
 
-      {/* System Status & Quick Actions */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Connection & Auth Health */}
-        <div className="lg:col-span-1 rounded-2xl glass-panel p-6 border border-white/10 flex flex-col justify-between">
+      {/* Connectivity Status & Operational Launchpad */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px' }}>
+        {/* Connectivity Status */}
+        <div className="cyber-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
           <div>
-            <h3 className="text-lg font-bold text-white flex items-center gap-2.5">
-              <ShieldCheck className="w-5 h-5 text-emerald-400" />
-              Crawler Connectivity Status
-            </h3>
-            <p className="text-xs text-slate-400 mt-1">
-              Validates reCAPTCHA bypass session credentials stored on disk.
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
+              <ShieldCheck size={16} style={{ color: 'var(--neon-green)' }} />
+              <h3 style={{ fontSize: '13px', margin: 0, color: 'var(--text-primary)' }}>
+                [+] CRAWLER_CONNECTIVITY_STATUS
+              </h3>
+            </div>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '11px', marginBottom: '16px' }}>
+              Bypass tokens &amp; ASP.NET ViewState form payload integrity.
             </p>
 
-            <div className="mt-6 space-y-4">
-              <div className="flex items-center justify-between p-3.5 rounded-xl bg-slate-900/60 border border-white/5">
-                <div className="flex items-center gap-3">
-                  <Cookie className="w-4 h-4 text-violet-400" />
-                  <span className="text-sm font-medium text-slate-200">Session Cookie</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              {/* Cookie */}
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  padding: '10px 12px',
+                  background: 'var(--bg-primary)',
+                  border: '1px solid var(--border-dim)',
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <Cookie size={14} style={{ color: 'var(--neon-amber)' }} />
+                  <span style={{ fontSize: '11px', color: 'var(--text-primary)' }}>KEYRING: ASP.NET_SessionId</span>
                 </div>
                 {configStatus?.cookie_loaded ? (
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold border border-emerald-500/20">
-                    Active
-                  </span>
+                  <span className="cyber-badge cyber-badge-green">[● MOUNTED]</span>
                 ) : (
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-semibold border border-amber-500/20">
-                    Missing
-                  </span>
+                  <span className="cyber-badge cyber-badge-amber">[! MISSING]</span>
                 )}
               </div>
 
-              <div className="flex items-center justify-between p-3.5 rounded-xl bg-slate-900/60 border border-white/5">
-                <div className="flex items-center gap-3">
-                  <FileCode2 className="w-4 h-4 text-pink-400" />
-                  <span className="text-sm font-medium text-slate-200">Seed Form HTML</span>
+              {/* Seed HTML */}
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  padding: '10px 12px',
+                  background: 'var(--bg-primary)',
+                  border: '1px solid var(--border-dim)',
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <FileCode2 size={14} style={{ color: 'var(--neon-pink)' }} />
+                  <span style={{ fontSize: '11px', color: 'var(--text-primary)' }}>SEED: response.html</span>
                 </div>
                 {configStatus?.seed_html_loaded ? (
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold border border-emerald-500/20">
-                    Ready
-                  </span>
+                  <span className="cyber-badge cyber-badge-green">[● READY]</span>
                 ) : (
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-semibold border border-amber-500/20">
-                    Unset
-                  </span>
+                  <span className="cyber-badge cyber-badge-amber">[! UNSET]</span>
                 )}
               </div>
             </div>
           </div>
 
-          <div className="mt-6 pt-4 border-t border-white/5">
+          <div style={{ marginTop: '20px', paddingTop: '12px', borderTop: '1px solid var(--border-dim)' }}>
             <Link
               to="/config"
-              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition-colors"
+              className="btn-cyber"
+              style={{ width: '100%', textDecoration: 'none', fontSize: '10px' }}
             >
-              Configure Credentials
+              [&gt;&gt; CONFIGURE_SESSION_KEYS]
             </Link>
           </div>
         </div>
 
-        {/* Quick Launchpad Shortcuts */}
-        <div className="lg:col-span-2 rounded-2xl glass-panel p-6 border border-white/10">
-          <h3 className="text-lg font-bold text-white flex items-center gap-2.5 mb-1">
-            <Play className="w-5 h-5 text-violet-400" />
-            Operational Launchpad
-          </h3>
-          <p className="text-xs text-slate-400 mb-6">
-            Direct shortcuts to core system operations and indexing tasks.
+        {/* Operational Launchpad */}
+        <div className="cyber-card">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
+            <Terminal size={16} style={{ color: 'var(--neon-green)' }} />
+            <h3 style={{ fontSize: '13px', margin: 0, color: 'var(--text-primary)' }}>
+              [+] OPERATIONAL_LAUNCHPAD
+            </h3>
+          </div>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '11px', marginBottom: '16px' }}>
+            Direct execution triggers for ingestion, indexing, and radar systems.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <button
               onClick={() => navigate('/scraper')}
-              className="p-5 rounded-2xl bg-gradient-to-br from-violet-900/30 to-purple-900/30 border border-violet-500/30 hover:border-violet-400 text-left transition-all duration-200 hover:scale-[1.02] group"
+              className="cyber-card"
+              style={{
+                textAlign: 'left',
+                border: '1px solid var(--border-hard)',
+                padding: '12px',
+                cursor: 'pointer',
+                transition: 'border-color 0.15s ease',
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'var(--neon-green)')}
+              onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'var(--border-hard)')}
             >
-              <div className="p-3 rounded-xl bg-violet-500/20 text-violet-300 w-fit mb-3 group-hover:bg-violet-500 group-hover:text-white transition-colors">
-                <Terminal className="w-5 h-5" />
+              <div style={{ color: 'var(--neon-green)', fontSize: '11px', fontWeight: 700, marginBottom: '4px' }}>
+                [EXEC &gt;&gt;] 01_PIPELINE_RUNNER
               </div>
-              <h4 className="font-bold text-white text-sm">Pipeline Runner</h4>
-              <p className="text-xs text-slate-400 mt-1">
-                Execute stages 1 to 4 and monitor server terminal logs.
-              </p>
+              <div style={{ color: 'var(--text-secondary)', fontSize: '10px' }}>
+                Stages 1-4 pipeline execution with live stdout memory buffer.
+              </div>
             </button>
 
             <button
               onClick={() => navigate('/explorer')}
-              className="p-5 rounded-2xl bg-gradient-to-br from-sky-900/30 to-blue-900/30 border border-sky-500/30 hover:border-sky-400 text-left transition-all duration-200 hover:scale-[1.02] group"
+              className="cyber-card"
+              style={{
+                textAlign: 'left',
+                border: '1px solid var(--border-hard)',
+                padding: '12px',
+                cursor: 'pointer',
+                transition: 'border-color 0.15s ease',
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'var(--neon-cyan)')}
+              onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'var(--border-hard)')}
             >
-              <div className="p-3 rounded-xl bg-sky-500/20 text-sky-300 w-fit mb-3 group-hover:bg-sky-500 group-hover:text-white transition-colors">
-                <Search className="w-5 h-5" />
+              <div style={{ color: 'var(--neon-cyan)', fontSize: '11px', fontWeight: 700, marginBottom: '4px' }}>
+                [EXEC &gt;&gt;] 02_DATABASE_EXPLORER
               </div>
-              <h4 className="font-bold text-white text-sm">Database Explorer</h4>
-              <p className="text-xs text-slate-400 mt-1">
-                Filter courses, slots, instructors, and export UTF-8 CSV datasets.
-              </p>
+              <div style={{ color: 'var(--text-secondary)', fontSize: '10px' }}>
+                Timetable lookup, day-hour slot filtering, and UTF-8 CSV exports.
+              </div>
             </button>
 
             <button
               onClick={() => navigate('/quota')}
-              className="p-5 rounded-2xl bg-gradient-to-br from-pink-900/30 to-rose-900/30 border border-pink-500/30 hover:border-pink-400 text-left transition-all duration-200 hover:scale-[1.02] group"
+              className="cyber-card"
+              style={{
+                textAlign: 'left',
+                border: '1px solid var(--border-hard)',
+                padding: '12px',
+                cursor: 'pointer',
+                transition: 'border-color 0.15s ease',
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'var(--neon-pink)')}
+              onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'var(--border-hard)')}
             >
-              <div className="p-3 rounded-xl bg-pink-500/20 text-pink-300 w-fit mb-3 group-hover:bg-pink-500 group-hover:text-white transition-colors">
-                <Activity className="w-5 h-5" />
+              <div style={{ color: 'var(--neon-pink)', fontSize: '11px', fontWeight: 700, marginBottom: '4px' }}>
+                [EXEC &gt;&gt;] 03_LIVE_QUOTA_RADAR
               </div>
-              <h4 className="font-bold text-white text-sm">Live Quota Watchlist</h4>
-              <p className="text-xs text-slate-400 mt-1">
-                Real-time 10s auto polling for course registration capacity.
-              </p>
+              <div style={{ color: 'var(--text-secondary)', fontSize: '10px' }}>
+                Real-time 10s auto-polling radar for course section capacities.
+              </div>
             </button>
           </div>
         </div>

@@ -11,19 +11,31 @@ import QuotaMonitor from './components/QuotaMonitor';
 import ConfigManager from './components/ConfigManager';
 import Login from './components/Login';
 
-import './App.css';
-
 function ProtectedRoute({ children }) {
   const { isAuthenticated, authenticating } = useAuth();
   const location = useLocation();
 
   if (authenticating) {
     return (
-      <div className="min-h-screen w-full bg-slate-950 flex items-center justify-center">
-        <div className="flex flex-col items-center gap-3">
-          <div className="w-10 h-10 rounded-full border-2 border-violet-500 border-t-transparent animate-spin" />
-          <span className="text-xs font-bold text-slate-400">Verifying session...</span>
-        </div>
+      <div style={{
+        minHeight: '100vh',
+        width: '100%',
+        background: 'var(--bg-void)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        gap: '12px',
+      }}>
+        <span className="glow-green" style={{
+          color: 'var(--neon-green)',
+          fontSize: '12px',
+          letterSpacing: '0.1em',
+          textTransform: 'uppercase',
+        }}>
+          [SYS] VERIFYING_SESSION_KEYS
+          <span style={{ animation: 'blink-cursor 1s step-end infinite', marginLeft: '2px' }}>█</span>
+        </span>
       </div>
     );
   }
@@ -35,11 +47,93 @@ function ProtectedRoute({ children }) {
   return children;
 }
 
+function StatusTicker() {
+  const now = new Date();
+  const timestamp = now.toISOString().slice(0, 19).replace('T', ' ');
+
+  return (
+    <>
+      {/* Top status ticker */}
+      <div style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        height: '24px',
+        background: 'var(--bg-tertiary)',
+        borderBottom: '1px solid var(--border-hard)',
+        display: 'flex',
+        alignItems: 'center',
+        paddingLeft: '12px',
+        paddingRight: '12px',
+        zIndex: 60,
+        gap: '16px',
+        overflow: 'hidden',
+      }}>
+        <span style={{ color: 'var(--neon-green)', fontSize: '10px', letterSpacing: '0.08em', whiteSpace: 'nowrap' }}>
+          [BOUN://SCRAPER_DAEMON v2.0]
+        </span>
+        <span style={{ color: 'var(--text-muted)', fontSize: '10px', letterSpacing: '0.06em', whiteSpace: 'nowrap' }}>
+          [NODE: ISTANBUL_BOUN]
+        </span>
+        <span style={{ color: 'var(--neon-green)', fontSize: '10px', display: 'inline-flex', alignItems: 'center', gap: '4px', whiteSpace: 'nowrap' }}>
+          <span className="led-indicator led-green" /> ONLINE
+        </span>
+        <span style={{ color: 'var(--neon-cyan)', fontSize: '10px', letterSpacing: '0.06em', marginLeft: 'auto', whiteSpace: 'nowrap' }}>
+          [{timestamp}]
+        </span>
+      </div>
+
+      {/* Bottom status bar */}
+      <div style={{
+        position: 'fixed',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        height: '22px',
+        background: 'var(--bg-tertiary)',
+        borderTop: '1px solid var(--border-hard)',
+        display: 'flex',
+        alignItems: 'center',
+        paddingLeft: '12px',
+        paddingRight: '12px',
+        zIndex: 60,
+        gap: '16px',
+        overflow: 'hidden',
+      }}>
+        <span style={{ color: 'var(--neon-amber)', fontSize: '9px', letterSpacing: '0.08em', whiteSpace: 'nowrap' }}>
+          [HEAP: 640K OK]
+        </span>
+        <span style={{ color: 'var(--text-muted)', fontSize: '9px', letterSpacing: '0.06em', whiteSpace: 'nowrap' }}>
+          [VIEWSTATE: BYPASSED]
+        </span>
+        <span style={{ color: 'var(--text-muted)', fontSize: '9px', letterSpacing: '0.06em', whiteSpace: 'nowrap' }}>
+          [ENC: NONE]
+        </span>
+        <span style={{ color: 'var(--neon-amber)', fontSize: '9px', letterSpacing: '0.06em', marginLeft: 'auto', whiteSpace: 'nowrap' }}>
+          [ASP.NET_SessionId: ACTIVE]
+        </span>
+      </div>
+    </>
+  );
+}
+
 function MainLayout() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col md:flex-row font-sans selection:bg-violet-500 selection:text-white">
+    <div style={{
+      minHeight: '100vh',
+      background: 'var(--bg-void)',
+      color: 'var(--text-primary)',
+      display: 'flex',
+    }}>
       <Sidebar />
-      <main className="flex-1 md:ml-64 p-4 sm:p-8 pt-20 md:pt-8 max-w-7xl mx-auto w-full">
+      <main style={{
+        flex: 1,
+        marginLeft: '240px',
+        padding: '48px 28px 40px 28px',
+        maxWidth: '1200px',
+        width: '100%',
+      }}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/scraper" element={<ScraperControl />} />
@@ -49,6 +143,8 @@ function MainLayout() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
+      <StatusTicker />
+      <div className="crt-overlay" />
     </div>
   );
 }
