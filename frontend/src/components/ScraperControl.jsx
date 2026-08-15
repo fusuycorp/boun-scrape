@@ -10,7 +10,6 @@ import {
   Trash2,
   Copy,
   Check,
-  AlertTriangle,
 } from 'lucide-react';
 import { api } from '../api/client';
 import { useMountedRef } from '../hooks/useSafeAsync';
@@ -34,7 +33,6 @@ export default function ScraperControl() {
 
   const autoScrollRef = useRef(true);
 
-  // Poll status & logs
   const pollScraper = async () => {
     try {
       const [statusRes, logsRes] = await Promise.all([
@@ -75,7 +73,6 @@ export default function ScraperControl() {
     return () => clearInterval(interval);
   }, []);
 
-  // Auto-scroll terminal log window
   useEffect(() => {
     if (autoScrollRef.current && logTerminalRef.current) {
       logTerminalRef.current.scrollTop = logTerminalRef.current.scrollHeight;
@@ -87,10 +84,10 @@ export default function ScraperControl() {
     setStartingPhase(phase);
     try {
       await api.startScrape(phase, forceRefresh);
-      showToast(`Launched ${phase.toUpperCase()} successfully!`, 'success');
+      showToast(`LAUNCHED_${phase.toUpperCase()}_SUCCESSFULLY`, 'success');
       pollScraper();
     } catch (err) {
-      showToast(err.message || `Failed to launch ${phase}`, 'error');
+      showToast(err.message || `FAILED_TO_LAUNCH_${phase.toUpperCase()}`, 'error');
     } finally {
       if (isMountedRef.current) setStartingPhase(null);
     }
@@ -100,10 +97,10 @@ export default function ScraperControl() {
     setStopping(true);
     try {
       await api.stopScrape();
-      showToast('Scraping process terminated.', 'info');
+      showToast('PIPELINE_EXECUTION_TERMINATED', 'info');
       pollScraper();
     } catch (err) {
-      showToast(err.message || 'Failed to stop scraping', 'error');
+      showToast(err.message || 'FAILED_TO_HALT_PROCESS', 'error');
     } finally {
       if (isMountedRef.current) setStopping(false);
     }
@@ -113,9 +110,9 @@ export default function ScraperControl() {
     try {
       await api.getScrapeLogs(true);
       setLogs([]);
-      showToast('Terminal logs cleared', 'info');
+      showToast('TERMINAL_BUFFER_PURGED', 'info');
     } catch (err) {
-      showToast(err.message || 'Failed to clear logs', 'error');
+      showToast(err.message || 'FAILED_TO_CLEAR_LOGS', 'error');
     }
   };
 
@@ -129,73 +126,99 @@ export default function ScraperControl() {
   const phases = [
     {
       id: 'phase1',
-      title: 'Stage 1: Term Discovery',
+      num: '01',
+      title: 'STAGE_1: TERM_DISCOVERY',
       script: 'scraper.py',
       description: 'Posts ASP.NET ViewState form requests to discover and download semester index pages.',
       icon: Clock,
-      color: 'from-sky-500/20 to-blue-500/20 border-sky-500/30 text-sky-400',
+      color: 'var(--neon-cyan)',
     },
     {
       id: 'phase2',
-      title: 'Stage 2: Department Catalog',
+      num: '02',
+      title: 'STAGE_2: DEPARTMENT_CATALOG',
       script: 'parse_responses.py',
       description: 'Extracts department links and outputs deduplicated catalog into departments_all.json.',
       icon: Layers,
-      color: 'from-violet-500/20 to-purple-500/20 border-violet-500/30 text-violet-400',
+      color: 'var(--neon-green)',
     },
     {
       id: 'phase3',
-      title: 'Stage 3: Schedule Crawler',
+      num: '03',
+      title: 'STAGE_3: SCHEDULE_CRAWLER',
       script: 'scrape_all_schedules.py',
       description: 'Multi-threaded downloader (10 workers) fetching raw department HTML schedule files.',
       icon: TerminalIcon,
-      color: 'from-pink-500/20 to-rose-500/20 border-pink-500/30 text-pink-400',
+      color: 'var(--neon-pink)',
     },
     {
       id: 'phase4',
-      title: 'Stage 4: SQLite Database ETL',
+      num: '04',
+      title: 'STAGE_4: SQLITE_DATABASE_ETL',
       script: 'parse_schedules_to_db.py',
-      description: 'Parallel multi-process parser compiling HTML tables into SQLite with batch transactions.',
+      description: 'Parallel parser compiling HTML tables into SQLite with atomic batch transactions.',
       icon: Database,
-      color: 'from-emerald-500/20 to-teal-500/20 border-emerald-500/30 text-emerald-400',
+      color: 'var(--neon-amber)',
     },
   ];
 
   const isRunning = status.status === 'running';
 
   return (
-    <div className="space-y-8 animate-fade-in">
+    <div className="animate-fade-in" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '16px' }}>
         <div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-            Scraper Pipeline Controller
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+            <span className="led-indicator led-green" />
+            <span style={{ color: 'var(--neon-green)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.1em' }}>
+              SYS://PIPELINE_ORCHESTRATOR
+            </span>
+          </div>
+          <h1 className="glow-green" style={{ color: 'var(--neon-green)', fontSize: '20px', margin: 0 }}>
+            /// INGESTION_PIPELINE_CONTROLLER
           </h1>
-          <p className="text-xs sm:text-sm text-slate-400 mt-1">
-            Orchestrate background multi-stage crawling processes and inspect stdout log streams.
+          <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginTop: '4px' }}>
+            Orchestrate background crawling stages and inspect live stdout terminal buffer streams.
           </p>
         </div>
 
-        {/* Global Action Controls */}
-        <div className="flex items-center gap-3">
-          <label className="flex items-center gap-2 text-xs font-semibold text-slate-300 cursor-pointer select-none bg-slate-900/60 px-3 py-2 rounded-xl border border-white/10">
+        {/* Global Controls */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <label
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              padding: '6px 12px',
+              background: 'var(--bg-secondary)',
+              border: '1px solid var(--border-hard)',
+              color: forceRefresh ? 'var(--neon-amber)' : 'var(--text-muted)',
+              fontSize: '11px',
+              fontWeight: 700,
+              cursor: 'pointer',
+              userSelect: 'none',
+              fontFamily: 'var(--font-mono)',
+            }}
+          >
             <input
               type="checkbox"
               checked={forceRefresh}
               onChange={(e) => setForceRefresh(e.target.checked)}
-              className="rounded bg-slate-800 border-slate-700 text-violet-600 focus:ring-violet-500/40"
+              style={{ accentColor: 'var(--neon-amber)' }}
             />
-            <span>Force Refresh</span>
+            <span>[FORCE_REFRESH]</span>
           </label>
 
           {isRunning && (
             <button
               onClick={handleStop}
               disabled={stopping}
-              className="flex items-center gap-2 px-4 py-2 rounded-xl bg-rose-600/20 hover:bg-rose-600/30 text-rose-300 border border-rose-500/30 text-xs font-bold transition-colors disabled:opacity-50"
+              className="btn-cyber btn-cyber-danger"
+              style={{ fontSize: '11px', padding: '6px 14px' }}
             >
-              <Square className="w-4 h-4 text-rose-400 fill-current" />
-              <span>{stopping ? 'Stopping...' : 'Stop Active Run'}</span>
+              <Square size={13} fill="currentColor" />
+              <span>{stopping ? '[...HALTING]' : '[!! EMERGENCY_HALT !!]'}</span>
             </button>
           )}
         </div>
@@ -203,41 +226,44 @@ export default function ScraperControl() {
 
       {/* Live Run Progress Banner */}
       {isRunning && (
-        <div className="rounded-2xl p-6 bg-gradient-to-r from-violet-900/40 to-pink-900/40 border border-violet-500/40 backdrop-blur-xl shadow-xl">
-          <div className="flex items-center justify-between mb-3">
-            <div className="flex items-center gap-3">
-              <div className="p-2 rounded-lg bg-violet-500/20 text-violet-300 animate-spin">
-                <RefreshCw className="w-4 h-4" />
-              </div>
+        <div
+          className="cyber-card"
+          style={{
+            border: '2px solid var(--neon-green)',
+            boxShadow: '0 0 16px rgba(0, 255, 102, 0.15)',
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <RefreshCw size={15} className="animate-spin" style={{ color: 'var(--neon-green)' }} />
               <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-violet-300">
-                  Executing Pipeline: {status.phase?.toUpperCase()}
-                </span>
-                <p className="text-xs text-slate-300 font-medium">
+                <div style={{ color: 'var(--neon-green)', fontSize: '11px', fontWeight: 800, letterSpacing: '0.08em' }}>
+                  EXECUTING: {status.phase?.toUpperCase()}
+                </div>
+                <div style={{ color: 'var(--text-secondary)', fontSize: '10px' }}>
                   {status.progress?.current && status.progress?.total
-                    ? `Processed ${status.progress.current} of ${status.progress.total} tasks`
-                    : 'Process active...'}
-                </p>
+                    ? `Processed ${status.progress.current} of ${status.progress.total} department tasks`
+                    : 'Crawling stream active...'}
+                </div>
               </div>
             </div>
 
-            <span className="text-lg font-black text-white">
-              {status.progress?.percent !== undefined ? `${status.progress.percent.toFixed(1)}%` : 'Active'}
+            <span style={{ color: 'var(--neon-green)', fontSize: '18px', fontWeight: 800, fontFamily: 'var(--font-mono)' }}>
+              {status.progress?.percent !== undefined ? `${status.progress.percent.toFixed(1)}%` : 'ACTIVE'}
             </span>
           </div>
 
-          {/* Progress Bar */}
-          <div className="w-full h-3 bg-slate-900/80 rounded-full overflow-hidden p-0.5 border border-white/10">
+          <div className="cyber-progress">
             <div
-              className="h-full bg-gradient-to-r from-violet-500 to-pink-500 rounded-full transition-all duration-300 shadow-lg shadow-violet-500/50"
+              className="cyber-progress-fill"
               style={{ width: `${Math.min(100, Math.max(0, status.progress?.percent || 0))}%` }}
             />
           </div>
         </div>
       )}
 
-      {/* 4 Pipeline Stages Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      {/* 4 Pipeline Stage Cards Grid */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
         {phases.map((stage) => {
           const Icon = stage.icon;
           const isCurrentPhase = status.phase === stage.id && isRunning;
@@ -246,92 +272,104 @@ export default function ScraperControl() {
           return (
             <div
               key={stage.id}
-              className={`relative overflow-hidden rounded-2xl p-6 glass-panel border transition-all duration-200 ${
-                isCurrentPhase ? 'border-violet-500 shadow-xl shadow-violet-500/10' : 'border-white/10 hover:border-white/20'
-              }`}
+              className="cyber-card"
+              style={{
+                border: isCurrentPhase ? '2px solid var(--neon-green)' : '1px solid var(--border-hard)',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+              }}
             >
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex items-center gap-3">
-                  <div className={`p-3 rounded-xl bg-gradient-to-br ${stage.color}`}>
-                    <Icon className="w-5 h-5" />
-                  </div>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '8px', marginBottom: '10px' }}>
                   <div>
-                    <h3 className="font-bold text-white text-base">{stage.title}</h3>
-                    <code className="text-[11px] text-slate-400 font-mono">{stage.script}</code>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <span style={{ color: stage.color, fontSize: '10px', fontWeight: 700 }}>
+                        [{stage.num}]
+                      </span>
+                      <h3 style={{ fontSize: '12px', margin: 0, color: 'var(--text-primary)' }}>
+                        {stage.title}
+                      </h3>
+                    </div>
+                    <code style={{ fontSize: '10px', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>
+                      //_{stage.script}
+                    </code>
                   </div>
+
+                  <button
+                    onClick={() => setConfirmPhase(stage.id)}
+                    disabled={isRunning || isPending}
+                    className="btn-cyber btn-cyber-primary"
+                    style={{ fontSize: '10px', padding: '5px 10px' }}
+                  >
+                    {isPending ? (
+                      <RefreshCw size={11} className="animate-spin" />
+                    ) : (
+                      <Play size={11} fill="currentColor" />
+                    )}
+                    <span>[EXEC]</span>
+                  </button>
                 </div>
 
-                <button
-                  onClick={() => setConfirmPhase(stage.id)}
-                  disabled={isRunning || isPending}
-                  className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-violet-600 hover:bg-violet-500 disabled:bg-slate-800 disabled:text-slate-500 text-white text-xs font-bold shadow-md transition-all active:scale-95"
-                >
-                  {isPending ? (
-                    <RefreshCw className="w-3.5 h-3.5 animate-spin" />
-                  ) : (
-                    <Play className="w-3.5 h-3.5 fill-current" />
-                  )}
-                  <span>Run Stage</span>
-                </button>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '11px', lineHeight: '1.4', margin: 0 }}>
+                  {stage.description}
+                </p>
               </div>
-
-              <p className="mt-4 text-xs text-slate-400 leading-relaxed">
-                {stage.description}
-              </p>
             </div>
           );
         })}
       </div>
 
       {/* Server Terminal Stream Log Monitor */}
-      <div className="rounded-2xl glass-panel border border-white/10 overflow-hidden shadow-2xl">
-        {/* Terminal Titlebar */}
-        <div className="px-5 py-3.5 bg-slate-950/80 border-b border-white/10 flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <div className="flex items-center gap-1.5">
-              <div className="w-3 h-3 rounded-full bg-rose-500/80" />
-              <div className="w-3 h-3 rounded-full bg-amber-500/80" />
-              <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
-            </div>
-            <span className="text-xs font-mono font-bold text-slate-300 ml-2">stdout_runner.log</span>
+      <div className="terminal-window" style={{ border: '1px solid var(--border-hard)' }}>
+        <div className="terminal-header">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span className="led-indicator led-green" />
+            <span style={{ color: 'var(--neon-green)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.08em' }}>
+              TTY: /dev/pts/0 // STDOUT_RUNNER.LOG
+            </span>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
             <button
               onClick={handleCopyLogs}
               disabled={logs.length === 0}
-              className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-white/10 transition-colors disabled:opacity-30"
+              className="btn-cyber"
+              style={{ fontSize: '9px', padding: '3px 8px' }}
               title="Copy Logs"
             >
-              {copied ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
+              {copied ? <Check size={11} style={{ color: 'var(--neon-green)' }} /> : <Copy size={11} />}
+              <span>{copied ? 'COPIED' : 'DUMP'}</span>
             </button>
             <button
               onClick={handleClearLogs}
               disabled={logs.length === 0}
-              className="p-1.5 rounded-lg text-slate-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors disabled:opacity-30"
+              className="btn-cyber"
+              style={{ fontSize: '9px', padding: '3px 8px', color: 'var(--neon-pink)', borderColor: 'var(--border-hard)' }}
               title="Clear Logs"
             >
-              <Trash2 className="w-4 h-4" />
+              <Trash2 size={11} />
+              <span>PURGE</span>
             </button>
           </div>
         </div>
 
-        {/* Terminal Content Window */}
         <div
           ref={logTerminalRef}
           onScroll={(e) => {
             const el = e.target;
             autoScrollRef.current = el.scrollHeight - el.scrollTop - el.clientHeight < 50;
           }}
-          className="h-80 p-4 bg-slate-950/90 font-mono text-xs text-emerald-400/90 overflow-y-auto space-y-1 select-text"
+          className="terminal-body"
+          style={{ height: '320px', fontSize: '11px' }}
         >
           {logs.length === 0 ? (
-            <div className="h-full flex items-center justify-center text-slate-600">
-              No logs buffered. Launch a pipeline stage to monitor real-time stdout streams.
+            <div style={{ color: 'var(--text-muted)', textAlign: 'center', padding: '40px 0' }}>
+              &gt; AWAITING_PIPELINE_OUTPUT... LAUNCH A STAGE TO INGEST TELEMETRY.
             </div>
           ) : (
             logs.map((line, i) => (
-              <div key={i} className="leading-relaxed whitespace-pre-wrap break-all">
+              <div key={i} style={{ whiteSpace: 'pre-wrap', wordBreak: 'break-all' }}>
                 {line}
               </div>
             ))
@@ -343,9 +381,10 @@ export default function ScraperControl() {
       {confirmPhase && (
         <ConfirmDialog
           open={Boolean(confirmPhase)}
-          title={`Launch ${confirmPhase.toUpperCase()}?`}
-          description={`Are you sure you want to execute ${confirmPhase}? This will launch automated background scraping tasks to crawl BOUN servers.`}
-          confirmLabel="Execute Stage"
+          title={`EXECUTE_${confirmPhase.toUpperCase()}?`}
+          description={`Confirm execution trigger for ${confirmPhase}. This will initiate background crawling against university registration servers.`}
+          confirmLabel="[EXECUTE_STAGE]"
+          cancelLabel="[ABORT]"
           onConfirm={() => handleStartPhase(confirmPhase)}
           onCancel={() => setConfirmPhase(null)}
         />

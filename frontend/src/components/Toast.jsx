@@ -6,25 +6,28 @@ let toastIdSeed = 0;
 
 const VARIANT_STYLES = {
   success: {
-    border: 'hsla(var(--color-success)/0.35)',
-    bg: 'hsla(var(--color-success)/0.08)',
-    color: 'hsl(var(--color-success))',
+    border: 'var(--neon-green)',
+    bg: 'rgba(0, 255, 102, 0.08)',
+    color: 'var(--neon-green)',
+    prefix: '[SYS_OK]',
     Icon: CheckCircle2,
     role: 'status',
     live: 'polite',
   },
   error: {
-    border: 'hsla(var(--color-danger)/0.35)',
-    bg: 'hsla(var(--color-danger)/0.08)',
-    color: 'hsl(var(--color-danger))',
+    border: 'var(--neon-pink)',
+    bg: 'rgba(255, 0, 85, 0.08)',
+    color: 'var(--neon-pink)',
+    prefix: '[SYS_FAIL]',
     Icon: AlertCircle,
     role: 'alert',
     live: 'assertive',
   },
   info: {
-    border: 'hsla(var(--color-info)/0.35)',
-    bg: 'hsla(var(--color-info)/0.08)',
-    color: 'hsl(var(--color-info))',
+    border: 'var(--neon-cyan)',
+    bg: 'rgba(0, 240, 255, 0.08)',
+    color: 'var(--neon-cyan)',
+    prefix: '[SYS_INFO]',
     Icon: Info,
     role: 'status',
     live: 'polite',
@@ -74,7 +77,18 @@ export function ToastProvider({ children }) {
       <div
         aria-live="polite"
         aria-atomic="false"
-        className="fixed top-4 right-4 z-[100] flex flex-col gap-2 max-w-sm pointer-events-none"
+        style={{
+          position: 'fixed',
+          top: '32px',
+          right: '16px',
+          zIndex: 100,
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '8px',
+          maxWidth: '360px',
+          width: '100%',
+          pointerEvents: 'none',
+        }}
       >
         {toasts.map((t) => {
           const v = VARIANT_STYLES[t.variant] || VARIANT_STYLES.info;
@@ -84,20 +98,39 @@ export function ToastProvider({ children }) {
               key={t.id}
               role={v.role}
               aria-live={v.live}
-              className="glass-panel pointer-events-auto flex items-start gap-3 p-3 pr-2 animate-fade-in"
-              style={{ borderColor: v.border, background: v.bg }}
+              className="animate-fade-in"
+              style={{
+                pointerEvents: 'auto',
+                display: 'flex',
+                alignItems: 'flex-start',
+                gap: '10px',
+                padding: '10px 12px',
+                background: 'var(--bg-secondary)',
+                border: `1px solid ${v.border}`,
+                boxShadow: '3px 3px 0 rgba(0, 0, 0, 0.8)',
+                fontFamily: 'var(--font-mono)',
+              }}
             >
-              <Icon size={18} style={{ color: v.color }} className="mt-0.5 shrink-0" />
-              <div className="text-xs text-[hsl(var(--text-primary))] leading-relaxed flex-1">
-                {t.message}
+              <Icon size={16} style={{ color: v.color, marginTop: '2px', flexShrink: 0 }} />
+              <div style={{ flex: 1, minWidth: 0, fontSize: '11px', lineHeight: '1.4' }}>
+                <span style={{ color: v.color, fontWeight: 700, marginRight: '6px' }}>{v.prefix}</span>
+                <span style={{ color: 'var(--text-primary)' }}>{t.message}</span>
               </div>
               <button
                 type="button"
                 onClick={() => dismiss(t.id)}
                 aria-label="Dismiss notification"
-                className="text-[hsl(var(--text-muted))] hover:text-[hsl(var(--text-primary))] p-1 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--accent-primary))]"
+                style={{
+                  background: 'transparent',
+                  border: 'none',
+                  color: 'var(--text-muted)',
+                  cursor: 'pointer',
+                  padding: '2px',
+                  display: 'flex',
+                  alignItems: 'center',
+                }}
               >
-                <X size={14} />
+                <X size={13} />
               </button>
             </div>
           );

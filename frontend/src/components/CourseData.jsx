@@ -1,19 +1,12 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import {
   Search,
-  Filter,
   Download,
-  Calendar,
-  Building2,
   BookOpen,
   ChevronLeft,
   ChevronRight,
   X,
-  User,
-  MapPin,
   Clock,
-  Info,
-  ExternalLink,
 } from 'lucide-react';
 import { api } from '../api/client';
 import { useMountedRef } from '../hooks/useSafeAsync';
@@ -84,7 +77,7 @@ export default function CourseData() {
       }
     } catch (err) {
       if (isMountedRef.current) {
-        showToast(err.message || 'Failed to fetch course records', 'error');
+        showToast(err.message || 'FAILED_TO_FETCH_COURSE_RECORDS', 'error');
       }
     } finally {
       if (isMountedRef.current) {
@@ -102,7 +95,7 @@ export default function CourseData() {
   // CSV Exporter using Blob with UTF-8 BOM
   const exportCSV = () => {
     if (courses.length === 0) {
-      showToast('No course records available to export', 'error');
+      showToast('NO_RECORDS_TO_EXPORT', 'error');
       return;
     }
 
@@ -143,51 +136,67 @@ export default function CourseData() {
     document.body.removeChild(link);
     URL.revokeObjectURL(url);
 
-    showToast('CSV dataset exported successfully!', 'success');
+    showToast('CSV_STREAM_DUMPED_SUCCESSFULLY', 'success');
   };
 
   return (
-    <div className="space-y-6 animate-fade-in">
+    <div className="animate-fade-in" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '16px' }}>
         <div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-            Course Database Explorer
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+            <span className="led-indicator led-green" />
+            <span style={{ color: 'var(--neon-green)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.1em' }}>
+              SYS://DATABASE_INDEX
+            </span>
+          </div>
+          <h1 className="glow-green" style={{ color: 'var(--neon-green)', fontSize: '20px', margin: 0 }}>
+            /// COURSE_TIMETABLE_EXPLORER
           </h1>
-          <p className="text-xs sm:text-sm text-slate-400 mt-1">
-            Search indexed Boğaziçi course records, schedule slots, instructors, and examination schedules.
+          <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginTop: '4px' }}>
+            Query indexed Boğaziçi course records, schedule slots, room assignments, and exam locations.
           </p>
         </div>
 
         <button
           onClick={exportCSV}
           disabled={courses.length === 0}
-          className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 to-pink-600 hover:from-violet-500 hover:to-pink-500 text-white font-bold text-xs shadow-lg transition-all duration-200 hover:scale-[1.02] disabled:opacity-50"
+          className="btn-cyber btn-cyber-amber"
+          style={{ fontSize: '11px', padding: '8px 16px' }}
         >
-          <Download className="w-4 h-4" />
-          <span>Export CSV</span>
+          <Download size={13} />
+          <span>[&gt;&gt; DUMP_CSV_STREAM]</span>
         </button>
       </div>
 
       {/* Filter Controls Bar */}
-      <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="cyber-card" style={{ border: '1px solid var(--border-hard)', padding: '16px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px' }}>
           {/* Keyword Search */}
-          <div className="relative">
-            <Search className="w-4 h-4 absolute left-3.5 top-3.5 text-slate-400" />
+          <div style={{ position: 'relative' }}>
             <input
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="Search code, name, instructor..."
-              className="w-full pl-10 pr-4 py-2.5 rounded-xl glass-input text-white text-xs placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-violet-500/50"
+              placeholder=">> QUERY: code, name, prof..."
+              className="cyber-input"
+              style={{ paddingRight: search ? '28px' : '12px' }}
             />
             {search && (
               <button
                 onClick={() => setSearch('')}
-                className="absolute right-3 top-3 text-slate-400 hover:text-white"
+                style={{
+                  position: 'absolute',
+                  right: '8px',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  background: 'transparent',
+                  border: 'none',
+                  color: 'var(--text-muted)',
+                  cursor: 'pointer',
+                }}
               >
-                <X className="w-3.5 h-3.5" />
+                <X size={13} />
               </button>
             )}
           </div>
@@ -200,9 +209,9 @@ export default function CourseData() {
                 setSelectedTerm(e.target.value);
                 setPage(1);
               }}
-              className="w-full px-3.5 py-2.5 rounded-xl glass-select text-white text-xs focus:outline-none focus:ring-2 focus:ring-violet-500/50"
+              className="cyber-select"
             >
-              <option value="">All Semesters</option>
+              <option value="">ALL_SEMESTERS</option>
               {terms.map((t) => (
                 <option key={t} value={t}>
                   {t}
@@ -219,9 +228,9 @@ export default function CourseData() {
                 setSelectedDept(e.target.value);
                 setPage(1);
               }}
-              className="w-full px-3.5 py-2.5 rounded-xl glass-select text-white text-xs focus:outline-none focus:ring-2 focus:ring-violet-500/50"
+              className="cyber-select"
             >
-              <option value="">All Departments</option>
+              <option value="">ALL_DEPARTMENTS</option>
               {departments.map((d) => (
                 <option key={d} value={d}>
                   {d}
@@ -231,17 +240,34 @@ export default function CourseData() {
           </div>
 
           {/* Day Filters */}
-          <div className="flex items-center gap-1 bg-slate-900/60 p-1 rounded-xl border border-white/5">
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              background: 'var(--bg-primary)',
+              border: '1px solid var(--border-hard)',
+              padding: '2px',
+              gap: '2px',
+            }}
+          >
             <button
               onClick={() => {
                 setSelectedDay('');
                 setPage(1);
               }}
-              className={`flex-1 py-1.5 rounded-lg text-[11px] font-bold transition-colors ${
-                selectedDay === '' ? 'bg-violet-600 text-white' : 'text-slate-400 hover:text-slate-200'
-              }`}
+              style={{
+                flex: 1,
+                padding: '6px 4px',
+                fontSize: '10px',
+                fontWeight: 700,
+                border: 'none',
+                cursor: 'pointer',
+                fontFamily: 'var(--font-mono)',
+                background: selectedDay === '' ? 'var(--neon-green)' : 'transparent',
+                color: selectedDay === '' ? 'var(--bg-void)' : 'var(--text-muted)',
+              }}
             >
-              Any Day
+              ANY
             </button>
             {daysList.map((day) => (
               <button
@@ -250,9 +276,16 @@ export default function CourseData() {
                   setSelectedDay(day);
                   setPage(1);
                 }}
-                className={`w-7 py-1.5 rounded-lg text-[11px] font-bold transition-colors ${
-                  selectedDay === day ? 'bg-violet-600 text-white' : 'text-slate-400 hover:text-slate-200'
-                }`}
+                style={{
+                  padding: '6px 6px',
+                  fontSize: '10px',
+                  fontWeight: 700,
+                  border: 'none',
+                  cursor: 'pointer',
+                  fontFamily: 'var(--font-mono)',
+                  background: selectedDay === day ? 'var(--neon-green)' : 'transparent',
+                  color: selectedDay === day ? 'var(--bg-void)' : 'var(--text-muted)',
+                }}
               >
                 {day}
               </button>
@@ -262,81 +295,93 @@ export default function CourseData() {
       </div>
 
       {/* Courses Data Grid / Table */}
-      <div className="rounded-2xl glass-panel border border-white/10 overflow-hidden shadow-xl">
+      <div className="cyber-card" style={{ padding: 0, overflow: 'hidden', border: '1px solid var(--border-hard)' }}>
         {loading ? (
-          <div className="p-12 text-center text-slate-400 flex flex-col items-center gap-3">
-            <div className="w-8 h-8 rounded-full border-2 border-violet-500 border-t-transparent animate-spin" />
-            <span className="text-xs font-medium">Querying course database...</span>
+          <div style={{ padding: '48px 16px', textAlign: 'center', color: 'var(--neon-green)' }}>
+            <span className="cursor-blink" style={{ fontSize: '12px', fontWeight: 700 }}>
+              [&gt;&gt;] QUERYING_DATABASE_INDEX
+            </span>
           </div>
         ) : courses.length === 0 ? (
-          <div className="p-12 text-center text-slate-400 space-y-2">
-            <BookOpen className="w-10 h-10 mx-auto text-slate-600" />
-            <p className="text-sm font-bold text-white">No Courses Found</p>
-            <p className="text-xs text-slate-500">Try adjusting your filters or search terms.</p>
+          <div style={{ padding: '48px 16px', textAlign: 'center' }}>
+            <BookOpen size={32} style={{ color: 'var(--border-hard)', margin: '0 auto 12px auto' }} />
+            <div style={{ color: 'var(--text-primary)', fontSize: '12px', fontWeight: 700 }}>
+              [STATUS: NO_RECORDS_FOUND]
+            </div>
+            <div style={{ color: 'var(--text-muted)', fontSize: '11px', marginTop: '4px' }}>
+              Adjust search query tokens or department filter.
+            </div>
           </div>
         ) : (
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-xs text-slate-300">
-              <thead className="bg-slate-950/80 text-slate-400 font-bold uppercase tracking-wider border-b border-white/10">
+          <div style={{ overflowX: 'auto' }}>
+            <table className="cyber-table">
+              <thead>
                 <tr>
-                  <th className="py-3.5 px-4">Code / Sec</th>
-                  <th className="py-3.5 px-4">Course Title</th>
-                  <th className="py-3.5 px-4">Instructor</th>
-                  <th className="py-3.5 px-4">Schedule Slots</th>
-                  <th className="py-3.5 px-4">Credits</th>
-                  <th className="py-3.5 px-4 text-right">Details</th>
+                  <th>CODE / SEC</th>
+                  <th>COURSE_TITLE</th>
+                  <th>INSTRUCTOR</th>
+                  <th>SCHEDULE_SLOTS</th>
+                  <th>CREDITS</th>
+                  <th style={{ textAlign: 'right' }}>ACTION</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-white/5">
+              <tbody>
                 {courses.map((course) => (
                   <tr
                     key={course.id}
-                    className="hover:bg-white/5 transition-colors group cursor-pointer"
                     onClick={() => setActiveCourse(course)}
+                    style={{ cursor: 'pointer' }}
                   >
-                    <td className="py-3.5 px-4 whitespace-nowrap">
-                      <span className="font-extrabold text-white group-hover:text-violet-300 transition-colors">
+                    <td style={{ whiteSpace: 'nowrap' }}>
+                      <span style={{ color: 'var(--neon-green)', fontWeight: 800 }}>
                         {course.course_code}
                       </span>
-                      <span className="ml-1.5 px-2 py-0.5 rounded-full bg-violet-500/10 text-violet-400 text-[10px] font-bold border border-violet-500/20">
-                        {course.section}
+                      <span className="cyber-badge cyber-badge-cyan" style={{ marginLeft: '6px' }}>
+                        .{course.section}
                       </span>
                     </td>
-                    <td className="py-3.5 px-4 max-w-xs truncate font-medium text-slate-200">
+                    <td style={{ maxWidth: '260px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', color: 'var(--text-primary)' }}>
                       {course.course_name}
                     </td>
-                    <td className="py-3.5 px-4 whitespace-nowrap text-slate-400">
+                    <td style={{ whiteSpace: 'nowrap', color: 'var(--text-secondary)' }}>
                       {course.instructor || 'TBA'}
                     </td>
-                    <td className="py-3.5 px-4">
-                      <div className="flex flex-wrap gap-1">
+                    <td>
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
                         {course.slots && course.slots.length > 0 ? (
                           course.slots.map((s, idx) => (
                             <span
                               key={idx}
-                              className="px-2 py-0.5 rounded bg-slate-900 text-slate-300 border border-white/10 text-[10px] font-mono"
+                              style={{
+                                padding: '2px 5px',
+                                background: 'var(--bg-primary)',
+                                border: '1px solid var(--border-dim)',
+                                color: 'var(--neon-amber)',
+                                fontSize: '10px',
+                              }}
                             >
                               {s.day} {s.hour} ({s.room || 'TBA'})
                             </span>
                           ))
                         ) : (
-                          <span className="text-slate-500 text-[11px] italic">No slots</span>
+                          <span style={{ color: 'var(--text-muted)', fontSize: '10px' }}>--</span>
                         )}
                       </div>
                     </td>
-                    <td className="py-3.5 px-4 whitespace-nowrap">
-                      <span className="font-bold text-slate-300">{course.credits || '-'} Cr</span>
-                      {course.ects && <span className="ml-1 text-slate-500">({course.ects} ECTS)</span>}
+                    <td style={{ whiteSpace: 'nowrap' }}>
+                      <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>{course.credits || '-'} Cr</span>
+                      {course.ects && <span style={{ color: 'var(--text-muted)', marginLeft: '4px' }}>({course.ects} E)</span>}
                     </td>
-                    <td className="py-3.5 px-4 text-right whitespace-nowrap">
+                    <td style={{ textAlign: 'right', whiteSpace: 'nowrap' }}>
                       <button
                         onClick={(e) => {
                           e.stopPropagation();
                           setActiveCourse(course);
                         }}
-                        className="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-violet-600 text-slate-200 hover:text-white font-bold text-[11px] transition-colors"
+                        className="btn-cyber"
+                        style={{ fontSize: '9px', padding: '4px 8px' }}
                       >
-                        Inspect
+                        [&gt;&gt;]
                       </button>
                     </td>
                   </tr>
@@ -347,29 +392,40 @@ export default function CourseData() {
         )}
 
         {/* Pagination Bar */}
-        <div className="px-5 py-4 bg-slate-950/60 border-t border-white/10 flex items-center justify-between">
-          <span className="text-xs text-slate-400">
-            Showing <strong className="text-white">{courses.length}</strong> of{' '}
-            <strong className="text-white">{total.toLocaleString()}</strong> courses
+        <div
+          style={{
+            padding: '10px 16px',
+            background: 'var(--bg-tertiary)',
+            borderTop: '1px solid var(--border-hard)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}
+        >
+          <span style={{ color: 'var(--text-muted)', fontSize: '11px' }}>
+            RECORDS: <strong style={{ color: 'var(--text-primary)' }}>{courses.length}</strong> /{' '}
+            <strong style={{ color: 'var(--neon-green)' }}>{total.toLocaleString()}</strong>
           </span>
 
-          <div className="flex items-center gap-2">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <button
               onClick={() => setPage((p) => Math.max(1, p - 1))}
               disabled={page <= 1}
-              className="p-2 rounded-xl glass-panel text-slate-300 hover:text-white disabled:opacity-30"
+              className="btn-cyber"
+              style={{ padding: '4px 8px', fontSize: '10px' }}
             >
-              <ChevronLeft className="w-4 h-4" />
+              <ChevronLeft size={12} />
             </button>
-            <span className="text-xs font-bold text-slate-300 px-2">
-              Page {page} of {pages}
+            <span style={{ color: 'var(--neon-amber)', fontSize: '11px', fontWeight: 700, padding: '0 4px' }}>
+              PAGE {page} / {pages}
             </span>
             <button
               onClick={() => setPage((p) => Math.min(pages, p + 1))}
               disabled={page >= pages}
-              className="p-2 rounded-xl glass-panel text-slate-300 hover:text-white disabled:opacity-30"
+              className="btn-cyber"
+              style={{ padding: '4px 8px', fontSize: '10px' }}
             >
-              <ChevronRight className="w-4 h-4" />
+              <ChevronRight size={12} />
             </button>
           </div>
         </div>
@@ -377,90 +433,151 @@ export default function CourseData() {
 
       {/* Course Detail Modal Drawer */}
       {activeCourse && (
-        <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-4 animate-fade-in">
-          <div className="w-full max-w-2xl rounded-3xl glass-panel p-6 sm:p-8 border border-white/10 shadow-2xl space-y-6 max-h-[90vh] overflow-y-auto">
+        <div
+          style={{
+            position: 'fixed',
+            inset: 0,
+            background: 'rgba(5, 5, 8, 0.85)',
+            zIndex: 100,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '16px',
+          }}
+        >
+          <div
+            className="cyber-card animate-fade-in"
+            style={{
+              width: '100%',
+              maxWidth: '600px',
+              border: '2px solid var(--neon-green)',
+              padding: '24px',
+              maxHeight: '90vh',
+              overflowY: 'auto',
+              boxShadow: '8px 8px 0 rgba(0, 0, 0, 0.9)',
+            }}
+          >
             {/* Modal Header */}
-            <div className="flex items-start justify-between">
+            <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '16px' }}>
               <div>
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="px-2.5 py-0.5 rounded-full bg-violet-500/20 text-violet-300 text-xs font-bold border border-violet-500/30">
-                    {activeCourse.department}
-                  </span>
-                  <span className="text-xs text-slate-400 font-semibold">{activeCourse.term}</span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+                  <span className="cyber-badge cyber-badge-green">{activeCourse.department}</span>
+                  <span style={{ color: 'var(--neon-amber)', fontSize: '10px', fontWeight: 700 }}>{activeCourse.term}</span>
                 </div>
-                <h2 className="text-2xl font-extrabold text-white">
+                <h2 className="glow-green" style={{ color: 'var(--neon-green)', fontSize: '18px', margin: 0 }}>
                   {activeCourse.course_code} - Sec {activeCourse.section}
                 </h2>
-                <p className="text-sm font-medium text-slate-300 mt-1">{activeCourse.course_name}</p>
+                <div style={{ color: 'var(--text-primary)', fontSize: '12px', marginTop: '4px' }}>
+                  {activeCourse.course_name}
+                </div>
               </div>
 
               <button
                 onClick={() => setActiveCourse(null)}
-                className="p-2 rounded-xl glass-panel text-slate-400 hover:text-white"
+                className="btn-cyber"
+                style={{ padding: '4px 8px' }}
               >
-                <X className="w-5 h-5" />
+                <X size={14} />
               </button>
             </div>
 
             {/* Course Properties */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-2xl bg-slate-900/60 border border-white/5">
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))',
+                gap: '8px',
+                padding: '12px',
+                background: 'var(--bg-primary)',
+                border: '1px solid var(--border-hard)',
+                marginBottom: '16px',
+              }}
+            >
               <div>
-                <span className="text-[10px] uppercase font-bold text-slate-400">Instructor</span>
-                <p className="text-xs font-bold text-white mt-0.5">{activeCourse.instructor || 'TBA'}</p>
+                <span style={{ color: 'var(--neon-amber)', fontSize: '9px', fontWeight: 700, textTransform: 'uppercase' }}>
+                  INSTRUCTOR:
+                </span>
+                <div style={{ fontSize: '11px', color: 'var(--text-primary)', marginTop: '2px' }}>
+                  {activeCourse.instructor || 'TBA'}
+                </div>
               </div>
               <div>
-                <span className="text-[10px] uppercase font-bold text-slate-400">Credits / ECTS</span>
-                <p className="text-xs font-bold text-white mt-0.5">
+                <span style={{ color: 'var(--neon-amber)', fontSize: '9px', fontWeight: 700, textTransform: 'uppercase' }}>
+                  CREDITS / ECTS:
+                </span>
+                <div style={{ fontSize: '11px', color: 'var(--text-primary)', marginTop: '2px' }}>
                   {activeCourse.credits || '-'} Cr ({activeCourse.ects || '-'} ECTS)
-                </p>
+                </div>
               </div>
               <div>
-                <span className="text-[10px] uppercase font-bold text-slate-400">Exam Location</span>
-                <p className="text-xs font-bold text-white mt-0.5">{activeCourse.exam_location || 'TBA'}</p>
+                <span style={{ color: 'var(--neon-amber)', fontSize: '9px', fontWeight: 700, textTransform: 'uppercase' }}>
+                  EXAM_LOCATION:
+                </span>
+                <div style={{ fontSize: '11px', color: 'var(--text-primary)', marginTop: '2px' }}>
+                  {activeCourse.exam_location || 'TBA'}
+                </div>
               </div>
               <div>
-                <span className="text-[10px] uppercase font-bold text-slate-400">Delivery</span>
-                <p className="text-xs font-bold text-white mt-0.5">{activeCourse.delivery_method || 'N/A'}</p>
+                <span style={{ color: 'var(--neon-amber)', fontSize: '9px', fontWeight: 700, textTransform: 'uppercase' }}>
+                  DELIVERY_MODE:
+                </span>
+                <div style={{ fontSize: '11px', color: 'var(--text-primary)', marginTop: '2px' }}>
+                  {activeCourse.delivery_method || 'N/A'}
+                </div>
               </div>
             </div>
 
             {/* Slots List */}
-            <div>
-              <h3 className="text-sm font-bold text-white mb-3 flex items-center gap-2">
-                <Clock className="w-4 h-4 text-violet-400" />
-                Schedule Timetable Slots
-              </h3>
+            <div style={{ marginBottom: '20px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
+                <Clock size={13} style={{ color: 'var(--neon-green)' }} />
+                <span style={{ color: 'var(--neon-green)', fontSize: '11px', fontWeight: 700 }}>
+                  SCHEDULE_TIMETABLE_SLOTS
+                </span>
+              </div>
               {activeCourse.slots && activeCourse.slots.length > 0 ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '8px' }}>
                   {activeCourse.slots.map((s, idx) => (
                     <div
                       key={idx}
-                      className="p-3 rounded-xl bg-slate-900/80 border border-white/5 flex items-center justify-between"
+                      style={{
+                        padding: '8px 10px',
+                        background: 'var(--bg-primary)',
+                        border: '1px solid var(--border-hard)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                      }}
                     >
                       <div>
-                        <span className="text-xs font-extrabold text-violet-300">
+                        <div style={{ color: 'var(--neon-green)', fontSize: '11px', fontWeight: 700 }}>
                           {s.day} Period {s.hour}
-                        </span>
-                        <p className="text-[11px] text-slate-400 mt-0.5">{s.slot_title || 'Lecture'}</p>
+                        </div>
+                        <div style={{ color: 'var(--text-muted)', fontSize: '10px' }}>
+                          {s.slot_title || 'Lecture'}
+                        </div>
                       </div>
-                      <span className="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-200 text-xs font-mono font-bold">
+                      <span style={{ color: 'var(--neon-amber)', fontSize: '11px', fontWeight: 700 }}>
                         {s.room || 'TBA'}
                       </span>
                     </div>
                   ))}
                 </div>
               ) : (
-                <p className="text-xs text-slate-500 italic">No slot information recorded for this course.</p>
+                <div style={{ color: 'var(--text-muted)', fontSize: '11px', fontStyle: 'italic' }}>
+                  No slot telemetry recorded for this course.
+                </div>
               )}
             </div>
 
-            {/* Close Button */}
-            <div className="pt-4 border-t border-white/10 flex justify-end">
+            {/* Dismiss Button */}
+            <div style={{ display: 'flex', justifyContent: 'flex-end', borderTop: '1px solid var(--border-hard)', paddingTop: '12px' }}>
               <button
                 onClick={() => setActiveCourse(null)}
-                className="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold transition-colors"
+                className="btn-cyber btn-cyber-primary"
+                style={{ fontSize: '10px', padding: '6px 14px' }}
               >
-                Close Inspector
+                [&gt;&gt; DISMISS_INSPECTOR]
               </button>
             </div>
           </div>
