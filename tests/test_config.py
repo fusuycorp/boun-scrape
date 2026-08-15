@@ -3,6 +3,8 @@
 import os
 from unittest.mock import patch
 
+import pytest
+
 from boun_scrape.config import Settings, get_settings
 
 
@@ -56,3 +58,33 @@ class TestConfig:
         s1 = get_settings()
         s2 = get_settings()
         assert s1 is s2
+
+    def test_dev_default_generates_ephemeral_secrets(self) -> None:
+        """environment defaults to development, so missing secrets are auto-generated, not hardcoded."""
+        settings = Settings()
+        assert settings.environment == "development"
+        assert settings.jwt_secret_key
+        assert settings.admin_password_hash
+        assert settings.admin_password_hash.startswith("$2b$")
+
+    def test_production_fails_fast_without_jwt_secret(self) -> None:
+        env_vars = {"ENVIRONMENT": "production", "ADMIN_PASSWORD_HASH": "$2b$12$AWoniBnnbFfjVI3tldX2wuOPEVNmik7mwrsM88M6C0ARftQv9WvvG"}
+        with patch.dict(os.environ, env_vars, clear=False):
+            with pytest.raises(Exception, match="JWT_SECRET_KEY"):
+                Settings(_env_file=None)
+
+    def test_production_fails_fast_without_admin_password_hash(self) -> None:
+        env_vars = {"ENVIRONMENT": "production", "JWT_SECRET_KEY": "a" * 32}
+        with patch.dict(os.environ, env_vars, clear=False):
+            with pytest.raises(Exception, match="ADMIN_PASSWORD_HASH"):
+                Settings(_env_file=None)
+
+    def test_production_succeeds_with_explicit_secrets(self) -> None:
+        env_vars = {
+            "ENVIRONMENT": "production",
+            "JWT_SECRET_KEY": "a" * 32,
+            "ADMIN_PASSWORD_HASH": "$2b$12$AWoniBnnbFfjVI3tldX2wuOPEVNmik7mwrsM88M6C0ARftQv9WvvG",
+        }
+        with patch.dict(os.environ, env_vars, clear=False):
+            settings = Settings(_env_file=None)
+            assert settings.jwt_secret_key == "a" * 32

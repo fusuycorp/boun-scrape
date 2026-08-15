@@ -6,6 +6,7 @@ import pytest
 from httpx import ASGITransport, AsyncClient
 
 from boun_scrape.api.app import create_app
+from boun_scrape.api.auth import get_current_user
 from boun_scrape.api.deps import (
     get_course_repo_dep,
     get_db_manager_dep,
@@ -252,6 +253,7 @@ async def async_client(
     app.dependency_overrides[get_quota_service_dep] = lambda: mock_quota_service
     app.dependency_overrides[get_scrape_scheduler_dep] = lambda: mock_scheduler
     app.dependency_overrides[get_log_buffer_dep] = lambda: test_log_buffer
+    app.dependency_overrides[get_current_user] = lambda: "admin"
 
     transport = ASGITransport(app=app)
     async with AsyncClient(transport=transport, base_url="http://test") as client:

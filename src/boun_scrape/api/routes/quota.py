@@ -4,11 +4,13 @@ from typing import Annotated
 
 from fastapi import APIRouter, Depends, Query
 
+from boun_scrape.api.auth import get_current_user
 from boun_scrape.api.deps import (
     get_course_repo_dep,
     get_quota_service_dep,
     get_scraper_client_dep,
 )
+from boun_scrape.api.rate_limit import quota_rate_limit_dep
 from boun_scrape.domain.dto import (
     BatchQuotaRequest,
     QuotaDTO,
@@ -46,6 +48,7 @@ async def _resolve_term(
     "/quota",
     response_model=list[QuotaDTO],
     summary="Query live quota for a course section",
+    dependencies=[Depends(quota_rate_limit_dep)],
 )
 async def get_course_quota(
     quota_service: Annotated[QuotaService, Depends(get_quota_service_dep)],
@@ -56,6 +59,7 @@ async def get_course_quota(
     section: str = Query(default="", description="Course section number (e.g. 01)"),
     term: str | None = Query(default=None, description="Academic term (defaults to active term)"),
     bypass_cache: bool = Query(default=False, description="Bypass in-memory TTL cache"),
+    current_user: str = Depends(get_current_user),
 ) -> list[QuotaDTO]:
     """Fetch real-time quota allocations and remaining seats directly from registration portal."""
     target_term = await _resolve_term(term, repo, client)
@@ -73,10 +77,12 @@ async def get_course_quota(
     "/quota/batch",
     response_model=dict[str, list[QuotaDTO]],
     summary="Batch query quota for multiple courses concurrently",
+    dependencies=[Depends(quota_rate_limit_dep)],
 )
 async def get_batch_course_quota(
     payload: BatchQuotaRequest,
     quota_service: Annotated[QuotaService, Depends(get_quota_service_dep)],
+    current_user: str = Depends(get_current_user),
 ) -> dict[str, list[QuotaDTO]]:
     """Fetch live quotas for multiple course sections concurrently with rate-limiting."""
     query_items = [

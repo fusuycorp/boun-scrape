@@ -4,6 +4,7 @@ import asyncio
 import hashlib
 import hmac
 import json
+import logging
 from dataclasses import asdict, dataclass, is_dataclass
 from datetime import datetime, timezone
 from typing import Any, Self
@@ -14,6 +15,8 @@ from pydantic import BaseModel
 from boun_scrape.config import Settings, get_settings
 from boun_scrape.domain.events import CourseDeltaEvent
 from boun_scrape.domain.models import ScrapeRunSummary
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass(slots=True, kw_only=True)
@@ -183,6 +186,12 @@ class WebhookDispatcher:
         if self.webhook_secret:
             sig = compute_hmac_signature(self.webhook_secret, payload_bytes)
             headers["X-Boun-Signature"] = f"sha256={sig}"
+        else:
+            logger.warning(
+                "Dispatching webhook(s) to %d URL(s) without WEBHOOK_SECRET set — "
+                "payloads will be unsigned. Set WEBHOOK_SECRET to enable integrity verification.",
+                len(self.urls),
+            )
 
         tasks = [
             self._send_to_single_url(url, payload_bytes, headers)

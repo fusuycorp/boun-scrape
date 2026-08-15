@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from boun_scrape.api.logging_buffer import setup_api_logging
+from boun_scrape.api.rate_limit import RateLimiter
 from boun_scrape.api.routes import (
     courses_router,
     feeds_router,
@@ -48,6 +49,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         lifespan=lifespan,
     )
     app.state.settings = cfg
+    app.state.login_rate_limiter = RateLimiter(max_requests=5, window_seconds=60)
+    app.state.quota_rate_limiter = RateLimiter(max_requests=30, window_seconds=60)
 
     # Configure CORS middleware
     origins = cfg.allowed_origins or ["*"]
