@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     max_jitter: float = 0.2
     jwt_secret_key: str = "boun-scrape-default-jwt-secret-key-change-in-production"
     admin_user: str = "admin"
-    admin_password_hash: str = "pbkdf2:sha256:600000$default_admin_hash"
+    admin_password_hash: str = "$2b$12$AWoniBnnbFfjVI3tldX2wuOPEVNmik7mwrsM88M6C0ARftQv9WvvG"
     webhook_secret: str = ""
     export_dir: str = "exports"
     allowed_origins: list[str] = ["*"]
