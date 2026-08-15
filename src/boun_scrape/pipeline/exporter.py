@@ -2,6 +2,9 @@
 
 import csv
 import json
+import os
+import sqlite3
+import tempfile
 from pathlib import Path
 
 from boun_scrape.domain.events import CourseDeltaEvent
@@ -9,6 +12,13 @@ from boun_scrape.domain.models import Course
 from boun_scrape.pipeline.delta import course_to_dict
 from boun_scrape.storage.database import DatabaseManager
 from boun_scrape.storage.repository import CourseRepository
+
+
+def _tmp_path_for(path: Path) -> Path:
+    """Reserve a unique temp path in the same directory as `path` (same filesystem, atomic rename)."""
+    fd, name = tempfile.mkstemp(dir=str(path.parent), prefix=f".{path.name}.", suffix=".tmp")
+    os.close(fd)
+    return Path(name)
 
 CSV_FIELDNAMES = [
     "term",
@@ -53,7 +63,14 @@ def export_courses_json(courses: list[Course], output_path: str | Path) -> Path:
 
     data = [course_to_dict(c) for c in courses]
     content = json.dumps(data, indent=2, ensure_ascii=False)
-    path.write_text(content, encoding="utf-8")
+
+    tmp_path = _tmp_path_for(path)
+    try:
+        tmp_path.write_text(content, encoding="utf-8")
+        os.replace(tmp_path, path)
+    except BaseException:
+        tmp_path.unlink(missing_ok=True)
+        raise
     return path
 
 
@@ -70,6 +87,17 @@ def export_courses_csv(courses: list[Course], output_path: str | Path) -> Path:
     path = Path(output_path)
     path.parent.mkdir(parents=True, exist_ok=True)
 
+    tmp_path = _tmp_path_for(path)
+    try:
+        _write_courses_csv(tmp_path, courses)
+        os.replace(tmp_path, path)
+    except BaseException:
+        tmp_path.unlink(missing_ok=True)
+        raise
+    return path
+
+
+def _write_courses_csv(path: Path, courses: list[Course]) -> None:
     with open(path, "w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=CSV_FIELDNAMES)
         writer.writeheader()
@@ -119,8 +147,6 @@ def export_courses_csv(courses: list[Course], output_path: str | Path) -> Path:
                 )
                 writer.writerow(row)
 
-    return path
-
 
 def export_courses_sqlite(
     term: str, courses: list[Course], output_path: str | Path
@@ -138,16 +164,30 @@ def export_courses_sqlite(
     path = Path(output_path)
     path.parent.mkdir(parents=True, exist_ok=True)
 
-    # If the file already exists, remove it to ensure a clean standalone distribution
-    if path.is_file():
-        path.unlink()
+    tmp_path = _tmp_path_for(path)
+    tmp_path.unlink()  # DatabaseManager creates the file itself; start from a clean slot
+    try:
+        db_manager = DatabaseManager(str(tmp_path))
+        db_manager.init_db()
 
-    db_manager = DatabaseManager(str(path))
-    db_manager.init_db()
+        repo = CourseRepository(db_manager)
+        repo.save_courses_and_slots(term=term, courses=courses)
 
-    repo = CourseRepository(db_manager)
-    repo.save_courses_and_slots(term=term, courses=courses)
+        # Force WAL contents back into the main file so the exported artifact
+        # is fully self-contained (no dangling -wal/-shm sidecar files).
+        checkpoint_conn = sqlite3.connect(str(tmp_path))
+        try:
+            checkpoint_conn.execute("PRAGMA wal_checkpoint(TRUNCATE);")
+        finally:
+            checkpoint_conn.close()
 
+        os.replace(tmp_path, path)
+    except BaseException:
+        tmp_path.unlink(missing_ok=True)
+        raise
+    finally:
+        for sidecar_suffix in ("-wal", "-shm"):
+            Path(f"{tmp_path}{sidecar_suffix}").unlink(missing_ok=True)
     return path
 
 

@@ -62,6 +62,12 @@ class TestParseHours:
         # 4 two-digit hours (11, 12, 13, 14)
         assert parse_hours("11121314", 4) == ["11", "12", "13", "14"]
 
+    def test_single_digit_period_one_before_two_digit_period(self) -> None:
+        # Period 1 immediately followed by period 10 — a naive left-to-right
+        # greedy scan misreads "11" as a two-digit token, yielding ["11", "0"].
+        assert parse_hours("110", 2) == ["1", "10"]
+        assert parse_hours("1213", 3) == ["1", "2", "13"]
+
     def test_space_separated_tokens(self) -> None:
         assert parse_hours("1 2 3", 3) == ["1", "2", "3"]
         assert parse_hours("10 11", 2) == ["10", "11"]

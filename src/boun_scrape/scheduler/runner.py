@@ -1,6 +1,7 @@
 """Background scheduler for periodic scraping, delta tracking, and downstream distribution."""
 
 import asyncio
+import logging
 from dataclasses import asdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -18,6 +19,8 @@ from boun_scrape.scraper.client import BounScraperClient
 from boun_scrape.scraper.flow import discover_terms, scrape_term_pipeline
 from boun_scrape.storage.database import DatabaseManager
 from boun_scrape.storage.repository import CourseRepository
+
+logger = logging.getLogger(__name__)
 
 
 class ScrapeSchedulerError(Exception):
@@ -70,6 +73,7 @@ class ScrapeScheduler:
         # Internal state guards
         self._running: bool = False
         self._task: asyncio.Task[None] | None = None
+        self._background_tasks: set[asyncio.Task[Any]] = set()
         self._cycle_lock = asyncio.Lock()
         self._last_run_summary: ScrapeRunSummary | None = None
         self._last_run_time: datetime | None = None
@@ -133,34 +137,35 @@ class ScrapeScheduler:
             run_id = f"run_{int(now_utc.timestamp())}_{uuid.uuid4().hex[:6]}"
             started_at = now_utc.isoformat()
 
-            # Target term resolution
-            target_term = term or self.default_term
-            if not target_term:
-                discovered = await discover_terms(self.client)
-                if not discovered:
-                    raise ScrapeSchedulerError(
-                        "No academic terms discovered from the registration portal."
-                    )
-                target_term = discovered[0]
-
             summary = ScrapeRunSummary(
                 run_id=run_id,
-                term=target_term,
+                term=term or self.default_term or "unresolved",
                 status=RunStatus.RUNNING,
                 started_at=started_at,
             )
             self.repository.save_scrape_run(summary)
 
             try:
-                # 1. Scrape latest courses and slots from portal
+                # 1. Target term resolution
+                target_term = term or self.default_term
+                if not target_term:
+                    discovered = await discover_terms(self.client)
+                    if not discovered:
+                        raise ScrapeSchedulerError(
+                            "No academic terms discovered from the registration portal."
+                        )
+                    target_term = discovered[0]
+                summary.term = target_term
+
+                # 2. Scrape latest courses and slots from portal
                 current_courses = await scrape_term_pipeline(
-                    self.client, term=target_term
+                    self.client, term=target_term, concurrency=self.settings.max_concurrency
                 )
 
-                # 2. Fetch existing courses for term to detect deltas
+                # 4. Fetch existing courses for term to detect deltas
                 previous_courses = self.repository.get_courses_by_term(target_term)
 
-                # 3. Compute change deltas
+                # 5. Compute change deltas
                 deltas = compute_deltas(
                     previous_courses=previous_courses,
                     current_courses=current_courses,
@@ -168,14 +173,14 @@ class ScrapeScheduler:
                     term=target_term,
                 )
 
-                # 4. Atomic persistence of courses, slots, and deltas
+                # 6. Atomic persistence of courses, slots, and deltas
                 self.repository.save_courses_and_slots(
                     term=target_term, courses=current_courses
                 )
                 if deltas:
                     self.repository.save_deltas(deltas=deltas, run_id=run_id)
 
-                # 5. Calculate run metrics
+                # 7. Calculate run metrics
                 total_slots = sum(len(c.slots) for c in current_courses)
                 completed_at = datetime.now(timezone.utc).isoformat()
 
@@ -186,7 +191,7 @@ class ScrapeScheduler:
                 summary.changes_detected = len(deltas)
                 self.repository.save_scrape_run(summary)
 
-                # 6. Artifact exports
+                # 8. Artifact exports
                 if export:
                     generate_all_exports(
                         term=target_term,
@@ -195,7 +200,7 @@ class ScrapeScheduler:
                         output_dir=self.export_dir,
                     )
 
-                # 7. Webhook notifications
+                # 9. Webhook notifications
                 if dispatch_webhooks and self.webhook_dispatcher is not None:
                     if deltas:
                         await self.webhook_dispatcher.dispatch_deltas(
@@ -252,8 +257,27 @@ class ScrapeScheduler:
             except asyncio.CancelledError:
                 break
             except Exception:
-                # Retain loop resilience on cycle failure
-                pass
+                # Cycle failure is already persisted as a FAILED run by
+                # execute_scrape_cycle; log here so the daemon loop's
+                # continued resilience doesn't hide the error entirely.
+                logger.exception("Scheduled scrape cycle failed")
+
+    def run_in_background(self, coro: Any) -> asyncio.Task[Any]:
+        """Schedule a coroutine as a background task, retaining a strong reference.
+
+        Without this, asyncio only holds a weak reference to fire-and-forget
+        tasks, making them eligible for garbage collection mid-execution.
+        """
+        task = asyncio.create_task(coro)
+        self._background_tasks.add(task)
+
+        def _on_done(t: asyncio.Task[Any]) -> None:
+            self._background_tasks.discard(t)
+            if not t.cancelled() and t.exception() is not None:
+                logger.error("Background scrape task failed", exc_info=t.exception())
+
+        task.add_done_callback(_on_done)
+        return task
 
     def start(self) -> asyncio.Task[None]:
         """Start the background periodic scheduling daemon."""

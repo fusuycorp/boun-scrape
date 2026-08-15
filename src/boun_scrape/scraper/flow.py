@@ -2,6 +2,7 @@
 
 import asyncio
 import inspect
+import logging
 from collections.abc import Callable
 from typing import Any
 
@@ -12,6 +13,8 @@ from boun_scrape.scraper.parser import (
     parse_departments_from_html,
     parse_schedules_from_html,
 )
+
+logger = logging.getLogger(__name__)
 
 SCHEDULE_SEMESTER_URL = "/buis/General/schedule.aspx?p=semester"
 SCHEDULE_DEPT_URL = "/scripts/sch.asp"
@@ -120,9 +123,24 @@ async def scrape_term_pipeline(
 
             return courses
 
-    results = await asyncio.gather(*[_scrape_single_dept(d) for d in departments])
+    results = await asyncio.gather(
+        *[_scrape_single_dept(d) for d in departments], return_exceptions=True
+    )
     all_courses: list[Course] = []
-    for dept_courses in results:
-        all_courses.extend(dept_courses)
+    failures: list[tuple[Department, BaseException]] = []
+    for dept, result in zip(departments, results):
+        if isinstance(result, BaseException):
+            failures.append((dept, result))
+            continue
+        all_courses.extend(result)
+
+    if failures:
+        logger.warning(
+            "%d/%d departments failed to scrape for term %s: %s",
+            len(failures),
+            total_depts,
+            term,
+            ", ".join(f"{dept.code}: {exc}" for dept, exc in failures),
+        )
 
     return all_courses

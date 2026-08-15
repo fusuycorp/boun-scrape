@@ -147,6 +147,23 @@ class TestDeltaEngine:
         )
         assert any(d.change_type == ChangeType.SLOTS_CHANGED for d in deltas)
 
+    def test_delta_metadata_modified_with_reordered_identical_slots(self) -> None:
+        # Same slots, different raw (HTML row) order, plus an unrelated metadata
+        # change. Room/slot comparison must sort like the gating hash does, or
+        # this spuriously also emits ROOM_CHANGED/SLOTS_CHANGED.
+        slot_a = CourseSlot(day="M", hour="1", room="NH101")
+        slot_b = CourseSlot(day="W", hour="2", room="NH102")
+        c_old = _make_sample_course(credits=3.0, slots=[slot_a, slot_b])
+        c_new = _make_sample_course(credits=4.0, slots=[slot_b, slot_a])
+        deltas = compute_deltas(
+            previous_courses=[c_old],
+            current_courses=[c_new],
+            run_id="run-1",
+            term="2024/2025-1",
+        )
+        assert len(deltas) == 1
+        assert deltas[0].change_type == ChangeType.MODIFIED
+
     def test_delta_metadata_modified(self) -> None:
         c_old = _make_sample_course(credits=3.0, ects=5.0)
         c_new = _make_sample_course(credits=4.0, ects=6.0)
