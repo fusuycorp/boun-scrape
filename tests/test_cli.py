@@ -1,10 +1,24 @@
 """Unit and integration tests for Typer CLI commands."""
 
+import re
 from pathlib import Path
 from typing import Any
 from unittest.mock import AsyncMock, MagicMock, patch
 import pytest
 from typer.testing import CliRunner
+
+_ANSI_RE = re.compile(r"\x1b\[[0-9;]*m")
+
+
+def _strip_ansi(text: str) -> str:
+    """Strip ANSI escape codes from Rich-rendered --help output.
+
+    Rich applies per-word/per-line styling to Typer's --help panels whenever
+    it detects a CI environment (GitHub Actions always sets CI=true), which
+    can inject escape codes between characters of a flag name and break a
+    plain substring check even though the flag renders correctly on screen.
+    """
+    return _ANSI_RE.sub("", text)
 
 from boun_scrape.cli.app import app
 from boun_scrape.domain.models import (
@@ -52,18 +66,20 @@ class TestCliApp:
     def test_cli_help(self) -> None:
         result = runner.invoke(app, ["--help"])
         assert result.exit_code == 0
-        assert "scrape" in result.stdout
-        assert "serve" in result.stdout
-        assert "daemon" in result.stdout
-        assert "export" in result.stdout
-        assert "quota" in result.stdout
+        stdout = _strip_ansi(result.stdout)
+        assert "scrape" in stdout
+        assert "serve" in stdout
+        assert "daemon" in stdout
+        assert "export" in stdout
+        assert "quota" in stdout
 
     def test_scrape_help(self) -> None:
         result = runner.invoke(app, ["scrape", "--help"])
         assert result.exit_code == 0
-        assert "--term" in result.stdout
-        assert "--no-export" in result.stdout
-        assert "--no-webhooks" in result.stdout
+        stdout = _strip_ansi(result.stdout)
+        assert "--term" in stdout
+        assert "--no-export" in stdout
+        assert "--no-webhooks" in stdout
 
     def test_scrape_command_success(self, temp_db: str) -> None:
         mock_summary = ScrapeRunSummary(
@@ -111,9 +127,10 @@ class TestCliApp:
     def test_daemon_help(self) -> None:
         result = runner.invoke(app, ["daemon", "--help"])
         assert result.exit_code == 0
-        assert "--interval" in result.stdout
-        assert "--cron" in result.stdout
-        assert "--term" in result.stdout
+        stdout = _strip_ansi(result.stdout)
+        assert "--interval" in stdout
+        assert "--cron" in stdout
+        assert "--term" in stdout
 
     def test_daemon_command_invocation(self, temp_db: str) -> None:
         with patch("boun_scrape.cli.app.ScrapeScheduler") as mock_sched_cls:
