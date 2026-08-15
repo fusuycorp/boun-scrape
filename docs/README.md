@@ -1,64 +1,65 @@
-# BOUN Scraper & Administrative Dashboard Documentation
+# boun-scrape Documentation
 
-Welcome to the architectural and technical documentation for the **BOUN Scraper & Administrative Dashboard** project. This documentation suite provides comprehensive architectural blueprints, component specifications, database schemas, API references, scraping pipeline details, and an LLM context reference for AI-assisted development.
+Welcome to the architectural and technical documentation for **boun-scrape** — an asynchronous scraping, change-detection, and REST API service for Boğaziçi University course registration data, with a React admin dashboard on top.
 
 ---
 
-## 📚 Documentation Index
+## Documentation Index
 
 | File | Description | Target Audience |
 | :--- | :--- | :--- |
-| 🏗️ [**`architecture.md`**](file:///home/devhax/projects/fusuyfusuy/boun-scrape/docs/architecture.md) | High-level system architecture, C4 container model, component interactions, security model, and infrastructure setup. | Architects, Lead Developers, LLMs |
-| ⚡ [**`backend-architecture.md`**](file:///home/devhax/projects/fusuyfusuy/boun-scrape/docs/backend-architecture.md) | Backend FastAPI service structure, database query layer, authentication, process management, and background tasks. | Backend Engineers, API Integrators |
-| 🎨 [**`frontend-architecture.md`**](file:///home/devhax/projects/fusuyfusuy/boun-scrape/docs/frontend-architecture.md) | Frontend React SPA architecture, Vite setup, HSL glassmorphism design system, state management, routes, and UI components. | Frontend Engineers, UI/UX Designers |
-| 🕷️ [**`scraping-pipeline.md`**](file:///home/devhax/projects/fusuyfusuy/boun-scrape/docs/scraping-pipeline.md) | In-depth breakdown of the 4-stage automated scraping pipeline, ASP.NET ViewState handling, concurrency controls, and SQLite compilation. | Data Engineers, Automation Specialists |
-| 🔌 [**`api-reference.md`**](file:///home/devhax/projects/fusuyfusuy/boun-scrape/docs/api-reference.md) | Complete OpenAPI/REST endpoint specification, request/response formats, authentication, and error codes. | Integration Engineers, API Clients |
-| 🗄️ [**`database-schema.md`**](file:///home/devhax/projects/fusuyfusuy/boun-scrape/docs/database-schema.md) | Entity-relationship diagrams, SQLite table definitions (`courses`, `course_slots`), indexes, transaction handling, and performance tuning. | Database Administrators, Data Analysts |
-| 🤖 [**`llm-context.md`**](file:///home/devhax/projects/fusuyfusuy/boun-scrape/docs/llm-context.md) | Concise single-file codebase context, repository map, code conventions, environment configuration, and quick reference for AI agents. | LLMs, AI Assistants |
+| [**`architecture.md`**](architecture.md) | System architecture, container diagram, component decomposition, security model, deployment topology. | Architects, lead developers, LLMs |
+| [**`backend-architecture.md`**](backend-architecture.md) | Module-by-module breakdown of `src/boun_scrape/` — domain, scraper, storage, pipeline, feeds, scheduler, api, cli. | Backend engineers, API integrators |
+| [**`frontend-architecture.md`**](frontend-architecture.md) | React 19 SPA structure, terminal/cyberpunk design system, routes, auth flow, key components. | Frontend engineers |
+| [**`scraping-pipeline.md`**](scraping-pipeline.md) | Term/department discovery, schedule parsing, slot tokenization, SHA-256 change detection, live quota proxy. | Data engineers |
+| [**`api-reference.md`**](api-reference.md) | Complete REST endpoint reference — both `/api/v1/*` (typed) and legacy `/api/*` (frontend-facing) surfaces. | Integration engineers, API clients |
+| [**`database-schema.md`**](database-schema.md) | SQLite table definitions, indexes, PRAGMAs, atomic write path, query patterns. | Database-curious engineers |
+| [**`llm-context.md`**](llm-context.md) | Condensed single-file repo map, env vars, and key code signatures for AI coding assistants. | LLMs, AI assistants |
 
 ---
 
-## 🏛️ System Overview At A Glance
+## System Overview
 
 ```
-                                  +-----------------------+
-                                  |   User Web Browser    |
-                                  +-----------+-----------+
-                                              |
-                                              | HTTP / REST (Port 80)
-                                              v
-                                  +-----------------------+
-                                  |     Nginx Proxy       |
-                                  | (Frontend Container)  |
-                                  +-----------+-----------+
-                                              |
-                                              | Reverse Proxy /api/*
-                                              v
-                                  +-----------------------+
-                                  |   FastAPI Service     |
-                                  | (Backend Container)   |
-                                  +-----+-----------+-----+
-                                        |           |
-                     Spawns Process Pool|           | SQLite Queries
-                                        v           v
-                    +-----------------------+   +-------------------+
-                    | 4-Stage Scraping Exec |   |   SQLite Database |
-                    | (Python Subprocesses) |   | (/data/schedules.db)
-                    +-----------+-----------+   +-------------------+
-                                |
-                                | HTTP Crawling & Quota Proxying
-                                v
-                    +-----------------------+
-                    | Boğaziçi University   |
-                    | (BOUN Web Servers)    |
-                    +-----------------------+
+                        +-----------------------+
+                        |   User Web Browser     |
+                        +-----------+-----------+
+                                    |
+                                    | HTTP
+                                    v
+                        +-----------------------+
+                        |     Nginx (Frontend)   |
+                        +-----------+-----------+
+                                    |
+                                    | Reverse proxy /api/*
+                                    v
+                        +-----------------------+
+                        |  FastAPI (Backend)     |
+                        |  /api/v1/* + /api/*    |
+                        +-----+-----------+-----+
+                              |           |
+                  Reads/Writes|           | Triggers on demand
+                              v           v
+                +-----------------+  +-------------------------+
+                | SQLite (WAL)    |  | ScrapeScheduler          |
+                | /data/schedules.db|  | scrape -> diff -> save   |
+                +-----------------+  | -> export -> webhook     |
+                                     +------------+-------------+
+                                                  |
+                                                  | httpx (async)
+                                                  v
+                                     +-------------------------+
+                                     | Boğaziçi University      |
+                                     | registration servers     |
+                                     +-------------------------+
 ```
+
+Scraping is triggered on demand (API call or CLI), or on a schedule only if you explicitly run `boun-scrape daemon`. It is **not** automatic in the shipped Docker Compose deployment — see [architecture.md](architecture.md) for details.
 
 ---
 
-## 🛠️ Quick Technology Summary
+## Technology Summary
 
-* **Frontend**: React 19, Vite 8, Tailwind CSS v4, Lucide Icons, React Router v7
-* **Backend**: Python 3.11, FastAPI, Uvicorn, BeautifulSoup4, Requests, Python-JOSE, Passlib (bcrypt), UV Package Manager
-* **Database**: SQLite3 with transactional batch compilation and indexed search queries
-* **Deployment**: Docker Compose, Multi-stage Dockerfiles, Nginx Alpine reverse proxy
+- **Backend**: Python 3.12+, FastAPI, Uvicorn, httpx (async), BeautifulSoup4, bcrypt, hand-rolled JWT, `uv` package manager, SQLite (WAL mode).
+- **Frontend**: React 19, Vite 8, Tailwind CSS v4, React Router v7, Lucide Icons.
+- **Deployment**: Docker Compose (backend + frontend services), multi-stage Dockerfiles, Nginx Alpine reverse proxy, GitHub Actions CI (test-gated build/push/Dokploy-redeploy).
