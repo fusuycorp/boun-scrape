@@ -26,8 +26,8 @@ jobs:
       - name: Build and Push Backend Image
         uses: docker/build-push-action@v5
         with:
-          context: ./backend
-          file: ./backend/Dockerfile
+          context: .
+          file: ./Dockerfile
           push: true
           tags: registry.bogazici.app/budok/boun-scrape-backend:latest
           provenance: false

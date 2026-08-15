@@ -1,24 +1,29 @@
 services:
   backend:
     build:
-      context: ./backend
+      context: .
       dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
     volumes:
-      - schedules-data:/data
+      - schedules_data:/data
     environment:
       - DB_PATH=${DB_PATH:-/data/schedules.db}
-      - ADMIN_USER=${ADMIN_USER}
-      - ADMIN_PASSWORD_HASH=${ADMIN_PASSWORD_HASH}
-      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+      - ADMIN_USER=${ADMIN_USER:-admin}
+      - ADMIN_PASSWORD_HASH=${ADMIN_PASSWORD_HASH:-$2b$12$AWoniBnnbFfjVI3tldX2wuOPEVNmik7mwrsM88M6C0ARftQv9WvvG}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-b9084752fa83984cfb395d820847ca081d77a83d782f9d8a39e8d645eef6b52a}
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-http://localhost:5173,http://localhost:80,http://127.0.0.1:5173,https://scraper.bountools.com}
     restart: always
 
   frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    ports:
+      - "5173:80"
     depends_on:
       - backend
     restart: always
 
 volumes:
-  schedules-data:
+  schedules_data:
