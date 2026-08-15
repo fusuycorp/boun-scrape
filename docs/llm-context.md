@@ -1,136 +1,190 @@
 # LLM Context Reference & Repo Map
 
-> **Note for AI Coding Assistants & LLMs**: This file is a optimized single-file reference summarizing repository architecture, file maps, environment variables, core code signatures, and developer guidelines for `boun-scrape`. Use this context when reasoning about or modifying code in this codebase.
+> **Note for AI coding assistants**: This file is a condensed, single-file reference summarizing repository architecture, file maps, environment variables, and core code signatures for `boun-scrape`. Use this when reasoning about or modifying code in this codebase. For deeper detail, see the other files in `docs/`.
 
 ---
 
-## 1. Core Repository Architecture & Tech Stack
+## 1. Core Architecture & Tech Stack
 
-- **Repository**: `boun-scrape` (Boğaziçi University course registration schedule crawler & administrative SPA)
-- **Frontend Layer**: React 19 + Vite 8 + Tailwind CSS v4 (HSL glassmorphism design system). Located in `/frontend`.
-- **Backend Layer**: FastAPI (Python 3.11) served via Uvicorn. Package manager is `uv` (`pyproject.toml`, `uv.lock`). Located in `/backend`.
-- **Database Layer**: SQLite (`/data/schedules.db` or configured via `DB_PATH`).
-- **Reverse Proxy**: Nginx Alpine container forwarding `/api/*` to `backend:8000`.
+- **Repository**: `boun-scrape` — Boğaziçi University course registration schedule scraper, change-detection service, and REST API, with a small React admin dashboard.
+- **Backend**: Single Python package `src/boun_scrape/`, Python 3.12+, FastAPI + Uvicorn, fully async (`httpx`, `asyncio`). Package manager: `uv`.
+- **Frontend**: React 19 + Vite + Tailwind CSS v4, terminal/cyberpunk design system. Located in `frontend/`. Calls the legacy `/api/*` router only.
+- **Database**: SQLite (WAL mode), single file at `Settings.db_path` (default `schedules.db`, `/data/schedules.db` in containers).
+- **Reverse proxy**: Nginx (frontend container) forwards `/api` to `backend:8000`.
+
+**Important**: There is no `backend/` directory and no standalone scraper subprocess scripts (`scraper.py`, `parse_responses.py`, `scrape_all_schedules.py`, `parse_schedules_to_db.py`) in this codebase — an older architecture described those and has been fully removed. All scraping/parsing/persistence logic lives in `src/boun_scrape/`.
 
 ---
 
-## 2. Directory Structure & Key Files Map
+## 2. Directory Structure & Key Files
 
 ```
 boun-scrape/
-├── docker-compose.yml              # Container orchestration (frontend & backend services)
-├── .env.example                    # Env var template (DB_PATH, JWT_SECRET_KEY, ALLOWED_ORIGINS)
+├── docker-compose.yml              # backend + frontend services; backend runs `serve` only (no daemon)
+├── Dockerfile                      # Backend: 2-stage build, uv, python:3.12-slim runtime
+├── .env.example                    # Env var template with placeholder secrets
+├── pyproject.toml                  # Backend deps + `boun-scrape` console script entry point
 │
-├── docs/                           # Architectural & LLM Documentation Suite
+├── docs/                           # This documentation suite
 │   ├── README.md                   # Documentation index
-│   ├── architecture.md             # System architecture blueprint & C4 model
-│   ├── backend-architecture.md     # FastAPI & python subprocess design
-│   ├── frontend-architecture.md    # React 19 SPA & HSL design system
-│   ├── scraping-pipeline.md        # 4-Stage ETL scraper specification
-│   ├── api-reference.md            # Complete REST API documentation
-│   ├── database-schema.md          # SQLite ERD, indexes, & transactional pragmas
-│   └── llm-context.md              # THIS FILE: Single-file LLM context map
+│   ├── architecture.md             # System architecture, C4-style container diagram, security model
+│   ├── backend-architecture.md     # Python package module-by-module breakdown
+│   ├── frontend-architecture.md    # React SPA structure & design system
+│   ├── scraping-pipeline.md        # Scrape flow, parsing, delta detection, quota proxy
+│   ├── api-reference.md            # /api/v1/* and legacy /api/* endpoint reference
+│   ├── database-schema.md          # SQLite DDL, indexes, PRAGMAs
+│   └── llm-context.md              # THIS FILE
 │
-├── backend/                        # Backend Application & Pipeline Scripts
-│   ├── Dockerfile                  # Python 3.11 slim image using uv
-│   ├── pyproject.toml              # Dependencies (fastapi, uvicorn, requests, bs4, python-jose)
-│   ├── scraper.py                  # Stage 1: ASP.NET ViewState term discovery poster
-│   ├── parse_responses.py          # Stage 2: Department extraction -> departments_all.json
-│   ├── scrape_all_schedules.py     # Stage 3: Multi-threaded schedule downloader (10 workers)
-│   ├── parse_schedules_to_db.py    # Stage 4: Multi-process HTML parser -> SQLite transactional ETL
-│   └── app/                        # FastAPI Web Application Package
-│       ├── main.py                 # App factory, CORS middleware, DB startup hook
-│       ├── routes.py               # REST Endpoints (Auth, Stats, Terms, Depts, Courses, Scraper, Quota)
-│       ├── database.py             # SQLite connection helper, init_db(), query_courses()
-│       ├── auth.py                 # JWT token generation, bcrypt password hashing, get_current_user
-│       ├── scraping.py             # ScraperManager singleton (Popen launcher & regex log parser)
-│       └── quota.py                # Real-time CORS proxy targeting BOUN quotasearch.asp
+├── src/boun_scrape/
+│   ├── config.py                    # Settings (pydantic-settings): BOUN_-prefixed + unprefixed env aliases
+│   ├── domain/
+│   │   ├── models.py                 # Course, CourseSlot, Department, QuotaRecord, ScrapeRunSummary, RunStatus
+│   │   ├── events.py                 # CourseDeltaEvent, ChangeType, ScrapeEvent
+│   │   └── dto.py                    # Pydantic API DTOs + conversion helpers
+│   ├── scraper/
+│   │   ├── slot_tokenizer.py         # parse_days / parse_hours / parse_rooms / build_slots
+│   │   ├── parser.py                 # BeautifulSoup HTML parsers (ViewState, departments, schedules, quota)
+│   │   ├── client.py                 # BounScraperClient (async httpx, jitter, retry, reCAPTCHA detection)
+│   │   ├── quota.py                  # QuotaService (TTL-cached live quota fetch)
+│   │   └── flow.py                   # discover_terms, fetch_departments, scrape_term_pipeline
+│   ├── storage/
+│   │   ├── database.py               # DatabaseManager (SQLite conn/PRAGMAs/schema)
+│   │   └── repository.py             # CourseRepository (all persistence queries)
+│   ├── pipeline/
+│   │   ├── delta.py                  # compute_course_hash, compute_deltas (SHA-256 diffing)
+│   │   └── exporter.py               # export_courses_json/csv/sqlite (atomic writes)
+│   ├── feeds/
+│   │   └── webhooks.py               # WebhookDispatcher (HMAC-SHA256 signed delivery)
+│   ├── scheduler/
+│   │   └── runner.py                 # ScrapeScheduler (execute_scrape_cycle, interval/cron loop)
+│   ├── api/
+│   │   ├── app.py                    # create_app() factory
+│   │   ├── auth.py                   # Hand-rolled JWT (HS256) + bcrypt password verification
+│   │   ├── rate_limit.py             # Per-IP sliding window RateLimiter
+│   │   ├── deps.py                   # DI providers
+│   │   └── routes/                   # courses.py, quota.py, feeds.py, scraper.py (/api/v1), legacy.py (/api)
+│   └── cli/
+│       └── app.py                    # Typer CLI: scrape, serve, daemon, export, quota
 │
-└── frontend/                       # React 19 Frontend SPA
-    ├── Dockerfile                  # Multi-stage build (node:20-slim -> nginx:alpine)
-    ├── nginx.conf                  # Nginx proxy config & SPA router fallback
-    ├── package.json                # React 19, Vite 8, Tailwind v4, Lucide React
-    ├── vite.config.js              # Vite config with /api proxy target to http://localhost:8000
+└── frontend/                        # React 19 SPA
+    ├── Dockerfile                    # Multi-stage build (node -> nginx:alpine)
+    ├── nginx.conf                    # SPA fallback + /api proxy to backend:8000
+    ├── package.json                  # React 19, Vite 8, Tailwind v4, Lucide React, React Router v7
     └── src/
-        ├── App.jsx                 # Router setup, Providers (Auth, Toast), ProtectedRoute
-        ├── index.css               # HSL color design system tokens & glass panel utilities
-        ├── contexts/AuthContext.jsx # JWT session context & token validator
-        ├── hooks/useToast.js       # Toast notification hook
+        ├── App.jsx                    # Router, providers, ProtectedRoute, status ticker bars
+        ├── index.css                  # Terminal/cyberpunk design tokens
+        ├── api/client.js              # apiRequest() fetch wrapper + api.* methods (calls legacy /api/*)
+        ├── contexts/AuthContext.jsx   # Token state, session validation
+        ├── hooks/useSafeAsync.js      # useMountedRef / useSafeCallback
         └── components/
-            ├── Dashboard.jsx       # Analytics cards & system health flags
-            ├── ScraperControl.jsx  # 4-Stage pipeline execution panel & terminal monitor
-            ├── CourseData.jsx      # Paginated course database explorer & CSV exporter
-            ├── QuotaMonitor.jsx    # Real-time course capacity watchlist & 10s polling monitor
-            ├── ConfigManager.jsx   # ASP.NET session cookie & seed file manager
-            ├── Login.jsx           # Admin login form
-            ├── ConfirmDialog.jsx   # Accessible modal dialog
-            └── Sidebar.jsx         # Responsive sidebar & mobile drawer
+            ├── Dashboard.jsx, ScraperControl.jsx, CourseData.jsx,
+            ├── QuotaMonitor.jsx, ConfigManager.jsx, Login.jsx,
+            └── Sidebar.jsx, ConfirmDialog.jsx, EmptyState.jsx, Toast.jsx
 ```
 
 ---
 
-## 3. Environment Variables Reference
+## 3. Environment Variables
 
-| Key | Default Value | Description |
+Every field in `Settings` (`src/boun_scrape/config.py`) accepts **both** a `BOUN_`-prefixed and an unprefixed name (Dokploy compatibility) — e.g. `BOUN_DB_PATH` or `DB_PATH`.
+
+| Key | Default | Notes |
 |---|---|---|
-| `DB_PATH` | `/data/schedules.db` | Path to SQLite database file. |
-| `JWT_SECRET_KEY` | Hex secret string | Cryptographic key for signing JWT tokens. |
+| `ENVIRONMENT` | `development` | One of `development`/`dev`/`test`/`testing`/`local` enables dev secret auto-generation; anything else requires explicit secrets. |
+| `DB_PATH` | `schedules.db` | SQLite file path. |
+| `BASE_URL` | `https://registration.bogazici.edu.tr` | Schedule scraping target. |
+| `QUOTA_URL` | `https://registration.boun.edu.tr` | Live quota target. |
+| `COOKIES_PATH` | `cookies.txt` | Session cookie file for the scraper client. |
+| `MAX_CONCURRENCY` | `10` | `asyncio.Semaphore` bound for concurrent department scraping. |
+| `REQUEST_TIMEOUT` | `15.0` | httpx request timeout (seconds). |
+| `MIN_JITTER` / `MAX_JITTER` | `0.05` / `0.2` | Randomized delay range before each request. |
+| `JWT_SECRET_KEY` | `None` | **No hardcoded default.** Required outside dev environments — app fails to start without it. |
 | `ADMIN_USER` | `admin` | Admin login username. |
-| `ADMIN_PASSWORD_HASH` | Bcrypt hash | Hashed password for authentication. |
-| `ALLOWED_ORIGINS` | `http://localhost:5173,http://localhost` | Permitted origins for FastAPI CORS middleware. |
+| `ADMIN_PASSWORD_HASH` | `None` | **No hardcoded default.** bcrypt hash. Required outside dev environments. |
+| `WEBHOOK_SECRET` | `""` | HMAC-SHA256 signing key for outbound webhooks (unsigned if empty). |
+| `EXPORT_DIR` | `exports` | Destination for JSON/CSV/SQLite export artifacts. |
+| `ALLOWED_ORIGINS` | `["*"]` | CORS origins (comma-separated string or JSON list). Credentials disabled automatically when wildcard. |
+
+**Never** put a real secret value in documentation or example files — `.env.example` uses placeholder strings like `CHANGE_ME_GENERATE_A_RANDOM_SECRET`, and code examples for generating secrets are the only acceptable form.
 
 ---
 
-## 4. Key Code Snippets & Interface Conventions
+## 4. Key Code Signatures
 
-### Backend DB Query Interface (`backend/app/database.py`)
+### Scrape cycle entry point (`scheduler/runner.py`)
 ```python
-def query_courses(term=None, department=None, search=None, day=None, page=1, limit=50):
-    # Returns: {"courses": [...], "total": int, "page": int, "limit": int, "pages": int}
+class ScrapeScheduler:
+    async def execute_scrape_cycle(
+        self, term: str | None = None, export: bool = True, dispatch_webhooks: bool = True,
+    ) -> ScrapeRunSummary: ...
+    def start(self) -> asyncio.Task[None]: ...   # starts interval/cron background loop
+    async def stop(self) -> None: ...
 ```
 
-### Background Process Singleton (`backend/app/scraping.py`)
+### Repository (`storage/repository.py`)
 ```python
-class ScraperManager:
-    # Singleton process runner
-    def start_scraping(self, phase: str, force_refresh: bool = False) -> dict: ...
-    def stop_scraping(self) -> bool: ...
-    def get_status(self) -> dict: ... # returns {phase, status, progress, current_step, total_steps}
-    def get_logs(self) -> list[str]: ...
+class CourseRepository:
+    def get_courses(self, filters: CourseFilterParams) -> tuple[list[Course], int]: ...
+    def save_courses_and_slots(self, term: str, courses: list[Course]) -> int: ...  # atomic term replace
+    def get_deltas(self, term: str | None = None, run_id: str | None = None, limit: int = 100) -> list[CourseDeltaEvent]: ...
 ```
 
-### Unmount-Safe Polling Hook Pattern (React Frontend)
+### Delta detection (`pipeline/delta.py`)
+```python
+def compute_course_hash(course: Course) -> str: ...   # SHA-256 over canonical JSON
+def compute_deltas(previous_courses: list[Course], current_courses: list[Course], run_id: str, term: str) -> list[CourseDeltaEvent]: ...
+```
+
+### Auth (`api/auth.py`) — hand-rolled JWT, NOT python-jose
+```python
+def create_jwt_token(payload: dict, secret_key: str, expires_delta: timedelta | None = None) -> str: ...
+def verify_jwt_token(token: str, secret_key: str) -> dict | None: ...
+def verify_password(plain_password: str, password_hash: str) -> bool: ...  # bcrypt.checkpw only
+```
+
+### Frontend unmount-safety hook (`frontend/src/hooks/useSafeAsync.js`)
 ```javascript
-const isMountedRef = useRef(true);
-useEffect(() => {
-  isMountedRef.current = true;
-  const poll = async () => {
-    const data = await fetchData();
-    if (isMountedRef.current) setData(data);
-  };
-  return () => { isMountedRef.current = false; };
-}, []);
+export function useMountedRef() {
+  const isMountedRef = useRef(true);
+  useEffect(() => {
+    isMountedRef.current = true;
+    return () => { isMountedRef.current = false; };
+  }, []);
+  return isMountedRef;
+}
 ```
 
 ---
 
-## 5. Development & Testing Commands
+## 5. Development Commands
 
-### Backend Local Dev (with `uv`)
+### Backend (CLI)
 ```bash
-cd backend
-uv run uvicorn app.main:app --reload --port 8000
+uv pip install -e .
+boun-scrape scrape --term "2024/2025-1"     # one-off scrape
+boun-scrape serve --reload                   # API server, dev mode, http://localhost:8000/docs
+boun-scrape daemon --interval 3600           # periodic background scraping (NOT run by docker-compose)
+boun-scrape export --term "2024/2025-1" --format all
+boun-scrape quota --abbr CMPE --code 150 --section 01
 ```
 
-### Frontend Local Dev (Vite)
+### Frontend
 ```bash
 cd frontend
-npm run dev
+npm run dev      # or `bun dev`
 ```
 
-### Full Containerized Deployment
+### Full containerized stack
 ```bash
 docker compose up -d --build
 ```
-- **Frontend SPA**: `http://localhost:5173` (or port 80 in Docker)
-- **API Swagger Docs**: `http://localhost:8000/docs`
+- Frontend: `http://localhost:5173`
+- API + OpenAPI docs: `http://localhost:8000/docs`
+- Note: this does **not** start the scheduler daemon — only `serve` (the API). Scraping must be triggered via `POST /api/v1/scraper/trigger` / `POST /api/scrape/start`, or by running `boun-scrape daemon` as a separate process.
+
+### Tests
+```bash
+uv pip install -e ".[dev]"
+pytest
+```
+CI (`.github/workflows/deploy.yml`) runs `pytest` in a `test` job that gates the Docker build/push/Dokploy-redeploy job.
