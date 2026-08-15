@@ -38,6 +38,20 @@ class TestConfig:
             assert settings.webhook_secret == "super-secret-key"
             assert settings.admin_user == "superadmin"
 
+    def test_dokploy_unprefixed_env_override(self) -> None:
+        env_vars = {
+            "DB_PATH": "/data/schedules.db",
+            "JWT_SECRET_KEY": "e830f54e4f50uaO9g7O7P2h6e5w4q3r2t1y0u9i8o7p6a5s4d3f2g1h",
+            "ADMIN_USER": "admin",
+            "ALLOWED_ORIGINS": "https://scraper.bountools.com",
+        }
+        with patch.dict(os.environ, env_vars, clear=False):
+            settings = Settings()
+            assert settings.db_path == "/data/schedules.db"
+            assert settings.jwt_secret_key == "e830f54e4f50uaO9g7O7P2h6e5w4q3r2t1y0u9i8o7p6a5s4d3f2g1h"
+            assert settings.admin_user == "admin"
+            assert settings.allowed_origins == ["https://scraper.bountools.com"]
+
     def test_get_settings_singleton(self) -> None:
         s1 = get_settings()
         s2 = get_settings()
