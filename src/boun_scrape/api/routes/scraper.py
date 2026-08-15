@@ -1,10 +1,10 @@
 """Scraper execution, control, status, and logging endpoints."""
 
-import asyncio
 from typing import Annotated, Any
 
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 
+from boun_scrape.api.auth import get_current_user
 from boun_scrape.api.deps import (
     get_log_buffer_dep,
     get_scrape_scheduler_dep,
@@ -32,6 +32,7 @@ router = APIRouter(tags=["Scraper"])
 async def trigger_scrape(
     payload: ScrapeTriggerRequest,
     scheduler: Annotated[ScrapeScheduler, Depends(get_scrape_scheduler_dep)],
+    current_user: str = Depends(get_current_user),
 ) -> Any:
     """Trigger a new scrape cycle with delta detection, persistence, exports, and webhooks."""
     if scheduler.is_scraping:
@@ -41,7 +42,7 @@ async def trigger_scrape(
         )
 
     if payload.background:
-        asyncio.create_task(
+        scheduler.run_in_background(
             scheduler.execute_scrape_cycle(
                 term=payload.term,
                 export=payload.export,
@@ -75,6 +76,7 @@ async def trigger_scrape(
 )
 def get_scraper_status(
     scheduler: Annotated[ScrapeScheduler, Depends(get_scrape_scheduler_dep)],
+    current_user: str = Depends(get_current_user),
 ) -> ScrapeStatusDTO:
     """Retrieve operational health, active run status, and scheduler metrics."""
     stat = scheduler.get_status()
@@ -96,6 +98,7 @@ def get_scraper_status(
 )
 async def stop_scraper(
     scheduler: Annotated[ScrapeScheduler, Depends(get_scrape_scheduler_dep)],
+    current_user: str = Depends(get_current_user),
 ) -> dict[str, str]:
     """Stop the background periodic scheduler loop."""
     await scheduler.stop()
@@ -114,6 +117,7 @@ def get_scraper_logs(
     log_buffer: Annotated[LogBuffer, Depends(get_log_buffer_dep)],
     limit: int = Query(default=100, ge=1, le=1000, description="Max log lines to return"),
     level: str | None = Query(default=None, description="Minimum log level filter (INFO, WARNING, ERROR)"),
+    current_user: str = Depends(get_current_user),
 ) -> list[LogEntryDTO]:
     """Retrieve in-memory circular log records for monitoring and debugging."""
     return log_buffer.get_logs(limit=limit, level=level)

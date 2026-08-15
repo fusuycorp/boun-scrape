@@ -8,10 +8,14 @@ services:
     volumes:
       - schedules_data:/data
     environment:
+      - ENVIRONMENT=${ENVIRONMENT:-production}
       - DB_PATH=${DB_PATH:-/data/schedules.db}
       - ADMIN_USER=${ADMIN_USER:-admin}
-      - ADMIN_PASSWORD_HASH=${ADMIN_PASSWORD_HASH:-$2b$12$AWoniBnnbFfjVI3tldX2wuOPEVNmik7mwrsM88M6C0ARftQv9WvvG}
-      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-b9084752fa83984cfb395d820847ca081d77a83d782f9d8a39e8d645eef6b52a}
+      # ADMIN_PASSWORD_HASH and JWT_SECRET_KEY have no defaults on purpose:
+      # the app fails fast at startup in production if they are unset.
+      # Set them in the deployment environment (e.g. Dokploy env vars), never here.
+      - ADMIN_PASSWORD_HASH=${ADMIN_PASSWORD_HASH}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
       - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-http://localhost:5173,http://localhost:80,http://127.0.0.1:5173,https://scraper.bountools.com}
     restart: always
 

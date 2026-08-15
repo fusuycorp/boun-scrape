@@ -24,6 +24,7 @@ from boun_scrape.api.auth import (
     verify_password,
     get_current_user,
 )
+from boun_scrape.api.rate_limit import login_rate_limit_dep
 
 router = APIRouter(tags=["legacy-compat"])
 
@@ -42,7 +43,7 @@ class ScraperConfigUpdate(BaseModel):
     cookies: Optional[str] = None
     response_html: Optional[str] = None
 
-@router.post("/auth/login", response_model=Token)
+@router.post("/auth/login", response_model=Token, dependencies=[Depends(login_rate_limit_dep)])
 async def login(
     form_data: OAuth2PasswordRequestForm = Depends(),
     settings: Settings = Depends(get_settings_dep),
@@ -206,8 +207,7 @@ async def start_scrape(
     scheduler: ScrapeScheduler = Depends(get_scheduler),
     current_user: str = Depends(get_current_user),
 ):
-    import asyncio
-    asyncio.create_task(scheduler.execute_scrape_cycle())
+    scheduler.run_in_background(scheduler.execute_scrape_cycle())
     return {"status": "ok", "message": "Scraping cycle initiated in background"}
 
 @router.post("/scrape/stop")
