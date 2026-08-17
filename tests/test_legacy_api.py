@@ -1,9 +1,13 @@
+from unittest.mock import MagicMock
+
 import pytest
 from httpx import AsyncClient, ASGITransport
 
 from boun_scrape.api.app import create_app
+from boun_scrape.api.deps import get_scrape_scheduler_dep
 from boun_scrape.config import Settings
 from boun_scrape.domain.models import Course, CourseSlot, Department
+from boun_scrape.scheduler.runner import ScrapeScheduler
 
 
 @pytest.fixture
@@ -62,3 +66,42 @@ async def test_legacy_auth_and_protected_routes(legacy_app):
         status_res = await client.get("/api/scrape/status", headers=headers)
         assert status_res.status_code == 200
         assert status_res.json()["status"] in ["idle", "running"]
+
+
+@pytest.mark.asyncio
+async def test_legacy_scrape_status_reflects_active_scraping(legacy_app):
+    """Regression: /api/scrape/status previously read a dict key
+    (`is_cycle_running`) that ScrapeScheduler.get_status() never sets
+    (real key is `is_scraping`), so this endpoint always reported "idle"
+    even mid-scrape. Also verifies real progress data now flows through
+    instead of a hardcoded 50%."""
+    mock_scheduler = MagicMock(spec=ScrapeScheduler)
+    mock_scheduler.get_status.return_value = {
+        "is_running": True,
+        "is_scraping": True,
+        "interval_seconds": 3600,
+        "cron_expression": None,
+        "run_count": 0,
+        "last_run_time": None,
+        "next_run_time": None,
+        "last_run_summary": None,
+        "current_progress": {"completed": 3, "total": 12, "department": "CMPE"},
+    }
+    legacy_app.dependency_overrides[get_scrape_scheduler_dep] = lambda: mock_scheduler
+
+    transport = ASGITransport(app=legacy_app)
+    async with AsyncClient(transport=transport, base_url="http://test") as client:
+        login_res = await client.post(
+            "/api/auth/login", data={"username": "admin", "password": "admin"}
+        )
+        token = login_res.json()["access_token"]
+        headers = {"Authorization": f"Bearer {token}"}
+
+        status_res = await client.get("/api/scrape/status", headers=headers)
+        assert status_res.status_code == 200
+        body = status_res.json()
+        assert body["status"] == "running"
+        assert body["phase"] == "scraping"
+        assert body["progress"] == {"total": 12, "current": 3, "percent": 25.0}
+
+    legacy_app.dependency_overrides.pop(get_scrape_scheduler_dep, None)

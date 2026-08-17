@@ -157,6 +157,60 @@ class TestScrapeScheduler:
             await scheduler.aclose()
 
     @pytest.mark.asyncio
+    async def test_execute_scrape_cycle_emits_telemetry_logs_and_progress(
+        self,
+        semester_html: str,
+        schedule_html: str,
+        tmp_path: Path,
+        caplog: pytest.LogCaptureFixture,
+    ) -> None:
+        """Regression: the happy path previously had zero logger.info() calls,
+        so the UI's log terminal stayed empty for successful runs. Also
+        verifies current_progress is populated during the department fetch
+        (surfaced via get_status()) and cleared again once the cycle ends."""
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            path = request.url.path
+            if "schedule.aspx" in path:
+                return httpx.Response(200, content=semester_html.encode("windows-1254"))
+            if "sch.asp" in path:
+                return httpx.Response(200, content=schedule_html.encode("windows-1254"))
+            return httpx.Response(404)
+
+        transport = httpx.MockTransport(handler)
+        async with httpx.AsyncClient(transport=transport, base_url=BASE_URL) as http_client:
+            scraper_client = BounScraperClient(
+                http_client=http_client, min_jitter=0, max_jitter=0
+            )
+            db_mgr = DatabaseManager(str(tmp_path / "test.db"))
+            db_mgr.init_db()
+            repo = CourseRepository(db_mgr)
+
+            scheduler = ScrapeScheduler(
+                client=scraper_client,
+                repository=repo,
+                default_term="2024/2025-1",
+                export_dir=tmp_path / "exports",
+            )
+
+            assert scheduler.get_status()["current_progress"] is None
+
+            with caplog.at_level("INFO", logger="boun_scrape.scheduler.runner"):
+                summary = await scheduler.execute_scrape_cycle()
+
+            assert summary.status == RunStatus.COMPLETED
+            messages = " ".join(r.message for r in caplog.records)
+            assert "resolved term" in messages
+            assert "finished scraping" in messages
+            assert "detected" in messages and "changes" in messages
+            assert "completed" in messages
+
+            # Progress is cleared once the cycle finishes.
+            assert scheduler.get_status()["current_progress"] is None
+
+            await scheduler.aclose()
+
+    @pytest.mark.asyncio
     async def test_execute_scrape_cycle_non_overlapping_guard(
         self,
         tmp_path: Path,

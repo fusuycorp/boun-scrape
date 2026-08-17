@@ -79,6 +79,7 @@ class ScrapeScheduler:
         self._last_run_time: datetime | None = None
         self._next_run_time: datetime | None = None
         self._run_count: int = 0
+        self._current_progress: dict[str, Any] | None = None
 
     @property
     def is_running(self) -> bool:
@@ -111,6 +112,7 @@ class ScrapeScheduler:
                 self._next_run_time.isoformat() if self._next_run_time else None
             ),
             "last_run_summary": summary_dict,
+            "current_progress": self._current_progress,
         }
 
     async def execute_scrape_cycle(
@@ -156,10 +158,33 @@ class ScrapeScheduler:
                         )
                     target_term = discovered[0]
                 summary.term = target_term
+                logger.info("Scrape %s: resolved term %s", run_id, target_term)
 
                 # 2. Scrape latest courses and slots from portal
+                self._current_progress = {"completed": 0, "total": 0, "department": None}
+
+                def _on_department_progress(
+                    completed: int, total: int, dept: Any, courses: list
+                ) -> None:
+                    self._current_progress = {
+                        "completed": completed,
+                        "total": total,
+                        "department": dept.code,
+                    }
+                    logger.info(
+                        "Scrape %s: department %s (%d/%d) — %d courses",
+                        run_id, dept.code, completed, total, len(courses),
+                    )
+
                 current_courses = await scrape_term_pipeline(
-                    self.client, term=target_term, concurrency=self.settings.max_concurrency
+                    self.client,
+                    term=target_term,
+                    concurrency=self.settings.max_concurrency,
+                    progress_callback=_on_department_progress,
+                )
+                logger.info(
+                    "Scrape %s: finished scraping — %d courses total",
+                    run_id, len(current_courses),
                 )
 
                 # 4. Fetch existing courses for term to detect deltas
@@ -172,6 +197,7 @@ class ScrapeScheduler:
                     run_id=run_id,
                     term=target_term,
                 )
+                logger.info("Scrape %s: detected %d changes", run_id, len(deltas))
 
                 # 6. Atomic persistence of courses, slots, and deltas
                 self.repository.save_courses_and_slots(
@@ -179,6 +205,7 @@ class ScrapeScheduler:
                 )
                 if deltas:
                     self.repository.save_deltas(deltas=deltas, run_id=run_id)
+                logger.info("Scrape %s: persisted courses and deltas", run_id)
 
                 # 7. Calculate run metrics
                 total_slots = sum(len(c.slots) for c in current_courses)
@@ -199,6 +226,7 @@ class ScrapeScheduler:
                         deltas=deltas,
                         output_dir=self.export_dir,
                     )
+                    logger.info("Scrape %s: exported artifacts to %s", run_id, self.export_dir)
 
                 # 9. Webhook notifications
                 if dispatch_webhooks and self.webhook_dispatcher is not None:
@@ -207,7 +235,13 @@ class ScrapeScheduler:
                             deltas, term=target_term
                         )
                     await self.webhook_dispatcher.dispatch_run_summary(summary)
+                    logger.info("Scrape %s: webhooks dispatched", run_id)
 
+                logger.info(
+                    "Scrape %s: completed — %d courses, %d slots, %d changes",
+                    run_id, len(current_courses), total_slots, len(deltas),
+                )
+                self._current_progress = None
                 self._last_run_summary = summary
                 self._last_run_time = datetime.now(timezone.utc)
                 self._run_count += 1
@@ -219,10 +253,12 @@ class ScrapeScheduler:
                 summary.completed_at = completed_at
                 summary.error_message = str(exc)
                 self.repository.save_scrape_run(summary)
+                logger.exception("Scrape %s: failed", run_id)
 
                 if dispatch_webhooks and self.webhook_dispatcher is not None:
                     await self.webhook_dispatcher.dispatch_run_summary(summary)
 
+                self._current_progress = None
                 self._last_run_summary = summary
                 self._last_run_time = datetime.now(timezone.utc)
                 raise
