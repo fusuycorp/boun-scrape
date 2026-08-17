@@ -75,7 +75,6 @@ jobs:
             exit 1
           fi
 
-          # Attempt 1: standard REST API
           RESPONSE=$(curl -s -w "\n%{http_code}" -X POST "https://dokploy.bogazici.app/api/compose.redeploy" \
             -H "x-api-key: $DOKPLOY_API_KEY" \
             -H "Content-Type: application/json" \
@@ -84,28 +83,10 @@ jobs:
           BODY=$(echo "$RESPONSE" | sed '$d')
 
           if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
-            echo "✅ Dokploy redeployment triggered via REST API (HTTP $HTTP_CODE)"
+            echo "✅ Dokploy redeployment triggered (HTTP $HTTP_CODE)"
             echo "$BODY"
             exit 0
           fi
-          echo "Attempt 1 returned HTTP $HTTP_CODE: $BODY"
-          echo "Attempt 2: trying tRPC-wrapped payload..."
 
-          # Attempt 2: tRPC-wrapped payload (some Dokploy routes require this shape)
-          TRPC_RESP=$(curl -s -w "\n%{http_code}" -X POST "https://dokploy.bogazici.app/api/compose.redeploy" \
-            -H "x-api-key: $DOKPLOY_API_KEY" \
-            -H "Content-Type: application/json" \
-            -d "{\"json\": {\"composeId\": \"$DOKPLOY_COMPOSE_ID\"}}")
-          TRPC_CODE=$(echo "$TRPC_RESP" | tail -n 1)
-          TRPC_BODY=$(echo "$TRPC_RESP" | sed '$d')
-
-          if [ "$TRPC_CODE" -ge 200 ] && [ "$TRPC_CODE" -lt 300 ]; then
-            echo "✅ Dokploy redeployment triggered via tRPC API (HTTP $TRPC_CODE)"
-            echo "$TRPC_BODY"
-            exit 0
-          fi
-
-          echo "::error::All Dokploy redeploy attempts failed."
-          echo "REST API (HTTP $HTTP_CODE): $BODY"
-          echo "tRPC API (HTTP $TRPC_CODE): $TRPC_BODY"
+          echo "::error::Dokploy redeploy failed (HTTP $HTTP_CODE): $BODY"
           exit 1
