@@ -42,7 +42,7 @@ ScrapeScheduler.execute_scrape_cycle(term)
 
 Entry points that trigger this flow:
 - CLI: `boun-scrape scrape [--term ...] [--no-export] [--no-webhooks]` (one-off), `boun-scrape daemon [--interval N | --cron "expr"]` (repeats the same cycle on a schedule).
-- API: `POST /api/v1/scraper/trigger` (typed) or `POST /api/scrape/start` (legacy compat).
+- API: `POST /api/v1/scraper/trigger`.
 
 Nothing runs this automatically. The shipped `docker-compose.yml` backend service only serves the API; the scheduler's background loop is only started by explicitly running `boun-scrape daemon`.
 
@@ -91,7 +91,6 @@ Independent of the bulk scrape cycle — queried on demand.
 
 ```
 [Client] --> GET /api/v1/quota?abbr=CMPE&code=150&section=01&term=2024/2025-1
-             (or legacy GET /api/quota/check?abbr=...&code=...&section=...&donem=...)
                      |
                      v
         QuotaService.fetch_quota()  -- checks in-memory TTL cache (default 30s) first

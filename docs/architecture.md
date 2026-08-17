@@ -12,10 +12,10 @@ boun-scrape provides automated scraping, in-process parsing, change detection, r
 - **Single Python package.** All backend logic — scraping, parsing, diffing, persistence, scheduling, and the HTTP API — lives in `src/boun_scrape/`, organized into `domain/`, `scraper/`, `storage/`, `pipeline/`, `feeds/`, `scheduler/`, `api/`, and `cli/` modules. There is no separate `/backend` directory and no standalone subprocess scripts.
 - **Fully asynchronous.** The scraper uses `httpx.AsyncClient` with `asyncio.Semaphore`-bounded concurrency (default 10, configurable via `MAX_CONCURRENCY`), not threads or process pools.
 - **Embedded persistent datastore.** SQLite in WAL mode — a single file, zero external DB dependency.
-- **On-demand, not automatic scheduling.** Scraping runs only when explicitly triggered: via the CLI (`boun-scrape scrape` for a one-off run, `boun-scrape daemon` for periodic interval/cron scraping), or via an authenticated API call (`POST /api/v1/scraper/trigger` or the legacy `POST /api/scrape/start`). The shipped `docker-compose.yml` does **not** run the daemon — its `backend` service only serves the API.
+- **On-demand, not automatic scheduling.** Scraping runs only when explicitly triggered: via the CLI (`boun-scrape scrape` for a one-off run, `boun-scrape daemon` for periodic interval/cron scraping), or via an authenticated API call (`POST /api/v1/scraper/trigger`). The shipped `docker-compose.yml` does **not** run the daemon — its `backend` service only serves the API.
 - **Change detection built in.** Every scrape cycle diffs the newly scraped courses against what's currently in the database for that term, using SHA-256 content hashing, and records categorized delta events.
 - **Live quota proxy.** Real-time quota lookups are proxied to `registration.boun.edu.tr` on demand, with a short in-memory TTL cache.
-- **Two API surfaces.** A typed, documented `/api/v1/*` surface, and a legacy-compatibility `/api/*` router that the shipped React frontend actually talks to.
+- **Single API surface.** One typed, documented surface under `/api/v1/*`, used by both external API clients and the shipped React frontend.
 - **Containerized.** Root `Dockerfile` builds the Python backend; `frontend/Dockerfile` builds the React SPA behind Nginx. `docker-compose.yml` wires the two together.
 
 ---
@@ -26,7 +26,7 @@ boun-scrape provides automated scraping, in-process parsing, change detection, r
 +-----------------------------------------------------------------------------------+
 |                                  USER BROWSER                                     |
 |  - React 19 SPA (Vite), terminal/cyberpunk aesthetic                              |
-|  - JWT stored in localStorage, calls legacy /api/* endpoints only                 |
+|  - JWT stored in localStorage, calls /api/v1/* endpoints exclusively              |
 +----------------------------------------+------------------------------------------+
                                          |
                                          | HTTP (port 5173 in compose / 80 in prod)
@@ -43,8 +43,7 @@ boun-scrape provides automated scraping, in-process parsing, change detection, r
 |                       BACKEND CONTAINER (FastAPI + Uvicorn)                       |
 |  boun_scrape.api.app:create_app                                                   |
 |  - Hand-rolled JWT auth (HS256 HMAC, base64url) + bcrypt password verification    |
-|  - /api/v1/* : courses, quota, feeds, scraper (typed, documented)                 |
-|  - /api/*    : legacy-compat router used by the React frontend                    |
+|  - /api/v1/* : auth, courses, quota, feeds, scraper (typed, documented)           |
 |  - Per-IP sliding-window rate limiting on login and quota endpoints               |
 +-------------------+---------------------------------------+-----------------------+
                     |                                       |
@@ -77,7 +76,7 @@ Note: `docker-compose.yml`'s `backend` service runs `serve` only (via the Docker
 - **Framework**: React 19 + Vite.
 - **Styling**: Tailwind CSS v4 + a custom terminal/cyberpunk design system (`src/index.css`) — dark "void" backgrounds, neon phosphor accents (green/amber/pink/cyan), CRT scanline overlay, monospace typography.
 - **Routing**: React Router v7, client-side, with a `ProtectedRoute` wrapper gating everything except `/login`.
-- **API access**: A single `src/api/client.js` module wraps `fetch`, attaches the JWT from `localStorage` as a Bearer token, and calls exclusively into the legacy `/api/*` router (not `/api/v1/*`).
+- **API access**: A single `src/api/client.js` module wraps `fetch`, attaches the JWT from `localStorage` as a Bearer token, and calls exclusively into the `/api/v1/*` surface.
 - See [frontend-architecture.md](frontend-architecture.md) for component-level detail.
 
 ### 3.2 Backend (`src/boun_scrape/`)
@@ -90,7 +89,7 @@ Note: `docker-compose.yml`'s `backend` service runs `serve` only (via the Docker
   - `pipeline/` — `delta.py` (SHA-256 content-hash diffing), `exporter.py` (JSON/CSV/SQLite export with atomic temp-file + `os.replace` writes).
   - `feeds/` — `webhooks.py` (HMAC-SHA256 signed async webhook dispatcher).
   - `scheduler/` — `runner.py` (`ScrapeScheduler`: orchestrates a full scrape cycle and, optionally, an interval/cron background loop).
-  - `api/` — `app.py` (FastAPI factory, CORS, exception handlers), `auth.py` (JWT + bcrypt), `rate_limit.py` (per-IP sliding window), `deps.py` (DI providers), `routes/` (`courses.py`, `quota.py`, `feeds.py`, `scraper.py` under `/api/v1`, plus `legacy.py` under `/api`).
+  - `api/` — `app.py` (FastAPI factory, CORS, exception handlers), `auth.py` (JWT + bcrypt), `rate_limit.py` (per-IP sliding window), `deps.py` (DI providers), `routes/` (`auth.py`, `courses.py`, `quota.py`, `feeds.py`, `scraper.py`, all mounted under `/api/v1`).
   - `cli/` — Typer app (`scrape`, `serve`, `daemon`, `export`, `quota` subcommands).
 - See [backend-architecture.md](backend-architecture.md) for full module detail.
 
@@ -105,16 +104,16 @@ Note: `docker-compose.yml`'s `backend` service runs `serve` only (via the Docker
 
 1. **Authentication**:
    - Hand-rolled JWT implementation in `api/auth.py` — HS256 HMAC signing over base64url-encoded header/payload, **not** `python-jose`. Tokens expire after 24 hours by default.
-   - Password verification is bcrypt-only (`bcrypt.checkpw`) — no plaintext or legacy hash fallback.
+   - Password verification is bcrypt-only (`bcrypt.checkpw`) — no plaintext or alternate hash fallback.
    - `Settings.jwt_secret_key` and `Settings.admin_password_hash` have **no hardcoded defaults**. A `model_validator` on `Settings` raises at startup if either is unset and `ENVIRONMENT` is not one of `development`/`dev`/`test`/`testing`/`local`. In those dev environments, an ephemeral secret and admin password are generated at startup (the generated plaintext password is logged so the developer can log in; it does not persist across restarts).
-   - Login (`POST /api/auth/login`, legacy router) is rate-limited to 5 requests per 60 seconds per client IP.
+   - Login (`POST /api/v1/auth/login`) is rate-limited to 5 requests per 60 seconds per client IP.
 2. **Authorization**:
-   - All `/api/v1/scraper/*` and `/api/v1/quota*` endpoints, and all mutating/administrative legacy `/api/*` endpoints, require a valid Bearer token via `Depends(get_current_user)`.
-   - Read-only course/department/term listing under `/api/v1/*` is unauthenticated.
+   - All `/api/v1/scraper/*` and `/api/v1/quota*` endpoints require a valid Bearer token via `Depends(get_current_user)`.
+   - Read-only course/department/term/stats listing under `/api/v1/*` is unauthenticated.
 3. **CORS**:
    - `CORSMiddleware` reads `ALLOWED_ORIGINS` (default `["*"]`). Credentials are automatically disabled when the origin list is the wildcard, to satisfy browser CORS rules.
 4. **Rate limiting**:
-   - In-memory, per-IP, sliding-window `RateLimiter` instances scoped to `app.state` (not module globals, so test/app instances don't leak state into each other). Applied to `/api/auth/login` (5/60s) and quota endpoints (30/60s). Single-process only — not a substitute for an edge/WAF rate limiter in a multi-worker deployment.
+   - In-memory, per-IP, sliding-window `RateLimiter` instances scoped to `app.state` (not module globals, so test/app instances don't leak state into each other). Applied to `/api/v1/auth/login` (5/60s) and quota endpoints (30/60s). Single-process only — not a substitute for an edge/WAF rate limiter in a multi-worker deployment.
 5. **Scraper politeness & anti-bot handling**:
    - Randomized jitter (`MIN_JITTER`–`MAX_JITTER`, default 0.05–0.2s) before each HTTP request.
    - Exponential backoff retry (up to 3 attempts) on transport errors and 5xx responses.

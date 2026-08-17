@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Cookie, FileCode2, Save, RotateCcw, AlertCircle } from 'lucide-react';
+import { Cookie, Save, AlertCircle } from 'lucide-react';
 import { api } from '../api/client';
 import { useMountedRef } from '../hooks/useSafeAsync';
 import { useToast } from '../hooks/useToast';
@@ -9,8 +9,6 @@ export default function ConfigManager() {
   const isMountedRef = useMountedRef();
 
   const [cookies, setCookies] = useState('');
-  const [seedHtml, setSeedHtml] = useState('');
-  const [initialState, setInitialState] = useState({ cookies: '', seedHtml: '' });
 
   const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -22,9 +20,6 @@ export default function ConfigManager() {
       const res = await api.getScraperConfig();
       if (isMountedRef.current) {
         setStatus(res);
-        const cookieVal = res.cookie_masked ? `ASP.NET_SessionId=${res.cookie_masked}` : '';
-        setCookies(cookieVal);
-        setInitialState({ cookies: cookieVal, seedHtml: '' });
       }
     } catch (err) {
       if (isMountedRef.current) {
@@ -41,7 +36,7 @@ export default function ConfigManager() {
     fetchConfig();
   }, []);
 
-  const isDirty = cookies !== initialState.cookies || seedHtml !== '';
+  const isDirty = cookies.trim() !== '';
 
   const handleSave = async (e) => {
     e.preventDefault();
@@ -49,13 +44,9 @@ export default function ConfigManager() {
 
     setSaving(true);
     try {
-      const payload = {};
-      if (cookies !== initialState.cookies) payload.cookies = cookies;
-      if (seedHtml !== '') payload.seed_html = seedHtml;
-
-      const res = await api.updateScraperConfig(payload);
+      const res = await api.updateScraperConfig({ cookies });
       showToast(res.message || 'CONFIGURATION_UPDATED_SUCCESSFULLY', 'success');
-      setSeedHtml('');
+      setCookies('');
       fetchConfig();
     } catch (err) {
       showToast(err.message || 'FAILED_TO_COMMIT_CONFIG', 'error');
@@ -67,8 +58,7 @@ export default function ConfigManager() {
   };
 
   const handleReset = () => {
-    setCookies(initialState.cookies);
-    setSeedHtml('');
+    setCookies('');
   };
 
   return (
@@ -85,7 +75,7 @@ export default function ConfigManager() {
           /// SESSION_AND_KEYRING_MANAGER
         </h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginTop: '4px' }}>
-          Mount reCAPTCHA session tokens (`cookies.txt`) and ASP.NET ViewState form payloads (`response.html`).
+          Mount reCAPTCHA session tokens (`cookies.txt`) for the scraper client.
         </p>
       </div>
 
@@ -100,34 +90,13 @@ export default function ConfigManager() {
             </span>
           </div>
           <div>
-            {status?.cookie_loaded ? (
-              <span className="cyber-badge cyber-badge-green">
-                [● ACTIVE: {status.cookie_masked || 'MOUNTED'}]
-              </span>
+            {loading ? (
+              <span style={{ color: 'var(--text-muted)', fontSize: '11px' }}>[...]</span>
+            ) : status?.cookie_loaded ? (
+              <span className="cyber-badge cyber-badge-green">[● ACTIVE: MOUNTED]</span>
             ) : (
               <span className="cyber-badge cyber-badge-amber">
                 [! NOT_LOADED / EXPIRED]
-              </span>
-            )}
-          </div>
-        </div>
-
-        {/* Seed HTML Status */}
-        <div className="cyber-card" style={{ border: '1px solid var(--border-hard)' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-            <FileCode2 size={16} style={{ color: 'var(--neon-pink)' }} />
-            <span style={{ color: 'var(--neon-pink)', fontSize: '11px', fontWeight: 700 }}>
-              KEYRING_02: response.html
-            </span>
-          </div>
-          <div>
-            {status?.seed_html_loaded ? (
-              <span className="cyber-badge cyber-badge-green">
-                [● PRESENT: {status.seed_html_size?.toLocaleString()} BYTES]
-              </span>
-            ) : (
-              <span className="cyber-badge cyber-badge-amber">
-                [! MISSING_SEED_FILE]
               </span>
             )}
           </div>
@@ -143,32 +112,14 @@ export default function ConfigManager() {
             RAW_COOKIE_STRING: (ASP.NET_SessionId)
           </label>
           <p style={{ color: 'var(--text-secondary)', fontSize: '11px', marginBottom: '12px' }}>
-            Paste the raw cookie string from browser devtools while authenticated on registration.bogazici.edu.tr.
+            Paste a new cookie string to replace the current session. The existing value is never
+            displayed here; leave this blank to keep the currently mounted cookie unchanged.
           </p>
           <textarea
             rows="3"
             value={cookies}
             onChange={(e) => setCookies(e.target.value)}
             placeholder="ASP.NET_SessionId=abcdef1234567890..."
-            className="cyber-input"
-            style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', lineHeight: '1.5' }}
-          />
-        </div>
-
-        {/* Seed HTML Input */}
-        <div className="cyber-card" style={{ border: '1px solid var(--border-hard)', padding: '20px' }}>
-          <label style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--neon-pink)', fontSize: '11px', fontWeight: 700, marginBottom: '6px' }}>
-            <FileCode2 size={14} />
-            SEED_FORM_HTML_BUFFER: (response.html)
-          </label>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '11px', marginBottom: '12px' }}>
-            Paste full HTML source of schedule.aspx containing ASP.NET `__VIEWSTATE` and `__EVENTVALIDATION` fields.
-          </p>
-          <textarea
-            rows="6"
-            value={seedHtml}
-            onChange={(e) => setSeedHtml(e.target.value)}
-            placeholder="<!DOCTYPE html><html><head>...<input type='hidden' name='__VIEWSTATE'..."
             className="cyber-input"
             style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', lineHeight: '1.5' }}
           />

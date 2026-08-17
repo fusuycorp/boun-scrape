@@ -24,12 +24,12 @@ The whole backend is a single Python package: `src/boun_scrape/`. There is no se
                      │  React 19 / Vite SPA      │
                      │  (frontend/, terminal UI) │
                      └────────────┬──────────────┘
-                                  │ /api/* (legacy compat router)
+                                  │ /api/v1/*
                                   ▼
                      ┌──────────────────────────┐
                      │   FastAPI application     │
                      │   boun_scrape.api.app     │
-                     │  /api/v1/*  +  /api/*     │
+                     │        /api/v1/*          │
                      └──┬─────────────┬──────────┘
                         │             │
              reads/writes             triggers
@@ -67,7 +67,7 @@ src/boun_scrape/
 └── cli/          Typer CLI: scrape, serve, daemon, export, quota
 
 frontend/         React 19 + Vite + Tailwind 4 SPA (terminal/cyberpunk aesthetic),
-                   talks to the legacy /api/* router only
+                   talks exclusively to /api/v1/*
 
 docs/             Architecture and reference documentation (see docs/README.md)
 ```
@@ -116,7 +116,7 @@ docker compose up -d --build
 - Frontend dashboard: `http://localhost:5173`
 - API + OpenAPI docs: `http://localhost:8000/docs`
 
-`docker-compose.yml` runs two services — `backend` (the FastAPI server, via `boun-scrape serve` under uvicorn) and `frontend` (Nginx, serving the built SPA and reverse-proxying `/api` to `backend:8000`). **Neither service runs the scheduler daemon.** The container's default command only serves the API; scraping must be triggered on demand via `POST /api/v1/scraper/trigger` (or the legacy `POST /api/scrape/start`), or by running `boun-scrape daemon` yourself (e.g. as a separate process or container).
+`docker-compose.yml` runs two services — `backend` (the FastAPI server, via `boun-scrape serve` under uvicorn) and `frontend` (Nginx, serving the built SPA and reverse-proxying `/api` to `backend:8000`). **Neither service runs the scheduler daemon.** The container's default command only serves the API; scraping must be triggered on demand via `POST /api/v1/scraper/trigger`, or by running `boun-scrape daemon` yourself (e.g. as a separate process or container).
 
 In production, `ENVIRONMENT`, `JWT_SECRET_KEY`, and `ADMIN_PASSWORD_HASH` are required — the app refuses to start without them. Generate values with:
 
@@ -135,7 +135,7 @@ Detailed reference docs live in [`docs/`](docs/README.md):
 - [`docs/backend-architecture.md`](docs/backend-architecture.md) — package-by-package breakdown of `src/boun_scrape/`
 - [`docs/scraping-pipeline.md`](docs/scraping-pipeline.md) — how scraping, parsing, and delta detection work
 - [`docs/database-schema.md`](docs/database-schema.md) — SQLite schema, indexes, PRAGMAs
-- [`docs/api-reference.md`](docs/api-reference.md) — REST endpoints (`/api/v1/*` and legacy `/api/*`)
+- [`docs/api-reference.md`](docs/api-reference.md) — REST endpoints (`/api/v1/*`)
 - [`docs/frontend-architecture.md`](docs/frontend-architecture.md) — React SPA structure and design system
 - [`docs/llm-context.md`](docs/llm-context.md) — condensed repo map for AI coding assistants
 

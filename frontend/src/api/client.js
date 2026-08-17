@@ -10,7 +10,7 @@ const getAuthHeader = () => {
 export async function apiRequest(endpoint, options = {}) {
   const { method = 'GET', body = null, headers = {}, params = null } = options;
 
-  let url = endpoint.startsWith('/api') ? endpoint : `/api${endpoint}`;
+  let url = endpoint.startsWith('/api') ? endpoint : `/api/v1${endpoint}`;
 
   if (params) {
     const searchParams = new URLSearchParams();
@@ -77,7 +77,7 @@ export const api = {
     const body = new URLSearchParams();
     body.append('username', username);
     body.append('password', password);
-    return fetch('/api/auth/login', {
+    return fetch('/api/v1/auth/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body,
@@ -95,21 +95,19 @@ export const api = {
   getStats: () => apiRequest('/stats'),
   getTerms: () => apiRequest('/terms'),
   getDepartments: () => apiRequest('/departments'),
-  getAllDepartments: () => apiRequest('/departments/all'),
 
   // Courses Search
   getCourses: (params) => apiRequest('/courses', { params }),
 
   // Scraper Control
-  getScraperConfig: () => apiRequest('/config'),
-  updateScraperConfig: (data) => apiRequest('/config', { method: 'POST', body: data }),
-  startScrape: () => apiRequest('/scrape/start', { method: 'POST' }),
-  stopScrape: () => apiRequest('/scrape/stop', { method: 'POST' }),
-  getScrapeStatus: () => apiRequest('/scrape/status'),
-  getScrapeTerms: () => apiRequest('/scrape/terms'),
-  getScrapeLogs: (clear = false) => apiRequest('/scrape/logs', { params: { clear } }),
+  getScraperConfig: () => apiRequest('/scraper/config'),
+  updateScraperConfig: (data) => apiRequest('/scraper/config', { method: 'POST', body: data }),
+  startScrape: () => apiRequest('/scraper/trigger', { method: 'POST', body: {} }),
+  stopScrape: () => apiRequest('/scraper/stop', { method: 'POST' }),
+  getScrapeStatus: () => apiRequest('/scraper/status'),
+  getScrapeLogs: (clear = false) => apiRequest('/scraper/logs', { params: { clear } }),
 
   // Quota
-  checkQuota: (abbr, code, section, donem) =>
-    apiRequest('/quota/check', { params: { abbr, code, section, donem } }),
+  checkQuota: (abbr, code, section, term) =>
+    apiRequest('/quota', { params: { abbr, code, section, term } }),
 };

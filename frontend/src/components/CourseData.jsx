@@ -64,14 +64,14 @@ export default function CourseData() {
       const res = await api.getCourses({
         term: selectedTerm,
         department: selectedDept,
-        search: debouncedSearch,
+        keyword: debouncedSearch,
         day: selectedDay,
         page,
-        limit: 50,
+        size: 50,
       });
 
       if (isMountedRef.current) {
-        setCourses(res.courses || []);
+        setCourses(res.items || []);
         setTotal(res.total || 0);
         setPages(res.pages || 1);
       }
@@ -232,8 +232,8 @@ export default function CourseData() {
             >
               <option value="">ALL_DEPARTMENTS</option>
               {departments.map((d) => (
-                <option key={d} value={d}>
-                  {d}
+                <option key={d.code} value={d.code}>
+                  {d.code}
                 </option>
               ))}
             </select>

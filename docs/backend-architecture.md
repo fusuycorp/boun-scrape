@@ -50,11 +50,11 @@ src/boun_scrape/
 │   ├── logging_buffer.py    # In-memory circular log buffer for /scraper/logs
 │   ├── deps.py               # FastAPI dependency providers (settings, repo, client, quota service, scheduler, log buffer)
 │   └── routes/
-│       ├── courses.py       # /api/v1/courses, /api/v1/departments, /api/v1/terms
+│       ├── auth.py          # /api/v1/auth/login, /api/v1/auth/me
+│       ├── courses.py       # /api/v1/courses, /api/v1/departments, /api/v1/terms, /api/v1/stats
 │       ├── quota.py         # /api/v1/quota, /api/v1/quota/batch
 │       ├── feeds.py         # /api/v1/feeds/deltas, /api/v1/feeds/runs, /api/v1/feeds/exports/{term}/{format}
-│       ├── scraper.py       # /api/v1/scraper/trigger, /status, /stop, /logs
-│       └── legacy.py        # /api/* — the surface the React frontend calls
+│       └── scraper.py       # /api/v1/scraper/trigger, /status, /stop, /logs, /config
 └── cli/
     └── app.py               # Typer CLI: scrape, serve, daemon, export, quota
 ```
@@ -64,7 +64,7 @@ src/boun_scrape/
 ## 3. Subsystem Breakdown
 
 ### 3.1 Application Factory & Lifecycle (`api/app.py`)
-- `create_app(settings: Settings | None = None) -> FastAPI` builds the app: sets up buffered logging, instantiates `FastAPI(title="boun-scrape API", version="0.2.0", lifespan=lifespan)`, attaches per-app `login_rate_limiter` and `quota_rate_limiter` to `app.state`, configures `CORSMiddleware` from `Settings.allowed_origins`, registers a `GET /` health check (`HealthCheckDTO`), registers exception handlers for `ScrapeAlreadyRunningError` (409), `ScrapeSchedulerError` (500), and `ValueError` (400), then mounts `courses_router`, `quota_router`, `feeds_router`, `scraper_router` under `/api/v1` and `legacy_router` under `/api`.
+- `create_app(settings: Settings | None = None) -> FastAPI` builds the app: sets up buffered logging, instantiates `FastAPI(title="boun-scrape API", version="0.2.0", lifespan=lifespan)`, attaches per-app `login_rate_limiter` and `quota_rate_limiter` to `app.state`, configures `CORSMiddleware` from `Settings.allowed_origins`, registers a `GET /` health check (`HealthCheckDTO`), registers exception handlers for `ScrapeAlreadyRunningError` (409), `ScrapeSchedulerError` (500), and `ValueError` (400), then mounts `auth_router`, `courses_router`, `quota_router`, `feeds_router`, `scraper_router` — all under `/api/v1`.
 - The `lifespan` async context manager runs `DatabaseManager(settings.db_path).init_db()` on startup so schema exists before the first request.
 
 ### 3.2 Storage Layer (`storage/database.py`, `storage/repository.py`)
@@ -73,8 +73,8 @@ src/boun_scrape/
 
 ### 3.3 Security & Authentication (`api/auth.py`)
 - **JWT**: hand-rolled HS256 implementation — `create_jwt_token`/`verify_jwt_token` build/verify a `header.payload.signature` token using base64url encoding and `hmac.new(..., hashlib.sha256)`. This is **not** `python-jose` or any third-party JWT library; it's ~80 lines of stdlib `hmac`/`base64`/`json`. Tokens default to a 1-day expiry (`exp`/`iat` claims).
-- **Password verification**: `verify_password(plain, hash)` calls `bcrypt.checkpw` exclusively. No plaintext comparison, no legacy hash fallback — an invalid (non-bcrypt) hash simply fails verification.
-- **`get_current_user`**: FastAPI dependency reading the `Authorization: Bearer` header via `OAuth2PasswordBearer(tokenUrl="/api/auth/login", auto_error=False)`, verifying the JWT against `settings.jwt_secret_key`, and returning the `sub` claim (username). Raises 401 if missing/invalid.
+- **Password verification**: `verify_password(plain, hash)` calls `bcrypt.checkpw` exclusively. No plaintext comparison, no alternate hash fallback — an invalid (non-bcrypt) hash simply fails verification.
+- **`get_current_user`**: FastAPI dependency reading the `Authorization: Bearer` header via `OAuth2PasswordBearer(tokenUrl="/api/v1/auth/login", auto_error=False)`, verifying the JWT against `settings.jwt_secret_key`, and returning the `sub` claim (username). Raises 401 if missing/invalid.
 - **Secrets**: `Settings.jwt_secret_key` and `Settings.admin_password_hash` are `None` by default with no hardcoded fallback values. See `config.py`'s `_resolve_secrets` model validator — production (non-dev `ENVIRONMENT`) startup fails loudly if either is unset; dev environments get an ephemeral generated secret/password instead.
 
 ### 3.4 Rate Limiting (`api/rate_limit.py`)

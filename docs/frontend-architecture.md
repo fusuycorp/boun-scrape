@@ -14,7 +14,7 @@ This document details the single-page web application in `frontend/` — a React
 - **Package manager**: Bun (`bun.lock`) or npm.
 - **Production web server**: Nginx Alpine, reverse-proxying `/api` to the backend container.
 
-The frontend talks exclusively to the **legacy** `/api/*` router (see [api-reference.md](api-reference.md)) — it does not use `/api/v1/*` at all. All requests go through a single client module (`src/api/client.js`).
+The frontend talks exclusively to the `/api/v1/*` surface (see [api-reference.md](api-reference.md)). All requests go through a single client module (`src/api/client.js`).
 
 ---
 
@@ -31,7 +31,7 @@ src/
 │   └── client.js              # Centralized fetch wrapper: apiRequest(), api.{login,getStats,getCourses,...}
 ├── components/
 │   ├── Sidebar.jsx            # Navigation sidebar
-│   ├── Dashboard.jsx          # System stats overview (/api/stats)
+│   ├── Dashboard.jsx          # System stats overview (/api/v1/stats)
 │   ├── ScraperControl.jsx     # Scrape trigger, status polling, log viewer
 │   ├── CourseData.jsx         # Searchable/filterable course grid, CSV export
 │   ├── QuotaMonitor.jsx       # Live quota watchlist with interval polling
@@ -41,7 +41,7 @@ src/
 │   ├── EmptyState.jsx         # Reusable empty-data callout
 │   └── Toast.jsx              # Toast notification provider/container
 ├── contexts/
-│   └── AuthContext.jsx        # AuthProvider: token state, session validation via GET /api/auth/me, login/logout
+│   └── AuthContext.jsx        # AuthProvider: token state, session validation via GET /api/v1/auth/me, login/logout
 └── hooks/
     ├── useToast.js             # Toast context accessor hook
     └── useSafeAsync.js         # useMountedRef / useSafeCallback: guards against post-unmount state updates
@@ -82,29 +82,29 @@ Configured in `src/App.jsx`:
 
 ## 5. Auth Flow (`contexts/AuthContext.jsx`, `api/client.js`)
 
-- `AuthProvider` initializes `token` from `localStorage.getItem('token')`. On mount (and whenever `token` changes), it calls `GET /api/auth/me` to validate the session; a failed call clears the token and user state.
-- `login(username, password)` posts form-encoded credentials to `POST /api/auth/login`, stores the returned `access_token` in `localStorage`, and re-validates via `/api/auth/me`.
+- `AuthProvider` initializes `token` from `localStorage.getItem('token')`. On mount (and whenever `token` changes), it calls `GET /api/v1/auth/me` to validate the session; a failed call clears the token and user state.
+- `login(username, password)` posts form-encoded credentials to `POST /api/v1/auth/login`, stores the returned `access_token` in `localStorage`, and re-validates via `/api/v1/auth/me`.
 - `api/client.js`'s `apiRequest()` attaches `Authorization: Bearer <token>` to every request automatically, and on a `401` response clears the stored token and redirects to `/login`.
-- `isAuthenticated` is derived as `!!user` (i.e. a stored token alone isn't sufficient — the session must have been validated against `/api/auth/me`).
+- `isAuthenticated` is derived as `!!user` (i.e. a stored token alone isn't sufficient — the session must have been validated against `/api/v1/auth/me`).
 
 ---
 
 ## 6. Key Component Behaviors
 
 ### `ScraperControl.jsx`
-Triggers `POST /api/scrape/start`, polls `GET /api/scrape/status` and `GET /api/scrape/logs` while a cycle is active, and renders buffered log lines in a terminal-style scroll container.
+Triggers `POST /api/v1/scraper/trigger`, polls `GET /api/v1/scraper/status` and `GET /api/v1/scraper/logs` while a cycle is active, and renders buffered log lines in a terminal-style scroll container.
 
 ### `CourseData.jsx`
-Debounced text search plus term/department/day filters against `GET /api/courses`. Builds a CSV client-side from the fetched rows and downloads it as a `Blob` with a UTF-8 BOM prefix, to preserve Turkish characters when opened in Excel.
+Debounced text search plus term/department/day filters against `GET /api/v1/courses`. Builds a CSV client-side from the fetched rows and downloads it as a `Blob` with a UTF-8 BOM prefix, to preserve Turkish characters when opened in Excel.
 
 ### `QuotaMonitor.jsx`
-Maintains a client-side watchlist of course sections. When `pollingActive`, runs `pollAllQuotas()` immediately and then on a `setInterval` timer, calling `GET /api/quota/check` for each watched section. Uses `useMountedRef` (from `hooks/useSafeAsync.js`) to guard against setting state after unmount.
+Maintains a client-side watchlist of course sections. When `pollingActive`, runs `pollAllQuotas()` immediately and then on a `setInterval` timer, calling `GET /api/v1/quota` for each watched section. Uses `useMountedRef` (from `hooks/useSafeAsync.js`) to guard against setting state after unmount.
 
 ### `ConfigManager.jsx`
-Reads/writes scraper configuration (currently just session cookies) via `GET`/`POST /api/config`.
+Reads/writes scraper configuration (currently just session cookies) via `GET`/`POST /api/v1/scraper/config`.
 
 ### `Dashboard.jsx`
-Renders aggregate counts from `GET /api/stats` (`total_courses`, `total_slots`, `departments`, `terms`, `last_scraped`).
+Renders aggregate counts from `GET /api/v1/stats` (`total_courses`, `total_slots`, `total_departments`, `total_terms`, `last_scraped`).
 
 ---
 

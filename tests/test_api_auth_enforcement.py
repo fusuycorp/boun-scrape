@@ -26,6 +26,8 @@ async def test_scraper_routes_require_auth(app) -> None:
         assert (await client.get("/api/v1/scraper/status")).status_code == 401
         assert (await client.post("/api/v1/scraper/stop")).status_code == 401
         assert (await client.get("/api/v1/scraper/logs")).status_code == 401
+        assert (await client.get("/api/v1/scraper/config")).status_code == 401
+        assert (await client.post("/api/v1/scraper/config", json={"cookies": "x"})).status_code == 401
 
 
 @pytest.mark.asyncio
@@ -45,11 +47,39 @@ async def test_login_rate_limited_after_repeated_failures(app) -> None:
     async with AsyncClient(transport=transport, base_url="http://test") as client:
         for _ in range(5):
             resp = await client.post(
-                "/api/auth/login", data={"username": "admin", "password": "wrong"}
+                "/api/v1/auth/login", data={"username": "admin", "password": "wrong"}
             )
             assert resp.status_code == 401
 
         resp = await client.post(
-            "/api/auth/login", data={"username": "admin", "password": "wrong"}
+            "/api/v1/auth/login", data={"username": "admin", "password": "wrong"}
         )
         assert resp.status_code == 429
+
+
+@pytest.mark.asyncio
+async def test_auth_me_requires_auth(app) -> None:
+    transport = ASGITransport(app=app)
+    async with AsyncClient(transport=transport, base_url="http://test") as client:
+        assert (await client.get("/api/v1/auth/me")).status_code == 401
+
+
+@pytest.mark.asyncio
+async def test_login_and_me_round_trip(app) -> None:
+    transport = ASGITransport(app=app)
+    async with AsyncClient(transport=transport, base_url="http://test") as client:
+        fail_res = await client.post(
+            "/api/v1/auth/login", data={"username": "admin", "password": "wrongpassword"}
+        )
+        assert fail_res.status_code == 401
+
+        login_res = await client.post(
+            "/api/v1/auth/login", data={"username": "admin", "password": "admin"}
+        )
+        assert login_res.status_code == 200
+        token = login_res.json()["access_token"]
+        headers = {"Authorization": f"Bearer {token}"}
+
+        me_res = await client.get("/api/v1/auth/me", headers=headers)
+        assert me_res.status_code == 200
+        assert me_res.json()["username"] == "admin"
