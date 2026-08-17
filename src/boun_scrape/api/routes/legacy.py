@@ -35,10 +35,6 @@ class Token(BaseModel):
 class UserInfo(BaseModel):
     username: str
 
-class ScrapeStartRequest(BaseModel):
-    phase: Optional[str] = "all"
-    force_refresh: Optional[bool] = False
-
 class ScraperConfigUpdate(BaseModel):
     cookies: Optional[str] = None
     response_html: Optional[str] = None
@@ -203,7 +199,6 @@ async def update_config(
 
 @router.post("/scrape/start")
 async def start_scrape(
-    req: ScrapeStartRequest,
     scheduler: ScrapeScheduler = Depends(get_scheduler),
     current_user: str = Depends(get_current_user),
 ):

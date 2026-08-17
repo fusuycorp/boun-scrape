@@ -4,9 +4,6 @@ import {
   Square,
   Terminal as TerminalIcon,
   RefreshCw,
-  Clock,
-  Layers,
-  Database,
   Trash2,
   Copy,
   Check,
@@ -24,12 +21,11 @@ export default function ScraperControl() {
   const [status, setStatus] = useState({ phase: null, status: 'idle', progress: null });
   const [logs, setLogs] = useState([]);
   const [terms, setTerms] = useState([]);
-  const [forceRefresh, setForceRefresh] = useState(false);
 
-  const [startingPhase, setStartingPhase] = useState(null);
+  const [starting, setStarting] = useState(false);
   const [stopping, setStopping] = useState(false);
   const [copied, setCopied] = useState(false);
-  const [confirmPhase, setConfirmPhase] = useState(null);
+  const [confirmOpen, setConfirmOpen] = useState(false);
 
   const autoScrollRef = useRef(true);
 
@@ -79,17 +75,17 @@ export default function ScraperControl() {
     }
   }, [logs]);
 
-  const handleStartPhase = async (phase) => {
-    setConfirmPhase(null);
-    setStartingPhase(phase);
+  const handleStart = async () => {
+    setConfirmOpen(false);
+    setStarting(true);
     try {
-      await api.startScrape(phase, forceRefresh);
-      showToast(`LAUNCHED_${phase.toUpperCase()}_SUCCESSFULLY`, 'success');
+      await api.startScrape();
+      showToast('SCRAPE_CYCLE_LAUNCHED_SUCCESSFULLY', 'success');
       pollScraper();
     } catch (err) {
-      showToast(err.message || `FAILED_TO_LAUNCH_${phase.toUpperCase()}`, 'error');
+      showToast(err.message || 'FAILED_TO_LAUNCH_SCRAPE_CYCLE', 'error');
     } finally {
-      if (isMountedRef.current) setStartingPhase(null);
+      if (isMountedRef.current) setStarting(false);
     }
   };
 
@@ -123,45 +119,6 @@ export default function ScraperControl() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const phases = [
-    {
-      id: 'phase1',
-      num: '01',
-      title: 'STAGE_1: TERM_DISCOVERY',
-      script: 'scraper.py',
-      description: 'Posts ASP.NET ViewState form requests to discover and download semester index pages.',
-      icon: Clock,
-      color: 'var(--neon-cyan)',
-    },
-    {
-      id: 'phase2',
-      num: '02',
-      title: 'STAGE_2: DEPARTMENT_CATALOG',
-      script: 'parse_responses.py',
-      description: 'Extracts department links and outputs deduplicated catalog into departments_all.json.',
-      icon: Layers,
-      color: 'var(--neon-green)',
-    },
-    {
-      id: 'phase3',
-      num: '03',
-      title: 'STAGE_3: SCHEDULE_CRAWLER',
-      script: 'scrape_all_schedules.py',
-      description: 'Multi-threaded downloader (10 workers) fetching raw department HTML schedule files.',
-      icon: TerminalIcon,
-      color: 'var(--neon-pink)',
-    },
-    {
-      id: 'phase4',
-      num: '04',
-      title: 'STAGE_4: SQLITE_DATABASE_ETL',
-      script: 'parse_schedules_to_db.py',
-      description: 'Parallel parser compiling HTML tables into SQLite with atomic batch transactions.',
-      icon: Database,
-      color: 'var(--neon-amber)',
-    },
-  ];
-
   const isRunning = status.status === 'running';
 
   return (
@@ -179,37 +136,12 @@ export default function ScraperControl() {
             /// INGESTION_PIPELINE_CONTROLLER
           </h1>
           <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginTop: '4px' }}>
-            Orchestrate background crawling stages and inspect live stdout terminal buffer streams.
+            Trigger a full scrape cycle and inspect live stdout terminal buffer streams.
           </p>
         </div>
 
         {/* Global Controls */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <label
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '8px',
-              padding: '6px 12px',
-              background: 'var(--bg-secondary)',
-              border: '1px solid var(--border-hard)',
-              color: forceRefresh ? 'var(--neon-amber)' : 'var(--text-muted)',
-              fontSize: '11px',
-              fontWeight: 700,
-              cursor: 'pointer',
-              userSelect: 'none',
-              fontFamily: 'var(--font-mono)',
-            }}
-          >
-            <input
-              type="checkbox"
-              checked={forceRefresh}
-              onChange={(e) => setForceRefresh(e.target.checked)}
-              style={{ accentColor: 'var(--neon-amber)' }}
-            />
-            <span>[FORCE_REFRESH]</span>
-          </label>
-
           {isRunning && (
             <button
               onClick={handleStop}
@@ -262,62 +194,44 @@ export default function ScraperControl() {
         </div>
       )}
 
-      {/* 4 Pipeline Stage Cards Grid */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
-        {phases.map((stage) => {
-          const Icon = stage.icon;
-          const isCurrentPhase = status.phase === stage.id && isRunning;
-          const isPending = startingPhase === stage.id;
+      {/* Single Trigger Control */}
+      <div
+        className="cyber-card"
+        style={{
+          border: isRunning ? '2px solid var(--neon-green)' : '1px solid var(--border-hard)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: '16px',
+          flexWrap: 'wrap',
+        }}
+      >
+        <div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <TerminalIcon size={13} style={{ color: 'var(--neon-green)' }} />
+            <h3 style={{ fontSize: '12px', margin: 0, color: 'var(--text-primary)' }}>
+              FULL_SCRAPE_CYCLE
+            </h3>
+          </div>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '11px', lineHeight: '1.4', margin: '6px 0 0' }}>
+            Discovers the latest term, crawls every department's schedule, detects changes,
+            persists to the database, exports artifacts, and dispatches webhooks.
+          </p>
+        </div>
 
-          return (
-            <div
-              key={stage.id}
-              className="cyber-card"
-              style={{
-                border: isCurrentPhase ? '2px solid var(--neon-green)' : '1px solid var(--border-hard)',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-              }}
-            >
-              <div>
-                <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '8px', marginBottom: '10px' }}>
-                  <div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <span style={{ color: stage.color, fontSize: '10px', fontWeight: 700 }}>
-                        [{stage.num}]
-                      </span>
-                      <h3 style={{ fontSize: '12px', margin: 0, color: 'var(--text-primary)' }}>
-                        {stage.title}
-                      </h3>
-                    </div>
-                    <code style={{ fontSize: '10px', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>
-                      //_{stage.script}
-                    </code>
-                  </div>
-
-                  <button
-                    onClick={() => setConfirmPhase(stage.id)}
-                    disabled={isRunning || isPending}
-                    className="btn-cyber btn-cyber-primary"
-                    style={{ fontSize: '10px', padding: '5px 10px' }}
-                  >
-                    {isPending ? (
-                      <RefreshCw size={11} className="animate-spin" />
-                    ) : (
-                      <Play size={11} fill="currentColor" />
-                    )}
-                    <span>[EXEC]</span>
-                  </button>
-                </div>
-
-                <p style={{ color: 'var(--text-secondary)', fontSize: '11px', lineHeight: '1.4', margin: 0 }}>
-                  {stage.description}
-                </p>
-              </div>
-            </div>
-          );
-        })}
+        <button
+          onClick={() => setConfirmOpen(true)}
+          disabled={isRunning || starting}
+          className="btn-cyber btn-cyber-primary"
+          style={{ fontSize: '11px', padding: '8px 16px' }}
+        >
+          {starting ? (
+            <RefreshCw size={13} className="animate-spin" />
+          ) : (
+            <Play size={13} fill="currentColor" />
+          )}
+          <span>[EXEC]</span>
+        </button>
       </div>
 
       {/* Server Terminal Stream Log Monitor */}
@@ -365,7 +279,7 @@ export default function ScraperControl() {
         >
           {logs.length === 0 ? (
             <div style={{ color: 'var(--text-muted)', textAlign: 'center', padding: '40px 0' }}>
-              &gt; AWAITING_PIPELINE_OUTPUT... LAUNCH A STAGE TO INGEST TELEMETRY.
+              &gt; AWAITING_PIPELINE_OUTPUT... LAUNCH A SCRAPE CYCLE TO INGEST TELEMETRY.
             </div>
           ) : (
             logs.map((line, i) => (
@@ -378,15 +292,15 @@ export default function ScraperControl() {
       </div>
 
       {/* Confirmation Modal */}
-      {confirmPhase && (
+      {confirmOpen && (
         <ConfirmDialog
-          open={Boolean(confirmPhase)}
-          title={`EXECUTE_${confirmPhase.toUpperCase()}?`}
-          description={`Confirm execution trigger for ${confirmPhase}. This will initiate background crawling against university registration servers.`}
-          confirmLabel="[EXECUTE_STAGE]"
+          open={confirmOpen}
+          title="EXECUTE_SCRAPE_CYCLE?"
+          description="Confirm execution trigger. This will initiate a full background crawl against university registration servers."
+          confirmLabel="[EXECUTE]"
           cancelLabel="[ABORT]"
-          onConfirm={() => handleStartPhase(confirmPhase)}
-          onCancel={() => setConfirmPhase(null)}
+          onConfirm={handleStart}
+          onCancel={() => setConfirmOpen(false)}
         />
       )}
     </div>
