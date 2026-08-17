@@ -103,8 +103,7 @@ export const api = {
   // Scraper Control
   getScraperConfig: () => apiRequest('/config'),
   updateScraperConfig: (data) => apiRequest('/config', { method: 'POST', body: data }),
-  startScrape: (phase, force_refresh = false) =>
-    apiRequest('/scrape/start', { method: 'POST', body: { phase, force_refresh } }),
+  startScrape: () => apiRequest('/scrape/start', { method: 'POST' }),
   stopScrape: () => apiRequest('/scrape/stop', { method: 'POST' }),
   getScrapeStatus: () => apiRequest('/scrape/status'),
   getScrapeTerms: () => apiRequest('/scrape/terms'),
