@@ -8,7 +8,7 @@
 
 - **Repository**: `boun-scrape` — Boğaziçi University course registration schedule scraper, change-detection service, and REST API, with a small React admin dashboard.
 - **Backend**: Single Python package `src/boun_scrape/`, Python 3.12+, FastAPI + Uvicorn, fully async (`httpx`, `asyncio`). Package manager: `uv`.
-- **Frontend**: React 19 + Vite + Tailwind CSS v4, terminal/cyberpunk design system. Located in `frontend/`. Calls the legacy `/api/*` router only.
+- **Frontend**: React 19 + Vite + Tailwind CSS v4, terminal/cyberpunk design system. Located in `frontend/`. Calls the `/api/v1/*` surface exclusively.
 - **Database**: SQLite (WAL mode), single file at `Settings.db_path` (default `schedules.db`, `/data/schedules.db` in containers).
 - **Reverse proxy**: Nginx (frontend container) forwards `/api` to `backend:8000`.
 
@@ -31,7 +31,7 @@ boun-scrape/
 │   ├── backend-architecture.md     # Python package module-by-module breakdown
 │   ├── frontend-architecture.md    # React SPA structure & design system
 │   ├── scraping-pipeline.md        # Scrape flow, parsing, delta detection, quota proxy
-│   ├── api-reference.md            # /api/v1/* and legacy /api/* endpoint reference
+│   ├── api-reference.md            # /api/v1/* endpoint reference
 │   ├── database-schema.md          # SQLite DDL, indexes, PRAGMAs
 │   └── llm-context.md              # THIS FILE
 │
@@ -62,7 +62,7 @@ boun-scrape/
 │   │   ├── auth.py                   # Hand-rolled JWT (HS256) + bcrypt password verification
 │   │   ├── rate_limit.py             # Per-IP sliding window RateLimiter
 │   │   ├── deps.py                   # DI providers
-│   │   └── routes/                   # courses.py, quota.py, feeds.py, scraper.py (/api/v1), legacy.py (/api)
+│   │   └── routes/                   # auth.py, courses.py, quota.py, feeds.py, scraper.py — all under /api/v1
 │   └── cli/
 │       └── app.py                    # Typer CLI: scrape, serve, daemon, export, quota
 │
@@ -73,7 +73,7 @@ boun-scrape/
     └── src/
         ├── App.jsx                    # Router, providers, ProtectedRoute, status ticker bars
         ├── index.css                  # Terminal/cyberpunk design tokens
-        ├── api/client.js              # apiRequest() fetch wrapper + api.* methods (calls legacy /api/*)
+        ├── api/client.js              # apiRequest() fetch wrapper + api.* methods (calls /api/v1/* exclusively)
         ├── contexts/AuthContext.jsx   # Token state, session validation
         ├── hooks/useSafeAsync.js      # useMountedRef / useSafeCallback
         └── components/
@@ -180,7 +180,7 @@ docker compose up -d --build
 ```
 - Frontend: `http://localhost:5173`
 - API + OpenAPI docs: `http://localhost:8000/docs`
-- Note: this does **not** start the scheduler daemon — only `serve` (the API). Scraping must be triggered via `POST /api/v1/scraper/trigger` / `POST /api/scrape/start`, or by running `boun-scrape daemon` as a separate process.
+- Note: this does **not** start the scheduler daemon — only `serve` (the API). Scraping must be triggered via `POST /api/v1/scraper/trigger`, or by running `boun-scrape daemon` as a separate process.
 
 ### Tests
 ```bash

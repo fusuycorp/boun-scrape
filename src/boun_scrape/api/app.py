@@ -10,11 +10,11 @@ from fastapi.responses import JSONResponse
 from boun_scrape.api.logging_buffer import setup_api_logging
 from boun_scrape.api.rate_limit import RateLimiter
 from boun_scrape.api.routes import (
+    auth_router,
     courses_router,
     feeds_router,
     quota_router,
     scraper_router,
-    legacy_router,
 )
 from boun_scrape.config import Settings, get_settings
 from boun_scrape.domain.dto import HealthCheckDTO
@@ -106,12 +106,10 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         )
 
     # Mount API v1 route modules
+    app.include_router(auth_router, prefix="/api/v1")
     app.include_router(courses_router, prefix="/api/v1")
     app.include_router(quota_router, prefix="/api/v1")
     app.include_router(feeds_router, prefix="/api/v1")
     app.include_router(scraper_router, prefix="/api/v1")
-
-    # Mount legacy compatibility router for existing frontend dashboard
-    app.include_router(legacy_router, prefix="/api")
 
     return app

@@ -1,6 +1,6 @@
 """Course catalog, department, and term query endpoints."""
 
-from typing import Annotated
+from typing import Annotated, Any
 
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 
@@ -106,3 +106,26 @@ def get_terms(
 ) -> list[str]:
     """Retrieve list of unique academic terms present in the system."""
     return repo.get_terms()
+
+
+@router.get("/stats", summary="Get aggregate database statistics")
+def get_stats(repo: Annotated[CourseRepository, Depends(get_course_repo_dep)]) -> dict[str, Any]:
+    """Retrieve aggregate course, slot, department, and term counts plus last scrape time."""
+    terms = repo.get_terms()
+    depts = repo.get_departments()
+    latest_run = repo.get_latest_run()
+
+    with repo.db.connection() as conn:
+        cursor = conn.cursor()
+        cursor.execute("SELECT COUNT(*) FROM courses")
+        total_courses = cursor.fetchone()[0]
+        cursor.execute("SELECT COUNT(*) FROM course_slots")
+        total_slots = cursor.fetchone()[0]
+
+    return {
+        "total_courses": total_courses,
+        "total_slots": total_slots,
+        "total_departments": len(depts),
+        "total_terms": len(terms),
+        "last_scraped": latest_run.completed_at if latest_run else None,
+    }

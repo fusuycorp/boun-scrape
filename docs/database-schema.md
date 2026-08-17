@@ -219,9 +219,11 @@ SELECT DISTINCT term FROM departments
 ORDER BY term DESC;
 ```
 
-### 6.3 Legacy `/api/stats` aggregate counts
+### 6.3 `GET /api/v1/stats` aggregate counts
 ```sql
 SELECT COUNT(*) FROM courses;
 SELECT COUNT(*) FROM course_slots;
 ```
-(department and term counts are derived from `CourseRepository.get_departments()` / `get_terms()` in Python, not a single SQL aggregate query.)
+Response fields: `total_courses`, `total_slots` (from the queries above), `total_departments` /
+`total_terms` (derived from `CourseRepository.get_departments()` / `get_terms()` in Python, not a
+single SQL aggregate query), and `last_scraped` (the most recent `scrape_runs.completed_at`).

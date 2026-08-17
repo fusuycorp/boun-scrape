@@ -166,6 +166,7 @@ class ScrapeStatusDTO(BaseModel):
     last_run_time: str | None = None
     next_run_time: str | None = None
     last_run_summary: dict[str, Any] | None = None
+    current_progress: dict[str, Any] | None = None
 
 
 class LogEntryDTO(BaseModel):

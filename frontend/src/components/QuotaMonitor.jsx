@@ -65,7 +65,7 @@ export default function QuotaMonitor() {
     try {
       const res = await api.checkQuota(item.abbr, item.code, item.section, item.term);
       if (isMountedRef.current) {
-        setQuotaData((prev) => ({ ...prev, [key]: res }));
+        setQuotaData((prev) => ({ ...prev, [key]: { success: true, data: res } }));
       }
     } catch (err) {
       if (isMountedRef.current) {

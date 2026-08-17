@@ -11,7 +11,6 @@ import {
   ShieldCheck,
   RefreshCw,
   Cookie,
-  FileCode2,
 } from 'lucide-react';
 import { api } from '../api/client';
 import { useMountedRef } from '../hooks/useSafeAsync';
@@ -32,7 +31,7 @@ export default function Dashboard() {
       setRefreshing(true);
       const [statsRes, configRes] = await Promise.all([
         api.getStats().catch(() => ({ total_courses: 0, total_slots: 0, total_departments: 0, total_terms: 0 })),
-        api.getScraperConfig().catch(() => ({ cookie_loaded: false, seed_html_loaded: false })),
+        api.getScraperConfig().catch(() => ({ cookie_loaded: false })),
       ]);
 
       if (isMountedRef.current) {
@@ -199,28 +198,6 @@ export default function Dashboard() {
                   <span className="cyber-badge cyber-badge-amber">[! MISSING]</span>
                 )}
               </div>
-
-              {/* Seed HTML */}
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  padding: '10px 12px',
-                  background: 'var(--bg-primary)',
-                  border: '1px solid var(--border-dim)',
-                }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <FileCode2 size={14} style={{ color: 'var(--neon-pink)' }} />
-                  <span style={{ fontSize: '11px', color: 'var(--text-primary)' }}>SEED: response.html</span>
-                </div>
-                {configStatus?.seed_html_loaded ? (
-                  <span className="cyber-badge cyber-badge-green">[● READY]</span>
-                ) : (
-                  <span className="cyber-badge cyber-badge-amber">[! UNSET]</span>
-                )}
-              </div>
             </div>
           </div>
 
@@ -262,10 +239,10 @@ export default function Dashboard() {
               onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'var(--border-hard)')}
             >
               <div style={{ color: 'var(--neon-green)', fontSize: '11px', fontWeight: 700, marginBottom: '4px' }}>
-                [EXEC &gt;&gt;] 01_PIPELINE_RUNNER
+                [EXEC &gt;&gt;] 02_PIPELINE_RUNNER
               </div>
               <div style={{ color: 'var(--text-secondary)', fontSize: '10px' }}>
-                Stages 1-4 pipeline execution with live stdout memory buffer.
+                Full ingestion cycle trigger with live stdout memory buffer.
               </div>
             </button>
 
@@ -283,7 +260,7 @@ export default function Dashboard() {
               onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'var(--border-hard)')}
             >
               <div style={{ color: 'var(--neon-cyan)', fontSize: '11px', fontWeight: 700, marginBottom: '4px' }}>
-                [EXEC &gt;&gt;] 02_DATABASE_EXPLORER
+                [EXEC &gt;&gt;] 03_DATABASE_EXPLORER
               </div>
               <div style={{ color: 'var(--text-secondary)', fontSize: '10px' }}>
                 Timetable lookup, day-hour slot filtering, and UTF-8 CSV exports.
@@ -304,7 +281,7 @@ export default function Dashboard() {
               onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'var(--border-hard)')}
             >
               <div style={{ color: 'var(--neon-pink)', fontSize: '11px', fontWeight: 700, marginBottom: '4px' }}>
-                [EXEC &gt;&gt;] 03_LIVE_QUOTA_RADAR
+                [EXEC &gt;&gt;] 04_LIVE_QUOTA_RADAR
               </div>
               <div style={{ color: 'var(--text-secondary)', fontSize: '10px' }}>
                 Real-time 10s auto-polling radar for course section capacities.

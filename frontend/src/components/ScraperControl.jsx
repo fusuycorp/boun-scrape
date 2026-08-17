@@ -18,7 +18,7 @@ export default function ScraperControl() {
   const isMountedRef = useMountedRef();
   const logTerminalRef = useRef(null);
 
-  const [status, setStatus] = useState({ phase: null, status: 'idle', progress: null });
+  const [status, setStatus] = useState({ is_scraping: false, current_progress: null });
   const [logs, setLogs] = useState([]);
   const [terms, setTerms] = useState([]);
 
@@ -29,18 +29,19 @@ export default function ScraperControl() {
 
   const autoScrollRef = useRef(true);
 
+  const formatLogEntry = (entry) =>
+    `[${new Date(entry.timestamp).toLocaleTimeString('en-GB')}] [${entry.level}] ${entry.message}`;
+
   const pollScraper = async () => {
     try {
       const [statusRes, logsRes] = await Promise.all([
-        api.getScrapeStatus().catch(() => ({ phase: null, status: 'idle', progress: null })),
-        api.getScrapeLogs().catch(() => ({ logs: [] })),
+        api.getScrapeStatus().catch(() => ({ is_scraping: false, current_progress: null })),
+        api.getScrapeLogs().catch(() => []),
       ]);
 
       if (isMountedRef.current) {
         setStatus(statusRes);
-        if (logsRes.logs) {
-          setLogs(logsRes.logs);
-        }
+        setLogs(logsRes.map(formatLogEntry));
       }
     } catch {
       // Ignore transient polling errors
@@ -49,9 +50,9 @@ export default function ScraperControl() {
 
   const fetchTerms = async () => {
     try {
-      const data = await api.getScrapeTerms();
-      if (isMountedRef.current && data.terms) {
-        setTerms(data.terms);
+      const data = await api.getTerms();
+      if (isMountedRef.current && data) {
+        setTerms(data);
       }
     } catch {
       // Ignore
@@ -119,7 +120,11 @@ export default function ScraperControl() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const isRunning = status.status === 'running';
+  const isRunning = status.is_scraping;
+  const progress = status.current_progress;
+  const percent = progress?.total
+    ? Math.round((progress.completed / progress.total) * 1000) / 10
+    : isRunning ? 0 : 100;
 
   return (
     <div className="animate-fade-in" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
@@ -170,25 +175,25 @@ export default function ScraperControl() {
               <RefreshCw size={15} className="animate-spin" style={{ color: 'var(--neon-green)' }} />
               <div>
                 <div style={{ color: 'var(--neon-green)', fontSize: '11px', fontWeight: 800, letterSpacing: '0.08em' }}>
-                  EXECUTING: {status.phase?.toUpperCase()}
+                  EXECUTING: {progress?.department ? `DEPT: ${progress.department.toUpperCase()}` : 'SCRAPING'}
                 </div>
                 <div style={{ color: 'var(--text-secondary)', fontSize: '10px' }}>
-                  {status.progress?.current && status.progress?.total
-                    ? `Processed ${status.progress.current} of ${status.progress.total} department tasks`
+                  {progress?.completed && progress?.total
+                    ? `Processed ${progress.completed} of ${progress.total} department tasks`
                     : 'Crawling stream active...'}
                 </div>
               </div>
             </div>
 
             <span style={{ color: 'var(--neon-green)', fontSize: '18px', fontWeight: 800, fontFamily: 'var(--font-mono)' }}>
-              {status.progress?.percent !== undefined ? `${status.progress.percent.toFixed(1)}%` : 'ACTIVE'}
+              {`${percent.toFixed(1)}%`}
             </span>
           </div>
 
           <div className="cyber-progress">
             <div
               className="cyber-progress-fill"
-              style={{ width: `${Math.min(100, Math.max(0, status.progress?.percent || 0))}%` }}
+              style={{ width: `${Math.min(100, Math.max(0, percent))}%` }}
             />
           </div>
         </div>

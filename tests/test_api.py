@@ -43,6 +43,7 @@ def test_settings(tmp_path: Path) -> Settings:
     return Settings(
         db_path=str(db_file),
         export_dir=str(export_dir),
+        cookies_path=str(tmp_path / "cookies.txt"),
         allowed_origins=["http://localhost:3000", "http://localhost:5173"],
     )
 
@@ -204,6 +205,7 @@ def mock_scheduler(seeded_repo: CourseRepository, test_settings: Settings) -> Sc
             "completed_at": "2026-08-15T01:05:00Z",
             "error_message": None,
         },
+        "current_progress": {"completed": 3, "total": 12, "department": "CMPE"},
     }
     sched.execute_scrape_cycle = AsyncMock(
         return_value=ScrapeRunSummary(
@@ -303,6 +305,17 @@ class TestApiEndpoints:
         assert response.status_code == 200
         depts = response.json()
         assert len(depts) == 2
+
+    @pytest.mark.asyncio
+    async def test_get_stats(self, async_client: AsyncClient) -> None:
+        response = await async_client.get("/api/v1/stats")
+        assert response.status_code == 200
+        data = response.json()
+        assert data["total_courses"] == 3
+        assert data["total_departments"] == 2
+        assert data["total_terms"] == 1
+        assert data["total_slots"] == 7
+        assert data["last_scraped"] == "2026-08-15T01:05:00Z"
 
     @pytest.mark.asyncio
     async def test_get_courses_pagination(self, async_client: AsyncClient) -> None:
@@ -489,6 +502,7 @@ class TestApiEndpoints:
         data = response.json()
         assert data["is_running"] is True
         assert data["run_count"] == 1
+        assert data["current_progress"] == {"completed": 3, "total": 12, "department": "CMPE"}
 
     @pytest.mark.asyncio
     async def test_scraper_stop(self, async_client: AsyncClient, mock_scheduler: ScrapeScheduler) -> None:
@@ -510,3 +524,29 @@ class TestApiEndpoints:
         err_logs = err_resp.json()
         assert len(err_logs) == 1
         assert err_logs[0]["level"] == "ERROR"
+
+    @pytest.mark.asyncio
+    async def test_scraper_logs_clear(self, async_client: AsyncClient, test_log_buffer: LogBuffer) -> None:
+        response = await async_client.get("/api/v1/scraper/logs?clear=true")
+        assert response.status_code == 200
+        assert len(response.json()) == 3
+        assert len(test_log_buffer) == 0
+
+        second_response = await async_client.get("/api/v1/scraper/logs")
+        assert second_response.json() == []
+
+    @pytest.mark.asyncio
+    async def test_scraper_config_round_trip(self, async_client: AsyncClient, test_settings: Settings) -> None:
+        empty_response = await async_client.get("/api/v1/scraper/config")
+        assert empty_response.status_code == 200
+        assert empty_response.json() == {"cookie_loaded": False}
+
+        update_response = await async_client.post(
+            "/api/v1/scraper/config", json={"cookies": "ASP.NET_SessionId=abc123"}
+        )
+        assert update_response.status_code == 200
+        assert update_response.json()["status"] == "ok"
+        assert Path(test_settings.cookies_path).read_text() == "ASP.NET_SessionId=abc123"
+
+        loaded_response = await async_client.get("/api/v1/scraper/config")
+        assert loaded_response.json() == {"cookie_loaded": True}

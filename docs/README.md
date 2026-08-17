@@ -12,7 +12,7 @@ Welcome to the architectural and technical documentation for **boun-scrape** —
 | [**`backend-architecture.md`**](backend-architecture.md) | Module-by-module breakdown of `src/boun_scrape/` — domain, scraper, storage, pipeline, feeds, scheduler, api, cli. | Backend engineers, API integrators |
 | [**`frontend-architecture.md`**](frontend-architecture.md) | React 19 SPA structure, terminal/cyberpunk design system, routes, auth flow, key components. | Frontend engineers |
 | [**`scraping-pipeline.md`**](scraping-pipeline.md) | Term/department discovery, schedule parsing, slot tokenization, SHA-256 change detection, live quota proxy. | Data engineers |
-| [**`api-reference.md`**](api-reference.md) | Complete REST endpoint reference — both `/api/v1/*` (typed) and legacy `/api/*` (frontend-facing) surfaces. | Integration engineers, API clients |
+| [**`api-reference.md`**](api-reference.md) | Complete REST endpoint reference for the `/api/v1/*` surface. | Integration engineers, API clients |
 | [**`database-schema.md`**](database-schema.md) | SQLite table definitions, indexes, PRAGMAs, atomic write path, query patterns. | Database-curious engineers |
 | [**`llm-context.md`**](llm-context.md) | Condensed single-file repo map, env vars, and key code signatures for AI coding assistants. | LLMs, AI assistants |
 
@@ -35,7 +35,7 @@ Welcome to the architectural and technical documentation for **boun-scrape** —
                                     v
                         +-----------------------+
                         |  FastAPI (Backend)     |
-                        |  /api/v1/* + /api/*    |
+                        |      /api/v1/*         |
                         +-----+-----------+-----+
                               |           |
                   Reads/Writes|           | Triggers on demand

@@ -1,15 +1,19 @@
 """Scraper execution, control, status, and logging endpoints."""
 
+import os
 from typing import Annotated, Any
 
 from fastapi import APIRouter, Depends, HTTPException, Query, status
+from pydantic import BaseModel, Field
 
 from boun_scrape.api.auth import get_current_user
 from boun_scrape.api.deps import (
     get_log_buffer_dep,
     get_scrape_scheduler_dep,
+    get_settings_dep,
 )
 from boun_scrape.api.logging_buffer import LogBuffer
+from boun_scrape.config import Settings
 from boun_scrape.domain.dto import (
     LogEntryDTO,
     ScrapeRunDTO,
@@ -23,6 +27,10 @@ from boun_scrape.scheduler.runner import (
 )
 
 router = APIRouter(tags=["Scraper"])
+
+
+class CookieUpdateRequest(BaseModel):
+    cookies: str = Field(min_length=1)
 
 
 @router.post(
@@ -89,6 +97,7 @@ def get_scraper_status(
         last_run_time=stat["last_run_time"],
         next_run_time=stat["next_run_time"],
         last_run_summary=stat["last_run_summary"],
+        current_progress=stat.get("current_progress"),
     )
 
 
@@ -117,7 +126,33 @@ def get_scraper_logs(
     log_buffer: Annotated[LogBuffer, Depends(get_log_buffer_dep)],
     limit: int = Query(default=100, ge=1, le=1000, description="Max log lines to return"),
     level: str | None = Query(default=None, description="Minimum log level filter (INFO, WARNING, ERROR)"),
+    clear: bool = Query(default=False, description="Clear the buffer after reading"),
     current_user: str = Depends(get_current_user),
 ) -> list[LogEntryDTO]:
     """Retrieve in-memory circular log records for monitoring and debugging."""
-    return log_buffer.get_logs(limit=limit, level=level)
+    logs = log_buffer.get_logs(limit=limit, level=level)
+    if clear:
+        log_buffer.clear()
+    return logs
+
+
+@router.get("/scraper/config", summary="Get scraper cookie configuration status")
+def get_scraper_config(
+    settings: Annotated[Settings, Depends(get_settings_dep)],
+    current_user: str = Depends(get_current_user),
+) -> dict[str, bool]:
+    """Report whether a non-empty session cookie file is currently mounted."""
+    cookie_loaded = os.path.exists(settings.cookies_path) and os.path.getsize(settings.cookies_path) > 0
+    return {"cookie_loaded": cookie_loaded}
+
+
+@router.post("/scraper/config", summary="Update scraper session cookies")
+def update_scraper_config(
+    payload: CookieUpdateRequest,
+    settings: Annotated[Settings, Depends(get_settings_dep)],
+    current_user: str = Depends(get_current_user),
+) -> dict[str, str]:
+    """Write a new session cookie string to the scraper's cookie file."""
+    with open(settings.cookies_path, "w", encoding="utf-8") as f:
+        f.write(payload.cookies)
+    return {"status": "ok", "message": "Cookie configuration updated."}
