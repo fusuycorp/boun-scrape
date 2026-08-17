@@ -224,13 +224,23 @@ async def get_scrape_status(
     current_user: str = Depends(get_current_user),
 ):
     status_info = scheduler.get_status()
+    is_scraping = status_info.get("is_scraping", False)
+    progress = status_info.get("current_progress")
+
+    if progress and progress.get("total"):
+        current, total = progress["completed"], progress["total"]
+        percent = round((current / total) * 100, 1)
+    else:
+        current, total = (0, 100) if is_scraping else (100, 100)
+        percent = 0.0 if is_scraping else 100.0
+
     return {
-        "phase": "scraping" if status_info.get("is_cycle_running") else None,
-        "status": "running" if status_info.get("is_cycle_running") else "idle",
+        "phase": "scraping" if is_scraping else None,
+        "status": "running" if is_scraping else "idle",
         "progress": {
-            "total": 100,
-            "current": 100 if not status_info.get("is_cycle_running") else 50,
-            "percent": 100.0 if not status_info.get("is_cycle_running") else 50.0,
+            "total": total,
+            "current": current,
+            "percent": percent,
         },
     }
 
