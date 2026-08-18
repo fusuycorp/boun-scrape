@@ -3,6 +3,7 @@
 import asyncio
 from pathlib import Path
 import signal
+import sys
 from typing import Annotated
 
 import typer
@@ -19,7 +20,7 @@ from boun_scrape.pipeline.exporter import (
     generate_all_exports,
 )
 from boun_scrape.scheduler.runner import ScrapeScheduler
-from boun_scrape.scraper.client import BounScraperClient
+from boun_scrape.scraper.client import BounScraperClient, parse_curl_command
 from boun_scrape.scraper.flow import discover_terms
 from boun_scrape.scraper.quota import QuotaService
 from boun_scrape.storage.database import DatabaseManager
@@ -38,6 +39,10 @@ def scrape_command(
         str | None,
         typer.Option("--term", "-t", help="Academic term identifier (e.g. '2024/2025-1')"),
     ] = None,
+    all_terms: Annotated[
+        bool,
+        typer.Option("--all-terms", help="Scrape every term the portal currently exposes, not just one"),
+    ] = False,
     no_export: Annotated[
         bool,
         typer.Option("--no-export", help="Disable generation of JSON, CSV, and SQLite artifacts"),
@@ -46,12 +51,20 @@ def scrape_command(
         bool,
         typer.Option("--no-webhooks", help="Disable outbound webhook notifications"),
     ] = False,
+    capture_quota: Annotated[
+        bool,
+        typer.Option("--capture-quota", help="Also capture a live quota snapshot for every scraped course section (rate-limit-sensitive; opt-in)"),
+    ] = False,
     db_path: Annotated[
         str | None,
         typer.Option("--db", help="Override SQLite database path"),
     ] = None,
 ) -> None:
     """Execute an immediate full scrape cycle for the specified term."""
+    if all_terms and term:
+        typer.secho("Cannot combine --term with --all-terms.", fg=typer.colors.RED)
+        raise typer.Exit(code=1)
+
     cfg = get_settings()
     actual_db = db_path or cfg.db_path
     db_mgr = DatabaseManager(actual_db)
@@ -72,19 +85,34 @@ def scrape_command(
 
     async def _run() -> None:
         try:
-            summary = await scheduler.execute_scrape_cycle(
-                term=term,
-                export=not no_export,
-                dispatch_webhooks=not no_webhooks,
-            )
-            typer.secho(f"\nScrape cycle completed successfully! [Run: {summary.run_id}]", fg=typer.colors.GREEN, bold=True)
-            typer.echo(f"  Term:                {summary.term}")
-            typer.echo(f"  Status:              {summary.status.value if isinstance(summary.status, RunStatus) else summary.status}")
-            typer.echo(f"  Total Courses:       {summary.total_courses}")
-            typer.echo(f"  Total Slots:         {summary.total_slots}")
-            typer.echo(f"  Changes Detected:    {summary.changes_detected}")
-            typer.echo(f"  Started At:          {summary.started_at}")
-            typer.echo(f"  Completed At:        {summary.completed_at}")
+            if all_terms:
+                summaries = await scheduler.execute_all_terms_cycle(
+                    export=not no_export,
+                    dispatch_webhooks=not no_webhooks,
+                    capture_quota=capture_quota,
+                )
+                typer.secho(
+                    f"\nAll-terms scrape cycle completed: {len(summaries)} term(s) scraped.",
+                    fg=typer.colors.GREEN, bold=True,
+                )
+                for s in summaries:
+                    status_str = s.status.value if isinstance(s.status, RunStatus) else s.status
+                    typer.echo(f"  - {s.term}: {status_str} ({s.total_courses} courses, {s.changes_detected} changes)")
+            else:
+                summary = await scheduler.execute_scrape_cycle(
+                    term=term,
+                    export=not no_export,
+                    dispatch_webhooks=not no_webhooks,
+                    capture_quota=capture_quota,
+                )
+                typer.secho(f"\nScrape cycle completed successfully! [Run: {summary.run_id}]", fg=typer.colors.GREEN, bold=True)
+                typer.echo(f"  Term:                {summary.term}")
+                typer.echo(f"  Status:              {summary.status.value if isinstance(summary.status, RunStatus) else summary.status}")
+                typer.echo(f"  Total Courses:       {summary.total_courses}")
+                typer.echo(f"  Total Slots:         {summary.total_slots}")
+                typer.echo(f"  Changes Detected:    {summary.changes_detected}")
+                typer.echo(f"  Started At:          {summary.started_at}")
+                typer.echo(f"  Completed At:        {summary.completed_at}")
         finally:
             await scheduler.aclose()
 
@@ -309,6 +337,51 @@ def quota_command(
             await quota_service.aclose()
 
     asyncio.run(_fetch())
+
+
+@app.command(name="import-curl")
+def import_curl_command(
+    file: Annotated[
+        Path | None,
+        typer.Option("--file", "-f", help="Path to a file containing the curl command (omit to read from stdin)"),
+    ] = None,
+) -> None:
+    """Extract session cookies and a reCAPTCHA token from a pasted 'Copy as cURL' command.
+
+    Paste the exact curl command copied from browser devtools (Network tab ->
+    right-click the request -> Copy as cURL) after a live, human-solved
+    reCAPTCHA challenge. Writes the cookie header to cookies.txt and, if a
+    ctl00$cphMainContent$gRecResp / g-recaptcha-response field is present in
+    the POST body, the token to recaptcha_token.txt.
+    """
+    cfg = get_settings()
+    raw = file.read_text(encoding="utf-8") if file else sys.stdin.read()
+    if not raw.strip():
+        typer.secho("No curl command provided (empty input).", fg=typer.colors.RED)
+        raise typer.Exit(code=1)
+
+    extracted = parse_curl_command(raw)
+    found_anything = False
+
+    if extracted["cookies"]:
+        Path(cfg.cookies_path).write_text(extracted["cookies"], encoding="utf-8")
+        typer.secho(f"Wrote session cookies to {cfg.cookies_path}", fg=typer.colors.GREEN)
+        found_anything = True
+    else:
+        typer.secho("No cookies (-b/--cookie or Cookie header) found in the curl command.", fg=typer.colors.YELLOW)
+
+    if extracted["recaptcha_token"]:
+        Path(cfg.recaptcha_token_path).write_text(extracted["recaptcha_token"], encoding="utf-8")
+        typer.secho(f"Wrote reCAPTCHA token to {cfg.recaptcha_token_path}", fg=typer.colors.GREEN)
+        found_anything = True
+    else:
+        typer.secho(
+            "No reCAPTCHA token (gRecResp field) found in the curl command's POST body.",
+            fg=typer.colors.YELLOW,
+        )
+
+    if not found_anything:
+        raise typer.Exit(code=1)
 
 
 def main() -> None:

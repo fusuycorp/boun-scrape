@@ -117,6 +117,26 @@ class ScrapeSnapshot:
 
 
 @dataclass(slots=True, kw_only=True)
+class TermScrapeResult:
+    """Result of scraping a single term, including per-department success/failure tracking."""
+
+    courses: list[Course]
+    succeeded_departments: list[str] = field(default_factory=list)
+    failed_departments: list[str] = field(default_factory=list)
+
+
+@dataclass(slots=True, kw_only=True)
+class QuotaSnapshot:
+    """Point-in-time captured quota reading for a course section, persisted per scrape cycle."""
+
+    term: str
+    course_code: str
+    section: str
+    record: QuotaRecord
+    captured_at: str | None = None
+
+
+@dataclass(slots=True, kw_only=True)
 class ScrapeRunSummary:
     """Summary of a scrape execution."""
 

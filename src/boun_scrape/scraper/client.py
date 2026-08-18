@@ -3,8 +3,10 @@
 import asyncio
 import os
 import random
+import shlex
 from pathlib import Path
 from typing import Any, Self
+from urllib.parse import parse_qs
 
 import httpx
 
@@ -101,6 +103,68 @@ def parse_cookie_file(file_path: str | Path) -> dict[str, str]:
         return {}
 
 
+def load_recaptcha_token(file_path: str) -> str:
+    """Load a manually-solved reCAPTCHA response token from a file, if present.
+
+    Google reCAPTCHA v2 tokens are single-use and short-lived (~2 minutes), so
+    there is no way to generate one programmatically — a human must solve the
+    challenge in a real browser and paste the resulting token here.
+    """
+    path = Path(file_path)
+    if not path.is_file():
+        return ""
+    try:
+        return path.read_text(encoding="utf-8", errors="replace").strip()
+    except OSError:
+        return ""
+
+
+RECAPTCHA_FIELD_NAMES = ("ctl00$cphMainContent$gRecResp", "g-recaptcha-response")
+
+
+def parse_curl_command(curl_text: str) -> dict[str, str]:
+    """Extract the session cookie header and reCAPTCHA token from a pasted curl command.
+
+    Accepts a curl command copied verbatim from browser devtools ("Copy as cURL"),
+    including multi-line commands with trailing backslash line continuations.
+    Returns {"cookies": str, "recaptcha_token": str} — either may be "" if not found.
+    """
+    normalized = curl_text.replace("\\\r\n", " ").replace("\\\n", " ")
+    try:
+        tokens = shlex.split(normalized)
+    except ValueError:
+        tokens = normalized.split()
+
+    cookies = ""
+    recaptcha_token = ""
+
+    i = 0
+    while i < len(tokens):
+        token = tokens[i]
+        if token in ("-b", "--cookie") and i + 1 < len(tokens):
+            cookies = tokens[i + 1]
+            i += 2
+            continue
+        if token in ("-H", "--header") and i + 1 < len(tokens):
+            name, _, value = tokens[i + 1].partition(":")
+            if name.strip().lower() == "cookie":
+                cookies = value.strip()
+            i += 2
+            continue
+        if token in ("-d", "--data", "--data-raw", "--data-binary", "--data-urlencode") and i + 1 < len(tokens):
+            parsed_body = parse_qs(tokens[i + 1], keep_blank_values=True)
+            for field_name in RECAPTCHA_FIELD_NAMES:
+                values = parsed_body.get(field_name)
+                if values and values[0]:
+                    recaptcha_token = values[0]
+                    break
+            i += 2
+            continue
+        i += 1
+
+    return {"cookies": cookies, "recaptcha_token": recaptcha_token}
+
+
 def decode_windows_1254(content: bytes) -> str:
     """Decode raw bytes into string using windows-1254 encoding."""
     return content.decode("windows-1254", errors="replace")
@@ -113,6 +177,7 @@ class BounScraperClient:
         self,
         base_url: str | None = None,
         cookies_path: str | None = None,
+        recaptcha_token_path: str | None = None,
         timeout: float | None = None,
         max_concurrency: int | None = None,
         min_jitter: float | None = None,
@@ -124,6 +189,9 @@ class BounScraperClient:
 
         self.base_url = (base_url or cfg.base_url).rstrip("/")
         self.cookies_path = cookies_path if cookies_path is not None else cfg.cookies_path
+        self.recaptcha_token_path = (
+            recaptcha_token_path if recaptcha_token_path is not None else cfg.recaptcha_token_path
+        )
         self.timeout = timeout if timeout is not None else cfg.request_timeout
         self.max_concurrency = (
             max_concurrency if max_concurrency is not None else cfg.max_concurrency
@@ -159,6 +227,16 @@ class BounScraperClient:
         """Access the client's cookie jar."""
         return self._client.cookies
 
+    @property
+    def recaptcha_token(self) -> str:
+        """Manually-solved reCAPTCHA token, re-read from disk on every access.
+
+        Unlike cookies (loaded once at construction), this is re-read each
+        time because the client is often long-lived/shared while the token
+        itself is single-use and expires in ~2 minutes.
+        """
+        return load_recaptcha_token(self.recaptcha_token_path) if self.recaptcha_token_path else ""
+
     async def __aenter__(self) -> Self:
         """Async context manager enter."""
         return self
@@ -192,7 +270,10 @@ class BounScraperClient:
         if RECAPTCHA_ERROR_MARKER in text:
             raise RecaptchaBlockedError(
                 "Boğaziçi registration server blocked the request with reCAPTCHA. "
-                "Please update cookies.txt with an active session."
+                "Update cookies.txt with an active session, and/or recaptcha_token.txt "
+                "with a freshly solved reCAPTCHA response token (solve the widget in a "
+                "real browser and paste the g-recaptcha-response value — it is single-use "
+                "and expires in ~2 minutes)."
             )
 
         return response

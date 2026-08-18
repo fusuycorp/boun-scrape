@@ -1,5 +1,7 @@
 """Unit and integration tests for BounScraperClient and flow pipeline."""
 
+from urllib.parse import parse_qs
+
 import httpx
 import pytest
 
@@ -9,8 +11,10 @@ from boun_scrape.scraper.client import (
     BounScraperClient,
     RecaptchaBlockedError,
     decode_windows_1254,
+    load_recaptcha_token,
     parse_cookie_file,
     parse_cookie_text,
+    parse_curl_command,
 )
 from boun_scrape.scraper.flow import (
     discover_terms,
@@ -99,6 +103,53 @@ class TestCookieParsing:
         assert parse_cookie_file(tmp_path / "nonexistent.txt") == {}
 
 
+class TestRecaptchaTokenLoading:
+    """Tests for loading a manually-solved reCAPTCHA token from a file."""
+
+    def test_load_recaptcha_token_from_file(self, tmp_path) -> None:
+        file = tmp_path / "recaptcha_token.txt"
+        file.write_text("  a-fresh-token-value  \n", encoding="utf-8")
+        assert load_recaptcha_token(str(file)) == "a-fresh-token-value"
+
+    def test_load_recaptcha_token_missing_file(self, tmp_path) -> None:
+        assert load_recaptcha_token(str(tmp_path / "nonexistent.txt")) == ""
+
+
+class TestParseCurlCommand:
+    """Tests for extracting cookies/reCAPTCHA token from a pasted curl command."""
+
+    def test_extracts_cookie_flag_and_recaptcha_field(self) -> None:
+        curl_text = (
+            "curl 'https://registration.bogazici.edu.tr/BUIS/General/schedule.aspx?p=semester' \\\n"
+            "  -H 'Accept: text/html' \\\n"
+            "  -b 'ASP.NET_SessionId=abc123; ASPSESSIONIDXYZ=def456' \\\n"
+            "  -H 'Origin: https://registration.bogazici.edu.tr' \\\n"
+            "  --data-raw '__VIEWSTATE=someVsValue&ctl00%24cphMainContent%24ddlSemester=2024%2F2025-1"
+            "&ctl00%24cphMainContent%24gRecResp=solved-token-value'"
+        )
+        result = parse_curl_command(curl_text)
+        assert result["cookies"] == "ASP.NET_SessionId=abc123; ASPSESSIONIDXYZ=def456"
+        assert result["recaptcha_token"] == "solved-token-value"
+
+    def test_extracts_cookie_from_header_flag(self) -> None:
+        curl_text = "curl 'https://example.com' -H 'Cookie: session=xyz789'"
+        result = parse_curl_command(curl_text)
+        assert result["cookies"] == "session=xyz789"
+
+    def test_missing_recaptcha_field_returns_empty(self) -> None:
+        curl_text = (
+            "curl 'https://example.com' -b 'session=abc' "
+            "--data-raw 'ctl00%24cphMainContent%24gRecResp='"
+        )
+        result = parse_curl_command(curl_text)
+        assert result["cookies"] == "session=abc"
+        assert result["recaptcha_token"] == ""
+
+    def test_no_cookie_or_data_returns_empty_dict_values(self) -> None:
+        result = parse_curl_command("curl 'https://example.com'")
+        assert result == {"cookies": "", "recaptcha_token": ""}
+
+
 class TestScraperClient:
     """Tests for BounScraperClient behaviors, retries, and errors."""
 
@@ -170,6 +221,25 @@ class TestScraperClient:
             assert attempts == 3
 
     @pytest.mark.asyncio
+    async def test_recaptcha_token_property_rereads_file_fresh(self, tmp_path) -> None:
+        file = tmp_path / "recaptcha_token.txt"
+        file.write_text("first-token", encoding="utf-8")
+
+        async_client = httpx.AsyncClient(
+            transport=httpx.MockTransport(lambda r: httpx.Response(200)),
+            base_url="https://registration.bogazici.edu.tr",
+        )
+        async with BounScraperClient(
+            http_client=async_client,
+            recaptcha_token_path=str(file),
+            min_jitter=0,
+            max_jitter=0,
+        ) as client:
+            assert client.recaptcha_token == "first-token"
+            file.write_text("second-token", encoding="utf-8")
+            assert client.recaptcha_token == "second-token"
+
+    @pytest.mark.asyncio
     async def test_client_fails_when_retries_exhausted(self) -> None:
         def handler(request: httpx.Request) -> httpx.Response:
             return httpx.Response(502, text="Bad Gateway")
@@ -228,6 +298,65 @@ class TestScraperFlow:
             assert departments[1].code == "MATH"
 
     @pytest.mark.asyncio
+    async def test_fetch_departments_empty_post_does_not_substitute_wrong_term(self) -> None:
+        EMPTY_DEPT_HTML = """
+        <!DOCTYPE html>
+        <html><body>
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="vs_token_123" />
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="gen_token_456" />
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="val_token_789" />
+        </body></html>
+        """
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            if request.method == "POST":
+                # POST for the requested term returns no department table.
+                return httpx.Response(200, content=EMPTY_DEPT_HTML.encode("windows-1254"))
+            # Initial GET reflects a different (portal-default) term with departments.
+            return httpx.Response(200, content=SAMPLE_SEMESTER_HTML.encode("windows-1254"))
+
+        transport = httpx.MockTransport(handler)
+        async_client = httpx.AsyncClient(
+            transport=transport, base_url="https://registration.bogazici.edu.tr"
+        )
+
+        async with BounScraperClient(
+            http_client=async_client, min_jitter=0, max_jitter=0
+        ) as client:
+            departments = await fetch_departments(client, "2023/2024-3")
+            assert departments == []
+
+    @pytest.mark.asyncio
+    async def test_fetch_departments_includes_recaptcha_token_in_post_body(self, tmp_path) -> None:
+        token_file = tmp_path / "recaptcha_token.txt"
+        token_file.write_text("solved-token-value", encoding="utf-8")
+        captured_bodies: list[bytes] = []
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            if request.method == "POST":
+                captured_bodies.append(request.content)
+            return httpx.Response(
+                200, content=SAMPLE_SEMESTER_HTML.encode("windows-1254")
+            )
+
+        transport = httpx.MockTransport(handler)
+        async_client = httpx.AsyncClient(
+            transport=transport, base_url="https://registration.bogazici.edu.tr"
+        )
+
+        async with BounScraperClient(
+            http_client=async_client,
+            recaptcha_token_path=str(token_file),
+            min_jitter=0,
+            max_jitter=0,
+        ) as client:
+            await fetch_departments(client, "2024/2025-1")
+
+        assert len(captured_bodies) == 1
+        posted = parse_qs(captured_bodies[0].decode("utf-8"))
+        assert posted["ctl00$cphMainContent$gRecResp"] == ["solved-token-value"]
+
+    @pytest.mark.asyncio
     async def test_fetch_department_schedule(self) -> None:
         def handler(request: httpx.Request) -> httpx.Response:
             return httpx.Response(
@@ -276,13 +405,45 @@ class TestScraperFlow:
         async with BounScraperClient(
             http_client=async_client, min_jitter=0, max_jitter=0
         ) as client:
-            all_courses = await scrape_term_pipeline(
+            result = await scrape_term_pipeline(
                 client,
                 "2024/2025-1",
                 progress_callback=on_progress,
                 concurrency=2,
             )
-            assert len(all_courses) == 2  # 1 course each for 2 depts
+            assert len(result.courses) == 2  # 1 course each for 2 depts
+            assert sorted(result.succeeded_departments) == ["CMPE", "MATH"]
+            assert result.failed_departments == []
             assert len(progress_calls) == 2
             assert progress_calls[-1][0] == 2
             assert progress_calls[-1][1] == 2
+
+    @pytest.mark.asyncio
+    async def test_scrape_term_pipeline_reports_partial_department_failure(self) -> None:
+        def handler(request: httpx.Request) -> httpx.Response:
+            if "schedule.aspx" in request.url.path:
+                return httpx.Response(
+                    200, content=SAMPLE_SEMESTER_HTML.encode("windows-1254")
+                )
+            if "sch.asp" in request.url.path:
+                if "kisaadi=CMPE" in str(request.url):
+                    return httpx.Response(500, text="Internal Server Error")
+                return httpx.Response(
+                    200, content=SAMPLE_SCHEDULE_HTML.encode("windows-1254")
+                )
+            return httpx.Response(404)
+
+        transport = httpx.MockTransport(handler)
+        async_client = httpx.AsyncClient(
+            transport=transport, base_url="https://registration.bogazici.edu.tr"
+        )
+
+        async with BounScraperClient(
+            http_client=async_client, min_jitter=0, max_jitter=0
+        ) as client:
+            result = await scrape_term_pipeline(
+                client, "2024/2025-1", concurrency=2,
+            )
+            assert result.succeeded_departments == ["MATH"]
+            assert result.failed_departments == ["CMPE"]
+            assert len(result.courses) == 1

@@ -9,7 +9,9 @@ from boun_scrape.domain.dto import (
     DepartmentDTO,
     PaginatedResponse,
     QuotaDTO,
+    QuotaSnapshotDTO,
     ScrapeRunDTO,
+    quota_snapshot_to_dto,
 )
 from boun_scrape.domain.events import ChangeType, CourseDeltaEvent, ScrapeEvent
 from boun_scrape.domain.models import (
@@ -18,6 +20,7 @@ from boun_scrape.domain.models import (
     DayOfWeek,
     Department,
     QuotaRecord,
+    QuotaSnapshot,
     QuotaStatus,
     RunStatus,
     ScrapeRunSummary,
@@ -161,3 +164,29 @@ class TestDTOValidation:
         assert params.department == "CMPE"
         assert params.page == 2
         assert params.size == 25
+
+    def test_quota_snapshot_to_dto_conversion(self) -> None:
+        record = QuotaRecord(
+            department="CMPE",
+            status="Open",
+            quota="30",
+            current="20",
+            quota_numeric=30,
+            current_numeric=20,
+            available=10,
+        )
+        snapshot = QuotaSnapshot(
+            term="2024/2025-1",
+            course_code="CMPE 150",
+            section="01",
+            record=record,
+            captured_at="2025-01-15 12:00:00",
+        )
+        dto = quota_snapshot_to_dto(snapshot)
+        assert isinstance(dto, QuotaSnapshotDTO)
+        assert dto.term == "2024/2025-1"
+        assert dto.course_code == "CMPE 150"
+        assert dto.section == "01"
+        assert dto.department == "CMPE"
+        assert dto.available == 10
+        assert dto.captured_at == "2025-01-15 12:00:00"

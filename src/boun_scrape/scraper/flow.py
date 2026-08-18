@@ -6,7 +6,7 @@ import logging
 from collections.abc import Callable
 from typing import Any
 
-from boun_scrape.domain.models import Course, Department
+from boun_scrape.domain.models import Course, Department, TermScrapeResult
 from boun_scrape.scraper.client import BounScraperClient
 from boun_scrape.scraper.parser import (
     extract_viewstate_and_semesters,
@@ -40,14 +40,14 @@ async def fetch_departments(client: BounScraperClient, term: str) -> list[Depart
         "__EVENTVALIDATION": vs_dict.get("__EVENTVALIDATION", ""),
         "ctl00$cphMainContent$ddlSemester": term,
         "ctl00$cphMainContent$btnSearch": "Go",
+        "ctl00$cphMainContent$gRecResp": client.recaptcha_token,
     }
 
     resp = await client.post(SCHEDULE_SEMESTER_URL, data=post_data)
     departments = parse_departments_from_html(resp.text)
 
-    # Fallback to initial GET if POST returned empty but initial had table
     if not departments:
-        departments = parse_departments_from_html(init_resp.text)
+        logger.warning("fetch_departments: no departments found in response for term %s", term)
 
     return departments
 
@@ -84,7 +84,7 @@ async def scrape_term_pipeline(
         Callable[[int, int, Department, list[Course]], Any] | None
     ) = None,
     concurrency: int = 10,
-) -> list[Course]:
+) -> TermScrapeResult:
     """Execute end-to-end term scraping pipeline with concurrency rate-limiting.
 
     Args:
@@ -95,11 +95,11 @@ async def scrape_term_pipeline(
         concurrency: Maximum number of concurrent department requests.
 
     Returns:
-        Aggregated list of all parsed courses and slots across departments.
+        TermScrapeResult with aggregated courses and per-department success/failure tracking.
     """
     departments = await fetch_departments(client, term)
     if not departments:
-        return []
+        return TermScrapeResult(courses=[], succeeded_departments=[], failed_departments=[])
 
     total_depts = len(departments)
     completed_count = 0
@@ -128,11 +128,15 @@ async def scrape_term_pipeline(
     )
     all_courses: list[Course] = []
     failures: list[tuple[Department, BaseException]] = []
+    succeeded_departments: list[str] = []
+    failed_departments: list[str] = []
     for dept, result in zip(departments, results):
         if isinstance(result, BaseException):
             failures.append((dept, result))
+            failed_departments.append(dept.code)
             continue
         all_courses.extend(result)
+        succeeded_departments.append(dept.code)
 
     if failures:
         logger.warning(
@@ -143,4 +147,8 @@ async def scrape_term_pipeline(
             ", ".join(f"{dept.code}: {exc}" for dept, exc in failures),
         )
 
-    return all_courses
+    return TermScrapeResult(
+        courses=all_courses,
+        succeeded_departments=succeeded_departments,
+        failed_departments=failed_departments,
+    )

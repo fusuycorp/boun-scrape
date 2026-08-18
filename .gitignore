@@ -1,6 +1,7 @@
 node_modules/
 dist/
 cookies.txt
+recaptcha_token.txt
 
 __pycache__/
 *.pyc

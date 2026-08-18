@@ -21,6 +21,7 @@ class Settings(BaseSettings):
     base_url: str = Field(default="https://registration.bogazici.edu.tr", validation_alias=AliasChoices("BOUN_BASE_URL", "BASE_URL", "base_url"))
     quota_url: str = Field(default="https://registration.boun.edu.tr", validation_alias=AliasChoices("BOUN_QUOTA_URL", "QUOTA_URL", "quota_url"))
     cookies_path: str = Field(default="cookies.txt", validation_alias=AliasChoices("BOUN_COOKIES_PATH", "COOKIES_PATH", "cookies_path"))
+    recaptcha_token_path: str = Field(default="recaptcha_token.txt", validation_alias=AliasChoices("BOUN_RECAPTCHA_TOKEN_PATH", "RECAPTCHA_TOKEN_PATH", "recaptcha_token_path"))
     max_concurrency: int = Field(default=10, validation_alias=AliasChoices("BOUN_MAX_CONCURRENCY", "MAX_CONCURRENCY", "max_concurrency"))
     request_timeout: float = Field(default=15.0, validation_alias=AliasChoices("BOUN_REQUEST_TIMEOUT", "REQUEST_TIMEOUT", "request_timeout"))
     min_jitter: float = Field(default=0.05, validation_alias=AliasChoices("BOUN_MIN_JITTER", "MIN_JITTER", "min_jitter"))

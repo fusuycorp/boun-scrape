@@ -17,6 +17,7 @@ from boun_scrape.pipeline.delta import compute_deltas
 from boun_scrape.pipeline.exporter import generate_all_exports
 from boun_scrape.scraper.client import BounScraperClient
 from boun_scrape.scraper.flow import discover_terms, scrape_term_pipeline
+from boun_scrape.scraper.quota import QuotaService, format_course_key
 from boun_scrape.storage.database import DatabaseManager
 from boun_scrape.storage.repository import CourseRepository
 
@@ -58,6 +59,8 @@ class ScrapeScheduler:
         else:
             self.client = BounScraperClient(settings=self.settings)
             self._owns_client = True
+
+        self.quota_service = QuotaService(client=self.client, settings=self.settings)
 
         # Repository
         if repository is not None:
@@ -120,6 +123,7 @@ class ScrapeScheduler:
         term: str | None = None,
         export: bool = True,
         dispatch_webhooks: bool = True,
+        capture_quota: bool = False,
     ) -> ScrapeRunSummary:
         """Execute a full scrape cycle with delta detection, persistence, exports, and feeds.
 
@@ -127,6 +131,9 @@ class ScrapeScheduler:
             term: Specific academic term (e.g. '2024/2025-1'). If None, discovers the latest term.
             export: If True, generate JSON, CSV, SQLite, and delta artifacts.
             dispatch_webhooks: If True, send events to configured webhook endpoints.
+            capture_quota: If True, additionally capture a live quota snapshot for every
+                scraped course section (rate-limit-sensitive against the registration
+                portal — opt-in, default off).
 
         Returns:
             ScrapeRunSummary entity containing run metrics.
@@ -176,12 +183,13 @@ class ScrapeScheduler:
                         run_id, dept.code, completed, total, len(courses),
                     )
 
-                current_courses = await scrape_term_pipeline(
+                result = await scrape_term_pipeline(
                     self.client,
                     term=target_term,
                     concurrency=self.settings.max_concurrency,
                     progress_callback=_on_department_progress,
                 )
+                current_courses = result.courses
                 logger.info(
                     "Scrape %s: finished scraping — %d courses total",
                     run_id, len(current_courses),
@@ -201,11 +209,38 @@ class ScrapeScheduler:
 
                 # 6. Atomic persistence of courses, slots, and deltas
                 self.repository.save_courses_and_slots(
-                    term=target_term, courses=current_courses
+                    term=target_term,
+                    courses=current_courses,
+                    scraped_departments=result.succeeded_departments,
                 )
                 if deltas:
                     self.repository.save_deltas(deltas=deltas, run_id=run_id)
                 logger.info("Scrape %s: persisted courses and deltas", run_id)
+
+                # 6.5. Optional quota snapshot capture (rate-limit-sensitive; opt-in)
+                if capture_quota:
+                    quota_items = [
+                        (target_term, c.department, c.course_code, c.section)
+                        for c in current_courses
+                    ]
+                    logger.info(
+                        "Scrape %s: capturing quota snapshots for %d course sections",
+                        run_id, len(quota_items),
+                    )
+                    quota_results = await self.quota_service.fetch_batch_quotas(
+                        quota_items, concurrency=self.settings.max_concurrency
+                    )
+                    for c in current_courses:
+                        key = format_course_key(c.department, c.course_code, c.section)
+                        records = quota_results.get(key, [])
+                        if records:
+                            self.repository.save_quota_snapshots(
+                                term=target_term,
+                                course_code=c.course_code,
+                                section=c.section,
+                                records=records,
+                            )
+                    logger.info("Scrape %s: quota snapshots captured", run_id)
 
                 # 7. Calculate run metrics
                 total_slots = sum(len(c.slots) for c in current_courses)
@@ -216,6 +251,10 @@ class ScrapeScheduler:
                 summary.total_courses = len(current_courses)
                 summary.total_slots = total_slots
                 summary.changes_detected = len(deltas)
+                summary.total_departments = len(result.succeeded_departments) + len(
+                    result.failed_departments
+                )
+                summary.completed_departments = len(result.succeeded_departments)
                 self.repository.save_scrape_run(summary)
 
                 # 8. Artifact exports
@@ -262,6 +301,53 @@ class ScrapeScheduler:
                 self._last_run_summary = summary
                 self._last_run_time = datetime.now(timezone.utc)
                 raise
+
+    async def execute_all_terms_cycle(
+        self,
+        export: bool = True,
+        dispatch_webhooks: bool = True,
+        capture_quota: bool = False,
+    ) -> list[ScrapeRunSummary]:
+        """Discover every term the portal currently exposes and scrape each one sequentially.
+
+        Each term is scraped as its own independent run (own run_id, own delta
+        computation, own persistence) via execute_scrape_cycle. A failure on one
+        term is logged and does not abort the remaining terms -- the returned
+        list only contains summaries for terms that completed (successfully or
+        not); a term whose exception propagated past execute_scrape_cycle is
+        skipped from the returned list but is still recorded in the scrape_runs
+        table with status FAILED by execute_scrape_cycle itself.
+        """
+        terms = await discover_terms(self.client)
+        if not terms:
+            raise ScrapeSchedulerError(
+                "No academic terms discovered from the registration portal."
+            )
+
+        logger.info(
+            "Starting all-terms scrape cycle: %d terms discovered: %s", len(terms), terms
+        )
+        summaries: list[ScrapeRunSummary] = []
+        for t in terms:
+            try:
+                summary = await self.execute_scrape_cycle(
+                    term=t,
+                    export=export,
+                    dispatch_webhooks=dispatch_webhooks,
+                    capture_quota=capture_quota,
+                )
+                summaries.append(summary)
+            except Exception:
+                logger.exception(
+                    "All-terms cycle: term %s failed, continuing with remaining terms", t
+                )
+
+        logger.info(
+            "All-terms scrape cycle complete: %d/%d terms succeeded",
+            len(summaries),
+            len(terms),
+        )
+        return summaries
 
     def _compute_next_delay(self) -> float:
         """Compute sleep seconds until the next execution timestamp."""

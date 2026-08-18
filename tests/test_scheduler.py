@@ -5,7 +5,7 @@ import asyncio
 import httpx
 import pytest
 
-from boun_scrape.domain.models import RunStatus
+from boun_scrape.domain.models import RunStatus, TermScrapeResult
 from boun_scrape.feeds.webhooks import WebhookDispatcher
 from boun_scrape.scheduler.runner import (
     ScrapeAlreadyRunningError,
@@ -28,6 +28,12 @@ def semester_html() -> str:
 @pytest.fixture
 def schedule_html() -> str:
     with open(FIXTURES_DIR / "sample_schedule.html", "r", encoding="utf-8") as f:
+        return f.read()
+
+
+@pytest.fixture
+def quota_html() -> str:
+    with open(FIXTURES_DIR / "sample_quota.html", "r", encoding="utf-8") as f:
         return f.read()
 
 
@@ -153,6 +159,184 @@ class TestScrapeScheduler:
             # Only summary webhook dispatched since 0 deltas
             assert len(webhook_payloads) == 1
             assert webhook_payloads[0]["event"] == "scrape.summary"
+
+            await scheduler.aclose()
+
+    @pytest.mark.asyncio
+    async def test_execute_scrape_cycle_partial_department_failure_preserves_prior_data(
+        self,
+        semester_html: str,
+        schedule_html: str,
+        tmp_path: Path,
+    ) -> None:
+        """Regression: a transient failure on one department during a re-scrape
+        must not delete previously-good data for that department (data-loss
+        bug found by code review -- save_courses_and_slots used to always
+        DELETE the whole term before reinserting only the current run's
+        courses, and a failed department is silently absent from that list)."""
+        fail_ad = {"value": False}
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            path = request.url.path
+            if "schedule.aspx" in path:
+                return httpx.Response(200, content=semester_html.encode("windows-1254"))
+            if "sch.asp" in path:
+                if fail_ad["value"] and "kisaadi=AD" in str(request.url):
+                    return httpx.Response(404)
+                return httpx.Response(200, content=schedule_html.encode("windows-1254"))
+            return httpx.Response(404)
+
+        transport = httpx.MockTransport(handler)
+        async with httpx.AsyncClient(transport=transport, base_url=BASE_URL) as scraper_http:
+            scraper_client = BounScraperClient(
+                http_client=scraper_http, min_jitter=0, max_jitter=0
+            )
+            db_mgr = DatabaseManager(str(tmp_path / "schedules.db"))
+            db_mgr.init_db()
+            repo = CourseRepository(db_mgr)
+
+            scheduler = ScrapeScheduler(
+                client=scraper_client,
+                repository=repo,
+                export_dir=tmp_path / "exports",
+                default_term="2024/2025-1",
+            )
+
+            # Run 1: both departments succeed.
+            summary1 = await scheduler.execute_scrape_cycle(export=False, dispatch_webhooks=False)
+            assert summary1.status == RunStatus.COMPLETED
+            ad_courses_run1 = [
+                c for c in repo.get_courses_by_term("2024/2025-1") if c.department == "AD"
+            ]
+            assert len(ad_courses_run1) > 0
+
+            # Run 2: AD now fails transiently; the other department still succeeds.
+            fail_ad["value"] = True
+            summary2 = await scheduler.execute_scrape_cycle(export=False, dispatch_webhooks=False)
+
+            # The run itself still completes -- per-department failures are
+            # swallowed inside scrape_term_pipeline, not propagated as a
+            # run-level failure.
+            assert summary2.status == RunStatus.COMPLETED
+            assert summary2.total_departments == 2
+            assert summary2.completed_departments == 1
+
+            # AD's previously-good data must survive untouched, not be deleted.
+            ad_courses_run2 = [
+                c for c in repo.get_courses_by_term("2024/2025-1") if c.department == "AD"
+            ]
+            assert len(ad_courses_run2) == len(ad_courses_run1)
+
+            await scheduler.aclose()
+
+    @pytest.mark.asyncio
+    async def test_execute_all_terms_cycle_scrapes_each_term_independently(
+        self,
+        semester_html: str,
+        schedule_html: str,
+        tmp_path: Path,
+        monkeypatch: pytest.MonkeyPatch,
+    ) -> None:
+        from boun_scrape.scheduler import runner as runner_module
+
+        async def fake_discover_terms(client):
+            return ["2024/2025-1", "2024/2025-2"]
+
+        monkeypatch.setattr(runner_module, "discover_terms", fake_discover_terms)
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            path = request.url.path
+            if "schedule.aspx" in path:
+                if request.method == "POST" and b"2024%2F2025-2" in request.content:
+                    return httpx.Response(404)
+                return httpx.Response(200, content=semester_html.encode("windows-1254"))
+            if "sch.asp" in path:
+                return httpx.Response(200, content=schedule_html.encode("windows-1254"))
+            return httpx.Response(404)
+
+        transport = httpx.MockTransport(handler)
+        async with httpx.AsyncClient(transport=transport, base_url=BASE_URL) as scraper_http:
+            scraper_client = BounScraperClient(
+                http_client=scraper_http, min_jitter=0, max_jitter=0
+            )
+            db_mgr = DatabaseManager(str(tmp_path / "schedules.db"))
+            db_mgr.init_db()
+            repo = CourseRepository(db_mgr)
+
+            scheduler = ScrapeScheduler(
+                client=scraper_client, repository=repo, export_dir=tmp_path / "exports",
+            )
+
+            summaries = await scheduler.execute_all_terms_cycle(
+                export=False, dispatch_webhooks=False
+            )
+
+            # Only the successful term's summary is returned; the failed term
+            # is logged and skipped, not aborting the loop.
+            assert len(summaries) == 1
+            assert summaries[0].term == "2024/2025-1"
+            assert summaries[0].status == RunStatus.COMPLETED
+            assert len(repo.get_courses_by_term("2024/2025-1")) > 0
+
+            # The failed term still gets its own FAILED run recorded by
+            # execute_scrape_cycle itself, proving it wasn't silently dropped.
+            failed_runs = repo.get_scrape_runs(term="2024/2025-2")
+            assert len(failed_runs) == 1
+            assert failed_runs[0].status == RunStatus.FAILED
+
+            await scheduler.aclose()
+
+    @pytest.mark.asyncio
+    async def test_execute_scrape_cycle_with_capture_quota_persists_snapshots(
+        self,
+        semester_html: str,
+        schedule_html: str,
+        quota_html: str,
+        tmp_path: Path,
+    ) -> None:
+        quota_request_count = 0
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            nonlocal quota_request_count
+            path = request.url.path
+            if "schedule.aspx" in path:
+                return httpx.Response(200, content=semester_html.encode("windows-1254"))
+            if "sch.asp" in path:
+                return httpx.Response(200, content=schedule_html.encode("windows-1254"))
+            if "quotasearch.asp" in path:
+                quota_request_count += 1
+                return httpx.Response(200, content=quota_html.encode("windows-1254"))
+            return httpx.Response(404)
+
+        transport = httpx.MockTransport(handler)
+
+        async with httpx.AsyncClient(transport=transport, base_url=BASE_URL) as scraper_http:
+            scraper_client = BounScraperClient(
+                http_client=scraper_http, min_jitter=0, max_jitter=0
+            )
+
+            db_mgr = DatabaseManager(str(tmp_path / "schedules.db"))
+            db_mgr.init_db()
+            repo = CourseRepository(db_mgr)
+
+            scheduler = ScrapeScheduler(
+                client=scraper_client,
+                repository=repo,
+                export_dir=tmp_path / "exports",
+                default_term="2024/2025-1",
+            )
+
+            # capture_quota omitted (default False): no quota HTTP calls, nothing persisted
+            await scheduler.execute_scrape_cycle(dispatch_webhooks=False)
+            assert quota_request_count == 0
+            assert repo.get_quota_snapshots() == []
+
+            # capture_quota=True: quota fetched and persisted per scraped course section
+            await scheduler.execute_scrape_cycle(dispatch_webhooks=False, capture_quota=True)
+            assert quota_request_count > 0
+            snapshots = repo.get_quota_snapshots(term="2024/2025-1")
+            assert len(snapshots) > 0
+            assert all(s.term == "2024/2025-1" for s in snapshots)
 
             await scheduler.aclose()
 
@@ -307,7 +491,7 @@ class TestScrapeScheduler:
 
         async def fake_scrape_term_pipeline(client, term, progress_callback=None, concurrency=10):
             captured_concurrency.append(concurrency)
-            return []
+            return TermScrapeResult(courses=[], succeeded_departments=[], failed_departments=[])
 
         monkeypatch.setattr(runner_module, "scrape_term_pipeline", fake_scrape_term_pipeline)
 

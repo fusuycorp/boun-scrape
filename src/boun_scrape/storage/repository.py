@@ -10,6 +10,8 @@ from boun_scrape.domain.models import (
     Course,
     CourseSlot,
     Department,
+    QuotaRecord,
+    QuotaSnapshot,
     RunStatus,
     ScrapeRunSummary,
 )
@@ -75,14 +77,31 @@ class CourseRepository:
                 [(d.code, d.name, term, d.bolum or d.url) for d in depts],
             )
 
-    def save_courses_and_slots(self, term: str, courses: list[Course]) -> int:
-        """Atomically replace all courses and slots for a given term.
+    def save_courses_and_slots(
+        self, term: str, courses: list[Course], scraped_departments: list[str] | None = None
+    ) -> int:
+        """Atomically replace courses and slots for a given term.
+
+        If `scraped_departments` is provided, only rows for those departments are
+        replaced -- departments not in this list (e.g. ones that failed to scrape
+        this run) are left untouched rather than deleted, so a transient failure
+        on one department never destroys previously-good data for it. Pass None
+        (the default) to replace the entire term unconditionally, matching the
+        old behavior.
 
         Returns the total number of courses persisted.
         """
         with self.db.transaction() as conn:
             # Foreign keys cascade slot deletion
-            conn.execute("DELETE FROM courses WHERE term = ?", (term,))
+            if scraped_departments is None:
+                conn.execute("DELETE FROM courses WHERE term = ?", (term,))
+            elif scraped_departments:
+                placeholders = ",".join("?" for _ in scraped_departments)
+                conn.execute(
+                    f"DELETE FROM courses WHERE term = ? AND department IN ({placeholders})",
+                    (term, *scraped_departments),
+                )
+            # else: scraped_departments == [] means nothing succeeded this run -- delete nothing.
 
             for course in courses:
                 content_hash = compute_course_hash(course)
@@ -315,14 +334,15 @@ class CourseRepository:
                 """
                 INSERT INTO scrape_runs (
                     run_id, term, started_at, completed_at,
-                    total_departments, total_courses, total_slots,
+                    total_departments, completed_departments, total_courses, total_slots,
                     changes_detected, status, error_message
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(run_id) DO UPDATE SET
                     term = excluded.term,
                     started_at = excluded.started_at,
                     completed_at = excluded.completed_at,
                     total_departments = excluded.total_departments,
+                    completed_departments = excluded.completed_departments,
                     total_courses = excluded.total_courses,
                     total_slots = excluded.total_slots,
                     changes_detected = excluded.changes_detected,
@@ -335,6 +355,7 @@ class CourseRepository:
                     summary.started_at,
                     summary.completed_at,
                     summary.total_departments,
+                    summary.completed_departments,
                     summary.total_courses,
                     summary.total_slots,
                     summary.changes_detected,
@@ -381,6 +402,7 @@ class CourseRepository:
                         term=r["term"],
                         status=status,
                         total_departments=r["total_departments"] or 0,
+                        completed_departments=r["completed_departments"] or 0,
                         total_courses=r["total_courses"] or 0,
                         total_slots=r["total_slots"] or 0,
                         changes_detected=r["changes_detected"] or 0,
@@ -444,6 +466,7 @@ class CourseRepository:
         self,
         term: str | None = None,
         run_id: str | None = None,
+        after_timestamp: str | None = None,
         limit: int = 100,
     ) -> list[CourseDeltaEvent]:
         """Fetch historical course delta events with optional filtering."""
@@ -456,6 +479,9 @@ class CourseRepository:
         if run_id:
             conditions.append("run_id = ?")
             params.append(run_id)
+        if after_timestamp:
+            conditions.append("created_at > ?")
+            params.append(after_timestamp)
 
         where_clause = f"WHERE {' AND '.join(conditions)}" if conditions else ""
         query = f"""
@@ -498,3 +524,75 @@ class CourseRepository:
                     )
                 )
             return events
+
+    def save_quota_snapshots(
+        self, term: str, course_code: str, section: str, records: list[QuotaRecord]
+    ) -> None:
+        """Persist a batch of quota records captured for one course section."""
+        if not records:
+            return
+
+        with self.db.transaction() as conn:
+            for r in records:
+                conn.execute(
+                    """
+                    INSERT INTO quota_snapshots (
+                        term, course_code, section, quota_department, status, quota, current,
+                        quota_numeric, current_numeric, is_consent, is_unlimited, available
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        term, course_code, section, r.department, r.status, r.quota, r.current,
+                        r.quota_numeric, r.current_numeric, int(r.is_consent), int(r.is_unlimited),
+                        r.available,
+                    ),
+                )
+
+    def get_quota_snapshots(
+        self,
+        term: str | None = None,
+        after_timestamp: str | None = None,
+        limit: int = 500,
+    ) -> list[QuotaSnapshot]:
+        """Fetch quota snapshots, optionally filtered by term and/or captured strictly after a timestamp."""
+        conditions: list[str] = []
+        params: list[Any] = []
+
+        if term:
+            conditions.append("term = ?")
+            params.append(term)
+        if after_timestamp:
+            conditions.append("captured_at > ?")
+            params.append(after_timestamp)
+
+        where_clause = f"WHERE {' AND '.join(conditions)}" if conditions else ""
+        query = f"""
+            SELECT * FROM quota_snapshots
+            {where_clause}
+            ORDER BY captured_at ASC, id ASC
+            LIMIT ?
+        """
+        params.append(limit)
+
+        with self.db.connection() as conn:
+            rows = conn.execute(query, params).fetchall()
+            return [
+                QuotaSnapshot(
+                    term=row["term"],
+                    course_code=row["course_code"],
+                    section=row["section"],
+                    record=QuotaRecord(
+                        department=row["quota_department"] or "",
+                        status=row["status"] or "",
+                        quota=row["quota"] or "",
+                        current=row["current"] or "",
+                        quota_numeric=row["quota_numeric"],
+                        current_numeric=row["current_numeric"],
+                        is_consent=bool(row["is_consent"]),
+                        is_unlimited=bool(row["is_unlimited"]),
+                        available=row["available"],
+                    ),
+                    captured_at=row["captured_at"],
+                )
+                for row in rows
+            ]

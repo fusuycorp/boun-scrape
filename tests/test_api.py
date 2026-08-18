@@ -221,6 +221,7 @@ def mock_scheduler(seeded_repo: CourseRepository, test_settings: Settings) -> Sc
         )
     )
     sched.stop = AsyncMock()
+    sched.execute_all_terms_cycle = AsyncMock(return_value=[])
     return sched
 
 
@@ -430,6 +431,51 @@ class TestApiEndpoints:
         assert data[0]["change_type"] == "MODIFIED"
 
     @pytest.mark.asyncio
+    async def test_get_deltas_after_timestamp_filter(
+        self, async_client: AsyncClient, seeded_repo: CourseRepository
+    ) -> None:
+        with seeded_repo.db.connection() as conn:
+            conn.execute("UPDATE course_deltas SET created_at = '2000-01-01 00:00:00'")
+            conn.commit()
+
+        response = await async_client.get(
+            "/api/v1/feeds/deltas?term=2024/2025-1&after_timestamp=2099-01-01 00:00:00"
+        )
+        assert response.status_code == 200
+        assert response.json() == []
+
+    @pytest.mark.asyncio
+    async def test_get_quota_snapshots(
+        self, async_client: AsyncClient, seeded_repo: CourseRepository
+    ) -> None:
+        seeded_repo.save_quota_snapshots(
+            term="2024/2025-1",
+            course_code="CMPE 150",
+            section="01",
+            records=[
+                QuotaRecord(department="CMPE", status="Open", quota="30", current="20", available=10),
+            ],
+        )
+
+        response = await async_client.get("/api/v1/feeds/quota-snapshots?term=2024/2025-1")
+        assert response.status_code == 200
+        data = response.json()
+        assert len(data) == 1
+        assert data[0]["course_code"] == "CMPE 150"
+        assert data[0]["department"] == "CMPE"
+        assert data[0]["available"] == 10
+
+        with seeded_repo.db.connection() as conn:
+            conn.execute("UPDATE quota_snapshots SET captured_at = '2000-01-01 00:00:00'")
+            conn.commit()
+
+        filtered = await async_client.get(
+            "/api/v1/feeds/quota-snapshots?term=2024/2025-1&after_timestamp=2099-01-01 00:00:00"
+        )
+        assert filtered.status_code == 200
+        assert filtered.json() == []
+
+    @pytest.mark.asyncio
     async def test_get_scrape_runs(self, async_client: AsyncClient) -> None:
         response = await async_client.get("/api/v1/feeds/runs?term=2024/2025-1")
         assert response.status_code == 200
@@ -486,6 +532,17 @@ class TestApiEndpoints:
         data = response.json()
         assert data["run_id"] == "run_sync_001"
         assert data["status"] == "completed"
+
+    @pytest.mark.asyncio
+    async def test_trigger_scrape_all_terms(
+        self, async_client: AsyncClient, mock_scheduler: ScrapeScheduler
+    ) -> None:
+        payload = {"all_terms": True}
+        response = await async_client.post("/api/v1/scraper/trigger", json=payload)
+        assert response.status_code == 200
+        data = response.json()
+        assert data["status"] == "triggered"
+        assert data["all_terms"] is True
 
     @pytest.mark.asyncio
     async def test_trigger_scrape_conflict(self, async_client: AsyncClient, mock_scheduler: ScrapeScheduler) -> None:
