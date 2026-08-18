@@ -121,3 +121,94 @@
   no more UI implying capability (per-stage execution) that was never real. Any
   future "run just department discovery" feature needs real backend support added
   first, not just a UI card wired to the same generic trigger.
+
+### [2026-08-18] Scoped department replacement in save_courses_and_slots (data-loss fix)
+- **Context**: `save_courses_and_slots` deleted ALL of a term's courses before
+  re-inserting them each cycle. If a department failed to scrape that run (network
+  or captcha error), its previously-good courses were still deleted — permanent data
+  loss on a transient failure. `scrape_term_pipeline` now tracks per-department
+  success/failure.
+- **Decision**: `save_courses_and_slots(term, courses, scraped_departments)`
+  deletes+replaces rows only for the departments passed in `scraped_departments`;
+  departments absent from that list (failed this run) keep their existing data.
+  `None` = unconditional whole-term replace (old behavior; used by seeding and any
+  non-pipeline write), `[]` = nothing succeeded, delete nothing.
+- **Consequences**: A transient failure on one department no longer destroys its
+  data. The term is no longer one atomic snapshot replace — it is a union of
+  per-department snapshots that converge as retries succeed. A department that is
+  genuinely removed/closed and stops appearing will not be cleaned up until it
+  shows up missing in a successful scrape; exact "removed department" semantics
+  may later need an explicit tombstone/cleanup path.
+
+### [2026-08-18] Persist discovered departments each cycle (data completeness)
+- **Context**: `save_departments` existed but had no callers; the pipeline
+  enumerated departments only to drive scraping and discarded them, so
+  `GET /api/v1/departments` and `/stats.total_departments` read an empty table.
+- **Decision**: `TermScrapeResult` carries the fetched `Department` list;
+  `execute_scrape_cycle` calls `save_departments(term, depts)` each run (idempotent
+  upsert on `(code, term)`).
+- **Consequences**: Department listing/stats are populated from real scrapes and
+  renamed departments update in place on the next cycle.
+
+### [2026-08-18] Keep storage<->pipeline imports acyclic at the package boundary
+- **Context**: `pipeline/__init__.py` eagerly re-exported `exporter` (which imports
+  `storage.repository`) while `storage.repository` imports `pipeline.delta`.
+  Importing anything from package `storage` therefore pulled in `pipeline` →
+  `exporter` → `storage.repository` while it was partially initialized — an
+  import-order-dependent circular import that broke isolated test-file collection
+  (it only seemed fine because alphabetical collection happened to init `repository`
+  first).
+- **Decision**: Package `__init__` files import only acyclic leaf modules.
+  `pipeline/__init__` now imports only `delta`; the unused `exporter` re-exports
+  (zero consumers) were dropped. Importers must use concrete submodules
+  (`boun_scrape.pipeline.exporter`, `boun_scrape.storage.repository`, etc.).
+- **Consequences**: Every test file collects and passes in isolation regardless of
+  order. Rule: no eager cross-package re-exports in package `__init__`s.
+
+### [2026-08-18] Quota snapshot capture: opt-in, best-effort, single-transaction bulk persist, bounded cache
+- **Context**: `capture_quota` fetches a live quota reading per course-section —
+  thousands of requests against a rate-limit/reCAPTCHA-sensitive portal. Risks:
+  (a) thousands of per-section DB transactions (one fsync/commit each), (b) a quota
+  failure could mark the whole run FAILED even though courses were already scraped
+  and persisted, (c) the `QuotaService` in-memory cache grew unboundedly in a
+  long-lived daemon.
+- **Decision**: Quota capture is opt-in (`--capture-quota` / `capture_quota` flag).
+  All of a term's quota rows are accumulated and persisted in ONE transaction
+  (`save_quota_snapshots_bulk`). The capture block is wrapped best-effort
+  (try/except), so it can never fail the run or delay completion. The `QuotaService`
+  cache is bounded by `max_cache_size` (default 2000, evict-oldest-on-insert).
+- **Consequences**: Quota snapshot coverage is not guaranteed on every run
+  (best-effort) — consumers polling `/feeds/quota-snapshots` must tolerate gaps.
+  The rate-limit sensitivity is precisely why capture is off by default.
+
+### [2026-08-18] boun-archive integration: one-time backfill + current-term delta/quota polling
+- **Context**: `boun-archive` (the historical/analytics platform) needs data from
+  boun-scrape. A full-history resync is impossible — boun-scrape only ever scrapes
+  the live current portal and holds none of boun-archive's 50+ years; boun-archive
+  has zero write endpoints and no auth or push-receiver path. Both projects sit in
+  the same Dokploy project (`boun-uni`) but no cross-stack Docker network exists
+  between any two services in this homelab.
+- **Decision**: One-time backfill pull of boun-scrape's existing export, then
+  ongoing incremental current-term sync via boun-archive polling
+  `GET /api/v1/feeds/deltas` and `GET /api/v1/feeds/quota-snapshots` using
+  `after_timestamp` cursors. No push/webhook receiver, no new network wiring —
+  boun-scrape's already-public feed API is the transport. A shared-secret
+  gate for machine-to-machine polling is deliberately deferred.
+- **Consequences**: boun-archive remains the puller. Feed endpoints stay public
+  (matching the courses/departments/terms convention), with the deferred auth gate
+  a known consideration if feed data ever becomes sensitive. The new quota-snapshots
+  endpoint returns ASC order (cursor-friendly for sync), unlike deltas' DESC.
+  Remaining work is entirely on the boun-archive side.
+
+### [2026-08-18] Deferred decisions (explicitly documented known trade-offs, not acted on)
+- **Snapshot-replace model → course-id churn**: `save_courses_and_slots`
+  delete+reinserts all rows each cycle, so AUTOINCREMENT `courses.id` changes every
+  run even when nothing changed. This breaks any external reference by course id
+  across runs. Chosen transport avoids depending on stable ids today; revisit with
+  an upsert-on-`(term,dept,code,section)` model (preserving ids) only if webhook
+  consumers or boun-archive need stable ids.
+- **reCAPTCHA 2-min TTL vs all-terms mode**: every term in `execute_all_terms_cycle`
+  calls `fetch_departments` needing a fresh single-use token; if one term's scrape
+  outlasts the ~2 min TTL, remaining terms get captcha-blocked. Current behavior
+  fails departments silently; a future fix should hard-stop with an explicit
+  "re-solve the token" message rather than burning the remaining terms.
