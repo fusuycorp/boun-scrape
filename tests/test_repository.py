@@ -425,6 +425,25 @@ class TestRepository:
         repo.save_quota_snapshots(term="2024/2025-1", course_code="X", section="01", records=[])
         assert len(repo.get_quota_snapshots(term="2024/2025-1")) == 2
 
+    def test_quota_snapshots_bulk_save(self, repo: CourseRepository) -> None:
+        # Bulk path (used by capture_quota) persists many sections in one call.
+        rows = [
+            ("2024/2025-1", "CMPE 150", "01", QuotaRecord(department="CMPE", status="Open", quota="30", current="20")),
+            ("2024/2025-1", "CMPE 150", "01", QuotaRecord(department="EE", status="Consent", quota="0", current="0", is_consent=True)),
+            ("2024/2025-1", "MATH 101", "02", QuotaRecord(department="MATH", status="Closed", quota="20", current="20")),
+        ]
+        repo.save_quota_snapshots_bulk(rows)
+
+        snapshots = repo.get_quota_snapshots(term="2024/2025-1")
+        assert len(snapshots) == 3
+        by_key = {(s.course_code, s.section, s.record.department): s for s in snapshots}
+        assert by_key[("CMPE 150", "01", "EE")].record.is_consent is True
+        assert by_key[("MATH 101", "02", "MATH")].record.status == "Closed"
+
+        # Empty batch is a no-op
+        repo.save_quota_snapshots_bulk([])
+        assert len(repo.get_quota_snapshots(term="2024/2025-1")) == 3
+
     def test_quota_snapshots_after_timestamp_filter(self, repo: CourseRepository) -> None:
         repo.save_quota_snapshots(
             term="2024/2025-1",

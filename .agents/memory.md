@@ -77,6 +77,15 @@
   deleted (that wipe-on-failure was the 2026-08-18 data-loss bug). Pass None to get
   the old unconditional whole-term replace. `scrape_term_pipeline()` returns a
   `TermScrapeResult` (courses + succeeded/failed department lists), not a bare list.
+- `execute_scrape_cycle` persists the term's discovered `Department` list via
+  `save_departments` each run (`TermScrapeResult.departments`) — this is what
+  populates `/api/v1/departments` and `/stats.total_departments`; do not "simplify" it
+  away (save_departments was dead code before 2026-08-18 and the endpoints read an
+  empty table).
+- `capture_quota` is best-effort: it bulk-inserts via `save_quota_snapshots_bulk` in
+  a single transaction (never per-section, which was N fsyncs) and is wrapped so a
+  quota failure can never fail the already-succeeded course scrape. `QuotaService`
+  cache is bounded by `max_cache_size` (default 2000, evict-oldest).
 - Do NOT add eager cross-package re-exports between `storage` and `pipeline`
   (2026-08-18: `pipeline/__init__` re-exported `exporter`, which imports
   `storage.repository`, while `repository` imports `pipeline.delta` — an

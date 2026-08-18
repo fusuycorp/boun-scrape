@@ -177,6 +177,33 @@ class TestQuotaService:
         await service.aclose()
 
     @pytest.mark.asyncio
+    async def test_cache_is_bounded(self, quota_html: str) -> None:
+        request_count = 0
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            nonlocal request_count
+            request_count += 1
+            return httpx.Response(200, content=quota_html.encode("windows-1254"))
+
+        transport = httpx.MockTransport(handler)
+        async with httpx.AsyncClient(transport=transport) as http_client:
+            scraper_client = BounScraperClient(http_client=http_client, min_jitter=0, max_jitter=0)
+            service = QuotaService(client=scraper_client, max_cache_size=2)
+
+            for code in ("150", "250", "350"):
+                await service.fetch_quota("2024/2025-1", "CMPE", code, "01")
+
+            # Cap holds the cache to max_cache_size entries, evicting oldest.
+            assert service.cache_size == 2
+
+            # The oldest entry (code 150) was evicted, so re-querying it must
+            # hit the network again (request_count increments past the 3 above).
+            before = request_count
+            await service.fetch_quota("2024/2025-1", "CMPE", "150", "01")
+            assert request_count == before + 1
+            await service.aclose()
+
+    @pytest.mark.asyncio
     async def test_context_manager(self) -> None:
         async with QuotaService() as service:
             assert service.cache_size == 0

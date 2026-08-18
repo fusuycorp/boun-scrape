@@ -525,6 +525,36 @@ class CourseRepository:
                 )
             return events
 
+    def save_quota_snapshots_bulk(
+        self, rows: list[tuple[str, str, str, QuotaRecord]]
+    ) -> None:
+        """Persist many quota records across course sections in a single transaction.
+
+        Args:
+            rows: list of (term, course_code, section, QuotaRecord) tuples. This is the
+                hot path for capture_quota — batching avoids one commit per section.
+        """
+        if not rows:
+            return
+
+        with self.db.transaction() as conn:
+            conn.executemany(
+                """
+                INSERT INTO quota_snapshots (
+                    term, course_code, section, quota_department, status, quota, current,
+                    quota_numeric, current_numeric, is_consent, is_unlimited, available
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                [
+                    (
+                        term, course_code, section, r.department, r.status, r.quota, r.current,
+                        r.quota_numeric, r.current_numeric, int(r.is_consent), int(r.is_unlimited),
+                        r.available,
+                    )
+                    for term, course_code, section, r in rows
+                ],
+            )
+
     def save_quota_snapshots(
         self, term: str, course_code: str, section: str, records: list[QuotaRecord]
     ) -> None:
