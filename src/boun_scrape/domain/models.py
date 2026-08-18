@@ -121,6 +121,7 @@ class TermScrapeResult:
     """Result of scraping a single term, including per-department success/failure tracking."""
 
     courses: list[Course]
+    departments: list[Department] = field(default_factory=list)
     succeeded_departments: list[str] = field(default_factory=list)
     failed_departments: list[str] = field(default_factory=list)
 

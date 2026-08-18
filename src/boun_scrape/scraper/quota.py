@@ -46,10 +46,12 @@ class QuotaService:
         client: BounScraperClient | None = None,
         ttl_seconds: float = 30.0,
         quota_url: str | None = None,
+        max_cache_size: int = 2000,
         settings: Settings | None = None,
     ) -> None:
         cfg = settings or get_settings()
         self.ttl_seconds = ttl_seconds
+        self.max_cache_size = max_cache_size
         self.quota_url = quota_url or f"{cfg.quota_url.rstrip('/')}/scripts/quotasearch.asp"
 
         if client is not None:
@@ -125,6 +127,18 @@ class QuotaService:
         records = parse_quota_from_html(response.text)
 
         async with self._lock:
+            # Bound cache growth in a long-lived daemon: evict the oldest entry once
+            # the cap is exceeded. O(cache) eviction runs only when at capacity, which
+            # is rare compared to the TTL-hit fast path. ponytail: linear eviction;
+            # upgrade to a heap/OrderedDict if the cap ever grows into the tens of
+            # thousands of live entries.
+            if (
+                self.max_cache_size
+                and len(self._cache) >= self.max_cache_size
+                and cache_key not in self._cache
+            ):
+                oldest = min(self._cache, key=lambda k: self._cache[k].timestamp)
+                del self._cache[oldest]
             self._cache[cache_key] = _QuotaCacheEntry(
                 timestamp=time.monotonic(),
                 records=records,

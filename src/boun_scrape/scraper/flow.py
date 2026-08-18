@@ -99,7 +99,9 @@ async def scrape_term_pipeline(
     """
     departments = await fetch_departments(client, term)
     if not departments:
-        return TermScrapeResult(courses=[], succeeded_departments=[], failed_departments=[])
+        return TermScrapeResult(
+            courses=[], departments=[], succeeded_departments=[], failed_departments=[]
+        )
 
     total_depts = len(departments)
     completed_count = 0
@@ -149,6 +151,7 @@ async def scrape_term_pipeline(
 
     return TermScrapeResult(
         courses=all_courses,
+        departments=departments,
         succeeded_departments=succeeded_departments,
         failed_departments=failed_departments,
     )

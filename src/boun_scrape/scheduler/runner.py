@@ -11,7 +11,7 @@ import uuid
 import croniter
 
 from boun_scrape.config import Settings, get_settings
-from boun_scrape.domain.models import RunStatus, ScrapeRunSummary
+from boun_scrape.domain.models import QuotaRecord, RunStatus, ScrapeRunSummary
 from boun_scrape.feeds.webhooks import WebhookDispatcher
 from boun_scrape.pipeline.delta import compute_deltas
 from boun_scrape.pipeline.exporter import generate_all_exports
@@ -190,6 +190,7 @@ class ScrapeScheduler:
                     progress_callback=_on_department_progress,
                 )
                 current_courses = result.courses
+                self.repository.save_departments(target_term, result.departments)
                 logger.info(
                     "Scrape %s: finished scraping — %d courses total",
                     run_id, len(current_courses),
@@ -217,30 +218,40 @@ class ScrapeScheduler:
                     self.repository.save_deltas(deltas=deltas, run_id=run_id)
                 logger.info("Scrape %s: persisted courses and deltas", run_id)
 
-                # 6.5. Optional quota snapshot capture (rate-limit-sensitive; opt-in)
+                # 6.5. Optional quota snapshot capture (rate-limit-sensitive; opt-in).
+                #      Best-effort: the course scrape/persist above already succeeded,
+                #      so a quota failure must never fail the run or delay its completion.
                 if capture_quota:
-                    quota_items = [
-                        (target_term, c.department, c.course_code, c.section)
-                        for c in current_courses
-                    ]
-                    logger.info(
-                        "Scrape %s: capturing quota snapshots for %d course sections",
-                        run_id, len(quota_items),
-                    )
-                    quota_results = await self.quota_service.fetch_batch_quotas(
-                        quota_items, concurrency=self.settings.max_concurrency
-                    )
-                    for c in current_courses:
-                        key = format_course_key(c.department, c.course_code, c.section)
-                        records = quota_results.get(key, [])
-                        if records:
-                            self.repository.save_quota_snapshots(
-                                term=target_term,
-                                course_code=c.course_code,
-                                section=c.section,
-                                records=records,
-                            )
-                    logger.info("Scrape %s: quota snapshots captured", run_id)
+                    try:
+                        quota_items = [
+                            (target_term, c.department, c.course_code, c.section)
+                            for c in current_courses
+                        ]
+                        logger.info(
+                            "Scrape %s: capturing quota snapshots for %d course sections",
+                            run_id, len(quota_items),
+                        )
+                        quota_results = await self.quota_service.fetch_batch_quotas(
+                            quota_items, concurrency=self.settings.max_concurrency
+                        )
+                        quota_rows: list[tuple[str, str, str, QuotaRecord]] = []
+                        for c in current_courses:
+                            key = format_course_key(c.department, c.course_code, c.section)
+                            for record in quota_results.get(key, []):
+                                quota_rows.append(
+                                    (target_term, c.course_code, c.section, record)
+                                )
+                        # One transaction for the whole term instead of one per section.
+                        if quota_rows:
+                            self.repository.save_quota_snapshots_bulk(quota_rows)
+                        logger.info(
+                            "Scrape %s: captured %d quota rows", run_id, len(quota_rows)
+                        )
+                    except Exception:
+                        logger.exception(
+                            "Scrape %s: quota capture failed (continuing, run not affected)",
+                            run_id,
+                        )
 
                 # 7. Calculate run metrics
                 total_slots = sum(len(c.slots) for c in current_courses)

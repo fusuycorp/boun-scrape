@@ -130,6 +130,12 @@ class TestScrapeScheduler:
             courses_in_db = repo.get_courses_by_term("2024/2025-1")
             assert len(courses_in_db) == summary1.total_courses
 
+            # Verify departments discovered for the term were persisted too
+            depts_in_db = repo.get_departments("2024/2025-1")
+            assert len(depts_in_db) > 0
+            expected_codes = {c.department for c in courses_in_db}
+            assert expected_codes <= {d.code for d in depts_in_db}
+
             # Verify runs in repository
             runs = repo.get_scrape_runs(term="2024/2025-1")
             assert len(runs) == 1
