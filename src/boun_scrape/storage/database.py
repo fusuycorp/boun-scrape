@@ -55,6 +55,7 @@ CREATE TABLE IF NOT EXISTS scrape_runs (
     started_at TIMESTAMP,
     completed_at TIMESTAMP,
     total_departments INTEGER DEFAULT 0,
+    completed_departments INTEGER DEFAULT 0,
     total_courses INTEGER DEFAULT 0,
     total_slots INTEGER DEFAULT 0,
     changes_detected INTEGER DEFAULT 0,
@@ -76,6 +77,24 @@ CREATE TABLE IF NOT EXISTS course_deltas (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+-- Quota snapshot log (append-only; one row per captured department-quota line per scrape)
+CREATE TABLE IF NOT EXISTS quota_snapshots (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    term TEXT NOT NULL,
+    course_code TEXT NOT NULL,
+    section TEXT NOT NULL,
+    quota_department TEXT,
+    status TEXT,
+    quota TEXT,
+    current TEXT,
+    quota_numeric INTEGER,
+    current_numeric INTEGER,
+    is_consent INTEGER DEFAULT 0,
+    is_unlimited INTEGER DEFAULT 0,
+    available INTEGER,
+    captured_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
 -- Indexes for high query performance
 CREATE INDEX IF NOT EXISTS idx_courses_term_dept ON courses(term, department);
 CREATE INDEX IF NOT EXISTS idx_courses_term_code_sec ON courses(term, course_code, section);
@@ -83,6 +102,8 @@ CREATE INDEX IF NOT EXISTS idx_course_slots_course_id ON course_slots(course_id)
 CREATE INDEX IF NOT EXISTS idx_course_slots_day_hour ON course_slots(day, hour);
 CREATE INDEX IF NOT EXISTS idx_course_deltas_run_id ON course_deltas(run_id);
 CREATE INDEX IF NOT EXISTS idx_course_deltas_term ON course_deltas(term);
+CREATE INDEX IF NOT EXISTS idx_quota_snapshots_term_code_sec ON quota_snapshots(term, course_code, section);
+CREATE INDEX IF NOT EXISTS idx_quota_snapshots_captured_at ON quota_snapshots(captured_at);
 """
 
 
@@ -131,3 +152,13 @@ class DatabaseManager:
         """Initialize SQLite database tables and indexes."""
         with self.connection() as conn:
             conn.executescript(SCHEMA_SQL)
+            self._migrate_schema(conn)
+
+    def _migrate_schema(self, conn: sqlite3.Connection) -> None:
+        """Apply additive column migrations for databases created before a column existed."""
+        existing_cols = {row["name"] for row in conn.execute("PRAGMA table_info(scrape_runs)")}
+        if "completed_departments" not in existing_cols:
+            conn.execute(
+                "ALTER TABLE scrape_runs ADD COLUMN completed_departments INTEGER DEFAULT 0"
+            )
+            conn.commit()

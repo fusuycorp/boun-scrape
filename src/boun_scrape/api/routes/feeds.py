@@ -10,8 +10,10 @@ from boun_scrape.api.deps import get_course_repo_dep, get_settings_dep
 from boun_scrape.config import Settings
 from boun_scrape.domain.dto import (
     DeltaEventDTO,
+    QuotaSnapshotDTO,
     ScrapeRunDTO,
     delta_to_dto,
+    quota_snapshot_to_dto,
     run_to_dto,
 )
 from boun_scrape.pipeline.exporter import _sanitize_term, generate_all_exports
@@ -36,10 +38,11 @@ def get_deltas(
     repo: Annotated[CourseRepository, Depends(get_course_repo_dep)],
     term: str | None = Query(default=None, description="Filter deltas by academic term"),
     run_id: str | None = Query(default=None, description="Filter deltas by specific scrape run ID"),
+    after_timestamp: str | None = Query(default=None, description="Only return deltas created strictly after this timestamp (same format as the timestamp field in returned entries)"),
     limit: int = Query(default=100, ge=1, le=1000, description="Max deltas to return"),
 ) -> list[DeltaEventDTO]:
     """Retrieve historical course change delta events."""
-    deltas = repo.get_deltas(term=term, run_id=run_id, limit=limit)
+    deltas = repo.get_deltas(term=term, run_id=run_id, after_timestamp=after_timestamp, limit=limit)
     return [delta_to_dto(d) for d in deltas]
 
 
@@ -56,6 +59,22 @@ def get_scrape_runs(
     """Retrieve scrape run execution history and summaries."""
     runs = repo.get_scrape_runs(term=term, limit=limit)
     return [run_to_dto(r) for r in runs]
+
+
+@router.get(
+    "/feeds/quota-snapshots",
+    response_model=list[QuotaSnapshotDTO],
+    summary="Get captured quota snapshots",
+)
+def get_quota_snapshots(
+    repo: Annotated[CourseRepository, Depends(get_course_repo_dep)],
+    term: str | None = Query(default=None, description="Filter snapshots by academic term"),
+    after_timestamp: str | None = Query(default=None, description="Only return snapshots captured strictly after this timestamp"),
+    limit: int = Query(default=500, ge=1, le=5000, description="Max snapshots to return"),
+) -> list[QuotaSnapshotDTO]:
+    """Retrieve captured point-in-time quota snapshots, for incremental polling by downstream consumers."""
+    snapshots = repo.get_quota_snapshots(term=term, after_timestamp=after_timestamp, limit=limit)
+    return [quota_snapshot_to_dto(s) for s in snapshots]
 
 
 @router.get(

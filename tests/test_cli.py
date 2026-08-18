@@ -78,8 +78,10 @@ class TestCliApp:
         assert result.exit_code == 0
         stdout = _strip_ansi(result.stdout)
         assert "--term" in stdout
+        assert "--all-terms" in stdout
         assert "--no-export" in stdout
         assert "--no-webhooks" in stdout
+        assert "--capture-quota" in stdout
 
     def test_scrape_command_success(self, temp_db: str) -> None:
         mock_summary = ScrapeRunSummary(
@@ -110,6 +112,7 @@ class TestCliApp:
                 term="2024/2025-1",
                 export=False,
                 dispatch_webhooks=False,
+                capture_quota=False,
             )
 
     def test_serve_command(self) -> None:

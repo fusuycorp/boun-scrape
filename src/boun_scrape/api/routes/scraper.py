@@ -49,12 +49,27 @@ async def trigger_scrape(
             detail="A scrape cycle is already in progress.",
         )
 
+    if payload.all_terms:
+        scheduler.run_in_background(
+            scheduler.execute_all_terms_cycle(
+                export=payload.export,
+                dispatch_webhooks=payload.dispatch_webhooks,
+                capture_quota=payload.capture_quota,
+            )
+        )
+        return {
+            "status": "triggered",
+            "message": "All-terms scrape cycle started in background.",
+            "all_terms": True,
+        }
+
     if payload.background:
         scheduler.run_in_background(
             scheduler.execute_scrape_cycle(
                 term=payload.term,
                 export=payload.export,
                 dispatch_webhooks=payload.dispatch_webhooks,
+                capture_quota=payload.capture_quota,
             )
         )
         return {
@@ -68,6 +83,7 @@ async def trigger_scrape(
             term=payload.term,
             export=payload.export,
             dispatch_webhooks=payload.dispatch_webhooks,
+            capture_quota=payload.capture_quota,
         )
         return run_to_dto(summary)
     except ScrapeAlreadyRunningError as exc:

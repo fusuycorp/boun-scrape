@@ -9,6 +9,7 @@ from boun_scrape.domain.models import (
     CourseSlot,
     Department,
     QuotaRecord,
+    QuotaSnapshot,
     RunStatus,
     ScrapeRunSummary,
 )
@@ -71,6 +72,24 @@ class QuotaDTO(BaseModel):
     is_consent: bool = False
     is_unlimited: bool = False
     available: int | None = None
+
+
+class QuotaSnapshotDTO(BaseModel):
+    """Persisted point-in-time quota snapshot DTO."""
+
+    term: str
+    course_code: str
+    section: str
+    department: str
+    status: str
+    quota: str
+    current: str
+    quota_numeric: int | None = None
+    current_numeric: int | None = None
+    is_consent: bool = False
+    is_unlimited: bool = False
+    available: int | None = None
+    captured_at: str
 
 
 class DeltaEventDTO(BaseModel):
@@ -153,6 +172,8 @@ class ScrapeTriggerRequest(BaseModel):
     export: bool = True
     dispatch_webhooks: bool = True
     background: bool = True
+    all_terms: bool = False
+    capture_quota: bool = False
 
 
 class ScrapeStatusDTO(BaseModel):
@@ -245,6 +266,25 @@ def quota_to_dto(q: QuotaRecord) -> QuotaDTO:
         is_consent=q.is_consent,
         is_unlimited=q.is_unlimited,
         available=q.available,
+    )
+
+
+def quota_snapshot_to_dto(s: QuotaSnapshot) -> QuotaSnapshotDTO:
+    """Convert QuotaSnapshot domain model to QuotaSnapshotDTO."""
+    return QuotaSnapshotDTO(
+        term=s.term,
+        course_code=s.course_code,
+        section=s.section,
+        department=s.record.department,
+        status=s.record.status,
+        quota=s.record.quota,
+        current=s.record.current,
+        quota_numeric=s.record.quota_numeric,
+        current_numeric=s.record.current_numeric,
+        is_consent=s.record.is_consent,
+        is_unlimited=s.record.is_unlimited,
+        available=s.record.available,
+        captured_at=s.captured_at or "",
     )
 
 

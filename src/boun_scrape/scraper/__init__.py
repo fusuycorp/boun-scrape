@@ -7,8 +7,10 @@ from boun_scrape.scraper.client import (
     RecaptchaBlockedError,
     SessionExpiredError,
     decode_windows_1254,
+    load_recaptcha_token,
     parse_cookie_file,
     parse_cookie_text,
+    parse_curl_command,
 )
 from boun_scrape.scraper.flow import (
     discover_terms,
@@ -43,8 +45,10 @@ __all__ = [
     "fetch_department_schedule",
     "fetch_departments",
     "format_course_key",
+    "load_recaptcha_token",
     "parse_cookie_file",
     "parse_cookie_text",
+    "parse_curl_command",
     "parse_days",
     "parse_departments_from_html",
     "parse_hours",

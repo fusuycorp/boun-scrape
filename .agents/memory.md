@@ -1,6 +1,27 @@
 # Project Memory
 
 ## Active Epics & Tasks
+- In progress (started 2026-08-18): boun-scrape -> boun-archive data seeding.
+  `boun-archive` (`~/projects/fusuycorp/boun-archive`) is a separate, mature,
+  deployed project — a historical/analytics platform (50+ years of course-slot
+  data, trend forecasting, "Ghost Schedule") on Postgres/Meilisearch/SvelteKit,
+  NOT a live-state tracker. It has zero write endpoints and its only ingestion
+  path today is a one-shot local `schedules.db`/`departments.csv` file drop that
+  permanently no-ops after the first successful load (`migrate_to_pg.py`'s gate
+  is "does `courses` have any rows at all", not per-term). Agreed plan: (1) a
+  one-time backfill pull of boun-scrape's existing export, NOT a resync of
+  boun-archive's full 1970s-onward history — boun-scrape never had that data
+  anyway, it only ever scrapes the live current portal; (2) ongoing incremental
+  sync scoped to the current term only, via polling — `after_timestamp` cursors
+  on `/api/v1/feeds/deltas` and the new `/api/v1/feeds/quota-snapshots`, not a
+  push/webhook receiver (boun-archive has no auth or write path to receive one
+  yet, and building that was explicitly deferred). Infra: both projects already
+  sit in the same Dokploy project (`boun-uni`), but no cross-stack Docker
+  network exists between any two services in this homelab today — chosen
+  transport is boun-archive pulling boun-scrape's already-public export/feed
+  API, which avoids needing new network wiring entirely. Remaining work is
+  entirely on the boun-archive side (per-term upsert ingestion job, new schema
+  for quota/deltas) — out of scope for this repo/session.
 - Post-modernization audit (2026-08-15 to 2026-08-17): full security/correctness/docs
   pass completed and deployed. Itemized findings are recorded as ADRs below and in
   `activity.jsonl` (the one-off `plan.md` checklist that originally tracked this
@@ -50,6 +71,17 @@
   A prior bug in `legacy.py` read a nonexistent `is_cycle_running` key — always
   double-check the legacy route's dict construction matches the scheduler's actual
   `get_status()` shape when touching either side.
+- `CourseRepository.save_courses_and_slots(term, courses, scraped_departments=None)`
+  only replaces rows for departments passed in `scraped_departments` — a department
+  that failed to scrape this run keeps its previously-good data instead of being
+  deleted (that wipe-on-failure was the 2026-08-18 data-loss bug). Pass None to get
+  the old unconditional whole-term replace. `scrape_term_pipeline()` returns a
+  `TermScrapeResult` (courses + succeeded/failed department lists), not a bare list.
+- Do NOT add eager cross-package re-exports between `storage` and `pipeline`
+  (2026-08-18: `pipeline/__init__` re-exported `exporter`, which imports
+  `storage.repository`, while `repository` imports `pipeline.delta` — an
+  import-order-dependent cycle that broke isolated test collection). Import from the
+  submodules directly; keep package `__init__`s importing only acyclic leaf modules.
 
 ## Domain Vocabulary & Gotchas
 - **Dokploy stack config is NOT synced from this repo's `docker-compose.yml`.**

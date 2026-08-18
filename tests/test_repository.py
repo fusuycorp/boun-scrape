@@ -1,5 +1,7 @@
 """Integration tests for DatabaseManager and CourseRepository."""
 
+import sqlite3
+
 import pytest
 
 from boun_scrape.domain.dto import CourseFilterParams
@@ -8,6 +10,7 @@ from boun_scrape.domain.models import (
     Course,
     CourseSlot,
     Department,
+    QuotaRecord,
     RunStatus,
     ScrapeRunSummary,
 )
@@ -178,12 +181,61 @@ class TestRepository:
         assert "2024/2025-1" in terms
         assert "2023/2024-2" in terms
 
+    def test_scrape_runs_migration_adds_completed_departments(self, tmp_path) -> None:
+        """An existing DB created before the column existed must be upgraded in place."""
+        db_file = str(tmp_path / "legacy_schedules.db")
+        old_schema = """
+        CREATE TABLE scrape_runs (
+            run_id TEXT PRIMARY KEY,
+            term TEXT,
+            started_at TIMESTAMP,
+            completed_at TIMESTAMP,
+            total_departments INTEGER DEFAULT 0,
+            total_courses INTEGER DEFAULT 0,
+            total_slots INTEGER DEFAULT 0,
+            changes_detected INTEGER DEFAULT 0,
+            status TEXT,
+            error_message TEXT
+        );
+        """
+        conn = sqlite3.connect(db_file)
+        conn.executescript(old_schema)
+        conn.execute(
+            "INSERT INTO scrape_runs (run_id, term, status, total_departments) "
+            "VALUES ('run-old', '2024/2025-1', 'completed', 3)"
+        )
+        conn.commit()
+        conn.close()
+
+        db = DatabaseManager(db_file)
+        db.init_db()
+
+        repo = CourseRepository(db)
+        runs = repo.get_scrape_runs("2024/2025-1")
+        assert len(runs) == 1
+        assert runs[0].run_id == "run-old"
+        assert runs[0].status == RunStatus.COMPLETED
+        assert runs[0].completed_departments == 0
+
+        # New saves after migration must persist the column like any other
+        summary = ScrapeRunSummary(
+            run_id="run-old",
+            term="2024/2025-1",
+            status=RunStatus.COMPLETED,
+            total_departments=3,
+            completed_departments=3,
+            started_at="2025-01-15T10:00:00Z",
+        )
+        repo.save_scrape_run(summary)
+        assert repo.get_latest_run("2024/2025-1").completed_departments == 3
+
     def test_scrape_runs_persistence(self, repo: CourseRepository) -> None:
         summary = ScrapeRunSummary(
             run_id="run-100",
             term="2024/2025-1",
             status=RunStatus.RUNNING,
             total_departments=10,
+            completed_departments=7,
             total_courses=50,
             started_at="2025-01-15T10:00:00Z",
         )
@@ -193,8 +245,13 @@ class TestRepository:
         assert len(runs) == 1
         assert runs[0].run_id == "run-100"
         assert runs[0].status == RunStatus.RUNNING
+        assert runs[0].completed_departments == 7
 
-        # Update run status
+        latest = repo.get_latest_run("2024/2025-1")
+        assert latest is not None
+        assert latest.completed_departments == 7
+
+        # Update run status; the upsert must carry completed_departments through
         summary.status = RunStatus.COMPLETED
         summary.completed_at = "2025-01-15T10:05:00Z"
         repo.save_scrape_run(summary)
@@ -203,6 +260,7 @@ class TestRepository:
         assert len(updated_runs) == 1
         assert updated_runs[0].status == RunStatus.COMPLETED
         assert updated_runs[0].completed_at == "2025-01-15T10:05:00Z"
+        assert updated_runs[0].completed_departments == 7
 
     def test_deltas_persistence(self, repo: CourseRepository) -> None:
         delta = CourseDeltaEvent(
@@ -223,3 +281,178 @@ class TestRepository:
         assert fetched_deltas[0].course_code == "CMPE 150"
         assert fetched_deltas[0].old_value == {"instructor": "DR OLD"}
         assert fetched_deltas[0].new_value == {"instructor": "DR NEW"}
+
+    def test_save_courses_and_slots_scoped_to_succeeded_departments(
+        self, repo: CourseRepository
+    ) -> None:
+        cmpe_course = Course(
+            term="2024/2025-1", department="CMPE", course_code="CMPE 150",
+            section="01", course_name="INTRO TO COMPUTING",
+        )
+        math_course = Course(
+            term="2024/2025-1", department="MATH", course_code="MATH 101",
+            section="01", course_name="CALCULUS I",
+        )
+        repo.save_courses_and_slots(
+            term="2024/2025-1", courses=[cmpe_course, math_course]
+        )
+        assert len(repo.get_courses_by_term("2024/2025-1")) == 2
+
+        # Re-scrape where only MATH succeeded this run (CMPE failed and is
+        # absent from the passed courses list) -- CMPE's previously-saved
+        # data must survive untouched.
+        new_math_course = Course(
+            term="2024/2025-1", department="MATH", course_code="MATH 101",
+            section="01", course_name="CALCULUS I (UPDATED)",
+        )
+        repo.save_courses_and_slots(
+            term="2024/2025-1",
+            courses=[new_math_course],
+            scraped_departments=["MATH"],
+        )
+
+        remaining = repo.get_courses_by_term("2024/2025-1")
+        assert len(remaining) == 2
+        cmpe = next(c for c in remaining if c.department == "CMPE")
+        math = next(c for c in remaining if c.department == "MATH")
+        assert cmpe.course_name == "INTRO TO COMPUTING"
+        assert math.course_name == "CALCULUS I (UPDATED)"
+
+    def test_save_courses_and_slots_none_replaces_entire_term(
+        self, repo: CourseRepository
+    ) -> None:
+        cmpe_course = Course(
+            term="2024/2025-1", department="CMPE", course_code="CMPE 150",
+            section="01", course_name="INTRO TO COMPUTING",
+        )
+        repo.save_courses_and_slots(term="2024/2025-1", courses=[cmpe_course])
+        assert len(repo.get_courses_by_term("2024/2025-1")) == 1
+
+        # scraped_departments=None (default) replaces the whole term, even
+        # though the new list omits CMPE entirely.
+        math_course = Course(
+            term="2024/2025-1", department="MATH", course_code="MATH 101",
+            section="01", course_name="CALCULUS I",
+        )
+        repo.save_courses_and_slots(term="2024/2025-1", courses=[math_course])
+
+        remaining = repo.get_courses_by_term("2024/2025-1")
+        assert len(remaining) == 1
+        assert remaining[0].department == "MATH"
+
+    def test_save_courses_and_slots_empty_scraped_departments_deletes_nothing(
+        self, repo: CourseRepository
+    ) -> None:
+        cmpe_course = Course(
+            term="2024/2025-1", department="CMPE", course_code="CMPE 150",
+            section="01", course_name="INTRO TO COMPUTING",
+        )
+        repo.save_courses_and_slots(term="2024/2025-1", courses=[cmpe_course])
+
+        # Nothing succeeded this run -- must be a complete no-op.
+        repo.save_courses_and_slots(
+            term="2024/2025-1", courses=[], scraped_departments=[]
+        )
+
+        remaining = repo.get_courses_by_term("2024/2025-1")
+        assert len(remaining) == 1
+        assert remaining[0].department == "CMPE"
+
+    def test_deltas_after_timestamp_filter(self, repo: CourseRepository) -> None:
+        delta = CourseDeltaEvent(
+            change_type=ChangeType.ADDED,
+            term="2024/2025-1",
+            department="CMPE",
+            course_code="CMPE 150",
+            section="01",
+            timestamp="2025-01-15T12:00:00Z",
+            new_value={"instructor": "DR NEW"},
+        )
+        repo.save_deltas([delta], run_id="run-early")
+        with repo.db.connection() as conn:
+            conn.execute("UPDATE course_deltas SET created_at = '2025-01-15 09:00:00' WHERE run_id = 'run-early'")
+            conn.commit()
+
+        delta2 = CourseDeltaEvent(
+            change_type=ChangeType.ADDED,
+            term="2024/2025-1",
+            department="CMPE",
+            course_code="CMPE 250",
+            section="01",
+            timestamp="2025-01-15T14:00:00Z",
+            new_value={"instructor": "DR LATE"},
+        )
+        repo.save_deltas([delta2], run_id="run-late")
+        with repo.db.connection() as conn:
+            conn.execute("UPDATE course_deltas SET created_at = '2025-01-15 15:00:00' WHERE run_id = 'run-late'")
+            conn.commit()
+
+        recent = repo.get_deltas(term="2024/2025-1", after_timestamp="2025-01-15 10:00:00")
+        assert len(recent) == 1
+        assert recent[0].course_code == "CMPE 250"
+
+    def test_quota_snapshots_save_and_get(self, repo: CourseRepository) -> None:
+        records = [
+            QuotaRecord(
+                department="CMPE",
+                status="Open",
+                quota="30",
+                current="20",
+                quota_numeric=30,
+                current_numeric=20,
+                available=10,
+            ),
+            QuotaRecord(
+                department="EE",
+                status="Consent",
+                quota="0",
+                current="0",
+                is_consent=True,
+            ),
+        ]
+        repo.save_quota_snapshots(term="2024/2025-1", course_code="CMPE 150", section="01", records=records)
+
+        snapshots = repo.get_quota_snapshots(term="2024/2025-1")
+        assert len(snapshots) == 2
+        by_dept = {s.record.department: s for s in snapshots}
+        assert by_dept["CMPE"].record.available == 10
+        assert by_dept["CMPE"].course_code == "CMPE 150"
+        assert by_dept["CMPE"].section == "01"
+        assert by_dept["EE"].record.is_consent is True
+        assert snapshots[0].captured_at is not None
+
+        # Saving an empty list is a no-op
+        repo.save_quota_snapshots(term="2024/2025-1", course_code="X", section="01", records=[])
+        assert len(repo.get_quota_snapshots(term="2024/2025-1")) == 2
+
+    def test_quota_snapshots_after_timestamp_filter(self, repo: CourseRepository) -> None:
+        repo.save_quota_snapshots(
+            term="2024/2025-1",
+            course_code="CMPE 150",
+            section="01",
+            records=[QuotaRecord(department="CMPE", status="Open", quota="30", current="20")],
+        )
+        with repo.db.connection() as conn:
+            conn.execute("UPDATE quota_snapshots SET captured_at = '2025-01-15 09:00:00'")
+            conn.commit()
+
+        repo.save_quota_snapshots(
+            term="2024/2025-1",
+            course_code="CMPE 250",
+            section="01",
+            records=[QuotaRecord(department="CMPE", status="Closed", quota="20", current="20")],
+        )
+        with repo.db.connection() as conn:
+            conn.execute(
+                "UPDATE quota_snapshots SET captured_at = '2025-01-15 15:00:00' WHERE course_code = 'CMPE 250'"
+            )
+            conn.commit()
+
+        recent = repo.get_quota_snapshots(term="2024/2025-1", after_timestamp="2025-01-15 10:00:00")
+        assert len(recent) == 1
+        assert recent[0].course_code == "CMPE 250"
+
+        # No filter returns everything, oldest first
+        everything = repo.get_quota_snapshots(term="2024/2025-1")
+        assert len(everything) == 2
+        assert everything[0].course_code == "CMPE 150"
