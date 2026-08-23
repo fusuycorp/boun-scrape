@@ -62,6 +62,7 @@ class QuotaService:
             self._owns_client = True
 
         self._cache: dict[str, _QuotaCacheEntry] = {}
+        self._inflight: dict[str, asyncio.Future[list[QuotaRecord]]] = {}
         self._lock = asyncio.Lock()
 
     @property
@@ -110,41 +111,75 @@ class QuotaService:
                 if entry is not None and (now - entry.timestamp) < self.ttl_seconds:
                     return list(entry.records)
 
-        # Normalize query parameters for quotasearch.asp
-        query_code = code.strip().upper()
-        clean_abbr = abbr.strip().upper()
-        if query_code.startswith(clean_abbr):
-            query_code = query_code[len(clean_abbr) :].strip()
-
-        params = {
-            "donem": term.strip(),
-            "abbr": clean_abbr,
-            "code": query_code,
-            "section": section.strip(),
-        }
-
-        response = await self._client.get(self.quota_url, params=params)
-        records = parse_quota_from_html(response.text)
-
+        loop = asyncio.get_running_loop()
         async with self._lock:
-            # Bound cache growth in a long-lived daemon: evict the oldest entry once
-            # the cap is exceeded. O(cache) eviction runs only when at capacity, which
-            # is rare compared to the TTL-hit fast path. ponytail: linear eviction;
-            # upgrade to a heap/OrderedDict if the cap ever grows into the tens of
-            # thousands of live entries.
-            if (
-                self.max_cache_size
-                and len(self._cache) >= self.max_cache_size
-                and cache_key not in self._cache
-            ):
-                oldest = min(self._cache, key=lambda k: self._cache[k].timestamp)
-                del self._cache[oldest]
-            self._cache[cache_key] = _QuotaCacheEntry(
-                timestamp=time.monotonic(),
-                records=records,
-            )
+            if not bypass_cache:
+                entry = self._cache.get(cache_key)
+                if entry is not None and (now - entry.timestamp) < self.ttl_seconds:
+                    return list(entry.records)
 
-        return records
+                if cache_key in self._inflight:
+                    fut = self._inflight[cache_key]
+                    is_leader = False
+                else:
+                    fut = loop.create_future()
+                    self._inflight[cache_key] = fut
+                    is_leader = True
+            else:
+                fut = loop.create_future()
+                is_leader = True
+
+        if not is_leader:
+            records = await fut
+            return list(records)
+
+        try:
+            # Normalize query parameters for quotasearch.asp
+            query_code = code.strip().upper()
+            clean_abbr = abbr.strip().upper()
+            if query_code.startswith(clean_abbr):
+                query_code = query_code[len(clean_abbr) :].strip()
+
+            params = {
+                "donem": term.strip(),
+                "abbr": clean_abbr,
+                "code": query_code,
+                "section": section.strip(),
+            }
+
+            response = await self._client.get(self.quota_url, params=params)
+            records = parse_quota_from_html(response.text)
+
+            async with self._lock:
+                # Bound cache growth in a long-lived daemon: evict the oldest entry once
+                # the cap is exceeded. O(cache) eviction runs only when at capacity, which
+                # is rare compared to the TTL-hit fast path. ponytail: linear eviction;
+                # upgrade to a heap/OrderedDict if the cap ever grows into the tens of
+                # thousands of live entries.
+                if (
+                    self.max_cache_size
+                    and len(self._cache) >= self.max_cache_size
+                    and cache_key not in self._cache
+                ):
+                    oldest = min(self._cache, key=lambda k: self._cache[k].timestamp)
+                    del self._cache[oldest]
+                self._cache[cache_key] = _QuotaCacheEntry(
+                    timestamp=time.monotonic(),
+                    records=records,
+                )
+                if not fut.done():
+                    fut.set_result(records)
+
+            return records
+        except BaseException as exc:
+            async with self._lock:
+                if not fut.done():
+                    fut.set_exception(exc)
+            raise
+        finally:
+            async with self._lock:
+                if not bypass_cache and self._inflight.get(cache_key) is fut:
+                    del self._inflight[cache_key]
 
     async def fetch_batch_quotas(
         self,

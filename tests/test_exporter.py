@@ -278,3 +278,24 @@ class TestGenerateAllExports:
         assert "csv" in exports
         assert "sqlite" in exports
         assert "deltas" not in exports
+
+    def test_export_deltas_json_atomic_replacement(
+        self, sample_deltas: list[CourseDeltaEvent], tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        import os
+        replaced = False
+        orig_replace = os.replace
+
+        def mock_replace(src, dst):
+            nonlocal replaced
+            replaced = True
+            return orig_replace(src, dst)
+
+        monkeypatch.setattr(os, "replace", mock_replace)
+
+        out_path = tmp_path / "deltas.json"
+        res = export_deltas_json(sample_deltas, out_path)
+        assert res.is_file()
+        assert replaced is True
+        data = json.loads(res.read_text(encoding="utf-8"))
+        assert len(data) == len(sample_deltas)

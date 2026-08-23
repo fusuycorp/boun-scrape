@@ -583,3 +583,178 @@ class TestScrapeScheduler:
         assert scheduler.is_running is False
 
         await scheduler.aclose()
+
+    @pytest.mark.asyncio
+    async def test_stop_and_aclose_cancels_background_tasks(
+        self,
+        tmp_path: Path,
+    ) -> None:
+        db_mgr = DatabaseManager(str(tmp_path / "test.db"))
+        db_mgr.init_db()
+        repo = CourseRepository(db_mgr)
+
+        scheduler = ScrapeScheduler(
+            interval_seconds=3600,
+            repository=repo,
+        )
+
+        started = asyncio.Event()
+        cancelled = False
+
+        async def background_worker() -> None:
+            nonlocal cancelled
+            started.set()
+            try:
+                await asyncio.sleep(100)
+            except asyncio.CancelledError:
+                cancelled = True
+                raise
+
+        task = scheduler.run_in_background(background_worker())
+        await started.wait()
+
+        assert task in scheduler._background_tasks
+        assert not task.done()
+
+        await scheduler.stop()
+        assert cancelled is True
+        assert len(scheduler._background_tasks) == 0
+        await scheduler.aclose()
+
+    @pytest.mark.asyncio
+    async def test_execute_scrape_cycle_filters_previous_courses_by_succeeded_departments_for_deltas(
+        self,
+        tmp_path: Path,
+        monkeypatch: pytest.MonkeyPatch,
+    ) -> None:
+        from boun_scrape.domain.models import Course
+        from boun_scrape.scheduler import runner as runner_module
+
+        db_mgr = DatabaseManager(str(tmp_path / "test.db"))
+        db_mgr.init_db()
+        repo = CourseRepository(db_mgr)
+
+        # Seed initial courses for CMPE and MATH in term 2024/2025-1
+        initial_cmpe = Course(
+            term="2024/2025-1",
+            department="CMPE",
+            course_code="CMPE 150",
+            section="01",
+            course_name="INTRO",
+        )
+        initial_math = Course(
+            term="2024/2025-1",
+            department="MATH",
+            course_code="MATH 101",
+            section="01",
+            course_name="CALCULUS",
+        )
+        repo.save_courses_and_slots("2024/2025-1", [initial_cmpe, initial_math])
+
+        # Second scrape: MATH failed, CMPE succeeded with same course
+        async def fake_scrape_term_pipeline(client, term, progress_callback=None, concurrency=10):
+            return TermScrapeResult(
+                courses=[initial_cmpe],
+                departments=[],
+                succeeded_departments=["CMPE"],
+                failed_departments=["MATH"],
+            )
+
+        monkeypatch.setattr(runner_module, "scrape_term_pipeline", fake_scrape_term_pipeline)
+
+        scheduler = ScrapeScheduler(
+            repository=repo,
+            default_term="2024/2025-1",
+            client=BounScraperClient(min_jitter=0, max_jitter=0),
+        )
+
+        summary = await scheduler.execute_scrape_cycle(export=False, dispatch_webhooks=False)
+        assert summary.status == RunStatus.COMPLETED
+        # Since MATH failed, MATH courses were not considered deleted: 0 deltas!
+        assert summary.changes_detected == 0
+        await scheduler.aclose()
+
+    @pytest.mark.asyncio
+    async def test_execute_scrape_cycle_webhook_failure_does_not_fail_scrape(
+        self,
+        semester_html: str,
+        schedule_html: str,
+        tmp_path: Path,
+    ) -> None:
+        def handler(request: httpx.Request) -> httpx.Response:
+            path = request.url.path
+            if "schedule.aspx" in path:
+                return httpx.Response(200, content=semester_html.encode("windows-1254"))
+            if "sch.asp" in path:
+                return httpx.Response(200, content=schedule_html.encode("windows-1254"))
+            return httpx.Response(404)
+
+        transport = httpx.MockTransport(handler)
+
+        def failing_webhook_handler(request: httpx.Request) -> httpx.Response:
+            return httpx.Response(500, text="Webhook Server Error")
+
+        wh_transport = httpx.MockTransport(failing_webhook_handler)
+
+        async with (
+            httpx.AsyncClient(transport=transport, base_url=BASE_URL) as scraper_http,
+            httpx.AsyncClient(transport=wh_transport) as webhook_http,
+        ):
+            scraper_client = BounScraperClient(
+                http_client=scraper_http, min_jitter=0, max_jitter=0
+            )
+            webhook_dispatcher = WebhookDispatcher(
+                urls=["https://example.com/bad-webhook"],
+                http_client=webhook_http,
+                max_retries=1,
+            )
+
+            db_mgr = DatabaseManager(str(tmp_path / "schedules.db"))
+            db_mgr.init_db()
+            repo = CourseRepository(db_mgr)
+
+            scheduler = ScrapeScheduler(
+                client=scraper_client,
+                repository=repo,
+                webhook_dispatcher=webhook_dispatcher,
+                export_dir=tmp_path / "exports",
+                default_term="2024/2025-1",
+            )
+
+            # Webhook failures must not raise or mark run as FAILED
+            summary = await scheduler.execute_scrape_cycle(export=False, dispatch_webhooks=True)
+            assert summary.status == RunStatus.COMPLETED
+
+            await scheduler.aclose()
+
+    @pytest.mark.asyncio
+    async def test_execute_scrape_cycle_cancelled_error_marks_status_cancelled(
+        self,
+        tmp_path: Path,
+        monkeypatch: pytest.MonkeyPatch,
+    ) -> None:
+        from boun_scrape.scheduler import runner as runner_module
+
+        db_mgr = DatabaseManager(str(tmp_path / "test.db"))
+        db_mgr.init_db()
+        repo = CourseRepository(db_mgr)
+
+        async def fake_scrape_term_pipeline(client, term, progress_callback=None, concurrency=10):
+            raise asyncio.CancelledError()
+
+        monkeypatch.setattr(runner_module, "scrape_term_pipeline", fake_scrape_term_pipeline)
+
+        scheduler = ScrapeScheduler(
+            repository=repo,
+            default_term="2024/2025-1",
+            client=BounScraperClient(min_jitter=0, max_jitter=0),
+        )
+
+        with pytest.raises(asyncio.CancelledError):
+            await scheduler.execute_scrape_cycle(export=False, dispatch_webhooks=False)
+
+        runs = repo.get_scrape_runs(term="2024/2025-1")
+        assert len(runs) == 1
+        assert runs[0].status == RunStatus.CANCELLED
+
+        await scheduler.aclose()

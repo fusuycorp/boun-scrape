@@ -208,3 +208,38 @@ class TestQuotaService:
         async with QuotaService() as service:
             assert service.cache_size == 0
             assert service.client is not None
+
+    @pytest.mark.asyncio
+    async def test_fetch_quota_deduplicates_concurrent_inflight_requests(
+        self, quota_html: str
+    ) -> None:
+        network_calls = 0
+
+        async def handler(request: httpx.Request) -> httpx.Response:
+            nonlocal network_calls
+            network_calls += 1
+            await asyncio.sleep(0.05)
+            return httpx.Response(200, content=quota_html.encode("windows-1254"))
+
+        transport = httpx.MockTransport(handler)
+        async with httpx.AsyncClient(transport=transport) as http_client:
+            scraper_client = BounScraperClient(
+                http_client=http_client, min_jitter=0, max_jitter=0
+            )
+            service = QuotaService(client=scraper_client)
+
+            # Fire 10 concurrent requests for the exact same course
+            tasks = [
+                service.fetch_quota("2024/2025-1", "CMPE", "150", "01")
+                for _ in range(10)
+            ]
+            results = await asyncio.gather(*tasks)
+
+            # All 10 callers should have received identical quota records
+            assert len(results) == 10
+            for r in results:
+                assert len(r) == 5
+                assert r[0].department == "CMPE"
+
+            # Exactly 1 HTTP request should have been dispatched due to in-flight deduplication
+            assert network_calls == 1

@@ -222,7 +222,13 @@ def export_deltas_json(
     ]
 
     content = json.dumps(delta_dicts, indent=2, ensure_ascii=False)
-    path.write_text(content, encoding="utf-8")
+    tmp_path = _tmp_path_for(path)
+    try:
+        tmp_path.write_text(content, encoding="utf-8")
+        os.replace(tmp_path, path)
+    except BaseException:
+        tmp_path.unlink(missing_ok=True)
+        raise
     return path
 
 

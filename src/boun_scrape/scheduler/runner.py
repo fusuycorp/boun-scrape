@@ -198,10 +198,14 @@ class ScrapeScheduler:
 
                 # 4. Fetch existing courses for term to detect deltas
                 previous_courses = self.repository.get_courses_by_term(target_term)
+                succeeded_set = set(result.succeeded_departments)
+                filtered_previous_courses = [
+                    c for c in previous_courses if c.department in succeeded_set
+                ]
 
                 # 5. Compute change deltas
                 deltas = compute_deltas(
-                    previous_courses=previous_courses,
+                    previous_courses=filtered_previous_courses,
                     current_courses=current_courses,
                     run_id=run_id,
                     term=target_term,
@@ -280,12 +284,18 @@ class ScrapeScheduler:
 
                 # 9. Webhook notifications
                 if dispatch_webhooks and self.webhook_dispatcher is not None:
-                    if deltas:
-                        await self.webhook_dispatcher.dispatch_deltas(
-                            deltas, term=target_term
+                    try:
+                        if deltas:
+                            await self.webhook_dispatcher.dispatch_deltas(
+                                deltas, term=target_term
+                            )
+                        await self.webhook_dispatcher.dispatch_run_summary(summary)
+                        logger.info("Scrape %s: webhooks dispatched", run_id)
+                    except Exception:
+                        logger.exception(
+                            "Scrape %s: webhook dispatch failed (continuing, run not affected)",
+                            run_id,
                         )
-                    await self.webhook_dispatcher.dispatch_run_summary(summary)
-                    logger.info("Scrape %s: webhooks dispatched", run_id)
 
                 logger.info(
                     "Scrape %s: completed — %d courses, %d slots, %d changes",
@@ -297,6 +307,22 @@ class ScrapeScheduler:
                 self._run_count += 1
                 return summary
 
+            except asyncio.CancelledError:
+                completed_at = datetime.now(timezone.utc).isoformat()
+                summary.status = RunStatus.CANCELLED
+                summary.completed_at = completed_at
+                summary.error_message = "Scrape cycle was cancelled"
+                try:
+                    self.repository.save_scrape_run(summary)
+                except Exception:
+                    logger.exception(
+                        "Scrape %s: failed to save cancelled run state", run_id
+                    )
+                self._current_progress = None
+                self._last_run_summary = summary
+                self._last_run_time = datetime.now(timezone.utc)
+                raise
+
             except Exception as exc:
                 completed_at = datetime.now(timezone.utc).isoformat()
                 summary.status = RunStatus.FAILED
@@ -306,7 +332,12 @@ class ScrapeScheduler:
                 logger.exception("Scrape %s: failed", run_id)
 
                 if dispatch_webhooks and self.webhook_dispatcher is not None:
-                    await self.webhook_dispatcher.dispatch_run_summary(summary)
+                    try:
+                        await self.webhook_dispatcher.dispatch_run_summary(summary)
+                    except Exception:
+                        logger.exception(
+                            "Scrape %s: webhook dispatch on failure failed", run_id
+                        )
 
                 self._current_progress = None
                 self._last_run_summary = summary
@@ -432,9 +463,26 @@ class ScrapeScheduler:
                 pass
             self._task = None
 
+        if self._background_tasks:
+            tasks = list(self._background_tasks)
+            for t in tasks:
+                if not t.done():
+                    t.cancel()
+            if tasks:
+                await asyncio.gather(*tasks, return_exceptions=True)
+            self._background_tasks.clear()
+
     async def aclose(self) -> None:
         """Clean up background tasks and internal scraper client."""
         await self.stop()
+        if self._background_tasks:
+            tasks = list(self._background_tasks)
+            for t in tasks:
+                if not t.done():
+                    t.cancel()
+            if tasks:
+                await asyncio.gather(*tasks, return_exceptions=True)
+            self._background_tasks.clear()
         if self._owns_client:
             await self.client.aclose()
         if self.webhook_dispatcher is not None:

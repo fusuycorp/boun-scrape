@@ -33,6 +33,8 @@ async def fetch_departments(client: BounScraperClient, term: str) -> list[Depart
     init_resp = await client.get(SCHEDULE_SEMESTER_URL)
     vs_dict, _ = extract_viewstate_and_semesters(init_resp.text)
 
+    token = client.recaptcha_token
+
     # Step 2: Submit search form for target semester
     post_data = {
         "__VIEWSTATE": vs_dict.get("__VIEWSTATE", ""),
@@ -40,10 +42,15 @@ async def fetch_departments(client: BounScraperClient, term: str) -> list[Depart
         "__EVENTVALIDATION": vs_dict.get("__EVENTVALIDATION", ""),
         "ctl00$cphMainContent$ddlSemester": term,
         "ctl00$cphMainContent$btnSearch": "Go",
-        "ctl00$cphMainContent$gRecResp": client.recaptcha_token,
+        "ctl00$cphMainContent$gRecResp": token,
     }
 
-    resp = await client.post(SCHEDULE_SEMESTER_URL, data=post_data)
+    try:
+        resp = await client.post(SCHEDULE_SEMESTER_URL, data=post_data)
+    finally:
+        if token:
+            client.invalidate_recaptcha_token()
+
     departments = parse_departments_from_html(resp.text)
 
     if not departments:

@@ -537,3 +537,122 @@ class TestScraperFlow:
             assert result.succeeded_departments == ["MATH"]
             assert result.failed_departments == ["CMPE"]
             assert len(result.courses) == 1
+
+    @pytest.mark.asyncio
+    async def test_retry_after_header_numeric_seconds(self) -> None:
+        attempts = 0
+        delays: list[float] = []
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            nonlocal attempts
+            attempts += 1
+            if attempts == 1:
+                return httpx.Response(
+                    429,
+                    headers={"Retry-After": "0.01"},
+                    text="Rate Limited",
+                )
+            return httpx.Response(200, content=b"Success")
+
+        transport = httpx.MockTransport(handler)
+        async_client = httpx.AsyncClient(
+            transport=transport, base_url="https://registration.bogazici.edu.tr"
+        )
+
+        async with BounScraperClient(
+            http_client=async_client, min_jitter=0, max_jitter=0
+        ) as client:
+            resp = await client.get("/test", retries=2)
+            assert resp.status_code == 200
+            assert attempts == 2
+
+    @pytest.mark.asyncio
+    async def test_retry_after_header_http_date_and_503(self) -> None:
+        from datetime import datetime, timezone, timedelta
+        import email.utils
+
+        attempts = 0
+        future_dt = datetime.now(timezone.utc) + timedelta(seconds=1)
+        http_date = email.utils.format_datetime(future_dt)
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            nonlocal attempts
+            attempts += 1
+            if attempts == 1:
+                return httpx.Response(
+                    503,
+                    headers={"Retry-After": http_date},
+                    text="Service Unavailable",
+                )
+            return httpx.Response(200, content=b"Success")
+
+        transport = httpx.MockTransport(handler)
+        async_client = httpx.AsyncClient(
+            transport=transport, base_url="https://registration.bogazici.edu.tr"
+        )
+
+        async with BounScraperClient(
+            http_client=async_client, min_jitter=0, max_jitter=0
+        ) as client:
+            resp = await client.post("/test", data={"k": "v"}, retries=2)
+            assert resp.status_code == 200
+            assert attempts == 2
+
+    @pytest.mark.asyncio
+    async def test_recaptcha_token_invalidated_after_use_in_fetch_departments(
+        self, tmp_path
+    ) -> None:
+        token_file = tmp_path / "recaptcha_token.txt"
+        token_file.write_text("single-use-token", encoding="utf-8")
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            return httpx.Response(
+                200, content=SAMPLE_SEMESTER_HTML.encode("windows-1254")
+            )
+
+        transport = httpx.MockTransport(handler)
+        async_client = httpx.AsyncClient(
+            transport=transport, base_url="https://registration.bogazici.edu.tr"
+        )
+
+        async with BounScraperClient(
+            http_client=async_client,
+            recaptcha_token_path=str(token_file),
+            min_jitter=0,
+            max_jitter=0,
+        ) as client:
+            assert client.recaptcha_token == "single-use-token"
+            await fetch_departments(client, "2024/2025-1")
+            assert token_file.read_text(encoding="utf-8") == ""
+            assert client.recaptcha_token == ""
+
+    @pytest.mark.asyncio
+    async def test_recaptcha_token_invalidated_on_captcha_blocked_response(
+        self, tmp_path
+    ) -> None:
+        token_file = tmp_path / "recaptcha_token.txt"
+        token_file.write_text("invalid-token", encoding="utf-8")
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            return httpx.Response(
+                200,
+                content="<html><body>You could not pass the reCAPTCHA check</body></html>".encode(
+                    "windows-1254"
+                ),
+            )
+
+        transport = httpx.MockTransport(handler)
+        async_client = httpx.AsyncClient(
+            transport=transport, base_url="https://registration.bogazici.edu.tr"
+        )
+
+        async with BounScraperClient(
+            http_client=async_client,
+            recaptcha_token_path=str(token_file),
+            min_jitter=0,
+            max_jitter=0,
+        ) as client:
+            with pytest.raises(RecaptchaBlockedError):
+                await client.get("/test")
+            assert token_file.read_text(encoding="utf-8") == ""
+            assert client.recaptcha_token == ""

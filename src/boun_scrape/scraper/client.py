@@ -1,6 +1,8 @@
 """Resilient HTTP client for Boğaziçi University registration portal."""
 
 import asyncio
+from datetime import datetime, timezone
+import email.utils
 import os
 import random
 import shlex
@@ -38,9 +40,15 @@ class RecaptchaBlockedError(BounError):
 class BounHttpError(BounError):
     """Raised on non-recoverable HTTP or transport errors."""
 
-    def __init__(self, message: str, status_code: int | None = None) -> None:
+    def __init__(
+        self,
+        message: str,
+        status_code: int | None = None,
+        retry_after: float | None = None,
+    ) -> None:
         super().__init__(message)
         self.status_code = status_code
+        self.retry_after = retry_after
 
 
 class SessionExpiredError(BounError):
@@ -165,6 +173,26 @@ def parse_curl_command(curl_text: str) -> dict[str, str]:
     return {"cookies": cookies, "recaptcha_token": recaptcha_token}
 
 
+def _parse_retry_after(header_value: str | None) -> float | None:
+    """Parse standard HTTP Retry-After header (seconds or HTTP-date string)."""
+    if not header_value:
+        return None
+    val = header_value.strip()
+    if not val:
+        return None
+    try:
+        return max(0.0, float(val))
+    except ValueError:
+        pass
+    try:
+        target_dt = email.utils.parsedate_to_datetime(val)
+        now_dt = datetime.now(timezone.utc)
+        delay = (target_dt - now_dt).total_seconds()
+        return max(0.0, delay)
+    except Exception:
+        return None
+
+
 def decode_windows_1254(content: bytes) -> str:
     """Decode raw bytes into string using windows-1254 encoding."""
     return content.decode("windows-1254", errors="replace")
@@ -244,6 +272,17 @@ class BounScraperClient:
         """
         return load_recaptcha_token(self.recaptcha_token_path) if self.recaptcha_token_path else ""
 
+    def invalidate_recaptcha_token(self) -> None:
+        """Truncate / invalidate the recaptcha token file since tokens are single-use."""
+        if not self.recaptcha_token_path:
+            return
+        path = Path(self.recaptcha_token_path)
+        if path.is_file():
+            try:
+                path.write_text("", encoding="utf-8")
+            except OSError:
+                pass
+
     async def __aenter__(self) -> Self:
         """Async context manager enter."""
         return self
@@ -275,6 +314,7 @@ class BounScraperClient:
         text = response.text
 
         if RECAPTCHA_ERROR_MARKER in text:
+            self.invalidate_recaptcha_token()
             raise RecaptchaBlockedError(
                 "Boğaziçi registration server blocked the request with reCAPTCHA. "
                 "Update cookies.txt with an active session, and/or recaptcha_token.txt "
@@ -301,14 +341,18 @@ class BounScraperClient:
             try:
                 response = await self._client.get(url, params=params, headers=headers)
                 if response.status_code >= 500:
+                    retry_after = _parse_retry_after(response.headers.get("Retry-After"))
                     raise BounHttpError(
                         f"Server error {response.status_code} requesting {url}",
                         status_code=response.status_code,
+                        retry_after=retry_after,
                     )
                 if response.status_code >= 400:
+                    retry_after = _parse_retry_after(response.headers.get("Retry-After"))
                     raise BounHttpError(
                         f"HTTP {response.status_code} error requesting {url}",
                         status_code=response.status_code,
+                        retry_after=retry_after,
                     )
                 return self._process_response(response)
             except RecaptchaBlockedError:
@@ -323,7 +367,10 @@ class BounScraperClient:
                     raise
                 last_exception = err
                 if attempt < retries:
-                    backoff = (2 ** (attempt - 1)) * 0.5 + random.uniform(0.05, 0.2)
+                    if isinstance(err, BounHttpError) and err.retry_after is not None:
+                        backoff = err.retry_after
+                    else:
+                        backoff = (2 ** (attempt - 1)) * 0.5 + random.uniform(0.05, 0.2)
                     await asyncio.sleep(backoff)
                 else:
                     break
@@ -353,14 +400,18 @@ class BounScraperClient:
                     url, data=data, params=params, headers=headers
                 )
                 if response.status_code >= 500:
+                    retry_after = _parse_retry_after(response.headers.get("Retry-After"))
                     raise BounHttpError(
                         f"Server error {response.status_code} posting to {url}",
                         status_code=response.status_code,
+                        retry_after=retry_after,
                     )
                 if response.status_code >= 400:
+                    retry_after = _parse_retry_after(response.headers.get("Retry-After"))
                     raise BounHttpError(
                         f"HTTP {response.status_code} error posting to {url}",
                         status_code=response.status_code,
+                        retry_after=retry_after,
                     )
                 return self._process_response(response)
             except RecaptchaBlockedError:
@@ -375,7 +426,10 @@ class BounScraperClient:
                     raise
                 last_exception = err
                 if attempt < retries:
-                    backoff = (2 ** (attempt - 1)) * 0.5 + random.uniform(0.05, 0.2)
+                    if isinstance(err, BounHttpError) and err.retry_after is not None:
+                        backoff = err.retry_after
+                    else:
+                        backoff = (2 ** (attempt - 1)) * 0.5 + random.uniform(0.05, 0.2)
                     await asyncio.sleep(backoff)
                 else:
                     break
