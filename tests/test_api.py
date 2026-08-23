@@ -621,3 +621,11 @@ class TestApiEndpoints:
 
         loaded_response = await async_client.get("/api/v1/scraper/config")
         assert loaded_response.json() == {"cookie_loaded": True}
+
+    @pytest.mark.asyncio
+    async def test_security_headers_present(self, async_client: AsyncClient) -> None:
+        response = await async_client.get("/")
+        assert response.status_code == 200
+        assert response.headers["X-Content-Type-Options"] == "nosniff"
+        assert response.headers["X-Frame-Options"] == "DENY"
+        assert response.headers["Referrer-Policy"] == "strict-origin-when-cross-origin"

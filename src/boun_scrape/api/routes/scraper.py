@@ -1,6 +1,8 @@
 """Scraper execution, control, status, and logging endpoints."""
 
 import os
+import tempfile
+from pathlib import Path
 from typing import Annotated, Any
 
 from fastapi import APIRouter, Depends, HTTPException, Query, status
@@ -172,7 +174,16 @@ def update_scraper_config(
     current_user: str = Depends(get_current_user),
 ) -> dict[str, str]:
     """Write a new session cookie string to the scraper's cookie file."""
-    with open(settings.cookies_path, "w", encoding="utf-8") as f:
-        f.write(payload.cookies)
+    cookie_path = Path(settings.cookies_path)
+    cookie_path.parent.mkdir(parents=True, exist_ok=True)
+    fd, tmp_path = tempfile.mkstemp(dir=str(cookie_path.parent), prefix="cookies_", suffix=".tmp")
+    try:
+        with open(fd, "w", encoding="utf-8") as f:
+            f.write(payload.cookies)
+        os.replace(tmp_path, cookie_path)
+    except BaseException:
+        if os.path.exists(tmp_path):
+            os.remove(tmp_path)
+        raise
     client.reload_cookies()
     return {"status": "ok", "message": "Cookie configuration updated."}

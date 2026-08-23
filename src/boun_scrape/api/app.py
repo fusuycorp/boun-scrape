@@ -52,6 +52,14 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app.state.login_rate_limiter = RateLimiter(max_requests=5, window_seconds=60)
     app.state.quota_rate_limiter = RateLimiter(max_requests=30, window_seconds=60)
 
+    @app.middleware("http")
+    async def add_security_headers(request: Request, call_next):
+        response = await call_next(request)
+        response.headers["X-Content-Type-Options"] = "nosniff"
+        response.headers["X-Frame-Options"] = "DENY"
+        response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+        return response
+
     # Configure CORS middleware
     origins = cfg.allowed_origins or ["*"]
     app.add_middleware(

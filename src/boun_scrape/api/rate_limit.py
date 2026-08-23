@@ -9,9 +9,11 @@ per test) don't leak rate-limit state into each other.
 """
 
 import time
-from collections import defaultdict, deque
+from collections import deque
 
 from fastapi import HTTPException, Request, status
+
+TRUSTED_PROXIES = {"127.0.0.1", "::1", "localhost", "testclient"}
 
 
 class RateLimiter:
@@ -20,29 +22,38 @@ class RateLimiter:
     def __init__(self, max_requests: int, window_seconds: float) -> None:
         self.max_requests = max_requests
         self.window_seconds = window_seconds
-        self._hits: dict[str, deque[float]] = defaultdict(deque)
+        self._hits: dict[str, deque[float]] = {}
 
     def check(self, client_ip: str) -> None:
         now = time.monotonic()
-        hits = self._hits[client_ip]
-        while hits and now - hits[0] > self.window_seconds:
-            hits.popleft()
+        hits = self._hits.get(client_ip)
+        if hits is not None:
+            while hits and now - hits[0] > self.window_seconds:
+                hits.popleft()
+            if not hits:
+                del self._hits[client_ip]
+                hits = None
 
-        if len(hits) >= self.max_requests:
+        if hits is not None and len(hits) >= self.max_requests:
             raise HTTPException(
                 status_code=status.HTTP_429_TOO_MANY_REQUESTS,
                 detail="Too many requests. Please try again later.",
             )
 
+        if hits is None:
+            hits = deque()
+            self._hits[client_ip] = hits
+
         hits.append(now)
 
 
 def _get_client_ip(request: Request) -> str:
-    forwarded = request.headers.get("x-forwarded-for")
-    if forwarded:
-        client_ip = forwarded.split(",")[0].strip()
-        if client_ip:
-            return client_ip
+    if request.client and request.client.host in TRUSTED_PROXIES:
+        forwarded = request.headers.get("x-forwarded-for")
+        if forwarded:
+            client_ip = forwarded.split(",")[0].strip()
+            if client_ip:
+                return client_ip
     return request.client.host if request.client else "unknown"
 
 

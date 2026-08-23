@@ -87,6 +87,25 @@ class TestJwt:
 
         assert verify_jwt_token(token, secret_key="test-secret") is None
 
+    def test_invalid_exp_type_rejected(self) -> None:
+        import base64
+        import hashlib
+        import hmac
+        import json
+
+        header = {"alg": "HS256", "typ": "JWT"}
+        header_b64 = base64.urlsafe_b64encode(json.dumps(header).encode()).rstrip(b"=").decode()
+
+        for invalid_exp in (True, False, "9999999999", [12345], {"exp": 1}):
+            payload = {"sub": "admin", "exp": invalid_exp}
+            payload_b64 = base64.urlsafe_b64encode(json.dumps(payload).encode()).rstrip(b"=").decode()
+            signing_input = f"{header_b64}.{payload_b64}".encode()
+            sig = hmac.new("test-secret".encode(), signing_input, hashlib.sha256).digest()
+            sig_b64 = base64.urlsafe_b64encode(sig).rstrip(b"=").decode()
+            token = f"{header_b64}.{payload_b64}.{sig_b64}"
+
+            assert verify_jwt_token(token, secret_key="test-secret") is None
+
 
 class TestClientIp:
     def test_x_forwarded_for_header(self) -> None:
@@ -100,6 +119,18 @@ class TestClientIp:
         }
         request = Request(scope)
         assert _get_client_ip(request) == "203.0.113.195"
+
+    def test_untrusted_proxy_ignores_forwarded_for(self) -> None:
+        from fastapi import Request
+        from boun_scrape.api.rate_limit import _get_client_ip
+
+        scope = {
+            "type": "http",
+            "headers": [(b"x-forwarded-for", b"203.0.113.195, 70.41.3.18")],
+            "client": ("198.51.100.25", 12345),
+        }
+        request = Request(scope)
+        assert _get_client_ip(request) == "198.51.100.25"
 
     def test_fallback_to_client_host(self) -> None:
         from fastapi import Request
@@ -124,3 +155,17 @@ class TestClientIp:
         }
         request = Request(scope)
         assert _get_client_ip(request) == "unknown"
+
+
+class TestRateLimiter:
+    def test_cleanup_empty_hits(self) -> None:
+        import time
+        from boun_scrape.api.rate_limit import RateLimiter
+
+        limiter = RateLimiter(max_requests=2, window_seconds=0.01)
+        limiter.check("1.2.3.4")
+        assert "1.2.3.4" in limiter._hits
+        time.sleep(0.02)
+        # Next check should clear expired timestamps and record new hit
+        limiter.check("1.2.3.4")
+        assert len(limiter._hits["1.2.3.4"]) == 1

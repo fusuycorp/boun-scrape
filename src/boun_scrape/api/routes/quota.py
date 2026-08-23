@@ -1,5 +1,6 @@
 """Live quota query endpoints."""
 
+import asyncio
 from typing import Annotated
 
 from fastapi import APIRouter, Depends, Query
@@ -33,7 +34,7 @@ async def _resolve_term(
     if term and term.strip():
         return term.strip()
 
-    db_terms = repo.get_terms()
+    db_terms = await asyncio.to_thread(repo.get_terms)
     if db_terms:
         return db_terms[0]
 

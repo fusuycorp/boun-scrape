@@ -1,5 +1,6 @@
 """Downstream feed endpoints for change deltas, run histories, and file exports."""
 
+import threading
 from pathlib import Path
 from typing import Annotated
 
@@ -20,6 +21,8 @@ from boun_scrape.pipeline.exporter import _sanitize_term, generate_all_exports
 from boun_scrape.storage.repository import CourseRepository
 
 router = APIRouter(tags=["Feeds"])
+
+_export_lock = threading.Lock()
 
 FORMAT_MEDIA_TYPES: dict[str, tuple[str, str]] = {
     "json": ("application/json", "json"),
@@ -103,18 +106,20 @@ def download_export(
     target_path = export_dir / filename
 
     if not target_path.exists():
-        courses = repo.get_courses_by_term(term)
-        if not courses and "_" in term:
-            courses = repo.get_courses_by_term(term.replace("_", "/"))
-        if not courses and "/" in term:
-            courses = repo.get_courses_by_term(term.replace("/", "_"))
+        with _export_lock:
+            if not target_path.exists():
+                courses = repo.get_courses_by_term(term)
+                if not courses and "_" in term:
+                    courses = repo.get_courses_by_term(term.replace("_", "/"))
+                if not courses and "/" in term:
+                    courses = repo.get_courses_by_term(term.replace("/", "_"))
 
-        if not courses:
-            raise HTTPException(
-                status_code=status.HTTP_404_NOT_FOUND,
-                detail=f"No courses or exports available for term '{term}'.",
-            )
-        generate_all_exports(term=term, courses=courses, output_dir=export_dir)
+                if not courses:
+                    raise HTTPException(
+                        status_code=status.HTTP_404_NOT_FOUND,
+                        detail=f"No courses or exports available for term '{term}'.",
+                    )
+                generate_all_exports(term=term, courses=courses, output_dir=export_dir)
 
     if not target_path.exists():
         raise HTTPException(

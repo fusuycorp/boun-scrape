@@ -64,7 +64,9 @@ def verify_jwt_token(token: str, secret_key: str) -> dict | None:
         if "exp" not in payload:
             return None
         exp = payload.get("exp")
-        if exp and int(time.time()) > exp:
+        if not isinstance(exp, (int, float)) or isinstance(exp, bool):
+            return None
+        if int(time.time()) > exp:
             return None
         return payload
     except Exception:
