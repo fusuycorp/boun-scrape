@@ -1,6 +1,7 @@
 """Integration tests for DatabaseManager and CourseRepository."""
 
 import sqlite3
+from pathlib import Path
 
 import pytest
 
@@ -475,3 +476,28 @@ class TestRepository:
         everything = repo.get_quota_snapshots(term="2024/2025-1")
         assert len(everything) == 2
         assert everything[0].course_code == "CMPE 150"
+
+    def test_idx_courses_unique_and_wal_mode(self, tmp_path: Path) -> None:
+        db_path = str(tmp_path / "unique_test.db")
+        db = DatabaseManager(db_path)
+        db.init_db()
+
+        with db.connection() as conn:
+            # Verify WAL mode is active
+            journal_mode = conn.execute("PRAGMA journal_mode;").fetchone()[0]
+            assert journal_mode.lower() == "wal"
+
+            # Verify unique index exists in sqlite_master
+            idx_row = conn.execute(
+                "SELECT name FROM sqlite_master WHERE type='index' AND name='idx_courses_unique'"
+            ).fetchone()
+            assert idx_row is not None
+
+            # Test unique constraint on courses table
+            conn.execute(
+                "INSERT INTO courses (term, department, course_code, section) VALUES ('2024/2025-1', 'CMPE', '150', '01')"
+            )
+            with pytest.raises(sqlite3.IntegrityError):
+                conn.execute(
+                    "INSERT INTO courses (term, department, course_code, section) VALUES ('2024/2025-1', 'CMPE', '150', '01')"
+                )

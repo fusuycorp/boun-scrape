@@ -124,7 +124,6 @@ class DatabaseManager:
         conn.execute("PRAGMA foreign_keys = ON;")
         conn.execute("PRAGMA busy_timeout = 5000;")
         if self.db_path != ":memory:":
-            conn.execute("PRAGMA journal_mode = WAL;")
             conn.execute("PRAGMA synchronous = NORMAL;")
 
         return conn
@@ -151,6 +150,8 @@ class DatabaseManager:
     def init_db(self) -> None:
         """Initialize SQLite database tables and indexes."""
         with self.connection() as conn:
+            if self.db_path != ":memory:":
+                conn.execute("PRAGMA journal_mode = WAL;")
             conn.executescript(SCHEMA_SQL)
             self._migrate_schema(conn)
 
@@ -162,3 +163,6 @@ class DatabaseManager:
                 "ALTER TABLE scrape_runs ADD COLUMN completed_departments INTEGER DEFAULT 0"
             )
             conn.commit()
+        conn.execute(
+            "CREATE UNIQUE INDEX IF NOT EXISTS idx_courses_unique ON courses (term, department, course_code, section)"
+        )
