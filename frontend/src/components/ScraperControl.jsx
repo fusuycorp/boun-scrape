@@ -34,14 +34,20 @@ export default function ScraperControl() {
 
   const pollScraper = async () => {
     try {
-      const [statusRes, logsRes] = await Promise.all([
-        api.getScrapeStatus().catch(() => ({ is_scraping: false, current_progress: null })),
-        api.getScrapeLogs().catch(() => []),
-      ]);
+      const statusRes = await api
+        .getScrapeStatus()
+        .catch(() => ({ is_scraping: false, current_progress: null }));
+
+      let logsRes = null;
+      if (statusRes.is_scraping) {
+        logsRes = await api.getScrapeLogs().catch(() => []);
+      }
 
       if (isMountedRef.current) {
         setStatus(statusRes);
-        setLogs(logsRes.map(formatLogEntry));
+        if (logsRes) {
+          setLogs(logsRes.map(formatLogEntry));
+        }
       }
     } catch {
       // Ignore transient polling errors

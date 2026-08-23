@@ -92,14 +92,14 @@ export default function QuotaMonitor() {
     pollAllQuotas();
     setCountdown(10);
 
+    let currentCount = 10;
     const timer = setInterval(() => {
-      setCountdown((prev) => {
-        if (prev <= 1) {
-          pollAllQuotas();
-          return 10;
-        }
-        return prev - 1;
-      });
+      currentCount -= 1;
+      if (currentCount <= 0) {
+        currentCount = 10;
+        pollAllQuotas();
+      }
+      setCountdown(currentCount);
     }, 1000);
 
     return () => clearInterval(timer);
