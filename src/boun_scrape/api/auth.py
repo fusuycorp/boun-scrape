@@ -61,6 +61,8 @@ def verify_jwt_token(token: str, secret_key: str) -> dict | None:
         payload = json.loads(_b64_decode(payload_b64).decode("utf-8"))
         if not isinstance(payload, dict):
             return None
+        if "exp" not in payload:
+            return None
         exp = payload.get("exp")
         if exp and int(time.time()) > exp:
             return None
