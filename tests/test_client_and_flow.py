@@ -255,6 +255,96 @@ class TestScraperClient:
             with pytest.raises(BounHttpError):
                 await client.get("/test", retries=2)
 
+    @pytest.mark.asyncio
+    async def test_client_retries_on_429_too_many_requests_get(self) -> None:
+        attempts = 0
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            nonlocal attempts
+            attempts += 1
+            if attempts < 3:
+                return httpx.Response(429, text="Too Many Requests")
+            return httpx.Response(200, content=b"Success")
+
+        transport = httpx.MockTransport(handler)
+        async_client = httpx.AsyncClient(
+            transport=transport, base_url="https://registration.bogazici.edu.tr"
+        )
+
+        async with BounScraperClient(
+            http_client=async_client, min_jitter=0, max_jitter=0
+        ) as client:
+            resp = await client.get("/test", retries=3)
+            assert resp.status_code == 200
+            assert attempts == 3
+
+    @pytest.mark.asyncio
+    async def test_client_retries_on_429_too_many_requests_post(self) -> None:
+        attempts = 0
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            nonlocal attempts
+            attempts += 1
+            if attempts < 3:
+                return httpx.Response(429, text="Too Many Requests")
+            return httpx.Response(200, content=b"Success")
+
+        transport = httpx.MockTransport(handler)
+        async_client = httpx.AsyncClient(
+            transport=transport, base_url="https://registration.bogazici.edu.tr"
+        )
+
+        async with BounScraperClient(
+            http_client=async_client, min_jitter=0, max_jitter=0
+        ) as client:
+            resp = await client.post("/test", data={"key": "val"}, retries=3)
+            assert resp.status_code == 200
+            assert attempts == 3
+
+    @pytest.mark.asyncio
+    async def test_client_fails_immediately_on_404_without_retrying(self) -> None:
+        attempts = 0
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            nonlocal attempts
+            attempts += 1
+            return httpx.Response(404, text="Not Found")
+
+        transport = httpx.MockTransport(handler)
+        async_client = httpx.AsyncClient(
+            transport=transport, base_url="https://registration.bogazici.edu.tr"
+        )
+
+        async with BounScraperClient(
+            http_client=async_client, min_jitter=0, max_jitter=0
+        ) as client:
+            with pytest.raises(BounHttpError) as exc_info:
+                await client.get("/test", retries=3)
+            assert exc_info.value.status_code == 404
+            assert attempts == 1
+
+    @pytest.mark.asyncio
+    async def test_reload_cookies_updates_jar(self, tmp_path) -> None:
+        cookie_file = tmp_path / "cookies.txt"
+        cookie_file.write_text("session_id=init123", encoding="utf-8")
+
+        async_client = httpx.AsyncClient(
+            transport=httpx.MockTransport(lambda r: httpx.Response(200)),
+            base_url="https://registration.bogazici.edu.tr",
+        )
+        async with BounScraperClient(
+            http_client=async_client,
+            cookies_path=str(cookie_file),
+            min_jitter=0,
+            max_jitter=0,
+        ) as client:
+            assert client.cookies.get("session_id") == "init123"
+            cookie_file.write_text("session_id=fresh456; new_key=value789", encoding="utf-8")
+            reloaded = client.reload_cookies()
+            assert reloaded == {"session_id": "fresh456", "new_key": "value789"}
+            assert client.cookies.get("session_id") == "fresh456"
+            assert client.cookies.get("new_key") == "value789"
+
 
 class TestScraperFlow:
     """Tests for scraping workflows and term pipeline."""

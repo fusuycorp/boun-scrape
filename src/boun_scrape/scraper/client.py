@@ -227,6 +227,13 @@ class BounScraperClient:
         """Access the client's cookie jar."""
         return self._client.cookies
 
+    def reload_cookies(self) -> dict[str, str]:
+        """Re-read cookies from cookies_path and update the client cookie jar."""
+        cookies = parse_cookie_file(self.cookies_path) if self.cookies_path else {}
+        if cookies:
+            self._client.cookies.update(cookies)
+        return cookies
+
     @property
     def recaptcha_token(self) -> str:
         """Manually-solved reCAPTCHA token, re-read from disk on every access.
@@ -307,7 +314,12 @@ class BounScraperClient:
             except RecaptchaBlockedError:
                 raise
             except (httpx.TransportError, httpx.TimeoutException, BounHttpError) as err:
-                if isinstance(err, BounHttpError) and err.status_code is not None and err.status_code < 500:
+                if (
+                    isinstance(err, BounHttpError)
+                    and err.status_code is not None
+                    and err.status_code < 500
+                    and err.status_code != 429
+                ):
                     raise
                 last_exception = err
                 if attempt < retries:
@@ -354,7 +366,12 @@ class BounScraperClient:
             except RecaptchaBlockedError:
                 raise
             except (httpx.TransportError, httpx.TimeoutException, BounHttpError) as err:
-                if isinstance(err, BounHttpError) and err.status_code is not None and err.status_code < 500:
+                if (
+                    isinstance(err, BounHttpError)
+                    and err.status_code is not None
+                    and err.status_code < 500
+                    and err.status_code != 429
+                ):
                     raise
                 last_exception = err
                 if attempt < retries:
