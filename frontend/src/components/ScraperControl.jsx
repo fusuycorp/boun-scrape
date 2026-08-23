@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
   Play,
   Square,
@@ -13,6 +13,9 @@ import { useMountedRef } from '../hooks/useSafeAsync';
 import { useToast } from '../hooks/useToast';
 import ConfirmDialog from './ConfirmDialog';
 
+const formatLogEntry = (entry) =>
+  `[${new Date(entry.timestamp).toLocaleTimeString('en-GB')}] [${entry.level}] ${entry.message}`;
+
 export default function ScraperControl() {
   const showToast = useToast();
   const isMountedRef = useMountedRef();
@@ -20,7 +23,6 @@ export default function ScraperControl() {
 
   const [status, setStatus] = useState({ is_scraping: false, current_progress: null });
   const [logs, setLogs] = useState([]);
-  const [terms, setTerms] = useState([]);
 
   const [starting, setStarting] = useState(false);
   const [stopping, setStopping] = useState(false);
@@ -29,10 +31,7 @@ export default function ScraperControl() {
 
   const autoScrollRef = useRef(true);
 
-  const formatLogEntry = (entry) =>
-    `[${new Date(entry.timestamp).toLocaleTimeString('en-GB')}] [${entry.level}] ${entry.message}`;
-
-  const pollScraper = async () => {
+  const pollScraper = useCallback(async () => {
     try {
       const statusRes = await api
         .getScrapeStatus()
@@ -52,29 +51,42 @@ export default function ScraperControl() {
     } catch {
       // Ignore transient polling errors
     }
-  };
+  }, [isMountedRef]);
 
-  const fetchTerms = async () => {
-    try {
-      const data = await api.getTerms();
-      if (isMountedRef.current && data) {
-        setTerms(data);
-      }
-    } catch {
-      // Ignore
-    }
-  };
+  const isRunning = status.is_scraping;
 
   useEffect(() => {
-    pollScraper();
-    fetchTerms();
+    let timerId = null;
 
-    const interval = setInterval(() => {
-      pollScraper();
-    }, 1500);
+    const poll = async () => {
+      if (document.hidden) return;
+      await pollScraper();
+    };
 
-    return () => clearInterval(interval);
-  }, []);
+    const scheduleNext = () => {
+      const intervalMs = isRunning ? 1500 : 8000;
+      timerId = setTimeout(async () => {
+        await poll();
+        scheduleNext();
+      }, intervalMs);
+    };
+
+    poll();
+    scheduleNext();
+
+    const handleVisibilityChange = () => {
+      if (!document.hidden) {
+        poll();
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      if (timerId) clearTimeout(timerId);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, [isRunning, pollScraper]);
 
   useEffect(() => {
     if (autoScrollRef.current && logTerminalRef.current) {
@@ -126,7 +138,6 @@ export default function ScraperControl() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const isRunning = status.is_scraping;
   const progress = status.current_progress;
   const percent = progress?.total
     ? Math.round((progress.completed / progress.total) * 1000) / 10

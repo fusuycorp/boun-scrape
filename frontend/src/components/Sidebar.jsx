@@ -6,12 +6,11 @@ import {
   Search,
   Activity,
   Sliders,
-  LogOut,
   Menu,
   X,
   ExternalLink,
 } from 'lucide-react';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../hooks/useAuth';
 
 export default function Sidebar() {
   const { user, logout } = useAuth();

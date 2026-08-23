@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
   Activity,
   Plus,
@@ -11,9 +11,23 @@ import { api } from '../api/client';
 import { useMountedRef } from '../hooks/useSafeAsync';
 import { useToast } from '../hooks/useToast';
 
+async function runWithConcurrency(items, concurrencyLimit, workerFn) {
+  let index = 0;
+  async function worker() {
+    while (index < items.length) {
+      const currentIndex = index++;
+      await workerFn(items[currentIndex]);
+    }
+  }
+  const workerCount = Math.min(concurrencyLimit, items.length);
+  const workers = Array.from({ length: workerCount }, () => worker());
+  await Promise.all(workers);
+}
+
 export default function QuotaMonitor() {
   const showToast = useToast();
   const isMountedRef = useMountedRef();
+  const abortControllerRef = useRef(null);
 
   const [watchlist, setWatchlist] = useState(() => {
     try {
@@ -56,18 +70,21 @@ export default function QuotaMonitor() {
       .catch(() => {});
   }, [isMountedRef]);
 
-  const fetchSingleQuota = async (item) => {
+  const fetchSingleQuota = useCallback(async (item, signal) => {
     const key = `${item.abbr}_${item.code}_${item.section}_${item.term}`;
     if (isMountedRef.current) {
       setLoadingMap((prev) => ({ ...prev, [key]: true }));
     }
 
     try {
-      const res = await api.checkQuota(item.abbr, item.code, item.section, item.term);
-      if (isMountedRef.current) {
+      const res = await api.checkQuota(item.abbr, item.code, item.section, item.term, { signal });
+      if (isMountedRef.current && !signal?.aborted) {
         setQuotaData((prev) => ({ ...prev, [key]: { success: true, data: res } }));
       }
     } catch (err) {
+      if (err.name === 'AbortError' || signal?.aborted) {
+        return;
+      }
       if (isMountedRef.current) {
         setQuotaData((prev) => ({
           ...prev,
@@ -75,16 +92,34 @@ export default function QuotaMonitor() {
         }));
       }
     } finally {
-      if (isMountedRef.current) {
+      if (isMountedRef.current && !signal?.aborted) {
         setLoadingMap((prev) => ({ ...prev, [key]: false }));
       }
     }
-  };
+  }, [isMountedRef]);
 
-  const pollAllQuotas = async () => {
+  const pollAllQuotas = useCallback(async () => {
     if (watchlist.length === 0) return;
-    await Promise.all(watchlist.map((item) => fetchSingleQuota(item)));
-  };
+
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+    const controller = new AbortController();
+    abortControllerRef.current = controller;
+
+    const CONCURRENCY_LIMIT = 4;
+    await runWithConcurrency(watchlist, CONCURRENCY_LIMIT, (item) =>
+      fetchSingleQuota(item, controller.signal)
+    );
+  }, [watchlist, fetchSingleQuota]);
+
+  useEffect(() => {
+    return () => {
+      if (abortControllerRef.current) {
+        abortControllerRef.current.abort();
+      }
+    };
+  }, []);
 
   useEffect(() => {
     if (!pollingActive || watchlist.length === 0) return;
@@ -102,8 +137,13 @@ export default function QuotaMonitor() {
       setCountdown(currentCount);
     }, 1000);
 
-    return () => clearInterval(timer);
-  }, [pollingActive, watchlist]);
+    return () => {
+      clearInterval(timer);
+      if (abortControllerRef.current) {
+        abortControllerRef.current.abort();
+      }
+    };
+  }, [pollingActive, watchlist, pollAllQuotas]);
 
   const handleAddWatchlist = (e) => {
     e.preventDefault();

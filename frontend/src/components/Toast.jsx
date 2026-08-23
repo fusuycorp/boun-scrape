@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { CheckCircle2, AlertCircle, Info, X } from 'lucide-react';
 import { ToastContext } from '../hooks/useToast';
 
@@ -63,13 +63,16 @@ export function ToastProvider({ children }) {
     timersRef.current.clear();
   }, []);
 
-  const value = {
-    toast: push,
-    success: (msg, opts) => push('success', msg, opts),
-    error: (msg, opts) => push('error', msg, opts),
-    info: (msg, opts) => push('info', msg, opts),
-    dismiss,
-  };
+  const value = useMemo(
+    () => ({
+      toast: push,
+      success: (msg, opts) => push('success', msg, opts),
+      error: (msg, opts) => push('error', msg, opts),
+      info: (msg, opts) => push('info', msg, opts),
+      dismiss,
+    }),
+    [push, dismiss]
+  );
 
   return (
     <ToastContext.Provider value={value}>

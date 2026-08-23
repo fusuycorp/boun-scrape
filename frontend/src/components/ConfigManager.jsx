@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Cookie, Save, AlertCircle } from 'lucide-react';
 import { api } from '../api/client';
 import { useMountedRef } from '../hooks/useSafeAsync';
@@ -14,7 +14,7 @@ export default function ConfigManager() {
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
 
-  const fetchConfig = async () => {
+  const fetchConfig = useCallback(async () => {
     try {
       setLoading(true);
       const res = await api.getScraperConfig();
@@ -30,11 +30,11 @@ export default function ConfigManager() {
         setLoading(false);
       }
     }
-  };
+  }, [isMountedRef, showToast]);
 
   useEffect(() => {
     fetchConfig();
-  }, []);
+  }, [fetchConfig]);
 
   const isDirty = cookies.trim() !== '';
 

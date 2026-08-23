@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import {
   BookOpen,
@@ -6,8 +6,6 @@ import {
   Layers,
   Building2,
   Terminal,
-  Search,
-  Activity,
   ShieldCheck,
   RefreshCw,
   Cookie,
@@ -26,7 +24,7 @@ export default function Dashboard() {
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
 
-  const fetchDashboardData = async () => {
+  const fetchDashboardData = useCallback(async () => {
     try {
       setRefreshing(true);
       const [statsRes, configRes] = await Promise.all([
@@ -48,11 +46,11 @@ export default function Dashboard() {
         setRefreshing(false);
       }
     }
-  };
+  }, [isMountedRef, showToast]);
 
   useEffect(() => {
     fetchDashboardData();
-  }, []);
+  }, [fetchDashboardData]);
 
   const statCards = [
     {

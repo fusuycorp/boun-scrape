@@ -1,4 +1,4 @@
-import { createContext, useContext } from 'react';
+import { createContext, useContext, useMemo } from 'react';
 
 export const ToastContext = createContext({
   toast: () => {},
@@ -11,17 +11,16 @@ export const ToastContext = createContext({
 export function useToast() {
   const ctx = useContext(ToastContext);
 
-  const showToast = (message, variant = 'info', opts = {}) => {
-    if (ctx && ctx.toast) {
-      return ctx.toast(variant, message, opts);
-    }
-  };
-
-  showToast.success = (msg, opts) => ctx?.success?.(msg, opts);
-  showToast.error = (msg, opts) => ctx?.error?.(msg, opts);
-  showToast.info = (msg, opts) => ctx?.info?.(msg, opts);
-  showToast.dismiss = (id) => ctx?.dismiss?.(id);
-  showToast.toast = ctx?.toast;
-
-  return showToast;
+  return useMemo(() => {
+    return Object.assign(
+      (message, variant = 'info', opts = {}) => ctx?.toast?.(variant, message, opts),
+      {
+        toast: (variant, message, opts) => ctx?.toast?.(variant, message, opts),
+        success: (msg, opts) => ctx?.success?.(msg, opts),
+        error: (msg, opts) => ctx?.error?.(msg, opts),
+        info: (msg, opts) => ctx?.info?.(msg, opts),
+        dismiss: (id) => ctx?.dismiss?.(id),
+      }
+    );
+  }, [ctx]);
 }

@@ -8,7 +8,7 @@ const getAuthHeader = () => {
 };
 
 export async function apiRequest(endpoint, options = {}) {
-  const { method = 'GET', body = null, headers = {}, params = null } = options;
+  const { method = 'GET', body = null, headers = {}, params = null, signal = null } = options;
 
   let url = endpoint.startsWith('/api') ? endpoint : `/api/v1${endpoint}`;
 
@@ -40,13 +40,12 @@ export async function apiRequest(endpoint, options = {}) {
     method,
     headers: reqHeaders,
     body: reqBody,
+    signal,
   });
 
   if (response.status === 401) {
     localStorage.removeItem('token');
-    if (!window.location.pathname.includes('/login')) {
-      window.location.href = '/login';
-    }
+    window.dispatchEvent(new CustomEvent('auth:unauthorized'));
     throw new Error('Session expired. Please log in again.');
   }
 
@@ -108,6 +107,6 @@ export const api = {
   getScrapeLogs: (clear = false) => apiRequest('/scraper/logs', { params: { clear } }),
 
   // Quota
-  checkQuota: (abbr, code, section, term) =>
-    apiRequest('/quota', { params: { abbr, code, section, term } }),
+  checkQuota: (abbr, code, section, term, options = {}) =>
+    apiRequest('/quota', { params: { abbr, code, section, term }, ...options }),
 };

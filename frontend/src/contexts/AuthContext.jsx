@@ -1,7 +1,6 @@
-import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { api } from '../api/client';
-
-const AuthContext = createContext(null);
+import { AuthContext } from './authContext';
 
 export function AuthProvider({ children }) {
   const [token, setToken] = useState(() => localStorage.getItem('token'));
@@ -31,6 +30,20 @@ export function AuthProvider({ children }) {
     validateSession(token);
   }, [token, validateSession]);
 
+  useEffect(() => {
+    const handleUnauthorized = () => {
+      localStorage.removeItem('token');
+      setToken(null);
+      setUser(null);
+      setAuthenticating(false);
+    };
+
+    window.addEventListener('auth:unauthorized', handleUnauthorized);
+    return () => {
+      window.removeEventListener('auth:unauthorized', handleUnauthorized);
+    };
+  }, []);
+
   const login = async (username, password) => {
     setAuthenticating(true);
     try {
@@ -38,7 +51,6 @@ export function AuthProvider({ children }) {
       const newToken = data.access_token;
       localStorage.setItem('token', newToken);
       setToken(newToken);
-      await validateSession(newToken);
       return true;
     } catch (error) {
       setAuthenticating(false);
@@ -66,12 +78,4 @@ export function AuthProvider({ children }) {
       {children}
     </AuthContext.Provider>
   );
-}
-
-export function useAuth() {
-  const context = useContext(AuthContext);
-  if (!context) {
-    throw new Error('useAuth must be used within an AuthProvider');
-  }
-  return context;
 }

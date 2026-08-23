@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import { AuthProvider, useAuth } from './contexts/AuthContext';
+import { AuthProvider } from './contexts/AuthContext';
+import { useAuth } from './hooks/useAuth';
 import { ToastProvider } from './components/Toast';
+import ErrorBoundary from './components/ErrorBoundary';
 
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
@@ -134,14 +136,16 @@ function MainLayout() {
         maxWidth: '1200px',
         width: '100%',
       }}>
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/scraper" element={<ScraperControl />} />
-          <Route path="/explorer" element={<CourseData />} />
-          <Route path="/quota" element={<QuotaMonitor />} />
-          <Route path="/config" element={<ConfigManager />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
+        <ErrorBoundary>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/scraper" element={<ScraperControl />} />
+            <Route path="/explorer" element={<CourseData />} />
+            <Route path="/quota" element={<QuotaMonitor />} />
+            <Route path="/config" element={<ConfigManager />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </ErrorBoundary>
       </main>
       <StatusTicker />
       <div className="crt-overlay" />
@@ -151,22 +155,24 @@ function MainLayout() {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <AuthProvider>
-        <ToastProvider>
-          <Routes>
-            <Route path="/login" element={<Login />} />
-            <Route
-              path="/*"
-              element={
-                <ProtectedRoute>
-                  <MainLayout />
-                </ProtectedRoute>
-              }
-            />
-          </Routes>
-        </ToastProvider>
-      </AuthProvider>
-    </BrowserRouter>
+    <ErrorBoundary fullScreen>
+      <BrowserRouter>
+        <AuthProvider>
+          <ToastProvider>
+            <Routes>
+              <Route path="/login" element={<Login />} />
+              <Route
+                path="/*"
+                element={
+                  <ProtectedRoute>
+                    <MainLayout />
+                  </ProtectedRoute>
+                }
+              />
+            </Routes>
+          </ToastProvider>
+        </AuthProvider>
+      </BrowserRouter>
+    </ErrorBoundary>
   );
 }
