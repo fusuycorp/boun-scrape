@@ -37,15 +37,23 @@ class RateLimiter:
         hits.append(now)
 
 
-def _client_ip(request: Request) -> str:
+def _get_client_ip(request: Request) -> str:
+    forwarded = request.headers.get("x-forwarded-for")
+    if forwarded:
+        client_ip = forwarded.split(",")[0].strip()
+        if client_ip:
+            return client_ip
     return request.client.host if request.client else "unknown"
+
+
+_client_ip = _get_client_ip
 
 
 def login_rate_limit_dep(request: Request) -> None:
     """FastAPI dependency: enforce the app's login rate limiter."""
-    request.app.state.login_rate_limiter.check(_client_ip(request))
+    request.app.state.login_rate_limiter.check(_get_client_ip(request))
 
 
 def quota_rate_limit_dep(request: Request) -> None:
     """FastAPI dependency: enforce the app's quota rate limiter."""
-    request.app.state.quota_rate_limiter.check(_client_ip(request))
+    request.app.state.quota_rate_limiter.check(_get_client_ip(request))

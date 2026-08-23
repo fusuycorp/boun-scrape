@@ -1,5 +1,7 @@
 """Authentication endpoints: login and current-session identity."""
 
+import asyncio
+
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
 from pydantic import BaseModel
@@ -29,7 +31,9 @@ async def login(
     input_user = (form_data.username or "").strip()
     input_pwd = (form_data.password or "").strip()
 
-    if input_user.lower() != settings.admin_user.lower() or not verify_password(input_pwd, settings.admin_password_hash):
+    if input_user.lower() != settings.admin_user.lower() or not await asyncio.to_thread(
+        verify_password, input_pwd, settings.admin_password_hash
+    ):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect username or password",

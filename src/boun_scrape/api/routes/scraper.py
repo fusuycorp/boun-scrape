@@ -10,8 +10,10 @@ from boun_scrape.api.auth import get_current_user
 from boun_scrape.api.deps import (
     get_log_buffer_dep,
     get_scrape_scheduler_dep,
+    get_scraper_client_dep,
     get_settings_dep,
 )
+from boun_scrape.scraper.client import BounScraperClient
 from boun_scrape.api.logging_buffer import LogBuffer
 from boun_scrape.config import Settings
 from boun_scrape.domain.dto import (
@@ -166,9 +168,11 @@ def get_scraper_config(
 def update_scraper_config(
     payload: CookieUpdateRequest,
     settings: Annotated[Settings, Depends(get_settings_dep)],
+    client: Annotated[BounScraperClient, Depends(get_scraper_client_dep)],
     current_user: str = Depends(get_current_user),
 ) -> dict[str, str]:
     """Write a new session cookie string to the scraper's cookie file."""
     with open(settings.cookies_path, "w", encoding="utf-8") as f:
         f.write(payload.cookies)
+    client.reload_cookies()
     return {"status": "ok", "message": "Cookie configuration updated."}

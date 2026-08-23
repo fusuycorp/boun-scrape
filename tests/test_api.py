@@ -180,6 +180,14 @@ def mock_quota_service() -> QuotaService:
 
 
 @pytest.fixture
+def mock_scraper_client() -> BounScraperClient:
+    """Mock BounScraperClient for tests."""
+    client = MagicMock(spec=BounScraperClient)
+    client.reload_cookies = MagicMock(return_value={})
+    return client
+
+
+@pytest.fixture
 def mock_scheduler(seeded_repo: CourseRepository, test_settings: Settings) -> ScrapeScheduler:
     """Mock ScrapeScheduler for trigger and status endpoints."""
     sched = MagicMock(spec=ScrapeScheduler)
@@ -239,6 +247,7 @@ def test_log_buffer() -> LogBuffer:
 async def async_client(
     test_settings: Settings,
     seeded_repo: CourseRepository,
+    mock_scraper_client: BounScraperClient,
     mock_quota_service: QuotaService,
     mock_scheduler: ScrapeScheduler,
     test_log_buffer: LogBuffer,
@@ -247,12 +256,11 @@ async def async_client(
     app = create_app(settings=test_settings)
 
     db_mgr = DatabaseManager(test_settings.db_path)
-    mock_client = MagicMock(spec=BounScraperClient)
 
     app.dependency_overrides[get_settings_dep] = lambda: test_settings
     app.dependency_overrides[get_db_manager_dep] = lambda: db_mgr
     app.dependency_overrides[get_course_repo_dep] = lambda: seeded_repo
-    app.dependency_overrides[get_scraper_client_dep] = lambda: mock_client
+    app.dependency_overrides[get_scraper_client_dep] = lambda: mock_scraper_client
     app.dependency_overrides[get_quota_service_dep] = lambda: mock_quota_service
     app.dependency_overrides[get_scrape_scheduler_dep] = lambda: mock_scheduler
     app.dependency_overrides[get_log_buffer_dep] = lambda: test_log_buffer
@@ -593,7 +601,12 @@ class TestApiEndpoints:
         assert second_response.json() == []
 
     @pytest.mark.asyncio
-    async def test_scraper_config_round_trip(self, async_client: AsyncClient, test_settings: Settings) -> None:
+    async def test_scraper_config_round_trip(
+        self,
+        async_client: AsyncClient,
+        test_settings: Settings,
+        mock_scraper_client: BounScraperClient,
+    ) -> None:
         empty_response = await async_client.get("/api/v1/scraper/config")
         assert empty_response.status_code == 200
         assert empty_response.json() == {"cookie_loaded": False}
@@ -604,6 +617,7 @@ class TestApiEndpoints:
         assert update_response.status_code == 200
         assert update_response.json()["status"] == "ok"
         assert Path(test_settings.cookies_path).read_text() == "ASP.NET_SessionId=abc123"
+        mock_scraper_client.reload_cookies.assert_called_once()
 
         loaded_response = await async_client.get("/api/v1/scraper/config")
         assert loaded_response.json() == {"cookie_loaded": True}
