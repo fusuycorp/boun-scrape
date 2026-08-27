@@ -6,9 +6,8 @@ WORKDIR /app
 # Copy package manifests
 COPY package.json ./
 
-# Install dependencies using build cache
-RUN --mount=type=cache,target=/root/.npm \
-    npm install --no-audit --no-fund
+# Install dependencies
+RUN npm install --no-audit --no-fund
 
 # Copy source code and compile static bundle
 COPY . .

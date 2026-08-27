@@ -11,8 +11,7 @@ COPY pyproject.toml README.md ./
 COPY src ./src
 
 # Create virtualenv and install dependencies and package
-RUN --mount=type=cache,target=/root/.cache/uv \
-    uv venv /app/.venv && \
+RUN uv venv /app/.venv && \
     uv pip install --no-cache -e .
 
 # Stage 2: Minimal production runtime image
