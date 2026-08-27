@@ -257,6 +257,8 @@ class TestScrapeScheduler:
                     return httpx.Response(404)
                 return httpx.Response(200, content=semester_html.encode("windows-1254"))
             if "sch.asp" in path:
+                if "2024" in str(request.url) and "2025-2" in str(request.url):
+                    return httpx.Response(500, text="Internal Server Error")
                 return httpx.Response(200, content=schedule_html.encode("windows-1254"))
             return httpx.Response(404)
 

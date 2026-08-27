@@ -20,6 +20,104 @@ SCHEDULE_SEMESTER_URL = "/buis/General/schedule.aspx?p=semester"
 SCHEDULE_DEPT_URL = "/scripts/sch.asp"
 
 
+DEFAULT_KNOWN_DEPARTMENT_CODES: list[tuple[str, str]] = [
+    ("AD", "ADMINISTRATION"),
+    ("AE", "ADULT EDUCATION"),
+    ("ASIA", "ASIAN STUDIES"),
+    ("ATA", "ATATURK INSTITUTE FOR MODERN TURKISH HISTORY"),
+    ("AUTO", "AUTOMOTIVE ENGINEERING"),
+    ("BIS", "BUSINESS INFORMATION SYSTEMS"),
+    ("BM", "BIOMEDICAL ENGINEERING"),
+    ("BME", "BIOMEDICAL ENGINEERING"),
+    ("BPH", "BIOPHYSICS"),
+    ("BUS", "MANAGEMENT"),
+    ("CET", "COMPUTER EDUCATION & EDUCATIONAL TECHNOLOGY"),
+    ("CHE", "CHEMICAL ENGINEERING"),
+    ("CHEM", "CHEMISTRY"),
+    ("CHIN", "CHINESE"),
+    ("CINT", "CONFERENCE INTERPRETING"),
+    ("CL", "CLASSICAL LANGUAGES"),
+    ("CMPE", "COMPUTER ENGINEERING"),
+    ("COGS", "COGNITIVE SCIENCE"),
+    ("CONF", "CONFERENCE INTERPRETING"),
+    ("CS", "COMPUTER SCIENCE"),
+    ("CTR", "CONSTRUCTION TECHNOLOGY AND MANAGEMENT"),
+    ("DR", "DIRECTING"),
+    ("EC", "ECONOMICS"),
+    ("ECE", "EARLY CHILDHOOD EDUCATION"),
+    ("ED", "EDUCATIONAL SCIENCES"),
+    ("EE", "ELECTRICAL & ELECTRONICS ENGINEERING"),
+    ("EF", "FACULTY OF EDUCATION"),
+    ("EFL", "ENGLISH AS A FOREIGN LANGUAGE"),
+    ("ENG", "ENGLISH"),
+    ("ENGC", "ENGLISH COMPOSITION"),
+    ("ENGR", "ENGINEERING"),
+    ("ENV", "ENVIRONMENTAL SCIENCES"),
+    ("ENVT", "ENVIRONMENTAL TECHNOLOGY"),
+    ("EQE", "EARTHQUAKE ENGINEERING"),
+    ("ERM", "EXECUTIVE REAL ESTATE MANAGEMENT"),
+    ("ESC", "ENVIRONMENTAL SCIENCES"),
+    ("ETM", "ENGINEERING AND TECHNOLOGY MANAGEMENT"),
+    ("EX", "EXCHANGE"),
+    ("FA", "FINE ARTS"),
+    ("FLED", "FOREIGN LANGUAGE EDUCATION"),
+    ("FPA", "FILM AND PERFORMING ARTS"),
+    ("FRE", "FRENCH"),
+    ("GE", "GENERAL EDUCATION"),
+    ("GED", "GENERAL EDUCATION"),
+    ("GER", "GERMAN"),
+    ("GPH", "GEOPHYSICS"),
+    ("GUID", "GUIDANCE & PSYCHOLOGICAL COUNSELING"),
+    ("HIST", "HISTORY"),
+    ("HUM", "HUMANITIES"),
+    ("IE", "INDUSTRIAL ENGINEERING"),
+    ("INTR", "INTERNATIONAL RELATIONS"),
+    ("INTT", "INTERNATIONAL TRADE"),
+    ("ITA", "ITALIAN"),
+    ("JP", "JAPANESE"),
+    ("KOR", "KOREAN"),
+    ("LAT", "LATIN"),
+    ("LAW", "LAW"),
+    ("LING", "LINGUISTICS"),
+    ("LL", "LIFELONG LEARNING"),
+    ("LS", "LEARNING SCIENCES"),
+    ("MATH", "MATHEMATICS"),
+    ("ME", "MECHANICAL ENGINEERING"),
+    ("MED", "MEDICAL EDUCATION"),
+    ("MECA", "MECHATRONICS"),
+    ("MIR", "INTERNATIONAL RELATIONS: TURKEY, EUROPE AND THE MIDDLE EAST"),
+    ("MIS", "MANAGEMENT INFORMATION SYSTEMS"),
+    ("MS", "MATERIALS SCIENCE"),
+    ("PA", "PERFORMING ARTS"),
+    ("PE", "PHYSICAL EDUCATION"),
+    ("PHIL", "PHILOSOPHY"),
+    ("PHYS", "PHYSICS"),
+    ("POLS", "POLITICAL SCIENCE & INTERNATIONAL RELATIONS"),
+    ("PRED", "PRIMARY EDUCATION"),
+    ("PSY", "PSYCHOLOGY"),
+    ("RU", "RUSSIAN"),
+    ("SCED", "SECONDARY SCHOOL SCIENCE AND MATHEMATICS EDUCATION"),
+    ("SCO", "SYSTEMS AND CONTROL"),
+    ("SE", "SOFTWARE ENGINEERING"),
+    ("SOC", "SOCIOLOGY"),
+    ("SPAN", "SPANISH"),
+    ("SPL", "SPECIAL EDUCATION"),
+    ("STS", "SCIENCE, TECHNOLOGY AND SOCIETY"),
+    ("SWE", "SOFTWARE ENGINEERING"),
+    ("SWO", "SOCIAL WORK"),
+    ("TK", "TURKISH"),
+    ("TRM", "TOURISM MANAGEMENT"),
+    ("TRP", "TRANSLATION STUDIES"),
+    ("TRX", "TRANSLATION AND INTERPRETING"),
+    ("TS", "TURKISH STUDIES"),
+    ("TURK", "TURKISH LANGUAGE & LITERATURE"),
+    ("WTR", "WRITING"),
+    ("WW", "WESTERN LANGUAGES"),
+    ("XMBA", "EXECUTIVE MBA"),
+    ("YADYOK", "SCHOOL OF FOREIGN LANGUAGES"),
+]
+
+
 async def discover_terms(client: BounScraperClient) -> list[str]:
     """Discover available academic terms from the schedule semester page."""
     response = await client.get(SCHEDULE_SEMESTER_URL)
@@ -120,7 +218,7 @@ async def scrape_term_pipeline(
     except Exception as exc:
         fetch_error = exc
         logger.warning(
-            "fetch_departments failed for term %s: %s. Attempting fallback to cached departments.",
+            "fetch_departments failed for term %s: %s. Attempting fallback to cached/heuristic departments.",
             term,
             exc,
         )
@@ -128,17 +226,23 @@ async def scrape_term_pipeline(
     if not departments:
         if cached_departments:
             logger.info(
-                "Using %d cached departments for term %s (live discovery unauthenticated/failed)",
+                "Using %d cached/heuristic departments for term %s (live discovery blocked/unavailable)",
                 len(cached_departments),
                 term,
             )
             departments = cached_departments
         else:
-            if fetch_error is not None:
-                raise fetch_error
-            return TermScrapeResult(
-                courses=[], departments=[], succeeded_departments=[], failed_departments=[]
+            logger.warning(
+                "No cached departments found for term %s and live discovery failed (%s). "
+                "Dropping into heuristic mode using %d default known Boğaziçi departments.",
+                term,
+                fetch_error or "no departments returned",
+                len(DEFAULT_KNOWN_DEPARTMENT_CODES),
             )
+            departments = [
+                Department(code=code, name=name, bolum=name)
+                for code, name in DEFAULT_KNOWN_DEPARTMENT_CODES
+            ]
 
     # Filter departments by target list or skip already scraped
     if target_departments:
@@ -206,6 +310,9 @@ async def scrape_term_pipeline(
             term,
             ", ".join(f"{dept.code}: {exc}" for dept, exc in failures),
         )
+        if total_depts > 0 and len(failures) == total_depts:
+            first_exc = failures[0][1]
+            raise first_exc
 
     return TermScrapeResult(
         courses=all_courses,

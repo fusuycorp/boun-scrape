@@ -539,6 +539,40 @@ class TestScraperFlow:
             assert len(result.courses) == 1
 
     @pytest.mark.asyncio
+    async def test_scrape_term_pipeline_drops_into_heuristic_mode_when_captcha_blocked(
+        self,
+    ) -> None:
+        def handler(request: httpx.Request) -> httpx.Response:
+            if "schedule.aspx" in request.url.path:
+                # Simulates reCAPTCHA block on discovery page
+                return httpx.Response(
+                    200,
+                    text="<html><body>You could not pass the reCAPTCHA check</body></html>",
+                )
+            if "sch.asp" in request.url.path:
+                # sch.asp succeeds with courses
+                return httpx.Response(
+                    200, content=SAMPLE_SCHEDULE_HTML.encode("windows-1254")
+                )
+            return httpx.Response(404)
+
+        transport = httpx.MockTransport(handler)
+        async_client = httpx.AsyncClient(
+            transport=transport, base_url="https://registration.bogazici.edu.tr"
+        )
+
+        async with BounScraperClient(
+            http_client=async_client, min_jitter=0, max_jitter=0
+        ) as client:
+            # Target a historical term with no cached departments; should drop into heuristic mode
+            result = await scrape_term_pipeline(
+                client, "1971/1972-2", target_departments=["CMPE", "MATH"], concurrency=2
+            )
+            assert "CMPE" in result.succeeded_departments
+            assert "MATH" in result.succeeded_departments
+            assert len(result.courses) == 2
+
+    @pytest.mark.asyncio
     async def test_retry_after_header_numeric_seconds(self) -> None:
         attempts = 0
         delays: list[float] = []
@@ -700,39 +734,23 @@ class TestScraperFlow:
             assert len(result.courses) > 0
 
     @pytest.mark.asyncio
-    async def test_scrape_term_pipeline_fallback_error_without_cache(self) -> None:
+    async def test_scrape_term_pipeline_heuristic_mode_without_cache(self) -> None:
         def handler(request: httpx.Request) -> httpx.Response:
-            return httpx.Response(
-                200,
-                content="<html><body>You could not pass the reCAPTCHA check</body></html>".encode(
-                    "windows-1254"
-                ),
-            )
-
-        transport = httpx.MockTransport(handler)
-        async_client = httpx.AsyncClient(
-            transport=transport, base_url="https://registration.bogazici.edu.tr"
-        )
-
-        async with BounScraperClient(
-            http_client=async_client, min_jitter=0, max_jitter=0
-        ) as client:
-            with pytest.raises(RecaptchaBlockedError):
-                await scrape_term_pipeline(
-                    client,
-                    term="2024/2025-1",
-                    cached_departments=None,
+            url_str = str(request.url)
+            if "schedule.aspx" in url_str:
+                # Discovery blocked by reCAPTCHA
+                return httpx.Response(
+                    200,
+                    content="<html><body>You could not pass the reCAPTCHA check</body></html>".encode(
+                        "windows-1254"
+                    ),
                 )
-
-    @pytest.mark.asyncio
-    async def test_scrape_term_pipeline_fallback_empty_departments_html(self) -> None:
-        def handler(request: httpx.Request) -> httpx.Response:
-            return httpx.Response(
-                200,
-                content="<html><body><select name='ctl00$cphMainContent$ddlSemester'></select></body></html>".encode(
-                    "windows-1254"
-                ),
-            )
+            if "sch.asp" in url_str:
+                # Direct schedule pages work
+                return httpx.Response(
+                    200, content=SAMPLE_SCHEDULE_HTML.encode("windows-1254")
+                )
+            return httpx.Response(404)
 
         transport = httpx.MockTransport(handler)
         async_client = httpx.AsyncClient(
@@ -744,9 +762,30 @@ class TestScraperFlow:
         ) as client:
             result = await scrape_term_pipeline(
                 client,
-                term="2024/2025-1",
+                term="1971/1972-2",
                 cached_departments=None,
+                target_departments=["CMPE"],
             )
-            assert result.courses == []
-            assert result.succeeded_departments == []
-            assert result.failed_departments == []
+            assert "CMPE" in result.succeeded_departments
+            assert len(result.courses) == 1
+
+    @pytest.mark.asyncio
+    async def test_scrape_term_pipeline_fallback_raises_when_all_fail(self) -> None:
+        def handler(request: httpx.Request) -> httpx.Response:
+            return httpx.Response(500, text="Internal Server Error")
+
+        transport = httpx.MockTransport(handler)
+        async_client = httpx.AsyncClient(
+            transport=transport, base_url="https://registration.bogazici.edu.tr"
+        )
+
+        async with BounScraperClient(
+            http_client=async_client, min_jitter=0, max_jitter=0
+        ) as client:
+            with pytest.raises(Exception):
+                await scrape_term_pipeline(
+                    client,
+                    term="2024/2025-1",
+                    cached_departments=None,
+                    target_departments=["CMPE"],
+                )
