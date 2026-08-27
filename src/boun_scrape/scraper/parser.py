@@ -122,6 +122,7 @@ def parse_schedules_from_html(
     soup = BeautifulSoup(html, "html.parser")
     courses: list[Course] = []
     courses_by_key: dict[tuple[str, str], Course] = {}
+    last_key: tuple[str, str] | None = None
 
     for tr in soup.find_all("tr", class_=["schtd", "schtd2"]):
         tds = tr.find_all("td")
@@ -145,7 +146,7 @@ def parse_schedules_from_html(
 
         # Continuation row (e.g. LAB, P.S., Tutorial session)
         if not code_sec:
-            if courses:
+            if last_key is not None and last_key in courses_by_key:
                 continuation_slots = build_slots(
                     day_str=days_str,
                     hour_str=hours_str,
@@ -153,9 +154,8 @@ def parse_schedules_from_html(
                     slot_title=slot_title or None,
                     instructor=instructor or None,
                 )
-                courses[-1].slots.extend(continuation_slots)
+                courses_by_key[last_key].slots.extend(continuation_slots)
             continue
-
         # Split code and section
         if "." in code_sec:
             course_code, section = code_sec.rsplit(".", 1)
@@ -177,10 +177,12 @@ def parse_schedules_from_html(
         if key in courses_by_key:
             existing = courses_by_key[key]
             existing.slots.extend(slots)
-            if instructor and instructor not in (existing.instructor or ""):
-                existing.instructor = f"{existing.instructor}, {instructor}" if existing.instructor else instructor
+            if instructor:
+                existing_set = {s.strip() for s in (existing.instructor or "").split(",") if s.strip()}
+                if instructor.strip() not in existing_set:
+                    existing.instructor = f"{existing.instructor}, {instructor}" if existing.instructor else instructor
+            last_key = key
             continue
-
         course = Course(
             term=term,
             department=department_code,
@@ -201,7 +203,7 @@ def parse_schedules_from_html(
         )
         courses.append(course)
         courses_by_key[key] = course
-
+        last_key = key
     return courses
 
 

@@ -221,17 +221,8 @@ class ScrapeScheduler:
                     )
 
                 cached_depts = self.repository.get_departments(target_term)
-                if not cached_depts:
-                    # Heuristic fallback: load known unique departments from other terms in DB
-                    all_known_depts = self.repository.get_departments(None)
-                    if all_known_depts:
-                        logger.info(
-                            "Scrape %s: term %s has no cached departments; falling back to %d known departments from other terms (heuristic mode)",
-                            run_id,
-                            target_term,
-                            len(all_known_depts),
-                        )
-                        cached_depts = all_known_depts
+                # Cross-term union heuristic removed (P2-04): scrape_term_pipeline
+                # falls back to DEFAULT_KNOWN (94 depts) via sch.asp when empty.
 
                 completed_codes = None
                 if skip_already_scraped:

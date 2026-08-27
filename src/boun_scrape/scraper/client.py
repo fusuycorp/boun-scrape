@@ -193,6 +193,16 @@ def _parse_retry_after(header_value: str | None) -> float | None:
         return None
 
 
+_MAX_RETRY_AFTER_SECONDS = 30.0
+
+
+def _cap_retry_after(value: float | None) -> float | None:
+    """Cap Retry-After to prevent stalling the event loop for hours."""
+    if value is None:
+        return None
+    return min(value, _MAX_RETRY_AFTER_SECONDS)
+
+
 def decode_windows_1254(content: bytes) -> str:
     """Decode raw bytes into string using windows-1254 encoding."""
     return content.decode("windows-1254", errors="replace")
@@ -260,8 +270,10 @@ class BounScraperClient:
         cookies = parse_cookie_file(self.cookies_path) if self.cookies_path else {}
         if cookies:
             self._client.cookies.update(cookies)
+        else:
+            # No cookies parsed (empty/truncated file) — clear stale jar so caller fails fast
+            self._client.cookies.clear()
         return cookies
-
     @property
     def recaptcha_token(self) -> str:
         """Manually-solved reCAPTCHA token, re-read from disk on every access.
@@ -310,7 +322,9 @@ class BounScraperClient:
 
     def _process_response(self, response: httpx.Response) -> httpx.Response:
         """Validate response encoding and inspect for security challenges."""
-        response.encoding = "windows-1254"
+        ctype = response.headers.get("content-type", "").lower()
+        if "charset" not in ctype:
+            response.encoding = "windows-1254"
         text = response.text
 
         if '<div id="root"></div>' in text or 'Ultimate BOUN:' in text:
@@ -374,7 +388,7 @@ class BounScraperClient:
                 last_exception = err
                 if attempt < retries:
                     if isinstance(err, BounHttpError) and err.retry_after is not None:
-                        backoff = err.retry_after
+                        backoff = _cap_retry_after(err.retry_after)
                     else:
                         backoff = (2 ** (attempt - 1)) * 0.5 + random.uniform(0.05, 0.2)
                     await asyncio.sleep(backoff)
@@ -433,7 +447,7 @@ class BounScraperClient:
                 last_exception = err
                 if attempt < retries:
                     if isinstance(err, BounHttpError) and err.retry_after is not None:
-                        backoff = err.retry_after
+                        backoff = _cap_retry_after(err.retry_after)
                     else:
                         backoff = (2 ** (attempt - 1)) * 0.5 + random.uniform(0.05, 0.2)
                     await asyncio.sleep(backoff)

@@ -151,16 +151,15 @@ class QuotaService:
             records = parse_quota_from_html(response.text)
 
             async with self._lock:
-                # Bound cache growth in a long-lived daemon: evict the oldest entry once
-                # the cap is exceeded. O(cache) eviction runs only when at capacity, which
-                # is rare compared to the TTL-hit fast path.
-                # ponytail: linear cache eviction <- max_cache_size <= 2000 -> cache cap grows into tens of thousands of entries
+                # Bound cache growth in a long-lived daemon: evict oldest entry once
+                # the cap is exceeded. OrderedDict behaviour via insertion order: O(1) pop.
                 if (
                     self.max_cache_size
                     and len(self._cache) >= self.max_cache_size
                     and cache_key not in self._cache
                 ):
-                    oldest = min(self._cache, key=lambda k: self._cache[k].timestamp)
+                    # dict preserves insertion order (3.7+); pop first inserted (oldest)
+                    oldest = next(iter(self._cache))
                     del self._cache[oldest]
                 self._cache[cache_key] = _QuotaCacheEntry(
                     timestamp=time.monotonic(),
