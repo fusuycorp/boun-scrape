@@ -121,6 +121,7 @@ def parse_schedules_from_html(
 
     soup = BeautifulSoup(html, "html.parser")
     courses: list[Course] = []
+    courses_by_key: dict[tuple[str, str], Course] = {}
 
     for tr in soup.find_all("tr", class_=["schtd", "schtd2"]):
         tds = tr.find_all("td")
@@ -172,6 +173,14 @@ def parse_schedules_from_html(
             instructor=instructor or None,
         )
 
+        key = (course_code, section)
+        if key in courses_by_key:
+            existing = courses_by_key[key]
+            existing.slots.extend(slots)
+            if instructor and instructor not in (existing.instructor or ""):
+                existing.instructor = f"{existing.instructor}, {instructor}" if existing.instructor else instructor
+            continue
+
         course = Course(
             term=term,
             department=department_code,
@@ -191,6 +200,7 @@ def parse_schedules_from_html(
             raw_code=code_sec,
         )
         courses.append(course)
+        courses_by_key[key] = course
 
     return courses
 

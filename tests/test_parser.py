@@ -192,6 +192,54 @@ class TestParseSchedules:
         assert courses[0].credits == 3.5
         assert courses[0].ects == 0.0
 
+    def test_parse_schedules_merges_duplicate_course_sections(self) -> None:
+        html = """
+        <table>
+            <tr class="schtd">
+                <td>HIST 105.01</td>
+                <td>HIST</td>
+                <td>MODERN TURKEY</td>
+                <td>3</td>
+                <td>5</td>
+                <td>PROF SMITH</td>
+                <td>M M</td>
+                <td>3 4</td>
+                <td>In Class</td>
+                <td></td>
+                <td>NH 101</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- Duplicate course section row with different slot / instructor -->
+            <tr class="schtd">
+                <td>HIST 105.01</td>
+                <td>HIST</td>
+                <td>MODERN TURKEY</td>
+                <td>3</td>
+                <td>5</td>
+                <td>DR DOE</td>
+                <td>Th</td>
+                <td>2</td>
+                <td>In Class</td>
+                <td></td>
+                <td>NH 102</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        """
+        courses = parse_schedules_from_html(html, term="2024/2025-1", department_code="HIST")
+        assert len(courses) == 1
+        assert courses[0].course_code == "HIST 105"
+        assert courses[0].section == "01"
+        assert "PROF SMITH" in courses[0].instructor
+        assert "DR DOE" in courses[0].instructor
+        assert len(courses[0].slots) == 3
+
 
 class TestParseQuota:
     """Tests for parsing course quota tables and statuses."""

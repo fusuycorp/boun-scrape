@@ -623,3 +623,38 @@ class TestRepository:
 
         math_item = next(d for d in cov.departments if d.code == "MATH")
         assert math_item.status == "PENDING"
+
+    def test_save_courses_and_slots_handles_duplicate_courses_without_error(
+        self, repo: CourseRepository
+    ) -> None:
+        term = "2024/2025-2"
+        # Two Course entries with identical (term, department, course_code, section)
+        c1 = Course(
+            term=term,
+            department="HIST",
+            course_code="HIST 105",
+            section="01",
+            course_name="MODERN TURKEY",
+            instructor="PROF SMITH",
+            slots=[CourseSlot(day="M", hour="3", room="NH 101")],
+        )
+        c2 = Course(
+            term=term,
+            department="HIST",
+            course_code="HIST 105",
+            section="01",
+            course_name="MODERN TURKEY",
+            instructor="DR DOE",
+            slots=[CourseSlot(day="Th", hour="2", room="NH 102")],
+        )
+
+        saved = repo.save_courses_and_slots(term, [c1, c2])
+        assert saved == 1
+
+        loaded = repo.get_courses_by_term(term)
+        assert len(loaded) == 1
+        assert loaded[0].course_code == "HIST 105"
+        assert loaded[0].section == "01"
+        assert len(loaded[0].slots) == 2
+        assert "PROF SMITH" in loaded[0].instructor
+        assert "DR DOE" in loaded[0].instructor

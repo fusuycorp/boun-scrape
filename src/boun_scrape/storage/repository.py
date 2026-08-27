@@ -108,7 +108,25 @@ class CourseRepository:
                 )
             # else: scraped_departments == [] means nothing succeeded this run -- delete nothing.
 
+            # Defensive deduplication & slot aggregation across incoming courses
+            merged_courses: list[Course] = []
+            seen_course_keys: dict[tuple[str, str, str, str], Course] = {}
             for course in courses:
+                key = (course.term, course.department, course.course_code, course.section)
+                if key in seen_course_keys:
+                    existing = seen_course_keys[key]
+                    existing.slots.extend(course.slots)
+                    if course.instructor and course.instructor not in (existing.instructor or ""):
+                        existing.instructor = (
+                            f"{existing.instructor}, {course.instructor}"
+                            if existing.instructor
+                            else course.instructor
+                        )
+                else:
+                    seen_course_keys[key] = course
+                    merged_courses.append(course)
+
+            for course in merged_courses:
                 content_hash = compute_course_hash(course)
                 cursor = conn.execute(
                     """
@@ -117,6 +135,19 @@ class CourseRepository:
                         instructor, credits, ects, delivery_method, exam_location,
                         exam_date, sl, required_for, departments, content_hash
                     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ON CONFLICT(term, department, course_code, section) DO UPDATE SET
+                        course_name = excluded.course_name,
+                        instructor = excluded.instructor,
+                        credits = excluded.credits,
+                        ects = excluded.ects,
+                        delivery_method = excluded.delivery_method,
+                        exam_location = excluded.exam_location,
+                        exam_date = excluded.exam_date,
+                        sl = excluded.sl,
+                        required_for = excluded.required_for,
+                        departments = excluded.departments,
+                        content_hash = excluded.content_hash,
+                        updated_at = CURRENT_TIMESTAMP
                     """,
                     (
                         course.term,
@@ -137,7 +168,15 @@ class CourseRepository:
                     ),
                 )
                 course_id = cursor.lastrowid
+                if not course_id:
+                    row = conn.execute(
+                        "SELECT id FROM courses WHERE term = ? AND department = ? AND course_code = ? AND section = ?",
+                        (course.term, course.department, course.course_code, course.section),
+                    ).fetchone()
+                    course_id = row["id"] if row else None
+
                 if course.slots and course_id is not None:
+                    conn.execute("DELETE FROM course_slots WHERE course_id = ?", (course_id,))
                     conn.executemany(
                         """
                         INSERT INTO course_slots (course_id, day, hour, room, slot_title, instructor)
@@ -157,9 +196,13 @@ class CourseRepository:
                     )
 
             # Update per-department course counts and COMPLETED status
-            depts_to_update = set(scraped_departments) if scraped_departments is not None else {c.department for c in courses}
+            depts_to_update = (
+                set(scraped_departments)
+                if scraped_departments is not None
+                else {c.department for c in merged_courses}
+            )
             dept_counts: dict[str, int] = {}
-            for c in courses:
+            for c in merged_courses:
                 dept_counts[c.department] = dept_counts.get(c.department, 0) + 1
 
             for dept_code in depts_to_update:
@@ -176,7 +219,7 @@ class CourseRepository:
                     (cnt, term, dept_code),
                 )
 
-        return len(courses)
+        return len(merged_courses)
 
     def get_courses(self, filters: CourseFilterParams) -> tuple[list[Course], int]:
         """Query courses with pagination, filters, and eager slot fetching."""
