@@ -1,10 +1,13 @@
 """SQLite database connection manager and schema initialization."""
 
+import logging
 import sqlite3
+import time
 from collections.abc import Generator
 from contextlib import contextmanager
 from pathlib import Path
 
+logger = logging.getLogger(__name__)
 SCHEMA_SQL = """
 -- Departments table
 CREATE TABLE IF NOT EXISTS departments (
@@ -103,14 +106,15 @@ CREATE TABLE IF NOT EXISTS quota_snapshots (
 -- Indexes for high query performance
 CREATE INDEX IF NOT EXISTS idx_courses_term_dept ON courses(term, department);
 CREATE INDEX IF NOT EXISTS idx_courses_term_code_sec ON courses(term, course_code, section);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_courses_unique ON courses(term, department, course_code, section);
 CREATE INDEX IF NOT EXISTS idx_course_slots_course_id ON course_slots(course_id);
 CREATE INDEX IF NOT EXISTS idx_course_slots_day_hour ON course_slots(day, hour);
 CREATE INDEX IF NOT EXISTS idx_course_deltas_run_id ON course_deltas(run_id);
 CREATE INDEX IF NOT EXISTS idx_course_deltas_term ON course_deltas(term);
+CREATE INDEX IF NOT EXISTS idx_course_deltas_created_at ON course_deltas(created_at);
 CREATE INDEX IF NOT EXISTS idx_quota_snapshots_term_code_sec ON quota_snapshots(term, course_code, section);
 CREATE INDEX IF NOT EXISTS idx_quota_snapshots_captured_at ON quota_snapshots(captured_at);
 """
-
 
 class DatabaseManager:
     """Manages SQLite database connections, PRAGMA configuration, and schema."""
@@ -235,6 +239,10 @@ class DatabaseManager:
         conn.execute(
             "CREATE UNIQUE INDEX IF NOT EXISTS idx_courses_unique ON courses (term, department, course_code, section)"
         )
+        # S-07: ensure course_deltas created_at index exists for existing DBs
+        conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_course_deltas_created_at ON course_deltas(created_at)"
+        )
 
         # 5. Fix legacy course_slots FK missing ON DELETE CASCADE (prod DBs created
         #    before the CASCADE fix have NO ACTION, causing DELETE FROM courses
@@ -261,8 +269,30 @@ class DatabaseManager:
         # Need rebuild — preserve data, rebuild with correct schema
         try:
             conn.execute("PRAGMA foreign_keys = OFF")
-            # Check if old table has data to preserve
-            conn.execute("BEGIN IMMEDIATE")
+            # Retry BEGIN IMMEDIATE under contention (API + scheduler on same file)
+            for attempt in range(3):
+                try:
+                    conn.execute("BEGIN IMMEDIATE")
+                    break
+                except sqlite3.OperationalError as exc:
+                    msg = str(exc).lower()
+                    is_busy = "locked" in msg or "busy" in msg
+                    if is_busy and attempt < 2:
+                        time.sleep(0.05 * (2**attempt))
+                        continue
+                    logger.warning("course_slots FK migration: BEGIN IMMEDIATE failed (%s)", exc)
+                    try:
+                        conn.execute("PRAGMA foreign_keys = ON")
+                    except Exception:
+                        pass
+                    raise
+            else:
+                # Could not acquire lock after retries
+                try:
+                    conn.execute("PRAGMA foreign_keys = ON")
+                except Exception:
+                    pass
+                return
             conn.executescript(
                 """
                 CREATE TABLE IF NOT EXISTS course_slots_new (
@@ -282,13 +312,25 @@ class DatabaseManager:
                 CREATE INDEX IF NOT EXISTS idx_course_slots_day_hour ON course_slots(day, hour);
                 """
             )
-            conn.execute("COMMIT")
+            if conn.in_transaction:
+                conn.execute("COMMIT")
             # Verify no FK violations after rebuild
             violations = conn.execute("PRAGMA foreign_key_check").fetchall()
             if violations:
-                # Best-effort: log but don't fail startup
-                pass
-        except Exception:
+                logger.warning("course_slots FK migration: %d violations after rebuild (best-effort)", len(violations))
+        except sqlite3.OperationalError as exc:
+            # "cannot commit - no transaction is active" is benign if executescript already committed
+            if "no transaction" in str(exc).lower():
+                logger.warning("course_slots FK migration commit benign: %s", exc)
+            else:
+                try:
+                    if conn.in_transaction:
+                        conn.execute("ROLLBACK")
+                except Exception:
+                    pass
+                raise
+        except Exception as exc:
+            logger.warning("course_slots FK migration failed: %s", exc)
             try:
                 conn.execute("ROLLBACK")
             except Exception:

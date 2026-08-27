@@ -96,29 +96,44 @@ class CourseRepository:
 
         Returns the total number of courses persisted.
         """
+        # Normalise scraped_departments: dedupe, strip, drop empties (guards S-02)
+        filtered_scraped: list[str] | None = None
+        if scraped_departments is not None:
+            filtered_scraped = [d for d in dict.fromkeys(s.strip() for s in scraped_departments if s and s.strip()) if d]
         with self.db.transaction() as conn:
             # Delete dependent slots first so the operation works regardless of
             # whether course_slots.course_id has ON DELETE CASCADE (new DBs) or
             # NO ACTION/RESTRICT (legacy prod DBs created before the CASCADE fix).
-            if scraped_departments is None:
+            if filtered_scraped is None:
                 conn.execute(
                     "DELETE FROM course_slots WHERE course_id IN (SELECT id FROM courses WHERE term = ?)",
                     (term,),
                 )
                 conn.execute("DELETE FROM courses WHERE term = ?", (term,))
-            elif scraped_departments:
-                placeholders = ",".join("?" for _ in scraped_departments)
-                conn.execute(
-                    f"DELETE FROM course_slots WHERE course_id IN (SELECT id FROM courses WHERE term = ? AND department IN ({placeholders}))",
-                    (term, *scraped_departments),
-                )
-                conn.execute(
-                    f"DELETE FROM courses WHERE term = ? AND department IN ({placeholders})",
-                    (term, *scraped_departments),
-                )
-            # else: scraped_departments == [] means nothing succeeded this run -- delete nothing.
-
-            # Defensive deduplication & slot aggregation across incoming courses
+            elif filtered_scraped:
+                if len(filtered_scraped) > 900:
+                    for i in range(0, len(filtered_scraped), 900):
+                        chunk = filtered_scraped[i : i + 900]
+                        ph = ",".join("?" for _ in chunk)
+                        conn.execute(
+                            f"DELETE FROM course_slots WHERE course_id IN (SELECT id FROM courses WHERE term = ? AND department IN ({ph}))",
+                            (term, *chunk),
+                        )
+                        conn.execute(
+                            f"DELETE FROM courses WHERE term = ? AND department IN ({ph})",
+                            (term, *chunk),
+                        )
+                else:
+                    placeholders = ",".join("?" for _ in filtered_scraped)
+                    conn.execute(
+                        f"DELETE FROM course_slots WHERE course_id IN (SELECT id FROM courses WHERE term = ? AND department IN ({placeholders}))",
+                        (term, *filtered_scraped),
+                    )
+                    conn.execute(
+                        f"DELETE FROM courses WHERE term = ? AND department IN ({placeholders})",
+                        (term, *filtered_scraped),
+                    )
+            # else: filtered_scraped == [] means nothing succeeded this run -- delete nothing.
             merged_courses: list[Course] = []
             seen_course_keys: dict[tuple[str, str, str, str], Course] = {}
             for course in courses:
@@ -126,12 +141,14 @@ class CourseRepository:
                 if key in seen_course_keys:
                     existing = seen_course_keys[key]
                     existing.slots.extend(course.slots)
-                    if course.instructor and course.instructor not in (existing.instructor or ""):
-                        existing.instructor = (
-                            f"{existing.instructor}, {course.instructor}"
-                            if existing.instructor
-                            else course.instructor
-                        )
+                    if course.instructor:
+                        existing_set = {s.strip() for s in (existing.instructor or "").split(",") if s.strip()}
+                        if course.instructor.strip() not in existing_set:
+                            existing.instructor = (
+                                f"{existing.instructor}, {course.instructor}"
+                                if existing.instructor
+                                else course.instructor
+                            )
                 else:
                     seen_course_keys[key] = course
                     merged_courses.append(course)
@@ -207,8 +224,8 @@ class CourseRepository:
 
             # Update per-department course counts and COMPLETED status
             depts_to_update = (
-                set(scraped_departments)
-                if scraped_departments is not None
+                set(filtered_scraped)
+                if filtered_scraped is not None
                 else {c.department for c in merged_courses}
             )
             dept_counts: dict[str, int] = {}
