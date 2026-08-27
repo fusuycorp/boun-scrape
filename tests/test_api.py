@@ -653,6 +653,67 @@ class TestApiEndpoints:
         assert status_response.json() == {"cookie_loaded": True, "recaptcha_loaded": True}
 
     @pytest.mark.asyncio
+    async def test_schedule_config_get_and_update(
+        self,
+        async_client: AsyncClient,
+        mock_scheduler: ScrapeScheduler,
+    ) -> None:
+        get_res = await async_client.get("/api/v1/scraper/schedule")
+        assert get_res.status_code == 200
+        data = get_res.json()
+        assert data["interval_seconds"] == 3600
+        assert data["is_running"] is True
+
+        post_res = await async_client.post(
+            "/api/v1/scraper/schedule",
+            json={
+                "interval_seconds": 7200,
+                "cron_expression": "0 */4 * * *",
+                "default_term": "2026/2027-1",
+            },
+        )
+        assert post_res.status_code == 200
+        mock_scheduler.update_config.assert_called_once_with(
+            interval_seconds=7200,
+            cron_expression="0 */4 * * *",
+            default_term="2026/2027-1",
+        )
+
+    @pytest.mark.asyncio
+    async def test_scheduler_daemon_start_and_stop(
+        self,
+        async_client: AsyncClient,
+        mock_scheduler: ScrapeScheduler,
+    ) -> None:
+        start_res = await async_client.post("/api/v1/scraper/start-daemon")
+        assert start_res.status_code == 200
+        assert start_res.json()["status"] == "started"
+
+        stop_res = await async_client.post("/api/v1/scraper/stop-daemon")
+        assert stop_res.status_code == 200
+        assert stop_res.json()["status"] == "stopped"
+
+    @pytest.mark.asyncio
+    async def test_scraper_trigger_with_term_and_options(
+        self,
+        async_client: AsyncClient,
+        mock_scheduler: ScrapeScheduler,
+    ) -> None:
+        res = await async_client.post(
+            "/api/v1/scraper/trigger",
+            json={
+                "term": "2026/2027-1",
+                "export": True,
+                "dispatch_webhooks": False,
+                "capture_quota": True,
+                "background": True,
+            },
+        )
+        assert res.status_code == 200
+        assert res.json()["status"] == "triggered"
+        assert res.json()["term"] == "2026/2027-1"
+
+    @pytest.mark.asyncio
     async def test_security_headers_present(self, async_client: AsyncClient) -> None:
         response = await async_client.get("/")
         assert response.status_code == 200

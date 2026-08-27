@@ -157,20 +157,72 @@ class DatabaseManager:
             self._migrate_schema(conn)
 
     def _migrate_schema(self, conn: sqlite3.Connection) -> None:
-        """Apply additive column migrations for databases created before a column existed."""
+        """Apply additive column migrations for databases created before columns existed."""
+        # 1. scrape_runs migrations
         scrape_run_cols = {row["name"] for row in conn.execute("PRAGMA table_info(scrape_runs)")}
-        if "completed_departments" not in scrape_run_cols:
-            conn.execute(
-                "ALTER TABLE scrape_runs ADD COLUMN completed_departments INTEGER DEFAULT 0"
-            )
-            conn.commit()
+        expected_run_cols = [
+            ("term", "TEXT"),
+            ("started_at", "TIMESTAMP"),
+            ("completed_at", "TIMESTAMP"),
+            ("total_departments", "INTEGER DEFAULT 0"),
+            ("completed_departments", "INTEGER DEFAULT 0"),
+            ("total_courses", "INTEGER DEFAULT 0"),
+            ("total_slots", "INTEGER DEFAULT 0"),
+            ("changes_detected", "INTEGER DEFAULT 0"),
+            ("status", "TEXT"),
+            ("error_message", "TEXT"),
+        ]
+        for col, col_def in expected_run_cols:
+            if col not in scrape_run_cols:
+                conn.execute(f"ALTER TABLE scrape_runs ADD COLUMN {col} {col_def}")
+                conn.commit()
 
+        # 2. departments migrations
         dept_cols = {row["name"] for row in conn.execute("PRAGMA table_info(departments)")}
-        if "cached_at" not in dept_cols:
-            conn.execute(
-                "ALTER TABLE departments ADD COLUMN cached_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
-            )
-            conn.commit()
+        expected_dept_cols = [
+            ("url_bolum", "TEXT"),
+            ("cached_at", "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"),
+        ]
+        for col, col_def in expected_dept_cols:
+            if col not in dept_cols:
+                conn.execute(f"ALTER TABLE departments ADD COLUMN {col} {col_def}")
+                conn.commit()
+
+        # 3. courses migrations
+        course_cols = {row["name"] for row in conn.execute("PRAGMA table_info(courses)")}
+        expected_course_cols = [
+            ("course_name", "TEXT"),
+            ("instructor", "TEXT"),
+            ("credits", "REAL"),
+            ("ects", "REAL"),
+            ("delivery_method", "TEXT"),
+            ("exam_location", "TEXT"),
+            ("exam_date", "TEXT"),
+            ("sl", "TEXT"),
+            ("required_for", "TEXT"),
+            ("departments", "TEXT"),
+            ("content_hash", "TEXT"),
+            ("created_at", "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"),
+            ("updated_at", "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"),
+        ]
+        for col, col_def in expected_course_cols:
+            if col not in course_cols:
+                conn.execute(f"ALTER TABLE courses ADD COLUMN {col} {col_def}")
+                conn.commit()
+
+        # 4. course_slots migrations
+        slot_cols = {row["name"] for row in conn.execute("PRAGMA table_info(course_slots)")}
+        expected_slot_cols = [
+            ("day", "TEXT"),
+            ("hour", "TEXT"),
+            ("room", "TEXT"),
+            ("slot_title", "TEXT"),
+            ("instructor", "TEXT"),
+        ]
+        for col, col_def in expected_slot_cols:
+            if col not in slot_cols:
+                conn.execute(f"ALTER TABLE course_slots ADD COLUMN {col} {col_def}")
+                conn.commit()
 
         conn.execute(
             "CREATE UNIQUE INDEX IF NOT EXISTS idx_courses_unique ON courses (term, department, course_code, section)"

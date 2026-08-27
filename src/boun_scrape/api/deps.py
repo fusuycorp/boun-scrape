@@ -98,6 +98,9 @@ def _get_shared_scheduler() -> ScrapeScheduler:
         repository=repo,
         webhook_dispatcher=dispatcher,
         export_dir=settings.export_dir,
+        interval_seconds=settings.scraper_interval_seconds,
+        cron_expression=settings.scraper_cron,
+        default_term=settings.scraper_default_term,
         settings=settings,
     )
 

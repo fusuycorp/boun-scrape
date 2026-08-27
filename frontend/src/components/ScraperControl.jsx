@@ -7,6 +7,11 @@ import {
   Trash2,
   Copy,
   Check,
+  Clock,
+  Calendar,
+  Save,
+  PlayCircle,
+  StopCircle,
 } from 'lucide-react';
 import { api } from '../api/client';
 import { useMountedRef } from '../hooks/useSafeAsync';
@@ -21,9 +26,27 @@ export default function ScraperControl() {
   const isMountedRef = useMountedRef();
   const logTerminalRef = useRef(null);
 
-  const [status, setStatus] = useState({ is_scraping: false, current_progress: null });
+  // Status & Telemetry
+  const [status, setStatus] = useState({ is_scraping: false, is_running: false, current_progress: null });
   const [logs, setLogs] = useState([]);
+  const [terms, setTerms] = useState([]);
 
+  // Manual Trigger Settings
+  const [selectedTerm, setSelectedTerm] = useState('');
+  const [exportArtifacts, setExportArtifacts] = useState(true);
+  const [dispatchWebhooks, setDispatchWebhooks] = useState(true);
+  const [captureQuota, setCaptureQuota] = useState(false);
+
+  // Scheduler / Daemon Settings
+  const [scheduleConfig, setScheduleConfig] = useState(null);
+  const [intervalOption, setIntervalOption] = useState('3600');
+  const [customInterval, setCustomInterval] = useState('3600');
+  const [cronExpression, setCronExpression] = useState('');
+  const [defaultScheduleTerm, setDefaultScheduleTerm] = useState('');
+  const [savingSchedule, setSavingSchedule] = useState(false);
+  const [togglingDaemon, setTogglingDaemon] = useState(false);
+
+  // Action States
   const [starting, setStarting] = useState(false);
   const [stopping, setStopping] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -31,11 +54,43 @@ export default function ScraperControl() {
 
   const autoScrollRef = useRef(true);
 
+  // Fetch Lookups
+  const fetchTerms = useCallback(async () => {
+    try {
+      const termList = await api.getTerms().catch(() => []);
+      if (isMountedRef.current) {
+        setTerms(termList || []);
+      }
+    } catch {
+      // Ignore
+    }
+  }, [isMountedRef]);
+
+  const fetchScheduleConfig = useCallback(async () => {
+    try {
+      const config = await api.getScheduleConfig().catch(() => null);
+      if (isMountedRef.current && config) {
+        setScheduleConfig(config);
+        const sec = config.interval_seconds;
+        if (['1800', '3600', '21600', '43200', '86400'].includes(String(sec))) {
+          setIntervalOption(String(sec));
+        } else {
+          setIntervalOption('custom');
+          setCustomInterval(String(sec));
+        }
+        setCronExpression(config.cron_expression || '');
+        setDefaultScheduleTerm(config.default_term || '');
+      }
+    } catch {
+      // Ignore
+    }
+  }, [isMountedRef]);
+
   const pollScraper = useCallback(async () => {
     try {
       const statusRes = await api
         .getScrapeStatus()
-        .catch(() => ({ is_scraping: false, current_progress: null }));
+        .catch(() => ({ is_scraping: false, is_running: false, current_progress: null }));
 
       let logsRes = null;
       if (statusRes.is_scraping) {
@@ -54,6 +109,12 @@ export default function ScraperControl() {
   }, [isMountedRef]);
 
   const isRunning = status.is_scraping;
+  const isDaemonRunning = status.is_running || scheduleConfig?.is_running;
+
+  useEffect(() => {
+    fetchTerms();
+    fetchScheduleConfig();
+  }, [fetchTerms, fetchScheduleConfig]);
 
   useEffect(() => {
     let timerId = null;
@@ -98,7 +159,15 @@ export default function ScraperControl() {
     setConfirmOpen(false);
     setStarting(true);
     try {
-      await api.startScrape();
+      const payload = {
+        term: selectedTerm === 'all' ? null : (selectedTerm || null),
+        all_terms: selectedTerm === 'all',
+        export: exportArtifacts,
+        dispatch_webhooks: dispatchWebhooks,
+        capture_quota: captureQuota,
+        background: true,
+      };
+      await api.startScrape(payload);
       showToast('SCRAPE_CYCLE_LAUNCHED_SUCCESSFULLY', 'success');
       pollScraper();
     } catch (err) {
@@ -121,6 +190,46 @@ export default function ScraperControl() {
     }
   };
 
+  const handleToggleDaemon = async () => {
+    setTogglingDaemon(true);
+    try {
+      if (isDaemonRunning) {
+        await api.stopSchedulerDaemon();
+        showToast('AUTORUN_DAEMON_STOPPED', 'info');
+      } else {
+        await api.startSchedulerDaemon();
+        showToast('AUTORUN_DAEMON_STARTED', 'success');
+      }
+      await Promise.all([fetchScheduleConfig(), pollScraper()]);
+    } catch (err) {
+      showToast(err.message || 'FAILED_TO_TOGGLE_DAEMON', 'error');
+    } finally {
+      if (isMountedRef.current) setTogglingDaemon(false);
+    }
+  };
+
+  const handleSaveScheduleConfig = async (e) => {
+    e.preventDefault();
+    setSavingSchedule(true);
+    try {
+      const finalInterval = intervalOption === 'custom'
+        ? parseInt(customInterval, 10) || 3600
+        : parseInt(intervalOption, 10) || 3600;
+
+      const res = await api.updateScheduleConfig({
+        interval_seconds: finalInterval,
+        cron_expression: cronExpression.trim() || null,
+        default_term: defaultScheduleTerm.trim() || null,
+      });
+      setScheduleConfig(res);
+      showToast('AUTORUN_SCHEDULE_CONFIG_SAVED', 'success');
+    } catch (err) {
+      showToast(err.message || 'FAILED_TO_UPDATE_SCHEDULE', 'error');
+    } finally {
+      if (isMountedRef.current) setSavingSchedule(false);
+    }
+  };
+
   const handleClearLogs = async () => {
     try {
       await api.getScrapeLogs(true);
@@ -132,7 +241,7 @@ export default function ScraperControl() {
   };
 
   const handleCopyLogs = () => {
-    const logText = logs.join('');
+    const logText = logs.join('\n');
     navigator.clipboard.writeText(logText);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -158,7 +267,7 @@ export default function ScraperControl() {
             /// INGESTION_PIPELINE_CONTROLLER
           </h1>
           <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginTop: '4px' }}>
-            Trigger a full scrape cycle and inspect live stdout terminal buffer streams.
+            Trigger targeted scrape cycles, configure periodic background daemons, and inspect live stdout terminal buffer streams.
           </p>
         </div>
 
@@ -216,44 +325,247 @@ export default function ScraperControl() {
         </div>
       )}
 
-      {/* Single Trigger Control */}
-      <div
-        className="cyber-card"
-        style={{
-          border: isRunning ? '2px solid var(--neon-green)' : '1px solid var(--border-hard)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          gap: '16px',
-          flexWrap: 'wrap',
-        }}
-      >
-        <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <TerminalIcon size={13} style={{ color: 'var(--neon-green)' }} />
-            <h3 style={{ fontSize: '12px', margin: 0, color: 'var(--text-primary)' }}>
-              FULL_SCRAPE_CYCLE
-            </h3>
+      {/* Grid: Manual Execution & Auto-Run Daemon Panels */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '20px' }}>
+        {/* Manual Trigger Control Panel */}
+        <div
+          className="cyber-card"
+          style={{
+            border: isRunning ? '2px solid var(--neon-green)' : '1px solid var(--border-hard)',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            gap: '16px',
+          }}
+        >
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
+              <TerminalIcon size={14} style={{ color: 'var(--neon-green)' }} />
+              <h3 style={{ fontSize: '12px', margin: 0, color: 'var(--text-primary)', fontWeight: 700 }}>
+                [01] MANUAL_SCRAPE_EXECUTION
+              </h3>
+            </div>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '11px', lineHeight: '1.4', margin: '0 0 16px' }}>
+              Execute an on-demand crawl against university servers for a specific academic term or discover the latest automatically.
+            </p>
+
+            {/* Term Selector */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginBottom: '14px' }}>
+              <label style={{ fontSize: '11px', color: 'var(--neon-amber)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <Calendar size={13} />
+                TARGET_ACADEMIC_TERM:
+              </label>
+              <select
+                value={selectedTerm}
+                onChange={(e) => setSelectedTerm(e.target.value)}
+                disabled={isRunning}
+                className="cyber-input"
+                style={{ fontSize: '11px', fontFamily: 'var(--font-mono)' }}
+              >
+                <option value="">[AUTO-DISCOVER LATEST TERM]</option>
+                <option value="all">[ALL DISCOVERED TERMS]</option>
+                {terms.map((t) => (
+                  <option key={t} value={t}>
+                    TERM: {t}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {/* Run Options */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', padding: '12px', background: 'var(--bg-primary)', border: '1px solid var(--border-dim)' }}>
+              <div style={{ fontSize: '10px', color: 'var(--text-muted)', fontWeight: 700, letterSpacing: '0.05em' }}>
+                EXECUTION_FLAGS:
+              </div>
+              <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '11px', color: 'var(--text-primary)', cursor: 'pointer' }}>
+                <input
+                  type="checkbox"
+                  checked={exportArtifacts}
+                  onChange={(e) => setExportArtifacts(e.target.checked)}
+                  disabled={isRunning}
+                />
+                Export Disk Artifacts (JSON / CSV / SQLite)
+              </label>
+              <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '11px', color: 'var(--text-primary)', cursor: 'pointer' }}>
+                <input
+                  type="checkbox"
+                  checked={dispatchWebhooks}
+                  onChange={(e) => setDispatchWebhooks(e.target.checked)}
+                  disabled={isRunning}
+                />
+                Dispatch Webhook Notifications
+              </label>
+              <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '11px', color: 'var(--text-primary)', cursor: 'pointer' }}>
+                <input
+                  type="checkbox"
+                  checked={captureQuota}
+                  onChange={(e) => setCaptureQuota(e.target.checked)}
+                  disabled={isRunning}
+                />
+                Capture Section Quotas (Rate-limited live snapshot)
+              </label>
+            </div>
           </div>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '11px', lineHeight: '1.4', margin: '6px 0 0' }}>
-            Discovers the latest term, crawls every department's schedule, detects changes,
-            persists to the database, exports artifacts, and dispatches webhooks.
-          </p>
+
+          <button
+            onClick={() => setConfirmOpen(true)}
+            disabled={isRunning || starting}
+            className="btn-cyber btn-cyber-primary"
+            style={{ width: '100%', fontSize: '11px', padding: '10px 16px', justifyContent: 'center' }}
+          >
+            {starting ? (
+              <RefreshCw size={14} className="animate-spin" />
+            ) : (
+              <Play size={14} fill="currentColor" />
+            )}
+            <span>[EXECUTE_SCRAPE_CYCLE]</span>
+          </button>
         </div>
 
-        <button
-          onClick={() => setConfirmOpen(true)}
-          disabled={isRunning || starting}
-          className="btn-cyber btn-cyber-primary"
-          style={{ fontSize: '11px', padding: '8px 16px' }}
+        {/* Auto-Run Background Scheduler Config Panel */}
+        <div
+          className="cyber-card"
+          style={{
+            border: '1px solid var(--border-hard)',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            gap: '16px',
+          }}
         >
-          {starting ? (
-            <RefreshCw size={13} className="animate-spin" />
-          ) : (
-            <Play size={13} fill="currentColor" />
-          )}
-          <span>[EXEC]</span>
-        </button>
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <Clock size={14} style={{ color: 'var(--neon-cyan)' }} />
+                <h3 style={{ fontSize: '12px', margin: 0, color: 'var(--text-primary)', fontWeight: 700 }}>
+                  [02] PERIODIC_AUTORUN_SCHEDULER
+                </h3>
+              </div>
+              <div>
+                {isDaemonRunning ? (
+                  <span className="cyber-badge cyber-badge-green">[● ACTIVE: DAEMON]</span>
+                ) : (
+                  <span className="cyber-badge cyber-badge-amber">[- IDLE / STOPPED]</span>
+                )}
+              </div>
+            </div>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '11px', lineHeight: '1.4', margin: '0 0 16px' }}>
+              Configure scheduled background cycles to scrape, detect deltas, and export data on an automated cadence.
+            </p>
+
+            <form onSubmit={handleSaveScheduleConfig} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              {/* Interval Preset */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                <label style={{ fontSize: '11px', color: 'var(--neon-cyan)', fontWeight: 700 }}>
+                  CADENCE_INTERVAL:
+                </label>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+                  <select
+                    value={intervalOption}
+                    onChange={(e) => setIntervalOption(e.target.value)}
+                    className="cyber-input"
+                    style={{ fontSize: '11px', fontFamily: 'var(--font-mono)' }}
+                  >
+                    <option value="1800">Every 30 Minutes</option>
+                    <option value="3600">Every 1 Hour (Default)</option>
+                    <option value="21600">Every 6 Hours</option>
+                    <option value="43200">Every 12 Hours</option>
+                    <option value="86400">Every 24 Hours</option>
+                    <option value="custom">Custom (Seconds)</option>
+                  </select>
+
+                  {intervalOption === 'custom' ? (
+                    <input
+                      type="number"
+                      min="60"
+                      value={customInterval}
+                      onChange={(e) => setCustomInterval(e.target.value)}
+                      placeholder="Seconds (e.g. 7200)"
+                      className="cyber-input"
+                      style={{ fontSize: '11px', fontFamily: 'var(--font-mono)' }}
+                    />
+                  ) : (
+                    <input
+                      type="text"
+                      disabled
+                      value={`${(parseInt(intervalOption, 10) / 3600).toFixed(1)}h cycle`}
+                      className="cyber-input"
+                      style={{ fontSize: '11px', fontFamily: 'var(--font-mono)', opacity: 0.7 }}
+                    />
+                  )}
+                </div>
+              </div>
+
+              {/* Cron Expression */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                <label style={{ fontSize: '11px', color: 'var(--text-primary)' }}>
+                  CRON_EXPRESSION (OPTIONAL):
+                </label>
+                <input
+                  type="text"
+                  value={cronExpression}
+                  onChange={(e) => setCronExpression(e.target.value)}
+                  placeholder="e.g. 0 */2 * * * (Overrides Interval)"
+                  className="cyber-input"
+                  style={{ fontSize: '11px', fontFamily: 'var(--font-mono)' }}
+                />
+              </div>
+
+              {/* Default Term */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                <label style={{ fontSize: '11px', color: 'var(--text-primary)' }}>
+                  SCHEDULED_DEFAULT_TERM:
+                </label>
+                <select
+                  value={defaultScheduleTerm}
+                  onChange={(e) => setDefaultScheduleTerm(e.target.value)}
+                  className="cyber-input"
+                  style={{ fontSize: '11px', fontFamily: 'var(--font-mono)' }}
+                >
+                  <option value="">[AUTO-RESOLVE LATEST TERM]</option>
+                  {terms.map((t) => (
+                    <option key={t} value={t}>
+                      TERM: {t}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div style={{ display: 'flex', gap: '8px', marginTop: '6px' }}>
+                <button
+                  type="submit"
+                  disabled={savingSchedule}
+                  className="btn-cyber"
+                  style={{ flex: 1, fontSize: '11px', justifyContent: 'center' }}
+                >
+                  <Save size={13} />
+                  <span>{savingSchedule ? '[SAVING...]' : '[SAVE_CONFIG]'}</span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          {/* Start/Stop Daemon Toggle */}
+          <div style={{ paddingTop: '12px', borderTop: '1px solid var(--border-dim)' }}>
+            <button
+              onClick={handleToggleDaemon}
+              disabled={togglingDaemon}
+              className={`btn-cyber ${isDaemonRunning ? 'btn-cyber-danger' : 'btn-cyber-primary'}`}
+              style={{ width: '100%', fontSize: '11px', padding: '8px 16px', justifyContent: 'center' }}
+            >
+              {togglingDaemon ? (
+                <RefreshCw size={13} className="animate-spin" />
+              ) : isDaemonRunning ? (
+                <StopCircle size={14} />
+              ) : (
+                <PlayCircle size={14} />
+              )}
+              <span>
+                {isDaemonRunning ? '[STOP_BACKGROUND_DAEMON]' : '[START_BACKGROUND_DAEMON]'}
+              </span>
+            </button>
+          </div>
+        </div>
       </div>
 
       {/* Server Terminal Stream Log Monitor */}
@@ -318,7 +630,7 @@ export default function ScraperControl() {
         <ConfirmDialog
           open={confirmOpen}
           title="EXECUTE_SCRAPE_CYCLE?"
-          description="Confirm execution trigger. This will initiate a full background crawl against university registration servers."
+          description={`Confirm execution trigger for ${selectedTerm === 'all' ? 'ALL TERMS' : (selectedTerm || 'LATEST AUTO-DISCOVERED TERM')}. This will initiate a full background crawl against university registration servers.`}
           confirmLabel="[EXECUTE]"
           cancelLabel="[ABORT]"
           onConfirm={handleStart}

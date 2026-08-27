@@ -183,11 +183,29 @@ class ScrapeStatusDTO(BaseModel):
     is_scraping: bool
     interval_seconds: int
     cron_expression: str | None = None
+    default_term: str | None = None
     run_count: int
     last_run_time: str | None = None
     next_run_time: str | None = None
     last_run_summary: dict[str, Any] | None = None
     current_progress: dict[str, Any] | None = None
+
+
+class ScheduleConfigRequest(BaseModel):
+    """Payload for updating scheduler execution timing and target term."""
+
+    interval_seconds: int | None = Field(default=None, ge=60, le=86400 * 30)
+    cron_expression: str | None = None
+    default_term: str | None = None
+
+
+class ScheduleConfigDTO(BaseModel):
+    """Current scheduler configuration and daemon state."""
+
+    interval_seconds: int
+    cron_expression: str | None = None
+    default_term: str | None = None
+    is_running: bool
 
 
 class LogEntryDTO(BaseModel):

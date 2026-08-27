@@ -503,3 +503,54 @@ class TestRepository:
                 conn.execute(
                     "INSERT INTO courses (term, department, course_code, section) VALUES ('2024/2025-1', 'CMPE', '150', '01')"
                 )
+
+    def test_legacy_schema_migration_adds_content_hash_and_missing_columns(
+        self, tmp_path: Path
+    ) -> None:
+        db_path = str(tmp_path / "legacy.db")
+        # Create a database with stripped down legacy courses table
+        conn = sqlite3.connect(db_path)
+        conn.execute(
+            """
+            CREATE TABLE courses (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                term TEXT NOT NULL,
+                department TEXT NOT NULL,
+                course_code TEXT NOT NULL,
+                section TEXT NOT NULL,
+                course_name TEXT
+            )
+            """
+        )
+        conn.execute("CREATE TABLE scrape_runs (id INTEGER PRIMARY KEY, run_id TEXT)")
+        conn.execute("CREATE TABLE departments (id INTEGER PRIMARY KEY, term TEXT, code TEXT, name TEXT, bolum TEXT)")
+        conn.commit()
+        conn.close()
+
+        # Initialize DatabaseManager on legacy database
+        db = DatabaseManager(db_path)
+        db.init_db()
+
+        # Verify all migrated columns exist and save_courses_and_slots succeeds with content_hash
+        repo = CourseRepository(db)
+        c = Course(
+            term="2026/2027-1",
+            department="CMPE",
+            course_code="CMPE 150",
+            section="01",
+            course_name="INTRO TO COMPUTING",
+            instructor="PROF ALICE",
+            credits=3.0,
+            ects=6.0,
+        )
+        saved = repo.save_courses_and_slots("2026/2027-1", [c])
+        assert saved == 1
+
+        loaded = repo.get_courses_by_term("2026/2027-1")
+        assert len(loaded) == 1
+        assert loaded[0].course_code == "CMPE 150"
+
+        with db.connection() as check_conn:
+            hash_val = check_conn.execute("SELECT content_hash FROM courses WHERE course_code = 'CMPE 150'").fetchone()[0]
+            assert hash_val is not None
+            assert len(hash_val) == 64

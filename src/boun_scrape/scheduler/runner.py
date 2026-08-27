@@ -107,6 +107,7 @@ class ScrapeScheduler:
             "is_scraping": self.is_scraping,
             "interval_seconds": self.interval_seconds,
             "cron_expression": self.cron_expression,
+            "default_term": self.default_term,
             "run_count": self._run_count,
             "last_run_time": (
                 self._last_run_time.isoformat() if self._last_run_time else None
@@ -117,6 +118,25 @@ class ScrapeScheduler:
             "last_run_summary": summary_dict,
             "current_progress": self._current_progress,
         }
+
+    def update_config(
+        self,
+        interval_seconds: int | None = None,
+        cron_expression: str | None = None,
+        default_term: str | None = None,
+    ) -> None:
+        """Update scheduler timing or default term, restarting loop if running."""
+        if interval_seconds is not None:
+            self.interval_seconds = interval_seconds
+        if cron_expression is not None:
+            self.cron_expression = cron_expression.strip() if cron_expression.strip() else None
+        if default_term is not None:
+            self.default_term = default_term.strip() if default_term.strip() else None
+
+        if self.is_running:
+            if self._task is not None and not self._task.done():
+                self._task.cancel()
+            self._task = asyncio.create_task(self._schedule_loop())
 
     async def execute_scrape_cycle(
         self,

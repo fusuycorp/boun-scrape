@@ -23,6 +23,8 @@ from boun_scrape.domain.dto import (
     ScrapeRunDTO,
     ScrapeStatusDTO,
     ScrapeTriggerRequest,
+    ScheduleConfigDTO,
+    ScheduleConfigRequest,
     run_to_dto,
 )
 from boun_scrape.scheduler.runner import (
@@ -113,6 +115,7 @@ def get_scraper_status(
         is_scraping=stat["is_scraping"],
         interval_seconds=stat["interval_seconds"],
         cron_expression=stat["cron_expression"],
+        default_term=stat.get("default_term"),
         run_count=stat["run_count"],
         last_run_time=stat["last_run_time"],
         next_run_time=stat["next_run_time"],
@@ -121,19 +124,97 @@ def get_scraper_status(
     )
 
 
+@router.get(
+    "/scraper/schedule",
+    response_model=ScheduleConfigDTO,
+    summary="Get periodic scheduler configuration and daemon state",
+)
+def get_schedule_config(
+    scheduler: Annotated[ScrapeScheduler, Depends(get_scrape_scheduler_dep)],
+    current_user: str = Depends(get_current_user),
+) -> ScheduleConfigDTO:
+    """Get timing, cron expression, default term, and active running state."""
+    stat = scheduler.get_status()
+    return ScheduleConfigDTO(
+        interval_seconds=stat["interval_seconds"],
+        cron_expression=stat["cron_expression"],
+        default_term=stat.get("default_term"),
+        is_running=stat["is_running"],
+    )
+
+
+@router.post(
+    "/scraper/schedule",
+    response_model=ScheduleConfigDTO,
+    summary="Update periodic scheduler configuration",
+)
+def update_schedule_config(
+    payload: ScheduleConfigRequest,
+    scheduler: Annotated[ScrapeScheduler, Depends(get_scrape_scheduler_dep)],
+    current_user: str = Depends(get_current_user),
+) -> ScheduleConfigDTO:
+    """Update timing, cron expression, or default term for periodic background scraping."""
+    scheduler.update_config(
+        interval_seconds=payload.interval_seconds,
+        cron_expression=payload.cron_expression,
+        default_term=payload.default_term,
+    )
+    stat = scheduler.get_status()
+    return ScheduleConfigDTO(
+        interval_seconds=stat["interval_seconds"],
+        cron_expression=stat["cron_expression"],
+        default_term=stat.get("default_term"),
+        is_running=stat["is_running"],
+    )
+
+
+@router.post(
+    "/scraper/start-daemon",
+    summary="Start background periodic scheduler daemon",
+)
+def start_scheduler_daemon(
+    scheduler: Annotated[ScrapeScheduler, Depends(get_scrape_scheduler_dep)],
+    current_user: str = Depends(get_current_user),
+) -> dict[str, Any]:
+    """Start the periodic background daemon loop."""
+    scheduler.start()
+    return {
+        "status": "started",
+        "message": "Background periodic scraper daemon started.",
+        "is_running": scheduler.is_running,
+    }
+
+
+@router.post(
+    "/scraper/stop-daemon",
+    summary="Stop background periodic scheduler daemon",
+)
+async def stop_scheduler_daemon(
+    scheduler: Annotated[ScrapeScheduler, Depends(get_scrape_scheduler_dep)],
+    current_user: str = Depends(get_current_user),
+) -> dict[str, Any]:
+    """Stop the periodic background daemon loop."""
+    await scheduler.stop()
+    return {
+        "status": "stopped",
+        "message": "Background periodic scraper daemon stopped.",
+        "is_running": scheduler.is_running,
+    }
+
+
 @router.post(
     "/scraper/stop",
-    summary="Stop background scraper scheduler daemon",
+    summary="Halt active scrape cycle and background daemon",
 )
 async def stop_scraper(
     scheduler: Annotated[ScrapeScheduler, Depends(get_scrape_scheduler_dep)],
     current_user: str = Depends(get_current_user),
 ) -> dict[str, str]:
-    """Stop the background periodic scheduler loop."""
+    """Halt any active scrape cycle and background tasks."""
     await scheduler.stop()
     return {
         "status": "stopped",
-        "message": "Scraper scheduler stopped.",
+        "message": "Scraper execution halted.",
     }
 
 
