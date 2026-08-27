@@ -313,6 +313,12 @@ class BounScraperClient:
         response.encoding = "windows-1254"
         text = response.text
 
+        if '<div id="root"></div>' in text or 'Ultimate BOUN:' in text:
+            raise BounHttpError(
+                "Scraper target server returned local frontend SPA HTML instead of Boğaziçi registration portal. "
+                "Ensure BOUN_BASE_URL is set to https://registration.bogazici.edu.tr (not the scraper's own domain)."
+            )
+
         if RECAPTCHA_ERROR_MARKER in text:
             self.invalidate_recaptcha_token()
             raise RecaptchaBlockedError(
