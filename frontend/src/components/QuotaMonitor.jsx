@@ -28,7 +28,7 @@ export default function QuotaMonitor() {
   const showToast = useToast();
   const isMountedRef = useMountedRef();
   const abortControllerRef = useRef(null);
-
+  const isPollingRef = useRef(false);
   const [watchlist, setWatchlist] = useState(() => {
     try {
       const saved = localStorage.getItem('quota_watchlist');
@@ -100,17 +100,19 @@ export default function QuotaMonitor() {
 
   const pollAllQuotas = useCallback(async () => {
     if (watchlist.length === 0) return;
-
-    if (abortControllerRef.current) {
-      abortControllerRef.current.abort();
-    }
+    if (isPollingRef.current) return;
+    isPollingRef.current = true;
     const controller = new AbortController();
     abortControllerRef.current = controller;
 
     const CONCURRENCY_LIMIT = 4;
-    await runWithConcurrency(watchlist, CONCURRENCY_LIMIT, (item) =>
-      fetchSingleQuota(item, controller.signal)
-    );
+    try {
+      await runWithConcurrency(watchlist, CONCURRENCY_LIMIT, (item) =>
+        fetchSingleQuota(item, controller.signal)
+      );
+    } finally {
+      isPollingRef.current = false;
+    }
   }, [watchlist, fetchSingleQuota]);
 
   useEffect(() => {
@@ -139,9 +141,6 @@ export default function QuotaMonitor() {
 
     return () => {
       clearInterval(timer);
-      if (abortControllerRef.current) {
-        abortControllerRef.current.abort();
-      }
     };
   }, [pollingActive, watchlist, pollAllQuotas]);
 
