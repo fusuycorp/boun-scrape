@@ -8,6 +8,7 @@ import ErrorBoundary from './components/ErrorBoundary';
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import ScraperControl from './components/ScraperControl';
+import CoverageDashboard from './components/CoverageDashboard';
 import CourseData from './components/CourseData';
 import QuotaMonitor from './components/QuotaMonitor';
 import ConfigManager from './components/ConfigManager';
@@ -140,6 +141,7 @@ function MainLayout() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/scraper" element={<ScraperControl />} />
+            <Route path="/coverage" element={<CoverageDashboard />} />
             <Route path="/explorer" element={<CourseData />} />
             <Route path="/quota" element={<QuotaMonitor />} />
             <Route path="/config" element={<ConfigManager />} />

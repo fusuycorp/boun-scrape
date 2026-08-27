@@ -706,12 +706,31 @@ class TestApiEndpoints:
                 "export": True,
                 "dispatch_webhooks": False,
                 "capture_quota": True,
+                "departments": ["CMPE", "MATH"],
+                "skip_already_scraped": True,
                 "background": True,
             },
         )
         assert res.status_code == 200
-        assert res.json()["status"] == "triggered"
-        assert res.json()["term"] == "2026/2027-1"
+        data = res.json()
+        assert data["status"] == "triggered"
+        assert data["term"] == "2026/2027-1"
+        assert data["departments"] == ["CMPE", "MATH"]
+        assert data["skip_already_scraped"] is True
+
+    @pytest.mark.asyncio
+    async def test_scraper_coverage_endpoint(
+        self,
+        async_client: AsyncClient,
+        seeded_repo: CourseRepository,
+    ) -> None:
+        res = await async_client.get("/api/v1/scraper/coverage?term=2024/2025-1")
+        assert res.status_code == 200
+        data = res.json()
+        assert data["term"] == "2024/2025-1"
+        assert "total_departments" in data
+        assert "departments" in data
+        assert isinstance(data["departments"], list)
 
     @pytest.mark.asyncio
     async def test_security_headers_present(self, async_client: AsyncClient) -> None:

@@ -144,6 +144,8 @@ class ScrapeScheduler:
         export: bool = True,
         dispatch_webhooks: bool = True,
         capture_quota: bool = False,
+        target_departments: list[str] | None = None,
+        skip_already_scraped: bool = False,
     ) -> ScrapeRunSummary:
         """Execute a full scrape cycle with delta detection, persistence, exports, and feeds.
 
@@ -154,6 +156,8 @@ class ScrapeScheduler:
             capture_quota: If True, additionally capture a live quota snapshot for every
                 scraped course section (rate-limit-sensitive against the registration
                 portal — opt-in, default off).
+            target_departments: Optional subset of department codes to scrape.
+            skip_already_scraped: If True, skip departments that are already marked COMPLETED.
 
         Returns:
             ScrapeRunSummary entity containing run metrics.
@@ -217,6 +221,9 @@ class ScrapeScheduler:
                     )
 
                 cached_depts = self.repository.get_departments(target_term)
+                completed_codes = None
+                if skip_already_scraped:
+                    completed_codes = self.repository.get_completed_department_codes(target_term)
 
                 result = await scrape_term_pipeline(
                     self.client,
@@ -224,6 +231,9 @@ class ScrapeScheduler:
                     concurrency=self.settings.max_concurrency,
                     progress_callback=_on_department_progress,
                     cached_departments=cached_depts,
+                    target_departments=target_departments,
+                    skip_already_scraped=skip_already_scraped,
+                    completed_department_codes=completed_codes,
                 )
                 current_courses = result.courses
                 self.repository.save_departments(target_term, result.departments)
@@ -231,6 +241,16 @@ class ScrapeScheduler:
                     "Scrape %s: finished scraping — %d courses total",
                     run_id, len(current_courses),
                 )
+
+                # Track failed departments in repository
+                for failed_dept in result.failed_departments:
+                    self.repository.update_department_scrape_status(
+                        term=target_term,
+                        code=failed_dept,
+                        course_count=0,
+                        status="FAILED",
+                        error="Crawl failed during pipeline execution",
+                    )
 
                 # 4. Fetch existing courses for term to detect deltas
                 previous_courses = self.repository.get_courses_by_term(target_term)

@@ -554,3 +554,72 @@ class TestRepository:
             hash_val = check_conn.execute("SELECT content_hash FROM courses WHERE course_code = 'CMPE 150'").fetchone()[0]
             assert hash_val is not None
             assert len(hash_val) == 64
+
+    def test_department_coverage_and_status_tracking(self, repo: CourseRepository) -> None:
+        term = "2026/2027-1"
+        depts = [
+            Department(code="CMPE", name="Computer Engineering"),
+            Department(code="MATH", name="Mathematics"),
+            Department(code="PHYS", name="Physics"),
+        ]
+        repo.save_departments(term, depts)
+
+        # Initial coverage status
+        cov = repo.get_term_coverage(term)
+        assert cov.total_departments == 3
+        assert cov.completed_departments == 0
+        assert cov.pending_departments == 3
+        assert cov.failed_departments == 0
+        assert cov.percent_complete == 0.0
+
+        # Save courses for CMPE
+        courses = [
+            Course(
+                term=term,
+                department="CMPE",
+                course_code="CMPE 150",
+                section="01",
+                course_name="INTRO",
+            ),
+            Course(
+                term=term,
+                department="CMPE",
+                course_code="CMPE 160",
+                section="01",
+                course_name="OOP",
+            ),
+        ]
+        repo.save_courses_and_slots(term, courses, scraped_departments=["CMPE"])
+
+        # Mark PHYS as failed
+        repo.update_department_scrape_status(
+            term=term,
+            code="PHYS",
+            course_count=0,
+            status="FAILED",
+            error="Connection timeout",
+        )
+
+        completed_set = repo.get_completed_department_codes(term)
+        assert completed_set == {"CMPE"}
+
+        cov = repo.get_term_coverage(term)
+        assert cov.total_departments == 3
+        assert cov.completed_departments == 1
+        assert cov.pending_departments == 1
+        assert cov.failed_departments == 1
+        assert cov.total_courses == 2
+        assert cov.percent_complete == 33.3
+        assert cov.last_scraped_at is not None
+
+        cmpe_item = next(d for d in cov.departments if d.code == "CMPE")
+        assert cmpe_item.status == "COMPLETED"
+        assert cmpe_item.course_count == 2
+        assert cmpe_item.last_scraped_at is not None
+
+        phys_item = next(d for d in cov.departments if d.code == "PHYS")
+        assert phys_item.status == "FAILED"
+        assert phys_item.error_message == "Connection timeout"
+
+        math_item = next(d for d in cov.departments if d.code == "MATH")
+        assert math_item.status == "PENDING"

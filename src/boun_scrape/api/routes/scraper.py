@@ -10,12 +10,14 @@ from pydantic import BaseModel, Field
 
 from boun_scrape.api.auth import get_current_user
 from boun_scrape.api.deps import (
+    get_course_repo_dep,
     get_log_buffer_dep,
     get_scrape_scheduler_dep,
     get_scraper_client_dep,
     get_settings_dep,
 )
 from boun_scrape.scraper.client import BounScraperClient, parse_curl_command
+from boun_scrape.storage.repository import CourseRepository
 from boun_scrape.api.logging_buffer import LogBuffer
 from boun_scrape.config import Settings
 from boun_scrape.domain.dto import (
@@ -25,6 +27,7 @@ from boun_scrape.domain.dto import (
     ScrapeTriggerRequest,
     ScheduleConfigDTO,
     ScheduleConfigRequest,
+    TermCoverageSummaryDTO,
     run_to_dto,
 )
 from boun_scrape.scheduler.runner import (
@@ -76,12 +79,16 @@ async def trigger_scrape(
                 export=payload.export,
                 dispatch_webhooks=payload.dispatch_webhooks,
                 capture_quota=payload.capture_quota,
+                target_departments=payload.departments,
+                skip_already_scraped=payload.skip_already_scraped,
             )
         )
         return {
             "status": "triggered",
             "message": "Scrape cycle started in background.",
             "term": payload.term,
+            "departments": payload.departments,
+            "skip_already_scraped": payload.skip_already_scraped,
         }
 
     try:
@@ -90,6 +97,8 @@ async def trigger_scrape(
             export=payload.export,
             dispatch_webhooks=payload.dispatch_webhooks,
             capture_quota=payload.capture_quota,
+            target_departments=payload.departments,
+            skip_already_scraped=payload.skip_already_scraped,
         )
         return run_to_dto(summary)
     except ScrapeAlreadyRunningError as exc:
@@ -97,6 +106,28 @@ async def trigger_scrape(
             status_code=status.HTTP_409_CONFLICT,
             detail=str(exc),
         ) from exc
+
+
+@router.get(
+    "/scraper/coverage",
+    response_model=TermCoverageSummaryDTO,
+    summary="Get department scrape coverage and status breakdown",
+)
+def get_scraper_coverage(
+    term: str | None = Query(default=None, description="Academic term (e.g. '2026/2027-1')"),
+    repo: Annotated[CourseRepository, Depends(get_course_repo_dep)] = None,
+    scheduler: Annotated[ScrapeScheduler, Depends(get_scrape_scheduler_dep)] = None,
+    current_user: str = Depends(get_current_user),
+) -> TermCoverageSummaryDTO:
+    """Retrieve per-department scrape results, course counts, and completion status."""
+    target_term = term
+    if not target_term:
+        target_term = scheduler.default_term
+    if not target_term:
+        terms = repo.get_terms()
+        target_term = terms[0] if terms else "unresolved"
+
+    return repo.get_term_coverage(target_term)
 
 
 @router.get(

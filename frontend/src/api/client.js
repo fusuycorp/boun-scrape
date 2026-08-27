@@ -105,6 +105,7 @@ export const api = {
   stopScrape: () => apiRequest('/scraper/stop', { method: 'POST' }),
   getScrapeStatus: () => apiRequest('/scraper/status'),
   getScrapeLogs: (clear = false) => apiRequest('/scraper/logs', { params: { clear } }),
+  getScraperCoverage: (term) => apiRequest('/scraper/coverage', { params: term ? { term } : {} }),
   getScheduleConfig: () => apiRequest('/scraper/schedule'),
   updateScheduleConfig: (data) => apiRequest('/scraper/schedule', { method: 'POST', body: data }),
   startSchedulerDaemon: () => apiRequest('/scraper/start-daemon', { method: 'POST' }),

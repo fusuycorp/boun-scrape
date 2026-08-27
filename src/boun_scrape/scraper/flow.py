@@ -92,6 +92,9 @@ async def scrape_term_pipeline(
     ) = None,
     concurrency: int = 10,
     cached_departments: list[Department] | None = None,
+    target_departments: list[str] | None = None,
+    skip_already_scraped: bool = False,
+    completed_department_codes: set[str] | None = None,
 ) -> TermScrapeResult:
     """Execute end-to-end term scraping pipeline with concurrency rate-limiting.
 
@@ -103,6 +106,9 @@ async def scrape_term_pipeline(
         concurrency: Maximum number of concurrent department requests.
         cached_departments: Optional pre-cached department list to fallback to if
             live department discovery fails (e.g. unauthenticated / no cookies).
+        target_departments: Optional subset of department codes to scrape.
+        skip_already_scraped: If True, bypass departments in completed_department_codes.
+        completed_department_codes: Optional set of already-scraped department codes.
 
     Returns:
         TermScrapeResult with aggregated courses and per-department success/failure tracking.
@@ -133,6 +139,27 @@ async def scrape_term_pipeline(
             return TermScrapeResult(
                 courses=[], departments=[], succeeded_departments=[], failed_departments=[]
             )
+
+    # Filter departments by target list or skip already scraped
+    if target_departments:
+        target_set = {d.upper().strip() for d in target_departments}
+        departments = [d for d in departments if d.code.upper() in target_set]
+
+    if skip_already_scraped and completed_department_codes:
+        skipped_count = sum(1 for d in departments if d.code in completed_department_codes)
+        if skipped_count > 0:
+            logger.info(
+                "Skipping %d already-scraped departments for term %s (incremental mode)",
+                skipped_count,
+                term,
+            )
+            departments = [d for d in departments if d.code not in completed_department_codes]
+
+    if not departments:
+        logger.info("No departments remaining to scrape for term %s after filters", term)
+        return TermScrapeResult(
+            courses=[], departments=[], succeeded_departments=[], failed_departments=[]
+        )
 
     total_depts = len(departments)
     completed_count = 0

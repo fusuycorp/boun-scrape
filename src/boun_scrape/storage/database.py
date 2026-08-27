@@ -13,6 +13,10 @@ CREATE TABLE IF NOT EXISTS departments (
     term TEXT NOT NULL,
     url_bolum TEXT,
     cached_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    last_scraped_at TIMESTAMP,
+    course_count INTEGER DEFAULT 0,
+    last_status TEXT DEFAULT 'PENDING',
+    last_error TEXT,
     PRIMARY KEY(code, term)
 );
 
@@ -182,6 +186,10 @@ class DatabaseManager:
         expected_dept_cols = [
             ("url_bolum", "TEXT"),
             ("cached_at", "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"),
+            ("last_scraped_at", "TIMESTAMP"),
+            ("course_count", "INTEGER DEFAULT 0"),
+            ("last_status", "TEXT DEFAULT 'PENDING'"),
+            ("last_error", "TEXT"),
         ]
         for col, col_def in expected_dept_cols:
             if col not in dept_cols:

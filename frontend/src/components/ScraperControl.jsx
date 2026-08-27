@@ -36,6 +36,7 @@ export default function ScraperControl() {
   const [exportArtifacts, setExportArtifacts] = useState(true);
   const [dispatchWebhooks, setDispatchWebhooks] = useState(true);
   const [captureQuota, setCaptureQuota] = useState(false);
+  const [skipAlreadyScraped, setSkipAlreadyScraped] = useState(false);
 
   // Scheduler / Daemon Settings
   const [scheduleConfig, setScheduleConfig] = useState(null);
@@ -165,6 +166,7 @@ export default function ScraperControl() {
         export: exportArtifacts,
         dispatch_webhooks: dispatchWebhooks,
         capture_quota: captureQuota,
+        skip_already_scraped: skipAlreadyScraped,
         background: true,
       };
       await api.startScrape(payload);
@@ -385,6 +387,15 @@ export default function ScraperControl() {
                   disabled={isRunning}
                 />
                 Export Disk Artifacts (JSON / CSV / SQLite)
+              </label>
+              <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '11px', color: 'var(--text-primary)', cursor: 'pointer' }}>
+                <input
+                  type="checkbox"
+                  checked={skipAlreadyScraped}
+                  onChange={(e) => setSkipAlreadyScraped(e.target.checked)}
+                  disabled={isRunning}
+                />
+                Skip Already-Scraped Departments (Incremental Crawl)
               </label>
               <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '11px', color: 'var(--text-primary)', cursor: 'pointer' }}>
                 <input

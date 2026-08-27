@@ -4,7 +4,11 @@ import json
 import sqlite3
 from typing import Any
 
-from boun_scrape.domain.dto import CourseFilterParams
+from boun_scrape.domain.dto import (
+    CourseFilterParams,
+    DepartmentCoverageItemDTO,
+    TermCoverageSummaryDTO,
+)
 from boun_scrape.domain.events import ChangeType, CourseDeltaEvent
 from boun_scrape.domain.models import (
     Course,
@@ -151,6 +155,26 @@ class CourseRepository:
                             for s in course.slots
                         ],
                     )
+
+            # Update per-department course counts and COMPLETED status
+            depts_to_update = set(scraped_departments) if scraped_departments is not None else {c.department for c in courses}
+            dept_counts: dict[str, int] = {}
+            for c in courses:
+                dept_counts[c.department] = dept_counts.get(c.department, 0) + 1
+
+            for dept_code in depts_to_update:
+                cnt = dept_counts.get(dept_code, 0)
+                conn.execute(
+                    """
+                    UPDATE departments
+                    SET last_scraped_at = CURRENT_TIMESTAMP,
+                        course_count = ?,
+                        last_status = 'COMPLETED',
+                        last_error = NULL
+                    WHERE term = ? AND code = ?
+                    """,
+                    (cnt, term, dept_code),
+                )
 
         return len(courses)
 
@@ -641,3 +665,86 @@ class CourseRepository:
                 )
                 for row in rows
             ]
+
+    def update_department_scrape_status(
+        self,
+        term: str,
+        code: str,
+        course_count: int = 0,
+        status: str = "COMPLETED",
+        error: str | None = None,
+    ) -> None:
+        """Update the scrape outcome and timestamp for a single department."""
+        with self.db.connection() as conn:
+            conn.execute(
+                """
+                UPDATE departments
+                SET last_scraped_at = CURRENT_TIMESTAMP,
+                    course_count = ?,
+                    last_status = ?,
+                    last_error = ?
+                WHERE term = ? AND code = ?
+                """,
+                (course_count, status, error, term, code),
+            )
+            conn.commit()
+
+    def get_completed_department_codes(self, term: str) -> set[str]:
+        """Return the set of department codes that have been successfully scraped for a term."""
+        with self.db.connection() as conn:
+            rows = conn.execute(
+                "SELECT code FROM departments WHERE term = ? AND last_status = 'COMPLETED'",
+                (term,),
+            ).fetchall()
+            return {row["code"] for row in rows}
+
+    def get_term_coverage(self, term: str) -> TermCoverageSummaryDTO:
+        """Calculate and return coverage metrics and department breakdown for an academic term."""
+        with self.db.connection() as conn:
+            rows = conn.execute(
+                """
+                SELECT code, name, term, course_count, last_scraped_at, last_status, last_error, cached_at
+                FROM departments
+                WHERE term = ?
+                ORDER BY code ASC
+                """,
+                (term,),
+            ).fetchall()
+
+            dept_items = [
+                DepartmentCoverageItemDTO(
+                    code=row["code"],
+                    name=row["name"],
+                    term=row["term"],
+                    course_count=row["course_count"] or 0,
+                    last_scraped_at=row["last_scraped_at"],
+                    status=row["last_status"] or "PENDING",
+                    error_message=row["last_error"],
+                    cached_at=row["cached_at"],
+                )
+                for row in rows
+            ]
+
+            total_depts = len(dept_items)
+            completed = sum(1 for d in dept_items if d.status == "COMPLETED")
+            failed = sum(1 for d in dept_items if d.status == "FAILED")
+            pending = total_depts - completed - failed
+            total_courses = sum(d.course_count for d in dept_items)
+            pct = round((completed / total_depts * 100), 1) if total_depts > 0 else 0.0
+
+            last_scraped = None
+            scraped_times = [d.last_scraped_at for d in dept_items if d.last_scraped_at]
+            if scraped_times:
+                last_scraped = max(scraped_times)
+
+            return TermCoverageSummaryDTO(
+                term=term,
+                total_departments=total_depts,
+                completed_departments=completed,
+                pending_departments=pending,
+                failed_departments=failed,
+                total_courses=total_courses,
+                percent_complete=pct,
+                last_scraped_at=last_scraped,
+                departments=dept_items,
+            )

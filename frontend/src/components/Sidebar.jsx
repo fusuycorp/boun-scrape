@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import {
   LayoutDashboard,
   Terminal,
+  Layers,
   Search,
   Activity,
   Sliders,
@@ -19,9 +20,10 @@ export default function Sidebar() {
   const navItems = [
     { to: '/', label: '[01] //_DASHBOARD', icon: LayoutDashboard },
     { to: '/scraper', label: '[02] //_PIPELINE', icon: Terminal },
-    { to: '/explorer', label: '[03] //_COURSES', icon: Search },
-    { to: '/quota', label: '[04] //_QUOTA', icon: Activity },
-    { to: '/config', label: '[05] //_CONFIG', icon: Sliders },
+    { to: '/coverage', label: '[03] //_COVERAGE', icon: Layers },
+    { to: '/explorer', label: '[04] //_COURSES', icon: Search },
+    { to: '/quota', label: '[05] //_QUOTA', icon: Activity },
+    { to: '/config', label: '[06] //_CONFIG', icon: Sliders },
   ];
 
   const toggleMobile = () => setMobileOpen((prev) => !prev);

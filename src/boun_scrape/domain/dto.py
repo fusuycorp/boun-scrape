@@ -169,11 +169,40 @@ class ScrapeTriggerRequest(BaseModel):
     """Payload for triggering a scraper cycle."""
 
     term: str | None = None
+    departments: list[str] | None = None
+    skip_already_scraped: bool = False
     export: bool = True
     dispatch_webhooks: bool = True
     background: bool = True
     all_terms: bool = False
     capture_quota: bool = False
+
+
+class DepartmentCoverageItemDTO(BaseModel):
+    """Per-department scrape status and course count."""
+
+    code: str
+    name: str
+    term: str
+    course_count: int = 0
+    last_scraped_at: str | None = None
+    status: str = "PENDING"
+    error_message: str | None = None
+    cached_at: str | None = None
+
+
+class TermCoverageSummaryDTO(BaseModel):
+    """Summary of department scrape progress and courses for an academic term."""
+
+    term: str
+    total_departments: int = 0
+    completed_departments: int = 0
+    pending_departments: int = 0
+    failed_departments: int = 0
+    total_courses: int = 0
+    percent_complete: float = 0.0
+    last_scraped_at: str | None = None
+    departments: list[DepartmentCoverageItemDTO] = []
 
 
 class ScrapeStatusDTO(BaseModel):
