@@ -144,6 +144,10 @@ class WebhookDispatcher:
                 last_error = f"HTTP {response.status_code}: {response.text[:200]}"
             except (httpx.TransportError, httpx.TimeoutException) as exc:
                 last_error = f"{type(exc).__name__}: {str(exc)}"
+            except Exception as exc:
+                last_error = f"{type(exc).__name__}: {str(exc)}"
+                # Non-transport error — still retry until max_retries, but don't crash siblings
+                logger.warning("Webhook %s unexpected error: %s", url, exc)
 
             if attempt < self.max_retries:
                 delay = self.backoff_factor * (2 ** (attempt - 1))
@@ -197,8 +201,15 @@ class WebhookDispatcher:
             self._send_to_single_url(url, payload_bytes, headers)
             for url in self.urls
         ]
-        results = await asyncio.gather(*tasks)
-        return list(results)
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+        # _send_to_single_url now catches all inside, but guard anyway
+        out: list[WebhookDeliveryResult] = []
+        for r in results:
+            if isinstance(r, BaseException):
+                out.append(WebhookDeliveryResult(url="unknown", success=False, error_message=str(r), attempts=self.max_retries))
+            else:
+                out.append(r)
+        return out
 
     async def dispatch_deltas(
         self,

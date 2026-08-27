@@ -29,7 +29,6 @@ class LogBuffer:
         with self._lock:
             self._records.append(entry)
         return entry
-
     def get_logs(self, limit: int = 100, level: str | None = None) -> list[LogEntryDTO]:
         """Retrieve recent log records, optionally filtered by minimum log level."""
         with self._lock:
@@ -37,10 +36,15 @@ class LogBuffer:
 
         if level:
             target_lvl = level.upper().strip()
-            entries = [e for e in entries if e.level == target_lvl]
+            # Minimum-level semantics: WARNING includes ERROR/CRITICAL
+            _order = {"DEBUG": 10, "INFO": 20, "WARNING": 30, "WARN": 30, "ERROR": 40, "CRITICAL": 50}
+            min_val = _order.get(target_lvl, None)
+            if min_val is not None:
+                entries = [e for e in entries if _order.get(e.level.upper(), 0) >= min_val]
+            else:
+                entries = [e for e in entries if e.level == target_lvl]
 
         return entries[-limit:]
-
     def clear(self) -> None:
         """Clear all buffered log records."""
         with self._lock:
@@ -73,16 +77,18 @@ class BufferLoggingHandler(logging.Handler):
 # Global singleton instance
 _GLOBAL_LOG_BUFFER = LogBuffer(capacity=1000)
 
-
 def get_global_log_buffer() -> LogBuffer:
     """Access the global application log buffer."""
     return _GLOBAL_LOG_BUFFER
 
 
 def setup_api_logging(logger_name: str = "boun_scrape") -> LogBuffer:
-    """Attach the buffer logging handler to the root or specified logger."""
     buf = get_global_log_buffer()
     logger = logging.getLogger(logger_name)
+    # Dedup: avoid unbounded handler growth when create_app() called repeatedly (tests/reload)
+    for h in logger.handlers:
+        if isinstance(h, BufferLoggingHandler) and getattr(h, "buffer", None) is buf:
+            return buf
     handler = BufferLoggingHandler(buf)
     formatter = logging.Formatter("%(message)s")
     handler.setFormatter(formatter)
