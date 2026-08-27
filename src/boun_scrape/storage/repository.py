@@ -97,11 +97,21 @@ class CourseRepository:
         Returns the total number of courses persisted.
         """
         with self.db.transaction() as conn:
-            # Foreign keys cascade slot deletion
+            # Delete dependent slots first so the operation works regardless of
+            # whether course_slots.course_id has ON DELETE CASCADE (new DBs) or
+            # NO ACTION/RESTRICT (legacy prod DBs created before the CASCADE fix).
             if scraped_departments is None:
+                conn.execute(
+                    "DELETE FROM course_slots WHERE course_id IN (SELECT id FROM courses WHERE term = ?)",
+                    (term,),
+                )
                 conn.execute("DELETE FROM courses WHERE term = ?", (term,))
             elif scraped_departments:
                 placeholders = ",".join("?" for _ in scraped_departments)
+                conn.execute(
+                    f"DELETE FROM course_slots WHERE course_id IN (SELECT id FROM courses WHERE term = ? AND department IN ({placeholders}))",
+                    (term, *scraped_departments),
+                )
                 conn.execute(
                     f"DELETE FROM courses WHERE term = ? AND department IN ({placeholders})",
                     (term, *scraped_departments),

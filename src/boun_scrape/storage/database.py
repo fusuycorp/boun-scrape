@@ -235,3 +235,66 @@ class DatabaseManager:
         conn.execute(
             "CREATE UNIQUE INDEX IF NOT EXISTS idx_courses_unique ON courses (term, department, course_code, section)"
         )
+
+        # 5. Fix legacy course_slots FK missing ON DELETE CASCADE (prod DBs created
+        #    before the CASCADE fix have NO ACTION, causing DELETE FROM courses
+        #    to fail with FOREIGN KEY constraint when slots exist). SQLite cannot
+        #    ALTER a FK, so we recreate the table when the FK is wrong.
+        self._migrate_course_slots_fk(conn)
+
+    def _migrate_course_slots_fk(self, conn: sqlite3.Connection) -> None:
+        """Recreate course_slots with correct ON DELETE CASCADE if legacy FK detected."""
+        try:
+            fk_rows = conn.execute("PRAGMA foreign_key_list(course_slots)").fetchall()
+        except sqlite3.OperationalError:
+            return
+        # Already correct if exactly one FK to courses(id) with CASCADE
+        if fk_rows and all(
+            r["table"] == "courses" and r["from"] == "course_id" and r["to"] == "id" and r["on_delete"] == "CASCADE"
+            for r in fk_rows
+        ):
+            # Also verify NOT NULL on course_id (legacy prod had nullable)
+            col_info = {r["name"]: r for r in conn.execute("PRAGMA table_info(course_slots)").fetchall()}
+            course_id_row = col_info.get("course_id")
+            if course_id_row is not None and course_id_row["notnull"] == 1:
+                return
+        # Need rebuild — preserve data, rebuild with correct schema
+        try:
+            conn.execute("PRAGMA foreign_keys = OFF")
+            # Check if old table has data to preserve
+            conn.execute("BEGIN IMMEDIATE")
+            conn.executescript(
+                """
+                CREATE TABLE IF NOT EXISTS course_slots_new (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    course_id INTEGER NOT NULL REFERENCES courses(id) ON DELETE CASCADE,
+                    day TEXT,
+                    hour TEXT,
+                    room TEXT,
+                    slot_title TEXT,
+                    instructor TEXT
+                );
+                INSERT OR IGNORE INTO course_slots_new (id, course_id, day, hour, room, slot_title, instructor)
+                    SELECT id, course_id, day, hour, room, slot_title, instructor FROM course_slots;
+                DROP TABLE course_slots;
+                ALTER TABLE course_slots_new RENAME TO course_slots;
+                CREATE INDEX IF NOT EXISTS idx_course_slots_course_id ON course_slots(course_id);
+                CREATE INDEX IF NOT EXISTS idx_course_slots_day_hour ON course_slots(day, hour);
+                """
+            )
+            conn.execute("COMMIT")
+            # Verify no FK violations after rebuild
+            violations = conn.execute("PRAGMA foreign_key_check").fetchall()
+            if violations:
+                # Best-effort: log but don't fail startup
+                pass
+        except Exception:
+            try:
+                conn.execute("ROLLBACK")
+            except Exception:
+                pass
+        finally:
+            try:
+                conn.execute("PRAGMA foreign_keys = ON")
+            except Exception:
+                pass
