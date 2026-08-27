@@ -158,12 +158,25 @@ class ScrapeScheduler:
                 # 1. Target term resolution
                 target_term = term or self.default_term
                 if not target_term:
-                    discovered = await discover_terms(self.client)
-                    if not discovered:
-                        raise ScrapeSchedulerError(
-                            "No academic terms discovered from the registration portal."
+                    try:
+                        discovered = await discover_terms(self.client)
+                    except Exception as exc:
+                        logger.warning(
+                            "discover_terms failed: %s. Falling back to cached terms.", exc
                         )
-                    target_term = discovered[0]
+                        discovered = []
+
+                    if not discovered:
+                        cached_terms = self.repository.get_terms()
+                        if cached_terms:
+                            target_term = cached_terms[0]
+                            logger.info("Using latest cached term: %s", target_term)
+                        else:
+                            raise ScrapeSchedulerError(
+                                "No academic terms discovered from portal or cached in database."
+                            )
+                    else:
+                        target_term = discovered[0]
                 summary.term = target_term
                 logger.info("Scrape %s: resolved term %s", run_id, target_term)
 
@@ -183,11 +196,14 @@ class ScrapeScheduler:
                         run_id, dept.code, completed, total, len(courses),
                     )
 
+                cached_depts = self.repository.get_departments(target_term)
+
                 result = await scrape_term_pipeline(
                     self.client,
                     term=target_term,
                     concurrency=self.settings.max_concurrency,
                     progress_callback=_on_department_progress,
+                    cached_departments=cached_depts,
                 )
                 current_courses = result.courses
                 self.repository.save_departments(target_term, result.departments)
@@ -360,11 +376,22 @@ class ScrapeScheduler:
         skipped from the returned list but is still recorded in the scrape_runs
         table with status FAILED by execute_scrape_cycle itself.
         """
-        terms = await discover_terms(self.client)
-        if not terms:
-            raise ScrapeSchedulerError(
-                "No academic terms discovered from the registration portal."
+        try:
+            terms = await discover_terms(self.client)
+        except Exception as exc:
+            logger.warning(
+                "discover_terms failed in all-terms cycle: %s. Falling back to cached terms.",
+                exc,
             )
+            terms = []
+
+        if not terms:
+            terms = self.repository.get_terms()
+            if not terms:
+                raise ScrapeSchedulerError(
+                    "No academic terms discovered from portal or cached in database."
+                )
+            logger.info("Using %d cached terms for all-terms cycle: %s", len(terms), terms)
 
         logger.info(
             "Starting all-terms scrape cycle: %d terms discovered: %s", len(terms), terms

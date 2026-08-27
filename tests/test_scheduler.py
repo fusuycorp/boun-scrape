@@ -5,7 +5,7 @@ import asyncio
 import httpx
 import pytest
 
-from boun_scrape.domain.models import RunStatus, TermScrapeResult
+from boun_scrape.domain.models import Department, RunStatus, TermScrapeResult
 from boun_scrape.feeds.webhooks import WebhookDispatcher
 from boun_scrape.scheduler.runner import (
     ScrapeAlreadyRunningError,
@@ -495,7 +495,7 @@ class TestScrapeScheduler:
 
         captured_concurrency: list[int] = []
 
-        async def fake_scrape_term_pipeline(client, term, progress_callback=None, concurrency=10):
+        async def fake_scrape_term_pipeline(client, term, progress_callback=None, concurrency=10, **kwargs):
             captured_concurrency.append(concurrency)
             return TermScrapeResult(courses=[], succeeded_departments=[], failed_departments=[])
 
@@ -652,7 +652,7 @@ class TestScrapeScheduler:
         repo.save_courses_and_slots("2024/2025-1", [initial_cmpe, initial_math])
 
         # Second scrape: MATH failed, CMPE succeeded with same course
-        async def fake_scrape_term_pipeline(client, term, progress_callback=None, concurrency=10):
+        async def fake_scrape_term_pipeline(client, term, progress_callback=None, concurrency=10, **kwargs):
             return TermScrapeResult(
                 courses=[initial_cmpe],
                 departments=[],
@@ -739,7 +739,7 @@ class TestScrapeScheduler:
         db_mgr.init_db()
         repo = CourseRepository(db_mgr)
 
-        async def fake_scrape_term_pipeline(client, term, progress_callback=None, concurrency=10):
+        async def fake_scrape_term_pipeline(client, term, progress_callback=None, concurrency=10, **kwargs):
             raise asyncio.CancelledError()
 
         monkeypatch.setattr(runner_module, "scrape_term_pipeline", fake_scrape_term_pipeline)
@@ -758,3 +758,62 @@ class TestScrapeScheduler:
         assert runs[0].status == RunStatus.CANCELLED
 
         await scheduler.aclose()
+
+    @pytest.mark.asyncio
+    async def test_execute_scrape_cycle_fallback_to_cached_departments_and_terms(
+        self,
+        schedule_html: str,
+        tmp_path: Path,
+    ) -> None:
+        db_mgr = DatabaseManager(str(tmp_path / "cached_test.db"))
+        db_mgr.init_db()
+        repo = CourseRepository(db_mgr)
+
+        # Seed cached departments and terms
+        cached_depts = [
+            Department(code="CMPE", name="Computer Engineering", bolum="COMPUTER ENGINEERING"),
+            Department(code="EE", name="Electrical Engineering", bolum="ELECTRICAL ENGINEERING"),
+        ]
+        repo.save_departments("2024/2025-1", cached_depts)
+
+        # Mock server where schedule.aspx fails (no auth / CAPTCHA), but sch.asp succeeds
+        def handler(request: httpx.Request) -> httpx.Response:
+            path = request.url.path
+            if "schedule.aspx" in path:
+                return httpx.Response(
+                    200,
+                    content="<html><body>You could not pass the reCAPTCHA check</body></html>".encode(
+                        "windows-1254"
+                    ),
+                )
+            if "sch.asp" in path:
+                return httpx.Response(200, content=schedule_html.encode("windows-1254"))
+            return httpx.Response(404)
+
+        transport = httpx.MockTransport(handler)
+
+        async with httpx.AsyncClient(transport=transport, base_url=BASE_URL) as scraper_http:
+            scraper_client = BounScraperClient(
+                http_client=scraper_http, min_jitter=0, max_jitter=0
+            )
+
+            scheduler = ScrapeScheduler(
+                client=scraper_client,
+                repository=repo,
+                export_dir=tmp_path / "exports",
+            )
+
+            # Auto-discovery fallback to cached term + fallback to cached departments
+            summary = await scheduler.execute_scrape_cycle(
+                term=None, export=False, dispatch_webhooks=False
+            )
+            assert summary.status == RunStatus.COMPLETED
+            assert summary.term == "2024/2025-1"
+            assert summary.completed_departments == 2
+            assert summary.total_courses > 0
+
+            # Verify persisted courses
+            courses = repo.get_courses_by_term("2024/2025-1")
+            assert len(courses) > 0
+
+            await scheduler.aclose()

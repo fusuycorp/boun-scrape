@@ -91,6 +91,7 @@ async def scrape_term_pipeline(
         Callable[[int, int, Department, list[Course]], Any] | None
     ) = None,
     concurrency: int = 10,
+    cached_departments: list[Department] | None = None,
 ) -> TermScrapeResult:
     """Execute end-to-end term scraping pipeline with concurrency rate-limiting.
 
@@ -100,15 +101,38 @@ async def scrape_term_pipeline(
         progress_callback: Callback invoked when a department completes:
             (completed_count, total_count, department, courses).
         concurrency: Maximum number of concurrent department requests.
+        cached_departments: Optional pre-cached department list to fallback to if
+            live department discovery fails (e.g. unauthenticated / no cookies).
 
     Returns:
         TermScrapeResult with aggregated courses and per-department success/failure tracking.
     """
-    departments = await fetch_departments(client, term)
-    if not departments:
-        return TermScrapeResult(
-            courses=[], departments=[], succeeded_departments=[], failed_departments=[]
+    departments: list[Department] = []
+    fetch_error: Exception | None = None
+    try:
+        departments = await fetch_departments(client, term)
+    except Exception as exc:
+        fetch_error = exc
+        logger.warning(
+            "fetch_departments failed for term %s: %s. Attempting fallback to cached departments.",
+            term,
+            exc,
         )
+
+    if not departments:
+        if cached_departments:
+            logger.info(
+                "Using %d cached departments for term %s (live discovery unauthenticated/failed)",
+                len(cached_departments),
+                term,
+            )
+            departments = cached_departments
+        else:
+            if fetch_error is not None:
+                raise fetch_error
+            return TermScrapeResult(
+                courses=[], departments=[], succeeded_departments=[], failed_departments=[]
+            )
 
     total_depts = len(departments)
     completed_count = 0

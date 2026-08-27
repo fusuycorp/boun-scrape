@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Cookie, Save, AlertCircle } from 'lucide-react';
+import { Cookie, Save, AlertCircle, KeyRound, Terminal } from 'lucide-react';
 import { api } from '../api/client';
 import { useMountedRef } from '../hooks/useSafeAsync';
 import { useToast } from '../hooks/useToast';
@@ -75,7 +75,7 @@ export default function ConfigManager() {
           /// SESSION_AND_KEYRING_MANAGER
         </h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginTop: '4px' }}>
-          Mount reCAPTCHA session tokens (`cookies.txt`) for the scraper client.
+          Mount session tokens (`cookies.txt` / `recaptcha_token.txt`) or paste raw DevTools cURL commands for the scraper client.
         </p>
       </div>
 
@@ -101,6 +101,27 @@ export default function ConfigManager() {
             )}
           </div>
         </div>
+
+        {/* reCAPTCHA Token Status */}
+        <div className="cyber-card" style={{ border: '1px solid var(--border-hard)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+            <KeyRound size={16} style={{ color: 'var(--neon-cyan)' }} />
+            <span style={{ color: 'var(--neon-cyan)', fontSize: '11px', fontWeight: 700 }}>
+              KEYRING_02: recaptcha_token.txt
+            </span>
+          </div>
+          <div>
+            {loading ? (
+              <span style={{ color: 'var(--text-muted)', fontSize: '11px' }}>[...]</span>
+            ) : status?.recaptcha_loaded ? (
+              <span className="cyber-badge cyber-badge-green">[● ACTIVE: MOUNTED]</span>
+            ) : (
+              <span className="cyber-badge cyber-badge-amber">
+                [- OPTIONAL / UNSET]
+              </span>
+            )}
+          </div>
+        </div>
       </div>
 
       {/* Form */}
@@ -108,18 +129,20 @@ export default function ConfigManager() {
         {/* Cookie Input */}
         <div className="cyber-card" style={{ border: '1px solid var(--border-hard)', padding: '20px' }}>
           <label style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--neon-amber)', fontSize: '11px', fontWeight: 700, marginBottom: '6px' }}>
-            <Cookie size={14} />
-            RAW_COOKIE_STRING: (ASP.NET_SessionId)
+            <Terminal size={14} />
+            PASTE RAW COOKIES OR BROWSER DEVTOOLS cURL COMMAND:
           </label>
           <p style={{ color: 'var(--text-secondary)', fontSize: '11px', marginBottom: '12px' }}>
-            Paste a new cookie string to replace the current session. The existing value is never
-            displayed here; leave this blank to keep the currently mounted cookie unchanged.
+            Paste a cookie string (e.g. <code>ASP.NET_SessionId=...</code>) or paste the entire multi-line command directly from Chrome DevTools (<strong>Network → Copy as cURL</strong>). Cookies and reCAPTCHA tokens (<code>gRecResp</code>) are parsed and extracted automatically.
           </p>
           <textarea
-            rows="3"
+            rows="5"
             value={cookies}
             onChange={(e) => setCookies(e.target.value)}
-            placeholder="ASP.NET_SessionId=abcdef1234567890..."
+            placeholder="curl 'https://registration.bogazici.edu.tr/BUIS/General/schedule.aspx?p=semester' \
+  -H '...' \
+  -b 'ASP.NET_SessionId=...; ASPSESSIONIDAQQCCDAD=...' \
+  --data-raw '...&ctl00$cphMainContent$gRecResp=...'"
             className="cyber-input"
             style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', lineHeight: '1.5' }}
           />

@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS departments (
     name TEXT NOT NULL,
     term TEXT NOT NULL,
     url_bolum TEXT,
+    cached_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(code, term)
 );
 
@@ -157,12 +158,20 @@ class DatabaseManager:
 
     def _migrate_schema(self, conn: sqlite3.Connection) -> None:
         """Apply additive column migrations for databases created before a column existed."""
-        existing_cols = {row["name"] for row in conn.execute("PRAGMA table_info(scrape_runs)")}
-        if "completed_departments" not in existing_cols:
+        scrape_run_cols = {row["name"] for row in conn.execute("PRAGMA table_info(scrape_runs)")}
+        if "completed_departments" not in scrape_run_cols:
             conn.execute(
                 "ALTER TABLE scrape_runs ADD COLUMN completed_departments INTEGER DEFAULT 0"
             )
             conn.commit()
+
+        dept_cols = {row["name"] for row in conn.execute("PRAGMA table_info(departments)")}
+        if "cached_at" not in dept_cols:
+            conn.execute(
+                "ALTER TABLE departments ADD COLUMN cached_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+            )
+            conn.commit()
+
         conn.execute(
             "CREATE UNIQUE INDEX IF NOT EXISTS idx_courses_unique ON courses (term, department, course_code, section)"
         )

@@ -15,7 +15,7 @@ from boun_scrape.api.deps import (
     get_scraper_client_dep,
     get_settings_dep,
 )
-from boun_scrape.scraper.client import BounScraperClient
+from boun_scrape.scraper.client import BounScraperClient, parse_curl_command
 from boun_scrape.api.logging_buffer import LogBuffer
 from boun_scrape.config import Settings
 from boun_scrape.domain.dto import (
@@ -156,34 +156,59 @@ def get_scraper_logs(
     return logs
 
 
-@router.get("/scraper/config", summary="Get scraper cookie configuration status")
+@router.get("/scraper/config", summary="Get scraper cookie and token configuration status")
 def get_scraper_config(
     settings: Annotated[Settings, Depends(get_settings_dep)],
     current_user: str = Depends(get_current_user),
 ) -> dict[str, bool]:
-    """Report whether a non-empty session cookie file is currently mounted."""
+    """Report whether non-empty session cookie or reCAPTCHA token files are currently mounted."""
     cookie_loaded = os.path.exists(settings.cookies_path) and os.path.getsize(settings.cookies_path) > 0
-    return {"cookie_loaded": cookie_loaded}
+    recaptcha_loaded = os.path.exists(settings.recaptcha_token_path) and os.path.getsize(settings.recaptcha_token_path) > 0
+    return {"cookie_loaded": cookie_loaded, "recaptcha_loaded": recaptcha_loaded}
 
 
-@router.post("/scraper/config", summary="Update scraper session cookies")
+@router.post("/scraper/config", summary="Update scraper session cookies or cURL command")
 def update_scraper_config(
     payload: CookieUpdateRequest,
     settings: Annotated[Settings, Depends(get_settings_dep)],
     client: Annotated[BounScraperClient, Depends(get_scraper_client_dep)],
     current_user: str = Depends(get_current_user),
-) -> dict[str, str]:
-    """Write a new session cookie string to the scraper's cookie file."""
+) -> dict[str, Any]:
+    """Write a new session cookie string or parse a raw cURL command into cookies and reCAPTCHA token."""
+    raw_input = payload.cookies.strip()
+    extracted_token = False
+    cookie_str = raw_input
+
+    if raw_input.startswith("curl ") or "\ncurl " in raw_input or "curl '" in raw_input or 'curl "' in raw_input:
+        extracted = parse_curl_command(raw_input)
+        if extracted.get("cookies"):
+            cookie_str = extracted["cookies"]
+        if extracted.get("recaptcha_token"):
+            recaptcha_path = Path(settings.recaptcha_token_path)
+            recaptcha_path.parent.mkdir(parents=True, exist_ok=True)
+            recaptcha_path.write_text(extracted["recaptcha_token"], encoding="utf-8")
+            extracted_token = True
+
     cookie_path = Path(settings.cookies_path)
     cookie_path.parent.mkdir(parents=True, exist_ok=True)
     fd, tmp_path = tempfile.mkstemp(dir=str(cookie_path.parent), prefix="cookies_", suffix=".tmp")
     try:
         with open(fd, "w", encoding="utf-8") as f:
-            f.write(payload.cookies)
+            f.write(cookie_str)
         os.replace(tmp_path, cookie_path)
     except BaseException:
         if os.path.exists(tmp_path):
             os.remove(tmp_path)
         raise
+
     client.reload_cookies()
-    return {"status": "ok", "message": "Cookie configuration updated."}
+    msg = "Cookie configuration updated."
+    if extracted_token:
+        msg = "Cookies and reCAPTCHA token extracted from cURL command successfully."
+
+    return {
+        "status": "ok",
+        "message": msg,
+        "cookie_loaded": True,
+        "recaptcha_loaded": extracted_token,
+    }

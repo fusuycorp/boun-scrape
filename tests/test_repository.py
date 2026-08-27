@@ -41,6 +41,8 @@ class TestRepository:
         saved = repo.get_departments("2024/2025-1")
         assert len(saved) == 2
         assert {d.code for d in saved} == {"CMPE", "MATH"}
+        assert repo.get_departments_last_cached_at("2024/2025-1") is not None
+        assert repo.get_departments_last_cached_at() is not None
 
         # Idempotent upsert
         updated_depts = [

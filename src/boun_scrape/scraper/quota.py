@@ -153,9 +153,8 @@ class QuotaService:
             async with self._lock:
                 # Bound cache growth in a long-lived daemon: evict the oldest entry once
                 # the cap is exceeded. O(cache) eviction runs only when at capacity, which
-                # is rare compared to the TTL-hit fast path. ponytail: linear eviction;
-                # upgrade to a heap/OrderedDict if the cap ever grows into the tens of
-                # thousands of live entries.
+                # is rare compared to the TTL-hit fast path.
+                # ponytail: linear cache eviction <- max_cache_size <= 2000 -> cache cap grows into tens of thousands of entries
                 if (
                     self.max_cache_size
                     and len(self._cache) >= self.max_cache_size

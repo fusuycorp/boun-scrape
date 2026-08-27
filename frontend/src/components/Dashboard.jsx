@@ -9,6 +9,8 @@ import {
   ShieldCheck,
   RefreshCw,
   Cookie,
+  KeyRound,
+  Database,
 } from 'lucide-react';
 import { api } from '../api/client';
 import { useMountedRef } from '../hooks/useSafeAsync';
@@ -28,8 +30,8 @@ export default function Dashboard() {
     try {
       setRefreshing(true);
       const [statsRes, configRes] = await Promise.all([
-        api.getStats().catch(() => ({ total_courses: 0, total_slots: 0, total_departments: 0, total_terms: 0 })),
-        api.getScraperConfig().catch(() => ({ cookie_loaded: false })),
+        api.getStats().catch(() => ({ total_courses: 0, total_slots: 0, total_departments: 0, total_terms: 0, last_cached_departments_at: null })),
+        api.getScraperConfig().catch(() => ({ cookie_loaded: false, recaptcha_loaded: false })),
       ]);
 
       if (isMountedRef.current) {
@@ -161,17 +163,17 @@ export default function Dashboard() {
 
       {/* Connectivity Status & Operational Launchpad */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px' }}>
-        {/* Connectivity Status */}
+        {/* Connectivity & Cache Readiness Status */}
         <div className="cyber-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
               <ShieldCheck size={16} style={{ color: 'var(--neon-green)' }} />
               <h3 style={{ fontSize: '13px', margin: 0, color: 'var(--text-primary)' }}>
-                [+] CRAWLER_CONNECTIVITY_STATUS
+                [+] CRAWLER_CONNECTIVITY_AND_CACHE_STATUS
               </h3>
             </div>
             <p style={{ color: 'var(--text-secondary)', fontSize: '11px', marginBottom: '16px' }}>
-              Bypass tokens &amp; ASP.NET ViewState form payload integrity.
+              Session keyrings and cached department/semester discovery state.
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -193,8 +195,67 @@ export default function Dashboard() {
                 {configStatus?.cookie_loaded ? (
                   <span className="cyber-badge cyber-badge-green">[● MOUNTED]</span>
                 ) : (
-                  <span className="cyber-badge cyber-badge-amber">[! MISSING]</span>
+                  <span className="cyber-badge cyber-badge-amber">[! MISSING / EXPIRED]</span>
                 )}
+              </div>
+
+              {/* reCAPTCHA Token */}
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  padding: '10px 12px',
+                  background: 'var(--bg-primary)',
+                  border: '1px solid var(--border-dim)',
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <KeyRound size={14} style={{ color: 'var(--neon-cyan)' }} />
+                  <span style={{ fontSize: '11px', color: 'var(--text-primary)' }}>TOKEN: recaptcha_token.txt</span>
+                </div>
+                {configStatus?.recaptcha_loaded ? (
+                  <span className="cyber-badge cyber-badge-green">[● MOUNTED]</span>
+                ) : (
+                  <span className="cyber-badge cyber-badge-amber">[- UNSET / OPTIONAL]</span>
+                )}
+              </div>
+
+              {/* Department & Term Cache */}
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '6px',
+                  padding: '10px 12px',
+                  background: 'var(--bg-primary)',
+                  border: '1px solid var(--border-dim)',
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <Database size={14} style={{ color: 'var(--neon-green)' }} />
+                    <span style={{ fontSize: '11px', color: 'var(--text-primary)' }}>CACHE: DEPARTMENTS &amp; TERMS</span>
+                  </div>
+                  {stats?.last_cached_departments_at || (stats?.total_departments > 0) ? (
+                    <span className="cyber-badge cyber-badge-green">[● CACHED: READY]</span>
+                  ) : (
+                    <span className="cyber-badge cyber-badge-amber">[! EMPTY]</span>
+                  )}
+                </div>
+                <div style={{ fontSize: '10px', color: 'var(--text-secondary)', paddingLeft: '22px' }}>
+                  {stats?.last_cached_departments_at ? (
+                    <>
+                      Last updated: <span style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-mono)' }}>{stats.last_cached_departments_at}</span>
+                      <br />
+                      <span style={{ color: 'var(--neon-green)' }}>✓ Zero-cookie course scraping enabled</span> ({stats?.total_departments || 0} depts / {stats?.total_terms || 0} terms)
+                    </>
+                  ) : stats?.total_departments > 0 ? (
+                    <span style={{ color: 'var(--neon-green)' }}>✓ {stats.total_departments} depts cached ({stats.total_terms} terms)</span>
+                  ) : (
+                    <span style={{ color: 'var(--text-muted)' }}>Mount session cookies once to auto-populate department cache.</span>
+                  )}
+                </div>
               </div>
             </div>
           </div>

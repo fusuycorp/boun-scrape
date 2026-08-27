@@ -122,10 +122,13 @@ def get_stats(repo: Annotated[CourseRepository, Depends(get_course_repo_dep)]) -
         cursor.execute("SELECT COUNT(*) FROM course_slots")
         total_slots = cursor.fetchone()[0]
 
+    last_cached_depts = repo.get_departments_last_cached_at()
+
     return {
         "total_courses": total_courses,
         "total_slots": total_slots,
         "total_departments": len(depts),
         "total_terms": len(terms),
         "last_scraped": latest_run.completed_at if latest_run else None,
+        "last_cached_departments_at": last_cached_depts,
     }

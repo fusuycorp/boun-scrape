@@ -325,6 +325,7 @@ class TestApiEndpoints:
         assert data["total_terms"] == 1
         assert data["total_slots"] == 7
         assert data["last_scraped"] == "2026-08-15T01:05:00Z"
+        assert "last_cached_departments_at" in data
 
     @pytest.mark.asyncio
     async def test_get_courses_pagination(self, async_client: AsyncClient) -> None:
@@ -609,7 +610,7 @@ class TestApiEndpoints:
     ) -> None:
         empty_response = await async_client.get("/api/v1/scraper/config")
         assert empty_response.status_code == 200
-        assert empty_response.json() == {"cookie_loaded": False}
+        assert empty_response.json() == {"cookie_loaded": False, "recaptcha_loaded": False}
 
         update_response = await async_client.post(
             "/api/v1/scraper/config", json={"cookies": "ASP.NET_SessionId=abc123"}
@@ -620,7 +621,36 @@ class TestApiEndpoints:
         mock_scraper_client.reload_cookies.assert_called_once()
 
         loaded_response = await async_client.get("/api/v1/scraper/config")
-        assert loaded_response.json() == {"cookie_loaded": True}
+        assert loaded_response.json() == {"cookie_loaded": True, "recaptcha_loaded": False}
+
+    @pytest.mark.asyncio
+    async def test_scraper_config_curl_command_parsing(
+        self,
+        async_client: AsyncClient,
+        test_settings: Settings,
+        mock_scraper_client: BounScraperClient,
+    ) -> None:
+        curl_cmd = (
+            "curl 'https://registration.bogazici.edu.tr/BUIS/General/schedule.aspx?p=semester' \\\n"
+            "  -b 'ASP.NET_SessionId=sess999; ASPSESSIONIDAQQCCDAD=token888' \\\n"
+            "  --data-raw '__VIEWSTATE=view1&ctl00$cphMainContent$gRecResp=recaptcha_secret_token_123'"
+        )
+
+        update_response = await async_client.post(
+            "/api/v1/scraper/config", json={"cookies": curl_cmd}
+        )
+        assert update_response.status_code == 200
+        data = update_response.json()
+        assert data["status"] == "ok"
+        assert data["cookie_loaded"] is True
+        assert data["recaptcha_loaded"] is True
+        assert "Cookies and reCAPTCHA token extracted" in data["message"]
+
+        assert Path(test_settings.cookies_path).read_text() == "ASP.NET_SessionId=sess999; ASPSESSIONIDAQQCCDAD=token888"
+        assert Path(test_settings.recaptcha_token_path).read_text() == "recaptcha_secret_token_123"
+
+        status_response = await async_client.get("/api/v1/scraper/config")
+        assert status_response.json() == {"cookie_loaded": True, "recaptcha_loaded": True}
 
     @pytest.mark.asyncio
     async def test_security_headers_present(self, async_client: AsyncClient) -> None:

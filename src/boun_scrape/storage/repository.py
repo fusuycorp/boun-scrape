@@ -68,11 +68,12 @@ class CourseRepository:
         with self.db.transaction() as conn:
             conn.executemany(
                 """
-                INSERT INTO departments (code, name, term, url_bolum)
-                VALUES (?, ?, ?, ?)
+                INSERT INTO departments (code, name, term, url_bolum, cached_at)
+                VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP)
                 ON CONFLICT(code, term) DO UPDATE SET
                     name = excluded.name,
-                    url_bolum = excluded.url_bolum
+                    url_bolum = excluded.url_bolum,
+                    cached_at = CURRENT_TIMESTAMP
                 """,
                 [(d.code, d.name, term, d.bolum or d.url) for d in depts],
             )
@@ -308,6 +309,20 @@ class CourseRepository:
                 )
                 for r in rows
             ]
+
+    def get_departments_last_cached_at(self, term: str | None = None) -> str | None:
+        """Fetch the latest cached_at timestamp for departments, optionally filtered by term."""
+        with self.db.connection() as conn:
+            if term:
+                row = conn.execute(
+                    "SELECT MAX(cached_at) AS last_cached FROM departments WHERE term = ?",
+                    (term,),
+                ).fetchone()
+            else:
+                row = conn.execute(
+                    "SELECT MAX(cached_at) AS last_cached FROM departments"
+                ).fetchone()
+            return row["last_cached"] if row and row["last_cached"] else None
 
     def get_terms(self) -> list[str]:
         """Fetch all unique terms present in courses or departments."""

@@ -656,3 +656,97 @@ class TestScraperFlow:
                 await client.get("/test")
             assert token_file.read_text(encoding="utf-8") == ""
             assert client.recaptcha_token == ""
+
+    @pytest.mark.asyncio
+    async def test_scrape_term_pipeline_fallback_to_cached_departments(self) -> None:
+        cached = [
+            Department(code="CMPE", name="Computer Engineering", bolum="COMPUTER ENGINEERING"),
+            Department(code="MATH", name="Mathematics", bolum="MATHEMATICS"),
+        ]
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            url_str = str(request.url)
+            if "schedule.aspx" in url_str:
+                # Simulate expired cookies / CAPTCHA failure on semester page
+                return httpx.Response(
+                    200,
+                    content="<html><body>You could not pass the reCAPTCHA check</body></html>".encode(
+                        "windows-1254"
+                    ),
+                )
+            if "sch.asp" in url_str:
+                # Schedule pages succeed without cookies or captcha
+                return httpx.Response(
+                    200, content=SAMPLE_SCHEDULE_HTML.encode("windows-1254")
+                )
+            return httpx.Response(404)
+
+        transport = httpx.MockTransport(handler)
+        async_client = httpx.AsyncClient(
+            transport=transport, base_url="https://registration.bogazici.edu.tr"
+        )
+
+        async with BounScraperClient(
+            http_client=async_client, min_jitter=0, max_jitter=0
+        ) as client:
+            result = await scrape_term_pipeline(
+                client,
+                term="2024/2025-1",
+                cached_departments=cached,
+            )
+            assert len(result.succeeded_departments) == 2
+            assert "CMPE" in result.succeeded_departments
+            assert "MATH" in result.succeeded_departments
+            assert len(result.courses) > 0
+
+    @pytest.mark.asyncio
+    async def test_scrape_term_pipeline_fallback_error_without_cache(self) -> None:
+        def handler(request: httpx.Request) -> httpx.Response:
+            return httpx.Response(
+                200,
+                content="<html><body>You could not pass the reCAPTCHA check</body></html>".encode(
+                    "windows-1254"
+                ),
+            )
+
+        transport = httpx.MockTransport(handler)
+        async_client = httpx.AsyncClient(
+            transport=transport, base_url="https://registration.bogazici.edu.tr"
+        )
+
+        async with BounScraperClient(
+            http_client=async_client, min_jitter=0, max_jitter=0
+        ) as client:
+            with pytest.raises(RecaptchaBlockedError):
+                await scrape_term_pipeline(
+                    client,
+                    term="2024/2025-1",
+                    cached_departments=None,
+                )
+
+    @pytest.mark.asyncio
+    async def test_scrape_term_pipeline_fallback_empty_departments_html(self) -> None:
+        def handler(request: httpx.Request) -> httpx.Response:
+            return httpx.Response(
+                200,
+                content="<html><body><select name='ctl00$cphMainContent$ddlSemester'></select></body></html>".encode(
+                    "windows-1254"
+                ),
+            )
+
+        transport = httpx.MockTransport(handler)
+        async_client = httpx.AsyncClient(
+            transport=transport, base_url="https://registration.bogazici.edu.tr"
+        )
+
+        async with BounScraperClient(
+            http_client=async_client, min_jitter=0, max_jitter=0
+        ) as client:
+            result = await scrape_term_pipeline(
+                client,
+                term="2024/2025-1",
+                cached_departments=None,
+            )
+            assert result.courses == []
+            assert result.succeeded_departments == []
+            assert result.failed_departments == []
