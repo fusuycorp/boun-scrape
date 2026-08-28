@@ -26,7 +26,7 @@ jobs:
 
   build-and-deploy:
     needs: test
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, tanri]
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
