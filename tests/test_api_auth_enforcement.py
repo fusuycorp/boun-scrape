@@ -83,3 +83,29 @@ async def test_login_and_me_round_trip(app) -> None:
         me_res = await client.get("/api/v1/auth/me", headers=headers)
         assert me_res.status_code == 200
         assert me_res.json()["username"] == "admin"
+
+
+@pytest.mark.asyncio
+async def test_login_rate_limiting_ip_spoofing_prevented(app) -> None:
+    """Verify that prepending fake IPs to X-Forwarded-For does not bypass rate limiting."""
+    transport = ASGITransport(app=app)
+    async with AsyncClient(transport=transport, base_url="http://test") as client:
+        # Client tries sending distinct fake leftmost IPs, but actual upstream peer is 203.0.113.10
+        for i in range(5):
+            headers = {"X-Forwarded-For": f"10.0.0.{i}, 203.0.113.10"}
+            resp = await client.post(
+                "/api/v1/auth/login",
+                data={"username": "admin", "password": "wrong"},
+                headers=headers,
+            )
+            assert resp.status_code == 401
+
+        # 6th attempt with another spoofed IP prefix must be blocked because real client is 203.0.113.10
+        headers = {"X-Forwarded-For": "10.0.0.99, 203.0.113.10"}
+        resp = await client.post(
+            "/api/v1/auth/login",
+            data={"username": "admin", "password": "wrong"},
+            headers=headers,
+        )
+        assert resp.status_code == 429
+

@@ -11,12 +11,13 @@ import uuid
 import croniter
 
 from boun_scrape.config import Settings, get_settings
-from boun_scrape.domain.models import QuotaRecord, RunStatus, ScrapeRunSummary
+from boun_scrape.domain.events import CourseDeltaEvent
+from boun_scrape.domain.models import Course, QuotaRecord, RunStatus, ScrapeRunSummary
 from boun_scrape.feeds.webhooks import WebhookDispatcher
 from boun_scrape.pipeline.delta import compute_deltas
 from boun_scrape.pipeline.exporter import generate_all_exports
 from boun_scrape.scraper.client import BounScraperClient
-from boun_scrape.scraper.flow import discover_terms, scrape_term_pipeline
+from boun_scrape.scraper.flow import TermScrapeResult, discover_terms, scrape_term_pipeline
 from boun_scrape.scraper.quota import QuotaService, format_course_key
 from boun_scrape.storage.database import DatabaseManager
 from boun_scrape.storage.repository import CourseRepository
@@ -147,6 +148,171 @@ class ScrapeScheduler:
                 self._task.cancel()
             self._task = asyncio.create_task(self._schedule_loop())
 
+    async def _resolve_target_term(self, requested_term: str | None) -> str:
+        """Resolve academic term from parameter, default setting, live discovery, or cached terms."""
+        target_term = requested_term or self.default_term
+        if target_term:
+            return target_term
+
+        try:
+            discovered = await discover_terms(self.client)
+        except Exception as exc:
+            logger.warning("discover_terms failed: %s. Falling back to cached terms.", exc)
+            discovered = []
+
+        if discovered:
+            return discovered[0]
+
+        cached_terms = await asyncio.to_thread(self.repository.get_terms)
+        if cached_terms:
+            logger.info("Using latest cached term: %s", cached_terms[0])
+            return cached_terms[0]
+
+        raise ScrapeSchedulerError(
+            "No academic terms discovered from portal or cached in database."
+        )
+
+    async def _scrape_and_compute_deltas(
+        self,
+        target_term: str,
+        target_departments: list[str] | None,
+        skip_already_scraped: bool,
+        run_id: str,
+    ) -> tuple[TermScrapeResult, list[CourseDeltaEvent]]:
+        """Run portal scraping pipeline and calculate delta events against prior successful term data."""
+        self._current_progress = {"completed": 0, "total": 0, "department": None}
+
+        def _on_department_progress(
+            completed: int, total: int, dept: Any, courses: list
+        ) -> None:
+            self._current_progress = {
+                "completed": completed,
+                "total": total,
+                "department": dept.code,
+            }
+            logger.info(
+                "Scrape %s: department %s (%d/%d) — %d courses",
+                run_id, dept.code, completed, total, len(courses),
+            )
+
+        cached_depts = await asyncio.to_thread(self.repository.get_departments, target_term)
+        completed_codes = (
+            await asyncio.to_thread(self.repository.get_completed_department_codes, target_term)
+            if skip_already_scraped
+            else None
+        )
+
+        result = await scrape_term_pipeline(
+            self.client,
+            term=target_term,
+            concurrency=self.settings.max_concurrency,
+            progress_callback=_on_department_progress,
+            cached_departments=cached_depts,
+            target_departments=target_departments,
+            skip_already_scraped=skip_already_scraped,
+            completed_department_codes=completed_codes,
+        )
+
+        previous_courses = await asyncio.to_thread(self.repository.get_courses_by_term, target_term)
+        succeeded_set = set(result.succeeded_departments)
+        filtered_previous = [c for c in previous_courses if c.department in succeeded_set]
+
+        deltas = compute_deltas(
+            previous_courses=filtered_previous,
+            current_courses=result.courses,
+            run_id=run_id,
+            term=target_term,
+        )
+        return result, deltas
+
+    async def _persist_cycle_data(
+        self,
+        target_term: str,
+        result: TermScrapeResult,
+        deltas: list[CourseDeltaEvent],
+        run_id: str,
+    ) -> None:
+        """Persist departments, failed department statuses, courses, slots, and deltas off the event loop."""
+        def _sync_persist() -> None:
+            self.repository.save_departments(target_term, result.departments)
+            for failed_dept in result.failed_departments:
+                self.repository.update_department_scrape_status(
+                    term=target_term,
+                    code=failed_dept,
+                    course_count=0,
+                    status="FAILED",
+                    error="Crawl failed during pipeline execution",
+                )
+            self.repository.save_courses_and_slots(
+                term=target_term,
+                courses=result.courses,
+                scraped_departments=result.succeeded_departments,
+            )
+            if deltas:
+                self.repository.save_deltas(deltas=deltas, run_id=run_id)
+
+        await asyncio.to_thread(_sync_persist)
+
+    async def _capture_live_quotas_safe(
+        self,
+        target_term: str,
+        current_courses: list[Course],
+        run_id: str,
+    ) -> None:
+        """Fetch live course section quotas and persist bulk snapshots without aborting cycle on failure."""
+        try:
+            quota_items = [
+                (target_term, c.department, c.course_code, c.section)
+                for c in current_courses
+            ]
+            logger.info(
+                "Scrape %s: capturing quota snapshots for %d course sections",
+                run_id, len(quota_items),
+            )
+            quota_results = await self.quota_service.fetch_batch_quotas(
+                quota_items, concurrency=self.settings.max_concurrency
+            )
+            quota_rows: list[tuple[str, str, str, QuotaRecord]] = []
+            for c in current_courses:
+                key = format_course_key(c.department, c.course_code, c.section)
+                for record in quota_results.get(key, []):
+                    quota_rows.append((target_term, c.course_code, c.section, record))
+            if quota_rows:
+                await asyncio.to_thread(self.repository.save_quota_snapshots_bulk, quota_rows)
+            logger.info("Scrape %s: captured %d quota rows", run_id, len(quota_rows))
+        except Exception:
+            logger.exception("Scrape %s: quota capture failed (continuing, run not affected)", run_id)
+
+    async def _dispatch_artifacts_and_webhooks(
+        self,
+        target_term: str,
+        summary: ScrapeRunSummary,
+        courses: list[Course],
+        deltas: list[CourseDeltaEvent],
+        export: bool,
+        dispatch_webhooks: bool,
+        run_id: str,
+    ) -> None:
+        """Generate static export files in worker thread and trigger downstream webhook notifications."""
+        if export:
+            await asyncio.to_thread(
+                generate_all_exports,
+                term=target_term,
+                courses=courses,
+                deltas=deltas,
+                output_dir=self.export_dir,
+            )
+            logger.info("Scrape %s: exported artifacts to %s", run_id, self.export_dir)
+
+        if dispatch_webhooks and self.webhook_dispatcher is not None:
+            try:
+                if deltas:
+                    await self.webhook_dispatcher.dispatch_deltas(deltas, term=target_term)
+                await self.webhook_dispatcher.dispatch_run_summary(summary)
+                logger.info("Scrape %s: webhooks dispatched", run_id)
+            except Exception:
+                logger.exception("Scrape %s: webhook dispatch failed (continuing, run not affected)", run_id)
+
     async def execute_scrape_cycle(
         self,
         term: str | None = None,
@@ -185,189 +351,61 @@ class ScrapeScheduler:
                 status=RunStatus.RUNNING,
                 started_at=started_at,
             )
-            self.repository.save_scrape_run(summary)
+            await asyncio.to_thread(self.repository.save_scrape_run, summary)
 
             try:
                 # 1. Target term resolution
-                target_term = term or self.default_term
-                if not target_term:
-                    try:
-                        discovered = await discover_terms(self.client)
-                    except Exception as exc:
-                        logger.warning(
-                            "discover_terms failed: %s. Falling back to cached terms.", exc
-                        )
-                        discovered = []
-
-                    if not discovered:
-                        cached_terms = self.repository.get_terms()
-                        if cached_terms:
-                            target_term = cached_terms[0]
-                            logger.info("Using latest cached term: %s", target_term)
-                        else:
-                            raise ScrapeSchedulerError(
-                                "No academic terms discovered from portal or cached in database."
-                            )
-                    else:
-                        target_term = discovered[0]
+                target_term = await self._resolve_target_term(term)
                 summary.term = target_term
                 logger.info("Scrape %s: resolved term %s", run_id, target_term)
 
-                # 2. Scrape latest courses and slots from portal
-                self._current_progress = {"completed": 0, "total": 0, "department": None}
-
-                def _on_department_progress(
-                    completed: int, total: int, dept: Any, courses: list
-                ) -> None:
-                    self._current_progress = {
-                        "completed": completed,
-                        "total": total,
-                        "department": dept.code,
-                    }
-                    logger.info(
-                        "Scrape %s: department %s (%d/%d) — %d courses",
-                        run_id, dept.code, completed, total, len(courses),
-                    )
-
-                cached_depts = self.repository.get_departments(target_term)
-                # Cross-term union heuristic removed (P2-04): scrape_term_pipeline
-                # falls back to DEFAULT_KNOWN (94 depts) via sch.asp when empty.
-
-                completed_codes = None
-                if skip_already_scraped:
-                    completed_codes = self.repository.get_completed_department_codes(target_term)
-
-                result = await scrape_term_pipeline(
-                    self.client,
-                    term=target_term,
-                    concurrency=self.settings.max_concurrency,
-                    progress_callback=_on_department_progress,
-                    cached_departments=cached_depts,
+                # 2. Scrape & compute change deltas
+                result, deltas = await self._scrape_and_compute_deltas(
+                    target_term=target_term,
                     target_departments=target_departments,
                     skip_already_scraped=skip_already_scraped,
-                    completed_department_codes=completed_codes,
-                )
-                current_courses = result.courses
-                self.repository.save_departments(target_term, result.departments)
-                logger.info(
-                    "Scrape %s: finished scraping — %d courses total",
-                    run_id, len(current_courses),
-                )
-
-                # Track failed departments in repository
-                for failed_dept in result.failed_departments:
-                    self.repository.update_department_scrape_status(
-                        term=target_term,
-                        code=failed_dept,
-                        course_count=0,
-                        status="FAILED",
-                        error="Crawl failed during pipeline execution",
-                    )
-
-                # 4. Fetch existing courses for term to detect deltas
-                previous_courses = self.repository.get_courses_by_term(target_term)
-                succeeded_set = set(result.succeeded_departments)
-                filtered_previous_courses = [
-                    c for c in previous_courses if c.department in succeeded_set
-                ]
-
-                # 5. Compute change deltas
-                deltas = compute_deltas(
-                    previous_courses=filtered_previous_courses,
-                    current_courses=current_courses,
                     run_id=run_id,
-                    term=target_term,
                 )
-                logger.info("Scrape %s: detected %d changes", run_id, len(deltas))
+                logger.info(
+                    "Scrape %s: finished scraping %d courses, %d changes detected",
+                    run_id, len(result.courses), len(deltas),
+                )
 
-                # 6. Atomic persistence of courses, slots, and deltas
-                self.repository.save_courses_and_slots(
-                    term=target_term,
-                    courses=current_courses,
-                    scraped_departments=result.succeeded_departments,
-                )
-                if deltas:
-                    self.repository.save_deltas(deltas=deltas, run_id=run_id)
+                # 3. Off-event-loop persistence
+                await self._persist_cycle_data(target_term, result, deltas, run_id)
                 logger.info("Scrape %s: persisted courses and deltas", run_id)
 
-                # 6.5. Optional quota snapshot capture (rate-limit-sensitive; opt-in).
-                #      Best-effort: the course scrape/persist above already succeeded,
-                #      so a quota failure must never fail the run or delay its completion.
+                # 4. Optional quota snapshot capture
                 if capture_quota:
-                    try:
-                        quota_items = [
-                            (target_term, c.department, c.course_code, c.section)
-                            for c in current_courses
-                        ]
-                        logger.info(
-                            "Scrape %s: capturing quota snapshots for %d course sections",
-                            run_id, len(quota_items),
-                        )
-                        quota_results = await self.quota_service.fetch_batch_quotas(
-                            quota_items, concurrency=self.settings.max_concurrency
-                        )
-                        quota_rows: list[tuple[str, str, str, QuotaRecord]] = []
-                        for c in current_courses:
-                            key = format_course_key(c.department, c.course_code, c.section)
-                            for record in quota_results.get(key, []):
-                                quota_rows.append(
-                                    (target_term, c.course_code, c.section, record)
-                                )
-                        # One transaction for the whole term instead of one per section.
-                        if quota_rows:
-                            self.repository.save_quota_snapshots_bulk(quota_rows)
-                        logger.info(
-                            "Scrape %s: captured %d quota rows", run_id, len(quota_rows)
-                        )
-                    except Exception:
-                        logger.exception(
-                            "Scrape %s: quota capture failed (continuing, run not affected)",
-                            run_id,
-                        )
+                    await self._capture_live_quotas_safe(target_term, result.courses, run_id)
 
-                # 7. Calculate run metrics
-                total_slots = sum(len(c.slots) for c in current_courses)
+                # 5. Finalize run metrics
+                total_slots = sum(len(c.slots) for c in result.courses)
                 completed_at = datetime.now(timezone.utc).isoformat()
 
                 summary.status = RunStatus.COMPLETED
                 summary.completed_at = completed_at
-                summary.total_courses = len(current_courses)
+                summary.total_courses = len(result.courses)
                 summary.total_slots = total_slots
                 summary.changes_detected = len(deltas)
-                summary.total_departments = len(result.succeeded_departments) + len(
-                    result.failed_departments
-                )
+                summary.total_departments = len(result.succeeded_departments) + len(result.failed_departments)
                 summary.completed_departments = len(result.succeeded_departments)
-                self.repository.save_scrape_run(summary)
+                await asyncio.to_thread(self.repository.save_scrape_run, summary)
 
-                # 8. Artifact exports
-                if export:
-                    generate_all_exports(
-                        term=target_term,
-                        courses=current_courses,
-                        deltas=deltas,
-                        output_dir=self.export_dir,
-                    )
-                    logger.info("Scrape %s: exported artifacts to %s", run_id, self.export_dir)
-
-                # 9. Webhook notifications
-                if dispatch_webhooks and self.webhook_dispatcher is not None:
-                    try:
-                        if deltas:
-                            await self.webhook_dispatcher.dispatch_deltas(
-                                deltas, term=target_term
-                            )
-                        await self.webhook_dispatcher.dispatch_run_summary(summary)
-                        logger.info("Scrape %s: webhooks dispatched", run_id)
-                    except Exception:
-                        logger.exception(
-                            "Scrape %s: webhook dispatch failed (continuing, run not affected)",
-                            run_id,
-                        )
+                # 6. Artifact exports & webhook dispatch
+                await self._dispatch_artifacts_and_webhooks(
+                    target_term=target_term,
+                    summary=summary,
+                    courses=result.courses,
+                    deltas=deltas,
+                    export=export,
+                    dispatch_webhooks=dispatch_webhooks,
+                    run_id=run_id,
+                )
 
                 logger.info(
                     "Scrape %s: completed — %d courses, %d slots, %d changes",
-                    run_id, len(current_courses), total_slots, len(deltas),
+                    run_id, len(result.courses), total_slots, len(deltas),
                 )
                 self._current_progress = None
                 self._last_run_summary = summary
@@ -376,36 +414,30 @@ class ScrapeScheduler:
                 return summary
 
             except asyncio.CancelledError:
-                completed_at = datetime.now(timezone.utc).isoformat()
                 summary.status = RunStatus.CANCELLED
-                summary.completed_at = completed_at
+                summary.completed_at = datetime.now(timezone.utc).isoformat()
                 summary.error_message = "Scrape cycle was cancelled"
                 try:
-                    self.repository.save_scrape_run(summary)
+                    await asyncio.to_thread(self.repository.save_scrape_run, summary)
                 except Exception:
-                    logger.exception(
-                        "Scrape %s: failed to save cancelled run state", run_id
-                    )
+                    logger.exception("Scrape %s: failed to save cancelled run state", run_id)
                 self._current_progress = None
                 self._last_run_summary = summary
                 self._last_run_time = datetime.now(timezone.utc)
                 raise
 
             except Exception as exc:
-                completed_at = datetime.now(timezone.utc).isoformat()
                 summary.status = RunStatus.FAILED
-                summary.completed_at = completed_at
+                summary.completed_at = datetime.now(timezone.utc).isoformat()
                 summary.error_message = str(exc)
-                self.repository.save_scrape_run(summary)
+                await asyncio.to_thread(self.repository.save_scrape_run, summary)
                 logger.exception("Scrape %s: failed", run_id)
 
                 if dispatch_webhooks and self.webhook_dispatcher is not None:
                     try:
                         await self.webhook_dispatcher.dispatch_run_summary(summary)
                     except Exception:
-                        logger.exception(
-                            "Scrape %s: webhook dispatch on failure failed", run_id
-                        )
+                        logger.exception("Scrape %s: webhook dispatch on failure failed", run_id)
 
                 self._current_progress = None
                 self._last_run_summary = summary
@@ -438,7 +470,7 @@ class ScrapeScheduler:
             terms = []
 
         if not terms:
-            terms = self.repository.get_terms()
+            terms = await asyncio.to_thread(self.repository.get_terms)
             if not terms:
                 raise ScrapeSchedulerError(
                     "No academic terms discovered from portal or cached in database."

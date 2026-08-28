@@ -1,6 +1,6 @@
 """Downstream feed endpoints for change deltas, run histories, and file exports."""
 
-import threading
+import asyncio
 from pathlib import Path
 from typing import Annotated
 
@@ -22,7 +22,7 @@ from boun_scrape.storage.repository import CourseRepository
 
 router = APIRouter(tags=["Feeds"])
 
-_export_lock = threading.Lock()
+_export_async_lock = asyncio.Lock()
 
 FORMAT_MEDIA_TYPES: dict[str, tuple[str, str]] = {
     "json": ("application/json", "json"),
@@ -84,7 +84,7 @@ def get_quota_snapshots(
     "/feeds/exports/{term}/{format}",
     summary="Download compiled course export artifact",
 )
-def download_export(
+async def download_export(
     term: str,
     format: str,
     repo: Annotated[CourseRepository, Depends(get_course_repo_dep)],
@@ -106,20 +106,20 @@ def download_export(
     target_path = export_dir / filename
 
     if not target_path.exists():
-        with _export_lock:
+        async with _export_async_lock:
             if not target_path.exists():
-                courses = repo.get_courses_by_term(term)
+                courses = await asyncio.to_thread(repo.get_courses_by_term, term)
                 if not courses and "_" in term:
-                    courses = repo.get_courses_by_term(term.replace("_", "/"))
+                    courses = await asyncio.to_thread(repo.get_courses_by_term, term.replace("_", "/"))
                 if not courses and "/" in term:
-                    courses = repo.get_courses_by_term(term.replace("/", "_"))
+                    courses = await asyncio.to_thread(repo.get_courses_by_term, term.replace("/", "_"))
 
                 if not courses:
                     raise HTTPException(
                         status_code=status.HTTP_404_NOT_FOUND,
                         detail=f"No courses or exports available for term '{term}'.",
                     )
-                generate_all_exports(term=term, courses=courses, output_dir=export_dir)
+                await asyncio.to_thread(generate_all_exports, term=term, courses=courses, output_dir=export_dir)
 
     if not target_path.exists():
         raise HTTPException(

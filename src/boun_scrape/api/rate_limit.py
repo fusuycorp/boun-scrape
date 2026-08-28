@@ -48,13 +48,24 @@ class RateLimiter:
 
 
 def _get_client_ip(request: Request) -> str:
-    if request.client and request.client.host in TRUSTED_PROXIES:
-        forwarded = request.headers.get("x-forwarded-for")
-        if forwarded:
-            client_ip = forwarded.split(",")[0].strip()
-            if client_ip:
-                return client_ip
-    return request.client.host if request.client else "unknown"
+    """Extract real client IP, parsing proxy chains right-to-left if peer is trusted."""
+    if not request.client:
+        return "unknown"
+
+    peer_host = request.client.host
+    if peer_host not in TRUSTED_PROXIES:
+        return peer_host
+
+    forwarded = request.headers.get("x-forwarded-for")
+    if forwarded:
+        # Split into list of IPs in proxy traversal order: [client, proxy1, proxy2]
+        ips = [ip.strip() for ip in forwarded.split(",") if ip.strip()]
+        # Walk right-to-left: discard trusted reverse proxies from the end of the chain
+        for ip in reversed(ips):
+            if ip not in TRUSTED_PROXIES:
+                return ip
+
+    return peer_host
 
 
 _client_ip = _get_client_ip

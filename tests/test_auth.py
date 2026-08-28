@@ -114,7 +114,7 @@ class TestClientIp:
 
         scope = {
             "type": "http",
-            "headers": [(b"x-forwarded-for", b"203.0.113.195, 70.41.3.18")],
+            "headers": [(b"x-forwarded-for", b"203.0.113.195, 127.0.0.1")],
             "client": ("127.0.0.1", 12345),
         }
         request = Request(scope)
