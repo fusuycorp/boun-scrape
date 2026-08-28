@@ -48,7 +48,13 @@ class ScrapeScheduler:
     ) -> None:
         self.settings = settings or get_settings()
         self.interval_seconds = interval_seconds
-        self.cron_expression = cron_expression
+        if cron_expression is not None and cron_expression.strip():
+            stripped_cron = cron_expression.strip()
+            if not croniter.croniter.is_valid(stripped_cron):
+                raise ValueError(f"Invalid cron expression: '{stripped_cron}'")
+            self.cron_expression = stripped_cron
+        else:
+            self.cron_expression = None
         self.default_term = default_term
         self.export_dir = Path(export_dir)
 
@@ -129,7 +135,10 @@ class ScrapeScheduler:
         if interval_seconds is not None:
             self.interval_seconds = interval_seconds
         if cron_expression is not None:
-            self.cron_expression = cron_expression.strip() if cron_expression.strip() else None
+            stripped_cron = cron_expression.strip() if cron_expression.strip() else None
+            if stripped_cron and not croniter.croniter.is_valid(stripped_cron):
+                raise ValueError(f"Invalid cron expression: '{stripped_cron}'")
+            self.cron_expression = stripped_cron
         if default_term is not None:
             self.default_term = default_term.strip() if default_term.strip() else None
 
@@ -477,7 +486,12 @@ class ScrapeScheduler:
     async def _schedule_loop(self) -> None:
         """Continuous background execution loop."""
         while self._running:
-            delay = self._compute_next_delay()
+            try:
+                delay = self._compute_next_delay()
+            except Exception:
+                logger.exception("Failed to compute next schedule delay, falling back to %ds", self.interval_seconds)
+                delay = max(0.0, float(self.interval_seconds))
+
             try:
                 await asyncio.sleep(delay)
             except asyncio.CancelledError:
@@ -490,6 +504,8 @@ class ScrapeScheduler:
                 await self.execute_scrape_cycle()
             except asyncio.CancelledError:
                 break
+            except ScrapeAlreadyRunningError:
+                logger.info("Scheduled scrape cycle skipped: another cycle is already active")
             except Exception:
                 # Cycle failure is already persisted as a FAILED run by
                 # execute_scrape_cycle; log here so the daemon loop's

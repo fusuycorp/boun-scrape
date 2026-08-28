@@ -120,6 +120,27 @@ def get_log_buffer_dep() -> LogBuffer:
     return get_global_log_buffer()
 
 
+async def cleanup_shared_resources() -> None:
+    """Clean up shared singleton resources upon application shutdown."""
+    if _get_shared_scheduler.cache_info().currsize > 0:
+        scheduler = _get_shared_scheduler()
+        await scheduler.aclose()
+        _get_shared_scheduler.cache_clear()
+
+    if _get_shared_scraper_client.cache_info().currsize > 0:
+        client = _get_shared_scraper_client()
+        await client.aclose()
+        _get_shared_scraper_client.cache_clear()
+
+    if _get_shared_webhook_dispatcher.cache_info().currsize > 0:
+        dispatcher = _get_shared_webhook_dispatcher()
+        await dispatcher.aclose()
+        _get_shared_webhook_dispatcher.cache_clear()
+
+    _get_shared_quota_service.cache_clear()
+    _get_shared_db_manager.cache_clear()
+
+
 # Aliases for convenience
 get_repository = get_course_repo_dep
 get_db_manager = get_db_manager_dep
@@ -128,3 +149,4 @@ get_scheduler = get_scrape_scheduler_dep
 get_log_buffer = get_log_buffer_dep
 get_scraper_client = get_scraper_client_dep
 get_webhook_dispatcher = get_webhook_dispatcher_dep
+

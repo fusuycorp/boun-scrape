@@ -819,3 +819,36 @@ class TestScrapeScheduler:
             assert len(courses) > 0
 
             await scheduler.aclose()
+
+    @pytest.mark.asyncio
+    async def test_scheduler_cron_validation_and_update(self, tmp_path: Path) -> None:
+        """Verify cron validation in constructor and update_config."""
+        db_mgr = DatabaseManager(str(tmp_path / "cron_test.db"))
+        db_mgr.init_db()
+        repo = CourseRepository(db_mgr)
+
+        # Invalid cron in constructor raises ValueError
+        with pytest.raises(ValueError, match="Invalid cron expression"):
+            ScrapeScheduler(
+                cron_expression="bad_cron",
+                repository=repo,
+                export_dir=tmp_path / "exports",
+            )
+
+        scheduler = ScrapeScheduler(
+            cron_expression="0 */2 * * *",
+            repository=repo,
+            export_dir=tmp_path / "exports",
+        )
+        assert scheduler.cron_expression == "0 */2 * * *"
+
+        # Update to valid cron
+        scheduler.update_config(cron_expression="*/30 * * * *")
+        assert scheduler.cron_expression == "*/30 * * * *"
+
+        # Update to invalid cron raises ValueError
+        with pytest.raises(ValueError, match="Invalid cron expression"):
+            scheduler.update_config(cron_expression="not a cron")
+
+        await scheduler.aclose()
+

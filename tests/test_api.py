@@ -44,6 +44,7 @@ def test_settings(tmp_path: Path) -> Settings:
         db_path=str(db_file),
         export_dir=str(export_dir),
         cookies_path=str(tmp_path / "cookies.txt"),
+        recaptcha_token_path=str(tmp_path / "recaptcha_token.txt"),
         allowed_origins=["http://localhost:3000", "http://localhost:5173"],
     )
 
@@ -739,3 +740,110 @@ class TestApiEndpoints:
         assert response.headers["X-Content-Type-Options"] == "nosniff"
         assert response.headers["X-Frame-Options"] == "DENY"
         assert response.headers["Referrer-Policy"] == "strict-origin-when-cross-origin"
+
+    @pytest.mark.asyncio
+    async def test_real_scheduler_daemon_lifecycle_via_api(
+        self,
+        test_settings: Settings,
+        seeded_repo: CourseRepository,
+        mock_scraper_client: BounScraperClient,
+        mock_quota_service: QuotaService,
+        test_log_buffer: LogBuffer,
+    ) -> None:
+        """Verify start-daemon, update-schedule while active, and stop-daemon with real ScrapeScheduler."""
+        real_scheduler = ScrapeScheduler(
+            interval_seconds=3600,
+            client=mock_scraper_client,
+            repository=seeded_repo,
+            settings=test_settings,
+        )
+        app = create_app(settings=test_settings)
+        db_mgr = DatabaseManager(test_settings.db_path)
+        app.dependency_overrides[get_settings_dep] = lambda: test_settings
+        app.dependency_overrides[get_db_manager_dep] = lambda: db_mgr
+        app.dependency_overrides[get_course_repo_dep] = lambda: seeded_repo
+        app.dependency_overrides[get_scraper_client_dep] = lambda: mock_scraper_client
+        app.dependency_overrides[get_quota_service_dep] = lambda: mock_quota_service
+        app.dependency_overrides[get_scrape_scheduler_dep] = lambda: real_scheduler
+        app.dependency_overrides[get_log_buffer_dep] = lambda: test_log_buffer
+        app.dependency_overrides[get_current_user] = lambda: "admin"
+
+        transport = ASGITransport(app=app)
+        async with AsyncClient(transport=transport, base_url="http://test") as client:
+            try:
+                # 1. Start daemon loop
+                start_res = await client.post("/api/v1/scraper/start-daemon")
+                assert start_res.status_code == 200
+                start_data = start_res.json()
+                assert start_data["status"] == "started"
+                assert start_data["is_running"] is True
+                assert real_scheduler.is_running is True
+
+                # 2. Update schedule config while running (exercises task restart in event loop)
+                update_res = await client.post(
+                    "/api/v1/scraper/schedule",
+                    json={"interval_seconds": 7200, "cron_expression": None, "default_term": None},
+                )
+                assert update_res.status_code == 200
+                update_data = update_res.json()
+                assert update_data["interval_seconds"] == 7200
+                assert update_data["is_running"] is True
+                assert real_scheduler.interval_seconds == 7200
+                assert real_scheduler.is_running is True
+
+                # 3. Stop daemon loop
+                stop_res = await client.post("/api/v1/scraper/stop-daemon")
+                assert stop_res.status_code == 200
+                stop_data = stop_res.json()
+                assert stop_data["status"] == "stopped"
+                assert stop_data["is_running"] is False
+                assert real_scheduler.is_running is False
+            finally:
+                await real_scheduler.stop()
+
+    @pytest.mark.asyncio
+    async def test_schedule_invalid_cron_rejected(
+        self,
+        async_client: AsyncClient,
+    ) -> None:
+        """Verify that malformed cron expressions are rejected with 422."""
+        res = await async_client.post(
+            "/api/v1/scraper/schedule",
+            json={"interval_seconds": 3600, "cron_expression": "not a valid cron", "default_term": None},
+        )
+        assert res.status_code == 422
+
+    @pytest.mark.asyncio
+    async def test_batch_quota_max_length_enforced(
+        self,
+        async_client: AsyncClient,
+    ) -> None:
+        """Verify that batch quota requests exceeding 200 items are rejected with 422."""
+        too_many_items = [
+            {"term": "2024/2025-1", "abbr": "CMPE", "code": "150", "section": f"{i:02d}"}
+            for i in range(201)
+        ]
+        res = await async_client.post(
+            "/api/v1/quota/batch",
+            json={"items": too_many_items, "concurrency": 5},
+        )
+        assert res.status_code == 422
+
+    @pytest.mark.asyncio
+    async def test_lifespan_graceful_cleanup(self, test_settings: Settings) -> None:
+        """Verify that lifespan teardown invokes cleanup_shared_resources."""
+        from boun_scrape.api.app import lifespan
+        from boun_scrape.api.deps import _get_shared_scheduler, cleanup_shared_resources
+
+        app = create_app(settings=test_settings)
+        async with lifespan(app):
+            # Instantiate shared scheduler
+            scheduler = _get_shared_scheduler()
+            scheduler.start()
+            assert scheduler.is_running is True
+
+        # After exiting lifespan context, scheduler must be stopped and cache cleared
+        assert scheduler.is_running is False
+        assert _get_shared_scheduler.cache_info().currsize == 0
+
+

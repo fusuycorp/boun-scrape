@@ -197,9 +197,17 @@ export default function ScraperControl() {
     try {
       if (isDaemonRunning) {
         await api.stopSchedulerDaemon();
+        if (isMountedRef.current) {
+          setScheduleConfig((prev) => (prev ? { ...prev, is_running: false } : { is_running: false }));
+          setStatus((prev) => ({ ...prev, is_running: false }));
+        }
         showToast('AUTORUN_DAEMON_STOPPED', 'info');
       } else {
         await api.startSchedulerDaemon();
+        if (isMountedRef.current) {
+          setScheduleConfig((prev) => (prev ? { ...prev, is_running: true } : { is_running: true }));
+          setStatus((prev) => ({ ...prev, is_running: true }));
+        }
         showToast('AUTORUN_DAEMON_STARTED', 'success');
       }
       await Promise.all([fetchScheduleConfig(), pollScraper()]);

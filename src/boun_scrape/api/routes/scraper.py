@@ -179,7 +179,7 @@ def get_schedule_config(
     response_model=ScheduleConfigDTO,
     summary="Update periodic scheduler configuration",
 )
-def update_schedule_config(
+async def update_schedule_config(
     payload: ScheduleConfigRequest,
     scheduler: Annotated[ScrapeScheduler, Depends(get_scrape_scheduler_dep)],
     current_user: str = Depends(get_current_user),
@@ -203,7 +203,7 @@ def update_schedule_config(
     "/scraper/start-daemon",
     summary="Start background periodic scheduler daemon",
 )
-def start_scheduler_daemon(
+async def start_scheduler_daemon(
     scheduler: Annotated[ScrapeScheduler, Depends(get_scrape_scheduler_dep)],
     current_user: str = Depends(get_current_user),
 ) -> dict[str, Any]:

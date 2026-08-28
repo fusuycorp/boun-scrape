@@ -1,7 +1,8 @@
 """Data Transfer Objects (DTOs) for API and serialization boundaries."""
 
 from typing import Any, Generic, TypeVar
-from pydantic import BaseModel, Field
+import croniter
+from pydantic import BaseModel, Field, field_validator
 
 from boun_scrape.domain.events import ChangeType, CourseDeltaEvent
 from boun_scrape.domain.models import (
@@ -160,7 +161,7 @@ class QuotaQueryItem(BaseModel):
 class BatchQuotaRequest(BaseModel):
     """Payload for batch quota requests."""
 
-    items: list[QuotaQueryItem]
+    items: list[QuotaQueryItem] = Field(default_factory=list, max_length=200)
     concurrency: int = Field(default=5, ge=1, le=50)
     bypass_cache: bool = False
 
@@ -226,6 +227,18 @@ class ScheduleConfigRequest(BaseModel):
     interval_seconds: int | None = Field(default=None, ge=60, le=86400 * 30)
     cron_expression: str | None = None
     default_term: str | None = None
+
+    @field_validator("cron_expression")
+    @classmethod
+    def validate_cron(cls, v: str | None) -> str | None:
+        if v is None:
+            return None
+        trimmed = v.strip()
+        if not trimmed:
+            return None
+        if not croniter.croniter.is_valid(trimmed):
+            raise ValueError(f"Invalid cron expression: '{trimmed}'")
+        return trimmed
 
 
 class ScheduleConfigDTO(BaseModel):

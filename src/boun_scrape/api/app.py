@@ -32,7 +32,12 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     settings: Settings = getattr(app.state, "settings", get_settings())
     db = DatabaseManager(settings.db_path)
     db.init_db()
-    yield
+    try:
+        yield
+    finally:
+        # Gracefully stop running background scheduler, tasks, and client transports on server shutdown
+        from boun_scrape.api.deps import cleanup_shared_resources
+        await cleanup_shared_resources()
 
 
 def create_app(settings: Settings | None = None) -> FastAPI:
