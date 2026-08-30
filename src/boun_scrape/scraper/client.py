@@ -220,6 +220,7 @@ class BounScraperClient:
         max_concurrency: int | None = None,
         min_jitter: float | None = None,
         max_jitter: float | None = None,
+        max_retries: int | None = None,
         settings: Settings | None = None,
         http_client: httpx.AsyncClient | None = None,
     ) -> None:
@@ -236,6 +237,7 @@ class BounScraperClient:
         )
         self.min_jitter = min_jitter if min_jitter is not None else cfg.min_jitter
         self.max_jitter = max_jitter if max_jitter is not None else cfg.max_jitter
+        self.max_retries = max_retries if max_retries is not None else 3
 
         # Parse initial cookies
         initial_cookies = parse_cookie_file(self.cookies_path) if self.cookies_path else {}
@@ -351,12 +353,13 @@ class BounScraperClient:
         *,
         params: dict[str, Any] | None = None,
         headers: dict[str, str] | None = None,
-        retries: int = 3,
+        retries: int | None = None,
     ) -> httpx.Response:
         """Perform a GET request with jitter, retries, and encoding handling."""
         last_exception: Exception | None = None
+        effective_retries = retries if retries is not None else self.max_retries
 
-        for attempt in range(1, retries + 1):
+        for attempt in range(1, effective_retries + 1):
             await self._apply_jitter()
             try:
                 response = await self._client.get(url, params=params, headers=headers)
@@ -386,7 +389,7 @@ class BounScraperClient:
                 ):
                     raise
                 last_exception = err
-                if attempt < retries:
+                if attempt < effective_retries:
                     if isinstance(err, BounHttpError) and err.retry_after is not None:
                         backoff = _cap_retry_after(err.retry_after)
                     else:
@@ -398,7 +401,7 @@ class BounScraperClient:
         if isinstance(last_exception, BounHttpError):
             raise last_exception
         raise BounHttpError(
-            f"Failed GET request to {url} after {retries} attempts: {last_exception}"
+            f"Failed GET request to {url} after {effective_retries} attempts: {last_exception}"
         ) from last_exception
 
     async def post(
@@ -408,12 +411,13 @@ class BounScraperClient:
         data: dict[str, Any] | None = None,
         params: dict[str, Any] | None = None,
         headers: dict[str, str] | None = None,
-        retries: int = 3,
+        retries: int | None = None,
     ) -> httpx.Response:
         """Perform a POST request with jitter, retries, and encoding handling."""
         last_exception: Exception | None = None
+        effective_retries = retries if retries is not None else self.max_retries
 
-        for attempt in range(1, retries + 1):
+        for attempt in range(1, effective_retries + 1):
             await self._apply_jitter()
             try:
                 response = await self._client.post(
@@ -445,7 +449,7 @@ class BounScraperClient:
                 ):
                     raise
                 last_exception = err
-                if attempt < retries:
+                if attempt < effective_retries:
                     if isinstance(err, BounHttpError) and err.retry_after is not None:
                         backoff = _cap_retry_after(err.retry_after)
                     else:
@@ -457,5 +461,5 @@ class BounScraperClient:
         if isinstance(last_exception, BounHttpError):
             raise last_exception
         raise BounHttpError(
-            f"Failed POST request to {url} after {retries} attempts: {last_exception}"
+            f"Failed POST request to {url} after {effective_retries} attempts: {last_exception}"
         ) from last_exception

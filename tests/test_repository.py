@@ -489,11 +489,17 @@ class TestRepository:
             journal_mode = conn.execute("PRAGMA journal_mode;").fetchone()[0]
             assert journal_mode.lower() == "wal"
 
-            # Verify unique index exists in sqlite_master
+            # Verify indexes exist in sqlite_master
             idx_row = conn.execute(
                 "SELECT name FROM sqlite_master WHERE type='index' AND name='idx_courses_unique'"
             ).fetchone()
             assert idx_row is not None
+            assert conn.execute(
+                "SELECT name FROM sqlite_master WHERE type='index' AND name='idx_course_deltas_term_created'"
+            ).fetchone() is not None
+            assert conn.execute(
+                "SELECT name FROM sqlite_master WHERE type='index' AND name='idx_quota_snapshots_term_captured'"
+            ).fetchone() is not None
 
             # Test unique constraint on courses table
             conn.execute(

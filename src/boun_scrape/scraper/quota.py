@@ -2,6 +2,7 @@
 
 import asyncio
 import logging
+import re
 import time
 from dataclasses import dataclass
 from typing import Self
@@ -135,10 +136,8 @@ class QuotaService:
 
         try:
             # Normalize query parameters for quotasearch.asp
-            query_code = code.strip().upper()
             clean_abbr = abbr.strip().upper()
-            if query_code.startswith(clean_abbr):
-                query_code = query_code[len(clean_abbr) :].strip()
+            query_code = re.sub(r"^[A-Z]+\s*", "", code.strip().upper()).strip()
 
             params = {
                 "donem": term.strip(),

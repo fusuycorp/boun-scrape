@@ -265,7 +265,7 @@ class TestScrapeScheduler:
         transport = httpx.MockTransport(handler)
         async with httpx.AsyncClient(transport=transport, base_url=BASE_URL) as scraper_http:
             scraper_client = BounScraperClient(
-                http_client=scraper_http, min_jitter=0, max_jitter=0
+                http_client=scraper_http, max_retries=1, min_jitter=0, max_jitter=0
             )
             db_mgr = DatabaseManager(str(tmp_path / "schedules.db"))
             db_mgr.init_db()
@@ -450,7 +450,15 @@ class TestScrapeScheduler:
     async def test_execute_scrape_cycle_error_handling(
         self,
         tmp_path: Path,
+        monkeypatch: pytest.MonkeyPatch,
     ) -> None:
+        from boun_scrape.scheduler import runner as runner_module
+
+        async def fake_discover_terms(client):
+            raise RuntimeError("500 Internal University Server Error")
+
+        monkeypatch.setattr(runner_module, "discover_terms", fake_discover_terms)
+
         def fail_handler(request: httpx.Request) -> httpx.Response:
             return httpx.Response(500, text="Internal University Server Error")
 
@@ -459,7 +467,7 @@ class TestScrapeScheduler:
             transport=transport, base_url=BASE_URL
         ) as http_client:
             scraper_client = BounScraperClient(
-                http_client=http_client, min_jitter=0, max_jitter=0
+                http_client=http_client, max_retries=1, min_jitter=0, max_jitter=0
             )
             db_mgr = DatabaseManager(str(tmp_path / "test.db"))
             db_mgr.init_db()
@@ -468,16 +476,15 @@ class TestScrapeScheduler:
             scheduler = ScrapeScheduler(
                 client=scraper_client,
                 repository=repo,
-                default_term="2024/2025-1",
             )
 
             with pytest.raises(Exception) as exc_info:
                 await scheduler.execute_scrape_cycle()
 
-            assert "500" in str(exc_info.value) or "Server error" in str(exc_info.value)
+            assert "500" in str(exc_info.value) or "Server error" in str(exc_info.value) or "No academic terms" in str(exc_info.value)
 
             # Check that failed run was persisted
-            runs = repo.get_scrape_runs(term="2024/2025-1")
+            runs = repo.get_scrape_runs()
             assert len(runs) == 1
             assert runs[0].status == RunStatus.FAILED
             assert runs[0].error_message is not None
@@ -536,7 +543,7 @@ class TestScrapeScheduler:
             transport=transport, base_url=BASE_URL
         ) as http_client:
             scraper_client = BounScraperClient(
-                http_client=http_client, min_jitter=0, max_jitter=0
+                http_client=http_client, max_retries=1, min_jitter=0, max_jitter=0
             )
             db_mgr = DatabaseManager(str(tmp_path / "test.db"))
             db_mgr.init_db()

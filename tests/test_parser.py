@@ -240,6 +240,25 @@ class TestParseSchedules:
         assert "DR DOE" in courses[0].instructor
         assert len(courses[0].slots) == 3
 
+    def test_parse_schedules_deduplicates_identical_instructors_on_duplicate_rows(self) -> None:
+        html = """
+        <table>
+            <tr class="schtd">
+                <td>HIST 105.01</td><td>HIST</td><td>MODERN TURKEY</td><td>3</td><td>5</td>
+                <td>DR. A, DR. B</td><td>M</td><td>1</td><td>In Class</td><td></td><td>NH 101</td>
+                <td></td><td></td><td></td><td></td>
+            </tr>
+            <tr class="schtd">
+                <td>HIST 105.01</td><td>HIST</td><td>MODERN TURKEY</td><td>3</td><td>5</td>
+                <td>DR. A, DR. C</td><td>T</td><td>2</td><td>In Class</td><td></td><td>NH 102</td>
+                <td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+        """
+        courses = parse_schedules_from_html(html, term="2024/2025-1", department_code="HIST")
+        assert len(courses) == 1
+        assert courses[0].instructor == "DR. A, DR. B, DR. C"
+
 
 class TestParseQuota:
     """Tests for parsing course quota tables and statuses."""

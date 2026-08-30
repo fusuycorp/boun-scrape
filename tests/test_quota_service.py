@@ -77,6 +77,38 @@ class TestQuotaService:
             assert service.cache_size == 1
 
     @pytest.mark.asyncio
+    async def test_fetch_quota_strips_alphabetic_prefix(self, quota_html: str) -> None:
+        requested_params: dict[str, str] = {}
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            nonlocal requested_params
+            requested_params = dict(request.url.params)
+            return httpx.Response(200, content=quota_html.encode("windows-1254"))
+
+        transport = httpx.MockTransport(handler)
+        async with httpx.AsyncClient(transport=transport) as http_client:
+            scraper_client = BounScraperClient(http_client=http_client, min_jitter=0, max_jitter=0)
+            service = QuotaService(client=scraper_client)
+
+            # Test code with full department prefix "CMPE 150"
+            await service.fetch_quota(
+                term="2024/2025-1", abbr="CMPE", code="CMPE 150", section="01", bypass_cache=True
+            )
+            assert requested_params["code"] == "150"
+
+            # Test code with unspaced prefix "CMPE150"
+            await service.fetch_quota(
+                term="2024/2025-1", abbr="CMPE", code="CMPE150", section="01", bypass_cache=True
+            )
+            assert requested_params["code"] == "150"
+
+            # Test code with lowercase prefix "cmpe 150"
+            await service.fetch_quota(
+                term="2024/2025-1", abbr="CMPE", code="cmpe 150", section="01", bypass_cache=True
+            )
+            assert requested_params["code"] == "150"
+
+    @pytest.mark.asyncio
     async def test_fetch_quota_caching_and_bypass(self, quota_html: str) -> None:
         request_count = 0
 

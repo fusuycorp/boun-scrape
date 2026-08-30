@@ -178,9 +178,12 @@ def parse_schedules_from_html(
             existing = courses_by_key[key]
             existing.slots.extend(slots)
             if instructor:
-                existing_set = {s.strip() for s in (existing.instructor or "").split(",") if s.strip()}
-                if instructor.strip() not in existing_set:
-                    existing.instructor = f"{existing.instructor}, {instructor}" if existing.instructor else instructor
+                existing_insts = [s.strip() for s in (existing.instructor or "").split(",") if s.strip()]
+                new_insts = [s.strip() for s in instructor.split(",") if s.strip()]
+                for inst in new_insts:
+                    if inst not in existing_insts:
+                        existing_insts.append(inst)
+                existing.instructor = ", ".join(existing_insts) if existing_insts else None
             last_key = key
             continue
         course = Course(

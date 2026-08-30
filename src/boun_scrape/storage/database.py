@@ -112,8 +112,10 @@ CREATE INDEX IF NOT EXISTS idx_course_slots_day_hour ON course_slots(day, hour);
 CREATE INDEX IF NOT EXISTS idx_course_deltas_run_id ON course_deltas(run_id);
 CREATE INDEX IF NOT EXISTS idx_course_deltas_term ON course_deltas(term);
 CREATE INDEX IF NOT EXISTS idx_course_deltas_created_at ON course_deltas(created_at);
+CREATE INDEX IF NOT EXISTS idx_course_deltas_term_created ON course_deltas(term, created_at);
 CREATE INDEX IF NOT EXISTS idx_quota_snapshots_term_code_sec ON quota_snapshots(term, course_code, section);
 CREATE INDEX IF NOT EXISTS idx_quota_snapshots_captured_at ON quota_snapshots(captured_at);
+CREATE INDEX IF NOT EXISTS idx_quota_snapshots_term_captured ON quota_snapshots(term, captured_at);
 """
 
 class DatabaseManager:
@@ -242,6 +244,12 @@ class DatabaseManager:
         # S-07: ensure course_deltas created_at index exists for existing DBs
         conn.execute(
             "CREATE INDEX IF NOT EXISTS idx_course_deltas_created_at ON course_deltas(created_at)"
+        )
+        conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_course_deltas_term_created ON course_deltas(term, created_at)"
+        )
+        conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_quota_snapshots_term_captured ON quota_snapshots(term, captured_at)"
         )
 
         # 5. Fix legacy course_slots FK missing ON DELETE CASCADE (prod DBs created
