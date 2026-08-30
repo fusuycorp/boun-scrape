@@ -15,7 +15,7 @@ from boun_scrape.domain.events import CourseDeltaEvent
 from boun_scrape.domain.models import Course, QuotaRecord, RunStatus, ScrapeRunSummary
 from boun_scrape.feeds.webhooks import WebhookDispatcher
 from boun_scrape.pipeline.delta import compute_deltas
-from boun_scrape.pipeline.exporter import generate_all_exports
+from boun_scrape.pipeline.exporter import generate_all_exports, prune_old_exports
 from boun_scrape.scraper.client import BounScraperClient
 from boun_scrape.scraper.flow import TermScrapeResult, discover_terms, scrape_term_pipeline
 from boun_scrape.scraper.quota import QuotaService, format_course_key
@@ -303,6 +303,7 @@ class ScrapeScheduler:
                 output_dir=self.export_dir,
             )
             logger.info("Scrape %s: exported artifacts to %s", run_id, self.export_dir)
+            await asyncio.to_thread(prune_old_exports, self.export_dir)
 
         if dispatch_webhooks and self.webhook_dispatcher is not None:
             try:

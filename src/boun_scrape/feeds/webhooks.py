@@ -5,6 +5,7 @@ import hashlib
 import hmac
 import json
 import logging
+import time
 from dataclasses import asdict, dataclass, is_dataclass
 from datetime import datetime, timezone
 from typing import Any, Self
@@ -107,6 +108,8 @@ class WebhookDispatcher:
         self.max_retries = max(1, max_retries)
         self.timeout = timeout
         self.backoff_factor = backoff_factor
+        self._consecutive_failures: dict[str, int] = {}
+        self._cooldown_until: dict[str, float] = {}
 
         if http_client is not None:
             self._client = http_client
@@ -122,6 +125,18 @@ class WebhookDispatcher:
         headers: dict[str, str],
     ) -> WebhookDeliveryResult:
         """Send payload to a single URL with exponential backoff retry."""
+        if time.monotonic() < self._cooldown_until.get(url, 0.0):
+            logger.warning(
+                "Webhook %s delivery skipped: circuit breaker open (cooldown active)",
+                url,
+            )
+            return WebhookDeliveryResult(
+                url=url,
+                success=False,
+                error_message="Circuit breaker open: cooldown active",
+                attempts=0,
+            )
+
         last_error: str | None = None
         last_status_code: int | None = None
 
@@ -134,6 +149,8 @@ class WebhookDispatcher:
                 )
                 last_status_code = response.status_code
                 if response.status_code < 400:
+                    self._consecutive_failures[url] = 0
+                    self._cooldown_until.pop(url, None)
                     return WebhookDeliveryResult(
                         url=url,
                         success=True,
@@ -152,6 +169,16 @@ class WebhookDispatcher:
             if attempt < self.max_retries:
                 delay = self.backoff_factor * (2 ** (attempt - 1))
                 await asyncio.sleep(delay)
+
+        failures = self._consecutive_failures.get(url, 0) + 1
+        self._consecutive_failures[url] = failures
+        if failures >= 5:
+            self._cooldown_until[url] = time.monotonic() + 300.0
+            logger.warning(
+                "Webhook %s reached %d consecutive failures; tripping circuit breaker for 300s",
+                url,
+                failures,
+            )
 
         return WebhookDeliveryResult(
             url=url,

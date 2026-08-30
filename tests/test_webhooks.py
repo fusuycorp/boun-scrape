@@ -258,3 +258,74 @@ class TestWebhookDispatcher:
             ScrapeRunSummary(run_id="1", term="2024/2025-1")
         ) == []
         await dispatcher.aclose()
+
+    @pytest.mark.asyncio
+    async def test_circuit_breaker_trips_after_five_failures(self) -> None:
+        call_count = 0
+        target_url = "https://failing-endpoint.com/webhook"
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            nonlocal call_count
+            call_count += 1
+            return httpx.Response(500, text="Internal Server Error")
+
+        transport = httpx.MockTransport(handler)
+        async with httpx.AsyncClient(transport=transport) as http_client:
+            dispatcher = WebhookDispatcher(
+                urls=[target_url],
+                max_retries=1,
+                backoff_factor=0.01,
+                http_client=http_client,
+            )
+
+            # 5 consecutive dispatch attempts fail
+            for i in range(1, 6):
+                results = await dispatcher.dispatch({"run": i})
+                assert len(results) == 1
+                assert results[0].success is False
+                assert results[0].attempts == 1
+                assert dispatcher._consecutive_failures[target_url] == i
+
+            assert call_count == 5
+            assert target_url in dispatcher._cooldown_until
+
+            # 6th dispatch attempt should be blocked by open circuit breaker (attempts=0, no HTTP call)
+            result_blocked = await dispatcher.dispatch({"run": 6})
+            assert len(result_blocked) == 1
+            assert result_blocked[0].success is False
+            assert result_blocked[0].attempts == 0
+            assert result_blocked[0].error_message == "Circuit breaker open: cooldown active"
+            assert call_count == 5  # No additional HTTP request made
+
+    @pytest.mark.asyncio
+    async def test_circuit_breaker_resets_on_success(self) -> None:
+        target_url = "https://intermittent.com/webhook"
+        fail = True
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            if fail:
+                return httpx.Response(500, text="Error")
+            return httpx.Response(200, json={"ok": True})
+
+        transport = httpx.MockTransport(handler)
+        async with httpx.AsyncClient(transport=transport) as http_client:
+            dispatcher = WebhookDispatcher(
+                urls=[target_url],
+                max_retries=1,
+                backoff_factor=0.01,
+                http_client=http_client,
+            )
+
+            # Fail 3 times
+            for _ in range(3):
+                await dispatcher.dispatch({"test": 1})
+            assert dispatcher._consecutive_failures[target_url] == 3
+
+            # Next request succeeds
+            fail = False
+            results = await dispatcher.dispatch({"test": 2})
+            assert len(results) == 1
+            assert results[0].success is True
+            assert dispatcher._consecutive_failures[target_url] == 0
+            assert target_url not in dispatcher._cooldown_until
+

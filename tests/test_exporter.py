@@ -15,6 +15,7 @@ from boun_scrape.pipeline.exporter import (
     export_courses_sqlite,
     export_deltas_json,
     generate_all_exports,
+    prune_old_exports,
 )
 from boun_scrape.storage.database import DatabaseManager
 from boun_scrape.storage.repository import CourseRepository
@@ -299,3 +300,91 @@ class TestGenerateAllExports:
         assert replaced is True
         data = json.loads(res.read_text(encoding="utf-8"))
         assert len(data) == len(sample_deltas)
+
+
+class TestPruneOldExports:
+    """Tests for export artifact retention and age pruning."""
+
+    def test_prune_old_exports_keep_last_n(self, tmp_path: Path) -> None:
+        import os
+        import time
+
+        export_dir = tmp_path / "exports"
+        export_dir.mkdir(parents=True)
+        now = time.time()
+
+        # Create 12 terms (0 to 11) with 3 files each
+        created_files: dict[str, list[Path]] = {}
+        for i in range(12):
+            term = f"term_{i:02d}"
+            created_files[term] = []
+            for ext in ("json", "csv", "db"):
+                f = export_dir / f"courses_{term}.{ext}"
+                f.write_text("data", encoding="utf-8")
+                # Set mtime: term_11 is newest, term_00 is oldest
+                mtime = now - (12 - i) * 100
+                os.utime(f, (mtime, mtime))
+                created_files[term].append(f)
+
+        pruned = prune_old_exports(export_dir, keep_last_n=10, max_age_days=90)
+
+        # Oldest 2 terms (term_00 and term_01 = 6 files) should be pruned
+        assert len(pruned) == 6
+        for term in ("term_00", "term_01"):
+            for f in created_files[term]:
+                assert f in pruned
+                assert not f.exists()
+
+        # Remaining 10 terms (term_02 to term_11 = 30 files) should remain
+        for i in range(2, 12):
+            term = f"term_{i:02d}"
+            for f in created_files[term]:
+                assert f not in pruned
+                assert f.exists()
+
+    def test_prune_old_exports_max_age_days(self, tmp_path: Path) -> None:
+        import os
+        import time
+
+        export_dir = tmp_path / "exports"
+        export_dir.mkdir(parents=True)
+        now = time.time()
+
+        fresh_file = export_dir / "courses_2024_1.json"
+        fresh_file.write_text("{}", encoding="utf-8")
+        os.utime(fresh_file, (now - 10 * 86400, now - 10 * 86400))  # 10 days old
+
+        stale_file = export_dir / "courses_2023_1.json"
+        stale_file.write_text("{}", encoding="utf-8")
+        os.utime(stale_file, (now - 100 * 86400, now - 100 * 86400))  # 100 days old
+
+        stale_delta = export_dir / "deltas_2023_1.json"
+        stale_delta.write_text("[]", encoding="utf-8")
+        os.utime(stale_delta, (now - 100 * 86400, now - 100 * 86400))  # 100 days old
+
+        pruned = prune_old_exports(export_dir, keep_last_n=10, max_age_days=90)
+
+        assert fresh_file not in pruned
+        assert fresh_file.exists()
+        assert stale_file in pruned
+        assert not stale_file.exists()
+        assert stale_delta in pruned
+        assert not stale_delta.exists()
+
+    def test_prune_old_exports_nonexistent_and_unmatched_files(self, tmp_path: Path) -> None:
+        assert prune_old_exports(tmp_path / "nonexistent") == []
+
+        export_dir = tmp_path / "exports"
+        export_dir.mkdir(parents=True)
+
+        other_file = export_dir / "unrelated.txt"
+        other_file.write_text("hello", encoding="utf-8")
+
+        hidden_file = export_dir / ".courses_temp.tmp"
+        hidden_file.write_text("tmp", encoding="utf-8")
+
+        pruned = prune_old_exports(export_dir, keep_last_n=1, max_age_days=1)
+        assert pruned == []
+        assert other_file.exists()
+        assert hidden_file.exists()
+

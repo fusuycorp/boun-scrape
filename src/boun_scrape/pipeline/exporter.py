@@ -2,9 +2,11 @@
 
 import csv
 import json
+import logging
 import os
 import sqlite3
 import tempfile
+import time
 from pathlib import Path
 
 from boun_scrape.domain.events import CourseDeltaEvent
@@ -12,6 +14,8 @@ from boun_scrape.domain.models import Course
 from boun_scrape.pipeline.delta import course_to_dict
 from boun_scrape.storage.database import DatabaseManager
 from boun_scrape.storage.repository import CourseRepository
+
+logger = logging.getLogger(__name__)
 
 
 def _tmp_path_for(path: Path) -> Path:
@@ -267,3 +271,75 @@ def generate_all_exports(
         )
 
     return results
+
+
+def prune_old_exports(
+    output_dir: Path | str,
+    keep_last_n: int = 10,
+    max_age_days: int = 90,
+) -> list[Path]:
+    """Clean up export artifacts beyond keep_last_n newest terms or older than max_age_days.
+
+    Args:
+        output_dir: Directory containing export artifacts.
+        keep_last_n: Maximum number of most recent terms to retain.
+        max_age_days: Maximum age in days before an export file is pruned.
+
+    Returns:
+        List of Path objects for the deleted files.
+    """
+    out_path = Path(output_dir)
+    if not out_path.is_dir():
+        return []
+
+    term_files: dict[str, list[Path]] = {}
+    term_latest_mtime: dict[str, float] = {}
+    file_mtimes: dict[Path, float] = {}
+
+    for entry in out_path.iterdir():
+        if not entry.is_file() or entry.name.startswith("."):
+            continue
+
+        term: str | None = None
+        if entry.name.startswith("courses_") and "." in entry.name[len("courses_"):]:
+            term = entry.name[len("courses_"):].rpartition(".")[0]
+        elif entry.name.startswith("deltas_") and "." in entry.name[len("deltas_"):]:
+            term = entry.name[len("deltas_"):].rpartition(".")[0]
+
+        if not term:
+            continue
+
+        try:
+            mtime = entry.stat().st_mtime
+        except OSError:
+            mtime = 0.0
+
+        term_files.setdefault(term, []).append(entry)
+        term_latest_mtime[term] = max(term_latest_mtime.get(term, 0.0), mtime)
+        file_mtimes[entry] = mtime
+
+    sorted_terms = sorted(
+        term_files.keys(),
+        key=lambda t: (term_latest_mtime.get(t, 0.0), t),
+        reverse=True,
+    )
+
+    kept_terms = set(sorted_terms[: max(0, keep_last_n)])
+    now = time.time()
+    max_age_seconds = max_age_days * 86400.0
+
+    pruned: list[Path] = []
+    for term, files in term_files.items():
+        for f in files:
+            f_mtime = file_mtimes.get(f, 0.0)
+            is_beyond_n = term not in kept_terms
+            is_too_old = (now - f_mtime) > max_age_seconds
+            if is_beyond_n or is_too_old:
+                try:
+                    f.unlink(missing_ok=True)
+                    pruned.append(f)
+                except OSError as exc:
+                    logger.warning("Failed to prune export file %s: %s", f, exc)
+
+    return pruned
+
