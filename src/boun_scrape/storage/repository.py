@@ -7,6 +7,7 @@ from typing import Any
 from boun_scrape.domain.dto import (
     CourseFilterParams,
     DepartmentCoverageItemDTO,
+    MasterCoverageSummaryDTO,
     TermCoverageSummaryDTO,
 )
 from boun_scrape.domain.events import ChangeType, CourseDeltaEvent
@@ -18,8 +19,8 @@ from boun_scrape.domain.models import (
     QuotaSnapshot,
     RunStatus,
     ScrapeRunSummary,
+    compute_course_hash,
 )
-from boun_scrape.pipeline.delta import compute_course_hash
 from boun_scrape.storage.database import DatabaseManager
 
 
@@ -768,6 +769,15 @@ class CourseRepository:
             ).fetchall()
             return {row["code"] for row in rows}
 
+    def get_failed_department_codes(self, term: str) -> list[str]:
+        """Return the list of department codes that failed to scrape for a term."""
+        with self.db.connection() as conn:
+            rows = conn.execute(
+                "SELECT code FROM departments WHERE term = ? AND last_status = 'FAILED' ORDER BY code ASC",
+                (term,),
+            ).fetchall()
+            return [row["code"] for row in rows]
+
     def get_term_coverage(self, term: str) -> TermCoverageSummaryDTO:
         """Calculate and return coverage metrics and department breakdown for an academic term."""
         with self.db.connection() as conn:
@@ -818,3 +828,28 @@ class CourseRepository:
                 last_scraped_at=last_scraped,
                 departments=dept_items,
             )
+
+    def get_master_coverage(self) -> MasterCoverageSummaryDTO:
+        """Calculate aggregate multi-term coverage telemetry across all academic terms."""
+        terms = self.get_terms()
+        if not terms:
+            return MasterCoverageSummaryDTO()
+
+        term_summaries = [self.get_term_coverage(t) for t in terms]
+        total_depts = sum(s.total_departments for s in term_summaries)
+        completed = sum(s.completed_departments for s in term_summaries)
+        pending = sum(s.pending_departments for s in term_summaries)
+        failed = sum(s.failed_departments for s in term_summaries)
+        total_courses = sum(s.total_courses for s in term_summaries)
+        pct = round((completed / total_depts * 100), 1) if total_depts > 0 else 0.0
+
+        return MasterCoverageSummaryDTO(
+            total_terms=len(term_summaries),
+            total_departments=total_depts,
+            completed_departments=completed,
+            pending_departments=pending,
+            failed_departments=failed,
+            total_courses=total_courses,
+            percent_complete=pct,
+            terms=term_summaries,
+        )

@@ -79,6 +79,33 @@ class TestConfig:
             with pytest.raises(Exception, match="ADMIN_PASSWORD_HASH"):
                 Settings(_env_file=None)
 
+    def test_production_fails_fast_with_empty_or_whitespace_secrets(self) -> None:
+        env_vars = {
+            "ENVIRONMENT": "production",
+            "JWT_SECRET_KEY": "   ",
+            "ADMIN_PASSWORD_HASH": "$2b$12$AWoniBnnbFfjVI3tldX2wuOPEVNmik7mwrsM88M6C0ARftQv9WvvG",
+        }
+        with patch.dict(os.environ, env_vars, clear=False):
+            with pytest.raises(Exception, match="JWT_SECRET_KEY"):
+                Settings(_env_file=None)
+
+        env_vars = {
+            "ENVIRONMENT": "production",
+            "JWT_SECRET_KEY": "a" * 32,
+            "ADMIN_PASSWORD_HASH": "",
+        }
+        with patch.dict(os.environ, env_vars, clear=False):
+            with pytest.raises(Exception, match="ADMIN_PASSWORD_HASH"):
+                Settings(_env_file=None)
+
+    def test_url_normalization_and_trailing_slash_strip(self) -> None:
+        settings = Settings(
+            base_url="https://registration.bogazici.edu.tr/",
+            quota_url="https://registration.boun.edu.tr/",
+        )
+        assert settings.base_url == "https://registration.bogazici.edu.tr"
+        assert settings.quota_url == "https://registration.boun.edu.tr"
+
     def test_production_succeeds_with_explicit_secrets(self) -> None:
         env_vars = {
             "ENVIRONMENT": "production",

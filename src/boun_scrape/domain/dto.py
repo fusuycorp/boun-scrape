@@ -172,6 +172,7 @@ class ScrapeTriggerRequest(BaseModel):
     term: str | None = None
     departments: list[str] | None = None
     skip_already_scraped: bool = False
+    failed_only: bool = False
     export: bool = True
     dispatch_webhooks: bool = True
     background: bool = True
@@ -204,6 +205,19 @@ class TermCoverageSummaryDTO(BaseModel):
     percent_complete: float = 0.0
     last_scraped_at: str | None = None
     departments: list[DepartmentCoverageItemDTO] = []
+
+
+class MasterCoverageSummaryDTO(BaseModel):
+    """Aggregate multi-term scrape coverage telemetry and status metrics."""
+
+    total_terms: int = 0
+    total_departments: int = 0
+    completed_departments: int = 0
+    pending_departments: int = 0
+    failed_departments: int = 0
+    total_courses: int = 0
+    percent_complete: float = 0.0
+    terms: list[TermCoverageSummaryDTO] = []
 
 
 class ScrapeStatusDTO(BaseModel):

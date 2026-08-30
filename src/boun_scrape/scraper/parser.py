@@ -1,5 +1,6 @@
 """Pure HTML parsers for terms, departments, schedules, and quota pages."""
 
+import re
 import urllib.parse
 from bs4 import BeautifulSoup, Tag
 
@@ -242,10 +243,12 @@ def parse_quota_from_html(html: str) -> list[QuotaRecord]:
             quota_numeric: int | None = None
             current_numeric: int | None = None
 
-            if quota_val.isdigit():
-                quota_numeric = int(quota_val)
-            if current_val.isdigit():
-                current_numeric = int(current_val)
+            m_quota = re.search(r"\d+", quota_val)
+            if m_quota:
+                quota_numeric = int(m_quota.group())
+            m_curr = re.search(r"\d+", current_val)
+            if m_curr:
+                current_numeric = int(m_curr.group())
 
             available: int | None = None
             if (

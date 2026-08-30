@@ -106,6 +106,7 @@ CREATE TABLE IF NOT EXISTS quota_snapshots (
 -- Indexes for high query performance
 CREATE INDEX IF NOT EXISTS idx_courses_term_dept ON courses(term, department);
 CREATE INDEX IF NOT EXISTS idx_courses_term_code_sec ON courses(term, course_code, section);
+CREATE INDEX IF NOT EXISTS idx_courses_pagination ON courses(term, course_code, section, id);
 CREATE UNIQUE INDEX IF NOT EXISTS idx_courses_unique ON courses(term, department, course_code, section);
 CREATE INDEX IF NOT EXISTS idx_course_slots_course_id ON course_slots(course_id);
 CREATE INDEX IF NOT EXISTS idx_course_slots_day_hour ON course_slots(day, hour);
@@ -240,6 +241,9 @@ class DatabaseManager:
 
         conn.execute(
             "CREATE UNIQUE INDEX IF NOT EXISTS idx_courses_unique ON courses (term, department, course_code, section)"
+        )
+        conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_courses_pagination ON courses (term, course_code, section, id)"
         )
         # S-07: ensure course_deltas created_at index exists for existing DBs
         conn.execute(

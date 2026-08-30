@@ -15,4 +15,6 @@ exports/
 
 .DS_Store
 .env
-
+.pi/
+.pi-glla/
+reviews/

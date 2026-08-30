@@ -2,6 +2,8 @@
  * Centralized Single-Origin API Client for BOUN Scraper Dashboard
  */
 
+const etagCache = new Map();
+
 const getAuthHeader = () => {
   const token = localStorage.getItem('token');
   return token ? { Authorization: `Bearer ${token}` } : {};
@@ -25,10 +27,18 @@ export async function apiRequest(endpoint, options = {}) {
     }
   }
 
+  const isGet = method.toUpperCase() === 'GET';
   const reqHeaders = {
     ...getAuthHeader(),
     ...headers,
   };
+
+  if (isGet && etagCache.has(url)) {
+    const cached = etagCache.get(url);
+    if (cached && cached.etag) {
+      reqHeaders['If-None-Match'] = cached.etag;
+    }
+  }
 
   let reqBody = body;
   if (body && typeof body === 'object' && !(body instanceof FormData) && !(body instanceof URLSearchParams)) {
@@ -49,6 +59,10 @@ export async function apiRequest(endpoint, options = {}) {
     throw new Error('Session expired. Please log in again.');
   }
 
+  if (response.status === 304 && isGet && etagCache.has(url)) {
+    return etagCache.get(url).data;
+  }
+
   if (!response.ok) {
     let errMessage = `HTTP Error ${response.status}`;
     try {
@@ -62,12 +76,24 @@ export async function apiRequest(endpoint, options = {}) {
     throw new Error(errMessage);
   }
 
+  const responseEtag = response.headers.get('ETag');
   const contentType = response.headers.get('content-type');
+  let resultData;
   if (contentType && contentType.includes('application/json')) {
-    return await response.json();
+    resultData = await response.json();
+  } else {
+    resultData = await response.text();
   }
 
-  return await response.text();
+  if (isGet && responseEtag) {
+    if (etagCache.size > 100) {
+      const firstKey = etagCache.keys().next().value;
+      etagCache.delete(firstKey);
+    }
+    etagCache.set(url, { etag: responseEtag, data: resultData });
+  }
+
+  return resultData;
 }
 
 export const api = {
@@ -150,6 +176,7 @@ export const api = {
     });
   },
   getScraperCoverage: (termOrOptions = {}, options = {}) => api.getCoverageSummary(termOrOptions, options),
+  getMasterCoverage: (options = {}) => apiRequest('/scraper/coverage/master', options),
   getScheduleConfig: (options = {}) => apiRequest('/scraper/schedule', options),
   updateScheduleConfig: (data, options = {}) => apiRequest('/scraper/schedule', { method: 'POST', body: data, ...options }),
   startSchedulerDaemon: (options = {}) => apiRequest('/scraper/start-daemon', { method: 'POST', ...options }),

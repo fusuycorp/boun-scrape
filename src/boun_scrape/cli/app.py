@@ -105,7 +105,13 @@ def scrape_command(
                     dispatch_webhooks=not no_webhooks,
                     capture_quota=capture_quota,
                 )
-                typer.secho(f"\nScrape cycle completed successfully! [Run: {summary.run_id}]", fg=typer.colors.GREEN, bold=True)
+                is_failed = summary.status == RunStatus.FAILED or str(summary.status).lower() == "failed"
+                status_color = typer.colors.RED if is_failed else typer.colors.GREEN
+                typer.secho(
+                    f"\nScrape cycle {'failed' if is_failed else 'completed successfully'}! [Run: {summary.run_id}]",
+                    fg=status_color,
+                    bold=True,
+                )
                 typer.echo(f"  Term:                {summary.term}")
                 typer.echo(f"  Status:              {summary.status.value if isinstance(summary.status, RunStatus) else summary.status}")
                 typer.echo(f"  Total Courses:       {summary.total_courses}")
@@ -113,6 +119,10 @@ def scrape_command(
                 typer.echo(f"  Changes Detected:    {summary.changes_detected}")
                 typer.echo(f"  Started At:          {summary.started_at}")
                 typer.echo(f"  Completed At:        {summary.completed_at}")
+                if summary.error_message:
+                    typer.echo(f"  Error Message:       {summary.error_message}")
+                if is_failed:
+                    raise typer.Exit(code=1)
         finally:
             await scheduler.aclose()
 

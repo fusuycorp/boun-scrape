@@ -11,10 +11,13 @@ import { api } from '../api/client';
 import { useMountedRef } from '../hooks/useSafeAsync';
 import { useToast } from '../hooks/useToast';
 
-async function runWithConcurrency(items, concurrencyLimit, workerFn) {
+async function runWithConcurrency(items, concurrencyLimit, workerFn, signal = null) {
   let index = 0;
   async function worker() {
     while (index < items.length) {
+      if (signal && signal.aborted) {
+        break;
+      }
       const currentIndex = index++;
       await workerFn(items[currentIndex]);
     }
@@ -107,8 +110,11 @@ export default function QuotaMonitor() {
 
     const CONCURRENCY_LIMIT = 4;
     try {
-      await runWithConcurrency(watchlist, CONCURRENCY_LIMIT, (item) =>
-        fetchSingleQuota(item, controller.signal)
+      await runWithConcurrency(
+        watchlist,
+        CONCURRENCY_LIMIT,
+        (item) => fetchSingleQuota(item, controller.signal),
+        controller.signal
       );
     } finally {
       isPollingRef.current = false;

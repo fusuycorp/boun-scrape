@@ -22,6 +22,7 @@ from boun_scrape.api.logging_buffer import LogBuffer
 from boun_scrape.config import Settings
 from boun_scrape.domain.dto import (
     LogEntryDTO,
+    MasterCoverageSummaryDTO,
     ScrapeRunDTO,
     ScrapeStatusDTO,
     ScrapeTriggerRequest,
@@ -64,12 +65,17 @@ async def trigger_scrape(
                 export=payload.export,
                 dispatch_webhooks=payload.dispatch_webhooks,
                 capture_quota=payload.capture_quota,
+                target_departments=payload.departments,
+                skip_already_scraped=payload.skip_already_scraped,
+                failed_only=payload.failed_only,
             )
         )
         return {
             "status": "triggered",
             "message": "All-terms scrape cycle started in background.",
             "all_terms": True,
+            "failed_only": payload.failed_only,
+            "skip_already_scraped": payload.skip_already_scraped,
         }
 
     if payload.background:
@@ -81,6 +87,7 @@ async def trigger_scrape(
                 capture_quota=payload.capture_quota,
                 target_departments=payload.departments,
                 skip_already_scraped=payload.skip_already_scraped,
+                failed_only=payload.failed_only,
             )
         )
         return {
@@ -89,6 +96,7 @@ async def trigger_scrape(
             "term": payload.term,
             "departments": payload.departments,
             "skip_already_scraped": payload.skip_already_scraped,
+            "failed_only": payload.failed_only,
         }
 
     try:
@@ -99,6 +107,7 @@ async def trigger_scrape(
             capture_quota=payload.capture_quota,
             target_departments=payload.departments,
             skip_already_scraped=payload.skip_already_scraped,
+            failed_only=payload.failed_only,
         )
         return run_to_dto(summary)
     except ScrapeAlreadyRunningError as exc:
@@ -128,6 +137,19 @@ def get_scraper_coverage(
         target_term = terms[0] if terms else "unresolved"
 
     return repo.get_term_coverage(target_term)
+
+
+@router.get(
+    "/scraper/coverage/master",
+    response_model=MasterCoverageSummaryDTO,
+    summary="Get master scrape coverage metrics across all academic terms",
+)
+def get_master_scraper_coverage(
+    repo: Annotated[CourseRepository, Depends(get_course_repo_dep)],
+    current_user: str = Depends(get_current_user),
+) -> MasterCoverageSummaryDTO:
+    """Retrieve aggregate multi-term scrape metrics, department breakdowns, and completion status."""
+    return repo.get_master_coverage()
 
 
 @router.get(

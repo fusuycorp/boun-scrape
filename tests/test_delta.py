@@ -12,6 +12,7 @@ from boun_scrape.pipeline.delta import (
 
 def _make_sample_course(
     *,
+    dept: str = "CMPE",
     code: str = "CMPE 150",
     sec: str = "01",
     name: str = "INTRO TO COMPUTING",
@@ -28,7 +29,7 @@ def _make_sample_course(
         ]
     return Course(
         term="2024/2025-1",
-        department="CMPE",
+        department=dept,
         course_code=code,
         section=sec,
         course_name=name,
@@ -177,3 +178,20 @@ class TestDeltaEngine:
         assert deltas[0].change_type == ChangeType.MODIFIED
         assert "credits" in deltas[0].old_value
         assert "ects" in deltas[0].old_value
+
+    def test_compute_deltas_scoped_to_scraped_departments(self) -> None:
+        c_cmpe_old = _make_sample_course(dept="CMPE", code="CMPE 150", sec="01")
+        c_math_old = _make_sample_course(dept="MATH", code="MATH 101", sec="01")
+        # In this cycle, MATH failed to scrape (empty in current_courses), only CMPE succeeded
+        c_cmpe_new = _make_sample_course(dept="CMPE", code="CMPE 150", sec="01")
+
+        deltas = compute_deltas(
+            previous_courses=[c_cmpe_old, c_math_old],
+            current_courses=[c_cmpe_new],
+            run_id="run-partial",
+            term="2024/2025-1",
+            scraped_departments=["CMPE"],
+        )
+        # Should be 0 deltas because CMPE didn't change, and MATH is excluded from diff
+        assert len(deltas) == 0
+

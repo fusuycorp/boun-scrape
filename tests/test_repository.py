@@ -664,3 +664,64 @@ class TestRepository:
         assert len(loaded[0].slots) == 2
         assert "PROF SMITH" in loaded[0].instructor
         assert "DR DOE" in loaded[0].instructor
+
+    def test_master_coverage_and_failed_department_codes(self, repo: CourseRepository) -> None:
+        term1 = "2026/2027-1"
+        depts1 = [
+            Department(code="CMPE", name="Computer Engineering"),
+            Department(code="MATH", name="Mathematics"),
+            Department(code="PHYS", name="Physics"),
+        ]
+        repo.save_departments(term1, depts1)
+        repo.save_courses_and_slots(
+            term1,
+            [
+                Course(term=term1, department="CMPE", course_code="CMPE 150", section="01", course_name="INTRO"),
+                Course(term=term1, department="CMPE", course_code="CMPE 160", section="01", course_name="OOP"),
+            ],
+            scraped_departments=["CMPE"],
+        )
+        repo.update_department_scrape_status(
+            term=term1,
+            code="PHYS",
+            course_count=0,
+            status="FAILED",
+            error="Socket timed out",
+        )
+
+        term2 = "2026/2027-2"
+        depts2 = [
+            Department(code="EE", name="Electrical Engineering"),
+            Department(code="IE", name="Industrial Engineering"),
+        ]
+        repo.save_departments(term2, depts2)
+        repo.save_courses_and_slots(
+            term2,
+            [
+                Course(term=term2, department="EE", course_code="EE 201", section="01", course_name="CIRCUITS"),
+                Course(term=term2, department="EE", course_code="EE 202", section="01", course_name="SIGNALS"),
+                Course(term=term2, department="EE", course_code="EE 303", section="01", course_name="DIGITAL"),
+                Course(term=term2, department="IE", course_code="IE 201", section="01", course_name="PROBABILITY"),
+            ],
+            scraped_departments=["EE", "IE"],
+        )
+
+        # Failed department codes check
+        assert repo.get_failed_department_codes(term1) == ["PHYS"]
+        assert repo.get_failed_department_codes(term2) == []
+
+        # Master coverage calculation check
+        master = repo.get_master_coverage()
+        assert master.total_terms == 2
+        assert master.total_departments == 5
+        assert master.completed_departments == 3
+        assert master.failed_departments == 1
+        assert master.pending_departments == 1
+        assert master.total_courses == 6
+        assert master.percent_complete == 60.0
+        assert len(master.terms) == 2
+        terms_dict = {t.term: t for t in master.terms}
+        assert terms_dict[term1].completed_departments == 1
+        assert terms_dict[term1].failed_departments == 1
+        assert terms_dict[term2].completed_departments == 2
+        assert terms_dict[term2].failed_departments == 0

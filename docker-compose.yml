@@ -16,6 +16,10 @@ services:
       # Set them in the deployment environment (e.g. Dokploy env vars), never here.
       - ADMIN_PASSWORD_HASH=${ADMIN_PASSWORD_HASH}
       - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+      - WEBHOOK_SECRET=${WEBHOOK_SECRET:-}
+      - COOKIES_PATH=${COOKIES_PATH:-/data/cookies.txt}
+      - RECAPTCHA_TOKEN_PATH=${RECAPTCHA_TOKEN_PATH:-/data/recaptcha_token.txt}
+      - EXPORT_DIR=${EXPORT_DIR:-/data/exports}
       - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-http://localhost:5173,http://localhost:80,http://127.0.0.1:5173,https://scraper.bountools.com}
     restart: always
 

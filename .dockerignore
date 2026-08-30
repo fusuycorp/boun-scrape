@@ -17,3 +17,10 @@ exports/
 *.db-journal
 *.log
 .mimori/
+.env
+.env.*
+cookies.txt
+recaptcha_token.txt
+.pi/
+.pi-glla/
+.claude/

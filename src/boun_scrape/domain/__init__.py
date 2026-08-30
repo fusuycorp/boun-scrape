@@ -5,10 +5,13 @@ from boun_scrape.domain.dto import (
     CourseFilterParams,
     CourseSlotDTO,
     DeltaEventDTO,
+    DepartmentCoverageItemDTO,
     DepartmentDTO,
+    MasterCoverageSummaryDTO,
     PaginatedResponse,
     QuotaDTO,
     ScrapeRunDTO,
+    TermCoverageSummaryDTO,
 )
 from boun_scrape.domain.events import (
     ChangeType,
@@ -38,7 +41,9 @@ __all__ = [
     "DayOfWeek",
     "DeltaEventDTO",
     "Department",
+    "DepartmentCoverageItemDTO",
     "DepartmentDTO",
+    "MasterCoverageSummaryDTO",
     "PaginatedResponse",
     "QuotaDTO",
     "QuotaRecord",
@@ -48,4 +53,5 @@ __all__ = [
     "ScrapeRunDTO",
     "ScrapeRunSummary",
     "ScrapeSnapshot",
+    "TermCoverageSummaryDTO",
 ]

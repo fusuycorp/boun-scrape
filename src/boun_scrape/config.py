@@ -42,7 +42,7 @@ class Settings(BaseSettings):
         """Fail fast on missing secrets outside development; generate ephemeral dev-only values otherwise."""
         is_dev = self.environment.strip().lower() in _DEV_ENVIRONMENTS
 
-        if self.jwt_secret_key is None:
+        if not self.jwt_secret_key or not self.jwt_secret_key.strip():
             if not is_dev:
                 raise ValueError(
                     "JWT_SECRET_KEY must be set explicitly when ENVIRONMENT is not development "
@@ -54,7 +54,7 @@ class Settings(BaseSettings):
                 "Tokens will be invalidated on restart. Set JWT_SECRET_KEY explicitly in production."
             )
 
-        if self.admin_password_hash is None:
+        if not self.admin_password_hash or not self.admin_password_hash.strip():
             if not is_dev:
                 raise ValueError(
                     "ADMIN_PASSWORD_HASH must be set explicitly when ENVIRONMENT is not development "
@@ -75,6 +75,11 @@ class Settings(BaseSettings):
                 self.base_url,
             )
             self.base_url = "https://registration.bogazici.edu.tr"
+        self.base_url = self.base_url.rstrip("/")
+
+        if not self.quota_url or self.quota_url.strip() in ("", "/"):
+            self.quota_url = "https://registration.boun.edu.tr"
+        self.quota_url = self.quota_url.rstrip("/")
 
         return self
 

@@ -217,11 +217,13 @@ class ScrapeScheduler:
         succeeded_set = set(result.succeeded_departments)
         filtered_previous = [c for c in previous_courses if c.department in succeeded_set]
 
-        deltas = compute_deltas(
+        deltas = await asyncio.to_thread(
+            compute_deltas,
             previous_courses=filtered_previous,
             current_courses=result.courses,
             run_id=run_id,
             term=target_term,
+            scraped_departments=result.succeeded_departments,
         )
         return result, deltas
 
@@ -322,6 +324,7 @@ class ScrapeScheduler:
         capture_quota: bool = False,
         target_departments: list[str] | None = None,
         skip_already_scraped: bool = False,
+        failed_only: bool = False,
     ) -> ScrapeRunSummary:
         """Execute a full scrape cycle with delta detection, persistence, exports, and feeds.
 
@@ -334,6 +337,7 @@ class ScrapeScheduler:
                 portal — opt-in, default off).
             target_departments: Optional subset of department codes to scrape.
             skip_already_scraped: If True, skip departments that are already marked COMPLETED.
+            failed_only: If True, only re-scrape departments marked FAILED in the target term.
 
         Returns:
             ScrapeRunSummary entity containing run metrics.
@@ -360,10 +364,36 @@ class ScrapeScheduler:
                 summary.term = target_term
                 logger.info("Scrape %s: resolved term %s", run_id, target_term)
 
+                # 1b. If failed_only and target_departments is not specified, resolve failed departments
+                effective_target_departments = target_departments
+                if failed_only and effective_target_departments is None:
+                    effective_target_departments = await asyncio.to_thread(
+                        self.repository.get_failed_department_codes, target_term
+                    )
+                    if not effective_target_departments:
+                        logger.info(
+                            "Scrape %s: term %s has 0 failed departments to scrape",
+                            run_id, target_term,
+                        )
+                        completed_at = datetime.now(timezone.utc).isoformat()
+                        summary.status = RunStatus.COMPLETED
+                        summary.completed_at = completed_at
+                        summary.total_courses = 0
+                        summary.total_slots = 0
+                        summary.changes_detected = 0
+                        summary.total_departments = 0
+                        summary.completed_departments = 0
+                        await asyncio.to_thread(self.repository.save_scrape_run, summary)
+                        self._current_progress = None
+                        self._last_run_summary = summary
+                        self._last_run_time = datetime.now(timezone.utc)
+                        self._run_count += 1
+                        return summary
+
                 # 2. Scrape & compute change deltas
                 result, deltas = await self._scrape_and_compute_deltas(
                     target_term=target_term,
-                    target_departments=target_departments,
+                    target_departments=effective_target_departments,
                     skip_already_scraped=skip_already_scraped,
                     run_id=run_id,
                 )
@@ -428,19 +458,12 @@ class ScrapeScheduler:
                 raise
 
             except Exception as exc:
+                logger.exception("Scrape %s: failed with error: %s", run_id, exc)
+                self._current_progress = None
                 summary.status = RunStatus.FAILED
                 summary.completed_at = datetime.now(timezone.utc).isoformat()
                 summary.error_message = str(exc)
                 await asyncio.to_thread(self.repository.save_scrape_run, summary)
-                logger.exception("Scrape %s: failed", run_id)
-
-                if dispatch_webhooks and self.webhook_dispatcher is not None:
-                    try:
-                        await self.webhook_dispatcher.dispatch_run_summary(summary)
-                    except Exception:
-                        logger.exception("Scrape %s: webhook dispatch on failure failed", run_id)
-
-                self._current_progress = None
                 self._last_run_summary = summary
                 self._last_run_time = datetime.now(timezone.utc)
                 raise
@@ -450,6 +473,9 @@ class ScrapeScheduler:
         export: bool = True,
         dispatch_webhooks: bool = True,
         capture_quota: bool = False,
+        target_departments: list[str] | None = None,
+        skip_already_scraped: bool = False,
+        failed_only: bool = False,
     ) -> list[ScrapeRunSummary]:
         """Discover every term the portal currently exposes and scrape each one sequentially.
 
@@ -479,17 +505,36 @@ class ScrapeScheduler:
             logger.info("Using %d cached terms for all-terms cycle: %s", len(terms), terms)
 
         logger.info(
-            "Starting all-terms scrape cycle: %d terms discovered: %s", len(terms), terms
+            "Starting all-terms scrape cycle: %d terms discovered: %s (failed_only=%s, skip_already_scraped=%s)",
+            len(terms), terms, failed_only, skip_already_scraped,
         )
         summaries: list[ScrapeRunSummary] = []
         for t in terms:
             try:
-                summary = await self.execute_scrape_cycle(
-                    term=t,
-                    export=export,
-                    dispatch_webhooks=dispatch_webhooks,
-                    capture_quota=capture_quota,
-                )
+                if failed_only:
+                    failed_depts = await asyncio.to_thread(self.repository.get_failed_department_codes, t)
+                    if not failed_depts:
+                        logger.info(
+                            "All-terms cycle (failed only): term %s has no failed departments, skipping", t
+                        )
+                        continue
+                    summary = await self.execute_scrape_cycle(
+                        term=t,
+                        export=export,
+                        dispatch_webhooks=dispatch_webhooks,
+                        capture_quota=capture_quota,
+                        target_departments=failed_depts,
+                        failed_only=True,
+                    )
+                else:
+                    summary = await self.execute_scrape_cycle(
+                        term=t,
+                        export=export,
+                        dispatch_webhooks=dispatch_webhooks,
+                        capture_quota=capture_quota,
+                        target_departments=target_departments,
+                        skip_already_scraped=skip_already_scraped,
+                    )
                 summaries.append(summary)
             except Exception:
                 logger.exception(

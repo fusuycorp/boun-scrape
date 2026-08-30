@@ -295,6 +295,35 @@ class TestScrapeScheduler:
             await scheduler.aclose()
 
     @pytest.mark.asyncio
+    async def test_execute_scrape_cycle_failed_only_skips_when_no_failures(
+        self,
+        tmp_path: Path,
+    ) -> None:
+        transport = httpx.MockTransport(lambda req: httpx.Response(200))
+        async with httpx.AsyncClient(transport=transport, base_url=BASE_URL) as scraper_http:
+            scraper_client = BounScraperClient(
+                http_client=scraper_http, min_jitter=0, max_jitter=0
+            )
+            db_mgr = DatabaseManager(str(tmp_path / "schedules.db"))
+            db_mgr.init_db()
+            repo = CourseRepository(db_mgr)
+            term = "2024/2025-1"
+            repo.save_departments(term, [Department(code="CMPE", name="Computer Engineering")])
+            repo.update_department_scrape_status(term=term, code="CMPE", course_count=2, status="COMPLETED")
+
+            scheduler = ScrapeScheduler(
+                client=scraper_client, repository=repo, export_dir=tmp_path / "exports",
+            )
+            # When failed_only=True and there are 0 failed departments, execute_scrape_cycle finishes cleanly with 0 courses
+            summary = await scheduler.execute_scrape_cycle(
+                term=term, export=False, dispatch_webhooks=False, failed_only=True,
+            )
+            assert summary.status == RunStatus.COMPLETED
+            assert summary.total_courses == 0
+            assert summary.completed_departments == 0
+            await scheduler.aclose()
+
+    @pytest.mark.asyncio
     async def test_execute_scrape_cycle_with_capture_quota_persists_snapshots(
         self,
         semester_html: str,

@@ -23,9 +23,25 @@ class RateLimiter:
         self.max_requests = max_requests
         self.window_seconds = window_seconds
         self._hits: dict[str, deque[float]] = {}
+        self._last_pruned: float = time.monotonic()
+
+    def _prune_expired(self, now: float) -> None:
+        """Purge stale deques for inactive clients to prevent memory leaks."""
+        expired_ips = [
+            ip for ip, queue in self._hits.items()
+            if not queue or now - queue[-1] > self.window_seconds
+        ]
+        for ip in expired_ips:
+            self._hits.pop(ip, None)
+        self._last_pruned = now
 
     def check(self, client_ip: str) -> None:
         now = time.monotonic()
+
+        # Periodically prune stale inactive IPs
+        if now - self._last_pruned > max(10.0, self.window_seconds) or len(self._hits) > 500:
+            self._prune_expired(now)
+
         hits = self._hits.get(client_ip)
         if hits is not None:
             while hits and now - hits[0] > self.window_seconds:

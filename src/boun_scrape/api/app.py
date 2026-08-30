@@ -1,5 +1,6 @@
 """FastAPI application factory, CORS configuration, and exception handlers."""
 
+import asyncio
 from contextlib import asynccontextmanager
 from typing import AsyncGenerator
 
@@ -28,10 +29,10 @@ from boun_scrape.storage.database import DatabaseManager
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     """Application lifecycle context manager."""
-    # Ensure database schema is initialized on startup
+    # Ensure database schema is initialized on startup without blocking event loop
     settings: Settings = getattr(app.state, "settings", get_settings())
     db = DatabaseManager(settings.db_path)
-    db.init_db()
+    await asyncio.to_thread(db.init_db)
     try:
         yield
     finally:

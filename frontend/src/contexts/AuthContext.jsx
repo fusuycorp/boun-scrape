@@ -17,10 +17,13 @@ export function AuthProvider({ children }) {
     try {
       const meData = await api.getMe();
       setUser(meData);
-    } catch {
-      localStorage.removeItem('token');
-      setToken(null);
-      setUser(null);
+    } catch (err) {
+      const msg = err?.message || '';
+      if (msg.includes('401') || msg.includes('expired') || msg.includes('Unauthorized') || msg.includes('Not authenticated')) {
+        localStorage.removeItem('token');
+        setToken(null);
+        setUser(null);
+      }
     } finally {
       setAuthenticating(false);
     }

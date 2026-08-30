@@ -1,55 +1,23 @@
 """Delta detection engine for tracking schedule changes across scrape cycles."""
 
-import hashlib
-import json
 from datetime import datetime, timezone
 from typing import Any
 
 from boun_scrape.domain.events import ChangeType, CourseDeltaEvent
-from boun_scrape.domain.models import Course, CourseSlot
+from boun_scrape.domain.models import (
+    Course,
+    CourseSlot,
+    compute_course_hash,
+    course_slot_to_dict,
+    course_to_dict,
+)
 
-
-def course_slot_to_dict(slot: CourseSlot) -> dict[str, Any]:
-    """Serialize CourseSlot to a deterministic dictionary."""
-    return {
-        "day": slot.day,
-        "hour": slot.hour,
-        "room": slot.room,
-        "slot_title": slot.slot_title or "",
-        "instructor": slot.instructor or "",
-    }
-
-
-def course_to_dict(course: Course) -> dict[str, Any]:
-    """Serialize Course entity to a deterministic dictionary for diff and hashing."""
-    slots = sorted(
-        [course_slot_to_dict(s) for s in course.slots],
-        key=lambda s: (s["day"], s["hour"], s["room"], s["slot_title"], s["instructor"]),
-    )
-    return {
-        "term": course.term,
-        "department": course.department,
-        "course_code": course.course_code,
-        "section": course.section,
-        "course_name": course.course_name,
-        "instructor": course.instructor,
-        "credits": round(float(course.credits), 2),
-        "ects": round(float(course.ects), 2),
-        "delivery_method": course.delivery_method,
-        "exam_location": course.exam_location,
-        "exam_date": course.exam_date,
-        "sl": course.sl,
-        "required_for": course.required_for,
-        "departments": course.departments,
-        "slots": slots,
-    }
-
-
-def compute_course_hash(course: Course) -> str:
-    """Compute a deterministic SHA-256 hash for a course and its slots."""
-    data = course_to_dict(course)
-    canonical_json = json.dumps(data, sort_keys=True, separators=(",", ":"))
-    return hashlib.sha256(canonical_json.encode("utf-8")).hexdigest()
+__all__ = [
+    "compute_course_hash",
+    "compute_deltas",
+    "course_slot_to_dict",
+    "course_to_dict",
+]
 
 
 def compute_deltas(
@@ -57,10 +25,16 @@ def compute_deltas(
     current_courses: list[Course],
     run_id: str,
     term: str,
+    scraped_departments: list[str] | set[str] | None = None,
 ) -> list[CourseDeltaEvent]:
     """Compare previous and current course lists to produce discrete delta events."""
     timestamp = datetime.now(timezone.utc).isoformat()
     events: list[CourseDeltaEvent] = []
+
+    if scraped_departments is not None:
+        dept_set = set(scraped_departments)
+        previous_courses = [c for c in previous_courses if c.department in dept_set]
+        current_courses = [c for c in current_courses if c.department in dept_set]
 
     prev_map: dict[tuple[str, str, str], Course] = {
         (c.department, c.course_code, c.section): c for c in previous_courses

@@ -2,6 +2,10 @@
 
 from dataclasses import dataclass, field
 from enum import StrEnum
+import hashlib
+import json
+from typing import Any
+
 
 
 class DayOfWeek(StrEnum):
@@ -152,3 +156,47 @@ class ScrapeRunSummary:
     started_at: str | None = None
     completed_at: str | None = None
     error_message: str | None = None
+
+
+def course_slot_to_dict(slot: CourseSlot) -> dict[str, Any]:
+    """Serialize CourseSlot to a deterministic dictionary."""
+    return {
+        "day": slot.day,
+        "hour": slot.hour,
+        "room": slot.room,
+        "slot_title": slot.slot_title or "",
+        "instructor": slot.instructor or "",
+    }
+
+
+def course_to_dict(course: Course) -> dict[str, Any]:
+    """Serialize Course entity to a deterministic dictionary for diff and hashing."""
+    slots = sorted(
+        [course_slot_to_dict(s) for s in course.slots],
+        key=lambda s: (s["day"], s["hour"], s["room"], s["slot_title"], s["instructor"]),
+    )
+    return {
+        "term": course.term,
+        "department": course.department,
+        "course_code": course.course_code,
+        "section": course.section,
+        "course_name": course.course_name,
+        "instructor": course.instructor,
+        "credits": round(float(course.credits), 2),
+        "ects": round(float(course.ects), 2),
+        "delivery_method": course.delivery_method,
+        "exam_location": course.exam_location,
+        "exam_date": course.exam_date,
+        "sl": course.sl,
+        "required_for": course.required_for,
+        "departments": course.departments,
+        "slots": slots,
+    }
+
+
+def compute_course_hash(course: Course) -> str:
+    """Compute a deterministic SHA-256 hash for a course and its slots."""
+    data = course_to_dict(course)
+    canonical_json = json.dumps(data, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(canonical_json.encode("utf-8")).hexdigest()
+

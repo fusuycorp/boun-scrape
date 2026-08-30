@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 import {
   Download,
   BookOpen,
@@ -34,6 +35,18 @@ export default function CourseData() {
 
   // Detail Modal
   const [activeCourse, setActiveCourse] = useState(null);
+
+  // Close inspector on Escape
+  useEffect(() => {
+    if (!activeCourse) return undefined;
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        setActiveCourse(null);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [activeCourse]);
 
   // Debounce search input
   useEffect(() => {
@@ -135,17 +148,26 @@ export default function CourseData() {
       'Exam Date',
     ];
 
+    const sanitizeCSV = (val) => {
+      const str = String(val ?? '');
+      const escaped = str.replace(/"/g, '""');
+      if (/^[=+\-@\t\r]/.test(escaped)) {
+        return `"'${escaped}"`;
+      }
+      return `"${escaped}"`;
+    };
+
     const rows = courses.map((c) => [
-      `"${c.term || ''}"`,
-      `"${c.department || ''}"`,
-      `"${c.course_code || ''}"`,
-      `"${c.section || ''}"`,
-      `"${(c.course_name || '').replace(/"/g, '""')}"`,
-      `"${(c.instructor || '').replace(/"/g, '""')}"`,
-      `"${c.credits || ''}"`,
-      `"${c.ects || ''}"`,
-      `"${c.exam_location || ''}"`,
-      `"${c.exam_date || ''}"`,
+      sanitizeCSV(c.term),
+      sanitizeCSV(c.department),
+      sanitizeCSV(c.course_code),
+      sanitizeCSV(c.section),
+      sanitizeCSV(c.course_name),
+      sanitizeCSV(c.instructor),
+      sanitizeCSV(c.credits),
+      sanitizeCSV(c.ects),
+      sanitizeCSV(c.exam_location),
+      sanitizeCSV(c.exam_date),
     ]);
 
     const csvContent = '\uFEFF' + [headers.join(','), ...rows.map((r) => r.join(','))].join('\n');
@@ -455,21 +477,25 @@ export default function CourseData() {
       </div>
 
       {/* Course Detail Modal Drawer */}
-      {activeCourse && (
+      {activeCourse && createPortal(
         <div
           style={{
             position: 'fixed',
             inset: 0,
             background: 'rgba(5, 5, 8, 0.85)',
-            zIndex: 100,
+            zIndex: 200,
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             padding: '16px',
           }}
+          onClick={() => setActiveCourse(null)}
+          role="dialog"
+          aria-modal="true"
         >
           <div
             className="cyber-card animate-fade-in"
+            onClick={(e) => e.stopPropagation()}
             style={{
               width: '100%',
               maxWidth: '600px',
@@ -604,7 +630,8 @@ export default function CourseData() {
               </button>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );

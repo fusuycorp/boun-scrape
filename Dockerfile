@@ -19,19 +19,27 @@ FROM python:3.12-slim AS runner
 
 WORKDIR /app
 
+# Create unprivileged user and directories for persistent storage and exports
+RUN groupadd -g 10001 appuser && \
+    useradd -u 10001 -g appuser -d /app -s /sbin/nologin appuser && \
+    mkdir -p /data /app/exports && \
+    chown -R appuser:appuser /data /app
+
 # Environment configuration
 ENV PATH="/app/.venv/bin:$PATH" \
     DB_PATH=/data/schedules.db \
+    COOKIES_PATH=/data/cookies.txt \
+    RECAPTCHA_TOKEN_PATH=/data/recaptcha_token.txt \
+    EXPORT_DIR=/data/exports \
     PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1
 
 # Copy virtual environment and source code
-COPY --from=builder /app/.venv /app/.venv
-COPY pyproject.toml README.md ./
-COPY src ./src
+COPY --from=builder --chown=appuser:appuser /app/.venv /app/.venv
+COPY --chown=appuser:appuser pyproject.toml README.md ./
+COPY --chown=appuser:appuser src ./src
 
-# Create directory for persistent SQLite database storage and exports
-RUN mkdir -p /data /app/exports
+USER 10001:10001
 
 EXPOSE 8000
 

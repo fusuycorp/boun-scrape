@@ -151,7 +151,7 @@ class QuotaService:
 
             async with self._lock:
                 # Bound cache growth in a long-lived daemon: evict oldest entry once
-                # the cap is exceeded. OrderedDict behaviour via insertion order: O(1) pop.
+                # the cap is exceeded.
                 if (
                     self.max_cache_size
                     and len(self._cache) >= self.max_cache_size
@@ -160,6 +160,7 @@ class QuotaService:
                     # dict preserves insertion order (3.7+); pop first inserted (oldest)
                     oldest = next(iter(self._cache))
                     del self._cache[oldest]
+                self._cache.pop(cache_key, None)
                 self._cache[cache_key] = _QuotaCacheEntry(
                     timestamp=time.monotonic(),
                     records=records,

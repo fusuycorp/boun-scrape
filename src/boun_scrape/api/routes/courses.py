@@ -14,6 +14,7 @@ from boun_scrape.domain.dto import (
     course_to_dto,
     department_to_dto,
 )
+from boun_scrape.domain.models import compute_course_hash
 from boun_scrape.storage.repository import CourseRepository
 
 router = APIRouter(tags=["Courses"])
@@ -72,9 +73,9 @@ def get_courses(
     pages = (total + size - 1) // size if total > 0 else 0
     items = [course_to_dto(c) for c in courses]
 
-    # Compute weak ETag based on pagination parameters, total matches, and course IDs
-    item_ids = [str(c.id or "") for c in courses]
-    etag_raw = f"{total}:{page}:{size}:{','.join(item_ids)}"
+    # Compute weak ETag based on pagination parameters, total matches, and course content hashes
+    item_signatures = [f"{c.id}:{compute_course_hash(c)}" for c in courses]
+    etag_raw = f"{total}:{page}:{size}:{','.join(item_signatures)}"
     etag = f'W/"{hashlib.sha1(etag_raw.encode()).hexdigest()}"'
 
     if _matches_etag(request.headers.get("if-none-match"), etag):

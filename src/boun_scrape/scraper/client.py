@@ -8,7 +8,7 @@ import random
 import shlex
 from pathlib import Path
 from typing import Any, Self
-from urllib.parse import parse_qs
+from urllib.parse import parse_qs, urlparse
 
 import httpx
 
@@ -347,6 +347,29 @@ class BounScraperClient:
 
         return response
 
+    def _validate_url(self, url: str) -> str:
+        """Ensure the target URL is either a relative path or matches allowed Boğaziçi origins."""
+        if not url:
+            return "/"
+        parsed = urlparse(url)
+        if parsed.scheme or parsed.netloc:
+            base_parsed = urlparse(self.base_url)
+            allowed_hosts = {
+                base_parsed.netloc.lower(),
+                "registration.bogazici.edu.tr",
+                "registration.boun.edu.tr",
+            }
+            if parsed.netloc.lower() not in allowed_hosts:
+                raise BounHttpError(
+                    f"Disallowed target URL origin '{parsed.scheme}://{parsed.netloc}'. "
+                    f"Target URL must match allowed university origins or be a relative path."
+                )
+            if (parsed.scheme, parsed.netloc) == (base_parsed.scheme, base_parsed.netloc):
+                path = parsed.path or "/"
+                return path + (f"?{parsed.query}" if parsed.query else "")
+            return url
+        return url
+
     async def get(
         self,
         url: str,
@@ -356,13 +379,14 @@ class BounScraperClient:
         retries: int | None = None,
     ) -> httpx.Response:
         """Perform a GET request with jitter, retries, and encoding handling."""
+        target_url = self._validate_url(url)
         last_exception: Exception | None = None
         effective_retries = retries if retries is not None else self.max_retries
 
         for attempt in range(1, effective_retries + 1):
             await self._apply_jitter()
             try:
-                response = await self._client.get(url, params=params, headers=headers)
+                response = await self._client.get(target_url, params=params, headers=headers)
                 if response.status_code >= 500:
                     retry_after = _parse_retry_after(response.headers.get("Retry-After"))
                     raise BounHttpError(
@@ -414,6 +438,7 @@ class BounScraperClient:
         retries: int | None = None,
     ) -> httpx.Response:
         """Perform a POST request with jitter, retries, and encoding handling."""
+        target_url = self._validate_url(url)
         last_exception: Exception | None = None
         effective_retries = retries if retries is not None else self.max_retries
 
@@ -421,7 +446,7 @@ class BounScraperClient:
             await self._apply_jitter()
             try:
                 response = await self._client.post(
-                    url, data=data, params=params, headers=headers
+                    target_url, data=data, params=params, headers=headers
                 )
                 if response.status_code >= 500:
                     retry_after = _parse_retry_after(response.headers.get("Retry-After"))

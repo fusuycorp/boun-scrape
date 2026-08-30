@@ -766,6 +766,52 @@ class TestApiEndpoints:
         assert isinstance(data["departments"], list)
 
     @pytest.mark.asyncio
+    async def test_scraper_master_coverage_endpoint(
+        self,
+        async_client: AsyncClient,
+        seeded_repo: CourseRepository,
+    ) -> None:
+        res = await async_client.get("/api/v1/scraper/coverage/master")
+        assert res.status_code == 200
+        data = res.json()
+        assert "total_terms" in data
+        assert "total_departments" in data
+        assert "completed_departments" in data
+        assert "failed_departments" in data
+        assert "pending_departments" in data
+        assert "total_courses" in data
+        assert "percent_complete" in data
+        assert "terms" in data
+        assert isinstance(data["terms"], list)
+
+    @pytest.mark.asyncio
+    async def test_trigger_scrape_failed_only_payload(
+        self,
+        async_client: AsyncClient,
+        seeded_repo: CourseRepository,
+    ) -> None:
+        # Background single-term failed-only
+        res = await async_client.post(
+            "/api/v1/scraper/trigger",
+            json={"term": "2024/2025-1", "failed_only": True, "background": True},
+        )
+        assert res.status_code == 200
+        data = res.json()
+        assert data["status"] == "triggered"
+        assert data["failed_only"] is True
+
+        # All-terms failed-only
+        res_all = await async_client.post(
+            "/api/v1/scraper/trigger",
+            json={"all_terms": True, "failed_only": True, "background": True},
+        )
+        assert res_all.status_code == 200
+        data_all = res_all.json()
+        assert data_all["status"] == "triggered"
+        assert data_all["all_terms"] is True
+        assert data_all["failed_only"] is True
+
+    @pytest.mark.asyncio
     async def test_security_headers_present(self, async_client: AsyncClient) -> None:
         response = await async_client.get("/")
         assert response.status_code == 200
