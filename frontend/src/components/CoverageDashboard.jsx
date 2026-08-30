@@ -35,35 +35,49 @@ export default function CoverageDashboard() {
   const [confirmModal, setConfirmModal] = useState({ open: false, type: '', deptCode: null });
 
   // Load available terms
-  const fetchTerms = useCallback(async () => {
+  const fetchTerms = useCallback(async (signal) => {
     try {
-      const termList = await api.getTerms().catch(() => []);
-      if (isMountedRef.current) {
+      const termList = await api.getTerms({ signal }).catch((err) => {
+        if (err.name === 'AbortError' || err.name === 'DOMException' || signal?.aborted) return [];
+        return [];
+      });
+      if (isMountedRef.current && !signal?.aborted) {
         setTerms(termList || []);
         if (termList && termList.length > 0 && !selectedTerm) {
           setSelectedTerm(termList[0]);
         }
       }
-    } catch {
+    } catch (err) {
+      if (err.name === 'AbortError' || err.name === 'DOMException' || signal?.aborted) return;
       // Ignore
     }
   }, [isMountedRef, selectedTerm]);
 
   // Load coverage data for selected term
-  const fetchCoverage = useCallback(async () => {
+  const fetchCoverage = useCallback(async (signalOrOptions) => {
     if (!selectedTerm) return;
+    const signal =
+      signalOrOptions instanceof AbortSignal
+        ? signalOrOptions
+        : signalOrOptions?.signal instanceof AbortSignal
+        ? signalOrOptions.signal
+        : undefined;
+
     try {
       setRefreshing(true);
-      const res = await api.getScraperCoverage(selectedTerm);
-      if (isMountedRef.current) {
+      const res = await api.getCoverageSummary(selectedTerm, { signal });
+      if (isMountedRef.current && !signal?.aborted) {
         setCoverageData(res);
       }
     } catch (err) {
+      if (err.name === 'AbortError' || err.name === 'DOMException' || signal?.aborted) {
+        return;
+      }
       if (isMountedRef.current) {
         showToast(err.message || 'FAILED_TO_LOAD_COVERAGE_DATA', 'error');
       }
     } finally {
-      if (isMountedRef.current) {
+      if (isMountedRef.current && !signal?.aborted) {
         setLoading(false);
         setRefreshing(false);
       }
@@ -71,12 +85,20 @@ export default function CoverageDashboard() {
   }, [selectedTerm, isMountedRef, showToast]);
 
   useEffect(() => {
-    fetchTerms();
+    const controller = new AbortController();
+    fetchTerms(controller.signal);
+    return () => {
+      controller.abort();
+    };
   }, [fetchTerms]);
 
   useEffect(() => {
     if (selectedTerm) {
-      fetchCoverage();
+      const controller = new AbortController();
+      fetchCoverage(controller.signal);
+      return () => {
+        controller.abort();
+      };
     }
   }, [selectedTerm, fetchCoverage]);
 

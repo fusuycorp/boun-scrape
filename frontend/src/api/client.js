@@ -91,25 +91,69 @@ export const api = {
   getMe: () => apiRequest('/auth/me'),
 
   // Stats & Lookups
-  getStats: () => apiRequest('/stats'),
-  getTerms: () => apiRequest('/terms'),
-  getDepartments: () => apiRequest('/departments'),
+  getStats: (options = {}) => apiRequest('/stats', options),
+  getTerms: (options = {}) => apiRequest('/terms', options),
+  getDepartments: (paramsOrOptions = {}, options = {}) => {
+    let params = {};
+    let signal = options.signal;
+    if (paramsOrOptions) {
+      if (paramsOrOptions.signal instanceof AbortSignal) {
+        signal = signal || paramsOrOptions.signal;
+      }
+      const { signal: s, ...rest } = paramsOrOptions;
+      if (s instanceof AbortSignal) {
+        signal = signal || s;
+      }
+      params = rest;
+    }
+    return apiRequest('/departments', {
+      params: Object.keys(params).length > 0 ? params : undefined,
+      signal,
+      ...options,
+    });
+  },
 
   // Courses Search
-  getCourses: (params) => apiRequest('/courses', { params }),
+  getCourses: (params = {}, options = {}) => {
+    const { signal, ...restParams } = typeof params === 'object' && params !== null ? params : {};
+    const effectiveSignal = options.signal || signal;
+    return apiRequest('/courses', { params: restParams, signal: effectiveSignal, ...options });
+  },
+
+  // Feeds
+  getDeltas: (params = {}, options = {}) => {
+    const { signal, ...restParams } = typeof params === 'object' && params !== null ? params : {};
+    const effectiveSignal = options.signal || signal;
+    return apiRequest('/feeds/deltas', { params: restParams, signal: effectiveSignal, ...options });
+  },
 
   // Scraper Control
-  getScraperConfig: () => apiRequest('/scraper/config'),
-  updateScraperConfig: (data) => apiRequest('/scraper/config', { method: 'POST', body: data }),
-  startScrape: (payload = {}) => apiRequest('/scraper/trigger', { method: 'POST', body: payload }),
-  stopScrape: () => apiRequest('/scraper/stop', { method: 'POST' }),
-  getScrapeStatus: () => apiRequest('/scraper/status'),
-  getScrapeLogs: (clear = false) => apiRequest('/scraper/logs', { params: { clear } }),
-  getScraperCoverage: (term) => apiRequest('/scraper/coverage', { params: term ? { term } : {} }),
-  getScheduleConfig: () => apiRequest('/scraper/schedule'),
-  updateScheduleConfig: (data) => apiRequest('/scraper/schedule', { method: 'POST', body: data }),
-  startSchedulerDaemon: () => apiRequest('/scraper/start-daemon', { method: 'POST' }),
-  stopSchedulerDaemon: () => apiRequest('/scraper/stop-daemon', { method: 'POST' }),
+  getScraperConfig: (options = {}) => apiRequest('/scraper/config', options),
+  updateScraperConfig: (data, options = {}) => apiRequest('/scraper/config', { method: 'POST', body: data, ...options }),
+  startScrape: (payload = {}, options = {}) => apiRequest('/scraper/trigger', { method: 'POST', body: payload, ...options }),
+  stopScrape: (options = {}) => apiRequest('/scraper/stop', { method: 'POST', ...options }),
+  getScrapeStatus: (options = {}) => apiRequest('/scraper/status', options),
+  getScrapeLogs: (clear = false, options = {}) => apiRequest('/scraper/logs', { params: { clear }, ...options }),
+  getCoverageSummary: (termOrOptions = {}, options = {}) => {
+    let term = null;
+    let signal = options.signal;
+    if (typeof termOrOptions === 'string') {
+      term = termOrOptions;
+    } else if (termOrOptions && typeof termOrOptions === 'object') {
+      if ('term' in termOrOptions) term = termOrOptions.term;
+      if ('signal' in termOrOptions) signal = signal || termOrOptions.signal;
+    }
+    return apiRequest('/scraper/coverage', {
+      params: term ? { term } : undefined,
+      signal,
+      ...options,
+    });
+  },
+  getScraperCoverage: (termOrOptions = {}, options = {}) => api.getCoverageSummary(termOrOptions, options),
+  getScheduleConfig: (options = {}) => apiRequest('/scraper/schedule', options),
+  updateScheduleConfig: (data, options = {}) => apiRequest('/scraper/schedule', { method: 'POST', body: data, ...options }),
+  startSchedulerDaemon: (options = {}) => apiRequest('/scraper/start-daemon', { method: 'POST', ...options }),
+  stopSchedulerDaemon: (options = {}) => apiRequest('/scraper/stop-daemon', { method: 'POST', ...options }),
 
   // Quota
   checkQuota: (abbr, code, section, term, options = {}) =>

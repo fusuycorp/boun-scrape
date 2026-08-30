@@ -317,6 +317,22 @@ class TestApiEndpoints:
         assert len(depts) == 2
 
     @pytest.mark.asyncio
+    async def test_get_departments_etag_caching(self, async_client: AsyncClient) -> None:
+        response = await async_client.get("/api/v1/departments")
+        assert response.status_code == 200
+        etag = response.headers.get("etag")
+        assert etag is not None
+        assert etag.startswith('W/"')
+
+        # Conditional GET with matching ETag returns 304
+        cached_response = await async_client.get("/api/v1/departments", headers={"If-None-Match": etag})
+        assert cached_response.status_code == 304
+
+        # Conditional GET with non-matching ETag returns 200
+        mismatch_response = await async_client.get("/api/v1/departments", headers={"If-None-Match": 'W/"mismatch"'})
+        assert mismatch_response.status_code == 200
+
+    @pytest.mark.asyncio
     async def test_get_stats(self, async_client: AsyncClient) -> None:
         response = await async_client.get("/api/v1/stats")
         assert response.status_code == 200
@@ -338,6 +354,22 @@ class TestApiEndpoints:
         assert data["size"] == 2
         assert data["pages"] == 2
         assert len(data["items"]) == 2
+
+    @pytest.mark.asyncio
+    async def test_get_courses_etag_caching(self, async_client: AsyncClient) -> None:
+        response = await async_client.get("/api/v1/courses?department=CMPE")
+        assert response.status_code == 200
+        etag = response.headers.get("etag")
+        assert etag is not None
+        assert etag.startswith('W/"')
+
+        # Conditional GET with matching ETag returns 304
+        cached_response = await async_client.get("/api/v1/courses?department=CMPE", headers={"If-None-Match": etag})
+        assert cached_response.status_code == 304
+
+        # Conditional GET with non-matching ETag returns 200
+        mismatch_response = await async_client.get("/api/v1/courses?department=CMPE", headers={"If-None-Match": 'W/"mismatch"'})
+        assert mismatch_response.status_code == 200
 
     @pytest.mark.asyncio
     async def test_get_courses_filter_by_department(self, async_client: AsyncClient) -> None:

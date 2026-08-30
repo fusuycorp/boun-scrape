@@ -46,18 +46,34 @@ export default function CourseData() {
 
   // Load lookup options
   useEffect(() => {
-    Promise.all([api.getTerms().catch(() => []), api.getDepartments().catch(() => [])]).then(
-      ([termsRes, deptsRes]) => {
-        if (isMountedRef.current) {
-          setTerms(termsRes);
-          setDepartments(deptsRes);
+    const controller = new AbortController();
+    Promise.all([
+      api.getTerms({ signal: controller.signal }).catch((err) => {
+        if (err.name === 'AbortError' || err.name === 'DOMException' || controller.signal.aborted) return [];
+        return [];
+      }),
+      api.getDepartments({ signal: controller.signal }).catch((err) => {
+        if (err.name === 'AbortError' || err.name === 'DOMException' || controller.signal.aborted) return [];
+        return [];
+      }),
+    ])
+      .then(([termsRes, deptsRes]) => {
+        if (isMountedRef.current && !controller.signal.aborted) {
+          setTerms(termsRes || []);
+          setDepartments(deptsRes || []);
         }
-      }
-    );
+      })
+      .catch((err) => {
+        if (err.name === 'AbortError' || err.name === 'DOMException' || controller.signal.aborted) return;
+      });
+
+    return () => {
+      controller.abort();
+    };
   }, [isMountedRef]);
 
   // Fetch courses
-  const fetchCourses = useCallback(async () => {
+  const fetchCourses = useCallback(async (signal) => {
     setLoading(true);
     try {
       const res = await api.getCourses({
@@ -67,26 +83,34 @@ export default function CourseData() {
         day: selectedDay,
         page,
         size: 50,
+        signal,
       });
 
-      if (isMountedRef.current) {
+      if (isMountedRef.current && !signal?.aborted) {
         setCourses(res.items || []);
         setTotal(res.total || 0);
         setPages(res.pages || 1);
       }
     } catch (err) {
+      if (err.name === 'AbortError' || err.name === 'DOMException' || signal?.aborted) {
+        return;
+      }
       if (isMountedRef.current) {
         showToast(err.message || 'FAILED_TO_FETCH_COURSE_RECORDS', 'error');
       }
     } finally {
-      if (isMountedRef.current) {
+      if (isMountedRef.current && !signal?.aborted) {
         setLoading(false);
       }
     }
   }, [selectedTerm, selectedDept, debouncedSearch, selectedDay, page, isMountedRef, showToast]);
 
   useEffect(() => {
-    fetchCourses();
+    const controller = new AbortController();
+    fetchCourses(controller.signal);
+    return () => {
+      controller.abort();
+    };
   }, [fetchCourses]);
 
   const daysList = ['M', 'T', 'W', 'Th', 'F', 'Sa'];

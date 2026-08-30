@@ -1,8 +1,9 @@
 """Course catalog, department, and term query endpoints."""
 
+import hashlib
 from typing import Annotated, Any
 
-from fastapi import APIRouter, Depends, HTTPException, Query, status
+from fastapi import APIRouter, Depends, HTTPException, Query, Request, Response, status
 
 from boun_scrape.api.deps import get_course_repo_dep
 from boun_scrape.domain.dto import (
@@ -18,12 +19,28 @@ from boun_scrape.storage.repository import CourseRepository
 router = APIRouter(tags=["Courses"])
 
 
+def _matches_etag(if_none_match: str | None, etag: str) -> bool:
+    """Check if the provided If-None-Match header value matches the computed ETag."""
+    if not if_none_match:
+        return False
+    candidates = [t.strip() for t in if_none_match.split(",")]
+    if "*" in candidates:
+        return True
+    clean_etag = etag.lstrip("W/").strip('"')
+    for candidate in candidates:
+        if candidate == etag or candidate.lstrip("W/").strip('"') == clean_etag:
+            return True
+    return False
+
+
 @router.get(
     "/courses",
     response_model=PaginatedResponse[CourseDTO],
     summary="Query and filter courses with pagination",
 )
 def get_courses(
+    request: Request,
+    response: Response,
     repo: Annotated[CourseRepository, Depends(get_course_repo_dep)],
     term: str | None = Query(default=None, description="Academic term identifier (e.g. 2024/2025-1)"),
     department: str | None = Query(default=None, description="Department code (e.g. CMPE)"),
@@ -36,7 +53,7 @@ def get_courses(
     keyword: str | None = Query(default=None, description="Fulltext keyword search over course fields"),
     page: int = Query(default=1, ge=1, description="Page number (1-indexed)"),
     size: int = Query(default=50, ge=1, le=500, description="Items per page"),
-) -> PaginatedResponse[CourseDTO]:
+) -> Any:
     """Retrieve paginated course catalog entries matching given filter parameters."""
     filters = CourseFilterParams(
         term=term,
@@ -54,6 +71,16 @@ def get_courses(
     courses, total = repo.get_courses(filters)
     pages = (total + size - 1) // size if total > 0 else 0
     items = [course_to_dto(c) for c in courses]
+
+    # Compute weak ETag based on pagination parameters, total matches, and course IDs
+    item_ids = [str(c.id or "") for c in courses]
+    etag_raw = f"{total}:{page}:{size}:{','.join(item_ids)}"
+    etag = f'W/"{hashlib.sha1(etag_raw.encode()).hexdigest()}"'
+
+    if _matches_etag(request.headers.get("if-none-match"), etag):
+        return Response(status_code=status.HTTP_304_NOT_MODIFIED, headers={"ETag": etag})
+
+    response.headers["ETag"] = etag
     return PaginatedResponse[CourseDTO](
         items=items,
         total=total,
@@ -88,12 +115,24 @@ def get_course_by_id(
     summary="List all academic departments",
 )
 def get_departments(
+    request: Request,
+    response: Response,
     repo: Annotated[CourseRepository, Depends(get_course_repo_dep)],
     term: str | None = Query(default=None, description="Optional term filter"),
-) -> list[DepartmentDTO]:
+) -> Any:
     """Retrieve academic departments offering courses."""
     depts = repo.get_departments(term=term)
-    return [department_to_dto(d) for d in depts]
+    items = [department_to_dto(d) for d in depts]
+
+    # Compute weak ETag based on term, count, and department codes
+    depts_summary = f"{term or 'all'}:{len(depts)}:{','.join(d.code for d in depts)}"
+    etag = f'W/"{hashlib.sha1(depts_summary.encode()).hexdigest()}"'
+
+    if _matches_etag(request.headers.get("if-none-match"), etag):
+        return Response(status_code=status.HTTP_304_NOT_MODIFIED, headers={"ETag": etag})
+
+    response.headers["ETag"] = etag
+    return items
 
 
 @router.get(
