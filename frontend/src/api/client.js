@@ -165,13 +165,28 @@ export const api = {
     return apiRequest('/feeds/deltas', { params: restParams, signal: effectiveSignal, ...options });
   },
 
+  // Scraper Runs & Feeds
+  getScrapeRuns: (params = {}, options = {}) => {
+    const { signal, ...restParams } = typeof params === 'object' && params !== null ? params : {};
+    const effectiveSignal = options.signal || signal;
+    return apiRequest('/feeds/runs', { params: restParams, signal: effectiveSignal, ...options });
+  },
+
   // Scraper Control
   getScraperConfig: (options = {}) => apiRequest('/scraper/config', options),
   updateScraperConfig: (data, options = {}) => apiRequest('/scraper/config', { method: 'POST', body: data, ...options }),
   startScrape: (payload = {}, options = {}) => apiRequest('/scraper/trigger', { method: 'POST', body: payload, ...options }),
   stopScrape: (options = {}) => apiRequest('/scraper/stop', { method: 'POST', ...options }),
   getScrapeStatus: (options = {}) => apiRequest('/scraper/status', options),
-  getScrapeLogs: (clear = false, options = {}) => apiRequest('/scraper/logs', { params: { clear }, ...options }),
+  getScrapeLogs: (paramsOrClear = false, options = {}) => {
+    let params = {};
+    if (typeof paramsOrClear === 'boolean') {
+      params = { clear: paramsOrClear };
+    } else if (paramsOrClear && typeof paramsOrClear === 'object') {
+      params = paramsOrClear;
+    }
+    return apiRequest('/scraper/logs', { params, ...options });
+  },
   getCoverageSummary: (termOrOptions = {}, options = {}) => {
     let term = null;
     let signal = options.signal;

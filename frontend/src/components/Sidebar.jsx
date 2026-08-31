@@ -7,6 +7,7 @@ import {
   Search,
   Activity,
   Sliders,
+  ScrollText,
   Menu,
   X,
   ExternalLink,
@@ -24,6 +25,7 @@ export default function Sidebar() {
     { to: '/explorer', label: '[04] //_COURSES', icon: Search },
     { to: '/quota', label: '[05] //_QUOTA', icon: Activity },
     { to: '/config', label: '[06] //_CONFIG', icon: Sliders },
+    { to: '/logs', label: '[07] //_LOGS', icon: ScrollText },
   ];
 
   const toggleMobile = () => setMobileOpen((prev) => !prev);

@@ -12,6 +12,7 @@ import CoverageDashboard from './components/CoverageDashboard';
 import CourseData from './components/CourseData';
 import QuotaMonitor from './components/QuotaMonitor';
 import ConfigManager from './components/ConfigManager';
+import LogsView from './components/LogsView';
 import Login from './components/Login';
 
 function ProtectedRoute({ children }) {
@@ -145,6 +146,7 @@ function MainLayout() {
             <Route path="/explorer" element={<CourseData />} />
             <Route path="/quota" element={<QuotaMonitor />} />
             <Route path="/config" element={<ConfigManager />} />
+            <Route path="/logs" element={<LogsView />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </ErrorBoundary>
