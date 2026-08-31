@@ -30,6 +30,7 @@ class Settings(BaseSettings):
     admin_user: str = Field(default="admin", validation_alias=AliasChoices("BOUN_ADMIN_USER", "ADMIN_USER", "admin_user"))
     admin_password_hash: str | None = Field(default=None, validation_alias=AliasChoices("BOUN_ADMIN_PASSWORD_HASH", "ADMIN_PASSWORD_HASH", "admin_password_hash"))
     webhook_secret: str = Field(default="", validation_alias=AliasChoices("BOUN_WEBHOOK_SECRET", "WEBHOOK_SECRET", "webhook_secret"))
+    webhook_urls: Annotated[list[str], NoDecode] = Field(default=[], validation_alias=AliasChoices("BOUN_WEBHOOK_URLS", "WEBHOOK_URLS", "webhook_urls"))
     export_dir: str = Field(default="exports", validation_alias=AliasChoices("BOUN_EXPORT_DIR", "EXPORT_DIR", "export_dir"))
     allowed_origins: Annotated[list[str], NoDecode] = Field(default=["*"], validation_alias=AliasChoices("BOUN_ALLOWED_ORIGINS", "ALLOWED_ORIGINS", "allowed_origins"))
     scraper_interval_seconds: int = Field(default=3600, validation_alias=AliasChoices("BOUN_SCRAPER_INTERVAL", "SCRAPER_INTERVAL", "scraper_interval_seconds"))
@@ -100,7 +101,26 @@ class Settings(BaseSettings):
             return [origin.strip() for origin in v_str.split(",") if origin.strip()]
         if isinstance(v, list):
             return [str(x).strip() for x in v if str(x).strip()]
-        return ["*"]
+    @field_validator("webhook_urls", mode="before")
+    @classmethod
+    def parse_webhook_urls(cls, v: Any) -> list[str]:
+        if isinstance(v, str):
+            v_str = v.strip()
+            if not v_str:
+                return []
+            if v_str.startswith("[") and v_str.endswith("]"):
+                import json
+
+                try:
+                    parsed = json.loads(v_str)
+                    if isinstance(parsed, list):
+                        return [str(x).strip() for x in parsed if str(x).strip()]
+                except Exception:
+                    pass
+            return [url.strip() for url in v_str.split(",") if url.strip()]
+        if isinstance(v, list):
+            return [str(x).strip() for x in v if str(x).strip()]
+        return []
 
     model_config = SettingsConfigDict(
         env_file=".env",

@@ -115,3 +115,21 @@ class TestConfig:
         with patch.dict(os.environ, env_vars, clear=False):
             settings = Settings(_env_file=None)
             assert settings.jwt_secret_key == "a" * 32
+
+    def test_webhook_urls_parsing(self) -> None:
+        # Default is empty
+        assert Settings().webhook_urls == []
+
+        # Comma-separated string
+        with patch.dict(os.environ, {"BOUN_WEBHOOK_URLS": "https://example.com/hook1, https://example.com/hook2"}, clear=False):
+            s = Settings()
+            assert s.webhook_urls == ["https://example.com/hook1", "https://example.com/hook2"]
+
+        # JSON array string
+        with patch.dict(os.environ, {"WEBHOOK_URLS": '["https://example.com/a", "https://example.com/b"]'}, clear=False):
+            s = Settings()
+            assert s.webhook_urls == ["https://example.com/a", "https://example.com/b"]
+
+        # Direct list
+        s = Settings(webhook_urls=["https://direct.com/hook"])
+        assert s.webhook_urls == ["https://direct.com/hook"]

@@ -7,6 +7,7 @@ import json
 import httpx
 import pytest
 
+from boun_scrape.config import Settings
 from boun_scrape.domain.events import ChangeType, CourseDeltaEvent
 from boun_scrape.domain.models import RunStatus, ScrapeRunSummary
 from boun_scrape.feeds.webhooks import (
@@ -328,4 +329,9 @@ class TestWebhookDispatcher:
             assert results[0].success is True
             assert dispatcher._consecutive_failures[target_url] == 0
             assert target_url not in dispatcher._cooldown_until
+
+    def test_webhook_dispatcher_defaults_from_settings(self) -> None:
+        custom_settings = Settings(webhook_urls=["https://setting.com/hook1", "https://setting.com/hook2"])
+        dispatcher = WebhookDispatcher(settings=custom_settings)
+        assert dispatcher.urls == ["https://setting.com/hook1", "https://setting.com/hook2"]
 

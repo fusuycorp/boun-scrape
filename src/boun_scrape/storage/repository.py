@@ -1,5 +1,6 @@
 """High-performance repository for SQLite persistence of courses, slots, and runs."""
 
+from datetime import datetime, timezone
 import json
 import sqlite3
 from typing import Any
@@ -22,6 +23,32 @@ from boun_scrape.domain.models import (
     compute_course_hash,
 )
 from boun_scrape.storage.database import DatabaseManager
+
+
+def _normalize_timestamp(ts: str | None) -> str | None:
+    """Normalize timestamp string/epoch to canonical ISO-8601 UTC string for SQLite comparison."""
+    if ts is None:
+        return None
+    raw = ts.strip()
+    if not raw:
+        return None
+    try:
+        if raw.replace(".", "", 1).isdigit() and not ("-" in raw or ":" in raw):
+            dt = datetime.fromtimestamp(float(raw), tz=timezone.utc)
+            return dt.isoformat()
+
+        norm = raw[:-1] + "+00:00" if (raw.endswith("Z") or raw.endswith("z")) else raw
+        if " " in norm and "T" not in norm:
+            norm = norm.replace(" ", "T", 1)
+
+        dt = datetime.fromisoformat(norm)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        else:
+            dt = dt.astimezone(timezone.utc)
+        return dt.isoformat()
+    except (ValueError, TypeError, OverflowError):
+        return raw
 
 
 def _row_to_course(row: sqlite3.Row, slots: list[CourseSlot]) -> Course:
@@ -349,18 +376,18 @@ class CourseRepository:
             if not course_rows:
                 return []
 
-            course_ids = [row["id"] for row in course_rows]
-            slots_by_course_id: dict[int, list[CourseSlot]] = {cid: [] for cid in course_ids}
-            placeholders = ",".join("?" * len(course_ids))
-            slots_query = f"""
-                SELECT * FROM course_slots
-                WHERE course_id IN ({placeholders})
-                ORDER BY course_id, id ASC
+            slots_by_course_id: dict[int, list[CourseSlot]] = {row["id"]: [] for row in course_rows}
+            slots_query = """
+                SELECT s.* FROM course_slots s
+                JOIN courses c ON s.course_id = c.id
+                WHERE c.term = ?
+                ORDER BY s.course_id, s.id ASC
             """
-            slot_rows = conn.execute(slots_query, course_ids).fetchall()
+            slot_rows = conn.execute(slots_query, (term,)).fetchall()
             for slot_row in slot_rows:
                 cid = slot_row["course_id"]
-                slots_by_course_id[cid].append(_row_to_slot(slot_row))
+                if cid in slots_by_course_id:
+                    slots_by_course_id[cid].append(_row_to_slot(slot_row))
 
             return [
                 _row_to_course(row, slots_by_course_id[row["id"]])
@@ -577,6 +604,9 @@ class CourseRepository:
         term: str | None = None,
         run_id: str | None = None,
         after_timestamp: str | None = None,
+        since: str | None = None,
+        until: str | None = None,
+        order: str = "desc",
         limit: int = 100,
     ) -> list[CourseDeltaEvent]:
         """Fetch historical course delta events with optional filtering."""
@@ -589,15 +619,28 @@ class CourseRepository:
         if run_id:
             conditions.append("run_id = ?")
             params.append(run_id)
-        if after_timestamp:
-            conditions.append("created_at > ?")
-            params.append(after_timestamp)
 
+        after_norm = _normalize_timestamp(after_timestamp)
+        since_norm = _normalize_timestamp(since)
+        until_norm = _normalize_timestamp(until)
+
+        if after_norm:
+            conditions.append("replace(created_at, ' ', 'T') > ?")
+            params.append(after_norm)
+        elif since_norm:
+            conditions.append("replace(created_at, ' ', 'T') >= ?")
+            params.append(since_norm)
+
+        if until_norm:
+            conditions.append("replace(created_at, ' ', 'T') <= ?")
+            params.append(until_norm)
+
+        order_dir = "ASC" if str(order).strip().upper() == "ASC" else "DESC"
         where_clause = f"WHERE {' AND '.join(conditions)}" if conditions else ""
         query = f"""
             SELECT * FROM course_deltas
             {where_clause}
-            ORDER BY created_at DESC, id DESC
+            ORDER BY created_at {order_dir}, id {order_dir}
             LIMIT ?
         """
         params.append(limit)
@@ -647,19 +690,21 @@ class CourseRepository:
         if not rows:
             return
 
+        now_utc = datetime.now(timezone.utc).isoformat()
         with self.db.transaction() as conn:
             conn.executemany(
                 """
                 INSERT INTO quota_snapshots (
                     term, course_code, section, quota_department, status, quota, current,
-                    quota_numeric, current_numeric, is_consent, is_unlimited, available
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    quota_numeric, current_numeric, is_consent, is_unlimited, available,
+                    captured_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 [
                     (
                         term, course_code, section, r.department, r.status, r.quota, r.current,
                         r.quota_numeric, r.current_numeric, int(r.is_consent), int(r.is_unlimited),
-                        r.available,
+                        r.available, now_utc,
                     )
                     for term, course_code, section, r in rows
                 ],
@@ -672,19 +717,21 @@ class CourseRepository:
         if not records:
             return
 
+        now_utc = datetime.now(timezone.utc).isoformat()
         with self.db.transaction() as conn:
             for r in records:
                 conn.execute(
                     """
                     INSERT INTO quota_snapshots (
                         term, course_code, section, quota_department, status, quota, current,
-                        quota_numeric, current_numeric, is_consent, is_unlimited, available
-                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        quota_numeric, current_numeric, is_consent, is_unlimited, available,
+                        captured_at
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                     """,
                     (
                         term, course_code, section, r.department, r.status, r.quota, r.current,
                         r.quota_numeric, r.current_numeric, int(r.is_consent), int(r.is_unlimited),
-                        r.available,
+                        r.available, now_utc,
                     ),
                 )
 
@@ -692,6 +739,9 @@ class CourseRepository:
         self,
         term: str | None = None,
         after_timestamp: str | None = None,
+        since: str | None = None,
+        until: str | None = None,
+        order: str = "asc",
         limit: int = 500,
     ) -> list[QuotaSnapshot]:
         """Fetch quota snapshots, optionally filtered by term and/or captured strictly after a timestamp."""
@@ -701,15 +751,28 @@ class CourseRepository:
         if term:
             conditions.append("term = ?")
             params.append(term)
-        if after_timestamp:
-            conditions.append("captured_at > ?")
-            params.append(after_timestamp)
 
+        after_norm = _normalize_timestamp(after_timestamp)
+        since_norm = _normalize_timestamp(since)
+        until_norm = _normalize_timestamp(until)
+
+        if after_norm:
+            conditions.append("replace(captured_at, ' ', 'T') > ?")
+            params.append(after_norm)
+        elif since_norm:
+            conditions.append("replace(captured_at, ' ', 'T') >= ?")
+            params.append(since_norm)
+
+        if until_norm:
+            conditions.append("replace(captured_at, ' ', 'T') <= ?")
+            params.append(until_norm)
+
+        order_dir = "DESC" if str(order).strip().upper() == "DESC" else "ASC"
         where_clause = f"WHERE {' AND '.join(conditions)}" if conditions else ""
         query = f"""
             SELECT * FROM quota_snapshots
             {where_clause}
-            ORDER BY captured_at ASC, id ASC
+            ORDER BY captured_at {order_dir}, id {order_dir}
             LIMIT ?
         """
         params.append(limit)

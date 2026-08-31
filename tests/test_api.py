@@ -333,6 +333,20 @@ class TestApiEndpoints:
         assert mismatch_response.status_code == 200
 
     @pytest.mark.asyncio
+    async def test_get_terms_etag_caching(self, async_client: AsyncClient) -> None:
+        response = await async_client.get("/api/v1/terms")
+        assert response.status_code == 200
+        etag = response.headers.get("etag")
+        assert etag is not None
+        assert etag.startswith('W/"')
+
+        cached = await async_client.get("/api/v1/terms", headers={"If-None-Match": etag})
+        assert cached.status_code == 304
+
+        mismatch = await async_client.get("/api/v1/terms", headers={"If-None-Match": 'W/"mismatch"'})
+        assert mismatch.status_code == 200
+
+    @pytest.mark.asyncio
     async def test_get_stats(self, async_client: AsyncClient) -> None:
         response = await async_client.get("/api/v1/stats")
         assert response.status_code == 200
@@ -518,6 +532,34 @@ class TestApiEndpoints:
         assert filtered.json() == []
 
     @pytest.mark.asyncio
+    async def test_feed_deltas_etag_and_ordering(self, async_client: AsyncClient) -> None:
+        response = await async_client.get("/api/v1/feeds/deltas?term=2024/2025-1&order=asc")
+        assert response.status_code == 200
+        etag = response.headers.get("etag")
+        assert etag is not None
+
+        cached = await async_client.get("/api/v1/feeds/deltas?term=2024/2025-1&order=asc", headers={"If-None-Match": etag})
+        assert cached.status_code == 304
+
+    @pytest.mark.asyncio
+    async def test_feed_quota_snapshots_etag_and_ordering(
+        self, async_client: AsyncClient, seeded_repo: CourseRepository
+    ) -> None:
+        seeded_repo.save_quota_snapshots(
+            term="2024/2025-1",
+            course_code="MATH 101",
+            section="01",
+            records=[QuotaRecord(department="MATH", status="Open", quota="50", current="40")],
+        )
+        response = await async_client.get("/api/v1/feeds/quota-snapshots?term=2024/2025-1&order=asc")
+        assert response.status_code == 200
+        etag = response.headers.get("etag")
+        assert etag is not None
+
+        cached = await async_client.get("/api/v1/feeds/quota-snapshots?term=2024/2025-1&order=asc", headers={"If-None-Match": etag})
+        assert cached.status_code == 304
+
+    @pytest.mark.asyncio
     async def test_get_scrape_runs(self, async_client: AsyncClient) -> None:
         response = await async_client.get("/api/v1/feeds/runs?term=2024/2025-1")
         assert response.status_code == 200
@@ -557,6 +599,14 @@ class TestApiEndpoints:
     async def test_download_export_nonexistent_term(self, async_client: AsyncClient) -> None:
         response = await async_client.get("/api/v1/feeds/exports/1990_1991-1/json")
         assert response.status_code == 404
+
+    @pytest.mark.asyncio
+    async def test_download_export_hyphenated_term_format(self, async_client: AsyncClient) -> None:
+        """Verify export downloads work when requesting hyphenated term formats like 2024-2025-1."""
+        response = await async_client.get("/api/v1/feeds/exports/2024-2025-1/json")
+        assert response.status_code == 200
+        assert "application/json" in response.headers["content-type"]
+        assert len(response.json()) == 3
 
     @pytest.mark.asyncio
     async def test_trigger_scrape_background(self, async_client: AsyncClient) -> None:

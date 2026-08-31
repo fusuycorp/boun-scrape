@@ -259,6 +259,65 @@ class TestParseSchedules:
         assert len(courses) == 1
         assert courses[0].instructor == "DR. A, DR. B, DR. C"
 
+    def test_parse_schedules_with_extra_info_column_offset_shift(self) -> None:
+        """Verify dynamic header parsing when an extra Info/Desc column is present (e.g. 2026/2027-1)."""
+        html = """
+        <table>
+            <tr class="schtitle">
+                <td>Code.Sec</td>
+                <td>Abbr.</td>
+                <td>Info</td>
+                <td>Name</td>
+                <td>Cr.</td>
+                <td>Ects</td>
+                <td>Instr.</td>
+                <td>Days</td>
+                <td>Hours</td>
+                <td>Course Delivery Method</td>
+                <td>Final Exam Location</td>
+                <td>Rooms</td>
+                <td>Exam Date</td>
+                <td>Sl.</td>
+                <td>Required for Dept.</td>
+                <td>Departments</td>
+            </tr>
+            <tr class="schtd">
+                <td>MATH 101.01</td>
+                <td>MATH</td>
+                <td><a href="#">Info</a></td>
+                <td>CALCULUS I</td>
+                <td>4.0</td>
+                <td>7.5</td>
+                <td>FATİH F. YILMAZ</td>
+                <td>MWF</td>
+                <td>345</td>
+                <td>Face to Face</td>
+                <td>M 1171</td>
+                <td>M 1171 | M 1171 | M 1171</td>
+                <td>15.01.2027</td>
+                <td>1</td>
+                <td>ALL</td>
+                <td>ALL</td>
+            </tr>
+        </table>
+        """
+        courses = parse_schedules_from_html(html, term="2026/2027-1", department_code="MATH")
+        assert len(courses) == 1
+        c = courses[0]
+        assert c.course_code == "MATH 101"
+        assert c.section == "01"
+        assert c.course_name == "CALCULUS I"
+        assert c.credits == 4.0
+        assert c.ects == 7.5
+        assert c.instructor == "FATİH F. YILMAZ"
+        assert c.delivery_method == "Face to Face"
+        assert c.exam_location == "M 1171"
+        assert c.exam_date == "15.01.2027"
+        assert len(c.slots) == 3
+        assert [s.day for s in c.slots] == ["M", "W", "F"]
+        assert [s.hour for s in c.slots] == ["3", "4", "5"]
+        assert [s.room for s in c.slots] == ["M 1171", "M 1171", "M 1171"]
+
 
 class TestParseQuota:
     """Tests for parsing course quota tables and statuses."""

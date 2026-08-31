@@ -725,3 +725,119 @@ class TestRepository:
         assert terms_dict[term1].failed_departments == 1
         assert terms_dict[term2].completed_departments == 2
         assert terms_dict[term2].failed_departments == 0
+
+    def test_normalize_timestamp_helper(self) -> None:
+        from boun_scrape.storage.repository import _normalize_timestamp
+
+        assert _normalize_timestamp(None) is None
+        assert _normalize_timestamp("") is None
+        assert _normalize_timestamp("   ") is None
+
+        # Space separated
+        norm1 = _normalize_timestamp("2026-08-31 14:00:00")
+        assert norm1 == "2026-08-31T14:00:00+00:00"
+
+        # Z suffix
+        norm2 = _normalize_timestamp("2026-08-31T14:00:00Z")
+        assert norm2 == "2026-08-31T14:00:00+00:00"
+
+        # Timezone offset (+03:00 -> converts to UTC 11:00:00)
+        norm3 = _normalize_timestamp("2026-08-31T14:00:00+03:00")
+        assert norm3 == "2026-08-31T11:00:00+00:00"
+
+        # Numeric epoch string
+        norm4 = _normalize_timestamp("1725112800")
+        assert norm4 is not None
+        assert "T" in norm4
+
+    def test_deltas_cursor_bounds_and_ordering(self, repo: CourseRepository) -> None:
+        events = [
+            CourseDeltaEvent(
+                change_type=ChangeType.ADDED,
+                term="2024/2025-1",
+                department="CMPE",
+                course_code=f"CMPE 15{i}",
+                section="01",
+                timestamp=f"2026-08-31T1{i}:00:00+00:00",
+                new_value={"code": f"CMPE 15{i}"},
+            )
+            for i in range(1, 5)
+        ]
+        repo.save_deltas(events, run_id="run-order")
+
+        # Ascending order
+        asc_deltas = repo.get_deltas(term="2024/2025-1", run_id="run-order", order="asc")
+        assert len(asc_deltas) == 4
+        assert asc_deltas[0].course_code == "CMPE 151"
+        assert asc_deltas[-1].course_code == "CMPE 154"
+
+        # Descending order (default)
+        desc_deltas = repo.get_deltas(term="2024/2025-1", run_id="run-order", order="desc")
+        assert len(desc_deltas) == 4
+        assert desc_deltas[0].course_code == "CMPE 154"
+        assert desc_deltas[-1].course_code == "CMPE 151"
+
+        # Since and until bounds
+        bounded = repo.get_deltas(
+            term="2024/2025-1",
+            run_id="run-order",
+            since="2026-08-31T12:00:00Z",
+            until="2026-08-31T13:00:00Z",
+            order="asc",
+        )
+        assert len(bounded) == 2
+        assert [b.course_code for b in bounded] == ["CMPE 152", "CMPE 153"]
+
+    def test_quota_snapshots_cursor_bounds_and_ordering(self, repo: CourseRepository) -> None:
+        term = "2024/2025-1"
+        repo.save_quota_snapshots(
+            term=term,
+            course_code="CMPE 150",
+            section="01",
+            records=[QuotaRecord(department="CMPE", status="Open", quota="100", current="50")],
+        )
+        with repo.db.connection() as conn:
+            conn.execute("UPDATE quota_snapshots SET captured_at = '2026-08-31T10:00:00+00:00' WHERE course_code = 'CMPE 150'")
+            conn.commit()
+
+        repo.save_quota_snapshots(
+            term=term,
+            course_code="CMPE 160",
+            section="01",
+            records=[QuotaRecord(department="CMPE", status="Open", quota="80", current="40")],
+        )
+        with repo.db.connection() as conn:
+            conn.execute("UPDATE quota_snapshots SET captured_at = '2026-08-31T12:00:00+00:00' WHERE course_code = 'CMPE 160'")
+            conn.commit()
+
+        # Ascending (default for quota snapshots)
+        asc_snapshots = repo.get_quota_snapshots(term=term, order="asc")
+        assert len(asc_snapshots) == 2
+        assert asc_snapshots[0].course_code == "CMPE 150"
+        assert asc_snapshots[1].course_code == "CMPE 160"
+
+        # Descending
+        desc_snapshots = repo.get_quota_snapshots(term=term, order="desc")
+        assert len(desc_snapshots) == 2
+        assert desc_snapshots[0].course_code == "CMPE 160"
+        assert desc_snapshots[1].course_code == "CMPE 150"
+
+        # since / until filter
+        filtered = repo.get_quota_snapshots(term=term, since="2026-08-31 11:00:00")
+        assert len(filtered) == 1
+        assert filtered[0].course_code == "CMPE 160"
+
+    def test_save_quota_snapshots_persists_canonical_utc(self, repo: CourseRepository) -> None:
+        term = "2025/2026-1"
+        repo.save_quota_snapshots(
+            term=term,
+            course_code="EE 101",
+            section="01",
+            records=[QuotaRecord(department="EE", status="Open", quota="50", current="25")],
+        )
+        with repo.db.connection() as conn:
+            row = conn.execute("SELECT captured_at FROM quota_snapshots WHERE course_code = 'EE 101'").fetchone()
+            assert row is not None
+            captured_at = row["captured_at"]
+            assert "T" in captured_at
+            assert "+00:00" in captured_at or "Z" in captured_at

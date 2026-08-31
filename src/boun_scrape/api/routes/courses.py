@@ -11,6 +11,7 @@ from boun_scrape.domain.dto import (
     CourseFilterParams,
     DepartmentDTO,
     PaginatedResponse,
+    StatsDTO,
     course_to_dto,
     department_to_dto,
 )
@@ -142,14 +143,29 @@ def get_departments(
     summary="List all discovered academic terms",
 )
 def get_terms(
+    request: Request,
+    response: Response,
     repo: Annotated[CourseRepository, Depends(get_course_repo_dep)],
-) -> list[str]:
+) -> Any:
     """Retrieve list of unique academic terms present in the system."""
-    return repo.get_terms()
+    terms = repo.get_terms()
+    terms_summary = f"terms:{len(terms)}:{','.join(terms)}"
+    etag = f'W/"{hashlib.sha1(terms_summary.encode()).hexdigest()}"'
+
+    if _matches_etag(request.headers.get("if-none-match"), etag):
+        return Response(status_code=status.HTTP_304_NOT_MODIFIED, headers={"ETag": etag, "Cache-Control": "public, max-age=60"})
+
+    response.headers["ETag"] = etag
+    response.headers["Cache-Control"] = "public, max-age=60"
+    return terms
 
 
-@router.get("/stats", summary="Get aggregate database statistics")
-def get_stats(repo: Annotated[CourseRepository, Depends(get_course_repo_dep)]) -> dict[str, Any]:
+@router.get(
+    "/stats",
+    response_model=StatsDTO,
+    summary="Get aggregate database statistics",
+)
+def get_stats(repo: Annotated[CourseRepository, Depends(get_course_repo_dep)]) -> StatsDTO:
     """Retrieve aggregate course, slot, department, and term counts plus last scrape time."""
     terms = repo.get_terms()
     depts = repo.get_departments()
@@ -164,11 +180,11 @@ def get_stats(repo: Annotated[CourseRepository, Depends(get_course_repo_dep)]) -
 
     last_cached_depts = repo.get_departments_last_cached_at()
 
-    return {
-        "total_courses": total_courses,
-        "total_slots": total_slots,
-        "total_departments": len(depts),
-        "total_terms": len(terms),
-        "last_scraped": latest_run.completed_at if latest_run else None,
-        "last_cached_departments_at": last_cached_depts,
-    }
+    return StatsDTO(
+        total_courses=total_courses,
+        total_slots=total_slots,
+        total_departments=len(depts),
+        total_terms=len(terms),
+        last_scraped=latest_run.completed_at if latest_run else None,
+        last_cached_departments_at=last_cached_depts,
+    )

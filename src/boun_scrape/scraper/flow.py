@@ -7,7 +7,7 @@ from collections.abc import Callable
 from typing import Any
 
 from boun_scrape.domain.models import Course, Department, TermScrapeResult
-from boun_scrape.scraper.client import BounScraperClient
+from boun_scrape.scraper.client import BounHttpError, BounScraperClient
 from boun_scrape.scraper.parser import (
     extract_viewstate_and_semesters,
     parse_departments_from_html,
@@ -174,7 +174,24 @@ async def fetch_department_schedule(
         "bolum": bolum,
     }
 
-    response = await client.get(SCHEDULE_DEPT_URL, params=params)
+    try:
+        response = await client.get(SCHEDULE_DEPT_URL, params=params)
+    except BounHttpError as exc:
+        if exc.status_code == 500 and bolum:
+            logger.info(
+                "Portal returned 500 for department %s with bolum='%s'; retrying with empty bolum fallback",
+                dept_code,
+                bolum,
+            )
+            fallback_params = {
+                "donem": term,
+                "kisaadi": dept_code,
+                "bolum": "",
+            }
+            response = await client.get(SCHEDULE_DEPT_URL, params=fallback_params)
+        else:
+            raise
+
     return parse_schedules_from_html(
         response.text,
         term=term,

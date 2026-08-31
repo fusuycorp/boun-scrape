@@ -64,6 +64,12 @@ export async function apiRequest(endpoint, options = {}) {
   }
 
   if (!response.ok) {
+    if (response.status === 502 || response.status === 503 || response.status === 504) {
+      throw new Error(`BACKEND_UNREACHABLE: HTTP ${response.status} Gateway Error. The backend service may be offline or restarting.`);
+    }
+    if (response.status === 429) {
+      throw new Error('RATE_LIMITED: Too many requests. Please wait and try again.');
+    }
     let errMessage = `HTTP Error ${response.status}`;
     try {
       const errData = await response.json();
@@ -108,6 +114,12 @@ export const api = {
       body,
     }).then(async (res) => {
       if (!res.ok) {
+        if (res.status === 502 || res.status === 503 || res.status === 504) {
+          throw new Error(`BACKEND_UNREACHABLE: HTTP ${res.status} Gateway Error. The backend service is currently offline or restarting.`);
+        }
+        if (res.status === 429) {
+          throw new Error('RATE_LIMITED: Too many login attempts. Please wait 60 seconds before trying again.');
+        }
         const errData = await res.json().catch(() => ({}));
         throw new Error(errData.detail || 'Authentication failed');
       }

@@ -96,7 +96,7 @@ class WebhookDispatcher:
         cfg = settings or get_settings()
 
         if urls is None:
-            self.urls: list[str] = []
+            self.urls = list(getattr(cfg, "webhook_urls", []))
         elif isinstance(urls, str):
             self.urls = [u.strip() for u in urls.split(",") if u.strip()]
         else:

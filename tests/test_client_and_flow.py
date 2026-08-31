@@ -470,6 +470,37 @@ class TestScraperFlow:
             assert len(courses[0].slots) == 2
 
     @pytest.mark.asyncio
+    async def test_fetch_department_schedule_500_fallback_empty_bolum(self) -> None:
+        attempts: list[dict[str, str]] = []
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            query_str = request.url.query.decode("utf-8") if isinstance(request.url.query, bytes) else str(request.url.query)
+            params = parse_qs(query_str)
+            bolum = params.get("bolum", [""])[0]
+            attempts.append({"bolum": bolum, "kisaadi": params.get("kisaadi", [""])[0]})
+            if bolum == "WRONG NAME":
+                return httpx.Response(500, content=b"500 Internal Server Error")
+            return httpx.Response(
+                200, content=SAMPLE_SCHEDULE_HTML.encode("windows-1254")
+            )
+
+        transport = httpx.MockTransport(handler)
+        async_client = httpx.AsyncClient(
+            transport=transport, base_url="https://registration.bogazici.edu.tr"
+        )
+
+        async with BounScraperClient(
+            http_client=async_client, min_jitter=0, max_jitter=0, max_retries=1
+        ) as client:
+            courses = await fetch_department_schedule(
+                client, "2024/2025-3", Department(code="SCED", name="WRONG NAME")
+            )
+            assert len(courses) == 1
+            assert len(attempts) == 2
+            assert attempts[0]["bolum"] == "WRONG NAME"
+            assert attempts[1]["bolum"] == ""
+
+    @pytest.mark.asyncio
     async def test_scrape_term_pipeline(self) -> None:
         def handler(request: httpx.Request) -> httpx.Response:
             if "schedule.aspx" in request.url.path:
@@ -803,4 +834,30 @@ class TestScraperFlow:
                 await client.get("http://169.254.169.254/latest/meta-data")
             with pytest.raises(BounHttpError, match="Disallowed target URL origin"):
                 await client.post("https://evil.attacker.com/steal", data={"leak": "1"})
+
+    @pytest.mark.asyncio
+    async def test_client_zero_retry_backoff(self) -> None:
+        attempts = 0
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            nonlocal attempts
+            attempts += 1
+            if attempts < 3:
+                return httpx.Response(500, text="Internal Server Error")
+            return httpx.Response(200, text="OK")
+
+        async_client = httpx.AsyncClient(
+            transport=httpx.MockTransport(handler),
+            base_url="https://registration.bogazici.edu.tr",
+        )
+        async with BounScraperClient(
+            http_client=async_client,
+            min_jitter=0,
+            max_jitter=0,
+            max_retries=3,
+            retry_backoff_base=0.0,
+        ) as client:
+            response = await client.get("https://registration.bogazici.edu.tr/test")
+            assert response.status_code == 200
+            assert attempts == 3
 

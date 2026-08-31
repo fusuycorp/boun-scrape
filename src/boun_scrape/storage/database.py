@@ -100,10 +100,9 @@ CREATE TABLE IF NOT EXISTS quota_snapshots (
     is_consent INTEGER DEFAULT 0,
     is_unlimited INTEGER DEFAULT 0,
     available INTEGER,
-    captured_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    captured_at TIMESTAMP DEFAULT (strftime('%Y-%m-%dT%H:%M:%SZ', 'now'))
 );
 
--- Indexes for high query performance
 CREATE INDEX IF NOT EXISTS idx_courses_term_dept ON courses(term, department);
 CREATE INDEX IF NOT EXISTS idx_courses_term_code_sec ON courses(term, course_code, section);
 CREATE INDEX IF NOT EXISTS idx_courses_pagination ON courses(term, course_code, section, id);
@@ -129,16 +128,31 @@ class DatabaseManager:
 
     def get_connection(self) -> sqlite3.Connection:
         """Create and configure a new SQLite connection with optimal PRAGMAs."""
-        conn = sqlite3.connect(self.db_path, check_same_thread=False)
-        conn.row_factory = sqlite3.Row
+        try:
+            conn = sqlite3.connect(self.db_path, check_same_thread=False)
+            conn.row_factory = sqlite3.Row
 
-        # Apply database PRAGMAs
-        conn.execute("PRAGMA foreign_keys = ON;")
-        conn.execute("PRAGMA busy_timeout = 5000;")
-        if self.db_path != ":memory:":
-            conn.execute("PRAGMA synchronous = NORMAL;")
+            # Apply database PRAGMAs
+            conn.execute("PRAGMA foreign_keys = ON;")
+            conn.execute("PRAGMA busy_timeout = 5000;")
+            if self.db_path != ":memory:":
+                conn.execute("PRAGMA synchronous = NORMAL;")
 
-        return conn
+            return conn
+        except sqlite3.OperationalError as e:
+            if "readonly" in str(e).lower() and self.db_path != ":memory:":
+                import os
+                db_p = Path(self.db_path)
+                uid = os.getuid() if hasattr(os, "getuid") else "unknown"
+                logger.critical(
+                    "SQLite database '%s' is not writable by UID %s. "
+                    "Ensure volume mounts on the host are owned by UID %s: %s",
+                    self.db_path,
+                    uid,
+                    uid,
+                    e,
+                )
+            raise
 
     @contextmanager
     def connection(self) -> Generator[sqlite3.Connection, None, None]:
@@ -255,6 +269,21 @@ class DatabaseManager:
         conn.execute(
             "CREATE INDEX IF NOT EXISTS idx_quota_snapshots_term_captured ON quota_snapshots(term, captured_at)"
         )
+        conn.execute("CREATE INDEX IF NOT EXISTS idx_departments_term ON departments(term)")
+        conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_scrape_runs_term_started ON scrape_runs(term, started_at DESC)"
+        )
+        conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_scrape_runs_started ON scrape_runs(started_at DESC)"
+        )
+        try:
+            conn.execute(
+                "UPDATE quota_snapshots SET captured_at = replace(captured_at, ' ', 'T') "
+                "WHERE captured_at LIKE '% %' AND captured_at NOT LIKE '%T%'"
+            )
+            conn.commit()
+        except sqlite3.OperationalError:
+            pass
 
         # 5. Fix legacy course_slots FK missing ON DELETE CASCADE (prod DBs created
         #    before the CASCADE fix have NO ACTION, causing DELETE FROM courses

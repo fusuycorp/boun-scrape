@@ -85,7 +85,12 @@ Body: `{ "items": [{ "term": "...", "abbr": "...", "code": "...", "section": "..
 ## Feeds (`routes/feeds.py`)
 
 #### `GET /api/v1/feeds/deltas`
-No auth required. Query params: `term`, `run_id`, `limit` (default 100, max 1000). Returns `list[DeltaEventDTO]` (see [scraping-pipeline.md](scraping-pipeline.md#4-change-detection-pipelinedeltapy) for `change_type` values).
+No auth required. Supports weak ETag / HTTP 304 caching.
+Query params: `term`, `run_id`, `after_timestamp` (strictly after ISO timestamp), `since` (greater than or equal to timestamp), `until` (less than or equal to timestamp), `order` (`desc` or `asc`, default `desc`), `limit` (default 100, max 1000). Returns `list[DeltaEventDTO]` (see [scraping-pipeline.md](scraping-pipeline.md#4-change-detection-pipelinedeltapy) for `change_type` values).
+
+#### `GET /api/v1/feeds/quota-snapshots`
+No auth required. Supports weak ETag / HTTP 304 caching.
+Query params: `term`, `after_timestamp` (strictly after ISO timestamp), `since` (greater than or equal to timestamp), `until` (less than or equal to timestamp), `order` (`asc` or `desc`, default `asc`), `limit` (default 500, max 5000). Returns `list[QuotaSnapshotDTO]` for incremental forward polling by downstream consumers like `boun-archive`.
 
 #### `GET /api/v1/feeds/runs`
 No auth required. Query params: `term`, `limit` (default 50, max 500). Returns `list[ScrapeRunDTO]` — run history with status, counts, timestamps.

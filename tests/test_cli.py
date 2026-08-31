@@ -251,7 +251,7 @@ class TestCliApp:
 
             result = runner.invoke(
                 app,
-                ["quota", "--abbr", "PHYS", "--code", "101", "--section", "01"],
+                ["quota", "--abbr", "PHYS", "--code", "101", "--section", "01", "--term", "2024/2025-1"],
             )
             assert result.exit_code == 0
             assert "No quota records returned" in result.stdout

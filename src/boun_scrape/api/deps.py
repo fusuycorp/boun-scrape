@@ -75,7 +75,8 @@ def get_quota_service_dep(
 @lru_cache
 def _get_shared_webhook_dispatcher() -> WebhookDispatcher:
     """Internal singleton WebhookDispatcher factory."""
-    return WebhookDispatcher(settings=get_settings())
+    cfg = get_settings()
+    return WebhookDispatcher(urls=cfg.webhook_urls, settings=cfg)
 
 
 def get_webhook_dispatcher_dep(

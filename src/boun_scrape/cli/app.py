@@ -71,7 +71,7 @@ def scrape_command(
     db_mgr.init_db()
     repo = CourseRepository(db_mgr)
     client = BounScraperClient(settings=cfg)
-    dispatcher = WebhookDispatcher(settings=cfg) if not no_webhooks else None
+    dispatcher = WebhookDispatcher(urls=cfg.webhook_urls, settings=cfg) if not no_webhooks else None
 
     scheduler = ScrapeScheduler(
         client=client,
@@ -181,7 +181,7 @@ def daemon_command(
     db_mgr.init_db()
     repo = CourseRepository(db_mgr)
     client = BounScraperClient(settings=cfg)
-    dispatcher = WebhookDispatcher(settings=cfg)
+    dispatcher = WebhookDispatcher(urls=cfg.webhook_urls, settings=cfg)
 
     scheduler = ScrapeScheduler(
         interval_seconds=interval,

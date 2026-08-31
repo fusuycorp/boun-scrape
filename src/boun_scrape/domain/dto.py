@@ -281,6 +281,17 @@ class HealthCheckDTO(BaseModel):
     version: str = "0.2.0"
 
 
+class StatsDTO(BaseModel):
+    """Aggregate database statistics and telemetry."""
+
+    total_courses: int
+    total_slots: int
+    total_departments: int
+    total_terms: int
+    last_scraped: str | None = None
+    last_cached_departments_at: str | None = None
+
+
 # Conversion helpers
 def course_slot_to_dto(slot: CourseSlot) -> CourseSlotDTO:
     """Convert CourseSlot domain model to CourseSlotDTO."""

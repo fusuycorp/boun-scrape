@@ -221,6 +221,7 @@ class BounScraperClient:
         min_jitter: float | None = None,
         max_jitter: float | None = None,
         max_retries: int | None = None,
+        retry_backoff_base: float | None = None,
         settings: Settings | None = None,
         http_client: httpx.AsyncClient | None = None,
     ) -> None:
@@ -238,6 +239,7 @@ class BounScraperClient:
         self.min_jitter = min_jitter if min_jitter is not None else cfg.min_jitter
         self.max_jitter = max_jitter if max_jitter is not None else cfg.max_jitter
         self.max_retries = max_retries if max_retries is not None else 3
+        self.retry_backoff_base = retry_backoff_base if retry_backoff_base is not None else 0.5
 
         # Parse initial cookies
         initial_cookies = parse_cookie_file(self.cookies_path) if self.cookies_path else {}
@@ -416,9 +418,12 @@ class BounScraperClient:
                 if attempt < effective_retries:
                     if isinstance(err, BounHttpError) and err.retry_after is not None:
                         backoff = _cap_retry_after(err.retry_after)
+                    elif self.retry_backoff_base <= 0.0:
+                        backoff = 0.0
                     else:
-                        backoff = (2 ** (attempt - 1)) * 0.5 + random.uniform(0.05, 0.2)
-                    await asyncio.sleep(backoff)
+                        backoff = (2 ** (attempt - 1)) * self.retry_backoff_base + random.uniform(0.05, 0.2)
+                    if backoff > 0.0:
+                        await asyncio.sleep(backoff)
                 else:
                     break
 
@@ -477,9 +482,12 @@ class BounScraperClient:
                 if attempt < effective_retries:
                     if isinstance(err, BounHttpError) and err.retry_after is not None:
                         backoff = _cap_retry_after(err.retry_after)
+                    elif self.retry_backoff_base <= 0.0:
+                        backoff = 0.0
                     else:
-                        backoff = (2 ** (attempt - 1)) * 0.5 + random.uniform(0.05, 0.2)
-                    await asyncio.sleep(backoff)
+                        backoff = (2 ** (attempt - 1)) * self.retry_backoff_base + random.uniform(0.05, 0.2)
+                    if backoff > 0.0:
+                        await asyncio.sleep(backoff)
                 else:
                     break
 
