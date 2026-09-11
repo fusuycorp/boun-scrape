@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, builder]
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -26,7 +26,7 @@ jobs:
 
   build-and-deploy:
     needs: test
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, builder]
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -49,9 +49,6 @@ jobs:
           push: true
           tags: registry.bogazici.app/budok/boun-scrape-backend:latest
           provenance: false
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
-          outputs: type=image,push=true,compression=gzip,compression-level=9,force-compression=true
 
       - name: Build and Push Frontend Image
         uses: docker/build-push-action@v5
@@ -61,9 +58,6 @@ jobs:
           push: true
           tags: registry.bogazici.app/budok/boun-scrape-frontend:latest
           provenance: false
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
-          outputs: type=image,push=true,compression=gzip,compression-level=9,force-compression=true
 
       - name: Trigger Dokploy Redeployment
         env:
