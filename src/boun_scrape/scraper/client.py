@@ -260,7 +260,7 @@ class BounScraperClient:
                 cookies=initial_cookies,
                 timeout=httpx.Timeout(self.timeout),
                 limits=limits,
-                follow_redirects=True,
+                follow_redirects=False,
             )
             self._owns_client = True
 
@@ -389,6 +389,16 @@ class BounScraperClient:
             await self._apply_jitter()
             try:
                 response = await self._client.get(target_url, params=params, headers=headers)
+                if response.is_redirect or 300 <= response.status_code < 400:
+                    location = response.headers.get("Location", "")
+                    if any(m in location.lower() for m in ("login", "auth", "giris", "maintenance", "default.asp")):
+                        raise SessionExpiredError(
+                            f"Upstream portal redirected to login/maintenance: '{location}' (session expired or portal unavailable)"
+                        )
+                    raise BounHttpError(
+                        f"Unexpected redirect from portal to '{location}' (HTTP {response.status_code})",
+                        status_code=response.status_code,
+                    )
                 if response.status_code >= 500:
                     retry_after = _parse_retry_after(response.headers.get("Retry-After"))
                     raise BounHttpError(
@@ -404,7 +414,7 @@ class BounScraperClient:
                         retry_after=retry_after,
                     )
                 return self._process_response(response)
-            except RecaptchaBlockedError:
+            except (RecaptchaBlockedError, SessionExpiredError):
                 raise
             except (httpx.TransportError, httpx.TimeoutException, BounHttpError) as err:
                 if (
@@ -453,6 +463,16 @@ class BounScraperClient:
                 response = await self._client.post(
                     target_url, data=data, params=params, headers=headers
                 )
+                if response.is_redirect or 300 <= response.status_code < 400:
+                    location = response.headers.get("Location", "")
+                    if any(m in location.lower() for m in ("login", "auth", "giris", "maintenance", "default.asp")):
+                        raise SessionExpiredError(
+                            f"Upstream portal redirected to login/maintenance: '{location}' (session expired or portal unavailable)"
+                        )
+                    raise BounHttpError(
+                        f"Unexpected redirect from portal to '{location}' (HTTP {response.status_code})",
+                        status_code=response.status_code,
+                    )
                 if response.status_code >= 500:
                     retry_after = _parse_retry_after(response.headers.get("Retry-After"))
                     raise BounHttpError(
@@ -468,7 +488,7 @@ class BounScraperClient:
                         retry_after=retry_after,
                     )
                 return self._process_response(response)
-            except RecaptchaBlockedError:
+            except (RecaptchaBlockedError, SessionExpiredError):
                 raise
             except (httpx.TransportError, httpx.TimeoutException, BounHttpError) as err:
                 if (

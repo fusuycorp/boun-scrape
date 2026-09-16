@@ -14,6 +14,7 @@ from boun_scrape.domain.models import RunStatus
 from boun_scrape.feeds.webhooks import WebhookDispatcher
 from boun_scrape.pipeline.exporter import (
     _sanitize_term,
+    export_all_terms,
     export_courses_csv,
     export_courses_json,
     export_courses_sqlite,
@@ -160,7 +161,7 @@ def daemon_command(
     interval: Annotated[
         int,
         typer.Option("--interval", "-i", help="Interval seconds between scrape runs"),
-    ] = 3600,
+    ] = 21600,
     cron: Annotated[
         str | None,
         typer.Option("--cron", "-c", help="Cron schedule expression (e.g. '0 */2 * * *')"),
@@ -229,9 +230,13 @@ def daemon_command(
 @app.command(name="export")
 def export_command(
     term: Annotated[
-        str,
+        str | None,
         typer.Option("--term", "-t", help="Academic term identifier (e.g. '2024/2025-1')"),
-    ],
+    ] = None,
+    all_terms: Annotated[
+        bool,
+        typer.Option("--all-terms", help="Export all terms present in the database"),
+    ] = False,
     format: Annotated[
         str,
         typer.Option("--format", "-f", help="Export format: json, csv, sqlite, or all"),
@@ -246,12 +251,38 @@ def export_command(
     ] = None,
 ) -> None:
     """Export persisted course schedules into structured data artifacts."""
+    if not all_terms and not term:
+        typer.secho("Must specify either --term <term> or --all-terms.", fg=typer.colors.RED)
+        raise typer.Exit(code=1)
+
     cfg = get_settings()
     actual_db = db_path or cfg.db_path
     db_mgr = DatabaseManager(actual_db)
     db_mgr.init_db()
     repo = CourseRepository(db_mgr)
 
+    out_path = Path(output_dir)
+    out_path.mkdir(parents=True, exist_ok=True)
+    fmt = format.lower().strip()
+
+    if all_terms:
+        typer.secho(f"Exporting all terms to '{out_path}'...", fg=typer.colors.CYAN, bold=True)
+        try:
+            exported = export_all_terms(repo=repo, output_dir=out_path, format=fmt)
+        except ValueError as exc:
+            typer.secho(str(exc), fg=typer.colors.RED)
+            raise typer.Exit(code=1)
+
+        if not exported:
+            typer.secho("No courses found in database for any term.", fg=typer.colors.YELLOW)
+            return
+
+        typer.secho(f"Exported {len(exported)} terms:", fg=typer.colors.GREEN, bold=True)
+        for t, artifacts in exported.items():
+            typer.echo(f"  - {t}: {', '.join(artifacts.keys())}")
+        return
+
+    assert term is not None
     courses = repo.get_courses_by_term(term)
     if not courses:
         typer.secho(
@@ -260,9 +291,6 @@ def export_command(
         )
         raise typer.Exit(code=1)
 
-    out_path = Path(output_dir)
-    out_path.mkdir(parents=True, exist_ok=True)
-    fmt = format.lower().strip()
     safe_term = _sanitize_term(term)
 
     if fmt == "json":
@@ -275,9 +303,9 @@ def export_command(
         p = export_courses_sqlite(term, courses, out_path / f"courses_{safe_term}.db")
         typer.secho(f"Exported SQLite: {p}", fg=typer.colors.GREEN)
     elif fmt == "all":
-        exported = generate_all_exports(term=term, courses=courses, output_dir=out_path)
+        exported_artifacts = generate_all_exports(term=term, courses=courses, output_dir=out_path)
         typer.secho("Exported all artifacts:", fg=typer.colors.GREEN, bold=True)
-        for key, p in exported.items():
+        for key, p in exported_artifacts.items():
             typer.echo(f"  - {key.upper()}: {p}")
     else:
         typer.secho(

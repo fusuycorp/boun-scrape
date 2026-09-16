@@ -33,6 +33,10 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     settings: Settings = getattr(app.state, "settings", get_settings())
     db = DatabaseManager(settings.db_path)
     await asyncio.to_thread(db.init_db)
+    if settings.scraper_auto_run and settings.environment.strip().lower() not in ("test", "testing"):
+        from boun_scrape.api.deps import _get_shared_scheduler
+        scheduler = _get_shared_scheduler()
+        scheduler.start()
     try:
         yield
     finally:

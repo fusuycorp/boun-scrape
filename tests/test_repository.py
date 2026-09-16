@@ -841,3 +841,68 @@ class TestRepository:
             captured_at = row["captured_at"]
             assert "T" in captured_at
             assert "+00:00" in captured_at or "Z" in captured_at
+
+    def test_is_active_term_logic(self, repo: CourseRepository) -> None:
+        # Empty repo -> True
+        assert repo.is_active_term("2024/2025-1") is True
+
+        # Add terms: past and current
+        c1 = Course(term="2020/2021-1", department="CMPE", course_code="CMPE 150", section="01", course_name="Intro")
+        c2 = Course(term="2024/2025-2", department="CMPE", course_code="CMPE 150", section="01", course_name="Intro")
+        repo.save_courses_and_slots("2020/2021-1", [c1])
+        repo.save_courses_and_slots("2024/2025-2", [c2])
+
+        assert repo.is_active_term("2024/2025-2") is True
+        assert repo.is_active_term("2025/2026-1") is True  # Newer future term is active
+        assert repo.is_active_term("2020/2021-1") is False  # Past term is not active
+        assert repo.is_active_term("1999/2000-1") is False
+
+    def test_save_courses_and_slots_past_term_never_deletes(self, repo: CourseRepository) -> None:
+        # Seed an active term and a past term
+        active_term = "2024/2025-2"
+        past_term = "2015/2016-1"
+
+        c_past = Course(term=past_term, department="MATH", course_code="MATH 101", section="01", course_name="Calculus I")
+        c_active = Course(term=active_term, department="MATH", course_code="MATH 101", section="01", course_name="Calculus I")
+        repo.save_courses_and_slots(past_term, [c_past])
+        repo.save_courses_and_slots(active_term, [c_active])
+
+        # Verify both courses exist
+        assert len(repo.get_courses_by_term(past_term)) == 1
+        assert len(repo.get_courses_by_term(active_term)) == 1
+
+        # Re-scraping past term with empty courses for MATH must NEVER delete existing courses
+        repo.save_courses_and_slots(past_term, [], scraped_departments=["MATH"])
+        past_courses = repo.get_courses_by_term(past_term)
+        assert len(past_courses) == 1, "Past term data must be immutable and never deleted"
+        assert past_courses[0].course_code == "MATH 101"
+
+        # Re-scraping active term with empty courses for MATH SHOULD replace/delete (active is source of truth)
+        repo.save_courses_and_slots(active_term, [], scraped_departments=["MATH"])
+        active_courses = repo.get_courses_by_term(active_term)
+        assert len(active_courses) == 0, "Active term should allow replacement by upstream source of truth"
+
+    def test_update_department_scrape_status_preserves_course_count_when_none(self, repo: CourseRepository) -> None:
+        term = "2024/2025-1"
+        dept = Department(code="CMPE", name="Computer Engineering")
+        repo.save_departments(term, [dept])
+
+        # Initially set status to COMPLETED with 42 courses
+        repo.update_department_scrape_status(term=term, code="CMPE", course_count=42, status="COMPLETED")
+        coverage = repo.get_term_coverage(term)
+        assert len(coverage.departments) == 1
+        assert coverage.departments[0].course_count == 42
+        assert coverage.departments[0].status == "COMPLETED"
+
+        # Quarantining or failure with course_count=None preserves the 42 course count
+        repo.update_department_scrape_status(
+            term=term,
+            code="CMPE",
+            course_count=None,
+            status="FAILED",
+            error="Quarantined: upstream returned 0 courses for active department with existing catalog",
+        )
+        coverage = repo.get_term_coverage(term)
+        assert coverage.departments[0].course_count == 42
+        assert coverage.departments[0].status == "FAILED"
+        assert "Quarantined" in (coverage.departments[0].error_message or "")

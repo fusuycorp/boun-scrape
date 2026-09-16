@@ -3,9 +3,12 @@
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+from unittest.mock import AsyncMock, patch
 import pytest
 
-from boun_scrape.domain.models import Course, CourseSlot, QuotaRecord
+from boun_scrape.domain.events import ChangeType
+from boun_scrape.domain.models import Course, CourseSlot, Department, QuotaRecord, TermScrapeResult
+from boun_scrape.scheduler.runner import ScrapeScheduler
 from boun_scrape.scraper.client import decode_windows_1254
 from boun_scrape.scraper.parser import (
     extract_viewstate_and_semesters,
@@ -353,3 +356,124 @@ class TestConcurrencyAndThreadSafety:
         assert format_course_key("cmpe", "cmpe 150", "02") == "CMPE 150.02"
         assert format_course_key("MATH", "101", "") == "MATH 101"
         assert format_course_key("  phys  ", "  phys 101  ", "  01  ") == "PHYS 101.01"
+
+
+class TestAdversarialResilienceAndQuarantine:
+    """Tests collapse quarantine, zero-from-zero legitimacy, and past-term delta protection."""
+
+    @pytest.mark.asyncio
+    async def test_department_collapse_quarantine(self, tmp_path: Path) -> None:
+        db_mgr = DatabaseManager(str(tmp_path / "quarantine.db"))
+        db_mgr.init_db()
+        repo = CourseRepository(db_mgr)
+        term = "2024/2025-2"
+
+        # Pre-seed department and 8 existing courses (> 5 threshold)
+        repo.save_departments(term, [Department(code="MATH", name="Mathematics")])
+        existing_courses = [
+            Course(term=term, department="MATH", course_code=f"MATH {100 + i}", section="01", course_name=f"Math {i}")
+            for i in range(8)
+        ]
+        repo.save_courses_and_slots(term, existing_courses, scraped_departments=["MATH"], is_active=True)
+        repo.update_department_scrape_status(term=term, code="MATH", course_count=8, status="COMPLETED")
+
+        scheduler = ScrapeScheduler(repository=repo, export_dir=tmp_path / "exports")
+
+        # Mock scrape pipeline returning 0 courses for MATH (simulating broken HTML/upstream purge)
+        mock_pipeline_result = TermScrapeResult(
+            courses=[],
+            departments=[Department(code="MATH", name="Mathematics")],
+            succeeded_departments=["MATH"],
+            failed_departments=[],
+        )
+
+        with patch("boun_scrape.scheduler.runner.scrape_term_pipeline", new=AsyncMock(return_value=mock_pipeline_result)):
+            result, deltas = await scheduler._scrape_and_compute_deltas(term, None, False, "test-run-1")
+
+        # MATH must be moved to quarantined and failed departments
+        assert "MATH" in result.quarantined_departments
+        assert "MATH" in result.failed_departments
+        assert "MATH" not in result.succeeded_departments
+
+        # No REMOVED delta events should be emitted for the quarantined department
+        removed_deltas = [d for d in deltas if d.change_type == ChangeType.REMOVED]
+        assert len(removed_deltas) == 0
+
+        # Persist cycle data
+        await scheduler._persist_cycle_data(term, result, deltas, "test-run-1")
+
+        # Existing 8 courses must remain untouched in the database
+        db_courses = repo.get_courses_by_term(term)
+        assert len(db_courses) == 8, "Quarantined department courses must not be purged"
+
+        # Department status must be FAILED with Quarantined error, but course_count preserved
+        coverage = repo.get_term_coverage(term)
+        assert len(coverage.departments) == 1
+        assert coverage.departments[0].status == "FAILED"
+        assert coverage.departments[0].course_count == 8
+        assert "Quarantined" in (coverage.departments[0].error_message or "")
+
+    @pytest.mark.asyncio
+    async def test_legitimate_zero_department_allowed(self, tmp_path: Path) -> None:
+        db_mgr = DatabaseManager(str(tmp_path / "zero.db"))
+        db_mgr.init_db()
+        repo = CourseRepository(db_mgr)
+        term = "1974/1975-1"
+
+        repo.save_departments(term, [Department(code="MIS", name="Management Info Systems")])
+        # No existing courses (prev_count == 0)
+        scheduler = ScrapeScheduler(repository=repo, export_dir=tmp_path / "exports")
+
+        mock_pipeline_result = TermScrapeResult(
+            courses=[],
+            departments=[Department(code="MIS", name="Management Info Systems")],
+            succeeded_departments=["MIS"],
+            failed_departments=[],
+        )
+
+        with patch("boun_scrape.scheduler.runner.scrape_term_pipeline", new=AsyncMock(return_value=mock_pipeline_result)):
+            result, deltas = await scheduler._scrape_and_compute_deltas(term, None, False, "test-run-2")
+
+        # Legitimate empty department must NOT be quarantined
+        assert len(result.quarantined_departments) == 0
+        assert "MIS" in result.succeeded_departments
+
+    @pytest.mark.asyncio
+    async def test_past_term_mutation_suppresses_removed_deltas(self, tmp_path: Path) -> None:
+        db_mgr = DatabaseManager(str(tmp_path / "past.db"))
+        db_mgr.init_db()
+        repo = CourseRepository(db_mgr)
+        active_term = "2024/2025-2"
+        past_term = "2000/2001-1"
+
+        # Seed active term so repo.is_active_term(past_term) is False
+        repo.save_courses_and_slots(active_term, [Course(term=active_term, department="MATH", course_code="MATH 101", section="01", course_name="Calculus I")])
+
+        # Seed past term with 2 courses
+        past_courses = [
+            Course(term=past_term, department="HIST", course_code="HIST 101", section="01", course_name="History I"),
+            Course(term=past_term, department="HIST", course_code="HIST 102", section="01", course_name="History II"),
+        ]
+        repo.save_courses_and_slots(past_term, past_courses, scraped_departments=["HIST"], is_active=False)
+
+        scheduler = ScrapeScheduler(repository=repo, export_dir=tmp_path / "exports")
+
+        # Scrape returns only 1 course (HIST 101)
+        mock_pipeline_result = TermScrapeResult(
+            courses=[Course(term=past_term, department="HIST", course_code="HIST 101", section="01", course_name="History I")],
+            departments=[Department(code="HIST", name="History")],
+            succeeded_departments=["HIST"],
+            failed_departments=[],
+        )
+
+        with patch("boun_scrape.scheduler.runner.scrape_term_pipeline", new=AsyncMock(return_value=mock_pipeline_result)):
+            result, deltas = await scheduler._scrape_and_compute_deltas(past_term, None, False, "test-run-3")
+
+        # Past term must never emit REMOVED delta events
+        removed_deltas = [d for d in deltas if d.change_type == ChangeType.REMOVED]
+        assert len(removed_deltas) == 0
+
+        # Persisting cycle data for past term must never delete the missing HIST 102
+        await scheduler._persist_cycle_data(past_term, result, deltas, "test-run-3")
+        current_db_courses = repo.get_courses_by_term(past_term)
+        assert len(current_db_courses) == 2

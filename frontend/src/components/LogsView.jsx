@@ -4,22 +4,14 @@ import {
   History,
   RefreshCw,
   Search,
-  Filter,
   Trash2,
   Copy,
   Download,
   Check,
-  AlertTriangle,
   CheckCircle2,
-  XCircle,
-  Clock,
-  Calendar,
-  Layers,
-  Play,
   RotateCcw,
   ChevronDown,
   ChevronRight,
-  ShieldAlert,
   ArrowUpDown,
 } from 'lucide-react';
 import { api } from '../api/client';
@@ -68,7 +60,6 @@ export default function LogsView() {
   const [runs, setRuns] = useState([]);
   const [status, setStatus] = useState({ is_scraping: false, is_running: false, current_progress: null });
   const [terms, setTerms] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
 
   // Live Console Controls
@@ -145,7 +136,6 @@ export default function LogsView() {
     await Promise.all([fetchLogs(), fetchRuns(), fetchStatus()]);
     if (isMountedRef.current) {
       setRefreshing(false);
-      setLoading(false);
     }
   }, [fetchLogs, fetchRuns, fetchStatus, isMountedRef]);
 

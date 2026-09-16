@@ -14,6 +14,7 @@ from boun_scrape.pipeline.exporter import (
     export_courses_json,
     export_courses_sqlite,
     export_deltas_json,
+    export_all_terms,
     generate_all_exports,
     prune_old_exports,
 )
@@ -174,6 +175,28 @@ class TestExportCsv:
         assert rows[3]["room"] == ""
         assert rows[3]["slot_title"] == ""
         assert rows[3]["slot_instructor"] == ""
+
+    def test_export_courses_csv_formula_injection_sanitized(self, tmp_path: Path) -> None:
+        malicious_course = Course(
+            term="2024/2025-1",
+            department="CMPE",
+            course_code="=1+1",
+            section="01",
+            course_name="@calc.exe",
+            instructor="+HACKER",
+            credits="-3",
+        )
+        target = tmp_path / "sanitized.csv"
+        export_courses_csv([malicious_course], target)
+
+        with open(target, "r", encoding="utf-8-sig") as f:
+            reader = csv.DictReader(f)
+            row = next(reader)
+
+        assert row["course_code"] == "'=1+1"
+        assert row["course_name"] == "'@calc.exe"
+        assert row["instructor"] == "'+HACKER"
+        assert row["credits"] == "'-3"
 
 
 class TestExportSqlite:
@@ -387,4 +410,54 @@ class TestPruneOldExports:
         assert pruned == []
         assert other_file.exists()
         assert hidden_file.exists()
+
+    def test_prune_old_exports_disabled_by_default(self, tmp_path: Path) -> None:
+        export_dir = tmp_path / "exports"
+        export_dir.mkdir(parents=True)
+        f1 = export_dir / "courses_1985_1986-1.json"
+        f1.write_text("{}", encoding="utf-8")
+        f2 = export_dir / "courses_2024_2025-1.json"
+        f2.write_text("{}", encoding="utf-8")
+
+        # By default keep_last_n is None and max_age_days is None: no pruning
+        pruned = prune_old_exports(export_dir)
+        assert pruned == []
+        assert f1.exists()
+        assert f2.exists()
+
+
+class TestExportAllTerms:
+    """Tests for bulk export of all terms."""
+
+    def test_export_all_terms(self, tmp_path: Path, sample_courses: list[Course]) -> None:
+        db_file = tmp_path / "test.db"
+        db = DatabaseManager(str(db_file))
+        db.init_db()
+        repo = CourseRepository(db)
+
+        # Seed courses across two terms (including pre-1990)
+        c1 = Course(
+            term="1985/1986-1",
+            department="MATH",
+            course_code="MATH 101",
+            section="01",
+            course_name="Calculus I",
+            instructor="Prof. Historical",
+            credits=4.0,
+            ects=7.0,
+            slots=[],
+        )
+        repo.save_courses_and_slots("1985/1986-1", [c1])
+        repo.save_courses_and_slots("2024/2025-1", sample_courses)
+
+        out_dir = tmp_path / "all_exports"
+        results = export_all_terms(repo=repo, output_dir=out_dir, format="all")
+
+        assert "1985/1986-1" in results
+        assert "2024/2025-1" in results
+        assert (out_dir / "courses_1985_1986-1.json").exists()
+        assert (out_dir / "courses_1985_1986-1.csv").exists()
+        assert (out_dir / "courses_1985_1986-1.db").exists()
+        assert (out_dir / "courses_2024_2025-1.json").exists()
+
 

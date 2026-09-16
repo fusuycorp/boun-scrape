@@ -8,6 +8,7 @@ import sqlite3
 import tempfile
 import time
 from pathlib import Path
+from typing import Any
 
 from boun_scrape.domain.events import CourseDeltaEvent
 from boun_scrape.domain.models import Course
@@ -101,6 +102,16 @@ def export_courses_csv(courses: list[Course], output_path: str | Path) -> Path:
     return path
 
 
+_FORMULA_PREFIXES = ("=", "+", "-", "@", "\t", "\r")
+
+
+def _sanitize_csv_cell(val: Any) -> Any:
+    """Escape potential formula injection prefixes in CSV cells (CWE-1236)."""
+    if isinstance(val, str) and val.startswith(_FORMULA_PREFIXES):
+        return f"'{val}"
+    return val
+
+
 def _write_courses_csv(path: Path, courses: list[Course]) -> None:
     with open(path, "w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=CSV_FIELDNAMES)
@@ -135,7 +146,7 @@ def _write_courses_csv(path: Path, courses: list[Course]) -> None:
                         "slot_instructor": "",
                     }
                 )
-                writer.writerow(row)
+                writer.writerow({k: _sanitize_csv_cell(v) for k, v in row.items()})
                 continue
 
             for slot in course.slots:
@@ -149,7 +160,7 @@ def _write_courses_csv(path: Path, courses: list[Course]) -> None:
                         "slot_instructor": slot.instructor or "",
                     }
                 )
-                writer.writerow(row)
+                writer.writerow({k: _sanitize_csv_cell(v) for k, v in row.items()})
 
 
 def export_courses_sqlite(
@@ -275,21 +286,27 @@ def generate_all_exports(
 
 def prune_old_exports(
     output_dir: Path | str,
-    keep_last_n: int = 10,
-    max_age_days: int = 90,
+    keep_last_n: int | None = None,
+    max_age_days: int | None = None,
 ) -> list[Path]:
     """Clean up export artifacts beyond keep_last_n newest terms or older than max_age_days.
 
+    If keep_last_n is None or <= 0, retention pruning by term count is disabled.
+    If max_age_days is None or <= 0, age-based pruning is disabled.
+
     Args:
         output_dir: Directory containing export artifacts.
-        keep_last_n: Maximum number of most recent terms to retain.
-        max_age_days: Maximum age in days before an export file is pruned.
+        keep_last_n: Maximum number of most recent terms to retain (None/<=0 disables).
+        max_age_days: Maximum age in days before an export file is pruned (None/<=0 disables).
 
     Returns:
         List of Path objects for the deleted files.
     """
     out_path = Path(output_dir)
     if not out_path.is_dir():
+        return []
+
+    if (keep_last_n is None or keep_last_n <= 0) and (max_age_days is None or max_age_days <= 0):
         return []
 
     term_files: dict[str, list[Path]] = {}
@@ -318,22 +335,24 @@ def prune_old_exports(
         term_latest_mtime[term] = max(term_latest_mtime.get(term, 0.0), mtime)
         file_mtimes[entry] = mtime
 
-    sorted_terms = sorted(
-        term_files.keys(),
-        key=lambda t: (term_latest_mtime.get(t, 0.0), t),
-        reverse=True,
-    )
+    kept_terms: set[str] | None = None
+    if keep_last_n is not None and keep_last_n > 0:
+        sorted_terms = sorted(
+            term_files.keys(),
+            key=lambda t: (term_latest_mtime.get(t, 0.0), t),
+            reverse=True,
+        )
+        kept_terms = set(sorted_terms[:keep_last_n])
 
-    kept_terms = set(sorted_terms[: max(0, keep_last_n)])
     now = time.time()
-    max_age_seconds = max_age_days * 86400.0
+    max_age_seconds = (max_age_days * 86400.0) if (max_age_days is not None and max_age_days > 0) else None
 
     pruned: list[Path] = []
     for term, files in term_files.items():
         for f in files:
             f_mtime = file_mtimes.get(f, 0.0)
-            is_beyond_n = term not in kept_terms
-            is_too_old = (now - f_mtime) > max_age_seconds
+            is_beyond_n = (term not in kept_terms) if kept_terms is not None else False
+            is_too_old = ((now - f_mtime) > max_age_seconds) if max_age_seconds is not None else False
             if is_beyond_n or is_too_old:
                 try:
                     f.unlink(missing_ok=True)
@@ -342,4 +361,40 @@ def prune_old_exports(
                     logger.warning("Failed to prune export file %s: %s", f, exc)
 
     return pruned
+
+
+def export_all_terms(
+    repo: CourseRepository,
+    output_dir: str | Path = "exports",
+    format: str = "all",
+) -> dict[str, dict[str, Path]]:
+    """Export all academic terms that have courses in the repository into structured artifacts."""
+    out_path = Path(output_dir)
+    out_path.mkdir(parents=True, exist_ok=True)
+    fmt = format.lower().strip()
+
+    with repo.db.connection() as conn:
+        rows = conn.execute("SELECT DISTINCT term FROM courses ORDER BY term ASC").fetchall()
+        terms = [r[0] for r in rows if r[0]]
+
+    exported_terms: dict[str, dict[str, Path]] = {}
+    for term in terms:
+        courses = repo.get_courses_by_term(term)
+        if not courses:
+            continue
+        safe_term = _sanitize_term(term)
+        term_results: dict[str, Path] = {}
+        if fmt == "json":
+            term_results["json"] = export_courses_json(courses, out_path / f"courses_{safe_term}.json")
+        elif fmt == "csv":
+            term_results["csv"] = export_courses_csv(courses, out_path / f"courses_{safe_term}.csv")
+        elif fmt in ("sqlite", "db"):
+            term_results["sqlite"] = export_courses_sqlite(term, courses, out_path / f"courses_{safe_term}.db")
+        elif fmt == "all":
+            term_results = generate_all_exports(term=term, courses=courses, output_dir=out_path)
+        else:
+            raise ValueError(f"Invalid format '{format}'. Supported formats: json, csv, sqlite, all")
+        exported_terms[term] = term_results
+
+    return exported_terms
 

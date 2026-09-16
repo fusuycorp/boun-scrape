@@ -125,6 +125,15 @@ async def discover_terms(client: BounScraperClient) -> list[str]:
     return terms
 
 
+async def check_portal_canary(client: BounScraperClient) -> bool:
+    """Probe the portal root endpoint with strict timeout to determine if registration is hard down."""
+    try:
+        response = await client.get(SCHEDULE_SEMESTER_URL, retries=1)
+        return response.status_code == 200 and len(response.text) > 100
+    except Exception:
+        return False
+
+
 async def fetch_departments(client: BounScraperClient, term: str) -> list[Department]:
     """Fetch the list of departments offering courses in a given term."""
     # Step 1: Initial GET to obtain ASP.NET ViewState and token fields
@@ -287,10 +296,40 @@ async def scrape_term_pipeline(
     lock = asyncio.Lock()
     sem = asyncio.Semaphore(concurrency)
 
+    consecutive_failures = 0
+    circuit_breaker_tripped = False
+    failure_lock = asyncio.Lock()
+
     async def _scrape_single_dept(dept: Department) -> list[Course]:
-        nonlocal completed_count
+        nonlocal completed_count, consecutive_failures, circuit_breaker_tripped
+        if circuit_breaker_tripped:
+            raise BounHttpError("Circuit breaker active: registration portal is hard down")
+
         async with sem:
-            courses = await fetch_department_schedule(client, term, dept)
+            if circuit_breaker_tripped:
+                raise BounHttpError("Circuit breaker active: registration portal is hard down")
+
+            try:
+                courses = await fetch_department_schedule(client, term, dept)
+                async with failure_lock:
+                    consecutive_failures = 0
+            except BaseException as exc:
+                async with failure_lock:
+                    consecutive_failures += 1
+                    if consecutive_failures >= 2 and not circuit_breaker_tripped:
+                        logger.warning(
+                            "Encountered %d consecutive department failures for term %s; checking portal root canary...",
+                            consecutive_failures,
+                            term,
+                        )
+                        canary_ok = await check_portal_canary(client)
+                        if not canary_ok:
+                            circuit_breaker_tripped = True
+                            logger.error(
+                                "Portal root canary probe failed! Tripping circuit breaker — registration portal is HARD DOWN."
+                            )
+                raise exc
+
             async with lock:
                 completed_count += 1
                 current_completed = completed_count
@@ -307,6 +346,10 @@ async def scrape_term_pipeline(
     results = await asyncio.gather(
         *[_scrape_single_dept(d) for d in departments], return_exceptions=True
     )
+
+    if circuit_breaker_tripped:
+        raise BounHttpError("Registration portal is hard down (circuit breaker tripped via failed root canary)")
+
     all_courses: list[Course] = []
     failures: list[tuple[Department, BaseException]] = []
     succeeded_departments: list[str] = []

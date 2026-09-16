@@ -32,11 +32,12 @@ class Settings(BaseSettings):
     webhook_secret: str = Field(default="", validation_alias=AliasChoices("BOUN_WEBHOOK_SECRET", "WEBHOOK_SECRET", "webhook_secret"))
     webhook_urls: Annotated[list[str], NoDecode] = Field(default=[], validation_alias=AliasChoices("BOUN_WEBHOOK_URLS", "WEBHOOK_URLS", "webhook_urls"))
     export_dir: str = Field(default="exports", validation_alias=AliasChoices("BOUN_EXPORT_DIR", "EXPORT_DIR", "export_dir"))
+    export_keep_last_n: int | None = Field(default=None, validation_alias=AliasChoices("BOUN_EXPORT_KEEP_LAST_N", "EXPORT_KEEP_LAST_N", "export_keep_last_n"))
     allowed_origins: Annotated[list[str], NoDecode] = Field(default=["*"], validation_alias=AliasChoices("BOUN_ALLOWED_ORIGINS", "ALLOWED_ORIGINS", "allowed_origins"))
-    scraper_interval_seconds: int = Field(default=3600, validation_alias=AliasChoices("BOUN_SCRAPER_INTERVAL", "SCRAPER_INTERVAL", "scraper_interval_seconds"))
+    scraper_interval_seconds: int = Field(default=21600, validation_alias=AliasChoices("BOUN_SCRAPER_INTERVAL", "SCRAPER_INTERVAL", "scraper_interval_seconds"))
     scraper_cron: str | None = Field(default=None, validation_alias=AliasChoices("BOUN_SCRAPER_CRON", "SCRAPER_CRON", "scraper_cron"))
     scraper_default_term: str | None = Field(default=None, validation_alias=AliasChoices("BOUN_DEFAULT_TERM", "DEFAULT_TERM", "scraper_default_term"))
-    scraper_auto_run: bool = Field(default=False, validation_alias=AliasChoices("BOUN_AUTO_RUN", "AUTO_RUN", "scraper_auto_run"))
+    scraper_auto_run: bool = Field(default=True, validation_alias=AliasChoices("BOUN_AUTO_RUN", "AUTO_RUN", "scraper_auto_run"))
 
     @model_validator(mode="after")
     def _resolve_secrets(self) -> "Settings":

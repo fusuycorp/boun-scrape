@@ -128,6 +128,7 @@ class TermScrapeResult:
     departments: list[Department] = field(default_factory=list)
     succeeded_departments: list[str] = field(default_factory=list)
     failed_departments: list[str] = field(default_factory=list)
+    quarantined_departments: list[str] = field(default_factory=list)
 
 
 @dataclass(slots=True, kw_only=True)

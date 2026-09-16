@@ -214,6 +214,25 @@ class TestCliApp:
         assert result.exit_code == 1
         assert "Invalid format 'yaml'" in result.stdout
 
+    def test_export_command_all_terms(self, temp_db: str, tmp_path: Path) -> None:
+        out_dir = tmp_path / "exports_all"
+        result = runner.invoke(
+            app,
+            ["export", "--all-terms", "--output-dir", str(out_dir), "--db", temp_db],
+        )
+        assert result.exit_code == 0
+        assert "Exporting all terms" in result.stdout
+        assert "Exported 1 terms" in result.stdout
+        assert (out_dir / "courses_2024_2025-1.json").exists()
+
+    def test_export_command_missing_args(self, temp_db: str, tmp_path: Path) -> None:
+        result = runner.invoke(
+            app,
+            ["export", "--db", temp_db],
+        )
+        assert result.exit_code == 1
+        assert "Must specify either --term <term> or --all-terms" in result.stdout
+
     def test_quota_command_success(self) -> None:
         records = [
             QuotaRecord(

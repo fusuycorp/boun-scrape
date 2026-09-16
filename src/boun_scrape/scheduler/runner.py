@@ -11,7 +11,7 @@ import uuid
 import croniter
 
 from boun_scrape.config import Settings, get_settings
-from boun_scrape.domain.events import CourseDeltaEvent
+from boun_scrape.domain.events import ChangeType, CourseDeltaEvent
 from boun_scrape.domain.models import Course, QuotaRecord, RunStatus, ScrapeRunSummary
 from boun_scrape.feeds.webhooks import WebhookDispatcher
 from boun_scrape.pipeline.delta import compute_deltas
@@ -214,10 +214,36 @@ class ScrapeScheduler:
         )
 
         previous_courses = await asyncio.to_thread(self.repository.get_courses_by_term, target_term)
+
+        # Collapse quarantine: if a department previously had > 5 courses and now has 0,
+        # quarantine it as an upstream anomaly to prevent catastrophic data purge.
+        new_counts_by_dept: dict[str, int] = {}
+        for c in result.courses:
+            new_counts_by_dept[c.department] = new_counts_by_dept.get(c.department, 0) + 1
+
+        prev_counts_by_dept: dict[str, int] = {}
+        for c in previous_courses:
+            prev_counts_by_dept[c.department] = prev_counts_by_dept.get(c.department, 0) + 1
+
+        for dept_code in list(result.succeeded_departments):
+            prev_count = prev_counts_by_dept.get(dept_code, 0)
+            new_count = new_counts_by_dept.get(dept_code, 0)
+            if prev_count > 5 and new_count == 0:
+                logger.error(
+                    "Collapse quarantine triggered for department %s in term %s: "
+                    "had %d courses in DB, scraped 0. Quarantining department to prevent data purge.",
+                    dept_code,
+                    target_term,
+                    prev_count,
+                )
+                result.quarantined_departments.append(dept_code)
+                result.succeeded_departments.remove(dept_code)
+                result.failed_departments.append(dept_code)
+
         succeeded_set = set(result.succeeded_departments)
         filtered_previous = [c for c in previous_courses if c.department in succeeded_set]
 
-        deltas = await asyncio.to_thread(
+        raw_deltas = await asyncio.to_thread(
             compute_deltas,
             previous_courses=filtered_previous,
             current_courses=result.courses,
@@ -225,6 +251,13 @@ class ScrapeScheduler:
             term=target_term,
             scraped_departments=result.succeeded_departments,
         )
+
+        is_active = await asyncio.to_thread(self.repository.is_active_term, target_term)
+        if not is_active:
+            deltas = [d for d in raw_deltas if d.change_type != ChangeType.REMOVED]
+        else:
+            deltas = raw_deltas
+
         return result, deltas
 
     async def _persist_cycle_data(
@@ -237,13 +270,19 @@ class ScrapeScheduler:
         """Persist departments, failed department statuses, courses, slots, and deltas off the event loop."""
         def _sync_persist() -> None:
             self.repository.save_departments(target_term, result.departments)
+            quarantined_set = set(result.quarantined_departments)
             for failed_dept in result.failed_departments:
+                is_quarantined = failed_dept in quarantined_set
                 self.repository.update_department_scrape_status(
                     term=target_term,
                     code=failed_dept,
-                    course_count=0,
+                    course_count=None if is_quarantined else 0,
                     status="FAILED",
-                    error="Crawl failed during pipeline execution",
+                    error=(
+                        "Quarantined: upstream returned 0 courses for active department with existing catalog"
+                        if is_quarantined
+                        else "Crawl failed during pipeline execution"
+                    ),
                 )
             self.repository.save_courses_and_slots(
                 term=target_term,
@@ -305,7 +344,8 @@ class ScrapeScheduler:
                 output_dir=self.export_dir,
             )
             logger.info("Scrape %s: exported artifacts to %s", run_id, self.export_dir)
-            await asyncio.to_thread(prune_old_exports, self.export_dir)
+            keep_n = self.settings.export_keep_last_n if self.settings else None
+            await asyncio.to_thread(prune_old_exports, self.export_dir, keep_last_n=keep_n)
 
         if dispatch_webhooks and self.webhook_dispatcher is not None:
             try:

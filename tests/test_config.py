@@ -23,6 +23,9 @@ class TestConfig:
         assert settings.max_jitter == 0.2
         assert settings.admin_user == "admin"
         assert settings.webhook_secret == ""
+        assert settings.scraper_interval_seconds == 21600
+        assert settings.scraper_auto_run is True
+        assert settings.export_keep_last_n is None
 
     def test_env_override(self) -> None:
         env_vars = {

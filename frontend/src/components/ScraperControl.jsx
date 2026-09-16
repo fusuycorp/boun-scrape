@@ -40,8 +40,8 @@ export default function ScraperControl() {
 
   // Scheduler / Daemon Settings
   const [scheduleConfig, setScheduleConfig] = useState(null);
-  const [intervalOption, setIntervalOption] = useState('3600');
-  const [customInterval, setCustomInterval] = useState('3600');
+  const [intervalOption, setIntervalOption] = useState('21600');
+  const [customInterval, setCustomInterval] = useState('21600');
   const [cronExpression, setCronExpression] = useState('');
   const [defaultScheduleTerm, setDefaultScheduleTerm] = useState('');
   const [savingSchedule, setSavingSchedule] = useState(false);
@@ -486,8 +486,8 @@ export default function ScraperControl() {
                     style={{ fontSize: '11px', fontFamily: 'var(--font-mono)' }}
                   >
                     <option value="1800">Every 30 Minutes</option>
-                    <option value="3600">Every 1 Hour (Default)</option>
-                    <option value="21600">Every 6 Hours</option>
+                    <option value="3600">Every 1 Hour</option>
+                    <option value="21600">Every 6 Hours (Default)</option>
                     <option value="43200">Every 12 Hours</option>
                     <option value="86400">Every 24 Hours</option>
                     <option value="custom">Custom (Seconds)</option>

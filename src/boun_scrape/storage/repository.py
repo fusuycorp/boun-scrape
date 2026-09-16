@@ -111,19 +111,26 @@ class CourseRepository:
             )
 
     def save_courses_and_slots(
-        self, term: str, courses: list[Course], scraped_departments: list[str] | None = None
+        self,
+        term: str,
+        courses: list[Course],
+        scraped_departments: list[str] | None = None,
+        is_active: bool | None = None,
     ) -> int:
-        """Atomically replace courses and slots for a given term.
+        """Atomically persist courses and slots for a given term.
 
-        If `scraped_departments` is provided, only rows for those departments are
-        replaced -- departments not in this list (e.g. ones that failed to scrape
-        this run) are left untouched rather than deleted, so a transient failure
-        on one department never destroys previously-good data for it. Pass None
-        (the default) to replace the entire term unconditionally, matching the
-        old behavior.
+        For past terms (is_active=False), existing courses and slots are never deleted,
+        protecting historical catalog data from transient empty scrapes or changes.
+        For active terms (is_active=True), upstream is the source of truth, so rows for
+        scraped_departments are replaced. If scraped_departments is provided, only rows
+        for those departments are replaced -- departments not in this list are left
+        untouched. Pass None (the default) to replace all departments for the term.
 
         Returns the total number of courses persisted.
         """
+        if is_active is None:
+            is_active = self.is_active_term(term)
+
         # Normalise scraped_departments: dedupe, strip, drop empties (guards S-02)
         filtered_scraped: list[str] | None = None
         if scraped_departments is not None:
@@ -132,35 +139,37 @@ class CourseRepository:
             # Delete dependent slots first so the operation works regardless of
             # whether course_slots.course_id has ON DELETE CASCADE (new DBs) or
             # NO ACTION/RESTRICT (legacy prod DBs created before the CASCADE fix).
-            if filtered_scraped is None:
-                conn.execute(
-                    "DELETE FROM course_slots WHERE course_id IN (SELECT id FROM courses WHERE term = ?)",
-                    (term,),
-                )
-                conn.execute("DELETE FROM courses WHERE term = ?", (term,))
-            elif filtered_scraped:
-                if len(filtered_scraped) > 900:
-                    for i in range(0, len(filtered_scraped), 900):
-                        chunk = filtered_scraped[i : i + 900]
-                        ph = ",".join("?" for _ in chunk)
+            # Past terms are immutable historical archives; we never delete existing courses.
+            if is_active:
+                if filtered_scraped is None:
+                    conn.execute(
+                        "DELETE FROM course_slots WHERE course_id IN (SELECT id FROM courses WHERE term = ?)",
+                        (term,),
+                    )
+                    conn.execute("DELETE FROM courses WHERE term = ?", (term,))
+                elif filtered_scraped:
+                    if len(filtered_scraped) > 900:
+                        for i in range(0, len(filtered_scraped), 900):
+                            chunk = filtered_scraped[i : i + 900]
+                            ph = ",".join("?" for _ in chunk)
+                            conn.execute(
+                                f"DELETE FROM course_slots WHERE course_id IN (SELECT id FROM courses WHERE term = ? AND department IN ({ph}))",
+                                (term, *chunk),
+                            )
+                            conn.execute(
+                                f"DELETE FROM courses WHERE term = ? AND department IN ({ph})",
+                                (term, *chunk),
+                            )
+                    else:
+                        placeholders = ",".join("?" for _ in filtered_scraped)
                         conn.execute(
-                            f"DELETE FROM course_slots WHERE course_id IN (SELECT id FROM courses WHERE term = ? AND department IN ({ph}))",
-                            (term, *chunk),
+                            f"DELETE FROM course_slots WHERE course_id IN (SELECT id FROM courses WHERE term = ? AND department IN ({placeholders}))",
+                            (term, *filtered_scraped),
                         )
                         conn.execute(
-                            f"DELETE FROM courses WHERE term = ? AND department IN ({ph})",
-                            (term, *chunk),
+                            f"DELETE FROM courses WHERE term = ? AND department IN ({placeholders})",
+                            (term, *filtered_scraped),
                         )
-                else:
-                    placeholders = ",".join("?" for _ in filtered_scraped)
-                    conn.execute(
-                        f"DELETE FROM course_slots WHERE course_id IN (SELECT id FROM courses WHERE term = ? AND department IN ({placeholders}))",
-                        (term, *filtered_scraped),
-                    )
-                    conn.execute(
-                        f"DELETE FROM courses WHERE term = ? AND department IN ({placeholders})",
-                        (term, *filtered_scraped),
-                    )
             # else: filtered_scraped == [] means nothing succeeded this run -- delete nothing.
             merged_courses: list[Course] = []
             seen_course_keys: dict[tuple[str, str, str, str], Course] = {}
@@ -458,6 +467,18 @@ class CourseRepository:
                 """
             ).fetchall()
             return [r["term"] for r in rows if r["term"]]
+
+    def is_active_term(self, term: str) -> bool:
+        """Check if a term is the current active/latest term.
+
+        Past terms are historical archives and must never have existing courses deleted.
+        A term is considered active if it matches or exceeds the latest recorded term in the
+        database, or if no terms are recorded yet.
+        """
+        terms = self.get_terms()
+        if not terms:
+            return True
+        return term >= terms[0]
 
     def save_scrape_run(self, summary: ScrapeRunSummary) -> None:
         """Persist or update scrape run execution status."""
@@ -804,23 +825,35 @@ class CourseRepository:
         self,
         term: str,
         code: str,
-        course_count: int = 0,
+        course_count: int | None = None,
         status: str = "COMPLETED",
         error: str | None = None,
     ) -> None:
         """Update the scrape outcome and timestamp for a single department."""
         with self.db.connection() as conn:
-            conn.execute(
-                """
-                UPDATE departments
-                SET last_scraped_at = CURRENT_TIMESTAMP,
-                    course_count = ?,
-                    last_status = ?,
-                    last_error = ?
-                WHERE term = ? AND code = ?
-                """,
-                (course_count, status, error, term, code),
-            )
+            if course_count is not None:
+                conn.execute(
+                    """
+                    UPDATE departments
+                    SET last_scraped_at = CURRENT_TIMESTAMP,
+                        course_count = ?,
+                        last_status = ?,
+                        last_error = ?
+                    WHERE term = ? AND code = ?
+                    """,
+                    (course_count, status, error, term, code),
+                )
+            else:
+                conn.execute(
+                    """
+                    UPDATE departments
+                    SET last_scraped_at = CURRENT_TIMESTAMP,
+                        last_status = ?,
+                        last_error = ?
+                    WHERE term = ? AND code = ?
+                    """,
+                    (status, error, term, code),
+                )
             conn.commit()
 
     def get_completed_department_codes(self, term: str) -> set[str]:
