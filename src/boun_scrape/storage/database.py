@@ -315,6 +315,52 @@ class DatabaseManager:
                 "UPDATE course_deltas SET department = substr(course_code, 1, instr(course_code, ' ') - 1) "
                 "WHERE (department IS NULL OR department = '') AND course_code LIKE '% %'"
             )
+            # Backfill multi-hour contiguous room forward-fill for existing slot records
+            slot_forward_fill_sql = """
+                UPDATE course_slots
+                SET room = (
+                    SELECT prev.room
+                    FROM course_slots AS prev
+                    WHERE prev.course_id = course_slots.course_id
+                      AND prev.day = course_slots.day
+                      AND cast(prev.hour AS INTEGER) = cast(course_slots.hour AS INTEGER) - 1
+                      AND prev.room IS NOT NULL
+                      AND prev.room != ''
+                      AND prev.room != 'N/A'
+                      AND (
+                          course_slots.slot_title IS NULL
+                          OR prev.slot_title IS NULL
+                          OR course_slots.slot_title = ''
+                          OR prev.slot_title = ''
+                          OR lower(course_slots.slot_title) = lower(prev.slot_title)
+                      )
+                    ORDER BY prev.id DESC
+                    LIMIT 1
+                )
+                WHERE (room IS NULL OR room = '' OR room = 'N/A')
+                  AND cast(hour AS INTEGER) > 0
+                  AND EXISTS (
+                      SELECT 1
+                      FROM course_slots AS prev
+                      WHERE prev.course_id = course_slots.course_id
+                        AND prev.day = course_slots.day
+                        AND cast(prev.hour AS INTEGER) = cast(course_slots.hour AS INTEGER) - 1
+                        AND prev.room IS NOT NULL
+                        AND prev.room != ''
+                        AND prev.room != 'N/A'
+                        AND (
+                            course_slots.slot_title IS NULL
+                            OR prev.slot_title IS NULL
+                            OR course_slots.slot_title = ''
+                            OR prev.slot_title = ''
+                            OR lower(course_slots.slot_title) = lower(prev.slot_title)
+                        )
+                  )
+            """
+            for _ in range(3):
+                cur = conn.execute(slot_forward_fill_sql)
+                if cur.rowcount <= 0:
+                    break
             conn.commit()
         except sqlite3.OperationalError:
             pass

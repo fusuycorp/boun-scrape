@@ -1013,3 +1013,44 @@ class TestRepository:
         remaining = repo.get_quota_snapshots(term=term)
         assert len(remaining) == 1
         assert remaining[0].course_code == "CMPE 250"
+
+    def test_existing_db_migration_backfills_department_and_rooms(self, tmp_path: Path) -> None:
+        db_file = tmp_path / "legacy_test.db"
+        db_mgr = DatabaseManager(str(db_file))
+        db_mgr.init_db()
+
+        # Seed legacy state (blank delta department and blank contiguous slot room)
+        with db_mgr.connection() as conn:
+            conn.execute(
+                """
+                INSERT INTO courses (id, term, department, course_code, section, course_name, instructor)
+                VALUES (1, '2024/2025-1', 'CMPE', 'CMPE 150', '01', 'Intro', 'Prof A')
+                """
+            )
+            conn.execute(
+                """
+                INSERT INTO course_slots (id, course_id, day, hour, room, slot_title, instructor)
+                VALUES (1, 1, 'M', '4', 'İB 102', 'Lecture', 'Prof A'),
+                       (2, 1, 'M', '5', '', 'Lecture', 'Prof A')
+                """
+            )
+            conn.execute(
+                """
+                INSERT INTO course_deltas (id, run_id, term, department, change_type, course_code, section, created_at)
+                VALUES (1, 'run-old', '2024/2025-1', '', 'MODIFIED', 'CMPE 150', '01', '2025-01-01T10:00:00Z')
+                """
+            )
+            conn.commit()
+
+        # Re-run migration (simulating app startup against an existing DB)
+        with db_mgr.connection() as conn:
+            db_mgr._migrate_schema(conn)
+
+        # Verify course_deltas department was backfilled
+        with db_mgr.connection() as conn:
+            delta_row = conn.execute("SELECT department FROM course_deltas WHERE id = 1").fetchone()
+            assert delta_row["department"] == "CMPE"
+
+            # Verify course_slots contiguous room was backfilled
+            slot2 = conn.execute("SELECT room FROM course_slots WHERE id = 2").fetchone()
+            assert slot2["room"] == "İB 102"
