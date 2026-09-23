@@ -175,11 +175,11 @@ class TestDoubleDigitPeriodsAndIrregularDays:
         # Newline separated rooms
         assert parse_rooms("NH101\nNH102\nNH103", 3) == ["NH101", "NH102", "NH103"]
 
-        # Pipe separated with html non-breaking space
-        assert parse_rooms("NH101 | &nbsp; | KB433", 3) == ["NH101", "", "KB433"]
+        # Pipe separated with html non-breaking space forward-fills from preceding room
+        assert parse_rooms("NH101 | &nbsp; | KB433", 3) == ["NH101", "NH101", "KB433"]
 
-        # Padding when fewer rooms than slots
-        assert parse_rooms("NH101 | NH102", 4) == ["NH101", "NH102", "", ""]
+        # Padding when fewer rooms than slots forward-fills last valid room
+        assert parse_rooms("NH101 | NH102", 4) == ["NH101", "NH102", "NH102", "NH102"]
 
     def test_build_slots_full_integration(self) -> None:
         slots = build_slots(
@@ -412,6 +412,58 @@ class TestAdversarialResilienceAndQuarantine:
         assert coverage.departments[0].status == "FAILED"
         assert coverage.departments[0].course_count == 8
         assert "Quarantined" in (coverage.departments[0].error_message or "")
+
+    @pytest.mark.asyncio
+    async def test_partial_collapse_quarantine(self, tmp_path: Path) -> None:
+        db_mgr = DatabaseManager(str(tmp_path / "partial_quarantine.db"))
+        db_mgr.init_db()
+        repo = CourseRepository(db_mgr)
+        term = "2024/2025-2"
+
+        # Pre-seed department and 20 existing courses (>= 15 threshold)
+        repo.save_departments(term, [Department(code="CMPE", name="Computer Engineering")])
+        existing_courses = [
+            Course(term=term, department="CMPE", course_code=f"CMPE {100 + i}", section="01", course_name=f"Course {i}")
+            for i in range(20)
+        ]
+        repo.save_courses_and_slots(term, existing_courses, scraped_departments=["CMPE"], is_active=True)
+        repo.update_department_scrape_status(term=term, code="CMPE", course_count=20, status="COMPLETED")
+
+        scheduler = ScrapeScheduler(repository=repo, export_dir=tmp_path / "exports")
+
+        # Mock scrape pipeline returning only 2 courses (10% of 20, <= 20% threshold)
+        truncated_courses = [
+            Course(term=term, department="CMPE", course_code="CMPE 100", section="01", course_name="Course 0"),
+            Course(term=term, department="CMPE", course_code="CMPE 101", section="01", course_name="Course 1"),
+        ]
+        mock_pipeline_result = TermScrapeResult(
+            courses=truncated_courses,
+            departments=[Department(code="CMPE", name="Computer Engineering")],
+            succeeded_departments=["CMPE"],
+            failed_departments=[],
+        )
+
+        with patch("boun_scrape.scheduler.runner.scrape_term_pipeline", new=AsyncMock(return_value=mock_pipeline_result)):
+            result, deltas = await scheduler._scrape_and_compute_deltas(term, None, False, "test-run-partial")
+
+        # CMPE must be quarantined and moved to failed departments
+        assert "CMPE" in result.quarantined_departments
+        assert "CMPE" in result.failed_departments
+        assert "CMPE" not in result.succeeded_departments
+
+        # Courses in result must be stripped of quarantined department
+        assert len(result.courses) == 0
+
+        # No REMOVED deltas emitted
+        removed_deltas = [d for d in deltas if d.change_type == ChangeType.REMOVED]
+        assert len(removed_deltas) == 0
+
+        # Persist cycle data
+        await scheduler._persist_cycle_data(term, result, deltas, "test-run-partial")
+
+        # Existing 20 courses must remain intact in DB
+        db_courses = repo.get_courses_by_term(term)
+        assert len(db_courses) == 20, "Partial collapse must not purge existing courses"
 
     @pytest.mark.asyncio
     async def test_legitimate_zero_department_allowed(self, tmp_path: Path) -> None:

@@ -76,13 +76,14 @@ CREATE TABLE IF NOT EXISTS course_deltas (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     run_id TEXT,
     term TEXT,
+    department TEXT NOT NULL DEFAULT '',
     change_type TEXT,
     course_code TEXT,
     section TEXT,
     diff_fields TEXT,
     previous_data TEXT,
     current_data TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT (strftime('%Y-%m-%dT%H:%M:%SZ', 'now'))
 );
 
 -- Quota snapshot log (append-only; one row per captured department-quota line per scrape)
@@ -113,9 +114,13 @@ CREATE INDEX IF NOT EXISTS idx_course_deltas_run_id ON course_deltas(run_id);
 CREATE INDEX IF NOT EXISTS idx_course_deltas_term ON course_deltas(term);
 CREATE INDEX IF NOT EXISTS idx_course_deltas_created_at ON course_deltas(created_at);
 CREATE INDEX IF NOT EXISTS idx_course_deltas_term_created ON course_deltas(term, created_at);
+CREATE INDEX IF NOT EXISTS idx_course_deltas_created_at_iso ON course_deltas(replace(created_at, ' ', 'T'), id);
+CREATE INDEX IF NOT EXISTS idx_course_deltas_term_created_iso ON course_deltas(term, replace(created_at, ' ', 'T'), id);
 CREATE INDEX IF NOT EXISTS idx_quota_snapshots_term_code_sec ON quota_snapshots(term, course_code, section);
 CREATE INDEX IF NOT EXISTS idx_quota_snapshots_captured_at ON quota_snapshots(captured_at);
 CREATE INDEX IF NOT EXISTS idx_quota_snapshots_term_captured ON quota_snapshots(term, captured_at);
+CREATE INDEX IF NOT EXISTS idx_quota_snapshots_captured_at_iso ON quota_snapshots(replace(captured_at, ' ', 'T'), id);
+CREATE INDEX IF NOT EXISTS idx_quota_snapshots_term_captured_iso ON quota_snapshots(term, replace(captured_at, ' ', 'T'), id);
 """
 
 class DatabaseManager:
@@ -253,6 +258,12 @@ class DatabaseManager:
                 conn.execute(f"ALTER TABLE course_slots ADD COLUMN {col} {col_def}")
                 conn.commit()
 
+        # 5. course_deltas migrations
+        delta_cols = {row["name"] for row in conn.execute("PRAGMA table_info(course_deltas)")}
+        if "department" not in delta_cols:
+            conn.execute("ALTER TABLE course_deltas ADD COLUMN department TEXT NOT NULL DEFAULT ''")
+            conn.commit()
+
         conn.execute(
             "CREATE UNIQUE INDEX IF NOT EXISTS idx_courses_unique ON courses (term, department, course_code, section)"
         )
@@ -267,6 +278,9 @@ class DatabaseManager:
             "CREATE INDEX IF NOT EXISTS idx_course_deltas_term_created ON course_deltas(term, created_at)"
         )
         conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_course_deltas_term_dept ON course_deltas(term, department)"
+        )
+        conn.execute(
             "CREATE INDEX IF NOT EXISTS idx_quota_snapshots_term_captured ON quota_snapshots(term, captured_at)"
         )
         conn.execute("CREATE INDEX IF NOT EXISTS idx_departments_term ON departments(term)")
@@ -276,16 +290,36 @@ class DatabaseManager:
         conn.execute(
             "CREATE INDEX IF NOT EXISTS idx_scrape_runs_started ON scrape_runs(started_at DESC)"
         )
+        conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_course_deltas_created_at_iso ON course_deltas(replace(created_at, ' ', 'T'), id)"
+        )
+        conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_course_deltas_term_created_iso ON course_deltas(term, replace(created_at, ' ', 'T'), id)"
+        )
+        conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_quota_snapshots_captured_at_iso ON quota_snapshots(replace(captured_at, ' ', 'T'), id)"
+        )
+        conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_quota_snapshots_term_captured_iso ON quota_snapshots(term, replace(captured_at, ' ', 'T'), id)"
+        )
         try:
             conn.execute(
                 "UPDATE quota_snapshots SET captured_at = replace(captured_at, ' ', 'T') "
                 "WHERE captured_at LIKE '% %' AND captured_at NOT LIKE '%T%'"
             )
+            conn.execute(
+                "UPDATE course_deltas SET created_at = replace(created_at, ' ', 'T') "
+                "WHERE created_at LIKE '% %' AND created_at NOT LIKE '%T%'"
+            )
+            conn.execute(
+                "UPDATE course_deltas SET department = substr(course_code, 1, instr(course_code, ' ') - 1) "
+                "WHERE (department IS NULL OR department = '') AND course_code LIKE '% %'"
+            )
             conn.commit()
         except sqlite3.OperationalError:
             pass
 
-        # 5. Fix legacy course_slots FK missing ON DELETE CASCADE (prod DBs created
+        # 6. Fix legacy course_slots FK missing ON DELETE CASCADE (prod DBs created
         #    before the CASCADE fix have NO ACTION, causing DELETE FROM courses
         #    to fail with FOREIGN KEY constraint when slots exist). SQLite cannot
         #    ALTER a FK, so we recreate the table when the FK is wrong.

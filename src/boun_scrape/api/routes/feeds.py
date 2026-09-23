@@ -57,6 +57,7 @@ def get_deltas(
     response: Response,
     repo: Annotated[CourseRepository, Depends(get_course_repo_dep)],
     term: str | None = Query(default=None, description="Filter deltas by academic term"),
+    department: str | None = Query(default=None, description="Filter deltas by department code"),
     run_id: str | None = Query(default=None, description="Filter deltas by specific scrape run ID"),
     after_timestamp: str | None = Query(default=None, description="Only return deltas created strictly after this timestamp"),
     since: str | None = Query(default=None, description="Only return deltas created on or after this timestamp"),
@@ -67,6 +68,7 @@ def get_deltas(
     """Retrieve historical course change delta events."""
     deltas = repo.get_deltas(
         term=term,
+        department=department,
         run_id=run_id,
         after_timestamp=after_timestamp,
         since=since,
@@ -79,7 +81,7 @@ def get_deltas(
     if dtos:
         summary = f"deltas:{len(dtos)}:{dtos[0].timestamp}:{dtos[-1].timestamp}"
     else:
-        summary = f"deltas:empty:{term or 'all'}"
+        summary = f"deltas:empty:{term or 'all'}:{department or 'all'}"
     etag = f'W/"{hashlib.sha1(summary.encode()).hexdigest()}"'
 
     if _matches_etag(request.headers.get("if-none-match"), etag):

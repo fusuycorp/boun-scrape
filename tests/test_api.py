@@ -443,6 +443,7 @@ class TestApiEndpoints:
         data = response.json()
         assert data["id"] == target_id
         assert len(data["slots"]) > 0
+        assert data["instructors"] == ["Prof. Smith"]
 
     @pytest.mark.asyncio
     async def test_get_course_by_id_not_found(self, async_client: AsyncClient) -> None:
@@ -485,6 +486,16 @@ class TestApiEndpoints:
         assert len(data) == 1
         assert data[0]["course_code"] == "CMPE150"
         assert data[0]["change_type"] == "MODIFIED"
+        assert data[0]["department"] == "CMPE"
+
+        # Department filtering on feeds
+        cmpe_resp = await async_client.get("/api/v1/feeds/deltas?term=2024/2025-1&department=CMPE")
+        assert cmpe_resp.status_code == 200
+        assert len(cmpe_resp.json()) == 1
+
+        math_resp = await async_client.get("/api/v1/feeds/deltas?term=2024/2025-1&department=MATH")
+        assert math_resp.status_code == 200
+        assert len(math_resp.json()) == 0
 
     @pytest.mark.asyncio
     async def test_get_deltas_after_timestamp_filter(

@@ -20,6 +20,8 @@ from boun_scrape.scraper.flow import (
 )
 from boun_scrape.scraper.parser import (
     extract_viewstate_and_semesters,
+    forward_fill_course_rooms,
+    forward_fill_course_slots,
     parse_departments_from_html,
     parse_quota_from_html,
     parse_schedules_from_html,
@@ -45,6 +47,8 @@ __all__ = [
     "fetch_department_schedule",
     "fetch_departments",
     "format_course_key",
+    "forward_fill_course_rooms",
+    "forward_fill_course_slots",
     "load_recaptcha_token",
     "parse_cookie_file",
     "parse_cookie_text",

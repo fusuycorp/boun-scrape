@@ -258,6 +258,106 @@ class TestParseSchedules:
         courses = parse_schedules_from_html(html, term="2024/2025-1", department_code="HIST")
         assert len(courses) == 1
         assert courses[0].instructor == "DR. A, DR. B, DR. C"
+        assert courses[0].instructors == ["DR. A", "DR. B", "DR. C"]
+
+    def test_multi_instructor_representation(self) -> None:
+        html = """
+        <table>
+            <tr class="schtd">
+                <td>MIS 131.01</td><td>MIS</td><td>INTRO TO MIS</td><td>3</td><td>5</td>
+                <td>MEHMET EMİN ADANALI, JANE DOE</td><td>M</td><td>1</td><td>In Class</td><td></td><td>NH 101</td>
+                <td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+        """
+        courses = parse_schedules_from_html(html, term="2024/2025-1", department_code="MIS")
+        assert len(courses) == 1
+        assert courses[0].instructor == "MEHMET EMİN ADANALI, JANE DOE"
+        assert courses[0].instructors == ["MEHMET EMİN ADANALI", "JANE DOE"]
+
+    def test_forward_fill_rooms_contiguous_hours(self) -> None:
+        # Multi-hour lecture block with line break in rooms (İB 102<br>&nbsp;)
+        html = """
+        <table>
+            <tr class="schtd">
+                <td>MIS 131.01</td><td>MIS</td><td>INTRO TO MIS</td><td>3</td><td>5</td>
+                <td>INSTRUCTOR</td><td>M M</td><td>4 5</td><td>In Class</td><td></td><td>İB 102<br>&nbsp;</td>
+                <td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+        """
+        courses = parse_schedules_from_html(html, term="2024/2025-1", department_code="MIS")
+        assert len(courses) == 1
+        assert len(courses[0].slots) == 2
+        assert courses[0].slots[0].hour == "4"
+        assert courses[0].slots[0].room == "İB 102"
+        assert courses[0].slots[1].hour == "5"
+        assert courses[0].slots[1].room == "İB 102"
+
+    def test_forward_fill_rooms_continuation_rows_and_session_boundaries(self) -> None:
+        # Continuation row with contiguous hour forward fills, but distinct session type does not
+        html = """
+        <table>
+            <tr class="schtd">
+                <td>CMPE 150.01</td><td>CMPE</td><td>INTRO</td><td>3</td><td>5</td>
+                <td>INSTRUCTOR</td><td>M</td><td>3</td><td>In Class</td><td></td><td>NH 101</td>
+                <td></td><td></td><td></td><td></td>
+            </tr>
+            <!-- Continuation row: Lab at hour 4 with blank room should NOT take lecture room -->
+            <tr class="schtd2">
+                <td></td><td></td><td>LAB</td><td></td><td></td>
+                <td>TA</td><td>M</td><td>4</td><td>In Class</td><td></td><td></td>
+                <td></td><td></td><td></td><td></td>
+            </tr>
+            <!-- Continuation row: Lab at hour 7 with room LAB 1 -->
+            <tr class="schtd2">
+                <td></td><td></td><td>LAB</td><td></td><td></td>
+                <td>TA</td><td>Th</td><td>7</td><td>In Class</td><td></td><td>LAB 1</td>
+                <td></td><td></td><td></td><td></td>
+            </tr>
+            <!-- Continuation row: Lab at hour 8 with blank room immediately following hour 7 with LAB 1 -->
+            <tr class="schtd2">
+                <td></td><td></td><td>LAB</td><td></td><td></td>
+                <td>TA</td><td>Th</td><td>8</td><td>In Class</td><td></td><td></td>
+                <td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+        """
+        courses = parse_schedules_from_html(html, term="2024/2025-1", department_code="CMPE")
+        assert len(courses) == 1
+        slots = courses[0].slots
+        assert len(slots) == 4
+        # Slot 0: M 3 Lecture -> NH 101
+        assert slots[0].day == "M" and slots[0].hour == "3" and slots[0].room == "NH 101"
+        # Slot 1: M 4 LAB -> remains "" (did not cross session boundary from lecture)
+        assert slots[1].day == "M" and slots[1].hour == "4" and slots[1].room == ""
+        # Slot 2: Th 7 LAB -> LAB 1
+        assert slots[2].day == "Th" and slots[2].hour == "7" and slots[2].room == "LAB 1"
+        # Slot 3: Th 8 LAB -> forward-propagated LAB 1 from contiguous hour 7
+        assert slots[3].day == "Th" and slots[3].hour == "8" and slots[3].room == "LAB 1"
+
+    def test_forward_fill_rooms_non_contiguous_hours_breaks_propagation(self) -> None:
+        html = """
+        <table>
+            <tr class="schtd">
+                <td>CMPE 250.01</td><td>CMPE</td><td>DATA STRUCTURES</td><td>3</td><td>5</td>
+                <td>INSTRUCTOR</td><td>M</td><td>1</td><td>In Class</td><td></td><td>BMB 1</td>
+                <td></td><td></td><td></td><td></td>
+            </tr>
+            <tr class="schtd">
+                <td>CMPE 250.01</td><td>CMPE</td><td>DATA STRUCTURES</td><td>3</td><td>5</td>
+                <td>INSTRUCTOR</td><td>M</td><td>4</td><td>In Class</td><td></td><td></td>
+                <td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+        """
+        courses = parse_schedules_from_html(html, term="2024/2025-1", department_code="CMPE")
+        assert len(courses) == 1
+        slots = courses[0].slots
+        assert len(slots) == 2
+        assert slots[0].hour == "1" and slots[0].room == "BMB 1"
+        # Hour 4 does not immediately follow hour 1 -> blank room is NOT filled
+        assert slots[1].hour == "4" and slots[1].room == ""
 
     def test_parse_schedules_with_extra_info_column_offset_shift(self) -> None:
         """Verify dynamic header parsing when an extra Info/Desc column is present (e.g. 2026/2027-1)."""

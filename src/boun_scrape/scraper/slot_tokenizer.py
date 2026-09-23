@@ -121,8 +121,14 @@ def parse_rooms(room_raw: str | None, num_slots: int) -> list[str]:
     if len(parts) == 1 and num_slots > 1 and parts[0]:
         return parts * num_slots
 
+    # Forward-fill subsequent blank slots if preceded by a valid room
+    for i in range(1, len(parts)):
+        if not parts[i] and parts[i - 1]:
+            parts[i] = parts[i - 1]
+
     if len(parts) < num_slots:
-        return parts + [""] * (num_slots - len(parts))
+        pad_val = parts[-1] if parts else ""
+        return parts + [pad_val] * (num_slots - len(parts))
 
     return parts[:num_slots]
 

@@ -65,9 +65,14 @@ export default function Sidebar() {
         justifyContent: 'space-between',
         zIndex: 40,
       }}>
-        <span style={{ color: 'var(--neon-green)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em' }}>
-          [BOUN_DECK]
-        </span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <span style={{ color: 'var(--neon-green)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em' }}>
+            [BOUN_ARCHIVE]
+          </span>
+          <span className="cyber-badge cyber-badge-amber" style={{ fontSize: '9px', padding: '1px 5px', letterSpacing: '0.08em' }}>
+            BETA
+          </span>
+        </div>
         <button
           onClick={toggleMobile}
           aria-label="Toggle navigation menu"
@@ -112,9 +117,23 @@ export default function Sidebar() {
               fontFamily: 'var(--font-mono)',
             }}>
 {`┌──────────────────┐
-│  BOUN_DECK v2.0  │
+│   BOUN_ARCHIVE   │
 └──────────────────┘`}
             </pre>
+            <div style={{ marginTop: '8px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span className="cyber-badge cyber-badge-amber" style={{ fontSize: '9px', padding: '1px 6px', letterSpacing: '0.1em' }}>
+                ● BETA
+              </span>
+              <span style={{
+                color: 'var(--text-muted)',
+                fontSize: '9px',
+                fontWeight: 600,
+                letterSpacing: '0.06em',
+                fontFamily: 'var(--font-mono)',
+              }}>
+                v2.0-preview
+              </span>
+            </div>
             <div style={{
               color: 'var(--neon-amber)',
               fontSize: '10px',

@@ -2,7 +2,7 @@
 
 from typing import Any, Generic, TypeVar
 import croniter
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, field_validator, model_validator
 
 from boun_scrape.domain.events import ChangeType, CourseDeltaEvent
 from boun_scrape.domain.models import (
@@ -40,6 +40,7 @@ class CourseDTO(BaseModel):
     section: str
     course_name: str
     instructor: str = ""
+    instructors: list[str] = Field(default_factory=list)
     credits: float = 0.0
     ects: float = 0.0
     delivery_method: str = ""
@@ -50,6 +51,14 @@ class CourseDTO(BaseModel):
     departments: str = ""
     slots: list[CourseSlotDTO] = Field(default_factory=list)
     raw_code: str | None = None
+
+    @model_validator(mode="after")
+    def _sync_instructors(self) -> "CourseDTO":
+        if not self.instructors and self.instructor:
+            self.instructors = [s.strip() for s in self.instructor.split(",") if s.strip()]
+        elif self.instructors and not self.instructor:
+            self.instructor = ", ".join(self.instructors)
+        return self
 
 
 class DepartmentDTO(BaseModel):
@@ -316,6 +325,7 @@ def course_to_dto(course: Course) -> CourseDTO:
         section=course.section,
         course_name=course.course_name,
         instructor=course.instructor,
+        instructors=course.instructors or ([s.strip() for s in course.instructor.split(",") if s.strip()] if course.instructor else []),
         credits=course.credits,
         ects=course.ects,
         delivery_method=course.delivery_method,

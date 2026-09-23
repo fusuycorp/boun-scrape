@@ -98,10 +98,15 @@ class TestParseRooms:
         assert parse_rooms("M2170\nM2180", 2) == ["M2170", "M2180"]
 
     def test_padding_and_slicing(self) -> None:
-        # Fewer rooms than slots -> pad with empty strings
-        assert parse_rooms("NH101 | NH102", 3) == ["NH101", "NH102", ""]
+        # Fewer rooms than slots -> pad with last valid room
+        assert parse_rooms("NH101 | NH102", 3) == ["NH101", "NH102", "NH102"]
         # More rooms than slots -> slice to num_slots
         assert parse_rooms("A | B | C | D", 2) == ["A", "B"]
+
+    def test_forward_fill_multi_hour_blocks(self) -> None:
+        assert parse_rooms("İB 102 | ", 2) == ["İB 102", "İB 102"]
+        assert parse_rooms("HH 108 LAB | ", 2) == ["HH 108 LAB", "HH 108 LAB"]
+        assert parse_rooms("NH101 | | ", 3) == ["NH101", "NH101", "NH101"]
 
     def test_entities_and_empty(self) -> None:
         assert parse_rooms("&nbsp;", 2) == ["", ""]

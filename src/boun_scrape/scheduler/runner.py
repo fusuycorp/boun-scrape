@@ -228,17 +228,26 @@ class ScrapeScheduler:
         for dept_code in list(result.succeeded_departments):
             prev_count = prev_counts_by_dept.get(dept_code, 0)
             new_count = new_counts_by_dept.get(dept_code, 0)
-            if prev_count > 5 and new_count == 0:
+            is_collapsed = (
+                (prev_count > 5 and new_count == 0)
+                or (prev_count >= 15 and new_count <= max(1, int(prev_count * 0.2)))
+            )
+            if is_collapsed:
                 logger.error(
                     "Collapse quarantine triggered for department %s in term %s: "
-                    "had %d courses in DB, scraped 0. Quarantining department to prevent data purge.",
+                    "had %d courses in DB, scraped %d. Quarantining department to prevent data purge.",
                     dept_code,
                     target_term,
                     prev_count,
+                    new_count,
                 )
                 result.quarantined_departments.append(dept_code)
                 result.succeeded_departments.remove(dept_code)
                 result.failed_departments.append(dept_code)
+
+        if result.quarantined_departments:
+            quarantined_set = set(result.quarantined_departments)
+            result.courses = [c for c in result.courses if c.department not in quarantined_set]
 
         succeeded_set = set(result.succeeded_departments)
         filtered_previous = [c for c in previous_courses if c.department in succeeded_set]
@@ -279,7 +288,7 @@ class ScrapeScheduler:
                     course_count=None if is_quarantined else 0,
                     status="FAILED",
                     error=(
-                        "Quarantined: upstream returned 0 courses for active department with existing catalog"
+                        "Quarantined: upstream returned anomalous drop in courses for active department with existing catalog"
                         if is_quarantined
                         else "Crawl failed during pipeline execution"
                     ),
@@ -321,6 +330,18 @@ class ScrapeScheduler:
             if quota_rows:
                 await asyncio.to_thread(self.repository.save_quota_snapshots_bulk, quota_rows)
             logger.info("Scrape %s: captured %d quota rows", run_id, len(quota_rows))
+            if self.settings and getattr(self.settings, "quota_retention_days", 0) > 0:
+                pruned = await asyncio.to_thread(
+                    self.repository.prune_quota_snapshots,
+                    self.settings.quota_retention_days,
+                )
+                if pruned > 0:
+                    logger.info(
+                        "Scrape %s: pruned %d expired quota snapshots (retention=%d days)",
+                        run_id,
+                        pruned,
+                        self.settings.quota_retention_days,
+                    )
         except Exception:
             logger.exception("Scrape %s: quota capture failed (continuing, run not affected)", run_id)
 

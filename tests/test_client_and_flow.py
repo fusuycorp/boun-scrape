@@ -861,3 +861,49 @@ class TestScraperFlow:
             assert response.status_code == 200
             assert attempts == 3
 
+    @pytest.mark.asyncio
+    async def test_scrape_term_pipeline_secondary_retry_sweep_recovers_department(
+        self, monkeypatch
+    ) -> None:
+        import asyncio
+        from unittest.mock import patch
+        from boun_scrape.domain.models import Course
+
+        async def fast_sleep(_: float) -> None:
+            pass
+
+        monkeypatch.setattr(asyncio, "sleep", fast_sleep)
+
+        cmpe_calls = 0
+
+        async def mock_fetch_dept(client, term, dept):
+            nonlocal cmpe_calls
+            code = dept.code if isinstance(dept, Department) else str(dept)
+            if code == "CMPE":
+                cmpe_calls += 1
+                if cmpe_calls == 1:
+                    raise BounHttpError("Transient server error")
+                return [Course(term=term, department="CMPE", course_code="CMPE 150", section="01", course_name="Intro")]
+            return [Course(term=term, department="EE", course_code="EE 201", section="01", course_name="Circuits")]
+
+        async_client = httpx.AsyncClient(
+            transport=httpx.MockTransport(lambda r: httpx.Response(200)),
+            base_url="https://registration.bogazici.edu.tr",
+        )
+        async with BounScraperClient(http_client=async_client, min_jitter=0, max_jitter=0) as client:
+            with patch("boun_scrape.scraper.flow.fetch_department_schedule", side_effect=mock_fetch_dept):
+                result = await scrape_term_pipeline(
+                    client=client,
+                    term="2024/2025-1",
+                    cached_departments=[
+                        Department(code="CMPE", name="Computer Engineering"),
+                        Department(code="EE", name="Electrical Engineering"),
+                    ],
+                )
+
+        assert "CMPE" in result.succeeded_departments
+        assert "EE" in result.succeeded_departments
+        assert len(result.failed_departments) == 0
+        assert len(result.courses) == 2
+        assert cmpe_calls == 2
+

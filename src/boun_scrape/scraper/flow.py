@@ -362,6 +362,29 @@ async def scrape_term_pipeline(
         all_courses.extend(result)
         succeeded_departments.append(dept.code)
 
+    if failures and not circuit_breaker_tripped:
+        retry_candidates = [dept for dept, _ in failures]
+        logger.info(
+            "Performing secondary retry sweep for %d failed departments in term %s...",
+            len(retry_candidates),
+            term,
+        )
+        await asyncio.sleep(1.0)
+        retry_results = await asyncio.gather(
+            *[_scrape_single_dept(d) for d in retry_candidates],
+            return_exceptions=True,
+        )
+        recovered_depts: set[str] = set()
+        for dept, res in zip(retry_candidates, retry_results):
+            if not isinstance(res, BaseException):
+                all_courses.extend(res)
+                succeeded_departments.append(dept.code)
+                recovered_depts.add(dept.code)
+                logger.info("Department %s recovered on secondary retry sweep", dept.code)
+        if recovered_depts:
+            failures = [f for f in failures if f[0].code not in recovered_depts]
+            failed_departments = [code for code in failed_departments if code not in recovered_depts]
+
     if failures:
         logger.warning(
             "%d/%d departments failed to scrape for term %s: %s",

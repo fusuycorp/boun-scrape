@@ -1,6 +1,6 @@
 """High-performance repository for SQLite persistence of courses, slots, and runs."""
 
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 import json
 import sqlite3
 from typing import Any
@@ -136,41 +136,7 @@ class CourseRepository:
         if scraped_departments is not None:
             filtered_scraped = [d for d in dict.fromkeys(s.strip() for s in scraped_departments if s and s.strip()) if d]
         with self.db.transaction() as conn:
-            # Delete dependent slots first so the operation works regardless of
-            # whether course_slots.course_id has ON DELETE CASCADE (new DBs) or
-            # NO ACTION/RESTRICT (legacy prod DBs created before the CASCADE fix).
-            # Past terms are immutable historical archives; we never delete existing courses.
-            if is_active:
-                if filtered_scraped is None:
-                    conn.execute(
-                        "DELETE FROM course_slots WHERE course_id IN (SELECT id FROM courses WHERE term = ?)",
-                        (term,),
-                    )
-                    conn.execute("DELETE FROM courses WHERE term = ?", (term,))
-                elif filtered_scraped:
-                    if len(filtered_scraped) > 900:
-                        for i in range(0, len(filtered_scraped), 900):
-                            chunk = filtered_scraped[i : i + 900]
-                            ph = ",".join("?" for _ in chunk)
-                            conn.execute(
-                                f"DELETE FROM course_slots WHERE course_id IN (SELECT id FROM courses WHERE term = ? AND department IN ({ph}))",
-                                (term, *chunk),
-                            )
-                            conn.execute(
-                                f"DELETE FROM courses WHERE term = ? AND department IN ({ph})",
-                                (term, *chunk),
-                            )
-                    else:
-                        placeholders = ",".join("?" for _ in filtered_scraped)
-                        conn.execute(
-                            f"DELETE FROM course_slots WHERE course_id IN (SELECT id FROM courses WHERE term = ? AND department IN ({placeholders}))",
-                            (term, *filtered_scraped),
-                        )
-                        conn.execute(
-                            f"DELETE FROM courses WHERE term = ? AND department IN ({placeholders})",
-                            (term, *filtered_scraped),
-                        )
-            # else: filtered_scraped == [] means nothing succeeded this run -- delete nothing.
+            # 1. Deduplicate/merge incoming course slots and instructors
             merged_courses: list[Course] = []
             seen_course_keys: dict[tuple[str, str, str, str], Course] = {}
             for course in courses:
@@ -190,6 +156,7 @@ class CourseRepository:
                     seen_course_keys[key] = course
                     merged_courses.append(course)
 
+            # 2. Upsert courses preserving stable surrogate IDs (ON CONFLICT DO UPDATE RETURNING id)
             for course in merged_courses:
                 content_hash = compute_course_hash(course)
                 cursor = conn.execute(
@@ -212,6 +179,7 @@ class CourseRepository:
                         departments = excluded.departments,
                         content_hash = excluded.content_hash,
                         updated_at = CURRENT_TIMESTAMP
+                    RETURNING id
                     """,
                     (
                         course.term,
@@ -231,33 +199,80 @@ class CourseRepository:
                         content_hash,
                     ),
                 )
-                course_id = cursor.lastrowid
+                row = cursor.fetchone()
+                course_id = row["id"] if row else None
                 if not course_id:
-                    row = conn.execute(
+                    fallback_row = conn.execute(
                         "SELECT id FROM courses WHERE term = ? AND department = ? AND course_code = ? AND section = ?",
                         (course.term, course.department, course.course_code, course.section),
                     ).fetchone()
-                    course_id = row["id"] if row else None
+                    course_id = fallback_row["id"] if fallback_row else None
 
-                if course.slots and course_id is not None:
+                if course_id is not None:
                     conn.execute("DELETE FROM course_slots WHERE course_id = ?", (course_id,))
-                    conn.executemany(
-                        """
-                        INSERT INTO course_slots (course_id, day, hour, room, slot_title, instructor)
-                        VALUES (?, ?, ?, ?, ?, ?)
-                        """,
-                        [
-                            (
-                                course_id,
-                                s.day,
-                                s.hour,
-                                s.room,
-                                s.slot_title,
-                                s.instructor,
+                    if course.slots:
+                        conn.executemany(
+                            """
+                            INSERT INTO course_slots (course_id, day, hour, room, slot_title, instructor)
+                            VALUES (?, ?, ?, ?, ?, ?)
+                            """,
+                            [
+                                (
+                                    course_id,
+                                    s.day,
+                                    s.hour,
+                                    s.room,
+                                    s.slot_title,
+                                    s.instructor,
+                                )
+                                for s in course.slots
+                            ],
+                        )
+
+            # 3. Selective pruning for active terms: prune only courses absent from scraped departments
+            if is_active:
+                depts_to_prune: list[str] = []
+                if filtered_scraped is None:
+                    depts_to_prune = [
+                        r["department"]
+                        for r in conn.execute(
+                            "SELECT DISTINCT department FROM courses WHERE term = ?",
+                            (term,),
+                        ).fetchall()
+                    ]
+                elif filtered_scraped:
+                    depts_to_prune = filtered_scraped
+
+                if depts_to_prune:
+                    scraped_keys_by_dept: dict[str, set[tuple[str, str]]] = {}
+                    for c in merged_courses:
+                        scraped_keys_by_dept.setdefault(c.department, set()).add(
+                            (c.course_code, c.section)
+                        )
+
+                    to_delete_ids: list[int] = []
+                    for dept_code in depts_to_prune:
+                        current_keys = scraped_keys_by_dept.get(dept_code, set())
+                        dept_rows = conn.execute(
+                            "SELECT id, course_code, section FROM courses WHERE term = ? AND department = ?",
+                            (term, dept_code),
+                        ).fetchall()
+                        for r in dept_rows:
+                            if (r["course_code"], r["section"]) not in current_keys:
+                                to_delete_ids.append(r["id"])
+
+                    if to_delete_ids:
+                        for i in range(0, len(to_delete_ids), 900):
+                            chunk = to_delete_ids[i : i + 900]
+                            ph = ",".join("?" for _ in chunk)
+                            conn.execute(
+                                f"DELETE FROM course_slots WHERE course_id IN ({ph})",
+                                chunk,
                             )
-                            for s in course.slots
-                        ],
-                    )
+                            conn.execute(
+                                f"DELETE FROM courses WHERE id IN ({ph})",
+                                chunk,
+                            )
 
             # Update per-department course counts and COMPLETED status
             depts_to_update = (
@@ -600,16 +615,21 @@ class CourseRepository:
                 elif d.old_value:
                     diff_fields = json.dumps(list(d.old_value.keys()))
 
+                dept = (d.department or "").strip()
+                if not dept and d.course_code:
+                    dept = d.course_code.strip().split()[0]
+
                 conn.execute(
                     """
                     INSERT INTO course_deltas (
-                        run_id, term, change_type, course_code, section,
+                        run_id, term, department, change_type, course_code, section,
                         diff_fields, previous_data, current_data, created_at
-                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                     """,
                     (
                         run_id,
                         d.term,
+                        dept,
                         change_type_str,
                         d.course_code,
                         d.section,
@@ -623,6 +643,7 @@ class CourseRepository:
     def get_deltas(
         self,
         term: str | None = None,
+        department: str | None = None,
         run_id: str | None = None,
         after_timestamp: str | None = None,
         since: str | None = None,
@@ -637,6 +658,9 @@ class CourseRepository:
         if term:
             conditions.append("term = ?")
             params.append(term)
+        if department:
+            conditions.append("department = ?")
+            params.append(department)
         if run_id:
             conditions.append("run_id = ?")
             params.append(run_id)
@@ -679,10 +703,14 @@ class CourseRepository:
                 new_val = json.loads(r["current_data"]) if r["current_data"] else None
 
                 dept = ""
-                if new_val and isinstance(new_val, dict) and "department" in new_val:
+                if "department" in r.keys() and r["department"]:
+                    dept = str(r["department"])
+                elif new_val and isinstance(new_val, dict) and "department" in new_val:
                     dept = str(new_val["department"])
                 elif old_val and isinstance(old_val, dict) and "department" in old_val:
                     dept = str(old_val["department"])
+                if not dept and r["course_code"]:
+                    dept = str(r["course_code"]).strip().split()[0]
 
                 events.append(
                     CourseDeltaEvent(
@@ -755,6 +783,18 @@ class CourseRepository:
                         r.available, now_utc,
                     ),
                 )
+
+    def prune_quota_snapshots(self, days: int = 30) -> int:
+        """Prune quota snapshots older than specified days. Returns number of rows deleted."""
+        if days <= 0:
+            return 0
+        cutoff = (datetime.now(timezone.utc) - timedelta(days=days)).isoformat()
+        with self.db.transaction() as conn:
+            cursor = conn.execute(
+                "DELETE FROM quota_snapshots WHERE replace(captured_at, ' ', 'T') < ?",
+                (cutoff,),
+            )
+            return cursor.rowcount
 
     def get_quota_snapshots(
         self,

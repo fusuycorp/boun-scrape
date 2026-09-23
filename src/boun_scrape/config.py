@@ -38,6 +38,7 @@ class Settings(BaseSettings):
     scraper_cron: str | None = Field(default=None, validation_alias=AliasChoices("BOUN_SCRAPER_CRON", "SCRAPER_CRON", "scraper_cron"))
     scraper_default_term: str | None = Field(default=None, validation_alias=AliasChoices("BOUN_DEFAULT_TERM", "DEFAULT_TERM", "scraper_default_term"))
     scraper_auto_run: bool = Field(default=True, validation_alias=AliasChoices("BOUN_AUTO_RUN", "AUTO_RUN", "scraper_auto_run"))
+    quota_retention_days: int = Field(default=30, validation_alias=AliasChoices("BOUN_QUOTA_RETENTION_DAYS", "QUOTA_RETENTION_DAYS", "quota_retention_days"))
 
     @model_validator(mode="after")
     def _resolve_secrets(self) -> "Settings":

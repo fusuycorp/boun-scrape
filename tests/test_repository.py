@@ -281,9 +281,16 @@ class TestRepository:
         fetched_deltas = repo.get_deltas(term="2024/2025-1", run_id="run-100")
         assert len(fetched_deltas) == 1
         assert fetched_deltas[0].change_type == ChangeType.INSTRUCTOR_CHANGED
+        assert fetched_deltas[0].department == "CMPE"
         assert fetched_deltas[0].course_code == "CMPE 150"
         assert fetched_deltas[0].old_value == {"instructor": "DR OLD"}
         assert fetched_deltas[0].new_value == {"instructor": "DR NEW"}
+
+        # Filter by department
+        cmpe_deltas = repo.get_deltas(term="2024/2025-1", department="CMPE")
+        assert len(cmpe_deltas) == 1
+        math_deltas = repo.get_deltas(term="2024/2025-1", department="MATH")
+        assert len(math_deltas) == 0
 
     def test_save_courses_and_slots_scoped_to_succeeded_departments(
         self, repo: CourseRepository
@@ -906,3 +913,103 @@ class TestRepository:
         assert coverage.departments[0].course_count == 42
         assert coverage.departments[0].status == "FAILED"
         assert "Quarantined" in (coverage.departments[0].error_message or "")
+
+    def test_course_id_stability_across_active_scrapes(self, repo: CourseRepository) -> None:
+        term = "2024/2025-1"
+        repo.save_departments(term, [Department(code="CMPE", name="Computer Engineering")])
+
+        # Initial scrape with CMPE 150 and CMPE 250
+        c150 = Course(
+            term=term,
+            department="CMPE",
+            course_code="CMPE 150",
+            section="01",
+            course_name="Intro",
+            instructor="Prof A",
+            slots=[CourseSlot(day="M", hour="123", room="BMB1")],
+        )
+        c250 = Course(
+            term=term,
+            department="CMPE",
+            course_code="CMPE 250",
+            section="01",
+            course_name="Data Struct",
+            instructor="Prof B",
+            slots=[CourseSlot(day="T", hour="456", room="BMB2")],
+        )
+        repo.save_courses_and_slots(term, [c150, c250], scraped_departments=["CMPE"], is_active=True)
+
+        initial_courses = {c.course_code: c for c in repo.get_courses_by_term(term)}
+        id_150 = initial_courses["CMPE 150"].id
+        id_250 = initial_courses["CMPE 250"].id
+        assert id_150 is not None
+        assert id_250 is not None
+
+        # Second scrape: CMPE 150 instructor updated, CMPE 250 removed, CMPE 300 added
+        c150_updated = Course(
+            term=term,
+            department="CMPE",
+            course_code="CMPE 150",
+            section="01",
+            course_name="Intro",
+            instructor="Prof A Prime",  # changed
+            slots=[CourseSlot(day="M", hour="123", room="BMB1-NEW")],
+        )
+        c300 = Course(
+            term=term,
+            department="CMPE",
+            course_code="CMPE 300",
+            section="01",
+            course_name="Architecture",
+            instructor="Prof C",
+            slots=[CourseSlot(day="W", hour="78", room="BMB3")],
+        )
+        repo.save_courses_and_slots(term, [c150_updated, c300], scraped_departments=["CMPE"], is_active=True)
+
+        new_courses = {c.course_code: c for c in repo.get_courses_by_term(term)}
+        # CMPE 150 must have preserved its original primary key id!
+        assert new_courses["CMPE 150"].id == id_150
+        assert new_courses["CMPE 150"].instructor == "Prof A Prime"
+        assert len(new_courses["CMPE 150"].slots) == 1
+        assert new_courses["CMPE 150"].slots[0].room == "BMB1-NEW"
+
+        # CMPE 250 must be pruned
+        assert "CMPE 250" not in new_courses
+
+        # CMPE 300 is newly inserted with its own id
+        assert "CMPE 300" in new_courses
+        assert new_courses["CMPE 300"].id != id_150
+        assert new_courses["CMPE 300"].id != id_250
+
+    def test_prune_quota_snapshots(self, repo: CourseRepository) -> None:
+        term = "2024/2025-1"
+        repo.save_quota_snapshots(
+            term=term,
+            course_code="CMPE 150",
+            section="01",
+            records=[QuotaRecord(department="CMPE", status="Open", quota="30", current="20")],
+        )
+        repo.save_quota_snapshots(
+            term=term,
+            course_code="CMPE 250",
+            section="01",
+            records=[QuotaRecord(department="CMPE", status="Closed", quota="20", current="20")],
+        )
+
+        # Set CMPE 150 snapshot to 40 days ago, CMPE 250 to 5 days ago
+        from datetime import datetime, timezone, timedelta
+        old_time = (datetime.now(timezone.utc) - timedelta(days=40)).isoformat()
+        recent_time = (datetime.now(timezone.utc) - timedelta(days=5)).isoformat()
+
+        with repo.db.connection() as conn:
+            conn.execute("UPDATE quota_snapshots SET captured_at = ? WHERE course_code = 'CMPE 150'", (old_time,))
+            conn.execute("UPDATE quota_snapshots SET captured_at = ? WHERE course_code = 'CMPE 250'", (recent_time,))
+            conn.commit()
+
+        # Prune snapshots older than 30 days
+        pruned_count = repo.prune_quota_snapshots(days=30)
+        assert pruned_count == 1
+
+        remaining = repo.get_quota_snapshots(term=term)
+        assert len(remaining) == 1
+        assert remaining[0].course_code == "CMPE 250"

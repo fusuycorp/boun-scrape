@@ -75,6 +75,7 @@ class Course:
     section: str
     course_name: str
     instructor: str = ""
+    instructors: list[str] = field(default_factory=list)
     credits: float = 0.0
     ects: float = 0.0
     delivery_method: str = ""
@@ -85,6 +86,12 @@ class Course:
     departments: str = ""
     slots: list[CourseSlot] = field(default_factory=list)
     raw_code: str | None = None
+
+    def __post_init__(self) -> None:
+        if not self.instructors and self.instructor:
+            self.instructors = [s.strip() for s in self.instructor.split(",") if s.strip()]
+        elif self.instructors and not self.instructor:
+            self.instructor = ", ".join(self.instructors)
 
     @property
     def full_code(self) -> str:
@@ -183,6 +190,7 @@ def course_to_dict(course: Course) -> dict[str, Any]:
         "section": course.section,
         "course_name": course.course_name,
         "instructor": course.instructor,
+        "instructors": course.instructors,
         "credits": round(float(course.credits), 2),
         "ects": round(float(course.ects), 2),
         "delivery_method": course.delivery_method,

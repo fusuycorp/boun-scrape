@@ -4,7 +4,7 @@ import re
 import urllib.parse
 from bs4 import BeautifulSoup, Tag
 
-from boun_scrape.domain.models import Course, Department, QuotaRecord
+from boun_scrape.domain.models import Course, CourseSlot, Department, QuotaRecord
 from boun_scrape.scraper.slot_tokenizer import build_slots
 
 
@@ -274,9 +274,11 @@ def parse_schedules_from_html(
                 for inst in new_insts:
                     if inst not in existing_insts:
                         existing_insts.append(inst)
-                existing.instructor = ", ".join(existing_insts) if existing_insts else None
+                existing.instructor = ", ".join(existing_insts) if existing_insts else ""
+                existing.instructors = list(existing_insts)
             last_key = key
             continue
+        inst_list = [s.strip() for s in instructor.split(",") if s.strip()] if instructor else []
         course = Course(
             term=term,
             department=department_code,
@@ -284,6 +286,7 @@ def parse_schedules_from_html(
             section=section,
             course_name=slot_title,
             instructor=instructor,
+            instructors=inst_list,
             credits=_parse_float(credits_raw),
             ects=_parse_float(ects_raw),
             delivery_method=delivery,
@@ -298,7 +301,79 @@ def parse_schedules_from_html(
         courses.append(course)
         courses_by_key[key] = course
         last_key = key
+
+    for course in courses:
+        forward_fill_course_rooms(course)
+
     return courses
+
+
+def _is_same_session_block(title_a: str | None, title_b: str | None) -> bool:
+    """Check if two session titles belong to the same session block (e.g. lecture or lab)."""
+    t_a = (title_a or "").strip()
+    t_b = (title_b or "").strip()
+    if not t_a or not t_b:
+        return True
+    return t_a.lower() == t_b.lower()
+
+
+def forward_fill_course_slots(slots: list[CourseSlot]) -> list[CourseSlot]:
+    """Forward-fill blank room values across contiguous hours of the same day and session block."""
+    if not slots:
+        return slots
+
+    slots_by_day: dict[str, list[CourseSlot]] = {}
+    for slot in slots:
+        if not slot.day or slot.day.upper() == "TBA":
+            continue
+        slots_by_day.setdefault(slot.day, []).append(slot)
+
+    for day_slots in slots_by_day.values():
+        numeric_slots: list[tuple[int, CourseSlot]] = []
+        for slot in day_slots:
+            hr_str = (slot.hour or "").strip()
+            if hr_str.isdigit():
+                numeric_slots.append((int(hr_str), slot))
+
+        if len(numeric_slots) < 2:
+            continue
+
+        numeric_slots.sort(key=lambda x: x[0])
+
+        prev_hour: int | None = None
+        prev_room: str = ""
+        prev_title: str | None = None
+
+        for hr, slot in numeric_slots:
+            curr_room = (slot.room or "").strip()
+            if curr_room.upper() == "N/A":
+                curr_room = ""
+            curr_title = slot.slot_title
+
+            if (
+                not curr_room
+                and prev_room
+                and prev_hour is not None
+                and hr == prev_hour + 1
+                and _is_same_session_block(prev_title, curr_title)
+            ):
+                slot.room = prev_room
+                curr_room = prev_room
+            elif curr_room and curr_room.upper() not in ("N/A", "TBA"):
+                prev_room = curr_room
+            else:
+                prev_room = ""
+
+            prev_hour = hr
+            prev_title = curr_title
+
+    return slots
+
+
+def forward_fill_course_rooms(course: Course) -> Course:
+    """Forward-fill blank room values across contiguous hours for all slots of a course."""
+    forward_fill_course_slots(course.slots)
+    return course
 
 
 def parse_quota_from_html(html: str) -> list[QuotaRecord]:
