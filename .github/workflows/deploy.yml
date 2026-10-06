@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    runs-on: [self-hosted, builder]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -26,10 +26,15 @@ jobs:
 
   build-and-deploy:
     needs: test
-    runs-on: [self-hosted, builder]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+        with:
+          platforms: linux/amd64,linux/arm64
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -46,8 +51,11 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: registry.bogazici.app/budok/boun-scrape-backend:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           provenance: false
 
       - name: Build and Push Frontend Image
@@ -55,8 +63,11 @@ jobs:
         with:
           context: ./frontend
           file: ./frontend/Dockerfile
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: registry.bogazici.app/budok/boun-scrape-frontend:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           provenance: false
 
       - name: Trigger Dokploy Redeployment
