@@ -211,7 +211,7 @@ class DatabaseManager:
         dept_cols = {row["name"] for row in conn.execute("PRAGMA table_info(departments)")}
         expected_dept_cols = [
             ("url_bolum", "TEXT"),
-            ("cached_at", "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"),
+            ("cached_at", "TIMESTAMP"),
             ("last_scraped_at", "TIMESTAMP"),
             ("course_count", "INTEGER DEFAULT 0"),
             ("last_status", "TEXT DEFAULT 'PENDING'"),
@@ -221,6 +221,9 @@ class DatabaseManager:
             if col not in dept_cols:
                 conn.execute(f"ALTER TABLE departments ADD COLUMN {col} {col_def}")
                 conn.commit()
+        if "cached_at" not in dept_cols:
+            conn.execute("UPDATE departments SET cached_at = CURRENT_TIMESTAMP WHERE cached_at IS NULL")
+            conn.commit()
 
         # 3. courses migrations
         course_cols = {row["name"] for row in conn.execute("PRAGMA table_info(courses)")}
@@ -236,13 +239,19 @@ class DatabaseManager:
             ("required_for", "TEXT"),
             ("departments", "TEXT"),
             ("content_hash", "TEXT"),
-            ("created_at", "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"),
-            ("updated_at", "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"),
+            ("created_at", "TIMESTAMP"),
+            ("updated_at", "TIMESTAMP"),
         ]
         for col, col_def in expected_course_cols:
             if col not in course_cols:
                 conn.execute(f"ALTER TABLE courses ADD COLUMN {col} {col_def}")
                 conn.commit()
+        if "created_at" not in course_cols:
+            conn.execute("UPDATE courses SET created_at = CURRENT_TIMESTAMP WHERE created_at IS NULL")
+            conn.commit()
+        if "updated_at" not in course_cols:
+            conn.execute("UPDATE courses SET updated_at = CURRENT_TIMESTAMP WHERE updated_at IS NULL")
+            conn.commit()
 
         # 4. course_slots migrations
         slot_cols = {row["name"] for row in conn.execute("PRAGMA table_info(course_slots)")}

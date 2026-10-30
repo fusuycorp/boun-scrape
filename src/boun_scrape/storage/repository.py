@@ -38,8 +38,14 @@ def _normalize_timestamp(ts: str | None) -> str | None:
             return dt.isoformat()
 
         norm = raw[:-1] + "+00:00" if (raw.endswith("Z") or raw.endswith("z")) else raw
-        if " " in norm and "T" not in norm:
-            norm = norm.replace(" ", "T", 1)
+        if " " in norm:
+            parts = norm.split()
+            if len(parts) == 2 and "T" in parts[0] and (":" in parts[1] or parts[1].isdigit()):
+                norm = f"{parts[0]}+{parts[1]}"
+            elif len(parts) == 3 and (":" in parts[2] or parts[2].isdigit()):
+                norm = f"{parts[0]}T{parts[1]}+{parts[2]}"
+            elif "T" not in norm:
+                norm = norm.replace(" ", "T", 1)
 
         dt = datetime.fromisoformat(norm)
         if dt.tzinfo is None:

@@ -54,6 +54,7 @@ export default function ScraperControl() {
   const [confirmOpen, setConfirmOpen] = useState(false);
 
   const autoScrollRef = useRef(true);
+  const wasScrapingRef = useRef(true);
 
   // Fetch Lookups
   const fetchTerms = useCallback(async () => {
@@ -94,9 +95,10 @@ export default function ScraperControl() {
         .catch(() => ({ is_scraping: false, is_running: false, current_progress: null }));
 
       let logsRes = null;
-      if (statusRes.is_scraping) {
+      if (statusRes.is_scraping || wasScrapingRef.current) {
         logsRes = await api.getScrapeLogs().catch(() => []);
       }
+      wasScrapingRef.current = Boolean(statusRes.is_scraping);
 
       if (isMountedRef.current) {
         setStatus(statusRes);

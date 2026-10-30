@@ -537,12 +537,28 @@ class TestRepository:
         )
         conn.execute("CREATE TABLE scrape_runs (id INTEGER PRIMARY KEY, run_id TEXT)")
         conn.execute("CREATE TABLE departments (id INTEGER PRIMARY KEY, term TEXT, code TEXT, name TEXT, bolum TEXT)")
+        # Seed pre-existing rows in legacy tables to verify non-constant default migration safety
+        conn.execute(
+            "INSERT INTO departments (term, code, name, bolum) VALUES ('2025/2026-1', 'CMPE', 'Computer Engineering', 'COMPUTER ENGINEERING')"
+        )
+        conn.execute(
+            "INSERT INTO courses (term, department, course_code, section, course_name) VALUES ('2025/2026-1', 'CMPE', 'CMPE 140', '01', 'C PROGRAMMING')"
+        )
         conn.commit()
         conn.close()
 
         # Initialize DatabaseManager on legacy database
         db = DatabaseManager(db_path)
         db.init_db()
+
+        with db.connection() as check_conn:
+            dept_cached_at = check_conn.execute("SELECT cached_at FROM departments WHERE code = 'CMPE'").fetchone()[0]
+            assert dept_cached_at is not None
+            course_ts = check_conn.execute(
+                "SELECT created_at, updated_at FROM courses WHERE course_code = 'CMPE 140'"
+            ).fetchone()
+            assert course_ts["created_at"] is not None
+            assert course_ts["updated_at"] is not None
 
         # Verify all migrated columns exist and save_courses_and_slots succeeds with content_hash
         repo = CourseRepository(db)
@@ -751,6 +767,11 @@ class TestRepository:
         # Timezone offset (+03:00 -> converts to UTC 11:00:00)
         norm3 = _normalize_timestamp("2026-08-31T14:00:00+03:00")
         assert norm3 == "2026-08-31T11:00:00+00:00"
+
+        # URL-decoded space before timezone offset (unencoded '+' in query string)
+        assert _normalize_timestamp("2026-08-31T14:00:00 00:00") == "2026-08-31T14:00:00+00:00"
+        assert _normalize_timestamp("2026-08-31T14:00:00 03:00") == "2026-08-31T11:00:00+00:00"
+        assert _normalize_timestamp("2026-08-31 14:00:00 03:00") == "2026-08-31T11:00:00+00:00"
 
         # Numeric epoch string
         norm4 = _normalize_timestamp("1725112800")

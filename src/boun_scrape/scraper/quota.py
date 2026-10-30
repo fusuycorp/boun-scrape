@@ -110,6 +110,7 @@ class QuotaService:
             async with self._lock:
                 entry = self._cache.get(cache_key)
                 if entry is not None and (now - entry.timestamp) < self.ttl_seconds:
+                    self._cache[cache_key] = self._cache.pop(cache_key)
                     return list(entry.records)
 
         loop = asyncio.get_running_loop()
@@ -117,6 +118,7 @@ class QuotaService:
             if not bypass_cache:
                 entry = self._cache.get(cache_key)
                 if entry is not None and (now - entry.timestamp) < self.ttl_seconds:
+                    self._cache[cache_key] = self._cache.pop(cache_key)
                     return list(entry.records)
 
                 if cache_key in self._inflight:
