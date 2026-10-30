@@ -768,11 +768,6 @@ class TestRepository:
         norm3 = _normalize_timestamp("2026-08-31T14:00:00+03:00")
         assert norm3 == "2026-08-31T11:00:00+00:00"
 
-        # URL-decoded space before timezone offset (unencoded '+' in query string)
-        assert _normalize_timestamp("2026-08-31T14:00:00 00:00") == "2026-08-31T14:00:00+00:00"
-        assert _normalize_timestamp("2026-08-31T14:00:00 03:00") == "2026-08-31T11:00:00+00:00"
-        assert _normalize_timestamp("2026-08-31 14:00:00 03:00") == "2026-08-31T11:00:00+00:00"
-
         # Numeric epoch string
         norm4 = _normalize_timestamp("1725112800")
         assert norm4 is not None

@@ -61,6 +61,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app.state.settings = cfg
     app.state.login_rate_limiter = RateLimiter(max_requests=5, window_seconds=60)
     app.state.quota_rate_limiter = RateLimiter(max_requests=30, window_seconds=60)
+    app.state.feeds_rate_limiter = RateLimiter(max_requests=60, window_seconds=60)
 
     @app.middleware("http")
     async def add_security_headers(request: Request, call_next):

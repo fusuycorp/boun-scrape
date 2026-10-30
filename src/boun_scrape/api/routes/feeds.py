@@ -9,6 +9,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query, Request, Response,
 from fastapi.responses import FileResponse
 
 from boun_scrape.api.deps import get_course_repo_dep, get_settings_dep
+from boun_scrape.api.rate_limit import feeds_rate_limit_dep
 from boun_scrape.config import Settings
 from boun_scrape.domain.dto import (
     DeltaEventDTO,
@@ -21,7 +22,7 @@ from boun_scrape.domain.dto import (
 from boun_scrape.pipeline.exporter import _sanitize_term, generate_all_exports
 from boun_scrape.storage.repository import CourseRepository
 
-router = APIRouter(tags=["Feeds"])
+router = APIRouter(tags=["Feeds"], dependencies=[Depends(feeds_rate_limit_dep)])
 
 _export_async_lock = asyncio.Lock()
 

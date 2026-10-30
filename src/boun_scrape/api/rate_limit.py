@@ -95,3 +95,8 @@ def login_rate_limit_dep(request: Request) -> None:
 def quota_rate_limit_dep(request: Request) -> None:
     """FastAPI dependency: enforce the app's quota rate limiter."""
     request.app.state.quota_rate_limiter.check(_get_client_ip(request))
+
+
+def feeds_rate_limit_dep(request: Request) -> None:
+    """FastAPI dependency: enforce the app's feeds rate limiter."""
+    request.app.state.feeds_rate_limiter.check(_get_client_ip(request))
